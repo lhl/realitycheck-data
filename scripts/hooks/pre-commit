@@ -1,0 +1,39 @@
+#!/bin/bash
+# Pre-commit hook for Reality Check data validation
+# Install with: git config core.hooksPath scripts/hooks
+
+set -e
+
+echo "Running Reality Check validation..."
+
+# Find the framework
+FRAMEWORK_PATH=""
+if [[ -d ".framework" ]]; then
+    FRAMEWORK_PATH=".framework"
+elif [[ -n "$REALITYCHECK_PATH" ]]; then
+    FRAMEWORK_PATH="$REALITYCHECK_PATH"
+elif [[ -d "$HOME/github/lhl/realitycheck" ]]; then
+    FRAMEWORK_PATH="$HOME/github/lhl/realitycheck"
+fi
+
+if [[ -z "$FRAMEWORK_PATH" ]]; then
+    echo "Warning: Reality Check framework not found, skipping validation"
+    echo "Set REALITYCHECK_PATH or clone to ~/.framework"
+    exit 0
+fi
+
+# Get repo root
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+# Set database path
+export ANALYSIS_DB_PATH="$REPO_ROOT/data/realitycheck.lance"
+
+# Run validation
+if [[ -f "$FRAMEWORK_PATH/scripts/validate.py" ]]; then
+    cd "$FRAMEWORK_PATH"
+    uv run python scripts/validate.py --mode db --repo-root "$REPO_ROOT"
+    echo "Validation passed!"
+else
+    echo "Warning: validate.py not found at $FRAMEWORK_PATH/scripts/validate.py"
+    exit 0
+fi

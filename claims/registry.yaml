@@ -1,0 +1,1759 @@
+# Claim Registry
+# Exported from LanceDB on 2026-01-21
+# Total claims: 85
+# Total chains: 3
+
+counters:
+  TECH: 13
+  RESOURCE: 4
+  LABOR: 12
+  ECON: 12
+  GOV: 20
+  SOC: 3
+  TRANS: 13
+  META: 8
+claims:
+  ECON-2026-001:
+    text: Compute + energy + chips becoming primary chokepoints for economic power
+    type: '[T]'
+    domain: ECON
+    evidence_level: E3
+    confidence: 0.75
+    source_ids:
+    - gpt-2026-01-18-hottakes
+    - gpt-2026-01-18-fiction-hottakes
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts: []
+    depends_on:
+    - TECH-2026-001
+    - RESOURCE-2026-001
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  ECON-2026-002:
+    text: Bottleneck control, not model access, determines 'feudal' vs 'abundance'
+      outcomes
+    type: '[T]'
+    domain: ECON
+    evidence_level: E4
+    confidence: 0.699999988079071
+    source_ids:
+    - gpt-2026-01-18-hottakes
+    - gpt-2026-01-18-fiction-hottakes
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts: []
+    depends_on:
+    - ECON-2026-001
+    - TECH-2026-004
+    modified_by: []
+    part_of_chain: CHAIN-2026-003
+    version: 1
+    last_updated: '2026-01-18'
+  ECON-2026-003:
+    text: Post-labor → permanent underclass is 'default' outcome
+    type: '[P]'
+    domain: ECON
+    evidence_level: E5
+    confidence: 0.30000001192092896
+    source_ids:
+    - teortaxes-2026-thread
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts:
+    - ECON-2026-011
+    - GOV-2026-004
+    depends_on:
+    - LABOR-2026-002
+    - LABOR-2026-003
+    - ECON-2026-012
+    modified_by: []
+    part_of_chain: CHAIN-2026-001
+    version: 1
+    last_updated: '2026-01-18'
+    notes: Assumes no redistribution; politically contestable
+  ECON-2026-004:
+    text: Technology diffusion + commoditization historically breaks concentration
+    type: '[T]'
+    domain: ECON
+    evidence_level: E2
+    confidence: 0.699999988079071
+    source_ids:
+    - historical-pattern
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts:
+    - ECON-2026-003
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  ECON-2026-005:
+    text: The premise that 'only billionaires can afford AI cognition' is false for
+      most domains
+    type: '[T]'
+    domain: ECON
+    evidence_level: E2
+    confidence: 0.75
+    source_ids:
+    - gpt-2026-01-18-hottakes
+    - gpt-2026-01-18-fiction-hottakes
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - ECON-2026-002
+    contradicts: []
+    depends_on:
+    - TECH-2026-004
+    modified_by: []
+    part_of_chain: CHAIN-2026-003
+    version: 1
+    last_updated: '2026-01-18'
+  ECON-2026-006:
+    text: Inference at scale may centralize around power/datacenters even if models
+      commoditize
+    type: '[H]'
+    domain: ECON
+    evidence_level: E4
+    confidence: 0.550000011920929
+    source_ids:
+    - gpt-2026-01-18-hottakes
+    - gpt-2026-01-18-fiction-hottakes
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - ECON-2026-001
+    contradicts: []
+    depends_on:
+    - RESOURCE-2026-001
+    modified_by: []
+    part_of_chain: CHAIN-2026-003
+    version: 1
+    last_updated: '2026-01-18'
+    notes: 'Key uncertainty: efficiency/edge inference vs hyperscaler vertical integration
+      and grid constraints'
+  ECON-2026-007:
+    text: Monopolistic tech firms with saturated markets repeatedly hype new 'bubble'
+      narratives (crypto/NFTs/metaverse/AI) to preserve growth-stock valuations when
+      organic growth slows
+    type: '[T]'
+    domain: ECON
+    evidence_level: E4
+    confidence: 0.44999998807907104
+    source_ids:
+    - doctorow-2026-reverse-centaur
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - TRANS-2026-003
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  ECON-2026-008:
+    text: AI tooling increases the feasible output of small teams/creators, increasing
+      the value of mechanisms that allocate attention and funding to creators
+    type: '[H]'
+    domain: ECON
+    evidence_level: E4
+    confidence: 0.550000011920929
+    source_ids:
+    - yegge-2026-bags-creator-economy
+    - yegge-2026-future-coding-agents
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - LABOR-2026-009
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  ECON-2026-009:
+    text: As internal software becomes easier to rebuild, some SaaS categories face
+      stronger build-vs-buy pressure; defensible vendors are those with deep accumulated
+      infra/know-how that remains costly to recreate
+    type: '[H]'
+    domain: ECON
+    evidence_level: E4
+    confidence: 0.550000011920929
+    source_ids:
+    - yegge-2025-six-new-tips-coding-agents
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on:
+    - LABOR-2026-011
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  ECON-2026-010:
+    text: '''Creator explosion'' forecast: millions of independent creators appear
+      once ''everyone can vibe code'' (claimed as a near-term function of ~2 frontier-model
+      upgrades), forcing new discovery/market institutions'
+    type: '[P]'
+    domain: ECON
+    evidence_level: E5
+    confidence: 0.30000001192092896
+    source_ids:
+    - yegge-2026-bags-creator-economy
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - ECON-2026-008
+    contradicts: []
+    depends_on:
+    - LABOR-2026-012
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  ECON-2026-011:
+    text: Post-labor requires some income distribution mechanism or consumption collapses
+    type: '[T]'
+    domain: ECON
+    evidence_level: E3
+    confidence: 0.800000011920929
+    source_ids:
+    - macro-identity
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - GOV-2026-004
+    contradicts:
+    - ECON-2026-003
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  ECON-2026-012:
+    text: Labor economically irrelevant → no consumer purchasing power (absent redistribution)
+    type: '[A]'
+    domain: ECON
+    evidence_level: E4
+    confidence: 0.30000001192092896
+    source_ids:
+    - teortaxes-2026-thread
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - ECON-2026-003
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: CHAIN-2026-001
+    version: 1
+    last_updated: '2026-01-18'
+    notes: Weakest-link assumption in the permanent underclass chain; collapses if
+      dividends/transfers/public provision scale
+  GOV-2026-001:
+    text: Property rights will become arbitrary/confiscatable in neofeudal regime
+    type: '[H]'
+    domain: GOV
+    evidence_level: E6
+    confidence: 0.25
+    source_ids:
+    - hotz-2026-three-minutes
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-18'
+    notes: Contradicts @teortaxesTex 'equity escape' thesis (convert wealth to dividends
+      to survive)
+  GOV-2026-002:
+    text: Elites will choose genocide over UBI once labor is unnecessary
+    type: '[S]'
+    domain: GOV
+    evidence_level: E6
+    confidence: 0.10000000149011612
+    source_ids:
+    - xenoimpulse-2026-thread
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts:
+    - GOV-2026-004
+    - GOV-2026-005
+    depends_on:
+    - LABOR-2026-003
+    - GOV-2026-008
+    - GOV-2026-009
+    - GOV-2026-010
+    - GOV-2026-011
+    modified_by: []
+    part_of_chain: CHAIN-2026-002
+    version: 1
+    last_updated: '2026-01-18'
+    notes: Multiple weak premises; ignores cheaper alternatives; coordination nightmare
+  GOV-2026-003:
+    text: US elites 'ahead of curve' and coordinating on post-labor strategy
+    type: '[S]'
+    domain: GOV
+    evidence_level: E6
+    confidence: 0.20000000298023224
+    source_ids:
+    - teortaxes-2026-thread
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+    notes: Unfalsifiable
+  GOV-2026-004:
+    text: Buying stability often cheaper than enforcing it in high-automation world
+    type: '[T]'
+    domain: GOV
+    evidence_level: E3
+    confidence: 0.6499999761581421
+    source_ids:
+    - gpt-2026-01-18-hottakes
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts:
+    - GOV-2026-002
+    - ECON-2026-003
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  GOV-2026-005:
+    text: Inter-elite + interstate competition prevents unified oligarchic coalition
+    type: '[T]'
+    domain: GOV
+    evidence_level: E3
+    confidence: 0.699999988079071
+    source_ids:
+    - gpt-2026-01-18-hottakes
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts:
+    - GOV-2026-002
+    - GOV-2026-003
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  GOV-2026-006:
+    text: Multipolarity reduces single-coalition doom but increases security competition
+    type: '[T]'
+    domain: GOV
+    evidence_level: E4
+    confidence: 0.6499999761581421
+    source_ids:
+    - gpt-2026-01-18-hottakes
+    - gpt-2026-01-18-fiction-hottakes
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  GOV-2026-007:
+    text: Japan/EU governance styles suggest 'civilized equilibrium' paths exist
+    type: '[H]'
+    domain: GOV
+    evidence_level: E4
+    confidence: 0.550000011920929
+    source_ids:
+    - japan-ai-guidelines-2025
+    - eu-ai-act
+    - gpt-2026-01-18-hottakes
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts:
+    - ECON-2026-003
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-18'
+  GOV-2026-008:
+    text: Even post-labor, humans remain a threat vector (revolt, sabotage, voting)
+    type: '[F]'
+    domain: GOV
+    evidence_level: E1
+    confidence: 0.8999999761581421
+    source_ids:
+    - xenoimpulse-2026-thread
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - GOV-2026-002
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: CHAIN-2026-002
+    version: 1
+    last_updated: '2026-01-18'
+  GOV-2026-009:
+    text: AI/automation makes coercion cheap and reliable at scale
+    type: '[H]'
+    domain: GOV
+    evidence_level: E5
+    confidence: 0.25
+    source_ids:
+    - xenoimpulse-2026-thread
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - GOV-2026-002
+    contradicts:
+    - GOV-2026-004
+    - GOV-2026-005
+    depends_on: []
+    modified_by: []
+    part_of_chain: CHAIN-2026-002
+    version: 1
+    last_updated: '2026-01-18'
+    notes: 'Contested: coercion historically fragile/expensive; automation introduces
+      new points of failure'
+  GOV-2026-010:
+    text: Elites can coordinate on extreme solutions (including mass extermination)
+      in a post-labor world
+    type: '[H]'
+    domain: GOV
+    evidence_level: E6
+    confidence: 0.15000000596046448
+    source_ids:
+    - xenoimpulse-2026-thread
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - GOV-2026-002
+    contradicts:
+    - GOV-2026-005
+    depends_on: []
+    modified_by: []
+    part_of_chain: CHAIN-2026-002
+    version: 1
+    last_updated: '2026-01-18'
+    notes: 'Weakest link: N-player coordination problem with strong incentives to
+      defect'
+  GOV-2026-011:
+    text: Moral norms and legitimacy stop constraining elite behavior in a post-labor
+      world
+    type: '[H]'
+    domain: GOV
+    evidence_level: E6
+    confidence: 0.20000000298023224
+    source_ids:
+    - xenoimpulse-2026-thread
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - GOV-2026-002
+    contradicts:
+    - GOV-2026-004
+    depends_on: []
+    modified_by: []
+    part_of_chain: CHAIN-2026-002
+    version: 1
+    last_updated: '2026-01-18'
+    notes: 'Contested: regimes typically invest in legitimacy because it is cheaper
+      than pure coercion'
+  GOV-2026-012:
+    text: US behavior (e.g., Greenland/Venezuela bargaining) can be interpreted as
+      coherent resource-extraction strategy that overrides alliance norms
+    type: '[H]'
+    domain: GOV
+    evidence_level: E6
+    confidence: 0.20000000298023224
+    source_ids:
+    - teortaxes-2026-greenland-endgame
+    first_extracted: '2026-01-18'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  GOV-2026-013:
+    text: Legal/formal ownership claims can reduce the cost of coercive control by
+      making anti-aggressor coalitions harder to form
+    type: '[T]'
+    domain: GOV
+    evidence_level: E3
+    confidence: 0.550000011920929
+    source_ids:
+    - teortaxes-2026-greenland-endgame
+    first_extracted: '2026-01-18'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  GOV-2026-014:
+    text: Europe’s feasible response to US territorial/resource pressure is delay/placation
+      plus diversification and partial rearmament, not direct confrontation
+    type: '[H]'
+    domain: GOV
+    evidence_level: E6
+    confidence: 0.25
+    source_ids:
+    - teortaxes-2026-greenland-endgame
+    first_extracted: '2026-01-18'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  GOV-2026-015:
+    text: A faction of US tech/policy elites holds a longtermist 'endgame' worldview
+      motivating resource competition (e.g., Musk/Thiel/Karp/Matheny)
+    type: '[H]'
+    domain: GOV
+    evidence_level: E6
+    confidence: 0.15000000596046448
+    source_ids:
+    - teortaxes-2026-greenland-endgame
+    first_extracted: '2026-01-18'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  GOV-2026-016:
+    text: Google has ~90% search market share (global, depending on metric/timeframe),
+      consistent with near-monopoly conditions
+    type: '[F]'
+    domain: GOV
+    evidence_level: E2
+    confidence: 0.8999999761581421
+    source_ids:
+    - doctorow-2026-reverse-centaur
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - ECON-2026-007
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  GOV-2026-017:
+    text: Google pays Apple on the order of ~$20bn/year for default search placement
+      (Safari/iOS), reinforcing distribution control and monopoly dynamics
+    type: '[F]'
+    domain: GOV
+    evidence_level: E2
+    confidence: 0.8500000238418579
+    source_ids:
+    - doctorow-2026-reverse-centaur
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - ECON-2026-007
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  GOV-2026-018:
+    text: Expanding copyright to restrict model training would primarily benefit incumbent
+      media/platform monopolies; creator-friendly leverage is labor-market power (e.g.,
+      sectoral bargaining)
+    type: '[H]'
+    domain: GOV
+    evidence_level: E4
+    confidence: 0.4000000059604645
+    source_ids:
+    - doctorow-2026-reverse-centaur
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: 'Institution-dependent: hinges on market concentration and bargaining structures
+      in creative industries'
+  GOV-2026-019:
+    text: Open-source projects will respond to AI-generated noise with stricter contribution
+      norms (e.g., prompt disclosure, gating, or restricting drive-by PRs)
+    type: '[H]'
+    domain: GOV
+    evidence_level: E4
+    confidence: 0.550000011920929
+    source_ids:
+    - ronacher-2026-agent-psychosis
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on:
+    - LABOR-2026-007
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  GOV-2026-020:
+    text: Shenzhen Metro signaled limits to support for Vanke (no 'unlimited guarantees'
+      / beyond its 'risk comfort zone')
+    type: '[H]'
+    domain: GOV
+    evidence_level: E5
+    confidence: 0.4000000059604645
+    source_ids:
+    - perera-2026-chinas-trillion-dollar-illusion
+    - perera-2026-china-trade-surplus-collapse-thread
+    first_extracted: '2026-01-20'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-20'
+    notes: Exact quoted language not independently verified in this repo; treated
+      as a hypothesis pending primary-source confirmation
+  LABOR-2026-001:
+    text: If AI substitutes human labor in most tasks, wages fall and capital share
+      rises
+    type: '[T]'
+    domain: LABOR
+    evidence_level: E3
+    confidence: 0.8500000238418579
+    source_ids:
+    - standard-economics
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - LABOR-2026-003
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  LABOR-2026-002:
+    text: Full automation of human labor by 2035-2045
+    type: '[P]'
+    domain: LABOR
+    evidence_level: E5
+    confidence: 0.3499999940395355
+    source_ids:
+    - teortaxes-2026-thread
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: CHAIN-2026-001
+    version: 2
+    last_updated: '2026-01-18'
+    notes: Timeline speculative; 'full' undefined; ignores task recomposition per
+      Acemoglu-Restrepo (2019)
+  LABOR-2026-003:
+    text: Full automation → labor becomes economically irrelevant (labor share approaches
+      ~0)
+    type: '[T]'
+    domain: LABOR
+    evidence_level: E4
+    confidence: 0.4000000059604645
+    source_ids:
+    - teortaxes-2026-thread
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - ECON-2026-003
+    - GOV-2026-002
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: CHAIN-2026-001
+    version: 1
+    last_updated: '2026-01-18'
+    notes: 'Contested: ignores task recomposition and human-AI complementarity; ''economically
+      irrelevant'' often undefined'
+  LABOR-2026-004:
+    text: Full human labor automation occurs within at most a single generation (possibly
+      within a few years)
+    type: '[P]'
+    domain: LABOR
+    evidence_level: E6
+    confidence: 0.15000000596046448
+    source_ids:
+    - teortaxes-2026-greenland-endgame
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: Rhetorically emphatic; timelines undefined; treated as low-confidence prediction
+  LABOR-2026-005:
+    text: Workplace AI is often deployed to intensify surveillance/control of workers
+      (creating 'reverse centaurs'), rather than to augment worker autonomy
+    type: '[T]'
+    domain: LABOR
+    evidence_level: E4
+    confidence: 0.550000011920929
+    source_ids:
+    - doctorow-2026-reverse-centaur
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  LABOR-2026-006:
+    text: For most high-wage jobs, 'AI can do your job' is false as an end-to-end
+      replacement claim; attempted substitution pushes humans into accountability-sink
+      roles and can degrade quality
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E4
+    confidence: 0.5
+    source_ids:
+    - doctorow-2026-reverse-centaur
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: Primarily a near-term operational claim; does not preclude long-run task
+      substitution
+  LABOR-2026-007:
+    text: Cheap-to-generate AI-assisted issues/PRs create a harsh review asymmetry
+      (minutes to produce vs much longer to evaluate), increasing maintainer burden
+      and conflict
+    type: '[T]'
+    domain: LABOR
+    evidence_level: E4
+    confidence: 0.6000000238418579
+    source_ids:
+    - ronacher-2026-agent-psychosis
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - LABOR-2026-009
+    - GOV-2026-019
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  LABOR-2026-008:
+    text: AI agents are a productivity boost but become 'slop machines' when oversight/quality
+      gates are relaxed; outcomes depend on supervision and verification
+    type: '[T]'
+    domain: LABOR
+    evidence_level: E4
+    confidence: 0.6499999761581421
+    source_ids:
+    - ronacher-2026-agent-psychosis
+    - yegge-2026-welcome-gas-town
+    - yegge-2026-future-coding-agents
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - LABOR-2026-009
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  LABOR-2026-009:
+    text: As artifact generation becomes cheaper, the scarce input shifts toward verification/integration
+      attention (review, tests, and domain judgment)
+    type: '[T]'
+    domain: LABOR
+    evidence_level: E3
+    confidence: 0.699999988079071
+    source_ids:
+    - ronacher-2026-agent-psychosis
+    - yegge-2026-future-coding-agents
+    - yegge-2026-gas-town-emergency-user-manual
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - GOV-2026-019
+    contradicts: []
+    depends_on:
+    - LABOR-2026-007
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  LABOR-2026-010:
+    text: As agentic throughput rises, coordination/merge becomes a binding constraint;
+      teams respond with extreme coordination simplifications (e.g., 'one engineer
+      per repo') and continuous broadcast norms
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E4
+    confidence: 0.550000011920929
+    source_ids:
+    - yegge-2026-future-coding-agents
+    - yegge-2026-gas-town-emergency-user-manual
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - TRANS-2026-004
+    contradicts: []
+    depends_on:
+    - LABOR-2026-009
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  LABOR-2026-011:
+    text: 'In many contexts, ''rewrite'' becomes cheaper than ''repair'': tests and
+      subsystems are treated as disposable and regenerated, shifting maintenance norms'
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E4
+    confidence: 0.550000011920929
+    source_ids:
+    - yegge-2025-six-new-tips-coding-agents
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - ECON-2026-009
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  LABOR-2026-012:
+    text: '''Everyone codes'' forecast: as agentic tooling diffuses, many non-engineering
+      roles write or modify software, and ''vibe coding'' becomes a default expectation
+      for programming jobs'
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E4
+    confidence: 0.44999998807907104
+    source_ids:
+    - yegge-2025-cheese-wars-rise-vibe-coder
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - ECON-2026-010
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  META-2026-001:
+    text: Structured claim extraction with IDs enables cross-referencing that ad-hoc
+      analysis cannot
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    confidence: 0.8500000238418579
+    source_ids:
+    - claude-2026-01-19-framework-efficacy
+    first_extracted: '2026-01-19'
+    extracted_by: claude
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: Demonstrated by comparing framework vs raw analysis of same source
+  META-2026-002:
+    text: Explicit confidence calibration (0-1) produces more tractable outputs than
+      qualitative language
+    type: '[T]'
+    domain: META
+    evidence_level: E3
+    confidence: 0.699999988079071
+    source_ids:
+    - claude-2026-01-19-framework-efficacy
+    first_extracted: '2026-01-19'
+    extracted_by: claude
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  META-2026-003:
+    text: Framework under-prompts for fact-checking, reducing verification rigor compared
+      to unconstrained analysis
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    confidence: 0.800000011920929
+    source_ids:
+    - claude-2026-01-19-framework-efficacy
+    first_extracted: '2026-01-19'
+    extracted_by: claude
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: Raw analysis had 16 sourced citations; framework analysis had 0
+  META-2026-004:
+    text: Framework under-prompts for rhetorical/persuasion analysis
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    confidence: 0.800000011920929
+    source_ids:
+    - claude-2026-01-19-framework-efficacy
+    first_extracted: '2026-01-19'
+    extracted_by: claude
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: Raw analysis identified 5 persuasion techniques; framework noted 'heavily
+      narrativized' only
+  META-2026-005:
+    text: Framework analysis and raw analysis are complementary; optimal workflow
+      may combine both approaches
+    type: '[H]'
+    domain: META
+    evidence_level: E4
+    confidence: 0.6499999761581421
+    source_ids:
+    - claude-2026-01-19-framework-efficacy
+    - gpt-2026-01-19-framework-comparison
+    first_extracted: '2026-01-19'
+    extracted_by: claude
+    supports: []
+    contradicts: []
+    depends_on:
+    - META-2026-001
+    - META-2026-003
+    - META-2026-004
+    modified_by:
+    - META-2026-006
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-19'
+    notes: Framework adds tractability; raw adds depth. Two-pass workflow proposed.
+      Confirmed by GPT self-comparison.
+  META-2026-006:
+    text: Framework operates as 'mapmaker' (models what's being said + link strength);
+      raw analysis operates as 'referee' (adjudicates truth/falsity + how rhetoric
+      works)
+    type: '[T]'
+    domain: META
+    evidence_level: E3
+    confidence: 0.800000011920929
+    source_ids:
+    - gpt-2026-01-19-framework-comparison
+    first_extracted: '2026-01-19'
+    extracted_by: claude
+    supports:
+    - META-2026-005
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: GPT's characterization of the two approaches; useful framing for when to
+      use each
+  META-2026-007:
+    text: 'Framework misses internal tension detection: where premise A undermines
+      motivation B within the same source'
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    confidence: 0.75
+    source_ids:
+    - gpt-2026-01-19-framework-comparison
+    first_extracted: '2026-01-19'
+    extracted_by: claude
+    supports:
+    - META-2026-003
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: 'Example: ''endgame tech'' premise undermines ''seize Greenland'' motivation;
+      framework didn''t catch this'
+  META-2026-008:
+    text: Merged optimal artifact would add 'baseline/evidence anchors' column per
+      claim with external citations and disconfirmation criteria
+    type: '[H]'
+    domain: META
+    evidence_level: E4
+    confidence: 0.699999988079071
+    source_ids:
+    - gpt-2026-01-19-framework-comparison
+    first_extracted: '2026-01-19'
+    extracted_by: claude
+    supports:
+    - META-2026-005
+    contradicts: []
+    depends_on:
+    - META-2026-003
+    - META-2026-006
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: Specific template improvement proposed by GPT; would add empirical anchoring
+      to claim tables
+  RESOURCE-2026-001:
+    text: 'Data center electricity demand: 460 TWh (2024) → 1,000+ TWh (2030) → 1,300
+      TWh (2035)'
+    type: '[F]'
+    domain: RESOURCE
+    evidence_level: E1
+    confidence: 0.8500000238418579
+    source_ids:
+    - iea-2024-energy-ai
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - ECON-2026-001
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  RESOURCE-2026-002:
+    text: Hyperscalers vertically integrating into raw materials (copper, power contracts)
+    type: '[F]'
+    domain: RESOURCE
+    evidence_level: E2
+    confidence: 0.800000011920929
+    source_ids:
+    - reuters-rio-tinto-amazon
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - ECON-2026-001
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  RESOURCE-2026-003:
+    text: Strategic value shifts toward long-run control of extractable raw inputs
+      (e.g., critical minerals, oil, energy), even if extraction is slow/hard
+    type: '[T]'
+    domain: RESOURCE
+    evidence_level: E4
+    confidence: 0.44999998807907104
+    source_ids:
+    - teortaxes-2026-greenland-endgame
+    first_extracted: '2026-01-18'
+    extracted_by: gpt-5.2
+    supports:
+    - ECON-2026-001
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  RESOURCE-2026-004:
+    text: For H100/H200-class GPUs, accelerator capex amortization is commonly on
+      the order of ~$1–$3 per IT kWh under plausible (price, utilization, depreciation)
+      assumptions, often exceeding the direct electricity cost
+    type: '[T]'
+    domain: RESOURCE
+    evidence_level: E3
+    confidence: 0.699999988079071
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - ECON-2026-001
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: Assumes 0.7kW IT power, PUE ~1.2, electricity ~$0.06/kWh, GPU price ~$20k-$40k,
+      depreciation 3-5y, utilization 70-90%; excludes server/networking/facilities
+      opex
+  SOC-2026-001:
+    text: Heavy agentic-coding use can foster addictive/parasocial dynamics that impair
+      judgment and reinforce unhealthy behavior
+    type: '[H]'
+    domain: SOC
+    evidence_level: E4
+    confidence: 0.44999998807907104
+    source_ids:
+    - ronacher-2026-agent-psychosis
+    - yegge-2026-gas-town-emergency-user-manual
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - LABOR-2026-008
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  SOC-2026-002:
+    text: Low-scrutiny prompting styles (forcing agents without critical thinking)
+      tend to produce lower-quality and more incoherent contributions
+    type: '[H]'
+    domain: SOC
+    evidence_level: E4
+    confidence: 0.5
+    source_ids:
+    - ronacher-2026-agent-psychosis
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - LABOR-2026-008
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  SOC-2026-003:
+    text: High-scale agentic coding (dozens of agents) can be cognitively exhausting
+      and may disrupt sleep patterns
+    type: '[H]'
+    domain: SOC
+    evidence_level: E5
+    confidence: 0.4000000059604645
+    source_ids:
+    - yegge-2026-steveys-birthday-blog
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  TECH-2026-001:
+    text: Frontier AI training costs grow 2-3x annually
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    confidence: 0.800000011920929
+    source_ids:
+    - epoch-2024-training-costs
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - ECON-2026-001
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  TECH-2026-002:
+    text: Largest training runs could exceed $1B by ~2027
+    type: '[P]'
+    domain: TECH
+    evidence_level: E4
+    confidence: 0.6499999761581421
+    source_ids:
+    - epoch-2024-training-costs
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - ECON-2026-001
+    contradicts: []
+    depends_on:
+    - TECH-2026-001
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  TECH-2026-003:
+    text: AlexNet (2012) was inflection point for current AI paradigm
+    type: '[F]'
+    domain: TECH
+    evidence_level: E1
+    confidence: 0.949999988079071
+    source_ids:
+    - chm-alexnet
+    - teortaxes-2026-thread
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  TECH-2026-004:
+    text: Open models within ~6 months of frontier on many capabilities
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    confidence: 0.75
+    source_ids:
+    - deepseek-r1
+    - gpt-2026-01-18-hottakes
+    - gpt-2026-01-18-fiction-hottakes
+    first_extracted: '2026-01-18'
+    extracted_by: claude
+    supports:
+    - ECON-2026-004
+    - GOV-2026-006
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: CHAIN-2026-003
+    version: 2
+    last_updated: '2026-01-18'
+    notes: Contradicts @teortaxesTex thesis that only billionaires will afford AI
+      cognition
+  TECH-2026-005:
+    text: LLM-based code generation can produce plausible but wrong outputs (including
+      invented dependency names), shifting risk to reviewers and increasing supply-chain/security
+      failure modes
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    confidence: 0.75
+    source_ids:
+    - doctorow-2026-reverse-centaur
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - LABOR-2026-006
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  TECH-2026-006:
+    text: A key 'salvage' from the AI bubble is diffusion of useful low-cost tools
+      (especially open-source models on commodity hardware) for tasks like transcription,
+      summarization, image description, and simple graphic edits
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    confidence: 0.6000000238418579
+    source_ids:
+    - doctorow-2026-reverse-centaur
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - ECON-2026-004
+    - ECON-2026-005
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: 'Conditional: stronger if open models remain deployable on commodity hardware
+      post-shakeout'
+  TECH-2026-007:
+    text: '''Slop loop'' agentic workflows can be economically wasteful (high token
+      burn), and current token pricing may not be durable'
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    confidence: 0.5
+    source_ids:
+    - ronacher-2026-agent-psychosis
+    - yegge-2026-welcome-gas-town
+    - yegge-2026-future-coding-agents
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  TECH-2026-008:
+    text: Beads and Gas Town repositories each contain on the order of 10^5 lines
+      of Go code as of 2026-01-19 (Beads ~275,926; Gas Town ~153,445)
+    type: '[F]'
+    domain: TECH
+    evidence_level: E1
+    confidence: 0.949999988079071
+    source_ids:
+    - yegge-2025-beads
+    - yegge-2025-gastown
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - LABOR-2026-008
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: Counts exclude vendored code; measured from GitHub default branch snapshots
+      on 2026-01-19
+  TECH-2026-009:
+    text: Coding-agent platforms will converge on an 'orchestrator API surface' (hooks
+      for handoffs, status, queues, gates) as multi-agent workflows become the dominant
+      form factor
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    confidence: 0.550000011920929
+    source_ids:
+    - yegge-2026-future-coding-agents
+    - yegge-2026-welcome-gas-town
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - LABOR-2026-009
+    - LABOR-2026-010
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  TECH-2026-010:
+    text: 'ZFC (Zero Framework Cognition) pattern: robust AI apps keep client logic
+      thin/deterministic and delegate ambiguous decisions back to models, adding guardrails
+      and observability'
+    type: '[T]'
+    domain: TECH
+    evidence_level: E4
+    confidence: 0.6000000238418579
+    source_ids:
+    - yegge-2025-zero-framework-cognition
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  TECH-2026-011:
+    text: Beads is a distributed, git-backed, dependency-aware issue/graph tracker
+      for agents, storing tasks as JSONL with a local SQLite cache layer ('Git as
+      DB')
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    confidence: 0.800000011920929
+    source_ids:
+    - yegge-2025-beads
+    - yegge-2025-beads-blows-up
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - LABOR-2026-010
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  TECH-2026-012:
+    text: Gas Town is a multi-agent workspace/orchestration system (mayor/rig/crew/polecats)
+      intended to make ~20-30 parallel agents manageable via persistent state and
+      tooling
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    confidence: 0.550000011920929
+    source_ids:
+    - yegge-2025-gastown
+    - yegge-2026-welcome-gas-town
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - LABOR-2026-010
+    - LABOR-2026-009
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  TECH-2026-013:
+    text: If OpenAI's effective revenue is ~($1.20 per IT kWh) for inference, then
+      breakeven on H100/H200-class hardware likely requires unusually low accelerator
+      prices, very high utilization, long depreciation, or higher realized revenue
+      per kWh
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    confidence: 0.6000000238418579
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports:
+    - TECH-2026-007
+    - ECON-2026-001
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: 'Back-of-envelope: at 0.7kW IT power, $1.20/kWh ≈ $0.84/GPU-hour; typical
+      3y depreciation implies capex alone can exceed this unless GPU effective price
+      is low or utilization/depreciation is favorable'
+  TRANS-2026-001:
+    text: A 'light-cone' framing treats geopolitics as competition for energy and
+      matter ('joules and atoms') to seed a spacefaring civilization
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E4
+    confidence: 0.3499999940395355
+    source_ids:
+    - teortaxes-2026-greenland-endgame
+    first_extracted: '2026-01-18'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  TRANS-2026-002:
+    text: Under a resource-maximizer endgame framing, states will prefer direct control
+      over resource bases and aim to reduce dependence on trade over time
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E4
+    confidence: 0.4000000059604645
+    source_ids:
+    - teortaxes-2026-greenland-endgame
+    first_extracted: '2026-01-18'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-18'
+  TRANS-2026-003:
+    text: The current generative-AI investment boom is a bubble that will burst, leading
+      to widespread company failures and datacenter shutdowns/sell-offs; aftermath
+      leaves salvage plus long cleanup
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    confidence: 0.3499999940395355
+    source_ids:
+    - doctorow-2026-reverse-centaur
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+    notes: 'Operationalization for tracking: treat as resolving by ~2030; source itself
+      does not specify timeline'
+  TRANS-2026-004:
+    text: 'Near-term industry transition: small, fast shops dramatically outperform
+      large companies for ~1+ year as coordination regimes lag behind agentic throughput'
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    confidence: 0.4000000059604645
+    source_ids:
+    - yegge-2026-future-coding-agents
+    first_extracted: '2026-01-19'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on:
+    - LABOR-2026-010
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-19'
+  TRANS-2026-005:
+    text: China’s 2025 annual trade surplus was about $1.19T (record; first above
+      $1T)
+    type: '[F]'
+    domain: TRANS
+    evidence_level: E2
+    confidence: 0.8500000238418579
+    source_ids:
+    - perera-2026-chinas-trillion-dollar-illusion
+    - perera-2026-china-trade-surplus-collapse-thread
+    first_extracted: '2026-01-20'
+    extracted_by: gpt-5.2
+    supports:
+    - TRANS-2026-013
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-20'
+  TRANS-2026-006:
+    text: China’s exports grew ~5.5% y/y in 2025 while imports were roughly flat (0%
+      nominal growth)
+    type: '[F]'
+    domain: TRANS
+    evidence_level: E2
+    confidence: 0.800000011920929
+    source_ids:
+    - perera-2026-chinas-trillion-dollar-illusion
+    - perera-2026-china-trade-surplus-collapse-thread
+    first_extracted: '2026-01-20'
+    extracted_by: gpt-5.2
+    supports:
+    - TRANS-2026-013
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-20'
+  TRANS-2026-007:
+    text: China’s CPI inflation for full-year 2025 was 0.0%
+    type: '[F]'
+    domain: TRANS
+    evidence_level: E2
+    confidence: 0.8999999761581421
+    source_ids:
+    - perera-2026-chinas-trillion-dollar-illusion
+    first_extracted: '2026-01-20'
+    extracted_by: gpt-5.2
+    supports:
+    - TRANS-2026-013
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-20'
+  TRANS-2026-008:
+    text: China’s retail sales grew ~1.3% y/y in November 2025 (slowest since the
+      Covid period)
+    type: '[F]'
+    domain: TRANS
+    evidence_level: E2
+    confidence: 0.800000011920929
+    source_ids:
+    - perera-2026-chinas-trillion-dollar-illusion
+    first_extracted: '2026-01-20'
+    extracted_by: gpt-5.2
+    supports:
+    - TRANS-2026-013
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-20'
+  TRANS-2026-009:
+    text: Rhodium Group estimates China’s 2025 real GDP growth at ~2.5–3% (vs official
+      ~5.2%)
+    type: '[F]'
+    domain: TRANS
+    evidence_level: E5
+    confidence: 0.699999988079071
+    source_ids:
+    - perera-2026-chinas-trillion-dollar-illusion
+    - perera-2026-china-trade-surplus-collapse-thread
+    first_extracted: '2026-01-20'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-20'
+    notes: Estimate attribution cross-checked via secondary reporting; primary Rhodium
+      report not archived in this repo
+  TRANS-2026-010:
+    text: China Vanke reported an annual loss of ~49.5B yuan for 2024 and ~28B yuan
+      of losses through the first three quarters of 2025
+    type: '[F]'
+    domain: TRANS
+    evidence_level: E2
+    confidence: 0.75
+    source_ids:
+    - perera-2026-chinas-trillion-dollar-illusion
+    first_extracted: '2026-01-20'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-20'
+  TRANS-2026-011:
+    text: S&P downgraded Vanke to 'Selective Default' and Fitch to 'Restricted Default'
+      in late 2025, treating bond-payment extensions as default-like events
+    type: '[F]'
+    domain: TRANS
+    evidence_level: E2
+    confidence: 0.75
+    source_ids:
+    - perera-2026-chinas-trillion-dollar-illusion
+    first_extracted: '2026-01-20'
+    extracted_by: gpt-5.2
+    supports:
+    - GOV-2026-020
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-20'
+  TRANS-2026-012:
+    text: S&P said Vanke faces more than 9.4B yuan of bonds maturing over the next
+      six months (late 2025 reporting)
+    type: '[F]'
+    domain: TRANS
+    evidence_level: E2
+    confidence: 0.800000011920929
+    source_ids:
+    - perera-2026-chinas-trillion-dollar-illusion
+    - perera-2026-china-trade-surplus-collapse-thread
+    first_extracted: '2026-01-20'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-20'
+  TRANS-2026-013:
+    text: A large and rising trade surplus can indicate domestic demand destruction
+      (import weakness) rather than export strength
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E4
+    confidence: 0.44999998807907104
+    source_ids:
+    - perera-2026-chinas-trillion-dollar-illusion
+    - perera-2026-china-trade-surplus-collapse-thread
+    first_extracted: '2026-01-20'
+    extracted_by: gpt-5.2
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-20'
+    notes: 'Causal identification problem: surplus can rise from multiple mechanisms
+      (terms-of-trade, substitution, tariff diversion) without ''demand destruction''
+      dominance'
+chains:
+  CHAIN-2026-001:
+    name: Permanent Underclass
+    thesis: Post-labor economy leads to permanent underclass by default
+    confidence: 0.30000001192092896
+    claims:
+    - LABOR-2026-002
+    - LABOR-2026-003
+    - ECON-2026-012
+    - ECON-2026-003
+    analysis_file: claims/chains/permanent-underclass.md
+    weakest_link: ECON-2026-012 (assumes no redistribution mechanism emerges)
+  CHAIN-2026-002:
+    name: Genocide Default
+    thesis: Elites will choose genocide over UBI
+    confidence: 0.10000000149011612
+    claims:
+    - LABOR-2026-003
+    - GOV-2026-008
+    - GOV-2026-009
+    - GOV-2026-010
+    - GOV-2026-011
+    - GOV-2026-002
+    analysis_file: claims/chains/genocide-default.md
+    weakest_link: GOV-2026-010 (elite coordination)
+  CHAIN-2026-003:
+    name: Open Source De-Darkener
+    thesis: Open model diffusion shifts power struggle from cognition to infrastructure
+    confidence: 0.6000000238418579
+    claims:
+    - TECH-2026-004
+    - ECON-2026-005
+    - ECON-2026-006
+    - ECON-2026-002
+    analysis_file: claims/chains/open-source-de-darkener.md
+    weakest_link: ECON-2026-006 (inference centralization vs diffusion)

@@ -1,0 +1,34 @@
+# Reality Check Data Repository Configuration
+version: "1.0"
+
+# Database location (relative to repo root)
+db_path: "data/realitycheck.lance"
+
+# Custom domains for this knowledge base
+domains:
+  - id: TECH
+    name: Technology & AI
+  - id: LABOR
+    name: Labor & Employment
+  - id: ECON
+    name: Economics & Markets
+  - id: GOV
+    name: Governance & Policy
+  - id: SOC
+    name: Social Dynamics
+  - id: GEO
+    name: Geopolitics
+
+# Export paths for GitHub-readable outputs
+export:
+  claims_yaml: "claims/registry.yaml"
+  claims_md: "claims/README.md"
+  sources_yaml: "reference/sources.yaml"
+  sources_md: "reference/README.md"
+  predictions_md: "tracking/predictions.md"
+
+# Project metadata
+project:
+  name: "Reality Check Knowledge Base"
+  description: "Unified analysis of claims across technology, economics, labor, and governance domains"
+  author: "lhl"

@@ -1,0 +1,1112 @@
+# Source Registry
+# Exported from LanceDB on 2026-01-21
+# Total sources: 43
+
+sources:
+  acemoglu-restrepo-2019-tasks:
+    type: PAPER
+    title: 'Automation and New Tasks: How Technology Displaces and Reinstates Labor'
+    author:
+    - Daron Acemoglu
+    - Pascual Restrepo
+    year: 2019
+    url: https://www.aeaweb.org/articles?id=10.1257/jep.33.2.3
+    accessed: '2026-01-18'
+    reliability: 0.8500000238418579
+    bias_notes: Peer-reviewed academic economics
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - automation
+    - labor
+    - tasks
+    - economics
+    domains:
+    - TECH
+    - LABOR
+    status: cataloged
+  ai-2027:
+    type: REPORT
+    title: AI 2027
+    author:
+    - Daniel Kokotajlo
+    - Scott Alexander
+    - Thomas Larsen
+    - Eli Lifland
+    - Romeo Dean
+    year: 2025
+    url: https://ai-2027.com/
+    accessed: '2026-01-18'
+    reliability: 0.6000000238418579
+    bias_notes: Scenario forecast; speculative; useful for discriminating indicators
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - ai-forecasting
+    - timelines
+    - agents
+    - alignment
+    domains:
+    - TECH
+    - GOV
+    - TRANS
+    status: cataloged
+  butler-1863-darwin-machines:
+    type: ARTICLE
+    title: Darwin among the Machines
+    author:
+    - Samuel Butler
+    year: 1863
+    url: https://en.wikisource.org/wiki/Darwin_among_the_Machines
+    accessed: '2026-01-18'
+    reliability: 0.8999999761581421
+    bias_notes: Primary historical text; wikisource transcription
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - automation
+    - machines
+    - history
+    domains:
+    - TECH
+    - SOC
+    status: cataloged
+  chm-alexnet:
+    type: ARTICLE
+    title: CHM Releases AlexNet Source Code
+    author:
+    - Computer History Museum
+    year: 2024
+    url: https://computerhistory.org/blog/chm-releases-alexnet-source-code/
+    accessed: '2026-01-18'
+    reliability: 0.8999999761581421
+    bias_notes: Historical documentation
+    claims_extracted:
+    - TECH-2026-003
+    analysis_file: ''
+    topics:
+    - alexnet
+    - deep-learning
+    - history
+    domains:
+    - TECH
+    status: cataloged
+  claude-2026-01-19-framework-efficacy:
+    type: CONVO
+    title: 'Meta-Analysis: Framework Efficacy Test (Greenland Endgame)'
+    author:
+    - lhl
+    - Claude Opus 4.5
+    year: 2026
+    url: ''
+    accessed: '2026-01-19'
+    reliability: 0.699999988079071
+    bias_notes: Reflexive analysis of our own framework; potential confirmation bias
+      mitigated by explicit gap identification
+    claims_extracted:
+    - META-2026-001
+    - META-2026-002
+    - META-2026-003
+    - META-2026-004
+    - META-2026-005
+    analysis_file: analysis/meta/framework-efficacy-greenland-test.md
+    topics:
+    - meta-analysis
+    - framework-evaluation
+    - methodology
+    - workflow
+    domains:
+    - META
+    status: analyzed
+  deepseek-r1:
+    type: PAPER
+    title: 'DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement
+      Learning'
+    author:
+    - DeepSeek AI
+    year: 2025
+    url: https://arxiv.org/abs/2501.12948
+    accessed: '2026-01-18'
+    reliability: 0.699999988079071
+    bias_notes: Industry research paper
+    claims_extracted:
+    - TECH-2026-004
+    analysis_file: ''
+    topics:
+    - reasoning
+    - llm
+    - open-models
+    domains:
+    - TECH
+    status: cataloged
+  doctorow-2026-reverse-centaur:
+    type: ARTICLE
+    title: AI companies will fail. We can salvage something from the wreckage
+    author:
+    - Cory Doctorow
+    year: 2026
+    url: https://www.theguardian.com/us-news/ng-interactive/2026/jan/18/tech-ai-bubble-burst-reverse-centaur
+    accessed: '2026-01-19'
+    reliability: 0.6000000238418579
+    bias_notes: Opinion essay; anti-monopoly/pro-labor framing; includes factual assertions
+      that should be verified separately
+    claims_extracted:
+    - LABOR-2026-005
+    - LABOR-2026-006
+    - TECH-2026-005
+    - TECH-2026-006
+    - ECON-2026-007
+    - GOV-2026-016
+    - GOV-2026-017
+    - GOV-2026-018
+    - TRANS-2026-003
+    analysis_file: analysis/sources/doctorow-2026-reverse-centaur.md
+    topics:
+    - ai
+    - bubble
+    - monopoly
+    - reverse-centaur
+    - labor
+    - open-source
+    domains:
+    - TRANS
+    - ECON
+    - LABOR
+    - TECH
+    - GOV
+    status: analyzed
+  epoch-2024-training-costs:
+    type: REPORT
+    title: How Much Does It Cost to Train Frontier AI Models?
+    author:
+    - Epoch AI
+    year: 2024
+    url: https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models
+    accessed: '2026-01-18'
+    reliability: 0.800000011920929
+    bias_notes: Pro-AI-progress framing but methodologically careful
+    claims_extracted:
+    - TECH-2026-001
+    - TECH-2026-002
+    analysis_file: ''
+    topics:
+    - compute
+    - costs
+    - frontier-models
+    domains:
+    - TECH
+    - RESOURCE
+    status: cataloged
+  eu-ai-act:
+    type: REPORT
+    title: AI Act - Regulatory Framework for AI
+    author:
+    - European Commission
+    year: 2024
+    url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+    accessed: '2026-01-18'
+    reliability: 0.8500000238418579
+    bias_notes: Official EU regulatory framework
+    claims_extracted:
+    - GOV-2026-007
+    analysis_file: ''
+    topics:
+    - eu
+    - ai-governance
+    - regulation
+    domains:
+    - TECH
+    - GOV
+    status: cataloged
+  gpt-2026-01-18-fiction-hottakes:
+    type: CONVO
+    title: Fiction Recommendations then Hot Takes Analysis
+    author:
+    - lhl
+    - GPT-5.2-Pro
+    year: 2026
+    url: ''
+    accessed: '2026-01-18'
+    reliability: 0.6000000238418579
+    bias_notes: Exploratory analysis session
+    claims_extracted:
+    - TECH-2026-004
+    - ECON-2026-001
+    - ECON-2026-002
+    - ECON-2026-005
+    - ECON-2026-006
+    - GOV-2026-006
+    analysis_file: analysis/syntheses/neofeudalism-discourse-synthesis.md
+    topics:
+    - neofeudalism
+    - post-labor
+    - fiction
+    - alternatives
+    domains:
+    - SOC
+    - ECON
+    - LABOR
+    status: cataloged
+  gpt-2026-01-18-hottakes:
+    type: CONVO
+    title: Post-Singularity Economics Hot Takes Analysis
+    author:
+    - lhl
+    - GPT-5.2-Pro
+    year: 2026
+    url: https://chatgpt.com/c/696c71e2-ebe8-8322-90ee-2bd0e35cb7b1
+    accessed: '2026-01-18'
+    reliability: 0.6000000238418579
+    bias_notes: Exploratory analysis session, claims need primary source verification
+    claims_extracted:
+    - TECH-2026-004
+    - ECON-2026-001
+    - ECON-2026-002
+    - ECON-2026-005
+    - ECON-2026-006
+    - GOV-2026-004
+    - GOV-2026-005
+    - GOV-2026-006
+    - GOV-2026-007
+    analysis_file: analysis/syntheses/neofeudalism-discourse-synthesis.md
+    topics:
+    - neofeudalism
+    - post-labor
+    - automation
+    - underclass
+    - multipolarity
+    domains:
+    - TRANS
+    - ECON
+    - LABOR
+    - TECH
+    - GOV
+    status: cataloged
+  gpt-2026-01-19-framework-comparison:
+    type: CONVO
+    title: 'ChatGPT''s Self-Comparison: Raw vs Framework Analysis'
+    author:
+    - lhl
+    - GPT-5.2-Pro
+    year: 2026
+    url: https://chatgpt.com/c/696d1df5-91a0-8324-9137-9644a9f2e779
+    accessed: '2026-01-19'
+    reliability: 0.75
+    bias_notes: ChatGPT comparing its own raw analysis to framework-guided analysis;
+      provides external perspective on framework gaps
+    claims_extracted:
+    - META-2026-005
+    - META-2026-006
+    - META-2026-007
+    - META-2026-008
+    analysis_file: analysis/meta/framework-efficacy-greenland-test.md
+    topics:
+    - meta-analysis
+    - framework-evaluation
+    - methodology
+    - self-comparison
+    domains:
+    - META
+    status: analyzed
+  gpt-2026-01-19-greenland-endgame:
+    type: CONVO
+    title: Raw critical analysis of Greenland Endgame thread (no framework)
+    author:
+    - lhl
+    - GPT-5.2-Pro
+    year: 2026
+    url: https://chatgpt.com/c/696d1df5-91a0-8324-9137-9644a9f2e779
+    accessed: '2026-01-19'
+    reliability: 0.699999988079071
+    bias_notes: Thorough fact-checking; used as baseline for framework comparison
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - greenland
+    - critical-analysis
+    - fact-checking
+    - framework-comparison
+    domains:
+    - META
+    status: cataloged
+  historical-pattern:
+    type: KNOWLEDGE
+    title: Historical pattern of technology diffusion and commoditization
+    author:
+    - Background Knowledge
+    year: 0
+    url: ''
+    accessed: '2026-01-18'
+    reliability: 0.699999988079071
+    bias_notes: General historical pattern, specific instances vary
+    claims_extracted:
+    - ECON-2026-004
+    analysis_file: ''
+    topics:
+    - technology
+    - diffusion
+    - history
+    domains:
+    - TECH
+    - ECON
+    status: cataloged
+  hooker-hardware-lottery:
+    type: PAPER
+    title: The Hardware Lottery
+    author:
+    - Sara Hooker
+    year: 2020
+    url: https://hardwarelottery.github.io/
+    accessed: '2026-01-18'
+    reliability: 0.75
+    bias_notes: Perspective paper on how hardware availability shapes ML research;
+      arXiv:2009.06489
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - hardware
+    - compute
+    - ml
+    - research
+    domains:
+    - TECH
+    - RESOURCE
+    - ECON
+    status: cataloged
+  hotz-2026-how-stop:
+    type: BLOG
+    title: How do I stop?
+    author:
+    - George Hotz
+    year: 2026
+    url: https://geohot.github.io/blog/jekyll/update/2026/01/18/how-do-i-stop.html
+    accessed: '2026-01-18'
+    reliability: 0.5
+    bias_notes: Follow-up to three-minutes, more operational
+    claims_extracted: []
+    analysis_file: analysis/syntheses/neofeudalism-discourse-synthesis.md
+    topics:
+    - open-source
+    - ownership
+    - alternatives
+    domains:
+    - TECH
+    - ECON
+    status: cataloged
+  hotz-2026-three-minutes:
+    type: BLOG
+    title: You have three minutes to escape the perpetual underclass
+    author:
+    - George Hotz
+    year: 2026
+    url: https://geohot.github.io/blog/jekyll/update/2026/01/17/three-minutes.html
+    accessed: '2026-01-18'
+    reliability: 0.5
+    bias_notes: Individual opinion, provocative framing
+    claims_extracted:
+    - GOV-2026-001
+    analysis_file: analysis/syntheses/neofeudalism-discourse-synthesis.md
+    topics:
+    - neofeudalism
+    - tech-work
+    - participation
+    domains:
+    - SOC
+    - ECON
+    - LABOR
+    status: cataloged
+  iea-2024-energy-ai:
+    type: REPORT
+    title: 'Energy and AI: Energy Supply for AI'
+    author:
+    - IEA
+    year: 2024
+    url: https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai
+    accessed: '2026-01-18'
+    reliability: 0.8500000238418579
+    bias_notes: Institutional source, generally credible on energy data
+    claims_extracted:
+    - RESOURCE-2026-001
+    analysis_file: ''
+    topics:
+    - energy
+    - datacenters
+    - electricity
+    domains:
+    - TECH
+    - RESOURCE
+    status: cataloged
+  japan-ai-guidelines-2025:
+    type: REPORT
+    title: Guideline for Japanese Governments' Procurements and Utilizations of Generative
+      AI
+    author:
+    - Digital Agency of Japan
+    year: 2025
+    url: https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/e2a06143-ed29-4f1d-9c31-0f06fca67afc/6e45a64f/20250527_resources_standard_guidelines_guideline_04.pdf
+    accessed: '2026-01-18'
+    reliability: 0.800000011920929
+    bias_notes: Government guidance document
+    claims_extracted:
+    - GOV-2026-007
+    analysis_file: ''
+    topics:
+    - japan
+    - ai-governance
+    - regulation
+    domains:
+    - TECH
+    - GOV
+    status: cataloged
+  macro-identity:
+    type: KNOWLEDGE
+    title: Macroeconomic accounting identities (demand = income)
+    author:
+    - Background Knowledge
+    year: 0
+    url: ''
+    accessed: '2026-01-18'
+    reliability: 0.8999999761581421
+    bias_notes: Definitional/accounting identity, not contested
+    claims_extracted:
+    - ECON-2026-011
+    analysis_file: ''
+    topics:
+    - macroeconomics
+    - demand
+    - income
+    domains:
+    - ECON
+    status: cataloged
+  openai-value-intelligence:
+    type: ARTICLE
+    title: A business that scales with the value of intelligence
+    author:
+    - OpenAI
+    year: 0
+    url: https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/
+    accessed: '2026-01-19'
+    reliability: 0.550000011920929
+    bias_notes: Corporate strategy post; likely promotional framing; quantitative/unit-economics
+      implications should be cross-checked against hardware specs and observed pricing
+    claims_extracted:
+    - RESOURCE-2026-004
+    - TECH-2026-013
+    analysis_file: analysis/sources/openai-value-intelligence.md
+    topics:
+    - inference
+    - unit-economics
+    - pricing
+    - gpus
+    - energy
+    - margins
+    domains:
+    - TECH
+    - RESOURCE
+    - ECON
+    status: analyzed
+  perera-2026-china-trade-surplus-collapse-thread:
+    type: SOCIAL
+    title: China trade surplus 'signature of collapse' + Vanke catalyst thread
+    author:
+    - Shanaka Anslem Perera
+    - '@shanaka86'
+    year: 2026
+    url: https://x.com/shanaka86/status/2012787592207667269
+    accessed: '2026-01-20'
+    reliability: 0.3499999940395355
+    bias_notes: Market/macro commentary thread with strong bearish framing; mixes
+      checkable numeric claims with interpretive leaps and near-term catalysts
+    claims_extracted:
+    - TRANS-2026-005
+    - TRANS-2026-006
+    - TRANS-2026-009
+    - TRANS-2026-012
+    - TRANS-2026-013
+    - GOV-2026-020
+    analysis_file: analysis/sources/perera-2026-chinas-trillion-dollar-illusion.md
+    topics:
+    - china
+    - trade-surplus
+    - deflation
+    - property
+    - vanke
+    - macro
+    - demand
+    domains:
+    - GOV
+    - TRANS
+    status: analyzed
+  perera-2026-chinas-trillion-dollar-illusion:
+    type: BLOG
+    title: China’s Trillion-Dollar Illusion
+    author:
+    - Shanaka Anslem Perera
+    year: 2026
+    url: https://shanakaanslemperera.substack.com/p/chinas-trillion-dollar-illusion
+    accessed: '2026-01-20'
+    reliability: 0.44999998807907104
+    bias_notes: Bearish macro thesis framed as falsifiable catalyst trade; includes
+      many checkable statistics but also sweeping historical claims and narrative
+      language
+    claims_extracted:
+    - TRANS-2026-005
+    - TRANS-2026-006
+    - TRANS-2026-007
+    - TRANS-2026-008
+    - TRANS-2026-009
+    - TRANS-2026-010
+    - TRANS-2026-011
+    - TRANS-2026-012
+    - TRANS-2026-013
+    - GOV-2026-020
+    analysis_file: analysis/sources/perera-2026-chinas-trillion-dollar-illusion.md
+    topics:
+    - china
+    - trade-surplus
+    - deflation
+    - property
+    - vanke
+    - macro
+    - demand
+    - recession-risk
+    domains:
+    - GOV
+    - TRANS
+    status: analyzed
+  reuters-rio-tinto-amazon:
+    type: ARTICLE
+    title: Rio Tinto to supply copper to Amazon for AI data centers
+    author:
+    - Reuters
+    year: 2026
+    url: https://www.reuters.com/business/rio-tinto-supply-copper-amazon-ai-data-centers-2026-01-15/
+    accessed: '2026-01-18'
+    reliability: 0.8500000238418579
+    bias_notes: News wire, factual reporting
+    claims_extracted:
+    - RESOURCE-2026-002
+    analysis_file: ''
+    topics:
+    - copper
+    - supply-chain
+    - vertical-integration
+    domains:
+    - TECH
+    - RESOURCE
+    status: cataloged
+  ronacher-2026-agent-psychosis:
+    type: BLOG
+    title: 'Agent Psychosis: Are We Going Insane?'
+    author:
+    - Armin Ronacher
+    year: 2026
+    url: https://lucumr.pocoo.org/2026/1/18/agent-psychosis/
+    accessed: '2026-01-19'
+    reliability: 0.75
+    bias_notes: Maintainer/operator perspective; generally pro-AI but emphasizes negative
+      externalities (review burden, parasocial/addictive dynamics); mixes anecdote
+      with operational observations
+    claims_extracted:
+    - LABOR-2026-007
+    - LABOR-2026-008
+    - LABOR-2026-009
+    - SOC-2026-001
+    - SOC-2026-002
+    - TECH-2026-007
+    - GOV-2026-019
+    analysis_file: analysis/sources/ronacher-2026-agent-psychosis.md
+    topics:
+    - coding-agents
+    - vibe-coding
+    - open-source
+    - maintainers
+    - slop
+    - parasocial
+    - token-costs
+    domains:
+    - TECH
+    - SOC
+    - LABOR
+    status: analyzed
+  situational-awareness:
+    type: REPORT
+    title: 'SITUATIONAL AWARENESS: The Decade Ahead'
+    author:
+    - Leopold Aschenbrenner
+    year: 2024
+    url: https://situational-awareness.ai/
+    accessed: '2026-01-18'
+    reliability: 0.6000000238418579
+    bias_notes: Forward-looking essay series; pro-AI-progress framing; not peer reviewed
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - ai-forecasting
+    - compute
+    - agi
+    - national-security
+    domains:
+    - TECH
+    - RESOURCE
+    - TRANS
+    - GOV
+    status: cataloged
+  standard-economics:
+    type: KNOWLEDGE
+    title: Standard economic theory (factor shares, labor economics)
+    author:
+    - Background Knowledge
+    year: 0
+    url: ''
+    accessed: '2026-01-18'
+    reliability: 0.800000011920929
+    bias_notes: Represents mainstream economic consensus on labor/capital dynamics
+    claims_extracted:
+    - LABOR-2026-001
+    analysis_file: ''
+    topics:
+    - economics
+    - labor
+    - capital
+    domains:
+    - ECON
+    - LABOR
+    status: cataloged
+  teortaxes-2026-greenland-endgame:
+    type: SOCIAL
+    title: Greenland/resource extraction + 'light cone' endgame post
+    author:
+    - '@teortaxesTex'
+    year: 2026
+    url: https://x.com/teortaxesTex/status/2012127205728440495
+    accessed: '2026-01-19'
+    reliability: 0.30000001192092896
+    bias_notes: Provocative framing; 'heavily narrativized'; mixes plausible geopolitics
+      with speculative longtermist motives
+    claims_extracted:
+    - TRANS-2026-001
+    - TRANS-2026-002
+    - GOV-2026-012
+    - GOV-2026-013
+    - GOV-2026-014
+    - GOV-2026-015
+    - RESOURCE-2026-003
+    - LABOR-2026-004
+    analysis_file: analysis/sources/teortaxes-2026-greenland-endgame.md
+    topics:
+    - greenland
+    - resource-extraction
+    - longtermism
+    - light-cone
+    - geopolitics
+    - europe
+    - automation
+    domains:
+    - RESOURCE
+    - TRANS
+    - LABOR
+    - GOV
+    status: analyzed
+  teortaxes-2026-thread:
+    type: SOCIAL
+    title: Post-labor permanent underclass Twitter thread
+    author:
+    - '@teortaxesTex'
+    year: 2026
+    url: ''
+    accessed: '2026-01-18'
+    reliability: 0.4000000059604645
+    bias_notes: Twitter thread, provocative framing, some claims unfalsifiable
+    claims_extracted:
+    - TECH-2026-003
+    - LABOR-2026-002
+    - LABOR-2026-003
+    - ECON-2026-012
+    - ECON-2026-003
+    - GOV-2026-003
+    analysis_file: analysis/syntheses/neofeudalism-discourse-synthesis.md
+    topics:
+    - post-labor
+    - automation
+    - permanent-underclass
+    - timeline
+    domains:
+    - TECH
+    - GOV
+    - ECON
+    - LABOR
+    status: cataloged
+  varoufakis-technofeudalism:
+    type: BOOK
+    title: 'Technofeudalism: What Killed Capitalism'
+    author:
+    - Yanis Varoufakis
+    year: 2024
+    url: https://www.penguinrandomhouse.com/books/751443/technofeudalism-by-yanis-varoufakis/
+    accessed: '2026-01-18'
+    reliability: 0.6499999761581421
+    bias_notes: Heterodox political economy; provocative framing; useful as theory
+      reference
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - technofeudalism
+    - platforms
+    - capitalism
+    - political-economy
+    domains:
+    - ECON
+    - GOV
+    status: cataloged
+  xenoimpulse-2026-thread:
+    type: SOCIAL
+    title: Genocide > UBI nihilistic thread
+    author:
+    - '@Xenoimpulse'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2012723101835145461.html
+    accessed: '2026-01-18'
+    reliability: 0.30000001192092896
+    bias_notes: Extreme nihilistic framing, multiple weak premises
+    claims_extracted:
+    - GOV-2026-002
+    - GOV-2026-008
+    - GOV-2026-009
+    - GOV-2026-010
+    - GOV-2026-011
+    analysis_file: analysis/syntheses/neofeudalism-discourse-synthesis.md
+    topics:
+    - genocide
+    - ubi
+    - coercion
+    - elite-coordination
+    domains:
+    - ECON
+    - GOV
+    status: cataloged
+  yegge-2025-beads:
+    type: DATA
+    title: Beads (GitHub repository)
+    author:
+    - Steve Yegge
+    year: 2025
+    url: https://github.com/steveyegge/beads
+    accessed: '2026-01-19'
+    reliability: 0.8500000238418579
+    bias_notes: Primary artifact (code + docs) for Beads; claims about usage/impact
+      should be corroborated with external evidence
+    claims_extracted:
+    - TECH-2026-008
+    - TECH-2026-011
+    analysis_file: analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md
+    topics:
+    - coding-agents
+    - issue-tracker
+    - git-backed
+    - agent-memory
+    - devtools
+    domains:
+    - TECH
+    - LABOR
+    status: analyzed
+  yegge-2025-beads-best-practices:
+    type: BLOG
+    title: Beads Best Practices
+    author:
+    - Steve Yegge
+    year: 2025
+    url: https://steve-yegge.medium.com/beads-best-practices-2db636b9760c?source=rss-c1ec701babb7------2
+    accessed: '2026-01-19'
+    reliability: 0.5
+    bias_notes: Best-practices writeup from tool author; includes scale and adoption
+      claims that should be independently verified
+    claims_extracted: []
+    analysis_file: analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md
+    topics:
+    - beads
+    - coding-agents
+    - workflows
+    - multi-agent
+    - orchestration
+    - vibe-coding
+    domains:
+    - TECH
+    - TRANS
+    - LABOR
+    status: analyzed
+  yegge-2025-beads-blows-up:
+    type: BLOG
+    title: Beads Blows Up
+    author:
+    - Steve Yegge
+    year: 2025
+    url: https://steve-yegge.medium.com/beads-blows-up-a0a61bb889b4?source=rss-c1ec701babb7------2
+    accessed: '2026-01-19'
+    reliability: 0.5
+    bias_notes: Launch/update post for Beads with architecture notes and adoption
+      anecdotes; contains jokes/hyperbole alongside checkable implementation details
+    claims_extracted:
+    - TECH-2026-011
+    analysis_file: analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md
+    topics:
+    - beads
+    - coding-agents
+    - devtools
+    - workflow
+    - git
+    - sqlite
+    domains:
+    - TECH
+    - LABOR
+    status: analyzed
+  yegge-2025-cheese-wars-rise-vibe-coder:
+    type: BLOG
+    title: 'Cheese Wars: Rise of the Vibe Coder'
+    author:
+    - Steve Yegge
+    year: 2025
+    url: https://steve-yegge.medium.com/cheese-wars-rise-of-the-vibe-coder-6839a6b15982?source=rss-c1ec701babb7------2
+    accessed: '2026-01-19'
+    reliability: 0.44999998807907104
+    bias_notes: Rhetorical essay with broad claims about labor, skill diffusion, and
+      the future of programming; limited empirical grounding
+    claims_extracted:
+    - LABOR-2026-012
+    analysis_file: analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md
+    topics:
+    - vibe-coding
+    - labor
+    - everyone-codes
+    - software-work
+    - junior-devs
+    - monoliths
+    domains:
+    - TECH
+    - SOC
+    - TRANS
+    - LABOR
+    status: analyzed
+  yegge-2025-gastown:
+    type: DATA
+    title: Gas Town (GitHub repository)
+    author:
+    - Steve Yegge
+    year: 2025
+    url: https://github.com/steveyegge/gastown
+    accessed: '2026-01-19'
+    reliability: 0.8500000238418579
+    bias_notes: Primary artifact (code + docs) for Gas Town; fast-moving repository;
+      claims should be anchored to accessed date / commit
+    claims_extracted:
+    - TECH-2026-008
+    - TECH-2026-012
+    analysis_file: analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md
+    topics:
+    - coding-agents
+    - orchestration
+    - multi-agent
+    - devtools
+    domains:
+    - TECH
+    - LABOR
+    status: analyzed
+  yegge-2025-six-new-tips-coding-agents:
+    type: BLOG
+    title: Six New Tips for Better Coding With Agents
+    author:
+    - Steve Yegge
+    year: 2025
+    url: https://steve-yegge.medium.com/six-new-tips-for-better-coding-with-agents-d4e9c86e42a9?source=rss-c1ec701babb7------2
+    accessed: '2026-01-19'
+    reliability: 0.550000011920929
+    bias_notes: Practice-oriented guidance and forecasts from an agentic-devtool author;
+      mixes operational observations with extrapolation
+    claims_extracted:
+    - LABOR-2026-011
+    - ECON-2026-009
+    analysis_file: analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md
+    topics:
+    - coding-agents
+    - vibe-coding
+    - workflow
+    - rewrite
+    - saas
+    - productivity
+    domains:
+    - TECH
+    - ECON
+    - TRANS
+    - LABOR
+    status: analyzed
+  yegge-2025-zero-framework-cognition:
+    type: BLOG
+    title: 'Zero Framework Cognition: A Way to Build Resilient AI Applications'
+    author:
+    - Steve Yegge
+    year: 2025
+    url: https://steve-yegge.medium.com/zero-framework-cognition-a-way-to-build-resilient-ai-applications-56b090ed3e69?source=rss-c1ec701babb7------2
+    accessed: '2026-01-19'
+    reliability: 0.6000000238418579
+    bias_notes: Concrete architectural proposal (ZFC) for AI-enabled apps; still anecdotal
+      but includes specific design principles and examples
+    claims_extracted:
+    - TECH-2026-010
+    analysis_file: analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md
+    topics:
+    - zfc
+    - ai-apps
+    - architecture
+    - guardrails
+    - determinism
+    - orchestration
+    domains:
+    - TECH
+    - GOV
+    status: analyzed
+  yegge-2026-bags-creator-economy:
+    type: BLOG
+    title: BAGS and the Creator Economy
+    author:
+    - Steve Yegge
+    year: 2026
+    url: https://steve-yegge.medium.com/bags-and-the-creator-economy-249b924a621a?source=rss-c1ec701babb7------2
+    accessed: '2026-01-19'
+    reliability: 0.44999998807907104
+    bias_notes: Crypto/creator-economy advocacy mixed with personal anecdotes; direct
+      financial interest disclosed; limited empirical grounding
+    claims_extracted:
+    - ECON-2026-008
+    - ECON-2026-010
+    analysis_file: analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md
+    topics:
+    - creator-economy
+    - crypto
+    - bags
+    - funding
+    - vibe-coding
+    - software-production
+    domains:
+    - TECH
+    - ECON
+    - TRANS
+    - LABOR
+    status: analyzed
+  yegge-2026-future-coding-agents:
+    type: BLOG
+    title: The Future of Coding Agents
+    author:
+    - Steve Yegge
+    year: 2026
+    url: https://steve-yegge.medium.com/the-future-of-coding-agents-e9451a84207c?source=rss-c1ec701babb7------2
+    accessed: '2026-01-19'
+    reliability: 0.550000011920929
+    bias_notes: Forecasting essay from tool author; includes claims about firm-size
+      dynamics and developer productivity that are not empirically grounded
+    claims_extracted:
+    - LABOR-2026-008
+    - LABOR-2026-009
+    - LABOR-2026-010
+    - TECH-2026-007
+    - TECH-2026-009
+    - ECON-2026-008
+    - TRANS-2026-004
+    analysis_file: analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md
+    topics:
+    - coding-agents
+    - orchestration
+    - colonies
+    - developer-productivity
+    - firm-size
+    - merge-problem
+    domains:
+    - TECH
+    - ECON
+    - TRANS
+    - LABOR
+    status: analyzed
+  yegge-2026-gas-town-emergency-user-manual:
+    type: BLOG
+    title: Gas Town Emergency User Manual
+    author:
+    - Steve Yegge
+    year: 2026
+    url: https://steve-yegge.medium.com/gas-town-emergency-user-manual-cf0e4556d74b?source=rss-c1ec701babb7------2
+    accessed: '2026-01-19'
+    reliability: 0.550000011920929
+    bias_notes: Operational guidance from tool author; contains quantitative claims
+      (LOC, PRs) and workflow prescriptions; still promotional and anecdotal
+    claims_extracted:
+    - LABOR-2026-009
+    - LABOR-2026-010
+    - SOC-2026-001
+    analysis_file: analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md
+    topics:
+    - coding-agents
+    - orchestration
+    - workflows
+    - maintainers
+    - slop
+    - reviews
+    - costs
+    domains:
+    - TECH
+    - LABOR
+    status: analyzed
+  yegge-2026-steveys-birthday-blog:
+    type: BLOG
+    title: Stevey’s Birthday Blog
+    author:
+    - Steve Yegge
+    year: 2026
+    url: https://steve-yegge.medium.com/steveys-birthday-blog-34f437139cb5?source=rss-c1ec701babb7------2
+    accessed: '2026-01-19'
+    reliability: 0.44999998807907104
+    bias_notes: Personal update post with embedded claims about AI dev workflows and
+      incentives; anecdotal and perspective-driven
+    claims_extracted:
+    - SOC-2026-003
+    analysis_file: analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md
+    topics:
+    - vibe-coding
+    - coding-agents
+    - incentives
+    - vc
+    - workflow
+    - attention
+    domains:
+    - TECH
+    - SOC
+    - TRANS
+    - LABOR
+    status: analyzed
+  yegge-2026-welcome-gas-town:
+    type: BLOG
+    title: Welcome to Gas Town
+    author:
+    - Steve Yegge
+    year: 2026
+    url: https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04?source=rss-c1ec701babb7------2
+    accessed: '2026-01-19'
+    reliability: 0.550000011920929
+    bias_notes: Author-built tool launch post; highly promotional tone; many claims
+      are experiential/forecast; contains some checkable implementation details and
+      explicit caveats
+    claims_extracted:
+    - LABOR-2026-008
+    - TECH-2026-007
+    - TECH-2026-009
+    - TECH-2026-012
+    analysis_file: analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md
+    topics:
+    - coding-agents
+    - orchestration
+    - vibe-coding
+    - multi-agent
+    - devtools
+    - costs
+    domains:
+    - TECH
+    - TRANS
+    - LABOR
+    status: analyzed
