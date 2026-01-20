@@ -9,7 +9,7 @@
 | claims | 85 |
 | sources | 43 |
 | chains | 3 |
-| predictions | 4 |
+| predictions | 7 |
 | contradictions | 0 |
 | definitions | 0 |
 
@@ -55,4 +55,4 @@
 
 - **CHAIN-2026-001**: Permanent Underclass (credence: 0.30)
 - **CHAIN-2026-002**: Genocide Default (credence: 0.10)
-- **CHAIN-2026-003**: Open Source De-Darkener (credence: 0.60)
+- **CHAIN-2026-003**: Open Source De-Darkener (credence: 0.55)
