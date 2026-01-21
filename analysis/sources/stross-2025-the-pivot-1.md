@@ -81,7 +81,7 @@ Energy systems are foundational: when the cost and logistics of energy shift, ge
 - **Substitution constraints**: Hard-to-electrify sectors (aviation, high-heat industrial processes) may keep fossil demand significant longer than implied.
 - **Mineral geopolitics**: “Post-oil geopolitics” may still be resource geopolitics (lithium, nickel, copper, rare earths), just with different chokepoints.
 - **Institutional adaptation**: States can adapt under pressure; “current rulers don’t remember” may be rhetorically satisfying but too coarse.
-- **AI as general-purpose tech**: The bubble framing may be directionally right on hype, but still wrong on eventual economic importance.
+- **AI as general-purpose tech**: The bubble framing may be directionally right on hype, but still wrong on eventual economic importance. For example, controlled trial evidence suggests large near-term productivity gains from AI coding assistants (`LABOR-2023-001`), and organizational A/B studies report similarly large speedups in real engineering environments (`LABOR-2024-001`). This weakens a “no new growth engines” posture even if capex overshoots and some investment is later written down.
 
 ### Synthesis / working update
 
@@ -93,3 +93,54 @@ Treat the post as a **coherent hypothesis bundle** linking energy transition, cl
 
 - Import file: `analysis/sources/stross-2025-the-pivot-1.yaml`
 
+### Claim Summary
+
+| ID | Type | Domain | Evidence | Credence | Claim |
+|---|---|---|---|---:|---|
+| ECON-2025-001 | [T] | ECON | E5 | 0.30 | Neoliberalism evolved into a model of state hollowing and asset-stripping via outsourcing to private-sector entities... |
+| ECON-2025-002 | [T] | ECON | E4 | 0.40 | Platform capitalism increasingly sells subscription services rather than owned goods, enabling rent extraction by deg... |
+| GEO-2025-001 | [T] | GEO | E5 | 0.35 | The energy transition is producing major political consequences—from bribery and corruption up to open warfare—and po... |
+| RESOURCE-2025-001 | [P] | RESOURCE | E5 | 0.35 | By 2040 at the latest, coal, gas, and oil land rights will be stranded assets that cannot be monetized. |
+| RISK-2025-001 | [T] | RISK | E4 | 0.35 | Humanity has passed the +1.5°C warming threshold, increasing the number of days per year when temperatures are too ho... |
+| RISK-2025-002 | [T] | RISK | E4 | 0.40 | Just-in-time supply chains increased economic efficiency at the expense of resilience, leaving societies without rese... |
+| SOC-2025-001 | [T] | SOC | E5 | 0.35 | A significant share of current social unrest and insecurity-driven radicalization is being caused by the ongoing civi... |
+| TECH-2025-001 | [T] | TECH | E4 | 0.45 | Moore’s Law is effectively ending: compute and storage improvements have been limited for over a decade and now rely... |
+| TECH-2025-002 | [P] | TECH | E5 | 0.35 | The hyperscale AI data center boom resembles a bubble; to the extent LLMs are useful, deployment will shift toward pr... |
+| TRANS-2025-001 | [T] | TRANS | E4 | 0.45 | The current global energy transition away from fossil fuels is “more or less irreversible” at this point. |
+| TRANS-2025-002 | [F] | TRANS | E4 | 0.40 | Solar PV module costs fell from roughly $96/W in the mid-1970s to about $0.62/W by end-2012 and continue to decline. |
+| TRANS-2025-003 | [F] | TRANS | E4 | 0.35 | China installed about 198 GW of solar PV between January and May 2025, including 93 GW coming online in May 2025 alone. |
+| TRANS-2025-004 | [F] | TRANS | E4 | 0.35 | By late summer 2025, renewables supplied more than 50% of the EU’s electricity. |
+| TRANS-2025-005 | [T] | TRANS | E4 | 0.40 | In the post-oil era, energy production will be more widely distributed rather than concentrated in resource-extractio... |
+| TRANS-2025-006 | [H] | TRANS | E4 | 0.35 | Global fossil-fuel energy use has probably already passed peak oil and peak carbon, and is now trending inexorably do... |
+| TRANS-2025-007 | [P] | TRANS | E5 | 0.30 | The forecast boom in small modular nuclear reactors will fizzle as cheap distributed solar PV plus battery storage sc... |
+
+---
+
+## Continuation Notes: AI as possible blind spot
+
+### What changed in this pass
+
+This continuation focuses on the AI portion of the argument bundle. The post mentions AI primarily as a hyperscale data-center boom that resembles a bubble (with eventual migration toward local inference), but does not engage much with the possibility that LLMs are a general-purpose technology with broad productivity effects (especially in software development).
+
+### Why it matters to the thesis
+
+If AI delivers durable productivity gains (even if partially obscured by hype/capex overshoot), it can:
+
+- Provide a new “growth engine” that partially offsets the “post-Moore’s Law” stagnation framing.
+- Change labor-market and institutional stress dynamics (faster automation pressures, faster organizational change).
+- Interact with the energy transition directly (electricity demand, datacenter siting, grid build-out).
+
+### What to test next (sources to add)
+
+- Controlled evidence and/or high-quality observational evidence on AI-assisted software development productivity and adoption.
+- Evidence on training/inference cost curves and whether capex build-out is plausibly transient vs durable infrastructure.
+- Evidence on broader “general-purpose” effects outside coding (customer support, writing, analysis workflows).
+
+### Evidence added in this pass
+
+- `peng-2023-copilot-productivity` reports a controlled experiment where GitHub Copilot access reduced time-to-complete a programming task by 55.8% (`LABOR-2023-001`) and reports heterogeneous effects (`LABOR-2023-002`). This is direct evidence that “AI for code” can be a real productivity technology (not merely hype), while remaining compatible with the possibility that hyperscale capex can still have bubble dynamics.
+- `chatterjee-2024-anz-copilot-study` reports an organizational A/B evaluation at ANZ Bank finding Copilot users completed coding challenges ~42.36% faster on average (`LABOR-2024-001`), with mixed/inconclusive evidence on quality/security in the same study (`LABOR-2024-002`).
+
+### Working update
+
+Treat “bubble” vs “steam-engine-scale general-purpose tech” as competing framings that are not mutually exclusive: early bubbles can coexist with real long-run impact. The critical question is whether current AI systems generate durable, generalizable productivity gains at scale, and whether those gains are large enough to change Stross’s macro “no new growth engines” posture.

@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 115 |
-| **Sources** | 48 |
+| **Claims** | 131 |
+| **Sources** | 51 |
 | **Argument Chains** | 3 |
-| **Predictions Tracked** | 12 |
+| **Predictions Tracked** | 13 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -21,6 +21,9 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-21 | [Rogan & Musk "JRE #2404 — Elon Musk"](analysis/sources/jre-2404-elon-musk-2025-ai-woke-mind-virus.md) | `[REVIEWED]` | Transcript excerpt: truth-seeking alignment, Gemini ImageGen controversy, and objective mis-specification risks |
+| 2026-01-21 | [Chatterjee et al. "ANZ Copilot Study"](analysis/sources/chatterjee-2024-anz-copilot-study.md) | `[REVIEWED]` | ANZ A/B study: Copilot group completes coding challenges ~42.36% faster |
+| 2026-01-21 | [Peng et al. "GitHub Copilot Productivity"](analysis/sources/peng-2023-copilot-productivity.md) | `[REVIEWED]` | Controlled trial: Copilot users complete a coding task ~55.8% faster |
 | 2026-01-21 | [Stross "The pivot" (Part 1)](analysis/sources/stross-2025-the-pivot-1.md) | `[REVIEWED]` | 2025 inflection-point thesis: energy transition + climate/food risk + post-Moore’s Law tech/finance |
 | 2026-01-21 | [Carney "Middle Powers & Rupture"](analysis/sources/carney-2026-davos-wef-speech.md) | `[REVIEWED]` | WEF Davos speech on coalition strategy vs. great power coercion |
 | 2026-01-18 | [Doctorow "Reverse Centaur"](analysis/sources/doctorow-2026-reverse-centaur.md) | `[REVIEWED]` | AI bubble critique + "reverse centaur" deployment patterns |
@@ -51,16 +54,16 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 15 |
-| LABOR | Labor & Employment | 12 |
+| TECH | Technology & AI | 22 |
+| LABOR | Labor & Employment | 16 |
 | ECON | Economics & Markets | 16 |
 | GOV | Governance & Policy | 32 |
-| SOC | Social Dynamics | 4 |
+| SOC | Social Dynamics | 5 |
 | TRANS | Transition Dynamics | 20 |
 | RESOURCE | Resource Constraints | 5 |
 | GEO | Geopolitics | 1 |
-| INST | Institutions & Organizations | 0 |
-| RISK | Risk Assessment | 2 |
+| INST | Institutions & Organizations | 1 |
+| RISK | Risk Assessment | 5 |
 | META | Framework & Methodology | 8 |
 
 ---

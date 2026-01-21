@@ -1,0 +1,68 @@
+sources:
+  - id: "chatterjee-2024-anz-copilot-study"
+    type: "PAPER"
+    title: "The Impact of AI Tool on Engineering at ANZ Bank: An Empirical Study on GitHub Copilot within Corporate Environment"
+    author:
+      - "Sayan Chatterjee"
+      - "Ching Louis Liu"
+      - "Gareth Rowland"
+      - "Tim Hogarth"
+    year: 2024
+    url: "https://arxiv.org/abs/2402.05636v2"
+    accessed: "2026-01-21"
+    status: "analyzed"
+    analysis_file: "analysis/sources/chatterjee-2024-anz-copilot-study.md"
+    reliability: 0.70
+    bias_notes: >-
+      Organizational case study and experiment authored by ANZ employees; potential positive
+      framing and selection effects; nevertheless includes measured outcomes and statistical
+      testing claims for productivity/quality/security metrics.
+    topics:
+      - ai
+      - software engineering
+      - github copilot
+      - productivity
+      - code quality
+      - security
+      - corporate adoption
+    domains:
+      - LABOR
+      - TECH
+    claims_extracted:
+      - LABOR-2024-001
+      - LABOR-2024-002
+
+claims:
+  - id: "LABOR-2024-001"
+    text: >-
+      In ANZ Bank’s Copilot experiment, the Copilot group completed the coding challenges
+      about 42.36% faster on average than the control group (based on mean time spent per
+      problem).
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["chatterjee-2024-anz-copilot-study"]
+    operationalization: >-
+      Replicate A/B evaluations across organizations and task suites; use pre-registered
+      metrics and compare time-to-completion and downstream quality outcomes.
+    falsifiers:
+      - Re-analysis finds calculation/selection errors that invalidate the reported speedup.
+      - Replications in comparable settings show no meaningful time reduction.
+
+  - id: "LABOR-2024-002"
+    text: >-
+      In ANZ Bank’s Copilot experiment, Copilot-group solutions had about a 12.86% higher
+      unit test success ratio than control-group solutions, but the difference was not
+      statistically significant.
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E2"
+    credence: 0.70
+    source_ids: ["chatterjee-2024-anz-copilot-study"]
+    operationalization: >-
+      Compare defect/quality metrics (unit tests, static analysis, review outcomes) under
+      controlled conditions with sufficient sample sizes to detect moderate effects.
+    falsifiers:
+      - Re-analysis finds the unit-test result is incorrect or reverses direction.
+      - Replications consistently show no difference or worse quality for Copilot-assisted code.
