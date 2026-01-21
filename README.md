@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 85 |
-| **Sources** | 43 |
+| **Claims** | 99 |
+| **Sources** | 46 |
 | **Argument Chains** | 3 |
-| **Predictions Tracked** | 4 |
+| **Predictions Tracked** | 9 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -45,9 +45,19 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 ---
 
-## Key Finding
+## Claim Domains
 
-> **Bottleneck control (compute, energy, chips), not model access, determines outcomes.** The "permanent underclass" thesis has weak links (assumes no redistribution); open-source diffusion is already eroding cognitive monopoly claims.
+| Domain | Description | Claims |
+|--------|-------------|--------|
+| TECH | Technology & AI | 13 |
+| LABOR | Labor & Employment | 12 |
+| ECON | Economics & Markets | 14 |
+| GOV | Governance & Policy | 32 |
+| SOC | Social Dynamics | 3 |
+| TRANS | Transition Dynamics | 13 |
+| RESOURCE | Resource Constraints | 4 |
+| GEO | Geopolitics | 0 |
+| META | Framework & Methodology | 8 |
 
 ---
 
@@ -135,21 +145,6 @@ uv run python scripts/export.py yaml claims -o claims/registry.yaml
 # Export summary to Markdown
 uv run python scripts/export.py md summary -o claims/README.md
 ```
-
----
-
-## Claim Domains
-
-| Domain | Description | Claims |
-|--------|-------------|--------|
-| TECH | Technology & AI | 13 |
-| LABOR | Labor & Employment | 12 |
-| ECON | Economics & Markets | 12 |
-| GOV | Governance & Policy | 20 |
-| SOC | Social Dynamics | 3 |
-| TRANS | Transition Dynamics | 13 |
-| RESOURCE | Resource Constraints | 4 |
-| META | Framework & Methodology | 8 |
 
 ---
 
