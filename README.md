@@ -59,6 +59,8 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TRANS | Transition Dynamics | 20 |
 | RESOURCE | Resource Constraints | 5 |
 | GEO | Geopolitics | 1 |
+| INST | Institutions & Organizations | 0 |
+| RISK | Risk Assessment | 2 |
 | META | Framework & Methodology | 8 |
 
 ---

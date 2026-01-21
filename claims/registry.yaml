@@ -1,18 +1,58 @@
 # Claim Registry
 # Exported from LanceDB on 2026-01-21
-# Total claims: 85
+# Total claims: 115
 # Total chains: 3
 
 counters:
   TECH: 13
   RESOURCE: 4
   LABOR: 12
-  ECON: 12
-  GOV: 20
+  ECON: 14
+  GOV: 32
   SOC: 3
   TRANS: 13
   META: 8
+  GEO: 1
+  RISK: 2
 claims:
+  ECON-2025-001:
+    text: Neoliberalism evolved into a model of state hollowing and asset-stripping
+      via outsourcing to private-sector entities owned by elites, and today’s ruling
+      elites lack the institutional memory to adapt to major change.
+    type: '[T]'
+    domain: ECON
+    evidence_level: E5
+    confidence: 0.30000001192092896
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  ECON-2025-002:
+    text: Platform capitalism increasingly sells subscription services rather than
+      owned goods, enabling rent extraction by degrading quality and raising prices
+      (“enshittification”).
+    type: '[T]'
+    domain: ECON
+    evidence_level: E4
+    confidence: 0.4000000059604645
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
   ECON-2026-001:
     text: Compute + energy + chips becoming primary chokepoints for economic power
     type: '[T]'
@@ -259,6 +299,65 @@ claims:
     last_updated: '2026-01-18'
     notes: Weakest-link assumption in the permanent underclass chain; collapses if
       dividends/transfers/public provision scale
+  ECON-2026-013:
+    text: A world of individual fortress-building (strategic autonomy pursued separately)
+      will be poorer, more fragile, and less sustainable than collective resilience
+      investment
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    confidence: 0.6000000238418579
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  ECON-2026-014:
+    text: Bridging the Trans-Pacific Partnership and European Union would create a
+      new trading bloc of 1.5 billion people
+    type: '[F]'
+    domain: ECON
+    evidence_level: E4
+    confidence: 0.8999999761581421
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-21'
+    notes: 'QUESTIONABLE: Math check - EU (~447M) + CPTPP (~500M) = ~950M, not 1.5B.
+      Either claim includes future expansion or uses different bloc composition. Needs
+      clarification on what constitutes the ''bridged'' bloc.'
+  GEO-2025-001:
+    text: The energy transition is producing major political consequences—from bribery
+      and corruption up to open warfare—and post-oil geopolitics will differ substantially
+      from the oil-centric post-1945 era.
+    type: '[T]'
+    domain: GEO
+    evidence_level: E5
+    confidence: 0.3499999940395355
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
   GOV-2026-001:
     text: Property rights will become arbitrary/confiscatable in neofeudal regime
     type: '[H]'
@@ -652,6 +751,245 @@ claims:
     last_updated: '2026-01-20'
     notes: Exact quoted language not independently verified in this repo; treated
       as a hypothesis pending primary-source confirmation
+  GOV-2026-021:
+    text: The international system is experiencing a structural rupture, not a gradual
+      transition, in the rules-based order
+    type: '[T]'
+    domain: GOV
+    evidence_level: E5
+    confidence: 0.550000011920929
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-21'
+    notes: 'SUPPORTED: Greenland crisis provides empirical evidence - US listed by
+      Danish intelligence as national security threat for first time alongside Russia/China.
+      Wikipedia sources corroborate ''rupture'' thesis.'
+  GOV-2026-022:
+    text: Great powers are systematically using economic integration as weapons of
+      coercion through tariffs, financial infrastructure, and supply chain manipulation
+    type: '[T]'
+    domain: GOV
+    evidence_level: E4
+    confidence: 0.75
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-21'
+    notes: 'SUPPORTED: Greenland crisis demonstrates US using tariff threats as leverage
+      against allies; trade war with EU triggered January 2026. Wikipedia sources
+      support economic coercion thesis.'
+  GOV-2026-023:
+    text: Middle powers negotiating bilaterally with hegemons necessarily negotiate
+      from a position of weakness and accept subordination
+    type: '[T]'
+    domain: GOV
+    evidence_level: E5
+    confidence: 0.6499999761581421
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  GOV-2026-024:
+    text: Middle power coalitions can create meaningful counterweight to great power
+      dominance through collective action
+    type: '[H]'
+    domain: GOV
+    evidence_level: E5
+    confidence: 0.4000000059604645
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  GOV-2026-025:
+    text: Hegemons cannot continually monetize their relationships without allies
+      diversifying to reduce vulnerability
+    type: '[T]'
+    domain: GOV
+    evidence_level: E4
+    confidence: 0.699999988079071
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  GOV-2026-026:
+    text: Canada is doubling its defence spending by the end of this decade (by ~2030)
+    type: '[P]'
+    domain: GOV
+    evidence_level: E4
+    confidence: 0.550000011920929
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-21'
+    notes: 'PARTIALLY VERIFIED: Wikipedia confirms ''sharp increase in defence spending''
+      announced by Carney government. Specific ''doubling by end of decade'' target
+      not verified - needs Canadian budget source.'
+  GOV-2026-027:
+    text: The post-WWII rules-based international order is not returning to its previous
+      form
+    type: '[P]'
+    domain: GOV
+    evidence_level: E5
+    confidence: 0.699999988079071
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  GOV-2026-028:
+    text: Canada has signed 12 trade and security deals across four continents in
+      six months (as of January 2026)
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    confidence: 0.8500000238418579
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-21'
+    notes: 'UNVERIFIED: Could not find enumeration of 12 specific trade/security deals.
+      Wikipedia confirms active diplomacy but no specific count. Needs official Canadian
+      government press releases to verify.'
+  GOV-2026-029:
+    text: Canada has concluded new strategic partnerships with China and Qatar (as
+      of January 2026)
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    confidence: 0.8500000238418579
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-21'
+    notes: 'PARTIALLY VERIFIED: Wikipedia confirms Carney government ''oversaw improvement
+      in relations with China'' but specific ''strategic partnership'' details not
+      found. Needs official Canadian government source.'
+  GOV-2026-030:
+    text: Canada strongly opposes tariffs related to Greenland and calls for focused
+      talks on Arctic security and prosperity
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    confidence: 0.949999988079071
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-21'
+    notes: 'VERIFIED: Wikipedia Greenland crisis confirms Canada opposition to US
+      tariffs related to Greenland; Canada listed as supporting party in Operation
+      Arctic Endurance coalition. See wikipedia-greenland-crisis.'
+  GOV-2026-031:
+    text: Canada firmly supports Greenland and Denmark's unique right to determine
+      Greenland's future and opposes US threats regarding Greenland
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    confidence: 0.949999988079071
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-21'
+    notes: 'VERIFIED: Wikipedia confirms Denmark and Greenland reject US takeover;
+      85% Greenlanders oppose; Danish govt confirms troops would defend territory;
+      Article 5 invocation discussed. See wikipedia-greenland-crisis.'
+  GOV-2026-032:
+    text: Canada has agreed a comprehensive strategic partnership with the EU including
+      joining SAFE (European defence procurement arrangements)
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    confidence: 0.8500000238418579
+    source_ids:
+    - carney-2026-davos-wef-speech
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-21'
+    notes: 'UNVERIFIED: No Wikipedia article exists for EU SAFE programme. May be
+      too recent for coverage. Needs EU Commission or Canadian government source to
+      verify participation in European defence procurement.'
   LABOR-2026-001:
     text: If AI substitutes human labor in most tasks, wages fall and capital share
       rises
@@ -1061,6 +1399,24 @@ claims:
     last_updated: '2026-01-19'
     notes: Specific template improvement proposed by GPT; would add empirical anchoring
       to claim tables
+  RESOURCE-2025-001:
+    text: By 2040 at the latest, coal, gas, and oil land rights will be stranded assets
+      that cannot be monetized.
+    type: '[P]'
+    domain: RESOURCE
+    evidence_level: E5
+    confidence: 0.3499999940395355
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
   RESOURCE-2026-001:
     text: 'Data center electricity demand: 460 TWh (2024) → 1,000+ TWh (2030) → 1,300
       TWh (2035)'
@@ -1140,6 +1496,61 @@ claims:
     notes: Assumes 0.7kW IT power, PUE ~1.2, electricity ~$0.06/kWh, GPU price ~$20k-$40k,
       depreciation 3-5y, utilization 70-90%; excludes server/networking/facilities
       opex
+  RISK-2025-001:
+    text: Humanity has passed the +1.5°C warming threshold, increasing the number
+      of days per year when temperatures are too hot for normal photosynthesis.
+    type: '[T]'
+    domain: RISK
+    evidence_level: E4
+    confidence: 0.3499999940395355
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  RISK-2025-002:
+    text: Just-in-time supply chains increased economic efficiency at the expense
+      of resilience, leaving societies without reserves to withstand prolonged global
+      agricultural shocks.
+    type: '[T]'
+    domain: RISK
+    evidence_level: E4
+    confidence: 0.4000000059604645
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  SOC-2025-001:
+    text: A significant share of current social unrest and insecurity-driven radicalization
+      is being caused by the ongoing civilizational energy transition.
+    type: '[T]'
+    domain: SOC
+    evidence_level: E5
+    confidence: 0.3499999940395355
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
   SOC-2026-001:
     text: Heavy agentic-coding use can foster addictive/parasocial dynamics that impair
       judgment and reinforce unhealthy behavior
@@ -1197,6 +1608,44 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-19'
+  TECH-2025-001:
+    text: 'Moore’s Law is effectively ending: compute and storage improvements have
+      been limited for over a decade and now rely mainly on parallelism rather than
+      large single-thread gains.'
+    type: '[T]'
+    domain: TECH
+    evidence_level: E4
+    confidence: 0.44999998807907104
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TECH-2025-002:
+    text: The hyperscale AI data center boom resembles a bubble; to the extent LLMs
+      are useful, deployment will shift toward pre-trained models running on local
+      hardware.
+    type: '[P]'
+    domain: TECH
+    evidence_level: E5
+    confidence: 0.3499999940395355
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
   TECH-2026-001:
     text: Frontier AI training costs grow 2-3x annually
     type: '[F]'
@@ -1469,6 +1918,132 @@ claims:
     notes: 'Back-of-envelope: at 0.7kW IT power, $1.20/kWh ≈ $0.84/GPU-hour; typical
       3y depreciation implies capex alone can exceed this unless GPU effective price
       is low or utilization/depreciation is favorable'
+  TRANS-2025-001:
+    text: The current global energy transition away from fossil fuels is “more or
+      less irreversible” at this point.
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E4
+    confidence: 0.44999998807907104
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TRANS-2025-002:
+    text: Solar PV module costs fell from roughly $96/W in the mid-1970s to about
+      $0.62/W by end-2012 and continue to decline.
+    type: '[F]'
+    domain: TRANS
+    evidence_level: E4
+    confidence: 0.4000000059604645
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TRANS-2025-003:
+    text: China installed about 198 GW of solar PV between January and May 2025, including
+      93 GW coming online in May 2025 alone.
+    type: '[F]'
+    domain: TRANS
+    evidence_level: E4
+    confidence: 0.3499999940395355
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TRANS-2025-004:
+    text: By late summer 2025, renewables supplied more than 50% of the EU’s electricity.
+    type: '[F]'
+    domain: TRANS
+    evidence_level: E4
+    confidence: 0.3499999940395355
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TRANS-2025-005:
+    text: In the post-oil era, energy production will be more widely distributed rather
+      than concentrated in resource-extraction economies and centralized power stations.
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E4
+    confidence: 0.4000000059604645
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TRANS-2025-006:
+    text: Global fossil-fuel energy use has probably already passed peak oil and peak
+      carbon, and is now trending inexorably downward (voluntarily into net-zero/renewables
+      or involuntarily into catastrophe).
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E4
+    confidence: 0.3499999940395355
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TRANS-2025-007:
+    text: The forecast boom in small modular nuclear reactors will fizzle as cheap
+      distributed solar PV plus battery storage scales.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    confidence: 0.30000001192092896
+    source_ids:
+    - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
   TRANS-2026-001:
     text: A 'light-cone' framing treats geopolitics as competition for energy and
       matter ('joules and atoms') to seed a spacefaring civilization
@@ -1749,7 +2324,7 @@ chains:
   CHAIN-2026-003:
     name: Open Source De-Darkener
     thesis: Open model diffusion shifts power struggle from cognition to infrastructure
-    confidence: 0.6000000238418579
+    confidence: 0.550000011920929
     claims:
     - TECH-2026-004
     - ECON-2026-005

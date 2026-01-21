@@ -1,6 +1,6 @@
 # Source Registry
 # Exported from LanceDB on 2026-01-21
-# Total sources: 43
+# Total sources: 48
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -71,6 +71,43 @@ sources:
     - TECH
     - SOC
     status: cataloged
+  carney-2026-davos-wef-speech:
+    type: INTERVIEW
+    title: 'Mark Carney WEF Davos 2026 Speech: Middle Powers and the Rupture in Global
+      Order'
+    author:
+    - Mark Carney
+    year: 2026
+    url: https://www.cbc.ca/news/politics/mark-carney-speech-davos-rules-based-order-9.7053350
+    accessed: '2026-01-21'
+    reliability: 0.5
+    bias_notes: ''
+    claims_extracted:
+    - ECON-2026-013
+    - ECON-2026-014
+    - GOV-2026-021
+    - GOV-2026-022
+    - GOV-2026-023
+    - GOV-2026-024
+    - GOV-2026-025
+    - GOV-2026-026
+    - GOV-2026-027
+    - GOV-2026-028
+    - GOV-2026-029
+    - GOV-2026-030
+    - GOV-2026-031
+    - GOV-2026-032
+    analysis_file: analysis/sources/carney-2026-davos-wef-speech.md
+    topics:
+    - middle powers
+    - international relations
+    - coalition building
+    - economic coercion
+    - Canada foreign policy
+    domains:
+    - GOV
+    - ECON
+    status: analyzed
   chm-alexnet:
     type: ARTICLE
     title: CHM Releases AlexNet Source Code
@@ -673,6 +710,54 @@ sources:
     - ECON
     - LABOR
     status: cataloged
+  stross-2025-the-pivot-1:
+    type: BLOG
+    title: The pivot (Part 1)
+    author:
+    - Charlie Stross
+    year: 2025
+    url: https://www.antipope.org/charlie/blog-static/2025/10/the-pivot-1.html
+    accessed: '2026-01-21'
+    reliability: 0.55
+    bias_notes: Author is a science fiction writer offering a synthetic political-economy
+      narrative; strong rhetorical tone and broad causal claims; some quantitative
+      anchors are linked but not independently verified in this pass.
+    claims_extracted:
+    - SOC-2025-001
+    - TRANS-2025-001
+    - TRANS-2025-002
+    - TRANS-2025-003
+    - TRANS-2025-004
+    - TRANS-2025-005
+    - TRANS-2025-006
+    - TRANS-2025-007
+    - RESOURCE-2025-001
+    - GEO-2025-001
+    - RISK-2025-001
+    - RISK-2025-002
+    - TECH-2025-001
+    - TECH-2025-002
+    - ECON-2025-001
+    - ECON-2025-002
+    analysis_file: analysis/sources/stross-2025-the-pivot-1.md
+    topics:
+    - energy transition
+    - photovoltaics
+    - climate risk
+    - agriculture
+    - supply chains
+    - moores law
+    - ai
+    - political economy
+    domains:
+    - TRANS
+    - SOC
+    - ECON
+    - TECH
+    - GEO
+    - RISK
+    - RESOURCE
+    status: analyzed
   teortaxes-2026-greenland-endgame:
     type: SOCIAL
     title: Greenland/resource extraction + 'light cone' endgame post
@@ -758,6 +843,51 @@ sources:
     domains:
     - ECON
     - GOV
+    status: cataloged
+  wikipedia-greenland-crisis:
+    type: KNOWLEDGE
+    title: Greenland crisis - Wikipedia
+    author:
+    - Wikipedia contributors
+    year: 2026
+    url: https://en.wikipedia.org/wiki/Greenland_crisis
+    accessed: '2026-01-21'
+    reliability: 0.5
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: ''
+    topics: []
+    domains: []
+    status: cataloged
+  wikipedia-mark-carney:
+    type: KNOWLEDGE
+    title: Mark Carney - Wikipedia
+    author:
+    - Wikipedia contributors
+    year: 2026
+    url: https://en.wikipedia.org/wiki/Mark_Carney
+    accessed: '2026-01-21'
+    reliability: 0.5
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: ''
+    topics: []
+    domains: []
+    status: cataloged
+  wikipedia-premiership-carney:
+    type: KNOWLEDGE
+    title: Premiership of Mark Carney - Wikipedia
+    author:
+    - Wikipedia contributors
+    year: 2026
+    url: https://en.wikipedia.org/wiki/Premiership_of_Mark_Carney
+    accessed: '2026-01-21'
+    reliability: 0.5
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: ''
+    topics: []
+    domains: []
     status: cataloged
   xenoimpulse-2026-thread:
     type: SOCIAL

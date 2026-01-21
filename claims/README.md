@@ -6,10 +6,10 @@
 
 | Table | Count |
 |-------|-------|
-| claims | 85 |
-| sources | 43 |
+| claims | 115 |
+| sources | 48 |
 | chains | 3 |
-| predictions | 7 |
+| predictions | 12 |
 | contradictions | 0 |
 | definitions | 0 |
 
@@ -17,36 +17,39 @@
 
 | Domain | Count |
 |--------|-------|
-| ECON | 12 |
-| GOV | 20 |
+| ECON | 16 |
+| GEO | 1 |
+| GOV | 32 |
 | LABOR | 12 |
 | META | 8 |
-| RESOURCE | 4 |
-| SOC | 3 |
-| TECH | 13 |
-| TRANS | 13 |
+| RESOURCE | 5 |
+| RISK | 2 |
+| SOC | 4 |
+| TECH | 15 |
+| TRANS | 20 |
 
 ## Claims by Type
 
 | Type | Count |
 |------|-------|
 | [A] | 1 |
-| [F] | 23 |
-| [H] | 30 |
-| [P] | 7 |
+| [F] | 32 |
+| [H] | 33 |
+| [P] | 12 |
 | [S] | 2 |
-| [T] | 22 |
+| [T] | 35 |
 
 ## Sources by Type
 
 | Type | Count |
 |------|-------|
 | ARTICLE | 5 |
-| BLOG | 14 |
+| BLOG | 15 |
 | BOOK | 1 |
 | CONVO | 5 |
 | DATA | 2 |
-| KNOWLEDGE | 3 |
+| INTERVIEW | 1 |
+| KNOWLEDGE | 6 |
 | PAPER | 3 |
 | REPORT | 6 |
 | SOCIAL | 4 |
