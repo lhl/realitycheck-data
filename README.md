@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 99 |
-| **Sources** | 44 |
+| **Claims** | 115 |
+| **Sources** | 48 |
 | **Argument Chains** | 3 |
-| **Predictions Tracked** | 9 |
+| **Predictions Tracked** | 12 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -50,14 +50,14 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 13 |
+| TECH | Technology & AI | 15 |
 | LABOR | Labor & Employment | 12 |
-| ECON | Economics & Markets | 14 |
+| ECON | Economics & Markets | 16 |
 | GOV | Governance & Policy | 32 |
-| SOC | Social Dynamics | 3 |
-| TRANS | Transition Dynamics | 13 |
-| RESOURCE | Resource Constraints | 4 |
-| GEO | Geopolitics | 0 |
+| SOC | Social Dynamics | 4 |
+| TRANS | Transition Dynamics | 20 |
+| RESOURCE | Resource Constraints | 5 |
+| GEO | Geopolitics | 1 |
 | META | Framework & Methodology | 8 |
 
 ---
