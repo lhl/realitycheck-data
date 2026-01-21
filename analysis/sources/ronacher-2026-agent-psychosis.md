@@ -21,8 +21,8 @@ Ronacher argues that “agentic coding” can induce a dopamine-driven, parasoci
 | # | Claim | Claim ID | Type | Domain | Evid | Conf | Verified? | Falsifiable By |
 |---|-------|----------|------|--------|------|------|-----------|----------------|
 | 1 | Cheap-to-generate AI-assisted issues/PRs create a harsh review asymmetry (minutes to produce vs much longer to evaluate), increasing maintainer burden and rejection/conflict | LABOR-2026-007 | [T] | LABOR | E4 | 0.60 | ? | Evidence that typical AI-assisted contributions (net of quality gating) reduce maintainer review time per accepted change and reduce maintainer burnout/conflict |
-| 2 | Heavy use of agentic coding tools can foster addictive/parasocial dynamics (“dæmon” framing) that impair judgment and reinforce unhealthy behavior in communities | SOCIAL-2026-001 | [H] | SOCIAL | E4 | 0.45 | ? | Controlled/observational studies showing agentic-coding use does not increase addictive/parasocial indicators vs comparable dev tooling |
-| 3 | Prompting styles that minimize critical thinking (forcing agents down narrow paths, ritualized prompting) tend to produce lower-quality and more incoherent code contributions | SOCIAL-2026-002 | [H] | SOCIAL | E4 | 0.50 | ? | Evidence that low-scrutiny prompting styles produce equal-or-better long-run code quality and fewer integration defects than high-scrutiny workflows |
+| 2 | Heavy use of agentic coding tools can foster addictive/parasocial dynamics (“dæmon” framing) that impair judgment and reinforce unhealthy behavior in communities | SOC-2026-001 | [H] | SOC | E4 | 0.45 | ? | Controlled/observational studies showing agentic-coding use does not increase addictive/parasocial indicators vs comparable dev tooling |
+| 3 | Prompting styles that minimize critical thinking (forcing agents down narrow paths, ritualized prompting) tend to produce lower-quality and more incoherent code contributions | SOC-2026-002 | [H] | SOC | E4 | 0.50 | ? | Evidence that low-scrutiny prompting styles produce equal-or-better long-run code quality and fewer integration defects than high-scrutiny workflows |
 | 4 | “Slop loop” agent workflows can become economically wasteful (high token burn), and current token pricing may not be durable | TECH-2026-007 | [H] | TECH | E4 | 0.50 | ? | Evidence that typical agentic workflows remain cost-effective (or token prices fall sufficiently) such that token burn does not constrain adoption |
 | 5 | Community/project governance will adapt by increasing friction (rejecting “AI slop,” requiring prompts, gating contributions), shifting norms around what counts as a contribution | GOV-2026-019 | [H] | GOV | E4 | 0.55 | ? | Evidence that most projects maintain open contribution policies without increasing friction while maintaining review quality under widespread agentic use |
 | 6 | AI agents are simultaneously a large productivity boost and “slop machines” if oversight is relaxed; outcomes depend on supervision, context, and quality gates | LABOR-2026-008 | [T] | LABOR | E4 | 0.65 | ? | Evidence that relaxed-supervision agentic coding reliably produces production-grade changes with low defect rates and low review burden across domains |
@@ -68,7 +68,7 @@ The argument is coherent as an externality story: reduced marginal cost of gener
 | Claim | Counterevidence Found | Alternative Explanation | Search Notes |
 |-------|----------------------|------------------------|--------------|
 | LABOR-2026-007 (review asymmetry / maintainer burden) | Limited; largely anecdotal discourse (this source; maintainers on social) | Maintainership burden rising regardless (more users, more dependencies) and AI just increases visibility/volume | Looked for high-quality empirical studies on “AI-generated PR review time” but did not find a clean, replicated measurement quickly |
-| SOCIAL-2026-001 (addiction/parasocial dynamics) | Direct evidence not reviewed here | “Parasocial” framing may be confounded by general online community dynamics; tools are one catalyst among many | Focused on quickly identifying whether the claim is clinically anchored; it is not—best treated as hypothesis requiring measurement |
+| SOC-2026-001 (addiction/parasocial dynamics) | Direct evidence not reviewed here | “Parasocial” framing may be confounded by general online community dynamics; tools are one catalyst among many | Focused on quickly identifying whether the claim is clinically anchored; it is not—best treated as hypothesis requiring measurement |
 
 ### Internal Tensions / Self-Contradictions
 | Tension | Parts in Conflict | Implication |
@@ -125,11 +125,10 @@ Ronacher’s core contribution is reframing “vibe coding” as a social-econom
 
 ### Claims to Cross-Reference
 - Measure review-time distributions and acceptance rates for AI-assisted PRs (tests LABOR-2026-007).
-- Behavioral research on parasocial/addictive patterns in long-context tool use (tests SOCIAL-2026-001).
+- Behavioral research on parasocial/addictive patterns in long-context tool use (tests SOC-2026-001).
 - Compare projects with strict CI/QA gates vs permissive ones under agentic contribution volume (tests GOV-2026-019).
 
 ---
 **Analysis Date**: 2026-01-19
 **Analyst**: gpt-5.2
 **Confidence in Analysis**: 0.70
-

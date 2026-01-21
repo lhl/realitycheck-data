@@ -70,4 +70,4 @@ Treat this as strong evidence of *task-level* productivity impact for AI coding 
 
 ## Extracted Claims
 
-- Import file: `analysis/sources/peng-2023-copilot-productivity.yaml`
+- Import file: [`analysis/sources/peng-2023-copilot-productivity.yaml`](peng-2023-copilot-productivity.yaml)

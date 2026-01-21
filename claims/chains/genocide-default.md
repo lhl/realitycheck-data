@@ -194,7 +194,7 @@ Instead of genocide, more plausible bad outcomes:
 | GOV-2026-004 | Buying stability cheaper than enforcing it | Undermines genocide-as-rational premise |
 | GOV-2026-005 | Inter-elite competition prevents unified coalition | Breaks coordination requirement |
 | GOV-2026-006 | Multipolarity reduces single-coalition doom | Diverse outcomes, not unified extermination |
-| VALUE-2026-001 | Redistribution required or consumption collapses | Economic pressure toward inclusion |
+| ECON-2026-011 | Redistribution required or consumption collapses | Economic pressure toward inclusion |
 
 ---
 

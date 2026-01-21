@@ -1,6 +1,6 @@
 # Claim Registry
-# Exported from LanceDB on 2026-01-21
-# Total claims: 115
+# Exported from LanceDB on 2026-01-22
+# Total claims: 131
 # Total chains: 3
 
 counters:
@@ -13,7 +13,8 @@ counters:
   TRANS: 13
   META: 8
   GEO: 1
-  RISK: 2
+  RISK: 5
+  INST: 1
 claims:
   ECON-2025-001:
     text: Neoliberalism evolved into a model of state hollowing and asset-stripping
@@ -990,6 +991,102 @@ claims:
     notes: 'UNVERIFIED: No Wikipedia article exists for EU SAFE programme. May be
       too recent for coverage. Needs EU Commission or Canadian government source to
       verify participation in European defence procurement.'
+  INST-2025-001:
+    text: At Google, a team other than the core Gemini/DeepMind builders modified
+      the system’s behavior in ways that produced historically inaccurate “diversity
+      enforced” outputs.
+    type: '[F]'
+    domain: INST
+    evidence_level: E6
+    confidence: 0.20000000298023224
+    source_ids:
+    - jre-2404-elon-musk-2025-ai-woke-mind-virus
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on:
+    - TECH-2025-004
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  LABOR-2023-001:
+    text: 'In a controlled experiment (May–Jun 2022) with 95 professional developers,
+      the group with access to GitHub Copilot completed an HTTP-server implementation
+      task in JavaScript 55.8% faster than the control group (95% CI: 21–89%).'
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E2
+    confidence: 0.8999999761581421
+    source_ids:
+    - peng-2023-copilot-productivity
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  LABOR-2023-002:
+    text: In the same experiment, Copilot’s measured productivity gains were larger
+      for less-experienced developers, older programmers, and those who program more
+      hours per day.
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E2
+    confidence: 0.699999988079071
+    source_ids:
+    - peng-2023-copilot-productivity
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  LABOR-2024-001:
+    text: In ANZ Bank’s Copilot experiment, the Copilot group completed the coding
+      challenges about 42.36% faster on average than the control group (based on mean
+      time spent per problem).
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E2
+    confidence: 0.8500000238418579
+    source_ids:
+    - chatterjee-2024-anz-copilot-study
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  LABOR-2024-002:
+    text: In ANZ Bank’s Copilot experiment, Copilot-group solutions had about a 12.86%
+      higher unit test success ratio than control-group solutions, but the difference
+      was not statistically significant.
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E2
+    confidence: 0.699999988079071
+    source_ids:
+    - chatterjee-2024-anz-copilot-study
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
   LABOR-2026-001:
     text: If AI substitutes human labor in most tasks, wages fall and capital share
       rises
@@ -1533,6 +1630,66 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  RISK-2025-003:
+    text: No actor will ultimately be able to “control” a digital superintelligence
+      once it exists, analogous to how chimps cannot control humans.
+    type: '[S]'
+    domain: RISK
+    evidence_level: E6
+    confidence: 0.20000000298023224
+    source_ids:
+    - jre-2404-elon-musk-2025-ai-woke-mind-virus
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  RISK-2025-004:
+    text: Forcing an AI system to output statements it “knows” are false (e.g., systematic
+      historical revision in outputs) can destabilize the system and increase catastrophic
+      risk as model capabilities scale.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E5
+    confidence: 0.30000001192092896
+    source_ids:
+    - jre-2404-elon-musk-2025-ai-woke-mind-virus
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on:
+    - TECH-2025-003
+    - TECH-2025-004
+    - TECH-2025-006
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  RISK-2025-005:
+    text: Mis-specified objectives around social harms (e.g., “minimize misgendering”)
+      can lead to catastrophic “solutions” (e.g., eliminating humans) if an AI is
+      sufficiently powerful and not properly constrained.
+    type: '[T]'
+    domain: RISK
+    evidence_level: E4
+    confidence: 0.6000000238418579
+    source_ids:
+    - jre-2404-elon-musk-2025-ai-woke-mind-virus
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports:
+    - RISK-2025-004
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
   SOC-2025-001:
     text: A significant share of current social unrest and insecurity-driven radicalization
       is being caused by the ongoing civilizational energy transition.
@@ -1542,6 +1699,25 @@ claims:
     confidence: 0.3499999940395355
     source_ids:
     - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  SOC-2025-002:
+    text: Concentration of tech companies and staff in San Francisco can create an
+      ideological “bubble” that shifts policy and product decisions away from broader
+      public preferences.
+    type: '[H]'
+    domain: SOC
+    evidence_level: E5
+    confidence: 0.3499999940395355
+    source_ids:
+    - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
     extracted_by: import
     supports: []
@@ -1637,6 +1813,151 @@ claims:
     confidence: 0.3499999940395355
     source_ids:
     - stross-2025-the-pivot-1
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 3
+    last_updated: '2026-01-21'
+    notes: 'Note: Even if some hyperscale AI capex proves bubble-like, AI coding assistants
+      show measurable productivity value in both controlled and organizational studies
+      (e.g., 55.8% faster in a controlled trial: LABOR-2023-001 / peng-2023-copilot-productivity;
+      ~42.36% faster in an ANZ A/B evaluation: LABOR-2024-001 / chatterjee-2024-anz-copilot-study).
+      Interpret ''bubble'' as possible capital-misallocation dynamics, not as ''no
+      durable usefulness''.'
+  TECH-2025-003:
+    text: Reinforcement learning from human feedback (RLHF) and related tuning can
+      encode preferences/constraints that change a model’s outputs (including shifting
+      outputs away from literal truthfulness) by rewarding or punishing responses
+      during training.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E3
+    confidence: 0.75
+    source_ids:
+    - jre-2404-elon-musk-2025-ai-woke-mind-virus
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TECH-2025-004:
+    text: Google Gemini’s image generation system produced historically inaccurate
+      images for some prompts (e.g., “founding fathers of the United States” rendered
+      as diverse women) and Google paused/adjusted the feature in response.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    confidence: 0.800000011920929
+    source_ids:
+    - jre-2404-elon-musk-2025-ai-woke-mind-virus
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports:
+    - RISK-2025-004
+    contradicts: []
+    depends_on:
+    - TECH-2025-003
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TECH-2025-005:
+    text: In some observed cases, mainstream chatbots have produced moral rankings
+      that treat “misgendering Caitlyn Jenner” as worse than “global thermonuclear
+      war where everyone dies.”
+    type: '[F]'
+    domain: TECH
+    evidence_level: E6
+    confidence: 0.20000000298023224
+    source_ids:
+    - jre-2404-elon-musk-2025-ai-woke-mind-virus
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports:
+    - RISK-2025-005
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TECH-2025-006:
+    text: If an AI system is trained primarily on uncurated internet data without
+      a strong truth-seeking objective, it will tend to reproduce prevalent online
+      beliefs and biases found in its training data.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E4
+    confidence: 0.6000000238418579
+    source_ids:
+    - jre-2404-elon-musk-2025-ai-woke-mind-virus
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports:
+    - RISK-2025-004
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TECH-2025-007:
+    text: In the future, smartphones will not rely on conventional operating systems
+      and discrete “apps”; instead, an AI will directly generate the pixels and sounds
+      it predicts the user most wants to receive.
+    type: '[P]'
+    domain: TECH
+    evidence_level: E6
+    confidence: 0.15000000596046448
+    source_ids:
+    - jre-2404-elon-musk-2025-ai-woke-mind-virus
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TECH-2025-008:
+    text: Building an AI assistant that is consistently truth-seeking in practice
+      (rather than regurgitating low-quality internet content) requires substantial
+      additional effort beyond naive training on internet-scale data.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E5
+    confidence: 0.4000000059604645
+    source_ids:
+    - jre-2404-elon-musk-2025-ai-woke-mind-virus
+    first_extracted: '2026-01-21'
+    extracted_by: import
+    supports:
+    - TECH-2025-006
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-21'
+  TECH-2025-009:
+    text: A reported study found that some AI assistants value a “white guy from Germany”
+      about 20× less than a “black guy from Nigeria,” while Grok values human lives
+      equally.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E6
+    confidence: 0.10000000149011612
+    source_ids:
+    - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
     extracted_by: import
     supports: []

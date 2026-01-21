@@ -69,4 +69,4 @@ This is supportive but not definitive evidence that AI coding assistants can rai
 
 ## Extracted Claims
 
-- Import file: `analysis/sources/chatterjee-2024-anz-copilot-study.yaml`
+- Import file: [`analysis/sources/chatterjee-2024-anz-copilot-study.yaml`](chatterjee-2024-anz-copilot-study.yaml)

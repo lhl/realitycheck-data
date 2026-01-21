@@ -22,9 +22,9 @@
     ↓ implies
 [B] LABOR-2026-003: Full automation → labor becomes economically irrelevant
     ↓ implies
-[C] VALUE-2026-002: Labor irrelevant → no consumer purchasing power (absent redistribution)
+[C] ECON-2026-012: Labor irrelevant → no consumer purchasing power (absent redistribution)
     ↓ implies
-[D] DIST-2026-003: No purchasing power + concentrated ownership → permanent underclass
+[D] ECON-2026-003: No purchasing power + concentrated ownership → permanent underclass
 ```
 
 ---
@@ -71,7 +71,7 @@
 
 ### Link C: No Purchasing Power
 
-- **Claim ID**: VALUE-2026-002
+- **Claim ID**: ECON-2026-012
 - **Text**: Labor economically irrelevant → no consumer purchasing power (absent redistribution)
 - **Type**: [A] Assumption
 - **Evidence Level**: E4 (Theoretical-Speculative)
@@ -81,7 +81,7 @@
 **Why Weak**:
 - Conflates *labor income* with *all income*
 - Ignores: transfers, dividends, public provision, capital distribution
-- Macroeconomic identity (VALUE-2026-001) suggests redistribution mechanisms would emerge
+- Macroeconomic identity (ECON-2026-011) suggests redistribution mechanisms would emerge
 - Game theory (GOV-2026-004): buying stability is often cheaper than enforcing it
 
 **This is the weakest link**
@@ -90,7 +90,7 @@
 
 ### Link D: Permanent Underclass
 
-- **Claim ID**: DIST-2026-003
+- **Claim ID**: ECON-2026-003
 - **Text**: Post-labor → permanent underclass is 'default' outcome
 - **Type**: [P] Prediction
 - **Evidence Level**: E5 (Expert Opinion)
@@ -101,7 +101,7 @@
 - "Default" is a political claim, not economic necessity
 - Historical examples: welfare states emerged as response to industrialization
 - Elite coordination problems (GOV-2026-005) prevent unified extractive coalition
-- Technology diffusion (DIST-2026-004) historically breaks concentration
+- Technology diffusion (ECON-2026-004) historically breaks concentration
 
 ---
 
@@ -147,10 +147,10 @@ Could "permanent underclass" be reached via different reasoning?
 
 | Claim ID | Text | How It Contradicts |
 |----------|------|-------------------|
-| VALUE-2026-001 | Post-labor requires redistribution or consumption collapses | Suggests mechanism will emerge |
+| ECON-2026-011 | Post-labor requires redistribution or consumption collapses | Suggests mechanism will emerge |
 | GOV-2026-004 | Buying stability cheaper than enforcing it | Undermines "extraction is rational" premise |
 | GOV-2026-005 | Inter-elite competition prevents unified coalition | Undermines coordination for permanent extraction |
-| DIST-2026-004 | Technology diffusion historically breaks concentration | Historical counter-pattern |
+| ECON-2026-004 | Technology diffusion historically breaks concentration | Historical counter-pattern |
 | GOV-2026-007 | Japan/EU suggest civilized equilibrium paths exist | Empirical counter-examples emerging |
 
 ---

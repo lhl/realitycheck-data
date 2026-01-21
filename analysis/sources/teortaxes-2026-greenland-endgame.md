@@ -129,7 +129,7 @@ Recast into a version that can be argued with evidence:
 4. **Overstatement of actor unity**: US policy is fragmented; elite factions compete (aligns with existing GOV-2026-005).
 
 ### Supporting Theories
-- `DIST-2026-001`: Compute/energy/chips as chokepoints (consistent with the post’s bottleneck framing).
+- `ECON-2026-001`: Compute/energy/chips as chokepoints (consistent with the post’s bottleneck framing).
 - `RESOURCE-2026-002`: Vertical integration into raw materials (industrial analog at firm level).
 
 ### Contradicting Theories

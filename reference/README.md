@@ -16,6 +16,16 @@ This directory contains source materials analyzed in this knowledge base.
 | REPORT | 6 | Reports |
 | SOCIAL | 4 | Social media threads |
 
+## Browse
+
+- [Source registry (YAML)](sources.yaml)
+- [Primary sources](primary/)
+  - [Blogs](primary/blogs/)
+  - [Social threads](primary/social/)
+- [Transcripts](transcripts/)
+- [Articles](articles/)
+- [Data sources](data/)
+
 ## Key Sources
 
 ### Blog Posts

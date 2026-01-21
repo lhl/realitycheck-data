@@ -47,11 +47,11 @@ Across late-2025 and early-2026 posts (and the Beads/Gas Town artifacts), Steve 
 | LABOR-2026-010 | As agentic throughput rises, coordination/merge becomes a binding constraint; teams respond with extreme coordination simplifications (e.g., “one engineer per repo”) and continuous broadcast norms | [H] | E4 | 0.55 | Yegge |
 | LABOR-2026-011 | In many contexts, “rewrite” becomes cheaper than “repair”: tests and subsystems are treated as disposable and regenerated, shifting maintenance norms | [H] | E4 | 0.55 | Yegge |
 | LABOR-2026-012 | “Everyone codes” forecast: as agentic tooling diffuses, many non-engineering roles write or modify software, and “vibe coding” becomes a default expectation for programming jobs | [H] | E4 | 0.45 | Yegge |
-| SOCIAL-2026-003 | High-scale agentic coding (dozens of agents) can be cognitively exhausting and may disrupt sleep patterns (“nappy time” / “Bezos mode”) | [H] | E5 | 0.40 | Yegge |
-| DIST-2026-008 | AI tooling increases the feasible output of small teams/creators, increasing the value of mechanisms that allocate attention and funding to creators | [H] | E4 | 0.55 | Yegge |
-| DIST-2026-009 | As internal software becomes easier to rebuild, some SaaS categories face stronger build-vs-buy pressure; defensible vendors are those with deep accumulated infra/know-how that remains costly to recreate | [H] | E4 | 0.55 | Yegge |
+| SOC-2026-003 | High-scale agentic coding (dozens of agents) can be cognitively exhausting and may disrupt sleep patterns (“nappy time” / “Bezos mode”) | [H] | E5 | 0.40 | Yegge |
+| ECON-2026-008 | AI tooling increases the feasible output of small teams/creators, increasing the value of mechanisms that allocate attention and funding to creators | [H] | E4 | 0.55 | Yegge |
+| ECON-2026-009 | As internal software becomes easier to rebuild, some SaaS categories face stronger build-vs-buy pressure; defensible vendors are those with deep accumulated infra/know-how that remains costly to recreate | [H] | E4 | 0.55 | Yegge |
 | TRANS-2026-004 | Near-term industry transition: small, fast shops dramatically outperform large companies for ~1+ year as coordination regimes lag behind agentic throughput | [P] | E5 | 0.40 | Yegge |
-| DIST-2026-010 | “Creator explosion” forecast: millions of independent creators appear once “everyone can vibe code” (claimed as a near-term function of ~2 frontier-model upgrades), forcing new discovery/market institutions | [P] | E5 | 0.30 | Yegge |
+| ECON-2026-010 | “Creator explosion” forecast: millions of independent creators appear once “everyone can vibe code” (claimed as a near-term function of ~2 frontier-model upgrades), forcing new discovery/market institutions | [P] | E5 | 0.30 | Yegge |
 
 ### Argument Structure (Yegge’s Implied Chain)
 

@@ -40,12 +40,12 @@ The core question is not “can agents write code?”, but “what becomes scarc
 | LABOR-2026-007 | Cheap-to-generate AI-assisted issues/PRs create a harsh review asymmetry, increasing maintainer burden and conflict | [T] | E4 | 0.60 | Ronacher |
 | LABOR-2026-008 | AI agents are a productivity boost but become “slop machines” when oversight/quality gates are relaxed | [T] | E4 | 0.65 | Ronacher, Yegge |
 | LABOR-2026-009 | As artifact generation gets cheaper, the scarce input becomes verification/integration attention (review, tests, domain judgment) | [T] | E3 | 0.70 | Synthesis (Ronacher + Yegge mechanisms) |
-| SOCIAL-2026-001 | Heavy agentic-coding use can foster addictive/parasocial dynamics that impair judgment | [H] | E4 | 0.45 | Ronacher |
-| SOCIAL-2026-002 | Low-scrutiny prompting styles (forcing agents without critical thinking) tend to produce lower-quality and incoherent contributions | [H] | E4 | 0.50 | Ronacher |
+| SOC-2026-001 | Heavy agentic-coding use can foster addictive/parasocial dynamics that impair judgment | [H] | E4 | 0.45 | Ronacher |
+| SOC-2026-002 | Low-scrutiny prompting styles (forcing agents without critical thinking) tend to produce lower-quality and incoherent contributions | [H] | E4 | 0.50 | Ronacher |
 | TECH-2026-007 | “Slop loop” workflows can be economically wasteful (high token burn), and token pricing may not be durable | [H] | E4 | 0.50 | Ronacher, Yegge |
 | TECH-2026-008 | Beads and Gas Town are already large codebases (order 10^5 LOC), demonstrating rapid codebase growth under agentic workflows | [F] | E1 | 0.95 | Repos (Beads/Gas Town) |
 | GOV-2026-019 | Projects will respond with stricter contribution norms (prompt disclosure, gating) to mitigate AI-generated noise | [H] | E4 | 0.55 | Ronacher |
-| DIST-2026-008 | AI tooling increases the feasible output of small teams/creators, increasing the value of mechanisms that allocate attention and funding | [H] | E4 | 0.55 | Yegge |
+| ECON-2026-008 | AI tooling increases the feasible output of small teams/creators, increasing the value of mechanisms that allocate attention and funding | [H] | E4 | 0.55 | Yegge |
 
 ---
 
@@ -99,4 +99,3 @@ The core question is not “can agents write code?”, but “what becomes scarc
 - Which interventions work: prompt disclosure, stricter CI, smaller diffs, automated tests/verification, reputational gating?
 - Does multi-agent orchestration reduce or increase hallucination/bug surface area compared to single-agent workflows?
 - Is this “early compiler” moment (temporary inefficiency) or a fundamentally different regime (stochastic artifacts that require human judgment)?
-

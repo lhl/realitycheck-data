@@ -20,11 +20,11 @@
 ```
 [A] TECH-2026-004: Open models within months of frontier on economically decisive capabilities
     ↓ implies
-[B] DIST-2026-005: "Only billionaires afford AI cognition" thesis is false for most domains
+[B] ECON-2026-005: "Only billionaires afford AI cognition" thesis is false for most domains
     ↓ BUT
-[C] DIST-2026-006: Inference at scale may still centralize around power/datacenters
+[C] ECON-2026-006: Inference at scale may still centralize around power/datacenters
     ↓ implies
-[D] DIST-2026-002: Real "neofeudal" risk shifts from cognition to infrastructure control
+[D] ECON-2026-002: Real "neofeudal" risk shifts from cognition to infrastructure control
 ```
 
 ---
@@ -60,7 +60,7 @@
 
 ### Link B: Cognitive Monopoly False
 
-- **Claim ID**: DIST-2026-005
+- **Claim ID**: ECON-2026-005
 - **Text**: The premise that "only billionaires can afford AI cognition" is false for most domains
 - **Type**: [T] Theory
 - **Evidence Level**: E2
@@ -80,7 +80,7 @@
 
 ### Link C: Infrastructure Centralization
 
-- **Claim ID**: DIST-2026-006
+- **Claim ID**: ECON-2026-006
 - **Text**: Inference at scale may still centralize around power/datacenters
 - **Type**: [H] Hypothesis
 - **Evidence Level**: E4 (Theoretical-Speculative)
@@ -110,7 +110,7 @@ This is the key uncertainty in the chain. Two scenarios:
 
 ### Link D: Fight Shifts to Infrastructure
 
-- **Claim ID**: DIST-2026-002
+- **Claim ID**: ECON-2026-002
 - **Text**: Bottleneck control, not model access, determines 'feudal' vs 'abundance' outcomes
 - **Type**: [T] Theory
 - **Evidence Level**: E4
@@ -187,10 +187,10 @@ This chain suggests the neofeudalism discourse has been focusing on the *wrong l
 | Claim ID | Text | How It Supports |
 |----------|------|----------------|
 | TECH-2026-004 | Open models within ~6 months of frontier | Grounds Link A empirically |
-| DIST-2026-001 | Compute + energy + chips are chokepoints | Supports infrastructure focus |
+| ECON-2026-001 | Compute + energy + chips are chokepoints | Supports infrastructure focus |
 | RESOURCE-2026-001 | Datacenter electricity demand trajectory | Shows infrastructure scale |
 | RESOURCE-2026-002 | Hyperscaler vertical integration | Shows centralization moves |
-| DIST-2026-004 | Tech diffusion historically breaks concentration | Historical support for diffusion scenario |
+| ECON-2026-004 | Tech diffusion historically breaks concentration | Historical support for diffusion scenario |
 
 ---
 

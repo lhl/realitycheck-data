@@ -13,6 +13,14 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 See [claims/README.md](claims/README.md) for full statistics.
 
+## Navigation
+
+- Sources index: [reference/README.md](reference/README.md)
+- Predictions dashboard: [tracking/predictions.md](tracking/predictions.md)
+- Claim registry (YAML export): [claims/registry.yaml](claims/registry.yaml)
+- Source registry (YAML export): [reference/sources.yaml](reference/sources.yaml)
+- Meta-analysis: [analysis/meta/framework-efficacy-greenland-test.md](analysis/meta/framework-efficacy-greenland-test.md)
+
 ---
 
 ## Analyses
@@ -174,4 +182,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-01-21*
+*Last updated: 2026-01-22*

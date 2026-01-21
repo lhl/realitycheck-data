@@ -1,6 +1,6 @@
 # Source Registry
-# Exported from LanceDB on 2026-01-21
-# Total sources: 48
+# Exported from LanceDB on 2026-01-22
+# Total sources: 51
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -107,6 +107,38 @@ sources:
     domains:
     - GOV
     - ECON
+    status: analyzed
+  chatterjee-2024-anz-copilot-study:
+    type: PAPER
+    title: 'The Impact of AI Tool on Engineering at ANZ Bank: An Empirical Study on
+      GitHub Copilot within Corporate Environment'
+    author:
+    - Sayan Chatterjee
+    - Ching Louis Liu
+    - Gareth Rowland
+    - Tim Hogarth
+    year: 2024
+    url: https://arxiv.org/abs/2402.05636v2
+    accessed: '2026-01-21'
+    reliability: 0.7
+    bias_notes: Organizational case study and experiment authored by ANZ employees;
+      potential positive framing and selection effects; nevertheless includes measured
+      outcomes and statistical testing claims for productivity/quality/security metrics.
+    claims_extracted:
+    - LABOR-2024-001
+    - LABOR-2024-002
+    analysis_file: analysis/sources/chatterjee-2024-anz-copilot-study.md
+    topics:
+    - ai
+    - software engineering
+    - github copilot
+    - productivity
+    - code quality
+    - security
+    - corporate adoption
+    domains:
+    - LABOR
+    - TECH
     status: analyzed
   chm-alexnet:
     type: ARTICLE
@@ -495,6 +527,49 @@ sources:
     - TECH
     - GOV
     status: cataloged
+  jre-2404-elon-musk-2025-ai-woke-mind-virus:
+    type: CONVO
+    title: 'Joe Rogan Experience #2404 — Elon Musk (AI alignment, Gemini “ImageGen”,
+      “woke mind virus”)'
+    author:
+    - Joe Rogan
+    - Elon Musk
+    year: 2025
+    url: https://podscripts.co/podcasts/the-joe-rogan-experience/2404-elon-musk
+    accessed: '2026-01-21'
+    reliability: 0.4
+    bias_notes: Conversation excerpt; transcript sourced from PodScripts (not an official
+      release). Politically loaded framing and self-referential claims about xAI/Grok.
+      Many factual assertions are presented without supporting evidence in the conversation.
+    claims_extracted:
+    - TECH-2025-003
+    - TECH-2025-004
+    - TECH-2025-005
+    - TECH-2025-006
+    - TECH-2025-007
+    - TECH-2025-008
+    - TECH-2025-009
+    - RISK-2025-003
+    - RISK-2025-004
+    - RISK-2025-005
+    - SOC-2025-002
+    - INST-2025-001
+    analysis_file: analysis/sources/jre-2404-elon-musk-2025-ai-woke-mind-virus.md
+    topics:
+    - ai alignment
+    - truth seeking
+    - reinforcement learning from human feedback
+    - google gemini
+    - image generation
+    - bias
+    - san francisco tech culture
+    - grok
+    domains:
+    - TECH
+    - RISK
+    - SOC
+    - INST
+    status: analyzed
   macro-identity:
     type: KNOWLEDGE
     title: Macroeconomic accounting identities (demand = income)
@@ -541,6 +616,37 @@ sources:
     - TECH
     - RESOURCE
     - ECON
+    status: analyzed
+  peng-2023-copilot-productivity:
+    type: PAPER
+    title: 'The Impact of AI on Developer Productivity: Evidence from GitHub Copilot'
+    author:
+    - Sida Peng
+    - Eirini Kalliamvakou
+    - Peter Cihon
+    - Mert Demirer
+    year: 2023
+    url: https://arxiv.org/abs/2302.06590v1
+    accessed: '2026-01-21'
+    reliability: 0.75
+    bias_notes: Controlled trial reported by authors affiliated with Microsoft Research
+      and GitHub; potential pro-productivity framing and conflict-of-interest risk;
+      nevertheless provides empirical measurement with reported confidence intervals
+      and design details.
+    claims_extracted:
+    - LABOR-2023-001
+    - LABOR-2023-002
+    analysis_file: analysis/sources/peng-2023-copilot-productivity.md
+    topics:
+    - ai
+    - developer productivity
+    - software engineering
+    - github copilot
+    - code assistants
+    - randomized controlled trial
+    domains:
+    - LABOR
+    - TECH
     status: analyzed
   perera-2026-china-trade-surplus-collapse-thread:
     type: SOCIAL

@@ -13,7 +13,7 @@
 | **Reliability** | 0.40 (conversation; transcript quality OK but claims largely asserted) |
 | **Bias Notes** | Politically loaded framing; includes self-promotional comparisons (Grok vs competitors); many factual assertions are anecdotal or lack supporting evidence in the excerpt. |
 
-**Claims YAML**: `analysis/sources/jre-2404-elon-musk-2025-ai-woke-mind-virus.yaml`
+**Claims YAML**: [`analysis/sources/jre-2404-elon-musk-2025-ai-woke-mind-virus.yaml`](jre-2404-elon-musk-2025-ai-woke-mind-virus.yaml)
 
 ## Stage 1: Descriptive Analysis
 

@@ -128,7 +128,7 @@ No external web access in this environment; unable to verify the source’s publ
 3. **Competitive pressure**: even if value rises, competition can force prices toward cost; margins depend on defensibility (models, distribution, productization).
 
 ### Supporting Theories
-- `DIST-2026-001`: compute + energy + chips as chokepoints for economic power (aligns with “capex dominates” framing).
+- `ECON-2026-001`: compute + energy + chips as chokepoints for economic power (aligns with “capex dominates” framing).
 
 ### Contradicting Theories
 - None directly; this analysis is mostly about parameterization of chokepoint claims rather than a different direction.

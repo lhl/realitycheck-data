@@ -25,8 +25,8 @@ The goal is to assess what value the framework adds, what gaps remain, and how w
 
 | Source ID | Type | Description | Location |
 |-----------|------|-------------|----------|
-| `gpt-2026-01-19-greenland-endgame` | CONVO | Raw critical analysis without framework | `reference/transcripts/gpt-2026-01-19-greenland-endgame.md` |
-| `teortaxes-2026-greenland-endgame` | SOCIAL (analyzed) | Framework-guided analysis | `analysis/sources/teortaxes-2026-greenland-endgame.md` |
+| `gpt-2026-01-19-greenland-endgame` | CONVO | Raw critical analysis without framework | [reference/transcripts/gpt-2026-01-19-greenland-endgame.md](../../reference/transcripts/gpt-2026-01-19-greenland-endgame.md) |
+| `teortaxes-2026-greenland-endgame` | SOCIAL (analyzed) | Framework-guided analysis | [analysis/sources/teortaxes-2026-greenland-endgame.md](../sources/teortaxes-2026-greenland-endgame.md) |
 
 **Original source analyzed by both**: @teortaxesTex "Greenland Endgame" thread (2026-01-16)
 - URL: https://x.com/teortaxesTex/status/2012127205728440495
@@ -62,7 +62,7 @@ The goal is to assess what value the framework adds, what gaps remain, and how w
 - Confidence calibration (0.15-0.55 per claim, 0.35 overall)
 - Three-stage methodology ensures coverage
 - Unstated assumptions table
-- Links to existing claims (DIST-2026-001, GOV-2026-005)
+- Links to existing claims (ECON-2026-001, GOV-2026-005)
 - Designed for cumulative knowledge building
 
 ---
@@ -289,8 +289,8 @@ This reflexive practice keeps the framework adaptive rather than ossified.
 - Raw analysis: [reference/transcripts/gpt-2026-01-19-greenland-endgame.md](../../reference/transcripts/gpt-2026-01-19-greenland-endgame.md)
 - Framework analysis: [analysis/sources/teortaxes-2026-greenland-endgame.md](../sources/teortaxes-2026-greenland-endgame.md)
 - GPT self-comparison: [reference/transcripts/gpt-2026-01-19-framework-comparison.md](../../reference/transcripts/gpt-2026-01-19-framework-comparison.md)
-- Framework methodology: [AGENTS.md](../../AGENTS.md)
-- Workflow procedures: [docs/WORKFLOWS.md](../../docs/WORKFLOWS.md)
+- Framework methodology: [AGENTS.md](https://github.com/lhl/realitycheck/blob/main/AGENTS.md)
+- Workflow procedures: [docs/WORKFLOWS.md](https://github.com/lhl/realitycheck/blob/main/docs/WORKFLOWS.md)
 
 ---
 

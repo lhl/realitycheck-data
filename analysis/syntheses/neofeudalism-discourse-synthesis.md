@@ -51,19 +51,19 @@ Both sessions arrive at similar conclusions but via different paths. This synthe
 |----|-------|------|----------|------------|---------|
 | LABOR-2026-001 | If AI substitutes human labor in most tasks, wages fall and capital share rises | [T] | E3 | 0.85 | Standard factor share economics |
 | LABOR-2026-003 | Full automation → labor becomes economically irrelevant (labor share approaches ~0) | [T] | E4 | 0.40 | @teortaxesTex; contested |
-| VALUE-2026-001 | Post-labor requires some income distribution mechanism or consumption collapses | [T] | E3 | 0.80 | Macro identity (demand must come from somewhere) |
-| VALUE-2026-002 | Labor economically irrelevant → no consumer purchasing power (absent redistribution) | [A] | E4 | 0.30 | @teortaxesTex; weakest-link assumption |
-| DIST-2026-001 | Compute + energy + chips becoming primary chokepoints for economic power | [T] | E3 | 0.75 | Analysis of bottleneck structure |
-| DIST-2026-002 | Bottleneck control, not model access, determines "feudal" vs "abundance" outcomes | [T] | E4 | 0.70 | Both sessions converge here |
-| DIST-2026-005 | The premise that "only billionaires can afford AI cognition" is false for most domains | [T] | E2 | 0.75 | Open models; user experience |
-| DIST-2026-006 | Inference at scale may centralize around power/datacenters even if models commoditize | [H] | E4 | 0.55 | Bottleneck/infrastructure uncertainty |
+| ECON-2026-011 | Post-labor requires some income distribution mechanism or consumption collapses | [T] | E3 | 0.80 | Macro identity (demand must come from somewhere) |
+| ECON-2026-012 | Labor economically irrelevant → no consumer purchasing power (absent redistribution) | [A] | E4 | 0.30 | @teortaxesTex; weakest-link assumption |
+| ECON-2026-001 | Compute + energy + chips becoming primary chokepoints for economic power | [T] | E3 | 0.75 | Analysis of bottleneck structure |
+| ECON-2026-002 | Bottleneck control, not model access, determines "feudal" vs "abundance" outcomes | [T] | E4 | 0.70 | Both sessions converge here |
+| ECON-2026-005 | The premise that "only billionaires can afford AI cognition" is false for most domains | [T] | E2 | 0.75 | Open models; user experience |
+| ECON-2026-006 | Inference at scale may centralize around power/datacenters even if models commoditize | [H] | E4 | 0.55 | Bottleneck/infrastructure uncertainty |
 
 ### Tier 3: Political/Prediction Claims (Weakest)
 
 | ID | Claim | Type | Evidence | Confidence | Sources |
 |----|-------|------|----------|------------|---------|
 | LABOR-2026-002 | Full automation of human labor by 2035-2045 | [P] | E5 | 0.35 | @teortaxesTex; contested |
-| DIST-2026-003 | Post-labor → permanent underclass is "default" outcome | [P] | E5 | 0.30 | @teortaxesTex; assumes no redistribution |
+| ECON-2026-003 | Post-labor → permanent underclass is "default" outcome | [P] | E5 | 0.30 | @teortaxesTex; assumes no redistribution |
 | GOV-2026-001 | Property rights will become arbitrary/confiscatable in neofeudal regime | [H] | E6 | 0.25 | Hotz; contradicts equity-escape thesis |
 | GOV-2026-002 | Elites will choose genocide over UBI | [S] | E6 | 0.10 | @Xenoimpulse; multiple weak premises |
 | GOV-2026-008 | Even post-labor, humans remain a threat vector (revolt, sabotage, voting) | [F] | E1 | 0.90 | @Xenoimpulse; premise |
@@ -76,7 +76,7 @@ Both sessions arrive at similar conclusions but via different paths. This synthe
 
 | ID | Claim | Type | Evidence | Confidence | Sources |
 |----|-------|------|----------|------------|---------|
-| DIST-2026-004 | Technology diffusion + commoditization historically breaks concentration | [T] | E2 | 0.70 | Historical pattern |
+| ECON-2026-004 | Technology diffusion + commoditization historically breaks concentration | [T] | E2 | 0.70 | Historical pattern |
 | GOV-2026-004 | Buying stability often cheaper than enforcing it in high-automation world | [T] | E3 | 0.65 | Game theory; legitimacy cheaper than repression |
 | GOV-2026-005 | Inter-elite + interstate competition prevents unified oligarchic coalition | [T] | E3 | 0.70 | Coordination problem argument |
 | GOV-2026-006 | Multipolarity reduces single-coalition doom but increases security competition | [T] | E4 | 0.65 | Both sessions |
@@ -99,11 +99,11 @@ CHAIN-2026-001: Permanent Underclass Thesis
     - Status: WEAK (ignores task recomposition, complementarity)
     - Confidence: 0.40
     ↓ implies
-[C] VALUE-2026-002: Labor irrelevant → no consumer purchasing power (absent redistribution)
+[C] ECON-2026-012: Labor irrelevant → no consumer purchasing power (absent redistribution)
     - Status: WEAK (assumes no redistribution mechanism)
     - Confidence: 0.30
     ↓ implies
-[D] DIST-2026-003: No purchasing power + concentrated ownership → permanent underclass
+[D] ECON-2026-003: No purchasing power + concentrated ownership → permanent underclass
     - Status: CONTESTED (political choice, not economic law)
     - Confidence: 0.30
 
@@ -157,15 +157,15 @@ CHAIN-2026-003: Multipolar Diffusion Counter-Thesis
     - Status: SOLID (empirical: DeepSeek-R1, user experience)
     - Confidence: 0.75
     ↓ implies
-[B] DIST-2026-005: "Only billionaires afford AI cognition" thesis false for most domains
+[B] ECON-2026-005: "Only billionaires afford AI cognition" thesis false for most domains
     - Status: SOLID (already true for language, coding, math)
     - Confidence: 0.75
     ↓ BUT
-[C] DIST-2026-006: Inference at scale may still centralize around power/datacenters
+[C] ECON-2026-006: Inference at scale may still centralize around power/datacenters
     - Status: CONTESTED (slow takeoff = durable bottleneck, but distributed too)
     - Confidence: 0.55
     ↓ implies
-[D] DIST-2026-002: Real "neofeudal" risk shifts from cognition to infrastructure control
+[D] ECON-2026-002: Real "neofeudal" risk shifts from cognition to infrastructure control
     - Status: SOLID (reframing accepted by both sessions)
     - Confidence: 0.70
 
@@ -335,7 +335,7 @@ Tracking signals to discriminate between scenarios:
   - [claims/chains/open-source-de-darkener.md](../../claims/chains/open-source-de-darkener.md) - CHAIN-2026-003 analysis
 - Scenario matrix: [scenarios/post-automation-governance.md](../../scenarios/post-automation-governance.md)
 - Indicator dashboard: [tracking/dashboards/neofeudalism-indicators.md](../../tracking/dashboards/neofeudalism-indicators.md)
-- Primary source analyses: Covered by this synthesis at `[DRAFT]` level per D5 decision (see [docs/IMPLEMENTATION-feedback-improvements.md](../../docs/IMPLEMENTATION-feedback-improvements.md))
+- Primary source analyses: Covered by this synthesis at `[DRAFT]` level per D5 decision (link TBD)
 
 ---
 

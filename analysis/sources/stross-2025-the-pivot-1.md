@@ -91,7 +91,7 @@ Treat the post as a **coherent hypothesis bundle** linking energy transition, cl
 
 ## Extracted Claims
 
-- Import file: `analysis/sources/stross-2025-the-pivot-1.yaml`
+- Import file: [`analysis/sources/stross-2025-the-pivot-1.yaml`](stross-2025-the-pivot-1.yaml)
 
 ### Claim Summary
 
