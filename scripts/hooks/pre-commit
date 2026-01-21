@@ -26,7 +26,7 @@ fi
 REPO_ROOT="$(git rev-parse --show-toplevel)"
 
 # Set database path
-export ANALYSIS_DB_PATH="$REPO_ROOT/data/realitycheck.lance"
+export REALITYCHECK_DATA="$REPO_ROOT/data/realitycheck.lance"
 
 # Run validation
 if [[ -f "$FRAMEWORK_PATH/scripts/validate.py" ]]; then

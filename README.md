@@ -109,7 +109,7 @@ uv sync  # Install dependencies
 ### Validate Data Integrity
 
 ```bash
-export ANALYSIS_DB_PATH=/path/to/realitycheck-data/data/realitycheck.lance
+export REALITYCHECK_DATA=/path/to/realitycheck-data/data/realitycheck.lance
 uv run python scripts/validate.py --mode db
 ```
 
@@ -167,7 +167,7 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ## License
 
-- **Framework**: [Reality Check](https://github.com/lhl/realitycheck) - MIT License
+- **Framework**: [Reality Check](https://github.com/lhl/realitycheck) - Apache 2.0 License
 - **Analyses**: Cite appropriately
 
 ---
