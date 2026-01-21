@@ -7,7 +7,7 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 | Metric | Count |
 |--------|-------|
 | **Claims** | 99 |
-| **Sources** | 46 |
+| **Sources** | 44 |
 | **Argument Chains** | 3 |
 | **Predictions Tracked** | 9 |
 
@@ -19,13 +19,14 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 ### Source Analyses
 
-| Document | Status | Summary |
-|----------|--------|---------|
-| [Ronacher "Agent Psychosis"](analysis/sources/ronacher-2026-agent-psychosis.md) | `[REVIEWED]` | Maintainer-centric analysis of agentic-coding addiction/slop loops |
-| [Doctorow "Reverse Centaur"](analysis/sources/doctorow-2026-reverse-centaur.md) | `[REVIEWED]` | AI bubble critique + "reverse centaur" deployment patterns |
-| [Teortaxes "Greenland Endgame"](analysis/sources/teortaxes-2026-greenland-endgame.md) | `[REVIEWED]` | GOV/RESOURCE/TRANS claims extraction with fact-checks |
-| [Perera "China's Trillion-Dollar Illusion"](analysis/sources/perera-2026-chinas-trillion-dollar-illusion.md) | `[REVIEWED]` | "Demand-destruction surplus" mechanism analysis |
-| [OpenAI "Value Intelligence"](analysis/sources/openai-value-intelligence.md) | `[REVIEWED]` | Value capture dynamics in AI systems |
+| Date | Document | Status | Summary |
+|------|----------|--------|---------|
+| 2026-01-21 | [Carney "Middle Powers & Rupture"](analysis/sources/carney-2026-davos-wef-speech.md) | `[REVIEWED]` | WEF Davos speech on coalition strategy vs. great power coercion |
+| 2026-01-18 | [Doctorow "Reverse Centaur"](analysis/sources/doctorow-2026-reverse-centaur.md) | `[REVIEWED]` | AI bubble critique + "reverse centaur" deployment patterns |
+| 2026-01-18 | [Perera "China's Trillion-Dollar Illusion"](analysis/sources/perera-2026-chinas-trillion-dollar-illusion.md) | `[REVIEWED]` | "Demand-destruction surplus" mechanism analysis |
+| 2026-01-18 | [Ronacher "Agent Psychosis"](analysis/sources/ronacher-2026-agent-psychosis.md) | `[REVIEWED]` | Maintainer-centric analysis of agentic-coding addiction/slop loops |
+| 2026-01-16 | [Teortaxes "Greenland Endgame"](analysis/sources/teortaxes-2026-greenland-endgame.md) | `[REVIEWED]` | GOV/RESOURCE/TRANS claims extraction with fact-checks |
+| 2026-01-15 | [OpenAI "Value Intelligence"](analysis/sources/openai-value-intelligence.md) | `[REVIEWED]` | Value capture dynamics in AI systems |
 
 ### Syntheses
 
