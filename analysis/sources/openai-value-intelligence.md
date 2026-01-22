@@ -397,7 +397,7 @@ claims:
 ---
 **Analysis Date**: 2026-01-22
 **Analyst**: gpt-5.2
-**Confidence in Analysis**: 0.70
+**Credence in Analysis**: 0.70
 
 ## Appendix A: 2026-01-19 no-network draft (superseded)
 

@@ -163,10 +163,10 @@ Treat this excerpt as moderate-quality evidence of what the speakers *assert* an
 
 **Analysis Date**: 2025-10-31 (original), 2026-01-22 (updated)
 **Analyst**: claude
-**Confidence in Analysis**: 0.55
+**Credence in Analysis**: 0.55
 
-**Confidence Reasoning**:
-- **Why this confidence level?**: Moderate confidence - the source material is an informal conversation with many unverified claims, but the core thesis about alignment constraints is grounded in legitimate ML concerns
+**Credence Reasoning**:
+- **Why this credence level?**: Moderate confidence - the source material is an informal conversation with many unverified claims, but the core thesis about alignment constraints is grounded in legitimate ML concerns
 - **What would increase confidence?**: Verification of specific anecdotes (misgendering prompt, value-of-life study); access to full transcript rather than excerpt
 - **What would decrease confidence?**: Discovery that key examples were fabricated or significantly misrepresented
 - **Key uncertainties remaining**: Whether Gemini behavior was intentional ideology vs engineering bug; reproducibility of "misgendering vs nuclear war" claim; actual comparative evaluation of Grok vs competitors on truthfulness metrics

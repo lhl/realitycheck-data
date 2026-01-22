@@ -147,4 +147,4 @@ This source is best treated as a high-voltage narrative that proposes a unifying
 ---
 **Analysis Date**: 2026-01-19
 **Analyst**: gpt-5.2
-**Confidence in Analysis**: 0.65
+**Credence in Analysis**: 0.65

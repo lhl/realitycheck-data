@@ -274,9 +274,9 @@ Treat "bubble" vs "steam-engine-scale general-purpose tech" as competing framing
 
 **Analysis Date**: 2026-01-21 (original), 2026-01-22 (Stage 2 tables added)
 **Analyst**: Claude Opus 4.5
-**Confidence in Analysis**: 0.60
+**Credence in Analysis**: 0.60
 
-**Confidence Reasoning**:
+**Credence Reasoning**:
 - Source content is well-understood; synthesis thesis is clear
 - Stage 2 evaluation surfaced key tensions and counterevidence
 - Remaining uncertainty: specific quantitative claims not independently verified; causal bundling remains speculative

@@ -144,4 +144,4 @@ The source is strongest as a checklist of stress indicators and a hypothesis abo
 ---
 **Analysis Date**: 2026-01-20
 **Analyst**: gpt-5.2
-**Confidence in Analysis**: 0.75
+**Credence in Analysis**: 0.75

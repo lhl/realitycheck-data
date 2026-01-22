@@ -137,4 +137,4 @@ The most uncertain links are empirical:
 ---
 **Analysis Date**: 2026-01-19
 **Analyst**: gpt-5.2
-**Confidence in Analysis**: 0.70
+**Credence in Analysis**: 0.70
