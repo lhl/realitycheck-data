@@ -140,3 +140,25 @@
 - **Falsification**: By 2035, mainstream smartphones remain primarily OS+app-centric, with generative/agentic UIs confined to assistants or specific apps.
 - **Verification**: By 2035, a mainstream mobile platform is primarily agentic/generative (pixels+sound generated per-user), and the discrete app/OS paradigm is no longer the dominant user interface model.
 - **Last Evaluated**: 2026-01-21
+
+#### TECH-2026-014
+
+> The next phase of AI products will be agents and workflow automation that run continuously, carry context over time, and take action across tools, becoming an operating layer for knowledge work.
+
+- **Status**: [P?]
+- **Source**: openai-value-intelligence
+- **Target Date**: 2030-12-31
+- **Falsification**: By 2030, 'agents' remain niche demos or tightly constrained automations with limited adoption; app-centric workflows remain dominant and continuous autonomous operation is rare due to security/trust/governance constraints.
+- **Verification**: By 2030, broadly-used agentic products run persistent workflows (multi-step tool use with authorization, long-lived context) for a substantial share of knowledge-work tasks (consumer and/or enterprise).
+- **Last Evaluated**: 2026-01-22
+
+#### ECON-2026-018
+
+> As AI moves into domains like scientific research, drug discovery, energy systems, and financial modeling, new economic models (licensing, IP-based agreements, and outcome-based pricing) will emerge to share in the value created.
+
+- **Status**: [P?]
+- **Source**: openai-value-intelligence
+- **Target Date**: 2030-12-31
+- **Falsification**: By 2030, pricing remains dominated by subscriptions and usage-based billing, with licensing/IP/outcome-based models rare or economically marginal.
+- **Verification**: By 2030, AI deployments in high-value domains (science/drug discovery/energy/finance) commonly use licensing, IP-based agreements, or outcome-based pricing, accounting for a meaningful share of vendor revenue (beyond standard subscriptions/usage billing).
+- **Last Evaluated**: 2026-01-22

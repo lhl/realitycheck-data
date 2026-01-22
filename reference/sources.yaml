@@ -1,6 +1,6 @@
 # Source Registry
 # Exported from LanceDB on 2026-01-22
-# Total sources: 51
+# Total sources: 52
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -398,6 +398,32 @@ sources:
     domains:
     - META
     status: cataloged
+  gpt-2026-01-19-openai-unit-econ:
+    type: KNOWLEDGE
+    title: 'Unit-economics back-of-envelope: GPU capex vs $/kWh (appendix to openai-value-intelligence)'
+    author:
+    - gpt-5.2
+    year: 2026
+    url: ''
+    accessed: '2026-01-19'
+    reliability: 0.45
+    bias_notes: Analyst-derived back-of-envelope calculation created during a no-network
+      draft; not asserted in the OpenAI post.
+    claims_extracted:
+    - RESOURCE-2026-004
+    - TECH-2026-013
+    analysis_file: analysis/sources/openai-value-intelligence.md
+    topics:
+    - unit-economics
+    - inference
+    - gpus
+    - capex
+    - energy
+    domains:
+    - RESOURCE
+    - TECH
+    - ECON
+    status: cataloged
   historical-pattern:
     type: KNOWLEDGE
     title: Historical pattern of technology diffusion and commoditization
@@ -594,28 +620,42 @@ sources:
     type: ARTICLE
     title: A business that scales with the value of intelligence
     author:
+    - Sarah Friar
     - OpenAI
-    year: 0
+    year: 2026
     url: https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/
-    accessed: '2026-01-19'
-    reliability: 0.550000011920929
-    bias_notes: Corporate strategy post; likely promotional framing; quantitative/unit-economics
-      implications should be cross-checked against hardware specs and observed pricing
+    accessed: '2026-01-22'
+    reliability: 0.55
+    bias_notes: Corporate strategy narrative; key metrics are self-reported; optimistic
+      framing likely; "compute scarcity" framing may underweight other constraints
+      (distribution, regulation, competition).
     claims_extracted:
-    - RESOURCE-2026-004
-    - TECH-2026-013
+    - TRANS-2026-014
+    - ECON-2026-015
+    - INST-2026-001
+    - RESOURCE-2026-005
+    - ECON-2026-016
+    - ECON-2026-017
+    - RESOURCE-2026-006
+    - INST-2026-002
+    - INST-2026-003
+    - TECH-2026-014
+    - ECON-2026-018
     analysis_file: analysis/sources/openai-value-intelligence.md
     topics:
-    - inference
-    - unit-economics
-    - pricing
-    - gpus
-    - energy
-    - margins
+    - ai
+    - chatgpt
+    - business-model
+    - monetization
+    - compute
+    - infrastructure
+    - agents
     domains:
-    - TECH
-    - RESOURCE
+    - TRANS
     - ECON
+    - RESOURCE
+    - INST
+    - TECH
     status: analyzed
   peng-2023-copilot-productivity:
     type: PAPER

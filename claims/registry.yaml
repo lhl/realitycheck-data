@@ -1,20 +1,20 @@
 # Claim Registry
 # Exported from LanceDB on 2026-01-22
-# Total claims: 131
+# Total claims: 142
 # Total chains: 3
 
 counters:
-  TECH: 13
-  RESOURCE: 4
+  TECH: 14
+  RESOURCE: 6
   LABOR: 12
-  ECON: 14
+  ECON: 18
   GOV: 32
   SOC: 3
-  TRANS: 13
+  TRANS: 14
   META: 8
   GEO: 1
   RISK: 5
-  INST: 1
+  INST: 3
 claims:
   ECON-2025-001:
     text: Neoliberalism evolved into a model of state hollowing and asset-stripping
@@ -340,6 +340,81 @@ claims:
     notes: 'QUESTIONABLE: Math check - EU (~447M) + CPTPP (~500M) = ~950M, not 1.5B.
       Either claim includes future expansion or uses different bloc composition. Needs
       clarification on what constitutes the ''bridged'' bloc.'
+  ECON-2026-015:
+    text: OpenAI argues its business model should scale with the value that intelligence
+      delivers, so monetization mechanisms should capture value in proportion to outcomes
+      produced rather than being fixed or purely cost-based.
+    type: '[T]'
+    domain: ECON
+    evidence_level: E5
+    confidence: 0.6000000238418579
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-22'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-22'
+  ECON-2026-016:
+    text: OpenAI reports revenue scaled roughly 3× year over year from 2023 to 2025,
+      from about $2B in annual recurring revenue (ARR) in 2023 to $6B in 2024 and
+      more than $20B in 2025.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E4
+    confidence: 0.6499999761581421
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-22'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-22'
+  ECON-2026-017:
+    text: OpenAI asserts that if it had access to more compute during 2023–2025, it
+      would have achieved faster customer adoption and monetization during those periods.
+    type: '[C]'
+    domain: ECON
+    evidence_level: E5
+    confidence: 0.550000011920929
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-22'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-22'
+  ECON-2026-018:
+    text: As AI moves into domains like scientific research, drug discovery, energy
+      systems, and financial modeling, new economic models (licensing, IP-based agreements,
+      and outcome-based pricing) will emerge to share in the value created.
+    type: '[P]'
+    domain: ECON
+    evidence_level: E6
+    confidence: 0.44999998807907104
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-22'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-22'
   GEO-2025-001:
     text: The energy transition is producing major political consequences—from bribery
       and corruption up to open warfare—and post-oil geopolitics will differ substantially
@@ -1011,6 +1086,64 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  INST-2026-001:
+    text: OpenAI describes a multi-tier monetization system including consumer subscriptions,
+      workplace subscriptions, usage-based API pricing tied to production workloads,
+      and extensions into commerce and advertising that are intended to feel native
+      to the user experience.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    confidence: 0.8500000238418579
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-22'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-22'
+  INST-2026-002:
+    text: OpenAI shifted from relying on a single compute provider to working with
+      providers across a diversified ecosystem, increasing resilience and enabling
+      compute certainty for planning and financing.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    confidence: 0.75
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-22'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-22'
+  INST-2026-003:
+    text: OpenAI manages compute as an actively managed portfolio, training frontier
+      models on premium hardware when capability is prioritized and serving high-volume
+      workloads on lower-cost infrastructure when efficiency is prioritized.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    confidence: 0.699999988079071
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-22'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-22'
   LABOR-2023-001:
     text: 'In a controlled experiment (May–Jun 2022) with 95 professional developers,
       the group with access to GitHub Copilot completed an HTTP-server implementation
@@ -1579,7 +1712,7 @@ claims:
     evidence_level: E3
     confidence: 0.699999988079071
     source_ids:
-    - openai-value-intelligence
+    - gpt-2026-01-19-openai-unit-econ
     first_extracted: '2026-01-19'
     extracted_by: gpt-5.2
     supports:
@@ -1588,11 +1721,46 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-22'
+    notes: Analyst-derived back-of-envelope from a no-network draft; not asserted
+      in the OpenAI post. See appendix in analysis/sources/openai-value-intelligence.md.
+  RESOURCE-2026-005:
+    text: OpenAI reports compute capacity scaled roughly 3× year over year from 2023
+      to 2025, from 0.2 GW in 2023 to 0.6 GW in 2024 and about 1.9 GW in 2025.
+    type: '[F]'
+    domain: RESOURCE
+    evidence_level: E4
+    confidence: 0.699999988079071
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-22'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
     version: 1
-    last_updated: '2026-01-19'
-    notes: Assumes 0.7kW IT power, PUE ~1.2, electricity ~$0.06/kWh, GPU price ~$20k-$40k,
-      depreciation 3-5y, utilization 70-90%; excludes server/networking/facilities
-      opex
+    last_updated: '2026-01-22'
+  RESOURCE-2026-006:
+    text: Compute is the scarcest resource in AI, and access to compute defines which
+      organizations can scale AI systems and services.
+    type: '[T]'
+    domain: RESOURCE
+    evidence_level: E5
+    confidence: 0.6499999761581421
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-22'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-22'
   RISK-2025-001:
     text: Humanity has passed the +1.5°C warming threshold, increasing the number
       of days per year when temperatures are too hot for normal photosynthesis.
@@ -1609,8 +1777,11 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-21'
+    version: 2
+    last_updated: '2026-01-22'
+    notes: 'Copernicus C3S: 2024 was first calendar year with global average temperature
+      >1.5°C above pre-industrial, but this does not mean the Paris Agreement long-term
+      (≥20-year) threshold has been breached: https://climate.copernicus.eu/copernicus-2024-first-year-exceed-15degc-above-pre-industrial-level'
   RISK-2025-002:
     text: Just-in-time supply chains increased economic efficiency at the expense
       of resilience, leaving societies without reserves to withstand prolonged global
@@ -1801,8 +1972,11 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-21'
+    version: 2
+    last_updated: '2026-01-22'
+    notes: 'MIT CSAIL Alliances article argues Moore''s Law is effectively over (broken
+      2-year doubling cadence; post-2016 slowdowns) and discusses 14nm (2014) -> 10nm
+      (2019) taking ~5 years: https://cap.csail.mit.edu/death-moores-law-what-it-means-and-what-might-fill-gap-going-forward'
   TECH-2025-002:
     text: The hyperscale AI data center boom resembles a bubble; to the extent LLMs
       are useful, deployment will shift toward pre-trained models running on local
@@ -2224,7 +2398,7 @@ claims:
     evidence_level: E4
     confidence: 0.6000000238418579
     source_ids:
-    - openai-value-intelligence
+    - gpt-2026-01-19-openai-unit-econ
     first_extracted: '2026-01-19'
     extracted_by: gpt-5.2
     supports:
@@ -2234,11 +2408,29 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ''
+    version: 2
+    last_updated: '2026-01-22'
+    notes: Analyst-derived counterfactual/hypothesis from a no-network draft; not
+      asserted in the OpenAI post. See appendix in analysis/sources/openai-value-intelligence.md.
+  TECH-2026-014:
+    text: The next phase of AI products will be agents and workflow automation that
+      run continuously, carry context over time, and take action across tools, becoming
+      an operating layer for knowledge work.
+    type: '[P]'
+    domain: TECH
+    evidence_level: E6
+    confidence: 0.3499999940395355
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-22'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
     version: 1
-    last_updated: '2026-01-19'
-    notes: 'Back-of-envelope: at 0.7kW IT power, $1.20/kWh ≈ $0.84/GPU-hour; typical
-      3y depreciation implies capex alone can exceed this unless GPU effective price
-      is low or utilization/depreciation is favorable'
+    last_updated: '2026-01-22'
   TRANS-2025-001:
     text: The current global energy transition away from fossil fuels is “more or
       less irreversible” at this point.
@@ -2273,8 +2465,12 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-21'
+    version: 2
+    last_updated: '2026-01-22'
+    notes: 'PV module price milestones vary by definition/series: Wikipedia ''Solar
+      cell'' cites ~6/W (mid-1970s, inflation-adjusted) and ~/usr/bin/bash.62/W (4Q2012
+      module price), while OWID annual series (constant $) differs; see https://en.wikipedia.org/wiki/Solar_cell
+      and https://ourworldindata.org/grapher/solar-pv-prices'
   TRANS-2025-003:
     text: China installed about 198 GW of solar PV between January and May 2025, including
       93 GW coming online in May 2025 alone.
@@ -2291,8 +2487,11 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-21'
+    version: 2
+    last_updated: '2026-01-22'
+    notes: 'Checked against MIT Technology Review (2025-07-10) citing 198 GW solar
+      Jan–May 2025 and 93 GW in May alone: https://www.technologyreview.com/2025/07/10/1119941/china-energy-dominance-three-charts/amp/
+      (also echoed in Guardian: https://www.theguardian.com/world/2025/jun/26/china-breaks-more-records-with-massive-build-up-of-wind-and-solar-power).'
   TRANS-2025-004:
     text: By late summer 2025, renewables supplied more than 50% of the EU’s electricity.
     type: '[F]'
@@ -2308,8 +2507,10 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-21'
+    version: 2
+    last_updated: '2026-01-22'
+    notes: 'Checked Ember EU monthly data (Renewables %, EU region): renewables share
+      exceeds 50% in Jul 2025 (50.27), Aug (51.14), Sep (50.48). Source CSV: https://files.ember-energy.org/public-downloads/europe_monthly_full_release_long_format.csv'
   TRANS-2025-005:
     text: In the post-oil era, energy production will be more widely distributed rather
       than concentrated in resource-extraction economies and centralized power stations.
@@ -2345,8 +2546,11 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-21'
+    version: 2
+    last_updated: '2026-01-22'
+    notes: 'Counterevidence as of Global Carbon Budget 2024: global fossil CO2 emissions
+      projected record-high in 2024 (37.4 Gt, +0.8% vs 2023) and authors state there
+      is ''no sign'' the world has reached a peak in fossil CO2 emissions: https://globalcarbonbudget.org/fossil-fuel-co2-emissions-increase-again-in-2024/'
   TRANS-2025-007:
     text: The forecast boom in small modular nuclear reactors will fizzle as cheap
       distributed solar PV plus battery storage scales.
@@ -2617,6 +2821,26 @@ claims:
     notes: 'Causal identification problem: surplus can rise from multiple mechanisms
       (terms-of-trade, substitution, tariff diversion) without ''demand destruction''
       dominance'
+  TRANS-2026-014:
+    text: OpenAI describes a compounding flywheel in which investment in compute enables
+      frontier research and step-change capability improvements, which unlock better
+      products and broader adoption, which drives revenue that funds the next wave
+      of compute and innovation.
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E5
+    confidence: 0.6000000238418579
+    source_ids:
+    - openai-value-intelligence
+    first_extracted: '2026-01-22'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-22'
 chains:
   CHAIN-2026-001:
     name: Permanent Underclass

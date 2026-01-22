@@ -7,12 +7,13 @@ This directory contains source materials analyzed in this knowledge base.
 | Type | Count | Description |
 |------|-------|-------------|
 | ARTICLE | 5 | Published articles |
-| BLOG | 14 | Blog posts |
+| BLOG | 15 | Blog posts |
 | BOOK | 1 | Books |
-| CONVO | 5 | AI-assisted analysis transcripts |
+| CONVO | 6 | AI-assisted analysis transcripts |
 | DATA | 2 | Data sources |
-| KNOWLEDGE | 3 | Background knowledge |
-| PAPER | 3 | Academic papers |
+| INTERVIEW | 1 | Interview, talk, or speech transcript |
+| KNOWLEDGE | 7 | Background knowledge |
+| PAPER | 5 | Academic papers |
 | REPORT | 6 | Reports |
 | SOCIAL | 4 | Social media threads |
 
@@ -43,7 +44,7 @@ This directory contains source materials analyzed in this knowledge base.
 | Source | Author | Analysis |
 |--------|--------|----------|
 | [AI companies will fail - Reverse Centaur](https://www.theguardian.com/us-news/ng-interactive/2026/jan/18/tech-ai-bubble-burst-reverse-centaur) | Cory Doctorow | [analysis](../analysis/sources/doctorow-2026-reverse-centaur.md) |
-| [A business that scales with intelligence](https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/) | OpenAI | [analysis](../analysis/sources/openai-value-intelligence.md) |
+| [A business that scales with intelligence](https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/) | Sarah Friar (OpenAI) | [analysis](../analysis/sources/openai-value-intelligence.md) |
 
 ### Social Media
 

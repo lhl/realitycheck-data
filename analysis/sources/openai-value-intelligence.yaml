@@ -1,0 +1,248 @@
+sources:
+  - id: "openai-value-intelligence"
+    type: "ARTICLE"
+    title: "A business that scales with the value of intelligence"
+    author:
+      - "Sarah Friar"
+      - "OpenAI"
+    year: 2026
+    url: "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/"
+    accessed: "2026-01-22"
+    status: "analyzed"
+    analysis_file: "analysis/sources/openai-value-intelligence.md"
+    reliability: 0.55
+    bias_notes: >-
+      Corporate strategy narrative; key metrics are self-reported; optimistic framing likely; “compute scarcity”
+      framing may underweight other constraints (distribution, regulation, competition).
+    topics:
+      - ai
+      - chatgpt
+      - business-model
+      - monetization
+      - compute
+      - infrastructure
+      - agents
+    domains:
+      - TRANS
+      - ECON
+      - RESOURCE
+      - INST
+      - TECH
+    claims_extracted:
+      - TRANS-2026-014
+      - ECON-2026-015
+      - INST-2026-001
+      - RESOURCE-2026-005
+      - ECON-2026-016
+      - ECON-2026-017
+      - RESOURCE-2026-006
+      - INST-2026-002
+      - INST-2026-003
+      - TECH-2026-014
+      - ECON-2026-018
+
+claims:
+  - id: "TRANS-2026-014"
+    text: >-
+      OpenAI describes a compounding flywheel in which investment in compute enables frontier research
+      and step-change capability improvements, which unlock better products and broader adoption, which
+      drives revenue that funds the next wave of compute and innovation.
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["openai-value-intelligence"]
+    operationalization: >-
+      Track time-series measures for compute capacity, model capability, product adoption, and revenue;
+      test whether increases in compute precede capability/product improvements and whether those
+      improvements precede adoption/revenue growth (controlling for distribution and pricing changes).
+    assumptions:
+      - Compute capacity can be measured consistently over time (and is comparable year to year).
+      - Model capability improvements causally influence adoption and willingness-to-pay.
+    falsifiers:
+      - Adoption/revenue growth is primarily explained by distribution or pricing changes, not by capability.
+      - Compute increases fail to produce meaningful capability/product improvements over sustained periods.
+
+  - id: "ECON-2026-015"
+    text: >-
+      OpenAI argues its business model should scale with the value that intelligence delivers, so
+      monetization mechanisms should capture value in proportion to outcomes produced rather than
+      being fixed or purely cost-based.
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["openai-value-intelligence"]
+    operationalization: >-
+      Compare proxies for delivered value (retention, willingness-to-pay, measured productivity gains)
+      against realized monetization across tiers and products; test whether monetization increases with
+      outcome/value proxies over time.
+    assumptions:
+      - Value delivered by AI can be measured with reasonable proxies.
+      - Pricing/monetization can be structured to track value (not just cost).
+    falsifiers:
+      - Evidence shows monetization remains largely decoupled from value proxies even as delivered value changes.
+
+  - id: "INST-2026-001"
+    text: >-
+      OpenAI describes a multi-tier monetization system including consumer subscriptions, workplace
+      subscriptions, usage-based API pricing tied to production workloads, and extensions into commerce
+      and advertising that are intended to feel native to the user experience.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["openai-value-intelligence"]
+    operationalization: >-
+      Verify product offerings and pricing via official documentation (ChatGPT pricing tiers, API pricing),
+      and track announcements/rollouts of commerce and advertising features in ChatGPT.
+    assumptions:
+      - Public pricing pages accurately reflect current monetization structure.
+    falsifiers:
+      - Official documentation contradicts the described tiering/usage-based pricing.
+      - Commerce/ads are not introduced (or are introduced in a materially different way than described).
+
+  - id: "RESOURCE-2026-005"
+    text: >-
+      OpenAI reports compute capacity scaled roughly 3× year over year from 2023 to 2025, from 0.2 GW
+      in 2023 to 0.6 GW in 2024 and about 1.9 GW in 2025.
+    type: "[F]"
+    domain: "RESOURCE"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-value-intelligence"]
+    operationalization: >-
+      Define “compute in GW” (installed power capacity vs contracted peak power vs average usage) and
+      verify via audited disclosures, credible investigative reporting, or third-party datacenter/power records.
+    assumptions:
+      - “Compute” in GW corresponds to a measurable power/capacity quantity rather than a metaphor.
+    falsifiers:
+      - Independent reporting/audit finds materially different compute capacity figures for OpenAI in 2023–2025.
+
+  - id: "ECON-2026-016"
+    text: >-
+      OpenAI reports revenue scaled roughly 3× year over year from 2023 to 2025, from about $2B in annual
+      recurring revenue (ARR) in 2023 to $6B in 2024 and more than $20B in 2025.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["openai-value-intelligence"]
+    operationalization: >-
+      Verify reported ARR via audited financial statements, investor disclosures, or multiple independent,
+      reputable financial reports; ensure “ARR” is defined consistently across sources.
+    assumptions:
+      - The claim uses a standard definition of ARR comparable across years.
+    falsifiers:
+      - Credible financial reporting/audit contradicts these ARR figures materially.
+
+  - id: "ECON-2026-017"
+    text: >-
+      OpenAI asserts that if it had access to more compute during 2023–2025, it would have achieved faster
+      customer adoption and monetization during those periods.
+    type: "[C]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["openai-value-intelligence"]
+    operationalization: >-
+      Use natural experiments (exogenous compute increases/decreases) to estimate causal effects of compute
+      capacity on product quality, latency, availability, adoption, and revenue; compare constrained vs
+      unconstrained periods while controlling for pricing and distribution changes.
+    assumptions:
+      - Compute is a binding constraint on product capacity/quality during the period.
+      - Adoption/monetization responds meaningfully to capability/availability improvements enabled by compute.
+    falsifiers:
+      - Evidence shows adoption/monetization was limited by non-compute factors (e.g., demand, trust, regulation).
+      - Compute expansions do not measurably improve adoption/monetization after controlling for confounders.
+
+  - id: "RESOURCE-2026-006"
+    text: >-
+      Compute is the scarcest resource in AI, and access to compute defines which organizations can scale
+      AI systems and services.
+    type: "[T]"
+    domain: "RESOURCE"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["openai-value-intelligence"]
+    operationalization: >-
+      Compare scaling outcomes across major AI actors to indicators of compute access (GPU allocations,
+      datacenter power, capex commitments) and evaluate whether compute access predicts scaling better than
+      alternative constraints (distribution, data access, regulation, talent).
+    assumptions:
+      - Compute access can be measured with reasonable proxies across actors.
+    falsifiers:
+      - Actors with limited compute access scale successfully while compute-rich actors fail, consistently, due to other constraints.
+
+  - id: "INST-2026-002"
+    text: >-
+      OpenAI shifted from relying on a single compute provider to working with providers across a diversified
+      ecosystem, increasing resilience and enabling compute certainty for planning and financing.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["openai-value-intelligence"]
+    operationalization: >-
+      Verify via public partnership announcements, contracts, and credible reporting that OpenAI sources
+      compute from multiple providers (and assess whether this diversification reduces availability risk).
+    assumptions:
+      - Public reporting reasonably reflects provider diversification and contract scope.
+    falsifiers:
+      - Evidence shows OpenAI remains effectively dependent on a single provider for the majority of compute.
+
+  - id: "INST-2026-003"
+    text: >-
+      OpenAI manages compute as an actively managed portfolio, training frontier models on premium hardware
+      when capability is prioritized and serving high-volume workloads on lower-cost infrastructure when
+      efficiency is prioritized.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-value-intelligence"]
+    operationalization: >-
+      Verify via technical disclosures or credible reporting about training/inference infrastructure choices;
+      corroborate that different workloads are routed to different hardware tiers and that this improves unit economics.
+    assumptions:
+      - Workloads can be segmented in a way that meaningfully benefits from hardware tiering.
+    falsifiers:
+      - Evidence shows uniform infrastructure usage (no meaningful tiering) or no efficiency benefit from tiering.
+
+  - id: "TECH-2026-014"
+    text: >-
+      The next phase of AI products will be agents and workflow automation that run continuously, carry context
+      over time, and take action across tools, becoming an operating layer for knowledge work.
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E6"
+    credence: 0.35
+    source_ids: ["openai-value-intelligence"]
+    operationalization: >-
+      Track deployment of agentic capabilities (persistent tasks, tool use with authorization, multi-step execution)
+      and measure adoption in consumer and enterprise settings; assess whether agents replace app-centric workflows
+      over a 3–7 year horizon.
+    assumptions:
+      - Security, authorization, and liability challenges can be solved well enough for broad adoption.
+      - Users and enterprises will trust agents to take actions.
+    falsifiers:
+      - Agentic products remain niche due to governance, security, or trust constraints over a multi-year horizon.
+
+  - id: "ECON-2026-018"
+    text: >-
+      As AI moves into domains like scientific research, drug discovery, energy systems, and financial modeling,
+      new economic models (licensing, IP-based agreements, and outcome-based pricing) will emerge to share in the
+      value created.
+    type: "[P]"
+    domain: "ECON"
+    evidence_level: "E6"
+    credence: 0.45
+    source_ids: ["openai-value-intelligence"]
+    operationalization: >-
+      Track the prevalence and revenue share of licensing/IP/outcome-based contracts in AI deployments across
+      regulated and high-value domains; compare to subscription and usage-based pricing shares over time.
+    assumptions:
+      - High-value domain deployments will generate sufficient measurable value to support outcome-based contracts.
+    falsifiers:
+      - Pricing remains dominated by subscriptions and usage-based billing with little adoption of outcome-based or IP licensing models.
+
