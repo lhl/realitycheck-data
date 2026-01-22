@@ -8,7 +8,7 @@
 |-------|-------|
 | claims | 142 |
 | sources | 52 |
-| chains | 3 |
+| chains | 4 |
 | predictions | 15 |
 | contradictions | 0 |
 | definitions | 0 |
@@ -61,3 +61,4 @@
 - **CHAIN-2026-001**: Permanent Underclass (credence: 0.30)
 - **CHAIN-2026-002**: Genocide Default (credence: 0.10)
 - **CHAIN-2026-003**: Open Source De-Darkener (credence: 0.55)
+- **CHAIN-2026-004**: Review Asymmetry Externality (credence: 0.55)

@@ -8,7 +8,7 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 |--------|-------|
 | **Claims** | 142 |
 | **Sources** | 52 |
-| **Argument Chains** | 3 |
+| **Argument Chains** | 4 |
 | **Predictions Tracked** | 15 |
 
 See [claims/README.md](claims/README.md) for full statistics.
@@ -70,8 +70,6 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TRANS | Transition Dynamics | 21 |
 | RESOURCE | Resource Constraints | 7 |
 | GEO | Geopolitics | 1 |
-| INST | Institutions & Organizations | 4 |
-| RISK | Risk Assessment | 5 |
 | META | Framework & Methodology | 8 |
 
 ---
