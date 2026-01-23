@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-23 | [Anthropic "Claude's Constitution"](analysis/sources/anthropic-2026-claudes-constitution.md) | `[REVIEWED]` | Values/behavior spec: “final constitutional authority”; hard constraints (WMD uplift, critical infrastructure attacks, malware, CSAM); virtue-ethics + model-welfare framing |
 | 2026-01-22 | [Stross "The pivot" (Part 1)](analysis/sources/stross-2025-the-pivot-1.md) | `[REVIEWED]` | 2025 inflection-point thesis: energy transition + climate/food risk + post-Moore’s Law tech/finance |
 | 2026-01-22 | [OpenAI "Value Intelligence"](analysis/sources/openai-value-intelligence.md) | `[REVIEWED]` | Compute + ARR scaling claims; compute-scarcity flywheel; tiered monetization framing |
 | 2026-01-21 | [Rogan & Musk "JRE #2404 — Elon Musk"](analysis/sources/jre-2404-elon-musk-2025-ai-woke-mind-virus.md) | `[REVIEWED]` | Transcript excerpt: truth-seeking alignment, Gemini ImageGen controversy, and objective mis-specification risks |
