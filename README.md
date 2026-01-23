@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 142 |
-| **Sources** | 52 |
+| **Claims** | 158 |
+| **Sources** | 53 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 15 |
 
@@ -70,7 +70,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TRANS | Transition Dynamics | 21 |
 | RESOURCE | Resource Constraints | 7 |
 | GEO | Geopolitics | 1 |
-| META | Framework & Methodology | 8 |
+| META | Framework & Methodology | 23 |
 
 ---
 
@@ -180,4 +180,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-01-22*
+*Last updated: 2026-01-23*
