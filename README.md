@@ -34,6 +34,14 @@ See [claims/README.md](claims/README.md) for full statistics.
 | 2026-01-19 | [Yegge Vibe Coding 2025-2026](analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md) | `[DRAFT]` | Evolution of coding agent discourse |
 | 2026-01-18 | [Neofeudalism Discourse](analysis/syntheses/neofeudalism-discourse-synthesis.md) | `[DRAFT]` | Post-labor economics, permanent underclass thesis |
 
+### Argument Chains
+
+| Chain | Thesis | Credence |
+|-------|--------|----------|
+| [Permanent Underclass](claims/chains/permanent-underclass.md) | Post-labor → permanent underclass by default | 0.30 |
+| [Genocide Default](claims/chains/genocide-default.md) | Elites will choose genocide over UBI | 0.10 |
+| [Open Source De-Darkener](claims/chains/open-source-de-darkener.md) | Open models shift power from cognition to infrastructure | 0.60 |
+
 ### Source Analyses
 
 | Date | Document | Status | Summary |
@@ -54,14 +62,6 @@ See [claims/README.md](claims/README.md) for full statistics.
 | 2026-01-18 | [Perera "China's Trillion-Dollar Illusion"](analysis/sources/perera-2026-chinas-trillion-dollar-illusion.md) | `[REVIEWED]` | "Demand-destruction surplus" mechanism analysis |
 | 2026-01-18 | [Ronacher "Agent Psychosis"](analysis/sources/ronacher-2026-agent-psychosis.md) | `[REVIEWED]` | Maintainer-centric analysis of agentic-coding addiction/slop loops |
 | 2026-01-16 | [Teortaxes "Greenland Endgame"](analysis/sources/teortaxes-2026-greenland-endgame.md) | `[REVIEWED]` | GOV/RESOURCE/TRANS claims extraction with fact-checks |
-
-### Argument Chains
-
-| Chain | Thesis | Credence |
-|-------|--------|----------|
-| [Permanent Underclass](claims/chains/permanent-underclass.md) | Post-labor → permanent underclass by default | 0.30 |
-| [Genocide Default](claims/chains/genocide-default.md) | Elites will choose genocide over UBI | 0.10 |
-| [Open Source De-Darkener](claims/chains/open-source-de-darkener.md) | Open models shift power from cognition to infrastructure | 0.60 |
 
 ---
 
