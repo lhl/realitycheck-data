@@ -1,0 +1,488 @@
+sources:
+  - id: "lhl-2026-frontier-llm-token-unit-economics"
+    type: "KNOWLEDGE"
+    title: "Inference Cost Analysis & Projections (Jan 2026)"
+    author:
+      - "lhl"
+    year: 2026
+    url: "https://github.com/lhl/frontier-llm-token-unit-economics"
+    accessed: "2026-01-25"
+    status: "analyzed"
+    analysis_file: "analysis/sources/lhl-2026-frontier-llm-token-unit-economics.md"
+    reliability: 0.72
+    bias_notes: >-
+      First-party synthesis of frontier LLM inference unit economics. Strong on explicit citations, pricing tables,
+      and the internal usage-case arithmetic; weaker where it infers provider COGS, hidden “reasoning tokens”, or
+      closed-model architectures/throughput from indirect signals. Many ranges are explicitly illustrative.
+    topics:
+      - llm
+      - inference
+      - pricing
+      - unit-economics
+      - caching
+      - kv-cache
+      - reasoning
+      - subscriptions
+      - gpus
+      - throughput
+    domains:
+      - ECON
+      - RESOURCE
+      - TECH
+      - INST
+      - TRANS
+    claims_extracted:
+      - ECON-2026-020
+      - TECH-2026-092
+      - TECH-2026-093
+      - ECON-2026-021
+      - TECH-2026-094
+      - ECON-2026-022
+      - TECH-2026-095
+      - INST-2026-004
+      - INST-2026-005
+      - RESOURCE-2026-007
+      - TECH-2026-096
+      - ECON-2026-023
+      - TECH-2026-097
+      - RESOURCE-2026-008
+      - ECON-2026-024
+      - ECON-2026-025
+      - ECON-2026-026
+      - ECON-2026-027
+      - TECH-2026-098
+      - RESOURCE-2026-009
+      - RESOURCE-2026-010
+      - TRANS-2026-016
+      - TRANS-2026-017
+      - INST-2026-006
+
+claims:
+  - id: "ECON-2026-020"
+    text: >-
+      Prompt/prefix caching is a dominant unit-economics lever for agentic and coding workloads because it
+      converts repeated “input tokens” from compute-heavy prefill into comparatively cheap cache reads that are
+      discounted heavily in API pricing.
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.70
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      For representative agentic/coding workloads, measure (a) prefix reuse, (b) cache hit rate, and (c) spend with
+      and without caching; compare contribution margin sensitivity to caching vs other levers (model routing,
+      batching, quantization).
+    assumptions:
+      - Workloads have high prefix reuse (stable system prompts and long shared context).
+      - Cache hits skip most prefill compute, making reads materially cheaper to serve than fresh input.
+    falsifiers:
+      - Empirical workloads show low prefix reuse so caching saves little.
+      - Providers do not materially reduce compute on cache hits (reads cost ~fresh input in COGS).
+
+  - id: "TECH-2026-092"
+    text: >-
+      Prompt/prefix caching works by storing internal model state (e.g., KV cache for a prefix) so that on a cache hit
+      the system can skip recomputing prefill for that prefix and resume generation from the cached state.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Confirm from provider docs and/or serving implementations that cache hits avoid recomputing attention over the
+      cached prefix (prefill) and instead restore prior KV state.
+    assumptions:
+      - Provider documentation accurately describes the implementation at a conceptual level.
+    falsifiers:
+      - Provider documentation indicates cache hits still recompute prefill (no reuse of internal state).
+
+  - id: "TECH-2026-093"
+    text: >-
+      In the Claude case study (Dec 2025–Jan 2026), cache reads constitute about 91.2% of tokens and the cache hit
+      rate (reads / (reads + creation)) is about 91.4%, implying a reuse factor of roughly 10.6×.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Recompute totals from the repo’s `ai-provider-cost-analysis-request.md` token tables and verify the derived hit
+      rate and reuse factor.
+    assumptions:
+      - The usage totals in the case study are accurate and complete for the period.
+    falsifiers:
+      - Recomputing totals yields materially different cache read/creation counts or derived rates.
+
+  - id: "ECON-2026-021"
+    text: >-
+      In the Claude case study, applying Opus 4.5 list prices implies spend is roughly ~$1.0K with caching versus
+      ~$4.8K if all input were billed as uncached base input.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Using published Claude Opus 4.5 token prices and the token mix in the case study, compute both scenarios
+      (with caching multipliers applied vs treating all input as base input).
+    assumptions:
+      - List prices and multipliers are applied correctly to the token categories.
+    falsifiers:
+      - Recomputations show materially different totals or the scenario framing double-counts categories.
+
+  - id: "TECH-2026-094"
+    text: >-
+      In the OpenAI case study (Sep 2025–Jan 2026), cached input tokens are about 95.9% of total input tokens,
+      implying a cached-to-fresh reuse factor of roughly 23×.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Recompute totals from the repo’s `ai-provider-cost-analysis-request.md` table and verify cached share and
+      cached:fresh ratio.
+    assumptions:
+      - The token categorization (fresh vs cached input) matches OpenAI billing semantics.
+    falsifiers:
+      - The raw totals do not support the stated cached share/reuse factor.
+
+  - id: "ECON-2026-022"
+    text: >-
+      In the OpenAI case study, total estimated API-equivalent cost divided by total tokens implies an effective cost
+      around $0.31 per million tokens, and the observed cost depends on the actual model mix rather than a single
+      list-rate model.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Compute (estimated cost) / (total tokens / 1e6) from the case study totals and compare to a hypothetical
+      single-model list-rate calculation.
+    assumptions:
+      - The reported estimated cost reflects pricing applied consistently across the logged model mix.
+    falsifiers:
+      - Recalculation yields a materially different effective $/MTok.
+
+  - id: "TECH-2026-095"
+    text: >-
+      For “reasoning” models, hidden internal reasoning tokens can exceed visible output by an order of magnitude or
+      more, so true cost-per-task can be 10–100× larger than the cost implied by visible output tokens alone.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Where providers expose “reasoning token” telemetry, measure the distribution of reasoning:visible ratios by task
+      class; otherwise use controlled benchmarks where wall-clock GPU time or cost-per-task can be measured.
+    assumptions:
+      - Providers frequently incur substantial unbilled (or differently billed) internal compute for reasoning.
+    falsifiers:
+      - Telemetry shows reasoning:visible ratios are typically near 1× for most tasks.
+      - Providers meter/bill most reasoning compute in a way that makes visible-token cost a close proxy for true cost.
+
+  - id: "INST-2026-004"
+    text: >-
+      Subscription profitability for “unlimited” plans is primarily determined by how well providers protect the
+      expensive execution path (uncached long-context prefill, sustained decode, heavy reasoning compute) via
+      routing, limits, and throttling; automated agent loops are a high-risk usage pattern.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Model per-user contribution margin as a function of token mix (fresh vs cached vs output vs reasoning) and
+      measure loss incidence under different guardrail policies (rate limits, routing, “fair use” enforcement).
+    assumptions:
+      - Variable cost is dominated by accelerator time and memory footprint for a subset of heavy users.
+    falsifiers:
+      - Evidence shows subscriptions remain profitable without strong guardrails even under heavy agentic use.
+
+  - id: "INST-2026-005"
+    text: >-
+      OpenAI’s CEO said the company is losing money on the $200/month ChatGPT Pro plan because people use it more
+      than expected.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Verify the referenced statement in credible reporting and cross-check with additional reporting or official
+      disclosures if available.
+    assumptions:
+      - The cited reporting quotes/paraphrases the CEO statement accurately.
+    falsifiers:
+      - Subsequent corrections or primary sources contradict the claim.
+
+  - id: "RESOURCE-2026-007"
+    text: >-
+      A practical lower bound for variable inference cost per million tokens is approximately:
+      COGS($/MTok) ≈ (cluster $/hr) / (effective tok/s × 3600) × 1e6; utilization and effective throughput therefore
+      dominate unit cost.
+    type: "[F]"
+    domain: "RESOURCE"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Given a known cluster hourly cost and measured effective throughput (tokens/sec delivered), compute the implied
+      cost floor and compare to observed token pricing.
+    assumptions:
+      - Accelerator time is the dominant variable cost component at the margin.
+    falsifiers:
+      - Measured non-accelerator variable costs dominate (e.g., networking, storage) for the workload class.
+
+  - id: "TECH-2026-096"
+    text: >-
+      Output tokens are materially more expensive than input tokens because decode is sequential and largely
+      memory-bandwidth-bound, while prefill is parallelizable and compute-efficient; for typical frontier models,
+      decode throughput per GPU is often 10–50× lower than prefill throughput.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.75
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Benchmark prefill vs decode throughput across model sizes on fixed hardware, reporting tokens/sec for each
+      phase; validate the typical ratio range for frontier-class models.
+    assumptions:
+      - The workload is throughput-limited by memory bandwidth during decode at scale.
+    falsifiers:
+      - Benchmarks show decode and prefill throughput are similar for frontier-class models on modern hardware.
+
+  - id: "ECON-2026-023"
+    text: >-
+      Under Anthropic prompt-caching pricing (5m write=1.25× base input, read=0.1×; 1h write=2×, read=0.1×),
+      caching becomes cheaper than resending uncached input after about 1.28 total uses of a prefix (5m) or about 2.11
+      total uses (1h).
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Using the break-even inequality n ≥ (w - r) / (1 - r) with the documented multipliers, compute the implied
+      reuse threshold for 5m and 1h TTLs.
+    assumptions:
+      - The multipliers apply as documented and the cache hit occurs after an initial write.
+    falsifiers:
+      - Provider pricing changes or billing semantics invalidate the multiplier assumptions.
+
+  - id: "TECH-2026-097"
+    text: >-
+      KV-cache memory per sequence scales roughly as
+      KV_bytes = 2 × layers × hidden_dim × bytes_per_param × context_length, so long-context usage for large models
+      can require hundreds of GB per active session—often exceeding a single GPU’s VRAM—and therefore motivates TTLs,
+      tiered cache storage, and KV quantization/paging.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      For representative model configs (layers/hidden dim) and context lengths (32K, 128K), compute KV-cache
+      footprint and compare to common GPU VRAM capacities; validate with serving system measurements.
+    assumptions:
+      - The formula’s simplifying assumptions (dense KV per layer per token) approximate deployed implementations.
+    falsifiers:
+      - Measured KV-cache footprints are materially lower due to architectural differences or compression.
+
+  - id: "RESOURCE-2026-008"
+    text: >-
+      For long-context frontier usage, keeping a user “online” can impose a material opportunity cost: if a session’s KV
+      cache occupies on the order of 100GB of H200-class VRAM, the implied cost can be on the order of dollars per hour
+      per heavy session (illustrative).
+    type: "[H]"
+    domain: "RESOURCE"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Measure per-session KV-cache residency (GB-hours) and map to effective GPU-hour costs under realistic utilization
+      and scheduling; compare to subscription revenue per user-hour.
+    assumptions:
+      - The session materially reduces available VRAM/throughput for other workloads.
+    falsifiers:
+      - Measurements show session KV can be offloaded cheaply without meaningful opportunity cost.
+
+  - id: "ECON-2026-024"
+    text: >-
+      For a subscription plan with monthly revenue R and blended variable cost c ($/MTok), break-even token volume is
+      approximately (R / c) million tokens per month, so modest increases in blended cost can sharply reduce the
+      break-even token budget.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Compute break-even tokens for plausible c values and compare to empirical user token distributions for
+      subscription cohorts.
+    assumptions:
+      - Variable cost is approximately linear in tokens under the blended cost approximation.
+    falsifiers:
+      - Nonlinear costs (e.g., memory residency, peak-time scarcity pricing) dominate and break the linear approximation.
+
+  - id: "ECON-2026-025"
+    text: >-
+      Self-hosting beats API prices on variable cost only when utilization and effective throughput are high; for very
+      low API output prices (e.g., ~$0.60/MTok), near-saturation utilization may be required under plausible tok/s and
+      GPU $/hr assumptions.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      For a given model/hardware, measure sustained output tok/s and all-in $/hr; compute self-host $/MTok at
+      different utilization levels and compare to API prices for comparable quality/latency.
+    assumptions:
+      - Operational overhead (SRE, reliability, deployment) does not erase the variable-cost advantage.
+    falsifiers:
+      - Realistic utilization and overhead consistently make self-hosting more expensive than APIs at comparable quality.
+
+  - id: "ECON-2026-026"
+    text: >-
+      Public pricing data indicates a steep decline in list prices for GPT-4-class output tokens from early GPT-4-era
+      pricing (~$60/MTok) to GPT-4o-class pricing (~$10/MTok) and to small-model tiers (~$0.60/MTok), depending on the
+      specific SKU and date.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Verify prices from a pinned pricing dataset and cross-check with official pricing pages for the relevant
+      timepoints/SKUs; normalize to per-1M token units.
+    assumptions:
+      - The referenced dataset accurately reflects historical list prices for the specified SKUs.
+    falsifiers:
+      - Official pricing archives contradict the dataset for the specified SKUs/timepoints.
+
+  - id: "ECON-2026-027"
+    text: >-
+      Capability-adjusted API prices have been falling extremely quickly; Epoch AI reports a wide range of declines
+      (9×–900× per year, median ~50×/yr) and higher median decline rates when restricting to post-Jan-2024 model data.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Reproduce the Epoch AI analysis methodology and confirm the reported decline rates across benchmarks and
+      thresholds; test sensitivity to benchmark choice and price aggregation.
+    assumptions:
+      - Capability thresholds are comparable over time and price data is measured consistently.
+    falsifiers:
+      - Reanalysis finds materially lower decline rates or shows results are dominated by selection effects.
+
+  - id: "TECH-2026-098"
+    text: >-
+      The industry trend toward sparse MoE reduces per-token compute by lowering activation ratio (e.g., from ~15% for
+      a GPT-4 leak estimate to ~3% for some recent MoE reports), enabling higher capacity without proportional compute
+      cost—though closed-model activation ratios are uncertain.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      For open models with published specs, track total vs active params and activation ratios; for closed models,
+      infer from credible disclosures or technical reporting, and compare to throughput/cost signals.
+    assumptions:
+      - Reported activation ratios correspond to deployed inference activations (not just training-time claims).
+    falsifiers:
+      - Evidence shows activation ratios are materially higher in deployment or do not translate to proportional compute savings.
+
+  - id: "RESOURCE-2026-009"
+    text: >-
+      Reported training-cost figures for near-frontier open models (e.g., DeepSeek V3 at ~$5.6M) suggest frontier
+      training cost can be far below early GPT-4-era estimates (often cited as $100M+), though comparisons depend on
+      accounting conventions and what “frontier-level” means.
+    type: "[H]"
+    domain: "RESOURCE"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Collect training compute and cost disclosures for open models, normalize by hardware pricing and utilization,
+      and compare to independent estimates for closed models; validate comparability of evaluation results.
+    assumptions:
+      - The reported open-model training costs are accurate and include major cost components.
+    falsifiers:
+      - Independent audits show reported training costs omit substantial components or are not comparable to GPT-4 estimates.
+
+  - id: "RESOURCE-2026-010"
+    text: >-
+      Energy use per token for LLM inference can be far lower than older widely cited figures; optimized benchmarks and
+      updated estimates imply electricity cost is often a small fraction of per-token COGS relative to accelerator
+      amortization and utilization.
+    type: "[T]"
+    domain: "RESOURCE"
+    evidence_level: "E3"
+    credence: 0.65
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Compare joules-per-token measurements across model/hardware/software stacks and translate to $/MTok at plausible
+      electricity prices and PUE; compare to observed token prices and inferred margins.
+    assumptions:
+      - Benchmark measurements are representative of at-scale serving efficiency when utilization is high.
+    falsifiers:
+      - Real-world serving measurements show electricity dominates variable COGS across typical workloads.
+
+  - id: "TRANS-2026-016"
+    text: >-
+      Over the next 12–24 months, baseline “commodity” token prices are likely to continue declining while premium
+      reasoning and long-context workloads remain price-discriminated and more tightly limited.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Track per-token prices over time by tier (commodity vs premium reasoning/long-context), plus changes in limits,
+      routing, and plan definitions; measure whether premium tiers retain large price premia.
+    assumptions:
+      - Hardware/software efficiency improvements continue to reduce commodity cost floors.
+      - Providers maintain price discrimination where willingness-to-pay is high (reasoning, long-context).
+    falsifiers:
+      - Premium reasoning prices converge rapidly to commodity levels without tighter limits.
+
+  - id: "TRANS-2026-017"
+    text: >-
+      Token-based pricing will likely evolve toward more explicit “compute unit” billing (time × hardware tier and/or
+      memory residency tiers) to better align charges with wall-clock accelerator cost for reasoning and long-context
+      workloads.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Monitor provider pricing changes for new billing dimensions (time, memory tiers, latency classes) and compare
+      adoption across vendors; test whether token-only pricing remains dominant for reasoning SKUs.
+    assumptions:
+      - Token counts remain a poor proxy for variable cost on reasoning SKUs where latency/time varies widely.
+    falsifiers:
+      - Providers continue to meter/bill primarily via token-based pricing without introducing time/memory tiers.
+
+  - id: "INST-2026-006"
+    text: >-
+      Subscription plans will likely continue tightening “fair use” controls (rate limits, dynamic model routing, and
+      degraded tiers under load) because worst-case long-context and reasoning-heavy usage collapses break-even.
+    type: "[P]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["lhl-2026-frontier-llm-token-unit-economics"]
+    operationalization: >-
+      Track changes in published subscription plan limits and observed throttling/routing behavior over time,
+      especially for reasoning models and long-context sessions.
+    assumptions:
+      - Providers face heavy-tail usage distributions and must prevent adverse selection by automated users.
+    falsifiers:
+      - Providers expand unlimited access without adding tighter controls while maintaining profitability.
