@@ -1,0 +1,116 @@
+sources:
+  - id: "shisaai-2026-jp-tl-bench-repo"
+    type: "KNOWLEDGE"
+    title: "JP-TL-Bench (GitHub repository)"
+    author:
+      - "Shisa.AI (shisa-ai)"
+    year: 2026
+    url: "https://github.com/shisa-ai/jp-tl-bench"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/shisaai-2026-jp-tl-bench-repo.md"
+    reliability: 0.82
+    bias_notes: >-
+      First-party repository for the benchmark. High reliability for “what the code does” and for published artifacts;
+      bias risk mainly concerns interpretation/marketing claims and conclusions drawn from benchmark outputs.
+    topics:
+      - machine-translation
+      - evaluation
+      - llm-judge
+      - pairwise
+      - bradley-terry
+      - benchmarking
+      - japanese
+      - english
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-050
+      - TECH-2026-051
+      - TECH-2026-052
+      - TECH-2026-053
+      - TECH-2026-054
+
+claims:
+  - id: "TECH-2026-050"
+    text: >-
+      The shisa-ai/jp-tl-bench repository includes a frozen, versioned Base Set v1.0 snapshot with a manifest of 20
+      anchor models and per-model translation JSONL files containing 70 benchmark items.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["shisaai-2026-jp-tl-bench-repo"]
+    operationalization: >-
+      Inspect `baseset/v1.0/manifest.json` for the anchor list and count rows in `baseset/v1.0/translations/*.jsonl`.
+    assumptions:
+      - The repository snapshot is complete and corresponds to the described benchmark version.
+    falsifiers:
+      - Manifest does not list 20 anchors or translation files do not contain 70 items.
+
+  - id: "TECH-2026-051"
+    text: >-
+      The repository aggregates pairwise comparison outcomes using a Bradley–Terry model (via `choix`) and reports
+      both win rate and a 0–10 LT score derived from the fitted strengths.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["shisaai-2026-jp-tl-bench-repo"]
+    operationalization: >-
+      Inspect the scoring code (e.g., `choix_analyzer.py`) and confirm it fits Bradley–Terry parameters and emits LT/WR.
+    assumptions:
+      - The released code is used for the published base set reports.
+    falsifiers:
+      - The code does not fit Bradley–Terry or does not report LT/WR as described.
+
+  - id: "TECH-2026-052"
+    text: >-
+      The repository provides multiple translation prompt variants (full context vs low context vs ultra-low context),
+      enabling studies of prompt/context sensitivity on translation quality.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["shisaai-2026-jp-tl-bench-repo"]
+    operationalization: >-
+      Inspect the prompt files under `prompts/` and verify that variants differ materially in instruction detail and context.
+    assumptions:
+      - Prompt variants are actually used by the benchmark scripts when configured.
+    falsifiers:
+      - Prompt variants do not exist or are not meaningfully different / not used.
+
+  - id: "TECH-2026-053"
+    text: >-
+      Because the default judge model (gemini-2.5-flash) appears in the Base Set v1.0 anchors, there is a plausible
+      risk of judge self-preference bias affecting comparisons and scores.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["shisaai-2026-jp-tl-bench-repo"]
+    operationalization: >-
+      Run controlled A/B judging where the judge model is included vs excluded as an anchor and measure whether
+      it systematically favors its own outputs or similar styles.
+    assumptions:
+      - Judge self-preference effects exist and are not fully mitigated by prompt design.
+    falsifiers:
+      - Empirical audits show no measurable self-preference or position bias in this setup.
+
+  - id: "TECH-2026-054"
+    text: >-
+      JP-TL-Bench base set snapshots follow a versioning contract: minor versions may adjust anchors while attempting
+      to preserve calibration, while major versions define a new anchor pool with scores not directly comparable.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["shisaai-2026-jp-tl-bench-repo"]
+    operationalization: >-
+      Inspect repository documentation for snapshot semantics (e.g., README/paper/docs) and confirm described
+      comparability rules.
+    assumptions:
+      - The documented versioning semantics are consistently applied in practice.
+    falsifiers:
+      - No such contract is documented or version increments do not follow the stated rules.
+

@@ -1,0 +1,115 @@
+sources:
+  - id: "shisaai-2025-shisa-v2-1"
+    type: "BLOG"
+    title: "Shisa V2.1: Smaller, Smarter, More Accessible"
+    author:
+      - "Shisa.AI"
+    year: 2025
+    url: "https://shisa.ai/posts/shisa-v2.1/"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/shisaai-2025-shisa-v2-1.md"
+    reliability: 0.68
+    bias_notes: >-
+      First-party model release post. Moderate reliability for model lineup and published tables when corroborated by
+      model cards; high bias risk for broad “real-world” claims, magnitude of dataset changes, and claims about
+      generalizability without targeted training.
+    topics:
+      - models
+      - japanese
+      - bilingual
+      - synthetic-data
+      - evaluation
+      - shisa
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-065
+      - TECH-2026-066
+      - TECH-2026-067
+      - TECH-2026-068
+      - TECH-2026-069
+
+claims:
+  - id: "TECH-2026-065"
+    text: >-
+      Shisa V2.1 is a released family of models that adds new sizes (1.2B, 3B, 8B) and improves 14B and 70B
+      models, with published JA AVG / EN AVG values.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["shisaai-2025-shisa-v2-1"]
+    operationalization: >-
+      Verify the lineup and reported averages against the corresponding Hugging Face model cards and published
+      evaluation tables.
+    assumptions:
+      - Model cards are authoritative for the released lineup and metadata.
+    falsifiers:
+      - Model cards contradict the stated lineup or reported averages.
+
+  - id: "TECH-2026-066"
+    text: >-
+      Roughly 30% of the Shisa V2.1 core synthetic dataset is based on outputs from Shisa V2 405B.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["shisaai-2025-shisa-v2-1"]
+    operationalization: >-
+      Provide dataset provenance breakdowns (e.g., per-source counts/tokens) and audit that the stated fraction
+      derives from 405B outputs.
+    assumptions:
+      - Dataset composition is measurable and meaningfully attributable to specific teacher outputs.
+    falsifiers:
+      - Audited provenance shows materially different fractions.
+
+  - id: "TECH-2026-067"
+    text: >-
+      Over 80% of datasets in the Shisa V2.1 data mix are new or improved versus Shisa V2, including datasets
+      targeting translation and Japanese cultural/linguistic nuances.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["shisaai-2025-shisa-v2-1"]
+    operationalization: >-
+      Publish a diff of the V2 vs V2.1 dataset mix (by tokens/examples) and verify the fraction of new/modified data.
+    assumptions:
+      - “New or improved” has a consistent definition (new datasets or materially changed examples).
+    falsifiers:
+      - Dataset diffs show substantially less change than claimed.
+
+  - id: "TECH-2026-068"
+    text: >-
+      On the authors’ Japanese evaluation suite, Shisa V2.1 14B surpasses the prior Shisa V2 70B and Shisa V2.1 70B
+      approaches Shisa V2 405B performance.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["shisaai-2025-shisa-v2-1"]
+    operationalization: >-
+      Run a matched evaluation suite across these models and verify the claimed ordering with confidence intervals.
+    assumptions:
+      - The evaluation suite is stable and comparable across models.
+    falsifiers:
+      - Matched evaluation contradicts the stated ordering.
+
+  - id: "TECH-2026-069"
+    text: >-
+      Shisa V2.1 performance gains were achieved without benchmark-specific targeted training and reflect real-world
+      Japanese-language capability improvements.
+    type: "[A]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["shisaai-2025-shisa-v2-1"]
+    operationalization: >-
+      Demonstrate generalization by evaluating on held-out, production-like Japanese tasks and show that gains persist
+      without evidence of test contamination.
+    assumptions:
+      - Real-world tasks differ meaningfully from the evaluation suite distribution.
+    falsifiers:
+      - Evidence of benchmark overfitting or lack of transfer to held-out real-world Japanese tasks.
+

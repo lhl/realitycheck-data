@@ -1,6 +1,6 @@
 # Source Registry
 # Exported from LanceDB on 2026-01-24
-# Total sources: 58
+# Total sources: 69
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -359,6 +359,65 @@ sources:
     - TECH
     - GOV
     status: cataloged
+  google-2026-translategemma-blog:
+    type: ARTICLE
+    title: 'TranslateGemma: A new suite of open translation models'
+    author:
+    - David Vilar
+    - Kat Black
+    year: 2026
+    url: https://blog.google/innovation-and-ai/technology/developers-tools/translategemma/
+    accessed: '2026-01-24'
+    reliability: 0.7
+    bias_notes: Product/announcement blog post. High marketing bias; moderate reliability
+      for high-level claims corroborated by the technical report; limited methodological
+      detail on its own.
+    claims_extracted:
+    - TECH-2026-084
+    - TECH-2026-085
+    - TECH-2026-086
+    analysis_file: analysis/sources/google-2026-translategemma-blog.md
+    topics:
+    - translategemma
+    - machine-translation
+    - gemma
+    - wmt
+    - metricx
+    - multimodal
+    domains:
+    - TECH
+    status: analyzed
+  google-2026-translategemma-tech-report:
+    type: PAPER
+    title: TranslateGemma Technical Report
+    author:
+    - Google Translate Research Team
+    year: 2026
+    url: https://arxiv.org/abs/2601.09012
+    accessed: '2026-01-24'
+    reliability: 0.8
+    bias_notes: Vendor-authored technical report. High reliability for described training
+      procedure and included tables; bias risk for marketing framing and for general
+      superiority claims beyond the chosen benchmarks and protocols.
+    claims_extracted:
+    - TECH-2026-079
+    - TECH-2026-080
+    - TECH-2026-081
+    - TECH-2026-082
+    - TECH-2026-083
+    analysis_file: analysis/sources/google-2026-translategemma-tech-report.md
+    topics:
+    - machine-translation
+    - translategemma
+    - gemma
+    - wmt
+    - mqm
+    - metricx
+    - automqm
+    - japanese
+    domains:
+    - TECH
+    status: analyzed
   gpt-2026-01-18-fiction-hottakes:
     type: CONVO
     title: Fiction Recommendations then Hot Takes Analysis
@@ -728,6 +787,220 @@ sources:
     domains:
     - TECH
     status: analyzed
+  lhl-2025-liquid-ai-hackathon-tokyo:
+    type: KNOWLEDGE
+    title: Liquid AI Hackathon Tokyo (repo)
+    author:
+    - lhl
+    year: 2025
+    url: https://github.com/lhl/liquid-ai-hackathon-tokyo
+    accessed: '2026-01-24'
+    reliability: 0.78
+    bias_notes: First-party repo documenting an evaluation workflow and research notes.
+      High reliability for “how this repo’s workflow works” claims; moderate bias
+      risk in interpretive conclusions about model quality unless backed by published
+      run artifacts.
+    claims_extracted:
+    - TECH-2026-070
+    - TECH-2026-071
+    - TECH-2026-072
+    - TECH-2026-073
+    - TECH-2026-074
+    analysis_file: analysis/sources/lhl-2025-liquid-ai-hackathon-tokyo.md
+    topics:
+    - machine-translation
+    - evaluation
+    - llm-jp-eval
+    - comet
+    - japanese
+    - english
+    - liquidai
+    domains:
+    - TECH
+    status: analyzed
+  lin-2025-jp-tl-bench:
+    type: BLOG
+    title: 'JP-TL-Bench: Anchored Pairwise LLM Evaluation for Bidirectional Japanese-English
+      Translation'
+    author:
+    - Leonard Lin
+    year: 2025
+    url: https://shisa.ai/posts/jp-tl-bench/
+    accessed: '2026-01-24'
+    reliability: 0.72
+    bias_notes: First-party announcement for a benchmark built by the author’s team
+      (Shisa.AI). High reliability for high-level descriptions corroborated by the
+      public repo/paper; higher bias risk for superiority and cost/efficiency claims.
+    claims_extracted:
+    - TECH-2026-040
+    - TECH-2026-041
+    - TECH-2026-042
+    - TECH-2026-043
+    - TECH-2026-044
+    analysis_file: analysis/sources/lin-2025-jp-tl-bench.md
+    topics:
+    - machine-translation
+    - evaluation
+    - llm-judge
+    - pairwise
+    - anchoring
+    - japanese
+    - english
+    domains:
+    - TECH
+    status: analyzed
+  lin-2025-shisa-v2:
+    type: BLOG
+    title: Shisa V2
+    author:
+    - Leonard Lin
+    year: 2025
+    url: https://shisa.ai/posts/shisa-v2/
+    accessed: '2026-01-24'
+    reliability: 0.7
+    bias_notes: First-party model release post for Shisa.AI. High bias risk for “SOTA”/comparative
+      performance claims; moderate reliability for factual lineup/licensing claims,
+      especially where corroborated by model cards.
+    claims_extracted:
+    - TECH-2026-055
+    - TECH-2026-056
+    - TECH-2026-057
+    - TECH-2026-058
+    - TECH-2026-059
+    analysis_file: analysis/sources/lin-2025-shisa-v2.md
+    topics:
+    - models
+    - japanese
+    - bilingual
+    - evaluation
+    - benchmarks
+    - shisa
+    domains:
+    - TECH
+    status: analyzed
+  lin-2025-shisa-v2-405b:
+    type: BLOG
+    title: 'Shisa V2 405B: Japan’s Highest Performing LLM'
+    author:
+    - Leonard Lin
+    year: 2025
+    url: https://shisa.ai/posts/shisa-v2-405b/
+    accessed: '2026-01-24'
+    reliability: 0.68
+    bias_notes: First-party model release and positioning (“highest performing LLM
+      ever trained in Japan”). High bias risk for comparative and national “best”
+      framing; moderate reliability for technical lineage and references to published
+      evaluation tables on the model card.
+    claims_extracted:
+    - TECH-2026-060
+    - TECH-2026-061
+    - TECH-2026-062
+    - TECH-2026-063
+    - TECH-2026-064
+    analysis_file: analysis/sources/lin-2025-shisa-v2-405b.md
+    topics:
+    - models
+    - japanese
+    - llm
+    - evaluation
+    - shisa
+    - sovereign-ai
+    domains:
+    - TECH
+    status: analyzed
+  lin-2026-jp-tl-bench-directional-analysis:
+    type: BLOG
+    title: 'JP-TL-Bench: Why Translation Direction Matters (JA↔︎EN)'
+    author:
+    - Leonard Lin
+    year: 2026
+    url: https://shisa.ai/posts/jp-tl-bench-directional-analysis/
+    accessed: '2026-01-24'
+    reliability: 0.74
+    bias_notes: First-party analysis using the authors’ benchmark outputs. Strong
+      for concrete numeric claims that can be checked against published artifacts;
+      higher bias risk for interpretive claims based on selected qualitative examples
+      and for generalization beyond the base set and judge model.
+    claims_extracted:
+    - TECH-2026-045
+    - TECH-2026-046
+    - TECH-2026-047
+    - TECH-2026-048
+    - TECH-2026-049
+    analysis_file: analysis/sources/lin-2026-jp-tl-bench-directional-analysis.md
+    topics:
+    - machine-translation
+    - evaluation
+    - directional-asymmetry
+    - japanese
+    - english
+    - llm-judge
+    domains:
+    - TECH
+    status: analyzed
+  lin-2026-jp-tl-bench-paper:
+    type: PAPER
+    title: 'JP-TL-Bench: Anchored Pairwise LLM Evaluation for Bidirectional Japanese-English
+      Translation'
+    author:
+    - Leonard Lin
+    - Adam Lensenmayer
+    year: 2026
+    url: https://arxiv.org/abs/2601.00223
+    accessed: '2026-01-24'
+    reliability: 0.78
+    bias_notes: Authored by the benchmark creators (Shisa.AI). High reliability for
+      “what we built/how it works” claims (code + artifacts are public); higher bias
+      risk for “this is better / more reliable” claims and for competitive positioning
+      vs other MT evaluation approaches.
+    claims_extracted:
+    - TECH-2026-031
+    - TECH-2026-032
+    - TECH-2026-033
+    - TECH-2026-034
+    - TECH-2026-038
+    - TECH-2026-039
+    - TECH-2026-087
+    analysis_file: analysis/sources/lin-2026-jp-tl-bench-paper.md
+    topics:
+    - machine-translation
+    - evaluation
+    - llm-judge
+    - pairwise
+    - bradley-terry
+    - japanese
+    - english
+    domains:
+    - TECH
+    status: analyzed
+  liquidai-2025-lfm2-350m-enjp-mt:
+    type: KNOWLEDGE
+    title: LFM2-350M-ENJP-MT (LiquidAI)
+    author:
+    - LiquidAI
+    year: 2025
+    url: https://huggingface.co/LiquidAI/LFM2-350M-ENJP-MT
+    accessed: '2026-01-24'
+    reliability: 0.7
+    bias_notes: First-party model card. High reliability for intended use, base model
+      lineage, and usage instructions; higher bias risk for performance/quality claims
+      without third-party evaluation artifacts.
+    claims_extracted:
+    - TECH-2026-075
+    - TECH-2026-076
+    - TECH-2026-077
+    - TECH-2026-078
+    analysis_file: analysis/sources/liquidai-2025-lfm2-350m-enjp-mt.md
+    topics:
+    - machine-translation
+    - models
+    - liquidai
+    - japanese
+    - english
+    - edge
+    domains:
+    - TECH
+    status: analyzed
   macro-identity:
     type: KNOWLEDGE
     title: Macroeconomic accounting identities (demand = income)
@@ -943,6 +1216,67 @@ sources:
     - TECH
     - SOC
     - LABOR
+    status: analyzed
+  shisaai-2025-shisa-v2-1:
+    type: BLOG
+    title: 'Shisa V2.1: Smaller, Smarter, More Accessible'
+    author:
+    - Shisa.AI
+    year: 2025
+    url: https://shisa.ai/posts/shisa-v2.1/
+    accessed: '2026-01-24'
+    reliability: 0.68
+    bias_notes: First-party model release post. Moderate reliability for model lineup
+      and published tables when corroborated by model cards; high bias risk for broad
+      “real-world” claims, magnitude of dataset changes, and claims about generalizability
+      without targeted training.
+    claims_extracted:
+    - TECH-2026-065
+    - TECH-2026-066
+    - TECH-2026-067
+    - TECH-2026-068
+    - TECH-2026-069
+    analysis_file: analysis/sources/shisaai-2025-shisa-v2-1.md
+    topics:
+    - models
+    - japanese
+    - bilingual
+    - synthetic-data
+    - evaluation
+    - shisa
+    domains:
+    - TECH
+    status: analyzed
+  shisaai-2026-jp-tl-bench-repo:
+    type: KNOWLEDGE
+    title: JP-TL-Bench (GitHub repository)
+    author:
+    - Shisa.AI (shisa-ai)
+    year: 2026
+    url: https://github.com/shisa-ai/jp-tl-bench
+    accessed: '2026-01-24'
+    reliability: 0.82
+    bias_notes: First-party repository for the benchmark. High reliability for “what
+      the code does” and for published artifacts; bias risk mainly concerns interpretation/marketing
+      claims and conclusions drawn from benchmark outputs.
+    claims_extracted:
+    - TECH-2026-050
+    - TECH-2026-051
+    - TECH-2026-052
+    - TECH-2026-053
+    - TECH-2026-054
+    analysis_file: analysis/sources/shisaai-2026-jp-tl-bench-repo.md
+    topics:
+    - machine-translation
+    - evaluation
+    - llm-judge
+    - pairwise
+    - bradley-terry
+    - benchmarking
+    - japanese
+    - english
+    domains:
+    - TECH
     status: analyzed
   situational-awareness:
     type: REPORT

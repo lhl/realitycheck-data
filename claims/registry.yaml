@@ -1,10 +1,10 @@
 # Claim Registry
 # Exported from LanceDB on 2026-01-24
-# Total claims: 174
+# Total claims: 228
 # Total chains: 4
 
 counters:
-  TECH: 30
+  TECH: 87
   RESOURCE: 6
   LABOR: 12
   ECON: 18
@@ -3030,6 +3030,1011 @@ claims:
     credence: 0.949999988079071
     source_ids:
     - kamathhrishi-2025-stratalens-ai
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-031:
+    text: JP-TL-Bench evaluates a candidate model via reference-free, pairwise LLM
+      comparisons against a fixed, versioned 20-model anchor set, and aggregates outcomes
+      with a Bradley–Terry model into win-rate plus a 0–10 LT score.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.8999999761581421
+    source_ids:
+    - lin-2026-jp-tl-bench-paper
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-032:
+    text: Anchoring pairwise comparisons to a frozen base set yields structurally
+      stable scores under a fixed protocol (base set + judge + aggregation code) and
+      reduces per-candidate evaluation cost to O(items×anchors) rather than O(N²)
+      all-pairs comparisons.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.8999999761581421
+    source_ids:
+    - lin-2026-jp-tl-bench-paper
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-033:
+    text: JP-TL-Bench contains 70 translation items spanning EN→JA and JA→EN and Easy/Hard
+      tiers, with a 34/36 direction split and a 30/40 difficulty split.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - lin-2026-jp-tl-bench-paper
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-034:
+    text: Common MT metrics (e.g., BLEU/chrF/COMET) can saturate or mischaracterize
+      quality in high-quality translation regimes, motivating higher-resolution evaluation
+      protocols.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.699999988079071
+    source_ids:
+    - lin-2026-jp-tl-bench-paper
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-038:
+    text: Translation direction (EN→JA vs JA→EN) can differ substantially for many
+      models, so a single language-pair score can hide important failures.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.800000011920929
+    source_ids:
+    - lin-2026-jp-tl-bench-paper
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-039:
+    text: The JP-TL-Bench LT score is computed as a logistic transform of mean-centered
+      Bradley–Terry fitted log-strengths, scaled to a 0–10 range.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - lin-2026-jp-tl-bench-paper
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-040:
+    text: Standard MT metrics can bunch strong Japanese↔English translation models
+      together and miss meaningful differences in naturalness and nuance among already-good
+      outputs.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - lin-2025-jp-tl-bench
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-041:
+    text: 'JP-TL-Bench uses anchored pairwise comparisons: each candidate model is
+      compared against a fixed, versioned base set of roughly 20 anchor models rather
+      than against every other candidate.'
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - lin-2025-jp-tl-bench
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-042:
+    text: JP-TL-Bench includes 70 translation prompts spanning both EN→JA and JA→EN
+      directions, Easy/Hard tiers, and includes some longer-form items.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lin-2025-jp-tl-bench
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-043:
+    text: A JP-TL-Bench evaluation run costs on the order of ~$7 and takes roughly
+      10–30 minutes when using a fast judge model.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - lin-2025-jp-tl-bench
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-044:
+    text: Under a fixed protocol (same anchor set, judge model, and aggregation code),
+      anchored comparison yields scores that are consistent over time (a score today
+      is comparable to a score months later).
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - lin-2025-jp-tl-bench
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-045:
+    text: For Japanese↔English translation, model quality can be strongly direction-dependent
+      (EN→JA vs JA→EN), so a single aggregate score can hide large asymmetries that
+      matter in production.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - lin-2026-jp-tl-bench-directional-analysis
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-046:
+    text: On JP-TL-Bench Base Set v1.0 (Gemini-2.5-Flash judge), meta-llama/Llama-3.1-8B-Instruct
+      scores about 4.52 LT on JA→EN but about 1.40 LT on EN→JA.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - lin-2026-jp-tl-bench-directional-analysis
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-047:
+    text: On JP-TL-Bench Base Set v1.0 (Gemini-2.5-Flash judge), tokyotech-llm/Llama-3.1-Swallow-8B-Instruct-v0.5
+      scores about 8.80 LT on EN→JA and about 5.96 LT on JA→EN.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - lin-2026-jp-tl-bench-directional-analysis
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-048:
+    text: On JP-TL-Bench Base Set v1.0 (Gemini-2.5-Flash judge), LiquidAI/LFM2-2.6B
+      shows an EN→JA Easy/Hard gap, with LT around 6.38 on EN→JA Easy and around 4.06
+      on EN→JA Hard.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - lin-2026-jp-tl-bench-directional-analysis
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-049:
+    text: JP-TL-Bench reports slice scores by direction and difficulty (overall, EN→JA,
+      JA→EN, and Easy/Hard subdivisions), enabling targeted debugging of translation
+      failure modes.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - lin-2026-jp-tl-bench-directional-analysis
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-050:
+    text: The shisa-ai/jp-tl-bench repository includes a frozen, versioned Base Set
+      v1.0 snapshot with a manifest of 20 anchor models and per-model translation
+      JSONL files containing 70 benchmark items.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - shisaai-2026-jp-tl-bench-repo
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-051:
+    text: The repository aggregates pairwise comparison outcomes using a Bradley–Terry
+      model (via `choix`) and reports both win rate and a 0–10 LT score derived from
+      the fitted strengths.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - shisaai-2026-jp-tl-bench-repo
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-052:
+    text: The repository provides multiple translation prompt variants (full context
+      vs low context vs ultra-low context), enabling studies of prompt/context sensitivity
+      on translation quality.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - shisaai-2026-jp-tl-bench-repo
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-053:
+    text: Because the default judge model (gemini-2.5-flash) appears in the Base Set
+      v1.0 anchors, there is a plausible risk of judge self-preference bias affecting
+      comparisons and scores.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - shisaai-2026-jp-tl-bench-repo
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-054:
+    text: 'JP-TL-Bench base set snapshots follow a versioning contract: minor versions
+      may adjust anchors while attempting to preserve calibration, while major versions
+      define a new anchor pool with scores not directly comparable.'
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - shisaai-2026-jp-tl-bench-repo
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-055:
+    text: Shisa V2 achieves state-of-the-art (or near state-of-the-art) Japanese benchmark
+      performance across multiple model size classes (7B–70B).
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.550000011920929
+    source_ids:
+    - lin-2025-shisa-v2
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-056:
+    text: Shisa V2 reports large Japanese benchmark improvements versus base models,
+      including up to roughly +32.6% JA AVG for the Llama 3.1 8B class model.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - lin-2025-shisa-v2
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-057:
+    text: Shisa V2 development used (and later planned to open-source) new Japanese
+      evaluations focused on downstream use cases, including a Japanese↔English translation
+      benchmark (JP-TL-Bench).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - lin-2025-shisa-v2
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-058:
+    text: Shisa V2 prioritizes releasing models under permissive licenses (e.g., Apache
+      2.0 or MIT) when the underlying base model licenses allow.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - lin-2025-shisa-v2
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-059:
+    text: Shisa V2 is a published family of bilingual Japanese/English chat models
+      spanning roughly 7B–70B parameters, with reported per-model JA AVG and EN AVG
+      values.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - lin-2025-shisa-v2
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-060:
+    text: Shisa V2 405B is based on meta-llama/Llama-3.1-405B-Instruct and uses the
+      Shisa V2 Japanese data mix, with additional contributed Korean and Traditional
+      Chinese data.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - lin-2025-shisa-v2-405b
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-061:
+    text: Training Shisa V2 405B for SFT+DPO required more than 50× the compute compared
+      to training the 70B version.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - lin-2025-shisa-v2-405b
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-062:
+    text: Shisa V2 405B outperforms GPT-4 (0613) and GPT-4 Turbo (2024-04-09) on the
+      authors’ Japanese/English eval suites and is competitive with GPT-4o (2024-11-20)
+      and DeepSeek-V3 (0324) on Japanese MT-Bench.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.5
+    source_ids:
+    - lin-2025-shisa-v2-405b
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-063:
+    text: Commonly used Japanese evaluation suites fail to measure important downstream
+      use cases, motivating custom Japanese evaluations including translation benchmarks.
+    type: '[A]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - lin-2025-shisa-v2-405b
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-064:
+    text: The Shisa V2 405B model card contains the full evaluation table with detailed
+      scores referenced by the post.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - lin-2025-shisa-v2-405b
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-065:
+    text: Shisa V2.1 is a released family of models that adds new sizes (1.2B, 3B,
+      8B) and improves 14B and 70B models, with published JA AVG / EN AVG values.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - shisaai-2025-shisa-v2-1
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-066:
+    text: Roughly 30% of the Shisa V2.1 core synthetic dataset is based on outputs
+      from Shisa V2 405B.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - shisaai-2025-shisa-v2-1
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-067:
+    text: Over 80% of datasets in the Shisa V2.1 data mix are new or improved versus
+      Shisa V2, including datasets targeting translation and Japanese cultural/linguistic
+      nuances.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - shisaai-2025-shisa-v2-1
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-068:
+    text: On the authors’ Japanese evaluation suite, Shisa V2.1 14B surpasses the
+      prior Shisa V2 70B and Shisa V2.1 70B approaches Shisa V2 405B performance.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.550000011920929
+    source_ids:
+    - shisaai-2025-shisa-v2-1
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-069:
+    text: Shisa V2.1 performance gains were achieved without benchmark-specific targeted
+      training and reflect real-world Japanese-language capability improvements.
+    type: '[A]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - shisaai-2025-shisa-v2-1
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-070:
+    text: The liquid-ai-hackathon-tokyo evaluation workflow uses the llm-jp-eval MT
+      suite (ALT and WikiCorpus in both directions) and treats COMET WMT22 as the
+      headline metric for MT aggregation, while also logging BLEU and BERTScore.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2025-liquid-ai-hackathon-tokyo
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-071:
+    text: In the llm-jp-eval MT setup documented by the repo, ALT uses 4-shot exemplars
+      while WikiCorpus is zero-shot, which can introduce few-shot asymmetry when comparing
+      model performance across datasets.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2025-liquid-ai-hackathon-tokyo
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-072:
+    text: COMET can provide more spread than BLEU/BERTScore for strong systems but
+      can still cluster results, so confidence intervals or paired significance tests
+      are needed for decision-grade comparisons.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - lhl-2025-liquid-ai-hackathon-tokyo
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-073:
+    text: COMET WMT22 may have weaker calibration for Japanese and can reward fluent
+      hallucinations or penalize valid paraphrases, motivating complementary evaluations
+      beyond a single learned metric.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - lhl-2025-liquid-ai-hackathon-tokyo
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-074:
+    text: The repo adds an `lfm2` prompt template that formats translation prompts
+      in a chat-style structure to better match models that expect Meta-style chat
+      prompts.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2025-liquid-ai-hackathon-tokyo
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-075:
+    text: LiquidAI/LFM2-350M-ENJP-MT is a checkpoint based on LiquidAI/LFM2-350M that
+      has been fine-tuned for near real-time bidirectional Japanese/English translation
+      of short-to-medium inputs.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - liquidai-2025-lfm2-350m-enjp-mt
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-076:
+    text: The LFM2-350M-ENJP-MT checkpoint is intended for near real-time / edge translation
+      scenarios where efficiency and low latency matter.
+    type: '[A]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - liquidai-2025-lfm2-350m-enjp-mt
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-077:
+    text: The model card describes the checkpoint as supporting bidirectional translation
+      (EN→JA and JA→EN).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - liquidai-2025-lfm2-350m-enjp-mt
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-078:
+    text: The model card provides concrete usage instructions (inference examples
+      and guidance) sufficient to reproduce baseline model behavior.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - liquidai-2025-lfm2-350m-enjp-mt
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-079:
+    text: 'TranslateGemma is produced by a two-stage process: supervised fine-tuning
+      on a mixture of human-translated and synthetic parallel data, followed by reinforcement
+      learning that uses an ensemble of reward models including MetricX-QE and AutoMQM
+      to optimize translation quality.'
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.8999999761581421
+    source_ids:
+    - google-2026-translategemma-tech-report
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-080:
+    text: On WMT24++, TranslateGemma improves average automatic metric scores versus
+      baseline Gemma 3 across sizes, including improved MetricX and Comet22 results.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - google-2026-translategemma-tech-report
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-081:
+    text: 'In Appendix A of the technical report, WMT24++ en→ja_JP MetricX scores
+      are lower (better) for TranslateGemma than for baseline Gemma 3 at 27B/12B/4B
+      (e.g., 27B: 3.53 vs 4.11).'
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - google-2026-translategemma-tech-report
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-082:
+    text: The report includes MQM human evaluation on the WMT25 test set across 10
+      language pairs, using professional translators with document context to score
+      translation errors.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.800000011920929
+    source_ids:
+    - google-2026-translategemma-tech-report
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-083:
+    text: The technical report’s extracted per-language WMT24++ MetricX table lists
+      language pairs as en→* and does not provide a corresponding ja→en table, limiting
+      claims about Japanese→English regressions from this source alone.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.800000011920929
+    source_ids:
+    - google-2026-translategemma-tech-report
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-084:
+    text: TranslateGemma is an open suite of translation-specialized Gemma 3 models
+      offered in 4B, 12B, and 27B sizes, covering translation across 55 languages.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - google-2026-translategemma-blog
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-085:
+    text: TranslateGemma training uses supervised fine-tuning on human-translated
+      and synthetic parallel data followed by reinforcement learning using reward
+      models such as MetricX-QE and AutoMQM.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - google-2026-translategemma-blog
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-086:
+    text: TranslateGemma retains Gemma 3’s multimodal capabilities and improves translation
+      of text within images as measured on the Vistra image translation benchmark.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - google-2026-translategemma-blog
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-087:
+    text: Japanese↔English translation quality depends on phenomena that sentence-level
+      evaluation often misses, including pro-drop/zero pronoun resolution and honorific/register
+      control.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.75
+    source_ids:
+    - lin-2026-jp-tl-bench-paper
     first_extracted: '2026-01-24'
     extracted_by: import
     supports: []

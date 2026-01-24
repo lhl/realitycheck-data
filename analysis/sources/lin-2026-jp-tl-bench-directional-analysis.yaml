@@ -1,0 +1,114 @@
+sources:
+  - id: "lin-2026-jp-tl-bench-directional-analysis"
+    type: "BLOG"
+    title: "JP-TL-Bench: Why Translation Direction Matters (JA↔︎EN)"
+    author:
+      - "Leonard Lin"
+    year: 2026
+    url: "https://shisa.ai/posts/jp-tl-bench-directional-analysis/"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/lin-2026-jp-tl-bench-directional-analysis.md"
+    reliability: 0.74
+    bias_notes: >-
+      First-party analysis using the authors’ benchmark outputs. Strong for concrete numeric claims that can be
+      checked against published artifacts; higher bias risk for interpretive claims based on selected qualitative
+      examples and for generalization beyond the base set and judge model.
+    topics:
+      - machine-translation
+      - evaluation
+      - directional-asymmetry
+      - japanese
+      - english
+      - llm-judge
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-045
+      - TECH-2026-046
+      - TECH-2026-047
+      - TECH-2026-048
+      - TECH-2026-049
+
+claims:
+  - id: "TECH-2026-045"
+    text: >-
+      For Japanese↔English translation, model quality can be strongly direction-dependent (EN→JA vs JA→EN), so a
+      single aggregate score can hide large asymmetries that matter in production.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["lin-2026-jp-tl-bench-directional-analysis"]
+    operationalization: >-
+      Compute direction-slice scores across diverse models and measure how often direction-specific rankings differ
+      from aggregate rankings; audit with human judgments on representative subsets.
+    assumptions:
+      - Benchmark items and judging protocol reflect real-world usage sufficiently.
+    falsifiers:
+      - Large-scale evidence that direction-specific evaluation rarely changes decisions for JA↔EN.
+
+  - id: "TECH-2026-046"
+    text: >-
+      On JP-TL-Bench Base Set v1.0 (Gemini-2.5-Flash judge), meta-llama/Llama-3.1-8B-Instruct scores about
+      4.52 LT on JA→EN but about 1.40 LT on EN→JA.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["lin-2026-jp-tl-bench-directional-analysis"]
+    operationalization: >-
+      Inspect the published base set score report and verify the slice LT values for the specified model.
+    assumptions:
+      - The score report corresponds to Base Set v1.0 and Gemini-2.5-Flash judge.
+    falsifiers:
+      - Published slice LT values differ materially from the claim.
+
+  - id: "TECH-2026-047"
+    text: >-
+      On JP-TL-Bench Base Set v1.0 (Gemini-2.5-Flash judge), tokyotech-llm/Llama-3.1-Swallow-8B-Instruct-v0.5
+      scores about 8.80 LT on EN→JA and about 5.96 LT on JA→EN.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["lin-2026-jp-tl-bench-directional-analysis"]
+    operationalization: >-
+      Inspect the published base set score report and verify the slice LT values for the specified model.
+    assumptions:
+      - The score report corresponds to Base Set v1.0 and Gemini-2.5-Flash judge.
+    falsifiers:
+      - Published slice LT values differ materially from the claim.
+
+  - id: "TECH-2026-048"
+    text: >-
+      On JP-TL-Bench Base Set v1.0 (Gemini-2.5-Flash judge), LiquidAI/LFM2-2.6B shows an EN→JA Easy/Hard gap,
+      with LT around 6.38 on EN→JA Easy and around 4.06 on EN→JA Hard.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["lin-2026-jp-tl-bench-directional-analysis"]
+    operationalization: >-
+      Inspect the published base set score report and verify EN→JA slice LT values by difficulty for the specified model.
+    assumptions:
+      - The score report corresponds to Base Set v1.0 and Gemini-2.5-Flash judge.
+    falsifiers:
+      - Published slice LT values do not show the claimed gap.
+
+  - id: "TECH-2026-049"
+    text: >-
+      JP-TL-Bench reports slice scores by direction and difficulty (overall, EN→JA, JA→EN, and Easy/Hard subdivisions),
+      enabling targeted debugging of translation failure modes.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["lin-2026-jp-tl-bench-directional-analysis"]
+    operationalization: >-
+      Inspect the base set scoring artifacts to confirm slice score fields exist and are reported for each model.
+    assumptions:
+      - Scoring artifacts are produced by the reference implementation.
+    falsifiers:
+      - Score artifacts do not include direction/difficulty slices.
+

@@ -1,0 +1,116 @@
+sources:
+  - id: "lhl-2025-liquid-ai-hackathon-tokyo"
+    type: "KNOWLEDGE"
+    title: "Liquid AI Hackathon Tokyo (repo)"
+    author:
+      - "lhl"
+    year: 2025
+    url: "https://github.com/lhl/liquid-ai-hackathon-tokyo"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/lhl-2025-liquid-ai-hackathon-tokyo.md"
+    reliability: 0.78
+    bias_notes: >-
+      First-party repo documenting an evaluation workflow and research notes. High reliability for “how this repo’s
+      workflow works” claims; moderate bias risk in interpretive conclusions about model quality unless backed by
+      published run artifacts.
+    topics:
+      - machine-translation
+      - evaluation
+      - llm-jp-eval
+      - comet
+      - japanese
+      - english
+      - liquidai
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-070
+      - TECH-2026-071
+      - TECH-2026-072
+      - TECH-2026-073
+      - TECH-2026-074
+
+claims:
+  - id: "TECH-2026-070"
+    text: >-
+      The liquid-ai-hackathon-tokyo evaluation workflow uses the llm-jp-eval MT suite (ALT and WikiCorpus in both
+      directions) and treats COMET WMT22 as the headline metric for MT aggregation, while also logging BLEU and
+      BERTScore.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lhl-2025-liquid-ai-hackathon-tokyo"]
+    operationalization: >-
+      Inspect the repo’s workflow scripts and referenced llm-jp-eval code paths to confirm datasets, metrics, and aggregation.
+    assumptions:
+      - The research notes accurately reflect the implemented workflow.
+    falsifiers:
+      - The code uses different datasets or does not treat COMET as the headline metric.
+
+  - id: "TECH-2026-071"
+    text: >-
+      In the llm-jp-eval MT setup documented by the repo, ALT uses 4-shot exemplars while WikiCorpus is zero-shot,
+      which can introduce few-shot asymmetry when comparing model performance across datasets.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lhl-2025-liquid-ai-hackathon-tokyo"]
+    operationalization: >-
+      Confirm prompt construction for ALT and WikiCorpus in llm-jp-eval and the repo’s invocation defaults; quantify
+      how few-shot vs zero-shot affects each model.
+    assumptions:
+      - Few-shot examples materially affect model outputs for at least some models.
+    falsifiers:
+      - Evidence that both datasets are evaluated under matched prompting regimes or that exemplars have negligible effect.
+
+  - id: "TECH-2026-072"
+    text: >-
+      COMET can provide more spread than BLEU/BERTScore for strong systems but can still cluster results, so confidence
+      intervals or paired significance tests are needed for decision-grade comparisons.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["lhl-2025-liquid-ai-hackathon-tokyo"]
+    operationalization: >-
+      Measure COMET variance across bootstrap resamples and report paired significance for model deltas near the decision threshold.
+    assumptions:
+      - MT evaluation involves tight races where noise matters.
+    falsifiers:
+      - Empirical evidence that COMET variance is negligible and point estimates reliably select the better model.
+
+  - id: "TECH-2026-073"
+    text: >-
+      COMET WMT22 may have weaker calibration for Japanese and can reward fluent hallucinations or penalize valid paraphrases,
+      motivating complementary evaluations beyond a single learned metric.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["lhl-2025-liquid-ai-hackathon-tokyo"]
+    operationalization: >-
+      Audit cases where COMET ranks translations higher despite adequacy errors, especially for Japanese-specific ambiguity and reference variability.
+    assumptions:
+      - Reference translations and learned metrics do not fully capture acceptable translation space for JA↔EN.
+    falsifiers:
+      - Evidence that COMET WMT22 is robustly calibrated for Japanese across domains and error types.
+
+  - id: "TECH-2026-074"
+    text: >-
+      The repo adds an `lfm2` prompt template that formats translation prompts in a chat-style structure to better match models that
+      expect Meta-style chat prompts.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lhl-2025-liquid-ai-hackathon-tokyo"]
+    operationalization: >-
+      Inspect the repo’s prompt templates and `run-mt.py` options and verify the `lfm2` template changes the rendered prompts.
+    assumptions:
+      - The template is used for at least some model runs.
+    falsifiers:
+      - The template does not exist or does not affect prompt formatting.
+

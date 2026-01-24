@@ -1,0 +1,117 @@
+sources:
+  - id: "lin-2025-shisa-v2"
+    type: "BLOG"
+    title: "Shisa V2"
+    author:
+      - "Leonard Lin"
+    year: 2025
+    url: "https://shisa.ai/posts/shisa-v2/"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/lin-2025-shisa-v2.md"
+    reliability: 0.70
+    bias_notes: >-
+      First-party model release post for Shisa.AI. High bias risk for “SOTA”/comparative performance claims;
+      moderate reliability for factual lineup/licensing claims, especially where corroborated by model cards.
+    topics:
+      - models
+      - japanese
+      - bilingual
+      - evaluation
+      - benchmarks
+      - shisa
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-055
+      - TECH-2026-056
+      - TECH-2026-057
+      - TECH-2026-058
+      - TECH-2026-059
+
+claims:
+  - id: "TECH-2026-055"
+    text: >-
+      Shisa V2 achieves state-of-the-art (or near state-of-the-art) Japanese benchmark performance across multiple
+      model size classes (7B–70B).
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["lin-2025-shisa-v2"]
+    operationalization: >-
+      Compare Shisa V2 models to contemporaneous open Japanese-focused models on a clearly specified benchmark
+      suite with matched prompts/judges and report per-task results with uncertainty where applicable.
+    assumptions:
+      - The benchmark suite used is representative and evaluation settings are comparable.
+    falsifiers:
+      - Independent leaderboards show Shisa V2 is consistently outperformed across relevant Japanese tasks at matched sizes.
+
+  - id: "TECH-2026-056"
+    text: >-
+      Shisa V2 reports large Japanese benchmark improvements versus base models, including up to roughly +32.6%
+      JA AVG for the Llama 3.1 8B class model.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["lin-2025-shisa-v2"]
+    operationalization: >-
+      Recompute JA AVG on the stated eval suite for both base and Shisa V2 models under the same settings and
+      verify the percent uplift.
+    assumptions:
+      - The JA AVG composite and scoring are well-defined and reproducible.
+    falsifiers:
+      - Matched re-evaluation shows materially smaller or inconsistent uplift.
+
+  - id: "TECH-2026-057"
+    text: >-
+      Shisa V2 development used (and later planned to open-source) new Japanese evaluations focused on downstream
+      use cases, including a Japanese↔English translation benchmark (JP-TL-Bench).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["lin-2025-shisa-v2"]
+    operationalization: >-
+      Confirm the existence and release of the described evals (JP IFEval, RP Bench, TL Bench) and check that they
+      were used in model development.
+    assumptions:
+      - The described evaluations correspond to public releases or auditable internal artifacts.
+    falsifiers:
+      - No evidence the evaluations exist or were used beyond marketing references.
+
+  - id: "TECH-2026-058"
+    text: >-
+      Shisa V2 prioritizes releasing models under permissive licenses (e.g., Apache 2.0 or MIT) when the underlying
+      base model licenses allow.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["lin-2025-shisa-v2"]
+    operationalization: >-
+      Audit the released Shisa V2 model lineup and confirm license types align with base-model constraints and the
+      stated preference for permissive licenses where possible.
+    assumptions:
+      - The published license metadata is accurate.
+    falsifiers:
+      - Evidence the models are not released under the stated licenses where base-model constraints permit.
+
+  - id: "TECH-2026-059"
+    text: >-
+      Shisa V2 is a published family of bilingual Japanese/English chat models spanning roughly 7B–70B parameters,
+      with reported per-model JA AVG and EN AVG values.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["lin-2025-shisa-v2"]
+    operationalization: >-
+      Verify the model lineup and reported averages against the corresponding Hugging Face model cards and
+      any released evaluation tables.
+    assumptions:
+      - Model cards are the authoritative record for the released lineup.
+    falsifiers:
+      - The model cards do not contain the stated lineup/averages or materially contradict the post.
+

@@ -1,0 +1,94 @@
+sources:
+  - id: "liquidai-2025-lfm2-350m-enjp-mt"
+    type: "KNOWLEDGE"
+    title: "LFM2-350M-ENJP-MT (LiquidAI)"
+    author:
+      - "LiquidAI"
+    year: 2025
+    url: "https://huggingface.co/LiquidAI/LFM2-350M-ENJP-MT"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/liquidai-2025-lfm2-350m-enjp-mt.md"
+    reliability: 0.70
+    bias_notes: >-
+      First-party model card. High reliability for intended use, base model lineage, and usage instructions; higher
+      bias risk for performance/quality claims without third-party evaluation artifacts.
+    topics:
+      - machine-translation
+      - models
+      - liquidai
+      - japanese
+      - english
+      - edge
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-075
+      - TECH-2026-076
+      - TECH-2026-077
+      - TECH-2026-078
+
+claims:
+  - id: "TECH-2026-075"
+    text: >-
+      LiquidAI/LFM2-350M-ENJP-MT is a checkpoint based on LiquidAI/LFM2-350M that has been fine-tuned for near
+      real-time bidirectional Japanese/English translation of short-to-medium inputs.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["liquidai-2025-lfm2-350m-enjp-mt"]
+    operationalization: >-
+      Verify the stated base model and translation fine-tuning objective in the model card metadata and documentation.
+    assumptions:
+      - The model card accurately reflects training lineage and intended use.
+    falsifiers:
+      - The model card indicates a different base model or does not claim bidirectional translation fine-tuning.
+
+  - id: "TECH-2026-076"
+    text: >-
+      The LFM2-350M-ENJP-MT checkpoint is intended for near real-time / edge translation scenarios where efficiency
+      and low latency matter.
+    type: "[A]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["liquidai-2025-lfm2-350m-enjp-mt"]
+    operationalization: >-
+      Benchmark latency/throughput across target hardware and runtimes (CPU/GPU/mobile) at typical sequence lengths
+      and confirm it meets “near real-time” requirements for intended applications.
+    assumptions:
+      - “Near real-time” is defined by a concrete latency budget for the target product context.
+    falsifiers:
+      - Measured latency does not meet common real-time thresholds under realistic conditions.
+
+  - id: "TECH-2026-077"
+    text: >-
+      The model card describes the checkpoint as supporting bidirectional translation (EN→JA and JA→EN).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["liquidai-2025-lfm2-350m-enjp-mt"]
+    operationalization: >-
+      Verify bidirectionality claims in the model card and test sample prompts for each direction.
+    assumptions:
+      - Bidirectionality implies the model was trained/evaluated for both directions.
+    falsifiers:
+      - Documentation or tests indicate the checkpoint is effectively one-directional.
+
+  - id: "TECH-2026-078"
+    text: >-
+      The model card provides concrete usage instructions (inference examples and guidance) sufficient to reproduce
+      baseline model behavior.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["liquidai-2025-lfm2-350m-enjp-mt"]
+    operationalization: >-
+      Attempt to run inference using only the model card instructions and confirm a reproducible translation output pipeline.
+    assumptions:
+      - The code snippets and dependencies referenced remain available.
+    falsifiers:
+      - Instructions are incomplete or non-functional without additional undocumented steps.

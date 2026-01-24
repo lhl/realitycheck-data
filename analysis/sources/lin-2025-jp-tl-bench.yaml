@@ -1,0 +1,120 @@
+sources:
+  - id: "lin-2025-jp-tl-bench"
+    type: "BLOG"
+    title: "JP-TL-Bench: Anchored Pairwise LLM Evaluation for Bidirectional Japanese-English Translation"
+    author:
+      - "Leonard Lin"
+    year: 2025
+    url: "https://shisa.ai/posts/jp-tl-bench/"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/lin-2025-jp-tl-bench.md"
+    reliability: 0.72
+    bias_notes: >-
+      First-party announcement for a benchmark built by the author’s team (Shisa.AI). High reliability for
+      high-level descriptions corroborated by the public repo/paper; higher bias risk for superiority and
+      cost/efficiency claims.
+    topics:
+      - machine-translation
+      - evaluation
+      - llm-judge
+      - pairwise
+      - anchoring
+      - japanese
+      - english
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-040
+      - TECH-2026-041
+      - TECH-2026-042
+      - TECH-2026-043
+      - TECH-2026-044
+
+claims:
+  - id: "TECH-2026-040"
+    text: >-
+      Standard MT metrics can bunch strong Japanese↔English translation models together and miss meaningful
+      differences in naturalness and nuance among already-good outputs.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["lin-2025-jp-tl-bench"]
+    operationalization: >-
+      Compare BLEU/chrF/COMET rankings vs expert human pairwise preferences across a set of high-quality
+      JA↔EN systems on a dataset emphasizing register, ellipsis, implicature, and pro-drop phenomena.
+    assumptions:
+      - The evaluated systems are near-fluent so score compression is plausible.
+    falsifiers:
+      - Evidence that standard metrics remain discriminative and well-calibrated at the top end for Japanese↔English.
+
+  - id: "TECH-2026-041"
+    text: >-
+      JP-TL-Bench uses anchored pairwise comparisons: each candidate model is compared against a fixed,
+      versioned base set of roughly 20 anchor models rather than against every other candidate.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["lin-2025-jp-tl-bench"]
+    operationalization: >-
+      Inspect the public repo for a frozen base set snapshot (manifest + anchor translations) and confirm the
+      benchmark pairs candidate outputs with anchor outputs for judging.
+    assumptions:
+      - The published repository matches the protocol described in the post.
+    falsifiers:
+      - Repo/paper implement an all-pairs or floating-pool approach rather than anchored comparisons.
+
+  - id: "TECH-2026-042"
+    text: >-
+      JP-TL-Bench includes 70 translation prompts spanning both EN→JA and JA→EN directions, Easy/Hard
+      tiers, and includes some longer-form items.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lin-2025-jp-tl-bench"]
+    operationalization: >-
+      Count items in the published base set translation files and verify direction/difficulty coverage and
+      presence of longer passages (e.g., higher token/character counts).
+    assumptions:
+      - Translation artifacts include per-item metadata (direction, difficulty).
+    falsifiers:
+      - Published artifacts show materially different item counts or do not include the described coverage.
+
+  - id: "TECH-2026-043"
+    text: >-
+      A JP-TL-Bench evaluation run costs on the order of ~$7 and takes roughly 10–30 minutes when using a fast
+      judge model.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["lin-2025-jp-tl-bench"]
+    operationalization: >-
+      Reproduce an evaluation under the documented protocol and measure total judge tokens/cost and wall-clock
+      time across multiple runs.
+    assumptions:
+      - API pricing and rate limits remain similar to the author’s report.
+    falsifiers:
+      - Reproduction shows costs/time are consistently far higher under the same settings.
+
+  - id: "TECH-2026-044"
+    text: >-
+      Under a fixed protocol (same anchor set, judge model, and aggregation code), anchored comparison yields
+      scores that are consistent over time (a score today is comparable to a score months later).
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["lin-2025-jp-tl-bench"]
+    operationalization: >-
+      Run the benchmark on the same candidate at different times under identical settings and confirm scores
+      remain stable within expected sampling noise.
+    assumptions:
+      - The anchor set and anchor-anchor judgments remain unchanged.
+      - The judge model behaves stably across time (no major model updates).
+    falsifiers:
+      - Scores drift materially despite fixed protocol and repeated runs.
+

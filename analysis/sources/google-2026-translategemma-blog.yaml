@@ -1,0 +1,80 @@
+sources:
+  - id: "google-2026-translategemma-blog"
+    type: "ARTICLE"
+    title: "TranslateGemma: A new suite of open translation models"
+    author:
+      - "David Vilar"
+      - "Kat Black"
+    year: 2026
+    url: "https://blog.google/innovation-and-ai/technology/developers-tools/translategemma/"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/google-2026-translategemma-blog.md"
+    reliability: 0.70
+    bias_notes: >-
+      Product/announcement blog post. High marketing bias; moderate reliability for high-level claims corroborated by
+      the technical report; limited methodological detail on its own.
+    topics:
+      - translategemma
+      - machine-translation
+      - gemma
+      - wmt
+      - metricx
+      - multimodal
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-084
+      - TECH-2026-085
+      - TECH-2026-086
+
+claims:
+  - id: "TECH-2026-084"
+    text: >-
+      TranslateGemma is an open suite of translation-specialized Gemma 3 models offered in 4B, 12B, and 27B sizes,
+      covering translation across 55 languages.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["google-2026-translategemma-blog"]
+    operationalization: >-
+      Confirm released model sizes and language coverage in the technical report and published model cards.
+    assumptions:
+      - The announcement accurately reflects the released set.
+    falsifiers:
+      - Technical report/model releases contradict the stated sizes or language coverage.
+
+  - id: "TECH-2026-085"
+    text: >-
+      TranslateGemma training uses supervised fine-tuning on human-translated and synthetic parallel data followed by
+      reinforcement learning using reward models such as MetricX-QE and AutoMQM.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["google-2026-translategemma-blog"]
+    operationalization: >-
+      Verify the described SFT and RL pipeline and the reward models in the technical report.
+    assumptions:
+      - The blog accurately summarizes the technical report.
+    falsifiers:
+      - The technical report does not describe these stages or reward models.
+
+  - id: "TECH-2026-086"
+    text: >-
+      TranslateGemma retains Gemma 3’s multimodal capabilities and improves translation of text within images as
+      measured on the Vistra image translation benchmark.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["google-2026-translategemma-blog"]
+    operationalization: >-
+      Verify Vistra benchmark results comparing TranslateGemma to baseline Gemma 3 and confirm translation quality
+      is retained/improved for image text.
+    assumptions:
+      - Vistra is representative of image-text translation use cases.
+    falsifiers:
+      - Reported Vistra results show degraded multimodal translation vs baseline.
+

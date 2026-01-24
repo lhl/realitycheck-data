@@ -1,0 +1,116 @@
+sources:
+  - id: "google-2026-translategemma-tech-report"
+    type: "PAPER"
+    title: "TranslateGemma Technical Report"
+    author:
+      - "Google Translate Research Team"
+    year: 2026
+    url: "https://arxiv.org/abs/2601.09012"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/google-2026-translategemma-tech-report.md"
+    reliability: 0.80
+    bias_notes: >-
+      Vendor-authored technical report. High reliability for described training procedure and included tables; bias risk
+      for marketing framing and for general superiority claims beyond the chosen benchmarks and protocols.
+    topics:
+      - machine-translation
+      - translategemma
+      - gemma
+      - wmt
+      - mqm
+      - metricx
+      - automqm
+      - japanese
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-079
+      - TECH-2026-080
+      - TECH-2026-081
+      - TECH-2026-082
+      - TECH-2026-083
+
+claims:
+  - id: "TECH-2026-079"
+    text: >-
+      TranslateGemma is produced by a two-stage process: supervised fine-tuning on a mixture of human-translated and
+      synthetic parallel data, followed by reinforcement learning that uses an ensemble of reward models including
+      MetricX-QE and AutoMQM to optimize translation quality.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.90
+    source_ids: ["google-2026-translategemma-tech-report"]
+    operationalization: >-
+      Inspect the technical report’s training sections and confirm the described SFT and RL stages and the reward
+      model components.
+    assumptions:
+      - The report accurately describes the released models’ training process.
+    falsifiers:
+      - The report or released artifacts contradict the described training pipeline.
+
+  - id: "TECH-2026-080"
+    text: >-
+      On WMT24++, TranslateGemma improves average automatic metric scores versus baseline Gemma 3 across sizes,
+      including improved MetricX and Comet22 results.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["google-2026-translategemma-tech-report"]
+    operationalization: >-
+      Verify the averages reported in Table 1 (MetricX and Comet22) for Gemma 3 vs TranslateGemma at 27B/12B/4B.
+    assumptions:
+      - The reported tables correspond to the evaluated WMT24++ benchmark setup.
+    falsifiers:
+      - The reported averages do not show improvements or are inconsistent with the claim.
+
+  - id: "TECH-2026-081"
+    text: >-
+      In Appendix A of the technical report, WMT24++ en→ja_JP MetricX scores are lower (better) for TranslateGemma
+      than for baseline Gemma 3 at 27B/12B/4B (e.g., 27B: 3.53 vs 4.11).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["google-2026-translategemma-tech-report"]
+    operationalization: >-
+      Extract the en→ja_JP row from the per-language MetricX table and confirm the TranslateGemma vs Gemma 3 values.
+    assumptions:
+      - MetricX is interpreted as lower-is-better as indicated in the report (MetricX↓).
+    falsifiers:
+      - The per-language table shows worse (higher) MetricX for TranslateGemma on en→ja_JP.
+
+  - id: "TECH-2026-082"
+    text: >-
+      The report includes MQM human evaluation on the WMT25 test set across 10 language pairs, using professional
+      translators with document context to score translation errors.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.80
+    source_ids: ["google-2026-translategemma-tech-report"]
+    operationalization: >-
+      Verify the human evaluation description and MQM results table (Table 3) in the report.
+    assumptions:
+      - The report’s MQM evaluation methodology is accurately described.
+    falsifiers:
+      - The report does not include MQM human evaluation or lacks methodological detail/results.
+
+  - id: "TECH-2026-083"
+    text: >-
+      The technical report’s extracted per-language WMT24++ MetricX table lists language pairs as en→* and does not
+      provide a corresponding ja→en table, limiting claims about Japanese→English regressions from this source alone.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["google-2026-translategemma-tech-report"]
+    operationalization: >-
+      Scan Appendix A for any ja→en or *→en language pairs and confirm whether such tables exist.
+    assumptions:
+      - The extracted tables reflect the report’s presented per-language WMT24++ evaluation.
+    falsifiers:
+      - The report includes explicit ja→en per-language metric tables comparable to en→ja.
+

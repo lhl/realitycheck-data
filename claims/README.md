@@ -6,12 +6,13 @@
 
 | Table | Count |
 |-------|-------|
-| claims | 174 |
-| sources | 58 |
+| claims | 228 |
+| sources | 69 |
 | chains | 4 |
 | predictions | 15 |
 | contradictions | 0 |
 | definitions | 0 |
+| analysis_logs | 0 |
 
 ## Claims by Domain
 
@@ -26,33 +27,33 @@
 | RESOURCE | 7 |
 | RISK | 6 |
 | SOC | 5 |
-| TECH | 39 |
+| TECH | 93 |
 | TRANS | 21 |
 
 ## Claims by Type
 
 | Type | Count |
 |------|-------|
-| [A] | 3 |
+| [A] | 6 |
 | [C] | 1 |
-| [F] | 70 |
-| [H] | 39 |
+| [F] | 108 |
+| [H] | 49 |
 | [P] | 15 |
 | [S] | 3 |
-| [T] | 43 |
+| [T] | 46 |
 
 ## Sources by Type
 
 | Type | Count |
 |------|-------|
-| ARTICLE | 5 |
-| BLOG | 15 |
+| ARTICLE | 6 |
+| BLOG | 20 |
 | BOOK | 1 |
 | CONVO | 6 |
 | DATA | 2 |
 | INTERVIEW | 1 |
-| KNOWLEDGE | 11 |
-| PAPER | 6 |
+| KNOWLEDGE | 14 |
+| PAPER | 8 |
 | REPORT | 6 |
 | SOCIAL | 5 |
 

@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 174 |
-| **Sources** | 58 |
+| **Claims** | 228 |
+| **Sources** | 69 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 15 |
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-24 | [JP-TL-Bench and JA↔EN Translation Evaluation](analysis/syntheses/jp-tl-bench-ja-en-translation-eval-synthesis.md) | `[DRAFT]` | Cross-source synthesis: anchored pairwise vs metrics/MQM; Japanese context challenges; directionality; novelty/tradeoffs |
 | 2026-01-24 | [PageIndex vs StrataLens (Vectorless RAG)](analysis/syntheses/pageindex-vs-stratalens-vectorless-rag-synthesis.md) | `[DRAFT]` | Cross-source comparison: structure-aware retrieval vs vectorless traversal; benchmark claims flagged as protocol-dependent; maturity/licensing assessment |
 | 2026-01-19 | [Vibecoding / Agent Psychosis](analysis/syntheses/vibecoding-agent-psychosis-synthesis.md) | `[DRAFT]` | Verification bottleneck as artifact generation gets cheap |
 | 2026-01-19 | [Yegge Vibe Coding 2025-2026](analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md) | `[DRAFT]` | Evolution of coding agent discourse |
@@ -46,6 +47,17 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-24 | [JP-TL-Bench paper (Lin & Lensenmayer 2026)](analysis/sources/lin-2026-jp-tl-bench-paper.md) | `[REVIEWED]` | Anchored pairwise LLM-judge benchmark for JA↔EN translation; Bradley–Terry aggregation + LT scoring; protocol dependence noted |
+| 2026-01-24 | [JP-TL-Bench (blog)](analysis/sources/lin-2025-jp-tl-bench.md) | `[REVIEWED]` | Release post motivating anchored pairwise evaluation vs metric compression for high-end JA↔EN translation |
+| 2026-01-24 | [JP-TL-Bench Directional Analysis](analysis/sources/lin-2026-jp-tl-bench-directional-analysis.md) | `[REVIEWED]` | Direction and difficulty slices show large asymmetries (e.g., Llama 3.1 8B); qualitative examples |
+| 2026-01-24 | [JP-TL-Bench repo](analysis/sources/shisaai-2026-jp-tl-bench-repo.md) | `[REVIEWED]` | Open artifacts: Base Set v1.0 snapshot, prompts, scoring code; reproducibility and bias considerations |
+| 2026-01-24 | [Shisa V2](analysis/sources/lin-2025-shisa-v2.md) | `[REVIEWED]` | Model family release context; claims about Japanese eval gaps and new translation benchmark motivation |
+| 2026-01-24 | [Shisa V2 405B](analysis/sources/lin-2025-shisa-v2-405b.md) | `[REVIEWED]` | Model release positioning; internal eval suite framing; translation evaluation rationale |
+| 2026-01-24 | [Shisa V2.1](analysis/sources/shisaai-2025-shisa-v2-1.md) | `[REVIEWED]` | Dataset/recipe refresh claims; context for Japanese-specific improvements (incl. translation/politeness) |
+| 2026-01-24 | [Liquid AI Hackathon Tokyo repo](analysis/sources/lhl-2025-liquid-ai-hackathon-tokyo.md) | `[REVIEWED]` | COMET-centered llm-jp-eval MT workflow; prompt asymmetry and metric clustering cautions |
+| 2026-01-24 | [LiquidAI LFM2-350M-ENJP-MT model card](analysis/sources/liquidai-2025-lfm2-350m-enjp-mt.md) | `[REVIEWED]` | Vendor description of a small bidirectional EN↔JA MT checkpoint for low-latency use |
+| 2026-01-24 | [TranslateGemma Technical Report](analysis/sources/google-2026-translategemma-tech-report.md) | `[REVIEWED]` | SFT+RL translation specialization of Gemma 3; WMT metrics + MQM human eval; en→ja gains reported |
+| 2026-01-24 | [TranslateGemma blog](analysis/sources/google-2026-translategemma-blog.md) | `[REVIEWED]` | Announcement summary: model sizes, language coverage, and metric-based gains |
 | 2026-01-24 | [FinanceBench (Islam et al. 2023)](analysis/sources/islam-2023-financebench.md) | `[REVIEWED]` | Benchmark baseline: 10,231 Qs; human-eval sample shows high failure rates for GPT-4-Turbo+retrieval; oracle ~85% |
 | 2026-01-24 | [@_avichawla thread on PageIndex](analysis/sources/avichawla-2026-pageindex-thread.md) | `[REVIEWED]` | Social summary of “vectorless RAG”; highlights similarity≠relevance + structure-aware retrieval; performance claim flagged as protocol-dependent |
 | 2026-01-24 | [VectifyAI PageIndex repo](analysis/sources/vectifyai-2025-pageindex.md) | `[REVIEWED]` | Repo review: hierarchical tree index + LLM traversal (no vector DB); strong adoption but limited CI/tests; “98.7% FinanceBench” is vendor-reported |
@@ -69,7 +81,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 39 |
+| TECH | Technology & AI | 93 |
 | LABOR | Labor & Employment | 16 |
 | ECON | Economics & Markets | 20 |
 | GOV | Governance & Policy | 32 |

@@ -1,0 +1,159 @@
+sources:
+  - id: "lin-2026-jp-tl-bench-paper"
+    type: "PAPER"
+    title: "JP-TL-Bench: Anchored Pairwise LLM Evaluation for Bidirectional Japanese-English Translation"
+    author:
+      - "Leonard Lin"
+      - "Adam Lensenmayer"
+    year: 2026
+    url: "https://arxiv.org/abs/2601.00223"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/lin-2026-jp-tl-bench-paper.md"
+    reliability: 0.78
+    bias_notes: >-
+      Authored by the benchmark creators (Shisa.AI). High reliability for “what we built/how it works”
+      claims (code + artifacts are public); higher bias risk for “this is better / more reliable” claims and
+      for competitive positioning vs other MT evaluation approaches.
+    topics:
+      - machine-translation
+      - evaluation
+      - llm-judge
+      - pairwise
+      - bradley-terry
+      - japanese
+      - english
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-031
+      - TECH-2026-032
+      - TECH-2026-033
+      - TECH-2026-034
+      - TECH-2026-038
+      - TECH-2026-039
+      - TECH-2026-087
+
+claims:
+  - id: "TECH-2026-031"
+    text: >-
+      JP-TL-Bench evaluates a candidate model via reference-free, pairwise LLM comparisons against a fixed,
+      versioned 20-model anchor set, and aggregates outcomes with a Bradley–Terry model into win-rate plus
+      a 0–10 LT score.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.90
+    source_ids: ["lin-2026-jp-tl-bench-paper"]
+    operationalization: >-
+      Inspect the public repository and paper to confirm: (a) comparisons are candidate-vs-anchor pairwise,
+      (b) the anchor set is fixed/versioned, (c) aggregation uses Bradley–Terry, and (d) LT is reported.
+    assumptions:
+      - The published code corresponds to the protocol described in the paper.
+    falsifiers:
+      - The repository implements a different evaluation protocol (e.g., reference-based metrics or floating-pool Elo).
+
+  - id: "TECH-2026-032"
+    text: >-
+      Anchoring pairwise comparisons to a frozen base set yields structurally stable scores under a fixed
+      protocol (base set + judge + aggregation code) and reduces per-candidate evaluation cost to O(items×anchors)
+      rather than O(N²) all-pairs comparisons.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.90
+    source_ids: ["lin-2026-jp-tl-bench-paper"]
+    operationalization: >-
+      Show mathematically that (a) adding candidates does not change anchor-anchor edges, and (b) candidate
+      evaluation requires a fixed number of candidate-anchor comparisons; validate with the published code paths.
+    assumptions:
+      - The anchor set and anchor-anchor judgments remain fixed across evaluations.
+      - The judge model/decoding configuration is held constant when comparing scores over time.
+    falsifiers:
+      - Demonstration that scores drift materially despite fixed base set + judge + code.
+      - Evidence that comparable discrimination requires all-pairs evaluation among candidates.
+
+  - id: "TECH-2026-033"
+    text: >-
+      JP-TL-Bench contains 70 translation items spanning EN→JA and JA→EN and Easy/Hard tiers, with a 34/36
+      direction split and a 30/40 difficulty split.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["lin-2026-jp-tl-bench-paper"]
+    operationalization: >-
+      Count items in the published benchmark artifacts and verify the direction (`english` boolean) and
+      difficulty labels.
+    assumptions:
+      - Published artifacts correspond to the stated benchmark version.
+    falsifiers:
+      - Artifact counts materially differ from the paper’s claimed totals/splits.
+
+  - id: "TECH-2026-034"
+    text: >-
+      Common MT metrics (e.g., BLEU/chrF/COMET) can saturate or mischaracterize quality in high-quality
+      translation regimes, motivating higher-resolution evaluation protocols.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.70
+    source_ids: ["lin-2026-jp-tl-bench-paper"]
+    operationalization: >-
+      Compare top-end system rankings under BLEU/chrF/COMET vs expert human ratings and pairwise
+      preferences, focusing on near-fluent outputs and Japanese-specific phenomena.
+    assumptions:
+      - The evaluated systems are in the “high quality” regime where metrics compress.
+    falsifiers:
+      - Evidence that standard metrics remain well-calibrated and discriminative among top-end JA↔EN systems.
+
+  - id: "TECH-2026-038"
+    text: >-
+      Translation direction (EN→JA vs JA→EN) can differ substantially for many models, so a single language-pair
+      score can hide important failures.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.80
+    source_ids: ["lin-2026-jp-tl-bench-paper"]
+    operationalization: >-
+      Evaluate a diverse model set on both translation directions and quantify directional gaps; check whether
+      direction-specific rankings diverge materially.
+    assumptions:
+      - The benchmark includes sufficient items in each direction to estimate slice scores.
+    falsifiers:
+      - Large-scale evaluation showing minimal directional variance for JA↔EN across model families and prompting styles.
+
+  - id: "TECH-2026-039"
+    text: >-
+      The JP-TL-Bench LT score is computed as a logistic transform of mean-centered Bradley–Terry fitted
+      log-strengths, scaled to a 0–10 range.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["lin-2026-jp-tl-bench-paper"]
+    operationalization: >-
+      Inspect the scoring implementation and confirm LT is computed as sigmoid(params - mean(params)) * 10.
+    assumptions:
+      - The released code is the scoring implementation used for reported numbers.
+    falsifiers:
+      - Code computes LT differently (e.g., a linear rescale or a different nonlinearity).
+
+  - id: "TECH-2026-087"
+    text: >-
+      Japanese↔English translation quality depends on phenomena that sentence-level evaluation often misses,
+      including pro-drop/zero pronoun resolution and honorific/register control.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.75
+    source_ids: ["lin-2026-jp-tl-bench-paper"]
+    operationalization: >-
+      Identify translation errors attributable to (a) omitted arguments requiring discourse inference and (b) incorrect
+      politeness/honorific selection; measure whether sentence-level metrics detect them reliably.
+    assumptions:
+      - Many evaluation setups lack sufficient context to resolve pro-drop and register selection.
+    falsifiers:
+      - Evidence that sentence-level metrics reliably capture these error classes at scale for Japanese↔English.
+

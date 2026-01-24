@@ -1,0 +1,113 @@
+sources:
+  - id: "lin-2025-shisa-v2-405b"
+    type: "BLOG"
+    title: "Shisa V2 405B: Japan’s Highest Performing LLM"
+    author:
+      - "Leonard Lin"
+    year: 2025
+    url: "https://shisa.ai/posts/shisa-v2-405b/"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/lin-2025-shisa-v2-405b.md"
+    reliability: 0.68
+    bias_notes: >-
+      First-party model release and positioning (“highest performing LLM ever trained in Japan”). High bias risk for
+      comparative and national “best” framing; moderate reliability for technical lineage and references to published
+      evaluation tables on the model card.
+    topics:
+      - models
+      - japanese
+      - llm
+      - evaluation
+      - shisa
+      - sovereign-ai
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-060
+      - TECH-2026-061
+      - TECH-2026-062
+      - TECH-2026-063
+      - TECH-2026-064
+
+claims:
+  - id: "TECH-2026-060"
+    text: >-
+      Shisa V2 405B is based on meta-llama/Llama-3.1-405B-Instruct and uses the Shisa V2 Japanese data mix, with
+      additional contributed Korean and Traditional Chinese data.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["lin-2025-shisa-v2-405b"]
+    operationalization: >-
+      Verify the base model and dataset mix on the Hugging Face model card and associated training documentation.
+    assumptions:
+      - The model card accurately reflects training lineage and datasets.
+    falsifiers:
+      - The model card or training docs indicate a different base model or dataset mix.
+
+  - id: "TECH-2026-061"
+    text: >-
+      Training Shisa V2 405B for SFT+DPO required more than 50× the compute compared to training the 70B version.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["lin-2025-shisa-v2-405b"]
+    operationalization: >-
+      Publish or audit training compute accounting for both the 405B and 70B pipelines (tokens, steps, FLOPs, wall time).
+    assumptions:
+      - Compute requirements scale roughly proportionally to model size and training schedule.
+    falsifiers:
+      - Audited compute logs show materially different scaling than claimed.
+
+  - id: "TECH-2026-062"
+    text: >-
+      Shisa V2 405B outperforms GPT-4 (0613) and GPT-4 Turbo (2024-04-09) on the authors’ Japanese/English eval
+      suites and is competitive with GPT-4o (2024-11-20) and DeepSeek-V3 (0324) on Japanese MT-Bench.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.50
+    source_ids: ["lin-2025-shisa-v2-405b"]
+    operationalization: >-
+      Run a matched benchmark suite (same datasets, prompts, judges, scoring) comparing the stated models and report
+      statistically meaningful differences with artifacts.
+    assumptions:
+      - The internal eval suite is valid and comparable across labs’ models.
+    falsifiers:
+      - Independent matched evaluation contradicts the claimed ordering/competitiveness.
+
+  - id: "TECH-2026-063"
+    text: >-
+      Commonly used Japanese evaluation suites fail to measure important downstream use cases, motivating custom
+      Japanese evaluations including translation benchmarks.
+    type: "[A]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["lin-2025-shisa-v2-405b"]
+    operationalization: >-
+      Enumerate downstream tasks and show that improvements on common public Japanese evals do not predict
+      performance on those tasks; validate with production-like evaluations.
+    assumptions:
+      - The downstream use cases are meaningfully different from standard eval task distributions.
+    falsifiers:
+      - Evidence that standard Japanese evals already capture the downstream phenomena with strong predictive validity.
+
+  - id: "TECH-2026-064"
+    text: >-
+      The Shisa V2 405B model card contains the full evaluation table with detailed scores referenced by the post.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["lin-2025-shisa-v2-405b"]
+    operationalization: >-
+      Inspect the model card and confirm it includes detailed evaluation tables beyond the condensed blog table.
+    assumptions:
+      - The model card is publicly accessible and up to date.
+    falsifiers:
+      - The model card lacks the detailed evaluation tables or contradicts the blog post.
+
