@@ -1,5 +1,9 @@
 # Source Analysis: AI companies will fail. We can salvage something from the wreckage
 
+> **Claim types**: `[F]` fact, `[T]` theory, `[H]` hypothesis, `[P]` prediction, `[A]` assumption, `[C]` counterfactual, `[S]` speculation, `[X]` contradiction
+> **Evidence**: **E1** systematic review/meta-analysis; **E2** peer-reviewed/official stats; **E3** expert consensus/preprint; **E4** credible journalism/industry; **E5** opinion/anecdote; **E6** unsupported/speculative
+
+
 ## Metadata
 - **Source ID**: doctorow-2026-reverse-centaur
 - **Author(s)**: Cory Doctorow
@@ -12,8 +16,7 @@
 
 > **Evidence Strength (E-level)**: E1=Strong empirical (replicated) | E2=Moderate empirical | E3=Strong theoretical | E4=Weak theoretical | E5=Opinion/forecast | E6=Unsupported assertion
 
-## Stage 1: Descriptive Summary
-
+## Stage 1: Descriptive Analysis
 ### Core Thesis
 Doctorow argues that the current “AI boom” is primarily a financial bubble pumped by monopoly-era tech firms that need recurring “growth stories” to sustain market valuations. The core business pitch (“AI can do your job”) is, in his view, false at the level investors require (mass labor substitution), and in practice produces “reverse centaurs”: humans reduced to monitored, blame-absorbing peripherals who absorb AI failures. He predicts the bubble will burst, leaving behind some salvage (cheap GPUs, applied-statistics talent, and open-source/commodity models that do useful narrow tasks) but also long-lived harms and cleanup.
 
@@ -58,8 +61,7 @@ Some salvage (cheap GPUs + commodity/open tools) + long-lived harms/cleanup
 - It focuses on *political economy of deployment and investment*, not model capability benchmarking.
 - It treats many heterogeneous “AI” applications under a single bubble frame; sector-specific variation is underexplored.
 
-## Stage 2: Evaluation
-
+## Stage 2: Evaluative Analysis
 ### Internal Coherence
 The argument is coherent as a mechanism chain: monopoly-era firms need growth narratives; “AI can do your job” is the narrative investors fund; deployments tend toward worker-control and blame-shifting; the economics are unsustainable so the boom ends, leaving residual useful artifacts plus social costs. The weakest links are empirical: (a) whether “AI can’t do your job” generalizes beyond selected examples and time horizons, and (b) whether the current wave is best modeled as a bubble that *must* burst rather than a new infrastructure buildout with a shakeout but durable profitability.
 
@@ -136,6 +138,113 @@ The argument is coherent as a mechanism chain: monopoly-era firms need growth na
 ### Contradicting Theories
 - `ECON-2026-006`: inference at scale may centralize around power/datacenters even if models commoditize (tension with “runs on our laptops and phones” optimism).
 - `ECON-2026-001`: compute/energy/chips as chokepoints may preserve concentration even after model diffusion (also tensions with salvage story).
+
+### Claim Summary
+
+
+| ID | Type | Domain | Evidence | Credence | Claim |
+|----|------|--------|----------|----------:|-------|
+| LABOR-2026-005 | [T] | LABOR | E4 | 0.55 | Workplace AI is often deployed to intensify surveillance/control of workers (creating “reverse centaurs”), rather than to augment worker autonomy |
+| LABOR-2026-006 | [H] | LABOR | E4 | 0.50 | For most high-wage jobs, “AI can do your job” is false as an end-to-end replacement claim; attempted substitution pushes humans into “human-in-the-loop” accountability sinks and degrades quality |
+| TECH-2026-005 | [F] | TECH | E2 | 0.75 | LLM-based code generation can produce plausible but wrong outputs (including invented dependency names), shifting risk to reviewers and increasing supply-chain/security failure modes |
+| TECH-2026-006 | [H] | TECH | E4 | 0.60 | A key “salvage” from the AI bubble is diffusion of useful, low-cost tools (especially open-source models on commodity hardware) for tasks like transcription, summarization, image description, and simple graphic edits |
+| ECON-2026-007 | [T] | ECON | E4 | 0.45 | Monopolistic tech firms with saturated markets repeatedly hype new “bubble” narratives (crypto/NFTs/metaverse/AI) to preserve growth-stock valuations when organic growth slows |
+| GOV-2026-016 | [F] | GOV | E2 | 0.90 | Google has ~90% search market share (global, depending on metric/timeframe), consistent with near-monopoly conditions |
+| GOV-2026-017 | [F] | GOV | E2 | 0.85 | Google pays Apple on the order of ~$20bn/year for default search placement (Safari/iOS), reinforcing distribution control and monopoly dynamics |
+| GOV-2026-018 | [H] | GOV | E4 | 0.40 | Expanding copyright to restrict model training would primarily benefit incumbent media/platform monopolies; creator-friendly leverage is labor-market power (e.g., sectoral bargaining) |
+| TRANS-2026-003 | [P] | TRANS | E5 | 0.35 | The current generative-AI investment boom is a bubble that will burst, leading to widespread company failures and datacenter shutdowns/sell-offs; aftermath leaves salvage plus long cleanup |
+
+### Claims to Register
+
+
+```yaml
+claims:
+- id: LABOR-2026-005
+  text: Workplace AI is often deployed to intensify surveillance/control of workers (creating
+    “reverse centaurs”), rather than to augment worker autonomy
+  type: '[T]'
+  domain: LABOR
+  evidence_level: E4
+  credence: 0.55
+  source_ids:
+  - doctorow-2026-reverse-centaur
+- id: LABOR-2026-006
+  text: For most high-wage jobs, “AI can do your job” is false as an end-to-end replacement
+    claim; attempted substitution pushes humans into “human-in-the-loop” accountability sinks
+    and degrades quality
+  type: '[H]'
+  domain: LABOR
+  evidence_level: E4
+  credence: 0.5
+  source_ids:
+  - doctorow-2026-reverse-centaur
+- id: TECH-2026-005
+  text: LLM-based code generation can produce plausible but wrong outputs (including invented
+    dependency names), shifting risk to reviewers and increasing supply-chain/security failure
+    modes
+  type: '[F]'
+  domain: TECH
+  evidence_level: E2
+  credence: 0.75
+  source_ids:
+  - doctorow-2026-reverse-centaur
+- id: TECH-2026-006
+  text: A key “salvage” from the AI bubble is diffusion of useful, low-cost tools (especially
+    open-source models on commodity hardware) for tasks like transcription, summarization,
+    image description, and simple graphic edits
+  type: '[H]'
+  domain: TECH
+  evidence_level: E4
+  credence: 0.6
+  source_ids:
+  - doctorow-2026-reverse-centaur
+- id: ECON-2026-007
+  text: Monopolistic tech firms with saturated markets repeatedly hype new “bubble” narratives
+    (crypto/NFTs/metaverse/AI) to preserve growth-stock valuations when organic growth slows
+  type: '[T]'
+  domain: ECON
+  evidence_level: E4
+  credence: 0.45
+  source_ids:
+  - doctorow-2026-reverse-centaur
+- id: GOV-2026-016
+  text: Google has ~90% search market share (global, depending on metric/timeframe), consistent
+    with near-monopoly conditions
+  type: '[F]'
+  domain: GOV
+  evidence_level: E2
+  credence: 0.9
+  source_ids:
+  - doctorow-2026-reverse-centaur
+- id: GOV-2026-017
+  text: Google pays Apple on the order of ~$20bn/year for default search placement (Safari/iOS),
+    reinforcing distribution control and monopoly dynamics
+  type: '[F]'
+  domain: GOV
+  evidence_level: E2
+  credence: 0.85
+  source_ids:
+  - doctorow-2026-reverse-centaur
+- id: GOV-2026-018
+  text: Expanding copyright to restrict model training would primarily benefit incumbent media/platform
+    monopolies; creator-friendly leverage is labor-market power (e.g., sectoral bargaining)
+  type: '[H]'
+  domain: GOV
+  evidence_level: E4
+  credence: 0.4
+  source_ids:
+  - doctorow-2026-reverse-centaur
+- id: TRANS-2026-003
+  text: The current generative-AI investment boom is a bubble that will burst, leading to
+    widespread company failures and datacenter shutdowns/sell-offs; aftermath leaves salvage
+    plus long cleanup
+  type: '[P]'
+  domain: TRANS
+  evidence_level: E5
+  credence: 0.35
+  source_ids:
+  - doctorow-2026-reverse-centaur
+```
 
 ### Synthesis Notes
 This source adds a labor-centric, monopoly-centric framing that can complement “bottleneck” analyses: even if cognition commoditizes, **deployment incentives** can still produce worker-control regimes (“reverse centaur”) and liability laundering (“accountability sinks”). The forecast claim (“bubble will burst”) is the most testable and also the most uncertain; operationalizing it as a tracked prediction could clarify what evidence would change our mind.

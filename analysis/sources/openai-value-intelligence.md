@@ -73,8 +73,7 @@ Cycle compounds (“flywheel”)
 - Key terms are underspecified: “compute” in GW (power capacity? contracted capacity? average utilization?) and “ARR” are not defined in detail.
 - Many forward-looking claims (agents, new economic models) are speculative and depend on regulation, competition, and user trust.
 
-## Stage 2: Evaluation
-
+## Stage 2: Evaluative Analysis
 ### Internal Coherence
 The “flywheel” story is directionally coherent: compute can enable better models, better models can improve products, better products can drive adoption, and adoption can drive revenue that funds more compute. The argument’s weakest points are measurement (what exactly “compute” and “ARR” mean here), and causal attribution (growth could be driven by distribution, product design, or pricing power as much as by compute).
 

@@ -1,5 +1,9 @@
 # Source Analysis: China’s Trillion-Dollar Illusion
 
+> **Claim types**: `[F]` fact, `[T]` theory, `[H]` hypothesis, `[P]` prediction, `[A]` assumption, `[C]` counterfactual, `[S]` speculation, `[X]` contradiction
+> **Evidence**: **E1** systematic review/meta-analysis; **E2** peer-reviewed/official stats; **E3** expert consensus/preprint; **E4** credible journalism/industry; **E5** opinion/anecdote; **E6** unsupported/speculative
+
+
 ## Metadata
 - **Primary Source ID**: perera-2026-chinas-trillion-dollar-illusion
 - **Related Source ID**: perera-2026-china-trade-surplus-collapse-thread
@@ -13,8 +17,7 @@
 
 > **Evidence Strength (E-level)**: E1=Strong empirical (replicated) | E2=Moderate empirical | E3=Strong theoretical | E4=Weak theoretical | E5=Opinion/forecast | E6=Unsupported assertion
 
-## Stage 1: Descriptive Summary
-
+## Stage 1: Descriptive Analysis
 ### Core Thesis
 Perera argues that China’s record 2025 trade surplus (≈$1.19T) is not primarily a sign of export “strength,” but the “mathematical signature” of domestic demand destruction (imports stagnate while production continues). He further argues that sustained deflation makes the official ~5% real growth path internally inconsistent, and that independent reconstructions (notably Rhodium Group) place true growth far lower. The essay claims a near-term “recognition catalyst”: stress at China Vanke (a quasi-state-backed developer) will force markets to reprice the assumption of implicit state backstops and thereby reprice China-exposed global assets.
 
@@ -56,8 +59,7 @@ Recognition/repricing of China-exposed assets
 - “Deflation” is used in multiple senses (CPI/producer prices/export prices/GDP deflator), which can blur falsifiability.
 - The “$4T China-exposed global assets” claim is directionally plausible but undefined and not directly audited here.
 
-## Stage 2: Evaluation
-
+## Stage 2: Evaluative Analysis
 ### Internal Coherence
 The high-level causal story is coherent: weak domestic demand can suppress imports and prices; if official real growth remains high while nominal activity and prices are weak, skepticism rises; a well-known quasi-backed firm in distress could shift beliefs about backstops and reprice risk. The weakest steps are (i) the jump from “surplus large” to “domestic demand evaporated” as the dominant explanation, and (ii) the broad universal/historical claims (“no economy in recorded history…”) offered without explicit evidence or definitions.
 
@@ -132,6 +134,113 @@ The high-level causal story is coherent: weak domestic demand can suppress impor
 
 ### Contradicting Theories
 - Competitiveness / mercantilist framing: surplus reflects enduring export advantage and policy-directed import substitution, not necessarily collapsing domestic demand.
+
+### Claim Summary
+
+
+| ID | Type | Domain | Evidence | Credence | Claim |
+|----|------|--------|----------|----------:|-------|
+| TRANS-2026-005 | [F] | TRANS | E2 | 0.85 | China’s 2025 annual trade surplus was about $1.19T (record; first above $1T) |
+| TRANS-2026-006 | [F] | TRANS | E2 | 0.80 | China’s 2025 exports grew ~5.5% y/y while imports were roughly flat |
+| TRANS-2026-007 | [F] | TRANS | E2 | 0.90 | China’s CPI inflation for full-year 2025 was 0.0% |
+| TRANS-2026-008 | [F] | TRANS | E2 | 0.80 | China’s retail sales growth slowed to ~1.3% y/y in Nov 2025 (weak demand signal) |
+| TRANS-2026-009 | [F] | TRANS | E5 | 0.70 | Rhodium Group estimates China’s 2025 real GDP growth at ~2.5–3% (vs official ~5.2%) |
+| TRANS-2026-010 | [F] | TRANS | E2 | 0.75 | Vanke posted an annual loss of ~49.5B yuan in 2024 and additional ~28B yuan losses in 2025 (Q1–Q3) |
+| TRANS-2026-011 | [F] | TRANS | E2 | 0.75 | Rating agencies treated Vanke’s bond-payment extensions as default-like events (“selective default” / “restricted default”) |
+| TRANS-2026-012 | [F] | TRANS | E2 | 0.80 | Vanke faces ≥9.4B yuan of bond maturities over the next six months (per S&P) |
+| TRANS-2026-013 | [H] | TRANS | E4 | 0.45 | Large trade surpluses can reflect domestic demand destruction (imports collapse) rather than foreign demand strength |
+| GOV-2026-020 | [H] | GOV | E5 | 0.40 | Shenzhen Metro signaled limits to support for Vanke (no “unlimited guarantees” / beyond “risk comfort zone”) |
+
+### Claims to Register
+
+
+```yaml
+claims:
+- id: TRANS-2026-005
+  text: China’s 2025 annual trade surplus was about $1.19T (record; first above $1T)
+  type: '[F]'
+  domain: TRANS
+  evidence_level: E2
+  credence: 0.85
+  source_ids:
+  - perera-2026-chinas-trillion-dollar-illusion
+- id: TRANS-2026-006
+  text: China’s 2025 exports grew ~5.5% y/y while imports were roughly flat
+  type: '[F]'
+  domain: TRANS
+  evidence_level: E2
+  credence: 0.8
+  source_ids:
+  - perera-2026-chinas-trillion-dollar-illusion
+- id: TRANS-2026-007
+  text: China’s CPI inflation for full-year 2025 was 0.0%
+  type: '[F]'
+  domain: TRANS
+  evidence_level: E2
+  credence: 0.9
+  source_ids:
+  - perera-2026-chinas-trillion-dollar-illusion
+- id: TRANS-2026-008
+  text: China’s retail sales growth slowed to ~1.3% y/y in Nov 2025 (weak demand signal)
+  type: '[F]'
+  domain: TRANS
+  evidence_level: E2
+  credence: 0.8
+  source_ids:
+  - perera-2026-chinas-trillion-dollar-illusion
+- id: TRANS-2026-009
+  text: Rhodium Group estimates China’s 2025 real GDP growth at ~2.5–3% (vs official ~5.2%)
+  type: '[F]'
+  domain: TRANS
+  evidence_level: E5
+  credence: 0.7
+  source_ids:
+  - perera-2026-chinas-trillion-dollar-illusion
+- id: TRANS-2026-010
+  text: Vanke posted an annual loss of ~49.5B yuan in 2024 and additional ~28B yuan losses
+    in 2025 (Q1–Q3)
+  type: '[F]'
+  domain: TRANS
+  evidence_level: E2
+  credence: 0.75
+  source_ids:
+  - perera-2026-chinas-trillion-dollar-illusion
+- id: TRANS-2026-011
+  text: Rating agencies treated Vanke’s bond-payment extensions as default-like events (“selective
+    default” / “restricted default”)
+  type: '[F]'
+  domain: TRANS
+  evidence_level: E2
+  credence: 0.75
+  source_ids:
+  - perera-2026-chinas-trillion-dollar-illusion
+- id: TRANS-2026-012
+  text: Vanke faces ≥9.4B yuan of bond maturities over the next six months (per S&P)
+  type: '[F]'
+  domain: TRANS
+  evidence_level: E2
+  credence: 0.8
+  source_ids:
+  - perera-2026-chinas-trillion-dollar-illusion
+- id: TRANS-2026-013
+  text: Large trade surpluses can reflect domestic demand destruction (imports collapse) rather
+    than foreign demand strength
+  type: '[H]'
+  domain: TRANS
+  evidence_level: E4
+  credence: 0.45
+  source_ids:
+  - perera-2026-chinas-trillion-dollar-illusion
+- id: GOV-2026-020
+  text: Shenzhen Metro signaled limits to support for Vanke (no “unlimited guarantees” / beyond
+    “risk comfort zone”)
+  type: '[H]'
+  domain: GOV
+  evidence_level: E5
+  credence: 0.4
+  source_ids:
+  - perera-2026-chinas-trillion-dollar-illusion
+```
 
 ### Synthesis Notes
 The source is strongest as a checklist of stress indicators and a hypothesis about mechanism (“demand destruction surplus”) that invites targeted falsification. To upgrade confidence, the key is to move from headline surplus arithmetic to discriminating evidence: import volumes by category, household consumption growth, private fixed-asset investment, corporate margins/pricing power, and the extent of policy-directed import substitution.

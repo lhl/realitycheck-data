@@ -1,5 +1,9 @@
 # Source Analysis: Mark Carney WEF Davos 2026 Speech - Middle Powers and the Rupture in Global Order
 
+> **Claim types**: `[F]` fact, `[T]` theory, `[H]` hypothesis, `[P]` prediction, `[A]` assumption, `[C]` counterfactual, `[S]` speculation, `[X]` contradiction
+> **Evidence**: **E1** systematic review/meta-analysis; **E2** peer-reviewed/official stats; **E3** expert consensus/preprint; **E4** credible journalism/industry; **E5** opinion/anecdote; **E6** unsupported/speculative
+
+
 ## Metadata
 - **Source ID**: carney-2026-davos-wef-speech
 - **Author(s)**: Mark Carney
@@ -12,8 +16,7 @@
 
 > **Evidence Strength (E-level)**: E1=Strong empirical (replicated) | E2=Moderate empirical | E3=Strong theoretical | E4=Weak theoretical | E5=Opinion/forecast | E6=Unsupported assertion
 
-## Stage 1: Descriptive Summary
-
+## Stage 1: Descriptive Analysis
 ### Core Thesis
 Carney argues that the international rules-based order has undergone a structural "rupture" rather than gradual evolution, driven by great powers weaponizing economic integration. His central strategic prescription: middle powers (Canada, EU, UK, Japan, Australia, etc.) must form coalitions rather than negotiate bilaterally with hegemons, where they face inherent disadvantages. He positions Canada as actively pursuing this coalition-building strategy through rapid trade and security diversification.
 
@@ -67,8 +70,7 @@ New rules-based order built by middle power coalitions (not reverting to old ord
 - Focus on Western/allied middle powers; less attention to Global South dynamics
 - "Rupture" framing may overstate discontinuity for rhetorical effect
 
-## Stage 2: Evaluation
-
+## Stage 2: Evaluative Analysis
 ### Internal Coherence
 The argument is internally consistent: if the international order has ruptured and great powers weaponize economics, then middle powers face bilateral vulnerability, making coalitions rational. The logical chain holds. However, the leap from "coalitions are rational" to "coalitions will succeed" is under-argued. Historical coalition fragmentation (divide-and-conquer by hegemons) is not addressed.
 
@@ -108,7 +110,179 @@ The argument is internally consistent: if the international order has ruptured a
 - **Weaknesses**: Many factual claims are government assertions without independent verification; "rupture" framing may be overstated; coalition success is assumed rather than argued
 - **Evidentiary center of gravity**: E4-E5 (political strategic analysis with some factual anchors)
 
-## Stage 3: Dialectical Synthesis
+### Unstated Assumptions
+
+| Assumption | Required For | If False |
+|------------|--------------|----------|
+| [hidden premise] | [which claims depend on this] | [impact on argument] |
+
+
+## Stage 3: Dialectical Analysis
+### Steelmanned Argument
+
+[Strongest possible version of this position]
+
+### Strongest Counterarguments
+
+1. [Counter + source if available]
+2. [Counter + source if available]
+
+### Supporting Theories
+
+| Theory/Source | How It Supports | Claim IDs Affected |
+|---------------|-----------------|-------------------|
+| [theory] | [mechanism] | [IDs] |
+
+
+### Contradicting Theories
+
+| Theory/Source | How It Contradicts | Claim IDs Affected |
+|---------------|-------------------|-------------------|
+| [theory] | [mechanism] | [IDs] |
+
+
+### Claim Summary
+
+
+| ID | Type | Domain | Evidence | Credence | Claim |
+|----|------|--------|----------|----------:|-------|
+| GOV-2026-021 | [T] | GOV | E5 | 0.55 | The international system is experiencing a structural rupture, not a gradual transition |
+| GOV-2026-022 | [T] | GOV | E4 | 0.75 | Great powers are systematically using economic integration as weapons of coercion |
+| GOV-2026-023 | [T] | GOV | E5 | 0.65 | Middle powers negotiating bilaterally with hegemons necessarily negotiate from a position of weakness |
+| GOV-2026-024 | [H] | GOV | E5 | 0.40 | Middle power coalitions can create meaningful counterweight to great power dominance |
+| GOV-2026-025 | [T] | GOV | E4 | 0.70 | Hegemons cannot continually monetize their relationships without allies diversifying away |
+| GOV-2026-026 | [P] | GOV | E4 | 0.55 | Canada is doubling its defence spending by the end of this decade (~2030) |
+| GOV-2026-027 | [P] | GOV | E5 | 0.70 | The post-WWII rules-based international order is not returning to its previous form |
+| GOV-2026-028 | [F] | GOV | E4 | 0.85 | Canada has signed 12 trade and security deals across four continents in six months |
+| GOV-2026-029 | [F] | GOV | E4 | 0.85 | Canada has concluded new strategic partnerships with China and Qatar |
+| GOV-2026-030 | [F] | GOV | E4 | 0.95 | Canada strongly opposes tariffs related to Greenland |
+| GOV-2026-031 | [F] | GOV | E4 | 0.95 | Canada firmly supports Greenland and Denmark's right to determine Greenland's future |
+| GOV-2026-032 | [F] | GOV | E4 | 0.85 | Canada has agreed a comprehensive strategic partnership with the EU |
+| ECON-2026-013 | [H] | ECON | E5 | 0.60 | A world of individual fortress-building (strategic autonomy pursued separately) will be poorer and less secure |
+| ECON-2026-014 | [F] | ECON | E4 | 0.90 | Bridging TPP and EU would create a new trading bloc representing majority of world GDP |
+
+### Claims to Register
+
+
+```yaml
+claims:
+- id: GOV-2026-021
+  text: The international system is experiencing a structural rupture, not a gradual transition
+  type: '[T]'
+  domain: GOV
+  evidence_level: E5
+  credence: 0.55
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: GOV-2026-022
+  text: Great powers are systematically using economic integration as weapons of coercion
+  type: '[T]'
+  domain: GOV
+  evidence_level: E4
+  credence: 0.75
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: GOV-2026-023
+  text: Middle powers negotiating bilaterally with hegemons necessarily negotiate from a position
+    of weakness
+  type: '[T]'
+  domain: GOV
+  evidence_level: E5
+  credence: 0.65
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: GOV-2026-024
+  text: Middle power coalitions can create meaningful counterweight to great power dominance
+  type: '[H]'
+  domain: GOV
+  evidence_level: E5
+  credence: 0.4
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: GOV-2026-025
+  text: Hegemons cannot continually monetize their relationships without allies diversifying
+    away
+  type: '[T]'
+  domain: GOV
+  evidence_level: E4
+  credence: 0.7
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: GOV-2026-026
+  text: Canada is doubling its defence spending by the end of this decade (~2030)
+  type: '[P]'
+  domain: GOV
+  evidence_level: E4
+  credence: 0.55
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: GOV-2026-027
+  text: The post-WWII rules-based international order is not returning to its previous form
+  type: '[P]'
+  domain: GOV
+  evidence_level: E5
+  credence: 0.7
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: GOV-2026-028
+  text: Canada has signed 12 trade and security deals across four continents in six months
+  type: '[F]'
+  domain: GOV
+  evidence_level: E4
+  credence: 0.85
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: GOV-2026-029
+  text: Canada has concluded new strategic partnerships with China and Qatar
+  type: '[F]'
+  domain: GOV
+  evidence_level: E4
+  credence: 0.85
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: GOV-2026-030
+  text: Canada strongly opposes tariffs related to Greenland
+  type: '[F]'
+  domain: GOV
+  evidence_level: E4
+  credence: 0.95
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: GOV-2026-031
+  text: Canada firmly supports Greenland and Denmark's right to determine Greenland's future
+  type: '[F]'
+  domain: GOV
+  evidence_level: E4
+  credence: 0.95
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: GOV-2026-032
+  text: Canada has agreed a comprehensive strategic partnership with the EU
+  type: '[F]'
+  domain: GOV
+  evidence_level: E4
+  credence: 0.85
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: ECON-2026-013
+  text: A world of individual fortress-building (strategic autonomy pursued separately) will
+    be poorer and less secure
+  type: '[H]'
+  domain: ECON
+  evidence_level: E5
+  credence: 0.6
+  source_ids:
+  - carney-2026-davos-wef-speech
+- id: ECON-2026-014
+  text: Bridging TPP and EU would create a new trading bloc representing majority of world
+    GDP
+  type: '[F]'
+  domain: ECON
+  evidence_level: E4
+  credence: 0.9
+  source_ids:
+  - carney-2026-davos-wef-speech
+```
 
 ### Strongest Elements
 1. The weaponized interdependence observation is well-documented in IR literature (Farrell & Newman)
@@ -133,3 +307,13 @@ The argument is internally consistent: if the international order has ruptured a
 
 ### Overall Assessment
 Carney presents a coherent middle power strategy framework with some empirical anchors, but key predictions about coalition effectiveness and order reconstruction rest on optimistic assumptions. The speech serves dual purposes: strategic analysis and political positioning. Credence on theoretical claims: moderate (0.55-0.70). Credence on factual claims about Canadian actions: requires verification (0.85 pending confirmation).
+---
+
+**Analysis Date**: [YYYY-MM-DD]
+**Analyst**: [human/claude/gpt/etc.]
+**Credence in Analysis**: [0.0-1.0]
+
+**Credence Reasoning**:
+- [Why this credence level?]
+- [What would increase/decrease credence?]
+- [Key uncertainties remaining]

@@ -1,5 +1,9 @@
 # Source Analysis: Greenland/resource extraction + "light cone" endgame post
 
+> **Claim types**: `[F]` fact, `[T]` theory, `[H]` hypothesis, `[P]` prediction, `[A]` assumption, `[C]` counterfactual, `[S]` speculation, `[X]` contradiction
+> **Evidence**: **E1** systematic review/meta-analysis; **E2** peer-reviewed/official stats; **E3** expert consensus/preprint; **E4** credible journalism/industry; **E5** opinion/anecdote; **E6** unsupported/speculative
+
+
 ## Metadata
 - **Source ID**: teortaxes-2026-greenland-endgame
 - **Author(s)**: @teortaxesTex
@@ -12,8 +16,7 @@
 
 > **Supplementary analysis consulted**: `gpt-2026-01-19-greenland-endgame` (`reference/transcripts/gpt-2026-01-19-greenland-endgame.md`)
 
-## Stage 1: Descriptive Summary
-
+## Stage 1: Descriptive Analysis
 ### Core Thesis
 The post argues that the US (especially a Trump-aligned faction) is shifting toward overtly predatory resource acquisition (e.g., Greenland, Venezuela) because key actors believe the world is entering a near-term “endgame”: rapid automation plus an emerging competition for physical inputs (“joules and atoms”) needed to seed a spacefaring civilization (“light cone” framing). Europe, in this telling, is politically unable to respond directly and will instead attempt to stall, placate, and diversify.
 
@@ -54,8 +57,7 @@ The post argues that the US (especially a Trump-aligned faction) is shifting tow
 - Images are referenced but not analyzed here (only the text captured in `reference/primary/social/teortaxes-2026-greenland-endgame.md`).
 - Claims about what specific individuals or governments “believe” are treated as hypotheses, not established facts.
 
-## Stage 2: Evaluation
-
+## Stage 2: Evaluative Analysis
 ### Internal Coherence
 The internal logic is coherent as a chain: (i) near-term automation raises stakes, (ii) stakes shift to physical bottlenecks, (iii) bottlenecks motivate coercive resource strategy, (iv) Europe adapts via delay and diversification. The argument’s weakest parts are not logical contradictions but empirical leaps: inferring unified strategic intent from scattered actions and attributing a specific “light cone” motive to broad US policy.
 
@@ -135,6 +137,99 @@ Recast into a version that can be argued with evidence:
 ### Contradicting Theories
 - `GOV-2026-005`: Inter-elite + interstate competition prevents unified oligarchic coalition (undermines a single coherent maximizer strategy).
 - `GOV-2026-004`: Buying stability can be cheaper than enforcing it (undermines “strip assets regardless of alliance legitimacy” as stable equilibrium).
+
+### Claim Summary
+
+
+| ID | Type | Domain | Evidence | Credence | Claim |
+|----|------|--------|----------|----------:|-------|
+| TRANS-2026-001 | [T] | TRANS | E4 | 0.35 | A “light-cone” framing treats geopolitics as competition for energy and matter (“joules and atoms”) to seed a spacefaring civilization |
+| TRANS-2026-002 | [H] | TRANS | E4 | 0.40 | Under this framing, states will prefer direct control over resource bases and aim to reduce dependence on trade over time |
+| GOV-2026-012 | [H] | GOV | E6 | 0.20 | The post interprets US behavior (Greenland/Venezuela/TSMC/etc) as coherent resource-extraction strategy overriding alliance norms |
+| GOV-2026-013 | [T] | GOV | E3 | 0.55 | Legal/formal ownership claims can reduce the cost of coercive control by making anti-aggressor coalitions harder to form |
+| GOV-2026-014 | [H] | GOV | E6 | 0.25 | Europe’s feasible response is delay/placation plus diversification and partial rearmament, not direct confrontation |
+| GOV-2026-015 | [H] | GOV | E6 | 0.15 | A faction of US tech/policy elites holds a longtermist “endgame” worldview motivating resource competition (Musk/Thiel/Karp/Matheny) |
+| RESOURCE-2026-003 | [T] | RESOURCE | E4 | 0.45 | Strategic value shifts toward long-run control of extractable raw inputs (critical minerals, oil, energy), even if extraction is slow/hard |
+| LABOR-2026-004 | [P] | LABOR | E6 | 0.15 | Full human labor automation occurs within at most a single generation (possibly a few years) |
+
+### Claims to Register
+
+
+```yaml
+claims:
+- id: TRANS-2026-001
+  text: A “light-cone” framing treats geopolitics as competition for energy and matter (“joules
+    and atoms”) to seed a spacefaring civilization
+  type: '[T]'
+  domain: TRANS
+  evidence_level: E4
+  credence: 0.35
+  source_ids:
+  - teortaxes-2026-greenland-endgame
+- id: TRANS-2026-002
+  text: Under this framing, states will prefer direct control over resource bases and aim
+    to reduce dependence on trade over time
+  type: '[H]'
+  domain: TRANS
+  evidence_level: E4
+  credence: 0.4
+  source_ids:
+  - teortaxes-2026-greenland-endgame
+- id: GOV-2026-012
+  text: The post interprets US behavior (Greenland/Venezuela/TSMC/etc) as coherent resource-extraction
+    strategy overriding alliance norms
+  type: '[H]'
+  domain: GOV
+  evidence_level: E6
+  credence: 0.2
+  source_ids:
+  - teortaxes-2026-greenland-endgame
+- id: GOV-2026-013
+  text: Legal/formal ownership claims can reduce the cost of coercive control by making anti-aggressor
+    coalitions harder to form
+  type: '[T]'
+  domain: GOV
+  evidence_level: E3
+  credence: 0.55
+  source_ids:
+  - teortaxes-2026-greenland-endgame
+- id: GOV-2026-014
+  text: Europe’s feasible response is delay/placation plus diversification and partial rearmament,
+    not direct confrontation
+  type: '[H]'
+  domain: GOV
+  evidence_level: E6
+  credence: 0.25
+  source_ids:
+  - teortaxes-2026-greenland-endgame
+- id: GOV-2026-015
+  text: A faction of US tech/policy elites holds a longtermist “endgame” worldview motivating
+    resource competition (Musk/Thiel/Karp/Matheny)
+  type: '[H]'
+  domain: GOV
+  evidence_level: E6
+  credence: 0.15
+  source_ids:
+  - teortaxes-2026-greenland-endgame
+- id: RESOURCE-2026-003
+  text: Strategic value shifts toward long-run control of extractable raw inputs (critical
+    minerals, oil, energy), even if extraction is slow/hard
+  type: '[T]'
+  domain: RESOURCE
+  evidence_level: E4
+  credence: 0.45
+  source_ids:
+  - teortaxes-2026-greenland-endgame
+- id: LABOR-2026-004
+  text: Full human labor automation occurs within at most a single generation (possibly a
+    few years)
+  type: '[P]'
+  domain: LABOR
+  evidence_level: E6
+  credence: 0.15
+  source_ids:
+  - teortaxes-2026-greenland-endgame
+```
 
 ### Synthesis Notes
 This source is best treated as a high-voltage narrative that proposes a unifying motive (“light cone” maximization) for a cluster of bargaining moves. Its value is in generating falsifiable sub-questions (what bottlenecks matter; what policies are enacted; what elites actually say), not in its motive attributions.

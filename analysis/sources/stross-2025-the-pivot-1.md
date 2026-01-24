@@ -41,6 +41,10 @@ The core “this can’t go on, so it will stop” thesis is offered as a synthe
 - **Climate and food-system fragility**: Climate volatility and heat stress are presented as major threats to agriculture; just-in-time supply chains reduce resilience.
 - **Tech growth regime weakening**: The end of Moore’s Law is cited as a structural headwind; AI data centers are framed as a bubble; SMRs and quantum computing are dismissed as unlikely saviors.
 
+### Core Thesis
+
+[1-3 sentence summary of main argument]
+
 ### Key Claims
 
 | # | Claim | Claim ID | Type | Domain | Evid | Credence | Verified? | Falsifiable By |
@@ -170,12 +174,10 @@ The argument is internally coherent as a hypothesis bundle: energy transition �
 
 ## Stage 3: Dialectical Analysis
 
-### Steelman
-
+### Steelmanned Argument
 Energy systems are foundational: when the cost and logistics of energy shift, geopolitics, industrial organization, and domestic distributional conflict shift with them. A rapid transition away from fossil rents plausibly destabilizes incumbent coalitions, while climate volatility makes food security and resilience increasingly central. If compute progress slows and finance continues to chase bubbles, governance capacity may lag reality, increasing crisis frequency.
 
-### Counterarguments
-
+### Strongest Counterarguments
 - **Substitution constraints**: Hard-to-electrify sectors (aviation, high-heat industrial processes) may keep fossil demand significant longer than implied.
 - **Mineral geopolitics**: “Post-oil geopolitics” may still be resource geopolitics (lithium, nickel, copper, rare earths), just with different chokepoints.
 - **Institutional adaptation**: States can adapt under pressure; “current rulers don’t remember” may be rhetorically satisfying but too coarse.
@@ -240,6 +242,260 @@ Treat the post as a **coherent hypothesis bundle** linking energy transition, cl
 | TRANS-2025-007 | [P] | TRANS | E5 | 0.30 | The forecast boom in small modular nuclear reactors will fizzle as cheap distributed solar PV plus battery storage sc... |
 
 ---
+
+### Claims to Register
+
+
+```yaml
+claims:
+  - id: "SOC-2025-001"
+    text: >-
+      A significant share of current social unrest and insecurity-driven
+      radicalization is being caused by the ongoing civilizational energy
+      transition.
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Define “energy-transition stress” proxies (energy-price volatility, fossil
+      sector job losses, rapid policy shifts) and test whether they predict
+      radicalization proxies (extremist vote share, hate crimes, political
+      violence) across regions/time after controlling for confounders.
+    assumptions:
+      - Energy-transition pressures are large relative to other drivers.
+    falsifiers:
+      - Comparable radicalization trends occur without transition-related stress.
+      - Stronger predictors dominate and remove transition effect.
+
+  - id: "TRANS-2025-001"
+    text: >-
+      The current global energy transition away from fossil fuels is “more or
+      less irreversible” at this point.
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E4"
+    credence: 0.45
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Track global primary energy shares and emissions trajectories; “irreversible”
+      implies no sustained multi-year reversal toward higher fossil share after
+      accounting for shocks (war/recession/weather).
+    falsifiers:
+      - Sustained multi-year reversal toward higher fossil share and emissions.
+
+  - id: "TRANS-2025-002"
+    text: >-
+      Solar PV module costs fell from roughly $96/W in the mid-1970s to about
+      $0.62/W by end-2012 and continue to decline.
+    type: "[F]"
+    domain: "TRANS"
+    evidence_level: "E4"
+    credence: 0.40
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Use a published PV module price index series (e.g., NREL/IEA/Our World in Data)
+      to confirm historical price points and the post-2012 trend.
+    falsifiers:
+      - Price series does not support the stated historical values/trend.
+
+  - id: "TRANS-2025-003"
+    text: >-
+      China installed about 198 GW of solar PV between January and May 2025,
+      including 93 GW coming online in May 2025 alone.
+    type: "[F]"
+    domain: "TRANS"
+    evidence_level: "E4"
+    credence: 0.35
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Verify monthly/annual additions in official Chinese energy statistics or a
+      reputable compiled dataset for 2025 (Jan–May total and May standalone).
+    falsifiers:
+      - Official/compiled statistics materially differ from these figures.
+
+  - id: "TRANS-2025-004"
+    text: >-
+      By late summer 2025, renewables supplied more than 50% of the EU’s
+      electricity.
+    type: "[F]"
+    domain: "TRANS"
+    evidence_level: "E4"
+    credence: 0.35
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Confirm via Eurostat/ENTSO-E/Ember monthly generation share that renewables
+      exceeded 50% for the EU by ~Aug/Sep 2025.
+    falsifiers:
+      - Official generation shares do not cross 50% by that date.
+
+  - id: "TRANS-2025-005"
+    text: >-
+      In the post-oil era, energy production will be more widely distributed
+      rather than concentrated in resource-extraction economies and centralized
+      power stations.
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E4"
+    credence: 0.40
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Track distributed generation share (rooftop/community solar), concentration
+      metrics (e.g., HHI by generation ownership), and shifts in net energy
+      exporter/importer status over 2025–2040.
+    falsifiers:
+      - New generation remains highly centralized and concentrated.
+
+  - id: "TRANS-2025-006"
+    text: >-
+      Global fossil-fuel energy use has probably already passed peak oil and
+      peak carbon, and is now trending inexorably downward (voluntarily into
+      net-zero/renewables or involuntarily into catastrophe).
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E4"
+    credence: 0.35
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Use annual global oil consumption and CO₂ emissions series; “passed peak”
+      implies the historical maximum occurs in ≤2025 and is followed by sustained
+      declines over the next 5–10 years.
+    falsifiers:
+      - New multi-year highs occur after 2025 with no sustained decline.
+
+  - id: "TRANS-2025-007"
+    text: >-
+      The forecast boom in small modular nuclear reactors will fizzle as cheap
+      distributed solar PV plus battery storage scales.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Compare SMR deployment counts/capacity and levelized costs versus forecasts
+      through ~2035; “fizzle” implies widespread cancellations, delays, and lack
+      of cost-competitive scale relative to PV+storage.
+
+  - id: "RESOURCE-2025-001"
+    text: >-
+      By 2040 at the latest, coal, gas, and oil land rights will be stranded
+      assets that cannot be monetized.
+    type: "[P]"
+    domain: "RESOURCE"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      By 2040, large fractions of proved fossil reserves remain unburned and
+      associated extraction rights experience major write-downs/impairments or
+      legal prohibitions that prevent monetization.
+
+  - id: "GEO-2025-001"
+    text: >-
+      The energy transition is producing major political consequences—from
+      bribery and corruption up to open warfare—and post-oil geopolitics will
+      differ substantially from the oil-centric post-1945 era.
+    type: "[T]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Track incidence of conflicts plausibly linked to energy/resource rents and
+      transition chokepoints (fossil rents vs critical minerals) and compare with
+      historical oil-centric conflict patterns.
+
+  - id: "RISK-2025-001"
+    text: >-
+      Humanity has passed the +1.5°C warming threshold, increasing the number of
+      days per year when temperatures are too hot for normal photosynthesis.
+    type: "[T]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.35
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Specify whether “passed” means annual exceedance or multi-decade average.
+      Measure global mean warming relative to 1850–1900 and quantify crop-relevant
+      heat-stress day counts over time.
+    falsifiers:
+      - Long-term warming remains below 1.5°C with no heat-stress trend increase.
+
+  - id: "RISK-2025-002"
+    text: >-
+      Just-in-time supply chains increased economic efficiency at the expense of
+      resilience, leaving societies without reserves to withstand prolonged global
+      agricultural shocks.
+    type: "[T]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.40
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Use indicators like inventory-to-sales ratios, strategic grain reserve size,
+      and supply days for staples; test whether lower buffers correlate with worse
+      outcomes under comparable shocks.
+
+  - id: "TECH-2025-001"
+    text: >-
+      Moore’s Law is effectively ending: compute and storage improvements have been
+      limited for over a decade and now rely mainly on parallelism rather than
+      large single-thread gains.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.45
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Track transistor-density doubling time and price-performance improvements
+      for CPUs/GPUs/storage; “ending” implies sustained slowdown versus historical
+      doubling rates.
+
+  - id: "TECH-2025-002"
+    text: >-
+      The hyperscale AI data center boom resembles a bubble; to the extent LLMs are
+      useful, deployment will shift toward pre-trained models running on local
+      hardware.
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      By ~2030, a growing share of inference workloads run on-device/edge hardware,
+      and hyperscale AI capex growth slows or reverses relative to expectations.
+
+  - id: "ECON-2025-001"
+    text: >-
+      Neoliberalism evolved into a model of state hollowing and asset-stripping via
+      outsourcing to private-sector entities owned by elites, and today’s ruling
+      elites lack the institutional memory to adapt to major change.
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Measure long-run trends in privatization/outsourcing spending shares,
+      regulatory capacity, and inequality; assess governance adaptability via
+      response speed and effectiveness in crises.
+
+  - id: "ECON-2025-002"
+    text: >-
+      Platform capitalism increasingly sells subscription services rather than
+      owned goods, enabling rent extraction by degrading quality and raising prices
+      (“enshittification”).
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.40
+    source_ids: ["stross-2025-the-pivot-1"]
+    operationalization: >-
+      Track subscription penetration, market concentration, real price changes,
+      and quality/feature regression metrics in major platforms over time.
+```
 
 ## Continuation Notes: AI as possible blind spot
 

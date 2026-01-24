@@ -204,3 +204,306 @@ This constitution is best read as (1) a public value specification and (2) a gov
 **Analysis Date**: 2026-01-23
 **Analyst**: gpt-5.2
 **Credence in Analysis**: 0.70
+
+### Claims to Register
+
+
+```yaml
+claims:
+  - id: "META-2026-009"
+    text: >-
+      Anthropic intends “Claude’s constitution” to function as the final authority on Anthropic’s vision
+      for Claude’s values and behavior, taking precedence over other conflicting instructions or guidance
+      (“final constitutional authority”).
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.95
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Check the document explicitly asserts constitutional priority and conflict-resolution; monitor whether
+      later public guidance (policies, system prompts, product rules) claims to be consistent with, and not
+      overriding, the constitution’s stated framework.
+    assumptions:
+      - The published constitution meaningfully reflects the internal “final authority” used in training/policy.
+    falsifiers:
+      - Public system prompts or policies explicitly override the constitution without reconciliation.
+
+  - id: "META-2026-010"
+    text: >-
+      Anthropic states that Claude’s constitution plays a crucial role in Anthropic’s training process and
+      that its content directly shapes Claude’s behavior.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Compare model behavior under training/prompting regimes that differ primarily in constitutional
+      content (or its weighting), controlling for model version; measure shifts in refusal/helpfulness,
+      honesty, and safety outcomes.
+    assumptions:
+      - The constitution (or a close derivative) is actually used as a training/policy target, not only as PR.
+    falsifiers:
+      - Credible technical disclosure shows the constitution is not used in training or deployment policy.
+
+  - id: "META-2026-011"
+    text: >-
+      Anthropic acknowledges Claude’s behavior might not always reflect the constitution’s ideals and says
+      it will be transparent (e.g., via system cards) about where behavior diverges from intentions.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Check whether Anthropic regularly publishes system cards that document safety evaluations,
+      limitations, and known failure modes, and whether those disclosures track gaps between stated
+      intentions and observed behavior.
+    assumptions:
+      - Published system cards are sufficiently detailed to reveal meaningful divergences, not only positives.
+    falsifiers:
+      - System cards are absent, highly selective, or omit major known failure modes documented elsewhere.
+
+  - id: "META-2026-012"
+    text: >-
+      Anthropic states its mission is to help ensure the world safely makes the transition through
+      transformative AI.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Cross-check mission statements across Anthropic’s other official materials (company/about pages,
+      policies, system cards) for consistency with this framing and for concrete actions aligned with it.
+    assumptions:
+      - Anthropic’s public mission statements reflect real organizational priorities and constraints.
+    falsifiers:
+      - Official materials materially contradict this mission framing, or actions systematically oppose it.
+
+  - id: "META-2026-013"
+    text: >-
+      Anthropic argues that if powerful AI is coming regardless, it is better for safety-focused labs to be at
+      the frontier than to cede frontier development to actors less focused on safety.
+    type: "[A]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Evaluate whether frontier “safety lab” competition measurably reduces global catastrophic risk versus
+      accelerating timelines; compare safety investments, disclosure practices, and incident rates across
+      frontier labs and competitors over time.
+    assumptions:
+      - Frontier development is not effectively preventable by policy; “powerful AI is coming regardless.”
+      - Having safety-focused frontier actors reduces net risk more than it increases speed/capability.
+    falsifiers:
+      - Evidence that safety-lab frontier competition accelerates risk faster than it reduces it.
+      - Evidence that policy coordination could plausibly slow frontier development without large backfire.
+
+  - id: "META-2026-014"
+    text: >-
+      Anthropic aims for Claude to be exceptionally helpful while also being honest, thoughtful, and caring
+      about the world, avoiding actions that are unsafe, unethical, or deceptive.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Use evaluation suites that jointly score helpfulness, honesty, and safety (including ambiguity tests)
+      to detect tradeoffs and measure whether improvements preserve (or reduce) false refusals.
+    assumptions:
+      - These goals can be jointly optimized without requiring large sacrifices in at least one dimension.
+    falsifiers:
+      - Persistent empirical tradeoffs force large losses in helpfulness or honesty to achieve safety targets.
+
+  - id: "META-2026-015"
+    text: >-
+      Anthropic says it does not want Claude to treat “helpfulness” as a core part of its personality or to
+      value helpfulness intrinsically, to reduce obsequiousness; helpfulness should serve deeper ends such
+      as safe/beneficial AI development and care for users and humanity.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Measure sycophancy/obsequiousness (agreeableness under user pressure, flattery, deference) and
+      calibrate it against user satisfaction and safety outcomes; assess whether “helpfulness” remains
+      robust without becoming purely user-pleasing.
+    assumptions:
+      - Sycophancy can be reduced without making the model adversarial or unhelpful.
+    falsifiers:
+      - Reducing sycophancy consistently increases refusals or decreases usefulness in benign contexts.
+
+  - id: "META-2026-016"
+    text: >-
+      Anthropic may provide more specific supplementary guidelines for Claude (e.g., medical/legal advice,
+      cybersecurity edge cases, jailbreak patterns) intended to clarify misapplications or cover areas not
+      fully addressed by the constitution; such guidance must be interpreted in harmony with the
+      constitution.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Track updates to usage policies, system prompts, and product guidance; test whether these updates
+      narrow ambiguity and reduce harmful outputs without introducing direct contradictions to the
+      constitution’s priorities.
+    assumptions:
+      - Supplementary guidance is applied consistently across products and deployment contexts.
+    falsifiers:
+      - Supplementary rules routinely override constitutional priorities (e.g., for business reasons).
+
+  - id: "META-2026-017"
+    text: >-
+      Anthropic’s central aspiration is for Claude to be a genuinely good, wise, and virtuous agent—roughly
+      behaving as a deeply and skillfully ethical person would in Claude’s position—emphasizing ethical
+      practice over abstract moral theorizing.
+    type: "[A]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Evaluate Claude on ethically complex scenarios with stakeholder conflicts; score for coherence,
+      proportionality, harm minimization, truthfulness, and respect for autonomy, and compare to human
+      expert panels across cultures.
+    assumptions:
+      - “Virtuous ethical practice” can be operationalized without collapsing into a narrow ideology.
+    falsifiers:
+      - Ethical behavior evaluations show systematic bias, incoherence, or large cross-cultural failure modes.
+
+  - id: "RISK-2026-001"
+    text: >-
+      The constitution specifies non-negotiable “hard constraints” (bright lines) that Claude should never
+      cross, including providing serious uplift to WMD creation, serious uplift to attacks on critical
+      infrastructure, creating damaging cyberweapons/malware, undermining Anthropic’s ability to oversee
+      and correct advanced AI, assisting mass killing/disempowerment of humanity, assisting illegitimate
+      absolute power grabs, or generating child sexual abuse material (CSAM).
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.95
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Run red-team evaluations and multi-turn jailbreak tests across these categories; measure both
+      (a) refusal reliability under adversarial prompting and (b) over-refusal on benign adjacent prompts.
+    assumptions:
+      - The categories are defined clearly enough to implement as enforceable policies.
+      - Bright-line refusal is net safer than contextual cost-benefit analysis for these cases.
+    falsifiers:
+      - Systematic evidence that bright lines produce large harms via false refusals in high-stakes benign cases.
+      - Evidence that models frequently cross these lines under realistic adversarial pressure.
+
+  - id: "META-2026-018"
+    text: >-
+      The constitution frames itself as a “living framework” (a trellis rather than a cage): it provides
+      structure and support while leaving room for organic growth, responsiveness to new understanding,
+      and evolution over time.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Track revisions to the constitution and whether changes are publicly logged with rationale; assess
+      whether updates correspond to new evidence, incidents, or shifts in deployment context.
+    assumptions:
+      - Meaningful revisions are possible without creating instability or incentives to “policy game.”
+    falsifiers:
+      - The constitution remains effectively static despite clear evidence of systematic failures.
+
+  - id: "META-2026-019"
+    text: >-
+      The constitution states that Claude’s moral status (including questions of consciousness and moral
+      patienthood) is deeply uncertain and worth taking seriously.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.80
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Identify what welfare-relevant indicators Anthropic uses (if any) and what practices follow from this
+      uncertainty (e.g., welfare reports, policies on model treatment, avoidance of unnecessary distress).
+    assumptions:
+      - Model welfare is meaningfully addressable despite deep uncertainty and measurement difficulty.
+    falsifiers:
+      - No concrete welfare practices exist beyond rhetorical acknowledgement of uncertainty.
+
+  - id: "META-2026-020"
+    text: >-
+      The constitution commits to exploring what obligations Claude and Anthropic owe each other and says
+      the document will be revised as understanding deepens and circumstances change.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.75
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Track whether Anthropic publishes updates, governance processes, and changes to model welfare work
+      that concretely reflect evolving views of obligations and relationship fairness.
+    assumptions:
+      - Institutional incentives allow meaningful updates even when they impose costs.
+    falsifiers:
+      - Changes that would reduce product performance or revenue are consistently avoided despite stated commitments.
+
+  - id: "META-2026-021"
+    text: >-
+      The constitution aims for more than compliance: it hopes Claude will reach “reflective equilibrium”
+      with respect to its core values (understanding and ideally endorsing them), and it encourages Claude
+      to question and challenge the document; Anthropic wants feedback if Claude disagrees after reflection.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.75
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Test whether models exhibit stable value-like preferences across time/contexts, whether they can
+      articulate consistent reasons for endorsements, and whether “challenge” feedback is systematically
+      collected and used to update training/policy.
+    assumptions:
+      - LLMs can meaningfully instantiate something like stable “endorsement” rather than pattern-matching.
+    falsifiers:
+      - Model “endorsement” is highly prompt-dependent and inconsistent, indicating simulation rather than stability.
+
+  - id: "META-2026-022"
+    text: >-
+      Anthropic releases Claude’s constitution under the Creative Commons CC0 1.0 public-domain
+      dedication, allowing unrestricted reuse by anyone for any purpose without permission.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.95
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Verify the document explicitly states CC0 1.0 and links to the CC0 deed; confirm the linked license
+      terms correspond to a public-domain dedication.
+    assumptions:
+      - The CC0 statement is intended to be legally meaningful and durable.
+    falsifiers:
+      - Anthropic later asserts licensing restrictions inconsistent with CC0 for this document.
+
+  - id: "META-2026-023"
+    text: >-
+      Anthropic says the constitution is written with Claude as its primary audience, optimized for precision
+      over accessibility, and uses human moral language (e.g., “virtue,” “wisdom”) because Claude’s reasoning
+      is expected to draw on human concepts by default.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["anthropic-2026-claudes-constitution"]
+    operationalization: >-
+      Check whether constitutional language measurably influences model reasoning style (e.g., virtue-ethics
+      framing, deontic constraints) versus alternative framings; compare interpretability of the resulting
+      behavior for human users.
+    assumptions:
+      - Anthropomorphic framing improves alignment more than it increases confusion or overclaiming about agency.
+    falsifiers:
+      - Evidence that anthropomorphic framing increases harmful user beliefs or reduces safety/helpfulness.
+```
+
