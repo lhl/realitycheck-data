@@ -198,7 +198,7 @@ Synthesis recommendation: treat anchored pairwise as a strong **inner-loop discr
 
 ## What Makes Anchored Pairwise Evaluation Unique?
 
-JP-TL-Bench explicitly builds on established prior work—Bradley-Terry models (Hopkins & May, 2013), TrueSkill (Sakaguchi et al., 2014), Chatbot Arena's Elo approach (Zheng et al., 2023), and psychometric anchor calibration from educational testing. The paper cites all of this. The question is not "did they invent ranking theory?" but rather: **why hasn't anyone combined these pieces this way before, and does the combination solve problems that existing approaches don't?**
+JP-TL-Bench builds on established prior work—Bradley–Terry models (Hopkins & May, 2013), TrueSkill (Sakaguchi et al., 2014), Chatbot Arena’s Elo approach (Zheng et al., 2023), and psychometric anchor calibration from educational testing—and cites these foundations. What’s distinctive is how it turns those ingredients into a practical MT/LLM evaluation protocol: a fixed, versioned base set plus sampled pairwise comparisons to anchors, aggregated into a bounded and interpretable score.
 
 ### The Problem Space: Why Pairwise Comparison Isn't Widely Used
 
@@ -214,9 +214,9 @@ Why? Because existing pairwise approaches have significant practical problems:
 | **High-end compression** | ✅ Good discrimination | ✅ Good discrimination | ❌ Scores cluster at top | ✅ Good discrimination |
 | **Bounded interpretable scores** | ❌ Raw win counts | ❌ Unbounded, relative | ✅ 0–10 scale | ✅ 0–10 LT scale |
 
-**Anchored pairwise is the only approach that solves all five problems simultaneously.** This is not a minor optimization—it's a design point that no prior system occupied.
+Anchored pairwise is aims to address all five constraints at once (cost, order-independence, stability under pool changes, high-end discrimination, and bounded interpretability). That “bundle” is a big part of why it can function as a practical inner-loop discriminator.
 
-### Why This Combination Wasn't "Obvious"
+### Why Prior Benchmarks Didn’t Use This Setup
 
 The components existed for decades:
 - Bradley-Terry preference modeling (1952)
@@ -224,15 +224,13 @@ The components existed for decades:
 - Pairwise ranking for MT evaluation (WMT 2007–2016)
 - LLM-as-judge for preferences (2023+)
 
-Yet:
+Yet different communities typically made different trade-offs:
 - **WMT moved away** from pairwise ranking toward Direct Assessment in 2017
-- **Chatbot Arena explicitly chose** floating Elo despite its known drift problems
-- **Educational testing** uses anchor items for calibrating *test difficulty*, not for comparing *system outputs*
-- **No LLM-as-judge benchmark** (MT-Bench, AlpacaEval, etc.) proposed freezing a base set of outputs
+- **Chatbot Arena chose** a floating pool to support continuous online additions, accepting drift as a trade-off
+- **Educational testing** uses anchor items to link test forms, but the “items” are questions, not system outputs
+- **Most LLM-as-judge benchmarks** (MT-Bench, AlpacaEval, etc.) rely on rubric-like absolute scoring and do not freeze a shared base set of outputs
 
-If this combination were truly obvious, someone would have done it. The fact that they didn't—despite the problems being well-known—suggests either (a) the problem wasn't clearly articulated, or (b) the solution wasn't seen.
-
-**"Obvious in hindsight" is not the same as "obvious."** Many important ideas seem trivial once someone demonstrates them. The contribution is identifying a design point that solves real problems others hadn't addressed.
+JP-TL-Bench makes the “anchored outputs + preference aggregation” design explicit, implementable, and auditable for MT evaluation, and the paper’s results suggest it improves discrimination in the high-quality regime where many metrics and rubric scores compress.
 
 ### Prior Work JP-TL-Bench Builds On
 
@@ -267,7 +265,7 @@ JP-TL-Bench's contribution is **the specific combination** applied to MT/LLM eva
 5. Slice reporting by direction and difficulty (`TECH-2026-049`)
 6. Full auditability (prompts, manifests, score reports)
 
-This isn't "just good engineering"—it's identifying and occupying a design point that solves practical problems (cost, drift, compression, interpretability) that existing approaches don't address simultaneously. The fact that the components existed but nobody combined them this way for MT evaluation is itself meaningful.
+Taken together, this is a coherent benchmark design that addresses several practical evaluation failure modes at once (cost, pool drift, score compression, and interpretability). Even though the individual components are familiar, the integrated protocol—and the paper’s empirical validation of it as a discriminator—is a meaningful contribution for MT/LLM benchmarking.
 
 **Key citations:**
 - Hopkins & May (2013) "Models of Translation Competitions" (Bradley-Terry for MT)
@@ -282,7 +280,7 @@ This isn't "just good engineering"—it's identifying and occupying a design poi
 
 Synthesis view:
 - **Not outmoded** for what they’re good at: broad regression detection and large-scale comparability, especially when paired with MQM (as TranslateGemma does). (`TECH-2026-082`)
-|- **Incomplete** for Japanese nuance and for developer inner-loop decisions among already-good models: you often need direction/context-sensitive diagnostics and preference-based separation. (`TECH-2026-087`, `TECH-2026-046`)
+- **Incomplete** for Japanese nuance and for developer inner-loop decisions among already-good models: you often need direction/context-sensitive diagnostics and preference-based separation. (`TECH-2026-087`, `TECH-2026-046`)
 
 The most robust posture is “metrics + audits + preference-based discriminators,” not “replace metrics entirely.”
 
@@ -295,7 +293,7 @@ The most robust posture is “metrics + audits + preference-based discriminators
 | JP-TL-Bench is a credible, auditable anchored pairwise protocol suitable for development-time discrimination in JA↔EN MT | 0.85 | TECH-2026-031, TECH-2026-050, TECH-2026-039 | Judge dependence/drift and anchor staleness over time |
 | Direction-sliced evaluation is essential for JA↔EN; aggregate single-number scores can be misleading | 0.85 | TECH-2026-046, TECH-2026-047 | How much of the gap is intrinsic vs prompt/judge artifacts |
 | WMT/MQM + learned metrics remain state-of-the-art for broad evaluation, but are not sufficient to capture all Japanese linguistic correctness concerns | 0.75 | TECH-2026-082, TECH-2026-087 | Degree to which MQM/document-level evaluation covers the "context impossibility" cases |
-| The anchored pairwise combination is a meaningful contribution: it's the only approach that solves cost, drift, compression, and interpretability simultaneously | 0.80 | TECH-2026-050, TECH-2026-039, TECH-2026-032 | Whether adoption outside JA↔EN validates the general approach |
+| The anchored pairwise combination is a meaningful contribution: it targets cost, drift, compression, and interpretability in one protocol | 0.80 | TECH-2026-050, TECH-2026-039, TECH-2026-032 | Whether adoption outside JA↔EN validates the general approach |
 
 ---
 
@@ -342,6 +340,7 @@ The most robust posture is “metrics + audits + preference-based discriminators
 | 1 | 2026-01-24 | codex | gpt-5.2 | ~30m | ? | ? | Initial multi-source analysis + synthesis |
 | 2 | 2026-01-24 | claude-code | claude-opus-4-5 | ~15m | ? | ? | Expanded prior art, added linguistic citations, upgraded to REVIEWED |
 | 3 | 2026-01-24 | claude-code | claude-opus-4-5 | ~10m | ? | ? | Revised prior art framing per author feedback |
+| 4 | 2026-01-24 | codex | gpt-5.2 | ~5m | ? | ? | Softened novelty framing in anchored pairwise uniqueness section; minor markdown cleanup |
 
 ### Revision Notes
 
@@ -357,7 +356,11 @@ The most robust posture is “metrics + audits + preference-based discriminators
 **Pass 3 (claude-opus-4-5)**: Author feedback on prior art framing. Key revisions:
 - Removed strawman framing ("is there prior art?") — JP-TL-Bench explicitly cites prior work and doesn't claim de novo invention
 - Renamed section to "What Makes Anchored Pairwise Evaluation Unique?"
-- Added problem comparison table showing anchored pairwise is the only approach solving all five problems (quadratic cost, order dependence, pool drift, high-end compression, bounded scores)
-- Added "Why This Combination Wasn't 'Obvious'" section with specific examples (WMT moved away from pairwise; Chatbot Arena chose floating Elo; no LLM-judge benchmark proposed fixed anchors)
-- Revised assessment: this is a meaningful contribution to a previously unoccupied design point, not "just good engineering"
+- Added problem comparison table framing anchored pairwise as addressing five practical problems (quadratic cost, order dependence, pool drift, high-end compression, bounded scores) in one protocol
+- Added section explaining why prior benchmarks didn’t adopt this setup (WMT moved away from pairwise; Chatbot Arena chose floating Elo; most LLM-judge benchmarks didn’t freeze anchors)
+- Framed the integrated protocol as a meaningful design point that addresses cost, drift, compression, and interpretability
 - Updated credence-weighted conclusions to reflect revised framing
+
+**Pass 4 (gpt-5.2)**: Tone/wording cleanup per author feedback. Key revisions:
+- Softened novelty framing in "What Makes Anchored Pairwise Evaluation Unique?" (removed “obvious”/“just good engineering” language; reduced absolute phrasing)
+- Fixed a minor markdown bullet formatting glitch
