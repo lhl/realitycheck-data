@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 158 |
-| **Sources** | 53 |
+| **Claims** | 174 |
+| **Sources** | 58 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 15 |
 
@@ -29,6 +29,11 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-24 | [FinanceBench (Islam et al. 2023)](analysis/sources/islam-2023-financebench.md) | `[REVIEWED]` | Benchmark baseline: 10,231 Qs; human-eval sample shows high failure rates for GPT-4-Turbo+retrieval; oracle ~85% |
+| 2026-01-24 | [@_avichawla thread on PageIndex](analysis/sources/avichawla-2026-pageindex-thread.md) | `[REVIEWED]` | Social summary of “vectorless RAG”; highlights similarity≠relevance + structure-aware retrieval; performance claim flagged as protocol-dependent |
+| 2026-01-24 | [VectifyAI PageIndex repo](analysis/sources/vectifyai-2025-pageindex.md) | `[REVIEWED]` | Repo review: hierarchical tree index + LLM traversal (no vector DB); strong adoption but limited CI/tests; “98.7% FinanceBench” is vendor-reported |
+| 2026-01-24 | [VectifyAI Mafin 2.5 FinanceBench results repo](analysis/sources/vectifyai-2025-mafin25-financebench.md) | `[REVIEWED]` | Eval artifacts: claims 98.7% via permissive LLM-judge; not directly comparable to FinanceBench human-eval baselines |
+| 2026-01-24 | [StrataLens AI repo](analysis/sources/kamathhrishi-2025-stratalens-ai.md) | `[REVIEWED]` | Single-maintainer hybrid RAG (pgvector+rerank+section routing); claims 85% on FinanceBench subset; repo license file missing |
 | 2026-01-23 | [Anthropic "Claude's Constitution"](analysis/sources/anthropic-2026-claudes-constitution.md) | `[REVIEWED]` | Values/behavior spec: “final constitutional authority”; hard constraints (WMD uplift, critical infrastructure attacks, malware, CSAM); virtue-ethics + model-welfare framing |
 | 2026-01-22 | [Stross "The pivot" (Part 1)](analysis/sources/stross-2025-the-pivot-1.md) | `[REVIEWED]` | 2025 inflection-point thesis: energy transition + climate/food risk + post-Moore’s Law tech/finance |
 | 2026-01-22 | [OpenAI "Value Intelligence"](analysis/sources/openai-value-intelligence.md) | `[REVIEWED]` | Compute + ARR scaling claims; compute-scarcity flywheel; tiered monetization framing |
@@ -63,7 +68,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 23 |
+| TECH | Technology & AI | 39 |
 | LABOR | Labor & Employment | 16 |
 | ECON | Economics & Markets | 20 |
 | GOV | Governance & Policy | 32 |
@@ -181,4 +186,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-01-23*
+*Last updated: 2026-01-24*

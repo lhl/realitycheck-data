@@ -1,0 +1,114 @@
+sources:
+  - id: "vectifyai-2025-pageindex"
+    type: "KNOWLEDGE"
+    title: "PageIndex: Document Index for Vectorless, Reasoning-based RAG"
+    author:
+      - "VectifyAI"
+    year: 2025
+    url: "https://github.com/VectifyAI/PageIndex"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/vectifyai-2025-pageindex.md"
+    reliability: 0.65
+    bias_notes: >-
+      Open-source code + documentation from a project with an associated product/website; marketing claims (e.g.,
+      “SOTA”) should be treated as vendor-reported unless independently replicated. Implementation details
+      (dependencies, code paths) are high-confidence because they are directly inspectable.
+    topics:
+      - rag
+      - retrieval
+      - vectorless
+      - document-structure
+      - pdf
+      - financebench
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-020
+      - TECH-2026-021
+      - TECH-2026-022
+      - TECH-2026-023
+      - TECH-2026-024
+
+claims:
+  - id: "TECH-2026-020"
+    text: >-
+      PageIndex implements vectorless, reasoning-based retrieval by building a hierarchical tree index over long
+      documents and having an LLM traverse it to select relevant sections.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["vectifyai-2025-pageindex"]
+    operationalization: >-
+      Inspect the core retrieval code paths and dependency graph to confirm no embedding similarity search or vector
+      DB is required for the documented “vectorless RAG” workflows.
+    assumptions:
+      - The default workflows reflect the intended core design (not an unrepresentative demo path).
+    falsifiers:
+      - Core retrieval depends on embedding similarity search or requires a vector database to function.
+
+  - id: "TECH-2026-021"
+    text: >-
+      The PageIndex project positions itself as requiring no vector DB and no chunking and provides runnable notebooks
+      demonstrating vectorless RAG and vision-based vectorless RAG workflows.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["vectifyai-2025-pageindex"]
+    operationalization: >-
+      Run the linked notebooks to confirm the workflow works without embeddings/vector DB and uses page/structure
+      routing for retrieval.
+    assumptions:
+      - The notebooks match the README-described behavior.
+    falsifiers:
+      - The notebooks require embeddings/vector DB or materially contradict the “no chunking” claim.
+
+  - id: "TECH-2026-022"
+    text: >-
+      The PageIndex repository claims it powers “Mafin 2.5” and links to a benchmark repository reporting 98.7%
+      accuracy on FinanceBench.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["vectifyai-2025-pageindex"]
+    operationalization: >-
+      Verify the README statements and links, and cross-check that the benchmark repository describes the evaluation
+      protocol and results.
+    assumptions:
+      - The README is current and the linked benchmark repo is the referenced evaluation.
+    falsifiers:
+      - README does not make the claim or links are missing/irrelevant.
+
+  - id: "TECH-2026-023"
+    text: "PageIndex is open-source under an MIT license."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["vectifyai-2025-pageindex"]
+    operationalization: "Verify repository license file and metadata."
+    assumptions:
+      - License file reflects the intended licensing for the whole repo.
+    falsifiers:
+      - Repository lacks an MIT license file or includes conflicting licensing terms.
+
+  - id: "TECH-2026-024"
+    text: >-
+      PageIndex’s approach likely trades additional LLM calls (indexing + traversal) for improved traceability and
+      potentially higher accuracy on long structured professional documents.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["vectifyai-2025-pageindex"]
+    operationalization: >-
+      Benchmark latency/cost and QA accuracy versus strong hybrid baselines across structured long-document tasks;
+      assess whether retrieval paths provide materially better auditability.
+    assumptions:
+      - LLM traversal requires multiple calls and is a meaningful cost driver.
+    falsifiers:
+      - Controlled studies show no traceability advantage or no accuracy gain relative to hybrid baselines.
+

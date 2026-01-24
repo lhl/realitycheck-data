@@ -1,13 +1,13 @@
 # Reality Check Summary
 
-*Generated 2026-01-22*
+*Generated 2026-01-24*
 
 ## Statistics
 
 | Table | Count |
 |-------|-------|
-| claims | 142 |
-| sources | 52 |
+| claims | 174 |
+| sources | 58 |
 | chains | 4 |
 | predictions | 15 |
 | contradictions | 0 |
@@ -22,24 +22,24 @@
 | GOV | 32 |
 | INST | 4 |
 | LABOR | 16 |
-| META | 8 |
+| META | 23 |
 | RESOURCE | 7 |
-| RISK | 5 |
+| RISK | 6 |
 | SOC | 5 |
-| TECH | 23 |
+| TECH | 39 |
 | TRANS | 21 |
 
 ## Claims by Type
 
 | Type | Count |
 |------|-------|
-| [A] | 1 |
+| [A] | 3 |
 | [C] | 1 |
-| [F] | 45 |
-| [H] | 35 |
+| [F] | 70 |
+| [H] | 39 |
 | [P] | 15 |
 | [S] | 3 |
-| [T] | 42 |
+| [T] | 43 |
 
 ## Sources by Type
 
@@ -51,10 +51,10 @@
 | CONVO | 6 |
 | DATA | 2 |
 | INTERVIEW | 1 |
-| KNOWLEDGE | 7 |
-| PAPER | 5 |
+| KNOWLEDGE | 11 |
+| PAPER | 6 |
 | REPORT | 6 |
-| SOCIAL | 4 |
+| SOCIAL | 5 |
 
 ## Argument Chains
 

@@ -1,0 +1,78 @@
+sources:
+  - id: "vectifyai-2025-mafin25-financebench"
+    type: "KNOWLEDGE"
+    title: "Mafin2.5-FinanceBench (published evaluation results)"
+    author:
+      - "VectifyAI"
+    year: 2025
+    url: "https://github.com/VectifyAI/Mafin2.5-FinanceBench"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/vectifyai-2025-mafin25-financebench.md"
+    reliability: 0.55
+    bias_notes: >-
+      Vendor-published benchmark claims with open code and answer dumps, but judged via LLM-as-judge and not a
+      preregistered, third-party evaluation. No clear repository license file observed (limits reuse).
+    topics:
+      - financebench
+      - evaluation
+      - rag
+      - pageindex
+      - mafin
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-025
+      - TECH-2026-026
+      - TECH-2026-027
+
+claims:
+  - id: "TECH-2026-025"
+    text: >-
+      The VectifyAI Mafin2.5-FinanceBench repository reports that Mafin 2.5 achieves 98.7% accuracy on the FinanceBench
+      public set and claims full benchmark coverage.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["vectifyai-2025-mafin25-financebench"]
+    operationalization: >-
+      Inspect the published artifacts (README, result JSONs) and independently reproduce the scoring with a clearly
+      specified judge/rubric.
+    assumptions:
+      - Published artifacts correspond to the claimed evaluation run.
+    falsifiers:
+      - Artifacts are missing/inconsistent or reproduction fails under the stated protocol.
+
+  - id: "TECH-2026-026"
+    text: >-
+      The evaluation script in VectifyAI/Mafin2.5-FinanceBench uses an LLM-as-judge (default GPT-4o) and applies
+      permissive equivalence criteria (allowing rounding flexibility and inferable numeric conclusions) to score answers.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["vectifyai-2025-mafin25-financebench"]
+    operationalization: "Read eval.py and confirm the judge prompt, model choice, and decision rule."
+    assumptions:
+      - The repository’s eval.py reflects the method used to produce the reported score.
+    falsifiers:
+      - eval.py uses a strict deterministic scorer or materially different judging criteria than described.
+
+  - id: "TECH-2026-027"
+    text: >-
+      Because the FinanceBench paper reports much lower success rates under human evaluation for strong baselines,
+      Mafin’s reported 98.7% (LLM-judge) score is not directly comparable to “SOTA” without protocol matching.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["vectifyai-2025-mafin25-financebench"]
+    operationalization: >-
+      Re-evaluate the published answers under the FinanceBench paper’s human rubric (or a close proxy) and compare
+      to baseline systems under the same corpus and subset.
+    assumptions:
+      - Judge strictness and subset/corpus choices materially affect reported accuracy.
+    falsifiers:
+      - Matched-protocol evaluation confirms ~98% success and establishes comparable SOTA status.
+

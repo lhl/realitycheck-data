@@ -1,0 +1,81 @@
+sources:
+  - id: "avichawla-2026-pageindex-thread"
+    type: "SOCIAL"
+    title: "Thread: PageIndex (vectorless, reasoning-based RAG)"
+    author:
+      - "@_avichawla"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2014586815714664698.html"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/avichawla-2026-pageindex-thread.md"
+    reliability: 0.45
+    bias_notes: >-
+      Social-media summary with strong promotional framing (“SOTA”, “solves this”); low methodological detail.
+      Some concrete claims are checkable via linked open-source repos, but generalizations about RAG failure modes
+      are largely interpretive.
+    topics:
+      - rag
+      - retrieval
+      - pageindex
+      - vectorless
+      - financebench
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-017
+      - TECH-2026-018
+      - TECH-2026-019
+
+claims:
+  - id: "TECH-2026-017"
+    text: >-
+      In long professional documents, semantic similarity is often an imperfect proxy for retrieval relevance
+      (“similarity ≠ relevance”), causing similarity-based RAG to miss key sections.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["avichawla-2026-pageindex-thread"]
+    operationalization: >-
+      Measure retrieval recall/precision for long-document QA tasks under vector similarity retrieval vs
+      relevance-grounded judgments, including “appendix/footnote/see Table X” style queries.
+    assumptions:
+      - The benchmark tasks include structurally-located answers with low lexical/semantic overlap.
+    falsifiers:
+      - Empirical studies show similarity-based retrieval achieves high recall for structurally-located answers at scale.
+
+  - id: "TECH-2026-018"
+    text: >-
+      Structure-aware retrieval that reasons over a document hierarchy can improve retrieval for queries whose
+      answers are in semantically distant but structurally relevant sections.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["avichawla-2026-pageindex-thread"]
+    operationalization: >-
+      Compare end-to-end QA accuracy and evidence recall for hierarchy-based routing systems versus vector/hybrid
+      baselines on long structured-document benchmarks, controlling for model and context budget.
+    assumptions:
+      - Document structure is extractable and correlated with relevance for the task distribution.
+    falsifiers:
+      - Controlled comparisons show no meaningful gain from hierarchy-based routing after strong hybrid retrieval/reranking.
+
+  - id: "TECH-2026-019"
+    text: >-
+      Tree-based reasoning-first retrieval is not universally optimal; vector search remains fast and effective for
+      many applications.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.70
+    source_ids: ["avichawla-2026-pageindex-thread"]
+    operationalization: >-
+      Evaluate cost/latency/quality tradeoffs across representative RAG workloads; identify regimes where
+      reasoning-first traversal is dominated by vector/hybrid retrieval.
+    assumptions:
+      - Typical RAG workloads include many short-doc or high-throughput retrieval scenarios.
+    falsifiers:
+      - Evidence shows reasoning-first traversal dominates vector/hybrid retrieval on quality and cost across broad workloads.
+

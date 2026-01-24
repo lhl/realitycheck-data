@@ -1,0 +1,75 @@
+sources:
+  - id: "kamathhrishi-2025-stratalens-ai"
+    type: "KNOWLEDGE"
+    title: "StrataLens AI (open source equity research platform)"
+    author:
+      - "kamathhrishi"
+    year: 2025
+    url: "https://github.com/kamathhrishi/stratalens-ai"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/kamathhrishi-2025-stratalens-ai.md"
+    reliability: 0.50
+    bias_notes: >-
+      Single-maintainer repo for a live product; detailed architecture docs but limited independent validation.
+      Benchmark claim is self-reported and no eval artifacts are provided in-repo. Repository licensing appears
+      inconsistent (README claims MIT but no LICENSE file found).
+    topics:
+      - finance
+      - rag
+      - pgvector
+      - equity-research
+      - sec-filings
+      - earnings-transcripts
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-028
+      - TECH-2026-029
+      - TECH-2026-030
+
+claims:
+  - id: "TECH-2026-028"
+    text: >-
+      StrataLens AI uses a traditional hybrid RAG architecture: PostgreSQL with pgvector embeddings plus keyword search
+      and reranking, and includes LLM-based routing for SEC filing sections and table selection.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["kamathhrishi-2025-stratalens-ai"]
+    operationalization: "Inspect repository docs and code to confirm retrieval components and configured weights/models."
+    assumptions:
+      - Documentation accurately reflects the deployed system.
+    falsifiers:
+      - Code/docs show a materially different retrieval approach (e.g., no pgvector, no hybrid search, no reranking).
+
+  - id: "TECH-2026-029"
+    text: >-
+      The StrataLens README claims about 85% accuracy on FinanceBench (SEC filings only), evaluated using LLM-as-a-judge.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["kamathhrishi-2025-stratalens-ai"]
+    operationalization: "Locate the claim in README and request or reproduce evaluation artifacts under a specified protocol."
+    assumptions:
+      - The author’s stated benchmark corresponds to a real evaluation run.
+    falsifiers:
+      - No evaluation can be produced, or reproduction fails under a clearly specified FinanceBench subset/protocol.
+
+  - id: "TECH-2026-030"
+    text: >-
+      The stratalens-ai repository lacks a LICENSE file despite stating “MIT License” in the README, so the licensing
+      status is unclear.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["kamathhrishi-2025-stratalens-ai"]
+    operationalization: "Check repository root and GitHub license metadata for an explicit license grant."
+    assumptions:
+      - Absence of an explicit license implies no clear permission to reuse beyond default copyright.
+    falsifiers:
+      - A LICENSE file exists or a clear license grant is published in the repo/history and reflected in metadata.
+

@@ -1,0 +1,69 @@
+sources:
+  - id: "islam-2023-financebench"
+    type: "PAPER"
+    title: "FinanceBench: A New Benchmark for Financial Question Answering"
+    author:
+      - "Pranab Islam"
+      - "Anand Kannappan"
+      - "Douwe Kiela"
+      - "Rebecca Qian"
+      - "Nino Scherrer"
+      - "Bertie Vidgen"
+    year: 2023
+    url: "https://arxiv.org/abs/2311.11944"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/islam-2023-financebench.md"
+    reliability: 0.75
+    bias_notes: >-
+      Benchmark/measurement work from authors affiliated with Patronus AI / Contextual AI / Stanford; strong
+      incentives to highlight failure modes and need for better evaluation. Dataset licensing terms are not
+      clearly visible from the paper itself; treat “open-source” as “publicly available” unless licensing is verified.
+    topics:
+      - finance
+      - benchmark
+      - rag
+      - retrieval
+      - evaluation
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-015
+      - TECH-2026-016
+
+claims:
+  - id: "TECH-2026-015"
+    text: >-
+      FinanceBench comprises 10,231 open-book financial QA questions with corresponding answers and evidence
+      strings, and the authors provide an open-source evaluation subset of 150 cases.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["islam-2023-financebench"]
+    operationalization: >-
+      Inspect the public FinanceBench release to confirm total question count, schema (answers + evidence strings),
+      and availability of the 150-case evaluation subset.
+    assumptions:
+      - The public release corresponds to the dataset described in the paper.
+    falsifiers:
+      - Public release does not contain the claimed counts or lacks evidence strings/labels described in the paper.
+
+  - id: "TECH-2026-016"
+    text: >-
+      On the FinanceBench human-evaluated sample (n=150), GPT-4-Turbo with a shared vector store retrieval setup
+      incorrectly answered or refused to answer about 81% of questions, while an oracle setup with access to evidence
+      pages achieved about 85% success.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["islam-2023-financebench"]
+    operationalization: >-
+      Reproduce the paper’s evaluation setup and compute refusal + incorrect rates and oracle success on the same
+      150-case sample.
+    assumptions:
+      - The paper’s evaluation prompts/configs are implemented as described.
+    falsifiers:
+      - A faithful reproduction yields materially different failure/success rates for the stated configurations.
+

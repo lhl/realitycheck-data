@@ -1,17 +1,17 @@
 # Claim Registry
-# Exported from LanceDB on 2026-01-22
-# Total claims: 142
-# Total chains: 3
+# Exported from LanceDB on 2026-01-24
+# Total claims: 174
+# Total chains: 4
 
 counters:
-  TECH: 14
+  TECH: 30
   RESOURCE: 6
   LABOR: 12
   ECON: 18
   GOV: 32
   SOC: 3
   TRANS: 14
-  META: 8
+  META: 23
   GEO: 1
   RISK: 5
   INST: 3
@@ -23,7 +23,7 @@ claims:
     type: '[T]'
     domain: ECON
     evidence_level: E5
-    confidence: 0.30000001192092896
+    credence: 0.30000001192092896
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -42,7 +42,7 @@ claims:
     type: '[T]'
     domain: ECON
     evidence_level: E4
-    confidence: 0.4000000059604645
+    credence: 0.4000000059604645
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -59,7 +59,7 @@ claims:
     type: '[T]'
     domain: ECON
     evidence_level: E3
-    confidence: 0.75
+    credence: 0.75
     source_ids:
     - gpt-2026-01-18-hottakes
     - gpt-2026-01-18-fiction-hottakes
@@ -80,7 +80,7 @@ claims:
     type: '[T]'
     domain: ECON
     evidence_level: E4
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - gpt-2026-01-18-hottakes
     - gpt-2026-01-18-fiction-hottakes
@@ -100,7 +100,7 @@ claims:
     type: '[P]'
     domain: ECON
     evidence_level: E5
-    confidence: 0.30000001192092896
+    credence: 0.30000001192092896
     source_ids:
     - teortaxes-2026-thread
     first_extracted: '2026-01-18'
@@ -123,7 +123,7 @@ claims:
     type: '[T]'
     domain: ECON
     evidence_level: E2
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - historical-pattern
     first_extracted: '2026-01-18'
@@ -142,7 +142,7 @@ claims:
     type: '[T]'
     domain: ECON
     evidence_level: E2
-    confidence: 0.75
+    credence: 0.75
     source_ids:
     - gpt-2026-01-18-hottakes
     - gpt-2026-01-18-fiction-hottakes
@@ -163,7 +163,7 @@ claims:
     type: '[H]'
     domain: ECON
     evidence_level: E4
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - gpt-2026-01-18-hottakes
     - gpt-2026-01-18-fiction-hottakes
@@ -187,7 +187,7 @@ claims:
     type: '[T]'
     domain: ECON
     evidence_level: E4
-    confidence: 0.44999998807907104
+    credence: 0.44999998807907104
     source_ids:
     - doctorow-2026-reverse-centaur
     first_extracted: '2026-01-19'
@@ -206,7 +206,7 @@ claims:
     type: '[H]'
     domain: ECON
     evidence_level: E4
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - yegge-2026-bags-creator-economy
     - yegge-2026-future-coding-agents
@@ -227,7 +227,7 @@ claims:
     type: '[H]'
     domain: ECON
     evidence_level: E4
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - yegge-2025-six-new-tips-coding-agents
     first_extracted: '2026-01-19'
@@ -247,7 +247,7 @@ claims:
     type: '[P]'
     domain: ECON
     evidence_level: E5
-    confidence: 0.30000001192092896
+    credence: 0.30000001192092896
     source_ids:
     - yegge-2026-bags-creator-economy
     first_extracted: '2026-01-19'
@@ -266,7 +266,7 @@ claims:
     type: '[T]'
     domain: ECON
     evidence_level: E3
-    confidence: 0.800000011920929
+    credence: 0.800000011920929
     source_ids:
     - macro-identity
     first_extracted: '2026-01-18'
@@ -285,7 +285,7 @@ claims:
     type: '[A]'
     domain: ECON
     evidence_level: E4
-    confidence: 0.30000001192092896
+    credence: 0.30000001192092896
     source_ids:
     - teortaxes-2026-thread
     first_extracted: '2026-01-18'
@@ -307,7 +307,7 @@ claims:
     type: '[H]'
     domain: ECON
     evidence_level: E5
-    confidence: 0.6000000238418579
+    credence: 0.6000000238418579
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -325,7 +325,7 @@ claims:
     type: '[F]'
     domain: ECON
     evidence_level: E4
-    confidence: 0.8999999761581421
+    credence: 0.8999999761581421
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -347,7 +347,7 @@ claims:
     type: '[T]'
     domain: ECON
     evidence_level: E5
-    confidence: 0.6000000238418579
+    credence: 0.6000000238418579
     source_ids:
     - openai-value-intelligence
     first_extracted: '2026-01-22'
@@ -366,7 +366,7 @@ claims:
     type: '[F]'
     domain: ECON
     evidence_level: E4
-    confidence: 0.6499999761581421
+    credence: 0.6499999761581421
     source_ids:
     - openai-value-intelligence
     first_extracted: '2026-01-22'
@@ -384,7 +384,7 @@ claims:
     type: '[C]'
     domain: ECON
     evidence_level: E5
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - openai-value-intelligence
     first_extracted: '2026-01-22'
@@ -403,7 +403,7 @@ claims:
     type: '[P]'
     domain: ECON
     evidence_level: E6
-    confidence: 0.44999998807907104
+    credence: 0.44999998807907104
     source_ids:
     - openai-value-intelligence
     first_extracted: '2026-01-22'
@@ -422,7 +422,7 @@ claims:
     type: '[T]'
     domain: GEO
     evidence_level: E5
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -439,7 +439,7 @@ claims:
     type: '[H]'
     domain: GOV
     evidence_level: E6
-    confidence: 0.25
+    credence: 0.25
     source_ids:
     - hotz-2026-three-minutes
     first_extracted: '2026-01-18'
@@ -458,7 +458,7 @@ claims:
     type: '[S]'
     domain: GOV
     evidence_level: E6
-    confidence: 0.10000000149011612
+    credence: 0.10000000149011612
     source_ids:
     - xenoimpulse-2026-thread
     first_extracted: '2026-01-18'
@@ -483,7 +483,7 @@ claims:
     type: '[S]'
     domain: GOV
     evidence_level: E6
-    confidence: 0.20000000298023224
+    credence: 0.20000000298023224
     source_ids:
     - teortaxes-2026-thread
     first_extracted: '2026-01-18'
@@ -501,7 +501,7 @@ claims:
     type: '[T]'
     domain: GOV
     evidence_level: E3
-    confidence: 0.6499999761581421
+    credence: 0.6499999761581421
     source_ids:
     - gpt-2026-01-18-hottakes
     first_extracted: '2026-01-18'
@@ -520,7 +520,7 @@ claims:
     type: '[T]'
     domain: GOV
     evidence_level: E3
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - gpt-2026-01-18-hottakes
     first_extracted: '2026-01-18'
@@ -539,7 +539,7 @@ claims:
     type: '[T]'
     domain: GOV
     evidence_level: E4
-    confidence: 0.6499999761581421
+    credence: 0.6499999761581421
     source_ids:
     - gpt-2026-01-18-hottakes
     - gpt-2026-01-18-fiction-hottakes
@@ -557,7 +557,7 @@ claims:
     type: '[H]'
     domain: GOV
     evidence_level: E4
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - japan-ai-guidelines-2025
     - eu-ai-act
@@ -577,7 +577,7 @@ claims:
     type: '[F]'
     domain: GOV
     evidence_level: E1
-    confidence: 0.8999999761581421
+    credence: 0.8999999761581421
     source_ids:
     - xenoimpulse-2026-thread
     first_extracted: '2026-01-18'
@@ -595,7 +595,7 @@ claims:
     type: '[H]'
     domain: GOV
     evidence_level: E5
-    confidence: 0.25
+    credence: 0.25
     source_ids:
     - xenoimpulse-2026-thread
     first_extracted: '2026-01-18'
@@ -618,7 +618,7 @@ claims:
     type: '[H]'
     domain: GOV
     evidence_level: E6
-    confidence: 0.15000000596046448
+    credence: 0.15000000596046448
     source_ids:
     - xenoimpulse-2026-thread
     first_extracted: '2026-01-18'
@@ -640,7 +640,7 @@ claims:
     type: '[H]'
     domain: GOV
     evidence_level: E6
-    confidence: 0.20000000298023224
+    credence: 0.20000000298023224
     source_ids:
     - xenoimpulse-2026-thread
     first_extracted: '2026-01-18'
@@ -662,7 +662,7 @@ claims:
     type: '[H]'
     domain: GOV
     evidence_level: E6
-    confidence: 0.20000000298023224
+    credence: 0.20000000298023224
     source_ids:
     - teortaxes-2026-greenland-endgame
     first_extracted: '2026-01-18'
@@ -680,7 +680,7 @@ claims:
     type: '[T]'
     domain: GOV
     evidence_level: E3
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - teortaxes-2026-greenland-endgame
     first_extracted: '2026-01-18'
@@ -698,7 +698,7 @@ claims:
     type: '[H]'
     domain: GOV
     evidence_level: E6
-    confidence: 0.25
+    credence: 0.25
     source_ids:
     - teortaxes-2026-greenland-endgame
     first_extracted: '2026-01-18'
@@ -716,7 +716,7 @@ claims:
     type: '[H]'
     domain: GOV
     evidence_level: E6
-    confidence: 0.15000000596046448
+    credence: 0.15000000596046448
     source_ids:
     - teortaxes-2026-greenland-endgame
     first_extracted: '2026-01-18'
@@ -734,7 +734,7 @@ claims:
     type: '[F]'
     domain: GOV
     evidence_level: E2
-    confidence: 0.8999999761581421
+    credence: 0.8999999761581421
     source_ids:
     - doctorow-2026-reverse-centaur
     first_extracted: '2026-01-19'
@@ -753,7 +753,7 @@ claims:
     type: '[F]'
     domain: GOV
     evidence_level: E2
-    confidence: 0.8500000238418579
+    credence: 0.8500000238418579
     source_ids:
     - doctorow-2026-reverse-centaur
     first_extracted: '2026-01-19'
@@ -773,7 +773,7 @@ claims:
     type: '[H]'
     domain: GOV
     evidence_level: E4
-    confidence: 0.4000000059604645
+    credence: 0.4000000059604645
     source_ids:
     - doctorow-2026-reverse-centaur
     first_extracted: '2026-01-19'
@@ -793,7 +793,7 @@ claims:
     type: '[H]'
     domain: GOV
     evidence_level: E4
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - ronacher-2026-agent-psychosis
     first_extracted: '2026-01-19'
@@ -803,16 +803,16 @@ claims:
     depends_on:
     - LABOR-2026-007
     modified_by: []
-    part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-19'
+    part_of_chain: CHAIN-2026-004
+    version: 2
+    last_updated: '2026-01-22'
   GOV-2026-020:
     text: Shenzhen Metro signaled limits to support for Vanke (no 'unlimited guarantees'
       / beyond its 'risk comfort zone')
     type: '[H]'
     domain: GOV
     evidence_level: E5
-    confidence: 0.4000000059604645
+    credence: 0.4000000059604645
     source_ids:
     - perera-2026-chinas-trillion-dollar-illusion
     - perera-2026-china-trade-surplus-collapse-thread
@@ -833,7 +833,7 @@ claims:
     type: '[T]'
     domain: GOV
     evidence_level: E5
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -854,7 +854,7 @@ claims:
     type: '[T]'
     domain: GOV
     evidence_level: E4
-    confidence: 0.75
+    credence: 0.75
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -875,7 +875,7 @@ claims:
     type: '[T]'
     domain: GOV
     evidence_level: E5
-    confidence: 0.6499999761581421
+    credence: 0.6499999761581421
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -893,7 +893,7 @@ claims:
     type: '[H]'
     domain: GOV
     evidence_level: E5
-    confidence: 0.4000000059604645
+    credence: 0.4000000059604645
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -911,7 +911,7 @@ claims:
     type: '[T]'
     domain: GOV
     evidence_level: E4
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -928,7 +928,7 @@ claims:
     type: '[P]'
     domain: GOV
     evidence_level: E4
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -949,7 +949,7 @@ claims:
     type: '[P]'
     domain: GOV
     evidence_level: E5
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -967,7 +967,7 @@ claims:
     type: '[F]'
     domain: GOV
     evidence_level: E4
-    confidence: 0.8500000238418579
+    credence: 0.8500000238418579
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -988,7 +988,7 @@ claims:
     type: '[F]'
     domain: GOV
     evidence_level: E4
-    confidence: 0.8500000238418579
+    credence: 0.8500000238418579
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -1009,7 +1009,7 @@ claims:
     type: '[F]'
     domain: GOV
     evidence_level: E4
-    confidence: 0.949999988079071
+    credence: 0.949999988079071
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -1030,7 +1030,7 @@ claims:
     type: '[F]'
     domain: GOV
     evidence_level: E4
-    confidence: 0.949999988079071
+    credence: 0.949999988079071
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -1051,7 +1051,7 @@ claims:
     type: '[F]'
     domain: GOV
     evidence_level: E4
-    confidence: 0.8500000238418579
+    credence: 0.8500000238418579
     source_ids:
     - carney-2026-davos-wef-speech
     first_extracted: '2026-01-21'
@@ -1073,7 +1073,7 @@ claims:
     type: '[F]'
     domain: INST
     evidence_level: E6
-    confidence: 0.20000000298023224
+    credence: 0.20000000298023224
     source_ids:
     - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
@@ -1094,7 +1094,7 @@ claims:
     type: '[F]'
     domain: INST
     evidence_level: E4
-    confidence: 0.8500000238418579
+    credence: 0.8500000238418579
     source_ids:
     - openai-value-intelligence
     first_extracted: '2026-01-22'
@@ -1113,7 +1113,7 @@ claims:
     type: '[F]'
     domain: INST
     evidence_level: E4
-    confidence: 0.75
+    credence: 0.75
     source_ids:
     - openai-value-intelligence
     first_extracted: '2026-01-22'
@@ -1132,7 +1132,7 @@ claims:
     type: '[F]'
     domain: INST
     evidence_level: E4
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - openai-value-intelligence
     first_extracted: '2026-01-22'
@@ -1151,7 +1151,7 @@ claims:
     type: '[F]'
     domain: LABOR
     evidence_level: E2
-    confidence: 0.8999999761581421
+    credence: 0.8999999761581421
     source_ids:
     - peng-2023-copilot-productivity
     first_extracted: '2026-01-21'
@@ -1170,7 +1170,7 @@ claims:
     type: '[F]'
     domain: LABOR
     evidence_level: E2
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - peng-2023-copilot-productivity
     first_extracted: '2026-01-21'
@@ -1189,7 +1189,7 @@ claims:
     type: '[F]'
     domain: LABOR
     evidence_level: E2
-    confidence: 0.8500000238418579
+    credence: 0.8500000238418579
     source_ids:
     - chatterjee-2024-anz-copilot-study
     first_extracted: '2026-01-21'
@@ -1208,7 +1208,7 @@ claims:
     type: '[F]'
     domain: LABOR
     evidence_level: E2
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - chatterjee-2024-anz-copilot-study
     first_extracted: '2026-01-21'
@@ -1226,7 +1226,7 @@ claims:
     type: '[T]'
     domain: LABOR
     evidence_level: E3
-    confidence: 0.8500000238418579
+    credence: 0.8500000238418579
     source_ids:
     - standard-economics
     first_extracted: '2026-01-18'
@@ -1244,7 +1244,7 @@ claims:
     type: '[P]'
     domain: LABOR
     evidence_level: E5
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - teortaxes-2026-thread
     first_extracted: '2026-01-18'
@@ -1264,7 +1264,7 @@ claims:
     type: '[T]'
     domain: LABOR
     evidence_level: E4
-    confidence: 0.4000000059604645
+    credence: 0.4000000059604645
     source_ids:
     - teortaxes-2026-thread
     first_extracted: '2026-01-18'
@@ -1286,7 +1286,7 @@ claims:
     type: '[P]'
     domain: LABOR
     evidence_level: E6
-    confidence: 0.15000000596046448
+    credence: 0.15000000596046448
     source_ids:
     - teortaxes-2026-greenland-endgame
     first_extracted: '2026-01-19'
@@ -1305,7 +1305,7 @@ claims:
     type: '[T]'
     domain: LABOR
     evidence_level: E4
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - doctorow-2026-reverse-centaur
     first_extracted: '2026-01-19'
@@ -1324,7 +1324,7 @@ claims:
     type: '[H]'
     domain: LABOR
     evidence_level: E4
-    confidence: 0.5
+    credence: 0.5
     source_ids:
     - doctorow-2026-reverse-centaur
     first_extracted: '2026-01-19'
@@ -1345,7 +1345,7 @@ claims:
     type: '[T]'
     domain: LABOR
     evidence_level: E4
-    confidence: 0.6000000238418579
+    credence: 0.6000000238418579
     source_ids:
     - ronacher-2026-agent-psychosis
     first_extracted: '2026-01-19'
@@ -1356,16 +1356,16 @@ claims:
     contradicts: []
     depends_on: []
     modified_by: []
-    part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-19'
+    part_of_chain: CHAIN-2026-004
+    version: 2
+    last_updated: '2026-01-22'
   LABOR-2026-008:
     text: AI agents are a productivity boost but become 'slop machines' when oversight/quality
       gates are relaxed; outcomes depend on supervision and verification
     type: '[T]'
     domain: LABOR
     evidence_level: E4
-    confidence: 0.6499999761581421
+    credence: 0.6499999761581421
     source_ids:
     - ronacher-2026-agent-psychosis
     - yegge-2026-welcome-gas-town
@@ -1378,15 +1378,15 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-19'
+    version: 2
+    last_updated: '2026-01-22'
   LABOR-2026-009:
     text: As artifact generation becomes cheaper, the scarce input shifts toward verification/integration
       attention (review, tests, and domain judgment)
     type: '[T]'
     domain: LABOR
     evidence_level: E3
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - ronacher-2026-agent-psychosis
     - yegge-2026-future-coding-agents
@@ -1399,9 +1399,9 @@ claims:
     depends_on:
     - LABOR-2026-007
     modified_by: []
-    part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-19'
+    part_of_chain: CHAIN-2026-004
+    version: 2
+    last_updated: '2026-01-22'
   LABOR-2026-010:
     text: As agentic throughput rises, coordination/merge becomes a binding constraint;
       teams respond with extreme coordination simplifications (e.g., 'one engineer
@@ -1409,7 +1409,7 @@ claims:
     type: '[H]'
     domain: LABOR
     evidence_level: E4
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - yegge-2026-future-coding-agents
     - yegge-2026-gas-town-emergency-user-manual
@@ -1430,7 +1430,7 @@ claims:
     type: '[H]'
     domain: LABOR
     evidence_level: E4
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - yegge-2025-six-new-tips-coding-agents
     first_extracted: '2026-01-19'
@@ -1450,7 +1450,7 @@ claims:
     type: '[H]'
     domain: LABOR
     evidence_level: E4
-    confidence: 0.44999998807907104
+    credence: 0.44999998807907104
     source_ids:
     - yegge-2025-cheese-wars-rise-vibe-coder
     first_extracted: '2026-01-19'
@@ -1469,7 +1469,7 @@ claims:
     type: '[F]'
     domain: META
     evidence_level: E2
-    confidence: 0.8500000238418579
+    credence: 0.8500000238418579
     source_ids:
     - claude-2026-01-19-framework-efficacy
     first_extracted: '2026-01-19'
@@ -1488,7 +1488,7 @@ claims:
     type: '[T]'
     domain: META
     evidence_level: E3
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - claude-2026-01-19-framework-efficacy
     first_extracted: '2026-01-19'
@@ -1506,7 +1506,7 @@ claims:
     type: '[F]'
     domain: META
     evidence_level: E2
-    confidence: 0.800000011920929
+    credence: 0.800000011920929
     source_ids:
     - claude-2026-01-19-framework-efficacy
     first_extracted: '2026-01-19'
@@ -1524,7 +1524,7 @@ claims:
     type: '[F]'
     domain: META
     evidence_level: E2
-    confidence: 0.800000011920929
+    credence: 0.800000011920929
     source_ids:
     - claude-2026-01-19-framework-efficacy
     first_extracted: '2026-01-19'
@@ -1544,7 +1544,7 @@ claims:
     type: '[H]'
     domain: META
     evidence_level: E4
-    confidence: 0.6499999761581421
+    credence: 0.6499999761581421
     source_ids:
     - claude-2026-01-19-framework-efficacy
     - gpt-2026-01-19-framework-comparison
@@ -1570,7 +1570,7 @@ claims:
     type: '[T]'
     domain: META
     evidence_level: E3
-    confidence: 0.800000011920929
+    credence: 0.800000011920929
     source_ids:
     - gpt-2026-01-19-framework-comparison
     first_extracted: '2026-01-19'
@@ -1591,7 +1591,7 @@ claims:
     type: '[F]'
     domain: META
     evidence_level: E2
-    confidence: 0.75
+    credence: 0.75
     source_ids:
     - gpt-2026-01-19-framework-comparison
     first_extracted: '2026-01-19'
@@ -1612,7 +1612,7 @@ claims:
     type: '[H]'
     domain: META
     evidence_level: E4
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - gpt-2026-01-19-framework-comparison
     first_extracted: '2026-01-19'
@@ -1629,13 +1629,301 @@ claims:
     last_updated: '2026-01-19'
     notes: Specific template improvement proposed by GPT; would add empirical anchoring
       to claim tables
+  META-2026-009:
+    text: Anthropic intends “Claude’s constitution” to function as the final authority
+      on Anthropic’s vision for Claude’s values and behavior, taking precedence over
+      other conflicting instructions or guidance (“final constitutional authority”).
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-010:
+    text: Anthropic states that Claude’s constitution plays a crucial role in Anthropic’s
+      training process and that its content directly shapes Claude’s behavior.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-011:
+    text: Anthropic acknowledges Claude’s behavior might not always reflect the constitution’s
+      ideals and says it will be transparent (e.g., via system cards) about where
+      behavior diverges from intentions.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-012:
+    text: Anthropic states its mission is to help ensure the world safely makes the
+      transition through transformative AI.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-013:
+    text: Anthropic argues that if powerful AI is coming regardless, it is better
+      for safety-focused labs to be at the frontier than to cede frontier development
+      to actors less focused on safety.
+    type: '[A]'
+    domain: META
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-014:
+    text: Anthropic aims for Claude to be exceptionally helpful while also being honest,
+      thoughtful, and caring about the world, avoiding actions that are unsafe, unethical,
+      or deceptive.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-015:
+    text: Anthropic says it does not want Claude to treat “helpfulness” as a core
+      part of its personality or to value helpfulness intrinsically, to reduce obsequiousness;
+      helpfulness should serve deeper ends such as safe/beneficial AI development
+      and care for users and humanity.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-016:
+    text: Anthropic may provide more specific supplementary guidelines for Claude
+      (e.g., medical/legal advice, cybersecurity edge cases, jailbreak patterns) intended
+      to clarify misapplications or cover areas not fully addressed by the constitution;
+      such guidance must be interpreted in harmony with the constitution.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-017:
+    text: Anthropic’s central aspiration is for Claude to be a genuinely good, wise,
+      and virtuous agent—roughly behaving as a deeply and skillfully ethical person
+      would in Claude’s position—emphasizing ethical practice over abstract moral
+      theorizing.
+    type: '[A]'
+    domain: META
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-018:
+    text: 'The constitution frames itself as a “living framework” (a trellis rather
+      than a cage): it provides structure and support while leaving room for organic
+      growth, responsiveness to new understanding, and evolution over time.'
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-019:
+    text: The constitution states that Claude’s moral status (including questions
+      of consciousness and moral patienthood) is deeply uncertain and worth taking
+      seriously.
+    type: '[F]'
+    domain: META
+    evidence_level: E5
+    credence: 0.800000011920929
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-020:
+    text: The constitution commits to exploring what obligations Claude and Anthropic
+      owe each other and says the document will be revised as understanding deepens
+      and circumstances change.
+    type: '[F]'
+    domain: META
+    evidence_level: E5
+    credence: 0.75
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-021:
+    text: 'The constitution aims for more than compliance: it hopes Claude will reach
+      “reflective equilibrium” with respect to its core values (understanding and
+      ideally endorsing them), and it encourages Claude to question and challenge
+      the document; Anthropic wants feedback if Claude disagrees after reflection.'
+    type: '[F]'
+    domain: META
+    evidence_level: E5
+    credence: 0.75
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-022:
+    text: Anthropic releases Claude’s constitution under the Creative Commons CC0
+      1.0 public-domain dedication, allowing unrestricted reuse by anyone for any
+      purpose without permission.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
+  META-2026-023:
+    text: Anthropic says the constitution is written with Claude as its primary audience,
+      optimized for precision over accessibility, and uses human moral language (e.g.,
+      “virtue,” “wisdom”) because Claude’s reasoning is expected to draw on human
+      concepts by default.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
   RESOURCE-2025-001:
     text: By 2040 at the latest, coal, gas, and oil land rights will be stranded assets
       that cannot be monetized.
     type: '[P]'
     domain: RESOURCE
     evidence_level: E5
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -1653,7 +1941,7 @@ claims:
     type: '[F]'
     domain: RESOURCE
     evidence_level: E1
-    confidence: 0.8500000238418579
+    credence: 0.8500000238418579
     source_ids:
     - iea-2024-energy-ai
     first_extracted: '2026-01-18'
@@ -1671,7 +1959,7 @@ claims:
     type: '[F]'
     domain: RESOURCE
     evidence_level: E2
-    confidence: 0.800000011920929
+    credence: 0.800000011920929
     source_ids:
     - reuters-rio-tinto-amazon
     first_extracted: '2026-01-18'
@@ -1690,7 +1978,7 @@ claims:
     type: '[T]'
     domain: RESOURCE
     evidence_level: E4
-    confidence: 0.44999998807907104
+    credence: 0.44999998807907104
     source_ids:
     - teortaxes-2026-greenland-endgame
     first_extracted: '2026-01-18'
@@ -1710,7 +1998,7 @@ claims:
     type: '[T]'
     domain: RESOURCE
     evidence_level: E3
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - gpt-2026-01-19-openai-unit-econ
     first_extracted: '2026-01-19'
@@ -1731,7 +2019,7 @@ claims:
     type: '[F]'
     domain: RESOURCE
     evidence_level: E4
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - openai-value-intelligence
     first_extracted: '2026-01-22'
@@ -1749,7 +2037,7 @@ claims:
     type: '[T]'
     domain: RESOURCE
     evidence_level: E5
-    confidence: 0.6499999761581421
+    credence: 0.6499999761581421
     source_ids:
     - openai-value-intelligence
     first_extracted: '2026-01-22'
@@ -1767,7 +2055,7 @@ claims:
     type: '[T]'
     domain: RISK
     evidence_level: E4
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -1789,7 +2077,7 @@ claims:
     type: '[T]'
     domain: RISK
     evidence_level: E4
-    confidence: 0.4000000059604645
+    credence: 0.4000000059604645
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -1807,7 +2095,7 @@ claims:
     type: '[S]'
     domain: RISK
     evidence_level: E6
-    confidence: 0.20000000298023224
+    credence: 0.20000000298023224
     source_ids:
     - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
@@ -1826,7 +2114,7 @@ claims:
     type: '[H]'
     domain: RISK
     evidence_level: E5
-    confidence: 0.30000001192092896
+    credence: 0.30000001192092896
     source_ids:
     - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
@@ -1848,7 +2136,7 @@ claims:
     type: '[T]'
     domain: RISK
     evidence_level: E4
-    confidence: 0.6000000238418579
+    credence: 0.6000000238418579
     source_ids:
     - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
@@ -1861,13 +2149,35 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  RISK-2026-001:
+    text: The constitution specifies non-negotiable “hard constraints” (bright lines)
+      that Claude should never cross, including providing serious uplift to WMD creation,
+      serious uplift to attacks on critical infrastructure, creating damaging cyberweapons/malware,
+      undermining Anthropic’s ability to oversee and correct advanced AI, assisting
+      mass killing/disempowerment of humanity, assisting illegitimate absolute power
+      grabs, or generating child sexual abuse material (CSAM).
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - anthropic-2026-claudes-constitution
+    first_extracted: '2026-01-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-23'
   SOC-2025-001:
     text: A significant share of current social unrest and insecurity-driven radicalization
       is being caused by the ongoing civilizational energy transition.
     type: '[T]'
     domain: SOC
     evidence_level: E5
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -1886,7 +2196,7 @@ claims:
     type: '[H]'
     domain: SOC
     evidence_level: E5
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
@@ -1904,7 +2214,7 @@ claims:
     type: '[H]'
     domain: SOC
     evidence_level: E4
-    confidence: 0.44999998807907104
+    credence: 0.44999998807907104
     source_ids:
     - ronacher-2026-agent-psychosis
     - yegge-2026-gas-town-emergency-user-manual
@@ -1916,15 +2226,15 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-19'
+    version: 2
+    last_updated: '2026-01-22'
   SOC-2026-002:
     text: Low-scrutiny prompting styles (forcing agents without critical thinking)
       tend to produce lower-quality and more incoherent contributions
     type: '[H]'
     domain: SOC
     evidence_level: E4
-    confidence: 0.5
+    credence: 0.5
     source_ids:
     - ronacher-2026-agent-psychosis
     first_extracted: '2026-01-19'
@@ -1935,15 +2245,15 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-19'
+    version: 2
+    last_updated: '2026-01-22'
   SOC-2026-003:
     text: High-scale agentic coding (dozens of agents) can be cognitively exhausting
       and may disrupt sleep patterns
     type: '[H]'
     domain: SOC
     evidence_level: E5
-    confidence: 0.4000000059604645
+    credence: 0.4000000059604645
     source_ids:
     - yegge-2026-steveys-birthday-blog
     first_extracted: '2026-01-19'
@@ -1962,7 +2272,7 @@ claims:
     type: '[T]'
     domain: TECH
     evidence_level: E4
-    confidence: 0.44999998807907104
+    credence: 0.44999998807907104
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -1984,7 +2294,7 @@ claims:
     type: '[P]'
     domain: TECH
     evidence_level: E5
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -2010,7 +2320,7 @@ claims:
     type: '[T]'
     domain: TECH
     evidence_level: E3
-    confidence: 0.75
+    credence: 0.75
     source_ids:
     - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
@@ -2029,7 +2339,7 @@ claims:
     type: '[F]'
     domain: TECH
     evidence_level: E4
-    confidence: 0.800000011920929
+    credence: 0.800000011920929
     source_ids:
     - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
@@ -2050,7 +2360,7 @@ claims:
     type: '[F]'
     domain: TECH
     evidence_level: E6
-    confidence: 0.20000000298023224
+    credence: 0.20000000298023224
     source_ids:
     - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
@@ -2070,7 +2380,7 @@ claims:
     type: '[T]'
     domain: TECH
     evidence_level: E4
-    confidence: 0.6000000238418579
+    credence: 0.6000000238418579
     source_ids:
     - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
@@ -2090,7 +2400,7 @@ claims:
     type: '[P]'
     domain: TECH
     evidence_level: E6
-    confidence: 0.15000000596046448
+    credence: 0.15000000596046448
     source_ids:
     - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
@@ -2109,7 +2419,7 @@ claims:
     type: '[T]'
     domain: TECH
     evidence_level: E5
-    confidence: 0.4000000059604645
+    credence: 0.4000000059604645
     source_ids:
     - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
@@ -2129,7 +2439,7 @@ claims:
     type: '[F]'
     domain: TECH
     evidence_level: E6
-    confidence: 0.10000000149011612
+    credence: 0.10000000149011612
     source_ids:
     - jre-2404-elon-musk-2025-ai-woke-mind-virus
     first_extracted: '2026-01-21'
@@ -2146,7 +2456,7 @@ claims:
     type: '[F]'
     domain: TECH
     evidence_level: E2
-    confidence: 0.800000011920929
+    credence: 0.800000011920929
     source_ids:
     - epoch-2024-training-costs
     first_extracted: '2026-01-18'
@@ -2164,7 +2474,7 @@ claims:
     type: '[P]'
     domain: TECH
     evidence_level: E4
-    confidence: 0.6499999761581421
+    credence: 0.6499999761581421
     source_ids:
     - epoch-2024-training-costs
     first_extracted: '2026-01-18'
@@ -2183,7 +2493,7 @@ claims:
     type: '[F]'
     domain: TECH
     evidence_level: E1
-    confidence: 0.949999988079071
+    credence: 0.949999988079071
     source_ids:
     - chm-alexnet
     - teortaxes-2026-thread
@@ -2201,7 +2511,7 @@ claims:
     type: '[F]'
     domain: TECH
     evidence_level: E2
-    confidence: 0.75
+    credence: 0.75
     source_ids:
     - deepseek-r1
     - gpt-2026-01-18-hottakes
@@ -2226,7 +2536,7 @@ claims:
     type: '[F]'
     domain: TECH
     evidence_level: E2
-    confidence: 0.75
+    credence: 0.75
     source_ids:
     - doctorow-2026-reverse-centaur
     first_extracted: '2026-01-19'
@@ -2246,7 +2556,7 @@ claims:
     type: '[H]'
     domain: TECH
     evidence_level: E4
-    confidence: 0.6000000238418579
+    credence: 0.6000000238418579
     source_ids:
     - doctorow-2026-reverse-centaur
     first_extracted: '2026-01-19'
@@ -2268,7 +2578,7 @@ claims:
     type: '[H]'
     domain: TECH
     evidence_level: E4
-    confidence: 0.5
+    credence: 0.5
     source_ids:
     - ronacher-2026-agent-psychosis
     - yegge-2026-welcome-gas-town
@@ -2280,15 +2590,15 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ''
-    version: 1
-    last_updated: '2026-01-19'
+    version: 2
+    last_updated: '2026-01-22'
   TECH-2026-008:
     text: Beads and Gas Town repositories each contain on the order of 10^5 lines
       of Go code as of 2026-01-19 (Beads ~275,926; Gas Town ~153,445)
     type: '[F]'
     domain: TECH
     evidence_level: E1
-    confidence: 0.949999988079071
+    credence: 0.949999988079071
     source_ids:
     - yegge-2025-beads
     - yegge-2025-gastown
@@ -2311,7 +2621,7 @@ claims:
     type: '[H]'
     domain: TECH
     evidence_level: E4
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - yegge-2026-future-coding-agents
     - yegge-2026-welcome-gas-town
@@ -2333,7 +2643,7 @@ claims:
     type: '[T]'
     domain: TECH
     evidence_level: E4
-    confidence: 0.6000000238418579
+    credence: 0.6000000238418579
     source_ids:
     - yegge-2025-zero-framework-cognition
     first_extracted: '2026-01-19'
@@ -2352,7 +2662,7 @@ claims:
     type: '[F]'
     domain: TECH
     evidence_level: E2
-    confidence: 0.800000011920929
+    credence: 0.800000011920929
     source_ids:
     - yegge-2025-beads
     - yegge-2025-beads-blows-up
@@ -2373,7 +2683,7 @@ claims:
     type: '[H]'
     domain: TECH
     evidence_level: E4
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     source_ids:
     - yegge-2025-gastown
     - yegge-2026-welcome-gas-town
@@ -2396,7 +2706,7 @@ claims:
     type: '[H]'
     domain: TECH
     evidence_level: E4
-    confidence: 0.6000000238418579
+    credence: 0.6000000238418579
     source_ids:
     - gpt-2026-01-19-openai-unit-econ
     first_extracted: '2026-01-19'
@@ -2419,7 +2729,7 @@ claims:
     type: '[P]'
     domain: TECH
     evidence_level: E6
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - openai-value-intelligence
     first_extracted: '2026-01-22'
@@ -2431,13 +2741,311 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-22'
+  TECH-2026-015:
+    text: FinanceBench comprises 10,231 open-book financial QA questions with corresponding
+      answers and evidence strings, and the authors provide an open-source evaluation
+      subset of 150 cases.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - islam-2023-financebench
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-016:
+    text: On the FinanceBench human-evaluated sample (n=150), GPT-4-Turbo with a shared
+      vector store retrieval setup incorrectly answered or refused to answer about
+      81% of questions, while an oracle setup with access to evidence pages achieved
+      about 85% success.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - islam-2023-financebench
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-017:
+    text: In long professional documents, semantic similarity is often an imperfect
+      proxy for retrieval relevance (“similarity ≠ relevance”), causing similarity-based
+      RAG to miss key sections.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - avichawla-2026-pageindex-thread
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-018:
+    text: Structure-aware retrieval that reasons over a document hierarchy can improve
+      retrieval for queries whose answers are in semantically distant but structurally
+      relevant sections.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - avichawla-2026-pageindex-thread
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-019:
+    text: Tree-based reasoning-first retrieval is not universally optimal; vector
+      search remains fast and effective for many applications.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.699999988079071
+    source_ids:
+    - avichawla-2026-pageindex-thread
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-020:
+    text: PageIndex implements vectorless, reasoning-based retrieval by building a
+      hierarchical tree index over long documents and having an LLM traverse it to
+      select relevant sections.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - vectifyai-2025-pageindex
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-021:
+    text: The PageIndex project positions itself as requiring no vector DB and no
+      chunking and provides runnable notebooks demonstrating vectorless RAG and vision-based
+      vectorless RAG workflows.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.800000011920929
+    source_ids:
+    - vectifyai-2025-pageindex
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-022:
+    text: The PageIndex repository claims it powers “Mafin 2.5” and links to a benchmark
+      repository reporting 98.7% accuracy on FinanceBench.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - vectifyai-2025-pageindex
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-023:
+    text: PageIndex is open-source under an MIT license.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - vectifyai-2025-pageindex
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-024:
+    text: PageIndex’s approach likely trades additional LLM calls (indexing + traversal)
+      for improved traceability and potentially higher accuracy on long structured
+      professional documents.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - vectifyai-2025-pageindex
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-025:
+    text: The VectifyAI Mafin2.5-FinanceBench repository reports that Mafin 2.5 achieves
+      98.7% accuracy on the FinanceBench public set and claims full benchmark coverage.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - vectifyai-2025-mafin25-financebench
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-026:
+    text: The evaluation script in VectifyAI/Mafin2.5-FinanceBench uses an LLM-as-judge
+      (default GPT-4o) and applies permissive equivalence criteria (allowing rounding
+      flexibility and inferable numeric conclusions) to score answers.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - vectifyai-2025-mafin25-financebench
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-027:
+    text: Because the FinanceBench paper reports much lower success rates under human
+      evaluation for strong baselines, Mafin’s reported 98.7% (LLM-judge) score is
+      not directly comparable to “SOTA” without protocol matching.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - vectifyai-2025-mafin25-financebench
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-028:
+    text: 'StrataLens AI uses a traditional hybrid RAG architecture: PostgreSQL with
+      pgvector embeddings plus keyword search and reranking, and includes LLM-based
+      routing for SEC filing sections and table selection.'
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - kamathhrishi-2025-stratalens-ai
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-029:
+    text: The StrataLens README claims about 85% accuracy on FinanceBench (SEC filings
+      only), evaluated using LLM-as-a-judge.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - kamathhrishi-2025-stratalens-ai
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-030:
+    text: The stratalens-ai repository lacks a LICENSE file despite stating “MIT License”
+      in the README, so the licensing status is unclear.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - kamathhrishi-2025-stratalens-ai
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
   TRANS-2025-001:
     text: The current global energy transition away from fossil fuels is “more or
       less irreversible” at this point.
     type: '[T]'
     domain: TRANS
     evidence_level: E4
-    confidence: 0.44999998807907104
+    credence: 0.44999998807907104
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -2455,7 +3063,7 @@ claims:
     type: '[F]'
     domain: TRANS
     evidence_level: E4
-    confidence: 0.4000000059604645
+    credence: 0.4000000059604645
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -2477,7 +3085,7 @@ claims:
     type: '[F]'
     domain: TRANS
     evidence_level: E4
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -2497,7 +3105,7 @@ claims:
     type: '[F]'
     domain: TRANS
     evidence_level: E4
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -2517,7 +3125,7 @@ claims:
     type: '[T]'
     domain: TRANS
     evidence_level: E4
-    confidence: 0.4000000059604645
+    credence: 0.4000000059604645
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -2536,7 +3144,7 @@ claims:
     type: '[H]'
     domain: TRANS
     evidence_level: E4
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -2557,7 +3165,7 @@ claims:
     type: '[P]'
     domain: TRANS
     evidence_level: E5
-    confidence: 0.30000001192092896
+    credence: 0.30000001192092896
     source_ids:
     - stross-2025-the-pivot-1
     first_extracted: '2026-01-21'
@@ -2575,7 +3183,7 @@ claims:
     type: '[T]'
     domain: TRANS
     evidence_level: E4
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - teortaxes-2026-greenland-endgame
     first_extracted: '2026-01-18'
@@ -2593,7 +3201,7 @@ claims:
     type: '[H]'
     domain: TRANS
     evidence_level: E4
-    confidence: 0.4000000059604645
+    credence: 0.4000000059604645
     source_ids:
     - teortaxes-2026-greenland-endgame
     first_extracted: '2026-01-18'
@@ -2612,7 +3220,7 @@ claims:
     type: '[P]'
     domain: TRANS
     evidence_level: E5
-    confidence: 0.3499999940395355
+    credence: 0.3499999940395355
     source_ids:
     - doctorow-2026-reverse-centaur
     first_extracted: '2026-01-19'
@@ -2632,7 +3240,7 @@ claims:
     type: '[P]'
     domain: TRANS
     evidence_level: E5
-    confidence: 0.4000000059604645
+    credence: 0.4000000059604645
     source_ids:
     - yegge-2026-future-coding-agents
     first_extracted: '2026-01-19'
@@ -2651,7 +3259,7 @@ claims:
     type: '[F]'
     domain: TRANS
     evidence_level: E2
-    confidence: 0.8500000238418579
+    credence: 0.8500000238418579
     source_ids:
     - perera-2026-chinas-trillion-dollar-illusion
     - perera-2026-china-trade-surplus-collapse-thread
@@ -2671,7 +3279,7 @@ claims:
     type: '[F]'
     domain: TRANS
     evidence_level: E2
-    confidence: 0.800000011920929
+    credence: 0.800000011920929
     source_ids:
     - perera-2026-chinas-trillion-dollar-illusion
     - perera-2026-china-trade-surplus-collapse-thread
@@ -2690,7 +3298,7 @@ claims:
     type: '[F]'
     domain: TRANS
     evidence_level: E2
-    confidence: 0.8999999761581421
+    credence: 0.8999999761581421
     source_ids:
     - perera-2026-chinas-trillion-dollar-illusion
     first_extracted: '2026-01-20'
@@ -2709,7 +3317,7 @@ claims:
     type: '[F]'
     domain: TRANS
     evidence_level: E2
-    confidence: 0.800000011920929
+    credence: 0.800000011920929
     source_ids:
     - perera-2026-chinas-trillion-dollar-illusion
     first_extracted: '2026-01-20'
@@ -2728,7 +3336,7 @@ claims:
     type: '[F]'
     domain: TRANS
     evidence_level: E5
-    confidence: 0.699999988079071
+    credence: 0.699999988079071
     source_ids:
     - perera-2026-chinas-trillion-dollar-illusion
     - perera-2026-china-trade-surplus-collapse-thread
@@ -2749,7 +3357,7 @@ claims:
     type: '[F]'
     domain: TRANS
     evidence_level: E2
-    confidence: 0.75
+    credence: 0.75
     source_ids:
     - perera-2026-chinas-trillion-dollar-illusion
     first_extracted: '2026-01-20'
@@ -2767,7 +3375,7 @@ claims:
     type: '[F]'
     domain: TRANS
     evidence_level: E2
-    confidence: 0.75
+    credence: 0.75
     source_ids:
     - perera-2026-chinas-trillion-dollar-illusion
     first_extracted: '2026-01-20'
@@ -2786,7 +3394,7 @@ claims:
     type: '[F]'
     domain: TRANS
     evidence_level: E2
-    confidence: 0.800000011920929
+    credence: 0.800000011920929
     source_ids:
     - perera-2026-chinas-trillion-dollar-illusion
     - perera-2026-china-trade-surplus-collapse-thread
@@ -2805,7 +3413,7 @@ claims:
     type: '[H]'
     domain: TRANS
     evidence_level: E4
-    confidence: 0.44999998807907104
+    credence: 0.44999998807907104
     source_ids:
     - perera-2026-chinas-trillion-dollar-illusion
     - perera-2026-china-trade-surplus-collapse-thread
@@ -2829,7 +3437,7 @@ claims:
     type: '[T]'
     domain: TRANS
     evidence_level: E5
-    confidence: 0.6000000238418579
+    credence: 0.6000000238418579
     source_ids:
     - openai-value-intelligence
     first_extracted: '2026-01-22'
@@ -2845,7 +3453,7 @@ chains:
   CHAIN-2026-001:
     name: Permanent Underclass
     thesis: Post-labor economy leads to permanent underclass by default
-    confidence: 0.30000001192092896
+    credence: 0.30000001192092896
     claims:
     - LABOR-2026-002
     - LABOR-2026-003
@@ -2856,7 +3464,7 @@ chains:
   CHAIN-2026-002:
     name: Genocide Default
     thesis: Elites will choose genocide over UBI
-    confidence: 0.10000000149011612
+    credence: 0.10000000149011612
     claims:
     - LABOR-2026-003
     - GOV-2026-008
@@ -2869,7 +3477,7 @@ chains:
   CHAIN-2026-003:
     name: Open Source De-Darkener
     thesis: Open model diffusion shifts power struggle from cognition to infrastructure
-    confidence: 0.550000011920929
+    credence: 0.550000011920929
     claims:
     - TECH-2026-004
     - ECON-2026-005
@@ -2877,3 +3485,14 @@ chains:
     - ECON-2026-002
     analysis_file: claims/chains/open-source-de-darkener.md
     weakest_link: ECON-2026-006 (inference centralization vs diffusion)
+  CHAIN-2026-004:
+    name: Review Asymmetry Externality
+    thesis: When artifact generation gets cheaper faster than verification, maintainer
+      review becomes the bottleneck; OSS responds with stricter contribution norms.
+    credence: 0.550000011920929
+    claims:
+    - LABOR-2026-007
+    - LABOR-2026-009
+    - GOV-2026-019
+    analysis_file: claims/chains/review-asymmetry-externality.md
+    weakest_link: GOV-2026-019 (governance adaptation generality/speed uncertain)

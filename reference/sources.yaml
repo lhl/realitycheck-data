@@ -1,6 +1,6 @@
 # Source Registry
-# Exported from LanceDB on 2026-01-22
-# Total sources: 52
+# Exported from LanceDB on 2026-01-24
+# Total sources: 58
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -51,6 +51,78 @@ sources:
     - GOV
     - TRANS
     status: cataloged
+  anthropic-2026-claudes-constitution:
+    type: KNOWLEDGE
+    title: Claude's Constitution
+    author:
+    - Anthropic
+    - Amanda Askell
+    - Joe Carlsmith
+    year: 2026
+    url: https://www.anthropic.com/constitution
+    accessed: '2026-01-23'
+    reliability: 0.7
+    bias_notes: First-party corporate values/behavior specification for Anthropic’s
+      Claude models. Aspirational and normative; includes internal-process claims
+      (training, oversight) that are hard to independently verify. Likely to emphasize
+      safety/virtue framing and downplay misalignment risk, competitive pressures,
+      and the costs of false refusals.
+    claims_extracted:
+    - META-2026-009
+    - META-2026-010
+    - META-2026-011
+    - META-2026-012
+    - META-2026-013
+    - META-2026-014
+    - META-2026-015
+    - META-2026-016
+    - META-2026-017
+    - RISK-2026-001
+    - META-2026-018
+    - META-2026-019
+    - META-2026-020
+    - META-2026-021
+    - META-2026-022
+    - META-2026-023
+    analysis_file: analysis/sources/anthropic-2026-claudes-constitution.md
+    topics:
+    - ai-safety
+    - alignment
+    - constitutional-ai
+    - ethics
+    - model-behavior
+    - model-welfare
+    - transparency
+    domains:
+    - META
+    - RISK
+    status: analyzed
+  avichawla-2026-pageindex-thread:
+    type: SOCIAL
+    title: 'Thread: PageIndex (vectorless, reasoning-based RAG)'
+    author:
+    - '@_avichawla'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2014586815714664698.html
+    accessed: '2026-01-24'
+    reliability: 0.45
+    bias_notes: Social-media summary with strong promotional framing (“SOTA”, “solves
+      this”); low methodological detail. Some concrete claims are checkable via linked
+      open-source repos, but generalizations about RAG failure modes are largely interpretive.
+    claims_extracted:
+    - TECH-2026-017
+    - TECH-2026-018
+    - TECH-2026-019
+    analysis_file: analysis/sources/avichawla-2026-pageindex-thread.md
+    topics:
+    - rag
+    - retrieval
+    - pageindex
+    - vectorless
+    - financebench
+    domains:
+    - TECH
+    status: analyzed
   butler-1863-darwin-machines:
     type: ARTICLE
     title: Darwin among the Machines
@@ -531,6 +603,38 @@ sources:
     - TECH
     - RESOURCE
     status: cataloged
+  islam-2023-financebench:
+    type: PAPER
+    title: 'FinanceBench: A New Benchmark for Financial Question Answering'
+    author:
+    - Pranab Islam
+    - Anand Kannappan
+    - Douwe Kiela
+    - Rebecca Qian
+    - Nino Scherrer
+    - Bertie Vidgen
+    year: 2023
+    url: https://arxiv.org/abs/2311.11944
+    accessed: '2026-01-24'
+    reliability: 0.75
+    bias_notes: Benchmark/measurement work from authors affiliated with Patronus AI
+      / Contextual AI / Stanford; strong incentives to highlight failure modes and
+      need for better evaluation. Dataset licensing terms are not clearly visible
+      from the paper itself; treat “open-source” as “publicly available” unless licensing
+      is verified.
+    claims_extracted:
+    - TECH-2026-015
+    - TECH-2026-016
+    analysis_file: analysis/sources/islam-2023-financebench.md
+    topics:
+    - finance
+    - benchmark
+    - rag
+    - retrieval
+    - evaluation
+    domains:
+    - TECH
+    status: analyzed
   japan-ai-guidelines-2025:
     type: REPORT
     title: Guideline for Japanese Governments' Procurements and Utilizations of Generative
@@ -595,6 +699,34 @@ sources:
     - RISK
     - SOC
     - INST
+    status: analyzed
+  kamathhrishi-2025-stratalens-ai:
+    type: KNOWLEDGE
+    title: StrataLens AI (open source equity research platform)
+    author:
+    - kamathhrishi
+    year: 2025
+    url: https://github.com/kamathhrishi/stratalens-ai
+    accessed: '2026-01-24'
+    reliability: 0.5
+    bias_notes: Single-maintainer repo for a live product; detailed architecture docs
+      but limited independent validation. Benchmark claim is self-reported and no
+      eval artifacts are provided in-repo. Repository licensing appears inconsistent
+      (README claims MIT but no LICENSE file found).
+    claims_extracted:
+    - TECH-2026-028
+    - TECH-2026-029
+    - TECH-2026-030
+    analysis_file: analysis/sources/kamathhrishi-2025-stratalens-ai.md
+    topics:
+    - finance
+    - rag
+    - pgvector
+    - equity-research
+    - sec-filings
+    - earnings-transcripts
+    domains:
+    - TECH
     status: analyzed
   macro-identity:
     type: KNOWLEDGE
@@ -990,6 +1122,62 @@ sources:
     - ECON
     - GOV
     status: cataloged
+  vectifyai-2025-mafin25-financebench:
+    type: KNOWLEDGE
+    title: Mafin2.5-FinanceBench (published evaluation results)
+    author:
+    - VectifyAI
+    year: 2025
+    url: https://github.com/VectifyAI/Mafin2.5-FinanceBench
+    accessed: '2026-01-24'
+    reliability: 0.55
+    bias_notes: Vendor-published benchmark claims with open code and answer dumps,
+      but judged via LLM-as-judge and not a preregistered, third-party evaluation.
+      No clear repository license file observed (limits reuse).
+    claims_extracted:
+    - TECH-2026-025
+    - TECH-2026-026
+    - TECH-2026-027
+    analysis_file: analysis/sources/vectifyai-2025-mafin25-financebench.md
+    topics:
+    - financebench
+    - evaluation
+    - rag
+    - pageindex
+    - mafin
+    domains:
+    - TECH
+    status: analyzed
+  vectifyai-2025-pageindex:
+    type: KNOWLEDGE
+    title: 'PageIndex: Document Index for Vectorless, Reasoning-based RAG'
+    author:
+    - VectifyAI
+    year: 2025
+    url: https://github.com/VectifyAI/PageIndex
+    accessed: '2026-01-24'
+    reliability: 0.65
+    bias_notes: Open-source code + documentation from a project with an associated
+      product/website; marketing claims (e.g., “SOTA”) should be treated as vendor-reported
+      unless independently replicated. Implementation details (dependencies, code
+      paths) are high-confidence because they are directly inspectable.
+    claims_extracted:
+    - TECH-2026-020
+    - TECH-2026-021
+    - TECH-2026-022
+    - TECH-2026-023
+    - TECH-2026-024
+    analysis_file: analysis/sources/vectifyai-2025-pageindex.md
+    topics:
+    - rag
+    - retrieval
+    - vectorless
+    - document-structure
+    - pdf
+    - financebench
+    domains:
+    - TECH
+    status: analyzed
   wikipedia-greenland-crisis:
     type: KNOWLEDGE
     title: Greenland crisis - Wikipedia
