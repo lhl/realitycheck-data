@@ -1,16 +1,16 @@
 # Claim Registry
 # Exported from LanceDB on 2026-01-24
-# Total claims: 228
+# Total claims: 235
 # Total chains: 4
 
 counters:
-  TECH: 87
+  TECH: 91
   RESOURCE: 6
-  LABOR: 12
-  ECON: 18
+  LABOR: 13
+  ECON: 19
   GOV: 32
   SOC: 3
-  TRANS: 14
+  TRANS: 15
   META: 23
   GEO: 1
   RISK: 5
@@ -415,6 +415,25 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-22'
+  ECON-2026-019:
+    text: Organizations may rationally pay on the order of $1k–$3k/month for a robust
+      agent orchestrator if it yields ~2–3× productivity on senior developers; willingness-to-pay
+      scales with local developer salaries.
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - appleton-2026-gastown-agent-patterns
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
   GEO-2025-001:
     text: The energy transition is producing major political consequences—from bribery
       and corruption up to open warfare—and post-oil geopolitics will differ substantially
@@ -1463,6 +1482,25 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-19'
+  LABOR-2026-013:
+    text: At high scale, agentic coding shifts the binding constraint from implementation
+      time to human design, planning, and decision-making (product strategy, architecture,
+      UX taste).
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - appleton-2026-gastown-agent-patterns
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
   META-2026-001:
     text: Structured claim extraction with IDs enables cross-referencing that ad-hoc
       analysis cannot
@@ -4044,6 +4082,84 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-24'
+  TECH-2026-088:
+    text: Successful multi-agent orchestrators will tend to adopt specialized agent
+      roles with hierarchical supervision (a primary coordinator interface plus worker
+      agents and supervisor agents) to reduce cognitive overhead and coordination
+      failures.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - appleton-2026-gastown-agent-patterns
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-089:
+    text: Persisting task and identity state outside the model context (e.g., structured
+      git-backed work items) enables disposable agent sessions and mitigates context-window
+      and “context rot” limitations.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - appleton-2026-gastown-agent-patterns
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-090:
+    text: High-parallelism agentic development requires explicit integration tooling
+      (merge queues, conflict resolution agents, or stacked-diff workflows) to keep
+      changes small, reviewable, and compatible.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - appleton-2026-gastown-agent-patterns
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
+  TECH-2026-091:
+    text: “Code distance” (how directly humans can view/edit code versus directing
+      agents) is a central UI and workflow design axis for agentic development tools;
+      the optimal distance depends on domain/language, feedback loops, risk tolerance,
+      and team coordination.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - appleton-2026-gastown-agent-patterns
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
   TRANS-2025-001:
     text: The current global energy transition away from fossil fuels is “more or
       less irreversible” at this point.
@@ -4454,6 +4570,25 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-22'
+  TRANS-2026-015:
+    text: Over the next 1–2 years, improved harnesses (tests, validation loops, and
+      specialized QA/security agents) will enable broader “code-at-a-distance” workflows
+      where humans inspect less code directly.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - appleton-2026-gastown-agent-patterns
+    first_extracted: '2026-01-24'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-24'
 chains:
   CHAIN-2026-001:
     name: Permanent Underclass

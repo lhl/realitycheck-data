@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 228 |
-| **Sources** | 69 |
+| **Claims** | 235 |
+| **Sources** | 71 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 15 |
+| **Predictions Tracked** | 16 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -47,6 +47,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-24 | [Gas Town’s Agent Patterns (Appleton)](analysis/sources/appleton-2026-gastown-agent-patterns.md) | `[REVIEWED]` | Design-fiction read of Gas Town; bottleneck shifts to design/verification; orchestration patterns + “code distance” axis |
 | 2026-01-24 | [JP-TL-Bench paper (Lin & Lensenmayer 2026)](analysis/sources/lin-2026-jp-tl-bench-paper.md) | `[REVIEWED]` | Anchored pairwise LLM-judge benchmark for JA↔EN translation; Bradley–Terry aggregation + LT scoring; protocol dependence noted |
 | 2026-01-24 | [JP-TL-Bench (blog)](analysis/sources/lin-2025-jp-tl-bench.md) | `[REVIEWED]` | Release post motivating anchored pairwise evaluation vs metric compression for high-end JA↔EN translation |
 | 2026-01-24 | [JP-TL-Bench Directional Analysis](analysis/sources/lin-2026-jp-tl-bench-directional-analysis.md) | `[REVIEWED]` | Direction and difficulty slices show large asymmetries (e.g., Llama 3.1 8B); qualitative examples |
@@ -81,12 +82,12 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 93 |
-| LABOR | Labor & Employment | 16 |
-| ECON | Economics & Markets | 20 |
+| TECH | Technology & AI | 97 |
+| LABOR | Labor & Employment | 17 |
+| ECON | Economics & Markets | 21 |
 | GOV | Governance & Policy | 32 |
 | SOC | Social Dynamics | 5 |
-| TRANS | Transition Dynamics | 21 |
+| TRANS | Transition Dynamics | 22 |
 | RESOURCE | Resource Constraints | 7 |
 | GEO | Geopolitics | 1 |
 | META | Framework & Methodology | 23 |

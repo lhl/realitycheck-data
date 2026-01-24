@@ -1,0 +1,167 @@
+sources:
+  - id: "appleton-2026-gastown-agent-patterns"
+    type: "BLOG"
+    title: "Gas Town’s Agent Patterns, Design Bottlenecks, and Vibecoding at Scale"
+    author:
+      - "Maggie Appleton"
+    year: 2026
+    url: "https://maggieappleton.com/gastown"
+    accessed: "2026-01-24"
+    status: "analyzed"
+    analysis_file: "analysis/sources/appleton-2026-gastown-agent-patterns.md"
+    reliability: 0.60
+    bias_notes: >-
+      Reflective practitioner essay grounded in a close reading of Yegge’s “Gas Town” artifacts and surrounding
+      discourse. Strong on concrete workflow pattern extraction; weaker on quantified impact claims (costs, ROI,
+      timeline predictions), which are partly conjectural and anchored to early-2026 pricing dynamics.
+    topics:
+      - gas-town
+      - agent-orchestration
+      - multi-agent
+      - vibecoding
+      - code-review
+      - stacked-diffs
+      - developer-workflows
+      - design-fiction
+      - code-distance
+      - pricing
+    domains:
+      - LABOR
+      - TECH
+      - ECON
+      - TRANS
+    claims_extracted:
+      - LABOR-2026-013
+      - TECH-2026-088
+      - TECH-2026-089
+      - TECH-2026-090
+      - ECON-2026-019
+      - TECH-2026-091
+      - TRANS-2026-015
+
+claims:
+  - id: "LABOR-2026-013"
+    text: >-
+      At high scale, agentic coding shifts the binding constraint from implementation time to human design,
+      planning, and decision-making (product strategy, architecture, UX taste).
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["appleton-2026-gastown-agent-patterns"]
+    operationalization: >-
+      Measure time and queueing delays across agent-heavy teams (spec/design, implementation, review, merge,
+      incident/rework) and test whether design/planning becomes the dominant critical-path constraint as the
+      number of concurrent agents increases.
+    assumptions:
+      - Agentic systems substantially reduce implementation time for a large share of tasks.
+      - Design decisions cannot be reliably delegated to agents without unacceptable error.
+    falsifiers:
+      - Empirical studies show review/verification or compliance remains the dominant bottleneck even under high agent throughput.
+
+  - id: "TECH-2026-088"
+    text: >-
+      Successful multi-agent orchestrators will tend to adopt specialized agent roles with hierarchical
+      supervision (a primary coordinator interface plus worker agents and supervisor agents) to reduce
+      cognitive overhead and coordination failures.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["appleton-2026-gastown-agent-patterns"]
+    operationalization: >-
+      Survey/benchmark orchestrator systems over 2026–2027 for convergence on role hierarchies (coordinator,
+      workers, supervisors) and compare coordination error rates vs flat-agent architectures.
+    assumptions:
+      - Coordination and attention management are limiting factors in multi-agent workflows.
+    falsifiers:
+      - Flat, non-hierarchical agent pools achieve comparable reliability and overhead at similar scale.
+
+  - id: "TECH-2026-089"
+    text: >-
+      Persisting task and identity state outside the model context (e.g., structured git-backed work items)
+      enables disposable agent sessions and mitigates context-window and “context rot” limitations.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["appleton-2026-gastown-agent-patterns"]
+    operationalization: >-
+      Compare long-running task success rates between agents that rely primarily on in-context conversation
+      history versus agents that externalize plans/tasks/state into structured artifacts (task ledgers,
+      queues, memory stores) with periodic session reset.
+    assumptions:
+      - Session resets reduce degradation from long-context drift.
+      - External state can be kept consistent and cheap to read/write.
+    falsifiers:
+      - Externalized task/state adds overhead and does not improve end-to-end reliability in controlled comparisons.
+
+  - id: "TECH-2026-090"
+    text: >-
+      High-parallelism agentic development requires explicit integration tooling (merge queues, conflict
+      resolution agents, or stacked-diff workflows) to keep changes small, reviewable, and compatible.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["appleton-2026-gastown-agent-patterns"]
+    operationalization: >-
+      Track merge-conflict rate, integration cycle time, and rework/rollback incidence as teams increase
+      parallel agent throughput; test whether merge queues/stacked diffs reduce these costs relative to
+      traditional PR workflows.
+    assumptions:
+      - Agentic throughput materially increases the number of concurrent in-flight changes.
+    falsifiers:
+      - Traditional PR workflows sustain similar throughput without increased integration costs under high parallelism.
+
+  - id: "ECON-2026-019"
+    text: >-
+      Organizations may rationally pay on the order of $1k–$3k/month for a robust agent orchestrator if it
+      yields ~2–3× productivity on senior developers; willingness-to-pay scales with local developer salaries.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["appleton-2026-gastown-agent-patterns"]
+    operationalization: >-
+      Estimate ROI by measuring marginal output and defect/rework costs before/after orchestrator adoption;
+      compare observed spend levels and retention across salary bands and regions.
+    assumptions:
+      - Productivity gains persist after accounting for review, defects, and coordination overhead.
+    falsifiers:
+      - Market prices and observed willingness-to-pay remain close to commodity assistant tiers despite strong measured ROI.
+
+  - id: "TECH-2026-091"
+    text: >-
+      “Code distance” (how directly humans can view/edit code versus directing agents) is a central UI and
+      workflow design axis for agentic development tools; the optimal distance depends on domain/language,
+      feedback loops, risk tolerance, and team coordination.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["appleton-2026-gastown-agent-patterns"]
+    operationalization: >-
+      Compare outcomes (latency, defect rates, operator satisfaction, auditability) across tools that are
+      code-first (IDE-centric) versus agent-first (chat/CLI-centric), stratified by domain risk and feedback-loop strength.
+    assumptions:
+      - Different domains have materially different audit and risk constraints.
+    falsifiers:
+      - One interaction paradigm dominates across domains when measured on comparable outcome metrics.
+
+  - id: "TRANS-2026-015"
+    text: >-
+      Over the next 1–2 years, improved harnesses (tests, validation loops, and specialized QA/security
+      agents) will enable broader “code-at-a-distance” workflows where humans inspect less code directly.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["appleton-2026-gastown-agent-patterns"]
+    operationalization: >-
+      Track adoption of agentic tooling features (automated tests, provenance/attestation, security scanning,
+      policy gates) and correlate with reduced manual diff inspection and stable or improved defect/incident metrics.
+    assumptions:
+      - Guardrails can catch a large fraction of high-severity errors before merge.
+    falsifiers:
+      - Teams retain high levels of manual inspection due to debugging, accountability, and audit requirements despite improved harnesses.

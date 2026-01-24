@@ -1,6 +1,6 @@
 # Source Registry
 # Exported from LanceDB on 2026-01-24
-# Total sources: 69
+# Total sources: 71
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -96,6 +96,44 @@ sources:
     domains:
     - META
     - RISK
+    status: analyzed
+  appleton-2026-gastown-agent-patterns:
+    type: BLOG
+    title: Gas Town’s Agent Patterns, Design Bottlenecks, and Vibecoding at Scale
+    author:
+    - Maggie Appleton
+    year: 2026
+    url: https://maggieappleton.com/gastown
+    accessed: '2026-01-24'
+    reliability: 0.6
+    bias_notes: Reflective practitioner essay grounded in a close reading of Yegge’s
+      Gas Town artifacts and surrounding discourse; strong on pattern extraction,
+      weaker on quantified impact claims.
+    claims_extracted:
+    - LABOR-2026-013
+    - TECH-2026-088
+    - TECH-2026-089
+    - TECH-2026-090
+    - ECON-2026-019
+    - TECH-2026-091
+    - TRANS-2026-015
+    analysis_file: analysis/sources/appleton-2026-gastown-agent-patterns.md
+    topics:
+    - gas-town
+    - agent-orchestration
+    - multi-agent
+    - vibecoding
+    - code-review
+    - stacked-diffs
+    - developer-workflows
+    - design-fiction
+    - code-distance
+    - pricing
+    domains:
+    - LABOR
+    - TECH
+    - ECON
+    - TRANS
     status: analyzed
   avichawla-2026-pageindex-thread:
     type: SOCIAL
@@ -716,6 +754,32 @@ sources:
     - TECH
     - GOV
     status: cataloged
+  jp-tl-bench-ja-en-translation-eval-synthesis:
+    type: KNOWLEDGE
+    title: 'Synthesis Analysis: JP-TL-Bench and JA↔EN Translation Evaluation (Anchored
+      Pairwise vs Metrics/MQM)'
+    author:
+    - gpt-5.2
+    - claude-opus-4-5
+    year: 2026
+    url: ''
+    accessed: '2026-01-24'
+    reliability: 0.75
+    bias_notes: Internal cross-source synthesis document in realitycheck-data (analysis/syntheses);
+      added to satisfy analysis_logs referential integrity.
+    claims_extracted: []
+    analysis_file: analysis/syntheses/jp-tl-bench-ja-en-translation-eval-synthesis.md
+    topics:
+    - jp-tl-bench
+    - translation
+    - evaluation
+    - llm-judge
+    - mqm
+    - wmt
+    - comet
+    domains:
+    - TECH
+    status: analyzed
   jre-2404-elon-musk-2025-ai-woke-mind-virus:
     type: CONVO
     title: 'Joe Rogan Experience #2404 — Elon Musk (AI alignment, Gemini “ImageGen”,

@@ -162,3 +162,14 @@
 - **Falsification**: By 2030, pricing remains dominated by subscriptions and usage-based billing, with licensing/IP/outcome-based models rare or economically marginal.
 - **Verification**: By 2030, AI deployments in high-value domains (science/drug discovery/energy/finance) commonly use licensing, IP-based agreements, or outcome-based pricing, accounting for a meaningful share of vendor revenue (beyond standard subscriptions/usage billing).
 - **Last Evaluated**: 2026-01-22
+
+#### TRANS-2026-015
+
+> Over the next 1–2 years, improved harnesses (tests, validation loops, and specialized QA/security agents) will enable broader “code-at-a-distance” workflows where humans inspect less code directly.
+
+- **Status**: [P?]
+- **Source**: appleton-2026-gastown-agent-patterns
+- **Target Date**: 2027-12-31
+- **Falsification**: By 2027-12-31, improved harness features are not widely adopted or do not measurably reduce the need for manual diff inspection; incident/defect rates worsen when teams attempt code-at-a-distance workflows.
+- **Verification**: By 2027-12-31, common agentic dev tooling includes stronger harness features (automated test/validation loops, policy gates, specialist QA/security agents) and these enable many teams to safely delegate more changes without line-by-line manual code inspection.
+- **Last Evaluated**: 2026-01-24
