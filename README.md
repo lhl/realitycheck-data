@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 259 |
-| **Sources** | 72 |
+| **Claims** | 268 |
+| **Sources** | 73 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 19 |
 
@@ -47,6 +47,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-25 | [“Positions ICE has taken” (BlueBadger2600)](analysis/sources/bluebadger2600-2026-ice-positions.md) | `[REVIEWED]` | Legal/policy fact-check of ICE authority claims (home entry, detention, counsel, courts, third-country removals) + Minnesota incidents (Good/Pretti, 5yo detention, National Guard, Vance immunity) |
 | 2026-01-25 | [Inference Cost Analysis & Projections (lhl)](analysis/sources/lhl-2026-frontier-llm-token-unit-economics.md) | `[DRAFT]` | Frontier inference unit economics: caching + routing dominate; reasoning/long-context are hidden cost multipliers; includes cache-heavy case study |
 | 2026-01-24 | [Gas Town’s Agent Patterns (Appleton)](analysis/sources/appleton-2026-gastown-agent-patterns.md) | `[REVIEWED]` | Design-fiction read of Gas Town; bottleneck shifts to design/verification; orchestration patterns + “code distance” axis |
 | 2026-01-24 | [JP-TL-Bench paper (Lin & Lensenmayer 2026)](analysis/sources/lin-2026-jp-tl-bench-paper.md) | `[REVIEWED]` | Anchored pairwise LLM-judge benchmark for JA↔EN translation; Bradley–Terry aggregation + LT scoring; protocol dependence noted |
@@ -86,7 +87,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TECH | Technology & AI | 104 |
 | LABOR | Labor & Employment | 17 |
 | ECON | Economics & Markets | 29 |
-| GOV | Governance & Policy | 32 |
+| GOV | Governance & Policy | 41 |
 | SOC | Social Dynamics | 5 |
 | TRANS | Transition Dynamics | 24 |
 | RESOURCE | Resource Constraints | 11 |

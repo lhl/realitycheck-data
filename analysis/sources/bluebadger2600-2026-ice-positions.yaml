@@ -1,0 +1,191 @@
+sources:
+  - id: "bluebadger2600-2026-ice-positions"
+    type: "SOCIAL"
+    title: "X post: “Positions ICE has taken”"
+    author:
+      - "@BlueBadger2600"
+    year: 2026
+    url: "https://x.com/BlueBadger2600/status/2015086695566451161"
+    accessed: "2026-01-25"
+    status: "analyzed"
+    analysis_file: "analysis/sources/bluebadger2600-2026-ice-positions.md"
+    reliability: 0.40
+    bias_notes: >-
+      Highly compressed, adversarial framing; mixes legal-technical assertions with worst-case rhetorical
+      extrapolation. Some items are checkable against statutes/regulations and reported internal DHS/ICE memos;
+      others are broad generalizations.
+    topics:
+      - immigration
+      - ice
+      - dhs
+      - warrants
+      - detention
+      - due-process
+      - minnesota
+      - civil-liberties
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-033
+      - GOV-2026-034
+      - GOV-2026-035
+      - GOV-2026-036
+      - GOV-2026-037
+      - GOV-2026-038
+      - GOV-2026-039
+      - GOV-2026-040
+      - GOV-2026-041
+
+claims:
+  - id: "GOV-2026-033"
+    text: >-
+      ICE has asserted authority to forcibly enter homes to make immigration arrests without a judge-signed
+      warrant (e.g., relying on an administrative warrant).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["bluebadger2600-2026-ice-positions"]
+    operationalization: >-
+      Obtain the primary memo/policy text and any court rulings; determine whether ICE authorizes forced entry
+      into residences based on administrative warrants and under what constraints.
+    assumptions:
+      - Reported descriptions of the memo accurately reflect the policy.
+    falsifiers:
+      - Primary-source memo/policy shows no authorization for forced entry without judicial warrant.
+      - Credible reporting confirms the memo was forged, withdrawn, or materially mischaracterized.
+
+  - id: "GOV-2026-034"
+    text: >-
+      Federal law requires noncitizens (18+) to carry their registration documents (e.g., alien registration or
+      receipt card) at all times.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["bluebadger2600-2026-ice-positions"]
+    operationalization: >-
+      Verify statutory text and any controlling judicial interpretations of 8 U.S.C. § 1304(e), including
+      applicability, enforcement practices, and penalties.
+    assumptions:
+      - “Alien” is interpreted as “noncitizen” under the INA definition.
+    falsifiers:
+      - Statutory amendment repeals or narrows the “at all times carry” requirement.
+
+  - id: "GOV-2026-035"
+    text: >-
+      In some encounters, ICE agents may disregard paper documents and instead rely primarily on biometric
+      identity checks (fingerprint/face ID) to determine identity/status.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["bluebadger2600-2026-ice-positions"]
+    operationalization: >-
+      Review ICE/ERO field procedures and after-action reports; measure how often documentary proof is accepted
+      on scene versus biometric/database confirmation being treated as authoritative.
+    assumptions:
+      - Field operations commonly have access to biometric tools and databases.
+    falsifiers:
+      - Evidence shows ICE reliably accepts documentary proof as sufficient and does not treat biometrics as the
+        primary determinant in comparable encounters.
+
+  - id: "GOV-2026-036"
+    text: >-
+      ICE can detain people broadly across contexts, including children, and errors can result in detention of
+      U.S. citizens.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["bluebadger2600-2026-ice-positions"]
+    operationalization: >-
+      Measure detention incidence by age and status during comparable enforcement surges; quantify rates of
+      citizen misidentification and the conditions that produced it.
+    assumptions:
+      - Enforcement surges increase error rates and collateral detentions.
+    falsifiers:
+      - High-quality data show child detention and citizen misidentification are extremely rare in comparable operations.
+
+  - id: "GOV-2026-037"
+    text: >-
+      ICE can detain people indefinitely with no access to a lawyer.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E6"
+    credence: 0.20
+    source_ids: ["bluebadger2600-2026-ice-positions"]
+    operationalization: >-
+      Review statutory/regulatory rights to counsel and detention time limits; measure access-to-counsel latency
+      and length-of-detention distributions across categories (pre- and post-removal order).
+    assumptions:
+      - “No access” refers to practical barriers rather than absence of a legal privilege.
+    falsifiers:
+      - Binding law provides government-appointed counsel and authorizes indefinite detention without meaningful review.
+
+  - id: "GOV-2026-038"
+    text: >-
+      People targeted by ICE generally have no meaningful right to a day in court.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["bluebadger2600-2026-ice-positions"]
+    operationalization: >-
+      Compare proportions of removals conducted via immigration court hearings vs expedited/summary processes;
+      assess scope of judicial review and habeas availability by category.
+    assumptions:
+      - Expedited removal and limited-review pathways are widely used in the relevant context.
+    falsifiers:
+      - Data show most removals involve meaningful adversarial hearings with robust review.
+
+  - id: "GOV-2026-039"
+    text: >-
+      ICE can deport some people to third countries (not their country of origin), potentially on short notice and
+      with limited procedural safeguards.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["bluebadger2600-2026-ice-positions"]
+    operationalization: >-
+      Obtain primary memo/court filings describing third-country removal procedures; track notice times,
+      opportunities to contest, and use of diplomatic assurances.
+    assumptions:
+      - Reported memo guidance is accurate and operationalized.
+    falsifiers:
+      - Primary-source guidance or court rulings show substantial notice/procedural safeguards are required and applied.
+
+  - id: "GOV-2026-040"
+    text: >-
+      If ICE makes a serious mistake (e.g., wrongful removal), it generally cannot or will not bring the person back.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["bluebadger2600-2026-ice-positions"]
+    operationalization: >-
+      Review ICE return-facilitation policy scope; measure frequency and speed of returns after wrongful removal or
+      successful litigation, including cases without Supreme Court/circuit court wins.
+    assumptions:
+      - The “mistake” scenario includes wrongful removals and mistaken detentions leading to removal.
+    falsifiers:
+      - Evidence shows ICE routinely facilitates return in mistake cases beyond narrow policy categories.
+
+  - id: "GOV-2026-041"
+    text: >-
+      If someone interferes with ICE activity, ICE can use lethal force and justify it by labeling the person a terrorist.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E6"
+    credence: 0.10
+    source_ids: ["bluebadger2600-2026-ice-positions"]
+    operationalization: >-
+      Compare ICE/CBP use-of-force policies to incidents; test whether “terrorism” labeling is used as a legal
+      justification for lethal force absent imminent threat.
+    assumptions:
+      - The claim asserts policy-like permission rather than isolated misconduct.
+    falsifiers:
+      - Primary policies and incident investigations show lethal force is constrained to imminent-threat situations and
+        “terrorism” labeling does not substitute for legal justification.
+
