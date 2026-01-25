@@ -63,7 +63,7 @@ claims:
     type: "[F]"
     domain: "GOV"
     evidence_level: "E2"
-    credence: 0.95
+    credence: 0.98
     source_ids: ["bluebadger2600-2026-ice-positions"]
     operationalization: >-
       Verify statutory text and any controlling judicial interpretations of 8 U.S.C. § 1304(e), including
@@ -80,7 +80,7 @@ claims:
     type: "[H]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.55
+    credence: 0.75
     source_ids: ["bluebadger2600-2026-ice-positions"]
     operationalization: >-
       Review ICE/ERO field procedures and after-action reports; measure how often documentary proof is accepted
@@ -98,7 +98,7 @@ claims:
     type: "[H]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.65
+    credence: 0.80
     source_ids: ["bluebadger2600-2026-ice-positions"]
     operationalization: >-
       Measure detention incidence by age and status during comparable enforcement surges; quantify rates of
@@ -129,8 +129,8 @@ claims:
       People targeted by ICE generally have no meaningful right to a day in court.
     type: "[H]"
     domain: "GOV"
-    evidence_level: "E5"
-    credence: 0.45
+    evidence_level: "E4"
+    credence: 0.55
     source_ids: ["bluebadger2600-2026-ice-positions"]
     operationalization: >-
       Compare proportions of removals conducted via immigration court hearings vs expedited/summary processes;

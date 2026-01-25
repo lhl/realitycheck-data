@@ -35,11 +35,11 @@ The concluding question (“How is this not a recipe for totalitarianism?”) tr
 | # | Claim | Claim ID | Type | Domain | Evidence | Credence | Verified? | Falsifiable By |
 |---|-------|----------|------|--------|----------|----------:|-----------|----------------|
 | 1 | ICE can forcibly enter a residence to make an immigration arrest without a judge-signed warrant (e.g., relying only on an administrative warrant) | GOV-2026-033 | [F] | GOV | E4 | 0.90 | ? | Publication of the referenced ICE guidance showing it does not authorize forced entry without judicial warrant; or credible reporting that the memo was forged/mischaracterized |
-| 2 | Federal law requires noncitizens (18+) to carry their registration documents (“papers”) at all times | GOV-2026-034 | [F] | GOV | E2 | 0.95 | 8 U.S.C. § 1304(e) | Statutory change or authoritative legal interpretation that this does not impose an “at all times” possession requirement |
-| 3 | In encounters, ICE can disregard paper documents and rely primarily on biometrics (“scanner”) to determine identity/status | GOV-2026-035 | [H] | GOV | E4 | 0.55 | ? | Policy/oversight evidence that ICE reliably accepts documentary proof in the field and does not use biometrics as the primary determinant |
-| 4 | ICE can detain people broadly across contexts, including children, and errors can result in detention of citizens | GOV-2026-036 | [H] | GOV | E4 | 0.65 | ? | Evidence that federal immigration enforcement does not detain minors in practice and that citizen misidentification/detention is vanishingly rare in comparable operations |
+| 2 | Federal law requires noncitizens (18+) to carry their registration documents (“papers”) at all times | GOV-2026-034 | [F] | GOV | E2 | 0.98 | 8 U.S.C. § 1304(e) | Statutory change or authoritative legal interpretation that this does not impose an “at all times” possession requirement |
+| 3 | In encounters, ICE can disregard paper documents and rely primarily on biometrics (“scanner”) to determine identity/status | GOV-2026-035 | [H] | GOV | E4 | 0.75 | ? | Policy/oversight evidence that ICE reliably accepts documentary proof in the field and does not use biometrics as the primary determinant |
+| 4 | ICE can detain people broadly across contexts, including children, and errors can result in detention of citizens | GOV-2026-036 | [H] | GOV | E4 | 0.80 | ? | Evidence that federal immigration enforcement does not detain minors in practice and that citizen misidentification/detention is vanishingly rare in comparable operations |
 | 5 | ICE can detain people indefinitely with no access to a lawyer | GOV-2026-037 | [H] | GOV | E6 | 0.20 | ? | Evidence that immigration detainees have guaranteed government-appointed counsel and that indefinite detention is legally permitted without meaningful review |
-| 6 | People targeted by ICE generally have no meaningful “day in court” / due-process hearing | GOV-2026-038 | [H] | GOV | E5 | 0.45 | ? | Evidence that expedited processes are rare and that most removals involve meaningful adversarial hearings with robust judicial review |
+| 6 | People targeted by ICE generally have no meaningful “day in court” / due-process hearing | GOV-2026-038 | [H] | GOV | E4 | 0.55 | ? | Evidence that expedited processes are rare and that most removals involve meaningful adversarial hearings with robust judicial review |
 | 7 | ICE can deport people to “third countries” on short notice, potentially exposing them to persecution or harsh detention conditions | GOV-2026-039 | [F] | GOV | E2 | 0.85 | ? | Evidence that third-country removals are tightly constrained in practice with robust notice/process requirements and are not occurring as described in recent litigation/reporting |
 | 8 | If ICE makes a serious mistake (wrongful detention/deportation), it generally cannot or will not bring the person back | GOV-2026-040 | [H] | GOV | E4 | 0.55 | ? | Evidence that ICE routinely and promptly facilitates return after wrongful removals across categories (including third-country/offshored-detention contexts), beyond narrow policy/court-ordered cases |
 | 9 | If you interfere with ICE actions, ICE can shoot you and justify it by labeling you a “terrorist” | GOV-2026-041 | [H] | GOV | E6 | 0.15 | ? | Evidence of an ICE policy authorizing lethal force for mere “interference,” absent imminent threat, and/or reliable cases where “terrorist” labeling is used to justify otherwise unlawful shootings |
@@ -82,11 +82,11 @@ The largest weakness is **overgeneralization**: some bullets collapse (a) narrow
 | Claim (paraphrased) | Crux? | Source Says | Actual | External Source | Status |
 |---------------------|-------|-------------|--------|-----------------|--------|
 | ICE can enter homes without a judge’s warrant | **Y** | “enter your home without a warrant” | Credible reporting describes an internal ICE memo claiming authority to forcibly enter homes using an administrative (non-judicial) warrant to arrest people with final removal orders; separate reporting describes a federal judge’s ruling that a warrantless home entry violated the Fourth Amendment (without adjudicating the memo itself). Overall: asserted “position” is well-supported; lawfulness is contested | https://www.pbs.org/newshour/nation/immigration-officers-claim-sweeping-power-to-enter-homes-without-a-judges-warrant-memo-says ; https://www.pbs.org/newshour/nation/not-opening-the-door-to-ice-may-no-longer-stop-officers ; https://www.wired.com/story/us-judge-rules-ice-raids-require-judicial-warrants-contradicting-secret-ice-memo/ ; https://abcnews.go.com/US/ice-memo-allows-agents-enter-homes-judicial-warrant/story?id=129436766 ; contrast: 8 CFR 287.8(f)(2) https://www.law.cornell.edu/cfr/text/8/287.8 | ok (position claimed), ? (lawfulness) |
-| Noncitizens must carry “papers” at all times | N | “must carry your papers at all times” | Federal law requires “every alien, eighteen years of age and over” to “at all times carry” registration/receipt card; does not apply to U.S. citizens and does not necessarily imply street-check authority without other legal grounds | https://www.law.cornell.edu/uscode/text/8/1304 | ok (scope-limited) |
-| ICE can ignore documents and only biometrics matter | N | “ignore them… only our scanner matters” | In a Minnesota incident, AP reports a U.S. citizen said agents refused to see his ID; DHS stated he “refused to be fingerprinted or facially ID’d,” implying reliance on biometric verification rather than accepting documents in the moment. However, other reporting describes agents *demanding paperwork* from U.S. citizens during street stops (suggesting practice is variable) | https://www.pbs.org/newshour/nation/a-u-s-citizen-says-ice-forced-open-the-door-to-his-minnesota-home-and-removed-him-in-his-underwear-after-a-warrantless-search ; https://www.usatoday.com/story/news/nation/2026/01/20/immigration-agents-minnesota-police-officer/88268058007/ | ok (incident), ? (general rule) |
-| ICE can detain people broadly, regardless of age/status | **Y** | “detain you anywhere… no matter… age… status” | INA grants immigration officers authority to interrogate people believed to be aliens and to arrest certain noncitizens without a warrant (with conditions), and DHS regulations allow questioning in public-access areas without a warrant; but the claim is overstated as a universal rule (citizens cannot lawfully be detained *as aliens*, though errors and alleged misconduct occur). Recent Minnesota reporting also describes citizen stops and detention of very young children during operations | 8 U.S.C. § 1357 https://www.law.cornell.edu/uscode/text/8/1357 ; 8 CFR 287.8(f)(4) https://www.law.cornell.edu/cfr/text/8/287.8 ; https://www.usatoday.com/story/news/nation/2026/01/20/immigration-agents-minnesota-police-officer/88268058007/ ; https://www.theguardian.com/us-news/2026/jan/23/us-immigration-two-year-old-minnesota-girl ; incidents discussed below | ? |
+| Noncitizens must carry “papers” at all times | N | “must carry your papers at all times” | Federal law requires “every alien, eighteen years of age and over” to “at all times carry” registration/receipt card. A DHS Federal Register notice summarizes noncompliance as a misdemeanor punishable by up to 30 days and a fine up to $5,000 (via general federal fine provisions). This duty does not apply to U.S. citizens and does not itself create a general “street check” authority absent other legal grounds | https://www.law.cornell.edu/uscode/text/8/1304 ; https://www.govinfo.gov/content/pkg/FR-2025-03-12/pdf/2025-03944.pdf | ok (scope-limited) |
+| ICE can ignore documents and only biometrics matter | N | “ignore them… only our scanner matters” | A DHS privacy threshold analysis for the Mobile Fortify field app states ICE does not provide an opportunity to decline/consent to biometric/photo collection and that new photographs/fingerprints are retained in ATS for 15 years (including U.S. citizens/LPRs). This supports “biometrics matter” as a real system in some encounters. Reporting also describes specific incidents where agents allegedly refused to review ID, but a universal “only biometrics matter” rule remains unverified (practice appears variable) | https://s3.documentcloud.org/documents/26209262/mobile-fortify-pta.pdf ; https://www.pbs.org/newshour/nation/a-u-s-citizen-says-ice-forced-open-the-door-to-his-minnesota-home-and-removed-him-in-his-underwear-after-a-warrantless-search ; https://www.usatoday.com/story/news/nation/2026/01/20/immigration-agents-minnesota-police-officer/88268058007/ | ok (biometrics program), ? (universal rule) |
+| ICE can detain people broadly, regardless of age/status | **Y** | “detain you anywhere… no matter… age… status” | INA grants immigration officers authority to interrogate people believed to be aliens and to arrest certain noncitizens without a warrant (with conditions), and DHS regulations allow questioning in public-access areas without a warrant; but the claim is overstated as a universal rule (citizens cannot lawfully be detained *as aliens*, though errors and alleged misconduct occur). GAO reports ICE arrested/detained/removed some “potential U.S. citizens” (FY2015–Q2 FY2020) and issued detainers for “potential U.S. citizens,” indicating misidentification/enforcement errors occur. Minnesota reporting also describes detention of very young children during operations | 8 U.S.C. § 1357 https://www.law.cornell.edu/uscode/text/8/1357 ; 8 CFR 287.8(f)(4) https://www.law.cornell.edu/cfr/text/8/287.8 ; GAO-21-487 https://www.gao.gov/assets/gao-21-487.pdf ; https://www.theguardian.com/us-news/2026/jan/23/us-immigration-two-year-old-minnesota-girl ; incidents discussed below | ? |
 | ICE can detain people indefinitely with no lawyer access | **Y** | “indefinitely… no access to a lawyer” | People in removal proceedings have a statutory privilege to counsel (at no government expense). Indefinite post-removal-order detention is limited by Supreme Court interpretation (Zadvydas), though prolonged detention without periodic bond hearings can occur under statutes (Jennings) and access to counsel can be impeded in practice | 8 U.S.C. § 1362 https://www.law.cornell.edu/uscode/text/8/1362 ; Zadvydas v. Davis (2001) https://tile.loc.gov/storage-services/service/ll/usrep/usrep533/usrep533678/usrep533678.pdf ; Jennings v. Rodriguez (2018) https://www.law.cornell.edu/supremecourt/text/15-1204 | x (as stated), ok (access barriers exist) |
-| People have basically no right to a “day in court” | N | “basically no right… day in court” | Many people in removal proceedings receive immigration court hearings, but expedited removal is designed to bypass full hearings for certain categories; Supreme Court upheld limits on habeas review for expedited removal (Thuraissigiam) | 8 U.S.C. § 1225 (expedited removal) https://www.law.cornell.edu/uscode/text/8/1225 ; DHS v. Thuraissigiam (2020) https://www.law.cornell.edu/supremecourt/text/19-161 | ? (depends on category) |
+| People have basically no right to a “day in court” | N | “basically no right… day in court” | Many people in removal proceedings receive immigration court hearings, but expedited removal is designed to bypass full hearings for certain categories; Supreme Court upheld limits on habeas review for expedited removal (Thuraissigiam). Separately, AP reports ICE leadership directed broader use of a detention authority that makes many people in removal proceedings ineligible for immigration-judge bond hearings, which can reduce practical ability to pursue claims while free (without eliminating all hearings) | 8 U.S.C. § 1225 (expedited removal) https://www.law.cornell.edu/uscode/text/8/1225 ; DHS v. Thuraissigiam (2020) https://www.law.cornell.edu/supremecourt/text/19-161 ; https://apnews.com/article/immigration-detention-ice-trump-e1c2322c3f88c1f7d7e83c8c42109cb6 | ? (depends on category) |
 | ICE can “send you to a third world prison” | N | “send you to a third world prison” | Reporting and litigation describe “third-country” removals (removal to countries other than a person’s origin), sometimes with very short notice; while not a criminal “prison sentence,” removals can expose people to severe conditions (including foreign custody) | https://www.nbcnews.com/news/us-news/ice-may-deport-migrants-third-countries-assurances-wont-tortured-memo-rcna218990 ; https://www.supremecourt.gov/opinions/24pdf/24a1153_l5gm.pdf ; https://apnews.com/article/trump-migrants-el-salvador-prison-3c46db296c219c7b3a701474eaea5184 | ok (third-country removals reported), ? (“prison” framing is rhetorical) |
 | ICE can’t bring you back if it made a mistake | N | “can’t bring you back” | ICE has a written policy (2012) to facilitate return in some narrow categories, so “can’t” is not categorically true. However, recent reporting and litigation around third-country removals/offshored detention describe the administration arguing it is powerless to return people once moved abroad and resisting return even in acknowledged-error cases—though at least one such case (Abrego Garcia) ultimately resulted in return to the U.S. | ICE Directive 11061.1 (2012) https://www.ice.gov/doclib/foia/dro_policy_memos/11061.1_current_policy_facilitating_return.pdf ; https://apnews.com/article/trump-migrants-el-salvador-prison-3c46db296c219c7b3a701474eaea5184 ; https://www.supremecourt.gov/opinions/24pdf/24a1153_l5gm.pdf | x (as absolute), ? (return not guaranteed; often contested) |
 | ICE can shoot you for “interference” because you are a “terrorist” | N | “shoot… because… terrorist” | DHS/ICE deadly-force authority is limited to situations of “imminent danger of death or serious physical injury,” not mere interference. However, there is substantial reporting that senior officials and DHS/ICE messaging have used “domestic terrorism”/“terrorist” labels quickly after shootings and in response to protest/observation activity. That rhetoric may shape public justification, but it does not itself expand legal authority for lethal force | 8 CFR 287.8(a)(2) https://www.law.cornell.edu/cfr/text/8/287.8 ; https://www.cbsnews.com/minnesota/news/what-is-domestic-terrorism-renee-good-ice/ ; https://www.foxnews.com/politics/noem-says-minneapolis-suspect-committed-domestic-terrorism-accuses-walz-frey-inciting-violence ; https://www.wired.com/story/the-instant-smear-campaign-against-border-patrol-shooting-victim-alex-pretti/ ; https://reason.com/2026/01/23/ice-tells-legal-observer-we-have-a-nice-little-database-and-now-youre-considered-a-domestic-terrorist/ ; https://reason.com/2025/12/26/justice-department-says-filming-immigration-raids-is-domestic-terrorism/ | x (lethal-force claim), ok (labeling pattern) |
@@ -143,7 +143,7 @@ The largest weakness is **overgeneralization**: some bullets collapse (a) narrow
 | Vox podcast: Ellison interview[^S31] | Interpretive/political context; alleges federal stonewalling and victim-blaming rhetoric | Context |
 | Reason: legal observer “domestic terrorist”[^S32] | Reports video where ICE officer tells a legal observer they’re considered a “domestic terrorist”; includes DHS denial of such a database | Supports GOV-2026-042 |
 | The New Republic: “We’re all domestic terrorists now”[^S33] | Opinion using Noem quote and broader framing | Context; supports “labeling” pattern narrative |
-| Reason: DOJ says filming raids is “domestic terrorism”[^S34] | Reports DOJ/DHS framing and ramifications for filming/recording raids | Supports GOV-2026-042 |
+| Reason: DOJ says filming raids is “domestic terrorism”[^S34] | Reports DOJ/DHS framing and ramifications for filming/recording raids; article includes a correction removing reference to a DOJ memo that did not describe “merely filming” as domestic terrorism | Weaker support for “filming alone” framing; still relevant to GOV-2026-042 (labeling/retaliation rhetoric) |
 | Newsweek: Noem called Good “domestic terrorism”[^S35] | Reports Noem describing Good shooting as domestic terrorism; includes video description | Supports GOV-2026-042 (Good) |
 | CBS Minnesota: “label is premature”[^S36] | Quotes Noem domestic-terrorism label; provides definitions and expert caution | Supports GOV-2026-042 (labeling occurred) while cautioning against premature application |
 
@@ -160,6 +160,18 @@ The largest weakness is **overgeneralization**: some bullets collapse (a) narrow
 | Brennan Center (analysis/opinion)[^S43] | Addresses legality of incarcerating U.S. citizens abroad; not directly probative of “return after wrongful removal” | Context only |
 | Factually.co (fact-check)[^S44] | Not accessible in this environment (Vercel checkpoint / 429) | Not used |
 | OHCHR press release (provided)[^S45] | Not accessible in this environment (Cloudflare/JS challenge) | Not used (AP quote about U.N. investigators used instead) |
+
+### Supplementary Source Review (Transcript Reviews + Primary Docs; Pass 4)
+
+| Source | Notes (supports/disclaims) | Claim impact |
+|---|---|---|
+| GAO-21-487 (citizenship investigations)[^S46] | GAO reports ICE/CBP took enforcement actions against “potential U.S. citizens” (FY2015–Q2 FY2020) and that ICE issued (and often canceled) detainers for “potential U.S. citizens,” supporting that mistaken enforcement against citizens/noncitizens can occur at non-trivial scale | Supports GOV-2026-036; informs GOV-2026-034 nuance (citizens can still be affected in practice) |
+| *Kidd v. Mayorkas* order (C.D. Cal. 2024)[^S47] | Federal district court order states administrative warrants (I-200/I-205) do not authorize entry into a residence/curtilage without consent/judicial warrant, reinforcing that GOV-2026-033 is a contested *asserted authority* rather than settled lawful power | Supports contestation of GOV-2026-033 lawfulness (position vs legality distinction) |
+| Federal Register: alien registration evidence (90 FR 11793; 2025-03944)[^S48] | DHS Federal Register notice explicitly summarizes 8 U.S.C. § 1304(e) as requiring registered noncitizens (18+) to carry registration documents “at all times” and describes penalties as including fines up to $5,000 (via 18 U.S.C. § 3571) and/or up to 30 days | Supports GOV-2026-034 (penalty nuance) |
+| Mobile Fortify PTA (Version: Feb 2025)[^S49] | DHS privacy document says ICE does not provide opt-out/consent for biometric/photo collection; retains all new photographs/fingerprints for 15 years in ATS (including U.S. citizens/LPRs); and notes agents do not know citizenship at initial encounter | Strengthens GOV-2026-035; supports GOV-2026-036 (citizen exposure via misidentification/unknown status) |
+| AP: expand detention without bond hearing (July 2025 Lyons directive)[^S50] | AP reports ICE leadership directed broader use of mandatory detention without immigration-judge bond hearings for many people in removal proceedings, tightening the practical due-process environment even where formal hearings remain | Informs GOV-2026-037/038 (practical ability to contest cases from detention) |
+| ACLU press release: retaliation against recording[^S51] | ACLU alleges pattern of retaliation/harassment against people recording immigration agents; advocacy source but useful as a pointer and for documenting claims being made publicly | Supports GOV-2026-042 (observation/recording conflict) |
+| The Marshall Project: Renee Good shooting coverage[^S52] | Credible reporting on the Good incident and post-incident messaging dynamics | Context for Minnesota incidents; supports GOV-2026-042 pattern framing |
 
 ### Disconfirming Evidence Search
 
@@ -184,7 +196,7 @@ The largest weakness is **overgeneralization**: some bullets collapse (a) narrow
 | “Totalitarianism” is the correct frame for a mix of contested memos, statutory authorities, and incidents | (overall) | N | ? |
 
 ### Evidence Assessment
-- **Stronger support**: statutory “carry papers” requirement for noncitizens (8 U.S.C. § 1304(e)); credible reporting on the internal memo asserting administrative-warrant home entry (with contemporaneous judicial pushback in at least one case); documented detention of very young children during operations; repeated use of “domestic terrorism”/“terrorist” labels by senior officials and DHS messaging after incidents.
+- **Stronger support**: statutory “carry papers” requirement for noncitizens (8 U.S.C. § 1304(e)) and DHS’s own Federal Register summary of penalties; credible reporting on the internal memo asserting administrative-warrant home entry (with contemporaneous judicial pushback in at least one case); DHS privacy documentation showing field biometric/photo collection without opt-out and long retention (Mobile Fortify PTA); GAO documentation that enforcement actions and detainers have affected “potential U.S. citizens”; documented detention of very young children during operations; repeated use of “domestic terrorism”/“terrorist” labels by senior officials and DHS messaging after incidents.
 - **Weaker support / overstatement**: “indefinite detention with no lawyer” as a general rule; “no day in court” as a general rule; and “shoot you because you are a terrorist” as a policy-like permission (deadly force remains legally constrained to imminent threat).
 
 ### Credence Assessment
@@ -208,17 +220,18 @@ The post is best read as a **risk framing** rather than a literal legal cheat-sh
 - GOV-2026-033 with primary memo text (if/when publicly released) and any court injunctions or DHS OGC follow-up.
 - GOV-2026-039 with the underlying memo/court filings and State Department “assurances” procedures.
 - Minnesota incidents (Good/Pretti/citizen detention/child detention) with official investigations and any criminal/civil case outcomes.
+- GOV-2026-035 with Mobile Fortify PIA/SORN materials (as referenced in the PTA) and any congressional oversight correspondence.
 
 ### Claim Summary
 
 | ID | Type | Domain | Evidence | Credence | Claim |
 |----|------|--------|----------|----------:|-------|
 | GOV-2026-033 | [F] | GOV | E4 | 0.90 | ICE has asserted authority to forcibly enter homes without a judge-signed warrant (administrative-warrant theory) |
-| GOV-2026-034 | [F] | GOV | E2 | 0.95 | Federal law requires noncitizens (18+) to carry registration documents at all times |
-| GOV-2026-035 | [H] | GOV | E4 | 0.55 | ICE may disregard paper documents and rely primarily on biometrics (“scanner”) during encounters |
-| GOV-2026-036 | [H] | GOV | E4 | 0.65 | ICE can detain people broadly across contexts, including children, and errors can result in detention of citizens |
+| GOV-2026-034 | [F] | GOV | E2 | 0.98 | Federal law requires noncitizens (18+) to carry registration documents at all times |
+| GOV-2026-035 | [H] | GOV | E4 | 0.75 | ICE may disregard paper documents and rely primarily on biometrics (“scanner”) during encounters |
+| GOV-2026-036 | [H] | GOV | E4 | 0.80 | ICE can detain people broadly across contexts, including children, and errors can result in detention of citizens |
 | GOV-2026-037 | [H] | GOV | E6 | 0.20 | ICE can detain people indefinitely with no access to a lawyer |
-| GOV-2026-038 | [H] | GOV | E5 | 0.45 | People targeted by ICE generally have no meaningful “day in court” |
+| GOV-2026-038 | [H] | GOV | E4 | 0.55 | People targeted by ICE generally have no meaningful “day in court” |
 | GOV-2026-039 | [F] | GOV | E2 | 0.85 | ICE can deport some people to third countries on short notice, potentially exposing them to persecution or harsh detention conditions |
 | GOV-2026-040 | [H] | GOV | E4 | 0.55 | If ICE makes a serious mistake, it generally cannot or will not bring the person back |
 | GOV-2026-041 | [H] | GOV | E6 | 0.15 | ICE can shoot people for “interference,” justified by labeling them “terrorists” |
@@ -240,21 +253,21 @@ claims:
     type: "[F]"
     domain: "GOV"
     evidence_level: "E2"
-    credence: 0.95
+    credence: 0.98
     source_ids: ["bluebadger2600-2026-ice-positions"]
   - id: "GOV-2026-035"
     text: "In some encounters, ICE agents may disregard paper documents and instead rely primarily on biometric identity checks (fingerprint/face ID) to determine identity/status."
     type: "[H]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.55
+    credence: 0.75
     source_ids: ["bluebadger2600-2026-ice-positions"]
   - id: "GOV-2026-036"
     text: "ICE can detain people broadly across contexts, including children, and errors can result in detention of U.S. citizens."
     type: "[H]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.65
+    credence: 0.80
     source_ids: ["bluebadger2600-2026-ice-positions"]
   - id: "GOV-2026-037"
     text: "ICE can detain people indefinitely with no access to a lawyer."
@@ -267,8 +280,8 @@ claims:
     text: "People targeted by ICE generally have no meaningful right to a day in court."
     type: "[H]"
     domain: "GOV"
-    evidence_level: "E5"
-    credence: 0.45
+    evidence_level: "E4"
+    credence: 0.55
     source_ids: ["bluebadger2600-2026-ice-positions"]
   - id: "GOV-2026-039"
     text: "ICE can deport some people to third countries (not their country of origin), potentially on short notice and with limited procedural safeguards."
@@ -313,12 +326,14 @@ claims:
 | 1 | 2026-01-25 06:22 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + sourced verification (law, memos, Minnesota incident… |
 | 2 | 2026-01-25 08:36 | codex | gpt-5.2 | ? | ? | ? | Pass 2: incorporated user-provided reporting list; updated credences; added GOV… |
 | 3 | 2026-01-25 18:12 | codex | gpt-5.2 | ? | ? | ? | Pass 3: added third-country removal/return reporting (AP, SCOTUS, filings); updated GOV-2026-039/040 credences |
+| 4 | 2026-01-25 21:55 | codex | gpt-5.2 | ? | ? | ? | Pass 4: integrated transcript review; added primary docs (GAO, Mobile Fortify PTA, Kidd order, Federal Register); updated GOV-2026-034/035/036/038 credences; noted correction on filming-raid reporting |
 
 ### Revision Notes
 
 **Pass 1**: Initial 3-stage analysis + sourced verification (law, memos, Minnesota incidents).
 **Pass 2**: Incorporated user-provided reporting list; updated claim credences; added GOV-2026-042 (domestic-terrorism/terrorist labeling pattern); expanded Minnesota incident coverage and warrantless entry discussion.
 **Pass 3**: Added reporting and court materials on third-country removals and contested “return after error”; updated GOV-2026-039 and GOV-2026-040 evidence/credence; documented access limits for some provided links.
+**Pass 4**: Integrated transcript feedback; added primary documents for penalties, biometrics, and citizen-misidentification; updated GOV-2026-034/035/036/038 credences; clarified correction/limits for “filming raids” framing.
 
 [^S01]: https://www.usatoday.com/story/news/nation/2026/01/20/immigration-agents-minnesota-police-officer/88268058007/
 [^S02]: https://www.democracydocket.com/news-alerts/attorney-general-bondi-minnesota-voter-rolls-border-patrol-fatal-shooting/
@@ -365,3 +380,10 @@ claims:
 [^S43]: https://www.brennancenter.org/our-work/analysis-opinion/el-salvadors-offer-house-us-prisoners-illegal
 [^S44]: https://factually.co/fact-checks/justice/has-ice-deported-us-citizens-874fd2 (not accessible in this environment; Vercel checkpoint / 429)
 [^S45]: https://www.ohchr.org/en/press-releases/2025/04/un-experts-alarmed-illegal-deportations-united-states-el-salvador (not accessible in this environment; Cloudflare/JS challenge)
+[^S46]: https://www.gao.gov/assets/gao-21-487.pdf (GAO)
+[^S47]: https://www.aclusocal.org/app/uploads/drupal/sites/default/files/kidd_msj_order.pdf
+[^S48]: https://www.govinfo.gov/content/pkg/FR-2025-03-12/pdf/2025-03944.pdf
+[^S49]: https://s3.documentcloud.org/documents/26209262/mobile-fortify-pta.pdf
+[^S50]: https://apnews.com/article/immigration-detention-ice-trump-e1c2322c3f88c1f7d7e83c8c42109cb6
+[^S51]: https://www.aclu.org/press-releases/aclu-demands-information-from-dhs-about-alarming-pattern-of-retaliation-against-those-recording-immigration-agents
+[^S52]: https://www.themarshallproject.org/2026/01/07/ice-minneapolis-shooting-renee-good
