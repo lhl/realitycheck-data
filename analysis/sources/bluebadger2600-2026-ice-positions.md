@@ -40,8 +40,8 @@ The concluding question (“How is this not a recipe for totalitarianism?”) tr
 | 4 | ICE can detain people broadly across contexts, including children, and errors can result in detention of citizens | GOV-2026-036 | [H] | GOV | E4 | 0.65 | ? | Evidence that federal immigration enforcement does not detain minors in practice and that citizen misidentification/detention is vanishingly rare in comparable operations |
 | 5 | ICE can detain people indefinitely with no access to a lawyer | GOV-2026-037 | [H] | GOV | E6 | 0.20 | ? | Evidence that immigration detainees have guaranteed government-appointed counsel and that indefinite detention is legally permitted without meaningful review |
 | 6 | People targeted by ICE generally have no meaningful “day in court” / due-process hearing | GOV-2026-038 | [H] | GOV | E5 | 0.45 | ? | Evidence that expedited processes are rare and that most removals involve meaningful adversarial hearings with robust judicial review |
-| 7 | ICE can deport people to “third countries” on short notice, potentially exposing them to persecution or harsh detention conditions | GOV-2026-039 | [F] | GOV | E4 | 0.70 | ? | Evidence that ICE cannot remove people to third countries without substantial notice/procedures, and that recent memo guidance is inaccurate or withdrawn |
-| 8 | If ICE makes a serious mistake (wrongful detention/deportation), it generally cannot or will not bring the person back | GOV-2026-040 | [H] | GOV | E5 | 0.40 | ? | Evidence that ICE routinely facilitates return after wrongful removals beyond narrow court-wins; or binding policy compelling return broadly |
+| 7 | ICE can deport people to “third countries” on short notice, potentially exposing them to persecution or harsh detention conditions | GOV-2026-039 | [F] | GOV | E2 | 0.85 | ? | Evidence that third-country removals are tightly constrained in practice with robust notice/process requirements and are not occurring as described in recent litigation/reporting |
+| 8 | If ICE makes a serious mistake (wrongful detention/deportation), it generally cannot or will not bring the person back | GOV-2026-040 | [H] | GOV | E4 | 0.55 | ? | Evidence that ICE routinely and promptly facilitates return after wrongful removals across categories (including third-country/offshored-detention contexts), beyond narrow policy/court-ordered cases |
 | 9 | If you interfere with ICE actions, ICE can shoot you and justify it by labeling you a “terrorist” | GOV-2026-041 | [H] | GOV | E6 | 0.15 | ? | Evidence of an ICE policy authorizing lethal force for mere “interference,” absent imminent threat, and/or reliable cases where “terrorist” labeling is used to justify otherwise unlawful shootings |
 | 10 | DHS/ICE leadership and allied messaging have repeatedly labeled people involved in immigration-enforcement incidents and interference/observation (e.g., filming) as “domestic terrorists”/“terrorists,” often immediately after events | GOV-2026-042 | [F] | GOV | E4 | 0.75 | ? | Evidence that “domestic terrorist” labeling is rare and not used in connection with immigration-enforcement incidents or documented interference/observation |
 
@@ -87,8 +87,8 @@ The largest weakness is **overgeneralization**: some bullets collapse (a) narrow
 | ICE can detain people broadly, regardless of age/status | **Y** | “detain you anywhere… no matter… age… status” | INA grants immigration officers authority to interrogate people believed to be aliens and to arrest certain noncitizens without a warrant (with conditions), and DHS regulations allow questioning in public-access areas without a warrant; but the claim is overstated as a universal rule (citizens cannot lawfully be detained *as aliens*, though errors and alleged misconduct occur). Recent Minnesota reporting also describes citizen stops and detention of very young children during operations | 8 U.S.C. § 1357 https://www.law.cornell.edu/uscode/text/8/1357 ; 8 CFR 287.8(f)(4) https://www.law.cornell.edu/cfr/text/8/287.8 ; https://www.usatoday.com/story/news/nation/2026/01/20/immigration-agents-minnesota-police-officer/88268058007/ ; https://www.theguardian.com/us-news/2026/jan/23/us-immigration-two-year-old-minnesota-girl ; incidents discussed below | ? |
 | ICE can detain people indefinitely with no lawyer access | **Y** | “indefinitely… no access to a lawyer” | People in removal proceedings have a statutory privilege to counsel (at no government expense). Indefinite post-removal-order detention is limited by Supreme Court interpretation (Zadvydas), though prolonged detention without periodic bond hearings can occur under statutes (Jennings) and access to counsel can be impeded in practice | 8 U.S.C. § 1362 https://www.law.cornell.edu/uscode/text/8/1362 ; Zadvydas v. Davis (2001) https://tile.loc.gov/storage-services/service/ll/usrep/usrep533/usrep533678/usrep533678.pdf ; Jennings v. Rodriguez (2018) https://www.law.cornell.edu/supremecourt/text/15-1204 | x (as stated), ok (access barriers exist) |
 | People have basically no right to a “day in court” | N | “basically no right… day in court” | Many people in removal proceedings receive immigration court hearings, but expedited removal is designed to bypass full hearings for certain categories; Supreme Court upheld limits on habeas review for expedited removal (Thuraissigiam) | 8 U.S.C. § 1225 (expedited removal) https://www.law.cornell.edu/uscode/text/8/1225 ; DHS v. Thuraissigiam (2020) https://www.law.cornell.edu/supremecourt/text/19-161 | ? (depends on category) |
-| ICE can “send you to a third world prison” | N | “send you to a third world prison” | Reporting describes ICE guidance for “third-country” deportations (removal to countries other than a person’s origin), potentially with very short notice; this is deportation, not a criminal “prison sentence,” but can expose people to severe conditions (including foreign detention) | https://www.nbcnews.com/news/us-news/ice-may-deport-migrants-third-countries-assurances-wont-tortured-memo-rcna218990 | ? (policy exists; “prison” framing overstated) |
-| ICE can’t bring you back if it made a mistake | N | “can’t bring you back” | ICE has a written policy (2012) to facilitate return for certain people who were removed while petitions for review were pending and later prevail, and in some other remand/relief situations; return is not guaranteed across all wrongful-removal scenarios | ICE Directive 11061.1 (2012) https://www.ice.gov/doclib/foia/dro_policy_memos/11061.1_current_policy_facilitating_return.pdf | x (as absolute), ? (practical barriers remain) |
+| ICE can “send you to a third world prison” | N | “send you to a third world prison” | Reporting and litigation describe “third-country” removals (removal to countries other than a person’s origin), sometimes with very short notice; while not a criminal “prison sentence,” removals can expose people to severe conditions (including foreign custody) | https://www.nbcnews.com/news/us-news/ice-may-deport-migrants-third-countries-assurances-wont-tortured-memo-rcna218990 ; https://www.supremecourt.gov/opinions/24pdf/24a1153_l5gm.pdf ; https://apnews.com/article/trump-migrants-el-salvador-prison-3c46db296c219c7b3a701474eaea5184 | ok (third-country removals reported), ? (“prison” framing is rhetorical) |
+| ICE can’t bring you back if it made a mistake | N | “can’t bring you back” | ICE has a written policy (2012) to facilitate return in some narrow categories, so “can’t” is not categorically true. However, recent reporting and litigation around third-country removals/offshored detention describe the administration arguing it is powerless to return people once moved abroad and resisting return even in acknowledged-error cases—though at least one such case (Abrego Garcia) ultimately resulted in return to the U.S. | ICE Directive 11061.1 (2012) https://www.ice.gov/doclib/foia/dro_policy_memos/11061.1_current_policy_facilitating_return.pdf ; https://apnews.com/article/trump-migrants-el-salvador-prison-3c46db296c219c7b3a701474eaea5184 ; https://www.supremecourt.gov/opinions/24pdf/24a1153_l5gm.pdf | x (as absolute), ? (return not guaranteed; often contested) |
 | ICE can shoot you for “interference” because you are a “terrorist” | N | “shoot… because… terrorist” | DHS/ICE deadly-force authority is limited to situations of “imminent danger of death or serious physical injury,” not mere interference. However, there is substantial reporting that senior officials and DHS/ICE messaging have used “domestic terrorism”/“terrorist” labels quickly after shootings and in response to protest/observation activity. That rhetoric may shape public justification, but it does not itself expand legal authority for lethal force | 8 CFR 287.8(a)(2) https://www.law.cornell.edu/cfr/text/8/287.8 ; https://www.cbsnews.com/minnesota/news/what-is-domestic-terrorism-renee-good-ice/ ; https://www.foxnews.com/politics/noem-says-minneapolis-suspect-committed-domestic-terrorism-accuses-walz-frey-inciting-violence ; https://www.wired.com/story/the-instant-smear-campaign-against-border-patrol-shooting-victim-alex-pretti/ ; https://reason.com/2026/01/23/ice-tells-legal-observer-we-have-a-nice-little-database-and-now-youre-considered-a-domestic-terrorist/ ; https://reason.com/2025/12/26/justice-department-says-filming-immigration-raids-is-domestic-terrorism/ | x (lethal-force claim), ok (labeling pattern) |
 | DHS/ICE messaging uses “domestic terrorism”/“terrorist” labels in connection with immigration enforcement incidents and interference/observation | N | implied by “you are a terrorist” framing | Multiple outlets report top DHS officials describing the Renee Good and Alex Pretti incidents in “domestic terrorism” terms and/or labeling the victim/suspect a “terrorist,” and a separate incident where an ICE officer told a legal observer they were considered a “domestic terrorist” | https://www.cbsnews.com/minnesota/news/what-is-domestic-terrorism-renee-good-ice/ ; https://www.foxnews.com/politics/noem-says-minneapolis-suspect-committed-domestic-terrorism-accuses-walz-frey-inciting-violence ; https://www.wired.com/story/the-instant-smear-campaign-against-border-patrol-shooting-victim-alex-pretti/ ; https://reason.com/2026/01/23/ice-tells-legal-observer-we-have-a-nice-little-database-and-now-youre-considered-a-domestic-terrorist/ | ok |
 
@@ -146,6 +146,20 @@ The largest weakness is **overgeneralization**: some bullets collapse (a) narrow
 | Reason: DOJ says filming raids is “domestic terrorism”[^S34] | Reports DOJ/DHS framing and ramifications for filming/recording raids | Supports GOV-2026-042 |
 | Newsweek: Noem called Good “domestic terrorism”[^S35] | Reports Noem describing Good shooting as domestic terrorism; includes video description | Supports GOV-2026-042 (Good) |
 | CBS Minnesota: “label is premature”[^S36] | Quotes Noem domestic-terrorism label; provides definitions and expert caution | Supports GOV-2026-042 (labeling occurred) while cautioning against premature application |
+
+### Supplementary Source Review (Return / Third-Country Removals; Pass 3)
+
+| Source | Notes (supports/disclaims) | Claim impact |
+|---|---|---|
+| AP: CECOT custody + “powerless to return” argument[^S37] | Reports Salvadoran officials told U.N. investigators the U.S. retains control of deported men at CECOT; notes the administration argued it is powerless to return them; describes Abrego Garcia case where the administration initially resisted but later returned him | Supports GOV-2026-039 and GOV-2026-040; informs GOV-2026-038 |
+| SCOTUS emergency order/opinion (third-country removals)[^S38] | Describes (incl. in dissent) class-member removals to Libya/El Salvador/South Sudan with minimal notice; notes district court sometimes ordered “return,” and in at least one instance the government eventually facilitated it; also shows courts sometimes allowed process overseas rather than ordering return | Strong support for GOV-2026-039; informs GOV-2026-040 and GOV-2026-038 |
+| AP: South Sudan flight + judge-ordered interviews[^S39] | Reports dispute over third-country removal procedures and a judge ordering new interviews either back in the U.S. or abroad | Supports GOV-2026-039; informs GOV-2026-040 (return vs overseas process) |
+| Fox News: Djibouti “shipping container” custody (court filing)[^S40] | Summarizes ICE filing describing conditions and judge’s position that the government is not compelled to create the “stranded” situation | Context for GOV-2026-039 and GOV-2026-040 (government choices affect “can’t bring you back” claims) |
+| American Immigration Council (advocacy synthesis)[^S41] | Claims widespread due-process failures in March 15 El Salvador removals; highlights acknowledged “administrative error” in Abrego Garcia case (with many citations) | Context; supports concern behind GOV-2026-039/040 while treated as advocacy |
+| Refugee Rights / IRAP (advocacy synthesis)[^S42] | Synthesizes third-country removals and cites court opinions and reported internal guidance; useful pointer to primary sources but treated as advocacy | Context; points to evidence relevant to GOV-2026-039 |
+| Brennan Center (analysis/opinion)[^S43] | Addresses legality of incarcerating U.S. citizens abroad; not directly probative of “return after wrongful removal” | Context only |
+| Factually.co (fact-check)[^S44] | Not accessible in this environment (Vercel checkpoint / 429) | Not used |
+| OHCHR press release (provided)[^S45] | Not accessible in this environment (Cloudflare/JS challenge) | Not used (AP quote about U.N. investigators used instead) |
 
 ### Disconfirming Evidence Search
 
@@ -205,8 +219,8 @@ The post is best read as a **risk framing** rather than a literal legal cheat-sh
 | GOV-2026-036 | [H] | GOV | E4 | 0.65 | ICE can detain people broadly across contexts, including children, and errors can result in detention of citizens |
 | GOV-2026-037 | [H] | GOV | E6 | 0.20 | ICE can detain people indefinitely with no access to a lawyer |
 | GOV-2026-038 | [H] | GOV | E5 | 0.45 | People targeted by ICE generally have no meaningful “day in court” |
-| GOV-2026-039 | [F] | GOV | E4 | 0.70 | ICE can deport some people to third countries on short notice, potentially exposing them to persecution or harsh detention conditions |
-| GOV-2026-040 | [H] | GOV | E5 | 0.40 | If ICE makes a serious mistake, it generally cannot or will not bring the person back |
+| GOV-2026-039 | [F] | GOV | E2 | 0.85 | ICE can deport some people to third countries on short notice, potentially exposing them to persecution or harsh detention conditions |
+| GOV-2026-040 | [H] | GOV | E4 | 0.55 | If ICE makes a serious mistake, it generally cannot or will not bring the person back |
 | GOV-2026-041 | [H] | GOV | E6 | 0.15 | ICE can shoot people for “interference,” justified by labeling them “terrorists” |
 | GOV-2026-042 | [F] | GOV | E4 | 0.75 | DHS/ICE leadership and allied messaging have repeatedly labeled people involved in immigration-enforcement incidents and interference/observation as “domestic terrorists”/“terrorists,” often immediately after events |
 
@@ -260,15 +274,15 @@ claims:
     text: "ICE can deport some people to third countries (not their country of origin), potentially on short notice and with limited procedural safeguards."
     type: "[F]"
     domain: "GOV"
-    evidence_level: "E4"
-    credence: 0.70
+    evidence_level: "E2"
+    credence: 0.85
     source_ids: ["bluebadger2600-2026-ice-positions"]
   - id: "GOV-2026-040"
     text: "If ICE makes a serious mistake (e.g., wrongful removal), it generally cannot or will not bring the person back."
     type: "[H]"
     domain: "GOV"
-    evidence_level: "E5"
-    credence: 0.40
+    evidence_level: "E4"
+    credence: 0.55
     source_ids: ["bluebadger2600-2026-ice-positions"]
   - id: "GOV-2026-041"
     text: "If someone interferes with ICE activity, ICE can use lethal force and justify it by labeling the person a terrorist."
@@ -298,11 +312,13 @@ claims:
 |------|------|------|-------|----------|--------|------|-------|
 | 1 | 2026-01-25 06:22 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + sourced verification (law, memos, Minnesota incident… |
 | 2 | 2026-01-25 08:36 | codex | gpt-5.2 | ? | ? | ? | Pass 2: incorporated user-provided reporting list; updated credences; added GOV… |
+| 3 | 2026-01-25 18:12 | codex | gpt-5.2 | ? | ? | ? | Pass 3: added third-country removal/return reporting (AP, SCOTUS, filings); updated GOV-2026-039/040 credences |
 
 ### Revision Notes
 
 **Pass 1**: Initial 3-stage analysis + sourced verification (law, memos, Minnesota incidents).
 **Pass 2**: Incorporated user-provided reporting list; updated claim credences; added GOV-2026-042 (domestic-terrorism/terrorist labeling pattern); expanded Minnesota incident coverage and warrantless entry discussion.
+**Pass 3**: Added reporting and court materials on third-country removals and contested “return after error”; updated GOV-2026-039 and GOV-2026-040 evidence/credence; documented access limits for some provided links.
 
 [^S01]: https://www.usatoday.com/story/news/nation/2026/01/20/immigration-agents-minnesota-police-officer/88268058007/
 [^S02]: https://www.democracydocket.com/news-alerts/attorney-general-bondi-minnesota-voter-rolls-border-patrol-fatal-shooting/
@@ -340,3 +356,12 @@ claims:
 [^S34]: https://reason.com/2025/12/26/justice-department-says-filming-immigration-raids-is-domestic-terrorism/
 [^S35]: https://www.newsweek.com/noem-ice-shooting-domestic-terrorism-minneapolis-11324489
 [^S36]: https://www.cbsnews.com/minnesota/news/what-is-domestic-terrorism-renee-good-ice/
+[^S37]: https://apnews.com/article/trump-migrants-el-salvador-prison-3c46db296c219c7b3a701474eaea5184
+[^S38]: https://www.supremecourt.gov/opinions/24pdf/24a1153_l5gm.pdf
+[^S39]: https://apnews.com/article/deportees-south-sudan-ice-immigration-identities-eddd2d1a172775ec7d9403984ffb41e2
+[^S40]: https://www.foxnews.com/politics/south-sudan-deportations-have-placed-migrants-ice-officials-danger-new-court-filing
+[^S41]: https://www.americanimmigrationcouncil.org/blog/men-deported-el-salvador-stories-investigation/ (accessed via text extraction proxy due to bot protection)
+[^S42]: https://refugeerights.org/news-resources/trump-administrations-third-country-removals-put-migrants-in-harms-way (accessed via text extraction proxy due to 403)
+[^S43]: https://www.brennancenter.org/our-work/analysis-opinion/el-salvadors-offer-house-us-prisoners-illegal
+[^S44]: https://factually.co/fact-checks/justice/has-ice-deported-us-citizens-874fd2 (not accessible in this environment; Vercel checkpoint / 429)
+[^S45]: https://www.ohchr.org/en/press-releases/2025/04/un-experts-alarmed-illegal-deportations-united-states-el-salvador (not accessible in this environment; Cloudflare/JS challenge)

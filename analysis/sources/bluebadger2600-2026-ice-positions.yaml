@@ -146,8 +146,8 @@ claims:
       with limited procedural safeguards.
     type: "[F]"
     domain: "GOV"
-    evidence_level: "E4"
-    credence: 0.70
+    evidence_level: "E2"
+    credence: 0.85
     source_ids: ["bluebadger2600-2026-ice-positions"]
     operationalization: >-
       Obtain primary memo/court filings describing third-country removal procedures; track notice times,
@@ -162,12 +162,12 @@ claims:
       If ICE makes a serious mistake (e.g., wrongful removal), it generally cannot or will not bring the person back.
     type: "[H]"
     domain: "GOV"
-    evidence_level: "E5"
-    credence: 0.40
+    evidence_level: "E4"
+    credence: 0.55
     source_ids: ["bluebadger2600-2026-ice-positions"]
     operationalization: >-
-      Review ICE return-facilitation policy scope; measure frequency and speed of returns after wrongful removal or
-      successful litigation, including cases without Supreme Court/circuit court wins.
+      Review ICE return-facilitation policy scope and litigation outcomes; measure frequency and speed of returns
+      after wrongful removal, including third-country/offshored-detention contexts and cases without appellate wins.
     assumptions:
       - The “mistake” scenario includes wrongful removals and mistaken detentions leading to removal.
     falsifiers:
