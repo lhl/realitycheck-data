@@ -35,6 +35,7 @@ sources:
       - GOV-2026-039
       - GOV-2026-040
       - GOV-2026-041
+      - GOV-2026-042
 
 claims:
   - id: "GOV-2026-033"
@@ -44,7 +45,7 @@ claims:
     type: "[F]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.80
+    credence: 0.90
     source_ids: ["bluebadger2600-2026-ice-positions"]
     operationalization: >-
       Obtain the primary memo/policy text and any court rulings; determine whether ICE authorizes forced entry
@@ -79,7 +80,7 @@ claims:
     type: "[H]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.60
+    credence: 0.55
     source_ids: ["bluebadger2600-2026-ice-positions"]
     operationalization: >-
       Review ICE/ERO field procedures and after-action reports; measure how often documentary proof is accepted
@@ -97,7 +98,7 @@ claims:
     type: "[H]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.55
+    credence: 0.65
     source_ids: ["bluebadger2600-2026-ice-positions"]
     operationalization: >-
       Measure detention incidence by age and status during comparable enforcement surges; quantify rates of
@@ -178,7 +179,7 @@ claims:
     type: "[H]"
     domain: "GOV"
     evidence_level: "E6"
-    credence: 0.10
+    credence: 0.15
     source_ids: ["bluebadger2600-2026-ice-positions"]
     operationalization: >-
       Compare ICE/CBP use-of-force policies to incidents; test whether “terrorism” labeling is used as a legal
@@ -189,3 +190,19 @@ claims:
       - Primary policies and incident investigations show lethal force is constrained to imminent-threat situations and
         “terrorism” labeling does not substitute for legal justification.
 
+  - id: "GOV-2026-042"
+    text: >-
+      DHS/ICE leadership and allied messaging have repeatedly labeled people involved in immigration-enforcement
+      incidents and interference/observation as “domestic terrorists”/“terrorists,” often immediately after events.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["bluebadger2600-2026-ice-positions"]
+    operationalization: >-
+      Compile official DHS/ICE statements and reported quotes over time; measure how often “domestic terrorism”
+      framing is applied immediately after use-of-force incidents and toward filming/observation/obstruction activity.
+    assumptions:
+      - Reporting accurately quotes officials and DHS/ICE messaging.
+    falsifiers:
+      - A systematic review of statements shows “domestic terrorism” framing is rare and not used in comparable incidents.

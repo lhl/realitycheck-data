@@ -6,7 +6,7 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 268 |
+| **Claims** | 269 |
 | **Sources** | 73 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 19 |
@@ -87,7 +87,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TECH | Technology & AI | 104 |
 | LABOR | Labor & Employment | 17 |
 | ECON | Economics & Markets | 29 |
-| GOV | Governance & Policy | 41 |
+| GOV | Governance & Policy | 42 |
 | SOC | Social Dynamics | 5 |
 | TRANS | Transition Dynamics | 24 |
 | RESOURCE | Resource Constraints | 11 |

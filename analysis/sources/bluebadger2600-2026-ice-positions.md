@@ -34,15 +34,16 @@ The concluding question (“How is this not a recipe for totalitarianism?”) tr
 
 | # | Claim | Claim ID | Type | Domain | Evidence | Credence | Verified? | Falsifiable By |
 |---|-------|----------|------|--------|----------|----------:|-----------|----------------|
-| 1 | ICE can forcibly enter a residence to make an immigration arrest without a judge-signed warrant (e.g., relying only on an administrative warrant) | GOV-2026-033 | [F] | GOV | E4 | 0.80 | ? | Publication of the referenced ICE guidance showing it does not authorize forced entry without judicial warrant; or credible reporting that the memo was forged/mischaracterized |
+| 1 | ICE can forcibly enter a residence to make an immigration arrest without a judge-signed warrant (e.g., relying only on an administrative warrant) | GOV-2026-033 | [F] | GOV | E4 | 0.90 | ? | Publication of the referenced ICE guidance showing it does not authorize forced entry without judicial warrant; or credible reporting that the memo was forged/mischaracterized |
 | 2 | Federal law requires noncitizens (18+) to carry their registration documents (“papers”) at all times | GOV-2026-034 | [F] | GOV | E2 | 0.95 | 8 U.S.C. § 1304(e) | Statutory change or authoritative legal interpretation that this does not impose an “at all times” possession requirement |
-| 3 | In encounters, ICE can disregard paper documents and rely primarily on biometrics (“scanner”) to determine identity/status | GOV-2026-035 | [H] | GOV | E4 | 0.60 | ? | Policy/oversight evidence that ICE reliably accepts documentary proof in the field and does not use biometrics as the primary determinant |
-| 4 | ICE can detain people broadly across contexts, including children, and errors can result in detention of citizens | GOV-2026-036 | [H] | GOV | E4 | 0.55 | ? | Evidence that federal immigration enforcement does not detain minors in practice and that citizen misidentification/detention is vanishingly rare in comparable operations |
+| 3 | In encounters, ICE can disregard paper documents and rely primarily on biometrics (“scanner”) to determine identity/status | GOV-2026-035 | [H] | GOV | E4 | 0.55 | ? | Policy/oversight evidence that ICE reliably accepts documentary proof in the field and does not use biometrics as the primary determinant |
+| 4 | ICE can detain people broadly across contexts, including children, and errors can result in detention of citizens | GOV-2026-036 | [H] | GOV | E4 | 0.65 | ? | Evidence that federal immigration enforcement does not detain minors in practice and that citizen misidentification/detention is vanishingly rare in comparable operations |
 | 5 | ICE can detain people indefinitely with no access to a lawyer | GOV-2026-037 | [H] | GOV | E6 | 0.20 | ? | Evidence that immigration detainees have guaranteed government-appointed counsel and that indefinite detention is legally permitted without meaningful review |
 | 6 | People targeted by ICE generally have no meaningful “day in court” / due-process hearing | GOV-2026-038 | [H] | GOV | E5 | 0.45 | ? | Evidence that expedited processes are rare and that most removals involve meaningful adversarial hearings with robust judicial review |
 | 7 | ICE can deport people to “third countries” on short notice, potentially exposing them to persecution or harsh detention conditions | GOV-2026-039 | [F] | GOV | E4 | 0.70 | ? | Evidence that ICE cannot remove people to third countries without substantial notice/procedures, and that recent memo guidance is inaccurate or withdrawn |
 | 8 | If ICE makes a serious mistake (wrongful detention/deportation), it generally cannot or will not bring the person back | GOV-2026-040 | [H] | GOV | E5 | 0.40 | ? | Evidence that ICE routinely facilitates return after wrongful removals beyond narrow court-wins; or binding policy compelling return broadly |
-| 9 | If you interfere with ICE actions, ICE can shoot you and justify it by labeling you a “terrorist” | GOV-2026-041 | [H] | GOV | E6 | 0.10 | ? | Evidence of an ICE policy authorizing lethal force for mere “interference,” absent imminent threat, and/or reliable cases where “terrorist” labeling is used to justify otherwise unlawful shootings |
+| 9 | If you interfere with ICE actions, ICE can shoot you and justify it by labeling you a “terrorist” | GOV-2026-041 | [H] | GOV | E6 | 0.15 | ? | Evidence of an ICE policy authorizing lethal force for mere “interference,” absent imminent threat, and/or reliable cases where “terrorist” labeling is used to justify otherwise unlawful shootings |
+| 10 | DHS/ICE leadership and allied messaging have repeatedly labeled people involved in immigration-enforcement incidents and interference/observation (e.g., filming) as “domestic terrorists”/“terrorists,” often immediately after events | GOV-2026-042 | [F] | GOV | E4 | 0.75 | ? | Evidence that “domestic terrorist” labeling is rare and not used in connection with immigration-enforcement incidents or documented interference/observation |
 
 ### Argument Structure
 
@@ -80,26 +81,71 @@ The largest weakness is **overgeneralization**: some bullets collapse (a) narrow
 
 | Claim (paraphrased) | Crux? | Source Says | Actual | External Source | Status |
 |---------------------|-------|-------------|--------|-----------------|--------|
-| ICE can enter homes without a judge’s warrant | **Y** | “enter your home without a warrant” | Credible reporting describes an internal ICE memo claiming authority to forcibly enter homes using an administrative (non-judicial) warrant to arrest people with final removal orders; this is a claimed power and is legally contested | https://www.pbs.org/newshour/nation/immigration-officers-claim-sweeping-power-to-enter-homes-without-a-judges-warrant-memo-says ; https://abcnews.go.com/US/ice-memo-allows-agents-enter-homes-judicial-warrant/story?id=129436766 ; contrast: 8 CFR 287.8(f)(2) https://www.law.cornell.edu/cfr/text/8/287.8 | ok (position claimed), ? (lawfulness) |
+| ICE can enter homes without a judge’s warrant | **Y** | “enter your home without a warrant” | Credible reporting describes an internal ICE memo claiming authority to forcibly enter homes using an administrative (non-judicial) warrant to arrest people with final removal orders; separate reporting describes a federal judge’s ruling that a warrantless home entry violated the Fourth Amendment (without adjudicating the memo itself). Overall: asserted “position” is well-supported; lawfulness is contested | https://www.pbs.org/newshour/nation/immigration-officers-claim-sweeping-power-to-enter-homes-without-a-judges-warrant-memo-says ; https://www.pbs.org/newshour/nation/not-opening-the-door-to-ice-may-no-longer-stop-officers ; https://www.wired.com/story/us-judge-rules-ice-raids-require-judicial-warrants-contradicting-secret-ice-memo/ ; https://abcnews.go.com/US/ice-memo-allows-agents-enter-homes-judicial-warrant/story?id=129436766 ; contrast: 8 CFR 287.8(f)(2) https://www.law.cornell.edu/cfr/text/8/287.8 | ok (position claimed), ? (lawfulness) |
 | Noncitizens must carry “papers” at all times | N | “must carry your papers at all times” | Federal law requires “every alien, eighteen years of age and over” to “at all times carry” registration/receipt card; does not apply to U.S. citizens and does not necessarily imply street-check authority without other legal grounds | https://www.law.cornell.edu/uscode/text/8/1304 | ok (scope-limited) |
-| ICE can ignore documents and only biometrics matter | N | “ignore them… only our scanner matters” | In a Minnesota incident, AP reports a U.S. citizen said agents refused to see his ID; DHS stated he “refused to be fingerprinted or facially ID’d,” implying reliance on biometric verification rather than accepting documents in the moment | https://www.pbs.org/newshour/nation/a-u-s-citizen-says-ice-forced-open-the-door-to-his-minnesota-home-and-removed-him-in-his-underwear-after-a-warrantless-search | ok (incident), ? (general rule) |
-| ICE can detain people broadly, regardless of age/status | **Y** | “detain you anywhere… no matter… age… status” | INA grants immigration officers authority to interrogate people believed to be aliens and to arrest certain noncitizens without a warrant (with conditions), and DHS regulations allow questioning in public-access areas without a warrant; but the claim is overstated as a universal rule (citizens cannot lawfully be detained *as aliens*, though errors and alleged misconduct occur) | 8 U.S.C. § 1357 https://www.law.cornell.edu/uscode/text/8/1357 ; 8 CFR 287.8(f)(4) https://www.law.cornell.edu/cfr/text/8/287.8 ; incidents discussed below | ? |
+| ICE can ignore documents and only biometrics matter | N | “ignore them… only our scanner matters” | In a Minnesota incident, AP reports a U.S. citizen said agents refused to see his ID; DHS stated he “refused to be fingerprinted or facially ID’d,” implying reliance on biometric verification rather than accepting documents in the moment. However, other reporting describes agents *demanding paperwork* from U.S. citizens during street stops (suggesting practice is variable) | https://www.pbs.org/newshour/nation/a-u-s-citizen-says-ice-forced-open-the-door-to-his-minnesota-home-and-removed-him-in-his-underwear-after-a-warrantless-search ; https://www.usatoday.com/story/news/nation/2026/01/20/immigration-agents-minnesota-police-officer/88268058007/ | ok (incident), ? (general rule) |
+| ICE can detain people broadly, regardless of age/status | **Y** | “detain you anywhere… no matter… age… status” | INA grants immigration officers authority to interrogate people believed to be aliens and to arrest certain noncitizens without a warrant (with conditions), and DHS regulations allow questioning in public-access areas without a warrant; but the claim is overstated as a universal rule (citizens cannot lawfully be detained *as aliens*, though errors and alleged misconduct occur). Recent Minnesota reporting also describes citizen stops and detention of very young children during operations | 8 U.S.C. § 1357 https://www.law.cornell.edu/uscode/text/8/1357 ; 8 CFR 287.8(f)(4) https://www.law.cornell.edu/cfr/text/8/287.8 ; https://www.usatoday.com/story/news/nation/2026/01/20/immigration-agents-minnesota-police-officer/88268058007/ ; https://www.theguardian.com/us-news/2026/jan/23/us-immigration-two-year-old-minnesota-girl ; incidents discussed below | ? |
 | ICE can detain people indefinitely with no lawyer access | **Y** | “indefinitely… no access to a lawyer” | People in removal proceedings have a statutory privilege to counsel (at no government expense). Indefinite post-removal-order detention is limited by Supreme Court interpretation (Zadvydas), though prolonged detention without periodic bond hearings can occur under statutes (Jennings) and access to counsel can be impeded in practice | 8 U.S.C. § 1362 https://www.law.cornell.edu/uscode/text/8/1362 ; Zadvydas v. Davis (2001) https://tile.loc.gov/storage-services/service/ll/usrep/usrep533/usrep533678/usrep533678.pdf ; Jennings v. Rodriguez (2018) https://www.law.cornell.edu/supremecourt/text/15-1204 | x (as stated), ok (access barriers exist) |
 | People have basically no right to a “day in court” | N | “basically no right… day in court” | Many people in removal proceedings receive immigration court hearings, but expedited removal is designed to bypass full hearings for certain categories; Supreme Court upheld limits on habeas review for expedited removal (Thuraissigiam) | 8 U.S.C. § 1225 (expedited removal) https://www.law.cornell.edu/uscode/text/8/1225 ; DHS v. Thuraissigiam (2020) https://www.law.cornell.edu/supremecourt/text/19-161 | ? (depends on category) |
 | ICE can “send you to a third world prison” | N | “send you to a third world prison” | Reporting describes ICE guidance for “third-country” deportations (removal to countries other than a person’s origin), potentially with very short notice; this is deportation, not a criminal “prison sentence,” but can expose people to severe conditions (including foreign detention) | https://www.nbcnews.com/news/us-news/ice-may-deport-migrants-third-countries-assurances-wont-tortured-memo-rcna218990 | ? (policy exists; “prison” framing overstated) |
 | ICE can’t bring you back if it made a mistake | N | “can’t bring you back” | ICE has a written policy (2012) to facilitate return for certain people who were removed while petitions for review were pending and later prevail, and in some other remand/relief situations; return is not guaranteed across all wrongful-removal scenarios | ICE Directive 11061.1 (2012) https://www.ice.gov/doclib/foia/dro_policy_memos/11061.1_current_policy_facilitating_return.pdf | x (as absolute), ? (practical barriers remain) |
-| ICE can shoot you for “interference” because you are a “terrorist” | N | “shoot… because… terrorist” | DHS/ICE deadly-force authority is limited to situations of “imminent danger of death or serious physical injury,” not mere interference; in Minnesota reporting, DHS officials used “domestic terrorism” framing around protest/violence, but that does not make lethal force lawful absent imminent threat | 8 CFR 287.8(a)(2) https://www.law.cornell.edu/cfr/text/8/287.8 ; context: https://abcnews.go.com/US/ice-related-shooting-occurred-minnesota-governor/story?id=128984401 | x |
+| ICE can shoot you for “interference” because you are a “terrorist” | N | “shoot… because… terrorist” | DHS/ICE deadly-force authority is limited to situations of “imminent danger of death or serious physical injury,” not mere interference. However, there is substantial reporting that senior officials and DHS/ICE messaging have used “domestic terrorism”/“terrorist” labels quickly after shootings and in response to protest/observation activity. That rhetoric may shape public justification, but it does not itself expand legal authority for lethal force | 8 CFR 287.8(a)(2) https://www.law.cornell.edu/cfr/text/8/287.8 ; https://www.cbsnews.com/minnesota/news/what-is-domestic-terrorism-renee-good-ice/ ; https://www.foxnews.com/politics/noem-says-minneapolis-suspect-committed-domestic-terrorism-accuses-walz-frey-inciting-violence ; https://www.wired.com/story/the-instant-smear-campaign-against-border-patrol-shooting-victim-alex-pretti/ ; https://reason.com/2026/01/23/ice-tells-legal-observer-we-have-a-nice-little-database-and-now-youre-considered-a-domestic-terrorist/ ; https://reason.com/2025/12/26/justice-department-says-filming-immigration-raids-is-domestic-terrorism/ | x (lethal-force claim), ok (labeling pattern) |
+| DHS/ICE messaging uses “domestic terrorism”/“terrorist” labels in connection with immigration enforcement incidents and interference/observation | N | implied by “you are a terrorist” framing | Multiple outlets report top DHS officials describing the Renee Good and Alex Pretti incidents in “domestic terrorism” terms and/or labeling the victim/suspect a “terrorist,” and a separate incident where an ICE officer told a legal observer they were considered a “domestic terrorist” | https://www.cbsnews.com/minnesota/news/what-is-domestic-terrorism-renee-good-ice/ ; https://www.foxnews.com/politics/noem-says-minneapolis-suspect-committed-domestic-terrorism-accuses-walz-frey-inciting-violence ; https://www.wired.com/story/the-instant-smear-campaign-against-border-patrol-shooting-victim-alex-pretti/ ; https://reason.com/2026/01/23/ice-tells-legal-observer-we-have-a-nice-little-database-and-now-youre-considered-a-domestic-terrorist/ | ok |
 
 ### Additional Context Checks (Requested)
 
 | Topic | What Was Claimed / Requested | What We Found | Source(s) | Status |
 |---|---|---|---|---|
-| Renee (Renée) Good shooting (MN) | “recent ICE shooting of Rene Good” | Multiple outlets report Renee Nicole Good (37) was fatally shot by an ICE officer in Minneapolis during enforcement operations; DHS/ICE claimed she attempted to run over officers; state/local officials disputed aspects | https://abcnews.go.com/US/ice-related-shooting-occurred-minnesota-governor/story?id=128984401 ; https://www.cbsnews.com/news/renee-good-gunshot-wounds-ice-agent-minneapolis-fire-department-report/ | ok |
-| Alex Pretti shooting (MN) | “recent ICE shooting of Alex Pretti” | AP reports Alex Jeffrey Pretti (37) was shot and killed by a U.S. Border Patrol officer in Minneapolis amid protests; this is DHS but not ICE (Border Patrol is CBP) | https://apnews.com/article/immigration-enforcement-minnesota-protester-alex-pretti-15ade7de6e19cb0291734e85dac763dc | ok (event), clarify agency |
-| National Guard deployments (MN) | “deployments of national guard” | Reporting describes Minnesota Gov. Tim Walz preparing/mobilizing the National Guard amid protests and tensions related to federal immigration enforcement and use-of-force incidents | https://abcnews.go.com/US/ice-related-shooting-occurred-minnesota-governor/story?id=128984401 ; https://www.cnn.com/2026/01/17/us/ice-shooting-minneapolis-protests-renee-good-hnk/index.html | ok |
+| Renee (Renée) Good shooting (MN) | “recent ICE shooting of Rene Good” | Multiple outlets report Renee Nicole Good (37) was fatally shot by an ICE officer in Minneapolis during enforcement operations; DHS/ICE claimed she attempted to run over officers; state/local officials disputed aspects; Noem publicly described it as “domestic terrorism,” and later coverage notes the label is contested/premature | https://abcnews.go.com/US/ice-related-shooting-occurred-minnesota-governor/story?id=128984401 ; https://www.cbsnews.com/news/renee-good-gunshot-wounds-ice-agent-minneapolis-fire-department-report/ ; https://www.cbsnews.com/minnesota/news/what-is-domestic-terrorism-renee-good-ice/ ; https://www.newsweek.com/noem-ice-shooting-domestic-terrorism-minneapolis-11324489 | ok (event), ? (justification) |
+| Alex Pretti shooting (MN) | “recent ICE shooting of Alex Pretti” | Multiple outlets report Alex Jeffrey Pretti (37) was shot and killed by a U.S. Border Patrol officer in Minneapolis; Border Patrol is CBP (DHS) not ICE. DHS officials claimed Pretti approached with a handgun; multiple video analyses/reporting describe agents pepper-spraying and restraining him and suggest a gun was removed by an agent shortly before the shooting, disputing the “approached with gun” framing | https://apnews.com/article/immigration-enforcement-minnesota-protester-alex-pretti-15ade7de6e19cb0291734e85dac763dc ; https://abcnews.go.com/US/alex-pretti-icu-nurse-killed-federal-agent-minneapolis/story?id=129525591 ; https://time.com/7357547/minneapolis-shooting-ice-agent/ ; https://edition.cnn.com/2026/01/24/us/invs-videos-show-federal-officer-recovered-gun ; https://www.wired.com/story/the-instant-smear-campaign-against-border-patrol-shooting-victim-alex-pretti/ | ok (event), ? (official narrative) |
+| National Guard deployments (MN) | “deployments of national guard” | Multiple outlets report Minnesota officials activated/mobilized the National Guard to support local law enforcement amid protests and unrest following federal immigration enforcement actions and shootings | https://www.fox9.com/news/minneapolis-shooting-national-guard-called-assist-after-latest-incident-federal-agents ; https://nypost.com/2026/01/24/us-news/minnesota-gov-tim-walz-activates-state-national-guard-blasts-federal-government-after-shooting/ ; https://www.minnpost.com/metro/2026/01/federal-officers-shoot-and-kill-man-in-minneapolis/ | ok |
+| Citizen street stops / paperwork demands | “people being taken off the street” (and “carry papers”) | USA Today reports local police chiefs alleging U.S. citizens (including off-duty officers) were stopped, had “paperwork” demanded, and were prevented from recording; DHS said it could find no record absent names | https://www.usatoday.com/story/news/nation/2026/01/20/immigration-agents-minnesota-police-officer/88268058007/ | ? |
 | Detention of 5-year-old | “detentions of 5yo etc” | ABC reports a 5-year-old (Liam Conejo Ramos) was taken into custody with his father by ICE agents in Minnesota; school officials alleged ICE used the child to prompt door opening; DHS disputed details | https://abcnews.go.com/US/5-year-asylum-seeker-detained-ice-expands-enforcement/story?id=129451987 | ok (custody), ? (specific allegations) |
-| “Taken off the street” | “people being taken off the street” | CNN reports seeing several protesters detained by federal law enforcement near a federal building during Minneapolis protests; details on cause/charges not always clear from initial reporting | https://www.cnn.com/2026/01/17/us/ice-shooting-minneapolis-protests-renee-good-hnk/index.html | ok (detentions occurred), ? (basis) |
+| Detention of 2-year-old (MN) | “detentions of 5yo etc” | The Guardian reports federal agents detained a 2-year-old and her father in Minneapolis and transported them to Texas despite a federal judge ordering the child’s release the same day; the child was later returned to Minnesota and released to her mother, while the father remained detained | https://www.theguardian.com/us-news/2026/jan/23/us-immigration-two-year-old-minnesota-girl | ok (reported), ? (details pending official records) |
+| Warrantless home entry disputes / rulings | “enter your home without a warrant” | PBS/AP reporting describes an internal ICE memo claiming authority to forcibly enter homes without judge-signed warrants; Wired reports a federal judge in Minnesota ruled a warrantless forced entry violated the Fourth Amendment in a specific case (without adjudicating the memo’s legality) | https://www.pbs.org/newshour/nation/not-opening-the-door-to-ice-may-no-longer-stop-officers ; https://www.wired.com/story/us-judge-rules-ice-raids-require-judicial-warrants-contradicting-secret-ice-memo/ | ok (position + ruling reported), ? (ultimate legal status) |
+| “Taken off the street” (protest detentions) | “people being taken off the street” | CNN reporting describes protesters detained by federal law enforcement near a federal building during Minneapolis protests; contemporaneous local reporting also describes clashes and arrests/detentions amid protests | https://www.cnn.com/2026/01/17/us/ice-shooting-minneapolis-protests-renee-good-hnk/index.html ; https://www.minnpost.com/metro/2026/01/federal-officers-shoot-and-kill-man-in-minneapolis/ | ok (detentions occurred), ? (basis) |
 | Vance “unlimited immunity” statements | “statements by Vance on unlimited immunity for ICE agents” | CNN reports Vice President JD Vance claimed an ICE officer who shot Renee Good was “protected by absolute immunity,” drawing legal pushback; “absolute immunity” ≈ “unlimited immunity” in common phrasing, but the claim is disputed by experts | https://www.cnn.com/2026/01/08/politics/ice-immunity-jd-vance-minneapolis/index.html | ok (said), x/? (legal accuracy) |
+
+### Supplementary Source Review (Provided List; Pass 2)
+
+| Source | Notes (supports/disclaims) | Claim impact |
+|---|---|---|
+| USA Today: “ICE agents drew guns on off-duty officer…”[^S01] | Reports local police chiefs alleging U.S. citizens (incl. off-duty police) were stopped and had “paperwork” demanded; DHS said it could find no record without names | Supports GOV-2026-036; complicates GOV-2026-035 |
+| Democracy Docket: Bondi letter / voter rolls[^S02] | Reports AG Bondi tying federal demands (incl. voter-roll access) to unrest after the Minneapolis shooting | Context for GOV-2026-036 (expanded enforcement posture) |
+| NY Post: Walz activates National Guard[^S03] | Reports Guard activation; repeats federal characterization of Pretti as “armed” and “intervening” | Context for deployments; not treated as high-rigor fact source |
+| CNN Politics: “Another killing… political nightmare”[^S04] | Notes administration has claimed power to enter homes without judge’s warrant; discusses DHS/Noem messaging after shootings | Supports GOV-2026-033 and GOV-2026-042 |
+| Reuters (provided)[^S05] | Not accessible in this environment (Reuters blocks non-JS access); not reviewed | Not used |
+| WIRED: smear campaign vs Alex Pretti[^S06] | Reports rapid “terrorist” labeling/smear campaign and challenges official narrative vs video evidence | Supports GOV-2026-042; informs GOV-2026-041 rhetoric component |
+| The Guardian: Jacob Frey full statement[^S07] | Primary statement text from the Minneapolis mayor after Pretti shooting | Context (political response) |
+| FOX 9: Bondi urges Walz support ICE[^S08] | Reports Bondi letter and “path for ICE to leave”; repeats claim Pretti was armed | Context; informs disputes around event narrative |
+| PBS/AP: “Not opening the door… may no longer stop officers”[^S09] | Reports internal ICE memo claiming administrative-warrant home entry; situates change against Fourth Amendment doctrine | Supports GOV-2026-033 |
+| FOX 32: Johnson/Pritzker call to abolish ICE[^S10] | Political reaction; also notes the Minneapolis shooting involved Border Patrol (CBP) not ICE | Context; clarifies agency |
+| In These Times: protests + Pretti[^S11] | Advocacy framing; repeats DHS claim Pretti armed and notes video + O’Hara’s permit statement | Context; informs narrative dispute |
+| TIME: “Federal Agents Kill Another Person…”[^S12] | Describes bystander videos, pepper spray, and gun removal narrative; includes O’Hara gun-permit note | Supports dispute of “approached with gun” framing |
+| Fox News: Noem calls Pretti incident “domestic terrorism”[^S13] | Quotes Noem labeling the Pretti incident domestic terrorism and asserting weapon/ammo details | Supports GOV-2026-042 |
+| Newsweek: impeach Noem after new shooting[^S14] | Reports DHS statement and political backlash; includes video description | Context; confirms event salience |
+| The Hill (ACLU tactics)[^S15] | Not accessible in this environment (blocked) | Not used |
+| FOX 9: National Guard activated after Pretti[^S16] | Reports Guard activation and related local actions (TRO request, etc.) | Context for deployments |
+| Axios: Walz vows state investigation into DHS “lies”[^S17] | Summarizes Walz disputing DHS account based on video; notes videos don’t appear to show brandishing | Supports dispute of official narrative |
+| CNN: video analysis re gun recovery[^S18] | Video analysis suggests an agent retrieved a gun from Pretti shortly before shooting; notes Pretti not seen wielding weapon | Supports dispute of “approached with gun” framing |
+| Washington Post (provided)[^S19] | Not accessible in this environment (network/HTTP errors); not reviewed | Not used |
+| Beaumont Enterprise (provided)[^S20] | Not accessible in this environment (CAPTCHA) | Not used |
+| Al Jazeera: federal agents shoot US citizen[^S21] | Summarizes events; includes DHS claim about handgun/resisting disarmment and Walz quote | Context; confirms competing narratives |
+| The Hill (Trump defends agents)[^S22] | Not accessible in this environment (blocked) | Not used |
+| The Guardian: protests after Pretti[^S23] | Describes protests across cities after Pretti killing | Context |
+| AP News: Pretti killed by Border Patrol[^S24] | Reports family background; DHS statement; notes videos show phone in hand and weapon not visible | Supports competing narratives |
+| ABC News (provided URL returned 404)[^S25] | The provided ABC URL appears unavailable; used ABC’s story with `id=129525591` for substantially similar reporting | Supports event details and DHS vs local dispute |
+| The Times (UK)[^S26] | Partial access only (headline/lede) | Not used for substantive claims |
+| MinnPost/AP: shooting + Guard[^S27] | Reports DHS statement; notes videos show phone; notes Noem remarks | Supports competing narratives |
+| WIRED: judge ruling on judicial warrants[^S28] | Reports federal judge ruling a warrantless forced entry violated the Fourth Amendment in Minnesota; links to whistleblower complaint | Supports contestation of GOV-2026-033 lawfulness |
+| Vox: “unchecked abuses” explainer[^S29] | Interpretive synthesis; asserts Good was called a domestic terrorist and frames crackdown as abuses | Context; some claims overlap with CBS/Newsweek reporting |
+| The Guardian: two-year-old detained[^S30] | Reports court records/lawyers on toddler detention and transport despite release order | Supports GOV-2026-036 (child detention) |
+| Vox podcast: Ellison interview[^S31] | Interpretive/political context; alleges federal stonewalling and victim-blaming rhetoric | Context |
+| Reason: legal observer “domestic terrorist”[^S32] | Reports video where ICE officer tells a legal observer they’re considered a “domestic terrorist”; includes DHS denial of such a database | Supports GOV-2026-042 |
+| The New Republic: “We’re all domestic terrorists now”[^S33] | Opinion using Noem quote and broader framing | Context; supports “labeling” pattern narrative |
+| Reason: DOJ says filming raids is “domestic terrorism”[^S34] | Reports DOJ/DHS framing and ramifications for filming/recording raids | Supports GOV-2026-042 |
+| Newsweek: Noem called Good “domestic terrorism”[^S35] | Reports Noem describing Good shooting as domestic terrorism; includes video description | Supports GOV-2026-042 (Good) |
+| CBS Minnesota: “label is premature”[^S36] | Quotes Noem domestic-terrorism label; provides definitions and expert caution | Supports GOV-2026-042 (labeling occurred) while cautioning against premature application |
 
 ### Disconfirming Evidence Search
 
@@ -124,11 +170,11 @@ The largest weakness is **overgeneralization**: some bullets collapse (a) narrow
 | “Totalitarianism” is the correct frame for a mix of contested memos, statutory authorities, and incidents | (overall) | N | ? |
 
 ### Evidence Assessment
-- **Stronger support**: statutory “carry papers” requirement for noncitizens (8 U.S.C. § 1304(e)); use-of-force constraints (8 CFR 287.8); existence of third-country deportation guidance (reported memo); existence of return-facilitation policy for certain court-winners (ICE Directive 11061.1).
-- **Weaker support / overstatement**: “indefinite detention with no lawyer,” “no day in court” as a general rule, and “shoot you because you are a terrorist” as a policy-like permission.
+- **Stronger support**: statutory “carry papers” requirement for noncitizens (8 U.S.C. § 1304(e)); credible reporting on the internal memo asserting administrative-warrant home entry (with contemporaneous judicial pushback in at least one case); documented detention of very young children during operations; repeated use of “domestic terrorism”/“terrorist” labels by senior officials and DHS messaging after incidents.
+- **Weaker support / overstatement**: “indefinite detention with no lawyer” as a general rule; “no day in court” as a general rule; and “shoot you because you are a terrorist” as a policy-like permission (deadly force remains legally constrained to imminent threat).
 
 ### Credence Assessment
-- **Overall Credence**: 0.40
+- **Overall Credence**: 0.45
 - **Reasoning**: Several bullets map to real statutory requirements or to contemporaneous reporting about contested DHS/ICE memos and Minnesota incidents; however, the post’s framing tends to erase scope conditions and legal nuance, and it mixes “ICE” with broader DHS immigration enforcement. As a result, it is directionally informative but not reliable as a standalone statement of what the law uniformly permits.
 
 ## Stage 3: Dialectical Analysis
@@ -153,15 +199,16 @@ The post is best read as a **risk framing** rather than a literal legal cheat-sh
 
 | ID | Type | Domain | Evidence | Credence | Claim |
 |----|------|--------|----------|----------:|-------|
-| GOV-2026-033 | [F] | GOV | E4 | 0.80 | ICE has asserted authority to forcibly enter homes without a judge-signed warrant (administrative-warrant theory) |
+| GOV-2026-033 | [F] | GOV | E4 | 0.90 | ICE has asserted authority to forcibly enter homes without a judge-signed warrant (administrative-warrant theory) |
 | GOV-2026-034 | [F] | GOV | E2 | 0.95 | Federal law requires noncitizens (18+) to carry registration documents at all times |
-| GOV-2026-035 | [H] | GOV | E4 | 0.60 | ICE may disregard paper documents and rely primarily on biometrics (“scanner”) during encounters |
-| GOV-2026-036 | [H] | GOV | E4 | 0.55 | ICE can detain people broadly across contexts, including children, and errors can result in detention of citizens |
+| GOV-2026-035 | [H] | GOV | E4 | 0.55 | ICE may disregard paper documents and rely primarily on biometrics (“scanner”) during encounters |
+| GOV-2026-036 | [H] | GOV | E4 | 0.65 | ICE can detain people broadly across contexts, including children, and errors can result in detention of citizens |
 | GOV-2026-037 | [H] | GOV | E6 | 0.20 | ICE can detain people indefinitely with no access to a lawyer |
 | GOV-2026-038 | [H] | GOV | E5 | 0.45 | People targeted by ICE generally have no meaningful “day in court” |
 | GOV-2026-039 | [F] | GOV | E4 | 0.70 | ICE can deport some people to third countries on short notice, potentially exposing them to persecution or harsh detention conditions |
 | GOV-2026-040 | [H] | GOV | E5 | 0.40 | If ICE makes a serious mistake, it generally cannot or will not bring the person back |
-| GOV-2026-041 | [H] | GOV | E6 | 0.10 | ICE can shoot people for “interference,” justified by labeling them “terrorists” |
+| GOV-2026-041 | [H] | GOV | E6 | 0.15 | ICE can shoot people for “interference,” justified by labeling them “terrorists” |
+| GOV-2026-042 | [F] | GOV | E4 | 0.75 | DHS/ICE leadership and allied messaging have repeatedly labeled people involved in immigration-enforcement incidents and interference/observation as “domestic terrorists”/“terrorists,” often immediately after events |
 
 ### Claims to Register
 
@@ -172,7 +219,7 @@ claims:
     type: "[F]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.80
+    credence: 0.90
     source_ids: ["bluebadger2600-2026-ice-positions"]
   - id: "GOV-2026-034"
     text: "Federal law requires noncitizens (18+) to carry their registration documents (e.g., alien registration/receipt card) at all times."
@@ -186,14 +233,14 @@ claims:
     type: "[H]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.60
+    credence: 0.55
     source_ids: ["bluebadger2600-2026-ice-positions"]
   - id: "GOV-2026-036"
     text: "ICE can detain people broadly across contexts, including children, and errors can result in detention of U.S. citizens."
     type: "[H]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.55
+    credence: 0.65
     source_ids: ["bluebadger2600-2026-ice-positions"]
   - id: "GOV-2026-037"
     text: "ICE can detain people indefinitely with no access to a lawyer."
@@ -228,7 +275,14 @@ claims:
     type: "[H]"
     domain: "GOV"
     evidence_level: "E6"
-    credence: 0.10
+    credence: 0.15
+    source_ids: ["bluebadger2600-2026-ice-positions"]
+  - id: "GOV-2026-042"
+    text: "DHS/ICE leadership and allied messaging have repeatedly labeled people involved in immigration-enforcement incidents and interference/observation as “domestic terrorists”/“terrorists,” often immediately after events."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
     source_ids: ["bluebadger2600-2026-ice-positions"]
 ```
 
@@ -236,14 +290,53 @@ claims:
 
 **Analysis Date**: 2026-01-25  
 **Analyst**: codex (gpt-5.2)  
-**Credence in Analysis**: 0.65
+**Credence in Analysis**: 0.70
 
 ## Analysis Log
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
 | 1 | 2026-01-25 06:22 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + sourced verification (law, memos, Minnesota incident… |
+| 2 | 2026-01-25 08:36 | codex | gpt-5.2 | ? | ? | ? | Pass 2: incorporated user-provided reporting list; updated credences; added GOV… |
 
 ### Revision Notes
 
 **Pass 1**: Initial 3-stage analysis + sourced verification (law, memos, Minnesota incidents).
+**Pass 2**: Incorporated user-provided reporting list; updated claim credences; added GOV-2026-042 (domestic-terrorism/terrorist labeling pattern); expanded Minnesota incident coverage and warrantless entry discussion.
+
+[^S01]: https://www.usatoday.com/story/news/nation/2026/01/20/immigration-agents-minnesota-police-officer/88268058007/
+[^S02]: https://www.democracydocket.com/news-alerts/attorney-general-bondi-minnesota-voter-rolls-border-patrol-fatal-shooting/
+[^S03]: https://nypost.com/2026/01/24/us-news/minnesota-gov-tim-walz-activates-state-national-guard-blasts-federal-government-after-shooting/
+[^S04]: https://edition.cnn.com/2026/01/24/politics/shooting-minneapolis-trump-politics
+[^S05]: https://www.reuters.com/world/us/minnesota-governor-says-federal-agents-involved-shooting-minneapolis-2026-01-24/ (not accessible in this environment; JS/anti-bot)
+[^S06]: https://www.wired.com/story/the-instant-smear-campaign-against-border-patrol-shooting-victim-alex-pretti/
+[^S07]: https://www.theguardian.com/us-news/2026/jan/24/jacob-frey-full-statement
+[^S08]: https://www.fox9.com/news/minneapolis-shooting-ag-pam-bondi-urges-gov-walz-support-ice
+[^S09]: https://www.pbs.org/newshour/nation/not-opening-the-door-to-ice-may-no-longer-stop-officers
+[^S10]: https://www.fox32chicago.com/news/johnson-pritzker-abolish-ice-shooting
+[^S11]: https://inthesetimes.com/article/minneapolis-ice-shooting-protests
+[^S12]: https://time.com/7357547/minneapolis-shooting-ice-agent/
+[^S13]: https://www.foxnews.com/politics/noem-says-minneapolis-suspect-committed-domestic-terrorism-accuses-walz-frey-inciting-violence
+[^S14]: https://www.newsweek.com/democrats-demand-impeach-kristi-noem-new-dhs-fatal-shooting-11412444
+[^S15]: https://thehill.com/regulation/court-battles/5705035-aclu-minnesota-federal-agent-tactics/ (not accessible in this environment; blocked)
+[^S16]: https://www.fox9.com/news/minneapolis-shooting-national-guard-called-assist-after-latest-incident-federal-agents
+[^S17]: https://www.axios.com/local/twin-cities/2026/01/24/tim-walz-investigation-border-patrol-shooting-minneapolis (accessed via text extraction proxy due to Cloudflare)
+[^S18]: https://edition.cnn.com/2026/01/24/us/invs-videos-show-federal-officer-recovered-gun (accessed via text extraction proxy due to JS)
+[^S19]: https://www.washingtonpost.com/nation/2026/01/24/federal-agents-minneapolis-shooting-investigation/ (not accessible in this environment; network/anti-bot)
+[^S20]: https://www.beaumontenterprise.com/news/article/governor-a-person-has-been-shot-killed-by-21313055.php (not accessible in this environment; CAPTCHA)
+[^S21]: https://www.aljazeera.com/news/2026/1/24/us-federal-agents-shoot-another-person-in-minneapolis-governor
+[^S22]: https://thehill.com/homenews/administration/5704739-trump-defends-federal-agents-minnesota/ (not accessible in this environment; blocked)
+[^S23]: https://www.theguardian.com/us-news/2026/jan/24/protests-alex-pretti-killing-federal-agents-ice
+[^S24]: https://apnews.com/article/immigration-enforcement-minnesota-protester-alex-pretti-15ade7de6e19cb0291734e85dac763dc
+[^S25]: https://abcnews.go.com/US/alex-pretti-icu-nurse-killed-federal-agent-minneapolis/story (URL provided; returned 404 when accessed). Used: https://abcnews.go.com/US/alex-pretti-icu-nurse-killed-federal-agent-minneapolis/story?id=129525591
+[^S26]: https://www.thetimes.com/us/news-today/article/ice-detains-2-year-old-chloe-renata-tipan-villacis-6nx77vfv7 (partial access)
+[^S27]: https://www.minnpost.com/metro/2026/01/federal-officers-shoot-and-kill-man-in-minneapolis/
+[^S28]: https://www.wired.com/story/us-judge-rules-ice-raids-require-judicial-warrants-contradicting-secret-ice-memo/
+[^S29]: https://www.vox.com/politics/476398/minneapolis-fatal-shooting-border-patrol-ice-alex-pretti
+[^S30]: https://www.theguardian.com/us-news/2026/jan/23/us-immigration-two-year-old-minnesota-girl
+[^S31]: https://www.vox.com/podcasts/476276/keith-ellison-astead-herndon-minneapolis-today-explained
+[^S32]: https://reason.com/2026/01/23/ice-tells-legal-observer-we-have-a-nice-little-database-and-now-youre-considered-a-domestic-terrorist/
+[^S33]: https://newrepublic.com/article/205061/renee-good-kristi-noem-domestic-terrorists-minneapolis
+[^S34]: https://reason.com/2025/12/26/justice-department-says-filming-immigration-raids-is-domestic-terrorism/
+[^S35]: https://www.newsweek.com/noem-ice-shooting-domestic-terrorism-minneapolis-11324489
+[^S36]: https://www.cbsnews.com/minnesota/news/what-is-domestic-terrorism-renee-good-ice/
