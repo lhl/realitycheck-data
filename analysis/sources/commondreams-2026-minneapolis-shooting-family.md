@@ -19,6 +19,30 @@
 
 **Claims YAML**: [`analysis/sources/commondreams-2026-minneapolis-shooting-family.yaml`](commondreams-2026-minneapolis-shooting-family.yaml)
 
+## Pass 2: Rigor Addendum (Epistemic Provenance Pilot)
+
+This continuation pass applies planned improvements from:
+- `docs/PLAN-epistemic-provenance.md` (reader-auditable credence backing)
+- `docs/PLAN-analysis-rigor-improvement.md` (actor/layer/scope discipline; primary-first; corrections)
+
+### Evidence Index (Support for Verification)
+
+| Evid ID | Type | Title | URL |
+|--------:|------|-------|-----|
+| EVID-AP | ARTICLE | The man killed by a US Border Patrol officer in Minneapolis was an ICU nurse, family says (AP) | https://apnews.com/article/immigration-enforcement-minnesota-protester-alex-pretti-15ade7de6e19cb0291734e85dac763dc |
+| EVID-CNN | ARTICLE | Videos appear to show federal officer took gun away from Alex Pretti just before fatal shooting (CNN) | https://edition.cnn.com/2026/01/24/us/invs-videos-show-federal-officer-recovered-gun |
+| EVID-TIME | ARTICLE | Federal Agents Kill Another Person in Minneapolis (TIME) | https://time.com/7357547/minneapolis-shooting-ice-agent/ |
+| EVID-WIRED | ARTICLE | The Instant Smear Campaign Against Border Patrol Shooting Victim Alex Pretti (WIRED) | https://www.wired.com/story/the-instant-smear-campaign-against-border-patrol-shooting-victim-alex-pretti/ |
+| EVID-ABC | ARTICLE | What we know about Alex Pretti, VA nurse killed by federal agent in Minneapolis (ABC News) | https://abcnews.go.com/US/alex-pretti-icu-nurse-killed-federal-agent-minneapolis/story?id=129525591 |
+| EVID-CD-VIDEO | ARTICLE | 'What the F*ck Did You Do?!' Video Contradicts DHS Claims About Killing of Alex Pretti (Common Dreams) | https://www.commondreams.org/news/minneapolis-shooting-video |
+
+### Primary Capture Notes
+- **Washington Post PDF (Bondi memo link)**: referenced by Common Dreams, but `www.washingtonpost.com` was unreachable from this environment (timeouts). Claim `GOV-2026-049` remains **provisional** pending primary-document capture.
+- **Bystander video (X/Twitter embeds)**: multiple embeds were **login/age-gated**; this pass relies on secondary reporting summaries (AP/CNN/TIME/WIRED/Common Dreams video page).
+
+### Corrections & Updates
+- No explicit correction/update notices were found in the fetched page text for the Common Dreams article as of 2026-01-26.
+
 ## Stage 1: Descriptive Analysis
 
 ### Core Thesis
@@ -38,15 +62,17 @@ The family also notes they learned of their son's death from an AP reporter, not
 
 ### Key Claims
 
-| # | Claim | Claim ID | Type | Domain | Evid | Credence | Verified? | Falsifiable By |
-|---|-------|----------|------|--------|------|----------|-----------|----------------|
-| 1 | Alex Pretti was holding a phone in his right hand, not a gun, when shot | GOV-2026-043 | [F] | GOV | E4 | 0.85 | Multiple videos (CNN, TIME) | Release of official body cam footage showing gun in hand |
-| 2 | An agent removed Pretti's holstered gun before the shooting | GOV-2026-044 | [F] | GOV | E4 | 0.80 | CNN video analysis | Official footage showing gun was not removed, or independent forensic review |
-| 3 | Pretti was on the ground and being pepper sprayed when shot (approx 10 rounds) | GOV-2026-045 | [F] | GOV | E4 | 0.85 | Multiple videos | Official footage showing standing/ambulatory target |
-| 4 | Federal officials immediately labeled Pretti a "domestic terrorist" with no supporting evidence | GOV-2026-046 | [F] | GOV | E4 | 0.90 | Noem, Miller quotes | Officials provide evidence of terrorism criteria |
-| 5 | Pretti's family learned of his death from an AP reporter, not federal officials | GOV-2026-047 | [F] | GOV | E5 | 0.90 | Family statement (direct) | Federal notification records showing earlier contact |
-| 6 | The shooting was by U.S. Border Patrol (CBP), not ICE | GOV-2026-048 | [F] | GOV | E4 | 0.95 | Multiple reports | ? |
-| 7 | Pam Bondi memo defines "domestic terrorism" to include "impeding" law enforcement | GOV-2026-049 | [F] | GOV | E4 | 0.85 | Referenced memo | Release of actual memo text showing different definitions |
+| # | Claim | Claim ID | Type | Domain | Layer | Actor | Evid Type | Evid | Credence | Verified? | Falsifiable By |
+|---|-------|----------|------|--------|-------|-------|----------|------|----------|-----------|----------------|
+| 1 | Bystander videos show Alex Pretti holding a phone (not a visible gun) in his right hand immediately before the shooting | GOV-2026-043 | [F] | GOV | PRACTICED | CBP/Border Patrol | VIDEO→REPORTING | E4 | 0.90 | EVID-AP; EVID-CNN; EVID-TIME; EVID-WIRED | Release of official footage showing a visible gun in-hand at the relevant moments |
+| 2 | Videos reviewed by CNN appear to show an agent removing a gun from Pretti shortly before shots were fired | GOV-2026-044 | [F] | GOV | PRACTICED | CBP/Border Patrol | VIDEO→REPORTING | E4 | 0.80 | EVID-CNN; EVID-TIME | Independent frame-by-frame review showing no weapon removal (or removal occurred after the shots) |
+| 3 | Video reporting indicates agents pepper-sprayed and wrestled Pretti to the ground; some reporting counts ~10 shots, including shots after he fell prone | GOV-2026-045 | [F] | GOV | PRACTICED | CBP/Border Patrol | VIDEO→REPORTING | E4 | 0.80 | EVID-AP; EVID-CNN; EVID-TIME; EVID-CD-VIDEO | Release of official footage contradicting the pepper-spray/ground-position sequence or shot count |
+| 4 | Top Trump administration officials publicly suggested Pretti was a “domestic terrorist” shortly after the shooting (public justification centered on “approached with a handgun”) | GOV-2026-046 | [F] | GOV | ASSERTED | DHS/White House | STATEMENT→REPORTING | E4 | 0.85 | EVID-AP; EVID-WIRED; Source | Public record showing no such characterization was made, or contemporaneous evidence-based justification meeting a defined terrorism standard |
+| 5 | Pretti’s family first learned of the shooting from an Associated Press reporter, and reported they had not been contacted by federal officials as of Saturday evening | GOV-2026-047 | [F] | GOV | PRACTICED | AP; Pretti family | REPORTING | E4 | 0.95 | EVID-AP; Source | Federal notification logs showing earlier notification, or AP correction |
+| 6 | Alex Pretti was shot and killed by a U.S. Border Patrol officer/agents (CBP), not ICE | GOV-2026-048 | [F] | GOV | PRACTICED | CBP/Border Patrol | REPORTING | E4 | 0.95 | EVID-AP; EVID-CNN; EVID-TIME; EVID-WIRED | Official record attributing the shooting to ICE instead of CBP |
+| 7 | A memo attributed to Attorney General Pam Bondi is reported to treat “impeding” or “doxing” law enforcement as domestic terrorism; the primary memo text was not captured in this pass | GOV-2026-049 | [F] | GOV | ASSERTED | DOJ (AG) | REPORTING→(PDF unavailable) | E5 | 0.55 | Source | Obtain memo text and verify quoted definitions |
+| 8 | Alex Pretti worked as an ICU nurse at a Minneapolis VA hospital (U.S. Department of Veterans Affairs), per family and AP reporting | GOV-2026-050 | [F] | GOV | PRACTICED | Pretti family; AP | REPORTING | E4 | 0.95 | EVID-AP | Employment records contradicting family/AP reporting |
+| 9 | Alex Pretti was a U.S. citizen (born in Illinois), per family and AP reporting | GOV-2026-051 | [F] | GOV | PRACTICED | Pretti family; AP | REPORTING | E4 | 0.95 | EVID-AP | Official records contradicting citizenship/birth reporting |
 
 ### Layer Analysis: ASSERTED vs PRACTICED
 
@@ -104,13 +130,13 @@ The family's account is internally consistent and aligns with independent video 
 
 | Claim (paraphrased) | Crux? | Source Says | Actual | External Source | Status |
 |---------------------|-------|-------------|--------|-----------------|--------|
-| Pretti was holding phone, not gun | **Y** | "phone in his right hand" | Multiple videos show phone; no video shows gun brandished | CNN, TIME, AP | ok |
-| Agent removed gun before shooting | **Y** | Agent "reached into the fray and took Pretti's gun" | CNN video analysis describes this sequence | CNN | ok (inferred from video) |
-| Shooting was by Border Patrol (CBP) | N | "US Border Patrol agents" | Confirmed CBP, not ICE | AP, multiple outlets | ok |
-| Pretti was ICU nurse at VA hospital | N | "ICU nurse at the Minneapolis VA hospital" | ? | Family statement | ? (not independently verified in this article) |
-| Family learned from AP reporter | N | "leaving them to learn... from an Associated Press reporter" | ? | Family statement direct | ? (no contradiction found) |
-| Noem called it "domestic terrorism" | **Y** | Officials "declared a 'domestic terrorist'" | Confirmed | Fox News, CBS Minnesota | ok |
-| Bondi memo includes "impeding" as terrorism | N | Memo "claims acts of domestic terrorism include 'impeding'" | ? (memo referenced but not directly quoted) | ? | ? |
+| Pretti was holding phone, not a visible gun | **Y** | “holding a phone… not a gun” | AP and multiple video analyses report phone-in-hand and no visible weapon in the relevant clips | EVID-AP; EVID-CNN; EVID-TIME; EVID-WIRED | ok (multi-source reporting; primary video not directly reviewed here) |
+| Agent removed gun shortly before shots | **Y** | Agent “took Pretti’s gun” | CNN analysis reports an agent removed a gun just before the shooting | EVID-CNN | ok (CNN video analysis; primary video not directly reviewed here) |
+| Pretti pepper-sprayed + tackled to ground; ~10 shots | **Y** | Pepper-sprayed, on ground, “roughly 10” shots | AP/CNN/TIME/Common Dreams video page describe pepper spray + ground restraint; TIME reports ≥10 shots in ~5 seconds | EVID-AP; EVID-CNN; EVID-TIME; EVID-CD-VIDEO | ok (reporting; shot-count precision uncertain) |
+| Officials suggested “domestic terrorist” framing | **Y** | Officials declared “domestic terrorist” | AP reports “top… officials suggesting” the label; WIRED documents rapid “terrorist” framing and related posts | EVID-AP; EVID-WIRED | ok (labeling documented; standard/justification unclear) |
+| Family learned from AP reporter; no federal contact as of Sat evening | N | Learned from AP reporter | AP states reporter contacted family first; family reports no federal contact as of Saturday evening | EVID-AP | ok |
+| Shooting by Border Patrol (CBP), not ICE | N | “US Border Patrol agents” | Multiple sources identify Border Patrol (CBP) involvement | EVID-AP; EVID-CNN; EVID-TIME; EVID-WIRED | ok |
+| Bondi memo “impeding/doxing” definition | N | Memo says “impeding/doxing” counts as “domestic terrorism” | Primary memo not captured in this pass (Washington Post PDF unreachable); treat as unverified | Source (link unreachable) | ? |
 
 ### Cross-Reference with Existing Claims
 
@@ -125,9 +151,10 @@ This article directly informs and updates existing claims from `bluebadger2600-2
 
 | Claim | Counterevidence Found | Alternative Explanation | Search Notes |
 |-------|----------------------|-------------------------|--------------|
-| Phone in hand, not gun | None found; no video shows gun brandished | N/A | Checked multiple video analyses |
-| Agent removed gun | DHS claims Pretti "approached with handgun" | Possible the gun was drawn at some point before video capture, then re-holstered | DHS has not provided body cam footage |
-| "Maximum damage" intent | None found | ? | No evidence presented for this claim by officials |
+| Phone in hand, not visible gun | DHS/Noem/DHS spokespeople assert he “approached with a handgun” | Gun could have been present but not visible in the clips; “approached with” may mean holstered/nearby vs brandished | Reviewed AP + CNN + TIME + WIRED summaries; primary bystander footage was login-gated on X in this environment |
+| Agent removed gun shortly before shots | Official narrative emphasizes armed suspect + resistance | Weapon removal timing may be ambiguous across angles; “removed” could occur during struggle vs before first shot | Relied on CNN’s described frame-by-frame review; primary clip not directly reviewed here |
+| “Domestic terrorist” framing | Some officials used “terrorist/assassin” language more generally | “Domestic terrorist” may be an escalated framing by some actors; “terrorist” may be rhetorical rather than statutory | AP reports “domestic terrorist” framing; WIRED documents rapid “terrorist” smear; no authoritative terrorism standard was provided publicly |
+| Bondi memo “impeding/doxing” | N/A | Could be mischaracterized or context-dependent in memo text | Attempted to fetch linked Washington Post PDF; domain unreachable (timeouts) |
 
 ### Internal Tensions / Self-Contradictions
 
@@ -203,67 +230,69 @@ This source significantly strengthens the evidentiary basis for GOV-2026-042 (te
 
 | ID | Type | Domain | Evidence | Credence | Claim |
 |----|------|--------|----------|----------|-------|
-| GOV-2026-043 | [F] | GOV | E4 | 0.85 | Alex Pretti was holding a phone in his right hand, not a gun, when approached by federal agents |
-| GOV-2026-044 | [F] | GOV | E4 | 0.80 | A federal agent removed Pretti's holstered gun before the shooting |
-| GOV-2026-045 | [F] | GOV | E4 | 0.85 | Pretti was on the ground and being pepper sprayed when shot approximately 10 times |
-| GOV-2026-046 | [F] | GOV | E4 | 0.90 | Federal officials immediately labeled Pretti a "domestic terrorist" without presenting evidence |
-| GOV-2026-047 | [F] | GOV | E5 | 0.90 | Pretti's family learned of his death from an AP reporter, not federal officials |
+| GOV-2026-043 | [F] | GOV | E4 | 0.90 | Bystander videos show Alex Pretti holding a phone (not a visible gun) in his right hand immediately before the shooting |
+| GOV-2026-044 | [F] | GOV | E4 | 0.80 | Videos reviewed by CNN appear to show an agent removing a gun from Pretti shortly before shots were fired |
+| GOV-2026-045 | [F] | GOV | E4 | 0.80 | Video reporting indicates agents pepper-sprayed and wrestled Pretti to the ground; some reporting counts ~10 shots, including shots after he fell prone |
+| GOV-2026-046 | [F] | GOV | E4 | 0.85 | Top Trump administration officials publicly suggested Pretti was a “domestic terrorist” shortly after the shooting (public justification centered on “approached with a handgun”) |
+| GOV-2026-047 | [F] | GOV | E4 | 0.95 | Pretti’s family first learned of the shooting from an Associated Press reporter, and reported they had not been contacted by federal officials as of Saturday evening |
 | GOV-2026-048 | [F] | GOV | E4 | 0.95 | The Pretti shooting was by U.S. Border Patrol (CBP), not ICE |
-| GOV-2026-049 | [F] | GOV | E4 | 0.85 | AG Pam Bondi memo defines "domestic terrorism" to include "impeding" or "doxing" law enforcement |
+| GOV-2026-049 | [F] | GOV | E5 | 0.55 | A memo attributed to Attorney General Pam Bondi is reported to treat “impeding” or “doxing” law enforcement as domestic terrorism; the primary memo text was not captured in this pass |
+| GOV-2026-050 | [F] | GOV | E4 | 0.95 | Alex Pretti worked as an ICU nurse at a Minneapolis VA hospital (U.S. Department of Veterans Affairs), per family and AP reporting |
+| GOV-2026-051 | [F] | GOV | E4 | 0.95 | Alex Pretti was a U.S. citizen (born in Illinois), per family and AP reporting |
 
 ## Claims to Register
 
 ```yaml
 claims:
   - id: "GOV-2026-043"
-    text: "Alex Pretti was holding a phone in his right hand, not a gun, when approached by federal agents in Minneapolis on January 24, 2026."
+    text: "Bystander videos show Alex Pretti holding a phone (not a visible gun) in his right hand immediately before the shooting in Minneapolis on January 24, 2026."
     type: "[F]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.85
-    operationalization: "Compare available video footage to official claims; obtain body cam footage if released."
-    assumptions: ["Available videos capture the relevant moments"]
-    falsifiers: ["Official body cam footage showing gun in hand"]
+    credence: 0.90
+    operationalization: "Obtain and review primary bystander video and any released body cam footage; compare the relevant frames to official claims."
+    assumptions: ["Secondary reporting accurately characterizes the bystander video", "Available videos capture the relevant moments"]
+    falsifiers: ["Primary footage showing a visible gun in-hand at the relevant moments"]
     source_ids: ["commondreams-2026-minneapolis-shooting-family"]
   - id: "GOV-2026-044"
-    text: "A federal agent removed Alex Pretti's holstered gun before the shooting, meaning he was disarmed when shot."
+    text: "Videos reviewed by CNN appear to show an agent removing a gun from Alex Pretti shortly before shots were fired."
     type: "[F]"
     domain: "GOV"
     evidence_level: "E4"
     credence: 0.80
-    operationalization: "Frame-by-frame video analysis; forensic timeline reconstruction."
-    assumptions: ["CNN video analysis is accurate"]
-    falsifiers: ["Official footage showing gun still on Pretti when shot"]
+    operationalization: "Review and annotate the primary video; compare with CNN's described frame-by-frame analysis; reconstruct a timeline."
+    assumptions: ["CNN's description of the video is accurate"]
+    falsifiers: ["Primary footage showing no weapon removal prior to shots, or removal only after shots"]
     source_ids: ["commondreams-2026-minneapolis-shooting-family"]
   - id: "GOV-2026-045"
-    text: "Alex Pretti was on the ground and being pepper sprayed when shot approximately 10 times by federal agents."
+    text: "Video reporting indicates agents pepper-sprayed and wrestled Alex Pretti to the ground; some reporting counts approximately 10 shots, including shots after he fell prone."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.80
+    operationalization: "Review primary video and any released body cam footage; corroborate with autopsy report (shot count/trajectory) when available."
+    assumptions: ["Secondary reporting accurately characterizes the bystander video"]
+    falsifiers: ["Primary footage contradicting the pepper-spray/ground-position sequence or shot count"]
+    source_ids: ["commondreams-2026-minneapolis-shooting-family"]
+  - id: "GOV-2026-046"
+    text: "Top Trump administration officials publicly suggested Alex Pretti was a 'domestic terrorist' shortly after the shooting; the public justification centered on claims that he approached agents with a handgun."
     type: "[F]"
     domain: "GOV"
     evidence_level: "E4"
     credence: 0.85
-    operationalization: "Video evidence review; autopsy report on shot count and trajectory."
-    assumptions: ["Video captures shooting sequence"]
-    falsifiers: ["Evidence showing Pretti was standing/advancing when shot"]
+    operationalization: "Collect time-stamped official statements/posts; compare stated justification to any evidence released contemporaneously."
+    assumptions: ["Reported characterizations of officials' statements are accurate"]
+    falsifiers: ["Public record showing no such characterization, or contemporaneous evidence-based justification meeting a defined terrorism standard"]
     source_ids: ["commondreams-2026-minneapolis-shooting-family"]
-  - id: "GOV-2026-046"
-    text: "Federal officials (including Noem and Miller) immediately labeled Alex Pretti a 'domestic terrorist' without presenting supporting evidence."
+  - id: "GOV-2026-047"
+    text: "Alex Pretti's family first learned of the shooting from an Associated Press reporter, and reported they had not been contacted by federal officials as of Saturday evening."
     type: "[F]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.90
-    operationalization: "Timeline analysis of official statements vs evidence released."
-    assumptions: ["Reported quotes are accurate"]
-    falsifiers: ["Officials presenting contemporaneous evidence supporting classification"]
-    source_ids: ["commondreams-2026-minneapolis-shooting-family"]
-  - id: "GOV-2026-047"
-    text: "Alex Pretti's family learned of his death from an Associated Press reporter, not from federal officials."
-    type: "[F]"
-    domain: "GOV"
-    evidence_level: "E5"
-    credence: 0.90
-    operationalization: "Federal notification records; family testimony timeline."
-    assumptions: ["Family statement is accurate"]
-    falsifiers: ["Federal records showing earlier official notification"]
+    credence: 0.95
+    operationalization: "Cross-check AP reporting with federal notification records and any subsequent corrections/updates."
+    assumptions: ["AP reporting is accurate"]
+    falsifiers: ["Federal records showing earlier official notification, or AP correction"]
     source_ids: ["commondreams-2026-minneapolis-shooting-family"]
   - id: "GOV-2026-048"
     text: "The January 24, 2026 shooting of Alex Pretti in Minneapolis was by U.S. Border Patrol (CBP), not ICE."
@@ -276,29 +305,47 @@ claims:
     falsifiers: ["Official records attributing to different agency"]
     source_ids: ["commondreams-2026-minneapolis-shooting-family"]
   - id: "GOV-2026-049"
-    text: "AG Pam Bondi signed a memo defining 'domestic terrorism' to include 'impeding' or 'doxing' law enforcement officers."
+    text: "A memo attributed to Attorney General Pam Bondi is reported to treat 'impeding' or 'doxing' law enforcement as domestic terrorism; the primary memo text was not captured in this pass."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    operationalization: "Obtain and review the actual memo text (primary PDF) and verify quoted definitions in context."
+    assumptions: ["Reporting accurately characterizes the memo"]
+    falsifiers: ["Memo text showing different definitions or materially different context"]
+    source_ids: ["commondreams-2026-minneapolis-shooting-family"]
+  - id: "GOV-2026-050"
+    text: "Alex Pretti worked as an ICU nurse at a Minneapolis VA hospital (U.S. Department of Veterans Affairs), per family and AP reporting."
     type: "[F]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.85
-    operationalization: "Obtain and review actual memo text."
-    assumptions: ["Reporting accurately characterizes memo"]
-    falsifiers: ["Memo text showing different definitions"]
+    credence: 0.95
+    operationalization: "Verify employment via VA/HR records or other contemporaneous reporting; check for later corrections."
+    assumptions: ["AP reporting accurately reflects family statements and/or records"]
+    falsifiers: ["Employment records contradicting the ICU nurse/VA employment claim"]
+    source_ids: ["commondreams-2026-minneapolis-shooting-family"]
+  - id: "GOV-2026-051"
+    text: "Alex Pretti was a U.S. citizen (born in Illinois), per family and AP reporting."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.95
+    operationalization: "Verify citizenship/birthplace via official records or credible reporting; check for later corrections."
+    assumptions: ["AP reporting accurately reflects family statements and/or records"]
+    falsifiers: ["Official records contradicting citizenship/birthplace reporting"]
     source_ids: ["commondreams-2026-minneapolis-shooting-family"]
 ```
 
 ---
 
 **Analysis Date**: 2026-01-26
-**Analyst**: claude-code (claude-opus-4)
-**Credence in Analysis**: 0.75
+**Analyst**: codex (gpt-5.2)
+**Credence in Analysis**: 0.80
 
 **Credence Reasoning**:
-- Direct family quotes are reliably reported
-- Video references corroborated by independent outlets (CNN, TIME, AP)
-- Progressive outlet framing may emphasize certain aspects
-- Core factual claims are independently verifiable
-- Key uncertainty: body cam footage not yet released
+- Core claims about phone-in-hand/pepper-spray/CBP attribution are corroborated across AP/CNN/TIME/WIRED
+- Key uncertainties remain where primary artifacts were inaccessible (login-gated bystander video; unreachable linked PDF memo)
+- “Domestic terrorist” framing is documented, but specific statutory/criteria justification is not clearly established in the public record referenced here
 
 ---
 
@@ -307,7 +354,10 @@ claims:
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
 | 1 | 2026-01-26 | claude-code | claude-opus-4 | ? | ? | ? | Initial 3-stage analysis; cross-referenced with bluebadger2600-2026-ice-positions |
+| 2 | 2026-01-26 | codex | gpt-5.2 | ? | ? | ? | Added evidence index + provenance notes; updated/expanded claim set; tightened evidence/credence based on external reporting |
 
 ### Revision Notes
 
 **Pass 1**: Initial analysis. Key focus on layer separation (ASSERTED vs PRACTICED) per analysis guidance. Cross-referenced with existing GOV-2026-041 and GOV-2026-042 claims. Notable new contribution is family's direct testimony and specific video-evidence claims challenging official narrative.
+
+**Pass 2**: Incorporated provenance/rigor improvements (actor/layer/evidence-type tagging, explicit evidence URLs, primary-capture notes). Updated claim wording to reduce over-assertion where primary artifacts were inaccessible, reduced credence for the Bondi memo claim, and added two missing biographical claims (VA nurse; US citizen) corroborated by AP reporting.

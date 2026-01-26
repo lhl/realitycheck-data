@@ -1,66 +1,87 @@
-source:
-  id: "commondreams-2026-minneapolis-shooting-family"
-  title: "'Please Get the Truth Out,' Alex Pretti's Parents Plead as Trump Officials Baselessly Smear Shooting Victim"
-  type: "ARTICLE"
-  author: "Julia Conley"
-  year: 2026
-  url: "https://www.commondreams.org/news/minneapolis-shooting-update"
-  reliability: 0.65
-  analysis_file: "analysis/sources/commondreams-2026-minneapolis-shooting-family.md"
-  topics: ["minneapolis-shooting", "alex-pretti", "cbp", "domestic-terrorism", "family-response"]
-  domains: ["GOV"]
-  claims_extracted: ["GOV-2026-043", "GOV-2026-044", "GOV-2026-045", "GOV-2026-046", "GOV-2026-047", "GOV-2026-048", "GOV-2026-049"]
+sources:
+  - id: "commondreams-2026-minneapolis-shooting-family"
+    type: "ARTICLE"
+    title: "'Please Get the Truth Out,' Alex Pretti's Parents Plead as Trump Officials Baselessly Smear Shooting Victim"
+    author:
+      - "Julia Conley"
+    year: 2026
+    url: "https://www.commondreams.org/news/minneapolis-shooting-update"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/commondreams-2026-minneapolis-shooting-family.md"
+    reliability: 0.65
+    bias_notes: >-
+      Progressive outlet with clear editorial stance. However, quotes are direct and specific, videos are
+      cited, and AP is referenced as corroborating source. Primary value is family's direct testimony.
+    topics:
+      - minneapolis-shooting
+      - alex-pretti
+      - cbp
+      - domestic-terrorism
+      - family-response
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-043
+      - GOV-2026-044
+      - GOV-2026-045
+      - GOV-2026-046
+      - GOV-2026-047
+      - GOV-2026-048
+      - GOV-2026-049
+      - GOV-2026-050
+      - GOV-2026-051
 
 claims:
   - id: "GOV-2026-043"
-    text: "Alex Pretti was holding a phone in his right hand, not a gun, when approached by federal agents in Minneapolis on January 24, 2026."
+    text: "Bystander videos show Alex Pretti holding a phone (not a visible gun) in his right hand immediately before the shooting in Minneapolis on January 24, 2026."
     type: "[F]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.85
-    operationalization: "Compare available video footage to official claims; obtain body cam footage if released."
-    assumptions: ["Available videos capture the relevant moments"]
-    falsifiers: ["Official body cam footage showing gun in hand"]
+    credence: 0.90
+    operationalization: "Obtain and review primary bystander video and any released body cam footage; compare the relevant frames to official claims."
+    assumptions: ["Secondary reporting accurately characterizes the bystander video", "Available videos capture the relevant moments"]
+    falsifiers: ["Primary footage showing a visible gun in-hand at the relevant moments"]
     source_ids: ["commondreams-2026-minneapolis-shooting-family"]
   - id: "GOV-2026-044"
-    text: "A federal agent removed Alex Pretti's holstered gun before the shooting, meaning he was disarmed when shot."
+    text: "Videos reviewed by CNN appear to show an agent removing a gun from Alex Pretti shortly before shots were fired."
     type: "[F]"
     domain: "GOV"
     evidence_level: "E4"
     credence: 0.80
-    operationalization: "Frame-by-frame video analysis; forensic timeline reconstruction."
-    assumptions: ["CNN video analysis is accurate"]
-    falsifiers: ["Official footage showing gun still on Pretti when shot"]
+    operationalization: "Review and annotate the primary video; compare with CNN's described frame-by-frame analysis; reconstruct a timeline."
+    assumptions: ["CNN's description of the video is accurate"]
+    falsifiers: ["Primary footage showing no weapon removal prior to shots, or removal only after shots"]
     source_ids: ["commondreams-2026-minneapolis-shooting-family"]
   - id: "GOV-2026-045"
-    text: "Alex Pretti was on the ground and being pepper sprayed when shot approximately 10 times by federal agents."
+    text: "Video reporting indicates agents pepper-sprayed and wrestled Alex Pretti to the ground; some reporting counts approximately 10 shots, including shots after he fell prone."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.80
+    operationalization: "Review primary video and any released body cam footage; corroborate with autopsy report (shot count/trajectory) when available."
+    assumptions: ["Secondary reporting accurately characterizes the bystander video"]
+    falsifiers: ["Primary footage contradicting the pepper-spray/ground-position sequence or shot count"]
+    source_ids: ["commondreams-2026-minneapolis-shooting-family"]
+  - id: "GOV-2026-046"
+    text: "Top Trump administration officials publicly suggested Alex Pretti was a 'domestic terrorist' shortly after the shooting; the public justification centered on claims that he approached agents with a handgun."
     type: "[F]"
     domain: "GOV"
     evidence_level: "E4"
     credence: 0.85
-    operationalization: "Video evidence review; autopsy report on shot count and trajectory."
-    assumptions: ["Video captures shooting sequence"]
-    falsifiers: ["Evidence showing Pretti was standing/advancing when shot"]
+    operationalization: "Collect time-stamped official statements/posts; compare stated justification to any evidence released contemporaneously."
+    assumptions: ["Reported characterizations of officials' statements are accurate"]
+    falsifiers: ["Public record showing no such characterization, or contemporaneous evidence-based justification meeting a defined terrorism standard"]
     source_ids: ["commondreams-2026-minneapolis-shooting-family"]
-  - id: "GOV-2026-046"
-    text: "Federal officials (including Noem and Miller) immediately labeled Alex Pretti a 'domestic terrorist' without presenting supporting evidence."
+  - id: "GOV-2026-047"
+    text: "Alex Pretti's family first learned of the shooting from an Associated Press reporter, and reported they had not been contacted by federal officials as of Saturday evening."
     type: "[F]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.90
-    operationalization: "Timeline analysis of official statements vs evidence released."
-    assumptions: ["Reported quotes are accurate"]
-    falsifiers: ["Officials presenting contemporaneous evidence supporting classification"]
-    source_ids: ["commondreams-2026-minneapolis-shooting-family"]
-  - id: "GOV-2026-047"
-    text: "Alex Pretti's family learned of his death from an Associated Press reporter, not from federal officials."
-    type: "[F]"
-    domain: "GOV"
-    evidence_level: "E5"
-    credence: 0.90
-    operationalization: "Federal notification records; family testimony timeline."
-    assumptions: ["Family statement is accurate"]
-    falsifiers: ["Federal records showing earlier official notification"]
+    credence: 0.95
+    operationalization: "Cross-check AP reporting with federal notification records and any subsequent corrections/updates."
+    assumptions: ["AP reporting is accurate"]
+    falsifiers: ["Federal records showing earlier official notification, or AP correction"]
     source_ids: ["commondreams-2026-minneapolis-shooting-family"]
   - id: "GOV-2026-048"
     text: "The January 24, 2026 shooting of Alex Pretti in Minneapolis was by U.S. Border Patrol (CBP), not ICE."
@@ -73,12 +94,32 @@ claims:
     falsifiers: ["Official records attributing to different agency"]
     source_ids: ["commondreams-2026-minneapolis-shooting-family"]
   - id: "GOV-2026-049"
-    text: "AG Pam Bondi signed a memo defining 'domestic terrorism' to include 'impeding' or 'doxing' law enforcement officers."
+    text: "A memo attributed to Attorney General Pam Bondi is reported to treat 'impeding' or 'doxing' law enforcement as domestic terrorism; the primary memo text was not captured in this pass."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    operationalization: "Obtain and review the actual memo text (primary PDF) and verify quoted definitions in context."
+    assumptions: ["Reporting accurately characterizes the memo"]
+    falsifiers: ["Memo text showing different definitions or materially different context"]
+    source_ids: ["commondreams-2026-minneapolis-shooting-family"]
+  - id: "GOV-2026-050"
+    text: "Alex Pretti worked as an ICU nurse at a Minneapolis VA hospital (U.S. Department of Veterans Affairs), per family and AP reporting."
     type: "[F]"
     domain: "GOV"
     evidence_level: "E4"
-    credence: 0.85
-    operationalization: "Obtain and review actual memo text."
-    assumptions: ["Reporting accurately characterizes memo"]
-    falsifiers: ["Memo text showing different definitions"]
+    credence: 0.95
+    operationalization: "Verify employment via VA/HR records or other contemporaneous reporting; check for later corrections."
+    assumptions: ["AP reporting accurately reflects family statements and/or records"]
+    falsifiers: ["Employment records contradicting the ICU nurse/VA employment claim"]
+    source_ids: ["commondreams-2026-minneapolis-shooting-family"]
+  - id: "GOV-2026-051"
+    text: "Alex Pretti was a U.S. citizen (born in Illinois), per family and AP reporting."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.95
+    operationalization: "Verify citizenship/birthplace via official records or credible reporting; check for later corrections."
+    assumptions: ["AP reporting accurately reflects family statements and/or records"]
+    falsifiers: ["Official records contradicting citizenship/birthplace reporting"]
     source_ids: ["commondreams-2026-minneapolis-shooting-family"]
