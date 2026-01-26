@@ -1,0 +1,149 @@
+sources:
+  - id: "claude-2026-deepresearch-pla-purge-taiwan-calculus"
+    type: "KNOWLEDGE"
+    title: "China's January 2026 military purge reshapes Taiwan calculus"
+    author:
+      - "Claude (Deep Research; AI-generated memo)"
+    year: 2026
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/claude-2026-deepresearch-pla-purge-taiwan-calculus.md"
+    reliability: 0.50
+    bias_notes: >-
+      AI-generated synthesis memo that mixes factual assertions, interpretive framing, and uncited quantitative details; treat as a hypothesis
+      generator and verify key numerics against primary sources.
+    topics:
+      - china
+      - pla
+      - zhang-youxia
+      - taiwan
+      - blockade
+      - quarantine
+      - gray-zone
+      - energy-security
+      - venezuela
+      - greenland
+    domains:
+      - GEO
+      - GOV
+      - RESOURCE
+      - INST
+    claims_extracted:
+      - GOV-2026-068
+      - GEO-2026-021
+      - GEO-2026-022
+      - GEO-2026-023
+      - GEO-2026-024
+      - RESOURCE-2026-011
+      - RESOURCE-2026-012
+
+claims:
+  - id: "GEO-2026-021"
+    text: >-
+      Quarantine/blockade and other gray-zone coercion are more likely near-term PRC approaches against Taiwan than full-scale amphibious invasion.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+    operationalization: >-
+      Track major PRC coercive actions 2026–2027; classify events into quarantine/blockade, gray-zone harassment, or invasion-scale mobilization;
+      compare frequencies and triggers.
+    assumptions:
+      - Observable actions are a usable proxy for PRC scenario choice.
+    falsifiers:
+      - A major amphibious invasion attempt begins in the near term.
+      - Credible internal evidence indicates invasion was the primary near-term plan.
+
+  - id: "GEO-2026-022"
+    text: >-
+      PLA ADIZ incursions around Taiwan increased from about 1,669 in 2023 to about 3,615 in 2024.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+    operationalization: >-
+      Verify against Taiwan MND or reputable OSINT aggregations that define and count ADIZ incursions consistently year-over-year.
+    assumptions:
+      - Counts are comparable across years (consistent definition and data source).
+    falsifiers:
+      - Trusted datasets show materially different annual totals under consistent definitions.
+
+  - id: "GEO-2026-023"
+    text: >-
+      Median-line crossings in the Taiwan Strait occurred on about 209 days in 2024 versus about 62 days in 2023.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+    operationalization: >-
+      Verify day-counts from Taiwan MND or reputable OSINT datasets with a clear definition of 'median-line crossing day'.
+    assumptions:
+      - A day-based measure is computed consistently across years.
+    falsifiers:
+      - Trusted datasets show materially different day counts.
+
+  - id: "GEO-2026-024"
+    text: >-
+      Taiwan’s current “porcupine strategy” is better optimized for deterring/defeating an amphibious invasion than for countering a quarantine or blockade.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+    operationalization: >-
+      Compare Taiwan defense investments and exercise outcomes across invasion vs quarantine/blockade scenarios in war games and operational assessments.
+    assumptions:
+      - Relative scenario preparedness can be assessed via exercises and capability inventories.
+    falsifiers:
+      - Credible assessments show Taiwan is equally or more prepared for blockade/quarantine than for invasion.
+
+  - id: "RESOURCE-2026-011"
+    text: >-
+      Taiwan relies on imports for over 97% of its energy needs.
+    type: "[F]"
+    domain: "RESOURCE"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+    operationalization: >-
+      Confirm with Taiwan energy-balance statistics (or consistent secondary sources) for the relevant year.
+    assumptions: []
+    falsifiers:
+      - Official energy-balance data shows materially lower import dependence.
+
+  - id: "RESOURCE-2026-012"
+    text: >-
+      Taiwan has roughly 11–14 days of LNG reserves under normal consumption.
+    type: "[F]"
+    domain: "RESOURCE"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+    operationalization: >-
+      Define the reserve metric (terminal storage vs national stockpile vs power-sector burn rate) and validate against official reserve reporting
+      or CSIS wargame inputs.
+    assumptions:
+      - A stable 'normal consumption' baseline is meaningful for estimating days-of-cover.
+    falsifiers:
+      - Authoritative reserve figures show substantially different days-of-cover.
+
+  - id: "GOV-2026-068"
+    text: >-
+      U.S. sovereignty-violating precedents (e.g., Venezuela intervention) and Greenland-related threats weaken Washington’s legitimacy as a defender
+      of the rules-based order, potentially lowering expected international resistance to PRC coercion against Taiwan.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+    operationalization: >-
+      Track coalition statements, UN voting patterns, sanctions, and defense cooperation commitments following such precedents, and compare to prior
+      baseline behavior.
+    assumptions:
+      - Normative credibility measurably affects coalition coordination in crises.
+    falsifiers:
+      - Post-incident behavior shows stronger coordinated norm-enforcement than prior baselines.
+

@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 342 |
-| **Sources** | 89 |
+| **Claims** | 351 |
+| **Sources** | 91 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 25 |
 
@@ -48,6 +48,8 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-26 | [China's January 2026 military purge reshapes Taiwan calculus (Claude deepresearch memo)](analysis/sources/claude-2026-deepresearch-pla-purge-taiwan-calculus.md) | `[DRAFT]` | AI-generated synthesis memo: blockade/quarantine framing, Taiwan energy vulnerability, and norms/credibility context |
+| 2026-01-26 | [2026 United States intervention in Venezuela (Wikipedia)](analysis/sources/wikipedia-2026-us-intervention-venezuela.md) | `[DRAFT]` | Context source: Venezuela intervention capture event + UN/legal criticism as precedent/analogy |
 | 2026-01-26 | [How a purge of China’s military leadership could impact the army and the future of Taiwan (AP)](analysis/sources/ap-2026-pla-purge-taiwan.md) | `[DRAFT]` | Explainer: announced investigations, purge scale, and competing views on short- vs long-term Taiwan risk |
 | 2026-01-26 | [Taiwan monitoring “abnormal” China military leadership changes (Reuters)](analysis/sources/reuters-2026-taiwan-monitoring-pla-leadership.md) | `[DRAFT]` | Taiwan official posture: monitor abnormal PRC changes; don’t lower guard; notes near-daily PRC ops |
 | 2026-01-26 | [What Xi Jinping’s purge of China’s most senior general reveals (Economist)](analysis/sources/economist-2026-xi-purge-senior-general.md) | `[DRAFT]` | Motive space: corruption vs performance vs faction; warns of readiness impacts; cites DoD assessments |
@@ -102,11 +104,11 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TECH | Technology & AI | 104 |
 | LABOR | Labor & Employment | 17 |
 | ECON | Economics & Markets | 29 |
-| GOV | Governance & Policy | 67 |
+| GOV | Governance & Policy | 70 |
 | SOC | Social Dynamics | 5 |
 | TRANS | Transition Dynamics | 24 |
-| RESOURCE | Resource Constraints | 11 |
-| GEO | Geopolitics | 21 |
+| RESOURCE | Resource Constraints | 13 |
+| GEO | Geopolitics | 25 |
 | INST | Institutions & Organizations | 33 |
 | RISK | Risk Assessment | 8 |
 | META | Framework & Methodology | 23 |

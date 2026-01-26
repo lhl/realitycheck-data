@@ -1,6 +1,6 @@
 # Source Registry
 # Exported from LanceDB on 2026-01-26
-# Total sources: 89
+# Total sources: 91
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -435,6 +435,44 @@ sources:
     - workflow
     domains:
     - META
+    status: analyzed
+  claude-2026-deepresearch-pla-purge-taiwan-calculus:
+    type: KNOWLEDGE
+    title: China's January 2026 military purge reshapes Taiwan calculus
+    author:
+    - Claude (Deep Research; AI-generated memo)
+    year: 2026
+    url: ''
+    accessed: '2026-01-26'
+    reliability: 0.5
+    bias_notes: AI-generated synthesis memo that mixes factual assertions, interpretive
+      framing, and uncited quantitative details; treat as a hypothesis generator and
+      verify key numerics against primary sources.
+    claims_extracted:
+    - GOV-2026-068
+    - GEO-2026-021
+    - GEO-2026-022
+    - GEO-2026-023
+    - GEO-2026-024
+    - RESOURCE-2026-011
+    - RESOURCE-2026-012
+    analysis_file: analysis/sources/claude-2026-deepresearch-pla-purge-taiwan-calculus.md
+    topics:
+    - china
+    - pla
+    - zhang-youxia
+    - taiwan
+    - blockade
+    - quarantine
+    - gray-zone
+    - energy-security
+    - venezuela
+    - greenland
+    domains:
+    - GEO
+    - GOV
+    - RESOURCE
+    - INST
     status: analyzed
   commondreams-2026-minneapolis-shooting-family:
     type: ARTICLE
@@ -2096,6 +2134,32 @@ sources:
     - financebench
     domains:
     - TECH
+    status: analyzed
+  wikipedia-2026-us-intervention-venezuela:
+    type: KNOWLEDGE
+    title: 2026 United States intervention in Venezuela - Wikipedia
+    author:
+    - Wikipedia contributors
+    year: 2026
+    url: https://en.wikipedia.org/wiki/2026_United_States_intervention_in_Venezuela
+    accessed: '2026-01-26'
+    reliability: 0.55
+    bias_notes: Wikipedia is a secondary compilation; generally reliable on high-salience
+      events but should be cross-checked against primary reporting and official statements
+      for contested details.
+    claims_extracted:
+    - GOV-2026-069
+    - GOV-2026-070
+    analysis_file: analysis/sources/wikipedia-2026-us-intervention-venezuela.md
+    topics:
+    - venezuela
+    - united-states
+    - intervention
+    - maduro
+    - international-law
+    - rules-based-order
+    domains:
+    - GOV
     status: analyzed
   wikipedia-greenland-crisis:
     type: KNOWLEDGE

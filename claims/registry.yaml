@@ -1,18 +1,18 @@
 # Claim Registry
 # Exported from LanceDB on 2026-01-26
-# Total claims: 342
+# Total claims: 351
 # Total chains: 4
 
 counters:
   TECH: 98
-  RESOURCE: 10
+  RESOURCE: 12
   LABOR: 13
   ECON: 27
-  GOV: 67
+  GOV: 70
   SOC: 3
   TRANS: 17
   META: 23
-  GEO: 20
+  GEO: 24
   RISK: 5
   INST: 32
 claims:
@@ -975,6 +975,78 @@ claims:
     credence: 0.30000001192092896
     source_ids:
     - x-2026-zhang-purge-hot-takes
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-021:
+    text: Quarantine/blockade and other gray-zone coercion are more likely near-term
+      PRC approaches against Taiwan than full-scale amphibious invasion.
+    type: '[H]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - claude-2026-deepresearch-pla-purge-taiwan-calculus
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-022:
+    text: PLA ADIZ incursions around Taiwan increased from about 1,669 in 2023 to
+      about 3,615 in 2024.
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - claude-2026-deepresearch-pla-purge-taiwan-calculus
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-023:
+    text: Median-line crossings in the Taiwan Strait occurred on about 209 days in
+      2024 versus about 62 days in 2023.
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - claude-2026-deepresearch-pla-purge-taiwan-calculus
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-024:
+    text: Taiwan’s current “porcupine strategy” is better optimized for deterring/defeating
+      an amphibious invasion than for countering a quarantine or blockade.
+    type: '[H]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - claude-2026-deepresearch-pla-purge-taiwan-calculus
     first_extracted: '2026-01-26'
     extracted_by: import
     supports: []
@@ -2260,6 +2332,63 @@ claims:
     credence: 0.05000000074505806
     source_ids:
     - x-2026-zhang-purge-hot-takes
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-068:
+    text: U.S. sovereignty-violating precedents (e.g., Venezuela intervention) and
+      Greenland-related threats weaken Washington’s legitimacy as a defender of the
+      rules-based order, potentially lowering expected international resistance to
+      PRC coercion against Taiwan.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - claude-2026-deepresearch-pla-purge-taiwan-calculus
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-069:
+    text: On 2026-01-03, the United States launched a military operation in Venezuela
+      and captured President Nicolás Maduro (and Cilia Flores), transporting them
+      to New York to face trial.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - wikipedia-2026-us-intervention-venezuela
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-070:
+    text: UN officials and international law experts said the 2026 U.S. operation
+      in Venezuela violated the UN Charter and Venezuela’s sovereignty.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - wikipedia-2026-us-intervention-venezuela
     first_extracted: '2026-01-26'
     extracted_by: import
     supports: []
@@ -3905,6 +4034,40 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-25'
+  RESOURCE-2026-011:
+    text: Taiwan relies on imports for over 97% of its energy needs.
+    type: '[F]'
+    domain: RESOURCE
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - claude-2026-deepresearch-pla-purge-taiwan-calculus
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  RESOURCE-2026-012:
+    text: Taiwan has roughly 11–14 days of LNG reserves under normal consumption.
+    type: '[F]'
+    domain: RESOURCE
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - claude-2026-deepresearch-pla-purge-taiwan-calculus
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
   RISK-2025-001:
     text: Humanity has passed the +1.5°C warming threshold, increasing the number
       of days per year when temperatures are too hot for normal photosynthesis.

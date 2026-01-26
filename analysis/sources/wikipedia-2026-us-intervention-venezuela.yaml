@@ -1,0 +1,58 @@
+sources:
+  - id: "wikipedia-2026-us-intervention-venezuela"
+    type: "KNOWLEDGE"
+    title: "2026 United States intervention in Venezuela - Wikipedia"
+    author:
+      - "Wikipedia contributors"
+    year: 2026
+    url: "https://en.wikipedia.org/wiki/2026_United_States_intervention_in_Venezuela"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/wikipedia-2026-us-intervention-venezuela.md"
+    reliability: 0.55
+    bias_notes: >-
+      Wikipedia is a secondary compilation; generally reliable on high-salience events but should be cross-checked against primary reporting and
+      official statements for contested details.
+    topics:
+      - venezuela
+      - united-states
+      - intervention
+      - maduro
+      - international-law
+      - rules-based-order
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-069
+      - GOV-2026-070
+
+claims:
+  - id: "GOV-2026-069"
+    text: >-
+      On 2026-01-03, the United States launched a military operation in Venezuela and captured President Nicolás Maduro (and Cilia Flores),
+      transporting them to New York to face trial.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["wikipedia-2026-us-intervention-venezuela"]
+    operationalization: >-
+      Verify via primary reporting and official statements (e.g., DOJ filings, UN records) corroborating the capture and transfer timeline.
+    assumptions: []
+    falsifiers:
+      - Primary sources show no capture/transfer occurred on that date.
+
+  - id: "GOV-2026-070"
+    text: >-
+      UN officials and international law experts said the 2026 U.S. operation in Venezuela violated the UN Charter and Venezuela’s sovereignty.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["wikipedia-2026-us-intervention-venezuela"]
+    operationalization: >-
+      Locate and cite UN statements and representative international-law expert commentary characterizing the operation as a UN Charter/sovereignty violation.
+    assumptions: []
+    falsifiers:
+      - No such UN statements/expert commentary exist or they materially differ.
+
