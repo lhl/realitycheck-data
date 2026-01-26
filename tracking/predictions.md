@@ -1,6 +1,6 @@
 # Prediction Tracking
 
-*Generated 2026-01-24*
+*Generated 2026-01-26*
 
 ## Active Predictions
 
@@ -173,3 +173,66 @@
 - **Falsification**: By 2027-12-31, improved harness features are not widely adopted or do not measurably reduce the need for manual diff inspection; incident/defect rates worsen when teams attempt code-at-a-distance workflows.
 - **Verification**: By 2027-12-31, common agentic dev tooling includes stronger harness features (automated test/validation loops, policy gates, specialist QA/security agents) and these enable many teams to safely delegate more changes without line-by-line manual code inspection.
 - **Last Evaluated**: 2026-01-24
+
+#### TRANS-2026-016
+
+> Over the next 12–24 months, baseline “commodity” token prices are likely to continue declining while premium reasoning and long-context workloads remain price-discriminated and more tightly limited.
+
+- **Status**: [P?]
+- **Source**: lhl-2026-frontier-llm-token-unit-economics
+
+#### TRANS-2026-017
+
+> Token-based pricing will likely evolve toward more explicit “compute unit” billing (time × hardware tier and/or memory residency tiers) to better align charges with wall-clock accelerator cost for reasoning and long-context workloads.
+
+- **Status**: [P?]
+- **Source**: lhl-2026-frontier-llm-token-unit-economics
+
+#### INST-2026-006
+
+> Subscription plans will likely continue tightening “fair use” controls (rate limits, dynamic model routing, and degraded tiers under load) because worst-case long-context and reasoning-heavy usage collapses break-even.
+
+- **Status**: [P?]
+- **Source**: lhl-2026-frontier-llm-token-unit-economics
+
+#### GEO-2026-001
+
+> The purge of top PLA leaders reduces near-term risk of a Taiwan escalation (due to high-command disarray) but may increase long-term risk if it produces a more loyal, less corrupt leadership and improved capability.
+
+- **Status**: [P?]
+- **Source**: ap-2026-pla-purge-taiwan
+
+#### GEO-2026-007
+
+> The near-eradication of the PLA’s top leadership and resulting vacancy/infighting may make Xi Jinping more cautious about using major military force against Taiwan in the near term.
+
+- **Status**: [P?]
+- **Source**: bloomberg-2026-purge-top-general-taiwan-succession
+
+#### GEO-2026-009
+
+> Rebuilding the PLA’s top chains of command after repeated purges may take roughly five years or longer, lowering the short-term probability of a major cross-strait attack on Taiwan.
+
+- **Status**: [P?]
+- **Source**: nyt-2026-xi-purge-top-general-down
+
+#### GEO-2026-011
+
+> The hollowing out of the PLA’s senior leadership makes a Taiwan invasion-scale contingency infeasible in the near term, plausibly delaying any attempt to seize Taiwan by force for multiple years.
+
+- **Status**: [P?]
+- **Source**: telegraph-2026-xi-purge-total-control-pla
+
+#### GEO-2026-019
+
+> Some commentators predict Taiwan will not be invaded any time soon and claim the purge pushes any invasion timeline into the 2030s.
+
+- **Status**: [P?]
+- **Source**: x-2026-zhang-purge-hot-takes
+
+#### GEO-2026-020
+
+> Some commentators predict the purge makes the Taiwan Strait safer in the near term by reducing the probability of a major PLA attack.
+
+- **Status**: [P?]
+- **Source**: x-2026-zhang-purge-hot-takes

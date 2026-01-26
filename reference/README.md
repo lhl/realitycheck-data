@@ -6,16 +6,16 @@ This directory contains source materials analyzed in this knowledge base.
 
 | Type | Count | Description |
 |------|-------|-------------|
-| ARTICLE | 5 | Published articles |
-| BLOG | 15 | Blog posts |
+| ARTICLE | 18 | Published articles |
+| BLOG | 22 | Blog posts |
 | BOOK | 1 | Books |
 | CONVO | 6 | AI-assisted analysis transcripts |
 | DATA | 2 | Data sources |
 | INTERVIEW | 1 | Interview, talk, or speech transcript |
-| KNOWLEDGE | 7 | Background knowledge |
-| PAPER | 5 | Academic papers |
-| REPORT | 6 | Reports |
-| SOCIAL | 4 | Social media threads |
+| KNOWLEDGE | 17 | Background knowledge |
+| PAPER | 8 | Academic papers |
+| REPORT | 7 | Reports |
+| SOCIAL | 7 | Social media threads |
 
 ## Browse
 

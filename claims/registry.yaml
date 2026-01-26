@@ -1,6 +1,6 @@
 # Claim Registry
 # Exported from LanceDB on 2026-01-26
-# Total claims: 280
+# Total claims: 342
 # Total chains: 4
 
 counters:
@@ -8,13 +8,13 @@ counters:
   RESOURCE: 10
   LABOR: 13
   ECON: 27
-  GOV: 53
+  GOV: 67
   SOC: 3
   TRANS: 17
   META: 23
-  GEO: 1
+  GEO: 20
   RISK: 5
-  INST: 6
+  INST: 32
 claims:
   ECON-2025-001:
     text: Neoliberalism evolved into a model of state hollowing and asset-stripping
@@ -610,6 +610,380 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  GEO-2026-001:
+    text: The purge of top PLA leaders reduces near-term risk of a Taiwan escalation
+      (due to high-command disarray) but may increase long-term risk if it produces
+      a more loyal, less corrupt leadership and improved capability.
+    type: '[P]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - ap-2026-pla-purge-taiwan
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-002:
+    text: Taiwan’s defense minister said Taiwan is monitoring “abnormal” changes among
+      the top levels of China’s party, government, and military leadership following
+      the announced investigation of Gen. Zhang Youxia.
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - reuters-2026-taiwan-monitoring-pla-leadership
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-003:
+    text: Taiwan’s defense minister said Taiwan would not lower its guard or war preparedness
+      due to the downfall of any one PRC leader; the threat level remains high.
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - reuters-2026-taiwan-monitoring-pla-leadership
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-004:
+    text: China conducts near-daily military activity around Taiwan (including warplanes
+      and warships operating in Taiwan’s surrounding air and maritime approaches).
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - reuters-2026-taiwan-monitoring-pla-leadership
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-005:
+    text: A 2027 target for the PLA to be capable of taking Taiwan is widely reported
+      in Western reporting and is commonly attributed to U.S. intelligence assessments
+      of Xi Jinping’s guidance.
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - economist-2026-xi-purge-senior-general
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-006:
+    text: Bloomberg frames U.S. political volatility under President Trump and allied
+      disputes as part of the context driving speculation about whether Xi Jinping
+      might see opportunity (or face constraints) in Taiwan strategy.
+    type: '[H]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.30000001192092896
+    source_ids:
+    - bloomberg-2026-purge-top-general-taiwan-succession
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-007:
+    text: The near-eradication of the PLA’s top leadership and resulting vacancy/infighting
+      may make Xi Jinping more cautious about using major military force against Taiwan
+      in the near term.
+    type: '[P]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - bloomberg-2026-purge-top-general-taiwan-succession
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-008:
+    text: U.S. and Taiwanese government statements commonly describe Xi Jinping as
+      having directed the PLA to be capable of taking Taiwan by force by 2027 (a capability
+      target, not a guaranteed decision-to-invade date).
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - ft-2026-xi-sole-operational-control-pla
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-009:
+    text: Rebuilding the PLA’s top chains of command after repeated purges may take
+      roughly five years or longer, lowering the short-term probability of a major
+      cross-strait attack on Taiwan.
+    type: '[P]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - nyt-2026-xi-purge-top-general-down
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-010:
+    text: The generals promoted to replace purged commanders may skew younger and
+      more ideologically nationalistic, potentially reducing restraint and increasing
+      medium-term Taiwan escalation risk.
+    type: '[H]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - skynews-2026-xi-purge-power-control
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-011:
+    text: The hollowing out of the PLA’s senior leadership makes a Taiwan invasion-scale
+      contingency infeasible in the near term, plausibly delaying any attempt to seize
+      Taiwan by force for multiple years.
+    type: '[P]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - telegraph-2026-xi-purge-total-control-pla
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-012:
+    text: Western reporting frequently cites U.S. intelligence assessments that Xi
+      Jinping directed the PLA to be ready by 2027 for a Taiwan operation (often framed
+      as an invasion-readiness objective rather than a committed invasion plan).
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - telegraph-2026-xi-purge-total-control-pla
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-013:
+    text: The leadership vacuum created by the purge may lower the near-term probability
+      of a Taiwan invasion-scale operation, as Xi Jinping pivots to a more calculated
+      strategy that prioritizes negotiating with the U.S. leadership before escalating.
+    type: '[H]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - wsj-2026-top-general-nuclear-secrets
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-014:
+    text: Taiwan authorities assess that China’s espionage operations in Taiwan are
+      rapidly advancing and pose a serious threat to Taiwan’s national security.
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - wsj-2026-chinese-spy-machine-taiwan-military
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-015:
+    text: Taiwan prosecutors filed charges in 2024 against 64 people in 15 cases of
+      alleged PRC espionage, compared with three cases in 2021.
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - wsj-2026-chinese-spy-machine-taiwan-military
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-016:
+    text: In Taiwan’s PRC-espionage prosecutions cited for 2024 and the first nine
+      months of 2025, nearly two-thirds of those charged were active or retired military
+      personnel.
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - wsj-2026-chinese-spy-machine-taiwan-military
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-017:
+    text: PRC agents increasingly target lower-ranking Taiwanese military members
+      for recruitment using messaging apps and online loan offers, often for relatively
+      small payments.
+    type: '[H]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - wsj-2026-chinese-spy-machine-taiwan-military
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-018:
+    text: Taiwan officials fear that PRC agents already in place inside Taiwan would
+      materially aid a PLA attack by providing intelligence, targeting data, or sabotage
+      support.
+    type: '[H]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - wsj-2026-chinese-spy-machine-taiwan-military
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-019:
+    text: Some commentators predict Taiwan will not be invaded any time soon and claim
+      the purge pushes any invasion timeline into the 2030s.
+    type: '[P]'
+    domain: GEO
+    evidence_level: E6
+    credence: 0.20000000298023224
+    source_ids:
+    - x-2026-zhang-purge-hot-takes
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GEO-2026-020:
+    text: Some commentators predict the purge makes the Taiwan Strait safer in the
+      near term by reducing the probability of a major PLA attack.
+    type: '[P]'
+    domain: GEO
+    evidence_level: E6
+    credence: 0.30000001192092896
+    source_ids:
+    - x-2026-zhang-purge-hot-takes
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
   GOV-2026-001:
     text: Property rights will become arbitrary/confiscatable in neofeudal regime
     type: '[H]'
@@ -1633,6 +2007,268 @@ claims:
     version: 1
     last_updated: '2026-01-26'
     notes: Layer=ASSERTED (sworn declaration). Wound details/timeline require corroboration.
+  GOV-2026-054:
+    text: Since 2012, Xi Jinping’s anti-corruption campaign has punished more than
+      roughly 200,000 officials.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - ap-2026-pla-purge-taiwan
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-055:
+    text: Xi Jinping’s decision to move against Zhang Youxia may reflect frustration
+      with Zhang’s failure to deliver sufficient modernization and readiness progress
+      ahead of the PLA’s reported Taiwan capability deadline.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - economist-2026-xi-purge-senior-general
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-056:
+    text: Zhang Youxia (or close associates/family) may be implicated in procurement
+      corruption, potentially linked to his earlier oversight of weapons development
+      and procurement institutions.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - economist-2026-xi-purge-senior-general
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-057:
+    text: Factional rivalry within the PLA and elite “princeling” networks is a plausible
+      driver of Zhang Youxia’s purge, with Zhang’s accumulated authority becoming
+      a perceived threat to Xi Jinping.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - economist-2026-xi-purge-senior-general
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-058:
+    text: As a Politburo member and the most powerful uniformed general, Zhang Youxia
+      had unusual political clout and (in theory) could have helped mobilize opposition
+      to Xi Jinping’s succession plans ahead of the 2027 leadership reshuffle.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - bloomberg-2026-purge-top-general-taiwan-succession
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-059:
+    text: One plausible driver of Xi Jinping’s repeated PLA purges is personal insecurity
+      and distrust of top commanders, such that perceived trustworthiness outweighs
+      personal ties to long-time allies.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - nyt-2026-xi-purge-top-general-down
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-060:
+    text: Amid information scarcity, rumors circulated that Zhang Youxia and Liu Zhenli
+      were involved in a coup plot against Xi Jinping, but such claims are unsubstantiated
+      in publicly available evidence.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - skynews-2026-xi-purge-power-control
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-061:
+    text: Xi Jinping has roughly doubled China’s defense budget since taking office.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - telegraph-2026-xi-purge-total-control-pla
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-062:
+    text: The rolling, multi-year pattern of PLA purges suggests Xi Jinping is not
+      reacting to an imminent coup threat and instead indicates confidence and strength
+      in his control over the military.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - telegraph-2026-xi-purge-total-control-pla
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-063:
+    text: The unusually fast official confirmation of the case suggests PRC leadership
+      urgency to get ahead of rumors and quickly begin the propaganda and political-education
+      process inside the PLA.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - sinocism-2026-pla-purges-intensify-zhang-liu
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-064:
+    text: Some commentators claim the U.S. deliberately exposed (“burned”) intelligence
+      assets to derail Chinese invasion plans and force China to waste time on internal
+      investigations.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E6
+    credence: 0.10000000149011612
+    source_ids:
+    - x-2026-zhang-purge-hot-takes
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-065:
+    text: Some commentators hypothesize that “treason/spying” allegations were seeded
+      as information warfare to pressure Zhang Youxia’s allies or shape internal outcomes,
+      rather than reflecting true internal findings.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E6
+    credence: 0.20000000298023224
+    source_ids:
+    - x-2026-zhang-purge-hot-takes
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-066:
+    text: Some commentators argue the “nuclear secrets” allegation is implausible
+      given compartmentalization and monitoring at Zhang’s rank, and that procurement
+      corruption is a simpler and more likely explanation for the purge.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - x-2026-zhang-purge-hot-takes
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-067:
+    text: Some social-media posts claim a coup is taking place in China and that top
+      military generals are being executed.
+    type: '[S]'
+    domain: GOV
+    evidence_level: E6
+    credence: 0.05000000074505806
+    source_ids:
+    - x-2026-zhang-purge-hot-takes
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
   INST-2025-001:
     text: At Google, a team other than the core Gemini/DeepMind builders modified
       the system’s behavior in ways that produced historically inaccurate “diversity
@@ -1768,6 +2404,504 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-25'
+  INST-2026-007:
+    text: In late January 2026, China’s Ministry of National Defense announced it
+      had opened a case for review and investigation into Gen. Zhang Youxia for suspected
+      serious violations of party discipline and the law.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - ap-2026-pla-purge-taiwan
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-008:
+    text: In late January 2026, China’s Ministry of National Defense announced it
+      had opened a case for review and investigation into Gen. Liu Zhenli for suspected
+      serious violations of party discipline and the law.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - ap-2026-pla-purge-taiwan
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-009:
+    text: The reported investigations of Zhang Youxia and Liu Zhenli, combined with
+      earlier removals, leave the Central Military Commission’s uniformed leadership
+      largely vacant, with Xi Jinping and Zhang Shengmin described as the only active
+      named members.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - ap-2026-pla-purge-taiwan
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-010:
+    text: Since 2012, at least 17 PLA generals have been removed from their military
+      positions (as counted in an AP review of military statements and state media
+      reports).
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.550000011920929
+    source_ids:
+    - ap-2026-pla-purge-taiwan
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-011:
+    text: Gen. Zhang Youxia is among the few senior PLA officers with combat experience,
+      having participated in China’s 1979 border conflict with Vietnam.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - reuters-2026-taiwan-monitoring-pla-leadership
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-012:
+    text: In PRC elite-politics practice, senior officials placed under investigation
+      for “serious discipline and law violations” are typically detained and investigations
+      are routinely followed by formal dismissal.
+    type: '[T]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - economist-2026-xi-purge-senior-general
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-013:
+    text: The investigation of Zhang Youxia and Liu Zhenli, combined with earlier
+      removals, has effectively hollowed out the Central Military Commission, leaving
+      Xi Jinping and Zhang Shengmin described as the only active named members.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - economist-2026-xi-purge-senior-general
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-014:
+    text: A new wave of PLA purges began around 2023 with the Rocket Force and later
+      spread to other services as well as the PLA’s procurement and political departments.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - economist-2026-xi-purge-senior-general
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-015:
+    text: The U.S. Department of Defense’s annual report on China’s military assessed
+      that senior-officer removals caused uncertainty in PLA organizational priorities
+      and that procurement corruption produced observed capability shortfalls (including
+      cited issues such as malfunctioning missile-silo lids).
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.75
+    source_ids:
+    - economist-2026-xi-purge-senior-general
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-016:
+    text: The public announcement of an investigation into Zhang Youxia was unusually
+      fast, occurring within days of his apparent absence from a party meeting, compared
+      with months of delay between disappearance and confirmation in prior senior-figure
+      cases.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - bloomberg-2026-purge-top-general-taiwan-succession
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-017:
+    text: Analysts cited by Bloomberg argue the allegation that Zhang Youxia leaked
+      nuclear weapons information is implausible given tight monitoring of senior
+      generals and limited official contact channels with U.S. counterparts.
+    type: '[H]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - bloomberg-2026-purge-top-general-taiwan-succession
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-018:
+    text: The investigation of Zhang Youxia and Liu Zhenli leaves Xi Jinping with
+      unusually direct (effectively sole) operational control over the PLA via a drastically
+      reduced Central Military Commission.
+    type: '[H]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - ft-2026-xi-sole-operational-control-pla
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-019:
+    text: In CCP political language, “discipline violations” commonly denotes corruption
+      but is also intertwined with factional struggle and has historically been used
+      by party leaders to purge rivals.
+    type: '[T]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - ft-2026-xi-sole-operational-control-pla
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-020:
+    text: The investigations of Zhang Youxia and Liu Zhenli likely reflect concerns
+      about underperformance in building credible combat capability and inefficient
+      use of defense resources, not only corruption.
+    type: '[H]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - ft-2026-xi-sole-operational-control-pla
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-021:
+    text: In modern PRC political practice, senior officials publicly placed “under
+      investigation” for serious discipline/law violations are rarely later declared
+      innocent; public investigation strongly predicts removal.
+    type: '[T]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - nyt-2026-xi-purge-top-general-down
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-022:
+    text: A roster analysis cited in reporting suggests that among 44 uniformed officers
+      appointed to the CCP Central Committee in 2022, roughly 29 were purged or missing
+      by late 2025/early 2026.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - nyt-2026-xi-purge-top-general-down
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-023:
+    text: A substantial share of senior PLA officers removed in the recent purge wave
+      were promoted during Xi Jinping’s tenure, implying corruption/loyalty problems
+      among Xi’s own appointees, not only predecessors’ networks.
+    type: '[H]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - nyt-2026-xi-purge-top-general-down
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-024:
+    text: Official PLA Daily commentary on the Zhang Youxia/Liu Zhenli case framed
+      it as involving “political” issues and harm to the party’s absolute leadership
+      over the military (not only corruption).
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - skynews-2026-xi-purge-power-control
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-025:
+    text: The Wall Street Journal reports that an internal high-level briefing alleged
+      Gen. Zhang Youxia leaked “core technical data” on China’s nuclear weapons to
+      the United States.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.3499999940395355
+    source_ids:
+    - wsj-2026-top-general-nuclear-secrets
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-026:
+    text: The Wall Street Journal reports that an internal briefing alleged Gen. Zhang
+      Youxia accepted large bribes for official acts, including helping elevate Li
+      Shangfu to senior positions.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.44999998807907104
+    source_ids:
+    - wsj-2026-top-general-nuclear-secrets
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-027:
+    text: The Wall Street Journal reports that evidence against Zhang Youxia was linked
+      to the investigation of Gu Jun (former general manager of China National Nuclear
+      Corp.) and an alleged security breach in China’s nuclear sector.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.5
+    source_ids:
+    - wsj-2026-top-general-nuclear-secrets
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-028:
+    text: The Wall Street Journal reports Xi Jinping commissioned a task force to
+      investigate Zhang Youxia’s tenure in Shenyang (2007–2012), that investigators
+      stayed in local hotels rather than military bases, and that devices were seized
+      from officers tied to Zhang and Liu.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.5
+    source_ids:
+    - wsj-2026-top-general-nuclear-secrets
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-029:
+    text: A PLA Daily editorial about the Zhang Youxia/Liu Zhenli case accuses them
+      of undermining the “CMC Chairman Responsibility System” and of fueling political
+      and corruption issues affecting the party’s absolute leadership over the military
+      and combat capability.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - sinocism-2026-pla-purges-intensify-zhang-liu
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-030:
+    text: Reporting summarized by Sinocism (via SCMP sources) claims party elites
+      were briefed about the investigation and that Zhang Youxia was accused of corruption
+      and of failing to rein in associates, family members, and relatives, including
+      failing to report problems promptly to party leadership.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.5
+    source_ids:
+    - sinocism-2026-pla-purges-intensify-zhang-liu
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-031:
+    text: Reporting summarized by Sinocism (via a SCMP-sourced claim) states that
+      Zhang Youxia was formally detained by military corruption investigators shortly
+      before the public announcement.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.4000000059604645
+    source_ids:
+    - sinocism-2026-pla-purges-intensify-zhang-liu
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  INST-2026-032:
+    text: Some commentators claim Xi’s purge has hollowed out PLA command structures
+      such that 2026 is the PLA’s weakest year, making a near-term Taiwan war less
+      likely.
+    type: '[H]'
+    domain: INST
+    evidence_level: E6
+    credence: 0.25
+    source_ids:
+    - x-2026-zhang-purge-hot-takes
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
   LABOR-2023-001:
     text: 'In a controlled experiment (May–Jun 2022) with 95 professional developers,
       the group with access to GitHub Copilot completed an HTTP-server implementation
@@ -2893,6 +4027,44 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-23'
+  RISK-2026-002:
+    text: The ongoing investigations and leadership upheaval very likely risk short-term
+      disruptions in the PLA’s operational effectiveness, though the PLA could emerge
+      more proficient later if systemic corruption is reduced.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.550000011920929
+    source_ids:
+    - economist-2026-xi-purge-senior-general
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  RISK-2026-003:
+    text: A severe vacuum at the very top of the PLA’s command structure is likely
+      to affect the PLA’s readiness for major, complex military operations in the
+      short to medium term.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - wsj-2026-top-general-nuclear-secrets
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
   SOC-2025-001:
     text: A significant share of current social unrest and insecurity-driven radicalization
       is being caused by the ongoing civilizational energy transition.

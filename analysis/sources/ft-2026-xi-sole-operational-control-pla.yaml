@@ -1,0 +1,104 @@
+sources:
+  - id: "ft-2026-xi-sole-operational-control-pla"
+    type: "ARTICLE"
+    title: "Xi takes sole operational control of army as China probes military leaders"
+    author:
+      - "Kathrin Hille"
+      - "Demetri Sevastopulo"
+    year: 2026
+    url: "https://www.ft.com/content/a065b8e9-c246-4d2f-bc47-425ba2a7e871"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/ft-2026-xi-sole-operational-control-pla.md"
+    reliability: 0.70
+    bias_notes: >-
+      Strong contextualization of CCP “discipline” language and analyst views; still limited by opaque PRC internal motives.
+      Treat motive claims as hypotheses.
+    topics:
+      - china
+      - pla
+      - central-military-commission
+      - zhang-youxia
+      - liu-zhenli
+      - military-purge
+      - corruption
+      - readiness
+      - taiwan
+    domains:
+      - INST
+      - GEO
+    claims_extracted:
+      - INST-2026-018
+      - INST-2026-019
+      - INST-2026-020
+      - GEO-2026-008
+
+claims:
+  - id: "INST-2026-018"
+    text: >-
+      The investigation of Zhang Youxia and Liu Zhenli leaves Xi Jinping with unusually direct (effectively sole)
+      operational control over the PLA via a drastically reduced Central Military Commission.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["ft-2026-xi-sole-operational-control-pla"]
+    operationalization: >-
+      Compare formal CMC membership, acting appointments, and observed command-and-control functioning (exercise tempo,
+      theater-command activity) before/after the purge to estimate any operational-control bottlenecks.
+    assumptions:
+      - Operational control is sufficiently centralized at the CMC level that vacancies materially matter.
+    falsifiers:
+      - Evidence shows stable operational command functioning with acting leaders filling roles seamlessly.
+
+  - id: "INST-2026-019"
+    text: >-
+      In CCP political language, “discipline violations” commonly denotes corruption but is also intertwined with factional
+      struggle and has historically been used by party leaders to purge rivals.
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["ft-2026-xi-sole-operational-control-pla"]
+    operationalization: >-
+      Analyze a corpus of CCP disciplinary announcements and outcomes to test whether “discipline” cases correlate with
+      factional-network removal patterns beyond pure corruption indicators.
+    assumptions:
+      - Factional-network structure can be inferred from public career histories.
+    falsifiers:
+      - “Discipline violations” cases show no association with factional patterns after controlling for corruption signals.
+
+  - id: "INST-2026-020"
+    text: >-
+      The investigations of Zhang Youxia and Liu Zhenli likely reflect concerns about underperformance in building credible
+      combat capability and inefficient use of defense resources, not only corruption.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["ft-2026-xi-sole-operational-control-pla"]
+    operationalization: >-
+      Look for PRC internal messaging emphasizing training shortcomings and combat readiness; assess whether purge targets
+      disproportionately occupy roles tied to operations/training/procurement performance.
+    assumptions:
+      - Purge decisions partially reflect performance evaluation.
+    falsifiers:
+      - Subsequent disclosures show the probe rationale is unrelated to readiness/performance.
+
+  - id: "GEO-2026-008"
+    text: >-
+      U.S. and Taiwanese government statements commonly describe Xi Jinping as having directed the PLA to be capable of taking
+      Taiwan by force by 2027 (a capability target, not a guaranteed decision-to-invade date).
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["ft-2026-xi-sole-operational-control-pla"]
+    operationalization: >-
+      Collect primary U.S./Taiwan official statements and testimony referencing “2027” and classify whether they describe an
+      assessed capability objective versus an invasion plan/timeline.
+    assumptions:
+      - Public statements reflect underlying intelligence assessments.
+    falsifiers:
+      - Primary statements do not support the “directed by 2027” framing.
+

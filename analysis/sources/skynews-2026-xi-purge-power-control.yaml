@@ -1,0 +1,86 @@
+sources:
+  - id: "skynews-2026-xi-purge-power-control"
+    type: "ARTICLE"
+    title: "Xi's purge of top general paints a fascinating picture of power and control within a ruthless and unforgiving system"
+    author:
+      - "Helen-Ann Smith"
+    year: 2026
+    url: "https://news.sky.com/story/xis-purge-of-top-general-paints-a-fascinating-picture-of-power-and-control-within-a-ruthless-and-unforgiving-system-13499060"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/skynews-2026-xi-purge-power-control.md"
+    reliability: 0.65
+    bias_notes: >-
+      Commentary-style analysis; highlights rumor ecology and propaganda language cues. Useful for hypotheses and signaling
+      interpretation, but weaker on verifiable primary evidence.
+    topics:
+      - china
+      - pla
+      - central-military-commission
+      - zhang-youxia
+      - liu-zhenli
+      - military-purge
+      - propaganda
+      - coup-rumors
+      - taiwan
+    domains:
+      - INST
+      - GOV
+      - GEO
+    claims_extracted:
+      - INST-2026-024
+      - GOV-2026-060
+      - GEO-2026-010
+
+claims:
+  - id: "INST-2026-024"
+    text: >-
+      Official PLA Daily commentary on the Zhang Youxia/Liu Zhenli case framed it as involving “political” issues and
+      harm to the party’s absolute leadership over the military (not only corruption).
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["skynews-2026-xi-purge-power-control"]
+    operationalization: >-
+      Quote the PLA Daily editorial text and classify whether it emphasizes political authority, cliques, and the “CMC chairman
+      responsibility system” versus purely graft/discipline framing.
+    assumptions:
+      - The captured Sky News paraphrase matches the PLA Daily editorial text.
+    falsifiers:
+      - PLA Daily editorial lacks the political framing described.
+
+  - id: "GOV-2026-060"
+    text: >-
+      Amid information scarcity, rumors circulated that Zhang Youxia and Liu Zhenli were involved in a coup plot against Xi Jinping,
+      but such claims are unsubstantiated in publicly available evidence.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["skynews-2026-xi-purge-power-control"]
+    operationalization: >-
+      Track rumor propagation (social platforms, fringe outlets) and check whether any credible corroborating evidence appears
+      (leaks, arrests, authoritative reporting).
+    assumptions:
+      - Sky’s characterization reflects real rumor circulation.
+    falsifiers:
+      - No meaningful rumor circulation is observable; or credible evidence substantiates an actual coup plot.
+
+  - id: "GEO-2026-010"
+    text: >-
+      The generals promoted to replace purged commanders may skew younger and more ideologically nationalistic, potentially reducing
+      restraint and increasing medium-term Taiwan escalation risk.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["skynews-2026-xi-purge-power-control"]
+    operationalization: >-
+      Observe replacement profiles (career tracks, commissar vs operator, public rhetoric), and track subsequent cross-strait coercion
+      intensity and crisis behavior after appointments.
+    assumptions:
+      - Replacement selection meaningfully affects strategic restraint.
+    falsifiers:
+      - Replacement pattern favors risk-averse commissars/inspectors and cross-strait behavior de-escalates.
+

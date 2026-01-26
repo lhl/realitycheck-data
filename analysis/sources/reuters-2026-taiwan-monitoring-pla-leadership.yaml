@@ -1,0 +1,104 @@
+sources:
+  - id: "reuters-2026-taiwan-monitoring-pla-leadership"
+    type: "ARTICLE"
+    title: "Taiwan monitoring 'abnormal' China military leadership changes after top general put under investigation"
+    author:
+      - "Reuters"
+      - "Ben Blanchard"
+      - "Roger Tung"
+    year: 2026
+    url: "https://www.reuters.com/world/china/taiwan-monitoring-abnormal-china-military-leadership-changes-after-top-general-2026-01-26/"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/reuters-2026-taiwan-monitoring-pla-leadership.md"
+    reliability: 0.75
+    bias_notes: >-
+      Wire-service reporting focused on Taiwan’s official posture. Useful as a “baseline threat posture” anchor,
+      but does not adjudicate PRC motives or the true military implications of the leadership shakeup.
+    topics:
+      - taiwan
+      - china
+      - pla
+      - central-military-commission
+      - zhang-youxia
+      - liu-zhenli
+      - cross-strait
+      - deterrence
+    domains:
+      - GEO
+      - INST
+    claims_extracted:
+      - GEO-2026-002
+      - GEO-2026-003
+      - GEO-2026-004
+      - INST-2026-011
+
+claims:
+  - id: "GEO-2026-002"
+    text: >-
+      Taiwan’s defense minister said Taiwan is monitoring “abnormal” changes among the top levels of China’s
+      party, government, and military leadership following the announced investigation of Gen. Zhang Youxia.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["reuters-2026-taiwan-monitoring-pla-leadership"]
+    operationalization: >-
+      Compare Reuters paraphrase to Taiwan MoD/minister press conference transcripts or official social-media
+      accounts for wording and emphasis.
+    assumptions:
+      - Reuters accurately paraphrased the minister’s statement.
+    falsifiers:
+      - Official transcript contradicts the “abnormal changes” framing.
+
+  - id: "GEO-2026-003"
+    text: >-
+      Taiwan’s defense minister said Taiwan would not lower its guard or war preparedness due to the downfall
+      of any one PRC leader; the threat level remains high.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["reuters-2026-taiwan-monitoring-pla-leadership"]
+    operationalization: >-
+      Track Taiwan MoD alert posture announcements and readiness messaging in the weeks after the purge to
+      see whether posture is relaxed or maintained.
+    assumptions:
+      - Reuters accurately paraphrased the minister’s statement.
+    falsifiers:
+      - Taiwan publicly lowers readiness explicitly citing reduced PRC threat due to the purge.
+
+  - id: "GEO-2026-004"
+    text: >-
+      China conducts near-daily military activity around Taiwan (including warplanes and warships operating
+      in Taiwan’s surrounding air and maritime approaches).
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["reuters-2026-taiwan-monitoring-pla-leadership"]
+    operationalization: >-
+      Use Taiwan MoD’s daily air/sea activity releases to compute the fraction of days with any PRC aircraft
+      or vessel activity meeting a defined threshold.
+    assumptions:
+      - “Around Taiwan” in reporting maps to a consistent operational definition.
+    falsifiers:
+      - Daily releases show sustained multi-week gaps without qualifying activity under the chosen definition.
+
+  - id: "INST-2026-011"
+    text: >-
+      Gen. Zhang Youxia is among the few senior PLA officers with combat experience, having participated in
+      China’s 1979 border conflict with Vietnam.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["reuters-2026-taiwan-monitoring-pla-leadership"]
+    operationalization: >-
+      Verify against authoritative biographical sources (PRC military biographies, credible academic works,
+      or multiple independent profiles).
+    assumptions:
+      - Public biographical claims about combat participation are accurate.
+    falsifiers:
+      - Authoritative biography indicates no such combat participation.
+

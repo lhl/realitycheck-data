@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 280 |
-| **Sources** | 76 |
+| **Claims** | 342 |
+| **Sources** | 89 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 19 |
+| **Predictions Tracked** | 25 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-26 | [Zhang Youxia purge, PLA disruption, and Taiwan timing](analysis/syntheses/china-pla-purge-zhang-youxia-taiwan-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Zhang Youxia purge, PLA “high command” disruption, and Taiwan invasion timing |
 | 2026-01-24 | [JP-TL-Bench and JA↔EN Translation Evaluation](analysis/syntheses/jp-tl-bench-ja-en-translation-eval-synthesis.md) | `[DRAFT]` | Cross-source synthesis: anchored pairwise vs metrics/MQM; Japanese context challenges; directionality; novelty/tradeoffs |
 | 2026-01-24 | [PageIndex vs StrataLens (Vectorless RAG)](analysis/syntheses/pageindex-vs-stratalens-vectorless-rag-synthesis.md) | `[DRAFT]` | Cross-source comparison: structure-aware retrieval vs vectorless traversal; benchmark claims flagged as protocol-dependent; maturity/licensing assessment |
 | 2026-01-19 | [Vibecoding / Agent Psychosis](analysis/syntheses/vibecoding-agent-psychosis-synthesis.md) | `[DRAFT]` | Verification bottleneck as artifact generation gets cheap |
@@ -47,6 +48,18 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-26 | [How a purge of China’s military leadership could impact the army and the future of Taiwan (AP)](analysis/sources/ap-2026-pla-purge-taiwan.md) | `[DRAFT]` | Explainer: announced investigations, purge scale, and competing views on short- vs long-term Taiwan risk |
+| 2026-01-26 | [Taiwan monitoring “abnormal” China military leadership changes (Reuters)](analysis/sources/reuters-2026-taiwan-monitoring-pla-leadership.md) | `[DRAFT]` | Taiwan official posture: monitor abnormal PRC changes; don’t lower guard; notes near-daily PRC ops |
+| 2026-01-26 | [What Xi Jinping’s purge of China’s most senior general reveals (Economist)](analysis/sources/economist-2026-xi-purge-senior-general.md) | `[DRAFT]` | Motive space: corruption vs performance vs faction; warns of readiness impacts; cites DoD assessments |
+| 2026-01-26 | [Xi’s Purge of Top General Spurs Questions on Taiwan, Succession (Bloomberg)](analysis/sources/bloomberg-2026-purge-top-general-taiwan-succession.md) | `[DRAFT]` | Speed/urgency and succession speculation; skeptical of nuclear-leak claim; Taiwan timing implications |
+| 2026-01-26 | [Xi takes sole operational control of army as China probes military leaders (FT)](analysis/sources/ft-2026-xi-sole-operational-control-pla.md) | `[DRAFT]` | CCP “discipline” language caution; “sole operational control” framing; ties to 2027 capability target discourse |
+| 2026-01-26 | [Xi’s Purge of China’s Military Brings Its Top General Down (NYT)](analysis/sources/nyt-2026-xi-purge-top-general-down.md) | `[DRAFT]` | Xi distrust hypothesis; public investigation implies downfall; suggests multi-year rebuild lowers short-term invasion odds |
+| 2026-01-26 | [Xi's purge paints a picture of power and control (Sky News)](analysis/sources/skynews-2026-xi-purge-power-control.md) | `[DRAFT]` | Signal-reading: speed + PLA Daily political framing; captures coup/treason rumor ecology |
+| 2026-01-26 | [Military purge gives Xi total control of Chinese army (Telegraph)](analysis/sources/telegraph-2026-xi-purge-total-control-pla.md) | `[DRAFT]` | Strong-form analyst forecasts (“Taiwan delayed for years”) and purge-tempo-as-strength hypothesis |
+| 2026-01-26 | [China’s Top General Accused of Giving Nuclear Secrets to U.S. (WSJ)](analysis/sources/wsj-2026-top-general-nuclear-secrets.md) | `[DRAFT]` | Unnamed-source briefing allegations: nuclear leak + bribes + Shenyang task force; readiness-vacuum risk |
+| 2026-01-26 | [The Chinese Spy Machine Infiltrating Taiwan’s Military (WSJ)](analysis/sources/wsj-2026-chinese-spy-machine-taiwan-military.md) | `[DRAFT]` | Taiwan insider-threat axis: espionage cases and recruitment methods; relevance to contingency risk |
+| 2026-01-26 | [PLA purges intensify: Zhang Youxia and Liu Zhenli under investigation (Sinocism)](analysis/sources/sinocism-2026-pla-purges-intensify-zhang-liu.md) | `[DRAFT]` | PLA Daily excerpt emphasizes authority/cliques; SCMP-sourced internal briefings/detention claims (provisional) |
+| 2026-01-26 | [Hot takes/threads on Zhang Youxia purge and Taiwan timing (X compilation)](analysis/sources/x-2026-zhang-purge-hot-takes.md) | `[DRAFT]` | Rumor-space map: invasion-delay, info-warfare, coup claims; extracted as low-evidence hypotheses |
 | 2026-01-26 | [Physician Declaration on Pretti Shooting (Doc. 109)](analysis/sources/uscourts-mnd-2025-04669-doc109-doctor-declaration.md) | `[DRAFT]` | Primary court filing: physician declaration describing post-shooting medical response + reported wound locations (agency attribution in declaration is disputed) |
 | 2026-01-26 | [Alex Pretti Family Statement (Common Dreams)](analysis/sources/commondreams-2026-minneapolis-shooting-family.md) | `[REVIEWED]` | Family response to CBP shooting; video evidence disputes official narrative (phone vs gun, disarmament before shooting); immediate "domestic terrorist" labeling without evidence |
 | 2026-01-25 | ["Positions ICE has taken" (BlueBadger2600)](analysis/sources/bluebadger2600-2026-ice-positions.md) | `[REVIEWED]` | Legal/policy fact-check of ICE authority claims (home entry, detention, counsel, courts, third-country removals) + Minnesota incidents (Good/Pretti, 5yo detention, National Guard, Vance immunity) |
@@ -89,11 +102,13 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TECH | Technology & AI | 104 |
 | LABOR | Labor & Employment | 17 |
 | ECON | Economics & Markets | 29 |
-| GOV | Governance & Policy | 53 |
+| GOV | Governance & Policy | 67 |
 | SOC | Social Dynamics | 5 |
 | TRANS | Transition Dynamics | 24 |
 | RESOURCE | Resource Constraints | 11 |
-| GEO | Geopolitics | 1 |
+| GEO | Geopolitics | 21 |
+| INST | Institutions & Organizations | 33 |
+| RISK | Risk Assessment | 8 |
 | META | Framework & Methodology | 23 |
 
 ---

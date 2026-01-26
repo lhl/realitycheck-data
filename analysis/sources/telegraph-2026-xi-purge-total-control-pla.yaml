@@ -1,0 +1,102 @@
+sources:
+  - id: "telegraph-2026-xi-purge-total-control-pla"
+    type: "ARTICLE"
+    title: "Military purge gives Xi total control of Chinese army"
+    author:
+      - "Memphis Barker"
+    year: 2026
+    url: "https://www.telegraph.co.uk/world-news/2026/01/24/military-purge-gives-xi-jinping-total-control-chinese-army/"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/telegraph-2026-xi-purge-total-control-pla.md"
+    reliability: 0.60
+    bias_notes: >-
+      Strongly framed narrative relying on analyst quotes; treat implications about Taiwan timing and Xi’s strength as
+      forecasts/hypotheses rather than verified facts.
+    topics:
+      - china
+      - pla
+      - central-military-commission
+      - zhang-youxia
+      - liu-zhenli
+      - military-purge
+      - taiwan
+      - defense-spending
+      - coup-proofing
+    domains:
+      - GOV
+      - GEO
+    claims_extracted:
+      - GOV-2026-061
+      - GEO-2026-012
+      - GEO-2026-011
+      - GOV-2026-062
+
+claims:
+  - id: "GOV-2026-061"
+    text: >-
+      Xi Jinping has roughly doubled China’s defense budget since taking office.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["telegraph-2026-xi-purge-total-control-pla"]
+    operationalization: >-
+      Use China’s published defense budget series (in RMB) and compute ratio from Xi’s first year to 2026; report whether the
+      ratio is ≥2× and note nominal vs real adjustments.
+    assumptions:
+      - Official defense budget figures are comparable across years.
+    falsifiers:
+      - Series shows <2× change under comparable definitions.
+
+  - id: "GEO-2026-012"
+    text: >-
+      Western reporting frequently cites U.S. intelligence assessments that Xi Jinping directed the PLA to be ready by 2027 for
+      a Taiwan operation (often framed as an invasion-readiness objective rather than a committed invasion plan).
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["telegraph-2026-xi-purge-total-control-pla"]
+    operationalization: >-
+      Collect primary U.S. official statements and testimony referencing “2027” and classify whether they claim “ready to invade”
+      versus “capable/ready objective”; track any later revisions.
+    assumptions:
+      - Public references reflect real intelligence assessments.
+    falsifiers:
+      - Primary sources do not support the “ready by 2027” framing.
+
+  - id: "GEO-2026-011"
+    text: >-
+      The hollowing out of the PLA’s senior leadership makes a Taiwan invasion-scale contingency infeasible in the near term,
+      plausibly delaying any attempt to seize Taiwan by force for multiple years.
+    type: "[P]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["telegraph-2026-xi-purge-total-control-pla"]
+    operationalization: >-
+      Track invasion-relevant indicators (amphibious lift readiness, joint-force exercises, logistics mobilization) and compare
+      changes against leadership replacement timelines.
+    assumptions:
+      - High-command continuity is a binding constraint on invasion planning and execution.
+    falsifiers:
+      - Invasion indicators rise strongly despite leadership turnover.
+
+  - id: "GOV-2026-062"
+    text: >-
+      The rolling, multi-year pattern of PLA purges suggests Xi Jinping is not reacting to an imminent coup threat and instead
+      indicates confidence and strength in his control over the military.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["telegraph-2026-xi-purge-total-control-pla"]
+    operationalization: >-
+      Compare purge tempo and breadth across regimes known to face imminent coup risk versus routine consolidation; assess whether
+      coup-threat cases show sharper, more synchronized purges.
+    assumptions:
+      - Purge tempo is informative about perceived coup risk.
+    falsifiers:
+      - Evidence shows rolling purges are common responses to coup fears due to investigation pipeline constraints.
+

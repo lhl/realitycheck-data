@@ -1,0 +1,198 @@
+sources:
+  - id: "economist-2026-xi-purge-senior-general"
+    type: "ARTICLE"
+    title: "What Xi Jinping’s purge of China’s most senior general reveals"
+    author:
+      - "The Economist"
+    year: 2026
+    url: "https://www.economist.com/china/2026/01/24/what-xi-jinpings-purge-of-chinas-most-senior-general-reveals"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/economist-2026-xi-purge-senior-general.md"
+    reliability: 0.70
+    bias_notes: >-
+      High-quality analysis but constrained by limited verifiable information about PRC elite politics; relies on
+      Western analysts and interpretation of PRC signaling language. Treat motive stories as hypotheses.
+    topics:
+      - china
+      - pla
+      - central-military-commission
+      - zhang-youxia
+      - liu-zhenli
+      - military-purge
+      - corruption
+      - readiness
+      - taiwan
+      - coup-proofing
+    domains:
+      - INST
+      - GOV
+      - GEO
+      - RISK
+    claims_extracted:
+      - INST-2026-012
+      - INST-2026-013
+      - INST-2026-014
+      - GOV-2026-055
+      - GOV-2026-056
+      - GOV-2026-057
+      - INST-2026-015
+      - RISK-2026-002
+      - GEO-2026-005
+
+claims:
+  - id: "INST-2026-012"
+    text: >-
+      In PRC elite-politics practice, senior officials placed under investigation for “serious discipline and law
+      violations” are typically detained and investigations are routinely followed by formal dismissal.
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["economist-2026-xi-purge-senior-general"]
+    operationalization: >-
+      Build a dataset of publicly announced “investigation opened” cases for senior PLA/party officials and
+      measure the fraction that end in dismissal vs exoneration/return-to-office.
+    assumptions:
+      - Publicly visible cases are representative of the broader pattern.
+    falsifiers:
+      - Many public “investigation opened” cases end without dismissal or with restoration to office.
+
+  - id: "INST-2026-013"
+    text: >-
+      The investigation of Zhang Youxia and Liu Zhenli, combined with earlier removals, has effectively hollowed
+      out the Central Military Commission, leaving Xi Jinping and Zhang Shengmin described as the only active
+      named members.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["economist-2026-xi-purge-senior-general"]
+    operationalization: >-
+      Compare a dated, authoritative CMC roster definition against outlet descriptions (total vs uniformed members;
+      “active” vs “formally still in post under investigation”).
+    assumptions:
+      - Reporting reflects the de facto leadership vacuum.
+    falsifiers:
+      - Authoritative roster shows multiple other active members in post.
+
+  - id: "INST-2026-014"
+    text: >-
+      A new wave of PLA purges began around 2023 with the Rocket Force and later spread to other services as well
+      as the PLA’s procurement and political departments.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["economist-2026-xi-purge-senior-general"]
+    operationalization: >-
+      Construct a dated timeline of senior removals by service/department and test whether the Rocket Force was
+      the initial locus and whether later targets match the described spread pattern.
+    assumptions:
+      - Publicly known removals reflect the main campaign’s progression.
+    falsifiers:
+      - Timeline shows a materially different ordering or campaign scope.
+
+  - id: "GOV-2026-055"
+    text: >-
+      Xi Jinping’s decision to move against Zhang Youxia may reflect frustration with Zhang’s failure to deliver
+      sufficient modernization and readiness progress ahead of the PLA’s reported Taiwan capability deadline.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["economist-2026-xi-purge-senior-general"]
+    operationalization: >-
+      Look for internal PRC signals emphasizing performance/modernization failures (training critiques, procurement
+      shortfalls, readiness benchmarks) and for purge targets clustered in performance-critical roles.
+    assumptions:
+      - Xi uses purges partly as performance enforcement, not only political discipline.
+    falsifiers:
+      - Replacement pattern and propaganda emphasize only political loyalty and clique-breaking, not readiness.
+
+  - id: "GOV-2026-056"
+    text: >-
+      Zhang Youxia (or close associates/family) may be implicated in procurement corruption, potentially linked to
+      his earlier oversight of weapons development and procurement institutions.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["economist-2026-xi-purge-senior-general"]
+    operationalization: >-
+      Track whether the investigation narrative focuses on procurement/promotion bribery and whether associated
+      procurement officials/entities are targeted in parallel.
+    assumptions:
+      - Corruption allegations, when present, map to underlying wrongdoing rather than pure pretext.
+    falsifiers:
+      - Credible internal accounts indicate no procurement nexus and that charges are primarily political.
+
+  - id: "GOV-2026-057"
+    text: >-
+      Factional rivalry within the PLA and elite “princeling” networks is a plausible driver of Zhang Youxia’s purge,
+      with Zhang’s accumulated authority becoming a perceived threat to Xi Jinping.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["economist-2026-xi-purge-senior-general"]
+    operationalization: >-
+      Map purge targets to patronage networks and early-career unit overlaps; test whether removals disproportionately
+      hit one network and whether propaganda emphasizes clique-breaking and “CMC chairman responsibility system.”
+    assumptions:
+      - Elite networks can be inferred from public career histories and known patronage ties.
+    falsifiers:
+      - Targets show no network clustering and align better with procurement/performance issues across factions.
+
+  - id: "INST-2026-015"
+    text: >-
+      The U.S. Department of Defense’s annual report on China’s military assessed that senior-officer removals caused
+      uncertainty in PLA organizational priorities and that procurement corruption produced observed capability shortfalls
+      (including cited issues such as malfunctioning missile-silo lids).
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.75
+    source_ids: ["economist-2026-xi-purge-senior-general"]
+    operationalization: >-
+      Locate and quote the relevant DoD report passages (page/section) and compare with any later corrections or
+      corroborating intelligence reporting.
+    assumptions:
+      - The published DoD report accurately reflects the assessment described.
+    falsifiers:
+      - The report lacks these claims or is materially revised to remove them.
+
+  - id: "RISK-2026-002"
+    text: >-
+      The ongoing investigations and leadership upheaval very likely risk short-term disruptions in the PLA’s operational
+      effectiveness, though the PLA could emerge more proficient later if systemic corruption is reduced.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["economist-2026-xi-purge-senior-general"]
+    operationalization: >-
+      Track indicators of training tempo, exercise complexity, command appointments, and mishap rates in the months after
+      the purge; compare against pre-purge baselines.
+    assumptions:
+      - Leadership disruption meaningfully affects near-term training and command-and-control.
+    falsifiers:
+      - Training tempo/complexity and operational indicators show no degradation after the purge.
+
+  - id: "GEO-2026-005"
+    text: >-
+      A 2027 target for the PLA to be capable of taking Taiwan is widely reported in Western reporting and is commonly
+      attributed to U.S. intelligence assessments of Xi Jinping’s guidance.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["economist-2026-xi-purge-senior-general"]
+    operationalization: >-
+      Distinguish “U.S.-assessed target” vs “confirmed PRC order” by locating primary U.S. official statements and any
+      PRC documents; track whether subsequent U.S. intel updates revise the target.
+    assumptions:
+      - Public U.S. statements are based on credible intelligence rather than pure signaling.
+    falsifiers:
+      - Credible disclosures show the 2027 target claim was based on misinterpretation or is formally retracted.
+

@@ -1,6 +1,6 @@
 # Source Registry
 # Exported from LanceDB on 2026-01-26
-# Total sources: 76
+# Total sources: 89
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -97,6 +97,43 @@ sources:
     - META
     - RISK
     status: analyzed
+  ap-2026-pla-purge-taiwan:
+    type: ARTICLE
+    title: How a purge of China’s military leadership could impact the army and the
+      future of Taiwan
+    author:
+    - E. Eduardo Castillo
+    year: 2026
+    url: https://apnews.com/article/china-military-purge-general-zhang-investigation-76271533450c6fe6614e65e8016676ee
+    accessed: '2026-01-26'
+    reliability: 0.7
+    bias_notes: Straight reporting plus expert quotes; limited primary evidence because
+      PRC elite politics is intentionally opaque. Treat causal claims about motives
+      and Taiwan implications as analyst interpretation rather than directly evidenced
+      facts.
+    claims_extracted:
+    - INST-2026-007
+    - INST-2026-008
+    - INST-2026-009
+    - GOV-2026-054
+    - INST-2026-010
+    - GEO-2026-001
+    analysis_file: analysis/sources/ap-2026-pla-purge-taiwan.md
+    topics:
+    - china
+    - pla
+    - central-military-commission
+    - zhang-youxia
+    - liu-zhenli
+    - military-purge
+    - corruption
+    - taiwan
+    domains:
+    - INST
+    - GOV
+    - GEO
+    - RISK
+    status: analyzed
   appleton-2026-gastown-agent-patterns:
     type: BLOG
     title: Gas Town’s Agent Patterns, Design Bottlenecks, and Vibecoding at Scale
@@ -160,6 +197,40 @@ sources:
     - financebench
     domains:
     - TECH
+    status: analyzed
+  bloomberg-2026-purge-top-general-taiwan-succession:
+    type: ARTICLE
+    title: Xi’s Purge of Top General Spurs Questions on Taiwan, Succession
+    author:
+    - Bloomberg News
+    year: 2026
+    url: https://www.bloomberg.com/news/articles/2026-01-26/xi-s-purge-of-top-general-spurs-questions-on-taiwan-succession
+    accessed: '2026-01-26'
+    reliability: 0.7
+    bias_notes: Analytical framing (elite politics + Taiwan risk) relying heavily
+      on expert interpretation. Treat motive claims, leak plausibility, and succession
+      implications as hypotheses rather than confirmed facts.
+    claims_extracted:
+    - INST-2026-016
+    - INST-2026-017
+    - GOV-2026-058
+    - GEO-2026-006
+    - GEO-2026-007
+    analysis_file: analysis/sources/bloomberg-2026-purge-top-general-taiwan-succession.md
+    topics:
+    - china
+    - pla
+    - central-military-commission
+    - zhang-youxia
+    - liu-zhenli
+    - military-purge
+    - succession
+    - taiwan
+    - us-china
+    domains:
+    - INST
+    - GOV
+    - GEO
     status: analyzed
   bluebadger2600-2026-ice-positions:
     type: SOCIAL
@@ -285,6 +356,38 @@ sources:
     domains:
     - LABOR
     - TECH
+    status: analyzed
+  china-pla-purge-zhang-youxia-taiwan-synthesis:
+    type: KNOWLEDGE
+    title: 'Synthesis Analysis: Zhang Youxia purge, PLA “high command” disruption,
+      and Taiwan invasion timing (Jan 2026)'
+    author:
+    - gpt-5.2
+    year: 2026
+    url: ''
+    accessed: '2026-01-26'
+    reliability: 0.7
+    bias_notes: Internal cross-source synthesis document in realitycheck-data (analysis/syntheses);
+      added to satisfy analysis_logs referential integrity. Synthesizes multiple journalism/social
+      sources; conclusions are credence-weighted and should be treated as provisional.
+    claims_extracted: []
+    analysis_file: analysis/syntheses/china-pla-purge-zhang-youxia-taiwan-synthesis.md
+    topics:
+    - china
+    - pla
+    - central-military-commission
+    - zhang-youxia
+    - purge
+    - taiwan
+    - invasion-timeline
+    - corruption
+    - coup-proofing
+    - propaganda
+    domains:
+    - GEO
+    - INST
+    - GOV
+    - RISK
     status: analyzed
   chm-alexnet:
     type: ARTICLE
@@ -423,6 +526,46 @@ sources:
     - TECH
     - GOV
     status: analyzed
+  economist-2026-xi-purge-senior-general:
+    type: ARTICLE
+    title: What Xi Jinping’s purge of China’s most senior general reveals
+    author:
+    - The Economist
+    year: 2026
+    url: https://www.economist.com/china/2026/01/24/what-xi-jinpings-purge-of-chinas-most-senior-general-reveals
+    accessed: '2026-01-26'
+    reliability: 0.7
+    bias_notes: High-quality analysis but constrained by limited verifiable information
+      about PRC elite politics; relies on Western analysts and interpretation of PRC
+      signaling language. Treat motive stories as hypotheses.
+    claims_extracted:
+    - INST-2026-012
+    - INST-2026-013
+    - INST-2026-014
+    - GOV-2026-055
+    - GOV-2026-056
+    - GOV-2026-057
+    - INST-2026-015
+    - RISK-2026-002
+    - GEO-2026-005
+    analysis_file: analysis/sources/economist-2026-xi-purge-senior-general.md
+    topics:
+    - china
+    - pla
+    - central-military-commission
+    - zhang-youxia
+    - liu-zhenli
+    - military-purge
+    - corruption
+    - readiness
+    - taiwan
+    - coup-proofing
+    domains:
+    - INST
+    - GOV
+    - GEO
+    - RISK
+    status: analyzed
   epoch-2024-training-costs:
     type: REPORT
     title: How Much Does It Cost to Train Frontier AI Models?
@@ -466,6 +609,39 @@ sources:
     - TECH
     - GOV
     status: cataloged
+  ft-2026-xi-sole-operational-control-pla:
+    type: ARTICLE
+    title: Xi takes sole operational control of army as China probes military leaders
+    author:
+    - Kathrin Hille
+    - Demetri Sevastopulo
+    year: 2026
+    url: https://www.ft.com/content/a065b8e9-c246-4d2f-bc47-425ba2a7e871
+    accessed: '2026-01-26'
+    reliability: 0.7
+    bias_notes: Strong contextualization of CCP “discipline” language and analyst
+      views; still limited by opaque PRC internal motives. Treat motive claims as
+      hypotheses.
+    claims_extracted:
+    - INST-2026-018
+    - INST-2026-019
+    - INST-2026-020
+    - GEO-2026-008
+    analysis_file: analysis/sources/ft-2026-xi-sole-operational-control-pla.md
+    topics:
+    - china
+    - pla
+    - central-military-commission
+    - zhang-youxia
+    - liu-zhenli
+    - military-purge
+    - corruption
+    - readiness
+    - taiwan
+    domains:
+    - INST
+    - GEO
+    status: analyzed
   google-2026-translategemma-blog:
     type: ARTICLE
     title: 'TranslateGemma: A new suite of open translation models'
@@ -1236,6 +1412,41 @@ sources:
     domains:
     - ECON
     status: cataloged
+  nyt-2026-xi-purge-top-general-down:
+    type: ARTICLE
+    title: Xi’s Purge of China’s Military Brings Its Top General Down
+    author:
+    - Chris Buckley
+    year: 2026
+    url: https://www.nytimes.com/2026/01/24/world/asia/china-top-general-xi-military-purge.html
+    accessed: '2026-01-26'
+    reliability: 0.7
+    bias_notes: Strong reporting with multiple expert quotes; still limited by PRC
+      opacity and includes interpretive claims about Xi’s psychology and readiness
+      impacts. Treat roster-count and motive claims as provisional unless independently
+      verified.
+    claims_extracted:
+    - INST-2026-021
+    - GOV-2026-059
+    - INST-2026-022
+    - INST-2026-023
+    - GEO-2026-009
+    analysis_file: analysis/sources/nyt-2026-xi-purge-top-general-down.md
+    topics:
+    - china
+    - pla
+    - central-military-commission
+    - zhang-youxia
+    - liu-zhenli
+    - military-purge
+    - corruption
+    - readiness
+    - taiwan
+    domains:
+    - INST
+    - GOV
+    - GEO
+    status: analyzed
   openai-value-intelligence:
     type: ARTICLE
     title: A business that scales with the value of intelligence
@@ -1377,6 +1588,40 @@ sources:
     - GOV
     - TRANS
     status: analyzed
+  reuters-2026-taiwan-monitoring-pla-leadership:
+    type: ARTICLE
+    title: Taiwan monitoring 'abnormal' China military leadership changes after top
+      general put under investigation
+    author:
+    - Reuters
+    - Ben Blanchard
+    - Roger Tung
+    year: 2026
+    url: https://www.reuters.com/world/china/taiwan-monitoring-abnormal-china-military-leadership-changes-after-top-general-2026-01-26/
+    accessed: '2026-01-26'
+    reliability: 0.75
+    bias_notes: Wire-service reporting focused on Taiwan’s official posture. Useful
+      as a “baseline threat posture” anchor, but does not adjudicate PRC motives or
+      the true military implications of the leadership shakeup.
+    claims_extracted:
+    - GEO-2026-002
+    - GEO-2026-003
+    - GEO-2026-004
+    - INST-2026-011
+    analysis_file: analysis/sources/reuters-2026-taiwan-monitoring-pla-leadership.md
+    topics:
+    - taiwan
+    - china
+    - pla
+    - central-military-commission
+    - zhang-youxia
+    - liu-zhenli
+    - cross-strait
+    - deterrence
+    domains:
+    - GEO
+    - INST
+    status: analyzed
   reuters-rio-tinto-amazon:
     type: ARTICLE
     title: Rio Tinto to supply copper to Amazon for AI data centers
@@ -1493,6 +1738,38 @@ sources:
     domains:
     - TECH
     status: analyzed
+  sinocism-2026-pla-purges-intensify-zhang-liu:
+    type: BLOG
+    title: 'PLA purges intensify: Zhang Youxia and Liu Zhenli under investigation'
+    author:
+    - Bill Bishop
+    year: 2026
+    url: https://sinocism.com/p/pla-purges-intensify-zhang-youxia
+    accessed: '2026-01-26'
+    reliability: 0.65
+    bias_notes: High-signal aggregator with translated excerpts; still derivative
+      and includes interpretive speculation. Treat SCMP-sourced internal details as
+      provisional and prioritize the reproducible PLA Daily language.
+    claims_extracted:
+    - INST-2026-029
+    - INST-2026-030
+    - INST-2026-031
+    - GOV-2026-063
+    analysis_file: analysis/sources/sinocism-2026-pla-purges-intensify-zhang-liu.md
+    topics:
+    - china
+    - pla
+    - central-military-commission
+    - zhang-youxia
+    - liu-zhenli
+    - pla-daily
+    - propaganda
+    - political-education
+    - military-purge
+    domains:
+    - INST
+    - GOV
+    status: analyzed
   situational-awareness:
     type: REPORT
     title: 'SITUATIONAL AWARENESS: The Decade Ahead'
@@ -1516,6 +1793,39 @@ sources:
     - TRANS
     - GOV
     status: cataloged
+  skynews-2026-xi-purge-power-control:
+    type: ARTICLE
+    title: Xi's purge of top general paints a fascinating picture of power and control
+      within a ruthless and unforgiving system
+    author:
+    - Helen-Ann Smith
+    year: 2026
+    url: https://news.sky.com/story/xis-purge-of-top-general-paints-a-fascinating-picture-of-power-and-control-within-a-ruthless-and-unforgiving-system-13499060
+    accessed: '2026-01-26'
+    reliability: 0.65
+    bias_notes: Commentary-style analysis; highlights rumor ecology and propaganda
+      language cues. Useful for hypotheses and signaling interpretation, but weaker
+      on verifiable primary evidence.
+    claims_extracted:
+    - INST-2026-024
+    - GOV-2026-060
+    - GEO-2026-010
+    analysis_file: analysis/sources/skynews-2026-xi-purge-power-control.md
+    topics:
+    - china
+    - pla
+    - central-military-commission
+    - zhang-youxia
+    - liu-zhenli
+    - military-purge
+    - propaganda
+    - coup-rumors
+    - taiwan
+    domains:
+    - INST
+    - GOV
+    - GEO
+    status: analyzed
   standard-economics:
     type: KNOWLEDGE
     title: Standard economic theory (factor shares, labor economics)
@@ -1584,6 +1894,38 @@ sources:
     - GEO
     - RISK
     - RESOURCE
+    status: analyzed
+  telegraph-2026-xi-purge-total-control-pla:
+    type: ARTICLE
+    title: Military purge gives Xi total control of Chinese army
+    author:
+    - Memphis Barker
+    year: 2026
+    url: https://www.telegraph.co.uk/world-news/2026/01/24/military-purge-gives-xi-jinping-total-control-chinese-army/
+    accessed: '2026-01-26'
+    reliability: 0.6
+    bias_notes: Strongly framed narrative relying on analyst quotes; treat implications
+      about Taiwan timing and Xi’s strength as forecasts/hypotheses rather than verified
+      facts.
+    claims_extracted:
+    - GOV-2026-061
+    - GEO-2026-012
+    - GEO-2026-011
+    - GOV-2026-062
+    analysis_file: analysis/sources/telegraph-2026-xi-purge-total-control-pla.md
+    topics:
+    - china
+    - pla
+    - central-military-commission
+    - zhang-youxia
+    - liu-zhenli
+    - military-purge
+    - taiwan
+    - defense-spending
+    - coup-proofing
+    domains:
+    - GOV
+    - GEO
     status: analyzed
   teortaxes-2026-greenland-endgame:
     type: SOCIAL
@@ -1800,6 +2142,110 @@ sources:
     topics: []
     domains: []
     status: cataloged
+  wsj-2026-chinese-spy-machine-taiwan-military:
+    type: ARTICLE
+    title: The Chinese Spy Machine Infiltrating Taiwan’s Military
+    author:
+    - Joyu Wang
+    year: 2026
+    url: https://www.wsj.com/world/asia/taiwan-military-china-spy-network-a56ec8da
+    accessed: '2026-01-26'
+    reliability: 0.75
+    bias_notes: Journalism grounded in Taiwan official statistics and case examples.
+      Key numbers should be audited against Taiwan NSB/prosecutor datasets, but the
+      qualitative insider-threat mechanism is plausible.
+    claims_extracted:
+    - GEO-2026-014
+    - GEO-2026-015
+    - GEO-2026-016
+    - GEO-2026-017
+    - GEO-2026-018
+    analysis_file: analysis/sources/wsj-2026-chinese-spy-machine-taiwan-military.md
+    topics:
+    - taiwan
+    - china
+    - espionage
+    - counterintelligence
+    - military
+    - cognitive-warfare
+    - cross-strait
+    domains:
+    - GEO
+    status: analyzed
+  wsj-2026-top-general-nuclear-secrets:
+    type: ARTICLE
+    title: China’s Top General Accused of Giving Nuclear Secrets to U.S.
+    author:
+    - Lingling Wei
+    - Chun Han Wong
+    year: 2026
+    url: https://www.wsj.com/world/china/chinas-top-general-accused-of-giving-nuclear-secrets-to-u-s-b8f59dae
+    accessed: '2026-01-26'
+    reliability: 0.7
+    bias_notes: Investigative reporting based on unnamed sources describing an alleged
+      internal briefing. High potential value but hard to independently verify; treat
+      briefing allegations as provisional until corroborated.
+    claims_extracted:
+    - INST-2026-025
+    - INST-2026-026
+    - INST-2026-027
+    - INST-2026-028
+    - GEO-2026-013
+    - RISK-2026-003
+    analysis_file: analysis/sources/wsj-2026-top-general-nuclear-secrets.md
+    topics:
+    - china
+    - pla
+    - central-military-commission
+    - zhang-youxia
+    - liu-zhenli
+    - nuclear
+    - espionage
+    - corruption
+    - procurement
+    - taiwan
+    domains:
+    - INST
+    - GEO
+    - RISK
+    status: analyzed
+  x-2026-zhang-purge-hot-takes:
+    type: SOCIAL
+    title: Hot takes/threads on Zhang Youxia purge, “treason” narratives, and Taiwan
+      timing (X/Twitter compilation)
+    author:
+    - Compilation (multiple X/Twitter accounts)
+    year: 2026
+    url: https://x.com/R89Capital/status/2015505931480826358
+    accessed: '2026-01-26'
+    reliability: 0.3
+    bias_notes: Uncurated social-media speculation with strong priors and frequent
+      motivated reasoning. Use primarily to map rumor space and generate hypotheses
+      to verify against higher-evidence sources.
+    claims_extracted:
+    - GEO-2026-019
+    - GOV-2026-064
+    - GOV-2026-065
+    - GOV-2026-066
+    - GOV-2026-067
+    - INST-2026-032
+    - GEO-2026-020
+    analysis_file: analysis/sources/x-2026-zhang-purge-hot-takes.md
+    topics:
+    - china
+    - pla
+    - zhang-youxia
+    - taiwan
+    - invasion-timeline
+    - coup-rumors
+    - espionage
+    - information-warfare
+    - corruption
+    domains:
+    - GOV
+    - INST
+    - GEO
+    status: analyzed
   xenoimpulse-2026-thread:
     type: SOCIAL
     title: Genocide > UBI nihilistic thread

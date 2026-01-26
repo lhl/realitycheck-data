@@ -1,0 +1,34 @@
+sources:
+  - id: "china-pla-purge-zhang-youxia-taiwan-synthesis"
+    type: "KNOWLEDGE"
+    title: "Synthesis Analysis: Zhang Youxia purge, PLA “high command” disruption, and Taiwan invasion timing (Jan 2026)"
+    author:
+      - "gpt-5.2"
+    year: 2026
+    url: ""
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/syntheses/china-pla-purge-zhang-youxia-taiwan-synthesis.md"
+    reliability: 0.70
+    bias_notes: >-
+      Internal cross-source synthesis document in realitycheck-data (analysis/syntheses); added to satisfy analysis_logs
+      referential integrity. Synthesizes multiple journalism/social sources; conclusions are credence-weighted and should be
+      treated as provisional.
+    topics:
+      - china
+      - pla
+      - central-military-commission
+      - zhang-youxia
+      - purge
+      - taiwan
+      - invasion-timeline
+      - corruption
+      - coup-proofing
+      - propaganda
+    domains:
+      - GEO
+      - INST
+      - GOV
+      - RISK
+    claims_extracted: []
+

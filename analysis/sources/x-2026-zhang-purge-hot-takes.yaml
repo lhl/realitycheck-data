@@ -1,0 +1,151 @@
+sources:
+  - id: "x-2026-zhang-purge-hot-takes"
+    type: "SOCIAL"
+    title: "Hot takes/threads on Zhang Youxia purge, “treason” narratives, and Taiwan timing (X/Twitter compilation)"
+    author:
+      - "Compilation (multiple X/Twitter accounts)"
+    year: 2026
+    url: "https://x.com/R89Capital/status/2015505931480826358"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/x-2026-zhang-purge-hot-takes.md"
+    reliability: 0.30
+    bias_notes: >-
+      Uncurated social-media speculation with strong priors and frequent motivated reasoning. Use primarily to map rumor space and
+      generate hypotheses to verify against higher-evidence sources.
+    topics:
+      - china
+      - pla
+      - zhang-youxia
+      - taiwan
+      - invasion-timeline
+      - coup-rumors
+      - espionage
+      - information-warfare
+      - corruption
+    domains:
+      - GOV
+      - INST
+      - GEO
+    claims_extracted:
+      - GEO-2026-019
+      - GOV-2026-064
+      - GOV-2026-065
+      - GOV-2026-066
+      - GOV-2026-067
+      - INST-2026-032
+      - GEO-2026-020
+
+claims:
+  - id: "GEO-2026-019"
+    text: >-
+      Some commentators predict Taiwan will not be invaded any time soon and claim the purge pushes any invasion timeline into the 2030s.
+    type: "[P]"
+    domain: "GEO"
+    evidence_level: "E6"
+    credence: 0.20
+    source_ids: ["x-2026-zhang-purge-hot-takes"]
+    operationalization: >-
+      Track invasion indicators and the occurrence/non-occurrence of a major attack through 2030; refine prediction into a dated
+      probability distribution.
+    assumptions:
+      - Publicly observable indicators can meaningfully estimate invasion likelihood.
+    falsifiers:
+      - A major invasion attempt occurs before 2030.
+
+  - id: "GOV-2026-064"
+    text: >-
+      Some commentators claim the U.S. deliberately exposed (“burned”) intelligence assets to derail Chinese invasion plans and force
+      China to waste time on internal investigations.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E6"
+    credence: 0.10
+    source_ids: ["x-2026-zhang-purge-hot-takes"]
+    operationalization: >-
+      Look for credible evidence of a specific intelligence operation, asset exposures, and a causal chain linking exposure to the purge.
+    assumptions:
+      - Such operations would leave observable traces or later credible disclosures.
+    falsifiers:
+      - No credible evidence of such an operation emerges and alternative explanations fit better.
+
+  - id: "GOV-2026-065"
+    text: >-
+      Some commentators hypothesize that “treason/spying” allegations were seeded as information warfare to pressure Zhang Youxia’s allies
+      or shape internal outcomes, rather than reflecting true internal findings.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E6"
+    credence: 0.20
+    source_ids: ["x-2026-zhang-purge-hot-takes"]
+    operationalization: >-
+      Track whether the allegation appears only in foreign media with weak sourcing versus later internal/official narratives; look for signs
+      of coordinated narrative seeding.
+    assumptions:
+      - Disinformation patterns are detectable via cross-outlet timing and content analysis.
+    falsifiers:
+      - Multiple independent corroborations substantiate real internal findings consistent with the allegations.
+
+  - id: "GOV-2026-066"
+    text: >-
+      Some commentators argue the “nuclear secrets” allegation is implausible given compartmentalization and monitoring at Zhang’s rank,
+      and that procurement corruption is a simpler and more likely explanation for the purge.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["x-2026-zhang-purge-hot-takes"]
+    operationalization: >-
+      Compare evidentiary support for the nuclear-leak allegation versus procurement-corruption narratives across outlets; examine whether
+      later disclosures emphasize procurement.
+    assumptions:
+      - Compartmentalization and monitoring constraints significantly limit nuclear-technical leaks.
+    falsifiers:
+      - Credible evidence corroborates a genuine nuclear-technical leak by Zhang.
+
+  - id: "GOV-2026-067"
+    text: >-
+      Some social-media posts claim a coup is taking place in China and that top military generals are being executed.
+    type: "[S]"
+    domain: "GOV"
+    evidence_level: "E6"
+    credence: 0.05
+    source_ids: ["x-2026-zhang-purge-hot-takes"]
+    operationalization: >-
+      Seek credible corroboration (multiple major outlets, primary evidence, confirmed arrests/executions) and timeline consistency.
+    assumptions:
+      - A real coup/execution wave would produce credible external signals.
+    falsifiers:
+      - No credible corroboration appears and PRC leadership stability indicators remain normal.
+
+  - id: "INST-2026-032"
+    text: >-
+      Some commentators claim Xi’s purge has hollowed out PLA command structures such that 2026 is the PLA’s weakest year, making a near-term
+      Taiwan war less likely.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E6"
+    credence: 0.25
+    source_ids: ["x-2026-zhang-purge-hot-takes"]
+    operationalization: >-
+      Track appointment stability, training tempo, and observable operational readiness indicators across 2026 relative to prior years.
+    assumptions:
+      - Public indicators capture meaningful components of readiness and command cohesion.
+    falsifiers:
+      - Indicators show stable/increasing readiness and command functioning in 2026.
+
+  - id: "GEO-2026-020"
+    text: >-
+      Some commentators predict the purge makes the Taiwan Strait safer in the near term by reducing the probability of a major PLA attack.
+    type: "[P]"
+    domain: "GEO"
+    evidence_level: "E6"
+    credence: 0.30
+    source_ids: ["x-2026-zhang-purge-hot-takes"]
+    operationalization: >-
+      Define “safer” with measurable indicators (invasion probability, gray-zone incidents, accidents) and track changes over 2026.
+    assumptions:
+      - “Safety” can be operationalized as a combination of measurable risk indicators.
+    falsifiers:
+      - Gray-zone coercion or crisis incidents increase even if invasion probability is perceived to drop.
+

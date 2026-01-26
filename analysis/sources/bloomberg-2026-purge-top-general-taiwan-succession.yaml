@@ -1,0 +1,123 @@
+sources:
+  - id: "bloomberg-2026-purge-top-general-taiwan-succession"
+    type: "ARTICLE"
+    title: "Xi’s Purge of Top General Spurs Questions on Taiwan, Succession"
+    author:
+      - "Bloomberg News"
+    year: 2026
+    url: "https://www.bloomberg.com/news/articles/2026-01-26/xi-s-purge-of-top-general-spurs-questions-on-taiwan-succession"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/bloomberg-2026-purge-top-general-taiwan-succession.md"
+    reliability: 0.70
+    bias_notes: >-
+      Analytical framing (elite politics + Taiwan risk) relying heavily on expert interpretation. Treat motive claims,
+      leak plausibility, and succession implications as hypotheses rather than confirmed facts.
+    topics:
+      - china
+      - pla
+      - central-military-commission
+      - zhang-youxia
+      - liu-zhenli
+      - military-purge
+      - succession
+      - taiwan
+      - us-china
+    domains:
+      - INST
+      - GOV
+      - GEO
+    claims_extracted:
+      - INST-2026-016
+      - INST-2026-017
+      - GOV-2026-058
+      - GEO-2026-006
+      - GEO-2026-007
+
+claims:
+  - id: "INST-2026-016"
+    text: >-
+      The public announcement of an investigation into Zhang Youxia was unusually fast, occurring within days of
+      his apparent absence from a party meeting, compared with months of delay between disappearance and confirmation
+      in prior senior-figure cases.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["bloomberg-2026-purge-top-general-taiwan-succession"]
+    operationalization: >-
+      Create a timeline dataset for recent purges: last public appearance, first rumor spike, first official confirmation;
+      compare lag distributions across cases.
+    assumptions:
+      - The capture accurately reflects Bloomberg’s timeline comparison.
+    falsifiers:
+      - Documented timelines show the lag was typical relative to comparable cases.
+
+  - id: "INST-2026-017"
+    text: >-
+      Analysts cited by Bloomberg argue the allegation that Zhang Youxia leaked nuclear weapons information is implausible
+      given tight monitoring of senior generals and limited official contact channels with U.S. counterparts.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["bloomberg-2026-purge-top-general-taiwan-succession"]
+    operationalization: >-
+      Evaluate whether Zhang plausibly had access pathways to “core technical data” and opportunities to transmit it (travel,
+      meetings, communication channels), and whether comparable leaks at that rank have occurred historically.
+    assumptions:
+      - Monitoring and compartmentalization constraints meaningfully limit such leakage.
+    falsifiers:
+      - Credible evidence shows feasible access/transmission paths and corroboration of the leak allegation.
+
+  - id: "GOV-2026-058"
+    text: >-
+      As a Politburo member and the most powerful uniformed general, Zhang Youxia had unusual political clout and (in theory)
+      could have helped mobilize opposition to Xi Jinping’s succession plans ahead of the 2027 leadership reshuffle.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["bloomberg-2026-purge-top-general-taiwan-succession"]
+    operationalization: >-
+      Map Zhang’s network (protégés, unit overlaps, patronage ties) and look for evidence of independent organizing capacity;
+      compare with historical cases where the PLA defied party leaders.
+    assumptions:
+      - Politburo membership and network ties translate to real organizing capacity in the PLA.
+    falsifiers:
+      - Evidence indicates Zhang’s network was shallow or already dismantled, with no plausible succession leverage.
+
+  - id: "GEO-2026-006"
+    text: >-
+      Bloomberg frames U.S. political volatility under President Trump and allied disputes as part of the context driving
+      speculation about whether Xi Jinping might see opportunity (or face constraints) in Taiwan strategy.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["bloomberg-2026-purge-top-general-taiwan-succession"]
+    operationalization: >-
+      Track PRC Taiwan coercion metrics against major U.S. alliance shocks and U.S. public posture changes to estimate
+      whether such volatility measurably shifts PRC behavior.
+    assumptions:
+      - PRC Taiwan planning is sensitive to perceived U.S. resolve and alliance cohesion.
+    falsifiers:
+      - PRC behavior shows no correlation with U.S. alliance volatility, controlling for other factors.
+
+  - id: "GEO-2026-007"
+    text: >-
+      The near-eradication of the PLA’s top leadership and resulting vacancy/infighting may make Xi Jinping more cautious about
+      using major military force against Taiwan in the near term.
+    type: "[P]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["bloomberg-2026-purge-top-general-taiwan-succession"]
+    operationalization: >-
+      Track near-term invasion indicators (mobilization, logistics, joint-force exercises) and compare to baseline; also track
+      gray-zone coercion levels to see if risk shifts rather than falls.
+    assumptions:
+      - Leadership vacancies materially constrain major joint operations planning/execution.
+    falsifiers:
+      - Near-term invasion indicators increase despite the leadership vacuum.
+

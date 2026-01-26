@@ -1,0 +1,121 @@
+sources:
+  - id: "nyt-2026-xi-purge-top-general-down"
+    type: "ARTICLE"
+    title: "Xi’s Purge of China’s Military Brings Its Top General Down"
+    author:
+      - "Chris Buckley"
+    year: 2026
+    url: "https://www.nytimes.com/2026/01/24/world/asia/china-top-general-xi-military-purge.html"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/nyt-2026-xi-purge-top-general-down.md"
+    reliability: 0.70
+    bias_notes: >-
+      Strong reporting with multiple expert quotes; still limited by PRC opacity and includes interpretive claims about
+      Xi’s psychology and readiness impacts. Treat roster-count and motive claims as provisional unless independently verified.
+    topics:
+      - china
+      - pla
+      - central-military-commission
+      - zhang-youxia
+      - liu-zhenli
+      - military-purge
+      - corruption
+      - readiness
+      - taiwan
+    domains:
+      - INST
+      - GOV
+      - GEO
+    claims_extracted:
+      - INST-2026-021
+      - GOV-2026-059
+      - INST-2026-022
+      - INST-2026-023
+      - GEO-2026-009
+
+claims:
+  - id: "INST-2026-021"
+    text: >-
+      In modern PRC political practice, senior officials publicly placed “under investigation” for serious discipline/law
+      violations are rarely later declared innocent; public investigation strongly predicts removal.
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["nyt-2026-xi-purge-top-general-down"]
+    operationalization: >-
+      Build a dataset of public investigation announcements and final outcomes for senior PRC officials (PLA + civilian)
+      and measure exoneration/restoration rates.
+    assumptions:
+      - Publicly announced investigations are comparable across time and office types.
+    falsifiers:
+      - Exoneration/restoration after public investigation is common.
+
+  - id: "GOV-2026-059"
+    text: >-
+      One plausible driver of Xi Jinping’s repeated PLA purges is personal insecurity and distrust of top commanders, such
+      that perceived trustworthiness outweighs personal ties to long-time allies.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["nyt-2026-xi-purge-top-general-down"]
+    operationalization: >-
+      Look for internal PRC signals emphasizing leader insecurity (coup narratives, loyalty campaigns) and for purge
+      targets disproportionately drawn from historically “trusted” or close-tie networks.
+    assumptions:
+      - Psychological motives are inferable from observable purge patterns and propaganda emphasis.
+    falsifiers:
+      - Evidence shows purges are primarily performance/corruption-driven with no special targeting of trusted allies.
+
+  - id: "INST-2026-022"
+    text: >-
+      A roster analysis cited in reporting suggests that among 44 uniformed officers appointed to the CCP Central Committee
+      in 2022, roughly 29 were purged or missing by late 2025/early 2026.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["nyt-2026-xi-purge-top-general-down"]
+    operationalization: >-
+      Reproduce the calculation using official lists of Central Committee members and documented purges/disappearances.
+    assumptions:
+      - The cited roster and classification (“purged or missing”) are applied consistently.
+    falsifiers:
+      - Reproduced counts differ materially under the same definitions.
+
+  - id: "INST-2026-023"
+    text: >-
+      A substantial share of senior PLA officers removed in the recent purge wave were promoted during Xi Jinping’s tenure,
+      implying corruption/loyalty problems among Xi’s own appointees, not only predecessors’ networks.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["nyt-2026-xi-purge-top-general-down"]
+    operationalization: >-
+      For each removed officer, identify who promoted/appointed them and the timing relative to Xi’s tenure; compute the share
+      of removals among Xi-era appointees vs earlier cohorts.
+    assumptions:
+      - Promotions/appointments can be inferred reliably from public career histories.
+    falsifiers:
+      - Most removals are concentrated in pre-Xi appointment networks under comparable definitions.
+
+  - id: "GEO-2026-009"
+    text: >-
+      Rebuilding the PLA’s top chains of command after repeated purges may take roughly five years or longer, lowering the
+      short-term probability of a major cross-strait attack on Taiwan.
+    type: "[P]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["nyt-2026-xi-purge-top-general-down"]
+    operationalization: >-
+      Track replacement timelines, exercise complexity, and joint-command performance indicators over 2026–2031; compare whether
+      invasion-relevant training/logistics indicators recover quickly or remain depressed.
+    assumptions:
+      - Leadership experience and cohesion are binding constraints for invasion-scale joint operations.
+    falsifiers:
+      - Rapid replacement and stable/increasing invasion indicators within 1–2 years post-purge.
+

@@ -1,0 +1,142 @@
+sources:
+  - id: "ap-2026-pla-purge-taiwan"
+    type: "ARTICLE"
+    title: "How a purge of China’s military leadership could impact the army and the future of Taiwan"
+    author:
+      - "E. Eduardo Castillo"
+    year: 2026
+    url: "https://apnews.com/article/china-military-purge-general-zhang-investigation-76271533450c6fe6614e65e8016676ee"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/ap-2026-pla-purge-taiwan.md"
+    reliability: 0.70
+    bias_notes: >-
+      Straight reporting plus expert quotes; limited primary evidence because PRC elite politics is intentionally
+      opaque. Treat causal claims about motives and Taiwan implications as analyst interpretation rather than
+      directly evidenced facts.
+    topics:
+      - china
+      - pla
+      - central-military-commission
+      - zhang-youxia
+      - liu-zhenli
+      - military-purge
+      - corruption
+      - taiwan
+    domains:
+      - INST
+      - GOV
+      - GEO
+      - RISK
+    claims_extracted:
+      - INST-2026-007
+      - INST-2026-008
+      - INST-2026-009
+      - GOV-2026-054
+      - INST-2026-010
+      - GEO-2026-001
+
+claims:
+  - id: "INST-2026-007"
+    text: >-
+      In late January 2026, China’s Ministry of National Defense announced it had opened a case for review
+      and investigation into Gen. Zhang Youxia for suspected serious violations of party discipline and the law.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["ap-2026-pla-purge-taiwan"]
+    operationalization: >-
+      Confirm via the MoD statement text and/or multiple independent wire reports; track whether PRC state
+      media later issues formal removal/dismissal notices.
+    assumptions:
+      - AP accurately summarized the MoD announcement.
+    falsifiers:
+      - An authoritative PRC transcript or correction states no investigation was opened.
+
+  - id: "INST-2026-008"
+    text: >-
+      In late January 2026, China’s Ministry of National Defense announced it had opened a case for review
+      and investigation into Gen. Liu Zhenli for suspected serious violations of party discipline and the law.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["ap-2026-pla-purge-taiwan"]
+    operationalization: >-
+      Confirm via the MoD statement text and/or multiple independent wire reports; track whether PRC state
+      media later issues formal removal/dismissal notices.
+    assumptions:
+      - AP accurately summarized the MoD announcement.
+    falsifiers:
+      - An authoritative PRC transcript or correction states no investigation was opened.
+
+  - id: "INST-2026-009"
+    text: >-
+      The reported investigations of Zhang Youxia and Liu Zhenli, combined with earlier removals, leave the
+      Central Military Commission’s uniformed leadership largely vacant, with Xi Jinping and Zhang Shengmin
+      described as the only active named members.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["ap-2026-pla-purge-taiwan"]
+    operationalization: >-
+      Compare outlet-by-outlet descriptions to an authoritative roster definition of the CMC (total members,
+      uniformed members, and whether “under investigation” officials remain formally in post).
+    assumptions:
+      - Public reporting correctly reflects the practical (de facto) leadership vacuum.
+    falsifiers:
+      - Authoritative CMC member list shows multiple other active uniformed members in post.
+
+  - id: "GOV-2026-054"
+    text: >-
+      Since 2012, Xi Jinping’s anti-corruption campaign has punished more than roughly 200,000 officials.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["ap-2026-pla-purge-taiwan"]
+    operationalization: >-
+      Validate against official CCDI/National Supervisory Commission statistics and reputable longitudinal
+      datasets on disciplinary actions by year.
+    assumptions:
+      - The reported figure refers to a consistent category of “punished officials” over time.
+    falsifiers:
+      - Official statistics show materially lower totals for comparable categories.
+
+  - id: "INST-2026-010"
+    text: >-
+      Since 2012, at least 17 PLA generals have been removed from their military positions (as counted in an
+      AP review of military statements and state media reports).
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["ap-2026-pla-purge-taiwan"]
+    operationalization: >-
+      Reproduce the count via an independently compiled roster of PLA generals and official removal notices,
+      including definition choices (rank cutoff, “removed” vs “investigated”).
+    assumptions:
+      - AP’s review used a consistent and reasonable definition of “general removed.”
+    falsifiers:
+      - A reproduced roster-based count materially differs under comparable definitions.
+
+  - id: "GEO-2026-001"
+    text: >-
+      The purge of top PLA leaders reduces near-term risk of a Taiwan escalation (due to high-command disarray)
+      but may increase long-term risk if it produces a more loyal, less corrupt leadership and improved capability.
+    type: "[P]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["ap-2026-pla-purge-taiwan"]
+    operationalization: >-
+      Track near-term indicators of invasion planning (mobilization, logistics, readiness exercises) versus
+      gray-zone coercion; track medium-term leadership stabilization and capability improvements after replacements.
+    assumptions:
+      - Command disarray is materially binding for major joint operations.
+      - Replacement leaders are (on average) more loyal and less corrupt.
+    falsifiers:
+      - No measurable short-term disruption and no medium-term readiness gains after replacements.
+

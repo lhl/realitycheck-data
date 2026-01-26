@@ -1,0 +1,102 @@
+sources:
+  - id: "sinocism-2026-pla-purges-intensify-zhang-liu"
+    type: "BLOG"
+    title: "PLA purges intensify: Zhang Youxia and Liu Zhenli under investigation"
+    author:
+      - "Bill Bishop"
+    year: 2026
+    url: "https://sinocism.com/p/pla-purges-intensify-zhang-youxia"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/sinocism-2026-pla-purges-intensify-zhang-liu.md"
+    reliability: 0.65
+    bias_notes: >-
+      High-signal aggregator with translated excerpts; still derivative and includes interpretive speculation. Treat SCMP-sourced
+      internal details as provisional and prioritize the reproducible PLA Daily language.
+    topics:
+      - china
+      - pla
+      - central-military-commission
+      - zhang-youxia
+      - liu-zhenli
+      - pla-daily
+      - propaganda
+      - political-education
+      - military-purge
+    domains:
+      - INST
+      - GOV
+    claims_extracted:
+      - INST-2026-029
+      - INST-2026-030
+      - INST-2026-031
+      - GOV-2026-063
+
+claims:
+  - id: "INST-2026-029"
+    text: >-
+      A PLA Daily editorial about the Zhang Youxia/Liu Zhenli case accuses them of undermining the “CMC Chairman Responsibility System”
+      and of fueling political and corruption issues affecting the party’s absolute leadership over the military and combat capability.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["sinocism-2026-pla-purges-intensify-zhang-liu"]
+    operationalization: >-
+      Quote the PLA Daily editorial text and classify the emphasis on political authority, cliques, and combat capability impacts.
+    assumptions:
+      - Sinocism’s excerpt is faithful to the PLA Daily editorial.
+    falsifiers:
+      - Primary PLA Daily text contradicts the excerpt or lacks the framing described.
+
+  - id: "INST-2026-030"
+    text: >-
+      Reporting summarized by Sinocism (via SCMP sources) claims party elites were briefed about the investigation and that Zhang Youxia
+      was accused of corruption and of failing to rein in associates, family members, and relatives, including failing to report problems
+      promptly to party leadership.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.50
+    source_ids: ["sinocism-2026-pla-purges-intensify-zhang-liu"]
+    operationalization: >-
+      Seek corroboration from multiple independent outlets or subsequent authoritative disclosures; track whether official narratives
+      later emphasize “family/associates” and reporting failures.
+    assumptions:
+      - SCMP sources were accurately reported and not part of a deliberate misinformation effort.
+    falsifiers:
+      - Credible later reporting contradicts these allegations or attributes the case to unrelated issues.
+
+  - id: "INST-2026-031"
+    text: >-
+      Reporting summarized by Sinocism (via a SCMP-sourced claim) states that Zhang Youxia was formally detained by military corruption
+      investigators shortly before the public announcement.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.40
+    source_ids: ["sinocism-2026-pla-purges-intensify-zhang-liu"]
+    operationalization: >-
+      Track corroborating reports about detention timing and whether Zhang appears in public after the alleged detention date.
+    assumptions:
+      - The SCMP-sourced detention claim reflects real internal action.
+    falsifiers:
+      - Credible reporting shows Zhang was not detained on that timeline.
+
+  - id: "GOV-2026-063"
+    text: >-
+      The unusually fast official confirmation of the case suggests PRC leadership urgency to get ahead of rumors and quickly begin the
+      propaganda and political-education process inside the PLA.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["sinocism-2026-pla-purges-intensify-zhang-liu"]
+    operationalization: >-
+      Compare purge-case timelines and look for accompanying internal political-education campaigns (PLA Daily campaigns, study sessions)
+      that accelerate immediately after fast confirmations versus slower cases.
+    assumptions:
+      - Timing is strategically chosen for narrative control rather than purely administrative.
+    falsifiers:
+      - Timing patterns are consistent with routine investigation pipeline stages and not followed by unusually rapid political education.
+

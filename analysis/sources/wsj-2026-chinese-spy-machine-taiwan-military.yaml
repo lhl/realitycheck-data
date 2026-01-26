@@ -1,0 +1,116 @@
+sources:
+  - id: "wsj-2026-chinese-spy-machine-taiwan-military"
+    type: "ARTICLE"
+    title: "The Chinese Spy Machine Infiltrating Taiwan’s Military"
+    author:
+      - "Joyu Wang"
+    year: 2026
+    url: "https://www.wsj.com/world/asia/taiwan-military-china-spy-network-a56ec8da"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/wsj-2026-chinese-spy-machine-taiwan-military.md"
+    reliability: 0.75
+    bias_notes: >-
+      Journalism grounded in Taiwan official statistics and case examples. Key numbers should be audited against Taiwan NSB/prosecutor
+      datasets, but the qualitative insider-threat mechanism is plausible.
+    topics:
+      - taiwan
+      - china
+      - espionage
+      - counterintelligence
+      - military
+      - cognitive-warfare
+      - cross-strait
+    domains:
+      - GEO
+    claims_extracted:
+      - GEO-2026-014
+      - GEO-2026-015
+      - GEO-2026-016
+      - GEO-2026-017
+      - GEO-2026-018
+
+claims:
+  - id: "GEO-2026-014"
+    text: >-
+      Taiwan authorities assess that China’s espionage operations in Taiwan are rapidly advancing and pose a serious threat to
+      Taiwan’s national security.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["wsj-2026-chinese-spy-machine-taiwan-military"]
+    operationalization: >-
+      Collect Taiwan NSB/Defense Ministry/Control Yuan official assessments over time and assess whether threat metrics and
+      described sophistication have increased.
+    assumptions:
+      - Public Taiwan assessments reflect real internal threat evaluations.
+    falsifiers:
+      - Official assessments show no trend toward “rapidly advancing” or severe threat.
+
+  - id: "GEO-2026-015"
+    text: >-
+      Taiwan prosecutors filed charges in 2024 against 64 people in 15 cases of alleged PRC espionage, compared with three cases
+      in 2021.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["wsj-2026-chinese-spy-machine-taiwan-military"]
+    operationalization: >-
+      Verify against Taiwan prosecutor/NSB published case statistics and confirm definitional consistency across years.
+    assumptions:
+      - The “cases” definition is consistent (or can be normalized) across years.
+    falsifiers:
+      - Official datasets show materially different counts or inconsistent definitions.
+
+  - id: "GEO-2026-016"
+    text: >-
+      In Taiwan’s PRC-espionage prosecutions cited for 2024 and the first nine months of 2025, nearly two-thirds of those charged
+      were active or retired military personnel.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["wsj-2026-chinese-spy-machine-taiwan-military"]
+    operationalization: >-
+      Verify the numerator/denominator against case-level public records and compute the military share.
+    assumptions:
+      - Classification of “military personnel” is consistent across cases.
+    falsifiers:
+      - Verified breakdown shows a materially different share.
+
+  - id: "GEO-2026-017"
+    text: >-
+      PRC agents increasingly target lower-ranking Taiwanese military members for recruitment using messaging apps and online loan
+      offers, often for relatively small payments.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["wsj-2026-chinese-spy-machine-taiwan-military"]
+    operationalization: >-
+      Build a dataset of publicly reported/prosecuted recruitment cases and code the rank of the target and recruitment channel;
+      test for a time trend toward lower rank and online channels.
+    assumptions:
+      - Publicly prosecuted cases are representative of the broader recruitment strategy.
+    falsifiers:
+      - Case data shows stable or opposite trends (higher-rank focus; non-digital channels dominate).
+
+  - id: "GEO-2026-018"
+    text: >-
+      Taiwan officials fear that PRC agents already in place inside Taiwan would materially aid a PLA attack by providing
+      intelligence, targeting data, or sabotage support.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["wsj-2026-chinese-spy-machine-taiwan-military"]
+    operationalization: >-
+      Assess the depth and capability of known infiltration networks and whether detected plots included actionable targeting
+      or sabotage plans relevant to a contingency.
+    assumptions:
+      - Infiltration networks, if present, can translate into operational impact during conflict.
+    falsifiers:
+      - Evidence shows infiltration is low-value and does not translate into operational impact in realistic scenarios.
+
