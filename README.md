@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 278 |
-| **Sources** | 74 |
+| **Claims** | 280 |
+| **Sources** | 76 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 19 |
 
@@ -47,6 +47,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-26 | [Physician Declaration on Pretti Shooting (Doc. 109)](analysis/sources/uscourts-mnd-2025-04669-doc109-doctor-declaration.md) | `[DRAFT]` | Primary court filing: physician declaration describing post-shooting medical response + reported wound locations (agency attribution in declaration is disputed) |
 | 2026-01-26 | [Alex Pretti Family Statement (Common Dreams)](analysis/sources/commondreams-2026-minneapolis-shooting-family.md) | `[REVIEWED]` | Family response to CBP shooting; video evidence disputes official narrative (phone vs gun, disarmament before shooting); immediate "domestic terrorist" labeling without evidence |
 | 2026-01-25 | ["Positions ICE has taken" (BlueBadger2600)](analysis/sources/bluebadger2600-2026-ice-positions.md) | `[REVIEWED]` | Legal/policy fact-check of ICE authority claims (home entry, detention, counsel, courts, third-country removals) + Minnesota incidents (Good/Pretti, 5yo detention, National Guard, Vance immunity) |
 | 2026-01-25 | [Inference Cost Analysis & Projections (lhl)](analysis/sources/lhl-2026-frontier-llm-token-unit-economics.md) | `[DRAFT]` | Frontier inference unit economics: caching + routing dominate; reasoning/long-context are hidden cost multipliers; includes cache-heavy case study |
@@ -88,7 +89,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TECH | Technology & AI | 104 |
 | LABOR | Labor & Employment | 17 |
 | ECON | Economics & Markets | 29 |
-| GOV | Governance & Policy | 51 |
+| GOV | Governance & Policy | 53 |
 | SOC | Social Dynamics | 5 |
 | TRANS | Transition Dynamics | 24 |
 | RESOURCE | Resource Constraints | 11 |

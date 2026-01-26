@@ -1,0 +1,74 @@
+sources:
+  - id: "uscourts-mnd-2025-04669-doc109-doctor-declaration"
+    type: "REPORT"
+    title: "Declaration of an unnamed physician (Doc. 109, D. Minn. 0:25-cv-04669-KMM-DTS)"
+    author:
+      - "Unnamed physician (declarant)"
+    year: 2026
+    url: "https://storage.courtlistener.com/recap/gov.uscourts.mnd.229758/gov.uscourts.mnd.229758.109.0.pdf"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/uscourts-mnd-2025-04669-doc109-doctor-declaration.md"
+    reliability: 0.70
+    bias_notes: >-
+      Primary court filing containing a single-witness declaration. Strong evidence of what was asserted under
+      oath; underlying incident details should be corroborated with bodycam, EMS, and autopsy records. The
+      declaration uses “ICE agents” language; agency attribution should be treated as uncertain unless
+      corroborated by primary records.
+    topics:
+      - minneapolis-shooting
+      - alex-pretti
+      - medical-response
+      - use-of-force
+      - court-filing
+      - testimony
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-052
+      - GOV-2026-053
+
+claims:
+  - id: "GOV-2026-052"
+    text: >-
+      In a declaration filed in D. Minn. case 0:25-cv-04669-KMM-DTS (Doc. 109, 2026-01-24), an unnamed physician
+      states that agents near Alex Pretti after he was shot were not checking for a pulse or performing CPR and
+      appeared to be counting bullet wounds; when asked if Pretti had a pulse, the agents said they did not know.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.90
+    operationalization: >-
+      Corroborate or refute the declared sequence using bodycam/bystander video, EMS run sheets, dispatch
+      timeline, and court deposition testimony.
+    assumptions:
+      - The CourtListener PDF is an authentic copy of the filed declaration.
+    falsifiers:
+      - Court docket shows the declaration text materially differs or was withdrawn/corrected.
+      - Primary records (bodycam/EMS) contradict the described medical-response sequence.
+    notes: "Layer=ASSERTED (sworn declaration). Actor described as ICE in declaration; agency attribution uncertain."
+    source_ids:
+      - "uscourts-mnd-2025-04669-doc109-doctor-declaration"
+
+  - id: "GOV-2026-053"
+    text: >-
+      In the same declaration (D. Minn. 0:25-cv-04669-KMM-DTS, Doc. 109), the physician states that Alex Pretti had
+      at least three bullet wounds in his back plus an additional wound on his upper-left chest and a possible
+      wound on his neck; the physician reports finding no pulse, beginning CPR, and that EMS arrived and took
+      over.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.85
+    operationalization: >-
+      Validate wound count/locations and timeline against the autopsy report, EMS documentation, and any released
+      footage.
+    assumptions:
+      - The CourtListener PDF is an authentic copy of the filed declaration.
+    falsifiers:
+      - Autopsy/EMS records contradict the reported wound locations or CPR/EMS timeline.
+      - Court docket shows the declaration text materially differs or was withdrawn/corrected.
+    notes: "Layer=ASSERTED (sworn declaration). Wound details/timeline require corroboration."
+    source_ids:
+      - "uscourts-mnd-2025-04669-doc109-doctor-declaration"
+

@@ -1,0 +1,26 @@
+sources:
+  - id: "independent-2026-pretti-doctor-bullet-holes"
+    type: "ARTICLE"
+    title: "Doctor who attended to shot protester says agents were counting bullet holes"
+    author:
+      - "Mike Bedigan"
+    year: 2026
+    url: "https://www.the-independent.com/news/world/americas/us-politics/alex-pretti-minneapolis-shooting-doctor-bullet-holes-b2907313.html"
+    accessed: "2026-01-26"
+    status: "cataloged"
+    analysis_file: "reference/articles/independent-2026-pretti-doctor-bullet-holes.md"
+    reliability: 0.60
+    bias_notes: >-
+      Secondary reporting that quotes and links to a primary court filing (Doc. 109). Strongest value is the
+      pointer to the filing; agency attribution within narrative should be treated as unverified unless
+      corroborated by primary records.
+    topics:
+      - minneapolis-shooting
+      - alex-pretti
+      - medical-response
+      - use-of-force
+      - court-filing
+    domains:
+      - GOV
+    claims_extracted: []
+

@@ -1,6 +1,6 @@
 # Source Registry
-# Exported from LanceDB on 2026-01-24
-# Total sources: 71
+# Exported from LanceDB on 2026-01-26
+# Total sources: 76
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -161,6 +161,42 @@ sources:
     domains:
     - TECH
     status: analyzed
+  bluebadger2600-2026-ice-positions:
+    type: SOCIAL
+    title: 'X post: “Positions ICE has taken”'
+    author:
+    - '@BlueBadger2600'
+    year: 2026
+    url: https://x.com/BlueBadger2600/status/2015086695566451161
+    accessed: '2026-01-25'
+    reliability: 0.4
+    bias_notes: Highly compressed, adversarial framing; mixes legal-technical assertions
+      with worst-case rhetorical extrapolation. Some items are checkable against statutes/regulations
+      and reported internal DHS/ICE memos; others are broad generalizations.
+    claims_extracted:
+    - GOV-2026-033
+    - GOV-2026-034
+    - GOV-2026-035
+    - GOV-2026-036
+    - GOV-2026-037
+    - GOV-2026-038
+    - GOV-2026-039
+    - GOV-2026-040
+    - GOV-2026-041
+    - GOV-2026-042
+    analysis_file: analysis/sources/bluebadger2600-2026-ice-positions.md
+    topics:
+    - immigration
+    - ice
+    - dhs
+    - warrants
+    - detention
+    - due-process
+    - minnesota
+    - civil-liberties
+    domains:
+    - GOV
+    status: analyzed
   butler-1863-darwin-machines:
     type: ARTICLE
     title: Darwin among the Machines
@@ -296,6 +332,39 @@ sources:
     - workflow
     domains:
     - META
+    status: analyzed
+  commondreams-2026-minneapolis-shooting-family:
+    type: ARTICLE
+    title: '''Please Get the Truth Out,'' Alex Pretti''s Parents Plead as Trump Officials
+      Baselessly Smear Shooting Victim'
+    author:
+    - Julia Conley
+    year: 2026
+    url: https://www.commondreams.org/news/minneapolis-shooting-update
+    accessed: '2026-01-26'
+    reliability: 0.65
+    bias_notes: Progressive outlet with clear editorial stance. However, quotes are
+      direct and specific, videos are cited, and AP is referenced as corroborating
+      source. Primary value is family's direct testimony.
+    claims_extracted:
+    - GOV-2026-043
+    - GOV-2026-044
+    - GOV-2026-045
+    - GOV-2026-046
+    - GOV-2026-047
+    - GOV-2026-048
+    - GOV-2026-049
+    - GOV-2026-050
+    - GOV-2026-051
+    analysis_file: analysis/sources/commondreams-2026-minneapolis-shooting-family.md
+    topics:
+    - minneapolis-shooting
+    - alex-pretti
+    - cbp
+    - domestic-terrorism
+    - family-response
+    domains:
+    - GOV
     status: analyzed
   deepseek-r1:
     type: PAPER
@@ -700,6 +769,31 @@ sources:
     - TECH
     - RESOURCE
     status: cataloged
+  independent-2026-pretti-doctor-bullet-holes:
+    type: ARTICLE
+    title: Doctor who attended to shot protester says agents were counting bullet
+      holes
+    author:
+    - Mike Bedigan
+    year: 2026
+    url: https://www.the-independent.com/news/world/americas/us-politics/alex-pretti-minneapolis-shooting-doctor-bullet-holes-b2907313.html
+    accessed: '2026-01-26'
+    reliability: 0.6
+    bias_notes: Secondary reporting that quotes and links to a primary court filing
+      (Doc. 109). Strongest value is the pointer to the filing; agency attribution
+      within narrative should be treated as unverified unless corroborated by primary
+      records.
+    claims_extracted: []
+    analysis_file: reference/articles/independent-2026-pretti-doctor-bullet-holes.md
+    topics:
+    - minneapolis-shooting
+    - alex-pretti
+    - medical-response
+    - use-of-force
+    - court-filing
+    domains:
+    - GOV
+    status: cataloged
   islam-2023-financebench:
     type: PAPER
     title: 'FinanceBench: A New Benchmark for Financial Question Answering'
@@ -881,6 +975,63 @@ sources:
     - liquidai
     domains:
     - TECH
+    status: analyzed
+  lhl-2026-frontier-llm-token-unit-economics:
+    type: KNOWLEDGE
+    title: Inference Cost Analysis & Projections (Jan 2026)
+    author:
+    - lhl
+    year: 2026
+    url: https://github.com/lhl/frontier-llm-token-unit-economics
+    accessed: '2026-01-25'
+    reliability: 0.72
+    bias_notes: First-party synthesis of frontier LLM inference unit economics. Strong
+      on explicit citations, pricing tables, and the internal usage-case arithmetic;
+      weaker where it infers provider COGS, hidden “reasoning tokens”, or closed-model
+      architectures/throughput from indirect signals. Many ranges are explicitly illustrative.
+    claims_extracted:
+    - ECON-2026-020
+    - TECH-2026-092
+    - TECH-2026-093
+    - ECON-2026-021
+    - TECH-2026-094
+    - ECON-2026-022
+    - TECH-2026-095
+    - INST-2026-004
+    - INST-2026-005
+    - RESOURCE-2026-007
+    - TECH-2026-096
+    - ECON-2026-023
+    - TECH-2026-097
+    - RESOURCE-2026-008
+    - ECON-2026-024
+    - ECON-2026-025
+    - ECON-2026-026
+    - ECON-2026-027
+    - TECH-2026-098
+    - RESOURCE-2026-009
+    - RESOURCE-2026-010
+    - TRANS-2026-016
+    - TRANS-2026-017
+    - INST-2026-006
+    analysis_file: analysis/sources/lhl-2026-frontier-llm-token-unit-economics.md
+    topics:
+    - llm
+    - inference
+    - pricing
+    - unit-economics
+    - caching
+    - kv-cache
+    - reasoning
+    - subscriptions
+    - gpus
+    - throughput
+    domains:
+    - ECON
+    - RESOURCE
+    - TECH
+    - INST
+    - TRANS
     status: analyzed
   lin-2025-jp-tl-bench:
     type: BLOG
@@ -1498,6 +1649,34 @@ sources:
     - ECON
     - LABOR
     status: cataloged
+  uscourts-mnd-2025-04669-doc109-doctor-declaration:
+    type: REPORT
+    title: Declaration of an unnamed physician (Doc. 109, D. Minn. 0:25-cv-04669-KMM-DTS)
+    author:
+    - Unnamed physician (declarant)
+    year: 2026
+    url: https://storage.courtlistener.com/recap/gov.uscourts.mnd.229758/gov.uscourts.mnd.229758.109.0.pdf
+    accessed: '2026-01-26'
+    reliability: 0.7
+    bias_notes: Primary court filing containing a single-witness declaration. Strong
+      evidence of what was asserted under oath; underlying incident details should
+      be corroborated with bodycam, EMS, and autopsy records. The declaration uses
+      “ICE agents” language; agency attribution should be treated as uncertain unless
+      corroborated by primary records.
+    claims_extracted:
+    - GOV-2026-052
+    - GOV-2026-053
+    analysis_file: analysis/sources/uscourts-mnd-2025-04669-doc109-doctor-declaration.md
+    topics:
+    - minneapolis-shooting
+    - alex-pretti
+    - medical-response
+    - use-of-force
+    - court-filing
+    - testimony
+    domains:
+    - GOV
+    status: analyzed
   varoufakis-technofeudalism:
     type: BOOK
     title: 'Technofeudalism: What Killed Capitalism'

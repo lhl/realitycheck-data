@@ -1,20 +1,20 @@
 # Claim Registry
-# Exported from LanceDB on 2026-01-24
-# Total claims: 235
+# Exported from LanceDB on 2026-01-26
+# Total claims: 280
 # Total chains: 4
 
 counters:
-  TECH: 91
-  RESOURCE: 6
+  TECH: 98
+  RESOURCE: 10
   LABOR: 13
-  ECON: 19
-  GOV: 32
+  ECON: 27
+  GOV: 53
   SOC: 3
-  TRANS: 15
+  TRANS: 17
   META: 23
   GEO: 1
   RISK: 5
-  INST: 3
+  INST: 6
 claims:
   ECON-2025-001:
     text: Neoliberalism evolved into a model of state hollowing and asset-stripping
@@ -434,6 +434,163 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-24'
+  ECON-2026-020:
+    text: Prompt/prefix caching is a dominant unit-economics lever for agentic and
+      coding workloads because it converts repeated “input tokens” from compute-heavy
+      prefill into comparatively cheap cache reads that are discounted heavily in
+      API pricing.
+    type: '[T]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.699999988079071
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  ECON-2026-021:
+    text: In the Claude case study, applying Opus 4.5 list prices implies spend is
+      roughly ~$1.0K with caching versus ~$4.8K if all input were billed as uncached
+      base input.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  ECON-2026-022:
+    text: In the OpenAI case study, total estimated API-equivalent cost divided by
+      total tokens implies an effective cost around $0.31 per million tokens, and
+      the observed cost depends on the actual model mix rather than a single list-rate
+      model.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  ECON-2026-023:
+    text: Under Anthropic prompt-caching pricing (5m write=1.25× base input, read=0.1×;
+      1h write=2×, read=0.1×), caching becomes cheaper than resending uncached input
+      after about 1.28 total uses of a prefix (5m) or about 2.11 total uses (1h).
+    type: '[F]'
+    domain: ECON
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  ECON-2026-024:
+    text: For a subscription plan with monthly revenue R and blended variable cost
+      c ($/MTok), break-even token volume is approximately (R / c) million tokens
+      per month, so modest increases in blended cost can sharply reduce the break-even
+      token budget.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  ECON-2026-025:
+    text: Self-hosting beats API prices on variable cost only when utilization and
+      effective throughput are high; for very low API output prices (e.g., ~$0.60/MTok),
+      near-saturation utilization may be required under plausible tok/s and GPU $/hr
+      assumptions.
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  ECON-2026-026:
+    text: Public pricing data indicates a steep decline in list prices for GPT-4-class
+      output tokens from early GPT-4-era pricing (~$60/MTok) to GPT-4o-class pricing
+      (~$10/MTok) and to small-model tiers (~$0.60/MTok), depending on the specific
+      SKU and date.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  ECON-2026-027:
+    text: Capability-adjusted API prices have been falling extremely quickly; Epoch
+      AI reports a wide range of declines (9×–900× per year, median ~50×/yr) and higher
+      median decline rates when restricting to post-Jan-2024 model data.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
   GEO-2025-001:
     text: The energy transition is producing major political consequences—from bribery
       and corruption up to open warfare—and post-oil geopolitics will differ substantially
@@ -1085,6 +1242,397 @@ claims:
     notes: 'UNVERIFIED: No Wikipedia article exists for EU SAFE programme. May be
       too recent for coverage. Needs EU Commission or Canadian government source to
       verify participation in European defence procurement.'
+  GOV-2026-033:
+    text: ICE has asserted authority to forcibly enter homes to make immigration arrests
+      without a judge-signed warrant (e.g., relying on an administrative warrant).
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - bluebadger2600-2026-ice-positions
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  GOV-2026-034:
+    text: Federal law requires noncitizens (18+) to carry their registration documents
+      (e.g., alien registration or receipt card) at all times.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E2
+    credence: 0.9800000190734863
+    source_ids:
+    - bluebadger2600-2026-ice-positions
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  GOV-2026-035:
+    text: In some encounters, ICE agents may disregard paper documents and instead
+      rely primarily on biometric identity checks (fingerprint/face ID) to determine
+      identity/status.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - bluebadger2600-2026-ice-positions
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  GOV-2026-036:
+    text: ICE can detain people broadly across contexts, including children, and errors
+      can result in detention of U.S. citizens.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - bluebadger2600-2026-ice-positions
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  GOV-2026-037:
+    text: ICE can detain people indefinitely with no access to a lawyer.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E6
+    credence: 0.20000000298023224
+    source_ids:
+    - bluebadger2600-2026-ice-positions
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  GOV-2026-038:
+    text: People targeted by ICE generally have no meaningful right to a day in court.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.550000011920929
+    source_ids:
+    - bluebadger2600-2026-ice-positions
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  GOV-2026-039:
+    text: ICE can deport some people to third countries (not their country of origin),
+      potentially on short notice and with limited procedural safeguards.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - bluebadger2600-2026-ice-positions
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  GOV-2026-040:
+    text: If ICE makes a serious mistake (e.g., wrongful removal), it generally cannot
+      or will not bring the person back.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.550000011920929
+    source_ids:
+    - bluebadger2600-2026-ice-positions
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  GOV-2026-041:
+    text: If someone interferes with ICE activity, ICE can use lethal force and justify
+      it by labeling the person a terrorist.
+    type: '[H]'
+    domain: GOV
+    evidence_level: E6
+    credence: 0.15000000596046448
+    source_ids:
+    - bluebadger2600-2026-ice-positions
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  GOV-2026-042:
+    text: DHS/ICE leadership and allied messaging have repeatedly labeled people involved
+      in immigration-enforcement incidents and interference/observation as “domestic
+      terrorists”/“terrorists,” often immediately after events.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - bluebadger2600-2026-ice-positions
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  GOV-2026-043:
+    text: Bystander videos show Alex Pretti holding a phone (not a visible gun) in
+      his right hand immediately before the shooting in Minneapolis on January 24,
+      2026.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - commondreams-2026-minneapolis-shooting-family
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-044:
+    text: Videos reviewed by CNN appear to show an agent removing a gun from Alex
+      Pretti shortly before shots were fired.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - commondreams-2026-minneapolis-shooting-family
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-045:
+    text: Video reporting indicates agents pepper-sprayed and wrestled Alex Pretti
+      to the ground; some reporting counts approximately 10 shots, including shots
+      after he fell prone.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - commondreams-2026-minneapolis-shooting-family
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-046:
+    text: Top Trump administration officials publicly suggested Alex Pretti was a
+      'domestic terrorist' shortly after the shooting; the public justification centered
+      on claims that he approached agents with a handgun.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - commondreams-2026-minneapolis-shooting-family
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-047:
+    text: Alex Pretti's family first learned of the shooting from an Associated Press
+      reporter, and reported they had not been contacted by federal officials as of
+      Saturday evening.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - commondreams-2026-minneapolis-shooting-family
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-048:
+    text: The January 24, 2026 shooting of Alex Pretti in Minneapolis was by U.S.
+      Border Patrol (CBP), not ICE.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - commondreams-2026-minneapolis-shooting-family
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-049:
+    text: A memo attributed to Attorney General Pam Bondi is reported to treat 'impeding'
+      or 'doxing' law enforcement as domestic terrorism; the primary memo text was
+      not captured in this pass.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - commondreams-2026-minneapolis-shooting-family
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-050:
+    text: Alex Pretti worked as an ICU nurse at a Minneapolis VA hospital (U.S. Department
+      of Veterans Affairs), per family and AP reporting.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - commondreams-2026-minneapolis-shooting-family
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-051:
+    text: Alex Pretti was a U.S. citizen (born in Illinois), per family and AP reporting.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - commondreams-2026-minneapolis-shooting-family
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+  GOV-2026-052:
+    text: In a declaration filed in D. Minn. case 0:25-cv-04669-KMM-DTS (Doc. 109,
+      2026-01-24), an unnamed physician states that agents near Alex Pretti after
+      he was shot were not checking for a pulse or performing CPR and appeared to
+      be counting bullet wounds; when asked if Pretti had a pulse, the agents said
+      they did not know.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - uscourts-mnd-2025-04669-doc109-doctor-declaration
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+    notes: Layer=ASSERTED (sworn declaration). Actor described as ICE in declaration;
+      agency attribution uncertain.
+  GOV-2026-053:
+    text: In the same declaration (D. Minn. 0:25-cv-04669-KMM-DTS, Doc. 109), the
+      physician states that Alex Pretti had at least three bullet wounds in his back
+      plus an additional wound on his upper-left chest and a possible wound on his
+      neck; the physician reports finding no pulse, beginning CPR, and that EMS arrived
+      and took over.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - uscourts-mnd-2025-04669-doc109-doctor-declaration
+    first_extracted: '2026-01-26'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-26'
+    notes: Layer=ASSERTED (sworn declaration). Wound details/timeline require corroboration.
   INST-2025-001:
     text: At Google, a team other than the core Gemini/DeepMind builders modified
       the system’s behavior in ways that produced historically inaccurate “diversity
@@ -1163,6 +1711,63 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-22'
+  INST-2026-004:
+    text: Subscription profitability for “unlimited” plans is primarily determined
+      by how well providers protect the expensive execution path (uncached long-context
+      prefill, sustained decode, heavy reasoning compute) via routing, limits, and
+      throttling; automated agent loops are a high-risk usage pattern.
+    type: '[H]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  INST-2026-005:
+    text: OpenAI’s CEO said the company is losing money on the $200/month ChatGPT
+      Pro plan because people use it more than expected.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  INST-2026-006:
+    text: Subscription plans will likely continue tightening “fair use” controls (rate
+      limits, dynamic model routing, and degraded tiers under load) because worst-case
+      long-context and reasoning-heavy usage collapses break-even.
+    type: '[P]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
   LABOR-2023-001:
     text: 'In a controlled experiment (May–Jun 2022) with 95 professional developers,
       the group with access to GitHub Copilot completed an HTTP-server implementation
@@ -2087,6 +2692,85 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-22'
+  RESOURCE-2026-007:
+    text: 'A practical lower bound for variable inference cost per million tokens
+      is approximately: COGS($/MTok) ≈ (cluster $/hr) / (effective tok/s × 3600) ×
+      1e6; utilization and effective throughput therefore dominate unit cost.'
+    type: '[F]'
+    domain: RESOURCE
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  RESOURCE-2026-008:
+    text: 'For long-context frontier usage, keeping a user “online” can impose a material
+      opportunity cost: if a session’s KV cache occupies on the order of 100GB of
+      H200-class VRAM, the implied cost can be on the order of dollars per hour per
+      heavy session (illustrative).'
+    type: '[H]'
+    domain: RESOURCE
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  RESOURCE-2026-009:
+    text: Reported training-cost figures for near-frontier open models (e.g., DeepSeek
+      V3 at ~$5.6M) suggest frontier training cost can be far below early GPT-4-era
+      estimates (often cited as $100M+), though comparisons depend on accounting conventions
+      and what “frontier-level” means.
+    type: '[H]'
+    domain: RESOURCE
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  RESOURCE-2026-010:
+    text: Energy use per token for LLM inference can be far lower than older widely
+      cited figures; optimized benchmarks and updated estimates imply electricity
+      cost is often a small fraction of per-token COGS relative to accelerator amortization
+      and utilization.
+    type: '[T]'
+    domain: RESOURCE
+    evidence_level: E3
+    credence: 0.6499999761581421
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
   RISK-2025-001:
     text: Humanity has passed the +1.5°C warming threshold, increasing the number
       of days per year when temperatures are too hot for normal photosynthesis.
@@ -4160,6 +4844,142 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-24'
+  TECH-2026-092:
+    text: Prompt/prefix caching works by storing internal model state (e.g., KV cache
+      for a prefix) so that on a cache hit the system can skip recomputing prefill
+      for that prefix and resume generation from the cached state.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  TECH-2026-093:
+    text: In the Claude case study (Dec 2025–Jan 2026), cache reads constitute about
+      91.2% of tokens and the cache hit rate (reads / (reads + creation)) is about
+      91.4%, implying a reuse factor of roughly 10.6×.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  TECH-2026-094:
+    text: In the OpenAI case study (Sep 2025–Jan 2026), cached input tokens are about
+      95.9% of total input tokens, implying a cached-to-fresh reuse factor of roughly
+      23×.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  TECH-2026-095:
+    text: For “reasoning” models, hidden internal reasoning tokens can exceed visible
+      output by an order of magnitude or more, so true cost-per-task can be 10–100×
+      larger than the cost implied by visible output tokens alone.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  TECH-2026-096:
+    text: Output tokens are materially more expensive than input tokens because decode
+      is sequential and largely memory-bandwidth-bound, while prefill is parallelizable
+      and compute-efficient; for typical frontier models, decode throughput per GPU
+      is often 10–50× lower than prefill throughput.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.75
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  TECH-2026-097:
+    text: KV-cache memory per sequence scales roughly as KV_bytes = 2 × layers × hidden_dim
+      × bytes_per_param × context_length, so long-context usage for large models can
+      require hundreds of GB per active session—often exceeding a single GPU’s VRAM—and
+      therefore motivates TTLs, tiered cache storage, and KV quantization/paging.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  TECH-2026-098:
+    text: The industry trend toward sparse MoE reduces per-token compute by lowering
+      activation ratio (e.g., from ~15% for a GPT-4 leak estimate to ~3% for some
+      recent MoE reports), enabling higher capacity without proportional compute cost—though
+      closed-model activation ratios are uncertain.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
   TRANS-2025-001:
     text: The current global energy transition away from fossil fuels is “more or
       less irreversible” at this point.
@@ -4589,6 +5409,44 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-24'
+  TRANS-2026-016:
+    text: Over the next 12–24 months, baseline “commodity” token prices are likely
+      to continue declining while premium reasoning and long-context workloads remain
+      price-discriminated and more tightly limited.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
+  TRANS-2026-017:
+    text: Token-based pricing will likely evolve toward more explicit “compute unit”
+      billing (time × hardware tier and/or memory residency tiers) to better align
+      charges with wall-clock accelerator cost for reasoning and long-context workloads.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - lhl-2026-frontier-llm-token-unit-economics
+    first_extracted: '2026-01-25'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-25'
 chains:
   CHAIN-2026-001:
     name: Permanent Underclass
