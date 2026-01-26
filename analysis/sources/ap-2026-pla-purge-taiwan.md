@@ -16,7 +16,7 @@
 | **Reliability** | 0.70 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | Straight reporting plus expert quotes; limited primary evidence because PRC elite politics is intentionally opaque. |
-| **Local Capture** | `inbox/to-analyze/ap-purge.md` (local only; not committed) |
+| **Local Capture** | `reference/articles/_local/ap-2026-pla-purge-taiwan.md` (local only; not committed) |
 
 **Claims YAML**: [`analysis/sources/ap-2026-pla-purge-taiwan.yaml`](ap-2026-pla-purge-taiwan.yaml)
 
@@ -259,4 +259,3 @@ claims:
 ### Revision Notes
 
 **Pass 1**: Initial analysis and claim extraction from local AP capture.
-

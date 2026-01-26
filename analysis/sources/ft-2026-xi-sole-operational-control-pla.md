@@ -16,7 +16,7 @@
 | **Reliability** | 0.70 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | Strong contextualization of CCP “discipline” language and analyst views; still limited by opaque PRC internal motives. |
-| **Local Capture** | `inbox/to-analyze/ft-xi.md` (local only; not committed) |
+| **Local Capture** | `reference/articles/_local/ft-2026-xi-sole-operational-control-pla.md` (local only; not committed) |
 
 **Claims YAML**: [`analysis/sources/ft-2026-xi-sole-operational-control-pla.yaml`](ft-2026-xi-sole-operational-control-pla.yaml)
 
@@ -196,4 +196,3 @@ claims:
 ### Revision Notes
 
 **Pass 1**: Initial analysis and claim extraction from local FT capture.
-

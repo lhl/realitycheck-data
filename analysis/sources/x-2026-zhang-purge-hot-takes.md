@@ -16,7 +16,7 @@
 | **Reliability** | 0.30 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | Uncurated social-media speculation; high noise, strong priors, and frequent motivated reasoning. Use primarily to map rumor space and identify hypotheses to test. |
-| **Local Capture** | `inbox/to-analyze/china-purge-taiwan.md` (local only; not committed) |
+| **Local Capture** | `reference/articles/_local/x-2026-zhang-purge-hot-takes.md` (local only; not committed) |
 
 **Claims YAML**: [`analysis/sources/x-2026-zhang-purge-hot-takes.yaml`](x-2026-zhang-purge-hot-takes.yaml)
 
@@ -252,4 +252,3 @@ claims:
 ### Revision Notes
 
 **Pass 1**: Structured the rumor space into testable hypotheses and extracted low-evidence claims for tracking.
-

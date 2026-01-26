@@ -16,7 +16,7 @@
 | **Reliability** | 0.65 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | High-signal aggregator for PRC politics with translations/excerpts; still derivative (relies on PLA Daily + SCMP sources) and includes interpretive speculation. |
-| **Local Capture** | `inbox/to-analyze/billbishop.md` (local only; not committed) |
+| **Local Capture** | `reference/articles/_local/sinocism-2026-pla-purges-intensify-zhang-liu.md` (local only; not committed) |
 
 **Claims YAML**: [`analysis/sources/sinocism-2026-pla-purges-intensify-zhang-liu.yaml`](sinocism-2026-pla-purges-intensify-zhang-liu.yaml)
 
@@ -202,4 +202,3 @@ claims:
 ### Revision Notes
 
 **Pass 1**: Initial analysis and claim extraction from local Sinocism capture.
-

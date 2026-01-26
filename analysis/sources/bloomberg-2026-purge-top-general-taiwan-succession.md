@@ -16,7 +16,7 @@
 | **Reliability** | 0.70 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | Analytical framing (markets + elite politics + Taiwan risk) relying heavily on expert interpretation; PRC motive claims remain inherently uncertain. |
-| **Local Capture** | `inbox/to-analyze/bloomberg-xi.md` (local only; not committed) |
+| **Local Capture** | `reference/articles/_local/bloomberg-2026-purge-top-general-taiwan-succession.md` (local only; not committed) |
 
 **Claims YAML**: [`analysis/sources/bloomberg-2026-purge-top-general-taiwan-succession.yaml`](bloomberg-2026-purge-top-general-taiwan-succession.yaml)
 
@@ -224,4 +224,3 @@ claims:
 ### Revision Notes
 
 **Pass 1**: Initial analysis and claim extraction from local Bloomberg capture.
-

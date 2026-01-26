@@ -16,7 +16,7 @@
 | **Reliability** | 0.70 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | Investigative reporting based on unnamed sources describing an alleged internal briefing; high impact but hard to independently verify. |
-| **Local Capture** | `inbox/to-analyze/wsj-nuclear.md` (local only; not committed) |
+| **Local Capture** | `reference/articles/_local/wsj-2026-top-general-nuclear-secrets.md` (local only; not committed) |
 
 **Claims YAML**: [`analysis/sources/wsj-2026-top-general-nuclear-secrets.yaml`](wsj-2026-top-general-nuclear-secrets.yaml)
 
@@ -242,4 +242,3 @@ claims:
 ### Revision Notes
 
 **Pass 1**: Initial analysis and claim extraction from local WSJ capture.
-

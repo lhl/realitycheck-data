@@ -16,7 +16,7 @@
 | **Reliability** | 0.65 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | Commentary-style analysis; highlights speculation and signaling cues; weaker on verifiable primary evidence. |
-| **Local Capture** | `inbox/to-analyze/sky-xi.md` (local only; not committed) |
+| **Local Capture** | `reference/articles/_local/skynews-2026-xi-purge-power-control.md` (local only; not committed) |
 
 **Claims YAML**: [`analysis/sources/skynews-2026-xi-purge-power-control.yaml`](skynews-2026-xi-purge-power-control.yaml)
 
@@ -179,4 +179,3 @@ claims:
 ### Revision Notes
 
 **Pass 1**: Initial analysis and claim extraction from local Sky News capture.
-

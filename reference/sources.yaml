@@ -1,5 +1,5 @@
 # Source Registry
-# Exported from LanceDB on 2026-01-26
+# Exported from LanceDB on 2026-01-27
 # Total sources: 91
 
 sources:
@@ -442,7 +442,7 @@ sources:
     author:
     - Claude (Deep Research; AI-generated memo)
     year: 2026
-    url: ''
+    url: reference/transcripts/claude-2026-01-26-deepresearch-pla-purge-taiwan.md
     accessed: '2026-01-26'
     reliability: 0.5
     bias_notes: AI-generated synthesis memo that mixes factual assertions, interpretive

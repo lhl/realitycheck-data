@@ -16,7 +16,7 @@
 | **Reliability** | 0.75 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | Wire-service reporting focused on Taiwan’s official posture; does not resolve underlying PRC motives. |
-| **Local Capture** | `inbox/to-analyze/reuters-tw.md` (local only; not committed) |
+| **Local Capture** | `reference/articles/_local/reuters-2026-taiwan-monitoring-pla-leadership.md` (local only; not committed) |
 
 **Claims YAML**: [`analysis/sources/reuters-2026-taiwan-monitoring-pla-leadership.yaml`](reuters-2026-taiwan-monitoring-pla-leadership.yaml)
 
@@ -201,4 +201,3 @@ claims:
 ### Revision Notes
 
 **Pass 1**: Initial analysis and claim extraction from local Reuters capture.
-

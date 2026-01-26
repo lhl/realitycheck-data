@@ -16,7 +16,7 @@
 | **Reliability** | 0.70 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | Strong reporting with multiple expert quotes; still limited by PRC opacity; includes interpretive claims about Xi’s psychology and readiness impacts. |
-| **Local Capture** | `inbox/to-analyze/nyt-xi.md` (local only; not committed) |
+| **Local Capture** | `reference/articles/_local/nyt-2026-xi-purge-top-general-down.md` (local only; not committed) |
 
 **Claims YAML**: [`analysis/sources/nyt-2026-xi-purge-top-general-down.yaml`](nyt-2026-xi-purge-top-general-down.yaml)
 
@@ -220,4 +220,3 @@ claims:
 ### Revision Notes
 
 **Pass 1**: Initial analysis and claim extraction from local NYT capture.
-

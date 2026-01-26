@@ -16,7 +16,7 @@
 | **Reliability** | 0.70 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | High-quality analysis but still constrained by limited verifiable information about PRC elite politics; relies on Western analysts and interpretation of PRC signaling language. |
-| **Local Capture** | `inbox/to-analyze/economist-purge.md` (local only; not committed) |
+| **Local Capture** | `reference/articles/_local/economist-2026-xi-purge-senior-general.md` (local only; not committed) |
 
 **Claims YAML**: [`analysis/sources/economist-2026-xi-purge-senior-general.yaml`](economist-2026-xi-purge-senior-general.yaml)
 
@@ -306,4 +306,3 @@ claims:
 ### Revision Notes
 
 **Pass 1**: Initial analysis and claim extraction from local Economist capture.
-

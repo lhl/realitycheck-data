@@ -12,11 +12,11 @@
 | **Author(s)** | Claude (Deep Research; AI-generated memo) |
 | **Date** | 2026-01-26 |
 | **Type** | KNOWLEDGE |
-| **URL** | (local memo; no canonical URL) |
+| **URL** | `reference/transcripts/claude-2026-01-26-deepresearch-pla-purge-taiwan.md` |
 | **Reliability** | 0.50 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | AI-generated synthesis memo that mixes factual assertions, interpretive framing, and uncited quantitative details; treat as a hypothesis generator and verify key numerics against primary sources. |
-| **Local Capture** | `inbox/to-analyze/2026-claude-deepresearch.md` (local only; not committed) |
+| **Local Capture** | `reference/transcripts/claude-2026-01-26-deepresearch-pla-purge-taiwan.md` |
 
 **Claims YAML**: [`analysis/sources/claude-2026-deepresearch-pla-purge-taiwan-calculus.yaml`](claude-2026-deepresearch-pla-purge-taiwan-calculus.yaml)
 
@@ -256,4 +256,3 @@ claims:
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
 | 1 | 2026-01-26 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + claim extraction for memo integration |
-

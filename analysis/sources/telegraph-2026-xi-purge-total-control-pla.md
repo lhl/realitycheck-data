@@ -16,7 +16,7 @@
 | **Reliability** | 0.60 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | Strongly framed narrative (“total control,” “sleep soundly for years”) relying on analyst quotes; treat implications as forecasts, not verified facts. |
-| **Local Capture** | `inbox/to-analyze/telegraph-xi.md` (local only; not committed) |
+| **Local Capture** | `reference/articles/_local/telegraph-2026-xi-purge-total-control-pla.md` (local only; not committed) |
 
 **Claims YAML**: [`analysis/sources/telegraph-2026-xi-purge-total-control-pla.yaml`](telegraph-2026-xi-purge-total-control-pla.yaml)
 
@@ -195,4 +195,3 @@ claims:
 ### Revision Notes
 
 **Pass 1**: Initial analysis and claim extraction from local Telegraph capture.
-

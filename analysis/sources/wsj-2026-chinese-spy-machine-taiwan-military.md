@@ -16,7 +16,7 @@
 | **Reliability** | 0.75 |
 | **Rigor Level** | [DRAFT] |
 | **Bias Notes** | Journalism grounded in Taiwan official statistics and case examples; still reflects Taiwan/Western security framing and may emphasize threat salience. |
-| **Local Capture** | `inbox/to-analyze/wsj-taiwan-spy.md` (local only; not committed) |
+| **Local Capture** | `reference/articles/_local/wsj-2026-chinese-spy-machine-taiwan-military.md` (local only; not committed) |
 
 **Claims YAML**: [`analysis/sources/wsj-2026-chinese-spy-machine-taiwan-military.yaml`](wsj-2026-chinese-spy-machine-taiwan-military.yaml)
 
@@ -220,4 +220,3 @@ claims:
 ### Revision Notes
 
 **Pass 1**: Initial analysis and claim extraction from local WSJ capture.
-
