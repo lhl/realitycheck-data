@@ -1,0 +1,41 @@
+sources:
+  - id: "janes-2025-air-sea-operations-around-taiwan"
+    type: "ARTICLE"
+    title: "Special Report: China sets new records in air-sea operations around Taiwan"
+    author:
+      - "Akhil Kadidal (Janes)"
+    year: 2025
+    url: "https://www.janes.com/osint-insights/defence-and-national-security-analysis/china-sets-new-records-in-air-sea-operations-around-taiwan"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/janes-2025-air-sea-operations-around-taiwan.md"
+    reliability: 0.80
+    topics:
+      - taiwan
+      - china
+      - pla
+      - adiz
+      - gray-zone
+    domains:
+      - GEO
+    claims_extracted:
+      - GEO-2026-022
+
+claims:
+  - id: "GEO-2026-022"
+    text: >-
+      PLA ADIZ incursions around Taiwan increased from about 1,669 in 2023 to about 3,615 in 2024.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids:
+      - "janes-2025-air-sea-operations-around-taiwan"
+      - "claude-2026-deepresearch-pla-purge-taiwan-calculus"
+    operationalization: >-
+      Re-aggregate annual totals from Taiwan MND primary releases/datasets with a documented counting rule to confirm
+      year-over-year comparability.
+    assumptions:
+      - Taiwan MND counting rules are consistent across years (or differences are immaterial to the annual totals).
+    falsifiers:
+      - A primary MND aggregation under consistent definitions yields materially different yearly totals.

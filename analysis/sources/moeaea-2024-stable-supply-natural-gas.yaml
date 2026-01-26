@@ -1,0 +1,42 @@
+sources:
+  - id: "moeaea-2024-stable-supply-natural-gas"
+    type: "REPORT"
+    title: "Stable Supply of Natural Gas"
+    author:
+      - "Energy Administration, Ministry of Economic Affairs, R.O.C. (Taiwan)"
+    year: 2024
+    url: "https://www.moeaea.gov.tw/ECW/English/content/Content.aspx?menu_id=8677"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/moeaea-2024-stable-supply-natural-gas.md"
+    reliability: 0.90
+    topics:
+      - taiwan
+      - energy-security
+      - natural-gas
+      - lng
+      - reserves
+      - stockpile
+    domains:
+      - RESOURCE
+    claims_extracted:
+      - RESOURCE-2026-013
+
+claims:
+  - id: "RESOURCE-2026-013"
+    text: >-
+      Taiwan’s government requires natural gas import enterprises to reserve a minimum “security stockpile” of natural
+      gas reaching at least 14 days by 2027 (and at least 11 days by 2025).
+    type: "[F]"
+    domain: "RESOURCE"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids:
+      - "moeaea-2024-stable-supply-natural-gas"
+    operationalization: >-
+      Identify the underlying regulation/administrative rule establishing the requirement and track compliance
+      reporting (days-of-supply) over time.
+    assumptions:
+      - The English-language Energy Administration page accurately reflects the operative policy requirement.
+    falsifiers:
+      - Official legal/policy documents contradict the stated required days (2025/2027).

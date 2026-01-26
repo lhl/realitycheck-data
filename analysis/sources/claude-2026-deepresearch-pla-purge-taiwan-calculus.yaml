@@ -62,29 +62,33 @@ claims:
     type: "[F]"
     domain: "GEO"
     evidence_level: "E4"
-    credence: 0.60
-    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+    credence: 0.85
+    source_ids:
+      - "claude-2026-deepresearch-pla-purge-taiwan-calculus"
+      - "janes-2025-air-sea-operations-around-taiwan"
     operationalization: >-
-      Verify against Taiwan MND or reputable OSINT aggregations that define and count ADIZ incursions consistently year-over-year.
+      Re-aggregate annual totals from Taiwan MND primary releases/datasets with a documented counting rule to confirm year-over-year comparability.
     assumptions:
-      - Counts are comparable across years (consistent definition and data source).
+      - Taiwan MND counting rules are consistent across years (or differences are immaterial to the annual totals).
     falsifiers:
-      - Trusted datasets show materially different annual totals under consistent definitions.
+      - A primary MND aggregation under consistent definitions yields materially different yearly totals.
 
   - id: "GEO-2026-023"
     text: >-
-      Median-line crossings in the Taiwan Strait occurred on about 209 days in 2024 versus about 62 days in 2023.
+      Days in 2024 when over half of detected PLA aircraft crossed the Taiwan Strait median line rose to about 209, versus about 62 days in 2023.
     type: "[F]"
     domain: "GEO"
     evidence_level: "E4"
-    credence: 0.60
-    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+    credence: 0.85
+    source_ids:
+      - "claude-2026-deepresearch-pla-purge-taiwan-calculus"
+      - "jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024"
     operationalization: >-
-      Verify day-counts from Taiwan MND or reputable OSINT datasets with a clear definition of 'median-line crossing day'.
+      Recompute the “>50% crossing day” metric from Taiwan MND’s published time series/daily releases and compare annual day counts for 2023 vs 2024.
     assumptions:
-      - A day-based measure is computed consistently across years.
+      - The “detected aircraft” denominator is defined consistently across years.
     falsifiers:
-      - Trusted datasets show materially different day counts.
+      - A primary-data recomputation yields materially different annual day counts.
 
   - id: "GEO-2026-024"
     text: >-
@@ -117,19 +121,20 @@ claims:
 
   - id: "RESOURCE-2026-012"
     text: >-
-      Taiwan has roughly 11–14 days of LNG reserves under normal consumption.
+      Taiwan’s natural gas reserves were equivalent to about 10 to 11 days of local consumption (as of 2022-08).
     type: "[F]"
     domain: "RESOURCE"
-    evidence_level: "E5"
-    credence: 0.55
-    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids:
+      - "claude-2026-deepresearch-pla-purge-taiwan-calculus"
+      - "taipeitimes-2022-energy-supplies-sufficient-ministry"
     operationalization: >-
-      Define the reserve metric (terminal storage vs national stockpile vs power-sector burn rate) and validate against official reserve reporting
-      or CSIS wargame inputs.
+      Identify the underlying reserve reporting method (inventory definition and demand baseline) and reconcile with Energy Administration “security stockpile” requirement concepts.
     assumptions:
-      - A stable 'normal consumption' baseline is meaningful for estimating days-of-cover.
+      - The quoted “days of consumption” figure reflects a comparable, system-wide inventory measure.
     falsifiers:
-      - Authoritative reserve figures show substantially different days-of-cover.
+      - Primary MOEA reporting for the period shows materially different gas days-of-cover under the same definition.
 
   - id: "GOV-2026-068"
     text: >-

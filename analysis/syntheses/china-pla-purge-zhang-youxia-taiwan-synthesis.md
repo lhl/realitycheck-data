@@ -1,7 +1,7 @@
 # Synthesis Analysis: Zhang Youxia purge, PLA “high command” disruption, and Taiwan invasion timing (Jan 2026)
 
-> **Source IDs**: `ap-2026-pla-purge-taiwan`, `reuters-2026-taiwan-monitoring-pla-leadership`, `economist-2026-xi-purge-senior-general`, `bloomberg-2026-purge-top-general-taiwan-succession`, `ft-2026-xi-sole-operational-control-pla`, `nyt-2026-xi-purge-top-general-down`, `skynews-2026-xi-purge-power-control`, `telegraph-2026-xi-purge-total-control-pla`, `wsj-2026-top-general-nuclear-secrets`, `wsj-2026-chinese-spy-machine-taiwan-military`, `sinocism-2026-pla-purges-intensify-zhang-liu`, `x-2026-zhang-purge-hot-takes`, `claude-2026-deepresearch-pla-purge-taiwan-calculus`, `wikipedia-2026-us-intervention-venezuela`  
-> **Analysis Date**: 2026-01-26  
+> **Source IDs**: `ap-2026-pla-purge-taiwan`, `reuters-2026-taiwan-monitoring-pla-leadership`, `economist-2026-xi-purge-senior-general`, `bloomberg-2026-purge-top-general-taiwan-succession`, `ft-2026-xi-sole-operational-control-pla`, `nyt-2026-xi-purge-top-general-down`, `skynews-2026-xi-purge-power-control`, `telegraph-2026-xi-purge-total-control-pla`, `wsj-2026-top-general-nuclear-secrets`, `wsj-2026-chinese-spy-machine-taiwan-military`, `sinocism-2026-pla-purges-intensify-zhang-liu`, `x-2026-zhang-purge-hot-takes`, `claude-2026-deepresearch-pla-purge-taiwan-calculus`, `janes-2025-air-sea-operations-around-taiwan`, `jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024`, `taipeitimes-2022-energy-supplies-sufficient-ministry`, `moeaea-2024-stable-supply-natural-gas`, `wikipedia-2026-us-intervention-venezuela`  
+> **Analysis Date**: 2026-01-27  
 > **Analyst**: gpt-5.2  
 > **Rigor Level**: `[DRAFT]`  
 > **Type**: Cross-source synthesis
@@ -33,6 +33,10 @@ Key framing choice: **separate “invasion probability” from “cross-strait r
 | `analysis/sources/sinocism-2026-pla-purges-intensify-zhang-liu.md` | BLOG | Reproducible PLA Daily “political authority” language; SCMP-sourced internal allegations (provisional) |
 | `analysis/sources/x-2026-zhang-purge-hot-takes.md` | SOCIAL | Rumor-space map: invasion-delay, coup, info-warfare, and “burned assets” theories (mostly low evidence) |
 | `analysis/sources/claude-2026-deepresearch-pla-purge-taiwan-calculus.md` | KNOWLEDGE | Blockade/quarantine framing; Taiwan energy vulnerability; “porcupine gap”; adds global-norms context |
+| `analysis/sources/janes-2025-air-sea-operations-around-taiwan.md` | ARTICLE | Verifies 2023→2024 ADIZ annual totals used as a pressure metric (Taiwan MND data via Janes) |
+| `analysis/sources/jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024.md` | ARTICLE | Verifies definition + day-count metric for median-line crossings (“over half” days) |
+| `analysis/sources/taipeitimes-2022-energy-supplies-sufficient-ministry.md` | ARTICLE | MOEA-stated “days of consumption” figure for natural-gas reserves (10–11 days, 2022-08) |
+| `analysis/sources/moeaea-2024-stable-supply-natural-gas.md` | OFFICIAL_WEBPAGE | Policy target: natural-gas “security stockpile required” schedule (14 days by 2027) |
 | `analysis/sources/wikipedia-2026-us-intervention-venezuela.md` | KNOWLEDGE | Grounds the Venezuela intervention event used as precedent/analogy in the deepresearch memo |
 
 ---
@@ -125,8 +129,8 @@ The purge most directly affects (1) and (2) via high-command cohesion and joint 
 ### Update from the deepresearch memo (blockade-first framing)
 The deepresearch memo adds three synthesis-relevant updates:
 - **Scenario weighting**: quarantine/blockade + gray-zone coercion may be a more likely near-term pathway than an invasion (claim: `GEO-2026-021`), and Taiwan’s “porcupine” posture may be less well-matched to blockade scenarios (claim: `GEO-2026-024`).
-- **Structural vulnerability**: Taiwan’s energy import dependence is extreme (claim: `RESOURCE-2026-011`), and the memo asserts a relatively short LNG buffer (~11–14 days; claim: `RESOURCE-2026-012`, definition/recency still to verify).
-- **Pressure metrics (needs validation)**: the memo asserts large increases in ADIZ incursions and median-line crossing days (claims: `GEO-2026-022`, `GEO-2026-023`).
+- **Structural vulnerability**: Taiwan’s energy import dependence is extreme (claim: `RESOURCE-2026-011`). A concrete anchor for gas days-of-cover is ~10–11 days of consumption (claim: `RESOURCE-2026-012`; MOEA statement relayed via Taipei Times, 2022-08). Separately, Taiwan’s Energy Administration states a rising “security stockpile required” schedule targeting at least 14 days by 2027 (claim: `RESOURCE-2026-013`).
+- **Pressure metrics (validated definition + numerics)**: ADIZ annual totals increased from ~1,669 (2023) to ~3,615 (2024) (claim: `GEO-2026-022`; Taiwan MND data reported by Janes). “Median-line day counts” are definition-sensitive; a specific verified metric is days when *over half* of detected aircraft crossed the median line: ~62 days (2023) vs ~209 (2024) (claim: `GEO-2026-023`; Jamestown summary of Taiwan MND detections).
 
 ### Consensus-ish across higher-evidence sources
 Across AP/FT/NYT/Economist/WSJ, there is a broad (not universal) convergence that:
@@ -197,3 +201,4 @@ To avoid “headline-driven” updates, track a small set of indicators that dis
 |------|------|------|-------|----------|--------|------|-------|
 | 1 | 2026-01-26 | codex | gpt-5.2 | ? | ? | ? | Initial multi-source synthesis from 12 PLA-purge sources |
 | 2 | 2026-01-26 | codex | gpt-5.2 | ? | ? | ? | Integrated deepresearch memo + grounded Venezuela/Greenland context and blockade/energy framing |
+| 3 | 2026-01-27 | codex | gpt-5.2 | ? | ? | ? | Added verification sources for Taiwan pressure metrics + gas days-of-cover; updated synthesis framing accordingly |

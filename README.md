@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 351 |
-| **Sources** | 91 |
+| **Claims** | 352 |
+| **Sources** | 95 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 25 |
 
@@ -29,7 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
-| 2026-01-26 | [Zhang Youxia purge, PLA disruption, and Taiwan timing](analysis/syntheses/china-pla-purge-zhang-youxia-taiwan-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Zhang Youxia purge, PLA “high command” disruption, and Taiwan invasion timing |
+| 2026-01-27 | [Zhang Youxia purge, PLA disruption, and Taiwan timing](analysis/syntheses/china-pla-purge-zhang-youxia-taiwan-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Zhang Youxia purge, PLA “high command” disruption, and Taiwan invasion timing |
 | 2026-01-24 | [JP-TL-Bench and JA↔EN Translation Evaluation](analysis/syntheses/jp-tl-bench-ja-en-translation-eval-synthesis.md) | `[DRAFT]` | Cross-source synthesis: anchored pairwise vs metrics/MQM; Japanese context challenges; directionality; novelty/tradeoffs |
 | 2026-01-24 | [PageIndex vs StrataLens (Vectorless RAG)](analysis/syntheses/pageindex-vs-stratalens-vectorless-rag-synthesis.md) | `[DRAFT]` | Cross-source comparison: structure-aware retrieval vs vectorless traversal; benchmark claims flagged as protocol-dependent; maturity/licensing assessment |
 | 2026-01-19 | [Vibecoding / Agent Psychosis](analysis/syntheses/vibecoding-agent-psychosis-synthesis.md) | `[DRAFT]` | Verification bottleneck as artifact generation gets cheap |
@@ -48,7 +48,11 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
-| 2026-01-26 | [China's January 2026 military purge reshapes Taiwan calculus (Claude deepresearch memo)](analysis/sources/claude-2026-deepresearch-pla-purge-taiwan-calculus.md) | `[DRAFT]` | AI-generated synthesis memo: blockade/quarantine framing, Taiwan energy vulnerability, and norms/credibility context |
+| 2026-01-27 | [Special Report: China sets new records in air-sea operations around Taiwan (Janes)](analysis/sources/janes-2025-air-sea-operations-around-taiwan.md) | `[DRAFT]` | Verification source: Taiwan MND-attributed ADIZ annual totals (2023 vs 2024) used as pressure metric |
+| 2026-01-27 | [Military Implications of PLA Aircraft Incursions in Taiwan’s Airspace 2024 (Jamestown)](analysis/sources/jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024.md) | `[DRAFT]` | Verification source: definition-sensitive median-line day-count metric (62 vs 209 “over half” days) |
+| 2026-01-27 | [Energy supplies sufficient, ministry says (Taipei Times)](analysis/sources/taipeitimes-2022-energy-supplies-sufficient-ministry.md) | `[DRAFT]` | Verification source: MOEA-stated natural-gas reserves ~10–11 days of consumption (2022-08) |
+| 2026-01-27 | [Stable Supply of Natural Gas (Taiwan MOEA Energy Administration)](analysis/sources/moeaea-2024-stable-supply-natural-gas.md) | `[DRAFT]` | Verification source: policy target schedule for natural-gas “security stockpile required” (14 days by 2027) |
+| 2026-01-27 | [China's January 2026 military purge reshapes Taiwan calculus (Claude deepresearch memo)](analysis/sources/claude-2026-deepresearch-pla-purge-taiwan-calculus.md) | `[DRAFT]` | AI-generated synthesis memo: blockade/quarantine framing, Taiwan energy vulnerability, and norms/credibility context |
 | 2026-01-26 | [2026 United States intervention in Venezuela (Wikipedia)](analysis/sources/wikipedia-2026-us-intervention-venezuela.md) | `[DRAFT]` | Context source: Venezuela intervention capture event + UN/legal criticism as precedent/analogy |
 | 2026-01-26 | [How a purge of China’s military leadership could impact the army and the future of Taiwan (AP)](analysis/sources/ap-2026-pla-purge-taiwan.md) | `[DRAFT]` | Explainer: announced investigations, purge scale, and competing views on short- vs long-term Taiwan risk |
 | 2026-01-26 | [Taiwan monitoring “abnormal” China military leadership changes (Reuters)](analysis/sources/reuters-2026-taiwan-monitoring-pla-leadership.md) | `[DRAFT]` | Taiwan official posture: monitor abnormal PRC changes; don’t lower guard; notes near-daily PRC ops |
@@ -107,7 +111,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 | GOV | Governance & Policy | 70 |
 | SOC | Social Dynamics | 5 |
 | TRANS | Transition Dynamics | 24 |
-| RESOURCE | Resource Constraints | 13 |
+| RESOURCE | Resource Constraints | 14 |
 | GEO | Geopolitics | 25 |
 | INST | Institutions & Organizations | 33 |
 | RISK | Risk Assessment | 8 |
@@ -221,4 +225,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-01-26*
+*Last updated: 2026-01-27*

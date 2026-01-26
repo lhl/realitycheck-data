@@ -37,11 +37,11 @@ Finally, it links cross-strait risk to changes in the international environment�
 | # | Claim | Claim ID | Type | Domain | Evidence | Credence | Verified? | Falsifiable By |
 |---|-------|----------|------|--------|----------|----------:|-----------|----------------|
 | 1 | Quarantine/blockade + gray-zone coercion are more likely near-term PRC approaches than full-scale amphibious invasion | GEO-2026-021 | [H] | GEO | E5 | 0.60 | ? | PRC initiates (or credibly mobilizes for) an amphibious invasion in the near term, or credible doctrine/decision evidence shows invasion was the primary intended path |
-| 2 | PLA activity around Taiwan has shifted toward sustained pressure, with ADIZ incursions rising from ~1,669 (2023) to ~3,615 (2024) | GEO-2026-022 | [F] | GEO | E4 | 0.60 | ? | Official or trusted dataset shows materially different annual counts under a comparable definition |
-| 3 | Median-line crossings occurred on ~209 days in 2024 vs ~62 days in 2023 | GEO-2026-023 | [F] | GEO | E4 | 0.60 | ? | Official or trusted dataset shows materially different day-counts under a comparable definition |
+| 2 | PLA activity around Taiwan has shifted toward sustained pressure, with ADIZ incursions rising from ~1,669 (2023) to ~3,615 (2024) | GEO-2026-022 | [F] | GEO | E4 | 0.85 | `janes-2025-air-sea-operations-around-taiwan` | Official or trusted dataset shows materially different annual counts under a comparable definition |
+| 3 | Days when over half of detected PLA aircraft crossed the Taiwan Strait median line rose to ~209 days (2024) vs ~62 (2023) | GEO-2026-023 | [F] | GEO | E4 | 0.85 | `jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024` | Official or trusted dataset shows materially different day-counts under a comparable definition |
 | 4 | Taiwan’s “porcupine” defense posture is better optimized for invasion deterrence than for quarantine/blockade scenarios | GEO-2026-024 | [H] | GEO | E5 | 0.60 | ? | Demonstrated Taiwanese capability and plans credibly defeat a quarantine/blockade in exercises/war games or real-world incidents without major escalation |
 | 5 | Taiwan relies on imports for >97% of its energy needs (high vulnerability to external disruption) | RESOURCE-2026-011 | [F] | RESOURCE | E4 | 0.85 | ✓ | Official energy-balance statistics show a materially lower import share |
-| 6 | Taiwan has only ~11–14 days of LNG reserves under normal consumption (as a blockade vulnerability) | RESOURCE-2026-012 | [F] | RESOURCE | E5 | 0.55 | ? | Official reserve/stockpile data shows substantially more (or less) LNG days-of-cover under comparable assumptions |
+| 6 | Taiwan’s natural gas reserves were equivalent to ~10–11 days of local consumption (as of 2022-08) | RESOURCE-2026-012 | [F] | RESOURCE | E4 | 0.85 | `taipeitimes-2022-energy-supplies-sufficient-ministry` | Official reserve/stockpile data shows substantially more (or less) days-of-cover under comparable assumptions |
 | 7 | U.S. sovereignty-violating actions (e.g., Venezuela intervention; Greenland threats) weaken U.S. “rules-based order” credibility, potentially lowering expected international resistance to PRC coercion against Taiwan | GOV-2026-068 | [H] | GOV | E5 | 0.50 | ? | Post-action coalition behavior shows strengthened norm-based resistance and credible intervention commitments despite these precedents |
 
 ### Argument Structure
@@ -84,22 +84,25 @@ The memo is coherent as a synthesis: it cleanly distinguishes invasion from bloc
 |---------------------|-------|-------------|--------|-----------------|--------|
 | Taiwan imports >97% of its energy | **Y** | “97% of energy is imported” | Wikipedia’s “Energy in Taiwan” states imports are “almost 98%” and “over 97%” (as of 2024) | https://en.wikipedia.org/wiki/Energy_in_Taiwan | ok |
 | The U.S. conducted a Jan 2026 Venezuela operation capturing Maduro | Y | “Jan 3, 2026… capturing President Maduro” | Wikipedia page describes U.S. operation on 3 Jan 2026 capturing Maduro and transporting him to NYC | https://en.wikipedia.org/wiki/2026_United_States_intervention_in_Venezuela | ok (event) |
+| ADIZ incursions rose ~1,669 (2023) → ~3,615 (2024) | **Y** | Yearly totals reported as Taiwan MND data | Values are explicitly stated by Janes (attributed to Taiwan MND data) | https://www.janes.com/osint-insights/defence-and-national-security-analysis/china-sets-new-records-in-air-sea-operations-around-taiwan | ok |
+| “Over-half median-line crossing days” rose ~62 (2023) → ~209 (2024) | **Y** | Day counts reported (definition explicit) | Values are explicitly stated by Jamestown (attributed to Taiwan MND detections) | https://jamestown.org/military-implications-of-pla-aircraft-incursions-in-taiwans-airspace-2024/ | ok |
+| Natural gas reserves ≈ 10–11 days of consumption (as of 2022-08) | **Y** | “10 to 11 days of local consumption” | Values are explicitly stated as MOEA statement relayed via Taipei Times | https://www.taipeitimes.com/News/biz/archives/2022/08/04/2003782917 | ok |
 
 ### Disconfirming Evidence Search
 
 | Claim | Counterevidence Found | Alternative Explanation | Search Notes |
 |-------|----------------------|-------------------------|--------------|
 | GEO-2026-021 | PRC may prefer invasion if it expects blockade to fail or if political triggers force decisive action | Quarantine/blockade is a *phase* or probe rather than an alternative; invasion remains the end-state under certain conditions | Searched for contrary conceptual framings in existing Taiwan analysis corpus; blockade/invasion are not mutually exclusive and can be sequential |
-| RESOURCE-2026-012 | Wikipedia notes LNG “safety stock” of 7 days as of 2017 (not 11–14) | LNG days-of-cover may differ by definition (terminal storage vs national consumption vs power-sector burn rate) and may have changed since 2017 | Compared memo claim vs “Energy in Taiwan” excerpt; needs a 2024–2026 authoritative reserve figure |
+| RESOURCE-2026-012 | Not assessed against MOEA primary reserve dataset here | “Days of reserves” depends on baseline demand + what inventory is counted; the cited 10–11 day figure is from an Aug 2022 MOEA statement | Next step: reconcile with Energy Administration “security stockpile required” targets and identify the underlying reserve measurement |
 
 ### Evidence Assessment
 - Strongest: Taiwan energy import dependence (verified) and Venezuela intervention event (verified as an event).
-- Weakest: uncited operational statistics (ADIZ counts, median-line days, rocket counts) until checked against primary datasets.
+- Improved: key Taiwan pressure metrics (ADIZ annual totals; median-line “over half” days) and a concrete natural-gas days-of-cover anchor are now checked against specialist reporting / MOEA statement relays.
 - Mixed: scenario-likelihood claims (blockade vs invasion) are plausible but depend on strategic intent, thresholds, and constraints.
 
 ### Credence Assessment
-- **Overall Credence**: 0.55  
-- **Reasoning**: High plausibility framing and some verified anchors, but multiple key numerics remain unverified in this capture and the memo is an AI synthesis (increased hallucination/selection risk).
+- **Overall Credence**: 0.60  
+- **Reasoning**: The memo remains an AI synthesis (hallucination/selection risk), but several high-leverage numerics have now been verified against external sources.
 
 ## Stage 3: Dialectical Analysis
 
@@ -124,11 +127,11 @@ If Xi’s purges are creating command disruption and incentives for risk-avoidan
 | “Purges reduce risk broadly” framing | claude-2026-deepresearch-pla-purge-taiwan-calculus | Memo argues risk may shift rather than fall; gray-zone coercion can intensify |
 
 ### Synthesis Notes
-This memo’s distinctive value (relative to the earlier purge-only corpus) is to force a pivot from “is invasion imminent?” to “what coercion pathways are plausible and what vulnerabilities do they exploit?” The main action item is to validate the memo’s quantitative pressure metrics and reserve estimates against primary datasets.
+This memo’s distinctive value (relative to the earlier purge-only corpus) is to force a pivot from “is invasion imminent?” to “what coercion pathways are plausible and what vulnerabilities do they exploit?” A key weakness was uncited numerics; in a follow-up pass, the ADIZ totals, median-line “over half” day counts, and a concrete gas days-of-cover anchor were validated against external sources (Janes/Jamestown/Taipei Times), though primary-dataset replication remains a next step.
 
 ### Claims to Cross-Reference
-- Compare GEO-2026-022/023 with Taiwan MND/OSINT time series and with reporting already analyzed in `analysis/syntheses/china-pla-purge-zhang-youxia-taiwan-synthesis.md`.
-- Cross-check RESOURCE-2026-012 against Taiwan’s official energy reserve reporting and CSIS wargame documentation (if this memo is summarizing it).
+- Compare GEO-2026-022/023 with Taiwan MND primary data/time series (re-aggregation for reproducibility).
+- Reconcile RESOURCE-2026-012 with any official definition of reserve-days and with Energy Administration “security stockpile required” targets.
 
 ---
 
@@ -137,11 +140,11 @@ This memo’s distinctive value (relative to the earlier purge-only corpus) is t
 | ID | Type | Domain | Evidence | Credence | Claim |
 |----|------|--------|----------|----------:|-------|
 | GEO-2026-021 | [H] | GEO | E5 | 0.60 | Quarantine/blockade + gray-zone coercion are more likely near-term than invasion |
-| GEO-2026-022 | [F] | GEO | E4 | 0.60 | ADIZ incursions rose from ~1,669 (2023) to ~3,615 (2024) |
-| GEO-2026-023 | [F] | GEO | E4 | 0.60 | Median-line crossings occurred on ~209 days (2024) vs ~62 (2023) |
+| GEO-2026-022 | [F] | GEO | E4 | 0.85 | ADIZ incursions rose from ~1,669 (2023) to ~3,615 (2024) |
+| GEO-2026-023 | [F] | GEO | E4 | 0.85 | Days when >50% of detected aircraft crossed the median line were ~209 (2024) vs ~62 (2023) |
 | GEO-2026-024 | [H] | GEO | E5 | 0.60 | “Porcupine” posture fits invasion better than blockade/quarantine |
 | RESOURCE-2026-011 | [F] | RESOURCE | E4 | 0.85 | Taiwan imports >97% of its energy |
-| RESOURCE-2026-012 | [F] | RESOURCE | E5 | 0.55 | Taiwan has ~11–14 days of LNG reserves (normal consumption) |
+| RESOURCE-2026-012 | [F] | RESOURCE | E4 | 0.85 | Taiwan natural gas reserves were ~10–11 days of consumption (2022-08) |
 | GOV-2026-068 | [H] | GOV | E5 | 0.50 | U.S. sovereignty-violating precedents weaken norm-based deterrence |
 
 ### Claims to Register
@@ -167,26 +170,33 @@ claims:
     type: "[F]"
     domain: "GEO"
     evidence_level: "E4"
-    credence: 0.60
-    operationalization: "Verify against Taiwan MND or reputable OSINT aggregations that define and count ADIZ incursions consistently year-over-year."
+    credence: 0.85
+    operationalization: "Re-aggregate annual totals from Taiwan MND primary releases/datasets with a documented counting rule to confirm year-over-year comparability."
     assumptions:
-      - "Counts are comparable across years (definition + measurement)."
+      - "Taiwan MND counting rules are consistent across years (or differences are immaterial to the annual totals)."
     falsifiers:
-      - "Official/OSINT annual totals differ materially under consistent definitions."
-    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+      - "A primary MND aggregation under consistent definitions yields materially different yearly totals."
+    source_ids:
+      - "claude-2026-deepresearch-pla-purge-taiwan-calculus"
+      - "janes-2025-air-sea-operations-around-taiwan"
 
   - id: "GEO-2026-023"
-    text: "Median-line crossings in the Taiwan Strait occurred on about 209 days in 2024 versus about 62 days in 2023."
+    text: >-
+      Days in 2024 when over half of detected PLA aircraft crossed the Taiwan Strait median line rose to about 209,
+      versus about 62 days in 2023.
     type: "[F]"
     domain: "GEO"
     evidence_level: "E4"
-    credence: 0.60
-    operationalization: "Verify day-counts from Taiwan MND or reputable OSINT datasets with a clear definition of 'median-line crossing day'."
+    credence: 0.85
+    operationalization: >-
+      Recompute the “>50% crossing day” metric from Taiwan MND’s published time series/daily releases and compare annual day counts for 2023 vs 2024.
     assumptions:
-      - "A day-based measure is computed consistently across years."
+      - "The “detected aircraft” denominator is defined consistently across years."
     falsifiers:
-      - "A trusted dataset shows materially different day counts."
-    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+      - "A primary-data recomputation yields materially different annual day counts."
+    source_ids:
+      - "claude-2026-deepresearch-pla-purge-taiwan-calculus"
+      - "jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024"
 
   - id: "GEO-2026-024"
     text: "Taiwan’s current 'porcupine strategy' is better optimized for deterring/defeating an amphibious invasion than for countering a quarantine or blockade."
@@ -214,17 +224,21 @@ claims:
     source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
 
   - id: "RESOURCE-2026-012"
-    text: "Taiwan has roughly 11–14 days of LNG reserves under normal consumption."
+    text: "Taiwan’s natural gas reserves were equivalent to about 10 to 11 days of local consumption (as of 2022-08)."
     type: "[F]"
     domain: "RESOURCE"
-    evidence_level: "E5"
-    credence: 0.55
-    operationalization: "Define the reserve metric (terminal storage vs national stockpile vs power-sector burn rate) and validate against official reserve reporting or CSIS wargame inputs."
+    evidence_level: "E4"
+    credence: 0.85
+    operationalization: >-
+      Identify the underlying reserve reporting method (inventory definition and demand baseline) and reconcile with
+      Energy Administration “security stockpile” requirement concepts.
     assumptions:
-      - "A stable 'normal consumption' baseline is meaningful for estimating days-of-cover."
+      - "The quoted “days of consumption” figure reflects a comparable, system-wide inventory measure."
     falsifiers:
-      - "Authoritative reserve figures show substantially more (or less) days-of-cover."
-    source_ids: ["claude-2026-deepresearch-pla-purge-taiwan-calculus"]
+      - "Primary MOEA reporting for the period shows materially different gas days-of-cover under the same definition."
+    source_ids:
+      - "claude-2026-deepresearch-pla-purge-taiwan-calculus"
+      - "taipeitimes-2022-energy-supplies-sufficient-ministry"
 
   - id: "GOV-2026-068"
     text: "U.S. sovereignty-violating precedents (e.g., Venezuela intervention) and Greenland-related threats weaken Washington’s legitimacy as a defender of the rules-based order, potentially lowering expected international resistance to PRC coercion against Taiwan."
@@ -242,17 +256,18 @@ claims:
 
 ---
 
-**Analysis Date**: 2026-01-26  
+**Analysis Date**: 2026-01-27  
 **Analyst**: gpt-5.2  
-**Credence in Analysis**: 0.60
+**Credence in Analysis**: 0.65
 
 **Credence Reasoning**:
-- Verified a couple of high-impact anchors (energy import dependence; Venezuela event as an event) but left multiple uncited numerics unverified.
+- Verified multiple high-impact numerics (ADIZ annual totals; median-line “over half” day counts; gas days-of-cover anchor) via external sources.
 - Memo is directionally coherent and aligns with known gray-zone coercion logic.
-- The ADIZ/median-line counts and LNG-days estimate require primary-source validation before high credence.
+- Remaining risk: the memo is AI-generated and still mixes interpretation with facts; some claims remain unverifiable without primary datasets or classified indicators.
 
 ## Analysis Log
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
 | 1 | 2026-01-26 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + claim extraction for memo integration |
+| 2 | 2026-01-27 | codex | gpt-5.2 | ? | ? | ? | Verified key Taiwan pressure/energy numerics against Janes/Jamestown/Taipei Times; updated credences |

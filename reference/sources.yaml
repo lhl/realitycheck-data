@@ -1,6 +1,6 @@
 # Source Registry
 # Exported from LanceDB on 2026-01-27
-# Total sources: 91
+# Total sources: 95
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -1040,6 +1040,52 @@ sources:
     domains:
     - TECH
     status: analyzed
+  jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024:
+    type: ARTICLE
+    title: Military Implications of PLA Aircraft Incursions in Taiwan’s Airspace 2024
+    author:
+    - 'Jamestown (metadata: associate1)'
+    year: 2025
+    url: https://jamestown.org/military-implications-of-pla-aircraft-incursions-in-taiwans-airspace-2024/
+    accessed: '2026-01-26'
+    reliability: 0.75
+    bias_notes: ''
+    claims_extracted:
+    - GEO-2026-023
+    analysis_file: analysis/sources/jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024.md
+    topics:
+    - taiwan
+    - china
+    - pla
+    - median-line
+    - adiz
+    - gray-zone
+    - osint
+    domains:
+    - GEO
+    status: analyzed
+  janes-2025-air-sea-operations-around-taiwan:
+    type: ARTICLE
+    title: 'Special Report: China sets new records in air-sea operations around Taiwan'
+    author:
+    - Akhil Kadidal (Janes)
+    year: 2025
+    url: https://www.janes.com/osint-insights/defence-and-national-security-analysis/china-sets-new-records-in-air-sea-operations-around-taiwan
+    accessed: '2026-01-26'
+    reliability: 0.8
+    bias_notes: ''
+    claims_extracted:
+    - GEO-2026-022
+    analysis_file: analysis/sources/janes-2025-air-sea-operations-around-taiwan.md
+    topics:
+    - taiwan
+    - china
+    - pla
+    - adiz
+    - gray-zone
+    domains:
+    - GEO
+    status: analyzed
   japan-ai-guidelines-2025:
     type: REPORT
     title: Guideline for Japanese Governments' Procurements and Utilizations of Generative
@@ -1450,6 +1496,29 @@ sources:
     domains:
     - ECON
     status: cataloged
+  moeaea-2024-stable-supply-natural-gas:
+    type: REPORT
+    title: Stable Supply of Natural Gas
+    author:
+    - Energy Administration, Ministry of Economic Affairs, R.O.C. (Taiwan)
+    year: 2024
+    url: https://www.moeaea.gov.tw/ECW/English/content/Content.aspx?menu_id=8677
+    accessed: '2026-01-26'
+    reliability: 0.9
+    bias_notes: ''
+    claims_extracted:
+    - RESOURCE-2026-013
+    analysis_file: analysis/sources/moeaea-2024-stable-supply-natural-gas.md
+    topics:
+    - taiwan
+    - energy-security
+    - natural-gas
+    - lng
+    - reserves
+    - stockpile
+    domains:
+    - RESOURCE
+    status: analyzed
   nyt-2026-xi-purge-top-general-down:
     type: ARTICLE
     title: Xi’s Purge of China’s Military Brings Its Top General Down
@@ -1931,6 +2000,28 @@ sources:
     - TECH
     - GEO
     - RISK
+    - RESOURCE
+    status: analyzed
+  taipeitimes-2022-energy-supplies-sufficient-ministry:
+    type: ARTICLE
+    title: Energy supplies sufficient, ministry says
+    author:
+    - Lisa Wang (Taipei Times)
+    year: 2022
+    url: https://www.taipeitimes.com/News/biz/archives/2022/08/04/2003782917
+    accessed: '2026-01-26'
+    reliability: 0.75
+    bias_notes: ''
+    claims_extracted:
+    - RESOURCE-2026-012
+    analysis_file: analysis/sources/taipeitimes-2022-energy-supplies-sufficient-ministry.md
+    topics:
+    - taiwan
+    - energy-security
+    - natural-gas
+    - lng
+    - blockade
+    domains:
     - RESOURCE
     status: analyzed
   telegraph-2026-xi-purge-total-control-pla:

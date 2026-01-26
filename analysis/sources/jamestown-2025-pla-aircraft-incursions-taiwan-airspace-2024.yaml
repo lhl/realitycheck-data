@@ -1,0 +1,44 @@
+sources:
+  - id: "jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024"
+    type: "ARTICLE"
+    title: "Military Implications of PLA Aircraft Incursions in Taiwan’s Airspace 2024"
+    author:
+      - "Jamestown (metadata: associate1)"
+    year: 2025
+    url: "https://jamestown.org/military-implications-of-pla-aircraft-incursions-in-taiwans-airspace-2024/"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024.md"
+    reliability: 0.75
+    topics:
+      - taiwan
+      - china
+      - pla
+      - median-line
+      - adiz
+      - gray-zone
+      - osint
+    domains:
+      - GEO
+    claims_extracted:
+      - GEO-2026-023
+
+claims:
+  - id: "GEO-2026-023"
+    text: >-
+      Days in 2024 when over half of detected PLA aircraft crossed the Taiwan Strait median line rose to about 209,
+      versus about 62 days in 2023.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids:
+      - "jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024"
+      - "claude-2026-deepresearch-pla-purge-taiwan-calculus"
+    operationalization: >-
+      Recompute the “>50% crossing day” metric from Taiwan MND’s published time series/daily releases and compare
+      annual day counts for 2023 vs 2024 under the same rules.
+    assumptions:
+      - The “detected aircraft” denominator is defined consistently across years.
+    falsifiers:
+      - A primary-data recomputation yields materially different annual day counts.

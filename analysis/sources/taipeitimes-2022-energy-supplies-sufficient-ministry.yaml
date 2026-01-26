@@ -1,0 +1,41 @@
+sources:
+  - id: "taipeitimes-2022-energy-supplies-sufficient-ministry"
+    type: "ARTICLE"
+    title: "Energy supplies sufficient, ministry says"
+    author:
+      - "Lisa Wang (Taipei Times)"
+    year: 2022
+    url: "https://www.taipeitimes.com/News/biz/archives/2022/08/04/2003782917"
+    accessed: "2026-01-26"
+    status: "analyzed"
+    analysis_file: "analysis/sources/taipeitimes-2022-energy-supplies-sufficient-ministry.md"
+    reliability: 0.75
+    topics:
+      - taiwan
+      - energy-security
+      - natural-gas
+      - lng
+      - blockade
+    domains:
+      - RESOURCE
+    claims_extracted:
+      - RESOURCE-2026-012
+
+claims:
+  - id: "RESOURCE-2026-012"
+    text: >-
+      Taiwan’s natural gas reserves were equivalent to about 10 to 11 days of local consumption (as of 2022-08).
+    type: "[F]"
+    domain: "RESOURCE"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids:
+      - "taipeitimes-2022-energy-supplies-sufficient-ministry"
+      - "claude-2026-deepresearch-pla-purge-taiwan-calculus"
+    operationalization: >-
+      Identify the underlying reserve reporting method (inventory definition and demand baseline) and reconcile with
+      Energy Administration “security stockpile” requirement concepts.
+    assumptions:
+      - The quoted “days of consumption” figure reflects a comparable, system-wide inventory measure.
+    falsifiers:
+      - Primary MOEA reporting for the period shows materially different gas days-of-cover under the same definition.

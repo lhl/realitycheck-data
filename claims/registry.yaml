@@ -1,11 +1,11 @@
 # Claim Registry
-# Exported from LanceDB on 2026-01-26
-# Total claims: 351
+# Exported from LanceDB on 2026-01-27
+# Total claims: 352
 # Total chains: 4
 
 counters:
   TECH: 98
-  RESOURCE: 12
+  RESOURCE: 13
   LABOR: 13
   ECON: 27
   GOV: 70
@@ -1008,10 +1008,11 @@ claims:
     type: '[F]'
     domain: GEO
     evidence_level: E4
-    credence: 0.6000000238418579
+    credence: 0.8500000238418579
     source_ids:
+    - janes-2025-air-sea-operations-around-taiwan
     - claude-2026-deepresearch-pla-purge-taiwan-calculus
-    first_extracted: '2026-01-26'
+    first_extracted: '2026-01-27'
     extracted_by: import
     supports: []
     contradicts: []
@@ -1019,17 +1020,18 @@ claims:
     modified_by: []
     part_of_chain: ''
     version: 1
-    last_updated: '2026-01-26'
+    last_updated: '2026-01-27'
   GEO-2026-023:
-    text: Median-line crossings in the Taiwan Strait occurred on about 209 days in
-      2024 versus about 62 days in 2023.
+    text: Days in 2024 when over half of detected PLA aircraft crossed the Taiwan
+      Strait median line rose to about 209, versus about 62 days in 2023.
     type: '[F]'
     domain: GEO
     evidence_level: E4
-    credence: 0.6000000238418579
+    credence: 0.8500000238418579
     source_ids:
+    - jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024
     - claude-2026-deepresearch-pla-purge-taiwan-calculus
-    first_extracted: '2026-01-26'
+    first_extracted: '2026-01-27'
     extracted_by: import
     supports: []
     contradicts: []
@@ -1037,7 +1039,7 @@ claims:
     modified_by: []
     part_of_chain: ''
     version: 1
-    last_updated: '2026-01-26'
+    last_updated: '2026-01-27'
   GEO-2026-024:
     text: Taiwan’s current “porcupine strategy” is better optimized for deterring/defeating
       an amphibious invasion than for countering a quarantine or blockade.
@@ -4052,14 +4054,16 @@ claims:
     version: 1
     last_updated: '2026-01-26'
   RESOURCE-2026-012:
-    text: Taiwan has roughly 11–14 days of LNG reserves under normal consumption.
+    text: Taiwan’s natural gas reserves were equivalent to about 10 to 11 days of
+      local consumption (as of 2022-08).
     type: '[F]'
     domain: RESOURCE
-    evidence_level: E5
-    credence: 0.550000011920929
+    evidence_level: E4
+    credence: 0.8500000238418579
     source_ids:
+    - taipeitimes-2022-energy-supplies-sufficient-ministry
     - claude-2026-deepresearch-pla-purge-taiwan-calculus
-    first_extracted: '2026-01-26'
+    first_extracted: '2026-01-27'
     extracted_by: import
     supports: []
     contradicts: []
@@ -4067,7 +4071,26 @@ claims:
     modified_by: []
     part_of_chain: ''
     version: 1
-    last_updated: '2026-01-26'
+    last_updated: '2026-01-27'
+  RESOURCE-2026-013:
+    text: Taiwan’s government requires natural gas import enterprises to reserve a
+      minimum “security stockpile” of natural gas reaching at least 14 days by 2027
+      (and at least 11 days by 2025).
+    type: '[F]'
+    domain: RESOURCE
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - moeaea-2024-stable-supply-natural-gas
+    first_extracted: '2026-01-27'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-27'
   RISK-2025-001:
     text: Humanity has passed the +1.5°C warming threshold, increasing the number
       of days per year when temperatures are too hot for normal photosynthesis.
