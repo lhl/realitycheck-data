@@ -1,0 +1,195 @@
+sources:
+  - id: "rawstory-2026-trump-voters-suicide-pact"
+    type: "ARTICLE"
+    title: "These Trump voters 'formed a suicide pact' and Republicans are panicking: ex-GOP operative"
+    author:
+      - "Nicole Charky-Chami"
+    year: 2026
+    url: "https://www.rawstory.com/these-trump-voters-formed-a-pact-and-republicans-are-panicking-ex-gop-operative/"
+    accessed: "2026-01-30"
+    status: "analyzed"
+    analysis_file: "analysis/sources/rawstory-2026-trump-voters-suicide-pact.md"
+    reliability: 0.35
+    bias_notes: >-
+      Secondary write-up of an opinion Substack post (Rick Wilson); strong anti-Trump framing; several quantitative
+      claims appear to be Wilson’s assertions and are not independently sourced in the Raw Story article.
+    topics:
+      - trump
+      - farmers
+      - rural-america
+      - tariffs
+      - trade-war
+      - soybeans
+      - china
+      - farm-labor
+      - immigration-enforcement
+      - gop
+      - midterms-2026
+      - rick-wilson
+      - lincoln-project
+    domains:
+      - ECON
+      - LABOR
+      - GOV
+      - SOC
+    claims_extracted:
+      - SOC-2026-004
+      - GOV-2026-071
+      - ECON-2026-028
+      - ECON-2026-029
+      - ECON-2026-030
+      - ECON-2026-031
+      - LABOR-2026-014
+      - LABOR-2026-015
+      - GOV-2026-072
+
+claims:
+  - id: "SOC-2026-004"
+    text: >-
+      In the USDA ERS 2015 County Typology Codes (industry dependence), 444 U.S. counties are classified as
+      “Farming” (often referred to as “farming-dependent” counties).
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["rawstory-2026-trump-voters-suicide-pact"]
+    operationalization: >-
+      Download the USDA ERS “County Typology Codes, 2015 Edition” CSV and count rows where Economic_Type_Label
+      equals “Farming”.
+    assumptions:
+      - The ERS “Farming” industry-dependence label corresponds to Wilson’s “farming-dependent counties” phrasing.
+    falsifiers:
+      - ERS data show a materially different count under the same definition.
+
+  - id: "GOV-2026-071"
+    text: >-
+      In the 2024 presidential election, Trump received nearly 78% of the vote in the 444 farming-dependent counties.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["rawstory-2026-trump-voters-suicide-pact"]
+    operationalization: >-
+      Join the ERS list of “Farming” counties to county-level 2024 presidential election results and compute Trump’s
+      vote share (define whether this is total-vote share or two-party share).
+    assumptions:
+      - County FIPS codes align between the ERS typology dataset and the election dataset.
+      - “78%” refers to a consistently defined vote-share measure.
+    falsifiers:
+      - Recomputed vote share differs materially from ~78% under reasonable definitions.
+
+  - id: "ECON-2026-028"
+    text: >-
+      China has accounted for roughly half of U.S. soybean exports in at least some recent years.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["rawstory-2026-trump-voters-suicide-pact"]
+    operationalization: >-
+      Use USDA FAS GATS export volumes by destination and compute China’s share of total U.S. soybean exports
+      for the referenced year(s).
+    assumptions:
+      - “Share” refers to export volume (e.g., metric tons) in a specified marketing/calendar year.
+    falsifiers:
+      - USDA destination-share data show China’s share is far from ~50% in the relevant period.
+
+  - id: "ECON-2026-029"
+    text: >-
+      By 2026, China stopped buying U.S. soybeans entirely (effectively zero U.S. soybean exports to China).
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.15
+    source_ids: ["rawstory-2026-trump-voters-suicide-pact"]
+    operationalization: >-
+      Check USDA FAS export-by-destination data for the relevant months/years and verify whether U.S. soybean exports
+      to China were effectively zero for an extended period.
+    assumptions:
+      - “Walked away entirely” corresponds to approximately zero exports over a meaningful time window, not a brief dip.
+    falsifiers:
+      - USDA data show non-zero exports to China during the claimed “entirely” period.
+
+  - id: "ECON-2026-030"
+    text: >-
+      Net farm income is projected to decline by about $41 billion in 2026 (about a 23% drop) relative to the prior year.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.20
+    source_ids: ["rawstory-2026-trump-voters-suicide-pact"]
+    operationalization: >-
+      Identify the underlying forecast source (USDA ERS or another forecaster) and compare year-over-year net farm
+      income changes for the referenced years using consistent (nominal or inflation-adjusted) dollars.
+    assumptions:
+      - The claim refers to USDA’s “net farm income” concept (not net cash farm income or another measure).
+      - The baseline year and inflation adjustment are consistent with the cited forecast.
+    falsifiers:
+      - Authoritative forecast series shows a materially different change in net farm income for 2026.
+
+  - id: "ECON-2026-031"
+    text: >-
+      By 2026, average per-acre margins are approximately -$169 for corn, -$114 for soybeans, and about -$400 for cotton.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.20
+    source_ids: ["rawstory-2026-trump-voters-suicide-pact"]
+    operationalization: >-
+      Locate the budget model or dataset used (state extension budgets, USDA cost-of-production, or a cited report),
+      determine whether figures are net returns over variable or total costs, and reproduce the per-acre estimates.
+    assumptions:
+      - The figures are meant as representative averages, not a worst-case scenario for a specific region.
+    falsifiers:
+      - Reproduced budgets show materially different per-acre margins under comparable assumptions.
+
+  - id: "LABOR-2026-014"
+    text: >-
+      Roughly 70% of U.S. crop farmworkers are foreign-born.
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["rawstory-2026-trump-voters-suicide-pact"]
+    operationalization: >-
+      Use DOL’s National Agricultural Workers Survey (NAWS) or ACS tabulations (as summarized by USDA ERS) to estimate
+      the U.S.-born vs foreign-born share of crop farmworkers in the relevant years.
+    assumptions:
+      - The statistic is referring to crop farmworkers (not all agricultural workers including livestock).
+    falsifiers:
+      - Official survey-based estimates show a substantially different foreign-born share.
+
+  - id: "LABOR-2026-015"
+    text: >-
+      One grower lost about $5 million because crops could not be harvested due to farm-labor shortages linked to
+      immigration enforcement.
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.25
+    source_ids: ["rawstory-2026-trump-voters-suicide-pact"]
+    operationalization: >-
+      Locate the original reporting or documentation for the case, verify the $5M figure, and confirm the causal link
+      to enforcement-driven labor shortages versus other drivers (weather, disease, logistics).
+    assumptions:
+      - The reported loss figure is measured consistently (revenue vs profit) and is attributable primarily to labor shortages.
+    falsifiers:
+      - No reliable source substantiates the $5M figure or attributes it to immigration-enforcement-related labor loss.
+
+  - id: "GOV-2026-072"
+    text: >-
+      Farm distress driven by tariffs and immigration policy will be a major political liability for Republicans in the
+      2026 midterm elections.
+    type: "[P]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["rawstory-2026-trump-voters-suicide-pact"]
+    operationalization: >-
+      Track polling/issue salience and election outcomes in farming-dependent counties versus other counties, and test
+      whether measured farm distress predicts GOP underperformance relative to baseline.
+    assumptions:
+      - Voters update partisan preferences based on perceived economic performance and attribute it to incumbents.
+    falsifiers:
+      - GOP performance does not decline in farming-dependent counties despite sustained measured distress.
+

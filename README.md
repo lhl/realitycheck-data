@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 352 |
-| **Sources** | 95 |
+| **Claims** | 361 |
+| **Sources** | 96 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 25 |
+| **Predictions Tracked** | 26 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -48,6 +48,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-30 | [These Trump voters 'formed a suicide pact' and Republicans are panicking: ex-GOP operative (Raw Story)](analysis/sources/rawstory-2026-trump-voters-suicide-pact.md) | `[DRAFT]` | Opinion recap of Rick Wilson on farm distress from tariffs + immigration enforcement; verified “444 farming counties” typology + high foreign-born crop labor share; key numeric forecasts uncorroborated |
 | 2026-01-27 | [Special Report: China sets new records in air-sea operations around Taiwan (Janes)](analysis/sources/janes-2025-air-sea-operations-around-taiwan.md) | `[DRAFT]` | Verification source: Taiwan MND-attributed ADIZ annual totals (2023 vs 2024) used as pressure metric |
 | 2026-01-27 | [Military Implications of PLA Aircraft Incursions in Taiwan’s Airspace 2024 (Jamestown)](analysis/sources/jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024.md) | `[DRAFT]` | Verification source: definition-sensitive median-line day-count metric (62 vs 209 “over half” days) |
 | 2026-01-27 | [Energy supplies sufficient, ministry says (Taipei Times)](analysis/sources/taipeitimes-2022-energy-supplies-sufficient-ministry.md) | `[DRAFT]` | Verification source: MOEA-stated natural-gas reserves ~10–11 days of consumption (2022-08) |
@@ -106,10 +107,10 @@ See [claims/README.md](claims/README.md) for full statistics.
 | Domain | Description | Claims |
 |--------|-------------|--------|
 | TECH | Technology & AI | 104 |
-| LABOR | Labor & Employment | 17 |
-| ECON | Economics & Markets | 29 |
-| GOV | Governance & Policy | 70 |
-| SOC | Social Dynamics | 5 |
+| LABOR | Labor & Employment | 19 |
+| ECON | Economics & Markets | 33 |
+| GOV | Governance & Policy | 72 |
+| SOC | Social Dynamics | 6 |
 | TRANS | Transition Dynamics | 24 |
 | RESOURCE | Resource Constraints | 14 |
 | GEO | Geopolitics | 25 |
@@ -225,4 +226,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-01-27*
+*Last updated: 2026-01-31*
