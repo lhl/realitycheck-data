@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 365 |
-| **Sources** | 97 |
+| **Claims** | 377 |
+| **Sources** | 103 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 26 |
 
@@ -48,6 +48,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-31 | [How the World Sees America, With Adam Tooze (NYT)](analysis/sources/nyt-2026-world-sees-america-tooze.md) | `[REVIEWED]` | Davos 2026 “rupture” framing; Greenland tariffs as rupture datapoint; China scale + climate constraints; skepticism of “U.S.→China hegemony transition” story |
 | 2026-01-31 | [DHS retreats from the claim that the agents who killed Alex Pretti faced a 'violent riot' (Reason)](analysis/sources/reason-2026-dhs-retreats-violent-riot-pretti.md) | `[DRAFT]` | “Violent riot” framing vs OPR-described yelling/whistles; Bovino “rights don’t count” quote; credibility argument via prior Chicago misrepresentation finding |
 | 2026-01-30 | [These Trump voters 'formed a suicide pact' and Republicans are panicking: ex-GOP operative (Raw Story)](analysis/sources/rawstory-2026-trump-voters-suicide-pact.md) | `[DRAFT]` | Opinion recap of Rick Wilson on farm distress from tariffs + immigration enforcement; verified “444 farming counties” typology + high foreign-born crop labor share; key numeric forecasts uncorroborated |
 | 2026-01-27 | [Special Report: China sets new records in air-sea operations around Taiwan (Janes)](analysis/sources/janes-2025-air-sea-operations-around-taiwan.md) | `[DRAFT]` | Verification source: Taiwan MND-attributed ADIZ annual totals (2023 vs 2024) used as pressure metric |
@@ -107,14 +108,14 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 104 |
+| TECH | Technology & AI | 105 |
 | LABOR | Labor & Employment | 19 |
-| ECON | Economics & Markets | 33 |
-| GOV | Governance & Policy | 76 |
+| ECON | Economics & Markets | 36 |
+| GOV | Governance & Policy | 79 |
 | SOC | Social Dynamics | 6 |
 | TRANS | Transition Dynamics | 24 |
-| RESOURCE | Resource Constraints | 14 |
-| GEO | Geopolitics | 25 |
+| RESOURCE | Resource Constraints | 15 |
+| GEO | Geopolitics | 29 |
 | INST | Institutions & Organizations | 33 |
 | RISK | Risk Assessment | 8 |
 | META | Framework & Methodology | 23 |
@@ -227,4 +228,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-01-31*
+*Last updated: 2026-02-01*

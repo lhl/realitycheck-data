@@ -1,0 +1,248 @@
+sources:
+  - id: "nyt-2026-world-sees-america-tooze"
+    type: "INTERVIEW"
+    title: "How the World Sees America, With Adam Tooze"
+    author:
+      - "Ezra Klein"
+      - "Adam Tooze"
+    year: 2026
+    url: "https://www.nytimes.com/2026/01/30/opinion/ezra-klein-podcast-adam-tooze.html"
+    accessed: "2026-01-31"
+    status: "analyzed"
+    analysis_file: "analysis/sources/nyt-2026-world-sees-america-tooze.md"
+    reliability: 0.70
+    bias_notes: >-
+      Edited transcript of an NYT Opinion podcast; high-quality interlocutors but incentives toward vivid framing and strong
+      interpretive claims. Several factual assertions (trade shares, tariffs, cabinet roles) require external verification.
+    topics:
+      - ezra-klein-show
+      - adam-tooze
+      - davos
+      - greenland
+      - tariffs
+      - global-order
+      - us-foreign-policy
+      - china
+      - climate
+      - solar
+      - semiconductors
+      - export-controls
+    domains:
+      - GOV
+      - GEO
+      - ECON
+      - RESOURCE
+      - TECH
+    claims_extracted:
+      - GOV-2026-078
+      - GEO-2026-025
+      - GOV-2026-079
+      - ECON-2026-032
+      - GOV-2026-080
+      - RESOURCE-2026-014
+      - ECON-2026-033
+      - ECON-2026-034
+      - TECH-2026-099
+      - GEO-2026-026
+      - GEO-2026-027
+      - GEO-2026-028
+
+claims:
+  - id: "GOV-2026-078"
+    text: >-
+      The 'rupture' in the international order is substantially a cultural shift toward overt coercion (threats, bullying,
+      violence) as normal great-power behavior, not just a gradual multipolar transition.
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["nyt-2026-world-sees-america-tooze"]
+    operationalization: >-
+      Operationalize 'overt coercion' via datasets of coercive threats, sanctions, territorial threats, and explicit ultimata;
+      test for level shifts vs trend continuity across 2010–2026.
+    assumptions:
+      - Observable coercion proxies track the underlying norm shift (not just media coverage).
+    falsifiers:
+      - Coercion indicators remain flat or decline, and restraint norms dominate comparable crisis episodes.
+
+  - id: "GEO-2026-025"
+    text: >-
+      In January 2026, President Donald Trump threatened tariffs on multiple European countries in connection with U.S. efforts
+      to secure control/purchase of Greenland.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["nyt-2026-world-sees-america-tooze"]
+    operationalization: >-
+      Verify via contemporaneous official statements/posts and multiple independent wire reports; track whether tariff
+      instruments were issued and implemented.
+    assumptions:
+      - Reporting accurately reflects the President's statement and its Greenland linkage.
+    falsifiers:
+      - Primary-source record contradicts the tariff threat or its Greenland linkage.
+
+  - id: "GOV-2026-079"
+    text: >-
+      In his Davos 2026 speech, Mark Carney said: "We are in the midst of a rupture, not a transition."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["nyt-2026-world-sees-america-tooze"]
+    operationalization: >-
+      Confirm against the official speech transcript/audio and multiple independent reproductions.
+    assumptions:
+      - The reproduced quote reflects the delivered speech.
+    falsifiers:
+      - Speech transcript/audio shows materially different wording.
+
+  - id: "ECON-2026-032"
+    text: >-
+      In an August 2019 Jackson Hole speech, Mark Carney argued that dollar dominance in the international monetary/financial
+      system creates instability and discussed the possibility of a "Synthetic Hegemonic Currency (SHC)".
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["nyt-2026-world-sees-america-tooze"]
+    operationalization: >-
+      Verify directly from the published speech text/PDF and confirm the SHC discussion is present and accurately characterized.
+    assumptions:
+      - The published PDF is authentic and complete.
+    falsifiers:
+      - No SHC discussion exists in the primary document or is materially mischaracterized.
+
+  - id: "GOV-2026-080"
+    text: >-
+      We should not assume the current breakdown implies a successor stable global order; instead, we should expect many partial
+      "ordering attempts" without guaranteed convergence to a coherent new order.
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["nyt-2026-world-sees-america-tooze"]
+    operationalization: >-
+      Define observable proxies for order (institutional compliance, dispute resolution, alliance cohesion) and test whether they
+      converge to a new steady state over 2026–2036.
+    assumptions:
+      - Order proxies are measurable and comparable across periods.
+    falsifiers:
+      - Rapid, broad convergence to a stable successor order is observed.
+
+  - id: "RESOURCE-2026-014"
+    text: >-
+      China's green-industrial capacity (especially solar modules and battery supply chains) is large enough that leveraging it could
+      materially accelerate global decarbonization, making China "central" to plausible climate-stabilization pathways.
+    type: "[H]"
+    domain: "RESOURCE"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["nyt-2026-world-sees-america-tooze"]
+    operationalization: >-
+      Compare scenarios: (a) constrained China imports vs (b) high China utilization, using integrated assessment / energy system
+      models to estimate emissions pathways and deployment rates.
+    assumptions:
+      - China capacity can be deployed globally without binding political/security constraints.
+    falsifiers:
+      - Non-China capacity scales fast enough at comparable costs, or China capacity is not practically deployable.
+
+  - id: "ECON-2026-033"
+    text: >-
+      China accounts for the vast majority of EU solar panel imports (order-of-magnitude ~90%+ share).
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["nyt-2026-world-sees-america-tooze"]
+    operationalization: >-
+      Verify with Eurostat import statistics by product category and origin country for 2023–2024.
+    assumptions:
+      - The EU solar panel import category matches the intended product definition.
+    falsifiers:
+      - Official EU import statistics show a materially lower China share.
+
+  - id: "ECON-2026-034"
+    text: >-
+      U.S. direct imports of solar panels from China are near-zero by value (well under 1% share), using HS6 854143 as a proxy
+      category for photovoltaic modules/panels.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["nyt-2026-world-sees-america-tooze"]
+    operationalization: >-
+      Compute China share from U.S. Census Bureau import data for HS6 854143 for full-year 2023–2024.
+    assumptions:
+      - HS6 854143 is a reasonable proxy for "solar panels" in the claim context.
+    falsifiers:
+      - Trade data show a substantial direct China share of US solar panel imports.
+
+  - id: "TECH-2026-099"
+    text: >-
+      The Oct 7, 2022 U.S. export-control regime targeted advanced computing/AI chips and semiconductor manufacturing items in
+      order to constrain PRC military modernization.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["nyt-2026-world-sees-america-tooze"]
+    operationalization: >-
+      Verify against the BIS rules and contemporaneous official explanations of scope/intent; map controlled items to AI and
+      semiconductor manufacturing categories.
+    assumptions:
+      - Public summaries accurately reflect the underlying rule intent and scope.
+    falsifiers:
+      - Primary documents show materially different scope/intent (e.g., no focus on advanced computing/AI).
+
+  - id: "GEO-2026-026"
+    text: >-
+      The "axis of democracies vs authoritarians" framing is analytically unhelpful because China–Russia alignment is better
+      explained as pragmatic/regime-security driven than identity-based ideological alignment.
+    type: "[T]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["nyt-2026-world-sees-america-tooze"]
+    operationalization: >-
+      Test competing explanations using elite statements, policy coordination patterns, and divergence episodes; evaluate whether
+      ideology predicts behavior better than regime-security pragmatics.
+    assumptions:
+      - Elite statements and behavior can differentiate ideology vs regime-security motives.
+    falsifiers:
+      - Ideological affinity reliably predicts alignment behaviors better than pragmatic/regime-security explanations.
+
+  - id: "GEO-2026-027"
+    text: >-
+      Some high-level Chinese elites hold conspiratorial views that the U.S. orchestrated the Ukraine war to bind Europe more
+      closely to Washington.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["nyt-2026-world-sees-america-tooze"]
+    operationalization: >-
+      Assess via elite discourse analysis, think-tank outputs, and internal/translated statements attributable to senior PRC policy
+      circles.
+    assumptions:
+      - Public/attributable discourse is representative of elite beliefs.
+    falsifiers:
+      - Elite discourse consistently rejects the conspiratorial framing and attributes primary agency elsewhere.
+
+  - id: "GEO-2026-028"
+    text: >-
+      Framing the era as a deterministic transition from American order to Chinese hegemony increases the probability of hawkish U.S.
+      policies and great-power confrontation.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["nyt-2026-world-sees-america-tooze"]
+    operationalization: >-
+      Track framing prevalence in elite discourse and correlate with policy choices (sanctions, export controls, military posture),
+      controlling for objective rivalry indicators.
+    assumptions:
+      - Framing can be measured and plausibly treated as an input to policy coalitions, not only an output.
+    falsifiers:
+      - Hawkish policy intensifies when hegemony-transition framing declines, or framing changes have no association with policy shifts.
+
