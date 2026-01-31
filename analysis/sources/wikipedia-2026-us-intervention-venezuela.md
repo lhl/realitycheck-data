@@ -101,5 +101,8 @@ claims:
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
-| 1 | 2026-01-26 | codex | gpt-5.2 | ? | ? | ? | Initial analysis + claim registration prep |
+| 1 | 2026-01-26 14:22 | codex | gpt-5.2 | 1m8s | 224,777 | ? | Initial analysis + claim extraction (Venezuela intervention context) |
 
+### Revision Notes
+
+**Pass 1**: Initial analysis + claim extraction (Venezuela intervention context)

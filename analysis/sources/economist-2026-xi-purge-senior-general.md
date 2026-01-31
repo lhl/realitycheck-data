@@ -301,8 +301,8 @@ claims:
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
-| 1 | 2026-01-26 18:40 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + extracted claims; registered source/claims. |
+| 1 | 2026-01-26 09:54 | codex | gpt-5.2 | 2m18s | 118,181 | ? | Initial 3-stage analysis + extracted claims; registered source/claims. |
 
 ### Revision Notes
 
-**Pass 1**: Initial analysis and claim extraction from local Economist capture.
+**Pass 1**: Initial 3-stage analysis + extracted claims; registered source/claims.

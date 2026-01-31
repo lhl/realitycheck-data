@@ -173,9 +173,8 @@ This source is most valuable as a *measurement template*: record token categorie
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
-| 1 | 2026-01-24 18:10 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + extracted claims; imported to DB. |
+| 1 | 2026-01-24 17:54 | codex | gpt-5.2 | 14m56s | 2,661,468 | ? | Initial 3-stage analysis + extracted claims; imported to DB. |
 
 ### Revision Notes
 
 **Pass 1**: Initial 3-stage analysis + extracted claims; imported to DB.
-**Pass 1**: Initial 3-stage analysis + extracted claims; verified a handful of key factual citations and recomputed case-study rates.

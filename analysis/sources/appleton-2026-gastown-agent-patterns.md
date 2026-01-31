@@ -311,7 +311,7 @@ claims:
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
-| 1 | 2026-01-24 07:43 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + extracted claims; registered source/claims. |
+| 1 | 2026-01-24 07:33 | codex | gpt-5.2 | 8m55s | 4,202,020 | ? | Initial 3-stage analysis + extracted claims; registered source/claims. |
 
 ### Revision Notes
 

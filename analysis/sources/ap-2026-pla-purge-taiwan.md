@@ -254,8 +254,8 @@ claims:
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
-| 1 | 2026-01-26 18:40 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + extracted claims; registered source/claims. |
+| 1 | 2026-01-26 09:37 | codex | gpt-5.2 | 15m47s | 3,526,905 | ? | Initial 3-stage analysis + extracted claims; registered source/claims. |
 
 ### Revision Notes
 
-**Pass 1**: Initial analysis and claim extraction from local AP capture.
+**Pass 1**: Initial 3-stage analysis + extracted claims; registered source/claims.

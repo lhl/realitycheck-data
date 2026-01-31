@@ -130,7 +130,7 @@ claims:
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
 | 1 | 2026-01-26 | codex | gpt-5.2 | ? | ? | ? | Focused verification: ADIZ annual total claim for Taiwan pressure metrics |
-| 2 | 2026-01-30 19:31 | codex | gpt-5.2 | ? | ? | ? | Pass 2: added epistemic provenance (evidence link + reasoning trail) for GEO-20… |
+| 2 | 2026-01-30 19:26 | codex | gpt-5.2 | 4m35s | 4,645,486 | ? | Pass 2: added epistemic provenance (evidence link + reasoning trail) for GEO-20… |
 
 ### Revision Notes
 

@@ -337,13 +337,14 @@ The most robust posture is “metrics + audits + preference-based discriminators
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
-| 1 | 2026-01-24 | codex | gpt-5.2 | ~30m | ? | ? | Initial multi-source analysis + synthesis |
+| 1 | 2026-01-24 07:27 | claude-code | claude-opus-4-5 | 6m7s | 3,101,443 | ? | Pass 2: Expanded prior art section with WMT evaluation history, added Japanese… |
 | 2 | 2026-01-24 | claude-code | claude-opus-4-5 | ~15m | ? | ? | Expanded prior art, added linguistic citations, upgraded to REVIEWED |
 | 3 | 2026-01-24 | claude-code | claude-opus-4-5 | ~10m | ? | ? | Revised prior art framing per author feedback |
 | 4 | 2026-01-24 | codex | gpt-5.2 | ~5m | ? | ? | Softened novelty framing in anchored pairwise uniqueness section; minor markdown cleanup |
 
 ### Revision Notes
 
+**Pass 1**: Pass 2: Expanded prior art section with WMT evaluation history, added Japanese linguistic challenges with academic citations, added References section with 17…
 **Pass 1 (gpt-5.2)**: Initial analysis covering 11 sources. Created source analyses for JP-TL-Bench paper, repo, blog posts, TranslateGemma, Shisa model releases, and LiquidAI model card. Synthesized evaluation paradigms (COMET vs MQM vs LLM-judge), identified anchored pairwise design as primary contribution.
 
 **Pass 2 (claude-opus-4-5)**: Continuation/refinement pass requested by user. Key additions:

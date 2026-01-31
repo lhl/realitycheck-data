@@ -269,5 +269,9 @@ claims:
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
-| 1 | 2026-01-26 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + claim extraction for memo integration |
+| 1 | 2026-01-26 14:04 | codex | gpt-5.2 | 17m52s | 18,033,496 | ? | Initial analysis + claim extraction for synthesis integration |
 | 2 | 2026-01-27 | codex | gpt-5.2 | ? | ? | ? | Verified key Taiwan pressure/energy numerics against Janes/Jamestown/Taipei Times; updated credences |
+
+### Revision Notes
+
+**Pass 1**: Initial analysis + claim extraction for synthesis integration

@@ -323,17 +323,17 @@ claims:
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
-| 1 | 2026-01-25 06:22 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + sourced verification (law, memos, Minnesota incident… |
-| 2 | 2026-01-25 08:36 | codex | gpt-5.2 | ? | ? | ? | Pass 2: incorporated user-provided reporting list; updated credences; added GOV… |
-| 3 | 2026-01-25 18:12 | codex | gpt-5.2 | ? | ? | ? | Pass 3: added third-country removal/return reporting (AP, SCOTUS, filings); updated GOV-2026-039/040 credences |
-| 4 | 2026-01-25 21:55 | codex | gpt-5.2 | ? | ? | ? | Pass 4: integrated transcript review; added primary docs (GAO, Mobile Fortify PTA, Kidd order, Federal Register); updated GOV-2026-034/035/036/038 credences; noted correction on filming-raid reporting |
+| 1 | 2026-01-25 06:01 | codex | gpt-5.2 | 20m9s | 4,937,455 | ? | Initial 3-stage analysis + sourced verification (law, memos, Minnesota incident… |
+| 2 | 2026-01-25 08:10 | codex | gpt-5.2 | 24m2s | 13,083,563 | ? | Pass 2: incorporated user-provided reporting list; updated credences; added GOV… |
+| 3 | 2026-01-25 09:03 | codex | gpt-5.2 | 10m39s | 7,837,591 | ? | Pass 3: added AP/SCOTUS reporting on third-country removals and contested retur… |
+| 4 | 2026-01-25 12:52 | codex | gpt-5.2 | 26m36s | 16,104,319 | ? | Pass 4: integrated transcript review; added primary docs (GAO, Mobile Fortify P… |
 
 ### Revision Notes
 
+**Pass 4**: Pass 4: integrated transcript review; added primary docs (GAO, Mobile Fortify PTA, Kidd order, Federal Register); updated GOV-2026-034/035/036/038 credences; n…
+**Pass 3**: Pass 3: added AP/SCOTUS reporting on third-country removals and contested return after error; updated GOV-2026-039/040 evidence+credence.
+**Pass 2**: Pass 2: incorporated user-provided reporting list; updated credences; added GOV-2026-042 (domestic-terrorism/terrorist labeling pattern).
 **Pass 1**: Initial 3-stage analysis + sourced verification (law, memos, Minnesota incidents).
-**Pass 2**: Incorporated user-provided reporting list; updated claim credences; added GOV-2026-042 (domestic-terrorism/terrorist labeling pattern); expanded Minnesota incident coverage and warrantless entry discussion.
-**Pass 3**: Added reporting and court materials on third-country removals and contested “return after error”; updated GOV-2026-039 and GOV-2026-040 evidence/credence; documented access limits for some provided links.
-**Pass 4**: Integrated transcript feedback; added primary documents for penalties, biometrics, and citizen-misidentification; updated GOV-2026-034/035/036/038 credences; clarified correction/limits for “filming raids” framing.
 
 [^S01]: https://www.usatoday.com/story/news/nation/2026/01/20/immigration-agents-minnesota-police-officer/88268058007/
 [^S02]: https://www.democracydocket.com/news-alerts/attorney-general-bondi-minnesota-voter-rolls-border-patrol-fatal-shooting/

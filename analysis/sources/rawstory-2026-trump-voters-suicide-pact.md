@@ -332,7 +332,7 @@ claims:
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
-| 1 | 2026-01-30 19:09 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + partial verification (USDA ERS typology/labor; soybe… |
+| 1 | 2026-01-30 18:55 | codex | gpt-5.2 | 13m37s | 2,632,911 | ? | Initial 3-stage analysis + partial verification (USDA ERS typology/labor; soybe… |
 
 ### Revision Notes
 

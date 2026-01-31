@@ -199,6 +199,11 @@ To avoid “headline-driven” updates, track a small set of indicators that dis
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
-| 1 | 2026-01-26 | codex | gpt-5.2 | ? | ? | ? | Initial multi-source synthesis from 12 PLA-purge sources |
-| 2 | 2026-01-26 | codex | gpt-5.2 | ? | ? | ? | Integrated deepresearch memo + grounded Venezuela/Greenland context and blockade/energy framing |
+| 1 | 2026-01-26 10:10 | codex | gpt-5.2 | 2m33s | 675,449 | ? | Cross-source synthesis: Zhang Youxia purge, PLA command disruption, and Taiwan… |
+| 2 | 2026-01-26 14:23 | codex | gpt-5.2 | 5m23s | 2,268,912 | ? | Pass 2: integrated claude deepresearch memo; added blockade/energy framing; gro… |
 | 3 | 2026-01-27 | codex | gpt-5.2 | ? | ? | ? | Added verification sources for Taiwan pressure metrics + gas days-of-cover; updated synthesis framing accordingly |
+
+### Revision Notes
+
+**Pass 2**: Pass 2: integrated claude deepresearch memo; added blockade/energy framing; grounded Venezuela/Greenland context with DB claims.
+**Pass 1**: Cross-source synthesis: Zhang Youxia purge, PLA command disruption, and Taiwan timing.
