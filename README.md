@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 361 |
-| **Sources** | 96 |
+| **Claims** | 365 |
+| **Sources** | 97 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 26 |
 
@@ -48,6 +48,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-01-31 | [DHS retreats from the claim that the agents who killed Alex Pretti faced a 'violent riot' (Reason)](analysis/sources/reason-2026-dhs-retreats-violent-riot-pretti.md) | `[DRAFT]` | “Violent riot” framing vs OPR-described yelling/whistles; Bovino “rights don’t count” quote; credibility argument via prior Chicago misrepresentation finding |
 | 2026-01-30 | [These Trump voters 'formed a suicide pact' and Republicans are panicking: ex-GOP operative (Raw Story)](analysis/sources/rawstory-2026-trump-voters-suicide-pact.md) | `[DRAFT]` | Opinion recap of Rick Wilson on farm distress from tariffs + immigration enforcement; verified “444 farming counties” typology + high foreign-born crop labor share; key numeric forecasts uncorroborated |
 | 2026-01-27 | [Special Report: China sets new records in air-sea operations around Taiwan (Janes)](analysis/sources/janes-2025-air-sea-operations-around-taiwan.md) | `[DRAFT]` | Verification source: Taiwan MND-attributed ADIZ annual totals (2023 vs 2024) used as pressure metric |
 | 2026-01-27 | [Military Implications of PLA Aircraft Incursions in Taiwan’s Airspace 2024 (Jamestown)](analysis/sources/jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024.md) | `[DRAFT]` | Verification source: definition-sensitive median-line day-count metric (62 vs 209 “over half” days) |
@@ -109,7 +110,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TECH | Technology & AI | 104 |
 | LABOR | Labor & Employment | 19 |
 | ECON | Economics & Markets | 33 |
-| GOV | Governance & Policy | 72 |
+| GOV | Governance & Policy | 76 |
 | SOC | Social Dynamics | 6 |
 | TRANS | Transition Dynamics | 24 |
 | RESOURCE | Resource Constraints | 14 |

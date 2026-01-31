@@ -1,0 +1,99 @@
+sources:
+  - id: "reason-2026-dhs-retreats-violent-riot-pretti"
+    type: "ARTICLE"
+    title: "DHS retreats from the claim that the agents who killed Alex Pretti faced a 'violent riot'"
+    author:
+      - "Jacob Sullum"
+    year: 2026
+    url: "https://reason.com/2026/01/29/dhs-retreats-from-the-claim-that-the-agents-who-killed-alex-pretti-faced-a-violent-riot/"
+    accessed: "2026-01-31"
+    status: "analyzed"
+    analysis_file: "analysis/sources/reason-2026-dhs-retreats-violent-riot-pretti.md"
+    reliability: 0.65
+    bias_notes: >-
+      Opinionated framing, but anchored in cross-checkable artifacts (video, quoted statements, and a CBP/OPR-to-Congress writeup
+      as reproduced by other outlets). Treat claims about “what the video shows” as provisional unless the primary footage is
+      directly reviewed.
+    topics:
+      - dhs
+      - cbp
+      - border-patrol
+      - alex-pretti
+      - minneapolis
+      - use-of-force
+      - riot-framing
+      - public-claims
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-073
+      - GOV-2026-074
+      - GOV-2026-075
+      - GOV-2026-077
+
+claims:
+  - id: "GOV-2026-073"
+    text: >-
+      DHS Secretary Kristi Noem described the circumstances around Alex Pretti’s shooting as “a violent riot” and suggested
+      someone “show[ed] up with weapons.”
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["reason-2026-dhs-retreats-violent-riot-pretti"]
+    operationalization: >-
+      Verify against primary transcript/video of Noem’s statement; confirm exact wording and context.
+    assumptions:
+      - The quoted language is accurately reproduced and attributable to Noem.
+    falsifiers:
+      - Primary transcript/video shows materially different wording or no “violent riot” framing.
+
+  - id: "GOV-2026-074"
+    text: >-
+      Border Patrol commander Gregory Bovino repeatedly described the scene as a “riot” on CNN and argued that Second Amendment
+      rights “don’t count” when someone “riot[s] and assault[s], delay[s], obstruct[s], and impede[s]” law enforcement officers.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["reason-2026-dhs-retreats-violent-riot-pretti"]
+    operationalization: >-
+      Verify against full CNN interview transcript/video; compare across multiple outlet transcripts for consistency.
+    assumptions:
+      - The CNN exchange is accurately quoted/paraphrased.
+    falsifiers:
+      - Full transcript/video does not contain the cited language or materially changes its meaning.
+
+  - id: "GOV-2026-075"
+    text: >-
+      A CBP Office of Professional Responsibility report to Congress described the pre-shooting context as “several civilians …
+      yelling and blowing whistles,” with CBP/Border Patrol making verbal requests for civilians to stay on sidewalks and out of
+      the roadway.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["reason-2026-dhs-retreats-violent-riot-pretti"]
+    operationalization: >-
+      Obtain the underlying OPR-to-Congress report and compare its exact wording to quoted excerpts.
+    assumptions:
+      - The reported excerpts accurately reflect the underlying OPR report.
+    falsifiers:
+      - The underlying report is shown to say something materially different about the pre-shooting context.
+
+  - id: "GOV-2026-077"
+    text: >-
+      In November 2025, U.S. District Judge Sara Ellis found that Gregory Bovino lied about whether he was hit by a rock before
+      deploying tear gas at Chicago protesters; video evidence disproved his account and he later admitted he was hit only after.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["reason-2026-dhs-retreats-violent-riot-pretti"]
+    operationalization: >-
+      Review the underlying court order and associated video; confirm the exact claim Bovino made and the judge’s finding.
+    assumptions:
+      - The judge’s finding is accurately summarized by secondary reporting.
+    falsifiers:
+      - The court order/video record does not support the claim that Bovino reversed the pre/post-hit sequence.
+
