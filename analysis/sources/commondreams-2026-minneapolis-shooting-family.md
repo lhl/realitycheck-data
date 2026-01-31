@@ -353,7 +353,7 @@ claims:
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
-| 1 | 2026-01-26 | claude-code | claude-opus-4 | ? | ? | ? | Initial 3-stage analysis; cross-referenced with bluebadger2600-2026-ice-positions |
+| 1 | 2026-01-26 | claude-code | claude-opus-4 | 3m 28s | 1,532,046 | ? | Initial 3-stage analysis; cross-referenced with bluebadger2600-2026-ice-positions |
 | 2 | 2026-01-26 | codex | gpt-5.2 | ? | ? | ? | Added evidence index + provenance notes; updated/expanded claim set; tightened evidence/credence based on external reporting |
 
 ### Revision Notes
