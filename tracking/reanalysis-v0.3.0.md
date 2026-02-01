@@ -34,11 +34,11 @@ Priority heuristic: chains → synthesis refs → high-credence claims → claim
 
 - **Analysis**: [analysis/sources/ronacher-2026-agent-psychosis.md](analysis/sources/ronacher-2026-agent-psychosis.md)
 - **Claims**: 7 (high-credence/E1-E2: 0) | **In chain**: Y | **Referenced by syntheses**: 1
-- **Latest analysis log**: _none_ (create a new pass when reanalyzing)
+- **Latest analysis log**: `ANALYSIS-2026-032` (2026-02-01T08:46:26.526946Z) | fw=0.3.0 | meth=reanalysis-core@v0.3.0
 - **TODOs**:
-  - [ ] Add `### Corrections & Updates` section (rigor-v1)
-  - [ ] Upgrade Key Claims table to include Layer/Actor/Scope/Quantifier (rigor-v1)
-  - [ ] Upgrade Claim Summary table to include Layer/Actor/Scope/Quantifier (rigor-v1)
+  - [x] Add `### Corrections & Updates` section (rigor-v1)
+  - [x] Upgrade Key Claims table to include Layer/Actor/Scope/Quantifier (rigor-v1)
+  - [x] Upgrade Claim Summary table to include Layer/Actor/Scope/Quantifier (rigor-v1)
 
 ### lhl-2026-frontier-llm-token-unit-economics — Inference Cost Analysis & Projections (Jan 2026)
 

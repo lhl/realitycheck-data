@@ -23,15 +23,15 @@
 Ronacher argues that “agentic coding” can induce a dopamine-driven, parasocial “dæmon” relationship that makes people feel highly productive while producing low-quality “vibeslop” artifacts (issues/PRs/code/docs). The resulting asymmetry—minutes to generate slop vs hours to review—imposes a growing externality on maintainers and risks pushing software communities into adversarial contribution norms unless better tooling and cultural expectations emerge.
 
 ### Key Claims
-| # | Claim | Claim ID | Type | Domain | Evid | Credence | Verified? | Falsifiable By |
-|---|-------|----------|------|--------|------|------|-----------|----------------|
-| 1 | Cheap-to-generate AI-assisted issues/PRs create a harsh review asymmetry (minutes to produce vs much longer to evaluate), increasing maintainer burden and rejection/conflict | LABOR-2026-007 | [T] | LABOR | E4 | 0.60 | ? | Evidence that typical AI-assisted contributions (net of quality gating) reduce maintainer review time per accepted change and reduce maintainer burnout/conflict |
-| 2 | Heavy use of agentic coding tools can foster addictive/parasocial dynamics (“dæmon” framing) that impair judgment and reinforce unhealthy behavior in communities | SOC-2026-001 | [H] | SOC | E4 | 0.45 | ? | Controlled/observational studies showing agentic-coding use does not increase addictive/parasocial indicators vs comparable dev tooling |
-| 3 | Prompting styles that minimize critical thinking (forcing agents down narrow paths, ritualized prompting) tend to produce lower-quality and more incoherent code contributions | SOC-2026-002 | [H] | SOC | E4 | 0.50 | ? | Evidence that low-scrutiny prompting styles produce equal-or-better long-run code quality and fewer integration defects than high-scrutiny workflows |
-| 4 | “Slop loop” agent workflows can become economically wasteful (high token burn), and current token pricing may not be durable | TECH-2026-007 | [H] | TECH | E4 | 0.50 | ? | Evidence that typical agentic workflows remain cost-effective (or token prices fall sufficiently) such that token burn does not constrain adoption |
-| 5 | Community/project governance will adapt by increasing friction (rejecting “AI slop,” requiring prompts, gating contributions), shifting norms around what counts as a contribution | GOV-2026-019 | [H] | GOV | E4 | 0.55 | ? | Evidence that most projects maintain open contribution policies without increasing friction while maintaining review quality under widespread agentic use |
-| 6 | AI agents are simultaneously a large productivity boost and “slop machines” if oversight is relaxed; outcomes depend on supervision, context, and quality gates | LABOR-2026-008 | [T] | LABOR | E4 | 0.65 | ? | Evidence that relaxed-supervision agentic coding reliably produces production-grade changes with low defect rates and low review burden across domains |
-| 7 | As artifact generation becomes cheaper, the scarce input shifts toward verification/integration attention (review, tests, and domain judgment) | LABOR-2026-009 | [T] | LABOR | E3 | 0.70 | ? | Evidence that review/integration effort (and its relative value) does not increase as generation cost falls, or that verification becomes cheaper faster than generation |
+| # | Claim | Claim ID | Layer | Actor | Scope | Quantifier | Type | Domain | Evid | Credence | Verified? | Falsifiable By |
+|---|-------|----------|-------|-------|-------|------------|------|--------|------|----------|-----------|----------------|
+| 1 | Cheap-to-generate AI-assisted issues/PRs create a harsh review asymmetry (minutes to produce vs much longer to evaluate), increasing maintainer burden and rejection/conflict | LABOR-2026-007 | EFFECT | OTHER:AI-assisted contributors | who=OSS maintainers+contributors; where=OSS repos; when=2025-2026; process=issues/PR review; conditions=AI-assisted generation | often | [T] | LABOR | E4 | 0.60 | ? | Evidence that typical AI-assisted contributions (net of quality gating) reduce maintainer review time per accepted change and reduce maintainer burnout/conflict |
+| 2 | Heavy use of agentic coding tools can foster addictive/parasocial dynamics (“dæmon” framing) that impair judgment and reinforce unhealthy behavior in communities | SOC-2026-001 | EFFECT | OTHER:agentic tool users | who=developers using agentic coding tools; where=software communities; when=2025-2026; process=tool use; outcome=addictive/parasocial dynamics | some | [H] | SOC | E4 | 0.45 | ? | Controlled/observational studies showing agentic-coding use does not increase addictive/parasocial indicators vs comparable dev tooling |
+| 3 | Prompting styles that minimize critical thinking (forcing agents down narrow paths, ritualized prompting) tend to produce lower-quality and more incoherent code contributions | SOC-2026-002 | EFFECT | OTHER:agentic tool users | who=developers using agents; where=software projects; when=2024-2026; process=prompting/oversight; outcome=code quality | often | [H] | SOC | E4 | 0.50 | ? | Evidence that low-scrutiny prompting styles produce equal-or-better long-run code quality and fewer integration defects than high-scrutiny workflows |
+| 4 | “Slop loop” agent workflows can become economically wasteful (high token burn), and current token pricing may not be durable | TECH-2026-007 | EFFECT | OTHER:AI API providers | who=agentic tool users; where=AI API ecosystem; when=2026+; process=token consumption/pricing; outcome=cost wastefulness | some | [H] | TECH | E4 | 0.50 | ? | Evidence that typical agentic workflows remain cost-effective (or token prices fall sufficiently) such that token burn does not constrain adoption |
+| 5 | Community/project governance will adapt by increasing friction (rejecting “AI slop,” requiring prompts, gating contributions), shifting norms around what counts as a contribution | GOV-2026-019 | PRACTICED | OTHER:OSS maintainers | who=OSS projects; where=GitHub/open source; when=2026+; process=contribution policy; outcome=increased friction | some | [H] | GOV | E4 | 0.55 | ? | Evidence that most projects maintain open contribution policies without increasing friction while maintaining review quality under widespread agentic use |
+| 6 | AI agents are simultaneously a large productivity boost and “slop machines” if oversight is relaxed; outcomes depend on supervision, context, and quality gates | LABOR-2026-008 | EFFECT | OTHER:software teams | who=software teams; where=prod+OSS codebases; when=2025-2026; process=agentic coding; conditions=oversight level; outcome=productivity/quality | often | [T] | LABOR | E4 | 0.65 | ? | Evidence that relaxed-supervision agentic coding reliably produces production-grade changes with low defect rates and low review burden across domains |
+| 7 | As artifact generation becomes cheaper, the scarce input shifts toward verification/integration attention (review, tests, and domain judgment) | LABOR-2026-009 | EFFECT | OTHER:software maintainers/teams | who=software orgs+maintainers; where=software ecosystem; when=2025-2030; process=generation cost declines; outcome=verification becomes bottleneck | often | [T] | LABOR | E3 | 0.70 | ? | Evidence that review/integration effort (and its relative value) does not increase as generation cost falls, or that verification becomes cheaper faster than generation |
 
 ### Argument Structure
 
@@ -77,6 +77,12 @@ The argument is coherent as an externality story: reduced marginal cost of gener
 |-------|----------------------|------------------------|--------------|
 | LABOR-2026-007 (review asymmetry / maintainer burden) | Limited; largely anecdotal discourse (this source; maintainers on social) | Maintainership burden rising regardless (more users, more dependencies) and AI just increases visibility/volume | Looked for high-quality empirical studies on “AI-generated PR review time” but did not find a clean, replicated measurement quickly |
 | SOC-2026-001 (addiction/parasocial dynamics) | Direct evidence not reviewed here | “Parasocial” framing may be confounded by general online community dynamics; tools are one catalyst among many | Focused on quickly identifying whether the claim is clinically anchored; it is not—best treated as hypothesis requiring measurement |
+
+### Corrections & Updates
+
+| Item | URL | Published | Corrected/Updated | What Changed | Impacted Claim IDs | Action Taken |
+|------|-----|-----------|-------------------|--------------|--------------------|-------------|
+| 1 | https://lucumr.pocoo.org/2026/1/18/agent-psychosis/ | 2026-01-18 | N/A | No corrections/updates observed during reanalysis. | N/A | N/A |
 
 ### Internal Tensions
 | Tension | Parts in Conflict | Implication |
@@ -142,15 +148,15 @@ Ronacher’s core contribution is reframing “vibe coding” as a social-econom
 
 ### Claim Summary
 
-| ID | Type | Domain | Evidence | Credence | Claim |
-|----|------|--------|----------|----------|-------|
-| LABOR-2026-007 | [T] | LABOR | E4 | 0.60 | Cheap-to-generate AI-assisted issues/PRs create a harsh review asymmetry (minutes to produce vs much longer to evaluate), increasing maintainer burden and conflict |
-| SOC-2026-001 | [H] | SOC | E4 | 0.45 | Heavy agentic-coding use can foster addictive/parasocial dynamics that impair judgment and reinforce unhealthy behavior |
-| SOC-2026-002 | [H] | SOC | E4 | 0.50 | Low-scrutiny prompting styles (forcing agents without critical thinking) tend to produce lower-quality and more incoherent contributions |
-| TECH-2026-007 | [H] | TECH | E4 | 0.50 | “Slop loop” agentic workflows can be economically wasteful (high token burn), and current token pricing may not be durable |
-| GOV-2026-019 | [H] | GOV | E4 | 0.55 | Open-source projects will respond to AI-generated noise with stricter contribution norms (e.g., prompt disclosure, gating, or restricting drive-by PRs) |
-| LABOR-2026-008 | [T] | LABOR | E4 | 0.65 | AI agents are a productivity boost but become “slop machines” when oversight/quality gates are relaxed; outcomes depend on supervision and verification |
-| LABOR-2026-009 | [T] | LABOR | E3 | 0.70 | As artifact generation becomes cheaper, the scarce input shifts toward verification/integration attention (review, tests, and domain judgment) |
+| ID | Type | Domain | Layer | Actor | Scope | Quantifier | Evidence | Credence | Claim |
+|----|------|--------|-------|-------|-------|------------|----------|----------|-------|
+| LABOR-2026-007 | [T] | LABOR | EFFECT | OTHER:AI-assisted contributors | who=OSS maintainers+contributors; where=OSS repos; when=2025-2026; process=issues/PR review; conditions=AI-assisted generation | often | E4 | 0.60 | Cheap-to-generate AI-assisted issues/PRs create a harsh review asymmetry (minutes to produce vs much longer to evaluate), increasing maintainer burden and conflict |
+| SOC-2026-001 | [H] | SOC | EFFECT | OTHER:agentic tool users | who=developers using agentic coding tools; where=software communities; when=2025-2026; process=tool use; outcome=addictive/parasocial dynamics | some | E4 | 0.45 | Heavy agentic-coding use can foster addictive/parasocial dynamics that impair judgment and reinforce unhealthy behavior |
+| SOC-2026-002 | [H] | SOC | EFFECT | OTHER:agentic tool users | who=developers using agents; where=software projects; when=2024-2026; process=prompting/oversight; outcome=code quality | often | E4 | 0.50 | Low-scrutiny prompting styles (forcing agents without critical thinking) tend to produce lower-quality and more incoherent contributions |
+| TECH-2026-007 | [H] | TECH | EFFECT | OTHER:AI API providers | who=agentic tool users; where=AI API ecosystem; when=2026+; process=token consumption/pricing; outcome=cost wastefulness | some | E4 | 0.50 | “Slop loop” agentic workflows can be economically wasteful (high token burn), and current token pricing may not be durable |
+| GOV-2026-019 | [H] | GOV | PRACTICED | OTHER:OSS maintainers | who=OSS projects; where=GitHub/open source; when=2026+; process=contribution policy; outcome=increased friction | some | E4 | 0.55 | Open-source projects will respond to AI-generated noise with stricter contribution norms (e.g., prompt disclosure, gating, or restricting drive-by PRs) |
+| LABOR-2026-008 | [T] | LABOR | EFFECT | OTHER:software teams | who=software teams; where=prod+OSS codebases; when=2025-2026; process=agentic coding; conditions=oversight level; outcome=productivity/quality | often | E4 | 0.65 | AI agents are a productivity boost but become “slop machines” when oversight/quality gates are relaxed; outcomes depend on supervision and verification |
+| LABOR-2026-009 | [T] | LABOR | EFFECT | OTHER:software maintainers/teams | who=software orgs+maintainers; where=software ecosystem; when=2025-2030; process=generation cost declines; outcome=verification becomes bottleneck | often | E3 | 0.70 | As artifact generation becomes cheaper, the scarce input shifts toward verification/integration attention (review, tests, and domain judgment) |
 
 ### Claims to Register
 
@@ -262,6 +268,18 @@ claims:
 
 ---
 **Analysis Date**: 2026-01-19
-**Last Updated**: 2026-01-22
+**Last Updated**: 2026-02-01
 **Analyst**: gpt-5.2
 **Credence in Analysis**: 0.70
+
+---
+
+## Analysis Log
+
+| Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
+|------|------|------|-------|----------|--------|------|-------|
+| 1 | 2026-02-01 08:46 | codex | gpt-5.2 | ? | ? | ? | Reanalysis pass: upgrade to v0.3.0 rigor-v1 (Layer/Actor/Scope/Quantifier table… |
+
+### Revision Notes
+
+**Pass 1**: Reanalysis pass: upgrade to v0.3.0 rigor-v1 (Layer/Actor/Scope/Quantifier tables + Corrections & Updates); no substantive claim changes.
