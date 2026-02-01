@@ -291,5 +291,8 @@ claims:
 
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
-| 1 | 2026-02-01 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + claim extraction |
+| 1 | 2026-02-01 10:47 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + claim extraction from PDF |
 
+### Revision Notes
+
+**Pass 1**: Initial 3-stage analysis + claim extraction from PDF

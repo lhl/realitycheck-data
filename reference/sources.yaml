@@ -1,6 +1,6 @@
 # Source Registry
 # Exported from LanceDB on 2026-02-01
-# Total sources: 109
+# Total sources: 111
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -194,6 +194,90 @@ sources:
     - TECH
     - ECON
     - TRANS
+    status: analyzed
+  arclight-2026-aos:
+    type: KNOWLEDGE
+    title: 'Arclight Operating System (AOS): Internal Codex & Operating Guide'
+    author:
+    - Arclight Society (internal doc; author not specified)
+    year: 2026
+    url: reference/primary/arclight-2026-aos.pdf
+    accessed: '2026-02-01'
+    reliability: 0.3
+    bias_notes: Internal operating philosophy describing an institution design pattern
+      (“AOS”) intended to produce durable “human coherence” (“arclight”). The document
+      is rhetorically forceful and constraint-oriented, but offers little empirical
+      grounding; many central constructs are non-operational (“phase change,” “quantum
+      selectivity”) and the “must remain hidden” doctrine raises ethical concerns
+      around informed consent and cult-dynamics risk.
+    claims_extracted:
+    - INST-2026-034
+    - SOC-2026-007
+    - SOC-2026-008
+    - GOV-2026-089
+    - ECON-2026-037
+    - INST-2026-035
+    - INST-2026-036
+    - SOC-2026-009
+    analysis_file: analysis/sources/arclight-2026-aos.md
+    topics:
+    - arclight
+    - aos
+    - institutional-design
+    - governance
+    - founder-decay
+    - endowment
+    - secrecy
+    - ideology
+    - phase-change
+    - human-development
+    domains:
+    - INST
+    - GOV
+    - ECON
+    - SOC
+    status: analyzed
+  arclight-2026-mirror:
+    type: REPORT
+    title: 'Memorandum of Strategy: Project Mirror'
+    author:
+    - Arclight Society (internal memo; author not specified)
+    year: 2026
+    url: reference/primary/arclight-2026-mirror.pdf
+    accessed: '2026-02-01'
+    reliability: 0.35
+    bias_notes: Strategy memo for a proposed AI “mentor” product. Strong on crisp
+      positioning (anti-sycophancy; “graduation” metric) and on articulating a desired
+      incentive alignment; weak on empirical grounding (market sizing, clinical/behavioral
+      efficacy, safety/ethics) and uses rhetorically confident “laws” and pseudo-mathematical
+      framing without operational definitions.
+    claims_extracted:
+    - RISK-2026-005
+    - ECON-2026-035
+    - SOC-2026-005
+    - TECH-2026-100
+    - TECH-2026-101
+    - ECON-2026-036
+    - INST-2026-033
+    analysis_file: analysis/sources/arclight-2026-mirror.md
+    topics:
+    - arclight
+    - mirror
+    - ai-companions
+    - ai-mentors
+    - executive-coaching
+    - behavior-change
+    - incentive-alignment
+    - graduation
+    - sycophancy
+    - psychometrics
+    - reality-anchoring
+    domains:
+    - TECH
+    - SOC
+    - RISK
+    - ECON
+    - INST
     status: analyzed
   avichawla-2026-pageindex-thread:
     type: SOCIAL

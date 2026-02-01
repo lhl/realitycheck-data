@@ -1,20 +1,20 @@
 # Claim Registry
 # Exported from LanceDB on 2026-02-01
-# Total claims: 400
+# Total claims: 415
 # Total chains: 4
 
 counters:
-  TECH: 99
+  TECH: 101
   RESOURCE: 14
   LABOR: 15
-  ECON: 34
-  GOV: 88
-  SOC: 4
+  ECON: 37
+  GOV: 89
+  SOC: 9
   TRANS: 17
   META: 38
   GEO: 28
   RISK: 5
-  INST: 32
+  INST: 36
 claims:
   ECON-2025-001:
     text: Neoliberalism evolved into a model of state hollowing and asset-stripping
@@ -709,6 +709,62 @@ claims:
     credence: 0.8500000238418579
     source_ids:
     - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  ECON-2026-035:
+    text: Defining success as "graduation" (time-to-resolution and real-world action)
+      rather than retention reduces engagement drift and better aligns incentives
+      with user outcomes.
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - arclight-2026-mirror
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  ECON-2026-036:
+    text: A proprietary, structured dataset of interventions (psychometric classification
+      → directive → outcome/\"graduation\") becomes a compounding competitive moat
+      for Mirror.
+    type: '[H]'
+    domain: ECON
+    evidence_level: E6
+    credence: 0.4000000059604645
+    source_ids:
+    - arclight-2026-mirror
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  ECON-2026-037:
+    text: 'Capital should flow one-way into time: surplus enters an endowment and
+      principal never exits.'
+    type: '[A]'
+    domain: ECON
+    evidence_level: E6
+    credence: 0.550000011920929
+    source_ids:
+    - arclight-2026-aos
     first_extracted: '2026-02-01'
     extracted_by: import
     supports: []
@@ -2899,6 +2955,25 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-01'
+  GOV-2026-089:
+    text: AOS has kernel invariants including agency is mandatory, depth precedes
+      scale, founder authority must decay structurally, and ego/urgency/ideology are
+      treated as security risks.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - arclight-2026-aos
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
   INST-2025-001:
     text: At Google, a team other than the core Gemini/DeepMind builders modified
       the system’s behavior in ways that produced historically inaccurate “diversity
@@ -3532,6 +3607,81 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-26'
+  INST-2026-033:
+    text: Building Mirror as a fully in-house (\"sovereign\") stack with Arclight-owned
+      data avoids partner incentive contamination and enables long-horizon governance
+      and roadmap control.
+    type: '[H]'
+    domain: INST
+    evidence_level: E6
+    credence: 0.550000011920929
+    source_ids:
+    - arclight-2026-mirror
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  INST-2026-034:
+    text: AOS is a systems-level operating philosophy for designing capital, programs,
+      governance, and environments to upgrade human capacity without ideology, coercion,
+      or founder dependence.
+    type: '[T]'
+    domain: INST
+    evidence_level: E6
+    credence: 0.44999998807907104
+    source_ids:
+    - arclight-2026-aos
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  INST-2026-035:
+    text: AOS should remain hidden initially; early disclosure causes it to become
+      ideology/identity/performance and harms outcomes.
+    type: '[H]'
+    domain: INST
+    evidence_level: E6
+    credence: 0.3499999940395355
+    source_ids:
+    - arclight-2026-aos
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  INST-2026-036:
+    text: Programs should be legitimate without AOS language, involve real stakes,
+      avoid spiritual framing, require effort/cost, produce real outputs, and preserve
+      dignity.
+    type: '[A]'
+    domain: INST
+    evidence_level: E6
+    credence: 0.6000000238418579
+    source_ids:
+    - arclight-2026-aos
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
   LABOR-2023-001:
     text: 'In a controlled experiment (May–Jun 2022) with 95 professional developers,
       the group with access to GitHub Copilot completed an HTTP-server implementation
@@ -5094,6 +5244,24 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-01'
+  RISK-2026-005:
+    text: Engagement-optimized AI companion systems are structurally misaligned with
+      long-term human development and tend to fail via dependency/sycophancy ("psychosis"/looping).
+    type: '[H]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - arclight-2026-mirror
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
   SOC-2025-001:
     text: A significant share of current social unrest and insecurity-driven radicalization
       is being caused by the ongoing civilizational energy transition.
@@ -5207,6 +5375,81 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-31'
+  SOC-2026-005:
+    text: Mirror’s interaction style should apply calibrated friction and explicitly
+      name saboteur patterns rather than validating them, to increase user agency
+      and prompt action.
+    type: '[H]'
+    domain: SOC
+    evidence_level: E6
+    credence: 0.44999998807907104
+    source_ids:
+    - arclight-2026-mirror
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  SOC-2026-007:
+    text: '"Arclight" is an irreversible phase change in a person’s capacity to hold
+      ambiguity, responsibility, and meaning without reverting to fear-based identity
+      or ego defense.'
+    type: '[H]'
+    domain: SOC
+    evidence_level: E6
+    credence: 0.25
+    source_ids:
+    - arclight-2026-aos
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  SOC-2026-008:
+    text: Modern society has a structural gap where technical capability scales faster
+      than meaning/coherence, contributing to identity collapse and extremism/numbness.
+    type: '[T]'
+    domain: SOC
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - arclight-2026-aos
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  SOC-2026-009:
+    text: The same AOS-compliant environment can trigger arclight for some participants
+      but not others ("quantum selectivity"), and trying to make everyone awaken collapses
+      systems into coercion/ideology/performance.
+    type: '[T]'
+    domain: SOC
+    evidence_level: E6
+    credence: 0.4000000059604645
+    source_ids:
+    - arclight-2026-aos
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
   TECH-2025-001:
     text: 'Moore’s Law is effectively ending: compute and storage improvements have
       been limited for over a decade and now rely mainly on parallelism rather than
@@ -7210,6 +7453,44 @@ claims:
     credence: 0.8500000238418579
     source_ids:
     - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  TECH-2026-100:
+    text: The proposed Mirror architecture inserts a mandatory Observer psychometric
+      analysis layer that passes a strict hidden JSON directive to a Mentor generation
+      layer; the LLM cannot respond directly without this gate.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - arclight-2026-mirror
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  TECH-2026-101:
+    text: Mirror’s constitution includes reality anchoring (demand evidence; require
+      falsifiable claims) and a lockout rule that terminates sessions after three
+      repeated loops without new data or action.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - arclight-2026-mirror
     first_extracted: '2026-02-01'
     extracted_by: import
     supports: []
