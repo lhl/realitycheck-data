@@ -64,11 +64,11 @@ Priority heuristic: chains → synthesis refs → high-credence claims → claim
 
 - **Analysis**: [analysis/sources/anthropic-2026-claudes-constitution.md](analysis/sources/anthropic-2026-claudes-constitution.md)
 - **Claims**: 16 (high-credence/E1-E2: 14) | **In chain**: N | **Referenced by syntheses**: 0
-- **Latest analysis log**: _none_ (create a new pass when reanalyzing)
+- **Latest analysis log**: `ANALYSIS-2026-034` (2026-02-01T09:03:13.327957Z) | fw=0.3.0 | meth=reanalysis-core@v0.3.0
 - **TODOs**:
-  - [ ] Add `### Corrections & Updates` section (rigor-v1)
-  - [ ] Upgrade Key Claims table to include Layer/Actor/Scope/Quantifier (rigor-v1)
-  - [ ] Upgrade Claim Summary table to include Layer/Actor/Scope/Quantifier (rigor-v1)
+  - [x] Add `### Corrections & Updates` section (rigor-v1)
+  - [x] Upgrade Key Claims table to include Layer/Actor/Scope/Quantifier (rigor-v1)
+  - [x] Upgrade Claim Summary table to include Layer/Actor/Scope/Quantifier (rigor-v1)
 
 ### lhl-2026-realitycheck-data-readme — Reality Check Knowledge Base
 
