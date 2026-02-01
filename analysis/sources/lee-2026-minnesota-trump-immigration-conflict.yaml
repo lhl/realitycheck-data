@@ -1,0 +1,149 @@
+sources:
+  - id: "lee-2026-minnesota-trump-immigration-conflict"
+    type: "ARTICLE"
+    title: "Minnesota standoff with Trump administration stokes fears of civil war"
+    author:
+      - "Ella Lee"
+    year: 2026
+    url: "https://thehill.com/policy/national-security/5715869-minnesota-trump-immigration-conflict/"
+    accessed: "2026-02-01"
+    status: "analyzed"
+    analysis_file: "analysis/sources/lee-2026-minnesota-trump-immigration-conflict.md"
+    reliability: 0.65
+    bias_notes: >-
+      Political news outlet; reporting mixes factual timeline with heavy use of historical analogy (“Fort Sumter”) and risk
+      framing (“civil war”). Most valuable for: (a) stated positions/quotes, (b) pointer links to underlying artifacts, and
+      (c) mapping actor framings around the Minnesota escalation.
+    topics:
+      - minnesota
+      - minneapolis
+      - st-paul
+      - immigration-enforcement
+      - ice
+      - cbp
+      - operation-metro-surge
+      - federalism
+      - national-guard
+      - civil-war-risk
+      - renee-good
+      - alex-pretti
+      - tom-homan
+      - greg-bovino
+    domains:
+      - GOV
+      - RISK
+    claims_extracted:
+      - GOV-2026-082
+      - GOV-2026-083
+      - GOV-2026-084
+      - GOV-2026-085
+      - GOV-2026-086
+      - RISK-2026-004
+      - GOV-2026-087
+      - GOV-2026-088
+
+claims:
+  - id: "GOV-2026-082"
+    text: "Operation Metro Surge brought thousands of immigration enforcement officers to Minneapolis and St. Paul in January 2026."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["lee-2026-minnesota-trump-immigration-conflict"]
+    operationalization: "Locate primary DHS/CBP/ICE statements or court filings enumerating deployed personnel and dates; reconcile with press reporting."
+    assumptions:
+      - "The term 'thousands' refers to personnel deployed (possibly over time) rather than a small on-scene unit."
+    falsifiers:
+      - "Official deployment records show a materially smaller deployment scale."
+
+  - id: "GOV-2026-083"
+    text: "The Trump administration’s Minnesota immigration enforcement surge was linked (as stated context) to a probe into fraud within Minnesota’s social services programs."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["lee-2026-minnesota-trump-immigration-conflict"]
+    operationalization: "Verify via DOJ/DHS press releases, court filings, or official statements tying the enforcement surge to a fraud probe."
+    assumptions:
+      - "The 'fraud probe' is a publicly stated rationale rather than purely a journalistic inference."
+    falsifiers:
+      - "Primary statements explicitly deny any connection between the fraud probe and the enforcement surge."
+
+  - id: "GOV-2026-084"
+    text: "Renee Nicole Macklin Good (37) was fatally shot in Minneapolis on 2026-01-08 during a confrontation with ICE officers around her car."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["lee-2026-minnesota-trump-immigration-conflict"]
+    operationalization: "Confirm identification and incident details via primary video, local reporting, and official DHS/ICE statements."
+    assumptions:
+      - "Reporting accurately identifies the victim and the involved agency as ICE."
+    falsifiers:
+      - "Official records or primary video evidence show no ICE shooting occurred or show a different victim/agency."
+
+  - id: "GOV-2026-085"
+    text: "Minnesota Gov. Tim Walz authorized the Minnesota National Guard to be 'staged and ready' on 2026-01-08 amid protests after the Good shooting and ICE presence."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["lee-2026-minnesota-trump-immigration-conflict"]
+    operationalization: "Verify via Minnesota executive order/press release and National Guard public statements."
+    assumptions:
+      - "The quoted 'staged and ready' language corresponds to a real authorization or warning order."
+    falsifiers:
+      - "Minnesota records show no such authorization or materially different language/intent."
+
+  - id: "GOV-2026-086"
+    text: "On 2025-12-23, the Supreme Court declined to allow (at least temporarily) Trump’s National Guard deployment to the Chicago area at the preliminary stage."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["lee-2026-minnesota-trump-immigration-conflict"]
+    operationalization: "Locate and cite the Supreme Court order and lower-court docket; confirm outcome and key reasoning."
+    assumptions:
+      - "The reported summary accurately reflects the unsigned order and procedural posture."
+    falsifiers:
+      - "The order/docket shows a different outcome or reasoning."
+
+  - id: "RISK-2026-004"
+    text: "A 2024 CERL/UPenn tabletop exercise treated armed conflict between state National Guard forces and federal troops in a major U.S. city as plausible and as a potential civil-war trigger."
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["lee-2026-minnesota-trump-immigration-conflict"]
+    operationalization: "Obtain CERL exercise materials (agenda/scenario/after-action report) or corroborating participant testimony; verify described conclusions."
+    assumptions:
+      - "The Guardian summary accurately reflects the exercise design and conclusions."
+    falsifiers:
+      - "Exercise materials show materially different scenario conclusions or feasibility assessments."
+
+  - id: "GOV-2026-087"
+    text: "After the Minneapolis shootings, the Trump administration replaced Border Patrol commander Greg Bovino with border czar Tom Homan as the on-the-ground lead/liaison in Minnesota."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["lee-2026-minnesota-trump-immigration-conflict"]
+    operationalization: "Verify via official White House/DHS statements and multiple independent reports confirming leadership change and dates."
+    assumptions:
+      - "Reporting correctly describes the roles (replacement vs supplementary liaison)."
+    falsifiers:
+      - "Primary statements show Bovino retained operational command and Homan did not replace him."
+
+  - id: "GOV-2026-088"
+    text: "After phone calls with Tim Walz and Jacob Frey, Trump pledged to pull some Border Patrol agents out of Minnesota."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.45
+    source_ids: ["lee-2026-minnesota-trump-immigration-conflict"]
+    operationalization: "Verify via primary statement from Trump/White House or recorded call notes confirming an explicit drawdown pledge."
+    assumptions:
+      - "The pledge is accurately reported and not later contradicted or rescinded."
+    falsifiers:
+      - "Contemporaneous statements show Trump explicitly refused any pullback, with no evidence of a pledge."
+
