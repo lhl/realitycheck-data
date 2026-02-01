@@ -82,13 +82,13 @@ Priority heuristic: chains → synthesis refs → high-credence claims → claim
 
 - **Analysis**: [analysis/sources/lin-2026-jp-tl-bench-paper.md](analysis/sources/lin-2026-jp-tl-bench-paper.md)
 - **Claims**: 7 (high-credence/E1-E2: 6) | **In chain**: N | **Referenced by syntheses**: 1
-- **Latest analysis log**: _none_ (create a new pass when reanalyzing)
+- **Latest analysis log**: `ANALYSIS-2026-035` (2026-02-01T09:07:51.461588Z) | fw=0.3.0 | meth=reanalysis-core@v0.3.0
 - **TODOs**:
-  - [ ] Add missing sections: ### Internal Tensions, ### Persuasion Techniques, ### Unstated Assumptions, ### Claims to Register
-  - [ ] Add `Claims to Register` YAML block (`claims:`)
-  - [ ] Add `### Corrections & Updates` section (rigor-v1)
-  - [ ] Upgrade Key Claims table to include Layer/Actor/Scope/Quantifier (rigor-v1)
-  - [ ] Upgrade Claim Summary table to include Layer/Actor/Scope/Quantifier (rigor-v1)
+  - [x] Add missing sections: ### Internal Tensions, ### Persuasion Techniques, ### Unstated Assumptions, ### Claims to Register
+  - [x] Add `Claims to Register` YAML block (`claims:`)
+  - [x] Add `### Corrections & Updates` section (rigor-v1)
+  - [x] Upgrade Key Claims table to include Layer/Actor/Scope/Quantifier (rigor-v1)
+  - [x] Upgrade Claim Summary table to include Layer/Actor/Scope/Quantifier (rigor-v1)
 
 ### lee-2026-minnesota-trump-immigration-conflict — Minnesota standoff with Trump administration stokes fears of civil war
 
