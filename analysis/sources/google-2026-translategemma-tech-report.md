@@ -31,13 +31,13 @@ For Japanese, the report includes WMT24++ **en→ja_JP** MetricX results showing
 
 ### Key Claims
 
-| # | Claim | Claim ID | Type | Domain | Evid | Credence | Verified? | Falsifiable By |
-|---:|---|---|---|---|---|---:|---|---|
-| 1 | TranslateGemma uses SFT on human+synthetic parallel data, then RL using reward models including MetricX-QE and AutoMQM | TECH-2026-079 | [F] | TECH | E3 | 0.90 | ok | The report does not describe the stated two-stage pipeline and reward models |
-| 2 | On WMT24++, TranslateGemma improves average MetricX and COMET22 vs baseline Gemma 3 across all sizes | TECH-2026-080 | [F] | TECH | E2 | 0.85 | ok | Table 1 does not show average improvements across sizes/metrics |
-| 3 | On WMT24++ en→ja_JP, TranslateGemma improves MetricX vs Gemma 3 baseline for 27B/12B/4B | TECH-2026-081 | [F] | TECH | E2 | 0.90 | ok | Appendix A per-language table shows worse (higher) MetricX for en→ja under TranslateGemma |
-| 4 | The report includes MQM human evaluation on WMT25 across 10 language pairs with document context | TECH-2026-082 | [F] | TECH | E3 | 0.80 | ok | The report does not include MQM human evaluation details/results |
-| 5 | The report’s WMT24++ per-language table is presented as en→*; it does not provide WMT24++ ja→en metrics, limiting claims about JA→EN regressions | TECH-2026-083 | [F] | TECH | E2 | 0.80 | ok | The report includes WMT24++ ja→en metric tables comparable to en→ja |
+| # | Claim | Claim ID | Layer | Actor | Scope | Quantifier | Type | Domain | Evid | Credence | Verified? | Falsifiable By |
+|---:|---|---|---|---|---|---|---|---|---|---:|---|---|
+| 1 | TranslateGemma uses SFT on human+synthetic parallel data, then RL using reward models including MetricX-QE and AutoMQM | TECH-2026-079 | PRACTICED | OTHER:Google Translate research team | who=TranslateGemma; where=Gemma 3; when=2026; process=SFT+RL; reward=MetricX-QE+AutoMQM | N/A | [F] | TECH | E3 | 0.90 | ok | The report does not describe the stated two-stage pipeline and reward models |
+| 2 | On WMT24++, TranslateGemma improves average MetricX and COMET22 vs baseline Gemma 3 across all sizes | TECH-2026-080 | ASSERTED | OTHER:TranslateGemma evaluation | who=WMT24++; where=55 language pairs; when=2026; process=MetricX+COMET22; metric=average improvement | N/A | [F] | TECH | E2 | 0.85 | ok | Table 1 does not show average improvements across sizes/metrics |
+| 3 | On WMT24++ en→ja_JP, TranslateGemma improves MetricX vs Gemma 3 baseline for 27B/12B/4B | TECH-2026-081 | ASSERTED | OTHER:TranslateGemma evaluation | who=en→ja_JP; where=WMT24++; when=2026; process=MetricX; metric=score difference vs Gemma 3 | N/A | [F] | TECH | E2 | 0.90 | ok | Appendix A per-language table shows worse (higher) MetricX for en→ja under TranslateGemma |
+| 4 | The report includes MQM human evaluation on WMT25 across 10 language pairs with document context | TECH-2026-082 | ASSERTED | OTHER:Google Translate research team | who=WMT25; where=10 language pairs; when=2026; process=MQM human eval; context=document | N/A | [F] | TECH | E3 | 0.80 | ok | The report does not include MQM human evaluation details/results |
+| 5 | The report’s WMT24++ per-language table is presented as en→*; it does not provide WMT24++ ja→en metrics, limiting claims about JA→EN regressions | TECH-2026-083 | ASSERTED | OTHER:report appendix | who=Appendix A; where=WMT24++; when=2026; process=per-language table; output=en→* only | N/A | [F] | TECH | E2 | 0.80 | ok | The report includes WMT24++ ja→en metric tables comparable to en→ja |
 
 ### Argument Structure
 
@@ -77,6 +77,33 @@ The pipeline design is coherent and aligns with recent trends: use large teacher
 | Claim | Counterevidence Found | Alternative Explanation | Search Notes |
 |---|---|---|---|
 | “Automatic metric gains imply better JA translation” | Metrics can reward fluency and miss register/implicature errors; Japanese translation often depends on context beyond the sentence | TranslateGemma may improve average metrics while still failing on key Japanese linguistic phenomena under low-context prompting | Considered Japanese-specific error classes (pro-drop, honorifics) and the report’s reliance on WMT-style corpora and metrics for most results |
+
+### Corrections & Updates
+
+| Item | URL | Published | Corrected/Updated | What Changed | Impacted Claim IDs | Action Taken |
+|---|---|---|---|---|---|---|
+| 1 | https://arxiv.org/abs/2601.09012 | 2026-01-19 | N/A | No corrections/updates observed during this reanalysis pass. | N/A | N/A |
+
+### Internal Tensions
+
+| Tension | Parts in Conflict | Implication |
+|---|---|---|
+| Metric gains vs Japanese nuance validity | TECH-2026-081 vs the known limitations of automatic metrics for JA nuance | Treat Japanese conclusions as partial; validate with targeted human eval or JP-TL-Bench-style discrimination |
+| Reward-model RL vs over-optimization risk | TECH-2026-079 vs concern that optimizing MetricX/AutoMQM can “game” proxies | Gains may depend on the reward models’ failure modes; external audits help bound this risk |
+
+### Persuasion Techniques
+
+| Technique | Example from Source | Effect on Reader |
+|---|---|---|
+| Benchmark-centric framing | Emphasis on WMT24++ averages and headline tables | Encourages “leaderboard” interpretation; may underweight domain mismatch to real production workloads |
+| Selective directionality | Per-language tables presented as en→* | Makes strengths clearer; limits visibility into JA→EN regressions from this report alone |
+
+### Unstated Assumptions
+
+| Assumption | Claim ID | Critical? | Problematic? |
+|---|---|---|---|
+| MetricX/COMET improvements correspond to real user-perceived translation quality | TECH-2026-080 | Medium | Mixed |
+| MQM results generalize beyond the chosen 10 language pairs and domains | TECH-2026-082 | Medium | Mixed |
 
 ### Evidence Assessment
 - Strong for the reported tables and training pipeline description.
@@ -118,13 +145,26 @@ TranslateGemma is a strong counterpoint to JP-TL-Bench: it is a translation-spec
 
 ### Claim Summary
 
-| ID | Type | Domain | Evidence | Credence | Claim |
-|---|---|---|---|---:|---|
-| TECH-2026-079 | [F] | TECH | E3 | 0.90 | TranslateGemma uses SFT on human+synthetic data plus RL with reward models incl. MetricX-QE and AutoMQM |
-| TECH-2026-080 | [F] | TECH | E2 | 0.85 | TranslateGemma improves average WMT24++ MetricX and COMET22 vs Gemma 3 across sizes |
-| TECH-2026-081 | [F] | TECH | E2 | 0.90 | On WMT24++ en→ja_JP, TranslateGemma improves MetricX vs Gemma 3 at 27B/12B/4B |
-| TECH-2026-082 | [F] | TECH | E3 | 0.80 | The report includes MQM human evaluation on WMT25 across 10 language pairs with document context |
-| TECH-2026-083 | [F] | TECH | E2 | 0.80 | The report does not provide WMT24++ ja→en per-language metrics in its extracted Appendix A table, limiting JA→EN regression claims |
+| ID | Type | Domain | Layer | Actor | Scope | Quantifier | Evidence | Credence | Claim |
+|---|---|---|---|---|---|---|---|---:|---|
+| TECH-2026-079 | [F] | TECH | PRACTICED | OTHER:Google Translate research team | who=TranslateGemma; where=Gemma 3; when=2026; process=SFT+RL; reward=MetricX-QE+AutoMQM | N/A | E3 | 0.90 | TranslateGemma uses SFT on human+synthetic data plus RL with reward models incl. MetricX-QE and AutoMQM |
+| TECH-2026-080 | [F] | TECH | ASSERTED | OTHER:TranslateGemma evaluation | who=WMT24++; where=55 language pairs; when=2026; process=MetricX+COMET22; metric=average improvement | N/A | E2 | 0.85 | TranslateGemma improves average WMT24++ MetricX and COMET22 vs Gemma 3 across sizes |
+| TECH-2026-081 | [F] | TECH | ASSERTED | OTHER:TranslateGemma evaluation | who=en→ja_JP; where=WMT24++; when=2026; process=MetricX; metric=score difference vs Gemma 3 | N/A | E2 | 0.90 | On WMT24++ en→ja_JP, TranslateGemma improves MetricX vs Gemma 3 at 27B/12B/4B |
+| TECH-2026-082 | [F] | TECH | ASSERTED | OTHER:Google Translate research team | who=WMT25; where=10 language pairs; when=2026; process=MQM human eval; context=document | N/A | E3 | 0.80 | The report includes MQM human evaluation on WMT25 across 10 language pairs with document context |
+| TECH-2026-083 | [F] | TECH | ASSERTED | OTHER:report appendix | who=Appendix A; where=WMT24++; when=2026; process=per-language table; output=en→* only | N/A | E2 | 0.80 | The report does not provide WMT24++ ja→en per-language metrics in its extracted Appendix A table, limiting JA→EN regression claims |
+
+### Claims to Register
+
+```yaml
+claims:
+  # Canonical claims artifact:
+  # analysis/sources/google-2026-translategemma-tech-report.yaml
+  - id: "TECH-2026-079"
+  - id: "TECH-2026-080"
+  - id: "TECH-2026-081"
+  - id: "TECH-2026-082"
+  - id: "TECH-2026-083"
+```
 
 ---
 
@@ -132,3 +172,14 @@ TranslateGemma is a strong counterpoint to JP-TL-Bench: it is a translation-spec
 **Analyst**: gpt-5.2  
 **Credence in Analysis**: 0.78
 
+---
+
+## Analysis Log
+
+| Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
+|------|------|------|-------|----------|--------|------|-------|
+| 1 | 2026-02-01 09:17 | codex | gpt-5.2 | ? | ? | ? | Reanalysis pass: add missing Stage 2 sections + Claims to Register block; upgra… |
+
+### Revision Notes
+
+**Pass 1**: Reanalysis pass: add missing Stage 2 sections + Claims to Register block; upgrade Key Claims + Claim Summary to rigor-v1 (Layer/Actor/Scope/Quantifier).

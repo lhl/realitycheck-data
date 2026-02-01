@@ -113,13 +113,13 @@ Priority heuristic: chains → synthesis refs → high-credence claims → claim
 
 - **Analysis**: [analysis/sources/google-2026-translategemma-tech-report.md](analysis/sources/google-2026-translategemma-tech-report.md)
 - **Claims**: 5 (high-credence/E1-E2: 5) | **In chain**: N | **Referenced by syntheses**: 1
-- **Latest analysis log**: _none_ (create a new pass when reanalyzing)
+- **Latest analysis log**: `ANALYSIS-2026-037` (2026-02-01T09:17:44.897872Z) | fw=0.3.0 | meth=reanalysis-core@v0.3.0
 - **TODOs**:
-  - [ ] Add missing sections: ### Internal Tensions, ### Persuasion Techniques, ### Unstated Assumptions, ### Claims to Register
-  - [ ] Add `Claims to Register` YAML block (`claims:`)
-  - [ ] Add `### Corrections & Updates` section (rigor-v1)
-  - [ ] Upgrade Key Claims table to include Layer/Actor/Scope/Quantifier (rigor-v1)
-  - [ ] Upgrade Claim Summary table to include Layer/Actor/Scope/Quantifier (rigor-v1)
+  - [x] Add missing sections: ### Internal Tensions, ### Persuasion Techniques, ### Unstated Assumptions, ### Claims to Register
+  - [x] Add `Claims to Register` YAML block (`claims:`)
+  - [x] Add `### Corrections & Updates` section (rigor-v1)
+  - [x] Upgrade Key Claims table to include Layer/Actor/Scope/Quantifier (rigor-v1)
+  - [x] Upgrade Claim Summary table to include Layer/Actor/Scope/Quantifier (rigor-v1)
 
 ### lin-2026-jp-tl-bench-directional-analysis — JP-TL-Bench: Why Translation Direction Matters (JA↔︎EN)
 
