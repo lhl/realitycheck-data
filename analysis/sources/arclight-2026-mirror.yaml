@@ -1,0 +1,170 @@
+sources:
+  - id: "arclight-2026-mirror"
+    type: "REPORT"
+    title: "Memorandum of Strategy: Project Mirror"
+    author:
+      - "Arclight Society (internal memo; author not specified)"
+    year: 2026
+    url: "reference/primary/arclight-2026-mirror.pdf"
+    accessed: "2026-02-01"
+    status: "analyzed"
+    analysis_file: "analysis/sources/arclight-2026-mirror.md"
+    reliability: 0.35
+    bias_notes: >-
+      Strategy memo for a proposed AI “mentor” product. Strong on crisp positioning (anti-sycophancy;
+      “graduation” metric) and on articulating a desired incentive alignment; weak on empirical grounding
+      (market sizing, clinical/behavioral efficacy, safety/ethics) and uses rhetorically confident “laws”
+      and pseudo-mathematical framing without operational definitions.
+    topics:
+      - arclight
+      - mirror
+      - ai-companions
+      - ai-mentors
+      - executive-coaching
+      - behavior-change
+      - incentive-alignment
+      - graduation
+      - sycophancy
+      - psychometrics
+      - reality-anchoring
+    domains:
+      - TECH
+      - SOC
+      - RISK
+      - ECON
+      - INST
+    claims_extracted:
+      - RISK-2026-005
+      - ECON-2026-035
+      - SOC-2026-005
+      - TECH-2026-100
+      - TECH-2026-101
+      - ECON-2026-036
+      - INST-2026-033
+
+claims:
+  - id: "RISK-2026-005"
+    text: >-
+      Engagement-optimized AI companion systems are structurally misaligned with long-term human
+      development and tend to fail via dependency/sycophancy ("psychosis"/looping).
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["arclight-2026-mirror"]
+    operationalization: >-
+      Compare outcome-optimized vs engagement-optimized companion products on objective behavior-change
+      outcomes, dependency indicators (e.g., distress on access removal), and measured model sycophancy
+      (agreeableness under user pressure) under controlled evaluation.
+    assumptions:
+      - Retention-focused metrics drive product decisions that increase validation/agreeableness loops.
+      - Dependency/looping can be measured with user-side outcomes.
+    falsifiers:
+      - Outcome-optimized and engagement-optimized systems show comparable dependency and sycophancy rates under controlled evaluation.
+      - Engagement optimization reliably improves long-term outcomes without increasing dependency harms.
+
+  - id: "ECON-2026-035"
+    text: >-
+      Defining success as "graduation" (time-to-resolution and real-world action) rather than retention
+      reduces engagement drift and better aligns incentives with user outcomes.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["arclight-2026-mirror"]
+    operationalization: >-
+      Run A/B tests comparing retention-optimized vs graduation-optimized objective functions and
+      evaluate drift indicators (sycophancy, dependency) and user outcomes over multi-week horizons.
+    assumptions:
+      - Graduation can be defined and measured in a way that is not trivially gamed.
+      - Short-term retention is not necessary to achieve outcomes in the target cohort.
+    falsifiers:
+      - Graduation metrics lead to worse user outcomes or higher harm rates.
+      - Retention-optimized systems achieve equal-or-better outcomes without increased drift.
+
+  - id: "SOC-2026-005"
+    text: >-
+      Mirror’s interaction style should apply calibrated friction and explicitly name saboteur patterns
+      rather than validating them, to increase user agency and prompt action.
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E6"
+    credence: 0.45
+    source_ids: ["arclight-2026-mirror"]
+    operationalization: >-
+      Measure objective follow-through (tasks completed, commitments met) and subjective
+      safety/acceptability across coaching styles (supportive vs confrontational) with cohort segmentation.
+    assumptions:
+      - Friction can be calibrated to the user’s capacity and consent.
+      - Naming patterns is more effective than empathic validation for the target cohort.
+    falsifiers:
+      - Friction-first coaching produces lower adherence or higher distress/attrition for the target cohort.
+      - Supportive/validation-heavy coaching produces equal-or-better action outcomes.
+
+  - id: "TECH-2026-100"
+    text: >-
+      The proposed Mirror architecture inserts a mandatory Observer psychometric analysis layer that
+      passes a strict hidden JSON directive to a Mentor generation layer; the LLM cannot respond
+      directly without this gate.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.95
+    source_ids: ["arclight-2026-mirror"]
+    operationalization: "Inspect the document’s architecture section; confirm the described multi-stage inference flow and constraint handoff."
+    assumptions: []
+    falsifiers:
+      - The source does not describe the Observer→Directive→Mentor architecture or materially differs.
+
+  - id: "TECH-2026-101"
+    text: >-
+      Mirror’s constitution includes reality anchoring (demand evidence; require falsifiable claims) and
+      a lockout rule that terminates sessions after three repeated loops without new data or action.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.95
+    source_ids: ["arclight-2026-mirror"]
+    operationalization: "Inspect the document’s constitutional prompt section; confirm the reality-anchoring clause and lockout rule."
+    assumptions: []
+    falsifiers:
+      - The source does not include these rules or materially differs (threshold, trigger, or termination behavior).
+
+  - id: "ECON-2026-036"
+    text: >-
+      A proprietary, structured dataset of interventions (psychometric classification → directive →
+      outcome/\"graduation\") becomes a compounding competitive moat for Mirror.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E6"
+    credence: 0.40
+    source_ids: ["arclight-2026-mirror"]
+    operationalization: >-
+      Compare performance of models fine-tuned/RAG’d on proprietary intervention-outcome datasets vs
+      commodity baselines on standardized coaching outcome benchmarks, controlling for model size and guardrails.
+    assumptions:
+      - Intervention-outcome data can be legally and ethically collected and used.
+      - Such data generalizes across users and tasks better than public data.
+    falsifiers:
+      - No measurable improvement over commodity baselines on objective outcome metrics.
+      - Regulatory/privacy constraints prevent collecting/using the dataset at scale.
+
+  - id: "INST-2026-033"
+    text: >-
+      Building Mirror as a fully in-house (\"sovereign\") stack with Arclight-owned data avoids partner
+      incentive contamination and enables long-horizon governance and roadmap control.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E6"
+    credence: 0.55
+    source_ids: ["arclight-2026-mirror"]
+    operationalization: >-
+      Compare governance/incentive outcomes across partnered vs in-house product stacks (roadmap freedom,
+      safety policy control, data ownership, compliance) for similar AI products.
+    assumptions:
+      - Partnerships/licensing create material incentive contamination.
+      - Arclight can sustain the costs of a sovereign stack without degrading safety/quality.
+    falsifiers:
+      - Partnered stacks preserve comparable governance/control via contracts and audits.
+      - Sovereign development costs materially reduce safety or product performance.
+

@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-01 | [Arclight “Mirror” + “AOS” (developmental AI mentor + hidden institution OS)](analysis/syntheses/arclight-2026-mirror-aos-synthesis.md) | `[DRAFT]` | Cross-source synthesis: anti-sycophancy “graduation” mentor thesis + constraint-based “kernel invariants”; flags psychometrics+secrecy risks |
 | 2026-02-01 | [Reality Check v0.3.0 self-check (framework + dataset)](analysis/syntheses/realitycheck-2026-v0-3-0-framework-data-synthesis.md) | `[DRAFT]` | Framework+dataset triangulation; rigor-v1 vs legacy examples; workflow notes |
 | 2026-01-27 | [Zhang Youxia purge, PLA disruption, and Taiwan timing](analysis/syntheses/china-pla-purge-zhang-youxia-taiwan-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Zhang Youxia purge, PLA “high command” disruption, and Taiwan invasion timing |
 | 2026-01-24 | [JP-TL-Bench and JA↔EN Translation Evaluation](analysis/syntheses/jp-tl-bench-ja-en-translation-eval-synthesis.md) | `[DRAFT]` | Cross-source synthesis: anchored pairwise vs metrics/MQM; Japanese context challenges; directionality; novelty/tradeoffs |
@@ -49,6 +50,8 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-01 | [Memorandum of Strategy: Project Mirror (Arclight)](analysis/sources/arclight-2026-mirror.md) | `[DRAFT]` | Proposal: anti-sycophancy AI “mentor” optimized for graduation; psychometric middleware + lockout rules; limited empirical grounding |
+| 2026-02-01 | [Arclight Operating System (AOS): Internal Codex](analysis/sources/arclight-2026-aos.md) | `[DRAFT]` | Constraint-based institution “OS”: agency + endowment + founder-decay; argues kernel must stay hidden; heavy on non-operational metaphors |
 | 2026-02-01 | [Reality Check (framework README)](analysis/sources/lhl-2026-realitycheck-readme.md) | `[REVIEWED]` | Repo self-description; verified CLI+DB primitives; notes rigor-v1 validator + 401 tests |
 | 2026-02-01 | [Reality Check Knowledge Base (dataset README)](analysis/sources/lhl-2026-realitycheck-data-readme.md) | `[REVIEWED]` | Dataset snapshot and structure; verified DB counts and layout; flags YAML exports vs DB truth |
 | 2026-02-01 | [Minnesota standoff with Trump administration stokes fears of civil war (The Hill)](analysis/sources/lee-2026-minnesota-trump-immigration-conflict.md) | `[REVIEWED]` | Civil-war escalation framing; links Good/Pretti killings to federalism/legal conflict (SCOTUS Guard limits) and CERL simulation; flags under-verified deployment-scale claims |

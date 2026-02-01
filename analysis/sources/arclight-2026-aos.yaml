@@ -1,0 +1,188 @@
+sources:
+  - id: "arclight-2026-aos"
+    type: "KNOWLEDGE"
+    title: "Arclight Operating System (AOS): Internal Codex & Operating Guide"
+    author:
+      - "Arclight Society (internal doc; author not specified)"
+    year: 2026
+    url: "reference/primary/arclight-2026-aos.pdf"
+    accessed: "2026-02-01"
+    status: "analyzed"
+    analysis_file: "analysis/sources/arclight-2026-aos.md"
+    reliability: 0.30
+    bias_notes: >-
+      Internal operating philosophy describing an institution design pattern (“AOS”) intended to produce
+      durable “human coherence” (“arclight”). The document is rhetorically forceful and constraint-oriented,
+      but offers little empirical grounding; many central constructs are non-operational (“phase change,”
+      “quantum selectivity”) and the “must remain hidden” doctrine raises ethical concerns around informed
+      consent and cult-dynamics risk.
+    topics:
+      - arclight
+      - aos
+      - institutional-design
+      - governance
+      - founder-decay
+      - endowment
+      - secrecy
+      - ideology
+      - phase-change
+      - human-development
+    domains:
+      - INST
+      - GOV
+      - ECON
+      - SOC
+    claims_extracted:
+      - INST-2026-034
+      - SOC-2026-007
+      - SOC-2026-008
+      - GOV-2026-089
+      - ECON-2026-037
+      - INST-2026-035
+      - INST-2026-036
+      - SOC-2026-009
+
+claims:
+  - id: "INST-2026-034"
+    text: >-
+      AOS is a systems-level operating philosophy for designing capital, programs, governance, and
+      environments to upgrade human capacity without ideology, coercion, or founder dependence.
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E6"
+    credence: 0.45
+    source_ids: ["arclight-2026-aos"]
+    operationalization: >-
+      Define measurable capacity metrics (ambiguity tolerance, responsibility-taking, ego-defense
+      reduction) and compare outcomes across AOS-compliant vs non-compliant institutions.
+    assumptions:
+      - Institution design can drive durable changes in participant capacity.
+      - Claims can be operationalized without adopting ideological definitions.
+    falsifiers:
+      - Measured outcomes show no improvement over controls or require explicit ideology/authority to sustain.
+
+  - id: "SOC-2026-007"
+    text: >-
+      "Arclight" is an irreversible phase change in a person’s capacity to hold ambiguity, responsibility,
+      and meaning without reverting to fear-based identity or ego defense.
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E6"
+    credence: 0.25
+    source_ids: ["arclight-2026-aos"]
+    operationalization: >-
+      Longitudinally track participants for relapse and stability of measured capacity metrics after leaving
+      the environment; compare to controls and to known behavior-change interventions.
+    assumptions:
+      - The claimed phase change corresponds to measurable psychological constructs.
+      - Relapse/stability can be measured over multi-year horizons.
+    falsifiers:
+      - Participants exhibit relapse rates comparable to controls.
+      - No stable post-exit changes are detectable on operationalized measures.
+
+  - id: "SOC-2026-008"
+    text: >-
+      Modern society has a structural gap where technical capability scales faster than meaning/coherence,
+      contributing to identity collapse and extremism/numbness.
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["arclight-2026-aos"]
+    operationalization: >-
+      Correlate capability growth proxies (automation/AI penetration, productivity) with longitudinal
+      measures of meaning/wellbeing and with extremism/numbness indicators, controlling for confounders.
+    assumptions:
+      - Meaning/coherence can be proxied with validated surveys and social indicators.
+      - Capability growth is separable from other societal changes.
+    falsifiers:
+      - Meaning/coherence measures improve in step with capability growth.
+      - Extremism/numbness trends are not associated with capability scaling proxies.
+
+  - id: "GOV-2026-089"
+    text: >-
+      AOS has kernel invariants including agency is mandatory, depth precedes scale, founder authority must
+      decay structurally, and ego/urgency/ideology are treated as security risks.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.95
+    source_ids: ["arclight-2026-aos"]
+    operationalization: "Inspect the document’s Kernel Invariants section and confirm the enumerated list."
+    assumptions: []
+    falsifiers:
+      - The document does not include these invariants or materially differs.
+
+  - id: "ECON-2026-037"
+    text: >-
+      Capital should flow one-way into time: surplus enters an endowment and principal never exits.
+    type: "[A]"
+    domain: "ECON"
+    evidence_level: "E6"
+    credence: 0.55
+    source_ids: ["arclight-2026-aos"]
+    operationalization: >-
+      Compare mission durability and governance outcomes across institutions with strict endowment lock-in
+      vs spenddown vs venture-like capital structures.
+    assumptions:
+      - Endowment lock-in is feasible and enforceable.
+      - Lock-in changes organizational tempo and reduces short-term optimization pressures.
+    falsifiers:
+      - Comparable or better durability occurs without strict principal lock-in.
+      - Endowment lock-in leads to stagnation or new failure modes (rent-seeking, misgovernance).
+
+  - id: "INST-2026-035"
+    text: >-
+      AOS should remain hidden initially; early disclosure causes it to become ideology/identity/performance
+      and harms outcomes.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E6"
+    credence: 0.35
+    source_ids: ["arclight-2026-aos"]
+    operationalization: >-
+      Compare transparent vs staged-disclosure versions of similar programs and measure
+      dependency/performance effects, trust, and participant outcomes.
+    assumptions:
+      - Disclosure level causally affects participant behavior.
+      - Performance/identity capture can be measured.
+    falsifiers:
+      - Transparent disclosure yields equal-or-better outcomes with lower harm risk.
+      - No measurable performance-capture effects from disclosure.
+
+  - id: "INST-2026-036"
+    text: >-
+      Programs should be legitimate without AOS language, involve real stakes, avoid spiritual framing,
+      require effort/cost, produce real outputs, and preserve dignity.
+    type: "[A]"
+    domain: "INST"
+    evidence_level: "E6"
+    credence: 0.60
+    source_ids: ["arclight-2026-aos"]
+    operationalization: >-
+      Define a rubric for these program properties and test whether programs scoring highly are associated
+      with improved participant outcomes and reduced cult/ideology dynamics.
+    assumptions:
+      - These design constraints are measurable and enforceable.
+      - Outputs and stakes produce maturation rather than harm.
+    falsifiers:
+      - Programs meeting the rubric do not outperform alternatives on outcomes or safety indicators.
+
+  - id: "SOC-2026-009"
+    text: >-
+      The same AOS-compliant environment can trigger arclight for some participants but not others
+      ("quantum selectivity"), and trying to make everyone awaken collapses systems into coercion/ideology/performance.
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E6"
+    credence: 0.40
+    source_ids: ["arclight-2026-aos"]
+    operationalization: >-
+      Model heterogeneous treatment effects in longitudinal program outcomes; test whether broad reliability
+      can be increased without coercive dynamics via personalization, consent, and governance.
+    assumptions:
+      - Outcome heterogeneity is intrinsic rather than purely environmental.
+      - Coercion/ideology dynamics can be measured and separated from outcomes.
+    falsifiers:
+      - Outcomes can be made broadly reliable without coercion/ideology dynamics via transparent design changes.
+
