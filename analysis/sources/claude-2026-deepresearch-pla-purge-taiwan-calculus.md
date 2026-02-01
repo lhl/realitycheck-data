@@ -34,15 +34,15 @@ Finally, it links cross-strait risk to changes in the international environment�
 
 ### Key Claims
 
-| # | Claim | Claim ID | Type | Domain | Evidence | Credence | Verified? | Falsifiable By |
-|---|-------|----------|------|--------|----------|----------:|-----------|----------------|
-| 1 | Quarantine/blockade + gray-zone coercion are more likely near-term PRC approaches than full-scale amphibious invasion | GEO-2026-021 | [H] | GEO | E5 | 0.60 | ? | PRC initiates (or credibly mobilizes for) an amphibious invasion in the near term, or credible doctrine/decision evidence shows invasion was the primary intended path |
-| 2 | PLA activity around Taiwan has shifted toward sustained pressure, with ADIZ incursions rising from ~1,669 (2023) to ~3,615 (2024) | GEO-2026-022 | [F] | GEO | E4 | 0.85 | `janes-2025-air-sea-operations-around-taiwan` | Official or trusted dataset shows materially different annual counts under a comparable definition |
-| 3 | Days when over half of detected PLA aircraft crossed the Taiwan Strait median line rose to ~209 days (2024) vs ~62 (2023) | GEO-2026-023 | [F] | GEO | E4 | 0.85 | `jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024` | Official or trusted dataset shows materially different day-counts under a comparable definition |
-| 4 | Taiwan’s “porcupine” defense posture is better optimized for invasion deterrence than for quarantine/blockade scenarios | GEO-2026-024 | [H] | GEO | E5 | 0.60 | ? | Demonstrated Taiwanese capability and plans credibly defeat a quarantine/blockade in exercises/war games or real-world incidents without major escalation |
-| 5 | Taiwan relies on imports for >97% of its energy needs (high vulnerability to external disruption) | RESOURCE-2026-011 | [F] | RESOURCE | E4 | 0.85 | ✓ | Official energy-balance statistics show a materially lower import share |
-| 6 | Taiwan’s natural gas reserves were equivalent to ~10–11 days of local consumption (as of 2022-08) | RESOURCE-2026-012 | [F] | RESOURCE | E4 | 0.85 | `taipeitimes-2022-energy-supplies-sufficient-ministry` | Official reserve/stockpile data shows substantially more (or less) days-of-cover under comparable assumptions |
-| 7 | U.S. sovereignty-violating actions (e.g., Venezuela intervention; Greenland threats) weaken U.S. “rules-based order” credibility, potentially lowering expected international resistance to PRC coercion against Taiwan | GOV-2026-068 | [H] | GOV | E5 | 0.50 | ? | Post-action coalition behavior shows strengthened norm-based resistance and credible intervention commitments despite these precedents |
+| # | Claim | Claim ID | Layer | Actor | Scope | Quantifier | Type | Domain | Evidence | Credence | Verified? | Falsifiable By |
+|---|-------|----------|-------|-------|-------|------------|------|--------|----------|----------:|-----------|----------------|
+| 1 | Quarantine/blockade + gray-zone coercion are more likely near-term PRC approaches than full-scale amphibious invasion | GEO-2026-021 | PRACTICED | OTHER:PRC/PLA | who=PRC; where=Taiwan Strait; when=2026-2027; process=coercion approach selection | often | [H] | GEO | E5 | 0.60 | ? | PRC initiates (or credibly mobilizes for) an amphibious invasion in the near term, or credible doctrine/decision evidence shows invasion was the primary intended path |
+| 2 | PLA activity around Taiwan has shifted toward sustained pressure, with ADIZ incursions rising from ~1,669 (2023) to ~3,615 (2024) | GEO-2026-022 | ASSERTED | OTHER:PLA aircraft | who=PLA aircraft; where=Taiwan ADIZ; when=2023-2024; process=incursions; metric=annual counts | N/A | [F] | GEO | E4 | 0.85 | `janes-2025-air-sea-operations-around-taiwan` | Official or trusted dataset shows materially different annual counts under a comparable definition |
+| 3 | Days when over half of detected PLA aircraft crossed the Taiwan Strait median line rose to ~209 days (2024) vs ~62 (2023) | GEO-2026-023 | ASSERTED | OTHER:PLA aircraft | who=PLA aircraft; where=Taiwan Strait median line; when=2023-2024; process=median-line crossings; metric=days with >50% crossing | N/A | [F] | GEO | E4 | 0.85 | `jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024` | Official or trusted dataset shows materially different day-counts under a comparable definition |
+| 4 | Taiwan’s “porcupine” defense posture is better optimized for invasion deterrence than for quarantine/blockade scenarios | GEO-2026-024 | EFFECT | OTHER:Taiwan defense | who=Taiwan defense posture; where=Taiwan; when=2026; process=deterrence against invasion vs blockade; outcome=fit/coverage | often | [H] | GEO | E5 | 0.60 | ? | Demonstrated Taiwanese capability and plans credibly defeat a quarantine/blockade in exercises/war games or real-world incidents without major escalation |
+| 5 | Taiwan relies on imports for >97% of its energy needs (high vulnerability to external disruption) | RESOURCE-2026-011 | ASSERTED | OTHER:Taiwan energy system | who=Taiwan; where=energy system; when=2024; process=energy supply; metric=import share | N/A | [F] | RESOURCE | E4 | 0.85 | ✓ | Official energy-balance statistics show a materially lower import share |
+| 6 | Taiwan’s natural gas reserves were equivalent to ~10–11 days of local consumption (as of 2022-08) | RESOURCE-2026-012 | ASSERTED | OTHER:Taiwan/MOEA | who=Taiwan; where=natural gas reserves; when=2022-08; process=stockpile coverage; metric=days-of-cover | N/A | [F] | RESOURCE | E4 | 0.85 | `taipeitimes-2022-energy-supplies-sufficient-ministry` | Official reserve/stockpile data shows substantially more (or less) days-of-cover under comparable assumptions |
+| 7 | U.S. sovereignty-violating actions (e.g., Venezuela intervention; Greenland threats) weaken U.S. “rules-based order” credibility, potentially lowering expected international resistance to PRC coercion against Taiwan | GOV-2026-068 | EFFECT | OTHER:U.S. government | who=U.S. actions + coalition partners; where=international system; when=2026; process=credibility/legitimacy; outcome=resistance to PRC coercion | some | [H] | GOV | E5 | 0.50 | ? | Post-action coalition behavior shows strengthened norm-based resistance and credible intervention commitments despite these precedents |
 
 ### Argument Structure
 
@@ -95,6 +95,34 @@ The memo is coherent as a synthesis: it cleanly distinguishes invasion from bloc
 | GEO-2026-021 | PRC may prefer invasion if it expects blockade to fail or if political triggers force decisive action | Quarantine/blockade is a *phase* or probe rather than an alternative; invasion remains the end-state under certain conditions | Searched for contrary conceptual framings in existing Taiwan analysis corpus; blockade/invasion are not mutually exclusive and can be sequential |
 | RESOURCE-2026-012 | Not assessed against MOEA primary reserve dataset here | “Days of reserves” depends on baseline demand + what inventory is counted; the cited 10–11 day figure is from an Aug 2022 MOEA statement | Next step: reconcile with Energy Administration “security stockpile required” targets and identify the underlying reserve measurement |
 
+### Corrections & Updates
+
+| Item | URL | Published | Corrected/Updated | What Changed | Impacted Claim IDs | Action Taken |
+|---|---|---|---|---|---|---|
+| 1 | reference/transcripts/claude-2026-01-26-deepresearch-pla-purge-taiwan.md | 2026-01-26 | N/A | No source corrections/updates observed during this reanalysis pass; upgraded analysis to rigor-v1 section/table schema. | N/A | Added Corrections & Updates + Stage 2 sections + rigor-v1 table columns |
+
+### Internal Tensions
+
+| Tension | Parts in Conflict | Implication |
+|---|---|---|
+| “Blockade is more likely” vs blockade escalation dynamics | GEO-2026-021 vs counterargument that blockade may rapidly escalate | “More likely” depends on assumed escalation thresholds; blockade/quarantine may still be a high-risk pathway |
+| “Energy vulnerability is decisive” vs definitional uncertainty | RESOURCE-2026-011/012 vs “days-of-cover” definition variance | Vulnerability is real but its operational meaning depends on what inventories and demand baselines are counted |
+
+### Persuasion Techniques
+
+| Technique | Example from Source | Effect on Reader |
+|---|---|---|
+| Narrative linkage across theaters | Venezuela/Greenland examples used to argue norm erosion affects Taiwan deterrence | Increases plausibility via analogy; risks overextending causality from unrelated cases |
+| Concrete numerics without citations | Air/sea pressure and reserve-days figures asserted in memo form | Creates false precision unless independently verifiable |
+
+### Unstated Assumptions
+
+| Assumption | Claim ID | Critical? | Problematic? |
+|---|---|---|---|
+| Beijing can sustain a quarantine/blockade without triggering decisive intervention | GEO-2026-021 | Y | Mixed |
+| Taiwan’s energy import dependence translates quickly into coercive leverage | RESOURCE-2026-011 | Medium | Mixed |
+| “Rules-based order” legitimacy materially shifts coalition behavior in near-term crises | GOV-2026-068 | Medium | Yes (hard to measure; confounded by interests/capability) |
+
 ### Evidence Assessment
 - Strongest: Taiwan energy import dependence (verified) and Venezuela intervention event (verified as an event).
 - Improved: key Taiwan pressure metrics (ADIZ annual totals; median-line “over half” days) and a concrete natural-gas days-of-cover anchor are now checked against specialist reporting / MOEA statement relays.
@@ -137,15 +165,15 @@ This memo’s distinctive value (relative to the earlier purge-only corpus) is t
 
 ### Claim Summary
 
-| ID | Type | Domain | Evidence | Credence | Claim |
-|----|------|--------|----------|----------:|-------|
-| GEO-2026-021 | [H] | GEO | E5 | 0.60 | Quarantine/blockade + gray-zone coercion are more likely near-term than invasion |
-| GEO-2026-022 | [F] | GEO | E4 | 0.85 | ADIZ incursions rose from ~1,669 (2023) to ~3,615 (2024) |
-| GEO-2026-023 | [F] | GEO | E4 | 0.85 | Days when >50% of detected aircraft crossed the median line were ~209 (2024) vs ~62 (2023) |
-| GEO-2026-024 | [H] | GEO | E5 | 0.60 | “Porcupine” posture fits invasion better than blockade/quarantine |
-| RESOURCE-2026-011 | [F] | RESOURCE | E4 | 0.85 | Taiwan imports >97% of its energy |
-| RESOURCE-2026-012 | [F] | RESOURCE | E4 | 0.85 | Taiwan natural gas reserves were ~10–11 days of consumption (2022-08) |
-| GOV-2026-068 | [H] | GOV | E5 | 0.50 | U.S. sovereignty-violating precedents weaken norm-based deterrence |
+| ID | Type | Domain | Layer | Actor | Scope | Quantifier | Evidence | Credence | Claim |
+|----|------|--------|-------|-------|-------|------------|----------|----------:|-------|
+| GEO-2026-021 | [H] | GEO | PRACTICED | OTHER:PRC/PLA | who=PRC; where=Taiwan Strait; when=2026-2027; process=coercion approach selection | often | E5 | 0.60 | Quarantine/blockade + gray-zone coercion are more likely near-term than invasion |
+| GEO-2026-022 | [F] | GEO | ASSERTED | OTHER:PLA aircraft | who=PLA aircraft; where=Taiwan ADIZ; when=2023-2024; process=incursions; metric=annual counts | N/A | E4 | 0.85 | ADIZ incursions rose from ~1,669 (2023) to ~3,615 (2024) |
+| GEO-2026-023 | [F] | GEO | ASSERTED | OTHER:PLA aircraft | who=PLA aircraft; where=Taiwan Strait median line; when=2023-2024; process=median-line crossings; metric=days with >50% crossing | N/A | E4 | 0.85 | Days when >50% of detected aircraft crossed the median line were ~209 (2024) vs ~62 (2023) |
+| GEO-2026-024 | [H] | GEO | EFFECT | OTHER:Taiwan defense | who=Taiwan defense posture; where=Taiwan; when=2026; process=deterrence against invasion vs blockade; outcome=fit/coverage | often | E5 | 0.60 | “Porcupine” posture fits invasion better than blockade/quarantine |
+| RESOURCE-2026-011 | [F] | RESOURCE | ASSERTED | OTHER:Taiwan energy system | who=Taiwan; where=energy system; when=2024; process=energy supply; metric=import share | N/A | E4 | 0.85 | Taiwan imports >97% of its energy |
+| RESOURCE-2026-012 | [F] | RESOURCE | ASSERTED | OTHER:Taiwan/MOEA | who=Taiwan; where=natural gas reserves; when=2022-08; process=stockpile coverage; metric=days-of-cover | N/A | E4 | 0.85 | Taiwan natural gas reserves were ~10–11 days of consumption (2022-08) |
+| GOV-2026-068 | [H] | GOV | EFFECT | OTHER:U.S. government | who=U.S. actions + coalition partners; where=international system; when=2026; process=credibility/legitimacy; outcome=resistance to PRC coercion | some | E5 | 0.50 | U.S. sovereignty-violating precedents weaken norm-based deterrence |
 
 ### Claims to Register
 
@@ -270,8 +298,9 @@ claims:
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |------|------|------|-------|----------|--------|------|-------|
 | 1 | 2026-01-26 14:04 | codex | gpt-5.2 | 17m52s | 18,033,496 | ? | Initial analysis + claim extraction for synthesis integration |
-| 2 | 2026-01-27 | codex | gpt-5.2 | ? | ? | ? | Verified key Taiwan pressure/energy numerics against Janes/Jamestown/Taipei Times; updated credences |
+| 2 | 2026-02-01 09:13 | codex | gpt-5.2 | ? | ? | ? | Reanalysis pass: add missing Stage 2 sections + Corrections & Updates; upgrade… |
 
 ### Revision Notes
 
+**Pass 2**: Reanalysis pass: add missing Stage 2 sections + Corrections & Updates; upgrade Key Claims + Claim Summary to rigor-v1 (Layer/Actor/Scope/Quantifier).
 **Pass 1**: Initial analysis + claim extraction for synthesis integration

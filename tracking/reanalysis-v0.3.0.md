@@ -102,12 +102,12 @@ Priority heuristic: chains → synthesis refs → high-credence claims → claim
 
 - **Analysis**: [analysis/sources/claude-2026-deepresearch-pla-purge-taiwan-calculus.md](analysis/sources/claude-2026-deepresearch-pla-purge-taiwan-calculus.md)
 - **Claims**: 7 (high-credence/E1-E2: 4) | **In chain**: N | **Referenced by syntheses**: 1
-- **Latest analysis log**: `ANALYSIS-2026-022` (2026-01-26T14:22:06.508000Z) | fw=0.1.8 | meth=check-core@v0.1.8
+- **Latest analysis log**: `ANALYSIS-2026-036` (2026-02-01T09:13:49.358700Z) | fw=0.3.0 | meth=reanalysis-core@v0.3.0
 - **TODOs**:
-  - [ ] Add missing sections: ### Internal Tensions, ### Persuasion Techniques, ### Unstated Assumptions
-  - [ ] Add `### Corrections & Updates` section (rigor-v1)
-  - [ ] Upgrade Key Claims table to include Layer/Actor/Scope/Quantifier (rigor-v1)
-  - [ ] Upgrade Claim Summary table to include Layer/Actor/Scope/Quantifier (rigor-v1)
+  - [x] Add missing sections: ### Internal Tensions, ### Persuasion Techniques, ### Unstated Assumptions
+  - [x] Add `### Corrections & Updates` section (rigor-v1)
+  - [x] Upgrade Key Claims table to include Layer/Actor/Scope/Quantifier (rigor-v1)
+  - [x] Upgrade Claim Summary table to include Layer/Actor/Scope/Quantifier (rigor-v1)
 
 ### google-2026-translategemma-tech-report — TranslateGemma Technical Report
 
