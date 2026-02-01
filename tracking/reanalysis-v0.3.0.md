@@ -44,13 +44,13 @@ Priority heuristic: chains → synthesis refs → high-credence claims → claim
 
 - **Analysis**: [analysis/sources/lhl-2026-frontier-llm-token-unit-economics.md](analysis/sources/lhl-2026-frontier-llm-token-unit-economics.md)
 - **Claims**: 24 (high-credence/E1-E2: 12) | **In chain**: N | **Referenced by syntheses**: 0
-- **Latest analysis log**: `ANALYSIS-2026-003` (2026-01-24T18:09:22.279000Z) | fw=0.1.3 | meth=check-core@v0.1.3
+- **Latest analysis log**: `ANALYSIS-2026-033` (2026-02-01T08:56:06.936287Z) | fw=0.3.0 | meth=reanalysis-core@v0.3.0
 - **TODOs**:
-  - [ ] Add missing sections: ### Internal Tensions, ### Persuasion Techniques, ### Unstated Assumptions, ### Claims to Register
-  - [ ] Add `Claims to Register` YAML block (`claims:`)
-  - [ ] Add `### Corrections & Updates` section (rigor-v1)
-  - [ ] Upgrade Key Claims table to include Layer/Actor/Scope/Quantifier (rigor-v1)
-  - [ ] Upgrade Claim Summary table to include Layer/Actor/Scope/Quantifier (rigor-v1)
+  - [x] Add missing sections: ### Internal Tensions, ### Persuasion Techniques, ### Unstated Assumptions, ### Claims to Register
+  - [x] Add `Claims to Register` YAML block (`claims:`)
+  - [x] Add `### Corrections & Updates` section (rigor-v1)
+  - [x] Upgrade Key Claims table to include Layer/Actor/Scope/Quantifier (rigor-v1)
+  - [x] Upgrade Claim Summary table to include Layer/Actor/Scope/Quantifier (rigor-v1)
 
 ### lhl-2026-realitycheck-readme — Reality Check
 
