@@ -1,0 +1,158 @@
+sources:
+  - id: "lhl-2026-realitycheck-readme"
+    type: "KNOWLEDGE"
+    title: "Reality Check"
+    author:
+      - "Leonard Lin"
+    year: 2026
+    url: "https://raw.githubusercontent.com/lhl/realitycheck/main/README.md"
+    accessed: "2026-02-01"
+    status: "analyzed"
+    analysis_file: "analysis/sources/lhl-2026-realitycheck-readme.md"
+    reliability: 0.75
+    bias_notes: >-
+      Self-authored project README; likely accurate about scope and shipped CLI surface area, but subject to promotional
+      framing and omission of limitations.
+    topics:
+      - realitycheck
+      - claim-registry
+      - source-analysis
+      - evidence-links
+      - reasoning-trails
+      - predictions
+      - argument-chains
+      - semantic-search
+      - rigor-v1
+    domains:
+      - META
+      - TECH
+      - INST
+    claims_extracted:
+      - META-2026-024
+      - META-2026-025
+      - META-2026-026
+      - META-2026-027
+      - META-2026-028
+      - META-2026-029
+      - META-2026-030
+      - META-2026-031
+      - META-2026-032
+
+claims:
+  - id: "META-2026-024"
+    text: "Reality Check provides a claim registry that tracks claims with evidence levels, credence scores, and relationships."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["lhl-2026-realitycheck-readme"]
+    operationalization: "Verify rc-db claim schema includes evidence_level/credence and relationship fields; confirm CRUD exists in scripts/db.py."
+    assumptions:
+      - "The README reflects shipped CLI+DB schema rather than purely aspirational features."
+    falsifiers:
+      - "DB schema or CLI lacks credence/evidence/relationship fields or operations."
+
+  - id: "META-2026-025"
+    text: "Reality Check supports a structured 3-stage source analysis methodology: descriptive → evaluative → dialectical."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lhl-2026-realitycheck-readme"]
+    operationalization: "Confirm workflow docs/templates and analysis validator expect three stages or an equivalent output contract."
+    assumptions:
+      - "The methodology is represented in docs/templates, not only implied in README prose."
+    falsifiers:
+      - "No 3-stage structure exists in methodology docs/templates/validators."
+
+  - id: "META-2026-026"
+    text: "Reality Check supports evidence links that connect claims to sources with location and strength metadata."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["lhl-2026-realitycheck-readme"]
+    operationalization: "Confirm evidence_links table exists and rc-db has evidence add/list/get operations."
+    assumptions:
+      - "Evidence links are first-class records (not only narrative references in Markdown)."
+    falsifiers:
+      - "No evidence_links table/CLI exists or it lacks location/strength metadata."
+
+  - id: "META-2026-027"
+    text: "Reality Check supports reasoning trails that document why a credence was assigned (epistemic provenance)."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["lhl-2026-realitycheck-readme"]
+    operationalization: "Confirm reasoning_trails table exists and rc-db has reasoning add/get/history operations."
+    assumptions:
+      - "Reasoning trails are stored as structured records in the DB."
+    falsifiers:
+      - "No reasoning_trails table/CLI exists or it does not store credence justification."
+
+  - id: "META-2026-028"
+    text: "Reality Check supports prediction tracking tied to falsification criteria and status updates."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lhl-2026-realitycheck-readme"]
+    operationalization: "Confirm predictions table and rc-db prediction operations exist; verify validation checks that [P] claims have prediction records."
+    assumptions:
+      - "Prediction tracking is integrated with claim types/statuses rather than a separate, manual process only."
+    falsifiers:
+      - "No predictions table/CLI exists or predictions cannot be linked to [P] claims."
+
+  - id: "META-2026-029"
+    text: "Reality Check supports “argument chains” to map logical dependencies and identify weak links."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["lhl-2026-realitycheck-readme"]
+    operationalization: "Confirm chains schema and rc-db chain operations; verify chains reference claim IDs and support dependency traversal."
+    assumptions:
+      - "Chains are represented as structured objects rather than only prose documents."
+    falsifiers:
+      - "No chain schema/CLI exists or chains cannot reference claims."
+
+  - id: "META-2026-030"
+    text: "Reality Check supports semantic search to find related claims across the knowledge base."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["lhl-2026-realitycheck-readme"]
+    operationalization: "Confirm rc-db search exists and returns nearest-neighbor results from embedded claim text."
+    assumptions:
+      - "Embeddings can be generated and stored for claims in the DB."
+    falsifiers:
+      - "Search command absent or never returns similarity-ranked results even with embeddings present."
+
+  - id: "META-2026-031"
+    text: "Reality Check v0.3.0 introduces “rigor-v1” analysis tables (Layer/Actor/Scope/Quantifier columns) and a `--rigor` enforcement mode in the analysis validator."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lhl-2026-realitycheck-readme"]
+    operationalization: "Confirm scripts/analysis_validator.py defines --rigor and checks for Layer/Actor/Scope/Quantifier columns and Corrections & Updates."
+    assumptions:
+      - "The validator is used (directly or indirectly) in the intended check workflow."
+    falsifiers:
+      - "No --rigor option exists or it does not enforce rigor-v1 requirements."
+
+  - id: "META-2026-032"
+    text: "The Reality Check v0.3.0 repository test suite contains 401 pytest-collected tests."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["lhl-2026-realitycheck-readme"]
+    operationalization: "Run pytest (with REALITYCHECK_EMBED_SKIP=1 if needed) and confirm collected test count."
+    assumptions:
+      - "Test collection count is stable for a given commit/tag."
+    falsifiers:
+      - "Running pytest at the referenced commit collects materially fewer/more tests."
+

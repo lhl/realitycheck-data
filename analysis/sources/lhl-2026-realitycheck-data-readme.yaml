@@ -1,0 +1,114 @@
+sources:
+  - id: "lhl-2026-realitycheck-data-readme"
+    type: "KNOWLEDGE"
+    title: "Reality Check Knowledge Base"
+    author:
+      - "Leonard Lin"
+    year: 2026
+    url: "https://raw.githubusercontent.com/lhl/realitycheck-data/main/README.md"
+    accessed: "2026-02-01"
+    status: "analyzed"
+    analysis_file: "analysis/sources/lhl-2026-realitycheck-data-readme.md"
+    reliability: 0.80
+    bias_notes: >-
+      Self-authored dataset README; status metrics appear derived from the underlying database and are likely accurate at
+      time of commit, but will drift as the dataset updates.
+    topics:
+      - realitycheck-data
+      - knowledge-base
+      - dataset
+      - status-metrics
+      - analyses
+      - syntheses
+      - predictions
+      - exports
+    domains:
+      - META
+      - INST
+    claims_extracted:
+      - META-2026-033
+      - META-2026-034
+      - META-2026-035
+      - META-2026-036
+      - META-2026-037
+      - META-2026-038
+
+claims:
+  - id: "META-2026-033"
+    text: "`realitycheck-data` is a unified knowledge base built with the Reality Check framework."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lhl-2026-realitycheck-data-readme"]
+    operationalization: "Verify presence of .realitycheck.yaml project config and LanceDB tables; verify repo structure matches framework conventions."
+    assumptions:
+      - "Repo structure is generated/maintained via Reality Check tooling."
+    falsifiers:
+      - "Repo lacks project config/DB or diverges materially from framework structure."
+
+  - id: "META-2026-034"
+    text: "At the time of the README, the DB contains 385 claims, 107 sources, 4 argument chains, and 26 predictions tracked."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["lhl-2026-realitycheck-data-readme"]
+    operationalization: "Run rc-db stats against the referenced commit’s DB and compare to README snapshot."
+    assumptions:
+      - "The README snapshot corresponds to the DB state at the referenced commit."
+    falsifiers:
+      - "DB stats at that commit differ materially from the README snapshot."
+
+  - id: "META-2026-035"
+    text: "The repo provides navigation to a sources index, a predictions dashboard, and YAML exports of claim and source registries."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lhl-2026-realitycheck-data-readme"]
+    operationalization: "Confirm linked files exist and their contents match the described role (index/dashboard/export)."
+    assumptions:
+      - "Linked files are maintained and updated alongside the DB."
+    falsifiers:
+      - "Linked files are missing or do not correspond to the described artifact type."
+
+  - id: "META-2026-036"
+    text: "The repo contains individual source analyses under `analysis/sources/` and cross-source syntheses under `analysis/syntheses/`."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["lhl-2026-realitycheck-data-readme"]
+    operationalization: "Confirm these directories exist and contain analysis documents; compare to README tables."
+    assumptions:
+      - "Analyses are kept in sync with the DB registrations."
+    falsifiers:
+      - "Directories are missing/empty or not used for analysis artifacts."
+
+  - id: "META-2026-037"
+    text: "`claims/registry.yaml` and `reference/sources.yaml` are YAML exports of the claim/source registries."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.75
+    source_ids: ["lhl-2026-realitycheck-data-readme"]
+    operationalization: "Regenerate exports from the DB (rc-export yaml claims/sources) and diff for equivalence."
+    assumptions:
+      - "Exports are generated mechanically from the DB rather than edited by hand."
+    falsifiers:
+      - "Exports differ materially from DB-derived exports or contain manual-only fields."
+
+  - id: "META-2026-038"
+    text: "The repository includes a LanceDB database at `data/realitycheck.lance/` and a staging+filing workflow via `inbox/` and `reference/`."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["lhl-2026-realitycheck-data-readme"]
+    operationalization: "Confirm directories exist; confirm DB contains expected tables; confirm filing destinations exist under reference/."
+    assumptions:
+      - "In practice, analysts use inbox→reference filing alongside DB registration."
+    falsifiers:
+      - "Repo lacks these directories or the workflow is not used/maintained."
+

@@ -1,6 +1,6 @@
 # Source Registry
-# Exported from LanceDB on 2026-01-27
-# Total sources: 95
+# Exported from LanceDB on 2026-02-01
+# Total sources: 109
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -134,6 +134,29 @@ sources:
     - GEO
     - RISK
     status: analyzed
+  ap-2026-trump-greenland-tariffs:
+    type: ARTICLE
+    title: Trump says 8 EU countries to be charged 10% tariff for opposing US control
+      of Greenland
+    author:
+    - The Associated Press
+    year: 2026
+    url: https://www.npr.org/2026/01/17/nx-s1-5680839/trump-eu-greenland-tariffs
+    accessed: '2026-02-01'
+    reliability: 0.75
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - greenland
+    - tariffs
+    - trump
+    - nato
+    - eu
+    domains:
+    - GEO
+    - GOV
+    status: cataloged
   appleton-2026-gastown-agent-patterns:
     type: BLOG
     title: Gas Town’s Agent Patterns, Design Bottlenecks, and Vibecoding at Scale
@@ -268,6 +291,49 @@ sources:
     domains:
     - GOV
     status: analyzed
+  boe-2019-carney-jacksonhole-imfs:
+    type: REPORT
+    title: The growing challenges for monetary policy in the current international
+      monetary and financial system
+    author:
+    - Mark Carney
+    year: 2019
+    url: https://www.bankofengland.co.uk/-/media/boe/files/speech/2019/the-growing-challenges-for-monetary-policy-speech-by-mark-carney.pdf
+    accessed: '2026-02-01'
+    reliability: 0.9
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - dollar-dominance
+    - imfs
+    - jackson-hole
+    - synthetic-hegemonic-currency
+    domains:
+    - ECON
+    status: cataloged
+  brams-2026-trump-not-at-all-minnesota:
+    type: ARTICLE
+    title: 'Trump on pulling back federal presence in Minnesota: ‘Not at all’'
+    author:
+    - Sophie Brams
+    year: 2026
+    url: https://thehill.com/homenews/administration/5714506-trump-minnesota-immigration-enforcement/
+    accessed: '2026-02-01'
+    reliability: 0.65
+    bias_notes: Mainstream political outlet; useful for direct Trump/Homan quotes
+      and stated operational changes.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - minnesota
+    - operation-metro-surge
+    - tom-homan
+    - greg-bovino
+    - drawdown
+    domains:
+    - GOV
+    status: cataloged
   butler-1863-darwin-machines:
     type: ARTICLE
     title: Darwin among the Machines
@@ -507,6 +573,28 @@ sources:
     domains:
     - GOV
     status: analyzed
+  csis-2023-updated-oct7-export-controls:
+    type: ARTICLE
+    title: Updated October 7 Semiconductor Export Controls
+    author:
+    - Emily Benson
+    year: 2023
+    url: https://www.csis.org/analysis/updated-october-7-semiconductor-export-controls
+    accessed: '2026-02-01'
+    reliability: 0.75
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - export-controls
+    - semiconductors
+    - advanced-computing
+    - ai-chips
+    - china
+    domains:
+    - TECH
+    - GEO
+    status: cataloged
   deepseek-r1:
     type: PAPER
     title: 'DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement
@@ -646,6 +734,28 @@ sources:
     domains:
     - TECH
     - GOV
+    status: cataloged
+  eurostat-2024-eu-green-energy-imports:
+    type: REPORT
+    title: EU imports in green energy products higher than exports
+    author:
+    - Eurostat
+    year: 2024
+    url: https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20241014-1
+    accessed: '2026-02-01'
+    reliability: 0.9
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - european-union
+    - imports
+    - solar-panels
+    - wind-turbines
+    - biofuels
+    domains:
+    - ECON
+    - RESOURCE
     status: cataloged
   ft-2026-xi-sole-operational-control-pla:
     type: ARTICLE
@@ -1205,6 +1315,70 @@ sources:
     domains:
     - TECH
     status: analyzed
+  lee-2025-supreme-court-blocks-trump-guard:
+    type: ARTICLE
+    title: Supreme Court won’t allow National Guard deployment to Chicago in major
+      loss for Trump
+    author:
+    - Ella Lee
+    year: 2025
+    url: https://thehill.com/regulation/court-battles/5661555-supreme-court-blocks-trump-guard/
+    accessed: '2026-02-01'
+    reliability: 0.65
+    bias_notes: Mainstream political outlet; includes direct quotation from the Supreme
+      Court order and procedural posture.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - supreme-court
+    - national-guard
+    - chicago
+    - posse-comitatus
+    domains:
+    - GOV
+    status: cataloged
+  lee-2026-minnesota-trump-immigration-conflict:
+    type: ARTICLE
+    title: Minnesota standoff with Trump administration stokes fears of civil war
+    author:
+    - Ella Lee
+    year: 2026
+    url: https://thehill.com/policy/national-security/5715869-minnesota-trump-immigration-conflict/
+    accessed: '2026-02-01'
+    reliability: 0.65
+    bias_notes: 'Political news outlet; reporting mixes factual timeline with heavy
+      use of historical analogy (“Fort Sumter”) and risk framing (“civil war”). Most
+      valuable for: (a) stated positions/quotes, (b) pointer links to underlying artifacts,
+      and (c) mapping actor framings around the Minnesota escalation.'
+    claims_extracted:
+    - GOV-2026-082
+    - GOV-2026-083
+    - GOV-2026-084
+    - GOV-2026-085
+    - GOV-2026-086
+    - RISK-2026-004
+    - GOV-2026-087
+    - GOV-2026-088
+    analysis_file: analysis/sources/lee-2026-minnesota-trump-immigration-conflict.md
+    topics:
+    - minnesota
+    - minneapolis
+    - st-paul
+    - immigration-enforcement
+    - ice
+    - cbp
+    - operation-metro-surge
+    - federalism
+    - national-guard
+    - civil-war-risk
+    - renee-good
+    - alex-pretti
+    - tom-homan
+    - greg-bovino
+    domains:
+    - GOV
+    - RISK
+    status: analyzed
   lhl-2025-liquid-ai-hackathon-tokyo:
     type: KNOWLEDGE
     title: Liquid AI Hackathon Tokyo (repo)
@@ -1292,6 +1466,76 @@ sources:
     - TECH
     - INST
     - TRANS
+    status: analyzed
+  lhl-2026-realitycheck-data-readme:
+    type: KNOWLEDGE
+    title: Reality Check Knowledge Base
+    author:
+    - Leonard Lin
+    year: 2026
+    url: https://raw.githubusercontent.com/lhl/realitycheck-data/main/README.md
+    accessed: '2026-02-01'
+    reliability: 0.8
+    bias_notes: Self-authored dataset README; status metrics appear derived from the
+      underlying database and are likely accurate at time of commit, but will drift
+      as the dataset updates.
+    claims_extracted:
+    - META-2026-033
+    - META-2026-034
+    - META-2026-035
+    - META-2026-036
+    - META-2026-037
+    - META-2026-038
+    analysis_file: analysis/sources/lhl-2026-realitycheck-data-readme.md
+    topics:
+    - realitycheck-data
+    - knowledge-base
+    - dataset
+    - status-metrics
+    - analyses
+    - syntheses
+    - predictions
+    - exports
+    domains:
+    - META
+    - INST
+    status: analyzed
+  lhl-2026-realitycheck-readme:
+    type: KNOWLEDGE
+    title: Reality Check
+    author:
+    - Leonard Lin
+    year: 2026
+    url: https://raw.githubusercontent.com/lhl/realitycheck/main/README.md
+    accessed: '2026-02-01'
+    reliability: 0.75
+    bias_notes: Self-authored project README; likely accurate about scope and shipped
+      CLI surface area, but subject to promotional framing and omission of limitations.
+    claims_extracted:
+    - META-2026-024
+    - META-2026-025
+    - META-2026-026
+    - META-2026-027
+    - META-2026-028
+    - META-2026-029
+    - META-2026-030
+    - META-2026-031
+    - META-2026-032
+    analysis_file: analysis/sources/lhl-2026-realitycheck-readme.md
+    topics:
+    - realitycheck
+    - claim-registry
+    - source-analysis
+    - evidence-links
+    - reasoning-trails
+    - predictions
+    - argument-chains
+    - semantic-search
+    - rigor-v1
+    domains:
+    - META
+    - TECH
+    - INST
     status: analyzed
   lin-2025-jp-tl-bench:
     type: BLOG
@@ -1519,6 +1763,53 @@ sources:
     domains:
     - RESOURCE
     status: analyzed
+  nyt-2026-world-sees-america-tooze:
+    type: INTERVIEW
+    title: How the World Sees America, With Adam Tooze
+    author:
+    - Ezra Klein
+    - Adam Tooze
+    year: 2026
+    url: https://www.nytimes.com/2026/01/30/opinion/ezra-klein-podcast-adam-tooze.html
+    accessed: '2026-01-31'
+    reliability: 0.7
+    bias_notes: Edited transcript of an NYT Opinion podcast; high-quality interlocutors
+      but incentives toward vivid framing and strong interpretive claims. Several
+      factual assertions (trade shares, tariffs, cabinet roles) require external verification.
+    claims_extracted:
+    - GOV-2026-078
+    - GEO-2026-025
+    - GOV-2026-079
+    - ECON-2026-032
+    - GOV-2026-080
+    - RESOURCE-2026-014
+    - ECON-2026-033
+    - ECON-2026-034
+    - TECH-2026-099
+    - GEO-2026-026
+    - GEO-2026-027
+    - GEO-2026-028
+    analysis_file: analysis/sources/nyt-2026-world-sees-america-tooze.md
+    topics:
+    - ezra-klein-show
+    - adam-tooze
+    - davos
+    - greenland
+    - tariffs
+    - global-order
+    - us-foreign-policy
+    - china
+    - climate
+    - solar
+    - semiconductors
+    - export-controls
+    domains:
+    - GOV
+    - GEO
+    - ECON
+    - RESOURCE
+    - TECH
+    status: analyzed
   nyt-2026-xi-purge-top-general-down:
     type: ARTICLE
     title: Xi’s Purge of China’s Military Brings Its Top General Down
@@ -1695,6 +1986,103 @@ sources:
     - GOV
     - TRANS
     status: analyzed
+  rawstory-2026-trump-voters-suicide-pact:
+    type: ARTICLE
+    title: 'These Trump voters ''formed a suicide pact'' and Republicans are panicking:
+      ex-GOP operative'
+    author:
+    - Nicole Charky-Chami
+    year: 2026
+    url: https://www.rawstory.com/these-trump-voters-formed-a-pact-and-republicans-are-panicking-ex-gop-operative/
+    accessed: '2026-01-30'
+    reliability: 0.35
+    bias_notes: Secondary write-up of an opinion Substack post (Rick Wilson); strong
+      anti-Trump framing; several quantitative claims appear to be Wilson’s assertions
+      and are not independently sourced in the Raw Story article.
+    claims_extracted:
+    - SOC-2026-004
+    - GOV-2026-071
+    - ECON-2026-028
+    - ECON-2026-029
+    - ECON-2026-030
+    - ECON-2026-031
+    - LABOR-2026-014
+    - LABOR-2026-015
+    - GOV-2026-072
+    analysis_file: analysis/sources/rawstory-2026-trump-voters-suicide-pact.md
+    topics:
+    - trump
+    - farmers
+    - rural-america
+    - tariffs
+    - trade-war
+    - soybeans
+    - china
+    - farm-labor
+    - immigration-enforcement
+    - gop
+    - midterms-2026
+    - rick-wilson
+    - lincoln-project
+    domains:
+    - ECON
+    - LABOR
+    - GOV
+    - SOC
+    status: analyzed
+  reason-2026-dhs-retreats-violent-riot-pretti:
+    type: ARTICLE
+    title: DHS retreats from the claim that the agents who killed Alex Pretti faced
+      a 'violent riot'
+    author:
+    - Jacob Sullum
+    year: 2026
+    url: https://reason.com/2026/01/29/dhs-retreats-from-the-claim-that-the-agents-who-killed-alex-pretti-faced-a-violent-riot/
+    accessed: '2026-01-31'
+    reliability: 0.65
+    bias_notes: Opinionated framing, but anchored in cross-checkable artifacts (video,
+      quoted statements, and a CBP/OPR-to-Congress writeup as reproduced by other
+      outlets). Treat claims about “what the video shows” as provisional unless the
+      primary footage is directly reviewed.
+    claims_extracted:
+    - GOV-2026-073
+    - GOV-2026-074
+    - GOV-2026-075
+    - GOV-2026-077
+    analysis_file: analysis/sources/reason-2026-dhs-retreats-violent-riot-pretti.md
+    topics:
+    - dhs
+    - cbp
+    - border-patrol
+    - alex-pretti
+    - minneapolis
+    - use-of-force
+    - riot-framing
+    - public-claims
+    domains:
+    - GOV
+    status: analyzed
+  rego-2026-walz-national-guard-ice-shooting:
+    type: ARTICLE
+    title: Walz puts Minnesota National Guard on alert amid protests over ICE shooting
+    author:
+    - Max Rego
+    year: 2026
+    url: https://thehill.com/homenews/state-watch/5680129-walz-authorizes-national-guard/
+    accessed: '2026-02-01'
+    reliability: 0.65
+    bias_notes: Mainstream political outlet; useful for quoted statements and linked
+      artifacts.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - minnesota
+    - national-guard
+    - ice
+    - renee-good
+    domains:
+    - GOV
+    status: cataloged
   reuters-2026-taiwan-monitoring-pla-leadership:
     type: ARTICLE
     title: Taiwan monitoring 'abnormal' China military leadership changes after top
@@ -2119,6 +2507,27 @@ sources:
     - GOV
     - ECON
     - LABOR
+    status: cataloged
+  uscensus-2024-us-imports-hs854143:
+    type: KNOWLEDGE
+    title: 'U.S. imports: HS 854143 photovoltaic modules/panels (2024, by country)'
+    author:
+    - U.S. Census Bureau
+    year: 2024
+    url: https://api.census.gov/data/timeseries/intltrade/imports/hs?get=CTY_CODE,CTY_NAME,GEN_VAL_YR&YEAR=2024&MONTH=12&COMM_LVL=HS6&I_COMMODITY=854143
+    accessed: '2026-02-01'
+    reliability: 0.9
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - united-states
+    - imports
+    - solar-panels
+    - hs854143
+    - census
+    domains:
+    - ECON
     status: cataloged
   uscourts-mnd-2025-04669-doc109-doctor-declaration:
     type: REPORT

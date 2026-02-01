@@ -1,18 +1,18 @@
 # Claim Registry
-# Exported from LanceDB on 2026-01-27
-# Total claims: 352
+# Exported from LanceDB on 2026-02-01
+# Total claims: 400
 # Total chains: 4
 
 counters:
-  TECH: 98
-  RESOURCE: 13
-  LABOR: 13
-  ECON: 27
-  GOV: 70
-  SOC: 3
+  TECH: 99
+  RESOURCE: 14
+  LABOR: 15
+  ECON: 34
+  GOV: 88
+  SOC: 4
   TRANS: 17
-  META: 23
-  GEO: 24
+  META: 38
+  GEO: 28
   RISK: 5
   INST: 32
 claims:
@@ -591,6 +591,133 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-25'
+  ECON-2026-028:
+    text: China has accounted for roughly half of U.S. soybean exports in at least
+      some recent years.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - rawstory-2026-trump-voters-suicide-pact
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
+  ECON-2026-029:
+    text: By 2026, China stopped buying U.S. soybeans entirely (effectively zero U.S.
+      soybean exports to China).
+    type: '[F]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.15000000596046448
+    source_ids:
+    - rawstory-2026-trump-voters-suicide-pact
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
+  ECON-2026-030:
+    text: Net farm income is projected to decline by about $41 billion in 2026 (about
+      a 23% drop) relative to the prior year.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.20000000298023224
+    source_ids:
+    - rawstory-2026-trump-voters-suicide-pact
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
+  ECON-2026-031:
+    text: By 2026, average per-acre margins are approximately -$169 for corn, -$114
+      for soybeans, and about -$400 for cotton.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.20000000298023224
+    source_ids:
+    - rawstory-2026-trump-voters-suicide-pact
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
+  ECON-2026-032:
+    text: In an August 2019 Jackson Hole speech, Mark Carney argued that dollar dominance
+      in the international monetary/financial system creates instability and discussed
+      the possibility of a "Synthetic Hegemonic Currency (SHC)".
+    type: '[F]'
+    domain: ECON
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  ECON-2026-033:
+    text: China accounts for the vast majority of EU solar panel imports (order-of-magnitude
+      ~90%+ share).
+    type: '[F]'
+    domain: ECON
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  ECON-2026-034:
+    text: U.S. direct imports of solar panels from China are near-zero by value (well
+      under 1% share), using HS6 854143 as a proxy category for photovoltaic modules/panels.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
   GEO-2025-001:
     text: The energy transition is producing major political consequences—from bribery
       and corruption up to open warfare—and post-oil geopolitics will differ substantially
@@ -1058,6 +1185,80 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-26'
+  GEO-2026-025:
+    text: In January 2026, President Donald Trump threatened tariffs on multiple European
+      countries in connection with U.S. efforts to secure control/purchase of Greenland.
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  GEO-2026-026:
+    text: The "axis of democracies vs authoritarians" framing is analytically unhelpful
+      because China–Russia alignment is better explained as pragmatic/regime-security
+      driven than identity-based ideological alignment.
+    type: '[T]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  GEO-2026-027:
+    text: Some high-level Chinese elites hold conspiratorial views that the U.S. orchestrated
+      the Ukraine war to bind Europe more closely to Washington.
+    type: '[H]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.30000001192092896
+    source_ids:
+    - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  GEO-2026-028:
+    text: Framing the era as a deterministic transition from American order to Chinese
+      hegemony increases the probability of hawkish U.S. policies and great-power
+      confrontation.
+    type: '[H]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
   GOV-2026-001:
     text: Property rights will become arbitrary/confiscatable in neofeudal regime
     type: '[H]'
@@ -2400,6 +2601,304 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-26'
+  GOV-2026-071:
+    text: In the 2024 presidential election, Trump received nearly 78% of the vote
+      in the 444 farming-dependent counties.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.30000001192092896
+    source_ids:
+    - rawstory-2026-trump-voters-suicide-pact
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
+  GOV-2026-072:
+    text: Farm distress driven by tariffs and immigration policy will be a major political
+      liability for Republicans in the 2026 midterm elections.
+    type: '[P]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - rawstory-2026-trump-voters-suicide-pact
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
+  GOV-2026-073:
+    text: DHS Secretary Kristi Noem described the circumstances around Alex Pretti’s
+      shooting as “a violent riot” and suggested someone “show[ed] up with weapons.”
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - reason-2026-dhs-retreats-violent-riot-pretti
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
+  GOV-2026-074:
+    text: Border Patrol commander Gregory Bovino repeatedly described the scene as
+      a “riot” on CNN and argued that Second Amendment rights “don’t count” when someone
+      “riot[s] and assault[s], delay[s], obstruct[s], and impede[s]” law enforcement
+      officers.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - reason-2026-dhs-retreats-violent-riot-pretti
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
+  GOV-2026-075:
+    text: A CBP Office of Professional Responsibility report to Congress described
+      the pre-shooting context as “several civilians … yelling and blowing whistles,”
+      with CBP/Border Patrol making verbal requests for civilians to stay on sidewalks
+      and out of the roadway.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - reason-2026-dhs-retreats-violent-riot-pretti
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
+  GOV-2026-077:
+    text: In November 2025, U.S. District Judge Sara Ellis found that Gregory Bovino
+      lied about whether he was hit by a rock before deploying tear gas at Chicago
+      protesters; video evidence disproved his account and he later admitted he was
+      hit only after.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - reason-2026-dhs-retreats-violent-riot-pretti
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
+  GOV-2026-078:
+    text: The 'rupture' in the international order is substantially a cultural shift
+      toward overt coercion (threats, bullying, violence) as normal great-power behavior,
+      not just a gradual multipolar transition.
+    type: '[T]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  GOV-2026-079:
+    text: 'In his Davos 2026 speech, Mark Carney said: "We are in the midst of a rupture,
+      not a transition."'
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  GOV-2026-080:
+    text: We should not assume the current breakdown implies a successor stable global
+      order; instead, we should expect many partial "ordering attempts" without guaranteed
+      convergence to a coherent new order.
+    type: '[T]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  GOV-2026-082:
+    text: Operation Metro Surge brought thousands of immigration enforcement officers
+      to Minneapolis and St. Paul in January 2026.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - lee-2026-minnesota-trump-immigration-conflict
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  GOV-2026-083:
+    text: The Trump administration’s Minnesota immigration enforcement surge was linked
+      (as stated context) to a probe into fraud within Minnesota’s social services
+      programs.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - lee-2026-minnesota-trump-immigration-conflict
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  GOV-2026-084:
+    text: Renee Nicole Macklin Good (37) was fatally shot in Minneapolis on 2026-01-08
+      during a confrontation with ICE officers around her car.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - lee-2026-minnesota-trump-immigration-conflict
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  GOV-2026-085:
+    text: Minnesota Gov. Tim Walz authorized the Minnesota National Guard to be 'staged
+      and ready' on 2026-01-08 amid protests after the Good shooting and ICE presence.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - lee-2026-minnesota-trump-immigration-conflict
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  GOV-2026-086:
+    text: On 2025-12-23, the Supreme Court declined to allow (at least temporarily)
+      Trump’s National Guard deployment to the Chicago area at the preliminary stage.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - lee-2026-minnesota-trump-immigration-conflict
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  GOV-2026-087:
+    text: After the Minneapolis shootings, the Trump administration replaced Border
+      Patrol commander Greg Bovino with border czar Tom Homan as the on-the-ground
+      lead/liaison in Minnesota.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - lee-2026-minnesota-trump-immigration-conflict
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  GOV-2026-088:
+    text: After phone calls with Tim Walz and Jacob Frey, Trump pledged to pull some
+      Border Patrol agents out of Minnesota.
+    type: '[F]'
+    domain: GOV
+    evidence_level: E4
+    credence: 0.44999998807907104
+    source_ids:
+    - lee-2026-minnesota-trump-immigration-conflict
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
   INST-2025-001:
     text: At Google, a team other than the core Gemini/DeepMind builders modified
       the system’s behavior in ways that produced historically inaccurate “diversity
@@ -3371,6 +3870,41 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-24'
+  LABOR-2026-014:
+    text: Roughly 70% of U.S. crop farmworkers are foreign-born.
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - rawstory-2026-trump-voters-suicide-pact
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
+  LABOR-2026-015:
+    text: One grower lost about $5 million because crops could not be harvested due
+      to farm-labor shortages linked to immigration enforcement.
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.25
+    source_ids:
+    - rawstory-2026-trump-voters-suicide-pact
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
   META-2026-001:
     text: Structured claim extraction with IDs enables cross-referencing that ad-hoc
       analysis cannot
@@ -3825,6 +4359,276 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-23'
+  META-2026-024:
+    text: Reality Check provides a claim registry that tracks claims with evidence
+      levels, credence scores, and relationships.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - lhl-2026-realitycheck-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-025:
+    text: 'Reality Check supports a structured 3-stage source analysis methodology:
+      descriptive → evaluative → dialectical.'
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2026-realitycheck-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-026:
+    text: Reality Check supports evidence links that connect claims to sources with
+      location and strength metadata.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - lhl-2026-realitycheck-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-027:
+    text: Reality Check supports reasoning trails that document why a credence was
+      assigned (epistemic provenance).
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - lhl-2026-realitycheck-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-028:
+    text: Reality Check supports prediction tracking tied to falsification criteria
+      and status updates.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2026-realitycheck-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-029:
+    text: Reality Check supports “argument chains” to map logical dependencies and
+      identify weak links.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.800000011920929
+    source_ids:
+    - lhl-2026-realitycheck-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-030:
+    text: Reality Check supports semantic search to find related claims across the
+      knowledge base.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.800000011920929
+    source_ids:
+    - lhl-2026-realitycheck-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-031:
+    text: Reality Check v0.3.0 introduces “rigor-v1” analysis tables (Layer/Actor/Scope/Quantifier
+      columns) and a `--rigor` enforcement mode in the analysis validator.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2026-realitycheck-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-032:
+    text: The Reality Check v0.3.0 repository test suite contains 401 pytest-collected
+      tests.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - lhl-2026-realitycheck-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-033:
+    text: '`realitycheck-data` is a unified knowledge base built with the Reality
+      Check framework.'
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2026-realitycheck-data-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-034:
+    text: At the time of the README, the DB contains 385 claims, 107 sources, 4 argument
+      chains, and 26 predictions tracked.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - lhl-2026-realitycheck-data-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-035:
+    text: The repo provides navigation to a sources index, a predictions dashboard,
+      and YAML exports of claim and source registries.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2026-realitycheck-data-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-036:
+    text: The repo contains individual source analyses under `analysis/sources/` and
+      cross-source syntheses under `analysis/syntheses/`.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - lhl-2026-realitycheck-data-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-037:
+    text: '`claims/registry.yaml` and `reference/sources.yaml` are YAML exports of
+      the claim/source registries.'
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.75
+    source_ids:
+    - lhl-2026-realitycheck-data-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
+  META-2026-038:
+    text: The repository includes a LanceDB database at `data/realitycheck.lance/`
+      and a staging+filing workflow via `inbox/` and `reference/`.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - lhl-2026-realitycheck-data-readme
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
   RESOURCE-2025-001:
     text: By 2040 at the latest, coal, gas, and oil land rights will be stranded assets
       that cannot be monetized.
@@ -4091,6 +4895,26 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-27'
+  RESOURCE-2026-014:
+    text: China's green-industrial capacity (especially solar modules and battery
+      supply chains) is large enough that leveraging it could materially accelerate
+      global decarbonization, making China "central" to plausible climate-stabilization
+      pathways.
+    type: '[H]'
+    domain: RESOURCE
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
   RISK-2025-001:
     text: Humanity has passed the +1.5°C warming threshold, increasing the number
       of days per year when temperatures are too hot for normal photosynthesis.
@@ -4251,6 +5075,25 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-26'
+  RISK-2026-004:
+    text: A 2024 CERL/UPenn tabletop exercise treated armed conflict between state
+      National Guard forces and federal troops in a major U.S. city as plausible and
+      as a potential civil-war trigger.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - lee-2026-minnesota-trump-immigration-conflict
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
   SOC-2025-001:
     text: A significant share of current social unrest and insecurity-driven radicalization
       is being caused by the ongoing civilizational energy transition.
@@ -4345,6 +5188,25 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-19'
+  SOC-2026-004:
+    text: In the USDA ERS 2015 County Typology Codes (industry dependence), 444 U.S.
+      counties are classified as “Farming” (often referred to as “farming-dependent”
+      counties).
+    type: '[F]'
+    domain: SOC
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - rawstory-2026-trump-voters-suicide-pact
+    first_extracted: '2026-01-31'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-01-31'
   TECH-2025-001:
     text: 'Moore’s Law is effectively ending: compute and storage improvements have
       been limited for over a decade and now rely mainly on parallelism rather than
@@ -6338,6 +7200,25 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-25'
+  TECH-2026-099:
+    text: The Oct 7, 2022 U.S. export-control regime targeted advanced computing/AI
+      chips and semiconductor manufacturing items in order to constrain PRC military
+      modernization.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - nyt-2026-world-sees-america-tooze
+    first_extracted: '2026-02-01'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-01'
   TRANS-2025-001:
     text: The current global energy transition away from fossil fuels is “more or
       less irreversible” at this point.

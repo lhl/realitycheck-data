@@ -1,33 +1,35 @@
 # Reality Check Summary
 
-*Generated 2026-01-27*
+*Generated 2026-02-01*
 
 ## Statistics
 
 | Table | Count |
 |-------|-------|
-| claims | 352 |
-| sources | 95 |
+| claims | 400 |
+| sources | 109 |
 | chains | 4 |
-| predictions | 25 |
+| predictions | 26 |
 | contradictions | 0 |
 | definitions | 0 |
-| analysis_logs | 24 |
+| analysis_logs | 31 |
+| evidence_links | 180 |
+| reasoning_trails | 185 |
 
 ## Claims by Domain
 
 | Domain | Count |
 |--------|-------|
-| ECON | 29 |
-| GEO | 25 |
-| GOV | 70 |
+| ECON | 36 |
+| GEO | 29 |
+| GOV | 86 |
 | INST | 33 |
-| LABOR | 17 |
-| META | 23 |
-| RESOURCE | 14 |
-| RISK | 8 |
-| SOC | 5 |
-| TECH | 104 |
+| LABOR | 19 |
+| META | 38 |
+| RESOURCE | 15 |
+| RISK | 9 |
+| SOC | 6 |
+| TECH | 105 |
 | TRANS | 24 |
 
 ## Claims by Type
@@ -36,25 +38,25 @@
 |------|-------|
 | [A] | 6 |
 | [C] | 1 |
-| [F] | 172 |
-| [H] | 90 |
-| [P] | 25 |
+| [F] | 213 |
+| [H] | 93 |
+| [P] | 26 |
 | [S] | 4 |
-| [T] | 54 |
+| [T] | 57 |
 
 ## Sources by Type
 
 | Type | Count |
 |------|-------|
-| ARTICLE | 21 |
+| ARTICLE | 29 |
 | BLOG | 22 |
 | BOOK | 1 |
 | CONVO | 6 |
 | DATA | 2 |
-| INTERVIEW | 1 |
-| KNOWLEDGE | 19 |
+| INTERVIEW | 2 |
+| KNOWLEDGE | 22 |
 | PAPER | 8 |
-| REPORT | 8 |
+| REPORT | 10 |
 | SOCIAL | 7 |
 
 ## Argument Chains
