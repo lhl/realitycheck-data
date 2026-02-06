@@ -1,0 +1,207 @@
+sources:
+  - id: "openai-2026-gpt-5-3-codex"
+    type: "ARTICLE"
+    title: "Introducing GPT-5.3-Codex"
+    author:
+      - "OpenAI"
+    year: 2026
+    url: "https://openai.com/index/introducing-gpt-5-3-codex/"
+    accessed: "2026-02-06"
+    status: "analyzed"
+    analysis_file: "analysis/sources/openai-2026-gpt-5-3-codex.md"
+    reliability: 0.55
+    bias_notes: >-
+      First-party OpenAI product announcement (marketing + competitive incentives). Benchmark results are
+      self-reported and may depend on harness details (tools, sampling, resource caps, contamination controls).
+      Safety posture is described at a high level; many internal mitigations and “capability classification”
+      judgments are hard to independently verify.
+    topics:
+      - agentic-coding
+      - coding-agents
+      - codex
+      - benchmarks
+      - computer-use
+      - cybersecurity
+      - preparedness
+      - inference-systems
+    domains:
+      - TECH
+      - INST
+      - RISK
+    claims_extracted:
+      - TECH-2026-900
+      - TECH-2026-901
+      - TECH-2026-902
+      - TECH-2026-903
+      - TECH-2026-904
+      - TECH-2026-905
+      - TECH-2026-906
+      - INST-2026-900
+      - INST-2026-901
+      - RISK-2026-900
+
+claims:
+  - id: "TECH-2026-900"
+    text: >-
+      OpenAI announced a new Codex model, GPT-5.3-Codex, on February 5, 2026.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.95
+    source_ids: ["openai-2026-gpt-5-3-codex"]
+    operationalization: >-
+      Verify the announcement date and the existence of the release page and model name in OpenAI’s
+      official release materials.
+    assumptions: []
+    falsifiers:
+      - OpenAI removes or materially revises the announcement and date without replacement.
+
+  - id: "TECH-2026-901"
+    text: >-
+      OpenAI claims GPT-5.3-Codex is “the most capable agentic coding model to date.”
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["openai-2026-gpt-5-3-codex"]
+    operationalization: >-
+      Compare GPT-5.3-Codex against peer models on public agentic coding benchmarks (e.g., Terminal-Bench,
+      SWE-bench variants) under matched harnesses and resource constraints.
+    assumptions:
+      - “Most capable” is intended to mean highest benchmark performance under fair comparisons.
+    falsifiers:
+      - Multiple independent leaderboards show peer models outperform GPT-5.3-Codex under matched settings.
+
+  - id: "TECH-2026-902"
+    text: >-
+      OpenAI claims GPT-5.3-Codex is 25% faster for Codex users (via infrastructure/inference improvements).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-2026-gpt-5-3-codex"]
+    operationalization: >-
+      Measure latency and time-to-completion for a fixed task suite in the Codex app/CLI before vs. after the
+      GPT-5.3-Codex rollout, controlling for load and task mix.
+    assumptions:
+      - “25% faster” refers to typical user-facing latency/time-to-result rather than a narrow internal metric.
+    falsifiers:
+      - Independent measurements show no meaningful speed improvement (or regression) for comparable tasks.
+
+  - id: "TECH-2026-903"
+    text: >-
+      OpenAI reports that on its evaluations GPT-5.3-Codex achieved (among other results) 56.8% on
+      SWE-Bench Pro (Public) and 77.3% on Terminal-Bench 2.0 (with “xhigh” reasoning effort).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["openai-2026-gpt-5-3-codex"]
+    operationalization: >-
+      Cross-check the reported scores against public leaderboards where available and attempt replication
+      using published benchmark harnesses and disclosed settings (agent, sampling, resources).
+    assumptions:
+      - The reported scores correspond to standard benchmark definitions (or clearly described variants).
+    falsifiers:
+      - Official benchmark maintainers or third-party reproductions contradict the reported scores under the
+        same metric definitions.
+
+  - id: "TECH-2026-904"
+    text: >-
+      OpenAI claims SWE-Bench Pro spans four languages (beyond Python-only SWE-bench Verified) and is more
+      contamination-resistant than prior SWE-bench variants.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["openai-2026-gpt-5-3-codex"]
+    operationalization: >-
+      Verify SWE-Bench Pro language coverage and contamination-mitigation design from the benchmark’s paper
+      and/or official benchmark documentation; compare to SWE-bench Verified documentation.
+    assumptions:
+      - OpenAI’s use of “SWE-Bench Pro” refers to the widely used benchmark of that name.
+    falsifiers:
+      - SWE-Bench Pro documentation contradicts the stated language coverage or contamination framing.
+
+  - id: "TECH-2026-905"
+    text: >-
+      OpenAI claims GPT-5.3-Codex “sets a new industry high” on SWE-Bench Pro and Terminal-Bench and shows
+      strong performance on OSWorld and GDPval.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["openai-2026-gpt-5-3-codex"]
+    operationalization: >-
+      Compare GPT-5.3-Codex to peer models on the same benchmark versions under matched harnesses and
+      constraints; check independent leaderboards for “industry high” status over time.
+    assumptions:
+      - Public leaderboards and third-party evaluations broadly track real-world agent performance.
+    falsifiers:
+      - Independent leaderboards show peer models at or above GPT-5.3-Codex on the same benchmarks.
+
+  - id: "TECH-2026-906"
+    text: >-
+      OpenAI claims GPT-5.3-Codex was co-designed for, trained with, and served on NVIDIA GB200 NVL72 systems.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-2026-gpt-5-3-codex"]
+    operationalization: >-
+      Look for corroboration in OpenAI system cards, infrastructure posts, or NVIDIA announcements describing
+      GB200 NVL72 deployments for OpenAI.
+    assumptions:
+      - “Trained with and served on” refers to meaningful use of GB200 NVL72 in training and inference.
+    falsifiers:
+      - Credible disclosures show training/inference used different hardware and GB200 NVL72 was not used.
+
+  - id: "INST-2026-900"
+    text: >-
+      OpenAI states GPT-5.3-Codex is available for paid ChatGPT plans in the Codex app, CLI, IDE extension,
+      and web, and that OpenAI is working to enable API access “soon.”
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["openai-2026-gpt-5-3-codex"]
+    operationalization: >-
+      Verify availability in the listed product surfaces (app/CLI/IDE/web) and confirm whether/when API
+      access is offered in official API documentation.
+    assumptions: []
+    falsifiers:
+      - Official product docs contradict availability claims or do not list GPT-5.3-Codex in those surfaces.
+
+  - id: "INST-2026-901"
+    text: >-
+      OpenAI states it is launching “Trusted Access for Cyber,” a pilot program to accelerate cyber defense
+      research, and committing $10M in API credits to support cyber defense work.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["openai-2026-gpt-5-3-codex"]
+    operationalization: >-
+      Check OpenAI program pages/announcements for Trusted Access for Cyber and public documentation of the
+      $10M credit commitment (eligibility, terms, recipients).
+    assumptions: []
+    falsifiers:
+      - OpenAI publishes updated program terms that retract or materially reduce the described commitments.
+
+  - id: "RISK-2026-900"
+    text: >-
+      OpenAI claims GPT-5.3-Codex is the first model it classifies as “High capability” for cybersecurity tasks
+      under OpenAI’s Preparedness Framework and the first it directly trained to identify software vulnerabilities;
+      OpenAI says it is deploying its most comprehensive cybersecurity safety stack to date.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-2026-gpt-5-3-codex"]
+    operationalization: >-
+      Compare against Preparedness Framework criteria and look for supporting disclosure in system cards;
+      evaluate whether deployed safeguards measurably reduce misuse without unduly blocking defensive use.
+    assumptions:
+      - OpenAI’s “High capability” label corresponds to a published capability threshold with consistent meaning.
+    falsifiers:
+      - System cards or official safety documentation contradict the “High capability” classification claim.

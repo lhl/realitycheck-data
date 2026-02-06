@@ -1,0 +1,201 @@
+sources:
+  - id: "anthropic-2026-claude-opus-4-6"
+    type: "ARTICLE"
+    title: "Claude Opus 4.6"
+    author:
+      - "Anthropic"
+    year: 2026
+    url: "https://www.anthropic.com/news/claude-opus-4-6"
+    accessed: "2026-02-06"
+    status: "analyzed"
+    analysis_file: "analysis/sources/anthropic-2026-claude-opus-4-6.md"
+    reliability: 0.60
+    bias_notes: >-
+      First-party Anthropic product announcement (marketing + competitive incentives). Many capability claims
+      are benchmark-based but can be harness-sensitive (tools, agent scaffold, sampling, and resource limits).
+      Safety claims rely on Anthropic’s internal evaluations and system card framing; independent replication is
+      limited.
+    topics:
+      - agentic-coding
+      - long-context
+      - terminal-bench
+      - gdpval
+      - knowledge-work
+      - safety-evals
+      - pricing
+      - tool-use
+      - claude-code
+    domains:
+      - TECH
+      - INST
+      - RISK
+      - ECON
+    claims_extracted:
+      - TECH-2026-910
+      - TECH-2026-911
+      - TECH-2026-912
+      - TECH-2026-913
+      - TECH-2026-914
+      - INST-2026-910
+      - INST-2026-911
+      - ECON-2026-910
+      - ECON-2026-911
+      - RISK-2026-910
+
+claims:
+  - id: "TECH-2026-910"
+    text: >-
+      Anthropic announced Claude Opus 4.6 on February 5, 2026.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.95
+    source_ids: ["anthropic-2026-claude-opus-4-6"]
+    operationalization: >-
+      Verify the announcement date and the existence of the official release page and model naming.
+    assumptions: []
+    falsifiers:
+      - Anthropic removes or materially revises the announcement and date without replacement.
+
+  - id: "TECH-2026-911"
+    text: >-
+      Anthropic claims Claude Opus 4.6 is the first Opus-class model to offer a 1M token context window
+      (beta).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["anthropic-2026-claude-opus-4-6"]
+    operationalization: >-
+      Confirm context limits in Anthropic API documentation and product settings; test that prompts near
+      1M tokens are accepted and usable under stated conditions.
+    assumptions:
+      - The “1M token context” is generally available to users/developers (not only a restricted preview).
+    falsifiers:
+      - Official docs contradict the 1M context claim or the limit is not actually available in practice.
+
+  - id: "TECH-2026-912"
+    text: >-
+      Anthropic claims Claude Opus 4.6 achieves the highest score on Terminal-Bench 2.0 and leads other
+      frontier models on Humanity’s Last Exam and BrowseComp.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["anthropic-2026-claude-opus-4-6"]
+    operationalization: >-
+      Compare Opus 4.6 against peer models on the same public benchmark versions and leaderboards, using
+      matched agent scaffolds and resource constraints.
+    assumptions:
+      - Benchmark names refer to standard public benchmarks and “highest score” is meant in a leaderboard sense.
+    falsifiers:
+      - Public benchmark leaderboards show Opus 4.6 is not top-ranked under comparable conditions.
+
+  - id: "TECH-2026-913"
+    text: >-
+      Anthropic claims that on GDPval-AA, Opus 4.6 outperforms the next-best model (OpenAI GPT-5.2) by
+      around 144 Elo points and outperforms Claude Opus 4.5 by 190 points.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["anthropic-2026-claude-opus-4-6"]
+    operationalization: >-
+      Check the GDPval-AA leaderboard methodology and Elo computation; verify reported Elo and confidence
+      intervals and reproduce with an open harness if possible.
+    assumptions:
+      - Elo conversion and sampling assumptions are valid and comparable across models.
+    falsifiers:
+      - Independent GDPval-AA reproductions show materially different Elo gaps.
+
+  - id: "TECH-2026-914"
+    text: >-
+      Anthropic claims Claude Opus 4.6 supports outputs of up to 128k tokens.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["anthropic-2026-claude-opus-4-6"]
+    operationalization: >-
+      Verify maximum output-token settings in Anthropic API docs and test generation near the limit.
+    assumptions: []
+    falsifiers:
+      - API docs or observed behavior show a substantially lower maximum output limit.
+
+  - id: "INST-2026-910"
+    text: >-
+      Anthropic announced product/API updates tied to Opus 4.6 including: Claude Code “agent teams” (preview),
+      context compaction (beta), adaptive thinking, and effort controls.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["anthropic-2026-claude-opus-4-6"]
+    operationalization: >-
+      Verify feature availability and configuration in Claude Code and Anthropic API documentation.
+    assumptions: []
+    falsifiers:
+      - Official product docs contradict feature availability or omit these features for Opus 4.6.
+
+  - id: "INST-2026-911"
+    text: >-
+      Anthropic states Opus 4.6 is available on claude.ai, the Anthropic API, and major cloud platforms, and
+      that developers can use the model name claude-opus-4-6 via the Claude API.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["anthropic-2026-claude-opus-4-6"]
+    operationalization: >-
+      Confirm model availability and naming in official API model lists and cloud marketplace listings.
+    assumptions: []
+    falsifiers:
+      - The model name is not listed in API docs or is unavailable on the stated platforms.
+
+  - id: "ECON-2026-910"
+    text: >-
+      Anthropic states Opus 4.6 pricing remains $5/$25 per million input/output tokens (base pricing).
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["anthropic-2026-claude-opus-4-6"]
+    operationalization: >-
+      Check Anthropic’s official pricing documentation for Opus 4.6 base input/output token rates.
+    assumptions:
+      - “Pricing remains the same” refers to standard context lengths and does not exclude surcharges.
+    falsifiers:
+      - Official pricing docs show different base rates for Opus 4.6.
+
+  - id: "ECON-2026-911"
+    text: >-
+      Anthropic states Opus 4.6 has premium pricing for prompts exceeding 200k tokens ($10/$37.50 per million
+      input/output tokens) and offers US-only inference at 1.1× token pricing.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["anthropic-2026-claude-opus-4-6"]
+    operationalization: >-
+      Verify pricing tiers and US-only inference multiplier in official Anthropic API documentation and billing.
+    assumptions: []
+    falsifiers:
+      - Official docs contradict the premium pricing thresholds/rates or the US-only inference multiplier.
+
+  - id: "RISK-2026-910"
+    text: >-
+      Anthropic claims Opus 4.6 has an overall safety profile as good as or better than other frontier models,
+      with low rates of misaligned behaviors on its automated behavioral audit and low over-refusal rates, as
+      described in its system card.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["anthropic-2026-claude-opus-4-6"]
+    operationalization: >-
+      Review the Opus 4.6 system card for audit definitions and results; compare to other labs’ disclosed
+      safety evaluations and run third-party red-team style tests for deception/sycophancy/over-refusal.
+    assumptions:
+      - The automated audit is meaningful and comparable across versions and model families.
+    falsifiers:
+      - Independent evaluations find materially higher misaligned behavior or over-refusal than claimed.
