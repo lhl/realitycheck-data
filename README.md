@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 415 |
-| **Sources** | 111 |
+| **Claims** | 423 |
+| **Sources** | 113 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 26 |
+| **Predictions Tracked** | 33 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -50,6 +50,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-06 | [AI 2027](analysis/sources/aifutures-2025-ai-2027.md) | `[REVIEWED]` | Scenario + forecast pages: “superhuman coder” by 2027 plausible; ~1-year superhuman-coder→ASI median; compute stock 10× to 100M H100e; theft/race dynamics |
 | 2026-02-01 | [Memorandum of Strategy: Project Mirror (Arclight)](analysis/sources/arclight-2026-mirror.md) | `[DRAFT]` | Proposal: anti-sycophancy AI “mentor” optimized for graduation; psychometric middleware + lockout rules; limited empirical grounding |
 | 2026-02-01 | [Arclight Operating System (AOS): Internal Codex](analysis/sources/arclight-2026-aos.md) | `[DRAFT]` | Constraint-based institution “OS”: agency + endowment + founder-decay; argues kernel must stay hidden; heavy on non-operational metaphors |
 | 2026-02-01 | [Reality Check (framework README)](analysis/sources/lhl-2026-realitycheck-readme.md) | `[REVIEWED]` | Repo self-description; verified CLI+DB primitives; notes rigor-v1 validator + 401 tests |
@@ -115,16 +116,16 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 107 |
+| TECH | Technology & AI | 111 |
 | LABOR | Labor & Employment | 19 |
 | ECON | Economics & Markets | 39 |
 | GOV | Governance & Policy | 87 |
 | SOC | Social Dynamics | 10 |
-| TRANS | Transition Dynamics | 24 |
+| TRANS | Transition Dynamics | 26 |
 | RESOURCE | Resource Constraints | 15 |
-| GEO | Geopolitics | 29 |
+| GEO | Geopolitics | 30 |
 | INST | Institutions & Organizations | 37 |
-| RISK | Risk Assessment | 10 |
+| RISK | Risk Assessment | 11 |
 | META | Framework & Methodology | 38 |
 
 ---
@@ -235,4 +236,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-02-01*
+*Last updated: 2026-02-06*

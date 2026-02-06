@@ -1,36 +1,36 @@
 # Reality Check Summary
 
-*Generated 2026-02-01*
+*Generated 2026-02-06*
 
 ## Statistics
 
 | Table | Count |
 |-------|-------|
-| claims | 415 |
-| sources | 111 |
+| claims | 423 |
+| sources | 113 |
 | chains | 4 |
-| predictions | 26 |
+| predictions | 33 |
 | contradictions | 0 |
 | definitions | 0 |
-| analysis_logs | 39 |
-| evidence_links | 183 |
-| reasoning_trails | 188 |
+| analysis_logs | 40 |
+| evidence_links | 184 |
+| reasoning_trails | 189 |
 
 ## Claims by Domain
 
 | Domain | Count |
 |--------|-------|
 | ECON | 39 |
-| GEO | 29 |
+| GEO | 30 |
 | GOV | 87 |
 | INST | 37 |
 | LABOR | 19 |
 | META | 38 |
 | RESOURCE | 15 |
-| RISK | 10 |
+| RISK | 11 |
 | SOC | 10 |
-| TECH | 107 |
-| TRANS | 24 |
+| TECH | 111 |
+| TRANS | 26 |
 
 ## Claims by Type
 
@@ -38,9 +38,9 @@
 |------|-------|
 | [A] | 8 |
 | [C] | 1 |
-| [F] | 216 |
+| [F] | 217 |
 | [H] | 100 |
-| [P] | 26 |
+| [P] | 33 |
 | [S] | 4 |
 | [T] | 60 |
 
@@ -55,8 +55,8 @@
 | DATA | 2 |
 | INTERVIEW | 2 |
 | KNOWLEDGE | 23 |
-| PAPER | 8 |
-| REPORT | 11 |
+| PAPER | 9 |
+| REPORT | 12 |
 | SOCIAL | 7 |
 
 ## Argument Chains

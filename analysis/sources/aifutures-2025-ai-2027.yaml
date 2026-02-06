@@ -1,0 +1,207 @@
+sources:
+  - id: "aifutures-2025-ai-2027"
+    type: "REPORT"
+    title: "AI 2027"
+    author:
+      - "Daniel Kokotajlo"
+      - "Scott Alexander"
+      - "Thomas Larsen"
+      - "Eli Lifland"
+      - "Romeo Dean"
+    year: 2025
+    url: "https://ai-2027.com/"
+    accessed: "2026-02-06"
+    status: "analyzed"
+    analysis_file: "analysis/sources/aifutures-2025-ai-2027.md"
+    reliability: 0.55
+    bias_notes: >-
+      AI-safety-adjacent forecasting project arguing for a plausible, fast
+      timeline to transformative/superhuman AI. Uses a vivid narrative
+      (“scenario”) plus quantitative-ish forecast pages; this can improve
+      concreteness but also risks “story overfitting” and anchoring. Likely
+      motivated to raise urgency (governance + security + alignment), which may
+      bias toward faster and more catastrophic trajectories and underweight
+      “muddling through” equilibria.
+    topics:
+      - ai-forecasting
+      - timelines
+      - takeoff
+      - superhuman-coding
+      - coding-agents
+      - ai-governance
+      - ai-security
+      - model-theft
+      - export-controls
+      - us-china
+      - alignment
+      - deceptive-alignment
+    domains:
+      - TECH
+      - TRANS
+      - RISK
+      - GEO
+    claims_extracted:
+      - TRANS-2025-050
+      - TECH-2025-050
+      - TRANS-2025-051
+      - TECH-2025-051
+      - TECH-2025-052
+      - TECH-2025-053
+      - RISK-2025-050
+      - GEO-2025-050
+
+claims:
+  - id: "TRANS-2025-050"
+    text: >-
+      The impact of superhuman AI over the next decade will be bigger than that
+      of the industrial revolution.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["aifutures-2025-ai-2027"]
+    operationalization: >-
+      Define an impact rubric (productivity, institutional change, conflict
+      risk, cultural change) and compare 2025–2035 changes to historical
+      estimates for the industrial revolution.
+    assumptions:
+      - Superhuman AI is achieved and widely deployed within ~2025–2035.
+      - “‘Bigger than the industrial revolution’ can be operationalized via agreed proxies.”
+    falsifiers:
+      - By ~2035, independent historical/economic analyses judge AI-driven changes to be below industrial-revolution-scale on key metrics.
+
+  - id: "TECH-2025-050"
+    text: >-
+      The AI Futures Project’s timelines forecast includes scenarios where there
+      is a substantial chance of superhuman coders by 2027 and superhuman-everything by 2028.
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["aifutures-2025-ai-2027"]
+    depends_on: ["TECH-2025-051", "TECH-2025-053", "TECH-2025-052"]
+    operationalization: >-
+      Inspect the Timelines Forecast distribution and quantify probability mass
+      on ‘superhuman coders by end of 2027’; define ‘superhuman-everything’
+      criteria and check by 2028.
+    assumptions:
+      - “‘Superhuman coder’ is meaningfully measurable across diverse SWE tasks.”
+      - “The forecast’s ‘substantial chance’ corresponds to a non-trivial probability mass (e.g., ≥10%).”
+    falsifiers:
+      - No credible ‘superhuman coder’ system exists by end of 2027.
+      - Forecast page does not assign non-trivial probability to this outcome.
+
+  - id: "TRANS-2025-051"
+    text: >-
+      Conditional on reaching superhuman coders, superintelligence could follow
+      within about 1 year.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.25
+    source_ids: ["aifutures-2025-ai-2027"]
+    depends_on: ["TECH-2025-050"]
+    operationalization: >-
+      Define ‘superhuman coder’ and ‘superintelligence’ thresholds; measure
+      elapsed time between first validated superhuman-coder system and first
+      validated broadly superhuman system.
+    assumptions:
+      - Coding autonomy is a major bottleneck to general cognitive superhumanity.
+      - Compute, data, evaluation, and coordination do not impose multi-year delays.
+    falsifiers:
+      - After validated superhuman coding, multi-domain superhumanity takes many years despite large investment.
+
+  - id: "TECH-2025-051"
+    text: >-
+      AI coding task time horizon at roughly 50% success doubled about every 7
+      months from 2019–2024, with faster growth suggested after 2024.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.75
+    source_ids: ["aifutures-2025-ai-2027"]
+    operationalization: >-
+      Reproduce METR’s time-horizon metric on the same eval suite; fit
+      doubling-time trends for 2019–2024 and 2024+ periods and compare to 7-month / ~4-month claims.
+    assumptions:
+      - The underlying evals are not dominated by contamination or selection effects.
+      - Task time horizon is measured consistently across years.
+    falsifiers:
+      - Independent replication finds materially different doubling times.
+      - Contamination controls remove most of the observed trend.
+
+  - id: "TECH-2025-052"
+    text: >-
+      By early 2026, frontier AI systems will be able to autonomously complete
+      many multi-hour coding tasks and materially accelerate AI R&D via agentic workflows.
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["aifutures-2025-ai-2027"]
+    operationalization: >-
+      Measure end-to-end autonomous completion rate on multi-hour SWE tasks
+      (spec→impl→tests→integration) and estimate productivity/R&D acceleration
+      in real organizations relative to baseline.
+    assumptions:
+      - Model reliability reaches levels compatible with delegating multi-hour tasks.
+      - Organizations adopt agentic workflows at meaningful scale.
+    falsifiers:
+      - By end of 2026, multi-hour tasks still require heavy human decomposition and oversight, and measured R&D acceleration is modest.
+
+  - id: "TECH-2025-053"
+    text: >-
+      Global AI compute stock will increase by about 10× by December 2027
+      (relative to March 2025), reaching roughly 100 million H100-equivalents.
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["aifutures-2025-ai-2027"]
+    operationalization: >-
+      Track accelerator shipments, deployments, and utilization; convert to H100-equivalents using a published conversion; compare deployed-stock estimates at 2027-12 to the forecast.
+    assumptions:
+      - Supply chains and power constraints permit the projected buildout.
+      - H100-equivalent conversion is stable and meaningful.
+    falsifiers:
+      - Credible industry/public data imply substantially below-forecast deployed compute by end of 2027.
+
+  - id: "RISK-2025-050"
+    text: >-
+      Without major improvements to AI lab security, model weights theft is
+      likely within about 5 years.
+    type: "[P]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["aifutures-2025-ai-2027"]
+    operationalization: >-
+      Track attempted and successful intrusions against frontier AI labs;
+      assess whether any incident results in exfiltration of full model weights;
+      adjust for underreporting via security disclosures.
+    assumptions:
+      - Adversaries allocate sustained resources to weights theft.
+      - Security practices do not improve enough to offset attacker capability.
+    falsifiers:
+      - No weights theft occurs across many years of high-value deployments despite sustained attacker effort and disclosed attempts.
+
+  - id: "GEO-2025-050"
+    text: >-
+      The world is plausibly headed for a US–China race dynamic over AI
+      capabilities where export controls, espionage, and national mobilization
+      become central.
+    type: "[P]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["aifutures-2025-ai-2027"]
+    operationalization: >-
+      Track export-control tightening, AI-related industrial policy, espionage
+      incidents targeting AI, and national-security framing in official
+      documents; code for ‘race dynamic’ indicators over 2025–2028.
+    assumptions:
+      - AI capability remains strategically differentiating enough to drive national mobilization.
+      - Coordination mechanisms (treaties, verification) fail to prevent race incentives.
+    falsifiers:
+      - Sustained de-escalation/coordination prevents race dynamics from dominating AI deployment by ~2028.
+

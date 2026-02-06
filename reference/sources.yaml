@@ -1,6 +1,6 @@
 # Source Registry
-# Exported from LanceDB on 2026-02-01
-# Total sources: 111
+# Exported from LanceDB on 2026-02-06
+# Total sources: 113
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -51,6 +51,54 @@ sources:
     - GOV
     - TRANS
     status: cataloged
+  aifutures-2025-ai-2027:
+    type: REPORT
+    title: AI 2027
+    author:
+    - Daniel Kokotajlo
+    - Scott Alexander
+    - Thomas Larsen
+    - Eli Lifland
+    - Romeo Dean
+    year: 2025
+    url: https://ai-2027.com/
+    accessed: '2026-02-06'
+    reliability: 0.55
+    bias_notes: AI-safety-adjacent forecasting project arguing for a plausible, fast
+      timeline to transformative/superhuman AI. Uses a vivid narrative (“scenario”)
+      plus quantitative-ish forecast pages; this can improve concreteness but also
+      risks “story overfitting” and anchoring. Likely motivated to raise urgency (governance
+      + security + alignment), which may bias toward faster and more catastrophic
+      trajectories and underweight “muddling through” equilibria.
+    claims_extracted:
+    - TRANS-2025-050
+    - TECH-2025-050
+    - TRANS-2025-051
+    - TECH-2025-051
+    - TECH-2025-052
+    - TECH-2025-053
+    - RISK-2025-050
+    - GEO-2025-050
+    analysis_file: analysis/sources/aifutures-2025-ai-2027.md
+    topics:
+    - ai-forecasting
+    - timelines
+    - takeoff
+    - superhuman-coding
+    - coding-agents
+    - ai-governance
+    - ai-security
+    - model-theft
+    - export-controls
+    - us-china
+    - alignment
+    - deceptive-alignment
+    domains:
+    - TECH
+    - TRANS
+    - RISK
+    - GEO
+    status: analyzed
   anthropic-2026-claudes-constitution:
     type: KNOWLEDGE
     title: Claude's Constitution
@@ -1823,6 +1871,33 @@ sources:
     - income
     domains:
     - ECON
+    status: cataloged
+  metr-2025-long-tasks:
+    type: PAPER
+    title: Measuring AI Ability to Complete Long Tasks
+    author:
+    - Joel Becker
+    - Nate Rush
+    - Beth Barnes
+    - George Lawton
+    - Eli Lifland
+    - Michael Chen
+    year: 2025
+    url: https://arxiv.org/abs/2501.00663
+    accessed: '2026-02-06'
+    reliability: 0.75
+    bias_notes: Preprint from METR proposing a task time-horizon metric for coding
+      tasks; may be sensitive to benchmark selection and contamination; useful as
+      a quantitative anchor but not a full theory of autonomy.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - metr
+    - time-horizon
+    - coding-evals
+    - long-tasks
+    domains:
+    - TECH
     status: cataloged
   moeaea-2024-stable-supply-natural-gas:
     type: REPORT

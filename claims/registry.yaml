@@ -1,6 +1,6 @@
 # Claim Registry
-# Exported from LanceDB on 2026-02-01
-# Total claims: 415
+# Exported from LanceDB on 2026-02-06
+# Total claims: 423
 # Total chains: 4
 
 counters:
@@ -10,10 +10,10 @@ counters:
   ECON: 37
   GOV: 89
   SOC: 9
-  TRANS: 17
+  TRANS: 51
   META: 38
-  GEO: 28
-  RISK: 5
+  GEO: 50
+  RISK: 50
   INST: 36
 claims:
   ECON-2025-001:
@@ -793,6 +793,24 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  GEO-2025-050:
+    text: The world is plausibly headed for a US–China race dynamic over AI capabilities
+      where export controls, espionage, and national mobilization become central.
+    type: '[P]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - aifutures-2025-ai-2027
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
   GEO-2026-001:
     text: The purge of top PLA leaders reduces near-term risk of a Taiwan escalation
       (due to high-command disarray) but may increase long-term risk if it produces
@@ -5165,6 +5183,24 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  RISK-2025-050:
+    text: Without major improvements to AI lab security, model weights theft is likely
+      within about 5 years.
+    type: '[P]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - aifutures-2025-ai-2027
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
   RISK-2026-001:
     text: The constitution specifies non-negotiable “hard constraints” (bright lines)
       that Claude should never cross, including providing serious uplift to WMD creation,
@@ -5636,6 +5672,82 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  TECH-2025-050:
+    text: The AI Futures Project’s timelines forecast includes scenarios where there
+      is a substantial chance of superhuman coders by 2027 and superhuman-everything
+      by 2028.
+    type: '[P]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.30000001192092896
+    source_ids:
+    - aifutures-2025-ai-2027
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on:
+    - TECH-2025-051
+    - TECH-2025-053
+    - TECH-2025-052
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2025-051:
+    text: AI coding task time horizon at roughly 50% success doubled about every 7
+      months from 2019–2024, with faster growth suggested after 2024.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.75
+    source_ids:
+    - aifutures-2025-ai-2027
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2025-052:
+    text: By early 2026, frontier AI systems will be able to autonomously complete
+      many multi-hour coding tasks and materially accelerate AI R&D via agentic workflows.
+    type: '[P]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - aifutures-2025-ai-2027
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2025-053:
+    text: Global AI compute stock will increase by about 10× by December 2027 (relative
+      to March 2025), reaching roughly 100 million H100-equivalents.
+    type: '[P]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - aifutures-2025-ai-2027
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
   TECH-2026-001:
     text: Frontier AI training costs grow 2-3x annually
     type: '[F]'
@@ -7638,6 +7750,43 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  TRANS-2025-050:
+    text: The impact of superhuman AI over the next decade will be bigger than that
+      of the industrial revolution.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - aifutures-2025-ai-2027
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TRANS-2025-051:
+    text: Conditional on reaching superhuman coders, superintelligence could follow
+      within about 1 year.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.25
+    source_ids:
+    - aifutures-2025-ai-2027
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on:
+    - TECH-2025-050
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
   TRANS-2026-001:
     text: A 'light-cone' framing treats geopolitics as competition for energy and
       matter ('joules and atoms') to seed a spacefaring civilization
