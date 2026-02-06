@@ -1,0 +1,169 @@
+sources:
+  - id: "metr-2025-time-horizon-vary-across-domains"
+    type: "ARTICLE"
+    title: "How Does Time Horizon Vary Across Domains?"
+    author:
+      - "METR"
+    year: 2025
+    url: "https://metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/"
+    accessed: "2026-02-06"
+    status: "analyzed"
+    analysis_file: "analysis/sources/metr-2025-time-horizon-vary-across-domains.md"
+    reliability: 0.70
+    bias_notes: >-
+      METR follow-up post extending its time-horizon metric beyond software/research tasks. Strength:
+      operational cross-domain comparisons with published code/data for many benchmarks. Risks:
+      cross-benchmark apples-to-oranges issues (agents/tools/budgets), assumed-parameter estimation where
+      task-level data are missing, and benchmark availability bias.
+    topics:
+      - metr
+      - time-horizon
+      - cross-domain
+      - benchmarks
+      - forecasting
+      - osworld
+      - self-driving
+    domains:
+      - TECH
+      - META
+    claims_extracted:
+      - META-2025-003
+      - TECH-2025-058
+      - TECH-2025-059
+      - TECH-2025-060
+      - TECH-2025-061
+      - META-2025-004
+      - META-2025-005
+
+claims:
+  - id: "META-2025-003"
+    text: >-
+      METR extends its time-horizon method across benchmarks by fitting the same logistic model via MLE
+      when human task lengths and split-by-difficulty performance data exist; when only aggregate
+      performance exists, METR assumes a value for the difficulty slope parameter (β), yielding noisier
+      horizon estimates.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["metr-2025-time-horizon-vary-across-domains"]
+    operationalization: >-
+      Inspect METR’s cross-domain code and confirm which benchmarks use full MLE with task-length/split
+      data vs assumed-β methods.
+    assumptions: []
+    falsifiers:
+      - The released code does not use MLE on log(human time) as described, or does not assume β in the
+        stated cases.
+
+  - id: "TECH-2025-058"
+    text: >-
+      METR claims to observe exponential or super-exponential growth in time-horizon trends across many
+      benchmarks/domains it examined, though with large variation in rates.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.60
+    source_ids: ["metr-2025-time-horizon-vary-across-domains"]
+    operationalization: >-
+      For each benchmark, fit a log-linear trend to frontier horizon points over time and test whether
+      growth is approximately exponential vs better explained by other forms or regime changes.
+    assumptions:
+      - Frontier-only envelope is the correct object for trend fitting.
+    falsifiers:
+      - Across benchmarks, trend fits are inconsistent with exponential-like growth once protocol changes
+        and noise are modeled.
+
+  - id: "TECH-2025-059"
+    text: >-
+      METR reports that coding, math contest, and QA benchmarks show time horizons on the order of
+      ~30–200+ minutes for strong models, with horizon doubling times roughly ~2–6 months (with METR-HRS in
+      the middle of the pack).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.65
+    source_ids: ["metr-2025-time-horizon-vary-across-domains"]
+    operationalization: >-
+      From METR’s cross-domain data, extract per-benchmark horizon estimates and estimate doubling times
+      using consistent regression windows and frontier selection rules.
+    assumptions:
+      - Horizon values computed for each benchmark are comparable within that benchmark over time.
+    falsifiers:
+      - Recomputed horizons/doubling times fall substantially outside the stated ranges for most
+        benchmarks.
+
+  - id: "TECH-2025-060"
+    text: >-
+      METR reports that agentic GUI/computer-use tasks (OSWorld) have time horizons roughly ~100× shorter
+      than coding or math benchmarks.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.70
+    source_ids: ["metr-2025-time-horizon-vary-across-domains"]
+    operationalization: >-
+      Compare OSWorld horizon estimates to coding/math horizon estimates computed under METR’s cross-domain
+      methodology for comparable model snapshots.
+    assumptions:
+      - OSWorld’s horizon definition is meaningfully comparable (as a proxy) to other benchmarks’ horizon
+        definitions.
+    falsifiers:
+      - OSWorld horizon estimates are within the same order of magnitude as coding/math horizons under
+        consistent computation.
+
+  - id: "TECH-2025-061"
+    text: >-
+      METR claims Tesla self-driving (under its chosen proxy) has improved much more slowly than the
+      time-horizon trends on LLM benchmark domains like coding, math, and QA.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["metr-2025-time-horizon-vary-across-domains"]
+    operationalization: >-
+      Recompute Tesla proxy trend with documented data source; compare its implied growth rate to the LLM
+      benchmark horizons under the same trend-fitting rules.
+    assumptions:
+      - The Tesla proxy is a meaningful measure of autonomy/time horizon for driving-related capability.
+    falsifiers:
+      - Alternative validated driving metrics show similar or faster improvement rates than the LLM
+        benchmarks in the same period.
+
+  - id: "META-2025-004"
+    text: >-
+      METR argues the time-horizon metric is only sound when task length correlates with difficulty; this
+      can fail due to label noise, reward-hackable tasks, or weak relationships between time and difficulty.
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["metr-2025-time-horizon-vary-across-domains"]
+    operationalization: >-
+      For each benchmark, estimate correlation between human time and empirical difficulty, and test
+      sensitivity of horizon to known label noise and reward-hackability.
+    assumptions:
+      - Time-horizon aims to approximate a difficulty axis rather than an arbitrary rescaling of benchmark
+        score.
+    falsifiers:
+      - Demonstrations show time-horizon remains stable and meaningful even when time–difficulty correlation
+        is weak or absent.
+
+  - id: "META-2025-005"
+    text: >-
+      METR claims existing cross-domain evidence still comes from a limited set of domains where AIs are
+      relatively strong, and that measuring more (especially shorter-horizon) domains could clarify
+      bottlenecks to dangerous capabilities and AI R&D automation.
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["metr-2025-time-horizon-vary-across-domains"]
+    operationalization: >-
+      Expand evaluations into domains where current models have short horizons (minutes or less) and test
+      whether horizon growth is bottlenecked by specific interaction/grounding constraints.
+    assumptions:
+      - Missing domains could be more bottlenecked than the currently measured ones.
+    falsifiers:
+      - Broad domain expansion shows similar horizon growth rates and little evidence of domain-specific
+        bottlenecks.
+

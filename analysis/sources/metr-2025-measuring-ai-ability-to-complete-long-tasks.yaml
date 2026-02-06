@@ -1,0 +1,169 @@
+sources:
+  - id: "metr-2025-measuring-ai-ability-to-complete-long-tasks"
+    type: "ARTICLE"
+    title: "Measuring AI Ability to Complete Long Tasks"
+    author:
+      - "METR"
+      - "Thomas Kwa"
+      - "Ben West"
+    year: 2025
+    url: "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/"
+    accessed: "2026-02-06"
+    status: "analyzed"
+    analysis_file: "analysis/sources/metr-2025-measuring-ai-ability-to-complete-long-tasks.md"
+    reliability: 0.75
+    bias_notes: >-
+      Research blog post by METR introducing and interpreting the “task-completion time horizon” metric.
+      Risks include benchmark/task-selection effects, human-time estimation quirks, agent scaffold confounds,
+      protocol drift, and uncertain external validity from benchmark tasks to real-world long projects.
+    topics:
+      - metr
+      - time-horizon
+      - long-tasks
+      - agentic-evals
+      - forecasting
+      - software-engineering
+      - benchmark-design
+    domains:
+      - TECH
+      - META
+      - INST
+    claims_extracted:
+      - META-2025-001
+      - META-2025-002
+      - TECH-2025-054
+      - TECH-2025-055
+      - TECH-2025-056
+      - TECH-2025-057
+      - INST-2025-002
+
+claims:
+  - id: "META-2025-001"
+    text: >-
+      METR defines a model’s 50% task-completion time horizon as the human task duration at which the model
+      completes tasks with 50% success probability.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["metr-2025-measuring-ai-ability-to-complete-long-tasks"]
+    operationalization: >-
+      Check METR’s paper/blog definitions and confirm the mapping from success probability to a duration
+      derived from the fitted success curve.
+    assumptions: []
+    falsifiers:
+      - METR’s formal definition uses a different success threshold-to-duration mapping or different x-axis
+        than human time.
+
+  - id: "META-2025-002"
+    text: >-
+      METR estimates model time horizons by fitting a logistic model of success probability as a function of
+      (log) human task time and reading off the duration at a fixed success probability (e.g., 50%).
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["metr-2025-measuring-ai-ability-to-complete-long-tasks"]
+    operationalization: >-
+      Inspect METR’s released analysis code and paper methods; verify logistic-regression fitting against
+      log2(human_minutes) and horizon extraction at p=0.5.
+    assumptions:
+      - The released code corresponds to the plots/results described in the blog post.
+    falsifiers:
+      - Released code/paper uses a materially different fitting procedure or horizon definition.
+
+  - id: "TECH-2025-054"
+    text: >-
+      On METR’s time-horizon task suite, human task duration is strongly predictive of model success; for an
+      early-2025 frontier model, tasks under ~4 minutes are near-certain while tasks over ~4 hours succeed
+      under ~10% of the time.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.80
+    source_ids: ["metr-2025-measuring-ai-ability-to-complete-long-tasks"]
+    operationalization: >-
+      Using METR’s released runs data, compute success rates by bins of human_minutes for a frontier model
+      near March 2025 (e.g., Claude 3.7 Sonnet) and test the <4 min and >4 h claims.
+    assumptions:
+      - The selected model is representative of the frontier at the time of the claim.
+    falsifiers:
+      - Released data show materially higher >4h success or materially lower <4min success for frontier
+        models in that period.
+
+  - id: "TECH-2025-055"
+    text: >-
+      METR reports that the frontier 50%-task-completion time horizon doubled roughly every ~7 months over
+      ~2019–2025, with uncertainty estimated via hierarchical bootstrap across task families, tasks, and
+      attempts.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.75
+    source_ids: ["metr-2025-measuring-ai-ability-to-complete-long-tasks"]
+    operationalization: >-
+      Re-fit a trendline to the frontier envelope of per-model p50 horizons from METR’s released data and
+      compare doubling-time estimates to ~7 months; check that uncertainty is derived via hierarchical
+      bootstrap.
+    assumptions:
+      - Model release dates and horizon estimates are measured consistently across the time series.
+    falsifiers:
+      - Independent reanalysis of the released data yields a substantially different doubling-time estimate.
+      - The reported uncertainty method is inconsistent with hierarchical bootstrap.
+
+  - id: "TECH-2025-056"
+    text: >-
+      METR claims that fitting time-horizon trends using only 2024–2025 measurements implies faster
+      progress, shortening the estimated date for month-long (p50) task autonomy by about 2.5 years compared
+      to fits over a longer history.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.60
+    source_ids: ["metr-2025-measuring-ai-ability-to-complete-long-tasks"]
+    operationalization: >-
+      Reproduce METR’s historical-vs-recent trend fits and compare predicted dates for reaching ~1-month p50
+      time horizon.
+    assumptions:
+      - The post’s comparison uses comparable model sets and consistent horizon computation.
+    falsifiers:
+      - Reproduction finds no meaningful shift between recent-only and full-history extrapolations (or finds
+        an opposite shift).
+
+  - id: "TECH-2025-057"
+    text: >-
+      Conditional on generalization of the benchmark trend to real-world software tasks, extrapolating
+      METR’s time-horizon growth suggests models could autonomously complete many tasks that take humans
+      days or weeks within under a decade (and potentially month-scale tasks within around five years).
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["metr-2025-measuring-ai-ability-to-complete-long-tasks"]
+    operationalization: >-
+      Track p50 time-horizon estimates over time and test whether they reach multi-day/week/month durations;
+      separately test external validity by measuring autonomous completion on real-world SWE tasks of known
+      human duration.
+    assumptions:
+      - The observed exponential trend continues and transfers to real-world task distributions.
+    falsifiers:
+      - Time-horizon growth slows materially or plateaus.
+      - Real-world month-scale SWE projects remain far below the benchmark-implied capability even if
+        benchmark horizons rise.
+
+  - id: "INST-2025-002"
+    text: >-
+      METR released its time-horizon analysis code and raw run data publicly (and invites replication and
+      extension).
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["metr-2025-measuring-ai-ability-to-complete-long-tasks"]
+    operationalization: >-
+      Verify that the public repository contains runnable analysis code and includes or references the raw
+      run data needed to reproduce key plots.
+    assumptions: []
+    falsifiers:
+      - The referenced repos/data are removed, gated, or insufficient to reproduce headline figures.
+

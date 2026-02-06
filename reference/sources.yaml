@@ -1,6 +1,6 @@
 # Source Registry
-# Exported from LanceDB on 2026-02-06
-# Total sources: 113
+# Exported from LanceDB on 2026-02-07
+# Total sources: 119
 
 sources:
   acemoglu-restrepo-2019-tasks:
@@ -98,6 +98,98 @@ sources:
     - TRANS
     - RISK
     - GEO
+    status: analyzed
+  anthropic-2026-claude-opus-4-6:
+    type: ARTICLE
+    title: Claude Opus 4.6
+    author:
+    - Anthropic
+    year: 2026
+    url: https://www.anthropic.com/news/claude-opus-4-6
+    accessed: '2026-02-06'
+    reliability: 0.6
+    bias_notes: First-party Anthropic product announcement (marketing + competitive
+      incentives). Many capability claims are benchmark-based but can be harness-sensitive
+      (tools, agent scaffold, sampling, and resource limits). Safety claims rely on
+      Anthropic’s internal evaluations and system card framing; independent replication
+      is limited.
+    claims_extracted:
+    - TECH-2026-910
+    - TECH-2026-911
+    - TECH-2026-912
+    - TECH-2026-913
+    - TECH-2026-914
+    - INST-2026-910
+    - INST-2026-911
+    - ECON-2026-910
+    - ECON-2026-911
+    - RISK-2026-910
+    analysis_file: analysis/sources/anthropic-2026-claude-opus-4-6.md
+    topics:
+    - agentic-coding
+    - long-context
+    - terminal-bench
+    - gdpval
+    - knowledge-work
+    - safety-evals
+    - pricing
+    - tool-use
+    - claude-code
+    domains:
+    - TECH
+    - INST
+    - RISK
+    - ECON
+    status: analyzed
+  anthropic-2026-claude-opus-4-6-system-card:
+    type: REPORT
+    title: 'System Card: Claude Opus 4.6'
+    author:
+    - Anthropic
+    year: 2026
+    url: https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf
+    accessed: '2026-02-06'
+    reliability: 0.65
+    bias_notes: First-party system card describing Anthropic’s own evaluations, release
+      decision process, and Responsible Scaling Policy (RSP) determinations for Claude
+      Opus 4.6. Provides substantially more methodological detail than a marketing
+      post, and includes some external testing, but results (especially alignment
+      and dangerous-capability evaluations) are still largely internal and not fully
+      reproducible. Incentives may bias toward justifying deployment decisions and
+      presenting comparative safety results favorably.
+    claims_extracted:
+    - TECH-2026-915
+    - TECH-2026-916
+    - TECH-2026-917
+    - TECH-2026-918
+    - TECH-2026-919
+    - TECH-2026-920
+    - RISK-2026-911
+    - RISK-2026-912
+    - RISK-2026-913
+    - RISK-2026-914
+    - RISK-2026-915
+    - RISK-2026-916
+    - RISK-2026-917
+    - RISK-2026-918
+    analysis_file: analysis/sources/anthropic-2026-claude-opus-4-6-system-card.md
+    topics:
+    - system-card
+    - responsible-scaling-policy
+    - asl-3
+    - alignment
+    - agentic-safety
+    - model-welfare
+    - training-data
+    - swe-bench
+    - terminal-bench
+    - long-context
+    - interpretability
+    - cyber
+    - cbrn
+    domains:
+    - TECH
+    - RISK
     status: analyzed
   anthropic-2026-claudes-constitution:
     type: KNOWLEDGE
@@ -1899,6 +1991,115 @@ sources:
     domains:
     - TECH
     status: cataloged
+  metr-2025-measuring-ai-ability-to-complete-long-tasks:
+    type: ARTICLE
+    title: Measuring AI Ability to Complete Long Tasks
+    author:
+    - METR
+    - Thomas Kwa
+    - Ben West
+    year: 2025
+    url: https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
+    accessed: '2026-02-06'
+    reliability: 0.75
+    bias_notes: Research blog post by METR introducing and interpreting the “task-completion
+      time horizon” metric. Risks include benchmark/task-selection effects, human-time
+      estimation quirks, agent scaffold confounds, protocol drift, and uncertain external
+      validity from benchmark tasks to real-world long projects.
+    claims_extracted:
+    - META-2025-001
+    - META-2025-002
+    - TECH-2025-054
+    - TECH-2025-055
+    - TECH-2025-056
+    - TECH-2025-057
+    - INST-2025-002
+    analysis_file: analysis/sources/metr-2025-measuring-ai-ability-to-complete-long-tasks.md
+    topics:
+    - metr
+    - time-horizon
+    - long-tasks
+    - agentic-evals
+    - forecasting
+    - software-engineering
+    - benchmark-design
+    domains:
+    - TECH
+    - META
+    - INST
+    status: analyzed
+  metr-2025-time-horizon-vary-across-domains:
+    type: ARTICLE
+    title: How Does Time Horizon Vary Across Domains?
+    author:
+    - METR
+    year: 2025
+    url: https://metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/
+    accessed: '2026-02-06'
+    reliability: 0.7
+    bias_notes: 'METR follow-up post extending its time-horizon metric beyond software/research
+      tasks. Strength: operational cross-domain comparisons with published code/data
+      for many benchmarks. Risks: cross-benchmark apples-to-oranges issues (agents/tools/budgets),
+      assumed-parameter estimation where task-level data are missing, and benchmark
+      availability bias.'
+    claims_extracted:
+    - META-2025-003
+    - TECH-2025-058
+    - TECH-2025-059
+    - TECH-2025-060
+    - TECH-2025-061
+    - META-2025-004
+    - META-2025-005
+    analysis_file: analysis/sources/metr-2025-time-horizon-vary-across-domains.md
+    topics:
+    - metr
+    - time-horizon
+    - cross-domain
+    - benchmarks
+    - forecasting
+    - osworld
+    - self-driving
+    domains:
+    - TECH
+    - META
+    status: analyzed
+  metr-2026-time-horizon-1-1:
+    type: ARTICLE
+    title: Time Horizon 1.1
+    author:
+    - METR
+    year: 2026
+    url: https://metr.org/blog/2026-1-29-time-horizon-1-1/
+    accessed: '2026-02-06'
+    reliability: 0.78
+    bias_notes: 'Release announcement / methodology update for METR’s time-horizon
+      capability metric (TH1.1). Strength: explicit suite-change counts and public
+      code/data allow partial independent verification. Risks: suite/protocol sensitivity,
+      saturation effects near the frontier, and uncertain external validity.'
+    claims_extracted:
+    - TECH-2026-921
+    - TECH-2026-922
+    - TECH-2026-923
+    - TECH-2026-924
+    - TECH-2026-925
+    - TECH-2026-926
+    - TECH-2026-927
+    - TECH-2026-928
+    - TECH-2026-929
+    - META-2026-039
+    - TECH-2026-930
+    analysis_file: analysis/sources/metr-2026-time-horizon-1-1.md
+    topics:
+    - metr
+    - time-horizon
+    - th1.1
+    - eval-infrastructure
+    - inspect
+    - benchmark-maintenance
+    domains:
+    - TECH
+    - META
+    status: analyzed
   moeaea-2024-stable-supply-natural-gas:
     type: REPORT
     title: Stable Supply of Natural Gas
@@ -2003,6 +2204,46 @@ sources:
     - INST
     - GOV
     - GEO
+    status: analyzed
+  openai-2026-gpt-5-3-codex:
+    type: ARTICLE
+    title: Introducing GPT-5.3-Codex
+    author:
+    - OpenAI
+    year: 2026
+    url: https://openai.com/index/introducing-gpt-5-3-codex/
+    accessed: '2026-02-06'
+    reliability: 0.55
+    bias_notes: First-party OpenAI product announcement (marketing + competitive incentives).
+      Benchmark results are self-reported and may depend on harness details (tools,
+      sampling, resource caps, contamination controls). Safety posture is described
+      at a high level; many internal mitigations and “capability classification” judgments
+      are hard to independently verify.
+    claims_extracted:
+    - TECH-2026-900
+    - TECH-2026-901
+    - TECH-2026-902
+    - TECH-2026-903
+    - TECH-2026-904
+    - TECH-2026-905
+    - TECH-2026-906
+    - INST-2026-900
+    - INST-2026-901
+    - RISK-2026-900
+    analysis_file: analysis/sources/openai-2026-gpt-5-3-codex.md
+    topics:
+    - agentic-coding
+    - coding-agents
+    - codex
+    - benchmarks
+    - computer-use
+    - cybersecurity
+    - preparedness
+    - inference-systems
+    domains:
+    - TECH
+    - INST
+    - RISK
     status: analyzed
   openai-value-intelligence:
     type: ARTICLE

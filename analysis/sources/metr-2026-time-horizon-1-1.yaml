@@ -1,0 +1,234 @@
+sources:
+  - id: "metr-2026-time-horizon-1-1"
+    type: "ARTICLE"
+    title: "Time Horizon 1.1"
+    author:
+      - "METR"
+    year: 2026
+    url: "https://metr.org/blog/2026-1-29-time-horizon-1-1/"
+    accessed: "2026-02-06"
+    status: "analyzed"
+    analysis_file: "analysis/sources/metr-2026-time-horizon-1-1.md"
+    reliability: 0.78
+    bias_notes: >-
+      Release announcement / methodology update for METR’s time-horizon capability metric (TH1.1).
+      Strength: explicit suite-change counts and public code/data allow partial independent verification.
+      Risks: suite/protocol sensitivity, saturation effects near the frontier, and uncertain external validity.
+    topics:
+      - metr
+      - time-horizon
+      - th1.1
+      - eval-infrastructure
+      - inspect
+      - benchmark-maintenance
+    domains:
+      - TECH
+      - META
+    claims_extracted:
+      - TECH-2026-921
+      - TECH-2026-922
+      - TECH-2026-923
+      - TECH-2026-924
+      - TECH-2026-925
+      - TECH-2026-926
+      - TECH-2026-927
+      - TECH-2026-928
+      - TECH-2026-929
+      - META-2026-039
+      - TECH-2026-930
+
+claims:
+  - id: "TECH-2026-921"
+    text: >-
+      METR released a new version of its time horizon estimates (TH1.1) using more tasks and a new
+      evaluation infrastructure, and reports that re-estimated time horizons generally fall within the
+      confidence intervals from TH1.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["metr-2026-time-horizon-1-1"]
+    operationalization: >-
+      Compare TH1 vs TH1.1 point estimates and confidence intervals for overlapping models using released
+      data and check the fraction of TH1.1 estimates within prior TH1 CIs.
+    assumptions:
+      - Confidence intervals are comparable across versions and computed consistently.
+    falsifiers:
+      - Many overlapping models’ TH1.1 point estimates fall outside TH1 confidence intervals under the
+        released artifacts.
+
+  - id: "TECH-2026-922"
+    text: >-
+      METR increased its time-horizon task suite from 170 to 228 tasks by adding 73 HCAST tasks, removing
+      15 tasks, and updating 53 tasks; the count of long tasks (estimated 8+ hours for humans) increased
+      from 14 to 31.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.90
+    source_ids: ["metr-2026-time-horizon-1-1"]
+    operationalization: >-
+      Count unique tasks and long-task thresholds in METR’s released TH1 and TH1.1 run data/task metadata;
+      verify add/remove/update counts from repo diffs.
+    assumptions:
+      - The human_minutes field reflects the intended human-time estimate per task and is stable per task_id.
+    falsifiers:
+      - Released TH1/TH1.1 artifacts show materially different unique-task or long-task counts than
+        claimed.
+
+  - id: "TECH-2026-923"
+    text: >-
+      METR moved its time-horizon evaluation infrastructure from its in-house Vivaria framework to
+      Inspect, an open-source evaluation framework created by the UK AI Security Institute.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["metr-2026-time-horizon-1-1"]
+    operationalization: >-
+      Verify that TH1.1 runs use Inspect-based scaffolding and that Inspect is a UK AI Security Institute
+      project (docs/repo).
+    assumptions: []
+    falsifiers:
+      - TH1.1 runs do not use Inspect or Inspect is not attributable to UK AISI.
+
+  - id: "TECH-2026-924"
+    text: >-
+      METR re-estimated time horizons for 14 models under TH1.1 (compared to 33 models under TH1), citing
+      model availability, scaffold/tooling changes, and non-frontier status as reasons for omissions.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.85
+    source_ids: ["metr-2026-time-horizon-1-1"]
+    operationalization: >-
+      Count unique non-human model aliases in TH1 and TH1.1 released run data and check documented reasons
+      for missing models.
+    assumptions: []
+    falsifiers:
+      - Released TH1.1 run data contain a substantially different number of models or include most
+        pre-2023 models claimed missing.
+
+  - id: "TECH-2026-925"
+    text: >-
+      METR claims that expanding the task suite (especially adding more 8h+ tasks) yields tighter
+      confidence intervals on frontier model horizons; it gives an example where Opus 4.5’s CI
+      upper-bound/point-estimate ratio decreases from ~4.4× (TH1) to ~2.3× (TH1.1).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.60
+    source_ids: ["metr-2026-time-horizon-1-1"]
+    operationalization: >-
+      Re-run METR’s hierarchical bootstrap CI procedure on TH1 and TH1.1 and compare CI widths for the
+      same model; reproduce the Opus 4.5 ratio example.
+    assumptions:
+      - Bootstrap procedures and model/task weighting are comparable across TH1 and TH1.1.
+    falsifiers:
+      - Reproductions show similar or wider CIs under TH1.1, or the quoted ratios do not match computed
+        values.
+
+  - id: "TECH-2026-926"
+    text: >-
+      METR measured human baseline times for only 5 of its 31 long (8h+) tasks in TH1.1; the remainder of
+      long-task times are estimates.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["metr-2026-time-horizon-1-1"]
+    operationalization: >-
+      Inspect task metadata and determine which long tasks have measured vs estimated human times.
+    assumptions: []
+    falsifiers:
+      - Task metadata show substantially more than 5 measured long-task times.
+
+  - id: "TECH-2026-927"
+    text: >-
+      METR reports that a hybrid trendline (using TH1 estimates for early models missing from TH1.1 and
+      TH1.1 estimates for later models) yields the same frontier time-horizon doubling time as TH1: 196
+      days (~7 months).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.70
+    source_ids: ["metr-2026-time-horizon-1-1"]
+    operationalization: >-
+      Fit log-linear trendlines to the frontier envelope using the specified hybrid model set and compute
+      doubling time in days.
+    assumptions:
+      - Hybridization does not introduce discontinuities that invalidate trend fitting.
+    falsifiers:
+      - Refit doubling time differs materially from ~196 days under the specified hybrid dataset.
+
+  - id: "TECH-2026-928"
+    text: >-
+      METR reports post-2023 doubling time is ~131 days under TH1.1 vs ~165 days under TH1; and since
+      2024, ~89 days under TH1.1 vs ~109 days under TH1.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.65
+    source_ids: ["metr-2026-time-horizon-1-1"]
+    operationalization: >-
+      Using consistent cutoff dates and frontier selection rules, recompute post-window trend slopes for
+      TH1 and TH1.1 and compare doubling-time estimates.
+    assumptions:
+      - Cutoff dates and frontier selection are implemented consistently with METR’s intent.
+    falsifiers:
+      - Recomputed post-window doubling times differ substantially from the stated values under reasonable
+        reproductions.
+
+  - id: "TECH-2026-929"
+    text: >-
+      METR attributes the TH1→TH1.1 trend change to older models’ horizons shifting down and recent
+      models’ horizons shifting up (e.g., some GPT-4 versions down ~35–57%, GPT-5 up ~55%, Opus 4.5 up
+      ~11%).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.70
+    source_ids: ["metr-2026-time-horizon-1-1"]
+    operationalization: >-
+      Compute per-model p50 horizons under TH1 and TH1.1 for overlapping model snapshots and calculate
+      percent changes.
+    assumptions:
+      - The compared model snapshots are meaningfully equivalent across infrastructures (or differences are
+        documented).
+    falsifiers:
+      - Recomputed percent changes are opposite in direction or far from the stated magnitudes.
+
+  - id: "META-2026-039"
+    text: >-
+      METR argues the time-horizon trendline is sensitive to task-suite composition; updating the suite
+      without rigid selection criteria changes the underlying quantity being estimated and highlights the
+      need to define the target task distribution.
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["metr-2026-time-horizon-1-1"]
+    operationalization: >-
+      Quantify sensitivity of estimated doubling time to task subsampling and suite updates; assess
+      whether a principled suite definition stabilizes the trend.
+    assumptions: []
+    falsifiers:
+      - Demonstrations show estimated doubling time is largely invariant to broad task-suite changes under
+        realistic update processes.
+
+  - id: "TECH-2026-930"
+    text: >-
+      METR reports the TH1.1 suite is close to saturation for the strongest models and that it is
+      prioritizing updates (including more long tasks) to raise the measurement ceiling.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["metr-2026-time-horizon-1-1"]
+    operationalization: >-
+      Measure the fraction of TH1.1 tasks that frontier models solve successfully and track whether
+      additional long/harder tasks restore discrimination between models.
+    assumptions:
+      - Saturation is primarily driven by task difficulty ceilings rather than scoring artifacts.
+    falsifiers:
+      - Additional tasks do not meaningfully reduce saturation or improve discrimination at the frontier.

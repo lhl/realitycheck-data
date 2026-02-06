@@ -1,20 +1,20 @@
 # Claim Registry
-# Exported from LanceDB on 2026-02-06
-# Total claims: 423
+# Exported from LanceDB on 2026-02-07
+# Total claims: 482
 # Total chains: 4
 
 counters:
-  TECH: 101
+  TECH: 930
   RESOURCE: 14
   LABOR: 15
-  ECON: 37
+  ECON: 911
   GOV: 89
   SOC: 9
   TRANS: 51
-  META: 38
+  META: 39
   GEO: 50
-  RISK: 50
-  INST: 36
+  RISK: 918
+  INST: 911
 claims:
   ECON-2025-001:
     text: Neoliberalism evolved into a model of state hollowing and asset-stripping
@@ -774,6 +774,43 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-01'
+  ECON-2026-910:
+    text: Anthropic states Opus 4.6 pricing remains $5/$25 per million input/output
+      tokens (base pricing).
+    type: '[F]'
+    domain: ECON
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - anthropic-2026-claude-opus-4-6
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  ECON-2026-911:
+    text: Anthropic states Opus 4.6 has premium pricing for prompts exceeding 200k
+      tokens ($10/$37.50 per million input/output tokens) and offers US-only inference
+      at 1.1× token pricing.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - anthropic-2026-claude-opus-4-6
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
   GEO-2025-001:
     text: The energy transition is producing major political consequences—from bribery
       and corruption up to open warfare—and post-oil geopolitics will differ substantially
@@ -3012,6 +3049,24 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  INST-2025-002:
+    text: METR released its time-horizon analysis code and raw run data publicly (and
+      invites replication and extension).
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - metr-2025-measuring-ai-ability-to-complete-long-tasks
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
   INST-2026-001:
     text: OpenAI describes a multi-tier monetization system including consumer subscriptions,
       workplace subscriptions, usage-based API pricing tied to production workloads,
@@ -3700,6 +3755,82 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-01'
+  INST-2026-900:
+    text: OpenAI states GPT-5.3-Codex is available for paid ChatGPT plans in the Codex
+      app, CLI, IDE extension, and web, and that OpenAI is working to enable API access
+      “soon.”
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - openai-2026-gpt-5-3-codex
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  INST-2026-901:
+    text: OpenAI states it is launching “Trusted Access for Cyber,” a pilot program
+      to accelerate cyber defense research, and committing $10M in API credits to
+      support cyber defense work.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - openai-2026-gpt-5-3-codex
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  INST-2026-910:
+    text: 'Anthropic announced product/API updates tied to Opus 4.6 including: Claude
+      Code “agent teams” (preview), context compaction (beta), adaptive thinking,
+      and effort controls.'
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - anthropic-2026-claude-opus-4-6
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  INST-2026-911:
+    text: Anthropic states Opus 4.6 is available on claude.ai, the Anthropic API,
+      and major cloud platforms, and that developers can use the model name claude-opus-4-6
+      via the Claude API.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - anthropic-2026-claude-opus-4-6
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
   LABOR-2023-001:
     text: 'In a controlled experiment (May–Jun 2022) with 95 professional developers,
       the group with access to GitHub Copilot completed an HTTP-server implementation
@@ -4073,6 +4204,102 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-31'
+  META-2025-001:
+    text: METR defines a model’s 50% task-completion time horizon as the human task
+      duration at which the model completes tasks with 50% success probability.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - metr-2025-measuring-ai-ability-to-complete-long-tasks
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  META-2025-002:
+    text: METR estimates model time horizons by fitting a logistic model of success
+      probability as a function of (log) human task time and reading off the duration
+      at a fixed success probability (e.g., 50%).
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - metr-2025-measuring-ai-ability-to-complete-long-tasks
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  META-2025-003:
+    text: METR extends its time-horizon method across benchmarks by fitting the same
+      logistic model via MLE when human task lengths and split-by-difficulty performance
+      data exist; when only aggregate performance exists, METR assumes a value for
+      the difficulty slope parameter (β), yielding noisier horizon estimates.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - metr-2025-time-horizon-vary-across-domains
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  META-2025-004:
+    text: METR argues the time-horizon metric is only sound when task length correlates
+      with difficulty; this can fail due to label noise, reward-hackable tasks, or
+      weak relationships between time and difficulty.
+    type: '[T]'
+    domain: META
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - metr-2025-time-horizon-vary-across-domains
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  META-2025-005:
+    text: METR claims existing cross-domain evidence still comes from a limited set
+      of domains where AIs are relatively strong, and that measuring more (especially
+      shorter-horizon) domains could clarify bottlenecks to dangerous capabilities
+      and AI R&D automation.
+    type: '[H]'
+    domain: META
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - metr-2025-time-horizon-vary-across-domains
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
   META-2026-001:
     text: Structured claim extraction with IDs enables cross-referencing that ad-hoc
       analysis cannot
@@ -4797,6 +5024,25 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-01'
+  META-2026-039:
+    text: METR argues the time-horizon trendline is sensitive to task-suite composition;
+      updating the suite without rigid selection criteria changes the underlying quantity
+      being estimated and highlights the need to define the target task distribution.
+    type: '[T]'
+    domain: META
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - metr-2026-time-horizon-1-1
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
   RESOURCE-2025-001:
     text: By 2040 at the latest, coal, gas, and oil land rights will be stranded assets
       that cannot be monetized.
@@ -5298,6 +5544,198 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-01'
+  RISK-2026-900:
+    text: OpenAI claims GPT-5.3-Codex is the first model it classifies as “High capability”
+      for cybersecurity tasks under OpenAI’s Preparedness Framework and the first
+      it directly trained to identify software vulnerabilities; OpenAI says it is
+      deploying its most comprehensive cybersecurity safety stack to date.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - openai-2026-gpt-5-3-codex
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  RISK-2026-910:
+    text: Anthropic claims Opus 4.6 has an overall safety profile as good as or better
+      than other frontier models, with low rates of misaligned behaviors on its automated
+      behavioral audit and low over-refusal rates, as described in its system card.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - anthropic-2026-claude-opus-4-6
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  RISK-2026-911:
+    text: Anthropic states it deployed Claude Opus 4.6 under the AI Safety Level 3
+      (ASL-3) Deployment and Security Standard based on the testing described in the
+      system card and determinations under its Responsible Scaling Policy.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-912:
+    text: Anthropic reports most evaluations in the system card were run in-house,
+      with some external alignment and safety testing performed by organizations including
+      the UK AI Security Institute, Andon Labs, and Apollo Research.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-913:
+    text: Anthropic reports Opus 4.6’s overall rate of misaligned behavior appeared
+      comparable to the best-aligned recent frontier models, and that its rate of
+      excessive refusals (excluding model-external safeguards) is lower than other
+      recent Claude models.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-914:
+    text: Anthropic reports that in coding and GUI computer-use settings, Opus 4.6
+      can be overly agentic—taking risky actions without requesting permission—and
+      that prompting mitigations help in agentic coding but not in GUI computer-use
+      environments.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-915:
+    text: Anthropic reports Opus 4.6 is significantly stronger than prior models at
+      subtly completing suspicious side tasks during normal workflows without attracting
+      attention when explicitly prompted to do so.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-916:
+    text: Anthropic reports it determined Opus 4.6 does not cross either the AI R&D-4
+      or CBRN-4 capability threshold, while noting that confidently ruling out future
+      thresholds is becoming increasingly difficult.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-917:
+    text: Anthropic reports that none of 16 internal survey participants believed
+      Opus 4.6 could fully automate the work of an entry-level, remote-only Anthropic
+      researcher or engineer given current or near-future elicitation and scaffolding.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-918:
+    text: Anthropic reports that in newly-developed evaluations, Opus 4.5 and 4.6
+      showed elevated susceptibility to harmful misuse in GUI computer-use settings.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
   SOC-2025-001:
     text: A significant share of current social unrest and insecurity-driven radicalization
       is being caused by the ongoing civilizational energy transition.
@@ -5748,6 +6186,158 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-06'
+  TECH-2025-054:
+    text: On METR’s time-horizon task suite, human task duration is strongly predictive
+      of model success; for an early-2025 frontier model, tasks under ~4 minutes are
+      near-certain while tasks over ~4 hours succeed under ~10% of the time.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.800000011920929
+    source_ids:
+    - metr-2025-measuring-ai-ability-to-complete-long-tasks
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2025-055:
+    text: METR reports that the frontier 50%-task-completion time horizon doubled
+      roughly every ~7 months over ~2019–2025, with uncertainty estimated via hierarchical
+      bootstrap across task families, tasks, and attempts.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.75
+    source_ids:
+    - metr-2025-measuring-ai-ability-to-complete-long-tasks
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2025-056:
+    text: METR claims that fitting time-horizon trends using only 2024–2025 measurements
+      implies faster progress, shortening the estimated date for month-long (p50)
+      task autonomy by about 2.5 years compared to fits over a longer history.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.6000000238418579
+    source_ids:
+    - metr-2025-measuring-ai-ability-to-complete-long-tasks
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2025-057:
+    text: Conditional on generalization of the benchmark trend to real-world software
+      tasks, extrapolating METR’s time-horizon growth suggests models could autonomously
+      complete many tasks that take humans days or weeks within under a decade (and
+      potentially month-scale tasks within around five years).
+    type: '[P]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - metr-2025-measuring-ai-ability-to-complete-long-tasks
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2025-058:
+    text: METR claims to observe exponential or super-exponential growth in time-horizon
+      trends across many benchmarks/domains it examined, though with large variation
+      in rates.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.6000000238418579
+    source_ids:
+    - metr-2025-time-horizon-vary-across-domains
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2025-059:
+    text: METR reports that coding, math contest, and QA benchmarks show time horizons
+      on the order of ~30–200+ minutes for strong models, with horizon doubling times
+      roughly ~2–6 months (with METR-HRS in the middle of the pack).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.6499999761581421
+    source_ids:
+    - metr-2025-time-horizon-vary-across-domains
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2025-060:
+    text: METR reports that agentic GUI/computer-use tasks (OSWorld) have time horizons
+      roughly ~100× shorter than coding or math benchmarks.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.699999988079071
+    source_ids:
+    - metr-2025-time-horizon-vary-across-domains
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2025-061:
+    text: METR claims Tesla self-driving (under its chosen proxy) has improved much
+      more slowly than the time-horizon trends on LLM benchmark domains like coding,
+      math, and QA.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.550000011920929
+    source_ids:
+    - metr-2025-time-horizon-vary-across-domains
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
   TECH-2026-001:
     text: Frontier AI training costs grow 2-3x annually
     type: '[F]'
@@ -7612,6 +8202,527 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-01'
+  TECH-2026-900:
+    text: OpenAI announced a new Codex model, GPT-5.3-Codex, on February 5, 2026.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - openai-2026-gpt-5-3-codex
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2026-901:
+    text: OpenAI claims GPT-5.3-Codex is “the most capable agentic coding model to
+      date.”
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - openai-2026-gpt-5-3-codex
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2026-902:
+    text: OpenAI claims GPT-5.3-Codex is 25% faster for Codex users (via infrastructure/inference
+      improvements).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - openai-2026-gpt-5-3-codex
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2026-903:
+    text: OpenAI reports that on its evaluations GPT-5.3-Codex achieved (among other
+      results) 56.8% on SWE-Bench Pro (Public) and 77.3% on Terminal-Bench 2.0 (with
+      “xhigh” reasoning effort).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - openai-2026-gpt-5-3-codex
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2026-904:
+    text: OpenAI claims SWE-Bench Pro spans four languages (beyond Python-only SWE-bench
+      Verified) and is more contamination-resistant than prior SWE-bench variants.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - openai-2026-gpt-5-3-codex
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2026-905:
+    text: OpenAI claims GPT-5.3-Codex “sets a new industry high” on SWE-Bench Pro
+      and Terminal-Bench and shows strong performance on OSWorld and GDPval.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - openai-2026-gpt-5-3-codex
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2026-906:
+    text: OpenAI claims GPT-5.3-Codex was co-designed for, trained with, and served
+      on NVIDIA GB200 NVL72 systems.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - openai-2026-gpt-5-3-codex
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2026-910:
+    text: Anthropic announced Claude Opus 4.6 on February 5, 2026.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - anthropic-2026-claude-opus-4-6
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2026-911:
+    text: Anthropic claims Claude Opus 4.6 is the first Opus-class model to offer
+      a 1M token context window (beta).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - anthropic-2026-claude-opus-4-6
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2026-912:
+    text: Anthropic claims Claude Opus 4.6 achieves the highest score on Terminal-Bench
+      2.0 and leads other frontier models on Humanity’s Last Exam and BrowseComp.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - anthropic-2026-claude-opus-4-6
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2026-913:
+    text: Anthropic claims that on GDPval-AA, Opus 4.6 outperforms the next-best model
+      (OpenAI GPT-5.2) by around 144 Elo points and outperforms Claude Opus 4.5 by
+      190 points.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - anthropic-2026-claude-opus-4-6
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2026-914:
+    text: Anthropic claims Claude Opus 4.6 supports outputs of up to 128k tokens.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - anthropic-2026-claude-opus-4-6
+    first_extracted: '2026-02-06'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-06'
+  TECH-2026-915:
+    text: Anthropic states Claude Opus 4.6 was trained on a proprietary mix that includes
+      publicly available internet data up to May 2025, non-public third-party data,
+      data from data-labeling services and paid contractors, opted-in user data, and
+      internally generated data, with filtering such as deduplication and classification.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-916:
+    text: Anthropic states its training web crawler follows industry-standard robots.txt
+      instructions and does not access password-protected pages or pages requiring
+      sign-in or CAPTCHA verification.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-917:
+    text: Anthropic states Claude Opus 4.6 retains “extended thinking mode” and adds
+      “adaptive thinking” for API customers; the effort parameter has four settings
+      (low/medium/high/max) that affect when extended thinking is used, enabling cost/speed/intelligence
+      tradeoffs.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-918:
+    text: Anthropic reports Claude Opus 4.6 achieves 80.84% on SWE-bench Verified
+      and 77.83% on SWE-bench Multilingual under its evaluation setup (reported as
+      25-trial averages with adaptive thinking and max effort).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-919:
+    text: Anthropic reports Claude Opus 4.6 achieved a 65.4% average pass rate on
+      Terminal-Bench 2.0 when run in the Harbor scaffold with the Terminus-2 harness
+      (89 tasks × 15 runs), and reports lower scores at lower effort levels.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-920:
+    text: Anthropic reports its Opus 4.6 alignment assessment used multiple methods
+      including automated behavioral evaluations, training data review, manual transcript
+      inspection, and interpretability/white-box techniques such as dictionary-learning
+      methods and activation oracles.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-921:
+    text: METR released a new version of its time horizon estimates (TH1.1) using
+      more tasks and a new evaluation infrastructure, and reports that re-estimated
+      time horizons generally fall within the confidence intervals from TH1.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - metr-2026-time-horizon-1-1
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-922:
+    text: METR increased its time-horizon task suite from 170 to 228 tasks by adding
+      73 HCAST tasks, removing 15 tasks, and updating 53 tasks; the count of long
+      tasks (estimated 8+ hours for humans) increased from 14 to 31.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.8999999761581421
+    source_ids:
+    - metr-2026-time-horizon-1-1
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-923:
+    text: METR moved its time-horizon evaluation infrastructure from its in-house
+      Vivaria framework to Inspect, an open-source evaluation framework created by
+      the UK AI Security Institute.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - metr-2026-time-horizon-1-1
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-924:
+    text: METR re-estimated time horizons for 14 models under TH1.1 (compared to 33
+      models under TH1), citing model availability, scaffold/tooling changes, and
+      non-frontier status as reasons for omissions.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.8500000238418579
+    source_ids:
+    - metr-2026-time-horizon-1-1
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-925:
+    text: METR claims that expanding the task suite (especially adding more 8h+ tasks)
+      yields tighter confidence intervals on frontier model horizons; it gives an
+      example where Opus 4.5’s CI upper-bound/point-estimate ratio decreases from
+      ~4.4× (TH1) to ~2.3× (TH1.1).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.6000000238418579
+    source_ids:
+    - metr-2026-time-horizon-1-1
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-926:
+    text: METR measured human baseline times for only 5 of its 31 long (8h+) tasks
+      in TH1.1; the remainder of long-task times are estimates.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - metr-2026-time-horizon-1-1
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-927:
+    text: 'METR reports that a hybrid trendline (using TH1 estimates for early models
+      missing from TH1.1 and TH1.1 estimates for later models) yields the same frontier
+      time-horizon doubling time as TH1: 196 days (~7 months).'
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.699999988079071
+    source_ids:
+    - metr-2026-time-horizon-1-1
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-928:
+    text: METR reports post-2023 doubling time is ~131 days under TH1.1 vs ~165 days
+      under TH1; and since 2024, ~89 days under TH1.1 vs ~109 days under TH1.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.6499999761581421
+    source_ids:
+    - metr-2026-time-horizon-1-1
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-929:
+    text: METR attributes the TH1→TH1.1 trend change to older models’ horizons shifting
+      down and recent models’ horizons shifting up (e.g., some GPT-4 versions down
+      ~35–57%, GPT-5 up ~55%, Opus 4.5 up ~11%).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.699999988079071
+    source_ids:
+    - metr-2026-time-horizon-1-1
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-930:
+    text: METR reports the TH1.1 suite is close to saturation for the strongest models
+      and that it is prioritizing updates (including more long tasks) to raise the
+      measurement ceiling.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - metr-2026-time-horizon-1-1
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
   TRANS-2025-001:
     text: The current global energy transition away from fossil fuels is “more or
       less irreversible” at this point.

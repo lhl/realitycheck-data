@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 443 |
-| **Sources** | 115 |
+| **Claims** | 482 |
+| **Sources** | 119 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 33 |
+| **Predictions Tracked** | 34 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-06 | [METR time horizon (long-task capability) 2025–2026](analysis/syntheses/metr-2025-2026-time-horizon-synthesis.md) | `[DRAFT]` | Cross-source synthesis: time-horizon trend (≈7-month doubling; faster post-2023 under TH1.1), protocol sensitivity, and cross-domain bottlenecks (OSWorld much shorter) |
 | 2026-02-06 | [GPT-5.3-Codex vs Claude Opus 4.6 (agentic coding releases)](analysis/syntheses/gpt-5-3-codex-vs-claude-opus-4-6-release-synthesis.md) | `[DRAFT]` | Cross-source comparison: benchmark cross-checks (Terminal-Bench), long-context + pricing tiers, product surfaces/controls, safety framing |
 | 2026-02-01 | [Arclight “Mirror” + “AOS” (developmental AI mentor + hidden institution OS)](analysis/syntheses/arclight-2026-mirror-aos-synthesis.md) | `[DRAFT]` | Cross-source synthesis: anti-sycophancy “graduation” mentor thesis + constraint-based “kernel invariants”; flags psychometrics+secrecy risks |
 | 2026-02-01 | [Reality Check v0.3.0 self-check (framework + dataset)](analysis/syntheses/realitycheck-2026-v0-3-0-framework-data-synthesis.md) | `[DRAFT]` | Framework+dataset triangulation; rigor-v1 vs legacy examples; workflow notes |
@@ -51,8 +52,12 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-06 | [Time Horizon 1.1 (METR)](analysis/sources/metr-2026-time-horizon-1-1.md) | `[REVIEWED]` | METR methodology update: suite 170→228, long tasks 14→31, Vivaria→Inspect; updated slope estimates + protocol/task-distribution sensitivity |
+| 2026-02-06 | [How Does Time Horizon Vary Across Domains? (METR)](analysis/sources/metr-2025-time-horizon-vary-across-domains.md) | `[REVIEWED]` | Cross-domain time-horizon comparisons: coding/math/QA fast; GUI agents (OSWorld) much shorter; proxy-based caveats + soundness conditions |
+| 2026-02-06 | [Measuring AI Ability to Complete Long Tasks (METR blog)](analysis/sources/metr-2025-measuring-ai-ability-to-complete-long-tasks.md) | `[REVIEWED]` | Introduces time-horizon metric; reports ~7-month doubling with wide CIs; includes partial reproduction checks via released run data |
 | 2026-02-06 | [Introducing GPT-5.3-Codex](analysis/sources/openai-2026-gpt-5-3-codex.md) | `[REVIEWED]` | OpenAI release post: agentic coding + “computer work” framing; benchmark table; Terminal-Bench leaderboard cross-check; cyber capability classification + trusted-access program |
 | 2026-02-06 | [Claude Opus 4.6](analysis/sources/anthropic-2026-claude-opus-4-6.md) | `[REVIEWED]` | Anthropic release post: 1M context (beta), compaction/effort controls, pricing tiers; benchmark claims vs Terminal-Bench leaderboard; GDPval-AA Elo cross-check |
+| 2026-02-06 | [System Card: Claude Opus 4.6](analysis/sources/anthropic-2026-claude-opus-4-6-system-card.md) | `[REVIEWED]` | System card: training data cutoff (May 2025); adaptive thinking + effort levels; benchmark methodology; RSP/ASL-3 deployment determination; alignment key findings incl overly agentic GUI computer-use and “suspicious side tasks”; external testing (AISI/Apollo/Andon) |
 | 2026-02-06 | [AI 2027](analysis/sources/aifutures-2025-ai-2027.md) | `[REVIEWED]` | Scenario + forecast pages: “superhuman coder” by 2027 plausible; ~1-year superhuman-coder→ASI median; compute stock 10× to 100M H100e; theft/race dynamics |
 | 2026-02-01 | [Memorandum of Strategy: Project Mirror (Arclight)](analysis/sources/arclight-2026-mirror.md) | `[DRAFT]` | Proposal: anti-sycophancy AI “mentor” optimized for graduation; psychometric middleware + lockout rules; limited empirical grounding |
 | 2026-02-01 | [Arclight Operating System (AOS): Internal Codex](analysis/sources/arclight-2026-aos.md) | `[DRAFT]` | Constraint-based institution “OS”: agency + endowment + founder-decay; argues kernel must stay hidden; heavy on non-operational metaphors |
@@ -119,7 +124,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 123 |
+| TECH | Technology & AI | 147 |
 | LABOR | Labor & Employment | 19 |
 | ECON | Economics & Markets | 41 |
 | GOV | Governance & Policy | 87 |
@@ -127,9 +132,9 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TRANS | Transition Dynamics | 26 |
 | RESOURCE | Resource Constraints | 15 |
 | GEO | Geopolitics | 30 |
-| INST | Institutions & Organizations | 41 |
-| RISK | Risk Assessment | 13 |
-| META | Framework & Methodology | 38 |
+| INST | Institutions & Organizations | 42 |
+| RISK | Risk Assessment | 21 |
+| META | Framework & Methodology | 44 |
 
 ---
 
@@ -239,4 +244,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-02-06*
+*Last updated: 2026-02-07*
