@@ -6,15 +6,15 @@
 
 | Table | Count |
 |-------|-------|
-| claims | 482 |
-| sources | 119 |
+| claims | 495 |
+| sources | 120 |
 | chains | 4 |
 | predictions | 34 |
 | contradictions | 0 |
 | definitions | 0 |
-| analysis_logs | 43 |
-| evidence_links | 230 |
-| reasoning_trails | 235 |
+| analysis_logs | 44 |
+| evidence_links | 235 |
+| reasoning_trails | 240 |
 
 ## Claims by Domain
 
@@ -23,13 +23,13 @@
 | ECON | 41 |
 | GEO | 30 |
 | GOV | 87 |
-| INST | 42 |
+| INST | 44 |
 | LABOR | 19 |
 | META | 44 |
 | RESOURCE | 15 |
-| RISK | 21 |
+| RISK | 28 |
 | SOC | 10 |
-| TECH | 147 |
+| TECH | 151 |
 | TRANS | 26 |
 
 ## Claims by Type
@@ -38,8 +38,8 @@
 |------|-------|
 | [A] | 8 |
 | [C] | 1 |
-| [F] | 266 |
-| [H] | 107 |
+| [F] | 278 |
+| [H] | 108 |
 | [P] | 34 |
 | [S] | 4 |
 | [T] | 62 |
@@ -56,7 +56,7 @@
 | INTERVIEW | 2 |
 | KNOWLEDGE | 23 |
 | PAPER | 9 |
-| REPORT | 13 |
+| REPORT | 14 |
 | SOCIAL | 7 |
 
 ## Argument Chains

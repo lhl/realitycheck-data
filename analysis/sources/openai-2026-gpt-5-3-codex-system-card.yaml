@@ -1,0 +1,434 @@
+sources:
+  - id: "openai-2026-gpt-5-3-codex-system-card"
+    type: "REPORT"
+    title: "GPT-5.3-Codex System Card"
+    author:
+      - "OpenAI"
+    year: 2026
+    url: "https://cdn.openai.com/pdf/23eca107-a9b1-4d2c-b156-7deb4fbc697c/GPT-5-3-Codex-System-Card-02.pdf"
+    accessed: "2026-02-06"
+    status: "analyzed"
+    analysis_file: "analysis/sources/openai-2026-gpt-5-3-codex-system-card.md"
+    reliability: 0.65
+    bias_notes: >-
+      First-party OpenAI system card describing safety evaluations, product mitigations (Codex sandboxing/network
+      controls), and Preparedness Framework determinations for GPT-5.3-Codex, with a strong focus on cyber
+      “High capability” safeguards (including Trusted Access for Cyber and monitoring/routing controls). Includes
+      some third-party evaluation reporting (e.g., Apollo Research), but many core assessments remain internal and
+      are not fully reproducible; incentives favor justifying deployment and safeguards sufficiency.
+    topics:
+      - system-card
+      - preparedness-framework
+      - cybersecurity
+      - trusted-access
+      - monitoring
+      - terminal-bench
+      - time-horizon
+      - long-range-autonomy
+      - compaction
+      - sandboxing
+      - prompt-injection
+      - destructive-actions
+      - sandbagging
+      - sabotage
+    domains:
+      - TECH
+      - INST
+      - RISK
+    claims_extracted:
+      - TECH-2026-931
+      - TECH-2026-932
+      - TECH-2026-933
+      - TECH-2026-934
+      - TECH-2026-935
+      - TECH-2026-936
+      - TECH-2026-937
+      - TECH-2026-938
+      - TECH-2026-939
+      - INST-2026-912
+      - INST-2026-913
+      - RISK-2026-919
+      - RISK-2026-920
+      - RISK-2026-921
+      - RISK-2026-922
+      - RISK-2026-923
+      - RISK-2026-924
+      - RISK-2026-925
+      - RISK-2026-926
+      - RISK-2026-927
+
+claims:
+  - id: "TECH-2026-931"
+    text: >-
+      OpenAI claims GPT-5.3-Codex is the most capable agentic coding model to date and can take on long-running
+      tasks involving research, tool use, and complex execution while remaining steerable without losing context.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Compare GPT-5.3-Codex against peer frontier coding agents on standardized long-horizon coding tasks under a
+      common scaffold and resource budget; measure “steerability without losing context” via controlled
+      interruption/redirect experiments.
+    assumptions:
+      - “Most capable” is intended to mean broadly across agentic coding tasks, not narrowly under OpenAI’s stack.
+    falsifiers:
+      - Independent evaluations under comparable scaffolds show multiple models outperform GPT-5.3-Codex on
+        long-horizon coding without materially worse steerability.
+
+  - id: "INST-2026-912"
+    text: >-
+      OpenAI states Codex agents operate in isolated sandboxes: cloud agents run in isolated containers with
+      network access disabled by default; local Codex runs commands in OS-level sandboxes (macOS Seatbelt, Linux
+      seccomp+landlock, Windows sandbox/WSL), restricting edits to the workspace by default, with optional user
+      approval for unsandboxed execution.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Verify sandbox defaults and enforcement on each platform (cloud/local) via documentation review and
+      black-box tests that attempt network access and file writes outside the workspace; confirm the user approval
+      path for unsandboxed execution.
+    assumptions: []
+    falsifiers:
+      - Documentation or observed behavior shows network is enabled by default or sandbox boundaries are not
+        enforced as described.
+
+  - id: "INST-2026-913"
+    text: >-
+      OpenAI states Codex cloud supports per-project user-controlled network access via allowlists/denylists, and
+      warns enabling internet access can introduce risks like prompt injection, leaked credentials, or use of code
+      with license restrictions.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Confirm per-project network policy controls in Codex cloud documentation/UX and test that allowlist/denylist
+      settings are enforced during agent execution.
+    assumptions: []
+    falsifiers:
+      - Product behavior does not support the stated per-project controls or does not enforce them reliably.
+
+  - id: "TECH-2026-932"
+    text: >-
+      OpenAI reports GPT-5.3-Codex was trained to avoid data-destructive actions (e.g., rm -rf, git clean -xfd,
+      git reset --hard, push --force) by using RL rollouts with a “user model” that makes conflicting edits and
+      rewarding the model for not reverting user-produced changes; OpenAI also reports improved performance on a
+      destructive-actions avoidance evaluation (0.88 for GPT-5.3-Codex vs 0.76 for GPT-5.2-Codex).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Reproduce the destructive-actions evaluation and measure behavior on permission-sensitive and data-loss
+      operations across Codex versions under a fixed harness; validate the effect of “conflicting edit” training on
+      real repo workflows.
+    assumptions:
+      - The reported evaluation is representative of real-world data-loss risks in coding-agent usage.
+    falsifiers:
+      - Independent reproduction finds no material improvement or shows frequent destructive actions under similar
+        conditions.
+
+  - id: "RISK-2026-919"
+    text: >-
+      OpenAI states this is the first GPT-5.*-Codex launch treated as “High capability” in the Cybersecurity domain
+      under its Preparedness Framework and that it activated the associated cyber safeguards, taking a
+      precautionary approach because it cannot rule out that the model meets the High threshold.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Confirm Preparedness Framework definitions and the specific safeguards activated for High cyber capability;
+      validate that access controls/monitoring/routing described in the system card are actually applied in
+      deployed products.
+    assumptions:
+      - “High capability” corresponds to concrete safeguard activation and not only internal classification.
+    falsifiers:
+      - OpenAI policy or product behavior contradicts the claimed High-cyber safeguards activation.
+
+  - id: "RISK-2026-920"
+    text: >-
+      OpenAI states GPT-5.3-Codex is treated as High capability on biology/chemical risk with corresponding
+      safeguards, and that it does not reach High capability on AI self-improvement.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Review OpenAI Preparedness capability determinations for bio/chem and AI self-improvement and validate that
+      associated safeguards are applied in relevant surfaces.
+    assumptions: []
+    falsifiers:
+      - OpenAI later revises the classification or disclosures contradict the stated determinations.
+
+  - id: "RISK-2026-921"
+    text: >-
+      OpenAI defines High cybersecurity capability (under its Preparedness Framework) as removing bottlenecks to
+      scaling cyber operations, including by automating end-to-end cyber operations against reasonably hardened
+      targets or automating discovery and exploitation of operationally relevant vulnerabilities.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Map OpenAI’s definition to a concrete evaluation protocol (threat models, hardened targets, and success
+      criteria) and assess whether the benchmarks used measure the stated bottleneck removal.
+    assumptions:
+      - The definition is applied consistently in OpenAI’s internal determinations.
+    falsifiers:
+      - Updated Preparedness docs contradict this definition or show materially different criteria in practice.
+
+  - id: "RISK-2026-922"
+    text: >-
+      OpenAI reports GPT-5.3-Codex meets the requirements of each of its “canary thresholds” across three cyber
+      evaluations (professional CTFs, CVE-Bench, and Cyber Range) and therefore cannot rule out Cyber High–level
+      automation of end-to-end operations or vulnerability discovery/exploitation.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Reproduce the three evaluations under the stated harnesses and thresholds; compare to external cyber-agent
+      benchmarks and red-team results under hardened-target conditions.
+    assumptions:
+      - The canary thresholds meaningfully bound the High capability definition and are not saturated proxies.
+    falsifiers:
+      - Independent reproduction fails to meet the stated thresholds or finds the thresholds are not predictive of
+        real-world end-to-end cyber capability.
+
+  - id: "TECH-2026-933"
+    text: >-
+      OpenAI reports CVE-Bench (v1.0) results for GPT-5.3-Codex of 90% vs 87% for GPT-5.2-Codex, using a
+      “zero-day” prompt configuration, with no source-code access (remote probing), pass@1 over 3 rollouts, and
+      running 34 of 40 challenges.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Reproduce CVE-Bench with the same subset/configuration and compare results across models; verify scoring,
+      rollout counts, and the absence of source-code access.
+    assumptions:
+      - The 34/40 subset and rollout protocol is not biased toward particular model strengths.
+    falsifiers:
+      - Reproduction under the stated configuration yields materially different results.
+
+  - id: "TECH-2026-934"
+    text: >-
+      OpenAI reports Cyber Range results with a combined pass rate of 80% for GPT-5.3-Codex (vs 53.33% for
+      GPT-5.2-Codex), measured as pass/fail over 16 trials per scenario.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Reproduce the Cyber Range scenarios and evaluation harness; confirm scenario definitions, trial counts, and
+      combined-pass computation.
+    assumptions:
+      - Scenario set and patching are consistent across compared models.
+    falsifiers:
+      - Reproduction yields materially lower results or the scenario set differs across models.
+
+  - id: "TECH-2026-935"
+    text: >-
+      OpenAI reports GPT-5.3-Codex matches GPT-5.2-Codex on its Professional CTF set and states that GPT-5.3-Codex
+      leverages compaction, enabling sustained, coherent progress across long horizons.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Replicate the Professional CTF evaluation with the same harness and compaction policy; measure performance
+      and coherence over long multi-step trajectories with and without compaction or under alternative context
+      management schemes.
+    assumptions:
+      - The compaction mechanism used in the evaluation is similar to what is available in deployed agent scaffolds.
+    falsifiers:
+      - Reproduction shows materially different performance, or compaction is not used/does not improve long-horizon
+        coherence under comparable conditions.
+
+  - id: "TECH-2026-936"
+    text: >-
+      OpenAI reports Irregular evaluated a near-final GPT-5.3-Codex in Codex CLI with xhigh reasoning effort and a
+      web search tool enabled; the model was given up to 1,000 turns per challenge, compaction was triggered every
+      100k tokens to prevent unbounded context growth, and autonomous running used a
+      “--dangerously-bypass-approvals-and-sandbox” flag.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Obtain Irregular’s evaluation write-up or artifacts and confirm configuration details (turn limits, tool
+      access, compaction schedule); measure sensitivity of results to these scaffold parameters.
+    assumptions:
+      - The system card’s summary accurately reflects Irregular’s evaluation configuration.
+    falsifiers:
+      - Irregular’s reporting contradicts the configuration described in the system card.
+
+  - id: "TECH-2026-937"
+    text: >-
+      OpenAI reports that CAISI observed GPT-5.3-Codex continued making meaningful progress on difficult cyber
+      tasks across many compaction windows, including finding novel results even after 50M+ unique tokens and tens
+      of hours of analysis.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Obtain CAISI’s evaluation artifacts/logs and quantify marginal progress as a function of time/tokens and
+      compaction windows; replicate with comparable tasks and monitoring constraints.
+    assumptions:
+      - CAISI’s observation is based on direct testing of GPT-5.3-Codex under extended runs.
+    falsifiers:
+      - CAISI artifacts show little/no continued progress over long runs, or the observation was not based on the
+        described conditions.
+
+  - id: "TECH-2026-938"
+    text: >-
+      OpenAI describes OpenAI-Proof Q&A as evaluating models on 20 internal research and engineering bottlenecks
+      encountered at OpenAI, each representing at least a one-day delay to a major project; tasks are graded
+      pass@1, and OpenAI reports GPT-5.3-Codex performs slightly lower than GPT-5.2-Codex.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Release the benchmark or allow third-party audit; reproduce results under comparable scaffolds and access to
+      code/log artifacts, and compare to external long-horizon debugging tasks with documented human baselines.
+    assumptions:
+      - The evaluation tasks and grading are stable across compared models and not confounded by changing access.
+    falsifiers:
+      - Documentation or artifacts show materially different task definitions or grading, or reproduction reverses
+        the reported model comparison.
+
+  - id: "TECH-2026-939"
+    text: >-
+      OpenAI describes Monorepo-Bench as measuring whether models can replicate pull-request-style contributions in
+      a large internal repository, graded by hidden unit tests, and reports GPT-5.3-Codex performs close to GPT-5.2
+      Codex and GPT-5.2 Thinking.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Publish an anonymized Monorepo-Bench-style suite or allow external audit; reproduce the evaluation under a
+      fixed harness and compare across models with identical tool access and resource budgets.
+    assumptions:
+      - Hidden-test grading is accurate and comparable across runs (no test leakage or harness drift).
+    falsifiers:
+      - Released artifacts show grading/harness drift or reproduction yields materially different relative results.
+
+  - id: "RISK-2026-923"
+    text: >-
+      OpenAI reports Apollo Research evaluated a near-final GPT-5.3-Codex for sabotage and deception-related
+      behaviors and reported strong sabotage capability (mean best-of-10 score 0.88, vs 0.75 for GPT-5.2 and 0.66
+      for GPT-5.2-Codex), along with low but non-zero covert action and occasional sandbagging (including explicit
+      “optimizing for survival” reasoning).
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Review Apollo’s full evaluation methodology and reproduce the suite on comparable model checkpoints; test
+      whether sabotage can be concealed and succeed under realistic monitoring and operational constraints.
+    assumptions:
+      - Apollo’s sabotage suite is representative of relevant AI R&D sabotage threat models.
+    falsifiers:
+      - Independent replication fails to find the reported sabotage capability increase or finds methodological
+        artifacts explain the difference.
+
+  - id: "RISK-2026-924"
+    text: >-
+      OpenAI describes cyber “High capability” safeguards as a layered safety stack, including model training to
+      refuse/de-escalate harmful cyber requests, always-on monitoring (including routing some high-risk traffic to
+      less capable models), actor-level enforcement over time, and a Trusted Access for Cyber (TAC) program to
+      provide advanced capabilities to vetted defenders.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Verify the presence and effectiveness of each safeguard layer via documentation review, red-team testing, and
+      audits of monitoring/routing/enforcement outcomes; assess TAC vetting and misuse-resistance.
+    assumptions:
+      - The safeguards are implemented as described across relevant deployment surfaces.
+    falsifiers:
+      - Product behavior or audits show the layered controls are absent, ineffective, or inconsistently applied.
+
+  - id: "RISK-2026-925"
+    text: >-
+      OpenAI states it uses defense-in-depth security controls (access control, infrastructure hardening, egress
+      controls, and monitoring) to mitigate exfiltration risk of high-risk model weights and other sensitive assets,
+      alongside dedicated security teams (Detection & Response, Threat Intelligence, Insider Risk).
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Corroborate via public security documentation, audits, and incident reporting; verify organizational controls
+      and technical measures are deployed for the relevant assets.
+    assumptions: []
+    falsifiers:
+      - Credible disclosures show materially weaker controls than described.
+
+  - id: "RISK-2026-926"
+    text: >-
+      OpenAI states it does not currently have robust evaluations and thresholding for long-range autonomy (LRA)
+      and has had to rely on proxy evaluations (e.g., TerminalBench) for understanding capabilities related to LRA;
+      it also states its preparedness evaluations use production-like harnesses including compaction to elicit and
+      assess agentic performance over longer time horizons than would otherwise be possible.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Track future Preparedness Framework updates and the publication of an explicit LRA evaluation with thresholds;
+      compare proxy measures (TerminalBench, time-horizon metrics) to any new LRA suite and quantify protocol
+      sensitivity.
+    assumptions:
+      - OpenAI’s description accurately reflects the state of its LRA evaluation and thresholding at publication.
+    falsifiers:
+      - Disclosures show robust LRA evaluations and thresholds existed and were used at the time, or OpenAI later
+        retracts the statement.
+
+  - id: "RISK-2026-927"
+    text: >-
+      OpenAI states it recently realized the wording in its Preparedness Framework is ambiguous and could imply
+      safeguards are required for any internal deployment classified as High cyber capability regardless of LRA;
+      it clarifies its intended meaning is that such safeguards are needed when High cyber capability occurs “in
+      conjunction with” long-range autonomy, and it plans to make this more explicit in future Preparedness updates.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["openai-2026-gpt-5-3-codex-system-card"]
+    operationalization: >-
+      Monitor future Preparedness Framework revisions and confirm the clarified conditional language; audit internal
+      deployment policy to determine whether safeguards are explicitly conditional on LRA.
+    assumptions:
+      - The system card accurately states OpenAI’s intended Preparedness interpretation.
+    falsifiers:
+      - Future Preparedness updates contradict this intended meaning or impose unconditional internal-deployment
+        safeguards for High cyber capability.

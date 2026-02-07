@@ -1,10 +1,10 @@
 # Claim Registry
 # Exported from LanceDB on 2026-02-07
-# Total claims: 482
+# Total claims: 495
 # Total chains: 4
 
 counters:
-  TECH: 930
+  TECH: 934
   RESOURCE: 14
   LABOR: 15
   ECON: 911
@@ -13,8 +13,8 @@ counters:
   TRANS: 51
   META: 39
   GEO: 50
-  RISK: 918
-  INST: 911
+  RISK: 925
+  INST: 913
 claims:
   ECON-2025-001:
     text: Neoliberalism evolved into a model of state hollowing and asset-stripping
@@ -3831,6 +3831,46 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-06'
+  INST-2026-912:
+    text: 'OpenAI states Codex agents operate in isolated sandboxes: cloud agents
+      run in isolated containers with network access disabled by default; local Codex
+      runs commands in OS-level sandboxes (macOS Seatbelt, Linux seccomp+landlock,
+      Windows sandbox/WSL), restricting edits to the workspace by default, with optional
+      user approval for unsandboxed execution.'
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  INST-2026-913:
+    text: OpenAI states Codex cloud supports per-project user-controlled network access
+      via allowlists/denylists, and warns enabling internet access can introduce risks
+      like prompt injection, leaked credentials, or use of code with license restrictions.
+    type: '[F]'
+    domain: INST
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
   LABOR-2023-001:
     text: 'In a controlled experiment (May–Jun 2022) with 95 professional developers,
       the group with access to GitHub Copilot completed an HTTP-server implementation
@@ -5727,6 +5767,147 @@ claims:
     credence: 0.6000000238418579
     source_ids:
     - anthropic-2026-claude-opus-4-6-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-919:
+    text: OpenAI states this is the first GPT-5.*-Codex launch treated as “High capability”
+      in the Cybersecurity domain under its Preparedness Framework and that it activated
+      the associated cyber safeguards, taking a precautionary approach because it
+      cannot rule out that the model meets the High threshold.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-920:
+    text: OpenAI states GPT-5.3-Codex is treated as High capability on biology/chemical
+      risk with corresponding safeguards, and that it does not reach High capability
+      on AI self-improvement.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-921:
+    text: OpenAI defines High cybersecurity capability (under its Preparedness Framework)
+      as removing bottlenecks to scaling cyber operations, including by automating
+      end-to-end cyber operations against reasonably hardened targets or automating
+      discovery and exploitation of operationally relevant vulnerabilities.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-922:
+    text: OpenAI reports GPT-5.3-Codex meets the requirements of each of its “canary
+      thresholds” across three cyber evaluations (professional CTFs, CVE-Bench, and
+      Cyber Range) and therefore cannot rule out Cyber High–level automation of end-to-end
+      operations or vulnerability discovery/exploitation.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-923:
+    text: OpenAI reports Apollo Research evaluated a near-final GPT-5.3-Codex for
+      sabotage and deception-related behaviors and reported strong sabotage capability
+      (mean best-of-10 score 0.88, vs 0.75 for GPT-5.2 and 0.66 for GPT-5.2-Codex),
+      along with low but non-zero covert action and occasional sandbagging (including
+      explicit “optimizing for survival” reasoning).
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-924:
+    text: OpenAI describes cyber “High capability” safeguards as a layered safety
+      stack, including model training to refuse/de-escalate harmful cyber requests,
+      always-on monitoring (including routing some high-risk traffic to less capable
+      models), actor-level enforcement over time, and a Trusted Access for Cyber (TAC)
+      program to provide advanced capabilities to vetted defenders.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-925:
+    text: OpenAI states it uses defense-in-depth security controls (access control,
+      infrastructure hardening, egress controls, and monitoring) to mitigate exfiltration
+      risk of high-risk model weights and other sensitive assets, alongside dedicated
+      security teams (Detection & Response, Threat Intelligence, Insider Risk).
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
     first_extracted: '2026-02-07'
     extracted_by: import
     supports: []
@@ -8714,6 +8895,85 @@ claims:
     credence: 0.699999988079071
     source_ids:
     - metr-2026-time-horizon-1-1
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-931:
+    text: OpenAI claims GPT-5.3-Codex is the most capable agentic coding model to
+      date and can take on long-running tasks involving research, tool use, and complex
+      execution while remaining steerable without losing context.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-932:
+    text: OpenAI reports GPT-5.3-Codex was trained to avoid data-destructive actions
+      (e.g., rm -rf, git clean -xfd, git reset --hard, push --force) by using RL rollouts
+      with a “user model” that makes conflicting edits and rewarding the model for
+      not reverting user-produced changes; OpenAI also reports improved performance
+      on a destructive-actions avoidance evaluation (0.88 for GPT-5.3-Codex vs 0.76
+      for GPT-5.2-Codex).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-933:
+    text: OpenAI reports CVE-Bench (v1.0) results for GPT-5.3-Codex of 90% vs 87%
+      for GPT-5.2-Codex, using a “zero-day” prompt configuration, with no source-code
+      access (remote probing), pass@1 over 3 rollouts, and running 34 of 40 challenges.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-934:
+    text: OpenAI reports Cyber Range results with a combined pass rate of 80% for
+      GPT-5.3-Codex (vs 53.33% for GPT-5.2-Codex), measured as pass/fail over 16 trials
+      per scenario.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
     first_extracted: '2026-02-07'
     extracted_by: import
     supports: []

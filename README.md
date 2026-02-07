@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 482 |
-| **Sources** | 119 |
+| **Claims** | 502 |
+| **Sources** | 120 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 34 |
 
@@ -31,6 +31,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 |------|----------|--------|---------|
 | 2026-02-06 | [METR time horizon (long-task capability) 2025–2026](analysis/syntheses/metr-2025-2026-time-horizon-synthesis.md) | `[DRAFT]` | Cross-source synthesis: time-horizon trend (≈7-month doubling; faster post-2023 under TH1.1), protocol sensitivity, and cross-domain bottlenecks (OSWorld much shorter) |
 | 2026-02-06 | [GPT-5.3-Codex vs Claude Opus 4.6 (agentic coding releases)](analysis/syntheses/gpt-5-3-codex-vs-claude-opus-4-6-release-synthesis.md) | `[DRAFT]` | Cross-source comparison: benchmark cross-checks (Terminal-Bench), long-context + pricing tiers, product surfaces/controls, safety framing |
+| 2026-02-06 | [GPT-5.3-Codex vs Claude Opus 4.6 (system cards)](analysis/syntheses/gpt-5-3-codex-vs-claude-opus-4-6-system-cards-synthesis.md) | `[DRAFT]` | Cross-source comparison: Preparedness vs RSP/ASL framing, agentic-risk surfaces, sabotage/sandbagging signals (Apollo), and operational controls (sandboxing/monitoring/trusted access) |
 | 2026-02-01 | [Arclight “Mirror” + “AOS” (developmental AI mentor + hidden institution OS)](analysis/syntheses/arclight-2026-mirror-aos-synthesis.md) | `[DRAFT]` | Cross-source synthesis: anti-sycophancy “graduation” mentor thesis + constraint-based “kernel invariants”; flags psychometrics+secrecy risks |
 | 2026-02-01 | [Reality Check v0.3.0 self-check (framework + dataset)](analysis/syntheses/realitycheck-2026-v0-3-0-framework-data-synthesis.md) | `[DRAFT]` | Framework+dataset triangulation; rigor-v1 vs legacy examples; workflow notes |
 | 2026-01-27 | [Zhang Youxia purge, PLA disruption, and Taiwan timing](analysis/syntheses/china-pla-purge-zhang-youxia-taiwan-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Zhang Youxia purge, PLA “high command” disruption, and Taiwan invasion timing |
@@ -56,6 +57,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 | 2026-02-06 | [How Does Time Horizon Vary Across Domains? (METR)](analysis/sources/metr-2025-time-horizon-vary-across-domains.md) | `[REVIEWED]` | Cross-domain time-horizon comparisons: coding/math/QA fast; GUI agents (OSWorld) much shorter; proxy-based caveats + soundness conditions |
 | 2026-02-06 | [Measuring AI Ability to Complete Long Tasks (METR blog)](analysis/sources/metr-2025-measuring-ai-ability-to-complete-long-tasks.md) | `[REVIEWED]` | Introduces time-horizon metric; reports ~7-month doubling with wide CIs; includes partial reproduction checks via released run data |
 | 2026-02-06 | [Introducing GPT-5.3-Codex](analysis/sources/openai-2026-gpt-5-3-codex.md) | `[REVIEWED]` | OpenAI release post: agentic coding + “computer work” framing; benchmark table; Terminal-Bench leaderboard cross-check; cyber capability classification + trusted-access program |
+| 2026-02-06 | [GPT-5.3-Codex System Card](analysis/sources/openai-2026-gpt-5-3-codex-system-card.md) | `[REVIEWED]` | System card: Codex sandboxing + network controls; destructive-action avoidance mitigation; Preparedness “High cyber capability” framing with layered safeguards + TAC; Apollo sandbagging/sabotage summary; residual risk notes |
 | 2026-02-06 | [Claude Opus 4.6](analysis/sources/anthropic-2026-claude-opus-4-6.md) | `[REVIEWED]` | Anthropic release post: 1M context (beta), compaction/effort controls, pricing tiers; benchmark claims vs Terminal-Bench leaderboard; GDPval-AA Elo cross-check |
 | 2026-02-06 | [System Card: Claude Opus 4.6](analysis/sources/anthropic-2026-claude-opus-4-6-system-card.md) | `[REVIEWED]` | System card: training data cutoff (May 2025); adaptive thinking + effort levels; benchmark methodology; RSP/ASL-3 deployment determination; alignment key findings incl overly agentic GUI computer-use and “suspicious side tasks”; external testing (AISI/Apollo/Andon) |
 | 2026-02-06 | [AI 2027](analysis/sources/aifutures-2025-ai-2027.md) | `[REVIEWED]` | Scenario + forecast pages: “superhuman coder” by 2027 plausible; ~1-year superhuman-coder→ASI median; compute stock 10× to 100M H100e; theft/race dynamics |
@@ -124,7 +126,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 147 |
+| TECH | Technology & AI | 156 |
 | LABOR | Labor & Employment | 19 |
 | ECON | Economics & Markets | 41 |
 | GOV | Governance & Policy | 87 |
@@ -132,8 +134,8 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TRANS | Transition Dynamics | 26 |
 | RESOURCE | Resource Constraints | 15 |
 | GEO | Geopolitics | 30 |
-| INST | Institutions & Organizations | 42 |
-| RISK | Risk Assessment | 21 |
+| INST | Institutions & Organizations | 44 |
+| RISK | Risk Assessment | 30 |
 | META | Framework & Methodology | 44 |
 
 ---
@@ -244,4 +246,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-02-07*
+*Last updated: 2026-02-08*

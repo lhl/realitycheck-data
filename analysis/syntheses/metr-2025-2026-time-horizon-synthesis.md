@@ -47,6 +47,7 @@ METR defines (for a given benchmark/task distribution) a model’s “p50 time h
 ### What it does not automatically capture
 - Real-world project complexity: unclear specs, shifting requirements, coordination, security constraints, “codebase familiarization,” etc.
 - Scaffold vs model effects: tool policies, retries, memory/compaction, and agent design can move horizons without changing core model weights.
+- Vendor “LRA” framing: OpenAI’s GPT‑5.3‑Codex system card explicitly flags long-range autonomy (LRA) as under-thresholded and proxy-measured (e.g., TerminalBench + compaction harnesses), reinforcing that “time horizon” is definition- and scaffold-dependent (`openai-2026-gpt-5-3-codex-system-card`).
 
 ---
 
@@ -83,4 +84,3 @@ Treat METR’s time horizon as:
 2. **External-validity tests**: run the same horizon methodology on real-world SWE tasks with documented human time distributions (including codebase familiarization) and compare slopes.
 3. **Cost-adjusted horizons**: report horizons under fixed cost budgets (tokens/latency/human oversight), not just raw success.
 4. **Domain expansion**: add “short-horizon bottleneck” domains (GUI office work, security workflows, etc.) to see if their horizons begin catching up or remain stuck.
-
