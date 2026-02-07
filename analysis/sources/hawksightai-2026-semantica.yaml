@@ -1,0 +1,226 @@
+sources:
+  - id: "hawksightai-2026-semantica"
+    type: "KNOWLEDGE"
+    title: "Semantica"
+    author:
+      - "Hawksight AI"
+    year: 2026
+    url: "https://github.com/Hawksight-AI/semantica"
+    accessed: "2026-02-07"
+    status: "analyzed"
+    analysis_file: "analysis/sources/hawksightai-2026-semantica.md"
+    reliability: 0.70
+    bias_notes: >-
+      Self-authored OSS project docs + codebase. Code and tests are strong evidence for existence/shape of features, but
+      README/docs are marketing-forward and can overstate real-world guarantees (“trustworthy”, “compliance”,
+      “production-grade”).
+    topics:
+      - semantica
+      - semantic-layer
+      - knowledge-graph
+      - provenance
+      - prov-o
+      - graphrag
+      - ontology
+      - reasoning
+      - change-management
+      - deduplication
+      - conflict-resolution
+    domains:
+      - META
+      - TECH
+    claims_extracted:
+      - META-2026-100
+      - META-2026-101
+      - META-2026-102
+      - META-2026-103
+      - META-2026-104
+      - META-2026-105
+      - META-2026-106
+      - META-2026-107
+      - META-2026-108
+      - META-2026-109
+      - META-2026-110
+      - META-2026-111
+      - META-2026-112
+      - META-2026-113
+      - META-2026-115
+      - META-2026-116
+
+claims:
+  - id: "META-2026-100"
+    text: "Semantica is an open-source Python framework for building semantic layers and knowledge-engineering systems, with modules spanning ingestion, parsing, extraction, KGs, ontologies, reasoning, and storage backends."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Verify repository module structure and public imports cover these functional areas."
+    assumptions: ["Module presence implies at least a minimally usable API surface in that area."]
+    falsifiers: ["Core modules are absent or cannot be imported without major additional setup."]
+
+  - id: "META-2026-101"
+    text: "Semantica provides a unified provenance system (PROV-O concepts mapped into a schema) with in-memory + SQLite storage and SHA-256 integrity checks."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Verify semantica/provenance schemas/storage/checksum implementations exist and provenance unit tests pass."
+    assumptions: ["Repo code at HEAD reflects the intended feature set described in README/docs."]
+    falsifiers: ["Provenance modules absent or provenance tests fail materially."]
+
+  - id: "META-2026-102"
+    text: "Semantica ships provenance-enabled wrappers for 17 modules."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Count *_provenance.py modules and verify they import and reference ProvenanceManager."
+    assumptions: ["Wrapper presence corresponds to usable provenance tracking when enabled."]
+    falsifiers: ["Fewer wrappers exist or wrappers are non-importable/non-functional."]
+
+  - id: "META-2026-103"
+    text: "Semantica provides change management/version control for knowledge graphs and ontologies with SQLite/in-memory storage, diffs, and checksum verification."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Verify change_management module provides version managers, diffing, and checksum verification; run its unit tests."
+    assumptions: ["Unit tests are representative of real-world behavior for core operations."]
+    falsifiers: ["Change-management tests fail materially or core APIs are missing."]
+
+  - id: "META-2026-104"
+    text: "Semantica provides deduplication and conflict-resolution tooling, including Jaro-Winkler similarity and configurable strategies."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Verify deduplication module includes Jaro-Winkler similarity and run dedup/conflicts unit tests."
+    assumptions: ["The tested strategies cover common dedup/conflict paths."]
+    falsifiers: ["Modules absent or unit tests fail materially."]
+
+  - id: "META-2026-105"
+    text: "Semantica includes a reasoning module implementing forward chaining, backward chaining, and a Rete engine."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Verify rete_engine.py and reasoner.py exist and run reasoning unit tests."
+    assumptions: ["Reasoning tests cover the core inference loop and basic rule matching."]
+    falsifiers: ["Reasoning tests fail materially or core classes are missing."]
+
+  - id: "META-2026-106"
+    text: "Semantica supports multi-format ingestion and parsing (files/web/db/feeds; PDF/DOCX/PPTX/XLSX/HTML/JSON/CSV), with optional Docling integration."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.75
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Verify ingest and parse modules expose these ingestors/parsers and run ingest/parse unit tests."
+    assumptions: ["Optional dependencies are correctly declared or documented for format-specific support."]
+    falsifiers: ["Format imports fail in typical installs due to missing/undeclared dependencies."]
+
+  - id: "META-2026-107"
+    text: "Semantica provides LLM provider wrappers (Groq, OpenAI, HuggingFace, LiteLLM) used for LLM-assisted extraction and GraphRAG-style querying."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.75
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Verify semantica/llms provider wrappers exist and provenance tests cover their import paths; confirm optional deps are gated."
+    assumptions: ["Provider wrappers operate when corresponding optional deps and API keys are configured."]
+    falsifiers: ["Wrappers are absent or cannot be used without major refactors beyond configuration/deps."]
+
+  - id: "META-2026-108"
+    text: "Semantica supports graph backends including Amazon Neptune with IAM authentication, plus Neo4j and FalkorDB."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.70
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Verify graph_store backend selection includes neptune/neo4j/falkordb and Neptune adapter implements IAM auth token logic."
+    assumptions: ["Backend presence corresponds to a usable adapter with documented configuration."]
+    falsifiers: ["Adapters are incomplete or require undocumented internal dependencies to function."]
+
+  - id: "META-2026-109"
+    text: "Semantica defaults to FastEmbed-based embeddings and supports multiple vector-store backends (FAISS and optional hosted stores)."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.70
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Verify TextEmbedder defaults to fastembed and vector_store module supports FAISS and optional providers; run vector_store tests."
+    assumptions: ["Embedding provider behavior is stable across environments; optional providers are properly gated."]
+    falsifiers: ["Embedding defaults differ or vector store backends are non-functional in practice."]
+
+  - id: "META-2026-110"
+    text: "Semantica’s provenance and change-management modules have extensive automated tests (237 and 104 respectively) that pass in this environment when run as unit tests."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Run tests/provenance and tests/change_management and confirm counts and pass status."
+    assumptions: ["These unit suites are representative of core functionality quality for these modules."]
+    falsifiers: ["Running the suites yields materially fewer tests or widespread failures."]
+
+  - id: "META-2026-111"
+    text: "In this checkout, several test suites fail (notably embeddings and visualization), alongside smaller failures (LLM extraction caching expectations, relative date normalization, seed CSV loading, and triplet-store concurrency)."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Run the named per-module test suites and record failures at HEAD."
+    assumptions: ["Observed failures reflect real mismatches between code/tests or missing optional dependencies."]
+    falsifiers: ["Clean environment run shows these suites pass at the same commit with minimal extra setup."]
+
+  - id: "META-2026-112"
+    text: "Semantica’s core dependency set is large (e.g., torch/transformers/sentence-transformers/fastembed/faiss-cpu), increasing installation footprint and dependency-conflict risk."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Inspect pyproject.toml core dependencies and note heavyweight ML packages."
+    assumptions: ["Large dependency sets correlate with higher operational friction for users."]
+    falsifiers: ["Core dependencies are in fact minimal and heavyweight deps are optional-only."]
+
+  - id: "META-2026-113"
+    text: "Semantica is actively developed (initial commit 2025-06-25; 942 commits; tags through v0.2.6; HEAD is 36 commits past v0.2.6 as of 2026-02-07)."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Check git history counts/dates and tag list for the local checkout."
+    assumptions: ["Local clone includes full history and tags from origin."]
+    falsifiers: ["History/tags differ materially (e.g., shallow clone artifacts)."]
+
+  - id: "META-2026-115"
+    text: "Semantica can be used alongside agentic frameworks (e.g., LangChain/LlamaIndex) to add auditability, provenance, and semantic reasoning."
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Demonstrate an integration pattern where Semantica ingests/extracts/graphs are used as retrieval/memory for an agent framework."
+    assumptions: ["Agent frameworks can consume Semantica outputs without major impedance mismatches."]
+    falsifiers: ["Semantica outputs are not usable as inputs to common agent/RAG frameworks without substantial custom glue."]
+
+  - id: "META-2026-116"
+    text: "High-stakes AI systems that rely primarily on text similarity (vector retrieval) will fail to meet requirements for meaning, governance, and auditability without a semantic layer (entities/relations/ontologies/provenance)."
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["hawksightai-2026-semantica"]
+    operationalization: "Evaluate high-stakes deployments comparing pure vector RAG vs graph/ontology+provenance approaches on auditability and error modes."
+    assumptions: ["Semantic-layer representations materially improve auditability and governance outcomes."]
+    falsifiers: ["Empirical comparisons show no meaningful benefit over well-engineered vector RAG in relevant domains."]
+

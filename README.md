@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 502 |
-| **Sources** | 120 |
+| **Claims** | 518 |
+| **Sources** | 121 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 34 |
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-07 | [Semantica vs Reality Check](analysis/syntheses/semantica-vs-realitycheck-synthesis.md) | `[DRAFT]` | Cross-project comparison: Semantica semantic/KG stack vs Reality Check claim/provenance ledger; integration guidance |
 | 2026-02-06 | [METR time horizon (long-task capability) 2025–2026](analysis/syntheses/metr-2025-2026-time-horizon-synthesis.md) | `[DRAFT]` | Cross-source synthesis: time-horizon trend (≈7-month doubling; faster post-2023 under TH1.1), protocol sensitivity, and cross-domain bottlenecks (OSWorld much shorter) |
 | 2026-02-06 | [GPT-5.3-Codex vs Claude Opus 4.6 (agentic coding releases)](analysis/syntheses/gpt-5-3-codex-vs-claude-opus-4-6-release-synthesis.md) | `[DRAFT]` | Cross-source comparison: benchmark cross-checks (Terminal-Bench), long-context + pricing tiers, product surfaces/controls, safety framing |
 | 2026-02-06 | [GPT-5.3-Codex vs Claude Opus 4.6 (system cards)](analysis/syntheses/gpt-5-3-codex-vs-claude-opus-4-6-system-cards-synthesis.md) | `[DRAFT]` | Cross-source comparison: Preparedness vs RSP/ASL framing, agentic-risk surfaces, sabotage/sandbagging signals (Apollo), and operational controls (sandboxing/monitoring/trusted access) |
@@ -53,6 +54,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-07 | [Semantica (GitHub repo @ b4cfb6d)](analysis/sources/hawksightai-2026-semantica.md) | `[REVIEWED]` | Repo audit: claims vs code/tests; maturity, strengths/weaknesses, and gaps |
 | 2026-02-06 | [Time Horizon 1.1 (METR)](analysis/sources/metr-2026-time-horizon-1-1.md) | `[REVIEWED]` | METR methodology update: suite 170→228, long tasks 14→31, Vivaria→Inspect; updated slope estimates + protocol/task-distribution sensitivity |
 | 2026-02-06 | [How Does Time Horizon Vary Across Domains? (METR)](analysis/sources/metr-2025-time-horizon-vary-across-domains.md) | `[REVIEWED]` | Cross-domain time-horizon comparisons: coding/math/QA fast; GUI agents (OSWorld) much shorter; proxy-based caveats + soundness conditions |
 | 2026-02-06 | [Measuring AI Ability to Complete Long Tasks (METR blog)](analysis/sources/metr-2025-measuring-ai-ability-to-complete-long-tasks.md) | `[REVIEWED]` | Introduces time-horizon metric; reports ~7-month doubling with wide CIs; includes partial reproduction checks via released run data |
@@ -136,7 +138,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 | GEO | Geopolitics | 30 |
 | INST | Institutions & Organizations | 44 |
 | RISK | Risk Assessment | 30 |
-| META | Framework & Methodology | 44 |
+| META | Framework & Methodology | 60 |
 
 ---
 
