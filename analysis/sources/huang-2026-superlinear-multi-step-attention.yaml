@@ -1,0 +1,170 @@
+sources:
+  - id: "huang-2026-superlinear-multi-step-attention"
+    type: "PAPER"
+    title: "Superlinear Multi-Step Attention"
+    author:
+      - "Yufeng Huang"
+    year: 2026
+    url: "https://arxiv.org/abs/2601.18401"
+    accessed: "2026-02-07"
+    status: "analyzed"
+    analysis_file: "analysis/sources/huang-2026-superlinear-multi-step-attention.md"
+    reliability: 0.65
+    bias_notes: >-
+      Single-author preprint by project owner (Concavity AI). Strong on architecture/scaling and systems description,
+      weaker on independently replicated results and broad quality evaluation.
+    topics:
+      - superlinear-attention
+      - long-context
+      - sparse-attention
+      - subquadratic-attention
+      - routing
+      - mamba-2
+      - hybrid-transformers
+      - triton
+      - flashattention
+      - kv-cache
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-940
+      - TECH-2026-941
+      - TECH-2026-942
+      - TECH-2026-943
+      - TECH-2026-944
+      - TECH-2026-945
+      - TECH-2026-946
+      - TECH-2026-947
+      - TECH-2026-948
+      - TECH-2026-949
+
+claims:
+  - id: "TECH-2026-940"
+    text: "The paper introduces “Superlinear attention”, a four-component architecture (accumulation, span-search, span-attention, combination) for long-context inference/training."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.95
+    source_ids: ["huang-2026-superlinear-multi-step-attention"]
+    operationalization: "Verify the components are explicitly described and illustrated (e.g., Figures 1–2; Algorithm 1)."
+    assumptions: ["Paper text and figures accurately reflect the intended mechanism."]
+    falsifiers: ["The paper does not in fact specify these four components as the core architecture."]
+
+  - id: "TECH-2026-941"
+    text: "A multi-step span-search + span-attention mechanism can reduce attention compute for long sequences to subquadratic O(L^(1+1/N)) while preserving random context access (structural non-exclusion)."
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.75
+    source_ids: ["huang-2026-superlinear-multi-step-attention"]
+    operationalization: "Specify anchor schedule + span construction; prove coverage (structural non-exclusion) and count operations to bound complexity."
+    assumptions:
+      - "Span-search can score anchors without hidden O(L) costs per query (e.g., via power-stripe scheduling)."
+      - "Accumulation cost is <= target complexity."
+    falsifiers:
+      - "A formal proof that coverage implies Ω(L) scoring per query under this mechanism family."
+      - "A counterexample showing the stated schedule fails to cover eligible keys without increasing complexity."
+
+  - id: "TECH-2026-942"
+    text: "In the balanced N=2 setting (p=1/2), span-search and span-attention each scale as O(L^(3/2)), and candidate spans can cover all eligible keys with appropriate span extents (e.g., backward factor ≥ 2 when p=1/2)."
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.80
+    source_ids: ["huang-2026-superlinear-multi-step-attention"]
+    operationalization: "Derive anchor gaps under the stated schedule; show span length lower bound covers max gap; confirm by simulation for representative L."
+    assumptions:
+      - "The anchor schedule follows the paper’s power-stripe pattern."
+      - "Span construction uses the derived length scaling."
+    falsifiers:
+      - "Demonstration that some eligible key positions are not included in any candidate span for some i under stated parameters."
+      - "Complexity accounting showing either stage is asymptotically worse than O(L^(3/2)) at p=1/2."
+
+  - id: "TECH-2026-943"
+    text: "The paper defines “random context access” as structural non-exclusion: for a query i, no eligible key position j ≤ i is permanently excluded by a fixed sparsity pattern; this is distinct from attending to all tokens per query."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.95
+    source_ids: ["huang-2026-superlinear-multi-step-attention"]
+    operationalization: "Locate and quote/verify the definition section (Section 2.3) and its clarifications."
+    assumptions: []
+    falsifiers: ["Random context access is defined differently in the paper (e.g., as always attending to all tokens)."]
+
+  - id: "TECH-2026-944"
+    text: "The paper’s baseline implementation integrates Superlinear attention into NVIDIA Nemotron-3-Nano (hybrid Mamba-2 + MoE), replacing standard attention layers and using Mamba-2 hidden states as representatives for routing (Ka=K) with an added search query matrix Qs."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.85
+    source_ids: ["huang-2026-superlinear-multi-step-attention"]
+    operationalization: "Verify the described integration in the paper (Section 4.2) and cross-check against released model config/code."
+    assumptions:
+      - "Released model code corresponds to the architecture described in the paper."
+    falsifiers:
+      - "Released code/config shows a materially different base architecture or routing inputs."
+
+  - id: "TECH-2026-945"
+    text: "The paper proposes a bucketed GPU kernel for irregular spans that groups (query, span) pairs by key-block footprint (end-block index and span length), using atomics/work-stealing to avoid global sorting overhead."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.70
+    source_ids: ["huang-2026-superlinear-multi-step-attention"]
+    operationalization: "Verify kernel design description (Section 4.3, Figure 4) and presence of corresponding bucketed implementation in released code."
+    assumptions:
+      - "Bucketed grouping is sufficient to recover memory locality and occupancy in practice."
+    falsifiers:
+      - "Implementation relies on global sorting/padding rather than bucketed grouping."
+      - "Reported kernel approach is absent from the released code."
+
+  - id: "TECH-2026-946"
+    text: "The paper reports long-context throughput on a single NVIDIA B200 GPU (batch size 1) up to 10M context; e.g., decode ~109 tok/s at 1M and ~76 tok/s at 10M, and prefill ~20k tok/s at 1M and ~5.6k tok/s at 10M (32K chunked prefill)."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.60
+    source_ids: ["huang-2026-superlinear-multi-step-attention"]
+    operationalization: "Reproduce the benchmark on comparable hardware/software, matching model, chunk size, and kernel settings."
+    assumptions:
+      - "Throughput is measured end-to-end with comparable definitions (prefill vs decode)."
+    falsifiers:
+      - "Independent replication under matched conditions yields materially lower throughput or different scaling crossover."
+
+  - id: "TECH-2026-947"
+    text: "For the hybrid base model used, KV cache memory is on the order of ~6 GB per 1M tokens of context (in 16-bit), implying multi-million-token contexts are primarily VRAM-bounded."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["huang-2026-superlinear-multi-step-attention"]
+    operationalization: "Derive from model config: (#attention layers) × 2(K,V) × (#KV heads) × head_dim × bytes_per_elem × tokens."
+    assumptions:
+      - "KV cache stores full K and V for attention layers at 16-bit precision."
+    falsifiers:
+      - "The model uses materially different KV cache representation (compression/quantization) or has many more attention layers/heads."
+
+  - id: "TECH-2026-948"
+    text: "The paper reports that, with limited fine-tuning (curriculum from 4K to 64K) and routing redundancy, the model achieves strong NIAH retrieval accuracy up to 256K context."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.65
+    source_ids: ["huang-2026-superlinear-multi-step-attention"]
+    operationalization: "Re-run NIAH training/eval under the stated curriculum and report accuracy across length/depth grid."
+    assumptions:
+      - "Reported training setup is sufficient to reproduce results (data, hyperparams, seed)."
+    falsifiers:
+      - "Reproduction under matched settings fails to achieve comparable accuracy."
+
+  - id: "TECH-2026-949"
+    text: "The paper explicitly positions itself as an architecture-and-systems feasibility report and leaves comprehensive quality evaluation across diverse long-context tasks to future work."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.95
+    source_ids: ["huang-2026-superlinear-multi-step-attention"]
+    operationalization: "Verify scope statements in abstract and Section 4.1."
+    assumptions: []
+    falsifiers: ["The paper contains a comprehensive long-context benchmark suite contradicting this scope statement."]
+

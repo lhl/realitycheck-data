@@ -1,0 +1,156 @@
+sources:
+  - id: "concavityai-2026-superlinear"
+    type: "KNOWLEDGE"
+    title: "Superlinear"
+    author:
+      - "Concavity AI"
+    year: 2026
+    url: "https://github.com/concavity-ai/superlinear"
+    accessed: "2026-02-07"
+    status: "analyzed"
+    analysis_file: "analysis/sources/concavityai-2026-superlinear.md"
+    reliability: 0.70
+    bias_notes: >-
+      Self-authored OSS repo released alongside a paper/model. Code is strong evidence for implementation; README
+      performance claims and positioning should be treated as self-reported unless independently replicated.
+    topics:
+      - superlinear-attention
+      - long-context
+      - sparse-attention
+      - subquadratic
+      - triton
+      - kernels
+      - gqa
+      - sessions
+      - kv-cache
+      - snapshots
+      - fastapi
+      - openai-api
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-950
+      - TECH-2026-951
+      - TECH-2026-952
+      - TECH-2026-953
+      - TECH-2026-954
+      - TECH-2026-955
+      - TECH-2026-956
+      - TECH-2026-957
+      - TECH-2026-958
+      - TECH-2026-959
+
+claims:
+  - id: "TECH-2026-950"
+    text: "Superlinear is a Python package/repo providing long-context inference components (kernels + engine + server + CLI) built around Superlinear multi-step attention."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["concavityai-2026-superlinear"]
+    operationalization: "Verify the repo contains `superlinear/`, `apps/`, and CLI entrypoint, and that docs describe the intended integration."
+    assumptions: []
+    falsifiers: ["Repo lacks major components (kernels/engine/server) described in README."]
+
+  - id: "TECH-2026-951"
+    text: "The repo implements span-search over power-law stripes (anchors) with Triton and reference implementations, including grouped-query attention (GQA) variants."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["concavityai-2026-superlinear"]
+    operationalization: "Inspect `superlinear/kernels/superlinear/search/*` for reference + Triton + GQA paths and public API."
+    assumptions: ["The default branch reflects the public release snapshot."]
+    falsifiers: ["Only dense attention search exists; no stripe/anchor search implementation is present."]
+
+  - id: "TECH-2026-952"
+    text: "The repo implements span-attention kernels including a bucketed prefill/training implementation for irregular spans and staged decode kernels, including GQA variants."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["concavityai-2026-superlinear"]
+    operationalization: "Inspect `superlinear/kernels/superlinear/span/*` and `superlinear/kernels/superlinear/attention/*` for bucketed prefill and decode APIs."
+    assumptions: ["Bucketed implementation is reachable via public APIs in intended configurations."]
+    falsifiers: ["Bucketed span-attention kernel is absent or unused; only non-bucketed kernels exist."]
+
+  - id: "TECH-2026-953"
+    text: "The repo provides a FastAPI server implementing an OpenAI-style `/v1/chat/completions` endpoint and model listing endpoints, plus explicit session/snapshot APIs."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["concavityai-2026-superlinear"]
+    operationalization: "Inspect `apps/server/app.py` routes and request/response schemas."
+    assumptions: []
+    falsifiers: ["Server lacks the stated endpoint(s) or uses incompatible schema."]
+
+  - id: "TECH-2026-954"
+    text: "The repo implements stateful KV-cache sessions that persist cache across calls for multi-turn chat, avoiding re-prefill for follow-up turns."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["concavityai-2026-superlinear"]
+    operationalization: "Inspect `superlinear/engine/adapters/superlinear.py` for session state and lifecycle methods; confirm cache object is reused across calls."
+    assumptions: ["Underlying model cache semantics match the adapter’s assumptions."]
+    falsifiers: ["Sessions recreate/discard cache between calls in practice."]
+
+  - id: "TECH-2026-955"
+    text: "The repo implements disk snapshots (v1) that persist transcript + cache tensors (KV + Mamba conv/ssm states) for later restore."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["concavityai-2026-superlinear"]
+    operationalization: "Inspect `superlinear/engine/session_snapshots.py` manifest/transcript/cache serialization and import/export routines."
+    assumptions: ["Snapshot files are written atomically or with safeguards against partial writes."]
+    falsifiers: ["Snapshots do not serialize cache tensors or cannot be restored into a compatible session."]
+
+  - id: "TECH-2026-956"
+    text: "The repo provides a CLI (`spl`) for chatting, document ingestion, and session/snapshot management."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["concavityai-2026-superlinear"]
+    operationalization: "Verify `pyproject.toml` defines `spl` entrypoint and `apps/cli` implements subcommands for server/chat/session/snapshot."
+    assumptions: []
+    falsifiers: ["No CLI entrypoint exists or it lacks the stated management commands."]
+
+  - id: "TECH-2026-957"
+    text: "The repo’s memory budgeting guidance for `concavity-ai/superlinear-exp-v0.1` (weights ~60GB VRAM at 16-bit; KV cache ~6GB per 1M tokens per active session) matches the released model’s weight size and configuration."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["concavityai-2026-superlinear"]
+    operationalization: "Sum HF weight shard sizes; derive KV cache bytes per token from config (#attention layers, KV heads, head_dim, dtype)."
+    assumptions:
+      - "Weight size on disk approximates VRAM footprint at 16-bit."
+      - "KV cache stores full K and V at 16-bit precision for attention layers only."
+    falsifiers:
+      - "Released weights are materially smaller/larger than stated."
+      - "Config implies materially different KV cache bytes/token (e.g., many more attention layers)."
+
+  - id: "TECH-2026-958"
+    text: "The repo explicitly labels the software/model as a research preview with limited evaluation and not production/safety-evaluated."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["concavityai-2026-superlinear"]
+    operationalization: "Verify README includes the research-preview warning and safety/robustness caveats."
+    assumptions: []
+    falsifiers: ["README removes or contradicts the warning in the same release snapshot."]
+
+  - id: "TECH-2026-959"
+    text: "The repo includes tests for CLI/engine/server behavior; dedicated numerical correctness tests for the Triton kernels are not prominent in the public `tests/` tree."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.70
+    source_ids: ["concavityai-2026-superlinear"]
+    operationalization: "List `tests/` contents and categorize coverage; look for kernel-level numerical tests vs integration tests."
+    assumptions: ["Public tests reflect the maintainers’ intended coverage for the release."]
+    falsifiers: ["Repo contains a substantial kernel correctness suite that was overlooked (e.g., under a different path)."]

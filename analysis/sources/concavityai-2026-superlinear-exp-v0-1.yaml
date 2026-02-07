@@ -1,0 +1,137 @@
+sources:
+  - id: "concavityai-2026-superlinear-exp-v0-1"
+    type: "KNOWLEDGE"
+    title: "Superlinear-Exp-v0.1"
+    author:
+      - "Concavity AI"
+    year: 2026
+    url: "https://huggingface.co/concavity-ai/superlinear-exp-v0.1"
+    accessed: "2026-02-07"
+    status: "analyzed"
+    analysis_file: "analysis/sources/concavityai-2026-superlinear-exp-v0-1.md"
+    reliability: 0.65
+    bias_notes: >-
+      Self-released experimental weights + remote code. Strong evidence for the shipped artifacts (weights/config/code),
+      weaker evidence for headline performance claims and downstream safety/robustness.
+    topics:
+      - superlinear-attention
+      - long-context
+      - nemotron-3-nano
+      - hybrid-transformer
+      - mamba-2
+      - kv-cache
+      - trust-remote-code
+      - nvidia-open-model-license
+      - patent-notice
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2026-960
+      - TECH-2026-961
+      - TECH-2026-962
+      - TECH-2026-963
+      - TECH-2026-964
+      - TECH-2026-965
+      - TECH-2026-966
+      - TECH-2026-968
+      - TECH-2026-969
+
+claims:
+  - id: "TECH-2026-960"
+    text: "The HF repo distributes a derivative of NVIDIA Nemotron-3-Nano-30B-A3B with standard attention layers replaced by Superlinear attention and some long-context retrieval fine-tuning."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["concavityai-2026-superlinear-exp-v0-1"]
+    operationalization: "Verify NOTICE and config identify upstream model and modifications (attention replacement; fine-tuning)."
+    assumptions: ["NOTICE accurately describes the modifications applied."]
+    falsifiers: ["NOTICE/config contradict the stated upstream base or modification description."]
+
+  - id: "TECH-2026-961"
+    text: "Running the model requires trust_remote_code=True (custom config/model via auto_map), executing Python code from the model repository."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["concavityai-2026-superlinear-exp-v0-1"]
+    operationalization: "Inspect config.json for auto_map and attempt load with/without trust_remote_code."
+    assumptions: ["Transformers respects auto_map for custom classes."]
+    falsifiers: ["Model loads without remote code and without custom classes."]
+
+  - id: "TECH-2026-962"
+    text: "The remote code imports the separate `superlinear` package for custom span-search/span-attention kernels and fails if it is not installed."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["concavityai-2026-superlinear-exp-v0-1"]
+    operationalization: "Inspect modeling_superlinear_exp.py imports and its ImportError path; attempt import without superlinear installed."
+    assumptions: ["The HF repo does not vendor the full kernel implementation."]
+    falsifiers: ["Remote code runs without `superlinear` installed or uses a different kernel backend."]
+
+  - id: "TECH-2026-963"
+    text: "The model config sets Superlinear routing parameters including `span_attention_num_spans=3`, `span_attention_backward_factor=3.0`, `span_attention_forward_factor=1.0`, and span/search exponents ≈0.55, with `decode_kernel=staged-gqa`."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["concavityai-2026-superlinear-exp-v0-1"]
+    operationalization: "Read config.json and confirm these fields and values."
+    assumptions: []
+    falsifiers: ["Config does not contain these fields or values differ materially."]
+
+  - id: "TECH-2026-964"
+    text: "The hybrid pattern implies 6 attention layers (out of 52), consistent with KV cache ≈6 GB per 1M tokens at 16-bit for this model shape."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["concavityai-2026-superlinear-exp-v0-1"]
+    operationalization: "Count '*' in hybrid_override_pattern; derive KV cache bytes/token for attention layers from KV heads/head_dim and 16-bit dtype."
+    assumptions: ["KV cache stores full K and V for attention layers only, at 16-bit precision."]
+    falsifiers: ["Pattern contains a different number of attention layers; KV cache uses different tensor shapes/dtypes."]
+
+  - id: "TECH-2026-965"
+    text: "The released weights total ~58.9 GiB across 16 safetensors shards, consistent with “~60 GB VRAM” guidance for 16-bit loading."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["concavityai-2026-superlinear-exp-v0-1"]
+    operationalization: "Sum LFS sizes for model-00001..00016 from HF API tree."
+    assumptions: ["On-disk weight size approximates VRAM footprint at 16-bit (excluding small overhead)."]
+    falsifiers: ["HF weight shards sum to a materially different size than stated."]
+
+  - id: "TECH-2026-966"
+    text: "The model card reports B200 throughput at 1M/10M context and states limitations (NIAH+throughput focus; experimental; memory scales with length)."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.60
+    source_ids: ["concavityai-2026-superlinear-exp-v0-1"]
+    operationalization: "Reproduce throughput on comparable hardware/software; compare to reported table; verify evaluation scope against released artifacts."
+    assumptions: ["Reported numbers correspond to the released weights and a runnable configuration."]
+    falsifiers: ["Independent reproduction fails to match reported throughput or reveals undisclosed constraints."]
+
+  - id: "TECH-2026-968"
+    text: "The HF repo includes compiled __pycache__/*.pyc files alongside source, which is atypical for HF model repos and complicates auditing."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["concavityai-2026-superlinear-exp-v0-1"]
+    operationalization: "List HF tree and confirm __pycache__ entries are present."
+    assumptions: []
+    falsifiers: ["HF tree does not include .pyc files (they were removed/never existed)."]
+
+  - id: "TECH-2026-969"
+    text: "The model README includes a patent notice stating patent applications have been filed related to aspects of the methods described."
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["concavityai-2026-superlinear-exp-v0-1"]
+    operationalization: "Verify README contains the patent notice section."
+    assumptions: []
+    falsifiers: ["README does not contain a patent notice in the referenced release snapshot."]
