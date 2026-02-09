@@ -7,7 +7,7 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 | Metric | Count |
 |--------|-------|
 | **Claims** | 595 |
-| **Sources** | 137 |
+| **Sources** | 145 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 36 |
 

@@ -76,20 +76,20 @@ claims:
 
   - id: "LABOR-2026-017"
     text: >-
-      A credible, active complaint/case exists alleging caste-based discrimination at Microsoft’s Hyderabad office
-      (as referenced in the thread’s “Microsoft faces allegations…” framing).
+      Major outlets have reported caste-discrimination allegations/complaints involving Microsoft in the U.S. tech
+      sector (often via advocacy-group complaint/survey reporting and policy-coverage discussions).
     type: "[F]"
     domain: "LABOR"
-    evidence_level: "E6"
-    credence: 0.25
+    evidence_level: "E4"
+    credence: 0.75
     source_ids: ["miyaspokeofthis-2026-windows-caste-thread"]
     operationalization: >-
-      Locate primary documentation (complaint filing, docket entry, or official statement) or independent
-      multi-outlet reporting that confirms the complaint/case and key allegations.
+      Verify via multiple major-outlet reports that Microsoft is explicitly named in reported caste-discrimination
+      complaint/survey claims and/or in coverage of how large tech firms address caste in workplace policy.
     assumptions:
-      - The thread’s cited allegations reflect a real filing rather than rumor or fabrication.
+      - Major outlets accurately quote or summarize the complaint/survey/policy reporting they rely on.
     falsifiers:
-      - Jurisdictional records show no such filing; or reputable outlets debunk the story.
+      - Reputable corrections/retractions indicate Microsoft was not included in the reported complaint/survey lists.
 
   - id: "LABOR-2026-018"
     text: >-
@@ -141,4 +141,3 @@ claims:
       - Available reporting reflects at least some genuine experiences rather than systematic fabrication.
     falsifiers:
       - A systematic review finds reports are rare, non-independent, or largely debunked.
-
