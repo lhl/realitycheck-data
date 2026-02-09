@@ -1,0 +1,144 @@
+sources:
+  - id: "miyaspokeofthis-2026-windows-caste-thread"
+    type: "SOCIAL"
+    title: "Thread: “If you ever wondered why Windows is so awful…” (caste-discrimination allegations)"
+    author:
+      - "@miyaspokeofthis"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2020302908919804019.html"
+    accessed: "2026-02-09"
+    status: "analyzed"
+    analysis_file: "analysis/sources/miyaspokeofthis-2026-windows-caste-thread.md"
+    reliability: 0.25
+    bias_notes: >-
+      Heavy stereotyping and scapegoating (“Windows is awful because… Indians”); rhetorical sarcasm; no primary
+      citations; points to embedded X links (inaccessible here) and screenshots rather than verifiable documents.
+      Treat Microsoft-specific complaint details and “Python vs C++” claims as unverified without primary records.
+    topics:
+      - caste
+      - caste-discrimination
+      - discrimination
+      - microsoft
+      - windows
+      - india
+      - hyderabad
+      - tech-workplace
+      - social-media
+      - x
+      - threadreader
+    domains:
+      - LABOR
+      - SOC
+      - INST
+    claims_extracted:
+      - SOC-2026-010
+      - LABOR-2026-016
+      - LABOR-2026-017
+      - LABOR-2026-018
+      - SOC-2026-011
+      - LABOR-2026-019
+
+claims:
+  - id: "SOC-2026-010"
+    text: >-
+      Microsoft’s Windows operating system is “awful” because Microsoft employs “so many Indians”
+      (i.e., workforce nationality/ethnicity causally explains product quality).
+    type: "[S]"
+    domain: "SOC"
+    evidence_level: "E6"
+    credence: 0.05
+    source_ids: ["miyaspokeofthis-2026-windows-caste-thread"]
+    operationalization: >-
+      Define measurable “Windows quality” outcomes and test whether workforce ethnicity/nationality composition
+      predicts them after controlling for architecture, process, incentives, and organizational complexity.
+    assumptions:
+      - Workforce ethnicity/nationality is a meaningful causal driver of software quality.
+    falsifiers:
+      - Empirical evidence shows no relationship after controlling for confounders; or shows opposite direction.
+
+  - id: "LABOR-2026-016"
+    text: >-
+      Caste discrimination in tech/IT workplaces has been credibly alleged and has been the subject of major
+      legal actions in the United States (e.g., California DFEH/CRD’s lawsuit against Cisco alleging caste-based
+      discrimination).
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["miyaspokeofthis-2026-windows-caste-thread"]
+    operationalization: >-
+      Verify via official filings/press releases and court dockets that caste-discrimination allegations were
+      formally brought in a major tech workplace case.
+    assumptions:
+      - Official public records accurately describe the existence of the case and its caste-discrimination theory.
+    falsifiers:
+      - Authoritative legal records show no such case was filed or that caste was not at issue.
+
+  - id: "LABOR-2026-017"
+    text: >-
+      A credible, active complaint/case exists alleging caste-based discrimination at Microsoft’s Hyderabad office
+      (as referenced in the thread’s “Microsoft faces allegations…” framing).
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E6"
+    credence: 0.25
+    source_ids: ["miyaspokeofthis-2026-windows-caste-thread"]
+    operationalization: >-
+      Locate primary documentation (complaint filing, docket entry, or official statement) or independent
+      multi-outlet reporting that confirms the complaint/case and key allegations.
+    assumptions:
+      - The thread’s cited allegations reflect a real filing rather than rumor or fabrication.
+    falsifiers:
+      - Jurisdictional records show no such filing; or reputable outlets debunk the story.
+
+  - id: "LABOR-2026-018"
+    text: >-
+      At Microsoft (as described in the thread), caste status determines assignment to “Python” projects versus
+      being relegated to “C++/Java” work or even janitorial duties.
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E6"
+    credence: 0.10
+    source_ids: ["miyaspokeofthis-2026-windows-caste-thread"]
+    operationalization: >-
+      Confirm via a verified complaint/court record, HR investigation, or independent reporting with named sources
+      that such caste-linked language assignment occurred.
+    assumptions:
+      - Programming-language assignment is used as a caste-status marker in the alleged environment.
+    falsifiers:
+      - Verified records show no such claims were made in any complaint; or show the assignment claims were false.
+
+  - id: "SOC-2026-011"
+    text: >-
+      The author of the thread received many threatening direct messages from Indians denying the existence of
+      caste-based discrimination.
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["miyaspokeofthis-2026-windows-caste-thread"]
+    operationalization: >-
+      Audit the author’s DM inbox (or screenshots with verifiable metadata) for a high volume of threatening
+      messages plausibly connected to the post.
+    assumptions:
+      - The author’s self-report is broadly accurate.
+    falsifiers:
+      - Verified account data shows no such influx occurred.
+
+  - id: "LABOR-2026-019"
+    text: >-
+      In recent years, there have been many reports and first-person accounts from Indians alleging caste
+      discrimination in tech/IT workplaces.
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["miyaspokeofthis-2026-windows-caste-thread"]
+    operationalization: >-
+      Compile a bibliography of credible journalism, policy reports, and documented cases featuring first-person
+      accounts; assess volume, independence, and representativeness.
+    assumptions:
+      - Available reporting reflects at least some genuine experiences rather than systematic fabrication.
+    falsifiers:
+      - A systematic review finds reports are rare, non-independent, or largely debunked.
+

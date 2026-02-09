@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 547 |
-| **Sources** | 124 |
+| **Claims** | 553 |
+| **Sources** | 127 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 34 |
 
@@ -55,6 +55,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-09 | [Thread: “Windows is awful” + caste-discrimination claims at Microsoft (Thread Reader)](analysis/sources/miyaspokeofthis-2026-windows-caste-thread.md) | `[REVIEWED]` | Low-rigor, high-bias thread: separates general caste-discrimination reporting/cases (Cisco verified) from uncorroborated Microsoft+“Python vs C++” allegations; X embeds inaccessible |
 | 2026-02-07 | [Superlinear Multi-Step Attention (arXiv 2601.18401v1)](analysis/sources/huang-2026-superlinear-multi-step-attention.md) | `[REVIEWED]` | Preprint: structural non-exclusion framing; N=2 `O(L^(3/2))` scaling; self-reported B200 throughput + NIAH results |
 | 2026-02-07 | [Superlinear (GitHub repo @ df9b2ef)](analysis/sources/concavityai-2026-superlinear.md) | `[REVIEWED]` | Repo audit: Triton kernels + OpenAI-style server; explicit sessions/snapshots for KV cache reuse; memory budgeting cross-checked |
 | 2026-02-07 | [Superlinear-Exp-v0.1 (HF model release)](analysis/sources/concavityai-2026-superlinear-exp-v0-1.md) | `[REVIEWED]` | Weights+remote code audit: `trust_remote_code`; ~59GiB weights; config implies ~6GB/1M tokens KV; license + patent notice |
@@ -133,10 +134,10 @@ See [claims/README.md](claims/README.md) for full statistics.
 | Domain | Description | Claims |
 |--------|-------------|--------|
 | TECH | Technology & AI | 185 |
-| LABOR | Labor & Employment | 19 |
+| LABOR | Labor & Employment | 23 |
 | ECON | Economics & Markets | 41 |
 | GOV | Governance & Policy | 87 |
-| SOC | Social Dynamics | 10 |
+| SOC | Social Dynamics | 12 |
 | TRANS | Transition Dynamics | 26 |
 | RESOURCE | Resource Constraints | 15 |
 | GEO | Geopolitics | 30 |
@@ -252,4 +253,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-02-08*
+*Last updated: 2026-02-09*
