@@ -1,0 +1,144 @@
+sources:
+  - id: "strongdm-2026-software-factory"
+    type: "ARTICLE"
+    title: "StrongDM Software Factory"
+    author:
+      - "Justin McCarthy (inferred)"
+    year: 2026
+    url: "https://factory.strongdm.ai/"
+    accessed: "2026-02-09"
+    status: "analyzed"
+    analysis_file: "analysis/sources/strongdm-2026-software-factory.md"
+    reliability: 0.55
+    bias_notes: >-
+      First-party “how we work” narrative from a vendor team; likely selection effects (best-case projects),
+      rhetorical intensity, and omitted failure cases. Provides concrete conceptual primitives (non-interactive
+      development; scenarios; digital twins) but limited quantitative evidence and no independent replication.
+    topics:
+      - software-factory
+      - strongdm
+      - non-interactive-development
+      - coding-agents
+      - validation-harness
+      - scenarios
+      - digital-twin-universe
+      - integration-testing
+      - token-economics
+    domains:
+      - TECH
+      - LABOR
+      - ECON
+    claims_extracted:
+      - TECH-2026-970
+      - TECH-2026-971
+      - TECH-2026-972
+      - TECH-2026-973
+      - LABOR-2026-020
+      - ECON-2026-912
+
+claims:
+  - id: "TECH-2026-970"
+    text: >-
+      StrongDM publicly claims it built a “Software Factory”: non-interactive development where specs and
+      scenarios drive agents that write code, run harnesses, and converge without human code review.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["strongdm-2026-software-factory"]
+    operationalization: >-
+      Archive the page content over time and compare the described workflow against disclosed artifacts
+      (public repos, talks, demos). Validate whether human code review is materially absent in demonstrated
+      production workflows.
+    assumptions:
+      - Public descriptions correspond to actual internal practice rather than aspirational marketing.
+    falsifiers:
+      - StrongDM retracts/edits the claim and/or independent reporting shows humans still routinely write/review code.
+
+  - id: "TECH-2026-971"
+    text: >-
+      StrongDM claims a late-2024 model capability shift enabled long-horizon agentic coding workflows to
+      “compound correctness rather than error,” making non-interactive development newly viable.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["strongdm-2026-software-factory"]
+    operationalization: >-
+      Compare long-horizon coding task success rates across model versions and time, controlling for tool
+      harness changes; test for a discrete improvement consistent with the claim.
+    assumptions:
+      - “Compounding correctness” can be operationalized via stable success on holdout tasks over multiple iterations.
+    falsifiers:
+      - Controlled comparisons show no meaningful step-change in late-2024 after accounting for workflow/tooling changes.
+
+  - id: "TECH-2026-972"
+    text: >-
+      StrongDM claims it built a “Digital Twin Universe” of behavioral clones for critical SaaS dependencies
+      (Okta, Jira, Slack, Google Docs/Drive/Sheets) enabling deterministic, high-volume scenario validation
+      without production rate limits or API costs.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["strongdm-2026-software-factory"]
+    operationalization: >-
+      Obtain technical disclosures or audits of the DTU (scope, fidelity tests, drift monitoring). Measure
+      scenario throughput and compare twin vs live-service behavioral divergence over time.
+    assumptions:
+      - DTU clones implement externally observable behavior sufficiently for target scenarios.
+    falsifiers:
+      - Demonstrations/audits show DTU is low-fidelity, narrow, or does not support the claimed throughput/determinism.
+
+  - id: "TECH-2026-973"
+    text: >-
+      Agentic coding changes the economics of software engineering such that building and maintaining high-fidelity
+      clones of major SaaS dependencies (digital twins) becomes economically feasible and increasingly routine.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["strongdm-2026-software-factory"]
+    operationalization: >-
+      Track frequency, cost, and ROI of high-fidelity dependency simulators across teams over 2026–2027; compare
+      pre-agent baselines and measure whether simulator build/maintenance time declines with agent assistance.
+    assumptions:
+      - Agents meaningfully reduce the marginal labor cost of building/maintaining simulators.
+    falsifiers:
+      - Simulator build/maintenance remains rare and expensive even in agent-heavy organizations.
+
+  - id: "LABOR-2026-020"
+    text: >-
+      A “software factory” workflow shifts human labor from writing and reviewing code toward specifying intent
+      (specs), authoring validation scenarios, and maintaining harness and simulation (DTU) infrastructure.
+    type: "[T]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["strongdm-2026-software-factory"]
+    operationalization: >-
+      Measure time allocation and critical-path delays in teams attempting non-interactive development; test
+      whether harness/spec work becomes the dominant sustained human effort relative to code review/implementation.
+    assumptions:
+      - Agents can reliably implement a substantial share of scoped work items.
+    falsifiers:
+      - Human time remains dominated by code review/implementation for months despite attempted factory workflows.
+
+  - id: "ECON-2026-912"
+    text: >-
+      StrongDM promotes a heuristic that if you haven't spent at least $1,000/day on tokens per human engineer,
+      your software factory likely has room to improve.
+    type: "[A]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["strongdm-2026-software-factory"]
+    operationalization: >-
+      Across comparable teams, regress delivery outcomes (cycle time, defect rate, incident rate) on token spend,
+      controlling for project complexity, harness maturity, and team skill; test for diminishing returns and
+      threshold effects.
+    assumptions:
+      - Token spend can be measured consistently and is not dominated by confounders (scope, inefficiency).
+    falsifiers:
+      - After controlling for confounders, token spend above modest levels does not predict better outcomes.
+

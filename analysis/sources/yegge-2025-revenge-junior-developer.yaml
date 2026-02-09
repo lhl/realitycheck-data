@@ -1,0 +1,138 @@
+sources:
+  - id: "yegge-2025-revenge-junior-developer"
+    type: "BLOG"
+    title: "Revenge of the junior developer"
+    author:
+      - "Steve Yegge"
+    year: 2025
+    url: "https://sourcegraph.com/blog/revenge-of-the-junior-developer"
+    accessed: "2026-02-09"
+    status: "analyzed"
+    analysis_file: "analysis/sources/yegge-2025-revenge-junior-developer.md"
+    reliability: 0.55
+    bias_notes: >-
+      Practitioner polemic with explicit exaggeration and humor. Hosted on a vendor blog (Sourcegraph), includes
+      business framing and strong calls to action. Useful for extracting mental models, proposed timelines, and
+      “what might matter,” but weak as empirical evidence for adoption rates, costs, or macroeconomic impacts.
+    topics:
+      - vibe-coding
+      - coding-agents
+      - agent-clusters
+      - agent-fleets
+      - token-economics
+      - software-factory
+      - labor-transition
+      - orchestration
+    domains:
+      - TRANS
+      - ECON
+      - LABOR
+    claims_extracted:
+      - TRANS-2025-020
+      - ECON-2025-914
+      - ECON-2025-915
+      - LABOR-2025-015
+      - LABOR-2025-016
+      - ECON-2025-916
+
+claims:
+  - id: "TRANS-2025-020"
+    text: >-
+      Agentic coding will progress rapidly from coding agents to “agent clusters” and then “agent fleets,” where
+      supervisory agents manage pods of coding agents and humans manage the resulting systems.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.25
+    source_ids: ["yegge-2025-revenge-junior-developer"]
+    operationalization: >-
+      Track the number of concurrently running agents used by typical developers (telemetry, surveys) and
+      classify whether “cluster/fleet” patterns (dozens+ agents with supervisory layers) become mainstream.
+    assumptions:
+      - Tooling will enable safe parallelism without overwhelming supervision demands.
+    falsifiers:
+      - By 2026–2027, most agent usage remains single-agent or low-parallelism with no supervisory layer.
+
+  - id: "ECON-2025-914"
+    text: >-
+      Coding agents cost roughly $10–$12 per hour at March 2025 “current rates” due to token burn.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["yegge-2025-revenge-junior-developer"]
+    operationalization: >-
+      Measure effective hourly costs from historical model pricing and typical agent token consumption on
+      comparable coding tasks, including tool calls and retries.
+    assumptions:
+      - Session token usage distributions are stable enough to estimate typical costs.
+    falsifiers:
+      - Historical measurements show typical costs materially outside the $10–$12/hour range.
+
+  - id: "ECON-2025-915"
+    text: >-
+      As developers run multiple agents in parallel (“agent clusters”), token spend becomes a major opex line
+      item and creates a “pay-to-play” stratification across firms.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["yegge-2025-revenge-junior-developer"]
+    operationalization: >-
+      Compare firm-level output and cycle time to LLM spend intensity across similar domains; test whether
+      higher spend causally predicts sustained competitive advantage after controlling for confounders.
+    assumptions:
+      - Spend can be measured reliably at the team or firm level.
+    falsifiers:
+      - Firms with low spend remain competitive on comparable deliverables and quality.
+
+  - id: "LABOR-2025-015"
+    text: >-
+      In the near term, the job of software developers will shift away from direct coding and toward
+      supervising dashboards of many coding agents and their AI supervisors.
+    type: "[P]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["yegge-2025-revenge-junior-developer"]
+    operationalization: >-
+      Analyze time-allocation data and job descriptions over 2025–2027 for growth in “agent operations /
+      orchestration / supervision” responsibilities relative to direct implementation work.
+    assumptions:
+      - Agent tooling becomes reliable enough that supervision is a stable role rather than constant firefighting.
+    falsifiers:
+      - Most engineering roles remain dominated by direct coding and traditional review by 2026–2027.
+
+  - id: "LABOR-2025-016"
+    text: >-
+      Junior developers will gain leverage as coding agents spread because they adopt AI faster on average and
+      are cheaper, leading firms reallocating budgets toward token spend to retain juniors over senior AI holdouts.
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.25
+    source_ids: ["yegge-2025-revenge-junior-developer"]
+    operationalization: >-
+      Compare AI-tool adoption rates by tenure with hiring/layoff patterns and compensation bands in 2025–2027,
+      controlling for role criticality and domain risk.
+    assumptions:
+      - Adoption differences by tenure are large enough to influence staffing decisions.
+    falsifiers:
+      - Layoffs and hiring show no association with tenure-based AI adoption patterns.
+
+  - id: "ECON-2025-916"
+    text: >-
+      A near-term productivity wave from agents could boost national GDPs by 100% or more.
+    type: "[S]"
+    domain: "ECON"
+    evidence_level: "E6"
+    credence: 0.05
+    source_ids: ["yegge-2025-revenge-junior-developer"]
+    operationalization: >-
+      Compare macro forecasts and realized growth to plausible diffusion models of agent productivity, accounting
+      for bottlenecks (capital, regulation, coordination, demand).
+    assumptions:
+      - Agent productivity improvements diffuse broadly and translate into measured output.
+    falsifiers:
+      - Credible modeling and subsequent data show impacts far below 100% within the relevant horizon.
+

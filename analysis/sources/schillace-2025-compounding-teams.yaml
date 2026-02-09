@@ -1,0 +1,144 @@
+sources:
+  - id: "schillace-2025-compounding-teams"
+    type: "BLOG"
+    title: "I have seen the compounding teams"
+    author:
+      - "Sam Schillace"
+    year: 2025
+    url: "https://sundaylettersfromsam.substack.com/p/i-have-seen-the-compounding-teams"
+    accessed: "2026-02-09"
+    status: "analyzed"
+    analysis_file: "analysis/sources/schillace-2025-compounding-teams.md"
+    reliability: 0.60
+    bias_notes: >-
+      Newsletter-style practitioner note based on limited but direct observation (“two or three teams”). Strong on
+      pattern recognition and workflow hypotheses; weak on quantification and selection bias (seeing unusually
+      successful early adopters).
+    topics:
+      - compounding-teams
+      - agent-frameworks
+      - tool-building
+      - agent-memory
+      - git
+      - filesystem
+      - acceptance-testing
+      - modular-boundaries
+      - token-spend
+      - coordination
+    domains:
+      - INST
+      - TECH
+      - LABOR
+      - ECON
+    claims_extracted:
+      - INST-2025-003
+      - TECH-2025-066
+      - INST-2025-004
+      - LABOR-2025-001
+      - ECON-2025-003
+      - TECH-2025-067
+
+claims:
+  - id: "INST-2025-003"
+    text: >-
+      “Compounding teams” achieve superlinear productivity by building frameworks around models (tool calling, hooks,
+      flow control, strategies) rather than using out-of-the-box coding assistants alone.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["schillace-2025-compounding-teams"]
+    operationalization: >-
+      Compare teams using commodity tools vs bespoke frameworks, controlling for team skill and task mix; measure
+      long-run throughput, defect rates, and maintenance burden over 6–12 months.
+    assumptions:
+      - “Compounding” can be operationalized as increasing output per unit input over time.
+    falsifiers:
+      - After controls, bespoke frameworks do not outperform commodity tools on long-run outcomes.
+
+  - id: "TECH-2025-066"
+    text: >-
+      High-performing “compounding teams” rely heavily on filesystem and git (plus common programmer tools) as durable
+      infrastructure for model-based action and self-modification.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["schillace-2025-compounding-teams"]
+    operationalization: >-
+      Survey compounding-style teams and categorize memory substrates (filesystem/git, DBs, vector stores, CRDTs);
+      correlate substrate choice with reliability and coordination outcomes.
+    assumptions:
+      - Substrate use can be measured and compared meaningfully across organizations.
+    falsifiers:
+      - Most successful teams do not rely on filesystem/git artifacts as the primary substrate.
+
+  - id: "INST-2025-004"
+    text: >-
+      Compounding productivity can come from a recursive mindset: automate everything possible and instruct the coding
+      system to build tools it needs, checking them into git as durable improvements (“build a tool for making a tool”).
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["schillace-2025-compounding-teams"]
+    operationalization: >-
+      Track tool creation and reuse over time in compounding teams; measure whether new tools reduce marginal cost
+      and increase output, net of maintenance effort.
+    assumptions:
+      - Tool reuse is frequent enough to amortize creation cost.
+    falsifiers:
+      - Tool-building recursion increases complexity and does not produce sustained throughput gains.
+
+  - id: "LABOR-2025-001"
+    text: >-
+      In “compounding teams,” the bottleneck shifts from implementation to human attention: throughput increases such
+      that ideas and parallel processes outstrip steering and review capacity.
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["schillace-2025-compounding-teams"]
+    operationalization: >-
+      Measure time allocation and queueing delays (ideation/steering vs implementation vs verification) in teams
+      using high-autonomy agents; test whether attention becomes dominant constraint.
+    assumptions:
+      - Implementation time decreases substantially relative to steering capacity.
+    falsifiers:
+      - Verification/compliance or integration remains the dominant bottleneck rather than attention.
+
+  - id: "ECON-2025-003"
+    text: >-
+      Schillace reports that compounding teams have API/token spend routinely in the hundreds of dollars per day (with
+      one team aiming for ~$1,000/day), and that some shipping-product teams have not directly touched or looked at code
+      in multiple months.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["schillace-2025-compounding-teams"]
+    operationalization: >-
+      Collect accounting logs from such teams and measure spend per engineer per day; instrument code interaction
+      events (edits/reviews) over time to validate “not touching code” claims.
+    assumptions:
+      - Teams can provide trustworthy accounting and telemetry.
+    falsifiers:
+      - Measured spend is far lower/higher and/or teams routinely touch code despite the claim.
+
+  - id: "TECH-2025-067"
+    text: >-
+      Continuous executable validation (acceptance tests) and decomposition into solvable pieces are central to
+      compounding-team workflows because models are not trusted and correctness must be enforced by execution.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["schillace-2025-compounding-teams"]
+    operationalization: >-
+      Compare incident/defect rates for teams with strong executable acceptance gates vs weaker gates under similar
+      autonomy; measure whether stronger gates enable longer autonomous runs safely.
+    assumptions:
+      - Acceptance tests can be designed to reflect real-world correctness.
+    falsifiers:
+      - Teams succeed with long autonomy without continuous acceptance testing or decomposition discipline.
+

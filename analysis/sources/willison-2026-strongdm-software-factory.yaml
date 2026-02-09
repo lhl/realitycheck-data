@@ -1,0 +1,86 @@
+sources:
+  - id: "willison-2026-strongdm-software-factory"
+    type: "BLOG"
+    title: "How StrongDM’s AI team build serious software without even looking at the code"
+    author:
+      - "Simon Willison"
+    year: 2026
+    url: "https://simonwillison.net/2026/Feb/7/software-factory/"
+    accessed: "2026-02-09"
+    status: "analyzed"
+    analysis_file: "analysis/sources/willison-2026-strongdm-software-factory.md"
+    reliability: 0.70
+    bias_notes: >-
+      Enthusiastic practitioner commentary with quotes and links; relies on a demo + StrongDM’s self-description.
+      High signal for “what is being claimed and how it is framed,” weaker as evidence for effectiveness or generality.
+    topics:
+      - strongdm
+      - software-factory
+      - dark-factory
+      - scenarios
+      - holdout-testing
+      - attractor
+      - specs
+      - coding-agents
+    domains:
+      - TECH
+      - INST
+      - TRANS
+    claims_extracted:
+      - TECH-2026-978
+      - INST-2026-914
+      - TRANS-2026-019
+
+claims:
+  - id: "TECH-2026-978"
+    text: >-
+      The `strongdm/attractor` repository contains no implementation code and instead publishes natural-language
+      specifications (Markdown) plus instructions to implement Attractor using a modern coding agent.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["willison-2026-strongdm-software-factory"]
+    operationalization: >-
+      Periodically snapshot repo contents and diff file types/structure; classify whether it remains “spec-only”
+      or evolves into an implementation.
+    assumptions:
+      - GitHub snapshots accurately reflect the intended public artifact.
+    falsifiers:
+      - Repository evolves into a conventional code implementation with specs as ancillary.
+
+  - id: "INST-2026-914"
+    text: >-
+      In “software factory” workflows, natural-language specs and validation scenarios become the primary
+      governance surface, while code becomes an intermediate artifact produced (and potentially regenerated)
+      by agents.
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["willison-2026-strongdm-software-factory"]
+    operationalization: >-
+      Observe organizations adopting spec-driven agent loops and measure artifact primacy: what gets reviewed,
+      versioned, and used for acceptance (specs/scenarios vs code diffs).
+    assumptions:
+      - Specs/scenarios can be kept aligned with actual system behavior.
+    falsifiers:
+      - Code review and manual debugging remain the dominant governance mechanism even in agent-heavy teams.
+
+  - id: "TRANS-2026-019"
+    text: >-
+      As agentic “dark factory” workflows mature, software engineers will increasingly shift from writing code
+      to building and semi-monitoring the systems (harnesses, loops, tooling) that generate code.
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["willison-2026-strongdm-software-factory"]
+    operationalization: >-
+      Track job postings and internal role definitions over 2026–2028 for growth in “agent harness/orchestration”
+      roles and declining share of roles centered on manual implementation.
+    assumptions:
+      - Autonomy and validation tooling improve enough to make monitoring/harness roles valuable.
+    falsifiers:
+      - No meaningful labor-market shift occurs despite continued improvements in agentic coding tools.
+

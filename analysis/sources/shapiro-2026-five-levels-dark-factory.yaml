@@ -1,0 +1,123 @@
+sources:
+  - id: "shapiro-2026-five-levels-dark-factory"
+    type: "BLOG"
+    title: "The Five Levels: from Spicy Autocomplete to the Dark Factory"
+    author:
+      - "Dan Shapiro"
+    year: 2026
+    url: "https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/"
+    accessed: "2026-02-09"
+    status: "analyzed"
+    analysis_file: "analysis/sources/shapiro-2026-five-levels-dark-factory.md"
+    reliability: 0.60
+    bias_notes: >-
+      Practitioner essay proposing a taxonomy; evidence is primarily personal observation (“dozens of companies”)
+      with few measurable definitions. Useful as a shared language for workflow evolution, but empirical
+      distribution claims (e.g., “most people top out at level 3”) are not substantiated.
+    topics:
+      - dark-factory
+      - software-factory
+      - ai-coding
+      - automation-levels
+      - technical-deflation
+      - code-review
+      - specs
+      - testing
+    domains:
+      - TRANS
+      - LABOR
+      - TECH
+      - ECON
+    claims_extracted:
+      - TRANS-2026-018
+      - LABOR-2026-021
+      - LABOR-2026-022
+      - TECH-2026-977
+      - ECON-2026-913
+
+claims:
+  - id: "TRANS-2026-018"
+    text: >-
+      A useful maturity model for AI coding is a five-level automation taxonomy (0–5), analogous to the widely
+      used 0–5 “driving automation” levels, providing teams a shared language for current practice and direction.
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["shapiro-2026-five-levels-dark-factory"]
+    operationalization: >-
+      Validate whether the taxonomy predicts key outcomes (cycle time, defects, auditability, org structure)
+      better than alternative frameworks across a sample of organizations.
+    assumptions:
+      - A single dominant dimension (“automation level”) is meaningful across teams and domains.
+    falsifiers:
+      - Alternative taxonomies fit observed practice better and predict outcomes more accurately.
+
+  - id: "LABOR-2026-021"
+    text: >-
+      In Shapiro’s observation of “dozens of companies,” almost everyone tops out at “Level 3,” where the human
+      is primarily a reviewer/manager of AI-generated code (life is diffs).
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["shapiro-2026-five-levels-dark-factory"]
+    operationalization: >-
+      Survey organizations using coding agents and measure the share of engineering time spent in code review
+      versus spec/harness work; classify workflows and estimate distribution by industry and domain risk.
+    assumptions:
+      - “Level 3” can be operationalized by time allocation and autonomy windows.
+    falsifiers:
+      - Empirical distributions show substantial populations at Level 4/5 or, conversely, mostly at Levels 0–2.
+
+  - id: "LABOR-2026-022"
+    text: >-
+      As AI coding automation increases, the human role shifts from coder to code-review manager and then toward
+      PM/spec author who checks tests after long autonomous runs.
+    type: "[T]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["shapiro-2026-five-levels-dark-factory"]
+    operationalization: >-
+      Compare role/task distributions (coding, review, spec writing, harness building, incident response) across
+      teams at different autonomy levels and track changes over time.
+    assumptions:
+      - Long autonomous runs are feasible for a meaningful share of work.
+    falsifiers:
+      - Human time remains primarily coding/review even as autonomy windows increase.
+
+  - id: "TECH-2026-977"
+    text: >-
+      “Level 5: Dark Factory” can be characterized as a black-box process that turns specs into running software
+      with minimal or no routine human code interaction (writing or review).
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["shapiro-2026-five-levels-dark-factory"]
+    operationalization: >-
+      Identify organizations claiming “dark factory” workflows and measure the frequency of human code edits,
+      diff reviews, and manual debugging relative to releases and incidents.
+    assumptions:
+      - Code interaction can be instrumented and compared across teams.
+    falsifiers:
+      - “Dark factory” organizations still require routine human code reading/writing for sustained operation.
+
+  - id: "ECON-2026-913"
+    text: >-
+      Under “technical deflation” (rapidly cheaper AI coding labor), it can be rational for teams to defer some
+      tech-debt repayment in human hours now with the expectation of repaying it later using cheaper AI hours.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["shapiro-2026-five-levels-dark-factory"]
+    operationalization: >-
+      Track cohorts of projects that deliberately defer debt vs repay immediately; measure total cost of delay,
+      defect/incident rates, and eventual AI-assisted remediation effort, controlling for project type and domain.
+    assumptions:
+      - AI labor cost declines faster than debt compounding costs for at least some debt types.
+    falsifiers:
+      - Deferred debt consistently costs more (incidents, delays) than it saves in later AI-assisted remediation.
+

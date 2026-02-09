@@ -1,0 +1,37 @@
+sources:
+  - id: "software-factory-dark-factory-harness-control-plane-synthesis"
+    type: "KNOWLEDGE"
+    title: "Synthesis Analysis: Software Factories, “Dark Factory” Levels, and Compounding Teams (Harness vs Control Plane)"
+    author:
+      - "gpt-5.2"
+    year: 2026
+    url: ""
+    accessed: "2026-02-09"
+    status: "analyzed"
+    analysis_file: "analysis/syntheses/software-factory-dark-factory-harness-control-plane-synthesis.md"
+    reliability: 0.70
+    bias_notes: >-
+      Internal cross-source synthesis document in realitycheck-data (analysis/syntheses). Integrates vendor doctrine
+      (StrongDM), practitioner essays (Shapiro/Willison/Schillace), and control-plane field reports (DoltHub/Gas Town)
+      with existing repo analyses (Yegge/Appleton/Ronacher). Conclusions are credence-weighted and should be treated as
+      provisional pending measurement and replication.
+    topics:
+      - software-factory
+      - dark-factory
+      - compounding-teams
+      - coding-agents
+      - holdout-scenarios
+      - validation-harness
+      - digital-twins
+      - orchestration
+      - agent-memory
+      - guardrails
+      - token-economics
+    domains:
+      - TECH
+      - INST
+      - LABOR
+      - ECON
+      - TRANS
+    claims_extracted: []
+

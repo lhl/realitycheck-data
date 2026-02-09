@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 553 |
-| **Sources** | 127 |
+| **Claims** | 595 |
+| **Sources** | 137 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 34 |
+| **Predictions Tracked** | 36 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-09 | [Software factories, dark factories, and compounding teams (harness vs control plane)](analysis/syntheses/software-factory-dark-factory-harness-control-plane-synthesis.md) | `[DRAFT]` | Cross-source synthesis: “software factory” doctrine + dark-factory levels + compounding teams; separates correctness plane (harness/holdouts/DTU) from control plane (orchestration/memory/gates) |
 | 2026-02-07 | [Superlinear (paper + repo + model release)](analysis/syntheses/superlinear-multi-step-attention-release-synthesis.md) | `[DRAFT]` | Cross-source audit: code+weights consistency checks (VRAM/KV math); throughput/quality unverified; security/license/patent risks flagged |
 | 2026-02-07 | [Semantica vs Reality Check](analysis/syntheses/semantica-vs-realitycheck-synthesis.md) | `[DRAFT]` | Cross-project comparison: Semantica semantic/KG stack vs Reality Check claim/provenance ledger; integration guidance |
 | 2026-02-06 | [METR time horizon (long-task capability) 2025–2026](analysis/syntheses/metr-2025-2026-time-horizon-synthesis.md) | `[DRAFT]` | Cross-source synthesis: time-horizon trend (≈7-month doubling; faster post-2023 under TH1.1), protocol sensitivity, and cross-domain bottlenecks (OSWorld much shorter) |
@@ -55,6 +56,15 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-09 | [StrongDM “Software Factory” (main essay)](analysis/sources/strongdm-2026-software-factory.md) | `[REVIEWED]` | Vendor manifesto: non-interactive “software factory” posture; scenarios as governance; DTU (behavioral twins) concept; token-fuel heuristic |
+| 2026-02-09 | [StrongDM “Software Factory” (principles)](analysis/sources/strongdm-2026-software-factory-principles.md) | `[REVIEWED]` | Doctrine: seed→validation harness→feedback loop until holdout scenarios pass stably; “frontier engineering” as representation work |
+| 2026-02-09 | [Shapiro: five levels to the “Dark Factory”](analysis/sources/shapiro-2026-five-levels-dark-factory.md) | `[REVIEWED]` | Heuristic maturity model (0–5) for AI coding; role shift coder→reviewer→PM/spec; “technical deflation” framing |
+| 2026-02-09 | [Willison: StrongDM software without looking at code](analysis/sources/willison-2026-strongdm-software-factory.md) | `[REVIEWED]` | Makes “Dark Factory” concrete; highlights spec-only `strongdm/attractor` artifact + holdout-scenario framing |
+| 2026-02-09 | [Anthropic: harnesses for long-running agents](analysis/sources/anthropic-2025-effective-harnesses-long-running-agents.md) | `[REVIEWED]` | Harness pattern: initializer + iterative coding sessions + durable artifacts (progress logs, git checkpoints) + end-to-end testing discipline |
+| 2026-02-09 | [Schillace: compounding teams](analysis/sources/schillace-2025-compounding-teams.md) | `[REVIEWED]` | “Compounding” org pattern: bespoke frameworks + filesystem/git artifacts + recursive tool building; warns against mixing manual+AI styles in one repo |
+| 2026-02-09 | [DoltHub: a day in Gas Town](analysis/sources/dolthub-2026-day-in-gas-town.md) | `[REVIEWED]` | Field report on Gas Town “limitless mode”; highlights merge/guardrail failure modes and cost; suggests Dolt as memory substrate |
+| 2026-02-09 | [Virtuslab: Beads review (“give AI memory”)](analysis/sources/virtuslab-2026-github-all-stars-beads.md) | `[REVIEWED]` | Review of Beads as agent memory/task system; agent-UX heuristics (structured output, deterministic thick logic, idempotency) |
+| 2026-02-09 | [Yegge: “Revenge of the junior developer”](analysis/sources/yegge-2025-revenge-junior-developer.md) | `[REVIEWED]` | Early “waves” model: agents→clusters→fleets; token-opex framing; “junior revenge” labor hypothesis under rising spend |
 | 2026-02-09 | [Thread: “Windows is awful” + caste-discrimination claims at Microsoft (Thread Reader)](analysis/sources/miyaspokeofthis-2026-windows-caste-thread.md) | `[REVIEWED]` | Low-rigor, high-bias thread: separates general caste-discrimination reporting/cases (Cisco verified) from uncorroborated Microsoft+“Python vs C++” allegations; X embeds inaccessible |
 | 2026-02-07 | [Superlinear Multi-Step Attention (arXiv 2601.18401v1)](analysis/sources/huang-2026-superlinear-multi-step-attention.md) | `[REVIEWED]` | Preprint: structural non-exclusion framing; N=2 `O(L^(3/2))` scaling; self-reported B200 throughput + NIAH results |
 | 2026-02-07 | [Superlinear (GitHub repo @ df9b2ef)](analysis/sources/concavityai-2026-superlinear.md) | `[REVIEWED]` | Repo audit: Triton kernels + OpenAI-style server; explicit sessions/snapshots for KV cache reuse; memory budgeting cross-checked |
@@ -133,15 +143,15 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 185 |
-| LABOR | Labor & Employment | 23 |
-| ECON | Economics & Markets | 41 |
+| TECH | Technology & AI | 206 |
+| LABOR | Labor & Employment | 29 |
+| ECON | Economics & Markets | 48 |
 | GOV | Governance & Policy | 87 |
 | SOC | Social Dynamics | 12 |
-| TRANS | Transition Dynamics | 26 |
+| TRANS | Transition Dynamics | 29 |
 | RESOURCE | Resource Constraints | 15 |
 | GEO | Geopolitics | 30 |
-| INST | Institutions & Organizations | 44 |
+| INST | Institutions & Organizations | 49 |
 | RISK | Risk Assessment | 30 |
 | META | Framework & Methodology | 60 |
 

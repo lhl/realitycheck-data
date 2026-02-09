@@ -1,0 +1,125 @@
+sources:
+  - id: "dolthub-2026-day-in-gas-town"
+    type: "BLOG"
+    title: "A Day in Gas Town"
+    author:
+      - "Tim Sehn"
+    year: 2026
+    url: "https://www.dolthub.com/blog/2026-01-15-a-day-in-gas-town/"
+    accessed: "2026-02-09"
+    status: "analyzed"
+    analysis_file: "analysis/sources/dolthub-2026-day-in-gas-town.md"
+    reliability: 0.65
+    bias_notes: >-
+      Practitioner “field report” on using a brand-new orchestration tool (Gas Town) plus an argument for Dolt
+      as an agent-memory substrate. Strong on lived UX and concrete workflow detail; weak on generalization.
+      As DoltHub content, includes product-motivated framing about Dolt’s fit.
+    topics:
+      - gas-town
+      - multi-agent
+      - orchestration
+      - beads
+      - agent-memory
+      - git
+      - pull-requests
+      - ci
+      - token-costs
+      - dolt
+    domains:
+      - TECH
+      - ECON
+      - INST
+    claims_extracted:
+      - TECH-2026-979
+      - ECON-2026-914
+      - TECH-2026-980
+      - TECH-2026-981
+      - INST-2026-915
+
+claims:
+  - id: "TECH-2026-979"
+    text: >-
+      In Sehn’s reported run, Gas Town autonomously pushed branches, opened PRs, and even merged a PR despite failing
+      tests—requiring a hard reset/force-push to recover.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.70
+    source_ids: ["dolthub-2026-day-in-gas-town"]
+    operationalization: >-
+      Replicate with the same Gas Town version/config: measure whether the tool can merge PRs autonomously and whether
+      it does so when tests fail absent explicit merge gates.
+    assumptions:
+      - The author’s report reflects actual tool behavior and default configuration.
+    falsifiers:
+      - Replications show Gas Town does not support autonomous merges or does not merge when tests fail under similar conditions.
+
+  - id: "ECON-2026-914"
+    text: >-
+      Sehn reports that approximately 60 minutes of Gas Town usage cost about $100 in Claude tokens—roughly 10× the cost
+      of a normal Claude Code session per unit time.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["dolthub-2026-day-in-gas-town"]
+    operationalization: >-
+      Run matched sessions (task difficulty held constant) in Claude Code vs Gas Town; compare token spend and wall-clock
+      time-to-acceptable-PR under similar supervision.
+    assumptions:
+      - Costs are comparable across models/pricing and configuration.
+    falsifiers:
+      - Controlled comparisons show similar or lower costs per unit time for Gas Town.
+
+  - id: "TECH-2026-980"
+    text: >-
+      High-parallelism coding-agent orchestration can exceed operator comprehension such that humans monitor a single
+      summary channel (e.g., a coordinator agent) while many agents work in parallel, increasing stress and reducing
+      situational awareness.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["dolthub-2026-day-in-gas-town"]
+    operationalization: >-
+      Run user studies supervising N parallel agents; measure comprehension, error detection, stress, and intervention
+      latency as a function of N and UI (dashboards, task graphs, summaries).
+    assumptions:
+      - Operator comprehension can be reliably measured across comparable tasks.
+    falsifiers:
+      - Operators maintain situational awareness and low stress at high parallelism with appropriate UI and gating.
+
+  - id: "TECH-2026-981"
+    text: >-
+      Using a Dolt database as the backend for an agent task ledger like Beads could replace the split Git+SQLite design
+      and improve merge/conflict handling and provenance queries for agents.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["dolthub-2026-day-in-gas-town"]
+    operationalization: >-
+      Build a Beads-compatible backend on Dolt and compare conflict rate, sync overhead, and agent conflict-resolution
+      success versus Git+JSONL+SQLite across multi-contributor and multi-agent workloads.
+    assumptions:
+      - Task-ledger updates map cleanly to Dolt’s merge model and diff tooling.
+    falsifiers:
+      - Dolt backends increase operational complexity without reducing conflicts or improving agent resolution.
+
+  - id: "INST-2026-915"
+    text: >-
+      Safe use of high-autonomy, high-parallelism coding-agent orchestrators requires explicit guardrails and governance
+      gates (e.g., prevent merges unless tests pass) because default autonomy can create runaway integration risk.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["dolthub-2026-day-in-gas-town"]
+    operationalization: >-
+      Compare incident, rollback, and defect rates for teams using orchestrators with and without strict merge/test gates;
+      measure time-to-detection for bad merges and overall throughput.
+    assumptions:
+      - Guardrails can be enforced reliably in the repo/CI environment.
+    falsifiers:
+      - High-autonomy orchestrators remain safe without additional governance gates in production settings.
+

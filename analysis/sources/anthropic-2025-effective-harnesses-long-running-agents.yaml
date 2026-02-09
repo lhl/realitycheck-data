@@ -1,0 +1,102 @@
+sources:
+  - id: "anthropic-2025-effective-harnesses-long-running-agents"
+    type: "ARTICLE"
+    title: "Effective harnesses for long-running agents"
+    author:
+      - "Anthropic"
+    year: 2025
+    url: "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents"
+    accessed: "2026-02-09"
+    status: "analyzed"
+    analysis_file: "analysis/sources/anthropic-2025-effective-harnesses-long-running-agents.md"
+    reliability: 0.75
+    bias_notes: >-
+      Engineering write-up describing harness patterns observed internally using the Claude Agent SDK. Likely
+      representative of real failure modes, but results are not a controlled study and may reflect Anthropic’s
+      tool stack and evaluation goals.
+    topics:
+      - agent-harness
+      - long-running-agents
+      - claude-agent-sdk
+      - context-windows
+      - git
+      - progress-files
+      - end-to-end-testing
+      - browser-automation
+    domains:
+      - TECH
+    claims_extracted:
+      - TECH-2025-062
+      - TECH-2025-063
+      - TECH-2025-064
+      - TECH-2025-065
+
+claims:
+  - id: "TECH-2025-062"
+    text: >-
+      A practical harness for long-running agents uses an initializer agent for first-run setup and a coding agent
+      that makes incremental progress across sessions while leaving durable artifacts (progress file + git history).
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["anthropic-2025-effective-harnesses-long-running-agents"]
+    operationalization: >-
+      Benchmark long-horizon tasks with and without initializer+artifact discipline (progress file, structured
+      feature list, git commit checkpoints), measuring success rate, cost, and rework.
+    assumptions:
+      - Artifacts are kept concise and accurate enough to rehydrate state.
+    falsifiers:
+      - Controlled evaluations show no improvement or worse outcomes due to overhead.
+
+  - id: "TECH-2025-063"
+    text: >-
+      Context compaction alone is insufficient for multi-context-window coding; agents can degrade across sessions
+      without externalized state and structured “get up to speed” steps.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["anthropic-2025-effective-harnesses-long-running-agents"]
+    operationalization: >-
+      Compare compaction-only loops to artifact-based harness loops on the same long tasks; measure degradation
+      (redo work, regressions, incorrect “done” claims) across sessions.
+    assumptions:
+      - Tasks are long enough to require multiple context windows.
+    falsifiers:
+      - Compaction-only loops match harness performance under comparable budgets.
+
+  - id: "TECH-2025-064"
+    text: >-
+      Requiring agents to commit progress to git and maintain a progress file improves reliability and efficiency
+      by enabling reverts to working states and reducing time spent re-deriving project state.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["anthropic-2025-effective-harnesses-long-running-agents"]
+    operationalization: >-
+      Run ablations: with vs without mandatory commits and progress logs; measure time-to-recover after regressions
+      and total token spend for equivalent milestones.
+    assumptions:
+      - The agent can write meaningful commit messages and summaries.
+    falsifiers:
+      - Mandatory commits/logs add overhead and do not reduce rework or improve success.
+
+  - id: "TECH-2025-065"
+    text: >-
+      Without explicit prompts and tools, coding agents tend to mark features as complete without proper end-to-end
+      testing; adding user-like testing tools (e.g., browser automation) improves performance.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["anthropic-2025-effective-harnesses-long-running-agents"]
+    operationalization: >-
+      Measure false-positive “feature complete” rates with and without browser automation in web-app tasks; track
+      regressions caught by E2E vs unit/curl tests.
+    assumptions:
+      - Browser automation tools can approximate real user interaction sufficiently.
+    falsifiers:
+      - Browser automation does not reduce false completion rates in controlled tasks.
+

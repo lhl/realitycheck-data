@@ -1,0 +1,104 @@
+sources:
+  - id: "virtuslab-2026-github-all-stars-beads"
+    type: "BLOG"
+    title: "GitHub All-Stars #12: Beads"
+    author:
+      - "Artur Skowroński"
+    year: 2026
+    url: "https://virtuslab.com/blog/ai/beads-give-ai-memory/"
+    accessed: "2026-02-09"
+    status: "analyzed"
+    analysis_file: "analysis/sources/virtuslab-2026-github-all-stars-beads.md"
+    reliability: 0.65
+    bias_notes: >-
+      Code-review style write-up for a “GitHub All-Stars” series: highlights design patterns for AI-era tooling.
+      Useful for extracting design heuristics (“agent UX,” structured output, idempotency), but not a controlled
+      evaluation of Beads/Gas Town outcomes.
+    topics:
+      - beads
+      - agent-memory
+      - agent-ux
+      - structured-output
+      - json
+      - git-as-db
+      - sqlite
+      - idempotency
+      - long-running-agents
+    domains:
+      - TECH
+      - INST
+    claims_extracted:
+      - TECH-2026-982
+      - TECH-2026-983
+      - TECH-2026-984
+      - INST-2026-916
+
+claims:
+  - id: "TECH-2026-982"
+    text: >-
+      Designing tools for agent UX—structured machine-readable outputs and deterministic preprocessing (e.g., dependency
+      sorting)—reduces token waste and errors compared to making LLMs infer structure from raw text.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["virtuslab-2026-github-all-stars-beads"]
+    operationalization: >-
+      Compare matched tasks where agents receive deterministic structured outputs vs raw text; measure token spend,
+      error rates, and completion latency.
+    assumptions:
+      - Deterministic preprocessing does not omit critical context.
+    falsifiers:
+      - Structured preprocessing yields no improvement or worsens performance due to context loss.
+
+  - id: "TECH-2026-983"
+    text: >-
+      Append-only JSONL logs stored in git tend to be relatively merge-friendly for parallel updates (additions often
+      avoid conflicts), making them a practical distributed task-ledger substrate for agents and humans.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["virtuslab-2026-github-all-stars-beads"]
+    operationalization: >-
+      Measure merge-conflict rates and resolution time for JSONL-ledger repos under parallel update workloads; compare
+      against alternatives (DB-backed ledgers, CRDTs) in similar conditions.
+    assumptions:
+      - Updates are mostly append-only, not frequent in-place edits.
+    falsifiers:
+      - Conflict rates and human/agent resolution costs are comparable or worse than alternatives.
+
+  - id: "TECH-2026-984"
+    text: >-
+      For long-running agent workflows, storing plans/tasks in unstructured Markdown is brittle; structured
+      representations and idempotent append-only logs reduce “lose the plot” and accidental plan corruption.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["virtuslab-2026-github-all-stars-beads"]
+    operationalization: >-
+      Evaluate agents maintaining task state in Markdown vs structured ledgers; measure plan corruption incidents,
+      task repetition, and false “done” rates over long sessions.
+    assumptions:
+      - Structured ledgers are enforced and validated by tooling.
+    falsifiers:
+      - Markdown plan discipline performs equivalently with lower overhead.
+
+  - id: "INST-2026-916"
+    text: >-
+      A “thin client, thick logic” approach—encoding blocking/ready logic and constraints in deterministic code rather
+      than prompts—is a likely institutional pattern for scaling agentic coding systems cost-effectively.
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["virtuslab-2026-github-all-stars-beads"]
+    operationalization: >-
+      Survey production agentic systems and classify where logic lives (tooling vs prompts); correlate with cost,
+      reliability, and maintainability outcomes.
+    assumptions:
+      - Deterministic tooling can be kept aligned with evolving workflows.
+    falsifiers:
+      - Prompt-centric systems dominate and show comparable or better cost/reliability at scale.
+
