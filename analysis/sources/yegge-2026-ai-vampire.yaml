@@ -1,0 +1,122 @@
+sources:
+  - id: "yegge-2026-ai-vampire"
+    type: "BLOG"
+    title: "The AI Vampire"
+    author:
+      - "Steve Yegge"
+    year: 2026
+    url: "https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163"
+    accessed: "2026-02-11"
+    status: "analyzed"
+    analysis_file: "analysis/sources/yegge-2026-ai-vampire.md"
+    reliability: 0.50
+    bias_notes: >-
+      Long, high-rhetoric Medium post by a heavy early adopter of agentic coding tools. Useful for mapping a
+      distributional “value capture” lens and describing lived-experience fatigue dynamics; weak for prevalence,
+      effect sizes, and causal identification. Contains strong claims about specific models/tools and enterprise
+      adoption that are not evidenced in the post.
+    topics:
+      - ai
+      - llms
+      - agentic-coding
+      - productivity
+      - burnout
+      - work-intensification
+      - value-capture
+      - expectations
+      - startups
+      - work-hours
+    domains:
+      - LABOR
+      - INST
+      - ECON
+      - SOC
+      - TECH
+    claims_extracted:
+      - ECON-2026-038
+      - INST-2026-919
+      - LABOR-2026-027
+      - LABOR-2026-028
+
+claims:
+  - id: "ECON-2026-038"
+    text: >-
+      If AI meaningfully increases individual productivity, workplaces face a distributional “value capture”
+      problem: if employers capture most gains by raising output expectations without commensurate reductions in
+      hours or workload, workers can experience intensified extraction and burnout risk; sustainable adoption
+      likely requires sharing gains (e.g., via reduced hours, higher pay, or staffing changes).
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["yegge-2026-ai-vampire"]
+    operationalization: >-
+      Compare AI rollouts across teams on (1) productivity deltas, (2) changes in performance expectations/SLAs,
+      (3) hours worked and boundary violations, (4) compensation and headcount changes, and (5) burnout/attrition.
+      Test whether “captured surplus” (expectations up without offsetting worker benefits) predicts burnout.
+    assumptions:
+      - Changes in expectations and worker benefits can be measured at team/org level.
+      - Burnout outcomes are not fully explained by confounds (e.g., product cycles, layoffs) after controls.
+    falsifiers:
+      - Teams where employers capture most AI gains do not exhibit higher burnout/attrition than comparable teams.
+      - Burnout decreases despite expectation increases when AI tooling improves.
+
+  - id: "INST-2026-919"
+    text: >-
+      Public narratives by extreme early adopters about building impressive systems via agentic coding
+      (often via very long sprints) can create unrealistic productivity standards, encouraging managers/executives
+      to raise expectations and intensify work, increasing burnout risk for typical employees.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["yegge-2026-ai-vampire"]
+    operationalization: >-
+      Track whether exposure to “outlier productivity” narratives (internal sharing, leadership references,
+      mandated AI adoption pushes) precedes measurable changes in targets, responsiveness norms, and staffing, and
+      whether these changes correlate with burnout/turnover for median performers.
+    assumptions:
+      - Narrative exposure can be proxied (policy memos, leadership communications, tool mandate timing).
+    falsifiers:
+      - Expectation/target changes are uncorrelated with exposure to outlier narratives after controlling for
+        market pressure and firm performance.
+
+  - id: "LABOR-2026-027"
+    text: >-
+      In AI-heavy knowledge-work workflows, the sustainable “high-cognitive-load” workday may be materially shorter
+      than eight hours, because AI accelerates artifact generation and leaves humans with decision-making,
+      summarization, and quality-control work that is exhausting and only maintainable in short bursts (e.g., on
+      the order of 3–4 hours/day of intense work).
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["yegge-2026-ai-vampire"]
+    operationalization: >-
+      Randomize teams to different schedule norms (e.g., 3–4h “intense work” windows with protected recovery vs
+      extended always-on availability) and compare sustained output quality, incident/defect rates, burnout
+      inventories, and attrition over multiple quarters.
+    assumptions:
+      - “Intense work” vs “availability” can be operationalized and enforced by norms/policy.
+    falsifiers:
+      - Teams maintaining 7–8 hours/day of high-intensity AI-assisted work show equal or better well-being and
+        long-run output quality than shorter-intensity schedules.
+
+  - id: "LABOR-2026-028"
+    text: >-
+      Some advanced agentic coding tools (for users fluent in them) can yield very large productivity multipliers
+      on some software tasks (potentially approaching an order of magnitude for a subset of tasks/users).
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.25
+    source_ids: ["yegge-2026-ai-vampire"]
+    operationalization: >-
+      Measure within-subject productivity across representative tasks with/without agentic coding tools, with
+      preregistered acceptance criteria and independent quality review, and estimate the distribution of
+      productivity multipliers (median vs upper tail).
+    assumptions:
+      - Large observed multipliers are not artifacts of scope creep or quality degradation.
+    falsifiers:
+      - Controlled studies find no meaningful tail of >5× productivity gains for fluent users across tasks with
+        stable quality constraints.

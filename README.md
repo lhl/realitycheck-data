@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 621 |
-| **Sources** | 155 |
+| **Claims** | 625 |
+| **Sources** | 156 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 36 |
 
@@ -29,7 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
-| 2026-02-11 | [AI-driven burnout, dark flow, and work intensification (2025–2026)](analysis/syntheses/ai-driven-burnout-dark-flow-work-intensification-synthesis.md) | `[DRAFT]` | Cross-source synthesis: HBR intensification mechanisms + METR miscalibration + NBER modest time savings/null hours; “dark flow” and expectation-creep model |
+| 2026-02-11 | [AI-driven burnout, dark flow, and work intensification (2025–2026)](analysis/syntheses/ai-driven-burnout-dark-flow-work-intensification-synthesis.md) | `[DRAFT]` | Cross-source synthesis: HBR intensification mechanisms + METR miscalibration + NBER modest time savings/null hours; “dark flow,” expectation creep, and value-capture lens |
 | 2026-02-09 | [Software factories, dark factories, and compounding teams (harness vs control plane)](analysis/syntheses/software-factory-dark-factory-harness-control-plane-synthesis.md) | `[DRAFT]` | Cross-source synthesis: “software factory” doctrine + dark-factory levels + compounding teams; separates correctness plane (harness/holdouts/DTU) from control plane (orchestration/memory/gates) |
 | 2026-02-07 | [Superlinear (paper + repo + model release)](analysis/syntheses/superlinear-multi-step-attention-release-synthesis.md) | `[DRAFT]` | Cross-source audit: code+weights consistency checks (VRAM/KV math); throughput/quality unverified; security/license/patent risks flagged |
 | 2026-02-07 | [Semantica vs Reality Check](analysis/syntheses/semantica-vs-realitycheck-synthesis.md) | `[DRAFT]` | Cross-project comparison: Semantica semantic/KG stack vs Reality Check claim/provenance ledger; integration guidance |
@@ -57,6 +57,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-11 | [Yegge: The AI Vampire](analysis/sources/yegge-2026-ai-vampire.md) | `[REVIEWED]` | Medium post framing AI burnout as value-capture/extraction; warns about outlier narratives; proposes a shorter intense workday |
 | 2026-02-11 | [HBR: AI doesn’t reduce work, it intensifies it](analysis/sources/ranganathan-2026-ai-intensifies-it.md) | `[REVIEWED]` | Field study at ~200-person tech company: task expansion, blurred boundaries, multitasking; proposes “AI practice” norms |
 | 2026-02-11 | [Simon Willison: AI intensifies work](analysis/sources/willison-2026-ai-intensifies-work.md) | `[REVIEWED]` | Practitioner reflection: “exhausting productivity,” rapid depletion, and “one more prompt” sleep-disruption anecdotes |
 | 2026-02-11 | [TechCrunch: early signs of burnout among AI embracers](analysis/sources/techcrunch-2026-ai-adopter-burnout.md) | `[REVIEWED]` | Journalism synthesis: “burnout machine” framing; highlights rebound/expectation creep; cites HBR/METR/NBER |
@@ -154,14 +155,14 @@ See [claims/README.md](claims/README.md) for full statistics.
 | Domain | Description | Claims |
 |--------|-------------|--------|
 | TECH | Technology & AI | 209 |
-| LABOR | Labor & Employment | 36 |
-| ECON | Economics & Markets | 50 |
+| LABOR | Labor & Employment | 38 |
+| ECON | Economics & Markets | 51 |
 | GOV | Governance & Policy | 87 |
 | SOC | Social Dynamics | 23 |
 | TRANS | Transition Dynamics | 30 |
 | RESOURCE | Resource Constraints | 15 |
 | GEO | Geopolitics | 30 |
-| INST | Institutions & Organizations | 51 |
+| INST | Institutions & Organizations | 52 |
 | RISK | Risk Assessment | 30 |
 | META | Framework & Methodology | 60 |
 

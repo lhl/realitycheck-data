@@ -12,9 +12,9 @@ sources:
     reliability: 0.70
     bias_notes: >-
       Internal cross-source synthesis in realitycheck-data. Integrates a field-study taxonomy (HBR), controlled
-      measurement (METR), survey+admin outcomes (NBER), and practitioner/anecdotal accounts (Willison, HN comments,
-      fast.ai, social threads). Conclusions are credence-weighted and provisional pending additional measurement and
-      replication in diverse workplaces.
+      measurement (METR), survey+admin outcomes (NBER), and practitioner/anecdotal accounts (Willison, Yegge, HN
+      comments, fast.ai, social threads). Conclusions are credence-weighted and provisional pending additional
+      measurement and replication in diverse workplaces.
     topics:
       - ai
       - burnout
@@ -32,4 +32,3 @@ sources:
       - ECON
       - TRANS
     claims_extracted: []
-
