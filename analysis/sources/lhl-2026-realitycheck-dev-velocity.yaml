@@ -1,0 +1,87 @@
+sources:
+  - id: "lhl-2026-realitycheck-dev-velocity"
+    type: "REPORT"
+    title: "Reality Check framework: development velocity and codebase size (v0.3.0 snapshot)"
+    author:
+      - "lhl"
+    year: 2026
+    url: "https://github.com/lhl/realitycheck/tree/v0.3.0"
+    accessed: "2026-02-11"
+    status: "analyzed"
+    analysis_file: "analysis/sources/lhl-2026-realitycheck-dev-velocity.md"
+    reliability: 0.80
+    bias_notes: >-
+      Self-analysis of a public repository’s git history and scc output to bound an upper tail of software
+      development throughput. Strong for the raw measurements (git history, churn, scc snapshot); weak for causal
+      attribution (how much was due to AI vs reuse/scope choices) and for generalization to typical projects and
+      workflows.
+    topics:
+      - ai
+      - agentic-coding
+      - productivity
+      - software-engineering
+      - codebase-metrics
+      - scc
+      - cocomo
+    domains:
+      - LABOR
+      - INST
+      - TECH
+    claims_extracted:
+      - LABOR-2026-029
+      - LABOR-2026-030
+      - LABOR-2026-031
+
+claims:
+  - id: "LABOR-2026-029"
+    text: >-
+      The Reality Check framework repository (`lhl/realitycheck`) history through tag `v0.3.0` spans from its
+      first commit dated 2026-01-20 to the `v0.3.0` tag dated 2026-02-01, and contains 160 commits.
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["lhl-2026-realitycheck-dev-velocity"]
+    operationalization: >-
+      Recompute using `git show -s --format=%ci v0.3.0`, `git show -s --format=%ci $(git rev-list --max-parents=0 v0.3.0)`,
+      and `git rev-list --count v0.3.0`.
+    assumptions: []
+    falsifiers:
+      - Recomputing from the repository history yields materially different dates or commit count.
+
+  - id: "LABOR-2026-030"
+    text: >-
+      At tag `v0.3.0`, `scc` reports the Reality Check framework codebase contains about 45,920 total lines across
+      179 files, and estimates (COCOMO) a schedule effort of about 14.54 months (organic mode).
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["lhl-2026-realitycheck-dev-velocity"]
+    operationalization: >-
+      Check out the `v0.3.0` tag in a detached worktree and run `scc .`; compare totals (lines/files) and the
+      reported COCOMO schedule effort.
+    assumptions:
+      - The `scc` version and configuration are comparable across runs.
+    falsifiers:
+      - Running `scc` at the `v0.3.0` tag yields materially different totals or COCOMO schedule estimates.
+
+  - id: "LABOR-2026-031"
+    text: >-
+      Comparing (a) the ~12-day calendar window from first commit to `v0.3.0` tag with (b) `scc`’s ~14.5-month
+      COCOMO schedule estimate suggests that, in at least some greenfield software projects, delivery pace can be
+      compressed by an order of magnitude relative to conventional baselines; this comparison is non-causal and
+      COCOMO may overestimate for small, well-scoped projects.
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["lhl-2026-realitycheck-dev-velocity"]
+    operationalization: >-
+      Compute (tag_date - first_commit_date) and compare to the COCOMO schedule-effort estimate. Evaluate
+      sensitivity by repeating on other repos/projects and by using alternative baseline estimation methods.
+    assumptions:
+      - The COCOMO schedule estimate is a useful (even if noisy) baseline for rough comparison.
+    falsifiers:
+      - Repeated case studies find COCOMO is systematically miscalibrated such that the comparison does not
+        indicate unusual delivery speed.

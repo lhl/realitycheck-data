@@ -41,7 +41,7 @@ Yegge’s argument is built from four main components:
 | 1 | If AI meaningfully increases individual productivity, workplaces face a distributional “value capture” problem: when employers capture gains by raising expectations without offsetting worker benefits, extraction and burnout risk can rise | ECON-2026-038 | [H] | ECON | E5 | 0.55 | ? | Teams where employers capture most AI gains do *not* show higher burnout/attrition than comparable teams |
 | 2 | Outlier “agentic coding” narratives can set unrealistic productivity standards and encourage managers to raise expectations, intensifying work and raising burnout risk for typical employees | INST-2026-919 | [H] | INST | E5 | 0.50 | ? | Expectation/target changes show no relationship to exposure to outlier narratives after controls |
 | 3 | In AI-heavy workflows, sustainable “high-cognitive-load” work may be materially shorter than 8 hours/day (e.g., ~3–4h/day of intense decision/quality work), because AI shifts human time toward exhausting synthesis and judgment | LABOR-2026-027 | [H] | LABOR | E5 | 0.40 | ? | Teams sustaining 7–8h/day of high-intensity AI-assisted work show equal/better well-being and long-run output quality |
-| 4 | Some advanced agentic coding tools can yield very large productivity multipliers for fluent users on some tasks (potentially approaching ~10× for a subset of tasks/users) | LABOR-2026-028 | [H] | LABOR | E5 | 0.25 | ? | Controlled studies find no meaningful tail of >5× gains for fluent users under stable quality constraints |
+| 4 | Some advanced agentic coding tools can yield very large productivity multipliers for fluent users on some tasks (potentially approaching ~10× for a subset of tasks/users) | LABOR-2026-028 | [H] | LABOR | E5 | 0.35 | ? | Controlled studies find no meaningful tail of >5× gains for fluent users under stable quality constraints |
 
 ### Argument Structure
 
@@ -85,6 +85,8 @@ The post is coherent at the mechanism level: if (a) productivity gains are large
 |---|---|---|---|
 | LABOR-2026-028 (very large productivity multipliers) | METR’s study found experienced OSS developers were slower with AI allowed in one realistic setting, while believing they were faster; NBER finds modest average time savings and no net hours/earnings changes in Denmark | Large multipliers may exist for a subset of tasks/users, but typical/median impacts may be modest; perceived “10×” may reflect artifact volume rather than task completion under quality constraints | Cross-checked against `metr-2025-ai-experienced-os-dev-productivity` and `humlum-2025-llms-small-labor-market-effects` as measurement anchors |
 | ECON-2026-038 / INST-2026-919 (extraction via expectation creep) | HBR reports intensification mechanisms (task expansion, boundary blur, multitasking) without relying on extreme productivity multipliers | “Vampire” dynamics can arise even under modest time savings if saved time is reinvested into scope/availability rather than recovery | Triangulated with `ranganathan-2026-ai-intensifies-it`, `techcrunch-2026-ai-adopter-burnout`, and practitioner anecdotes (`willison-2026-ai-intensifies-work`) |
+
+Note: while METR/NBER argue against assuming large *typical* productivity gains, upper-tail case studies (e.g., repo-churn and internal sprint telemetry) increase the plausibility that very large multipliers exist for some workflows/users—consistent with Yegge’s framing but not yet cleanly measured.
 
 ### Persuasion Techniques
 | Technique | Example (paraphrased) | Effect |
@@ -149,7 +151,7 @@ This post contributes a distinct lens: *burnout is not only a cognitive/attentio
 | ECON-2026-038 | [H] | ECON | E5 | 0.55 | Workplaces face a “value capture” problem where employer capture of AI gains can increase extraction/burnout risk |
 | INST-2026-919 | [H] | INST | E5 | 0.50 | Outlier narratives can create unrealistic productivity standards and intensify expectations |
 | LABOR-2026-027 | [H] | LABOR | E5 | 0.40 | Sustainable high-cognitive-load work may be closer to ~3–4 hours/day in AI-heavy workflows |
-| LABOR-2026-028 | [H] | LABOR | E5 | 0.25 | Some agentic tools may yield near order-of-magnitude gains for a subset of tasks/users |
+| LABOR-2026-028 | [H] | LABOR | E5 | 0.35 | Some agentic tools may yield near order-of-magnitude gains for a subset of tasks/users |
 
 ### Claims to Register
 
@@ -225,7 +227,7 @@ claims:
     type: "[H]"
     domain: "LABOR"
     evidence_level: "E5"
-    credence: 0.25
+    credence: 0.35
     source_ids: ["yegge-2026-ai-vampire"]
     operationalization: >-
       Measure within-subject productivity across representative tasks with/without agentic coding tools, with
@@ -248,7 +250,9 @@ claims:
 | Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
 |---:|---|---|---|---|---:|---:|---|
 | 1 | 2026-02-11 09:06 | codex | gpt-5.2 | ? | ? | ? | Initial 3-stage analysis + imported source and claims |
+| 2 | 2026-02-11 09:57 | codex | gpt-5.2 | ? | ? | ? | Pass 2: incorporate upper-tail repo-churn baseline; adjust LABOR-2026-028 crede… |
 
 ### Revision Notes
 
+**Pass 2**: Pass 2: incorporate upper-tail repo-churn baseline; adjust LABOR-2026-028 credence
 **Pass 1**: Initial 3-stage analysis + imported source and claims

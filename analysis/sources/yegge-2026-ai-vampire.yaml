@@ -109,7 +109,7 @@ claims:
     type: "[H]"
     domain: "LABOR"
     evidence_level: "E5"
-    credence: 0.25
+    credence: 0.35
     source_ids: ["yegge-2026-ai-vampire"]
     operationalization: >-
       Measure within-subject productivity across representative tasks with/without agentic coding tools, with

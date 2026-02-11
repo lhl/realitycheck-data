@@ -1,6 +1,6 @@
 # Synthesis Analysis: AI-Driven Burnout, Dark Flow, and Work Intensification (2025–2026)
 
-> **Source IDs**: `ranganathan-2026-ai-intensifies-it`, `willison-2026-ai-intensifies-work`, `techcrunch-2026-ai-adopter-burnout`, `hn-2026-ai-intensifies-it-46945755`, `metr-2025-ai-experienced-os-dev-productivity`, `humlum-2025-llms-small-labor-market-effects`, `thomas-2026-dark-flow`, `aakashgupta-2026-ai-dopamine-loop-thread`, `mathrachel-2026-automated-coding-not-se-thread`, `yegge-2026-ai-vampire`
+> **Source IDs**: `ranganathan-2026-ai-intensifies-it`, `willison-2026-ai-intensifies-work`, `techcrunch-2026-ai-adopter-burnout`, `hn-2026-ai-intensifies-it-46945755`, `metr-2025-ai-experienced-os-dev-productivity`, `humlum-2025-llms-small-labor-market-effects`, `thomas-2026-dark-flow`, `aakashgupta-2026-ai-dopamine-loop-thread`, `mathrachel-2026-automated-coding-not-se-thread`, `yegge-2026-ai-vampire`, `lhl-2026-realitycheck-dev-velocity`
 > **Analysis Date**: 2026-02-11
 > **Analyst**: gpt-5.2
 > **Rigor Level**: `[DRAFT]`
@@ -34,6 +34,7 @@ which can produce burnout-like outcomes even when “hours worked” do not obvi
 | `thomas-2026-dark-flow` | 2026-01-28 | BLOG | “Dark flow” lens: rapid feedback + delayed quality signals → compulsion + miscalibration; ties to METR |
 | `aakashgupta-2026-ai-dopamine-loop-thread` | 2026-02-07 | SOCIAL | Reinforcement-loop framing (“one prompt away”); unsupported population-split quantifier |
 | `mathrachel-2026-automated-coding-not-se-thread` | 2026-01-27 | SOCIAL | Hypothesis: agents output code but not software engineering (abstractions/modularity), implying downstream burden |
+| `lhl-2026-realitycheck-dev-velocity` | 2026-02-01 | REPORT | Upper-tail baseline: a greenfield framework repo’s churn + `scc` snapshot show large shipped artifact in ~12 days (non-causal, but expectation-setting relevant) |
 
 ### Working Model (Mechanism Stack)
 This synthesis treats “AI-driven burnout” as a *stack* of interacting mechanisms rather than a single variable:
@@ -58,6 +59,7 @@ Burnout pressure rises when (2–8) grow faster than *recovery capacity* and *qu
 - **How often AI actually speeds work**: METR finds slowdown in one setting; many practitioners (including internal reports) claim large gains elsewhere.
 - **Whether intensification is transient**: some HN commenters predict a transitional overload phase toward automation equilibrium; evidence is limited.
 - **Which interventions work**: “AI practice” is plausible but not yet backed by strong field-trial evidence.
+- **How heavy-tailed the productivity distribution is**: upper-tail case studies exist (repo-churn evidence; internal case studies), but frequency and prerequisites are unclear.
 
 ---
 
@@ -74,6 +76,11 @@ The most grounded for *mechanism detail* (but not general prevalence) is:
 The most grounded for *psychological framing* (but not measurement) are:
 - **fast.ai / Yegge / social threads (E5/E6)**, valuable as hypothesis generators and for mapping lived experience.
 
+The most grounded for *upper-tail feasibility* (but not typicality) is:
+- **Repo-churn case study (E2/E5)** showing large shipped artifact in a short calendar window; informative for “what’s possible,” not “what’s average.”
+
+**Internal note (local-only)**: a redacted internal case-study memo with raw milestone/tokens/`scc` numbers is kept at `reference/articles/_local/internal-case-study-redacted.md` (not tracked in git).
+
 ### Reconciling “Huge Gains” with “Burnout”
 A useful reconciliation is to separate five dimensions that sources often conflate:
 
@@ -87,6 +94,8 @@ You can have:
 - **higher output** with **flat or worse time per artifact** (METR-like) if output volume and “felt progress” rise faster than real completion time.
 - **modest average time savings** with **higher intensity** (NBER+HBR compatible) if saved minutes are reinvested into scope and responsiveness rather than recovery.
 - **huge gains** with **higher burnout risk** if intensity and expectation creep scale with capability.
+
+Upper-tail velocity evidence (like `lhl-2026-realitycheck-dev-velocity`, plus internal case studies on file) makes the “huge gains” branch more plausible for at least some workflows, increasing the importance of expectation governance and dividend-sharing.
 
 ### The “Dark Flow” Hypothesis as a Unifier
 The “dark flow” / reinforcement framing (fast.ai; aakashgupta; Willison anecdotes) is consistent with:
@@ -132,3 +141,16 @@ This synthesis suggests four levers that matter more than “use AI more/less”
 - NBER’s modest time savings + null hours/earnings effects (`ECON-2025-004`, `LABOR-2025-018`).
 - “Dark flow” and stopping-point erosion hypotheses (`SOC-2026-016`, `SOC-2026-019`).
 - Yegge’s value-capture and “shorter intense workday” hypotheses (`ECON-2026-038`, `INST-2026-919`, `LABOR-2026-027`, `LABOR-2026-028`).
+
+---
+
+## Analysis Log
+
+| Pass | Date | Tool | Model | Duration | Tokens | Cost | Notes |
+|---:|---|---|---|---|---:|---:|---|
+| 1 | 2026-02-11 | codex | gpt-5.2 | ? | ? | ? | Initial synthesis (HBR/METR/NBER + practitioner/anecdote set). |
+| 2 | 2026-02-11 09:59 | codex | gpt-5.2 | ? | ? | ? | Pass 2: add upper-tail repo-churn baseline + internal memo pointer |
+
+### Revision Notes
+
+**Pass 2**: Pass 2: add upper-tail repo-churn baseline + internal memo pointer
