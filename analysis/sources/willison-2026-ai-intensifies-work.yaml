@@ -1,0 +1,85 @@
+sources:
+  - id: "willison-2026-ai-intensifies-work"
+    type: "BLOG"
+    title: "AI Doesn’t Reduce Work—It Intensifies It"
+    author:
+      - "Simon Willison"
+    year: 2026
+    url: "https://simonwillison.net/2026/Feb/9/ai-intensifies-work/"
+    accessed: "2026-02-11"
+    status: "analyzed"
+    analysis_file: "analysis/sources/willison-2026-ai-intensifies-work.md"
+    reliability: 0.55
+    bias_notes: >-
+      Short practitioner post pointing to an HBR piece plus personal anecdotes about attention depletion and
+      difficulty stopping. High signal for “what a power-user reports feeling,” low signal for prevalence and
+      causal identification.
+    topics:
+      - ai
+      - llms
+      - burnout
+      - work-intensification
+      - multitasking
+      - cognitive-load
+      - sleep
+      - norms
+    domains:
+      - SOC
+      - INST
+    claims_extracted:
+      - SOC-2026-013
+      - SOC-2026-014
+      - INST-2026-918
+
+claims:
+  - id: "SOC-2026-013"
+    text: >-
+      For some heavy LLM users, AI-enabled parallel throughput (multiple work threads/projects/agents at once)
+      can be psychologically exhausting: perceived productivity rises while mental energy depletes rapidly.
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["willison-2026-ai-intensifies-work"]
+    operationalization: >-
+      Combine time-use telemetry (AI prompting, task switching) with fatigue/energy self-reports; test whether
+      parallel thread count and checking frequency predict depletion independent of total hours.
+    assumptions:
+      - Self-reported exhaustion tracks meaningful cognitive depletion.
+    falsifiers:
+      - Observational studies find no relationship between AI-driven parallelism/checking and fatigue.
+
+  - id: "SOC-2026-014"
+    text: >-
+      Rapid AI feedback loops can create “one more prompt” dynamics that reduce sleep for some users
+      (continued late-night work because the next increment feels immediately reachable).
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["willison-2026-ai-intensifies-work"]
+    operationalization: >-
+      Survey and instrument sleep and late-night AI activity among heavy users; test whether late prompting/agent
+      runs predict delayed bedtimes and reduced sleep duration.
+    assumptions:
+      - Late-night AI use is not fully confounded by independent deadline pressure.
+    falsifiers:
+      - No measurable correlation between AI prompting patterns and sleep disruption in heavy-user cohorts.
+
+  - id: "INST-2026-918"
+    text: >-
+      Organizations can benefit from explicit norms and standards for AI use (“AI practice”) to reduce burnout risk
+      and to help distinguish genuine productivity gains from unsustainable intensity.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["willison-2026-ai-intensifies-work"]
+    operationalization: >-
+      Compare organizations/teams with explicit AI-use norms (pauses, sequencing, boundary rules) against matched
+      controls on burnout, retention, incident rates, and sustained output over multiple quarters.
+    assumptions:
+      - Norms translate into behavior change despite incentive pressures.
+    falsifiers:
+      - No measurable differences in burnout/quality/retention between norm-adopting and control teams.
+

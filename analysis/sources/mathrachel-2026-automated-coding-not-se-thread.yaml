@@ -1,0 +1,65 @@
+sources:
+  - id: "mathrachel-2026-automated-coding-not-se-thread"
+    type: "SOCIAL"
+    title: "Thread: “We have automated coding, but not software engineering.”"
+    author:
+      - "@math_rachel"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2016232343388999901.html"
+    accessed: "2026-02-11"
+    status: "analyzed"
+    analysis_file: "analysis/sources/mathrachel-2026-automated-coding-not-se-thread.md"
+    reliability: 0.35
+    bias_notes: >-
+      Short social-media assertion about limits of AI coding agents on abstraction and modularization. Useful as a
+      crisp hypothesis about quality/maintainability; provides no direct evidence.
+    topics:
+      - ai
+      - coding-agents
+      - software-engineering
+      - abstraction
+      - modularity
+      - maintainability
+      - burnout
+    domains:
+      - TECH
+      - LABOR
+    claims_extracted:
+      - TECH-2026-986
+      - LABOR-2026-025
+
+claims:
+  - id: "TECH-2026-986"
+    text: >-
+      Current AI coding agents can produce syntactically correct code but often fail to produce good abstractions
+      and meaningful modularization, and they do not reliably improve conciseness or organization in large codebases.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["mathrachel-2026-automated-coding-not-se-thread"]
+    operationalization: >-
+      Evaluate agents on large-codebase refactor tasks with human-rated modularity/abstraction metrics and
+      maintainability outcomes (time-to-change, defect introduction).
+    assumptions:
+      - Abstraction/modularity quality can be measured reliably by expert raters or validated proxies.
+    falsifiers:
+      - Controlled evaluations show agents consistently improve modularity and organization in large codebases.
+
+  - id: "LABOR-2026-025"
+    text: >-
+      If AI-generated code is weak on abstraction and modularization, then AI adoption can increase downstream review
+      and maintenance burden, plausibly contributing to burnout even when short-run output rises.
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["mathrachel-2026-automated-coding-not-se-thread"]
+    operationalization: >-
+      Track review time, bug/incident rates, and maintenance effort for AI-heavy vs non-AI codebases over months;
+      relate to burnout/turnover outcomes controlling for workload and team composition.
+    assumptions:
+      - Review/maintenance burden is a significant driver of burnout in the observed setting.
+    falsifiers:
+      - Longitudinal data shows AI-heavy codebases reduce maintenance effort and improve burnout outcomes.
+

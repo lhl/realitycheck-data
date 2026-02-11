@@ -1,0 +1,86 @@
+sources:
+  - id: "thomas-2026-dark-flow"
+    type: "BLOG"
+    title: "Breaking the Spell of Vibe Coding"
+    author:
+      - "Rachel Thomas"
+    year: 2026
+    url: "https://www.fast.ai/posts/2026-01-28-dark-flow/"
+    accessed: "2026-02-11"
+    status: "analyzed"
+    analysis_file: "analysis/sources/thomas-2026-dark-flow.md"
+    reliability: 0.60
+    bias_notes: >-
+      Cautionary essay arguing “vibe coding” can be addictive/misleading and can degrade skill development and software
+      quality. Uses analogy to gambling (“dark flow”) and cites at least one empirical study (METR), but many claims
+      are interpretive and normative.
+    topics:
+      - ai
+      - vibe-coding
+      - dark-flow
+      - burnout
+      - miscalibration
+      - productivity
+      - software-engineering
+    domains:
+      - SOC
+      - TECH
+    claims_extracted:
+      - SOC-2026-016
+      - SOC-2026-017
+      - TECH-2026-985
+
+claims:
+  - id: "SOC-2026-016"
+    text: >-
+      “Vibe coding” can induce a “dark flow” (junk flow) state in which rapid AI feedback and visible output
+      create a compelling sense of progress while degrading accurate self-assessment of productivity and quality,
+      increasing overwork and long-term mistakes.
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["thomas-2026-dark-flow"]
+    operationalization: >-
+      Measure AI feedback frequency, perceived progress, and delayed-quality outcomes (defects/rewrites) alongside
+      time-use and burnout indicators; test whether high-frequency feedback predicts miscalibration and overwork.
+    assumptions:
+      - The “dark flow” construct corresponds to measurable patterns (persistence, miscalibration, delayed regret).
+    falsifiers:
+      - Evidence shows rapid AI feedback improves calibration and reduces overwork relative to comparable baselines.
+
+  - id: "SOC-2026-017"
+    text: >-
+      AI-assisted workflows can create large gaps between perceived and actual productivity; users may believe they
+      are faster even when they are slower in measured time, especially when rapid output is conflated with progress.
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E3"
+    credence: 0.70
+    source_ids: ["thomas-2026-dark-flow"]
+    operationalization: >-
+      Elicit pre- and post-task speed estimates and compare to measured time across tasks and user cohorts; quantify
+      calibration error and identify moderators (experience, tool type, quality bar).
+    assumptions:
+      - Self-reported beliefs can be captured reliably and compared to objective measures.
+    falsifiers:
+      - Replications show most users’ perceived speed closely matches measured speed across tasks and settings.
+
+  - id: "TECH-2026-985"
+    text: >-
+      Vibe coding can generate complex AI-produced code whose maintainability and correctness are hard to assess
+      immediately; short-term signals (volume of code, apparent progress) can be misleading and hide later bugs and
+      modification difficulty.
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["thomas-2026-dark-flow"]
+    operationalization: >-
+      Compare long-run maintenance metrics (bug rates, time-to-fix, refactor frequency) for AI-heavy code vs
+      conventional code controlling for complexity and team practices.
+    assumptions:
+      - “Vibe-coded” projects can be operationally identified (low human code reading/review, high AI generation).
+    falsifiers:
+      - Longitudinal data shows AI-heavy codebases are no harder to maintain after adjustment.
+

@@ -1,0 +1,94 @@
+sources:
+  - id: "ranganathan-2026-ai-intensifies-it"
+    type: "ARTICLE"
+    title: "AI Doesn’t Reduce Work—It Intensifies It"
+    author:
+      - "Aruna Ranganathan"
+      - "Xingqi Maggie Ye"
+    year: 2026
+    url: "https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it"
+    accessed: "2026-02-11"
+    status: "analyzed"
+    analysis_file: "analysis/sources/ranganathan-2026-ai-intensifies-it.md"
+    reliability: 0.65
+    bias_notes: >-
+      HBR managerial framing based on “in-progress” field research (single company; qualitative observation + interviews).
+      Strong for describing a plausible mechanism cluster and concrete workplace behaviors; weaker for general prevalence,
+      effect sizes, and causal attribution outside the studied context.
+    topics:
+      - ai
+      - generative-ai
+      - work-intensification
+      - burnout
+      - multitasking
+      - cognitive-load
+      - norms
+      - ai-practice
+    domains:
+      - LABOR
+      - SOC
+      - INST
+    claims_extracted:
+      - LABOR-2026-023
+      - SOC-2026-012
+      - INST-2026-917
+
+claims:
+  - id: "LABOR-2026-023"
+    text: >-
+      In an eight-month field study (April–December 2025) at a ~200-person U.S.-based technology company,
+      the authors report that generative AI adoption was associated with work intensification: employees
+      worked at a faster pace, took on a broader scope of tasks, and extended work into more hours of the day,
+      often without being asked to do so.
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["ranganathan-2026-ai-intensifies-it"]
+    operationalization: >-
+      Replicate with mixed methods: instrumented time-use + comms telemetry + interviews before/after AI rollout;
+      measure changes in task scope, after-hours work, and pace proxies.
+    assumptions:
+      - The reported field methods and accounts accurately reflect typical worker behavior during the study window.
+      - The observed patterns are not solely a short-lived novelty effect.
+    falsifiers:
+      - Comparable replications find decreased pace/scope/hours after AI adoption.
+      - Evidence shows intensification in this case was driven mainly by explicit quotas/targets rather than AI-enabled scope creep.
+
+  - id: "SOC-2026-012"
+    text: >-
+      The authors attribute AI-driven work intensification to three mechanisms: (1) task expansion (workers
+      take on responsibilities they previously outsourced or avoided), (2) blurred boundaries between work and
+      non-work (micro-work during breaks and off-hours), and (3) more multitasking/parallel threads, which
+      increases context switching and cognitive load even when work feels productive.
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["ranganathan-2026-ai-intensifies-it"]
+    operationalization: >-
+      Measure changes in (a) task diversity and cross-role work, (b) after-hours work events, and (c) concurrent
+      active tasks/context switches (e.g., window/app switching, message checking) alongside fatigue/burnout scales.
+    assumptions:
+      - Reduced start-friction and rapid feedback causally increase parallelism and boundary-crossing.
+    falsifiers:
+      - Telemetry shows AI adoption reduces context switching and increases true recovery time without shifting load elsewhere.
+
+  - id: "INST-2026-917"
+    text: >-
+      Establishing an organizational “AI practice” (norms and standards around AI use, including intentional
+      pauses, sequencing work to reduce fragmentation, and “human grounding” through structured human connection)
+      can mitigate AI-driven burnout risk while preserving AI-enabled throughput.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["ranganathan-2026-ai-intensifies-it"]
+    operationalization: >-
+      Run field experiments: compare teams adopting explicit pause/sequencing/grounding interventions vs controls,
+      measuring burnout, retention, defect rates, and throughput over multiple quarters.
+    assumptions:
+      - Norms meaningfully change behavior even when incentives favor responsiveness.
+    falsifiers:
+      - Controlled trials show no measurable burnout reduction (or reduced throughput without well-being gains).
+

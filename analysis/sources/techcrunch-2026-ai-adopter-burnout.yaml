@@ -1,0 +1,87 @@
+sources:
+  - id: "techcrunch-2026-ai-adopter-burnout"
+    type: "ARTICLE"
+    title: "The first signs of burnout are coming from the people who embrace AI the most"
+    author:
+      - "Connie Loizos"
+    year: 2026
+    url: "https://techcrunch.com/2026/02/09/the-first-signs-of-burnout-are-coming-from-the-people-who-embrace-ai-the-most/"
+    accessed: "2026-02-11"
+    status: "analyzed"
+    analysis_file: "analysis/sources/techcrunch-2026-ai-adopter-burnout.md"
+    reliability: 0.60
+    bias_notes: >-
+      Narrative tech journalism synthesizing multiple sources (HBR, METR, NBER, HN comment). Strong at surfacing
+      a coherent framing and representative quotes; weaker as primary evidence for causal effects or prevalence.
+    topics:
+      - ai
+      - burnout
+      - work-intensification
+      - productivity
+      - expectations
+      - responsiveness
+      - hbr
+      - metr
+      - nber
+    domains:
+      - SOC
+      - LABOR
+      - ECON
+    claims_extracted:
+      - SOC-2026-015
+      - ECON-2026-915
+      - LABOR-2026-024
+
+claims:
+  - id: "SOC-2026-015"
+    text: >-
+      When AI lowers the friction of doing tasks, workers’ task lists and work scope can expand to fill the time
+      freed (and then exceed it), creating workload creep and burnout risk even absent explicit new targets.
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["techcrunch-2026-ai-adopter-burnout"]
+    operationalization: >-
+      Track per-worker task counts, cross-role task acquisition, and after-hours micro-work before/after AI adoption;
+      test whether “time saved” correlates with “scope added” and burnout scales.
+    assumptions:
+      - Time saved is not fully reinvested into recovery by default.
+    falsifiers:
+      - Most organizations show reduced scope and increased recovery after AI adoption.
+
+  - id: "ECON-2026-915"
+    text: >-
+      In NBER Working Paper 33777 on AI chatbots in Denmark, occupation-wide surveys show modest gains
+      (about ~3% time savings for the typical user) and linked administrative labor records show null net effects
+      on earnings and recorded hours (ruling out effects larger than ~2% two years after).
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E3"
+    credence: 0.80
+    source_ids: ["techcrunch-2026-ai-adopter-burnout"]
+    operationalization: >-
+      Reproduce the paper’s survey-to-admin linkage and difference-in-differences estimates; verify time-savings
+      construction and confidence intervals on earnings/hours outcomes.
+    assumptions:
+      - Survey responses are representative and link cleanly to admin records.
+    falsifiers:
+      - Paper revisions materially change time-savings estimates or find significant earnings/hours effects.
+
+  - id: "LABOR-2026-024"
+    text: >-
+      AI-driven burnout risk can increase even when AI produces real augmentation gains, because organizational
+      expectations for speed and responsiveness can rise, making work harder to step away from.
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["techcrunch-2026-ai-adopter-burnout"]
+    operationalization: >-
+      Measure changes in response-time expectations (SLA norms, message latency pressure), boundary violations
+      (after-hours messages), and burnout outcomes before/after AI adoption controlling for workload volume.
+    assumptions:
+      - Expectation shifts are measurable and precede burnout changes.
+    falsifiers:
+      - AI adoption correlates with lower responsiveness pressure and reduced burnout in comparable settings.
+

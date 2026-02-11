@@ -1,0 +1,82 @@
+sources:
+  - id: "aakashgupta-2026-ai-dopamine-loop-thread"
+    type: "SOCIAL"
+    title: "Thread: AI prompting as a dopamine loop (variable-ratio reinforcement)"
+    author:
+      - "@aakashgupta"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2019945285871653226.html"
+    accessed: "2026-02-11"
+    status: "analyzed"
+    analysis_file: "analysis/sources/aakashgupta-2026-ai-dopamine-loop-thread.md"
+    reliability: 0.35
+    bias_notes: >-
+      Social-media theorizing with confident quantifiers (“10–15% of the population”) and analogies to gambling
+      reinforcement. Useful as a hypothesis generator and framing, not as evidence for prevalence or effect sizes.
+    topics:
+      - ai
+      - burnout
+      - dopamine
+      - reinforcement
+      - flow
+      - overwork
+      - context-switching
+    domains:
+      - SOC
+    claims_extracted:
+      - SOC-2026-018
+      - SOC-2026-019
+      - SOC-2026-020
+
+claims:
+  - id: "SOC-2026-018"
+    text: >-
+      Rapid AI feedback can create a powerful reinforcement loop (analogized to variable-ratio reinforcement),
+      making long work sessions feel effortless or “fun” while increasing total time spent.
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["aakashgupta-2026-ai-dopamine-loop-thread"]
+    operationalization: >-
+      Measure AI interaction latency/reward frequency and relate to persistence, break-taking, and self-reported
+      compulsion/overwork across cohorts.
+    assumptions:
+      - “Reward” can be operationalized (useful output; perceived progress).
+    falsifiers:
+      - Controlled studies show AI feedback reduces persistence or has no effect on overwork measures.
+
+  - id: "SOC-2026-019"
+    text: >-
+      AI tools can reduce natural stopping points in knowledge work (less waiting/blocking), shifting the bottleneck
+      from execution to idea generation and making work harder to step away from (“one prompt away”).
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["aakashgupta-2026-ai-dopamine-loop-thread"]
+    operationalization: >-
+      Compare before/after AI adoption on measured break frequency, after-hours micro-work, and task “open thread”
+      counts; test whether “waiting time” decreases and stopping points erode.
+    assumptions:
+      - Stopping points can be proxied by breaks, task completion boundaries, and after-hours continuation.
+    falsifiers:
+      - Telemetry shows more and clearer stopping points (more recovery) after AI adoption.
+
+  - id: "SOC-2026-020"
+    text: >-
+      Only a small minority of people (on the order of 10–15%) will thrive under high-frequency AI feedback loops,
+      while most will find them overwhelming, shaping value capture and displacement.
+    type: "[S]"
+    domain: "SOC"
+    evidence_level: "E6"
+    credence: 0.15
+    source_ids: ["aakashgupta-2026-ai-dopamine-loop-thread"]
+    operationalization: >-
+      Measure adoption and performance outcomes by stable traits (novelty seeking, conscientiousness, multitasking
+      tolerance) across large cohorts; test for bimodality and estimate fractions who benefit vs are overwhelmed.
+    assumptions:
+      - Trait measures are stable and predictive of tool experience.
+    falsifiers:
+      - Large cohort data shows benefits are broadly distributed without a strong 10–15% concentration.
+

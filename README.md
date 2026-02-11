@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 595 |
-| **Sources** | 145 |
+| **Claims** | 621 |
+| **Sources** | 155 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 36 |
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-11 | [AI-driven burnout, dark flow, and work intensification (2025–2026)](analysis/syntheses/ai-driven-burnout-dark-flow-work-intensification-synthesis.md) | `[DRAFT]` | Cross-source synthesis: HBR intensification mechanisms + METR miscalibration + NBER modest time savings/null hours; “dark flow” and expectation-creep model |
 | 2026-02-09 | [Software factories, dark factories, and compounding teams (harness vs control plane)](analysis/syntheses/software-factory-dark-factory-harness-control-plane-synthesis.md) | `[DRAFT]` | Cross-source synthesis: “software factory” doctrine + dark-factory levels + compounding teams; separates correctness plane (harness/holdouts/DTU) from control plane (orchestration/memory/gates) |
 | 2026-02-07 | [Superlinear (paper + repo + model release)](analysis/syntheses/superlinear-multi-step-attention-release-synthesis.md) | `[DRAFT]` | Cross-source audit: code+weights consistency checks (VRAM/KV math); throughput/quality unverified; security/license/patent risks flagged |
 | 2026-02-07 | [Semantica vs Reality Check](analysis/syntheses/semantica-vs-realitycheck-synthesis.md) | `[DRAFT]` | Cross-project comparison: Semantica semantic/KG stack vs Reality Check claim/provenance ledger; integration guidance |
@@ -56,6 +57,15 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-11 | [HBR: AI doesn’t reduce work, it intensifies it](analysis/sources/ranganathan-2026-ai-intensifies-it.md) | `[REVIEWED]` | Field study at ~200-person tech company: task expansion, blurred boundaries, multitasking; proposes “AI practice” norms |
+| 2026-02-11 | [Simon Willison: AI intensifies work](analysis/sources/willison-2026-ai-intensifies-work.md) | `[REVIEWED]` | Practitioner reflection: “exhausting productivity,” rapid depletion, and “one more prompt” sleep-disruption anecdotes |
+| 2026-02-11 | [TechCrunch: early signs of burnout among AI embracers](analysis/sources/techcrunch-2026-ai-adopter-burnout.md) | `[REVIEWED]` | Journalism synthesis: “burnout machine” framing; highlights rebound/expectation creep; cites HBR/METR/NBER |
+| 2026-02-11 | [METR: AI impact on experienced OSS dev productivity](analysis/sources/metr-2025-ai-experienced-os-dev-productivity.md) | `[REVIEWED]` | RCT-like study: AI allowed → ~19% slower on real OSS issues; large perception vs reality gap |
+| 2026-02-11 | [NBER WP 33777: LLMs, small labor market effects](analysis/sources/humlum-2025-llms-small-labor-market-effects.md) | `[REVIEWED]` | Denmark surveys+admin records: modest time savings (~3% typical) + null earnings/hours effects; task reallocation/new tasks |
+| 2026-02-11 | [fast.ai: “dark flow” and vibe coding](analysis/sources/thomas-2026-dark-flow.md) | `[REVIEWED]` | “Dark flow” lens: rapid feedback + delayed-quality signals; miscalibration and maintainability risk hypotheses |
+| 2026-02-11 | [HN discussion: AI intensifies work (46945755)](analysis/sources/hn-2026-ai-intensifies-it-46945755.md) | `[REVIEWED]` | Comment-thread snapshot: Jevons-paradox framing, task expansion/review burden anecdotes, and automation-transition debate |
+| 2026-02-11 | [Thread: AI prompting as dopamine loop (@aakashgupta)](analysis/sources/aakashgupta-2026-ai-dopamine-loop-thread.md) | `[REVIEWED]` | Social framing: reinforcement loop and “one prompt away” stopping-point erosion (speculative quantifiers flagged) |
+| 2026-02-11 | [Thread: “automated coding, not software engineering” (@math_rachel)](analysis/sources/mathrachel-2026-automated-coding-not-se-thread.md) | `[REVIEWED]` | Social hypothesis: agents generate code but not modular abstractions; possible downstream maintenance/burnout burden |
 | 2026-02-09 | [StrongDM “Software Factory” (main essay)](analysis/sources/strongdm-2026-software-factory.md) | `[REVIEWED]` | Vendor manifesto: non-interactive “software factory” posture; scenarios as governance; DTU (behavioral twins) concept; token-fuel heuristic |
 | 2026-02-09 | [StrongDM “Software Factory” (principles)](analysis/sources/strongdm-2026-software-factory-principles.md) | `[REVIEWED]` | Doctrine: seed→validation harness→feedback loop until holdout scenarios pass stably; “frontier engineering” as representation work |
 | 2026-02-09 | [Shapiro: five levels to the “Dark Factory”](analysis/sources/shapiro-2026-five-levels-dark-factory.md) | `[REVIEWED]` | Heuristic maturity model (0–5) for AI coding; role shift coder→reviewer→PM/spec; “technical deflation” framing |
@@ -143,15 +153,15 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 206 |
-| LABOR | Labor & Employment | 29 |
-| ECON | Economics & Markets | 48 |
+| TECH | Technology & AI | 209 |
+| LABOR | Labor & Employment | 36 |
+| ECON | Economics & Markets | 50 |
 | GOV | Governance & Policy | 87 |
-| SOC | Social Dynamics | 12 |
-| TRANS | Transition Dynamics | 29 |
+| SOC | Social Dynamics | 23 |
+| TRANS | Transition Dynamics | 30 |
 | RESOURCE | Resource Constraints | 15 |
 | GEO | Geopolitics | 30 |
-| INST | Institutions & Organizations | 49 |
+| INST | Institutions & Organizations | 51 |
 | RISK | Risk Assessment | 30 |
 | META | Framework & Methodology | 60 |
 
@@ -263,4 +273,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-02-09*
+*Last updated: 2026-02-11*

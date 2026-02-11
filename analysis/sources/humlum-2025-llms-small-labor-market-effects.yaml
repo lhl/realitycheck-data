@@ -1,0 +1,88 @@
+sources:
+  - id: "humlum-2025-llms-small-labor-market-effects"
+    type: "PAPER"
+    title: "Large Language Models, Small Labor Market Effects"
+    author:
+      - "Anders Humlum"
+      - "Emilie Vestergaard"
+    year: 2025
+    url: "https://www.nber.org/system/files/working_papers/w33777/w33777.pdf"
+    accessed: "2026-02-11"
+    status: "analyzed"
+    analysis_file: "analysis/sources/humlum-2025-llms-small-labor-market-effects.md"
+    reliability: 0.80
+    bias_notes: >-
+      NBER working paper using survey-to-admin record linkage in Denmark. Strong on data access and identification for
+      hours/earnings outcomes; weaker on capturing subjective fatigue, boundary blur, and informal/unrecorded work;
+      pre-publication/peer-review status.
+    topics:
+      - labor-market
+      - ai
+      - chatbots
+      - adoption
+      - time-savings
+      - hours
+      - earnings
+      - denmark
+    domains:
+      - ECON
+      - LABOR
+    claims_extracted:
+      - ECON-2025-004
+      - LABOR-2025-018
+      - LABOR-2025-019
+
+claims:
+  - id: "ECON-2025-004"
+    text: >-
+      In NBER Working Paper 33777, occupation-wide survey data imply modest average benefits from AI chatbots:
+      about ~3% time savings for the typical user.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E3"
+    credence: 0.80
+    source_ids: ["humlum-2025-llms-small-labor-market-effects"]
+    operationalization: >-
+      Recompute the paper’s time-savings estimates from survey responses (usage frequency × time saved per usage day)
+      and express as a percent of total work hours.
+    assumptions:
+      - Survey responses on time saved are truthful and consistently interpreted.
+    falsifiers:
+      - Paper revisions or replication show materially different average time savings under the same coding.
+
+  - id: "LABOR-2025-018"
+    text: >-
+      In NBER Working Paper 33777, difference-in-differences estimates linking chatbot adoption surveys to Danish
+      administrative labor records find precise null effects on earnings and recorded hours at worker and workplace
+      levels, ruling out effects larger than about 2% two years after.
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E3"
+    credence: 0.85
+    source_ids: ["humlum-2025-llms-small-labor-market-effects"]
+    operationalization: >-
+      Replicate the DiD specifications using the same admin outcomes (earnings, recorded hours) and adoption/initiative
+      measures; verify confidence intervals and robustness checks.
+    assumptions:
+      - Administrative recorded hours and earnings capture meaningful net labor-market outcomes.
+    falsifiers:
+      - Replication finds significant adoption-linked changes in earnings/hours in the same data/time window.
+
+  - id: "LABOR-2025-019"
+    text: >-
+      In NBER Working Paper 33777, chatbot adoption is associated with work reallocation: workers often reallocate
+      saved time to other tasks rather than reducing total work, and employer chatbot initiatives predict the emergence
+      of new AI-related job tasks.
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E3"
+    credence: 0.70
+    source_ids: ["humlum-2025-llms-small-labor-market-effects"]
+    operationalization: >-
+      Use survey modules on task reallocation and new tasks; test whether employer encouragement predicts new task
+      incidence after controlling for occupation and firm characteristics.
+    assumptions:
+      - Survey task categories correspond to meaningful changes in work composition.
+    falsifiers:
+      - Evidence shows time savings primarily cash out as reduced hours, and employer initiatives do not predict new tasks.
+

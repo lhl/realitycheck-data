@@ -1,0 +1,90 @@
+sources:
+  - id: "metr-2025-ai-experienced-os-dev-productivity"
+    type: "ARTICLE"
+    title: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+    author:
+      - "METR"
+    year: 2025
+    url: "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"
+    accessed: "2026-02-11"
+    status: "analyzed"
+    analysis_file: "analysis/sources/metr-2025-ai-experienced-os-dev-productivity.md"
+    reliability: 0.75
+    bias_notes: >-
+      Research-org blog post describing an RCT-like design in a narrow but realistic setting (experienced contributors
+      working on familiar large OSS repos). Strong on methodology transparency and robustness checks; limited
+      generalization across roles, codebases, and tool maturity.
+    topics:
+      - ai
+      - productivity
+      - software-engineering
+      - open-source
+      - experiment
+      - miscalibration
+      - cursor
+      - claude
+    domains:
+      - LABOR
+      - SOC
+      - TECH
+    claims_extracted:
+      - LABOR-2025-017
+      - SOC-2025-003
+      - TECH-2025-068
+
+claims:
+  - id: "LABOR-2025-017"
+    text: >-
+      In METR’s randomized “AI allowed vs disallowed” study of 16 experienced open-source developers completing
+      246 real issues in large repositories they know well, allowing AI tools increased completion time by about
+      19% on average.
+    type: "[F]"
+    domain: "LABOR"
+    evidence_level: "E3"
+    credence: 0.85
+    source_ids: ["metr-2025-ai-experienced-os-dev-productivity"]
+    operationalization: >-
+      Replicate the issue-level randomization in similar high-quality OSS repos; use independent time instrumentation
+      (screen recording + logs) and compare completion times across AI allowed/disallowed conditions.
+    assumptions:
+      - Self-reported times are not systematically biased by condition.
+      - The randomized assignment is implemented faithfully.
+    falsifiers:
+      - Reanalysis/replication finds no slowdown (or a speedup) under comparable protocols and tools.
+
+  - id: "SOC-2025-003"
+    text: >-
+      In METR’s study, developers substantially overestimated AI’s productivity impact: they expected AI would speed
+      them up by about 24%, and even after completing tasks they still believed AI sped them up by about 20%, despite
+      the measured slowdown.
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E3"
+    credence: 0.85
+    source_ids: ["metr-2025-ai-experienced-os-dev-productivity"]
+    operationalization: >-
+      Collect pre-task and post-task forecasts of AI impact alongside measured times; quantify calibration error and
+      test whether calibration improves with experience.
+    assumptions:
+      - Forecast elicitation does not itself change behavior materially.
+    falsifiers:
+      - Replications show forecast and post-task beliefs track measured time differences closely.
+
+  - id: "TECH-2025-068"
+    text: >-
+      METR’s “AI allowed vs disallowed” experiment targets a realistic, context-heavy setting (experienced developers
+      working on familiar, high-quality open-source repositories), but it is not representative of all software
+      development and may be less applicable to settings using heavy multi-trajectory agent scaffolds.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.80
+    source_ids: ["metr-2025-ai-experienced-os-dev-productivity"]
+    operationalization: >-
+      Characterize common AI-assisted development settings (repo familiarity, quality bar, scaffolding) and test whether
+      the sign/magnitude of AI impact differs by setting.
+    assumptions:
+      - Development settings can be meaningfully clustered by these dimensions.
+    falsifiers:
+      - Evidence shows the METR setting is broadly representative and scaffolding differences do not change outcomes.
+

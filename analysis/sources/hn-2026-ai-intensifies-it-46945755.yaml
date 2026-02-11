@@ -1,0 +1,85 @@
+sources:
+  - id: "hn-2026-ai-intensifies-it-46945755"
+    type: "SOCIAL"
+    title: "AI Doesn't Reduce Work–It Intensifies It (HN discussion)"
+    author:
+      - "Hacker News"
+    year: 2026
+    url: "https://news.ycombinator.com/item?id=46945755"
+    accessed: "2026-02-11"
+    status: "analyzed"
+    analysis_file: "analysis/sources/hn-2026-ai-intensifies-it-46945755.md"
+    reliability: 0.40
+    bias_notes: >-
+      Comment-thread synthesis of mixed anecdotes and theories. Useful for surfacing lived experiences and alternative
+      framings (Jevons paradox, transitional overload, heterogeneity), but low as evidence for prevalence or causal claims.
+    topics:
+      - ai
+      - burnout
+      - work-intensification
+      - jevons-paradox
+      - expectations
+      - coordination
+      - hbr
+    domains:
+      - SOC
+      - LABOR
+      - TRANS
+    claims_extracted:
+      - SOC-2026-021
+      - LABOR-2026-026
+      - TRANS-2026-020
+
+claims:
+  - id: "SOC-2026-021"
+    text: >-
+      A common interpretation among participants in the HN discussion of “AI Doesn’t Reduce Work—It Intensifies It”
+      is a Jevons-style rebound: AI efficiency gains raise expectations and expand workload rather than reducing work.
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["hn-2026-ai-intensifies-it-46945755"]
+    operationalization: >-
+      Survey a representative sample of AI adopters about expectation changes (targets, responsiveness norms, scope)
+      and test whether perceived/actual workload changes correlate with AI adoption intensity.
+    assumptions:
+      - HN-commenter narratives reflect a broader dynamic rather than niche culture.
+    falsifiers:
+      - Representative data shows most orgs convert gains into reduced workload and recovery, not expanded expectations.
+
+  - id: "LABOR-2026-026"
+    text: >-
+      HN commenters report that AI enables task expansion across roles (e.g., QA/support producing AI-assisted fixes),
+      which can shift burden downstream to engineers for review, cleanup, and integration, increasing coordination load.
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["hn-2026-ai-intensifies-it-46945755"]
+    operationalization: >-
+      Measure cross-role code contributions and review time before/after AI adoption; quantify whether net review
+      burden rises or falls (and for whom).
+    assumptions:
+      - Review/cleanup time is a key bottleneck and measurable from repo tooling and time tracking.
+    falsifiers:
+      - Data shows cross-role AI-assisted contributions reduce net review/maintenance burden.
+
+  - id: "TRANS-2026-020"
+    text: >-
+      A minority view expressed in the HN thread is that AI-driven work intensification is transitional: as AI replaces
+      human labor, remaining humans are temporarily overloaded while trying to stay employed, but the steady state is
+      reduced human labor rather than intensified human work.
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["hn-2026-ai-intensifies-it-46945755"]
+    operationalization: >-
+      Track role changes, layoffs, and workload measures across firms over multiple years; test whether initial
+      overload phases predict later substitution and reduced human labor demand.
+    assumptions:
+      - Overload is a transitional marker of substitution rather than a stable regime.
+    falsifiers:
+      - Long-run data shows stable adoption with no displacement and no systematic overload phase.
+
