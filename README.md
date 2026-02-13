@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 628 |
-| **Sources** | 157 |
+| **Claims** | 642 |
+| **Sources** | 161 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 36 |
 
@@ -57,6 +57,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-13 | [Bostrom: Optimal Timing for Superintelligence](analysis/sources/bostrom-2026-optimal-timing-superintelligence.md) | `[REVIEWED]` | Working paper: person-affecting “optimal timing” models often imply modest delays; suggests “swift to harbor, slow to berth” (reach capability quickly, consider brief post-capability pause) |
 | 2026-02-11 | [Reality Check framework: dev velocity + codebase size](analysis/sources/lhl-2026-realitycheck-dev-velocity.md) | `[REVIEWED]` | Repo-churn + `scc`/COCOMO snapshot at `v0.3.0`; upper-tail feasibility baseline for AI-assisted dev velocity (non-causal) |
 | 2026-02-11 | [Yegge: The AI Vampire](analysis/sources/yegge-2026-ai-vampire.md) | `[REVIEWED]` | Medium post framing AI burnout as value-capture/extraction; warns about outlier narratives; proposes a shorter intense workday |
 | 2026-02-11 | [HBR: AI doesn’t reduce work, it intensifies it](analysis/sources/ranganathan-2026-ai-intensifies-it.md) | `[REVIEWED]` | Field study at ~200-person tech company: task expansion, blurred boundaries, multitasking; proposes “AI practice” norms |
@@ -159,12 +160,12 @@ See [claims/README.md](claims/README.md) for full statistics.
 | LABOR | Labor & Employment | 41 |
 | ECON | Economics & Markets | 51 |
 | GOV | Governance & Policy | 87 |
-| SOC | Social Dynamics | 23 |
-| TRANS | Transition Dynamics | 30 |
+| SOC | Social Dynamics | 25 |
+| TRANS | Transition Dynamics | 36 |
 | RESOURCE | Resource Constraints | 15 |
 | GEO | Geopolitics | 30 |
 | INST | Institutions & Organizations | 52 |
-| RISK | Risk Assessment | 30 |
+| RISK | Risk Assessment | 36 |
 | META | Framework & Methodology | 60 |
 
 ---
@@ -275,4 +276,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-02-11*
+*Last updated: 2026-02-13*

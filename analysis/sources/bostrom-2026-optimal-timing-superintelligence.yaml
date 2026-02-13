@@ -1,0 +1,326 @@
+sources:
+  - id: "bostrom-2026-optimal-timing-superintelligence"
+    type: "PAPER"
+    title: "Optimal Timing for Superintelligence: Mundane Considerations for Existing People"
+    author:
+      - "Nick Bostrom"
+    year: 2026
+    url: "https://nickbostrom.com/optimal.pdf"
+    accessed: "2026-02-13"
+    status: "analyzed"
+    analysis_file: "analysis/sources/bostrom-2026-optimal-timing-superintelligence.md"
+    reliability: 0.60
+    bias_notes: >-
+      Working paper explicitly scoped to a person-affecting perspective (existing people) and “mundane”
+      considerations, using stylized decision-theoretic models to trade off baseline mortality against AI
+      catastrophe risk. Conclusions depend heavily on uncertain parameters (P(doom), safety progress shape,
+      feasibility and second-best effects of pauses) and abstract away from strategic actor dynamics.
+    topics:
+      - superintelligence
+      - agi
+      - ai-timelines
+      - ai-pause
+      - ai-safety
+      - existential-risk
+      - person-affecting-ethics
+      - temporal-discounting
+      - qaly
+      - prioritarianism
+      - safety-testing
+      - policy-design
+    domains:
+      - SOC
+      - TRANS
+      - RISK
+    claims_extracted:
+      - SOC-2026-022
+      - SOC-2026-023
+      - TRANS-2026-021
+      - TRANS-2026-022
+      - TRANS-2026-023
+      - TRANS-2026-024
+      - TRANS-2026-025
+      - TRANS-2026-026
+      - RISK-2026-928
+      - RISK-2026-929
+      - RISK-2026-930
+      - RISK-2026-931
+      - RISK-2026-932
+      - RISK-2026-933
+
+claims:
+  - id: "SOC-2026-022"
+    text: >-
+      Global life expectancy at birth is roughly 73 years and the world median age is a little over 30; using
+      ~40 years as a simplified average remaining life expectancy for the current global population is a plausible
+      approximation for timing calculations.
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Check UN/UN WPP (or equivalent official statistics) for global life expectancy at birth and global median
+      age for ~2024; evaluate whether the implied remaining-life-expectancy approximation is directionally
+      reasonable for the current population age structure.
+    assumptions:
+      - Using median age as a proxy for “average person alive today” is acceptable for a simplified model.
+      - Life expectancy at birth is a reasonable anchor for back-of-envelope remaining-life calculations.
+    falsifiers:
+      - Official statistics show global life expectancy or median age materially different from the cited ranges.
+
+  - id: "SOC-2026-023"
+    text: >-
+      In developed countries, annual mortality rates for 20–25-year-olds can be on the order of ~0.05–0.08% per
+      year; if mortality were held constant at ~0.0007 per year throughout life, expected remaining lifespan
+      would be approximately 1/0.0007 ≈ 1,400 years.
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E2"
+    credence: 0.70
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Use developed-country life tables to estimate annual death probability (qx) for ages ~20–25 (optionally
+      stratified by sex and health status); confirm the 1/hazard approximation used for constant-hazard expected
+      lifespan.
+    assumptions:
+      - “Healthy” 20–25-year-olds have death probabilities similar to the lower end of developed-country life
+        tables (e.g., female/general-population rates).
+      - Treating the hazard as constant is a simplifying approximation for illustrative modeling.
+    falsifiers:
+      - Life tables show substantially higher/lower death probabilities for the relevant ages in developed
+        countries, or the hazard-to-life-expectancy mapping is misapplied.
+
+  - id: "RISK-2026-928"
+    text: >-
+      In a simple go/no-go model where existing people have ~40 years remaining life expectancy without
+      superintelligence and ~1,400 years with successfully aligned superintelligence, launching immediately
+      increases expected remaining life expectancy iff the extinction probability at launch is below ~97%.
+    type: "[T]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.85
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Reproduce the model derivation with the stated inputs (m0, m1, q0, q1) and verify the cutoff probability;
+      vary assumptions (life-extension magnitude, quality-of-life weights) to test sensitivity.
+    assumptions:
+      - “Failure” corresponds to immediate death (or equivalently to losing all remaining lifespan value).
+      - The post-success mortality hazard is approximately constant at the chosen low level.
+    falsifiers:
+      - Independent reproduction finds the stated cutoff does not follow from the stated assumptions.
+
+  - id: "RISK-2026-929"
+    text: >-
+      From a person-affecting perspective, the status quo is not a safe baseline because it includes high ongoing
+      mortality and other background risks; thus developing superintelligence is better analogized to risky
+      surgery for a fatal condition than to playing Russian roulette from a safe baseline.
+    type: "[T]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Formalize the baseline risk/benefit comparison for a representative existing person (mortality + background
+      catastrophic risks vs transition risks); test whether the analogy aligns with the implied utility model and
+      decision recommendations under plausible inputs.
+    assumptions:
+      - Existing-person welfare is reasonably proxied by (discounted, quality-adjusted) expected remaining life.
+    falsifiers:
+      - A better-calibrated decision model shows the surgery analogy systematically misleads relative to the
+        Russian-roulette framing in the relevant policy regime.
+
+  - id: "RISK-2026-930"
+    text: >-
+      Under person-affecting models that incorporate safety progress, discounting, quality-of-life differentials,
+      and QALY concavity, there exist broad parameter settings where accepting even high probabilities of
+      catastrophic AI failure is optimal relative to delaying or forgoing superintelligence.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Reproduce the paper’s parameter sweeps; define “broad” parameter regimes and test robustness to
+      alternative functional forms (risk decline over time, hazard changes, benefit ramp-up delays).
+    assumptions:
+      - Parameter ranges explored are within the plausible range for real-world decisions.
+      - Benefits from success are realized on timescales relevant to existing people.
+    falsifiers:
+      - Under more realistic benefit delays or risk dynamics, high-catastrophe-probability optima disappear for
+        most plausible parameterizations.
+
+  - id: "RISK-2026-931"
+    text: >-
+      Adding diminishing marginal utility (risk aversion/concavity) over quality-adjusted life years shrinks the
+      region of “launch immediately” recommendations and lowers risk-at-launch somewhat, but does not
+      radically change the paper’s qualitative conclusions about generally modest optimal delays.
+    type: "[T]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Implement CRRA (or alternative concave) utility over QALYs and compare optimal launch times/risk-at-launch
+      against the linear (risk-neutral) baseline across parameter grids.
+    assumptions:
+      - The chosen concavity parameters are representative of plausible preferences over lifespan/QALYs.
+    falsifiers:
+      - Plausible concavity parameters systematically imply very long delays or never-launch policies across most
+        parameter ranges.
+
+  - id: "RISK-2026-932"
+    text: >-
+      If intrinsic catastrophic risk is uncertain and safety tests provide information about that risk, then the
+      optimal decision is an evidence-conditional policy (launch when evidence is favorable, delay when it is
+      not), and such testing increases expected utility relative to having the same prior uncertainty but no tests.
+    type: "[T]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Model the setting as a POMDP with explicit priors and test sensitivity/specificity; compare optimal policy
+      value with and without tests holding other assumptions fixed; stress-test under alternative testing regimes.
+    assumptions:
+      - Tests are informative enough to meaningfully update posterior beliefs about catastrophe probability.
+      - Decision-makers can credibly commit to act on test outcomes.
+    falsifiers:
+      - Under realistic tests and governance constraints, evidence-conditioned policies are infeasible or do not
+        improve expected outcomes.
+
+  - id: "RISK-2026-933"
+    text: >-
+      Real-world efforts to pause or slow AI development can be net harmful via second-best effects (e.g.,
+      shifting development to less cooperative actors, militarization, selection effects, compute/algorithm
+      overhangs, ossified relinquishment), so abstract optimal-timing analyses do not straightforwardly imply
+      support for any particular pause policy.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Build strategic and institutional models of pause implementation under multipolar competition; evaluate
+      whether typical pause designs reduce overall catastrophe risk after accounting for displacement, secrecy,
+      and overhang dynamics.
+    assumptions:
+      - Second-best effects are large enough to matter relative to the direct “more time for safety” benefit.
+    falsifiers:
+      - Evidence from historical analogues or strong models indicates pauses reliably reduce net risk with minimal
+        offsetting harms.
+
+  - id: "TRANS-2026-021"
+    text: >-
+      In a timing model where waiting reduces catastrophic AI risk via safety progress but imposes ongoing
+      mortality and discounting costs, optimal delays are generally modest; very long delays appear mainly when
+      initial risk is extremely high and safety progress is neither very fast nor very slow (an intermediate range).
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Reproduce the optimal-delay surfaces over (initial risk, safety progress rate) and test alternative risk
+      decline functional forms; evaluate robustness of “intermediate range → longest delays” claim.
+    assumptions:
+      - Risk decreases smoothly with safety progress and does not have major discontinuities.
+    falsifiers:
+      - Alternative plausible models imply long optimal delays across wide parameter ranges, not only in a narrow
+        “intermediate progress” band.
+
+  - id: "TRANS-2026-022"
+    text: >-
+      Adding temporal discounting tends to push optimal launch times later when pre/post-AGI quality is similar,
+      but can push optimal launch times earlier when post-AGI life is sufficiently higher quality (because
+      discounting penalizes delaying the onset of that higher-quality existence).
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Implement discounting plus quality weights and compute optimal timing across a grid of discount rates and
+      quality ratios; identify where the comparative statics flip sign.
+    assumptions:
+      - Discounting is exponential and represents “pure time preference” (mortality handled separately).
+    falsifiers:
+      - Under reasonable discounting/quality-weight parameters, the sign flip does not occur.
+
+  - id: "TRANS-2026-023"
+    text: >-
+      Quality-of-life uplift after AGI expands the region where immediate launch is optimal and shortens optimal
+      delays, but this effect saturates: because the “launch-asap” risk bar is bounded above, arbitrarily large
+      quality improvements cannot make immediate launch optimal for all initial-risk/safety-progress settings.
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.70
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Analyze the model’s decision boundary as a function of the quality ratio q1/q0 and show it approaches a
+      limit; reproduce the saturation behavior numerically.
+    assumptions:
+      - Model structure implies an upper bound on the launch-asap risk threshold.
+    falsifiers:
+      - Under correct analysis of the stated model, increasing q1/q0 can push all cases to immediate launch.
+
+  - id: "TRANS-2026-024"
+    text: >-
+      If safety progress accelerates once an AGI-capable artifact exists (“safety windfall”) and then faces
+      diminishing returns, optimal timing often involves reaching AGI capability quickly (Phase 1) and then
+      pausing for a short but non-zero period prior to full deployment (Phase 2), typically on the order of months
+      to a small number of years.
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Specify plausible subphase rates (2a–2d) and compute optimal Phase-2 pause durations; evaluate sensitivity
+      to alternative “windfall” assumptions and to governance feasibility constraints.
+    assumptions:
+      - Post-capability safety progress is front-loaded and meaningfully faster than pre-capability progress.
+    falsifiers:
+      - Empirical/organizational evidence indicates post-capability safety progress is not front-loaded, or that
+        pausing increases net risk via displacement/overhang.
+
+  - id: "TRANS-2026-025"
+    text: >-
+      In joint optimization over time-to-capability (Phase 1) and post-capability pause time (Phase 2), it is often
+      optimal to accelerate Phase 1 relative to the default scenario and then use a short Phase-2 pause to gain
+      a large share of the available safety improvements; small changes to Phase 2 can matter more than similarly
+      small changes to Phase 1.
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Compute optimal (t1, t2) for scenario grids with separate levers; compare marginal value of time in Phase 1
+      vs early Phase 2 under windfall assumptions.
+    assumptions:
+      - Phase-2 early time yields disproportionately high safety gains per unit time.
+    falsifiers:
+      - Joint optimization under plausible assumptions does not favor acceleration + short pause, or Phase-1 time
+        is consistently more valuable than Phase-2 time.
+
+  - id: "TRANS-2026-026"
+    text: >-
+      Because different demographics have different prudential interests (e.g., higher near-term mortality for the
+      old/sick and worse baseline welfare for the poor), applying prioritarian weighting in a person-affecting
+      social welfare function tends to shift the optimal timeline toward shorter delays to superintelligence.
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["bostrom-2026-optimal-timing-superintelligence"]
+    operationalization: >-
+      Specify demographic mortality/QoL distributions and a prioritarian social welfare function; compute the
+      socially optimal timing and compare to the neutral-utilitarian person-affecting baseline.
+    assumptions:
+      - Worse-off groups systematically benefit more from earlier transition (higher mortality/low QoL now).
+    falsifiers:
+      - With plausible demographics and prioritarian parameters, the weighted optimum instead implies longer
+        delays than the neutral baseline.
+

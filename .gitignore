@@ -19,5 +19,9 @@ Thumbs.db
 *.tmp
 *.temp
 
+# Reality Check (local claim ticket reservations)
+.claim_id_tickets.json
+.claim_id_tickets.lock
+
 # Local development
 .env.local
