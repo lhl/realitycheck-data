@@ -1,0 +1,135 @@
+sources:
+  - id: "aifutures-2026-ai-2027-2025-predictions-grading-sheet"
+    type: "DATA"
+    title: "AI 2027 “2025 Predictions” grading spreadsheet (CSV capture)"
+    author:
+      - "Eli Lifland"
+      - "Daniel Kokotajlo"
+    year: 2026
+    url: "https://docs.google.com/spreadsheets/d/1Ncol1SYIeLhGKdOUHKSYPxCTjkUwQVxkIbp393hveyA/edit?gid=145629229"
+    accessed: "2026-02-13"
+    status: "analyzed"
+    analysis_file: "analysis/sources/aifutures-2026-ai-2027-2025-predictions-grading-sheet.md"
+    reliability: 0.65
+    bias_notes: >-
+      Self-produced scoring sheet for AI 2027. Strength: row-level disclosure of targets, “actual” values,
+      and pace multipliers. Risks: discretionary choices about cutoffs, “SOTA” definitions, and how to estimate
+      private quantities (compute, revenue). Independent verification requires checking each cited reference.
+    topics:
+      - ai-forecasting
+      - ai-2027
+      - grading
+      - scorecard
+      - benchmarks
+      - compute
+      - revenue
+      - valuation
+    domains:
+      - META
+      - TECH
+      - ECON
+    claims_extracted:
+      - META-2026-124
+      - TECH-2025-072
+      - TECH-2025-073
+      - TECH-2025-074
+      - ECON-2026-916
+      - ECON-2026-917
+
+claims:
+  - id: "META-2026-124"
+    text: >-
+      The captured AI Futures Project grading CSV contains aggregation rows reporting: (a) “Capabilities indicators only”
+      = 0.58 (mean-of-means) and 0.66 (median-of-medians), and (b) “All (individual values …)” = 0.75 (mean) and 0.84 (median).
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["aifutures-2026-ai-2027-2025-predictions-grading-sheet"]
+    operationalization: >-
+      Open the captured CSV and confirm the aggregation rows and values under the “Aggregations” section.
+    assumptions:
+      - The captured CSV is a faithful export of the referenced Google Sheet at capture time.
+    falsifiers:
+      - The captured CSV does not contain the referenced aggregation rows/values.
+
+  - id: "TECH-2025-072"
+    text: >-
+      In the AI Futures Project grading spreadsheet, SWE-bench Verified is scored at pace 0.18×, using predicted 0.85
+      (mid-2025) vs “actual SOTA” 0.745 (Aug 2025).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["aifutures-2026-ai-2027-2025-predictions-grading-sheet"]
+    operationalization: >-
+      Locate the SWE-bench Verified row in the captured CSV and confirm the pace multiplier and row inputs.
+    assumptions:
+      - The row correctly reflects the benchmark variant and date cutoffs.
+    falsifiers:
+      - Row values differ in the captured CSV, or the cited benchmark source contradicts the row’s resolution value/date.
+
+  - id: "TECH-2025-073"
+    text: >-
+      In the AI Futures Project grading spreadsheet, OSWorld-Verified is scored at pace 0.84×, using predicted 0.65
+      (mid-2025) vs “actual SOTA” 0.608 (Aug 2025).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["aifutures-2026-ai-2027-2025-predictions-grading-sheet"]
+    operationalization: >-
+      Locate the OSWorld-Verified row in the captured CSV and confirm the pace multiplier and row inputs.
+    assumptions:
+      - The row correctly reflects OSWorld-Verified and its resolution value by date.
+    falsifiers:
+      - Row values differ in the captured CSV, or cited OSWorld sources contradict the row’s resolution value/date.
+
+  - id: "TECH-2025-074"
+    text: >-
+      In the AI Futures Project grading spreadsheet, METR’s 80% coding time horizon is scored at pace 1.04× vs a “model
+      trajectory” and 0.66× vs an “erroneous graph trajectory.”
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["aifutures-2026-ai-2027-2025-predictions-grading-sheet"]
+    operationalization: >-
+      Locate the two coding time-horizon rows in the captured CSV and confirm the pace multipliers.
+    assumptions:
+      - The methodology adjustment (TH1.0→TH1.1) is applied consistently as described in the row notes.
+    falsifiers:
+      - Row values differ in the captured CSV, or the referenced METR sources contradict the inputs.
+
+  - id: "ECON-2026-916"
+    text: >-
+      In the AI Futures Project grading spreadsheet, leading-company annualized revenue is scored at pace 1.16×, using
+      “actual” $20B annualized revenue for OpenAI at end of 2025.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["aifutures-2026-ai-2027-2025-predictions-grading-sheet"]
+    operationalization: >-
+      Locate the “OpenBrain annualized revenue” row in the captured CSV and confirm the pace and resolution value.
+    assumptions:
+      - OpenAI revenue estimates are accurate and comparable to the model’s proxy definition.
+    falsifiers:
+      - Row values differ in the captured CSV, or referenced sources materially contradict the claimed revenue.
+
+  - id: "ECON-2026-917"
+    text: >-
+      In the AI Futures Project grading spreadsheet, leading-company valuation is scored at pace 0.44×, using “actual”
+      $500B valuation for OpenAI as of Oct 2, 2025.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["aifutures-2026-ai-2027-2025-predictions-grading-sheet"]
+    operationalization: >-
+      Locate the “OpenBrain valuation” row in the captured CSV and confirm the pace and resolution value/date.
+    assumptions:
+      - The referenced valuation estimates are accurate and comparable to the model’s proxy definition.
+    falsifiers:
+      - Row values differ in the captured CSV, or referenced sources materially contradict the claimed valuation/date.
+

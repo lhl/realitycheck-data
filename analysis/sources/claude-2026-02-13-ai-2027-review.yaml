@@ -1,0 +1,43 @@
+sources:
+  - id: "claude-2026-02-13-ai-2027-review"
+    type: "CONVO"
+    title: "AI 2027 / AI Futures Model verification memo (Claude transcript)"
+    author:
+      - "lhl"
+      - "Claude Opus 4.6"
+    year: 2026
+    url: "https://claude.ai/chat/029258de-9666-4ee6-96eb-9c93462251be"
+    accessed: "2026-02-13"
+    status: "analyzed"
+    analysis_file: "analysis/sources/claude-2026-02-13-ai-2027-review.md"
+    reliability: 0.45
+    bias_notes: >-
+      LLM-generated synthesis; may contain incorrect external factual claims, invented sources, or overly confident comparisons.
+      Useful for surfacing candidate comparisons and objections; requires primary-source verification.
+    topics:
+      - ai-forecasting
+      - ai-2027
+      - research-memo
+      - verification
+    domains:
+      - META
+    claims_extracted:
+      - META-2026-136
+
+claims:
+  - id: "META-2026-136"
+    text: >-
+      A Claude-generated verification memo claims the AI Futures Project’s Dec 2025 update represents a ~3–5 year retreat from
+      the original AI 2027 timing, driven primarily by modeling corrections rather than new empirical evidence.
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["claude-2026-02-13-ai-2027-review"]
+    operationalization: >-
+      Compare the AI Futures Project’s Apr 2025 vs Dec 2025 stated medians and their attributed reasons for change (modeling vs evidence).
+    assumptions:
+      - The memo’s paraphrase accurately reflects the primary update’s attribution.
+    falsifiers:
+      - Primary sources attribute the shift mainly to new empirical evidence rather than modeling changes.
+

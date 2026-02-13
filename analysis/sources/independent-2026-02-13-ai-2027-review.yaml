@@ -1,0 +1,64 @@
+sources:
+  - id: "independent-2026-02-13-ai-2027-review"
+    type: "REPORT"
+    title: "AI 2027 Predictions and Primary Resources (independent scorecard)"
+    author:
+      - "lhl"
+    year: 2026
+    url: null
+    accessed: "2026-02-13"
+    status: "analyzed"
+    analysis_file: "analysis/sources/independent-2026-02-13-ai-2027-review.md"
+    reliability: 0.65
+    bias_notes: >-
+      Internal synthesis memo combining primary sources, benchmark checks, and subjective weighting. Strength: explicit pace
+      scorecard and separation of “inputs vs outputs vs autonomy.” Risks: selective metric choice, reliance on secondary benchmark
+      snapshots, and subjective aggregation/weights. Treat as hypothesis-generating synthesis, not a primary measurement source.
+    topics:
+      - ai-forecasting
+      - ai-2027
+      - scorecard
+      - pace
+      - autonomy
+      - benchmarks
+    domains:
+      - TRANS
+    claims_extracted:
+      - TRANS-2026-035
+      - TRANS-2026-036
+
+claims:
+  - id: "TRANS-2026-035"
+    text: >-
+      An internal independent scorecard memo estimates overall pace vs the original AI 2027 schedule at ~0.70× (sensitivity
+      ~0.62×–0.78×), concluding progress is behind schedule overall as of 2026-02-13.
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["independent-2026-02-13-ai-2027-review"]
+    operationalization: >-
+      Reproduce the memo’s weighted pace score using the same inputs/weights and assess sensitivity to alternative weighting and
+      updated benchmark values.
+    assumptions:
+      - The memo’s selected metrics and weights are reasonable proxies for AI 2027’s core causal levers.
+    falsifiers:
+      - Reproduction fails or yields a materially different pace estimate given the same inputs/weights.
+
+  - id: "TRANS-2026-036"
+    text: >-
+      An internal independent scorecard memo argues that by early 2026, compute/capex inputs are ahead of AI 2027 expectations,
+      benchmark outputs are mixed, and full-stack autonomy/productivity evidence lags (overall: autonomy behind).
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["independent-2026-02-13-ai-2027-review"]
+    operationalization: >-
+      Define input/output/autonomy indicators and score them against AI 2027’s dated expectations with explicit cutoffs; compare
+      to memo’s qualitative conclusion.
+    assumptions:
+      - Autonomy/productivity is the binding bottleneck for an AI 2027-style rapid takeoff path.
+    falsifiers:
+      - Robust autonomy/productivity indicators are clearly ahead of schedule on multiple independent measures.
+

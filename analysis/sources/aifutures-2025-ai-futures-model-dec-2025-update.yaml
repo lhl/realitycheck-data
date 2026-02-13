@@ -1,0 +1,138 @@
+sources:
+  - id: "aifutures-2025-ai-futures-model-dec-2025-update"
+    type: "BLOG"
+    title: "AI Futures Model: Dec 2025 Update"
+    author:
+      - "Daniel Kokotajlo"
+      - "Eli Lifland"
+      - "Brendan Halstead"
+      - "Alex Kastner"
+    year: 2025
+    url: "https://blog.ai-futures.org/p/ai-futures-model-dec-2025-update"
+    accessed: "2026-02-13"
+    status: "analyzed"
+    analysis_file: "analysis/sources/aifutures-2025-ai-futures-model-dec-2025-update.md"
+    reliability: 0.60
+    bias_notes: >-
+      Produced by the same group that published AI 2027, with an explicit goal of forecasting fast AI
+      timelines and takeoff dynamics. Strengths: unusually explicit operational definitions (AC/SAR/TED-AI/ASI),
+      open acknowledgement of parameter uncertainty, and links to an interactive model site. Risks: heavy reliance
+      on a small set of trend proxies (notably METR time horizon), substantial subjective parameterization (“intuitive guesses”),
+      and anchoring to earlier scenario framing.
+    topics:
+      - ai-forecasting
+      - takeoff
+      - timelines
+      - time-horizon
+      - coding-agents
+      - research-taste
+      - model-update
+    domains:
+      - META
+      - TRANS
+    claims_extracted:
+      - META-2026-117
+      - META-2026-118
+      - META-2026-119
+      - META-2026-120
+      - META-2026-121
+      - TRANS-2026-027
+
+claims:
+  - id: "META-2026-117"
+    text: >-
+      The AI Futures Project’s Dec 2025 update announces a unified timelines-and-takeoff model (AI Futures Model)
+      forecasting milestone arrival (e.g., AC, SAR, TED-AI, ASI) and takeoff speeds.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["aifutures-2025-ai-futures-model-dec-2025-update"]
+    operationalization: >-
+      Verify that the post describes the unified model and the milestone/takeoff forecast framing.
+    assumptions:
+      - The published post reflects the authors’ intended model description.
+    falsifiers:
+      - The post does not actually describe a unified model or milestone/takeoff forecasts.
+
+  - id: "META-2026-118"
+    text: >-
+      The AI Futures Project claims their AI Futures Model implies timelines to full coding automation (AC) that are about
+      3–5 years longer than their April 2025 AI 2027-era timelines model, partly because they are less bullish on pre-automation
+      AI R&D speedups.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["aifutures-2025-ai-futures-model-dec-2025-update"]
+    operationalization: >-
+      Locate the stated 3–5 year shift claim and its attributed causes in the Dec 2025 update text.
+    assumptions:
+      - The comparison refers to comparable milestone definitions across model versions.
+    falsifiers:
+      - The post does not state a 3–5 year shift, or attributes it differently.
+
+  - id: "META-2026-119"
+    text: >-
+      The AI Futures Project claims the 3–5 year median shift to coding automation is primarily due to improved modeling of
+      AI R&D automation, and is a larger change than what new empirical evidence caused.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["aifutures-2025-ai-futures-model-dec-2025-update"]
+    operationalization: >-
+      Locate the attribution statement (modeling vs new evidence) in the Dec 2025 update text.
+    assumptions:
+      - The post distinguishes 'modeling improvements' from 'new empirical evidence' as causal attributions for forecast shifts.
+    falsifiers:
+      - The post attributes the forecast shift mainly to new empirical evidence rather than modeling changes.
+
+  - id: "META-2026-120"
+    text: >-
+      The AI Futures Project claims their previous model (median parameters) predicted superhuman coder (SC) medians around
+      2027–2028, while their new model predicts around 2032.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["aifutures-2025-ai-futures-model-dec-2025-update"]
+    operationalization: >-
+      Locate the explicit comparison of SC medians between the old and new models in the post.
+    assumptions:
+      - The 'SC' milestone is defined consistently in both comparisons.
+    falsifiers:
+      - The post reports materially different SC medians or no such comparison.
+
+  - id: "META-2026-121"
+    text: >-
+      The AI Futures Project operationalizes the Automated Coder (AC) milestone as a system that can fully automate an AGI
+      project’s coding work (replacing the coding staff) using about 5% of the project’s compute supply.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["aifutures-2025-ai-futures-model-dec-2025-update"]
+    operationalization: >-
+      Locate the AC definition and compute-budget constraint in the milestone-definitions section of the post.
+    assumptions:
+      - The definition is intended as an operational test, not merely a narrative label.
+    falsifiers:
+      - The post’s AC definition differs materially from the claim (e.g., no compute constraint, different replacement criterion).
+
+  - id: "TRANS-2026-027"
+    text: >-
+      In the Dec 2025 AI Futures Model update, Eli Lifland reports increasing his all-things-considered probability that
+      AC→ASI happens in <1 year from 26% to 30%, and in <3 years from 43% to 60%.
+    type: "[F]"
+    domain: "TRANS"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["aifutures-2025-ai-futures-model-dec-2025-update"]
+    operationalization: >-
+      Locate the passage describing the probability adjustments for AC→ASI takeoff speed.
+    assumptions:
+      - Percentages refer to the author’s stated all-things-considered distribution at the time of publication.
+    falsifiers:
+      - The post does not include these probability adjustments or states different values.
+

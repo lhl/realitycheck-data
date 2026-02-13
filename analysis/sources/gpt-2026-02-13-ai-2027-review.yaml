@@ -1,0 +1,62 @@
+sources:
+  - id: "gpt-2026-02-13-ai-2027-review"
+    type: "CONVO"
+    title: "AI 2027 review research (ChatGPT 5.2 Pro transcript)"
+    author:
+      - "lhl"
+      - "GPT-5.2-Pro"
+    year: 2026
+    url: "https://chatgpt.com/c/698ee3d5-a970-83a5-8f03-52dd6784bd79"
+    accessed: "2026-02-13"
+    status: "analyzed"
+    analysis_file: "analysis/sources/gpt-2026-02-13-ai-2027-review.md"
+    reliability: 0.45
+    bias_notes: >-
+      LLM-generated synthesis; may contain transcription errors, hallucinated citations, or overconfident paraphrases.
+      Useful for surfacing candidate cruxes and replication questions, not as primary evidence.
+    topics:
+      - ai-forecasting
+      - ai-2027
+      - research-memo
+      - replication
+      - methodology
+    domains:
+      - META
+    claims_extracted:
+      - META-2026-134
+      - META-2026-135
+
+claims:
+  - id: "META-2026-134"
+    text: >-
+      A ChatGPT-generated research memo proposes an independent replication plan for the AI Futures Project’s AI 2027
+      self-grading: reproduce pace multipliers per metric and compare category-aggregation vs individual-row aggregation.
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["gpt-2026-02-13-ai-2027-review"]
+    operationalization: >-
+      Apply the memo’s replication plan to the captured grading CSV and document deviations due to cutoff/definition choices.
+    assumptions:
+      - Independent replication can be performed from the published spreadsheet and cited sources.
+    falsifiers:
+      - Key pace multipliers are not reproducible from the published materials (without hidden data).
+
+  - id: "META-2026-135"
+    text: >-
+      A ChatGPT-generated research memo argues that resolving AI 2027’s 'AI software R&D uplift' predictions using a later
+      estimate from the authors’ own model risks circularity without external empirical validation.
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["gpt-2026-02-13-ai-2027-review"]
+    operationalization: >-
+      Inspect the grading spreadsheet’s uplift rows and classify resolution inputs as external measurements vs endogenous
+      model estimates.
+    assumptions:
+      - Endogenous model estimates are epistemically weaker than external measurements for 'grading' a forecast.
+    falsifiers:
+      - The uplift resolution is based on external measured uplift rather than authors’ later model estimates.
+

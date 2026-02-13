@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 642 |
-| **Sources** | 161 |
+| **Claims** | 680 |
+| **Sources** | 170 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 36 |
+| **Predictions Tracked** | 44 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-13 | [AI 2027 predictions review state (as of 2026-02-13)](analysis/syntheses/ai-2027-predictions-review-state-synthesis.md) | `[DRAFT]` | Cross-source synthesis: AI Futures self-grading + grading CSV + model update; proxy pace multipliers, caveats, and implied takeoff-window shift |
 | 2026-02-11 | [AI-driven burnout, dark flow, and work intensification (2025–2026)](analysis/syntheses/ai-driven-burnout-dark-flow-work-intensification-synthesis.md) | `[DRAFT]` | Cross-source synthesis: HBR intensification mechanisms + METR miscalibration + NBER modest time savings/null hours; “dark flow,” expectation creep, and value-capture lens |
 | 2026-02-09 | [Software factories, dark factories, and compounding teams (harness vs control plane)](analysis/syntheses/software-factory-dark-factory-harness-control-plane-synthesis.md) | `[DRAFT]` | Cross-source synthesis: “software factory” doctrine + dark-factory levels + compounding teams; separates correctness plane (harness/holdouts/DTU) from control plane (orchestration/memory/gates) |
 | 2026-02-07 | [Superlinear (paper + repo + model release)](analysis/syntheses/superlinear-multi-step-attention-release-synthesis.md) | `[DRAFT]` | Cross-source audit: code+weights consistency checks (VRAM/KV math); throughput/quality unverified; security/license/patent risks flagged |
@@ -57,6 +58,15 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-13 | [AI Futures Model: Dec 2025 Update](analysis/sources/aifutures-2025-ai-futures-model-dec-2025-update.md) | `[REVIEWED]` | Model update: +3–5y to coding automation vs Apr 2025 model; operational milestone definitions; takeoff-probability adjustment notes |
+| 2026-02-13 | [Grading AI 2027’s 2025 Predictions](analysis/sources/aifutures-2026-grading-ai-2027-2025-predictions.md) | `[REVIEWED]` | Self-audit: category-aggregated quantitative pace ~0.58–0.66×; pace→takeoff-window mapping; spreadsheet cross-check |
+| 2026-02-13 | [AI 2027 “2025 Predictions” grading spreadsheet (CSV capture)](analysis/sources/aifutures-2026-ai-2027-2025-predictions-grading-sheet.md) | `[REVIEWED]` | Captured scorecard dataset: row-level pace multipliers + aggregation rows for reproducible audit |
+| 2026-02-13 | [Timelines Forecast — AI 2027](analysis/sources/aifutures-2025-ai-2027-timelines-forecast.md) | `[REVIEWED]` | Forecast note: SC definition; method outputs (time-horizon vs benchmarks+gaps); disclosed edits + interpolation bug (~9-month shift) |
+| 2026-02-13 | [AI Futures Model — Forecasts (Daniel 01-26-26)](analysis/sources/aifuturesmodel-2026-forecast-daniel-01-26-26.md) | `[REVIEWED]` | Dashboard snapshot: AC ATC percentiles (Daniel vs Eli) + changelog bug-fix deltas and ATC adjustments |
+| 2026-02-13 | [Marcus: “The AI 2027 Scenario: How realistic is it?”](analysis/sources/marcus-2025-ai-2027-scenario-how-realistic.md) | `[REVIEWED]` | External critique: narrative/probability hygiene; “fiction vs science”; potential political backfire mechanism |
+| 2026-02-13 | [AI 2027 review research (ChatGPT transcript)](analysis/sources/gpt-2026-02-13-ai-2027-review.md) | `[REVIEWED]` | Secondary memo: replication checklist + circularity flag for uplift resolution |
+| 2026-02-13 | [AI 2027 / AI Futures Model verification memo (Claude transcript)](analysis/sources/claude-2026-02-13-ai-2027-review.md) | `[REVIEWED]` | Secondary memo: model-revision framing; treat external numeric claims as unverified without primary citations |
+| 2026-02-13 | [AI 2027 Predictions and Primary Resources (independent scorecard)](analysis/sources/independent-2026-02-13-ai-2027-review.md) | `[REVIEWED]` | Internal pace scorecard (~0.70×): inputs ahead, autonomy/productivity behind; sensitivity-banded estimate |
 | 2026-02-13 | [Bostrom: Optimal Timing for Superintelligence](analysis/sources/bostrom-2026-optimal-timing-superintelligence.md) | `[REVIEWED]` | Working paper: person-affecting “optimal timing” models often imply modest delays; suggests “swift to harbor, slow to berth” (reach capability quickly, consider brief post-capability pause) |
 | 2026-02-11 | [Reality Check framework: dev velocity + codebase size](analysis/sources/lhl-2026-realitycheck-dev-velocity.md) | `[REVIEWED]` | Repo-churn + `scc`/COCOMO snapshot at `v0.3.0`; upper-tail feasibility baseline for AI-assisted dev velocity (non-causal) |
 | 2026-02-11 | [Yegge: The AI Vampire](analysis/sources/yegge-2026-ai-vampire.md) | `[REVIEWED]` | Medium post framing AI burnout as value-capture/extraction; warns about outlier narratives; proposes a shorter intense workday |
@@ -156,17 +166,17 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 209 |
+| TECH | Technology & AI | 214 |
 | LABOR | Labor & Employment | 41 |
-| ECON | Economics & Markets | 51 |
+| ECON | Economics & Markets | 53 |
 | GOV | Governance & Policy | 87 |
 | SOC | Social Dynamics | 25 |
-| TRANS | Transition Dynamics | 36 |
+| TRANS | Transition Dynamics | 46 |
 | RESOURCE | Resource Constraints | 15 |
 | GEO | Geopolitics | 30 |
 | INST | Institutions & Organizations | 52 |
-| RISK | Risk Assessment | 36 |
-| META | Framework & Methodology | 60 |
+| RISK | Risk Assessment | 37 |
+| META | Framework & Methodology | 80 |
 
 ---
 

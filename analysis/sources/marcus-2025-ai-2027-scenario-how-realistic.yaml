@@ -1,0 +1,100 @@
+sources:
+  - id: "marcus-2025-ai-2027-scenario-how-realistic"
+    type: "BLOG"
+    title: "The “AI 2027” Scenario: How realistic is it?"
+    author:
+      - "Gary Marcus"
+    year: 2025
+    url: "https://garymarcus.substack.com/p/the-ai-2027-scenario-how-realistic"
+    accessed: "2026-02-13"
+    status: "analyzed"
+    analysis_file: "analysis/sources/marcus-2025-ai-2027-scenario-how-realistic.md"
+    reliability: 0.55
+    bias_notes: >-
+      Marcus is a prominent critic/skeptic of near-term AGI claims and transformer-only scaling narratives. Strength:
+      focuses on argument structure, evidential support, and probability hygiene. Risks: may underweight rapid capability
+      progress or interpret narrative framing as decisive over the attached quantitative appendices; rhetorical tone is adversarial.
+    topics:
+      - ai-forecasting
+      - ai-2027
+      - critique
+      - scenario-analysis
+      - probability-hygiene
+      - race-dynamics
+      - governance
+    domains:
+      - META
+      - RISK
+    claims_extracted:
+      - META-2026-131
+      - META-2026-132
+      - RISK-2026-934
+      - META-2026-133
+
+claims:
+  - id: "META-2026-131"
+    text: >-
+      Gary Marcus argues that AI 2027 is best understood as a vivid work of fiction/scenario writing rather than a scientific
+      forecast, and that its headline 'bigger than the Industrial Revolution' claim is asserted without adequate evidence.
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["marcus-2025-ai-2027-scenario-how-realistic"]
+    operationalization: >-
+      Identify the headline claims in AI 2027 and assess whether they are supported by cited evidence or primarily asserted.
+    assumptions:
+      - A 'scientific forecast' should provide explicit evidence/probability structure for its headline claims.
+    falsifiers:
+      - AI 2027 provides strong empirical support and probability structure for its headline impact claims.
+
+  - id: "META-2026-132"
+    text: >-
+      Gary Marcus argues that presenting a single vivid detailed scenario without explicit alternative scenarios/probabilities
+      can mislead readers about likelihoods (a conjunction-fallacy/probability-neglect style critique).
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["marcus-2025-ai-2027-scenario-how-realistic"]
+    operationalization: >-
+      Compare AI 2027’s narrative framing to explicit probabilistic scenario trees; evaluate whether alternative scenarios and
+      probabilities are clearly communicated.
+    assumptions:
+      - Readers’ probability judgments are biased by vividness and conjunction framing.
+    falsifiers:
+      - AI 2027 presents multiple alternatives with explicit probabilities and mitigates vividness-induced bias.
+
+  - id: "RISK-2026-934"
+    text: >-
+      Gary Marcus hypothesizes that imminent-AGI narratives (including AI 2027-style scenarios) can backfire by accelerating the
+      AI arms race (serving as marketing for frontier labs and intensifying hawkish geopolitics).
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["marcus-2025-ai-2027-scenario-how-realistic"]
+    operationalization: >-
+      Measure whether publication of imminent-AGI narratives causally increases capital allocation and competitive posturing vs
+      safety-focused coordination (e.g., via event studies or controlled messaging experiments).
+    assumptions:
+      - Narratives materially influence investor/political behavior beyond underlying capability trends.
+    falsifiers:
+      - Empirical studies show such narratives reduce racing behavior and increase cooperative safety investment on net.
+
+  - id: "META-2026-133"
+    text: >-
+      Gary Marcus proposes international collaboration (a 'CERN for AI' style effort) as an alternative political model not
+      emphasized in AI 2027.
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["marcus-2025-ai-2027-scenario-how-realistic"]
+    operationalization: >-
+      Audit AI 2027 for discussion of cooperative international safety institutions and compare to Marcus’s proposed model.
+    assumptions:
+      - International scientific collaboration could meaningfully reduce race dynamics or shift focus toward safer, more transparent AI approaches.
+    falsifiers:
+      - AI 2027 already substantially considers such collaboration, or collaboration is shown infeasible/ineffective in practice.
+

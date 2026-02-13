@@ -1,0 +1,103 @@
+sources:
+  - id: "aifutures-2026-grading-ai-2027-2025-predictions"
+    type: "BLOG"
+    title: "Grading AI 2027’s 2025 Predictions"
+    author:
+      - "Eli Lifland"
+      - "Daniel Kokotajlo"
+    year: 2026
+    url: "https://blog.ai-futures.org/p/grading-ai-2027s-2025-predictions"
+    accessed: "2026-02-13"
+    status: "analyzed"
+    analysis_file: "analysis/sources/aifutures-2026-grading-ai-2027-2025-predictions.md"
+    reliability: 0.60
+    bias_notes: >-
+      Self-grading by the original forecasters. Strengths: unusually concrete metrics + a published
+      grading spreadsheet. Risks: selection effects (which metrics count), definitional drift (“what counts
+      as SOTA”), and circularity where “resolution” uses the authors’ own later model estimates. Treat
+      quantitative rows as their best-effort scoring, not independent ground truth.
+    topics:
+      - ai-forecasting
+      - ai-2027
+      - forecast-audit
+      - self-evaluation
+      - benchmarks
+      - time-horizon
+      - takeoff
+    domains:
+      - META
+      - TRANS
+    claims_extracted:
+      - META-2026-122
+      - META-2026-123
+      - TRANS-2026-028
+      - TRANS-2026-029
+
+claims:
+  - id: "META-2026-122"
+    text: >-
+      The AI Futures Project reports that, using category aggregation, quantitative progress vs AI 2027
+      is at roughly 0.58–0.66× pace (summarized as ~65%).
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["aifutures-2026-grading-ai-2027-2025-predictions"]
+    operationalization: >-
+      Recompute the category means/medians from the published grading spreadsheet (captured) and confirm
+      the reported aggregate range.
+    assumptions:
+      - The grading spreadsheet’s aggregation rows match the post’s stated method.
+    falsifiers:
+      - Recomputing the aggregates from the spreadsheet does not yield values in the stated range.
+
+  - id: "META-2026-123"
+    text: >-
+      The AI Futures Project reports that aggregating over individual prediction rows yields higher aggregates
+      (mean ~0.75×, median ~0.84×), but argues this is a worse indicator because compute predictions are 7 of 15 rows.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["aifutures-2026-grading-ai-2027-2025-predictions"]
+    operationalization: >-
+      Count compute-related rows in the grading spreadsheet and reproduce mean/median across individual rows.
+    assumptions:
+      - The set of rows included as 'individual predictions' is stable and clearly defined.
+    falsifiers:
+      - Row counts or mean/median aggregates do not match the post.
+
+  - id: "TRANS-2026-028"
+    text: >-
+      The AI Futures Project predicts that if progress continues at ~0.65× of the AI 2027 pace, the scenario’s takeoff
+      would shift to late-2027 through mid-2029.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["aifutures-2026-grading-ai-2027-2025-predictions"]
+    operationalization: >-
+      Define the original AI 2027 takeoff window and apply a consistent time-rescaling using the stated pace multiplier;
+      compare to the post’s window.
+    assumptions:
+      - A single scalar pace multiplier is meaningful across the whole takeoff sequence.
+    falsifiers:
+      - The mapping from the pace multiplier to dates is inconsistent with the post or depends on omitted assumptions.
+
+  - id: "TRANS-2026-029"
+    text: >-
+      The AI Futures Project predicts that after adjusting for compute/labor slowdowns using the AI Futures Model, takeoff
+      would shift to mid-2028 through mid-2030.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["aifutures-2026-grading-ai-2027-2025-predictions"]
+    operationalization: >-
+      Reproduce the AI Futures Model timing adjustment described in the post (with/without slowdown links) and confirm the
+      implied timing range.
+    assumptions:
+      - The slowdown adjustment procedure is implemented as described.
+    falsifiers:
+      - The model outputs under the stated procedure do not match the timing range.
+

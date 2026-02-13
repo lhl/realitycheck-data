@@ -1,0 +1,172 @@
+sources:
+  - id: "aifutures-2025-ai-2027-timelines-forecast"
+    type: "REPORT"
+    title: "Timelines Forecast — AI 2027"
+    author:
+      - "Eli Lifland"
+      - "Nikola Jurkovic"
+      - "FutureSearch"
+    year: 2025
+    url: "https://ai-2027.com/research/timelines-forecast"
+    accessed: "2026-02-13"
+    status: "analyzed"
+    analysis_file: "analysis/sources/aifutures-2025-ai-2027-timelines-forecast.md"
+    reliability: 0.55
+    bias_notes: >-
+      Produced by the AI Futures Project. Strengths: defines a concrete “superhuman coder” milestone; shows multiple
+      methods + an all-things-considered forecast; includes parameter ranges and code links. Risks: strong conditional
+      assumptions (no catastrophe, no slowdown, no supply-chain disruptions), reliance on sparse proxy trends, and
+      post-hoc edits (May/Dec updates) that complicate “what was believed when.”
+    topics:
+      - ai-forecasting
+      - timelines
+      - superhuman-coding
+      - time-horizon
+      - re-bench
+      - takeoff
+      - model-bugs
+    domains:
+      - META
+      - TRANS
+      - TECH
+    claims_extracted:
+      - META-2026-125
+      - TRANS-2026-030
+      - TRANS-2026-031
+      - TECH-2025-075
+      - TECH-2025-076
+      - META-2026-126
+      - META-2026-127
+      - TRANS-2026-032
+
+claims:
+  - id: "META-2026-125"
+    text: >-
+      The AI 2027 timelines-forecast note states that, under its strong assumptions (no catastrophes/slowdown/supply-chain
+      disruptions), its forecasts give a substantial chance of superhuman coding (SC) arriving by and in 2027.
+    type: "[P]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["aifutures-2025-ai-2027-timelines-forecast"]
+    operationalization: >-
+      Define 'substantial chance' as a numeric threshold (e.g., ≥10%) and inspect the note’s stated distributions/wording
+      for SC-by-2027 probability mass.
+    assumptions:
+      - The conditional assumptions are satisfied.
+    falsifiers:
+      - The note’s distributions/wording do not support ≥10% probability mass on SC by end of 2027.
+
+  - id: "TRANS-2026-030"
+    text: >-
+      In the AI 2027 timelines-forecast note’s Apr 2025 time-horizon-extension model, Eli’s superhuman-coder (SC) forecast
+      has median 2027 with 80% CI 2025–2039; Nikola’s SC forecast has 80% CI 2025–2033.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["aifutures-2025-ai-2027-timelines-forecast"]
+    operationalization: >-
+      Read the summary table for the time-horizon-extension model in the note and confirm the medians/CIs.
+    assumptions:
+      - The summary table is interpreted correctly (median vs CI bounds).
+    falsifiers:
+      - The table does not report these values.
+
+  - id: "TRANS-2026-031"
+    text: >-
+      In the AI 2027 timelines-forecast note’s Apr 2025 all-things-considered forecast, Eli’s SC forecast has median 2030
+      with 80% CI 2026–>2050; Nikola’s SC forecast has 80% CI 2026–2040; FutureSearch aggregate has 80% CI 2027–>2050.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["aifutures-2025-ai-2027-timelines-forecast"]
+    operationalization: >-
+      Read the all-things-considered section of the summary table and confirm the reported values.
+    assumptions:
+      - The CI notation '>2050' is interpreted as open-ended tail beyond 2050.
+    falsifiers:
+      - The table does not report these values.
+
+  - id: "TECH-2025-075"
+    text: >-
+      The AI 2027 timelines-forecast note defines a superhuman coder (SC) as: using ~5% of compute budget, run ~30× as many
+      coding agents as human research engineers, each doing AI-research coding tasks at ~30× the speed of the company’s best
+      engineer across any researcher’s area of expertise.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["aifutures-2025-ai-2027-timelines-forecast"]
+    operationalization: >-
+      Locate the SC definition section in the note and confirm the 5% compute / 30× agents / 30× speed elements.
+    assumptions:
+      - The definition is intended as an operational capability threshold.
+    falsifiers:
+      - The note’s SC definition differs materially from this description.
+
+  - id: "TECH-2025-076"
+    text: >-
+      The AI 2027 timelines-forecast note sets a Mar 2025 assumption that the 80% coding time-horizon doubling time is 4.5
+      months with an 80% CI of [2.5, 9] months (while noting different recent-period estimates with few data points).
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["aifutures-2025-ai-2027-timelines-forecast"]
+    operationalization: >-
+      Locate the 'Time horizon doubling time' parameter in the note and confirm the point estimate and CI.
+    assumptions:
+      - The parameter is an authors’ modeling assumption, not a direct empirical estimate.
+    falsifiers:
+      - The note does not state this point estimate/CI.
+
+  - id: "META-2026-126"
+    text: >-
+      The AI 2027 timelines-forecast note reports a code bug in interpolating the progress multiplier (missing a −1/+1 transform)
+      that overestimated intermediate speedups and shifted the model’s SC median by about 9 months.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["aifutures-2025-ai-2027-timelines-forecast"]
+    operationalization: >-
+      Locate the 'bug in our code' paragraph and confirm the described bug and stated impact size.
+    assumptions:
+      - The stated impact is computed relative to the prior (buggy) version of their model.
+    falsifiers:
+      - The note does not include this bug description or impact estimate.
+
+  - id: "META-2026-127"
+    text: >-
+      The AI 2027 timelines-forecast note includes a Dec 2025 disclaimer that the forecast relies substantially on intuitive
+      judgment due to insufficient evidence for conclusive extrapolation.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["aifutures-2025-ai-2027-timelines-forecast"]
+    operationalization: >-
+      Locate the Dec 2025 disclaimer text on the page and confirm its content.
+    assumptions:
+      - The disclaimer was present on the page at access time.
+    falsifiers:
+      - The disclaimer text is not present on the page.
+
+  - id: "TRANS-2026-032"
+    text: >-
+      The AI 2027 timelines-forecast note predicts RE‑Bench saturation sometime in 2026, citing an 80% CI of [2025‑09‑01,
+      2031‑01‑01].
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["aifutures-2025-ai-2027-timelines-forecast"]
+    operationalization: >-
+      Locate the RE‑Bench saturation section and confirm the cited CI and stated central tendency.
+    assumptions:
+      - The 'saturation' definition (score 1.5) is stable and meaningful.
+    falsifiers:
+      - The note does not cite this CI or does not predict 2026 central tendency.
+

@@ -1,0 +1,118 @@
+sources:
+  - id: "aifuturesmodel-2026-forecast-daniel-01-26-26"
+    type: "KNOWLEDGE"
+    title: "AI Futures Model — Forecasts (Daniel 01-26-26; compare Eli 01-26-26)"
+    author:
+      - "AI Futures Project"
+      - "Daniel Kokotajlo"
+      - "Eli Lifland"
+    year: 2026
+    url: "https://www.aifuturesmodel.com/forecast/daniel-01-26-26?cmode=forecaster&csim=eli-01-26-26&ctype=atc"
+    accessed: "2026-02-13"
+    status: "analyzed"
+    analysis_file: "analysis/sources/aifuturesmodel-2026-forecast-daniel-01-26-26.md"
+    reliability: 0.58
+    bias_notes: >-
+      Primary source for the authors’ published “all-things-considered” forecast distributions at a given snapshot.
+      Risks: interactive UI + dynamic charting makes capture fragile; values may change over time; and ATC is explicitly
+      subjective adjustment. Treat as a disclosure artifact, not independent evidence about the world.
+    topics:
+      - ai-forecasting
+      - timelines
+      - takeoff
+      - monte-carlo
+      - automated-coder
+      - atc
+      - model-bugs
+    domains:
+      - META
+      - TRANS
+    claims_extracted:
+      - META-2026-128
+      - TRANS-2026-033
+      - TRANS-2026-034
+      - META-2026-129
+      - META-2026-130
+
+claims:
+  - id: "META-2026-128"
+    text: >-
+      The AI Futures Model forecast dashboard states it shows Monte Carlo model outputs alongside subjective all-things-considered
+      (ATC) distributions, and that it will be kept up to date as predictions change.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["aifuturesmodel-2026-forecast-daniel-01-26-26"]
+    operationalization: >-
+      Confirm the dashboard’s explanatory text about model outputs vs ATC and update intent.
+    assumptions:
+      - The extracted page text reflects the dashboard content at access time.
+    falsifiers:
+      - The page does not contain this explanatory text.
+
+  - id: "TRANS-2026-033"
+    text: >-
+      On the AI Futures Model dashboard (Daniel 01-26-26 snapshot), Daniel’s all-things-considered forecast for Automated Coder
+      (AC) is p10 Feb 2027, p50 Dec 2029, p90 Jul 2043.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["aifuturesmodel-2026-forecast-daniel-01-26-26"]
+    operationalization: >-
+      Locate the 'Daniel’s 01-26-26 all-things-considered forecast for AC' line and confirm percentiles.
+    assumptions:
+      - Percentiles refer to the ATC distribution displayed for the stated snapshot.
+    falsifiers:
+      - The extracted page text does not include these percentiles.
+
+  - id: "TRANS-2026-034"
+    text: >-
+      On the AI Futures Model dashboard (Daniel 01-26-26 snapshot), Eli’s all-things-considered forecast for Automated Coder
+      (AC) is p10 May 2027, p50 Mar 2032, p90 Jan 2125.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["aifuturesmodel-2026-forecast-daniel-01-26-26"]
+    operationalization: >-
+      Locate the 'Eli’s 01-26-26 all-things-considered forecast for AC' line and confirm percentiles.
+    assumptions:
+      - Percentiles refer to the ATC distribution displayed for the stated snapshot.
+    falsifiers:
+      - The extracted page text does not include these percentiles.
+
+  - id: "META-2026-129"
+    text: >-
+      On the AI Futures Model dashboard changelog, the Dec 31, 2025 entry reports a bug fix that slightly increases takeoff-speed
+      probabilities (e.g., Eli P(AC→ASI<1y) 26.3→27.1% and Daniel 36.7→37.1%).
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["aifuturesmodel-2026-forecast-daniel-01-26-26"]
+    operationalization: >-
+      Locate the Dec 31, 2025 changelog entry and confirm the stated probability deltas.
+    assumptions:
+      - The changelog text is accurate and pertains to the stated snapshot history.
+    falsifiers:
+      - The changelog entry does not include these deltas or reports different values.
+
+  - id: "META-2026-130"
+    text: >-
+      On the AI Futures Model dashboard changelog, the Jan 26, 2026 entry reports a minor numerical underflow bug fix (≈3% of
+      rollouts; negligible effect) and that Eli updated his ATC views (AC median Jul 2032→Mar 2032; P(AC in 2026) 4%→6%;
+      P(takeoff<0.5y) 18%→25%; P(takeoff<10y) 85%→83%).
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["aifuturesmodel-2026-forecast-daniel-01-26-26"]
+    operationalization: >-
+      Locate the Jan 26, 2026 changelog entry and confirm the stated bug description and ATC adjustments.
+    assumptions:
+      - The changelog text is accurate and pertains to the stated snapshot history.
+    falsifiers:
+      - The changelog entry does not include these adjustments or reports different values.
+
