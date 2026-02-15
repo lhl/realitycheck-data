@@ -1,0 +1,106 @@
+sources:
+  - id: "gestaltu-2026-frontier-labs-profits-thread"
+    type: "SOCIAL"
+    title: "Thread: frontier labs won’t make material profits from “birthing AGI”; value accrues to electrification/metals (author framing)"
+    author:
+      - "@GestaltU"
+      - "Adam Butler"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2022684101480743419.html"
+    accessed: "2026-02-15"
+    status: "analyzed"
+    analysis_file: "analysis/sources/gestaltu-2026-frontier-labs-profits-thread.md"
+    reliability: 0.35
+    bias_notes: >-
+      Social-media macro/market take with strong rhetoric (“dead money”), motive attribution, and investment
+      positioning. Offers hypotheses about value capture and constraints but provides no empirical evidence.
+      Useful as a counterpoint to frontier-lab profitability narratives, not as evidence about financial outcomes.
+    topics:
+      - ai
+      - agi
+      - profits
+      - competition
+      - consumer-surplus
+      - datacenters
+      - electrification
+      - metals
+    domains:
+      - INST
+      - ECON
+      - TRANS
+      - RESOURCE
+    claims_extracted:
+      - INST-2026-920
+      - ECON-2026-921
+      - TRANS-2026-039
+      - RESOURCE-2026-015
+
+claims:
+  - id: "INST-2026-920"
+    text: >-
+      Frontier-lab leaders pursue ASI as an existential mission rather than as a profit-maximizing project, and the
+      profitability narratives they tell are instrumental stories used to raise capital.
+    type: "[S]"
+    domain: "INST"
+    evidence_level: "E6"
+    credence: 0.25
+    source_ids: ["gestaltu-2026-frontier-labs-profits-thread"]
+    operationalization: >-
+      Evaluate revealed preferences (capital allocation, pricing, governance choices) and (where accessible) internal
+      communications for whether profit-maximization dominates leadership objectives over time.
+    assumptions:
+      - Motives can be inferred from observable decisions and disclosures.
+    falsifiers:
+      - Evidence shows sustained profit-maximizing behavior dominates strategic choices across leadership and time.
+
+  - id: "ECON-2026-921"
+    text: >-
+      Frontier labs will not make material profits from “birthing AGI”; investments in foundation labs, hyperscalers,
+      semiconductors, and datacenters are effectively “dead money,” despite enormous consumer surplus.
+    type: "[P]"
+    domain: "ECON"
+    evidence_level: "E6"
+    credence: 0.20
+    source_ids: ["gestaltu-2026-frontier-labs-profits-thread"]
+    operationalization: >-
+      Compare long-run profit margins and risk-adjusted returns for frontier labs and compute infrastructure providers
+      against market benchmarks over the AGI transition period.
+    assumptions:
+      - “Material profits” can be operationalized via margins and risk-adjusted returns.
+    falsifiers:
+      - Frontier labs and/or compute providers exhibit sustained material profits and attractive risk-adjusted returns.
+
+  - id: "TRANS-2026-039"
+    text: >-
+      Physical constraints, timing uncertainty, and deployment frictions will limit AI progress to a “manageable”
+      (though profoundly disruptive) pace.
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["gestaltu-2026-frontier-labs-profits-thread"]
+    operationalization: >-
+      Identify binding constraints (power, chips, data, integration, experimentation) and test whether these impose
+      minimum latencies on major capability and deployment milestones.
+    assumptions:
+      - Progress is rate-limited by physical and organizational constraints even under rapid capability gains.
+    falsifiers:
+      - Major capability and deployment milestones occur near-instantly once cognitive capability thresholds are crossed.
+
+  - id: "RESOURCE-2026-015"
+    text: >-
+      Electrification and metals are critical-path inputs with durable bottlenecks, making them more resilient and
+      productive ways to capture profits from the hyperscaler/AI sprint than investing in frontier labs.
+    type: "[T]"
+    domain: "RESOURCE"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["gestaltu-2026-frontier-labs-profits-thread"]
+    operationalization: >-
+      Track capex buildout requirements for AI datacenters (power generation, transmission, cooling, metals) and
+      measure whether these inputs experience sustained scarcity rents relative to software/model layer profits.
+    assumptions:
+      - Bottlenecks translate into investable scarcity rents rather than regulated or competed-away returns.
+    falsifiers:
+      - Scarcity rents do not appear in electrification/metals, or profits concentrate elsewhere.
+

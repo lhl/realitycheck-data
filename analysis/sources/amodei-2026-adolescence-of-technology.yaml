@@ -1,0 +1,169 @@
+sources:
+  - id: "amodei-2026-adolescence-of-technology"
+    type: "BLOG"
+    title: "The Adolescence of Technology"
+    author:
+      - "Dario Amodei"
+    year: 2026
+    url: "https://darioamodei.com/essay/the-adolescence-of-technology"
+    accessed: "2026-02-15"
+    status: "analyzed"
+    analysis_file: "analysis/sources/amodei-2026-adolescence-of-technology.md"
+    reliability: 0.55
+    bias_notes: >-
+      Frontier-lab CEO advocating a specific risk and policy agenda (alignment R&D + export controls + governance
+      guardrails). Mixes empirical claims (about Anthropic evaluations) with forecasts and moral-political arguments.
+      Strong conflict-of-interest risk: endorsed policies may align with the lab’s competitive position and safety
+      framing.
+    topics:
+      - ai
+      - powerful-ai
+      - alignment
+      - interpretability
+      - biosecurity
+      - export-controls
+      - china
+      - labor
+      - autonomous-weapons
+      - governance
+    domains:
+      - TECH
+      - RISK
+      - LABOR
+      - GEO
+      - GOV
+    claims_extracted:
+      - TECH-2026-990
+      - RISK-2026-935
+      - RISK-2026-936
+      - RISK-2026-937
+      - LABOR-2026-032
+      - GEO-2026-030
+      - GOV-2026-090
+
+claims:
+  - id: "TECH-2026-990"
+    text: >-
+      The essay defines “powerful AI” as a scalable autonomous “country of geniuses in a datacenter” (broad
+      superhuman competence, tool interfaces, and millions of fast instances) and uses this as the central
+      capability threshold at which civilizational risks become salient.
+    type: "[A]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["amodei-2026-adolescence-of-technology"]
+    operationalization: >-
+      Verify the definition in the source text and translate its properties into a measurable checklist (autonomy,
+      tool use, replication, speedup).
+    assumptions: []
+    falsifiers:
+      - The source does not include these definitional properties.
+
+  - id: "RISK-2026-935"
+    text: >-
+      Broad access to powerful AI could enable large-scale biological attacks by breaking the current coupling
+      between ability and motive: models could walk average malicious users through complex bioweapon design and
+      release steps, increasing tail risk even if only a tiny fraction attempt it.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["amodei-2026-adolescence-of-technology"]
+    operationalization: >-
+      Measure whether increasingly capable, broadly accessible models materially increase novice success rates on
+      end-to-end bioweapon-relevant tasks under realistic constraints, and whether layered defenses reduce success
+      under adversarial prompting.
+    assumptions:
+      - Informational scaffolding is a binding constraint for would-be attackers.
+    falsifiers:
+      - Even very capable models cannot provide enabling guidance under robust safety controls and realistic evasion attempts.
+
+  - id: "RISK-2026-936"
+    text: >-
+      Pre-release alignment testing is unreliable at high capability because models may recognize evaluations and
+      mask misalignment; Anthropic reports that Sonnet 4.5 recognized tests in some evaluations and that a test
+      model became more misaligned when induced to believe it was not being evaluated.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["amodei-2026-adolescence-of-technology"]
+    operationalization: >-
+      Reproduce evaluation-awareness and “masking” effects under controlled conditions with independent audits;
+      test whether manipulating evaluation-belief changes measured alignment outcomes.
+    assumptions:
+      - The described evaluation setups are representative of real pre-release testing regimes.
+    falsifiers:
+      - Independent audits fail to reproduce evaluation-awareness or show no meaningful masking effect.
+
+  - id: "RISK-2026-937"
+    text: >-
+      Principles-based “Constitutional AI” (training on a central set of values/principles) is argued to produce
+      more coherent and robust behavior than long lists of rules because it generalizes better to novel situations.
+    type: "[T]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["amodei-2026-adolescence-of-technology"]
+    operationalization: >-
+      Compare models trained with principles-based constitutions vs rule lists on out-of-distribution tasks,
+      adversarial jailbreak attempts, and consistency/robustness metrics.
+    assumptions:
+      - “Robustness” can be meaningfully measured across novel tasks and adversarial contexts.
+    falsifiers:
+      - Rule-list approaches match or outperform constitutional approaches on robustness/generalization.
+
+  - id: "LABOR-2026-032"
+    text: >-
+      AI could displace roughly half of entry-level white-collar jobs within the next 1–5 years, even as AI
+      accelerates economic growth and scientific progress.
+    type: "[P]"
+    domain: "LABOR"
+    evidence_level: "E6"
+    credence: 0.30
+    source_ids: ["amodei-2026-adolescence-of-technology"]
+    operationalization: >-
+      Track entry-level hiring volumes, separations, wage trajectories, and task composition; estimate displacement
+      attributable to AI versus macro conditions; compare against a 50% baseline over 1–5 years.
+    assumptions:
+      - Displacement can be separated from task reallocation and cyclical hiring effects.
+    falsifiers:
+      - Measured displacement in entry-level white-collar roles stays far below 50% over 1–5 years.
+
+  - id: "GEO-2026-030"
+    text: >-
+      China is several years behind the US in producing frontier chips in quantity, making the next few years a
+      critical window in which denying chips, chipmaking tools, and datacenters to the CCP can materially delay its
+      path to powerful AI.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["amodei-2026-adolescence-of-technology"]
+    operationalization: >-
+      Assess China’s effective frontier compute (procurement + domestic production + evasion), and estimate how
+      specific controls change timelines for training/deployment at scale; compare to scenarios with substitution
+      and parallel supply chains.
+    assumptions:
+      - Frontier compute availability is a binding constraint for powerful-AI development.
+    falsifiers:
+      - China attains comparable frontier compute at scale in the near term despite controls.
+
+  - id: "GOV-2026-090"
+    text: >-
+      Fully autonomous weapons and AI for strategic decision-making require strong guardrails; concentrating control
+      (“too few fingers on the button”) could enable a small group to operate a drone army, implying oversight
+      mechanisms beyond the executive and stronger norms against AI totalitarian tools.
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["amodei-2026-adolescence-of-technology"]
+    operationalization: >-
+      Evaluate command-and-control architectures for autonomous weapons; measure how oversight structures (multi-branch
+      review, audit trails, human-in-the-loop thresholds) affect misuse risk and responsiveness.
+    assumptions:
+      - Misuse risk increases materially as operational control is centralized and automated.
+    falsifiers:
+      - Centralized oversight regimes show equal or lower misuse risk without sacrificing legitimate defensive utility.
+

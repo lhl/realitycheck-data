@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 680 |
-| **Sources** | 170 |
+| **Claims** | 704 |
+| **Sources** | 175 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 44 |
+| **Predictions Tracked** | 51 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-15 | [Amodei “country of geniuses”: upside, risks, and profitability (2024–2026)](analysis/syntheses/amodei-2026-upside-risk-profitability-synthesis.md) | `[DRAFT]` | Cross-source synthesis: two Amodei essays + Feb 2026 Dwarkesh interview + skeptical Thread Reader take; diffusion/bottlenecks, export controls, and rent-allocation crux |
 | 2026-02-13 | [AI 2027 predictions review state (as of 2026-02-13)](analysis/syntheses/ai-2027-predictions-review-state-synthesis.md) | `[DRAFT]` | Cross-source synthesis: AI Futures self-grading + grading CSV + model update; proxy pace multipliers, caveats, and implied takeoff-window shift |
 | 2026-02-11 | [AI-driven burnout, dark flow, and work intensification (2025–2026)](analysis/syntheses/ai-driven-burnout-dark-flow-work-intensification-synthesis.md) | `[DRAFT]` | Cross-source synthesis: HBR intensification mechanisms + METR miscalibration + NBER modest time savings/null hours; “dark flow,” expectation creep, and value-capture lens |
 | 2026-02-09 | [Software factories, dark factories, and compounding teams (harness vs control plane)](analysis/syntheses/software-factory-dark-factory-harness-control-plane-synthesis.md) | `[DRAFT]` | Cross-source synthesis: “software factory” doctrine + dark-factory levels + compounding teams; separates correctness plane (harness/holdouts/DTU) from control plane (orchestration/memory/gates) |
@@ -58,6 +59,10 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-15 | [Machines of Loving Grace](analysis/sources/amodei-2024-machines-of-loving-grace.md) | `[REVIEWED]` | Best-case upside essay: defines “powerful AI” as “country of geniuses”; forecasts compressed biology/medicine progress; bottleneck framework + democratic “entente strategy” |
+| 2026-02-15 | [The Adolescence of Technology](analysis/sources/amodei-2026-adolescence-of-technology.md) | `[REVIEWED]` | Risk agenda: autonomy/misuse/autocracy + economic disruption; bioweapon enablement mechanism; chip export-denial case; autonomous-weapons oversight; entry-level displacement warning |
+| 2026-02-15 | [Dwarkesh Podcast: Amodei “end of the exponential”](analysis/sources/dwarkesh-2026-amodei-end-of-exponential.md) | `[REVIEWED]` | Transcript: “Big Blob of Compute,” ~90% by 2035 “country of geniuses,” 1–2y end-to-end coding forecast, diffusion limits, business-model pluralism, export-control stance; includes unverified revenue claims |
+| 2026-02-15 | [Thread: frontier labs and profits (@GestaltU)](analysis/sources/gestaltu-2026-frontier-labs-profits-thread.md) | `[REVIEWED]` | Social counterpoint: mission vs profit framing; “dead money” thesis for labs/compute; profits shift to electrification/metals bottlenecks; critiques Amodei profitability narrative |
 | 2026-02-13 | [AI Futures Model: Dec 2025 Update](analysis/sources/aifutures-2025-ai-futures-model-dec-2025-update.md) | `[REVIEWED]` | Model update: +3–5y to coding automation vs Apr 2025 model; operational milestone definitions; takeoff-probability adjustment notes |
 | 2026-02-13 | [Grading AI 2027’s 2025 Predictions](analysis/sources/aifutures-2026-grading-ai-2027-2025-predictions.md) | `[REVIEWED]` | Self-audit: category-aggregated quantitative pace ~0.58–0.66×; pace→takeoff-window mapping; spreadsheet cross-check |
 | 2026-02-13 | [AI 2027 “2025 Predictions” grading spreadsheet (CSV capture)](analysis/sources/aifutures-2026-ai-2027-2025-predictions-grading-sheet.md) | `[REVIEWED]` | Captured scorecard dataset: row-level pace multipliers + aggregation rows for reproducible audit |
@@ -166,16 +171,16 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 214 |
-| LABOR | Labor & Employment | 41 |
-| ECON | Economics & Markets | 53 |
-| GOV | Governance & Policy | 87 |
+| TECH | Technology & AI | 221 |
+| LABOR | Labor & Employment | 42 |
+| ECON | Economics & Markets | 57 |
+| GOV | Governance & Policy | 88 |
 | SOC | Social Dynamics | 25 |
-| TRANS | Transition Dynamics | 46 |
-| RESOURCE | Resource Constraints | 15 |
-| GEO | Geopolitics | 30 |
-| INST | Institutions & Organizations | 52 |
-| RISK | Risk Assessment | 37 |
+| TRANS | Transition Dynamics | 49 |
+| RESOURCE | Resource Constraints | 16 |
+| GEO | Geopolitics | 33 |
+| INST | Institutions & Organizations | 53 |
+| RISK | Risk Assessment | 40 |
 | META | Framework & Methodology | 80 |
 
 ---
@@ -286,4 +291,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-02-13*
+*Last updated: 2026-02-15*

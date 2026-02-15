@@ -1,0 +1,167 @@
+sources:
+  - id: "dwarkesh-2026-amodei-end-of-exponential"
+    type: "CONVO"
+    title: "Dario Amodei — “We are near the end of the exponential”"
+    author:
+      - "Dwarkesh Patel"
+      - "Dario Amodei"
+    year: 2026
+    url: "https://www.dwarkesh.com/p/dario-amodei-2"
+    accessed: "2026-02-15"
+    status: "analyzed"
+    analysis_file: "analysis/sources/dwarkesh-2026-amodei-end-of-exponential.md"
+    reliability: 0.45
+    bias_notes: >-
+      Conversation plus self-report by a frontier-lab CEO; incentives to project confidence (timelines, revenue
+      growth) and to justify strategic/policy stances (export controls, “values-first” alignment). Transcript is
+      useful for stated beliefs and internal framing, not as audited evidence for financials or capability milestones.
+    topics:
+      - ai
+      - scaling
+      - rl
+      - agents
+      - coding
+      - diffusion
+      - business-models
+      - revenue
+      - export-controls
+      - china
+    domains:
+      - TECH
+      - ECON
+      - GEO
+    claims_extracted:
+      - TECH-2026-991
+      - TECH-2026-992
+      - TECH-2026-993
+      - ECON-2026-918
+      - ECON-2026-919
+      - ECON-2026-920
+      - GEO-2026-031
+
+claims:
+  - id: "TECH-2026-991"
+    text: >-
+      “Big Blob of Compute” hypothesis: capability scaling is driven primarily by raw compute, data quantity and
+      quality/distribution, training time, scalable objective functions (pretraining and RL), and numerical
+      stability, while bespoke “cleverness” matters less.
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["dwarkesh-2026-amodei-end-of-exponential"]
+    operationalization: >-
+      Hold compute/data roughly constant across comparable model families and measure marginal returns from
+      algorithmic innovations versus scale changes; test whether RL scaling curves show predictable returns with
+      increased training/compute on diverse tasks.
+    assumptions:
+      - Comparable “compute budgets” and “data quality” can be operationalized across runs.
+    falsifiers:
+      - Algorithmic changes dominate scaling outcomes under matched compute/data, or RL scaling does not show predictable returns.
+
+  - id: "TECH-2026-992"
+    text: >-
+      Amodei assigns roughly 90% probability that we reach a “country of geniuses in a data center” within about
+      10 years (by around 2035), with major delays driven primarily by exogenous disruptions (e.g., geopolitical
+      shocks affecting chip fabs).
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["dwarkesh-2026-amodei-end-of-exponential"]
+    operationalization: >-
+      Define measurable criteria for “country of geniuses” (broad superhuman competence, autonomy, scalable
+      instances, tool use) and assess existence by 2035-12-31 using public, third-party, or auditable evidence.
+    assumptions:
+      - The threshold is observable (not purely internal) and can be audited.
+    falsifiers:
+      - No deployed system meets the threshold by 2035-12-31.
+
+  - id: "TECH-2026-993"
+    text: >-
+      For verifiable domains like coding, Amodei expects end-to-end coding capability in roughly 1–2 years and
+      regards “not within 10 years” as implausible.
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E6"
+    credence: 0.55
+    source_ids: ["dwarkesh-2026-amodei-end-of-exponential"]
+    operationalization: >-
+      Evaluate models/agents on end-to-end software engineering tasks (setup, coding, testing, debugging,
+      deployment) under realistic constraints, tracking success rates and time-to-completion through 2028.
+    assumptions:
+      - “End-to-end coding” can be benchmarked without excessive scaffold bias.
+    falsifiers:
+      - By 2028-12-31, success rates remain low on realistic end-to-end SWE tasks.
+
+  - id: "ECON-2026-918"
+    text: >-
+      Amodei reports Anthropic revenue grew roughly 10× per year: 2023 ($0→$100M), 2024 ($100M→$1B), 2025
+      ($1B→$9–10B), plus “another few billion” added in January 2026.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["dwarkesh-2026-amodei-end-of-exponential"]
+    operationalization: >-
+      Verify via audited financial statements, investor disclosures, or multiple independent credible reports; ensure
+      consistent definition of “revenue” and time windowing.
+    assumptions:
+      - “Revenue” is defined consistently across years in the claim.
+    falsifiers:
+      - Credible audited reporting materially contradicts these figures.
+
+  - id: "ECON-2026-919"
+    text: >-
+      Even “country of geniuses in a data center” will not be an “infinitely compelling” product; diffusion and
+      integration constraints imply extremely fast but bounded revenue growth, not arbitrarily large instantaneous
+      adoption.
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["dwarkesh-2026-amodei-end-of-exponential"]
+    operationalization: >-
+      Model adoption curves for enterprise AI deployments; estimate friction from integration, security/compliance,
+      and loop-closing reliability; test whether these frictions remain binding as capability improves.
+    assumptions:
+      - Adoption frictions can be measured and are not fully eliminated by capability improvements.
+    falsifiers:
+      - Adoption saturates near-instantly once capability reaches certain thresholds, showing minimal diffusion constraints.
+
+  - id: "ECON-2026-920"
+    text: >-
+      The API model remains a durable AI business model because rapid capability progress creates a constantly
+      renewing frontier of new use cases; multiple business models will coexist, including “pay for results” and
+      labor-like compensation schemes.
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["dwarkesh-2026-amodei-end-of-exponential"]
+    operationalization: >-
+      Track revenue mix over time across AI vendors (API vs integrated products vs outcomes-based contracts); test
+      whether API usage remains resilient as capabilities and productization increase.
+    assumptions:
+      - “API vs product” boundaries remain meaningful and measurable in vendor reporting.
+    falsifiers:
+      - API usage becomes a small, declining share without a persistent experimentation frontier.
+
+  - id: "GEO-2026-031"
+    text: >-
+      Policy stance: do not sell chips, datacenters, or chipmaking capability to China; selectively diffuse benefits
+      (e.g., cures) while restricting compute infrastructure; build datacenters in places like Africa provided they
+      are not China-owned.
+    type: "[T]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["dwarkesh-2026-amodei-end-of-exponential"]
+    operationalization: >-
+      Evaluate feasibility of separating “benefits” diffusion from compute diffusion; measure leakage rates, enforcement
+      costs, retaliation, and security outcomes under selective-export regimes.
+    assumptions:
+      - Compute infrastructure diffusion can be controlled more tightly than end-user benefit diffusion.
+    falsifiers:
+      - Selective diffusion is not enforceable at meaningful scales or is net-destabilizing.
+

@@ -1,0 +1,150 @@
+sources:
+  - id: "amodei-2024-machines-of-loving-grace"
+    type: "BLOG"
+    title: "Machines of Loving Grace"
+    author:
+      - "Dario Amodei"
+    year: 2024
+    url: "https://darioamodei.com/essay/machines-of-loving-grace"
+    accessed: "2026-02-15"
+    status: "analyzed"
+    analysis_file: "analysis/sources/amodei-2024-machines-of-loving-grace.md"
+    reliability: 0.55
+    bias_notes: >-
+      CEO of a frontier lab writing an intentionally inspiring best-case vision; strong incentives to frame rapid
+      progress as plausible and beneficial, and to foreground “manageable constraints” rather than failure modes.
+      Many claims are conditional and inherently hard to verify ex ante.
+    topics:
+      - ai
+      - powerful-ai
+      - agi
+      - upside
+      - biology
+      - global-health
+      - development
+      - governance
+      - geopolitics
+    domains:
+      - TECH
+      - TRANS
+      - GEO
+    claims_extracted:
+      - TECH-2026-987
+      - TECH-2026-988
+      - TECH-2026-989
+      - TRANS-2026-037
+      - TRANS-2026-038
+      - GEO-2026-029
+
+claims:
+  - id: "TECH-2026-987"
+    text: >-
+      “Powerful AI” meeting the essay’s operational definition (broad superhuman competence, autonomy, tool use,
+      and scalable instances) could arrive as early as 2026, though it could also take much longer.
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E6"
+    credence: 0.35
+    source_ids: ["amodei-2024-machines-of-loving-grace"]
+    operationalization: >-
+      Define a checklist threshold (autonomous multi-day task completion; reliable computer/internet control; broad
+      superhuman performance across key fields; ability to run large numbers of fast instances) and assess whether
+      any deployed system meets it by 2026-12-31.
+    assumptions:
+      - The essay’s definition is measurable with public or auditable indicators.
+    falsifiers:
+      - No system meeting the definition exists by 2026-12-31.
+
+  - id: "TECH-2026-988"
+    text: >-
+      The essay defines “powerful AI” as a scalable autonomous system with broad superhuman competence, access to
+      human-like interfaces (including computer and internet control), and the ability to run millions of fast
+      instances—summarizable as a “country of geniuses in a datacenter.”
+    type: "[A]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["amodei-2024-machines-of-loving-grace"]
+    operationalization: >-
+      Verify the definition in the source text and map each property to measurable indicators (autonomy, tool use,
+      replication, speedup).
+    assumptions: []
+    falsifiers:
+      - The source does not include these definitional properties.
+
+  - id: "TECH-2026-989"
+    text: >-
+      Powerful AI could increase the rate of key biology and medicine discoveries by at least 10×, compressing
+      roughly 50–100 years of biological progress into about 5–10 years (“compressed 21st century”).
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["amodei-2024-machines-of-loving-grace"]
+    operationalization: >-
+      Track (a) validated biomedical discoveries (e.g., new mechanisms, modalities), (b) translation metrics
+      (clinical-trial cycle time; approval rates), and (c) population-level outcome improvements; compare
+      decade-over-decade changes before vs after reaching the defined “powerful AI” threshold.
+    assumptions:
+      - Discovery and translation rates are measurable and comparable over time.
+      - AI-driven insight meaningfully reduces the dominant constraints in biomedical progress.
+    falsifiers:
+      - No order-of-magnitude acceleration is observed in validated outcomes within ~10 years of the threshold.
+
+  - id: "TRANS-2026-037"
+    text: >-
+      Even with a “country of geniuses in a datacenter,” real-world progress is constrained by complementary
+      bottlenecks (experiment latency, hardware build times, data scarcity, and institutional/human constraints),
+      so the correct pace model is “extremely fast but not instant.”
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["amodei-2024-machines-of-loving-grace"]
+    operationalization: >-
+      For multiple domains (biomedicine, hardware, governance), measure the share of project cycle time explained
+      by non-cognitive latencies vs cognitive work; test whether added cognition reduces total cycle time beyond
+      those latencies.
+    assumptions:
+      - Bottlenecks can be decomposed into cognitive vs non-cognitive components.
+    falsifiers:
+      - Observed transformations are either near-instant across domains or negligibly affected by added cognition.
+
+  - id: "TRANS-2026-038"
+    text: >-
+      Within 5–10 years after powerful AI, a good fraction (on the order of 50%) of AI-driven health benefits could
+      propagate to even the poorest countries, conditional on major coordinated effort in global health,
+      philanthropy, and political advocacy.
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E6"
+    credence: 0.30
+    source_ids: ["amodei-2024-machines-of-loving-grace"]
+    operationalization: >-
+      For a basket of high-impact AI-enabled interventions, measure coverage, cost, and realized morbidity/mortality
+      impact in low-income countries vs high-income countries over a decade; compare to historical diffusion baselines.
+    assumptions:
+      - High-impact interventions exist and can be deployed in low-income contexts.
+      - Political and logistical barriers are tractable with sufficient coordination.
+    falsifiers:
+      - Diffusion remains slow and highly unequal despite available interventions and investment.
+
+  - id: "GEO-2026-029"
+    text: >-
+      Democracies should pursue an “entente strategy” to prevent AI-enabled authoritarian dominance, including
+      securing AI supply chains, scaling quickly, and blocking or delaying adversaries’ access to key resources like
+      chips and semiconductor equipment, paired with benefit-sharing to expand a coalition.
+    type: "[T]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["amodei-2024-machines-of-loving-grace"]
+    operationalization: >-
+      Evaluate whether export controls and supply-chain security correlate with (a) democratic capability lead,
+      (b) reduced authoritarian repression enabled by AI, and (c) lower crisis instability; compare against
+      counterfactual regimes (cooperation-focused, open-diffusion).
+    assumptions:
+      - Capability lead can be measured with proxies (compute, models, deployment).
+    falsifiers:
+      - Denial strategies increase instability or fail to slow adversary capability accumulation.
+
