@@ -62,7 +62,7 @@ Therefore: prioritize denial/coalition/military advantage policies
 
 ### Scope & Limitations
 - This is a single-tweet, high-compression argument with no citations.
-- Some content is a paraphrase of Amodei’s *The Adolescence of Technology*; some claims (Davos/H200) are not substantiated in this source.
+- Some content is a paraphrase of Amodei’s *The Adolescence of Technology*; the thread itself provides no links/citations, but the Davos/H200 episode is supported by external reporting and an official BIS press release.
 - The argument depends heavily on (a) short timelines and (b) the feasibility of durable “global lock-in,” both of which are uncertain.
 
 ## Stage 2: Evaluative Analysis
