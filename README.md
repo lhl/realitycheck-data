@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 704 |
-| **Sources** | 175 |
+| **Claims** | 710 |
+| **Sources** | 176 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 51 |
 
@@ -63,6 +63,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 | 2026-02-15 | [The Adolescence of Technology](analysis/sources/amodei-2026-adolescence-of-technology.md) | `[REVIEWED]` | Risk agenda: autonomy/misuse/autocracy + economic disruption; bioweapon enablement mechanism; chip export-denial case; autonomous-weapons oversight; entry-level displacement warning |
 | 2026-02-15 | [Dwarkesh Podcast: Amodei “end of the exponential”](analysis/sources/dwarkesh-2026-amodei-end-of-exponential.md) | `[REVIEWED]` | Transcript: “Big Blob of Compute,” ~90% by 2035 “country of geniuses,” 1–2y end-to-end coding forecast, diffusion limits, business-model pluralism, export-control stance; includes unverified revenue claims |
 | 2026-02-15 | [Thread: frontier labs and profits (@GestaltU)](analysis/sources/gestaltu-2026-frontier-labs-profits-thread.md) | `[REVIEWED]` | Social counterpoint: mission vs profit framing; “dead money” thesis for labs/compute; profits shift to electrification/metals bottlenecks; critiques Amodei profitability narrative |
+| 2026-02-15 | [Thread: why Amodei is “hawkish on China” (@aakashgupta)](analysis/sources/aakashgupta-2026-amodei-hawkish-china-thread.md) | `[REVIEWED]` | Secondary “argument map” tying Amodei short timelines + AI-enabled autocracy risk to chip-denial/coalition posture; key essay paraphrases verified; Davos/H200 anecdote unverified |
 | 2026-02-13 | [AI Futures Model: Dec 2025 Update](analysis/sources/aifutures-2025-ai-futures-model-dec-2025-update.md) | `[REVIEWED]` | Model update: +3–5y to coding automation vs Apr 2025 model; operational milestone definitions; takeoff-probability adjustment notes |
 | 2026-02-13 | [Grading AI 2027’s 2025 Predictions](analysis/sources/aifutures-2026-grading-ai-2027-2025-predictions.md) | `[REVIEWED]` | Self-audit: category-aggregated quantitative pace ~0.58–0.66×; pace→takeoff-window mapping; spreadsheet cross-check |
 | 2026-02-13 | [AI 2027 “2025 Predictions” grading spreadsheet (CSV capture)](analysis/sources/aifutures-2026-ai-2027-2025-predictions-grading-sheet.md) | `[REVIEWED]` | Captured scorecard dataset: row-level pace multipliers + aggregation rows for reproducible audit |
@@ -171,16 +172,16 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 221 |
+| TECH | Technology & AI | 222 |
 | LABOR | Labor & Employment | 42 |
 | ECON | Economics & Markets | 57 |
-| GOV | Governance & Policy | 88 |
+| GOV | Governance & Policy | 89 |
 | SOC | Social Dynamics | 25 |
 | TRANS | Transition Dynamics | 49 |
 | RESOURCE | Resource Constraints | 16 |
-| GEO | Geopolitics | 33 |
+| GEO | Geopolitics | 36 |
 | INST | Institutions & Organizations | 53 |
-| RISK | Risk Assessment | 40 |
+| RISK | Risk Assessment | 41 |
 | META | Framework & Methodology | 80 |
 
 ---

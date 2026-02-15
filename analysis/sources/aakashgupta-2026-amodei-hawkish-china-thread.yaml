@@ -1,0 +1,147 @@
+sources:
+  - id: "aakashgupta-2026-amodei-hawkish-china-thread"
+    type: "SOCIAL"
+    title: "Thread: why Dario Amodei is “hawkish on China” (timeline-driven geopolitics framing)"
+    author:
+      - "@aakashgupta"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2022902160028241940.html"
+    accessed: "2026-02-15"
+    status: "analyzed"
+    analysis_file: "analysis/sources/aakashgupta-2026-amodei-hawkish-china-thread.md"
+    reliability: 0.35
+    bias_notes: >-
+      Secondary interpretation of Amodei’s essays/interviews with high-stakes framing. Mixes (verifiable)
+      paraphrases of *The Adolescence of Technology* with (currently) unverified claims about Davos remarks and
+      U.S. chip sales. Useful as a compressed argument map, not as evidence for the Davos/H200 factual assertions.
+    topics:
+      - ai
+      - geopolitics
+      - china
+      - export-controls
+      - autonomous-weapons
+      - propaganda
+      - surveillance
+      - totalitarianism
+      - dario-amodei
+      - davos
+      - chips
+    domains:
+      - TECH
+      - GEO
+      - RISK
+      - GOV
+    claims_extracted:
+      - TECH-2026-994
+      - GEO-2026-032
+      - RISK-2026-938
+      - GOV-2026-091
+      - GEO-2026-033
+      - GEO-2026-034
+
+claims:
+  - id: "TECH-2026-994"
+    text: >-
+      Amodei believes “powerful AI” is ~2–3 years away and will be broadly superhuman (Nobel-level across fields),
+      highly autonomous (weeks), massively scalable (millions of instances), and much faster than humans (~100×),
+      with the ability to control robots/lab equipment remotely.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["aakashgupta-2026-amodei-hawkish-china-thread"]
+    operationalization: >-
+      Identify Amodei primary sources (essays/interviews) that specify capability thresholds and timelines; compare
+      the thread’s paraphrase to the primary wording and to realized capability milestones by ~2029.
+    assumptions:
+      - Amodei’s publicly stated views can be cleanly summarized as a single “2–3 years” number.
+    falsifiers:
+      - Primary sources show materially different timelines or capability description.
+
+  - id: "GEO-2026-032"
+    text: >-
+      If powerful AI is imminent and decisive, geopolitics collapses to a single question: which government
+      controls the technology when it arrives.
+    type: "[T]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["aakashgupta-2026-amodei-hawkish-china-thread"]
+    operationalization: >-
+      Model diffusion and control regimes for frontier AI (state, corporate, open, stolen, proliferated) and test
+      whether “government control” dominates outcome variance versus multi-actor diffusion and governance factors.
+    assumptions:
+      - Powerful AI can be meaningfully “controlled” by a single government over the relevant window.
+    falsifiers:
+      - Evidence that rapid diffusion to many actors is typical, making the “which government” framing non-dominant.
+
+  - id: "RISK-2026-938"
+    text: >-
+      A hostile state controlling powerful AI could entrench a “global totalitarian dictatorship” via autonomous
+      drone swarms, mass surveillance, personalized propaganda, and AI-driven strategic decision-making (“virtual
+      Bismarck”), producing lock-in where resistance becomes structurally impossible.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["aakashgupta-2026-amodei-hawkish-china-thread"]
+    operationalization: >-
+      Evaluate feasibility of scalable autonomous weapons, surveillance/propaganda personalization, and strategic
+      optimization at powerful-AI levels; model countermeasures, diffusion, and institutional failure modes.
+    assumptions:
+      - These mechanisms scale faster than defensive and governance countermeasures.
+    falsifiers:
+      - Strong evidence these mechanisms fail to yield durable lock-in under realistic diffusion and countermeasures.
+
+  - id: "GOV-2026-091"
+    text: >-
+      Democracies should block chip exports to China, form a democratic coalition, and build AI-powered military
+      superiority to control the decisive technology window.
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["aakashgupta-2026-amodei-hawkish-china-thread"]
+    operationalization: >-
+      Measure the elasticity of China’s effective frontier compute to export controls; evaluate coalition
+      enforceability and second-order effects (substitution, retaliation, escalation); compare outcomes to
+      resilience/governance-first approaches.
+    assumptions:
+      - Export controls and coalition enforcement can materially shift relative timelines.
+    falsifiers:
+      - Evidence these measures do not change relative timelines or increase overall catastrophic risk.
+
+  - id: "GEO-2026-033"
+    text: >-
+      Amodei said at Davos that Trump’s decision to sell NVIDIA H200s to China was a “major mistake,” and he cited
+      claims that Chinese AI CEOs say the chip embargo is the only thing holding them back.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E6"
+    credence: 0.20
+    source_ids: ["aakashgupta-2026-amodei-hawkish-china-thread"]
+    operationalization: >-
+      Locate primary video/transcript or credible contemporaneous reporting for Amodei’s Davos remarks and the
+      referenced “Chinese AI CEOs” statements; confirm wording and context.
+    assumptions:
+      - A public record of the Davos remarks exists and is accessible.
+    falsifiers:
+      - No credible record supports the quote/context, or records show different wording/meaning.
+
+  - id: "GEO-2026-034"
+    text: >-
+      Amodei’s hawkishness toward China is primarily driven by his short-timeline assumptions about powerful AI; if
+      those assumptions are correct, a hawkish export-control posture is the rational stance.
+    type: "[T]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["aakashgupta-2026-amodei-hawkish-china-thread"]
+    operationalization: >-
+      Compare Amodei’s stated reasons across writings/interviews to alternative drivers (institutional incentives,
+      domestic politics); evaluate policy optimality under varying timeline and diffusion assumptions.
+    assumptions:
+      - “Rational” policy can be evaluated without fully specifying values and risk tolerance.
+    falsifiers:
+      - Evidence Amodei’s stance is driven mainly by other factors, or that hawkishness is suboptimal even under short timelines.
+
