@@ -12,8 +12,9 @@ sources:
     reliability: 0.35
     bias_notes: >-
       Secondary interpretation of Amodei’s essays/interviews with high-stakes framing. Mixes (verifiable)
-      paraphrases of *The Adolescence of Technology* with (currently) unverified claims about Davos remarks and
-      U.S. chip sales. Useful as a compressed argument map, not as evidence for the Davos/H200 factual assertions.
+      paraphrases of *The Adolescence of Technology* with claims about Davos/H200 export policy that are supported
+      by credible reporting and an official BIS press release. Useful as a compressed argument map, but the
+      thread’s compressed attributions can be looser than primary wording.
     topics:
       - ai
       - geopolitics
@@ -113,16 +114,17 @@ claims:
 
   - id: "GEO-2026-033"
     text: >-
-      Amodei said at Davos that Trump’s decision to sell NVIDIA H200s to China was a “major mistake,” and he cited
-      claims that Chinese AI CEOs say the chip embargo is the only thing holding them back.
+      Amodei said at Davos that the Trump administration’s decision to allow NVIDIA H200 exports to approved
+      customers in China would be a “big mistake” / “crazy” (including a “nuclear weapons to North Korea”
+      analogy), and he cited CEOs’ statements about chip embargoes as binding constraints (“holding [them] back”).
     type: "[F]"
     domain: "GEO"
-    evidence_level: "E6"
-    credence: 0.20
+    evidence_level: "E4"
+    credence: 0.85
     source_ids: ["aakashgupta-2026-amodei-hawkish-china-thread"]
     operationalization: >-
       Locate primary video/transcript or credible contemporaneous reporting for Amodei’s Davos remarks and the
-      referenced “Chinese AI CEOs” statements; confirm wording and context.
+      referenced “CEOs of these companies” claim; confirm wording, referent, and context.
     assumptions:
       - A public record of the Davos remarks exists and is accessible.
     falsifiers:
@@ -144,4 +146,3 @@ claims:
       - “Rational” policy can be evaluated without fully specifying values and risk tolerance.
     falsifiers:
       - Evidence Amodei’s stance is driven mainly by other factors, or that hawkishness is suboptimal even under short timelines.
-
