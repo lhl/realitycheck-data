@@ -1,0 +1,203 @@
+sources:
+  - id: "storey-2026-cognitive-debt"
+    type: "BLOG"
+    title: "How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt"
+    author:
+      - "Margaret-Anne Storey"
+    year: 2026
+    url: "https://margaretstorey.com/blog/2026/02/09/cognitive-debt/"
+    accessed: "2026-02-16"
+    status: "analyzed"
+    analysis_file: "analysis/sources/storey-2026-cognitive-debt.md"
+    reliability: 0.60
+    bias_notes: >-
+      Short conceptual blog post by a software-engineering researcher arguing for a reframing (“technical debt”
+      → “cognitive debt”) under generative/agentic AI. Strong on mechanism plausibility + grounded SE lineage
+      (Naur/Brooks) + concrete mitigations; weak on empirical measurement and on disambiguating “cognitive
+      debt” (software shared-theory vs general LLM “cognitive offloading” usage).
+    topics:
+      - cognitive-debt
+      - technical-debt
+      - software-engineering
+      - agentic-ai
+      - code-comprehension
+      - knowledge-management
+    domains:
+      - META
+      - TECH
+    claims_extracted:
+      - META-2026-137
+      - META-2026-138
+      - META-2026-139
+      - META-2026-140
+      - META-2026-141
+      - META-2026-142
+      - META-2026-143
+      - META-2026-144
+      - META-2026-145
+      - META-2026-146
+
+claims:
+  - id: "META-2026-137"
+    text: >-
+      Storey defines “cognitive debt” (in this article’s AI-augmented software-engineering context) as the
+      erosion/fragmentation of developers’ shared understanding (“theory”) of what a system does, why it is
+      built that way, and how to change it safely.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.90
+    source_ids: ["storey-2026-cognitive-debt"]
+    operationalization: "Check the article text for its explicit definition and examples of cognitive debt vs technical debt."
+    assumptions: []
+    falsifiers:
+      - "The article does not define cognitive debt in terms of shared understanding/theory loss."
+
+  - id: "META-2026-138"
+    text: >-
+      As generative and agentic AI become more widely used in software development, cognitive debt will become
+      a bigger threat to long-term software health than technical debt.
+    type: "[P]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["storey-2026-cognitive-debt"]
+    operationalization: >-
+      Compare AI-augmented teams over multi-month horizons on (a) cognitive-debt proxies (rationale loss,
+      explainability of changes, newcomer reconstruction cost) vs (b) code-level technical-debt metrics and
+      assess which better predicts incidents, change lead time, and rework.
+    assumptions:
+      - AI increases code-change throughput faster than teams can maintain shared understanding.
+      - Cognitive-debt proxies can be measured consistently across teams.
+    falsifiers:
+      - Longitudinal studies show technical-debt metrics remain the dominant predictor of maintainability failures under AI adoption.
+      - Cognitive-debt proxies do not increase (or improve) with AI adoption when controlling for process discipline.
+
+  - id: "META-2026-139"
+    text: >-
+      Peter Naur’s “Programming as Theory Building” argues that the primary aim of programming is for
+      programmers to build theories about the problem and solution; the “program” is more than its source text
+      and lives as theory in developers’ minds.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["storey-2026-cognitive-debt"]
+    operationalization: "Read Naur (1985) and confirm the “theory building” framing (e.g., abstract and discussion)."
+    assumptions: []
+    falsifiers:
+      - "Naur’s paper does not assert that theory building is the primary aim of programming."
+
+  - id: "META-2026-140"
+    text: >-
+      Even if AI-generated code is locally understandable, teams can still accumulate cognitive debt as humans
+      lose system-level understanding (intent, rationale, and interactions), making safe change difficult.
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["storey-2026-cognitive-debt"]
+    operationalization: >-
+      In AI-augmented teams, track system-level comprehension (ability to explain “why” and “how” across
+      modules) and correlate with regressions, lead time, and frequency of “surprise breakage” after changes.
+    assumptions:
+      - System-level understanding can be measured via structured “why/how” interviews or tests.
+    falsifiers:
+      - Controlled studies show AI use improves system-level understanding and reduces surprise breakage over time.
+
+  - id: "META-2026-141"
+    text: >-
+      Brooks’ Law (from *The Mythical Man-Month*) is commonly summarized as: “Adding manpower to a late
+      software project makes it later,” due in part to increased coordination and communication overhead.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["storey-2026-cognitive-debt"]
+    operationalization: "Consult Brooks (1975) and supporting references for the quote and explanation."
+    assumptions: []
+    falsifiers:
+      - "Primary sources do not contain the quote or do not attribute it to Brooks / The Mythical Man-Month."
+
+  - id: "META-2026-142"
+    text: >-
+      Practices such as pair programming, refactoring, and test-driven development can mitigate cognitive debt
+      by rebuilding and distributing shared understanding of a system.
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["storey-2026-cognitive-debt"]
+    operationalization: >-
+      Compare teams using these practices vs matched controls on cognitive-debt proxies (rationale capture,
+      bus-factor resilience, comprehension tests) under similar AI tooling and delivery pressure.
+    assumptions:
+      - These practices increase shared understanding rather than only improving code structure/tests.
+    falsifiers:
+      - No measurable differences in cognitive-debt proxies between practice-adopting teams and controls in AI-augmented settings.
+
+  - id: "META-2026-143"
+    text: >-
+      Requiring at least one human to fully understand each AI-generated change before shipping, and recording
+      “why” (not just “what”), reduces the risk of cognitive-debt accumulation.
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["storey-2026-cognitive-debt"]
+    operationalization: >-
+      Run an intervention study: enforce a “human-understands” gate + rationale documentation on some teams
+      and compare change failure rate, rework, and comprehension outcomes to teams without the gate.
+    assumptions:
+      - The gate is enforced rigorously and does not devolve into box-checking.
+      - The added time cost is not so high that it is abandoned under pressure.
+    falsifiers:
+      - No differences in change failure rate or comprehension outcomes after adoption of the gate/rationale practice.
+
+  - id: "META-2026-144"
+    text: >-
+      Cognitive debt can be detected early via warning signs such as fear-driven hesitance to make changes,
+      increasing reliance on “tribal knowledge” held by a small subset of team members, and a growing sense the
+      system is becoming a black box.
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["storey-2026-cognitive-debt"]
+    operationalization: >-
+      Use survey + behavioral proxies (PR hesitation, reviewer concentration, “who can change X?” queries) and
+      test whether they predict later maintainability incidents and reduced onboarding success.
+    assumptions:
+      - These signals are not fully explained by other factors (e.g., organizational blame culture).
+    falsifiers:
+      - These warning signs do not predict later maintainability incidents or comprehension failures after controlling for confounders.
+
+  - id: "META-2026-145"
+    text: >-
+      Thoughtworks hosted an invite-only “future of software development retreat” at Deer Valley Grand Hyatt,
+      Utah on February 1–3, 2026, hosted by Martin Fowler and Thoughtworks.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["storey-2026-cognitive-debt"]
+    operationalization: "Verify event date and hosts on Thoughtworks’ event page."
+    assumptions: []
+    falsifiers:
+      - "Thoughtworks’ event page does not list the retreat dates/hosts as stated."
+
+  - id: "META-2026-146"
+    text: >-
+      TechDebt 2026 (ICSE 2026) lists Margaret-Anne Storey as a keynote speaker; the keynote abstract frames
+      “cognitive debt” as accumulated future mental effort required to understand, reason about, and
+      collaborate around software systems in AI-assisted development.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["storey-2026-cognitive-debt"]
+    operationalization: "Verify Storey’s keynote listing and abstract text on the TechDebt 2026 conference site."
+    assumptions: []
+    falsifiers:
+      - "TechDebt 2026 does not list Storey as a keynote speaker or does not describe cognitive debt as stated."
+

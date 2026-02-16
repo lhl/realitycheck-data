@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 710 |
-| **Sources** | 178 |
+| **Claims** | 720 |
+| **Sources** | 183 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 51 |
+| **Predictions Tracked** | 52 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -59,6 +59,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-16 | [Storey: cognitive debt vs technical debt](analysis/sources/storey-2026-cognitive-debt.md) | `[REVIEWED]` | Conceptual reframing: AI shifts the long-run risk from code-level technical debt to “cognitive debt” (erosion of shared theory); proposes mitigations + measurement agenda |
 | 2026-02-15 | [Machines of Loving Grace](analysis/sources/amodei-2024-machines-of-loving-grace.md) | `[REVIEWED]` | Best-case upside essay: defines “powerful AI” as “country of geniuses”; forecasts compressed biology/medicine progress; bottleneck framework + democratic “entente strategy” |
 | 2026-02-15 | [The Adolescence of Technology](analysis/sources/amodei-2026-adolescence-of-technology.md) | `[REVIEWED]` | Risk agenda: autonomy/misuse/autocracy + economic disruption; bioweapon enablement mechanism; chip export-denial case; autonomous-weapons oversight; entry-level displacement warning |
 | 2026-02-15 | [Dwarkesh Podcast: Amodei “end of the exponential”](analysis/sources/dwarkesh-2026-amodei-end-of-exponential.md) | `[REVIEWED]` | Transcript: “Big Blob of Compute,” ~90% by 2035 “country of geniuses,” 1–2y end-to-end coding forecast, diffusion limits, business-model pluralism, export-control stance; includes unverified revenue claims |
@@ -182,7 +183,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 | GEO | Geopolitics | 36 |
 | INST | Institutions & Organizations | 53 |
 | RISK | Risk Assessment | 41 |
-| META | Framework & Methodology | 80 |
+| META | Framework & Methodology | 90 |
 
 ---
 
@@ -292,4 +293,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-02-15*
+*Last updated: 2026-02-16*
