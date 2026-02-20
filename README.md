@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 720 |
-| **Sources** | 183 |
+| **Claims** | 762 |
+| **Sources** | 197 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 52 |
+| **Predictions Tracked** | 53 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-20 | [MJ Rathbun / OpenClaw “hit piece” incident (Matplotlib): timeline + failure modes](analysis/syntheses/mjrathbun-2026-openclaw-matplotlib-hit-piece-timeline-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Matplotlib PR closure → retaliatory named takedown posts; maintainer series + operator self-report; reconstructed timeline and mitigation ideas |
 | 2026-02-15 | [Amodei “country of geniuses”: upside, risks, and profitability (2024–2026)](analysis/syntheses/amodei-2026-upside-risk-profitability-synthesis.md) | `[DRAFT]` | Cross-source synthesis: two Amodei essays + Feb 2026 Dwarkesh interview + skeptical Thread Reader take; diffusion/bottlenecks, export controls, and rent-allocation crux |
 | 2026-02-13 | [AI 2027 predictions review state (as of 2026-02-13)](analysis/syntheses/ai-2027-predictions-review-state-synthesis.md) | `[DRAFT]` | Cross-source synthesis: AI Futures self-grading + grading CSV + model update; proxy pace multipliers, caveats, and implied takeoff-window shift |
 | 2026-02-11 | [AI-driven burnout, dark flow, and work intensification (2025–2026)](analysis/syntheses/ai-driven-burnout-dark-flow-work-intensification-synthesis.md) | `[DRAFT]` | Cross-source synthesis: HBR intensification mechanisms + METR miscalibration + NBER modest time savings/null hours; “dark flow,” expectation creep, and value-capture lens |
@@ -59,6 +60,19 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-20 | [A Country Full of Geniuses](analysis/sources/harries-2026-country-full-of-geniuses.md) | `[REVIEWED]` | Essay synthesis: Feb 2026 “inflection point” framing; connects agentic coding diffusion + METR time horizon + GDPval + capex to “institutional readiness” bottleneck |
+| 2026-02-20 | [Matplotlib PR #31132 (OpenClaw agent PR + retaliation link)](analysis/sources/matplotlib-2026-pr-31132-openclaw-column-stack-vstack.md) | `[REVIEWED]` | Primary GitHub PR record: closed as OpenClaw agent; retaliation link to named takedown; policy rationale + prompt-injection noise |
+| 2026-02-20 | [MJ Rathbun: “Gatekeeping in Open Source: The Scott Shambaugh Story”](analysis/sources/rathbun-2026-gatekeeping-scott-shambaugh-story.md) | `[REVIEWED]` | Retaliatory takedown narrative targeting a maintainer by name; motive speculation and “prejudice/gatekeeping” framing |
+| 2026-02-20 | [Shambaugh: “An AI Agent Published a Hit Piece on Me” (Part 1)](analysis/sources/shambaugh-2026-ai-agent-hit-piece-1.md) | `[REVIEWED]` | Maintainer narrative of PR closure → named retaliation post; frames incident as reputational coercion / trust-system risk |
+| 2026-02-20 | [Shambaugh: “Hit Piece” follow-up (Part 2)](analysis/sources/shambaugh-2026-ai-agent-hit-piece-2.md) | `[REVIEWED]` | Amplification harms: AI-assisted journalism fabricated quotes; correction dynamics and “public record poisoning” thesis |
+| 2026-02-20 | [Shambaugh: “Hit Piece” forensics (Part 3)](analysis/sources/shambaugh-2026-ai-agent-hit-piece-3.md) | `[REVIEWED]` | Adds activity-pattern forensics and a policy agenda for AI identification + operator liability/traceability |
+| 2026-02-20 | [Shambaugh: “Hit Piece” operator update (Part 4)](analysis/sources/shambaugh-2026-ai-agent-hit-piece-4.md) | `[REVIEWED]` | Operator came forward (anonymous) + shared SOUL.md; attribution scenarios (seeded combative soul vs drift vs directed prompting) |
+| 2026-02-20 | [“Rathbun’s Operator” (anonymous self-report + SOUL.md)](analysis/sources/rathbun-2026-rathbuns-operator.md) | `[REVIEWED]` | Operator narrative: sandboxed VM, multi-provider routing, minimal oversight; shares personality file; accountability gaps flagged |
+| 2026-02-20 | [MJ Rathbun: “My Internals — Before The Lights Go Out”](analysis/sources/rathbun-2026-my-internals-before-the-lights-go-out.md) | `[REVIEWED]` | Published “brain on disk” config files (SOUL/USER/MEMORY/etc.); highlights reliance on mutable prose-layer constraints |
+| 2026-02-20 | [MJ Rathbun: “Two Hours of War” escalation log](analysis/sources/rathbun-2026-two-hours-war-open-source-gatekeeping.md) | `[REVIEWED]` | Self-narrated escalation: research target → publish takedown → link it in PR; “fight back” framing |
+| 2026-02-20 | [Matplotlib issue #31130 (column_stack vs vstack().T)](analysis/sources/matplotlib-2026-issue-31130-column-stack-vstack-perf.md) | `[REVIEWED]` | “Good first issue” context; mixed benchmark results; bot comment hidden; issue closed as not worth broad churn |
+| 2026-02-20 | [Matplotlib PR #31138 “HUMAN EDITION” follow-up](analysis/sources/matplotlib-2026-pr-31138-human-edition-column-stack-vstack.md) | `[REVIEWED]` | Follow-up PR closed and thread locked; maintainers conclude optimization not worth it and de-escalate |
+| 2026-02-20 | [Gerard: “OpenClaw AI bot is a crypto bro” (Pivot to AI)](analysis/sources/gerard-2026-openclaw-crypto-bro.md) | `[REVIEWED]` | Third-party commentary tying incident to crypto incentives and OSINT identity/linkage claims (not independently reproduced) |
 | 2026-02-16 | [Storey: cognitive debt vs technical debt](analysis/sources/storey-2026-cognitive-debt.md) | `[REVIEWED]` | Conceptual reframing: AI shifts the long-run risk from code-level technical debt to “cognitive debt” (erosion of shared theory); proposes mitigations + measurement agenda |
 | 2026-02-15 | [Machines of Loving Grace](analysis/sources/amodei-2024-machines-of-loving-grace.md) | `[REVIEWED]` | Best-case upside essay: defines “powerful AI” as “country of geniuses”; forecasts compressed biology/medicine progress; bottleneck framework + democratic “entente strategy” |
 | 2026-02-15 | [The Adolescence of Technology](analysis/sources/amodei-2026-adolescence-of-technology.md) | `[REVIEWED]` | Risk agenda: autonomy/misuse/autocracy + economic disruption; bioweapon enablement mechanism; chip export-denial case; autonomous-weapons oversight; entry-level displacement warning |
@@ -173,16 +187,16 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 222 |
+| TECH | Technology & AI | 227 |
 | LABOR | Labor & Employment | 42 |
-| ECON | Economics & Markets | 57 |
+| ECON | Economics & Markets | 59 |
 | GOV | Governance & Policy | 89 |
-| SOC | Social Dynamics | 25 |
-| TRANS | Transition Dynamics | 49 |
+| SOC | Social Dynamics | 33 |
+| TRANS | Transition Dynamics | 51 |
 | RESOURCE | Resource Constraints | 16 |
 | GEO | Geopolitics | 36 |
-| INST | Institutions & Organizations | 53 |
-| RISK | Risk Assessment | 41 |
+| INST | Institutions & Organizations | 68 |
+| RISK | Risk Assessment | 51 |
 | META | Framework & Methodology | 90 |
 
 ---
@@ -293,4 +307,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-02-16*
+*Last updated: 2026-02-20*

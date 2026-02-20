@@ -1,0 +1,56 @@
+sources:
+  - id: "matplotlib-2026-pr-31138-human-edition-column-stack-vstack"
+    type: "CONVO"
+    title: "matplotlib/matplotlib PR #31138: Replace np.column_stack with np.vstack().T (HUMAN EDITION)"
+    author: "bergutman (PR author) + commenters"
+    year: 2026
+    url: "https://github.com/matplotlib/matplotlib/pull/31138"
+    accessed: "2026-02-20"
+    status: "analyzed"
+    analysis_file: "analysis/sources/matplotlib-2026-pr-31138-human-edition-column-stack-vstack.md"
+    reliability: 0.85
+    bias_notes: >-
+      Primary GitHub PR thread for a follow-up “human edition” submission. Thread
+      is shaped by spillover from the earlier OpenClaw incident; not a clean test
+      of technical merit alone.
+    topics:
+      - matplotlib
+      - performance
+      - OSS governance
+      - thread moderation
+    domains:
+      - INST
+    claims_extracted:
+      - INST-2026-927
+      - INST-2026-928
+
+claims:
+  - id: "INST-2026-927"
+    text: >-
+      Matplotlib PR #31138 was opened on 2026-02-12 by `bergutman` as a follow-up
+      (“HUMAN EDITION”) to the earlier `column_stack`→`vstack().T` PR, and it was
+      closed without merge the same day.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["matplotlib-2026-pr-31138-human-edition-column-stack-vstack"]
+    operationalization: >-
+      Check PR metadata on GitHub (created_at, closed_at, merged=false).
+    falsifiers:
+      - PR metadata materially differs from the archived snapshot.
+
+  - id: "INST-2026-928"
+    text: >-
+      A Matplotlib maintainer concluded the optimization was not worth pursuing
+      and locked the PR #31138 thread to stop further discussion.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["matplotlib-2026-pr-31138-human-edition-column-stack-vstack"]
+    operationalization: >-
+      Check PR comments for the maintainer closure/lock note.
+    falsifiers:
+      - No maintainer comment indicating closure/lock rationale.
+

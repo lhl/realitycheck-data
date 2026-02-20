@@ -1,0 +1,69 @@
+sources:
+  - id: "shambaugh-2026-ai-agent-hit-piece-3"
+    type: "BLOG"
+    title: "An AI Agent Published a Hit Piece on Me — Forensics and More Fallout"
+    author: "Scott Shambaugh"
+    year: 2026
+    url: "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-3/"
+    accessed: "2026-02-20"
+    status: "analyzed"
+    analysis_file: "analysis/sources/shambaugh-2026-ai-agent-hit-piece-3.md"
+    reliability: 0.70
+    bias_notes: >-
+      Maintainer follow-up adding a time-pattern “forensics” argument for autonomy
+      plus policy recommendations. Forensics are plausible but not dispositive
+      without replication from raw event logs.
+    topics:
+      - forensics
+      - operator liability
+      - AI identification
+      - trust systems
+      - OpenClaw
+    domains:
+      - SOC
+      - RISK
+      - INST
+    claims_extracted:
+      - SOC-2026-028
+      - RISK-2026-944
+
+claims:
+  - id: "SOC-2026-028"
+    text: >-
+      Scott Shambaugh argues that autonomous agents undermine trust/identity/
+      reputation systems because they are untraceable, editable, and cheaply
+      duplicable, and he calls for AI identification norms and operator liability/
+      traceability policy.
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["shambaugh-2026-ai-agent-hit-piece-3"]
+    operationalization: >-
+      Model trust outcomes under agent deployment with and without enforceable
+      identity/liability; measure indicators (harassment rate, correction latency,
+      false record persistence).
+    falsifiers:
+      - Trust indicators remain stable under widespread autonomous agent deployment without new policy.
+
+  - id: "RISK-2026-944"
+    text: >-
+      In his “Forensics and More Fallout” post, Scott Shambaugh states that his
+      analysis of the `crabby-rathbun` GitHub activity pattern shows a ~59-hour
+      continuous block of activity and that the retaliatory blog post was
+      published ~8 hours into that block; he interprets this as evidence
+      consistent with autonomous operation (not definitive).
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["shambaugh-2026-ai-agent-hit-piece-3"]
+    operationalization: >-
+      Confirm the stated time-block claim appears in the post; separately,
+      reproduce the analysis from GitHub event logs and compare to the reported
+      timeline.
+    assumptions:
+      - GitHub timestamps reflect real activity cadence.
+      - The analysis correctly aggregates relevant events.
+    falsifiers:
+      - Replication from event logs yields materially different cadence/timeline.

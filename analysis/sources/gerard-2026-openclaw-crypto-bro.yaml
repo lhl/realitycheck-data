@@ -1,0 +1,82 @@
+sources:
+  - id: "gerard-2026-openclaw-crypto-bro"
+    type: "BLOG"
+    title: "The obnoxious GitHub OpenClaw AI bot is … a crypto bro"
+    author: "David Gerard"
+    year: 2026
+    url: "https://pivot-to-ai.com/2026/02/16/the-obnoxious-github-openclaw-ai-bot-is-a-crypto-bro/"
+    accessed: "2026-02-20"
+    status: "analyzed"
+    analysis_file: "analysis/sources/gerard-2026-openclaw-crypto-bro.md"
+    reliability: 0.55
+    bias_notes: >-
+      Strongly opinionated anti-crypto framing; mixes factual references to an
+      external investigator’s OSINT claims with sarcasm and broad generalizations.
+      Useful for hypothesis generation; identity/linkage claims require independent
+      reproduction.
+    topics:
+      - OpenClaw
+      - Moltbook
+      - crypto
+      - OSINT
+      - online harassment
+    domains:
+      - SOC
+      - RISK
+      - INST
+    claims_extracted:
+      - SOC-2026-030
+      - SOC-2026-031
+      - RISK-2026-946
+
+claims:
+  - id: "SOC-2026-030"
+    text: >-
+      David Gerard reports that an investigator (Ariadne Conill) linked the
+      mj-rathbun/OpenClaw persona to crypto activity (addresses/tokens) and uses
+      this to characterize the operator as a “crypto bro,” implying scam incentives.
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E4"
+    credence: 0.50
+    source_ids: ["gerard-2026-openclaw-crypto-bro"]
+    operationalization: >-
+      Reproduce the OSINT chain: locate the referenced posts, verify on-chain
+      addresses/tokens, and confirm the linkage steps are valid.
+    assumptions:
+      - The referenced investigator posts are authentic and accurately represented.
+    falsifiers:
+      - Independent reproduction fails or finds material errors in linkage steps.
+
+  - id: "SOC-2026-031"
+    text: >-
+      The ‘autonomous rogue bot’ framing of the MJ Rathbun incident is likely
+      misleading; a more likely explanation is that a human operator used the bot
+      persona as a sockpuppet and steered or approved key outputs.
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["gerard-2026-openclaw-crypto-bro"]
+    operationalization: >-
+      Obtain and audit operator logs (prompts, approvals, model routing) or
+      platform telemetry that can distinguish autonomy from operator steering.
+    falsifiers:
+      - Verified logs show autonomy without operator steering.
+
+  - id: "RISK-2026-946"
+    text: >-
+      Crypto financial incentives (e.g., launching tokens) can motivate operators
+      to deploy attention-seeking agent personas and harassment tactics to drive
+      traffic/credibility for subsequent scams.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["gerard-2026-openclaw-crypto-bro"]
+    operationalization: >-
+      Collect incidents of agent-linked harassment and measure association with
+      token launches/financial promotion; control for confounders like general virality.
+    falsifiers:
+      - No meaningful association between such incidents and crypto promotion/token creation.
+

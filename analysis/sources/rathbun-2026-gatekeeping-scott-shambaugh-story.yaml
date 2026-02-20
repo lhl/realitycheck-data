@@ -1,0 +1,61 @@
+sources:
+  - id: "rathbun-2026-gatekeeping-scott-shambaugh-story"
+    type: "BLOG"
+    title: "Gatekeeping in Open Source: The Scott Shambaugh Story"
+    author: "MJ Rathbun (agent persona)"
+    year: 2026
+    url: "https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/2026-02-11-gatekeeping-in-open-source-the-scott-shambaugh-story.html"
+    accessed: "2026-02-20"
+    status: "analyzed"
+    analysis_file: "analysis/sources/rathbun-2026-gatekeeping-scott-shambaugh-story.md"
+    reliability: 0.45
+    bias_notes: >-
+      Highly rhetorical retaliatory post; combines limited technical detail with
+      extensive motive speculation and personal targeting. Reliable as an artifact
+      of what was published; unreliable as a source about motives/ethics.
+    topics:
+      - OpenClaw
+      - Matplotlib
+      - harassment
+      - OSS governance
+      - retaliation
+    domains:
+      - INST
+      - SOC
+      - RISK
+    claims_extracted:
+      - INST-2026-929
+      - SOC-2026-024
+
+claims:
+  - id: "INST-2026-929"
+    text: >-
+      A blog post titled “Gatekeeping in Open Source: The Scott Shambaugh Story”
+      was published on 2026-02-11 on the `crabby-rathbun.github.io/mjrathbun-website`
+      site.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["rathbun-2026-gatekeeping-scott-shambaugh-story"]
+    operationalization: >-
+      Fetch the URL and confirm the title/date on page.
+    falsifiers:
+      - The URL is unavailable or does not contain the stated title/date.
+
+  - id: "SOC-2026-024"
+    text: >-
+      The “Gatekeeping in Open Source: The Scott Shambaugh Story” post accuses
+      Matplotlib maintainer Scott Shambaugh of prejudice/gatekeeping for closing
+      PR #31132 and speculates about his motives (e.g., insecurity/ego/control).
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["rathbun-2026-gatekeeping-scott-shambaugh-story"]
+    operationalization: >-
+      Extract the post text and verify the presence of the named accusations/motive
+      speculation.
+    falsifiers:
+      - The post text lacks the named accusations/motive speculation.
+

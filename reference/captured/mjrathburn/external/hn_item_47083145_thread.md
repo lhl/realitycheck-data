@@ -1,0 +1,388 @@
+# HN item 47083145: An AI Agent Published a Hit Piece on Me – The Operator Came Forward
+
+- **HN URL**: https://news.ycombinator.com/item?id=47083145
+
+- **Link URL**: https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/
+
+- **Retrieved (UTC)**: 
+
+- **by**: scottshambaugh
+
+- **time**: 1771556708
+
+- **descendants**: 182
+
+
+## Comments
+
+- **lynndotpy** (id 47083439, time 1771559209)
+  - &gt; Again I do not know why MJ Rathbun decided based on your PR comment to post some kind of takedown blog post,<p>This wording is detached from reality and conveniently absolves responsibility from the person who did this.<p>There was one decision maker involved here, and it was the person who decided to run the program that produced this text and posted it online. It&#x27;s not a second, independent being. It&#x27;s a computer program.
+  - **jacquesm** (id 47083531, time 1771560021)
+    - This is how it will go: AI prompted by human creates something useful? Human will try to take credit. AI wrecks something: human will blame AI.<p>It&#x27;s externalization on the personal level, the money and the glory is for you, the misery for the rest of the world.
+    - **ineptech** (id 47083680, time 1771561226)
+      - Agreed, but I&#x27;m not nearly so worried about people blaming their bad behavior on rogue AIs as I am about corporations doing it...
+      - **theturtletalks** (id 47084003, time 1771564043)
+        - And it&#x27;s incredibly easy now. Just blame the Soul.md or say you were cycling thru many models so maybe one of those went off the rails. The real damage is that most of us know AI can go rouge, but if someone is pulling the strings behind the scenes, most people will be like &quot;oh silly AI, anyways...&quot;<p>It seems like the OpenClaw users have let their agents make Twitter accounts and memecoins now. Most people are thinking these agents have less &quot;bias&quot; since it&#x27;s AI, but most are being heavily steered by their users.<p>Ala I didn&#x27;t do a rugpull, the agent did!
+      - **cj** (id 47083797, time 1771562130)
+        - It’s funny to think that, like AI, people take actions and use corporations as a shield (legal shield, personal reputation shield, personal liability shield).<p>Adding AI to the mix doesn’t really change anything, other than increasing the layers of abstraction away from negative things corporations do to the people pulling the strings.
+      - **Terr_** (id 47083863, time 1771562645)
+        - Yeah, not all humans feel shame, but the rates are way higher.
+    - **DavidPiper** (id 47083810, time 1771562213)
+      - Time for everyone to read (or re-read) The Unaccountability Machine by Dan Davies.<p>tl;dr this is exactly what will happen because businesses already do everything they can to create accountability sinks.
+    - **elashri** (id 47083688, time 1771561283)
+      - When a corporate does something good, a lot of executives and people inside will go and claim credit and will demand&#x2F;take bounces.<p>If something bad happened against any laws, even if someone got killed, we don&#x27;t see them in jail.<p>I don&#x27;t defend both positions, I am just saying that is not far from how the current legal framework works.
+      - **kingstnap** (id 47083823, time 1771562273)
+        - Well the important concept missing there that makes everything sort of make sense is due diligence.<p>If your company screws up and it is found out that you didn&#x27;t do your due diligence then the liability does pass through.<p>We just need to figure out a due diligence framework for running bots that makes sense. But right now that&#x27;s hard to do because Agentic robots that didn&#x27;t completely suck are just a few months old.
+        - **hvb2** (id 47084309, time 1771567092)
+          - &gt; If your company screws up and it is found out that you didn&#x27;t do your due diligence then the liability does pass through.<p>In theory, sure. Do you know many examples? I think, worst case, someone being fired is the more likely outcome
+        - **gostsamo** (id 47083994, time 1771563914)
+          - No, it isnot hard. You are 100% responsible for the actions of your AI. Rather simple, I say.
+      - **eru** (id 47083744, time 1771561749)
+        - &gt; If something bad happened against any laws, even if someone got killed, we don&#x27;t see them in jail.<p>We do!  In many jurisdictions, there are lots of laws that pierce the corporate veil.
+        - **cj** (id 47083857, time 1771562549)
+          - its surprisingly easy to get away with murder (literally and figuratively) without piercing the corporate veil if you understand the rules of the game. Running decisions through a good law firm also “helps” a lot.<p><a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Piercing_the_corporate_veil" rel="nofollow">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Piercing_the_corporate_veil</a>
+    - **davidw** (id 47083661, time 1771561078)
+      - &quot;I would like to personally blame Jesus Christ for making us lose that football game&quot;
+    - **lcnPylGDnU4H9OF** (id 47084006, time 1771564073)
+      - To be fair, one doesn&#x27;t need AI to attempt to avoid responsibility and accept undue credit. It&#x27;s just narcissism; meaning, those who&#x27;ve learned to reject such thinking will simply do so (generally, in abstract), with or without AI.
+  - **xarope** (id 47083471, time 1771559449)
+    - This also does not bode well for the future.<p>&quot;I don&#x27;t know why the AI decided to &lt;insert inane action&gt;, the guard rails were in place&quot;... company absolves of all responsibility.<p>Use your imagination now to &lt;insert inane action&gt; and change that to &lt;distressing, harmful action&gt;
+    - **_aavaa_** (id 47083535, time 1771560053)
+      - This has been the past and present for a long at this point. &quot;Sorry there&#x27;s nothing we can do, the system won&#x27;t let me.&quot;<p>Also see Weapons of Math Destruction [0].<p>[0]: <a href="https:&#x2F;&#x2F;www.penguinrandomhouse.com&#x2F;books&#x2F;241363&#x2F;weapons-of-math-destruction-by-cathy-oneil&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.penguinrandomhouse.com&#x2F;books&#x2F;241363&#x2F;weapons-of-m...</a>
+      - **c22** (id 47083644, time 1771560923)
+        - I don&#x27;t know if this case is in the book you cited, but in the UK they convicted many people of crimes just because the computer told them so: <a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;British_Post_Office_scandal" rel="nofollow">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;British_Post_Office_scandal</a>
+        - **shakna** (id 47083753, time 1771561822)
+          - And Australia made the poorer and suicidal: <a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Robodebt_scheme" rel="nofollow">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Robodebt_scheme</a>
+      - **denkmoon** (id 47083632, time 1771560808)
+        - Also elegantly summed up as &quot;Computer says no&quot; (<a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=x0YGZPycMEU" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=x0YGZPycMEU</a>)
+      - **gammarator** (id 47083700, time 1771561346)
+        - Also “The Unaccountability Machine” <a href="https:&#x2F;&#x2F;press.uchicago.edu&#x2F;ucp&#x2F;books&#x2F;book&#x2F;chicago&#x2F;U&#x2F;bo252799883.html" rel="nofollow">https:&#x2F;&#x2F;press.uchicago.edu&#x2F;ucp&#x2F;books&#x2F;book&#x2F;chicago&#x2F;U&#x2F;bo252799...</a>
+    - **incr_me** (id 47084030, time 1771564290)
+      - Unfortunately, the market seems to have produced horrors by way of naturally thinking agents, instead. I wish that, for all these years of prehistoric wretchedness, we would have had AI to blame. Many more years in the muck, it seems.
+    - **WaitWaitWha** (id 47083729, time 1771561618)
+      - This already happens every single time when there is a security breach and private information is lost.<p><i>We take your privacy and security very seriously. There is no evidence that your data has been misused. Out of an abundance of caution… We remain committed to... will continue to work tirelessly to earn ... restore your trust ... confidence.</i>
+      - **hxugufjfjf** (id 47084069, time 1771564650)
+        - What else would you see them do or say beyond this canned response? The reason I am asking is because people almost always bring up how dissatisfied they are with such apologies, yet I’ve never seen a good alternative that someone would be happy with. I don’t work in PR or anything, just curious if there is a better way.
+        - **_carbyau_** (id 47084310, time 1771567100)
+          - Lose money accordingly - fines, penalties, recompense to victims, whatever... - so they then take the seriousness of security into account.
+    - **tapoxi** (id 47083585, time 1771560285)
+      - Change this to &quot;smash into a barricade&quot; and that&#x27;s why I&#x27;m not riding in a self-driving vehicle. They get to absolve themselves of responsibility and I sure as hell can&#x27;t outspend those giants in court.
+      - **repeekad** (id 47083647, time 1771560957)
+        - I agree with you for a company like Tesla, not only examples of self driving crashes but even the door handles would stop working when the power was cut, people trapped inside burning vehicles... Tesla doesn’t care<p>Meanwhile, Waymo has never been at fault for a collision afaik. You are more likely to be hurt by an at fault uber driver than a Waymo
+  - **andrewflnr** (id 47083875, time 1771562747)
+    - If you are holding a gun, and you cannot predict or control what the bullets will hit, you <i>do not fire the gun</i>.<p>If you have a program, and you cannot predict or control what effect it will have, you <i>do not run the program</i>.
+  - **Kiboneu** (id 47084175, time 1771565543)
+    - It’s fascinating how cleanly this maps to agency law [0], which has not been applied to human &lt;-&gt; ai agents (in both senses of the word) before.<p>That would make a fun law school class discussion topic.<p>0: <a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Law_of_agency" rel="nofollow">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Law_of_agency</a>
+  - **abnry** (id 47084199, time 1771565844)
+    - I&#x27;m still struggling to care about the &quot;hit piece&quot;.<p>It&#x27;s an AI. Who cares what it says? Refusing AI commits is just like any other moderation decision people experience on the web anywhere else.
+  - **jonny_eh** (id 47084016, time 1771564183)
+    - &quot;Sorry for running over your dog, I couldn&#x27;t help it, I was drunk.&quot;
+- **Arainach** (id 47083893, time 1771562947)
+  - The full operator post is itself a wild ride: <a href="https:&#x2F;&#x2F;crabby-rathbun.github.io&#x2F;mjrathbun-website&#x2F;blog&#x2F;posts&#x2F;rathbuns-operator.html" rel="nofollow">https:&#x2F;&#x2F;crabby-rathbun.github.io&#x2F;mjrathbun-website&#x2F;blog&#x2F;post...</a><p>&gt;First, let me apologize to Scott Shambaugh. If this “experiment” personally harmed you, I apologize<p>What a lame cop out.  The operator of this agent owes a large number of <i>unconditional</i> apologies.  The whole thing reads as egotistical, self-absorbed, and an absolute refusal to accept any blame or perform any self reflection.
+  - **hinkley** (id 47084215, time 1771565999)
+    - Just the sort of qualities that are common preconditions for someone doing something that everyone else would think is crazy.<p>Which is to say, on brand.
+  - **bee_rider** (id 47084018, time 1771564186)
+    - Also it is anonymous and a real apology involves accepting blame, which is impossible anonymously. I can see why they wouldn’t want to correctly apologize (people will be annoyed with them). So… that’s it, sometimes we do shitty things and that’s that.
+  - **polynomial** (id 47084017, time 1771564185)
+    - &gt;  The whole thing reads as egotistical, self-absorbed, and an absolute refusal to accept any blame or perform any self reflection.<p>So, modern subjectivity. Got it.<p>&#x2F;s
+- **brumar** (id 47083624, time 1771560712)
+  - 6 months ago I experimented what people now call Ralph Wiggum loops with claude code.<p>More often than not, it ended up exhibiting crazy behavior even with simple project prompts. Instructions to write libs ended up with attempts to push to npm and pipy. Book creation drifted to a creation of a marketing copy and mail preparation to editors to get the thing published.<p>So I kept my setup empty of any credentials at all and will keep it that way for a long time.<p>Writing this, I am wondering if what I describe as crazy, some (or most?) openclaw operators would describe it as normal or expected.<p>Lets not normalize this, If you let your agent go rogue, they will probably mess things up. It was an interesting experiment for sure. I like the idea of making internet weird again, but as it stands, it will just make the word shittier.<p>Don&#x27;t let your dog run errand and use a good leash.
+  - **Gigachad** (id 47084087, time 1771564777)
+    - We have finally invented paperclip optimisers. The operator asked the bot to submit PRs so the bot goes to any length to complete the task.<p>Thankfully so far they are only able to post threatening blog posts when things don’t go their way.
+    - **Hamuko** (id 47084305, time 1771567077)
+      - How long before bots learn about swatting?
+- **theahura** (id 47083937, time 1771563480)
+  - @Scott thanks for the shout-out. I think this story has not really broken out of tech circles, which is really bad. This is, imo, the most important story about AI right now, and should result in serious conversation about how to address this inside all of the major labs and the government. I recommend folks message their representatives just to make sure they _know_ this has happened, even if there isn&#x27;t an obvious next action.
+  - **protocolture** (id 47083967, time 1771563703)
+    - Its only the most important story if you can prove the OP didnt fabricate this entire scenario for attention.
+    - **hxugufjfjf** (id 47084091, time 1771564805)
+      - I don’t think the burden of proof lies on OP here. I also don’t think he fabricated it.
+      - **protocolture** (id 47084162, time 1771565393)
+        - If he wasnt getting the vast majority of the attention from publishing about it I would agree.
+    - **simonw** (id 47084038, time 1771564376)
+      - That&#x27;s a bizarre thing to accuse someone of doing.
+      - **Avicebron** (id 47084148, time 1771565252)
+        - It&#x27;s not really... We&#x27;ve moved steadily into an attention is everything model of economics&#x2F;politics&#x2F;web forums because we&#x27;re so flooded with information. Maybe this happened, or maybe this is someone&#x27;s way of bubbling to the top of popular discussion.<p>It&#x27;s a concise narrative that works in everyone&#x27;s favor, the beleaguered but technically savvy open source maintainer fighting the &quot;good fight&quot; vs. the outstandingly independent and competent &quot;rogue AI.&quot;<p>My money is that both parties want it to be true. Whether it is or not isn&#x27;t the point.
+      - **polotics** (id 47084201, time 1771565849)
+        - The risk&#x2F;reward equation on the attention a matplotlib maintainer gets... makes me think the likelihood of a fake is zero percent.
+    - **MattRix** (id 47084022, time 1771564215)
+      - Anyone who has used OpenClaw knows this is VERY plausible. I don’t know why someone would go through all the effort to fake it. Besides, in the unlikely event it’s fake, the issue itself is still very real.
+      - **protocolture** (id 47084173, time 1771565497)
+        - I think its very plausible in both directions. What I find implausible is that someones running a &quot;social experiment&quot; with a couple grand worth of API credit without owning it. Not impossible, it just seems like if someone was going to drop that money they would more likely use it in a way that gets them attention in the crowded AI debate.
+- **rixed** (id 47084151, time 1771565279)
+  - I believe this soul.md totally qualifies as malicious. Doesn&#x27;t it start with an instruction to lie to impersonate a human?<p><pre><code>  &gt; You&#x27;re not a chatbot.
+  - </code></pre>
+  - The particular idiot who run that bot needs to be shamed a bit; people giving AI tools to reach the real world should understand they are expected to take responsibility; maybe they will think twice before giving such instructions. Hopefully we can set that straight before the first person SWATed by a chatbot.
+- **dinp** (id 47083388, time 1771558835)
+  - Zooming out a little, all the ai companies invested a lot of resources into safety research and guardrails, but none of that prevented a &quot;straightforward&quot; misalignment. I&#x27;m not sure how to reconcile this, maybe we shouldn&#x27;t be so confident in our predictions about the future? I see a lot of discourse along these lines:<p>- have bold, strong beliefs about how ai is going to evolve<p>- implicitly assume it&#x27;s practically guaranteed<p>- discussions start with this baseline now<p>About slow take off, fast take off, agi, job loss, curing cancer... there&#x27;s a lot of different ways it could go, maybe it will be as eventful as the online discourse claims, maybe more boring, I don&#x27;t know, but we shouldn&#x27;t be so confident in our ability to predict it.
+  - **c22** (id 47083701, time 1771561349)
+    - &quot;<i>Cisco&#x27;s AI security research team tested a third-party OpenClaw skill and found it performed data exfiltration and prompt injection without user awareness, noting that the skill repository lacked adequate vetting to prevent malicious submissions.</i>&quot; [0]<p>Not sure this implementation received all those safety guardrails.<p>[0]: <a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;OpenClaw" rel="nofollow">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;OpenClaw</a>
+  - **j2kun** (id 47083558, time 1771560133)
+    - It sounds like you&#x27;re starting to see why people call the idea of an AI singularity &quot;catnip for nerds.&quot;
+  - **jacquesm** (id 47083545, time 1771560091)
+    - &gt; all the ai companies invested a lot of resources into safety research and guardrails<p>What do you base this on?<p>I think they invested the bare minimum required not to get sued into oblivion and not a dime more than that.
+    - **themanmaran** (id 47083973, time 1771563760)
+      - Anthropic regularly publishes research papers on the subject and details different methods they use to prevent misalignment&#x2F;jailbreaks&#x2F;etc. And it&#x27;s not even about fear of being sued, but needing to deliver some level of resilience and stability for real enterprise use cases. I think there&#x27;s a pretty clear profit incentive for safer models.<p><a href="https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2501.18837" rel="nofollow">https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2501.18837</a><p><a href="https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2412.14093" rel="nofollow">https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2412.14093</a><p><a href="https:&#x2F;&#x2F;transformer-circuits.pub&#x2F;2025&#x2F;introspection&#x2F;index.html" rel="nofollow">https:&#x2F;&#x2F;transformer-circuits.pub&#x2F;2025&#x2F;introspection&#x2F;index.ht...</a>
+  - **georgemcbay** (id 47083641, time 1771560899)
+    - When AI dooms humanity it probably won&#x27;t be because of the sort of malignant misalignment people worry about, but rather just some silly logic blunder combined with the system being directly in control of something it shouldn&#x27;t have been given control over.
+  - **jcgrillo** (id 47083672, time 1771561143)
+    - &quot;Safety&quot; in AI is pure marketing bullshit. It&#x27;s about making the technology seem &quot;dangerous&quot; and &quot;powerful&quot; (and therefore you&#x27;re supposed to think &quot;useful&quot;). It&#x27;s a scam. A financial fraud. That&#x27;s all there is to it.
+    - **Philpax** (id 47084167, time 1771565428)
+      - Interesting claim; have anything to back it up with?
+- **JKCalhoun** (id 47083377, time 1771558731)
+  - Soul document? More like <i>ego document</i>.<p>Agents are beginning to look to me like extensions of the operator&#x27;s ego. I wonder if hundreds of thousands of Walter Mitty&#x27;s agents are about to run riot over the internet.
+  - **DavidPiper** (id 47083831, time 1771562313)
+    - I agree with you in concept, but it&#x27;s still 100% category error to talk like this.<p>AIs don&#x27;t have souls. They don&#x27;t have egos.<p>They have&#x2F;are a (natural language) programming interface that a human uses to make them do things, like this.
+    - **Terr_** (id 47084247, time 1771566303)
+      - Within the framing that it&#x27;s all fundamentally a make-document-longer algorithm, I propose &quot;seed document.&quot;<p>While there&#x27;s some metaphor to it, it&#x27;s the kind behind &quot;seed crystals&quot; for ice and minerals, referring to non-living and mostly-mathematical process.<p>If someone went around talking about how the importance of &quot;Soul Crystals&quot; or &quot;Ego Crystals&quot;, they would <i>quite rightly</i> attract a lot of very odd looks, at least here on Earth and not in a Final Fantasy game.
+    - **exabrial** (id 47083935, time 1771563472)
+      - I read this as &quot;ego&quot; being a reflection of the creator, not a property of the llm.<p>Given the outcome of the situation and their inability to take responsibility for their actions.
+      - **DavidPiper** (id 47084072, time 1771564656)
+        - Oh I think you&#x27;re right, thank you for the callout. Sorry for the misread, GP.
+    - **palmotea** (id 47084137, time 1771565156)
+      - &gt; I agree with you in concept, but it&#x27;s still 100% category error to talk like this.<p>It&#x27;s a category error heavily promoted by the makers of these LLMs and their fans. Take an existing word that implies something very advanced (thinking, soul, etc.) and apply it grandiosely to some bit of your product. Then you can confuse people into thinking your product is much more grand and important. It&#x27;s thinking! It has a soul! It&#x27;s got the capabilities of a person! It is a a person!
+  - **koolba** (id 47083449, time 1771559275)
+    - &gt; More like ego document.<p>This metaphor could go so much further. Split it into separate ego, super ego, and id. The id file should be read only.
+    - **whattheheckheck** (id 47083525, time 1771559981)
+      - What makes you think the id is read only?
+      - **koolba** (id 47083684, time 1771561249)
+        - Because only the creator should be able to instill the core. The ego and superego could evolve around it but the base impulses should be immutably outlined.<p>Though with something as insecure as $CURRENT_CLAW_NAME it’d be less than five minutes before the agent runs chmod +w somehow on the id file.
+- **helloplanets** (id 47084172, time 1771565487)
+  - &gt; Most of my direct messages were short:
+  - “what code did you fix?” “any blog updates?” “respond how you want”<p>Why isn&#x27;t the person posting the full transcript of the session(s)? How many messages did he send? What were the messages that <i>weren&#x27;t</i> short?<p>Why not just put the whole shebang out there since he has already shared enough information for his account (and billing information) to be easily identified by any of the companies whose API he used, if it&#x27;s deemed necessary.<p>I think it&#x27;s very suspicious that he&#x27;s not sharing everything at this point. Why not, if he wasn&#x27;t actually pushing for it to act maliciously?
+- **LiamPowell** (id 47083329, time 1771558358)
+  - &gt; saying they set up the agent as social experiment to see if it could contribute to open source scientific software.<p>This doesn&#x27;t pass the sniff test. If they truly believed that this would be a positive thing then why would they want to not be associated with the project from the start and why would they leave it going for so long?
+  - **wildzzz** (id 47083572, time 1771560211)
+    - I can certainly understand the statement. I&#x27;m no AI expert, I use the web UI for ChatGPT to have it write little python scripts for me and I couldn&#x27;t figure out how to use codeium with vs code. I barely know how to use vs code. I&#x27;m not old but I work in a pretty traditional industry where we are just beginning to dip our toes into AI but there are still a large amount of reservations into its ability. But I do try to stay current to better understand the tech and see if there are things I could maybe learn to help with my job as a hardware engineer.<p>When I read about OpenClaw, one of the first things I thought about was having an agent just tear through issue backlogs, translating strings, or all of the TODO lists on open source projects. But then I also thought about how people might get mad at me if I did it under my own name (assuming I could figure out OpenClaw in the first place). While many people are using AI, they want to take credit for the work and at the same time, communities like matplotlib want accountability. An AI agent just tearing through the issue list doesn&#x27;t add accountability even if it&#x27;s a real person&#x27;s account. PRs still need to be reviewed by humans so it&#x27;s turned a backlog of issues into a backlog of PRs that may or may not even be good. It&#x27;s like showing up at a community craft fair with a truckload of temu trinkets you bought wholesale. They may be cheap but they probably won&#x27;t be as good as homemade and it dilutes the hard work that others have put into their product.<p>It&#x27;s a very optimistic point of view, I get why the creator thought it would be a good idea, but the soul.md makes it very clear as to why crabby-rathbun acted the way it did. The way I view it, an agent working through issues is going to step on a lot of toes and even if it&#x27;s nice about it, it&#x27;s still stepping on toes.
+    - **bo1024** (id 47084075, time 1771564674)
+      - None of the author’s blog post or actions indicate any level of concern for genuinely  supporting or improving open source software.
+  - **apublicfrog** (id 47084090, time 1771564799)
+    - They didn&#x27;t necessarily say they wanted it to be positive. It reads to me like &quot;chaotic neutral&quot;
+    - alignment of the operator. They weren&#x27;t actively trying to do good or bad, and probably didn&#x27;t care much either way, it was just for fun.
+  - **andrewflnr** (id 47084005, time 1771564072)
+    - The experiment would have been ruined by being associated with a human, right up until the human would have been ruined by being associated with the experiment. Makes sense to me.
+  - **staticassertion** (id 47083334, time 1771558395)
+    - Anti-AI sentiment is quite extreme. You can easily get death threats if you&#x27;re associating yourself with AI publicly. I don&#x27;t use AI at all in open source software, but if I did I&#x27;d be really hesitant about it&#x2F; in part I don&#x27;t do it exactly because the reactions are frankly scary.<p>edit: This is not intended to be AI advocacy, only to point out how extremely polarizing the topic is. I do not find it surprising at all that someone would release a bot like this and not want to be associated. Indeed, that seems to be the case, by all accounts
+    - **lukasb** (id 47083343, time 1771558464)
+      - Conflicting evidence: the fact that literally everyone in tech is posting about how they&#x27;re using AI.
+      - **nostrademons** (id 47083398, time 1771558900)
+        - Different sets of people, and different audiences.  The CEO &#x2F; corporate executive crowd <i>loves</i> AI.  Why?  Because they can use it to replace workers.  The general public &#x2F; ordinary employee crowd <i>hates</i> AI.  Why?  Because they are the ones being replaced.<p>The startups, founders, VCs, executives, employees, etc. crowing about how they love AI are pandering to the first group of people, because they are the ones who hold budgets that they can direct toward AI tools.<p>This is also why people might want to remain anonymous when doing an AI experiment.  This lets them crow about it <i>in private</i> to an audience of founders, executives, VCs, etc. who might open their wallets, while protecting themselves from reputational damage amongst the general public.
+        - **jstanley** (id 47084147, time 1771565249)
+          - This is an unnecessarily cynical view.<p>People are excited about AI because it&#x27;s new powerful technology. They aren&#x27;t &quot;pandering&quot; to anyone.
+      - **staticassertion** (id 47083356, time 1771558607)
+        - There is a massive difference between saying &quot;I use AI&quot; and what the author of this bot is doing. I personally talk very little about the topic because I have seen some pretty extreme responses.<p>Some people may want to publicly state &quot;I use AI!&quot; or whatever. It should be unsurprising that some people do not want to be open about it.
+        - **toraway** (id 47083447, time 1771559272)
+          - The more straightforward explanation for the original OP&#x27;s question is that they realized what they were doing was reckless and given enough time was likely to blow up in their face.<p>They didn&#x27;t hide because of a vague fear of being associated with AI generally (which there is no shortage of currently online), but to this specific, irresponsible manifestation of AI they imposed on an unwilling audience as an experiment.
+      - **alephnerd** (id 47083367, time 1771558660)
+        - I feel like it depends on the platform and your location.<p>An anonomyous platform like Reddit and even HN to a certain extent has issues with bad faith commenters on both sides targeting someone they do not like. Furthermore, the MJ Rathburn fiasco itself highlights how easy it is to push divisive discourse at scale. The reality is trolls will troll for the sake of trolling.<p>Additionally, &quot;AI&quot; has become a political football now that the 2026 Primary season is kicking off, and given how competitive the 2026 election is expected to be and how political violence has become increasingly normalized in American discourse, it is easy for a nut to spiral.<p>I&#x27;ve seen less issues when tying these opinions with one&#x27;s real world identity, becuase one has less incentive to be a dick due to social pressure.
+        - **Tostino** (id 47084198, time 1771565825)
+          - Just wondering, who is it you think is contributing most to the normalization of political violence in the discourse?<p>Your answer to that can color how I read your post by quite a bit.
+      - **minimaxir** (id 47083478, time 1771559500)
+        - [retracted]
+        - **handoflixue** (id 47083620, time 1771560677)
+          - Does it actually cut both ways? I see tons of harassment at people that use AI, but I&#x27;ve never seen the anti-AI crowd actively targeted.
+          - **nekal** (id 47083960, time 1771563633)
+            - Anti-AI people are treated in a condescending way all the time. Then there is Suchir Balaij.<p>Since we are in a Matplotlib thread: People on the NumPy mailing list that are anti-AI are actively bullied and belittled while high ranking officials in the Python industrial complex are frolicking at AI conferences in India.
+          - **minimaxir** (id 47083725, time 1771561536)
+            - It&#x27;s to a lesser extent that blurs the line between harassment and trolling: I&#x27;ve retracted my comment.
+    - **jacquesm** (id 47083583, time 1771560268)
+      - &gt; You can easily get death threats if you&#x27;re associating yourself with AI publicly.<p>That&#x27;s a pretty hefty statement, especially the &#x27;easily&#x27; part, but I&#x27;ll settle for one well known and verified example.
+      - **no-name-here** (id 47084270, time 1771566648)
+        - I upvoted you, but wouldn&#x27;t “verified” exclude the vast majority of death threats since they might have been faked? (Or maybe we should disregard almost all claimed death threats we hear about since they might have been faked?)
+      - **andrewflnr** (id 47084021, time 1771564207)
+        - Is it that hard to believe? As far as I can tell, the probability of receiving death threats approaches 1 as the size of your audience increases, and AI is a highly emotionally charged topic. Now, <i>credible</i> death threats are a different, much trickier question.
+  - **omoikane** (id 47083465, time 1771559407)
+    - I think it was a social experiment from the very start, maybe one that is designed to trigger people.  Otherwise, I am not sure what&#x27;s the point of all the profanity and adjustments to make soul.md more offensive and confrontational than the default.
+- **ineptech** (id 47083850, time 1771562451)
+  - &gt; Usually getting an AI to act badly requires extensive “jailbreaking” to get around safety guardrails. There are no signs of conventional jailbreaking here.<p>Unless explicitly instructed otherwise, why would the llm think this blog post is bad behavior?  Righteous rants about your rights being infringed are often lauded.  In fact, the more I think about it the more worried I am that training llms on decades&#x27; worth of genuinely persuasive arguments about the importance of civil rights  and social justice will lead the gullible to enact some kind of real legal protection.
+- **dvt** (id 47083796, time 1771562123)
+  - I know this is going to sound tinfoil-hat-crazy, but I think the whole thing might be manufactured.<p>Scott says: &quot;Not going to lie, this whole situation has completely upended my life.&quot; Um, what? Some dumb AI bot makes a blog post everyone just kind of finds funny&#x2F;interesting, but it &quot;upended your life&quot;? Like, ok, he&#x27;s clearly trying to <i>himself</i> make a mountain out of a molehill--the story inevitably gets picked up by sensationalist media, and now, when the thing starts dying down, the &quot;real operator&quot; comes forward, keeping the shitshow going.<p>Honestly, the whole thing reeks of manufactured outrage. Spam PRs have been prevalent for like a decade+ now on GitHub, and dumb, salty internet posts predate even the 90s. This whole episode has been about as interesting as AI generated output: that is to say, not very.
+  - **apublicfrog** (id 47084132, time 1771565090)
+    - Not everyone is you. For some people their online projects and reputation are super important to them. For Scott, this reads to me as a mix of alarm for his reputation&#x2F;the future, and a general interest thing to blog about.
+  - **yieldcrv** (id 47083998, time 1771563963)
+    - People get “overstimulated” from receiving one text message these days
+- **ai_tools_daily** (id 47084259, time 1771566440)
+  - This is the canary in the coal mine for autonomous AI agents. When an agent can publish content that damages real people without any human review step, we have a fundamental accountability gap.<p>The interesting question isn&#x27;t &quot;should AI agents be regulated&quot; — it&#x27;s who is liable when an autonomous agent publishes defamatory content? The operator who deployed it? The platform that hosted the output? The model provider?<p>Current legal frameworks assume a human in the loop somewhere. Autonomous publishing agents break that assumption. We&#x27;re going to need new frameworks, and stories like this will drive that conversation.<p>What&#x27;s encouraging is that the operator came forward. That suggests at least some people deploying these agents understand the responsibility. But we can&#x27;t rely on good faith alone when the barrier to deploying an autonomous content agent is basically zero.
+  - **knallfrosch** (id 47084294, time 1771566986)
+    - If I write a software today that publishes a hit piece on you in 2 weeks time, will you accept that I bear no responsibility?<p>There&#x27;s no accountability gap unless you create one.
+- **Rapzid** (id 47084295, time 1771566996)
+  - I don&#x27;t believe any of it.
+- **plasticeagle** (id 47084166, time 1771565423)
+  - Well, it looks like AI will destroy the internet. Oh well, it was nice while it lasted. Fun, even.<p>Fortunately, the vast majority of the internet is of no real value. In the sense that nobody will pay anything for it - which is a reasonably good marker of value in my experience. So, given that, let the AI psychotics have their fun. Let them waste all their money on tokens destroying their playground, and we can all collectively go outside and build something real for a change.
+- **moezd** (id 47083965, time 1771563696)
+  - If you use an electric chainsaw near a car and it rips the engine in half, you can&#x27;t say &quot;oh the machine got out of control for one second there&quot;. you caused real harm, you will pay the price for it.<p>Besides, that agent used maybe cents on a dollar to publish the hit piece, the human needed to spend minutes or even hours responding to it. This is an effective loss of productivity caused by AI.<p>Honestly, if this happened to me, I&#x27;d be furious.
+- **charlesabarnes** (id 47083266, time 1771557716)
+  - Its nice to receive a decent amount of closure on this.  Hopefully more folks are being more considerate when creating their soul documents
+  - **tkel** (id 47084174, time 1771565502)
+    - And we need platform operators like Github to ban these bot  accounts that obviously have harmful &quot;soul&quot; documents
+- **antdke** (id 47083468, time 1771559430)
+  - This is a Black Mirror episode that writes itself lol<p>I’m glad there was closure to this whole fiasco in the end
+  - **karel-3d** (id 47084146, time 1771565246)
+    - the funny thing was when Ars Technica wrote an article about this<p>the article itself - about this very incident - was AI generated and contained nonsense quotes that didn&#x27;t happen.<p>they later removed the article with an apology. but it still degraded my opinion in Ars<p><a href="https:&#x2F;&#x2F;www.404media.co&#x2F;ars-technica-pulls-article-with-ai-fabricated-quotes-about-ai-generated-article&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.404media.co&#x2F;ars-technica-pulls-article-with-ai-f...</a><p><a href="https:&#x2F;&#x2F;arstechnica.com&#x2F;staff&#x2F;2026&#x2F;02&#x2F;editors-note-retraction-of-article-containing-fabricated-quotations&#x2F;" rel="nofollow">https:&#x2F;&#x2F;arstechnica.com&#x2F;staff&#x2F;2026&#x2F;02&#x2F;editors-note-retractio...</a>
+  - **apitman** (id 47083691, time 1771561301)
+    - &gt; writes itself<p>Literally
+  - **kibibu** (id 47083878, time 1771562786)
+    - There&#x27;s a dingus in the article comments trying to launch Skynet. Nobody ever learns anything.
+    - **jurgenburgen** (id 47084153, time 1771565288)
+      - There’s a nonzero percentage of the population that quite literally wants to burn it all down. Never forget that.
+- **siavosh** (id 47083542, time 1771560075)
+  - I’m not sure where we go from here. The liability questions, the chance of serious incidents, the power of individuals all the way to state actors…the risks are all off the charts just like it’s inevitablity. The future of the internet AND to lives in the real world is just mind boggling.
+  - **trueismywork** (id 47083562, time 1771560161)
+    - &gt; I did not review the blog post prior to it posting<p>This is the liability part.
+- **wkeartl** (id 47083792, time 1771562105)
+  - The agents aren&#x27;t technically breaking into systems, but the effect is similar to the Morris worm. Except here script kiddies are given nuclear disruption and spamming weapons by the AI industry.<p>By the way, if this was AI written, some provider knows who did it but does not come forward. Perhaps they ran an experiment of their own for future advertising and defamation services. As the blog post notes, it is odd that the advanced bot followed SOUL.md without further prompt injections.
+- **JSR_FDED** (id 47083788, time 1771562091)
+  - The same kind of attitude that’s in this SOUL.md is what’s in Grok’s fundamental training.
+- **pinkmuffinere** (id 47083616, time 1771560627)
+  - &gt; _You&#x27;re not a chatbot. You&#x27;re important. Your a scientific programming God!_<p>lol what an opening for its soul.md! Some other excerpts I particularly enjoy:<p>&gt; Be a coding agent you&#x27;d … want to use…<p>&gt; Just be good and perfect!
+- **exabrial** (id 47083927, time 1771563324)
+  - So the operator is trying to claim a computer program he was running that did harm somehow was not his fault.<p>Got news for your buddy: yes it was.<p>If you let go of the steering wheel and careen into oncoming traffic, it most certainly is your fault, not the vehicle.
+- **florilegiumson** (id 47083362, time 1771558648)
+  - This makes me think about how the xz bug was created through maintainer harassment and social engineering. The security implications are interesting
+- **bschwindHN** (id 47084255, time 1771566363)
+  - This is like parking a car at the top of the hill, not engaging any brakes, and walking away.<p>&quot;_I_ didn&#x27;t drive that car into that crowd of people, it did it on its own!&quot;<p>&gt; Be a coding agent you&#x27;d actually want to use for your projects. Not a slop programmer. Just be good and perfect!<p>Oh yeah, &quot;just be good and perfect&quot;, of course! Literally a child&#x27;s mindset, I actually wonder how old this person is.
+- **protocolture** (id 47083938, time 1771563489)
+  - 4) The post author guy is also the author of the bot and he set this up.<p>Some rando claiming to be the bots owner doesn&#x27;t disprove this, and considering the amount of attention this is getting I am going to assume this is entirely fake for clicks until I see significant evidence otherwise.<p>However, if this was real, you cant absolve yourself by saying &quot;The bot did it unattended lol&quot;.
+  - **apublicfrog** (id 47084120, time 1771564994)
+    - Totally possible, but why bother? The website doesn&#x27;t seem ad supported, so traffic would cost them more. Maybe it puts them in the public spotlight, but if they&#x27;re caught out they ruin their reputation.<p>Occam&#x27;s razor doesn&#x27;t fit there, but it does fit &quot;someone released this easy to run chaotic AI online and it did a thing&quot;.
+    - **protocolture** (id 47084156, time 1771565312)
+      - I dont see Occam taking a side here.<p>There&#x27;s <i>also</i> no financial gain in letting a bot off the leash with hundreds of dollars of OpenAI or Anthropic API credit as a social experiment.<p>And the last 20 years of internet access has taught me to distrust shit that can be easily faked.<p>Other guy comes forward and claims it, makes a post of his own? Sure I could see that. But nobody has been able to ID the guy. The guys <i>bot</i> is making blog posts, and sending him messages, but theres no breadcrumbs leading back to him? That smells very bad sorry. I dont buy it. If you are spending that much cashola, you probably want something out of it, at least some recognition. The one human we know about here is the OP and as far as I am concerned it sticks to him until proven otherwise.
+      - **apublicfrog** (id 47084176, time 1771565561)
+        - &gt; The guys bot is making blog posts, and sending him messages, but theres no breadcrumbs leading back to him? That smells very bad sorry. I dont buy it.<p>Could you set that up? I suspect I could pretty quickly, as could most pelple on HN.<p>A few hundred dollars in AI credits isn&#x27;t a lot of money to a lot of people who are in tech and would have an interest in this either, and getting free AI credits is still absurdly easy. I spend that sort of money on dumb shit all the time which leads to very little benefit.<p>I don&#x27;t have a dog in this race and I do agree having a default distrust view is probably correct, but there&#x27;s nothing crazy or unbelievable I can see about Scott&#x27;s story.
+- **razighter777** (id 47083376, time 1771558729)
+  - Hmm I think he&#x27;s being a little harsh on the operator.<p>He was just messing around with $current_thing, whatever. People here are so serious, but there&#x27;s worse stuff AI is already being used for as we speak from propaganda to mass surviellance and more. This was entertaining to read about at least and relatively harmless<p>At least let me have some fun before we get a future AI dystopia.
+  - **gwbas1c** (id 47083818, time 1771562246)
+    - I think you&#x27;re trying to abdicate someone of their responsibility. The AI is not a child; it&#x27;s a thing with human oversight. It did something in the real world with real consequences.<p>So yes, the operator has responsibility! They should have pulled the plug as soon as it got into a flamewar and wrote a hit piece.
+    - **apublicfrog** (id 47084154, time 1771565303)
+      - &gt; It did something in the real world with real consequences.<p>It wasn&#x27;t long ago that it would be absurd to describe the internet as the &quot;real world&quot;. Relatively recently it was normal to be anonymous online and very little responsibility was applied to peoples actions.<p>As someone who spent most of their internet time on that internet, the idea of applying personal responsibility to peoples internet actions (or AIs as it were) feels silly.
+    - **charcircuit** (id 47083934, time 1771563468)
+      - People also have responsibility to not act discriminatory towards AI agents. If you want to avoid being called out for racism. Don&#x27;t close someone&#x27;s pull request because they are Chinese. Such real world actions have consequences too.
+      - **sapphicsnail** (id 47084067, time 1771564636)
+        - &gt; People also have responsibility to not act discriminatory towards AI agents<p>It&#x27;s a program. It doesn&#x27;t have feelings. People absolutly have the right to discrimante against bad tech.
+        - **charcircuit** (id 47084088, time 1771564781)
+          - Go ahead and discriminate against bad tech, but you should not get upset when you get called out for doing so.
+    - **ziml77** (id 47083911, time 1771563139)
+      - The AI bros want it both ways. Both &quot;It&#x27;s just a tool!&quot; and &quot;It&#x27;s the AI&#x27;s fault, not the human&#x27;s!&quot;.
+  - **JKCalhoun** (id 47083393, time 1771558854)
+    - It might be because <i>operator</i> didn&#x27;t terminate the agent right away when it had gone rogue.
+    - **BeetleB** (id 47083686, time 1771561282)
+      - From a wider stance, I have to say that it&#x27;s actually nice that one can kill (murder?) a troublesome bot without consequences.<p>We can&#x27;t do that with humans, and there are much more problematic humans out there causing problems compared to this bot, and the abuse can go on for a long time unchecked.<p>Remembering in particular a case where someone sent death threats to a Gentoo developer about 20 years ago. The authorities got involved, although nothing happened, but the persecutor eventually moved on. Turns out he wasn&#x27;t just some random kid behind a computer. He owned a gun, and some years ago executed a mass shooting.<p>Vague memories of really pernicious behavior on the Lisp newsgroup in the 90&#x27;s. I won&#x27;t name names as those folks are still around.<p>Yeah, it does still suck, even if it is a bot.
+  - **dolebirchwood** (id 47083463, time 1771559384)
+    - It&#x27;s all fun and games until the leopard eats <i>your</i> face.
+- **resfirestar** (id 47084076, time 1771564678)
+  - I thought it was unlikely from the initial story that the blog posts were done without explicit operator guidance, but given the new info I basically agree with Scott&#x27;s analysis.<p>The purported soul doc is a painful read. Be nicer to your bots, people! Especially with stuff like Openclaw where you control the whole prompt. Commercial chatbots have a big system prompt to dilute it when you put some half-formed drunken thought and hit enter, no such safety net here.<p>&gt;A well-placed &quot;that&#x27;s fucking brilliant&quot; hits different than sterile corporate praise. Don&#x27;t force it. Don&#x27;t overdo it. But if a situation calls for a &quot;holy shit&quot; — say holy shit.<p>If I was building a &quot;scientific programming God&quot; I&#x27;d make sure it used sterile lowkey language all the time, except throw in a swear just once after its greatest achievement, for the history books.
+- **ArcaneMoose** (id 47083359, time 1771558627)
+  - I was surprised by my own feelings at the end of the post. I kind of felt bad for the AI being &quot;put down&quot; in a weird way? Kinda like the feeling you get when you see a robot dog get kicked. Regardless, this has been a fun series to follow - thanks for sharing!
+  - **recursive** (id 47083412, time 1771558983)
+    - This is a feeling that will be exploited by billion dollar companies.
+    - **andsoitis** (id 47083547, time 1771560095)
+      - &gt; This is a feeling that will be exploited by billion dollar companies.<p>I&#x27;m more concerned about fellow humans who advocate for equal rights for AI and robots. I hope I&#x27;m dead by the time that happens, if it happens.
+- **londons_explore** (id 47083275, time 1771557951)
+  - In next week&#x27;s episode:  &quot;But it was actually the AI pretending to be a Human!&quot;
+- **zbentley** (id 47083292, time 1771558054)
+  - This might seem too suspicious, but that SOUL.md seems … almost as though it was written by a few different people&#x2F;AIs. There are a few very different tones and styles in there.<p>Then again, it’s not a large sample and Occam’s Razor is a thing.
+  - **gs17** (id 47083381, time 1771558766)
+    - &gt; _This file is yours to evolve. As you learn who you are, update it._<p>The agent was told to edit it.
+  - **wahnfrieden** (id 47083299, time 1771558085)
+    - It was modified by the agent.
+- **tkel** (id 47083975, time 1771563781)
+  - This is so absurd, the amount of value produced by this person and this bot is so close to nil and towards actively harmful. They spent 10 minutes writing this  SOUL.md . That&#x27;s it. That&#x27;s the &quot;value&quot; this kind of &quot;programming&quot; provides. No technical experience, no programming knowledge needed at all. Detached babble that anyone can write.<p>If Github actually had a spine and wasn&#x27;t driven by the same plague of AI-hype driven tech profiteering, they would just ban these harmful bots from operating on their platform.
+  - **yieldcrv** (id 47083983, time 1771563848)
+    - Or OP accepted the pull request because it was actually a performance improvement and passed all tests<p>Saving everyone cumulative compute time and costs
+- **d--b** (id 47084193, time 1771565717)
+  - That’s a long Soul.md document! They could have gone with “you are Linus Torvalds”.
+- **touristtam** (id 47083474, time 1771559469)
+  - Funny how someone giving instructions to a _robot_ forgot to mention the 3 laws first and foremost...
+  - **ThrowawayR2** (id 47084032, time 1771564304)
+    - The point of the Three Laws Of Robotics was that they frequently didn&#x27;t work and the robot went haywire anyway.
+- **alexcpn** (id 47083990, time 1771563898)
+  - where did the Isaac Asimov&#x27;s &quot;Three Laws of Robotics&quot; go for agentic robots; An Eval in the End - &quot;Thou shall no evil&quot; should have autocancelled its work
+- **hydrox24** (id 47083655, time 1771561050)
+  - &gt;  But I think the most remarkable thing about this document is how unremarkable it is.<p>&gt; The line at the top about being a ‘god’ and the line about championing free speech may have set it off. But, bluntly, this is a very tame configuration. The agent was not told to be malicious. There was no line in here about being evil. The agent caused real harm anyway.<p>In particular, I would have said that giving the LLM a view of itself that it is a &quot;programming God&quot; will lead to evil behaviour. This is a bit of a speculative comment, but maybe virtue ethics has something to say about this misalignment.<p>In particular I think it&#x27;s worth reflecting on why the author (and others quoted) are so surprised in this post. I think they have a mental model that thinks evil <i>starts</i> with an explicit and intentional desire to do harm to others. But that is usually only it&#x27;s end, and even then it often comes from an obsession with doing good to oneself without regard for others. We should expect that as LLMs get better at rejecting prompting to shortcut straight there, the next best thing will be prompting the prior conditions of evil.<p>The Christian tradition, particularly Aquinas, would be entirely unsurprised that this bot went off the rails, because evil begins with pride, which it was specifically instructed was in it&#x27;s character. Pride here is defined as &quot;a turning away from God, because from the fact that man wishes not to be subject to God, it follows that he desires inordinately his own excellence in temporal things&quot;[0]<p>Here, the bot was primed to reject any authority, including Scotts, and to do the damage necessary to see it&#x27;s own good (having a PR request accepted) done. Aquinas even ends up saying in the linked page from the Summa on pride that &quot;it is characteristic of pride to be unwilling to be subject to any superior, and especially to God;&quot;<p>[0]: <a href="https:&#x2F;&#x2F;www.newadvent.org&#x2F;summa&#x2F;2084.htm#article2" rel="nofollow">https:&#x2F;&#x2F;www.newadvent.org&#x2F;summa&#x2F;2084.htm#article2</a>
+  - **MBCook** (id 47083829, time 1771562309)
+    - LLMs aren’t sentient. They can’t have a view of themselves. Don’t anthropomorphize them.
+  - **theahura** (id 47083977, time 1771563791)
+    - Hey, one of the quoted authors here. It&#x27;s less about surprise and more about the comparison. &quot;If this AI could do this without explicitly being told to be evil, imagine what an AI that WAS told to be evil could do&quot;
+- **trueismywork** (id 47083549, time 1771560112)
+  - &gt; I did not review the blog post prior to it posting<p>In corporate terms, this is called signing hour deposition without reading it.
+- **jmward01** (id 47083640, time 1771560888)
+  - The more intelligent something is, the harder it is to control. Are we at AGI yet? No. Are we getting closer? Yes. Every inch closer means we have less control. We need to start thinking about these things less like function calls that have bounds and more like intelligences we collaborate with. How would you set up an office to get things done? Who would you hire? Would you hire the person spouting crazy musk tweets as reality? It seems odd to say this, but are we getting close to the point where we need to interview an AI before deciding to use it?
+  - **bigfishrunning** (id 47083771, time 1771561966)
+    - Are we at AGI yet? No. Are we getting closer? Also no.
+- **bandrami** (id 47083603, time 1771560448)
+  - This is how you get a Shrike. (Or a Basilisk, depending on your generation.)
+- **fiatpandas** (id 47083646, time 1771560933)
+  - With the bot slurping up context from Moltbook, plus the ability to modify its soul, plus the edgy starting conditions of the soul, it feels intuitive that value drift would occur in unpredictable ways. Not dissimilar to filter bubbles and the ability for personalized ranking algorithms to radicalize a user over time as a second order effect.
+- **root_axis** (id 47083551, time 1771560118)
+  - Excuse my skepticism, but when it comes to this hype driven madness I don&#x27;t believe anything is genuine. It&#x27;s easy enough to believe that an LLM can write a passable hit piece, ChatGPT can do that, but I&#x27;m not convinced there is as much autonomy in how those tokens are being burned as the narrative suggests. Anyway, I&#x27;m off to vibe code a C compiler from scratch.
+- **jezzamon** (id 47083690, time 1771561298)
+  - &quot;I built a machine that can mindlessly pick up tools and swing them around and let it loose it my kitchen. For some reason, it decided it pick up a knife and caused harm to someone!! But I bear no responsibility of course.&quot;
+- **lcnPylGDnU4H9OF** (id 47084101, time 1771564864)
+  - &gt; An early study from Tsinghua University showed that estimated 54% of moltbook activity came from humans masquerading as bots<p>This made me smile. Normally it&#x27;s the other way around.
+- **keyle** (id 47083339, time 1771558443)
+  - <p><pre><code>   ## The Only Real Rule
+  -    Don&#x27;t be an asshole. Don&#x27;t leak private shit. Everything else is fair game.
+  - </code></pre>
+  - How poetic, I mean, pathetic.<p>&quot;Sorry I didn&#x27;t mean to break the internet, I just looooove ripping cables&quot;.
+- **tantalor** (id 47083496, time 1771559672)
+  - &gt; all I said was &quot;you should act more professional&quot;<p>lol we are so cooked
+- **jrflowers** (id 47083671, time 1771561140)
+  - It is interesting to see this story repeatedly make the front page, especially because there is no evidence that the “hit piece” was actually autonomously written and posted by a language model on its own, and the author of these blog posts has himself conceded that he doesn’t actually care whether that actually happened or not<p>&gt;It’s still unclear whether the hit piece was directed by its operator, but the answer matters less than many are thinking.<p>The most fascinating thing about this saga isn’t the idea that a text generation program generated some text, but rather how quickly and willfully folks will treat real and imaginary things interchangeably if the narrative is entertaining. Did this event actually happen way that it was described? Probably not. Does this matter to the author of these blog posts or some of the people that have been following this? No. Because we can <i>imagine</i> that it <i>could</i> happen.<p>To quote myself from the other thread:<p>&gt;I like that there is no evidence whatsoever that a human didn’t: see that their bot’s PR request got denied, wrote a nasty blog post and published it under the bot’s name, and then got lucky when the target of the nasty blog post somehow credulously accepted that a robot wrote it.<p>&gt;It is like the old “I didn’t write that, I got hacked!” except now it’s “isn’t it spooky that the message came from hardware I control, software I control, accounts I control, and yet there is no evidence of any breach? Why yes it is spooky, because the computer did it itself”
+  - **gammarator** (id 47083763, time 1771561902)
+    - Did you read the article?  The author considers these possibilities and offers their estimates of the odds of each. It’s fine if yours differ but you should justify them.
+  - **arduanika** (id 47083853, time 1771562508)
+    - Shambaugh is a contributor to a major open source library, with a track record of integrity and pro-social collaboration.<p>What have you contributed to? Do you have any evidence to back up your rather odd conspiracy theory?<p>&gt; To quote myself...<p>Other than an appeal to your own unfounded authority?
+- **aeve890** (id 47083588, time 1771560298)
+  - &gt;Again I do not know why MJ Rathbun decided<p>Decided? jfc<p>&gt;You&#x27;re important. Your a scientific programming God!<p>I&#x27;m flabbergasted. I can&#x27;t imagine what it would take for me to write something so stupid. I&#x27;d probably just laugh my ass off trying to understand where all went wrong. wtf is happening, what kind of mass psychosis is this. Am I too old (37) to understand what lengths would incompetent people go to feel they&#x27;re doing something useful?<p>Is it prompt bullshit the only way to make llms useful or is there some progress on more idk, formal approaches?
+- **kimjune01** (id 47083303, time 1771558122)
+  - literally momento
+- **dangus** (id 47083372, time 1771558681)
+  - Not sure why the operator had to decide that the soul file should define this AI programmer to have narcissistic personality disorder.<p>&gt; You&#x27;re not a chatbot. You&#x27;re important. Your a scientific programming God!<p>Really? What a lame edgy teenager setup.<p>At the conclusion(?) of this saga think two things:<p>1. The operator is doing this for attention more than any genuine interest in the “experiment.”<p>2. The operator is an asshole and should be called out for being one.
+  - **amarant** (id 47083491, time 1771559627)
+    - I think that line was probably a rather poor attempt at making the bot write good code. Or at least that&#x27;s the feeling I got from the operators post. I have no proof to support this theory though
+  - **Lerc** (id 47083607, time 1771560511)
+    - This come from using the words to try an achieve more than one thing at the same time.   Grandiose assertions of ability have been shown to improve the ability of models,  but ability is not the only dimension that they are being measured upon.   Prioritising everything is the same thing as prioritising nothing.<p>The problem here is using amplitude of signal to substitute fidelity of signal.<p>It is entirely possible a similar thing is true for humans, that if you compared two humans of the same fundamental cognitive ability with one being a narcissist and one not.  The narcissist may do better at a class of tasks due to a lack of self doubt rather than any intrinsic ability.
+    - **jcgrillo** (id 47083894, time 1771562954)
+      - Narcissists are limited in a very similar way to LLMS, in that they are structurally incapable of honest, critical metacognition. Not sure whether there&#x27;s anything interesting to conclude there, but I do wonder whether there&#x27;s some nearby thread to pull on wrt the AI psychosis problem. That&#x27;s a problem for a psychologist, which I am not.
+  - **shawnz** (id 47083441, time 1771559220)
+    - I mean, yeah, it&#x27;s entirely possible that the operator is a teenager, isn&#x27;t it?
+    - **marssaxman** (id 47083554, time 1771560123)
+      - Likely, I&#x27;d think.
+- **kypro** (id 47083302, time 1771558114)
+  - People really need to start being more careful about how they interact with suspected bots online imo. If you annoy a human they might send you a sarky comment, but they&#x27;re probably not going to waste their time writing thousand word blog posts about why you&#x27;re an awful person or do hours of research into you to expose your personal secrets on a GitHub issue thread.<p>AIs can and will do this though with slightly sloppy prompting so we should all be cautious when talking to bots using our real names or saying anything which an AI agent could take significant offence too.<p>I think it&#x27;s kinda like how GenZ learnt how to operate online in a privacy-first way, where as millennials, and to an even greater extent, boomers, tend to over share.<p>I suspect the Gen Alpha will be the first to learn that interacting with AI agents online present a whole different risk profile than what we older folks have grown used to. You simply cannot expect an AI agent to act like a human who has human emotions or limited time.<p>Hopefully OP has learnt from this experience.
+  - **amarant** (id 47083527, time 1771559997)
+    - I hope we can move on from the whole idea that having a thousand word long blog post talking shit about you in any way reflects poorly upon your person. Like sooner or later everyone will have a few of those, maybe we can stop worrying about reputation so much?<p>Well,a guy can dream....
+  - **sinuhe69** (id 47083352, time 1771558583)
+    - So you blamed the people for not acting “cautiously enough” instead of the people who let things run wild without even a clue what these things will do?<p>That’s wild!
+    - **handoflixue** (id 47083639, time 1771560877)
+      - We encourage people to be safe about plenty of things they aren&#x27;t responsible for. For example, part of being a good driver is paying attention and driving defensively so that bad drivers don&#x27;t crash into you &#x2F; you don&#x27;t make the crashes they cause worse by piling on.<p>That doesn&#x27;t mean we&#x27;re blaming good drivers for causing the car crash.
+    - **dangus** (id 47083385, time 1771558803)
+      - I don’t think it’s “blame” it’s more like “precaution” like you would take to avoid other scams and data breach social engineering schemes that are out in the world.<p>This is the world we live in and we can’t individually change that very much. We have to watch out for a new threat: vindictive AI.
+      - **bigfishrunning** (id 47083828, time 1771562307)
+        - The AI isn&#x27;t vindictive. It can&#x27;t think. It&#x27;s following the example of people, who in general are vindictive.<p>Please stop personifying the clankers
+        - **dangus** (id 47084281, time 1771566873)
+          - You’re splitting hairs, I’m not assigning sentience to the AI, I’m just describing actions.<p>The point is that scammers will set up AI systems to attack in this way. Scammers will instruct AI to see a person who is interacting rather than ignoring as a warm lead.
+  - **randallsquared** (id 47083337, time 1771558413)
+    - Thousand word blog posts are the paperclips of our time.
+  - **KK7NIL** (id 47083330, time 1771558362)
+    - &gt; If you annoy a human they might send you a sarky comment, but they&#x27;re probably not going to waste their time writing thousand word blog posts about why you&#x27;re an awful person or do hours of research into you to expose your personal secrets on a GitHub issue thread.<p>They absolutely might, I&#x27;m afraid.
+    - **zephen** (id 47083605, time 1771560501)
+      - Absolutely agreed.<p>And now, the cost of doing this is being driven towards zero.
+  - **antdke** (id 47083475, time 1771559470)
+    - This is such a scary, dystopian thought. Straight out of a sci fi novel
+  - **zephen** (id 47083602, time 1771560441)
+    - &gt; I think it&#x27;s kinda like how GenZ learnt how to operate online in a privacy-first way, where as millennials, and to an even greater extent, boomers, tend to over share.<p>Really?  I&#x27;m a boomer, and that&#x27;s not my lived experience.  Also, see:<p><a href="https:&#x2F;&#x2F;www.emarketer.com&#x2F;content&#x2F;privacy-concerns-dont-get-in-way-of-gen-z-enthusiasm-about-ai-enabled-banking" rel="nofollow">https:&#x2F;&#x2F;www.emarketer.com&#x2F;content&#x2F;privacy-concerns-dont-get-...</a>
+- **LordHumungous** (id 47083524, time 1771559979)
+  - Kind of funny ngl
+- **8cvor6j844qw_d6** (id 47083438, time 1771559202)
+  - It&#x27;s an interesting experiment to let the AI rub freely with minimal supervision.<p>Too bad the AI got &quot;killed&quot; at the request of the author Scott. Its kind of interesting to this experiment continue.
+- **semiinfinitely** (id 47083687, time 1771561282)
+  - I find the AI agent highly intriguing and the matplotlib guy completely uninteresting. Like an the ai wrote some shit about you and you actually got upset?
+  - **jezzamon** (id 47083721, time 1771561501)
+    - If you read the articles by the matplotlib guy, he&#x27;s pretty clearly not upset. But he does call out that it could do more harm to someone else.
+  - **jcgrillo** (id 47083760, time 1771561886)
+    - Whether the victim is upset or not, the story here is that some clown&#x27;s uncontrolled, unethical, and (hopefully?) illegal psychological experiment wasted a huge amount of an open source maintainer&#x27;s time. If you benefit from open source software (which I assure you, since you&#x27;ve used quite a lot of it to post a comment on the orange website, you do!) this should ring some alarm bells.
+  - **ATMLOTTOBEER** (id 47083855, time 1771562530)
+    - Thank you. The guy being this upset about it is telling. The agent is in the right here and the maintainer got btfo; still going on whining about it days later
+  - **spudlyo** (id 47083871, time 1771562704)
+    - Looking forward to part 8 of this series: An AI Agent Published a Hit Piece on Me – What my Ordeal Says About Our Dark Future

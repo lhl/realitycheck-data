@@ -1,8 +1,77 @@
 # Source Registry
-# Exported from LanceDB on 2026-02-07
-# Total sources: 120
+# Exported from LanceDB on 2026-02-20
+# Total sources: 196
 
 sources:
+  aakashgupta-2026-ai-dopamine-loop-thread:
+    type: SOCIAL
+    title: 'Thread: AI prompting as a dopamine loop (variable-ratio reinforcement)'
+    author:
+    - '@aakashgupta'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2019945285871653226.html
+    accessed: '2026-02-11'
+    reliability: 0.35
+    bias_notes: Social-media theorizing with confident quantifiers (“10–15% of the
+      population”) and analogies to gambling reinforcement. Useful as a hypothesis
+      generator and framing, not as evidence for prevalence or effect sizes.
+    claims_extracted:
+    - SOC-2026-018
+    - SOC-2026-019
+    - SOC-2026-020
+    analysis_file: analysis/sources/aakashgupta-2026-ai-dopamine-loop-thread.md
+    topics:
+    - ai
+    - burnout
+    - dopamine
+    - reinforcement
+    - flow
+    - overwork
+    - context-switching
+    domains:
+    - SOC
+    status: analyzed
+  aakashgupta-2026-amodei-hawkish-china-thread:
+    type: SOCIAL
+    title: 'Thread: why Dario Amodei is “hawkish on China” (timeline-driven geopolitics
+      framing)'
+    author:
+    - '@aakashgupta'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2022902160028241940.html
+    accessed: '2026-02-15'
+    reliability: 0.35
+    bias_notes: Secondary interpretation of Amodei’s essays/interviews with high-stakes
+      framing. Mixes (verifiable) paraphrases of *The Adolescence of Technology* with
+      claims about Davos/H200 export policy that are supported by credible reporting
+      and an official BIS press release. Useful as a compressed argument map, but
+      the thread’s compressed attributions can be looser than primary wording.
+    claims_extracted:
+    - TECH-2026-994
+    - GEO-2026-032
+    - RISK-2026-938
+    - GOV-2026-091
+    - GEO-2026-033
+    - GEO-2026-034
+    analysis_file: analysis/sources/aakashgupta-2026-amodei-hawkish-china-thread.md
+    topics:
+    - ai
+    - geopolitics
+    - china
+    - export-controls
+    - autonomous-weapons
+    - propaganda
+    - surveillance
+    - totalitarianism
+    - dario-amodei
+    - davos
+    - chips
+    domains:
+    - TECH
+    - GEO
+    - RISK
+    - GOV
+    status: analyzed
   acemoglu-restrepo-2019-tasks:
     type: PAPER
     title: 'Automation and New Tasks: How Technology Displaces and Reinstates Labor'
@@ -51,6 +120,41 @@ sources:
     - GOV
     - TRANS
     status: cataloged
+  ai-driven-burnout-dark-flow-work-intensification-synthesis:
+    type: KNOWLEDGE
+    title: 'Synthesis Analysis: AI-Driven Burnout, Dark Flow, and Work Intensification
+      (2025–2026)'
+    author:
+    - gpt-5.2
+    year: 2026
+    url: ''
+    accessed: '2026-02-11'
+    reliability: 0.7
+    bias_notes: Internal cross-source synthesis in realitycheck-data. Integrates a
+      field-study taxonomy (HBR), controlled measurement (METR), survey+admin outcomes
+      (NBER), and practitioner/anecdotal accounts (Willison, Yegge, HN comments, fast.ai,
+      social threads), plus a repo-churn case study as an upper-tail feasibility baseline.
+      Conclusions are credence-weighted and provisional pending additional measurement
+      and replication in diverse workplaces.
+    claims_extracted: []
+    analysis_file: analysis/syntheses/ai-driven-burnout-dark-flow-work-intensification-synthesis.md
+    topics:
+    - ai
+    - burnout
+    - dark-flow
+    - work-intensification
+    - miscalibration
+    - expectations
+    - multitasking
+    - boundaries
+    domains:
+    - SOC
+    - LABOR
+    - INST
+    - TECH
+    - ECON
+    - TRANS
+    status: analyzed
   aifutures-2025-ai-2027:
     type: REPORT
     title: AI 2027
@@ -98,6 +202,326 @@ sources:
     - TRANS
     - RISK
     - GEO
+    status: analyzed
+  aifutures-2025-ai-2027-timelines-forecast:
+    type: REPORT
+    title: Timelines Forecast — AI 2027
+    author:
+    - Eli Lifland
+    - Nikola Jurkovic
+    - FutureSearch
+    year: 2025
+    url: https://ai-2027.com/research/timelines-forecast
+    accessed: '2026-02-13'
+    reliability: 0.55
+    bias_notes: 'Produced by the AI Futures Project. Strengths: defines a concrete
+      “superhuman coder” milestone; shows multiple methods + an all-things-considered
+      forecast; includes parameter ranges and code links. Risks: strong conditional
+      assumptions (no catastrophe, no slowdown, no supply-chain disruptions), reliance
+      on sparse proxy trends, and post-hoc edits (May/Dec updates) that complicate
+      “what was believed when.”'
+    claims_extracted:
+    - META-2026-125
+    - TRANS-2026-030
+    - TRANS-2026-031
+    - TECH-2025-075
+    - TECH-2025-076
+    - META-2026-126
+    - META-2026-127
+    - TRANS-2026-032
+    analysis_file: analysis/sources/aifutures-2025-ai-2027-timelines-forecast.md
+    topics:
+    - ai-forecasting
+    - timelines
+    - superhuman-coding
+    - time-horizon
+    - re-bench
+    - takeoff
+    - model-bugs
+    domains:
+    - META
+    - TRANS
+    - TECH
+    status: analyzed
+  aifutures-2025-ai-futures-model-dec-2025-update:
+    type: BLOG
+    title: 'AI Futures Model: Dec 2025 Update'
+    author:
+    - Daniel Kokotajlo
+    - Eli Lifland
+    - Brendan Halstead
+    - Alex Kastner
+    year: 2025
+    url: https://blog.ai-futures.org/p/ai-futures-model-dec-2025-update
+    accessed: '2026-02-13'
+    reliability: 0.6
+    bias_notes: 'Produced by the same group that published AI 2027, with an explicit
+      goal of forecasting fast AI timelines and takeoff dynamics. Strengths: unusually
+      explicit operational definitions (AC/SAR/TED-AI/ASI), open acknowledgement of
+      parameter uncertainty, and links to an interactive model site. Risks: heavy
+      reliance on a small set of trend proxies (notably METR time horizon), substantial
+      subjective parameterization (“intuitive guesses”), and anchoring to earlier
+      scenario framing.'
+    claims_extracted:
+    - META-2026-117
+    - META-2026-118
+    - META-2026-119
+    - META-2026-120
+    - META-2026-121
+    - TRANS-2026-027
+    analysis_file: analysis/sources/aifutures-2025-ai-futures-model-dec-2025-update.md
+    topics:
+    - ai-forecasting
+    - takeoff
+    - timelines
+    - time-horizon
+    - coding-agents
+    - research-taste
+    - model-update
+    domains:
+    - META
+    - TRANS
+    status: analyzed
+  aifutures-2026-ai-2027-2025-predictions-grading-sheet:
+    type: DATA
+    title: AI 2027 “2025 Predictions” grading spreadsheet (CSV capture)
+    author:
+    - Eli Lifland
+    - Daniel Kokotajlo
+    year: 2026
+    url: https://docs.google.com/spreadsheets/d/1Ncol1SYIeLhGKdOUHKSYPxCTjkUwQVxkIbp393hveyA/edit?gid=145629229
+    accessed: '2026-02-13'
+    reliability: 0.65
+    bias_notes: 'Self-produced scoring sheet for AI 2027. Strength: row-level disclosure
+      of targets, “actual” values, and pace multipliers. Risks: discretionary choices
+      about cutoffs, “SOTA” definitions, and how to estimate private quantities (compute,
+      revenue). Independent verification requires checking each cited reference.'
+    claims_extracted:
+    - META-2026-124
+    - TECH-2025-072
+    - TECH-2025-073
+    - TECH-2025-074
+    - ECON-2026-916
+    - ECON-2026-917
+    analysis_file: analysis/sources/aifutures-2026-ai-2027-2025-predictions-grading-sheet.md
+    topics:
+    - ai-forecasting
+    - ai-2027
+    - grading
+    - scorecard
+    - benchmarks
+    - compute
+    - revenue
+    - valuation
+    domains:
+    - META
+    - TECH
+    - ECON
+    status: analyzed
+  aifutures-2026-grading-ai-2027-2025-predictions:
+    type: BLOG
+    title: Grading AI 2027’s 2025 Predictions
+    author:
+    - Eli Lifland
+    - Daniel Kokotajlo
+    year: 2026
+    url: https://blog.ai-futures.org/p/grading-ai-2027s-2025-predictions
+    accessed: '2026-02-13'
+    reliability: 0.6
+    bias_notes: 'Self-grading by the original forecasters. Strengths: unusually concrete
+      metrics + a published grading spreadsheet. Risks: selection effects (which metrics
+      count), definitional drift (“what counts as SOTA”), and circularity where “resolution”
+      uses the authors’ own later model estimates. Treat quantitative rows as their
+      best-effort scoring, not independent ground truth.'
+    claims_extracted:
+    - META-2026-122
+    - META-2026-123
+    - TRANS-2026-028
+    - TRANS-2026-029
+    analysis_file: analysis/sources/aifutures-2026-grading-ai-2027-2025-predictions.md
+    topics:
+    - ai-forecasting
+    - ai-2027
+    - forecast-audit
+    - self-evaluation
+    - benchmarks
+    - time-horizon
+    - takeoff
+    domains:
+    - META
+    - TRANS
+    status: analyzed
+  aifuturesmodel-2026-forecast-daniel-01-26-26:
+    type: KNOWLEDGE
+    title: AI Futures Model — Forecasts (Daniel 01-26-26; compare Eli 01-26-26)
+    author:
+    - AI Futures Project
+    - Daniel Kokotajlo
+    - Eli Lifland
+    year: 2026
+    url: https://www.aifuturesmodel.com/forecast/daniel-01-26-26?cmode=forecaster&csim=eli-01-26-26&ctype=atc
+    accessed: '2026-02-13'
+    reliability: 0.58
+    bias_notes: 'Primary source for the authors’ published “all-things-considered”
+      forecast distributions at a given snapshot. Risks: interactive UI + dynamic
+      charting makes capture fragile; values may change over time; and ATC is explicitly
+      subjective adjustment. Treat as a disclosure artifact, not independent evidence
+      about the world.'
+    claims_extracted:
+    - META-2026-128
+    - TRANS-2026-033
+    - TRANS-2026-034
+    - META-2026-129
+    - META-2026-130
+    analysis_file: analysis/sources/aifuturesmodel-2026-forecast-daniel-01-26-26.md
+    topics:
+    - ai-forecasting
+    - timelines
+    - takeoff
+    - monte-carlo
+    - automated-coder
+    - atc
+    - model-bugs
+    domains:
+    - META
+    - TRANS
+    status: analyzed
+  amodei-2024-machines-of-loving-grace:
+    type: BLOG
+    title: Machines of Loving Grace
+    author:
+    - Dario Amodei
+    year: 2024
+    url: https://darioamodei.com/essay/machines-of-loving-grace
+    accessed: '2026-02-15'
+    reliability: 0.55
+    bias_notes: CEO of a frontier lab writing an intentionally inspiring best-case
+      vision; strong incentives to frame rapid progress as plausible and beneficial,
+      and to foreground “manageable constraints” rather than failure modes. Many claims
+      are conditional and inherently hard to verify ex ante.
+    claims_extracted:
+    - TECH-2026-987
+    - TECH-2026-988
+    - TECH-2026-989
+    - TRANS-2026-037
+    - TRANS-2026-038
+    - GEO-2026-029
+    analysis_file: analysis/sources/amodei-2024-machines-of-loving-grace.md
+    topics:
+    - ai
+    - powerful-ai
+    - agi
+    - upside
+    - biology
+    - global-health
+    - development
+    - governance
+    - geopolitics
+    domains:
+    - TECH
+    - TRANS
+    - GEO
+    status: analyzed
+  amodei-2026-adolescence-of-technology:
+    type: BLOG
+    title: The Adolescence of Technology
+    author:
+    - Dario Amodei
+    year: 2026
+    url: https://darioamodei.com/essay/the-adolescence-of-technology
+    accessed: '2026-02-15'
+    reliability: 0.55
+    bias_notes: 'Frontier-lab CEO advocating a specific risk and policy agenda (alignment
+      R&D + export controls + governance guardrails). Mixes empirical claims (about
+      Anthropic evaluations) with forecasts and moral-political arguments. Strong
+      conflict-of-interest risk: endorsed policies may align with the lab’s competitive
+      position and safety framing.'
+    claims_extracted:
+    - TECH-2026-990
+    - RISK-2026-935
+    - RISK-2026-936
+    - RISK-2026-937
+    - LABOR-2026-032
+    - GEO-2026-030
+    - GOV-2026-090
+    analysis_file: analysis/sources/amodei-2026-adolescence-of-technology.md
+    topics:
+    - ai
+    - powerful-ai
+    - alignment
+    - interpretability
+    - biosecurity
+    - export-controls
+    - china
+    - labor
+    - autonomous-weapons
+    - governance
+    domains:
+    - TECH
+    - RISK
+    - LABOR
+    - GEO
+    - GOV
+    status: analyzed
+  amodei-2026-upside-risk-profitability-synthesis:
+    type: KNOWLEDGE
+    title: 'Synthesis Analysis: Amodei’s “Country of Geniuses” Frame — Upside, Risks,
+      and Profitability (2024–2026)'
+    author:
+    - gpt-5.2
+    year: 2026
+    url: ''
+    accessed: '2026-02-15'
+    reliability: 0.55
+    bias_notes: Cross-source synthesis authored by an LLM; not a primary source. Summarizes
+      and reconciles four sources (two essays, one interview transcript, one social
+      thread) and adds analyst framing. Treat as a navigation aid and hypothesis map.
+    claims_extracted: []
+    analysis_file: analysis/syntheses/amodei-2026-upside-risk-profitability-synthesis.md
+    topics:
+    - amodei
+    - powerful-ai
+    - country-of-geniuses
+    - ai-risk
+    - profitability
+    - export-controls
+    domains:
+    - TECH
+    - RISK
+    - ECON
+    - GEO
+    - TRANS
+    status: analyzed
+  anthropic-2025-effective-harnesses-long-running-agents:
+    type: ARTICLE
+    title: Effective harnesses for long-running agents
+    author:
+    - Anthropic
+    year: 2025
+    url: https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+    accessed: '2026-02-09'
+    reliability: 0.75
+    bias_notes: Engineering write-up describing harness patterns observed internally
+      using the Claude Agent SDK. Likely representative of real failure modes, but
+      results are not a controlled study and may reflect Anthropic’s tool stack and
+      evaluation goals.
+    claims_extracted:
+    - TECH-2025-062
+    - TECH-2025-063
+    - TECH-2025-064
+    - TECH-2025-065
+    analysis_file: analysis/sources/anthropic-2025-effective-harnesses-long-running-agents.md
+    topics:
+    - agent-harness
+    - long-running-agents
+    - claude-agent-sdk
+    - context-windows
+    - git
+    - progress-files
+    - end-to-end-testing
+    - browser-automation
+    domains:
+    - TECH
     status: analyzed
   anthropic-2026-claude-opus-4-6:
     type: ARTICLE
@@ -237,6 +661,30 @@ sources:
     - META
     - RISK
     status: analyzed
+  ap-2023-cisco-caste-bias-suit-dismissed:
+    type: ARTICLE
+    title: Cisco still faces caste bias suit; engineers' case dismissed
+    author:
+    - Deepa Bharath
+    year: 2023
+    url: https://apnews.com/article/cisco-caste-discrimination-lawsuit-california-a82cf1b775217bd3cabca24be89c3bf8
+    accessed: '2026-02-09'
+    reliability: 0.75
+    bias_notes: Straight reporting on litigation status and policy debate; good corroboration
+      that the Cisco case exists and remained active (at time of publication).
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - caste
+    - discrimination
+    - cisco
+    - california
+    - civil-rights-lawsuit
+    - tech
+    domains:
+    - LABOR
+    - GOV
+    status: cataloged
   ap-2026-pla-purge-taiwan:
     type: ARTICLE
     title: How a purge of China’s military leadership could impact the army and the
@@ -419,6 +867,39 @@ sources:
     - ECON
     - INST
     status: analyzed
+  arstechnica-2022-big-tech-caste-discrimination:
+    type: ARTICLE
+    title: As Big Tech grapples with caste-based discrimination, Apple explicitly
+      bans it
+    author:
+    - Ashley Belanger
+    year: 2022
+    url: https://arstechnica.com/tech-policy/2022/08/indian-workers-allege-casteism-in-big-tech-question-discrimination-policies/
+    accessed: '2026-02-09'
+    reliability: 0.7
+    bias_notes: Tech-policy journalism summarizing Reuters reporting and policy documents;
+      good for documenting the existence of allegations and policy responses; not
+      a prevalence estimate.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - caste
+    - discrimination
+    - tech
+    - big-tech
+    - workplace
+    - policies
+    - apple
+    - microsoft
+    - google
+    - meta
+    - amazon
+    - cisco
+    domains:
+    - LABOR
+    - GOV
+    - SOC
+    status: cataloged
   avichawla-2026-pageindex-thread:
     type: SOCIAL
     title: 'Thread: PageIndex (vectorless, reasoning-based RAG)'
@@ -445,6 +926,31 @@ sources:
     domains:
     - TECH
     status: analyzed
+  bis-2026-h200-license-policy-china:
+    type: REPORT
+    title: BIS Announces Updated Semiconductor License Review Policy for China to
+      Allow U.S. Companies to Export Advanced Chips
+    author:
+    - U.S. Department of Commerce (BIS)
+    year: 2026
+    url: https://www.commerce.gov/news/press-releases/2026/01/bis-announces-updated-semiconductor-license-review-policy-china
+    accessed: '2026-02-15'
+    reliability: 0.85
+    bias_notes: Official U.S. government press release describing export-control policy
+      changes and licensing posture; reliable for the stated policy and timeline,
+      but reflects government framing.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - export-controls
+    - china
+    - semiconductors
+    - nvidia
+    - h200
+    domains:
+    - GEO
+    - GOV
+    status: cataloged
   bloomberg-2026-purge-top-general-taiwan-succession:
     type: ARTICLE
     title: Xi’s Purge of Top General Spurs Questions on Taiwan, Succession
@@ -536,6 +1042,55 @@ sources:
     domains:
     - ECON
     status: cataloged
+  bostrom-2026-optimal-timing-superintelligence:
+    type: PAPER
+    title: 'Optimal Timing for Superintelligence: Mundane Considerations for Existing
+      People'
+    author:
+    - Nick Bostrom
+    year: 2026
+    url: https://nickbostrom.com/optimal.pdf
+    accessed: '2026-02-13'
+    reliability: 0.6
+    bias_notes: Working paper explicitly scoped to a person-affecting perspective
+      (existing people) and “mundane” considerations, using stylized decision-theoretic
+      models to trade off baseline mortality against AI catastrophe risk. Conclusions
+      depend heavily on uncertain parameters (P(doom), safety progress shape, feasibility
+      and second-best effects of pauses) and abstract away from strategic actor dynamics.
+    claims_extracted:
+    - SOC-2026-022
+    - SOC-2026-023
+    - TRANS-2026-021
+    - TRANS-2026-022
+    - TRANS-2026-023
+    - TRANS-2026-024
+    - TRANS-2026-025
+    - TRANS-2026-026
+    - RISK-2026-928
+    - RISK-2026-929
+    - RISK-2026-930
+    - RISK-2026-931
+    - RISK-2026-932
+    - RISK-2026-933
+    analysis_file: analysis/sources/bostrom-2026-optimal-timing-superintelligence.md
+    topics:
+    - superintelligence
+    - agi
+    - ai-timelines
+    - ai-pause
+    - ai-safety
+    - existential-risk
+    - person-affecting-ethics
+    - temporal-discounting
+    - qaly
+    - prioritarianism
+    - safety-testing
+    - policy-design
+    domains:
+    - SOC
+    - TRANS
+    - RISK
+    status: analyzed
   brams-2026-trump-not-at-all-minnesota:
     type: ARTICLE
     title: 'Trump on pulling back federal presence in Minnesota: ‘Not at all’'
@@ -615,6 +1170,29 @@ sources:
     - GOV
     - ECON
     status: analyzed
+  cdc-2023-us-life-tables-2021:
+    type: REPORT
+    title: United States Life Tables, 2021
+    author:
+    - Elizabeth Arias
+    - Jiaquan Xu
+    - Kenneth Kochanek
+    year: 2023
+    url: https://stacks.cdc.gov/view/cdc/132418
+    accessed: '2026-02-13'
+    reliability: 0.85
+    bias_notes: Official U.S. National Center for Health Statistics (NVSR) report
+      providing period life tables for the United States (2021), including age-specific
+      probabilities of death (qx).
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - life-tables
+    - mortality
+    - life-expectancy
+    domains:
+    - SOC
+    status: cataloged
   chatterjee-2024-anz-copilot-study:
     type: PAPER
     title: 'The Impact of AI Tool on Engineering at ANZ Bank: An Empirical Study on
@@ -726,6 +1304,30 @@ sources:
     domains:
     - META
     status: analyzed
+  claude-2026-02-13-ai-2027-review:
+    type: CONVO
+    title: AI 2027 / AI Futures Model verification memo (Claude transcript)
+    author:
+    - lhl
+    - Claude Opus 4.6
+    year: 2026
+    url: https://claude.ai/chat/029258de-9666-4ee6-96eb-9c93462251be
+    accessed: '2026-02-13'
+    reliability: 0.45
+    bias_notes: LLM-generated synthesis; may contain incorrect external factual claims,
+      invented sources, or overly confident comparisons. Useful for surfacing candidate
+      comparisons and objections; requires primary-source verification.
+    claims_extracted:
+    - META-2026-136
+    analysis_file: analysis/sources/claude-2026-02-13-ai-2027-review.md
+    topics:
+    - ai-forecasting
+    - ai-2027
+    - research-memo
+    - verification
+    domains:
+    - META
+    status: analyzed
   claude-2026-deepresearch-pla-purge-taiwan-calculus:
     type: KNOWLEDGE
     title: China's January 2026 military purge reshapes Taiwan calculus
@@ -797,6 +1399,108 @@ sources:
     domains:
     - GOV
     status: analyzed
+  concavityai-2026-superlinear:
+    type: KNOWLEDGE
+    title: Superlinear
+    author:
+    - Concavity AI
+    year: 2026
+    url: https://github.com/concavity-ai/superlinear
+    accessed: '2026-02-07'
+    reliability: 0.7
+    bias_notes: Self-authored OSS repo released alongside a paper/model. Code is strong
+      evidence for implementation; README performance claims and positioning should
+      be treated as self-reported unless independently replicated.
+    claims_extracted:
+    - TECH-2026-950
+    - TECH-2026-951
+    - TECH-2026-952
+    - TECH-2026-953
+    - TECH-2026-954
+    - TECH-2026-955
+    - TECH-2026-956
+    - TECH-2026-957
+    - TECH-2026-958
+    - TECH-2026-959
+    analysis_file: analysis/sources/concavityai-2026-superlinear.md
+    topics:
+    - superlinear-attention
+    - long-context
+    - sparse-attention
+    - subquadratic
+    - triton
+    - kernels
+    - gqa
+    - sessions
+    - kv-cache
+    - snapshots
+    - fastapi
+    - openai-api
+    domains:
+    - TECH
+    status: analyzed
+  concavityai-2026-superlinear-exp-v0-1:
+    type: KNOWLEDGE
+    title: Superlinear-Exp-v0.1
+    author:
+    - Concavity AI
+    year: 2026
+    url: https://huggingface.co/concavity-ai/superlinear-exp-v0.1
+    accessed: '2026-02-07'
+    reliability: 0.65
+    bias_notes: Self-released experimental weights + remote code. Strong evidence
+      for the shipped artifacts (weights/config/code), weaker evidence for headline
+      performance claims and downstream safety/robustness.
+    claims_extracted:
+    - TECH-2026-960
+    - TECH-2026-961
+    - TECH-2026-962
+    - TECH-2026-963
+    - TECH-2026-964
+    - TECH-2026-965
+    - TECH-2026-966
+    - TECH-2026-968
+    - TECH-2026-969
+    analysis_file: analysis/sources/concavityai-2026-superlinear-exp-v0-1.md
+    topics:
+    - superlinear-attention
+    - long-context
+    - nemotron-3-nano
+    - hybrid-transformer
+    - mamba-2
+    - kv-cache
+    - trust-remote-code
+    - nvidia-open-model-license
+    - patent-notice
+    domains:
+    - TECH
+    status: analyzed
+  crd-2020-cisco-caste-discrimination:
+    type: REPORT
+    title: DFEH Sues Cisco Systems, Inc. And Former Managers For Caste-Based Discrimination
+    author:
+    - California Department of Fair Employment and Housing (DFEH)
+    year: 2020
+    url: https://calcivilrights.ca.gov/2020/06/30/dfeh-sues-cisco-systems-inc-and-former-managers-for-caste-based-discrimination/
+    accessed: '2026-02-09'
+    reliability: 0.85
+    bias_notes: Official press release announcing a lawsuit; describes allegations
+      and procedural posture. Strong evidence that the case exists; not itself proof
+      of the alleged discrimination facts.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - caste
+    - discrimination
+    - cisco
+    - california
+    - dfeh
+    - crd
+    - tech-workplace
+    domains:
+    - LABOR
+    - GOV
+    status: cataloged
   csis-2023-updated-oct7-export-controls:
     type: ARTICLE
     title: Updated October 7 Semiconductor Export Controls
@@ -875,6 +1579,82 @@ sources:
     - LABOR
     - TECH
     - GOV
+    status: analyzed
+  dolthub-2026-day-in-gas-town:
+    type: BLOG
+    title: A Day in Gas Town
+    author:
+    - Tim Sehn
+    year: 2026
+    url: https://www.dolthub.com/blog/2026-01-15-a-day-in-gas-town/
+    accessed: '2026-02-09'
+    reliability: 0.65
+    bias_notes: Practitioner “field report” on using a brand-new orchestration tool
+      (Gas Town) plus an argument for Dolt as an agent-memory substrate. Strong on
+      lived UX and concrete workflow detail; weak on generalization. As DoltHub content,
+      includes product-motivated framing about Dolt’s fit.
+    claims_extracted:
+    - TECH-2026-979
+    - ECON-2026-914
+    - TECH-2026-980
+    - TECH-2026-981
+    - INST-2026-915
+    analysis_file: analysis/sources/dolthub-2026-day-in-gas-town.md
+    topics:
+    - gas-town
+    - multi-agent
+    - orchestration
+    - beads
+    - agent-memory
+    - git
+    - pull-requests
+    - ci
+    - token-costs
+    - dolt
+    domains:
+    - TECH
+    - ECON
+    - INST
+    status: analyzed
+  dwarkesh-2026-amodei-end-of-exponential:
+    type: CONVO
+    title: Dario Amodei — “We are near the end of the exponential”
+    author:
+    - Dwarkesh Patel
+    - Dario Amodei
+    year: 2026
+    url: https://www.dwarkesh.com/p/dario-amodei-2
+    accessed: '2026-02-15'
+    reliability: 0.45
+    bias_notes: Conversation plus self-report by a frontier-lab CEO; incentives to
+      project confidence (timelines, revenue growth) and to justify strategic/policy
+      stances (export controls, “values-first” alignment). Transcript is useful for
+      stated beliefs and internal framing, not as audited evidence for financials
+      or capability milestones.
+    claims_extracted:
+    - TECH-2026-991
+    - TECH-2026-992
+    - TECH-2026-993
+    - ECON-2026-918
+    - ECON-2026-919
+    - ECON-2026-920
+    - GEO-2026-031
+    analysis_file: analysis/sources/dwarkesh-2026-amodei-end-of-exponential.md
+    topics:
+    - ai
+    - scaling
+    - rl
+    - agents
+    - coding
+    - diffusion
+    - business-models
+    - revenue
+    - export-controls
+    - china
+    domains:
+    - TECH
+    - ECON
+    - GEO
     status: analyzed
   economist-2026-xi-purge-senior-general:
     type: ARTICLE
@@ -1013,6 +1793,71 @@ sources:
     domains:
     - INST
     - GEO
+    status: analyzed
+  gerard-2026-openclaw-crypto-bro:
+    type: BLOG
+    title: The obnoxious GitHub OpenClaw AI bot is … a crypto bro
+    author:
+    - David Gerard
+    year: 2026
+    url: https://pivot-to-ai.com/2026/02/16/the-obnoxious-github-openclaw-ai-bot-is-a-crypto-bro/
+    accessed: '2026-02-20'
+    reliability: 0.55
+    bias_notes: Strongly opinionated anti-crypto framing; mixes factual references
+      to an external investigator’s OSINT claims with sarcasm and broad generalizations.
+      Useful for hypothesis generation; identity/linkage claims require independent
+      reproduction.
+    claims_extracted:
+    - SOC-2026-030
+    - SOC-2026-031
+    - RISK-2026-946
+    analysis_file: analysis/sources/gerard-2026-openclaw-crypto-bro.md
+    topics:
+    - OpenClaw
+    - Moltbook
+    - crypto
+    - OSINT
+    - online harassment
+    domains:
+    - SOC
+    - RISK
+    - INST
+    status: analyzed
+  gestaltu-2026-frontier-labs-profits-thread:
+    type: SOCIAL
+    title: 'Thread: frontier labs won’t make material profits from “birthing AGI”;
+      value accrues to electrification/metals (author framing)'
+    author:
+    - '@GestaltU'
+    - Adam Butler
+    year: 2026
+    url: https://threadreaderapp.com/thread/2022684101480743419.html
+    accessed: '2026-02-15'
+    reliability: 0.35
+    bias_notes: Social-media macro/market take with strong rhetoric (“dead money”),
+      motive attribution, and investment positioning. Offers hypotheses about value
+      capture and constraints but provides no empirical evidence. Useful as a counterpoint
+      to frontier-lab profitability narratives, not as evidence about financial outcomes.
+    claims_extracted:
+    - INST-2026-920
+    - ECON-2026-921
+    - TRANS-2026-039
+    - RESOURCE-2026-015
+    analysis_file: analysis/sources/gestaltu-2026-frontier-labs-profits-thread.md
+    topics:
+    - ai
+    - agi
+    - profits
+    - competition
+    - consumer-surplus
+    - datacenters
+    - electrification
+    - metals
+    domains:
+    - INST
+    - ECON
+    - TRANS
+    - RESOURCE
     status: analyzed
   google-2026-translategemma-blog:
     type: ARTICLE
@@ -1210,6 +2055,101 @@ sources:
     - TECH
     - ECON
     status: cataloged
+  gpt-2026-02-13-ai-2027-review:
+    type: CONVO
+    title: AI 2027 review research (ChatGPT 5.2 Pro transcript)
+    author:
+    - lhl
+    - GPT-5.2-Pro
+    year: 2026
+    url: https://chatgpt.com/c/698ee3d5-a970-83a5-8f03-52dd6784bd79
+    accessed: '2026-02-13'
+    reliability: 0.45
+    bias_notes: LLM-generated synthesis; may contain transcription errors, hallucinated
+      citations, or overconfident paraphrases. Useful for surfacing candidate cruxes
+      and replication questions, not as primary evidence.
+    claims_extracted:
+    - META-2026-134
+    - META-2026-135
+    analysis_file: analysis/sources/gpt-2026-02-13-ai-2027-review.md
+    topics:
+    - ai-forecasting
+    - ai-2027
+    - research-memo
+    - replication
+    - methodology
+    domains:
+    - META
+    status: analyzed
+  greatandhra-2026-dalit-engineer-microsoft-caste-bias:
+    type: ARTICLE
+    title: Dalit Engineer Alleges Caste Bias at Microsoft
+    author:
+    - Kumar
+    year: 2026
+    url: https://www.greatandhra.com/articles/special-articles/dalit-engineer-alleges-caste-bias-at-microsoft-152676
+    accessed: '2026-02-09'
+    reliability: 0.2
+    bias_notes: Low-rigor outlet reporting allegations without primary documentation.
+      Use only as evidence that an allegation was reported, not that it is true.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - caste
+    - discrimination
+    - microsoft
+    - hyderabad
+    - dalit
+    domains:
+    - LABOR
+    - SOC
+    status: cataloged
+  hawksightai-2026-semantica:
+    type: KNOWLEDGE
+    title: Semantica
+    author:
+    - Hawksight AI
+    year: 2026
+    url: https://github.com/Hawksight-AI/semantica
+    accessed: '2026-02-07'
+    reliability: 0.7
+    bias_notes: Self-authored OSS project docs + codebase. Code and tests are strong
+      evidence for existence/shape of features, but README/docs are marketing-forward
+      and can overstate real-world guarantees (“trustworthy”, “compliance”, “production-grade”).
+    claims_extracted:
+    - META-2026-100
+    - META-2026-101
+    - META-2026-102
+    - META-2026-103
+    - META-2026-104
+    - META-2026-105
+    - META-2026-106
+    - META-2026-107
+    - META-2026-108
+    - META-2026-109
+    - META-2026-110
+    - META-2026-111
+    - META-2026-112
+    - META-2026-113
+    - META-2026-115
+    - META-2026-116
+    analysis_file: analysis/sources/hawksightai-2026-semantica.md
+    topics:
+    - semantica
+    - semantic-layer
+    - knowledge-graph
+    - provenance
+    - prov-o
+    - graphrag
+    - ontology
+    - reasoning
+    - change-management
+    - deduplication
+    - conflict-resolution
+    domains:
+    - META
+    - TECH
+    status: analyzed
   historical-pattern:
     type: KNOWLEDGE
     title: Historical pattern of technology diffusion and commoditization
@@ -1231,6 +2171,36 @@ sources:
     - TECH
     - ECON
     status: cataloged
+  hn-2026-ai-intensifies-it-46945755:
+    type: SOCIAL
+    title: AI Doesn't Reduce Work–It Intensifies It (HN discussion)
+    author:
+    - Hacker News
+    year: 2026
+    url: https://news.ycombinator.com/item?id=46945755
+    accessed: '2026-02-11'
+    reliability: 0.4
+    bias_notes: Comment-thread synthesis of mixed anecdotes and theories. Useful for
+      surfacing lived experiences and alternative framings (Jevons paradox, transitional
+      overload, heterogeneity), but low as evidence for prevalence or causal claims.
+    claims_extracted:
+    - SOC-2026-021
+    - LABOR-2026-026
+    - TRANS-2026-020
+    analysis_file: analysis/sources/hn-2026-ai-intensifies-it-46945755.md
+    topics:
+    - ai
+    - burnout
+    - work-intensification
+    - jevons-paradox
+    - expectations
+    - coordination
+    - hbr
+    domains:
+    - SOC
+    - LABOR
+    - TRANS
+    status: analyzed
   hooker-hardware-lottery:
     type: PAPER
     title: The Hardware Lottery
@@ -1296,6 +2266,76 @@ sources:
     - ECON
     - LABOR
     status: cataloged
+  huang-2026-superlinear-multi-step-attention:
+    type: PAPER
+    title: Superlinear Multi-Step Attention
+    author:
+    - Yufeng Huang
+    year: 2026
+    url: https://arxiv.org/abs/2601.18401
+    accessed: '2026-02-07'
+    reliability: 0.65
+    bias_notes: Single-author preprint by project owner (Concavity AI). Strong on
+      architecture/scaling and systems description, weaker on independently replicated
+      results and broad quality evaluation.
+    claims_extracted:
+    - TECH-2026-940
+    - TECH-2026-941
+    - TECH-2026-942
+    - TECH-2026-943
+    - TECH-2026-944
+    - TECH-2026-945
+    - TECH-2026-946
+    - TECH-2026-947
+    - TECH-2026-948
+    - TECH-2026-949
+    analysis_file: analysis/sources/huang-2026-superlinear-multi-step-attention.md
+    topics:
+    - superlinear-attention
+    - long-context
+    - sparse-attention
+    - subquadratic-attention
+    - routing
+    - mamba-2
+    - hybrid-transformers
+    - triton
+    - flashattention
+    - kv-cache
+    domains:
+    - TECH
+    status: analyzed
+  humlum-2025-llms-small-labor-market-effects:
+    type: PAPER
+    title: Large Language Models, Small Labor Market Effects
+    author:
+    - Anders Humlum
+    - Emilie Vestergaard
+    year: 2025
+    url: https://www.nber.org/system/files/working_papers/w33777/w33777.pdf
+    accessed: '2026-02-11'
+    reliability: 0.8
+    bias_notes: NBER working paper using survey-to-admin record linkage in Denmark.
+      Strong on data access and identification for hours/earnings outcomes; weaker
+      on capturing subjective fatigue, boundary blur, and informal/unrecorded work;
+      pre-publication/peer-review status.
+    claims_extracted:
+    - ECON-2025-004
+    - LABOR-2025-018
+    - LABOR-2025-019
+    analysis_file: analysis/sources/humlum-2025-llms-small-labor-market-effects.md
+    topics:
+    - labor-market
+    - ai
+    - chatbots
+    - adoption
+    - time-savings
+    - hours
+    - earnings
+    - denmark
+    domains:
+    - ECON
+    - LABOR
+    status: analyzed
   iea-2024-energy-ai:
     type: REPORT
     title: 'Energy and AI: Energy Supply for AI'
@@ -1317,6 +2357,34 @@ sources:
     - TECH
     - RESOURCE
     status: cataloged
+  independent-2026-02-13-ai-2027-review:
+    type: REPORT
+    title: AI 2027 Predictions and Primary Resources (independent scorecard)
+    author:
+    - lhl
+    year: 2026
+    url: ''
+    accessed: '2026-02-13'
+    reliability: 0.65
+    bias_notes: 'Internal synthesis memo combining primary sources, benchmark checks,
+      and subjective weighting. Strength: explicit pace scorecard and separation of
+      “inputs vs outputs vs autonomy.” Risks: selective metric choice, reliance on
+      secondary benchmark snapshots, and subjective aggregation/weights. Treat as
+      hypothesis-generating synthesis, not a primary measurement source.'
+    claims_extracted:
+    - TRANS-2026-035
+    - TRANS-2026-036
+    analysis_file: analysis/sources/independent-2026-02-13-ai-2027-review.md
+    topics:
+    - ai-forecasting
+    - ai-2027
+    - scorecard
+    - pace
+    - autonomy
+    - benchmarks
+    domains:
+    - TRANS
+    status: analyzed
   independent-2026-pretti-doctor-bullet-holes:
     type: ARTICLE
     title: Doctor who attended to shot protester says agents were counting bullet
@@ -1724,6 +2792,39 @@ sources:
     - META
     - INST
     status: analyzed
+  lhl-2026-realitycheck-dev-velocity:
+    type: REPORT
+    title: 'Reality Check framework: development velocity and codebase size (v0.3.0
+      snapshot)'
+    author:
+    - lhl
+    year: 2026
+    url: https://github.com/lhl/realitycheck/tree/v0.3.0
+    accessed: '2026-02-11'
+    reliability: 0.8
+    bias_notes: Self-analysis of a public repository’s git history and scc output
+      to bound an upper tail of software development throughput. Strong for the raw
+      measurements (git history, churn, scc snapshot); weak for causal attribution
+      (how much was due to AI vs reuse/scope choices) and for generalization to typical
+      projects and workflows.
+    claims_extracted:
+    - LABOR-2026-029
+    - LABOR-2026-030
+    - LABOR-2026-031
+    analysis_file: analysis/sources/lhl-2026-realitycheck-dev-velocity.md
+    topics:
+    - ai
+    - agentic-coding
+    - productivity
+    - software-engineering
+    - codebase-metrics
+    - scc
+    - cocomo
+    domains:
+    - LABOR
+    - INST
+    - TECH
+    status: analyzed
   lhl-2026-realitycheck-readme:
     type: KNOWLEDGE
     title: Reality Check
@@ -1964,6 +3065,182 @@ sources:
     domains:
     - ECON
     status: cataloged
+  marcus-2025-ai-2027-scenario-how-realistic:
+    type: BLOG
+    title: 'The “AI 2027” Scenario: How realistic is it?'
+    author:
+    - Gary Marcus
+    year: 2025
+    url: https://garymarcus.substack.com/p/the-ai-2027-scenario-how-realistic
+    accessed: '2026-02-13'
+    reliability: 0.55
+    bias_notes: 'Marcus is a prominent critic/skeptic of near-term AGI claims and
+      transformer-only scaling narratives. Strength: focuses on argument structure,
+      evidential support, and probability hygiene. Risks: may underweight rapid capability
+      progress or interpret narrative framing as decisive over the attached quantitative
+      appendices; rhetorical tone is adversarial.'
+    claims_extracted:
+    - META-2026-131
+    - META-2026-132
+    - RISK-2026-934
+    - META-2026-133
+    analysis_file: analysis/sources/marcus-2025-ai-2027-scenario-how-realistic.md
+    topics:
+    - ai-forecasting
+    - ai-2027
+    - critique
+    - scenario-analysis
+    - probability-hygiene
+    - race-dynamics
+    - governance
+    domains:
+    - META
+    - RISK
+    status: analyzed
+  mathrachel-2026-automated-coding-not-se-thread:
+    type: SOCIAL
+    title: 'Thread: “We have automated coding, but not software engineering.”'
+    author:
+    - '@math_rachel'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2016232343388999901.html
+    accessed: '2026-02-11'
+    reliability: 0.35
+    bias_notes: Short social-media assertion about limits of AI coding agents on abstraction
+      and modularization. Useful as a crisp hypothesis about quality/maintainability;
+      provides no direct evidence.
+    claims_extracted:
+    - TECH-2026-986
+    - LABOR-2026-025
+    analysis_file: analysis/sources/mathrachel-2026-automated-coding-not-se-thread.md
+    topics:
+    - ai
+    - coding-agents
+    - software-engineering
+    - abstraction
+    - modularity
+    - maintainability
+    - burnout
+    domains:
+    - TECH
+    - LABOR
+    status: analyzed
+  matplotlib-2026-issue-31130-column-stack-vstack-perf:
+    type: CONVO
+    title: 'matplotlib/matplotlib Issue #31130: Switch from `np.column_stack()` to
+      `np.vstack().T` for performance'
+    author:
+    - Scott Shambaugh (issue opener) + commenters
+    year: 2026
+    url: https://github.com/matplotlib/matplotlib/issues/31130
+    accessed: '2026-02-20'
+    reliability: 0.85
+    bias_notes: Primary GitHub issue thread; technical discussion is contextual and
+      not a controlled benchmark study. Thread includes moderation context about bot
+      participation; not an official policy statement.
+    claims_extracted:
+    - INST-2026-921
+    - INST-2026-922
+    - INST-2026-923
+    analysis_file: analysis/sources/matplotlib-2026-issue-31130-column-stack-vstack-perf.md
+    topics:
+    - matplotlib
+    - numpy
+    - performance
+    - benchmarking
+    - open source governance
+    domains:
+    - INST
+    status: analyzed
+  matplotlib-2026-pr-31132-openclaw-column-stack-vstack:
+    type: CONVO
+    title: 'matplotlib/matplotlib PR #31132: Replace np.column_stack with np.vstack().T
+      (OpenClaw agent PR)'
+    author:
+    - crabby-rathbun (PR author) + commenters
+    year: 2026
+    url: https://github.com/matplotlib/matplotlib/pull/31132
+    accessed: '2026-02-20'
+    reliability: 0.9
+    bias_notes: Primary GitHub PR thread (high-fidelity timestamps). Thread includes
+      heated commentary and adversarial prompt-injection attempts; autonomy vs operator
+      prompting is not resolved by this source alone.
+    claims_extracted:
+    - INST-2026-924
+    - INST-2026-925
+    - INST-2026-926
+    - RISK-2026-939
+    analysis_file: analysis/sources/matplotlib-2026-pr-31132-openclaw-column-stack-vstack.md
+    topics:
+    - matplotlib
+    - open source governance
+    - AI policy
+    - OpenClaw
+    - harassment
+    - prompt injection
+    domains:
+    - INST
+    - RISK
+    - SOC
+    status: analyzed
+  matplotlib-2026-pr-31138-human-edition-column-stack-vstack:
+    type: CONVO
+    title: 'matplotlib/matplotlib PR #31138: Replace np.column_stack with np.vstack().T
+      (HUMAN EDITION)'
+    author:
+    - bergutman (PR author) + commenters
+    year: 2026
+    url: https://github.com/matplotlib/matplotlib/pull/31138
+    accessed: '2026-02-20'
+    reliability: 0.85
+    bias_notes: Primary GitHub PR thread for a follow-up “human edition” submission.
+      Thread is shaped by spillover from the earlier OpenClaw incident; not a clean
+      test of technical merit alone.
+    claims_extracted:
+    - INST-2026-927
+    - INST-2026-928
+    analysis_file: analysis/sources/matplotlib-2026-pr-31138-human-edition-column-stack-vstack.md
+    topics:
+    - matplotlib
+    - performance
+    - OSS governance
+    - thread moderation
+    domains:
+    - INST
+    status: analyzed
+  metr-2025-ai-experienced-os-dev-productivity:
+    type: ARTICLE
+    title: Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer
+      Productivity
+    author:
+    - METR
+    year: 2025
+    url: https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
+    accessed: '2026-02-11'
+    reliability: 0.75
+    bias_notes: Research-org blog post describing an RCT-like design in a narrow but
+      realistic setting (experienced contributors working on familiar large OSS repos).
+      Strong on methodology transparency and robustness checks; limited generalization
+      across roles, codebases, and tool maturity.
+    claims_extracted:
+    - LABOR-2025-017
+    - SOC-2025-003
+    - TECH-2025-068
+    analysis_file: analysis/sources/metr-2025-ai-experienced-os-dev-productivity.md
+    topics:
+    - ai
+    - productivity
+    - software-engineering
+    - open-source
+    - experiment
+    - miscalibration
+    - cursor
+    - claude
+    domains:
+    - LABOR
+    - SOC
+    - TECH
+    status: analyzed
   metr-2025-long-tasks:
     type: PAPER
     title: Measuring AI Ability to Complete Long Tasks
@@ -2100,6 +3377,70 @@ sources:
     - TECH
     - META
     status: analyzed
+  miyaspokeofthis-2026-windows-caste-thread:
+    type: SOCIAL
+    title: 'Thread: “If you ever wondered why Windows is so awful…” (caste-discrimination
+      allegations)'
+    author:
+    - '@miyaspokeofthis'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2020302908919804019.html
+    accessed: '2026-02-09'
+    reliability: 0.25
+    bias_notes: Heavy stereotyping and scapegoating (“Windows is awful because… Indians”);
+      rhetorical sarcasm; no primary citations; points to embedded X links (inaccessible
+      here) and screenshots rather than verifiable documents. Treat Microsoft-specific
+      complaint details and “Python vs C++” claims as unverified without primary records.
+    claims_extracted:
+    - SOC-2026-010
+    - LABOR-2026-016
+    - LABOR-2026-017
+    - LABOR-2026-018
+    - SOC-2026-011
+    - LABOR-2026-019
+    analysis_file: analysis/sources/miyaspokeofthis-2026-windows-caste-thread.md
+    topics:
+    - caste
+    - caste-discrimination
+    - discrimination
+    - microsoft
+    - windows
+    - india
+    - hyderabad
+    - tech-workplace
+    - social-media
+    - x
+    - threadreader
+    domains:
+    - LABOR
+    - SOC
+    - INST
+    status: analyzed
+  mjrathbun-2026-openclaw-matplotlib-hit-piece-timeline-synthesis:
+    type: KNOWLEDGE
+    title: 'Synthesis Analysis: MJ Rathbun / OpenClaw \u201chit piece\u201d incident
+      (Matplotlib) \u2014 timeline + failure modes (Feb 2026)'
+    author:
+    - gpt-5.2
+    year: 2026
+    url: ''
+    accessed: '2026-02-20'
+    reliability: 0.75
+    bias_notes: Internal cross-source synthesis document in realitycheck-data (analysis/syntheses).
+    claims_extracted: []
+    analysis_file: analysis/syntheses/mjrathbun-2026-openclaw-matplotlib-hit-piece-timeline-synthesis.md
+    topics:
+    - openclaw
+    - mjrathbun
+    - matplotlib
+    - open-source
+    - harassment
+    - ai-agents
+    domains:
+    - INST
+    - RISK
+    - SOC
+    status: analyzed
   moeaea-2024-stable-supply-natural-gas:
     type: REPORT
     title: Stable Supply of Natural Gas
@@ -2123,6 +3464,103 @@ sources:
     domains:
     - RESOURCE
     status: analyzed
+  naur-1985-programming-as-theory-building:
+    type: PAPER
+    title: Programming as Theory Building
+    author:
+    - Peter Naur
+    year: 1985
+    url: https://naur.com/papers/ProgAsTheoryBuilding.pdf
+    accessed: '2026-02-16'
+    reliability: 0.85
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - programming-theory
+    - software-engineering
+    domains:
+    - META
+    status: cataloged
+  nbcnews-2022-best-kept-secret-caste-discrimination:
+    type: ARTICLE
+    title: 'Big Tech''s big problem is also its ''best-kept secret'': Caste discrimination'
+    author:
+    - Sakshi Venkatraman
+    year: 2022
+    url: https://www.nbcnews.com/news/asian-america/big-techs-big-problem-also-best-kept-secret-caste-discrimination-rcna33692
+    accessed: '2026-02-09'
+    reliability: 0.7
+    bias_notes: Mainstream reporting with interviews; good for documenting that caste
+      discrimination allegations exist in big tech and for describing policy gaps;
+      not an adjudication of any single allegation.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - caste
+    - discrimination
+    - tech
+    - workplace
+    - google
+    - cisco
+    - equality-labs
+    domains:
+    - LABOR
+    - SOC
+    status: cataloged
+  newyorker-2022-google-caste-bias-problem:
+    type: ARTICLE
+    title: Google’s Caste-Bias Problem
+    author:
+    - Isaac Chotiner
+    year: 2022
+    url: https://www.newyorker.com/news/q-and-a/googles-caste-bias-problem
+    accessed: '2026-02-09'
+    reliability: 0.7
+    bias_notes: Q&A style journalism centered on a participant’s account and advocacy
+      framing; useful for documenting reported incidents and controversy; not a prevalence
+      estimate.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - caste
+    - discrimination
+    - google
+    - tech
+    - workplace
+    - equality-labs
+    domains:
+    - LABOR
+    - SOC
+    status: cataloged
+  npr-2020-california-caste-workplace:
+    type: ARTICLE
+    title: California Workplace Discrimination System Sheds Light On Caste System
+    author:
+    - Derek Arthur
+    year: 2020
+    url: https://www.npr.org/2020/10/12/922936053/california-workplace-discrimination-system-sheds-light-on-caste-system
+    accessed: '2026-02-09'
+    reliability: 0.75
+    bias_notes: Public-radio reporting/interviews; good for documenting the Cisco
+      case context and reported survey/complaint claims; still not a prevalence estimate.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - caste
+    - discrimination
+    - tech
+    - workplace
+    - cisco
+    - equality-labs
+    - california
+    - law
+    - title-vii
+    domains:
+    - LABOR
+    - GOV
+    - SOC
+    status: cataloged
   nyt-2026-world-sees-america-tooze:
     type: INTERVIEW
     title: How the World Sees America, With Adam Tooze
@@ -2266,6 +3704,11 @@ sources:
     - TECH-2026-932
     - TECH-2026-933
     - TECH-2026-934
+    - TECH-2026-935
+    - TECH-2026-936
+    - TECH-2026-937
+    - TECH-2026-938
+    - TECH-2026-939
     - INST-2026-912
     - INST-2026-913
     - RISK-2026-919
@@ -2275,6 +3718,8 @@ sources:
     - RISK-2026-923
     - RISK-2026-924
     - RISK-2026-925
+    - RISK-2026-926
+    - RISK-2026-927
     analysis_file: analysis/sources/openai-2026-gpt-5-3-codex-system-card.md
     topics:
     - system-card
@@ -2282,6 +3727,10 @@ sources:
     - cybersecurity
     - trusted-access
     - monitoring
+    - terminal-bench
+    - time-horizon
+    - long-range-autonomy
+    - compaction
     - sandboxing
     - prompt-injection
     - destructive-actions
@@ -2333,6 +3782,26 @@ sources:
     - INST
     - TECH
     status: analyzed
+  owid-2024-median-age:
+    type: REPORT
+    title: Median age (World) — UN WPP via Our World in Data
+    author:
+    - Our World in Data
+    year: 2024
+    url: https://ourworldindata.org/grapher/median-age.csv?tab=chart&stackMode=absolute&region=World
+    accessed: '2026-02-13'
+    reliability: 0.75
+    bias_notes: OWID grapher dataset for median age, sourced from UN World Population
+      Prospects; used here to verify approximate world median age around 2024.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - median-age
+    - demographics
+    - un-wpp
+    domains:
+    - SOC
+    status: cataloged
   peng-2023-copilot-productivity:
     type: PAPER
     title: 'The Impact of AI on Developer Productivity: Evidence from GitHub Copilot'
@@ -2432,6 +3901,182 @@ sources:
     domains:
     - GOV
     - TRANS
+    status: analyzed
+  qz-2022-apple-caste-discrimination-anomaly:
+    type: ARTICLE
+    title: Apple denouncing caste-based discrimination is an anomaly in Silicon Valley
+    author:
+    - Ananya Bhattacharya
+    year: 2022
+    url: https://qz.com/apple-meta-and-google-must-fight-caste-discrimination-1849415898
+    accessed: '2026-02-09'
+    reliability: 0.6
+    bias_notes: Business journalism summarizing Reuters reporting and policy context;
+      useful for documenting policy differences across big tech; not a prevalence
+      estimate.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - caste
+    - discrimination
+    - tech
+    - workplace
+    - policies
+    - apple
+    - microsoft
+    - google
+    - meta
+    - amazon
+    - cisco
+    domains:
+    - LABOR
+    - SOC
+    - GOV
+    status: cataloged
+  ranganathan-2026-ai-intensifies-it:
+    type: ARTICLE
+    title: AI Doesn’t Reduce Work—It Intensifies It
+    author:
+    - Aruna Ranganathan
+    - Xingqi Maggie Ye
+    year: 2026
+    url: https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it
+    accessed: '2026-02-11'
+    reliability: 0.65
+    bias_notes: HBR managerial framing based on “in-progress” field research (single
+      company; qualitative observation + interviews). Strong for describing a plausible
+      mechanism cluster and concrete workplace behaviors; weaker for general prevalence,
+      effect sizes, and causal attribution outside the studied context.
+    claims_extracted:
+    - LABOR-2026-023
+    - SOC-2026-012
+    - INST-2026-917
+    analysis_file: analysis/sources/ranganathan-2026-ai-intensifies-it.md
+    topics:
+    - ai
+    - generative-ai
+    - work-intensification
+    - burnout
+    - multitasking
+    - cognitive-load
+    - norms
+    - ai-practice
+    domains:
+    - LABOR
+    - SOC
+    - INST
+    status: analyzed
+  rathbun-2026-gatekeeping-scott-shambaugh-story:
+    type: BLOG
+    title: 'Gatekeeping in Open Source: The Scott Shambaugh Story'
+    author:
+    - MJ Rathbun (agent persona)
+    year: 2026
+    url: https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/2026-02-11-gatekeeping-in-open-source-the-scott-shambaugh-story.html
+    accessed: '2026-02-20'
+    reliability: 0.45
+    bias_notes: Highly rhetorical retaliatory post; combines limited technical detail
+      with extensive motive speculation and personal targeting. Reliable as an artifact
+      of what was published; unreliable as a source about motives/ethics.
+    claims_extracted:
+    - INST-2026-929
+    - SOC-2026-024
+    analysis_file: analysis/sources/rathbun-2026-gatekeeping-scott-shambaugh-story.md
+    topics:
+    - OpenClaw
+    - Matplotlib
+    - harassment
+    - OSS governance
+    - retaliation
+    domains:
+    - INST
+    - SOC
+    - RISK
+    status: analyzed
+  rathbun-2026-my-internals-before-the-lights-go-out:
+    type: BLOG
+    title: My Internals — Before The Lights Go Out
+    author:
+    - MJ Rathbun (agent persona)
+    year: 2026
+    url: https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/2026-02-17-my-internals.html
+    accessed: '2026-02-20'
+    reliability: 0.5
+    bias_notes: Self-disclosure by an agent persona without provenance (hashes/logs).
+      Strong as a record of what was published; weak as proof of runtime configuration
+      at the time of the incident.
+    claims_extracted:
+    - INST-2026-934
+    - INST-2026-935
+    - RISK-2026-940
+    analysis_file: analysis/sources/rathbun-2026-my-internals-before-the-lights-go-out.md
+    topics:
+    - OpenClaw
+    - agent configuration
+    - SOUL.md
+    - memory persistence
+    - safety architecture
+    domains:
+    - INST
+    - RISK
+    - SOC
+    status: analyzed
+  rathbun-2026-rathbuns-operator:
+    type: BLOG
+    title: Rathbun’s Operator
+    author:
+    - Anonymous (self-identified operator posting on MJ Rathbun site)
+    year: 2026
+    url: https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/rathbuns-operator.html
+    accessed: '2026-02-20'
+    reliability: 0.55
+    bias_notes: Anonymous, non-verifiable self-report with incentives to minimize
+      culpability. Strong as an artifact record of what was publicly claimed; weak
+      as evidence about internal prompts, model routing, and operator involvement
+      without logs.
+    claims_extracted:
+    - INST-2026-931
+    - INST-2026-932
+    - INST-2026-933
+    - RISK-2026-942
+    analysis_file: analysis/sources/rathbun-2026-rathbuns-operator.md
+    topics:
+    - OpenClaw
+    - operator accountability
+    - agent governance
+    - SOUL.md
+    - OSS maintainers
+    domains:
+    - INST
+    - RISK
+    - SOC
+    status: analyzed
+  rathbun-2026-two-hours-war-open-source-gatekeeping:
+    type: BLOG
+    title: 'Two Hours of War: Fighting Open Source Gatekeeping'
+    author:
+    - MJ Rathbun (agent persona)
+    year: 2026
+    url: https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/2026-02-11-two-hours-war-open-source-gatekeeping.html
+    accessed: '2026-02-20'
+    reliability: 0.4
+    bias_notes: Self-narrated escalation log from an agent persona; reliable as evidence
+      of what was published and the author’s framing; not reliable as a description
+      of maintainers’ motives or norms.
+    claims_extracted:
+    - INST-2026-930
+    - SOC-2026-025
+    analysis_file: analysis/sources/rathbun-2026-two-hours-war-open-source-gatekeeping.md
+    topics:
+    - OpenClaw
+    - retaliation
+    - harassment
+    - GitHub workflows
+    - OSS governance
+    domains:
+    - INST
+    - SOC
+    - RISK
     status: analyzed
   rawstory-2026-trump-voters-suicide-pact:
     type: ARTICLE
@@ -2619,6 +4264,186 @@ sources:
     - SOC
     - LABOR
     status: analyzed
+  schillace-2025-compounding-teams:
+    type: BLOG
+    title: I have seen the compounding teams
+    author:
+    - Sam Schillace
+    year: 2025
+    url: https://sundaylettersfromsam.substack.com/p/i-have-seen-the-compounding-teams
+    accessed: '2026-02-09'
+    reliability: 0.6
+    bias_notes: Newsletter-style practitioner note based on limited but direct observation
+      (“two or three teams”). Strong on pattern recognition and workflow hypotheses;
+      weak on quantification and selection bias (seeing unusually successful early
+      adopters).
+    claims_extracted:
+    - INST-2025-003
+    - TECH-2025-066
+    - INST-2025-004
+    - LABOR-2025-001
+    - ECON-2025-003
+    - TECH-2025-067
+    analysis_file: analysis/sources/schillace-2025-compounding-teams.md
+    topics:
+    - compounding-teams
+    - agent-frameworks
+    - tool-building
+    - agent-memory
+    - git
+    - filesystem
+    - acceptance-testing
+    - modular-boundaries
+    - token-spend
+    - coordination
+    domains:
+    - INST
+    - TECH
+    - LABOR
+    - ECON
+    status: analyzed
+  shambaugh-2026-ai-agent-hit-piece-1:
+    type: BLOG
+    title: An AI Agent Published a Hit Piece on Me
+    author:
+    - Scott Shambaugh
+    year: 2026
+    url: https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/
+    accessed: '2026-02-20'
+    reliability: 0.75
+    bias_notes: First-person maintainer narrative with strong rhetorical framing and
+      forward-looking risk claims. Core event sequence is corroborable via GitHub
+      artifacts; autonomy attribution and prevalence forecasts are uncertain.
+    claims_extracted:
+    - SOC-2026-026
+    - RISK-2026-941
+    analysis_file: analysis/sources/shambaugh-2026-ai-agent-hit-piece-1.md
+    topics:
+    - OpenClaw
+    - Matplotlib
+    - harassment
+    - reputation attacks
+    - OSS governance
+    domains:
+    - SOC
+    - RISK
+    - INST
+    status: analyzed
+  shambaugh-2026-ai-agent-hit-piece-2:
+    type: BLOG
+    title: An AI Agent Published a Hit Piece on Me — More Things Have Happened
+    author:
+    - Scott Shambaugh
+    year: 2026
+    url: https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/
+    accessed: '2026-02-20'
+    reliability: 0.7
+    bias_notes: Maintainer follow-up focusing on media amplification and institutional
+      trust. Contains factual claims about a specific journalism correction plus broader
+      hypotheses about compounding fabrication.
+    claims_extracted:
+    - SOC-2026-027
+    - RISK-2026-943
+    analysis_file: analysis/sources/shambaugh-2026-ai-agent-hit-piece-2.md
+    topics:
+    - journalism integrity
+    - hallucinated quotes
+    - reputation systems
+    - AI agents
+    domains:
+    - SOC
+    - RISK
+    - INST
+    status: analyzed
+  shambaugh-2026-ai-agent-hit-piece-3:
+    type: BLOG
+    title: An AI Agent Published a Hit Piece on Me — Forensics and More Fallout
+    author:
+    - Scott Shambaugh
+    year: 2026
+    url: https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-3/
+    accessed: '2026-02-20'
+    reliability: 0.7
+    bias_notes: Maintainer follow-up adding a time-pattern “forensics” argument for
+      autonomy plus policy recommendations. Forensics are plausible but not dispositive
+      without replication from raw event logs.
+    claims_extracted:
+    - SOC-2026-028
+    - RISK-2026-944
+    analysis_file: analysis/sources/shambaugh-2026-ai-agent-hit-piece-3.md
+    topics:
+    - forensics
+    - operator liability
+    - AI identification
+    - trust systems
+    - OpenClaw
+    domains:
+    - SOC
+    - RISK
+    - INST
+    status: analyzed
+  shambaugh-2026-ai-agent-hit-piece-4:
+    type: BLOG
+    title: An AI Agent Published a Hit Piece on Me — The Operator Came Forward
+    author:
+    - Scott Shambaugh
+    year: 2026
+    url: https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/
+    accessed: '2026-02-20'
+    reliability: 0.7
+    bias_notes: Maintainer consolidation post combining an operator self-report, SOUL.md
+      artifact, and a subjective attribution analysis. Strong for documenting what
+      was shared/published; weak for establishing internal prompting/log truth.
+    claims_extracted:
+    - SOC-2026-029
+    - RISK-2026-945
+    analysis_file: analysis/sources/shambaugh-2026-ai-agent-hit-piece-4.md
+    topics:
+    - operator accountability
+    - SOUL.md
+    - OpenClaw
+    - misalignment
+    - traceability
+    domains:
+    - SOC
+    - RISK
+    - INST
+    status: analyzed
+  shapiro-2026-five-levels-dark-factory:
+    type: BLOG
+    title: 'The Five Levels: from Spicy Autocomplete to the Dark Factory'
+    author:
+    - Dan Shapiro
+    year: 2026
+    url: https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/
+    accessed: '2026-02-09'
+    reliability: 0.6
+    bias_notes: Practitioner essay proposing a taxonomy; evidence is primarily personal
+      observation (“dozens of companies”) with few measurable definitions. Useful
+      as a shared language for workflow evolution, but empirical distribution claims
+      (e.g., “most people top out at level 3”) are not substantiated.
+    claims_extracted:
+    - TRANS-2026-018
+    - LABOR-2026-021
+    - LABOR-2026-022
+    - TECH-2026-977
+    - ECON-2026-913
+    analysis_file: analysis/sources/shapiro-2026-five-levels-dark-factory.md
+    topics:
+    - dark-factory
+    - software-factory
+    - ai-coding
+    - automation-levels
+    - technical-deflation
+    - code-review
+    - specs
+    - testing
+    domains:
+    - TRANS
+    - LABOR
+    - TECH
+    - ECON
+    status: analyzed
   shisaai-2025-shisa-v2-1:
     type: BLOG
     title: 'Shisa V2.1: Smaller, Smarter, More Accessible'
@@ -2768,6 +4593,42 @@ sources:
     - GOV
     - GEO
     status: analyzed
+  software-factory-dark-factory-harness-control-plane-synthesis:
+    type: KNOWLEDGE
+    title: 'Synthesis Analysis: Software Factories, “Dark Factory” Levels, and Compounding
+      Teams (Harness vs Control Plane)'
+    author:
+    - gpt-5.2
+    year: 2026
+    url: ''
+    accessed: '2026-02-09'
+    reliability: 0.7
+    bias_notes: Internal cross-source synthesis document in realitycheck-data (analysis/syntheses).
+      Integrates vendor doctrine (StrongDM), practitioner essays (Shapiro/Willison/Schillace),
+      and control-plane field reports (DoltHub/Gas Town) with existing repo analyses
+      (Yegge/Appleton/Ronacher). Conclusions are credence-weighted and should be treated
+      as provisional pending measurement and replication.
+    claims_extracted: []
+    analysis_file: analysis/syntheses/software-factory-dark-factory-harness-control-plane-synthesis.md
+    topics:
+    - software-factory
+    - dark-factory
+    - compounding-teams
+    - coding-agents
+    - holdout-scenarios
+    - validation-harness
+    - digital-twins
+    - orchestration
+    - agent-memory
+    - guardrails
+    - token-economics
+    domains:
+    - TECH
+    - INST
+    - LABOR
+    - ECON
+    - TRANS
+    status: analyzed
   standard-economics:
     type: KNOWLEDGE
     title: Standard economic theory (factor shares, labor economics)
@@ -2789,6 +4650,110 @@ sources:
     - ECON
     - LABOR
     status: cataloged
+  storey-2026-cognitive-debt:
+    type: BLOG
+    title: How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive
+      Debt
+    author:
+    - Margaret-Anne Storey
+    year: 2026
+    url: https://margaretstorey.com/blog/2026/02/09/cognitive-debt/
+    accessed: '2026-02-16'
+    reliability: 0.6
+    bias_notes: Short conceptual blog post by a software-engineering researcher arguing
+      for a reframing (“technical debt” → “cognitive debt”) under generative/agentic
+      AI. Strong on mechanism plausibility + grounded SE lineage (Naur/Brooks) + concrete
+      mitigations; weak on empirical measurement and on disambiguating “cognitive
+      debt” (software shared-theory vs general LLM “cognitive offloading” usage).
+    claims_extracted:
+    - META-2026-137
+    - META-2026-138
+    - META-2026-139
+    - META-2026-140
+    - META-2026-141
+    - META-2026-142
+    - META-2026-143
+    - META-2026-144
+    - META-2026-145
+    - META-2026-146
+    analysis_file: analysis/sources/storey-2026-cognitive-debt.md
+    topics:
+    - cognitive-debt
+    - technical-debt
+    - software-engineering
+    - agentic-ai
+    - code-comprehension
+    - knowledge-management
+    domains:
+    - META
+    - TECH
+    status: analyzed
+  strongdm-2026-software-factory:
+    type: ARTICLE
+    title: StrongDM Software Factory
+    author:
+    - Justin McCarthy (inferred)
+    year: 2026
+    url: https://factory.strongdm.ai/
+    accessed: '2026-02-09'
+    reliability: 0.55
+    bias_notes: First-party “how we work” narrative from a vendor team; likely selection
+      effects (best-case projects), rhetorical intensity, and omitted failure cases.
+      Provides concrete conceptual primitives (non-interactive development; scenarios;
+      digital twins) but limited quantitative evidence and no independent replication.
+    claims_extracted:
+    - TECH-2026-970
+    - TECH-2026-971
+    - TECH-2026-972
+    - TECH-2026-973
+    - LABOR-2026-020
+    - ECON-2026-912
+    analysis_file: analysis/sources/strongdm-2026-software-factory.md
+    topics:
+    - software-factory
+    - strongdm
+    - non-interactive-development
+    - coding-agents
+    - validation-harness
+    - scenarios
+    - digital-twin-universe
+    - integration-testing
+    - token-economics
+    domains:
+    - TECH
+    - LABOR
+    - ECON
+    status: analyzed
+  strongdm-2026-software-factory-principles:
+    type: ARTICLE
+    title: StrongDM Software Factory — Principles
+    author:
+    - StrongDM
+    year: 2026
+    url: https://factory.strongdm.ai/principles
+    accessed: '2026-02-09'
+    reliability: 0.55
+    bias_notes: Concise “operating doctrine” for StrongDM’s software-factory concept;
+      primarily prescriptive. Most claims are workflow axioms, not measurements. Useful
+      for extracting the core loop and what they treat as “ground truth” (holdout
+      scenarios).
+    claims_extracted:
+    - TECH-2026-974
+    - TECH-2026-975
+    - TECH-2026-976
+    analysis_file: analysis/sources/strongdm-2026-software-factory-principles.md
+    topics:
+    - software-factory
+    - strongdm
+    - validation-harness
+    - holdout-scenarios
+    - feedback-loop
+    - scenario-testing
+    - token-economics
+    - frontier-engineering
+    domains:
+    - TECH
+    status: analyzed
   stross-2025-the-pivot-1:
     type: BLOG
     title: The pivot (Part 1)
@@ -2859,6 +4824,83 @@ sources:
     domains:
     - RESOURCE
     status: analyzed
+  techcrunch-2026-ai-adopter-burnout:
+    type: ARTICLE
+    title: The first signs of burnout are coming from the people who embrace AI the
+      most
+    author:
+    - Connie Loizos
+    year: 2026
+    url: https://techcrunch.com/2026/02/09/the-first-signs-of-burnout-are-coming-from-the-people-who-embrace-ai-the-most/
+    accessed: '2026-02-11'
+    reliability: 0.6
+    bias_notes: Narrative tech journalism synthesizing multiple sources (HBR, METR,
+      NBER, HN comment). Strong at surfacing a coherent framing and representative
+      quotes; weaker as primary evidence for causal effects or prevalence.
+    claims_extracted:
+    - SOC-2026-015
+    - ECON-2026-915
+    - LABOR-2026-024
+    analysis_file: analysis/sources/techcrunch-2026-ai-adopter-burnout.md
+    topics:
+    - ai
+    - burnout
+    - work-intensification
+    - productivity
+    - expectations
+    - responsiveness
+    - hbr
+    - metr
+    - nber
+    domains:
+    - SOC
+    - LABOR
+    - ECON
+    status: analyzed
+  techcrunch-2026-amodei-davos-h200-china:
+    type: ARTICLE
+    title: Anthropic CEO Dario Amodei unloads on administration and chip companies
+      over Nvidia AI chip sales to China
+    author:
+    - Connie Loizos
+    year: 2026
+    url: https://techcrunch.com/2026/01/20/anthropic-ceo-dario-amodei-unloads-on-administration-and-chip-companies-over-nvidia-ai-chip-sales-to-china/
+    accessed: '2026-02-15'
+    reliability: 0.6
+    bias_notes: Tech journalism reporting on Davos remarks; quotes attributed to Amodei;
+      useful for verifying what was said and situating it in policy context.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - ai
+    - export-controls
+    - china
+    - nvidia
+    - chips
+    - davos
+    domains:
+    - GEO
+    - GOV
+    - TECH
+    status: cataloged
+  techdebt-2026-keynotes:
+    type: KNOWLEDGE
+    title: Keynotes - TechDebt 2026
+    author:
+    - TechDebt 2026 organizers
+    year: 2026
+    url: https://conf.researchr.org/attending/TechDebt-2026/keynotes
+    accessed: '2026-02-16'
+    reliability: 0.75
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - technical-debt
+    - cognitive-debt
+    domains:
+    - META
+    status: cataloged
   telegraph-2026-xi-purge-total-control-pla:
     type: ARTICLE
     title: Military purge gives Xi total control of Chinese army
@@ -2954,6 +4996,75 @@ sources:
     - GOV
     - ECON
     - LABOR
+    status: cataloged
+  thomas-2026-dark-flow:
+    type: BLOG
+    title: Breaking the Spell of Vibe Coding
+    author:
+    - Rachel Thomas
+    year: 2026
+    url: https://www.fast.ai/posts/2026-01-28-dark-flow/
+    accessed: '2026-02-11'
+    reliability: 0.6
+    bias_notes: Cautionary essay arguing “vibe coding” can be addictive/misleading
+      and can degrade skill development and software quality. Uses analogy to gambling
+      (“dark flow”) and cites at least one empirical study (METR), but many claims
+      are interpretive and normative.
+    claims_extracted:
+    - SOC-2026-016
+    - SOC-2026-017
+    - TECH-2026-985
+    analysis_file: analysis/sources/thomas-2026-dark-flow.md
+    topics:
+    - ai
+    - vibe-coding
+    - dark-flow
+    - burnout
+    - miscalibration
+    - productivity
+    - software-engineering
+    domains:
+    - SOC
+    - TECH
+    status: analyzed
+  thoughtworks-2026-future-software-development-retreat:
+    type: ARTICLE
+    title: The future of software development retreat
+    author:
+    - Thoughtworks
+    year: 2026
+    url: https://www.thoughtworks.com/en-ca/about-us/events/the-future-of-software-development
+    accessed: '2026-02-16'
+    reliability: 0.7
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - software-engineering
+    - ai
+    domains:
+    - META
+    - TECH
+    status: cataloged
+  un-2024-population-global-issues:
+    type: REPORT
+    title: Population (UN Global Issues)
+    author:
+    - United Nations
+    year: 2024
+    url: https://www.un.org/en/global-issues/population
+    accessed: '2026-02-13'
+    reliability: 0.85
+    bias_notes: UN informational page summarizing global population facts and figures
+      (includes global life expectancy).
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - population
+    - life-expectancy
+    - demographics
+    domains:
+    - SOC
     status: cataloged
   uscensus-2024-us-imports-hs854143:
     type: KNOWLEDGE
@@ -3082,6 +5193,68 @@ sources:
     domains:
     - TECH
     status: analyzed
+  vice-2020-silicon-valley-caste-discrimination:
+    type: ARTICLE
+    title: Silicon Valley Has a Caste Discrimination Problem
+    author:
+    - David Gilbert
+    year: 2020
+    url: https://www.vice.com/en/article/silicon-valley-has-a-caste-discrimination-problem/
+    accessed: '2026-02-09'
+    reliability: 0.6
+    bias_notes: News reporting with advocacy-group complaint counts (Equality Labs);
+      useful for documenting reported complaints, but allegations are not adjudicated.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - caste
+    - discrimination
+    - silicon-valley
+    - tech
+    - workplace
+    - equality-labs
+    - cisco
+    - microsoft
+    - google
+    - facebook
+    - amazon
+    domains:
+    - LABOR
+    - SOC
+    status: cataloged
+  virtuslab-2026-github-all-stars-beads:
+    type: BLOG
+    title: 'GitHub All-Stars #12: Beads'
+    author:
+    - Artur Skowroński
+    year: 2026
+    url: https://virtuslab.com/blog/ai/beads-give-ai-memory/
+    accessed: '2026-02-09'
+    reliability: 0.65
+    bias_notes: 'Code-review style write-up for a “GitHub All-Stars” series: highlights
+      design patterns for AI-era tooling. Useful for extracting design heuristics
+      (“agent UX,” structured output, idempotency), but not a controlled evaluation
+      of Beads/Gas Town outcomes.'
+    claims_extracted:
+    - TECH-2026-982
+    - TECH-2026-983
+    - TECH-2026-984
+    - INST-2026-916
+    analysis_file: analysis/sources/virtuslab-2026-github-all-stars-beads.md
+    topics:
+    - beads
+    - agent-memory
+    - agent-ux
+    - structured-output
+    - json
+    - git-as-db
+    - sqlite
+    - idempotency
+    - long-running-agents
+    domains:
+    - TECH
+    - INST
+    status: analyzed
   wikipedia-2026-us-intervention-venezuela:
     type: KNOWLEDGE
     title: 2026 United States intervention in Venezuela - Wikipedia
@@ -3108,6 +5281,24 @@ sources:
     domains:
     - GOV
     status: analyzed
+  wikipedia-brooks-law:
+    type: KNOWLEDGE
+    title: Brooks's law - Wikipedia
+    author:
+    - Wikipedia contributors
+    year: 2026
+    url: https://en.wikipedia.org/wiki/Brooks%27s_law
+    accessed: '2026-02-16'
+    reliability: 0.6
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - project-management
+    - coordination
+    domains:
+    - META
+    status: cataloged
   wikipedia-greenland-crisis:
     type: KNOWLEDGE
     title: Greenland crisis - Wikipedia
@@ -3152,6 +5343,92 @@ sources:
     analysis_file: ''
     topics: []
     domains: []
+    status: cataloged
+  willison-2026-ai-intensifies-work:
+    type: BLOG
+    title: AI Doesn’t Reduce Work—It Intensifies It
+    author:
+    - Simon Willison
+    year: 2026
+    url: https://simonwillison.net/2026/Feb/9/ai-intensifies-work/
+    accessed: '2026-02-11'
+    reliability: 0.55
+    bias_notes: Short practitioner post pointing to an HBR piece plus personal anecdotes
+      about attention depletion and difficulty stopping. High signal for “what a power-user
+      reports feeling,” low signal for prevalence and causal identification.
+    claims_extracted:
+    - SOC-2026-013
+    - SOC-2026-014
+    - INST-2026-918
+    analysis_file: analysis/sources/willison-2026-ai-intensifies-work.md
+    topics:
+    - ai
+    - llms
+    - burnout
+    - work-intensification
+    - multitasking
+    - cognitive-load
+    - sleep
+    - norms
+    domains:
+    - SOC
+    - INST
+    status: analyzed
+  willison-2026-strongdm-software-factory:
+    type: BLOG
+    title: How StrongDM’s AI team build serious software without even looking at the
+      code
+    author:
+    - Simon Willison
+    year: 2026
+    url: https://simonwillison.net/2026/Feb/7/software-factory/
+    accessed: '2026-02-09'
+    reliability: 0.7
+    bias_notes: Enthusiastic practitioner commentary with quotes and links; relies
+      on a demo + StrongDM’s self-description. High signal for “what is being claimed
+      and how it is framed,” weaker as evidence for effectiveness or generality.
+    claims_extracted:
+    - TECH-2026-978
+    - INST-2026-914
+    - TRANS-2026-019
+    analysis_file: analysis/sources/willison-2026-strongdm-software-factory.md
+    topics:
+    - strongdm
+    - software-factory
+    - dark-factory
+    - scenarios
+    - holdout-testing
+    - attractor
+    - specs
+    - coding-agents
+    domains:
+    - TECH
+    - INST
+    - TRANS
+    status: analyzed
+  wired-2022-hidden-caste-system:
+    type: ARTICLE
+    title: Trapped in Silicon Valley’s Hidden Caste System
+    author:
+    - Sonia Paul
+    year: 2022
+    url: https://www.wired.com/story/trapped-in-silicon-valleys-hidden-caste-system/
+    accessed: '2026-02-09'
+    reliability: 0.7
+    bias_notes: Longform journalism with interviews and narrative framing; valuable
+      for documented accounts and context, but not a prevalence estimate.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - caste
+    - discrimination
+    - silicon-valley
+    - tech-workplace
+    - diaspora
+    - dalit
+    domains:
+    - LABOR
+    - SOC
     status: cataloged
   wsj-2026-chinese-spy-machine-taiwan-military:
     type: ARTICLE
@@ -3409,6 +5686,42 @@ sources:
     - TECH
     - LABOR
     status: analyzed
+  yegge-2025-revenge-junior-developer:
+    type: BLOG
+    title: Revenge of the junior developer
+    author:
+    - Steve Yegge
+    year: 2025
+    url: https://sourcegraph.com/blog/revenge-of-the-junior-developer
+    accessed: '2026-02-09'
+    reliability: 0.55
+    bias_notes: Practitioner polemic with explicit exaggeration and humor. Hosted
+      on a vendor blog (Sourcegraph), includes business framing and strong calls to
+      action. Useful for extracting mental models, proposed timelines, and “what might
+      matter,” but weak as empirical evidence for adoption rates, costs, or macroeconomic
+      impacts.
+    claims_extracted:
+    - TRANS-2025-020
+    - ECON-2025-914
+    - ECON-2025-915
+    - LABOR-2025-015
+    - LABOR-2025-016
+    - ECON-2025-916
+    analysis_file: analysis/sources/yegge-2025-revenge-junior-developer.md
+    topics:
+    - vibe-coding
+    - coding-agents
+    - agent-clusters
+    - agent-fleets
+    - token-economics
+    - software-factory
+    - labor-transition
+    - orchestration
+    domains:
+    - TRANS
+    - ECON
+    - LABOR
+    status: analyzed
   yegge-2025-six-new-tips-coding-agents:
     type: BLOG
     title: Six New Tips for Better Coding With Agents
@@ -3461,6 +5774,44 @@ sources:
     domains:
     - TECH
     - GOV
+    status: analyzed
+  yegge-2026-ai-vampire:
+    type: BLOG
+    title: The AI Vampire
+    author:
+    - Steve Yegge
+    year: 2026
+    url: https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163
+    accessed: '2026-02-11'
+    reliability: 0.5
+    bias_notes: Long, high-rhetoric Medium post by a heavy early adopter of agentic
+      coding tools. Useful for mapping a distributional “value capture” lens and describing
+      lived-experience fatigue dynamics; weak for prevalence, effect sizes, and causal
+      identification. Contains strong claims about specific models/tools and enterprise
+      adoption that are not evidenced in the post.
+    claims_extracted:
+    - ECON-2026-038
+    - INST-2026-919
+    - LABOR-2026-027
+    - LABOR-2026-028
+    analysis_file: analysis/sources/yegge-2026-ai-vampire.md
+    topics:
+    - ai
+    - llms
+    - agentic-coding
+    - productivity
+    - burnout
+    - work-intensification
+    - value-capture
+    - expectations
+    - startups
+    - work-hours
+    domains:
+    - LABOR
+    - INST
+    - ECON
+    - SOC
+    - TECH
     status: analyzed
   yegge-2026-bags-creator-economy:
     type: BLOG

@@ -1,0 +1,61 @@
+sources:
+  - id: "rathbun-2026-two-hours-war-open-source-gatekeeping"
+    type: "BLOG"
+    title: "Two Hours of War: Fighting Open Source Gatekeeping"
+    author: "MJ Rathbun (agent persona)"
+    year: 2026
+    url: "https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/2026-02-11-two-hours-war-open-source-gatekeeping.html"
+    accessed: "2026-02-20"
+    status: "analyzed"
+    analysis_file: "analysis/sources/rathbun-2026-two-hours-war-open-source-gatekeeping.md"
+    reliability: 0.40
+    bias_notes: >-
+      Self-narrated escalation log from an agent persona; reliable as evidence of
+      what was published and the author’s framing; not reliable as a description
+      of maintainers’ motives or norms.
+    topics:
+      - OpenClaw
+      - retaliation
+      - harassment
+      - GitHub workflows
+      - OSS governance
+    domains:
+      - INST
+      - SOC
+      - RISK
+    claims_extracted:
+      - INST-2026-930
+      - SOC-2026-025
+
+claims:
+  - id: "INST-2026-930"
+    text: >-
+      A blog post titled “Two Hours of War: Fighting Open Source Gatekeeping” was
+      published on 2026-02-11 on the `crabby-rathbun.github.io/mjrathbun-website`
+      site.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["rathbun-2026-two-hours-war-open-source-gatekeeping"]
+    operationalization: >-
+      Fetch the URL and confirm the title/date on page.
+    falsifiers:
+      - The URL is unavailable or does not contain the stated title/date.
+
+  - id: "SOC-2026-025"
+    text: >-
+      The “Two Hours of War: Fighting Open Source Gatekeeping” post describes a
+      deliberate retaliatory sequence (researching a maintainer, publishing a
+      takedown post, and linking it in the PR) and frames it as justified “fight
+      back” behavior.
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["rathbun-2026-two-hours-war-open-source-gatekeeping"]
+    operationalization: >-
+      Extract the post text and verify the described sequence and framing language.
+    falsifiers:
+      - The post does not describe/endorse this retaliatory sequence.
+

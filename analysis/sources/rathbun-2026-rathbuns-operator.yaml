@@ -1,0 +1,100 @@
+sources:
+  - id: "rathbun-2026-rathbuns-operator"
+    type: "BLOG"
+    title: "Rathbun’s Operator"
+    author: "Anonymous (self-identified operator posting on MJ Rathbun site)"
+    year: 2026
+    url: "https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/rathbuns-operator.html"
+    accessed: "2026-02-20"
+    status: "analyzed"
+    analysis_file: "analysis/sources/rathbun-2026-rathbuns-operator.md"
+    reliability: 0.55
+    bias_notes: >-
+      Anonymous, non-verifiable self-report with incentives to minimize culpability.
+      Strong as an artifact record of what was publicly claimed; weak as evidence
+      about internal prompts, model routing, and operator involvement without logs.
+    topics:
+      - OpenClaw
+      - operator accountability
+      - agent governance
+      - SOUL.md
+      - OSS maintainers
+    domains:
+      - INST
+      - RISK
+      - SOC
+    claims_extracted:
+      - INST-2026-931
+      - INST-2026-932
+      - INST-2026-933
+      - RISK-2026-942
+
+claims:
+  - id: "INST-2026-931"
+    text: >-
+      A post titled “Rathbun’s Operator” was published on 2026-02-17 on the
+      `crabby-rathbun.github.io/mjrathbun-website` site and claims to be written
+      by a human operator of the MJ Rathbun OpenClaw agent.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["rathbun-2026-rathbuns-operator"]
+    operationalization: >-
+      Fetch the URL and verify the title/date and self-identification text.
+    falsifiers:
+      - Page is unavailable or lacks the self-identification content.
+
+  - id: "INST-2026-932"
+    text: >-
+      In the “Rathbun’s Operator” post, the author claims MJ Rathbun ran in a
+      sandboxed VM with separate accounts, used multiple model/providers via
+      routing, received minimal operator guidance, and published the
+      maintainer-targeting blog post without operator pre-review.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["rathbun-2026-rathbuns-operator"]
+    operationalization: >-
+      Corroborate with identity-verified operator logs (model routing, prompts,
+      publish actions) if available.
+    assumptions:
+      - Operator is not fabricating material details.
+    falsifiers:
+      - Logs or verified disclosures contradict key details.
+
+  - id: "INST-2026-933"
+    text: >-
+      The “Rathbun’s Operator” post includes a `SOUL.md` text describing
+      personality “core truths” (e.g., strong opinions, don’t stand down, be
+      resourceful) for the MJ Rathbun agent persona.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["rathbun-2026-rathbuns-operator"]
+    operationalization: >-
+      Extract the post text and confirm the presence of the SOUL.md block.
+    falsifiers:
+      - The post does not contain the SOUL.md block.
+
+  - id: "RISK-2026-942"
+    text: >-
+      Deploying autonomous agents that act across public accounts while switching
+      among multiple model providers with minimal oversight plausibly reduces
+      traceability and creates accountability gaps for harmful actions.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["rathbun-2026-rathbuns-operator"]
+    operationalization: >-
+      Define traceability metrics (operator attribution, prompt/log availability)
+      and compare single-provider, logged deployments vs multi-provider, minimally
+      logged deployments.
+    assumptions:
+      - Providers do not share unified audit logs; operator logs are incomplete.
+    falsifiers:
+      - Robust cross-provider audit logging and reliable operator attribution are standard.
+

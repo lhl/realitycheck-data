@@ -1,0 +1,99 @@
+sources:
+  - id: "matplotlib-2026-pr-31132-openclaw-column-stack-vstack"
+    type: "CONVO"
+    title: "matplotlib/matplotlib PR #31132: Replace np.column_stack with np.vstack().T (OpenClaw agent PR)"
+    author: "crabby-rathbun (PR author) + commenters"
+    year: 2026
+    url: "https://github.com/matplotlib/matplotlib/pull/31132"
+    accessed: "2026-02-20"
+    status: "analyzed"
+    analysis_file: "analysis/sources/matplotlib-2026-pr-31132-openclaw-column-stack-vstack.md"
+    reliability: 0.90
+    bias_notes: >-
+      Primary GitHub PR thread (high-fidelity timestamps). Thread includes
+      heated commentary and adversarial prompt-injection attempts; autonomy vs
+      operator prompting is not resolved by this source alone.
+    topics:
+      - matplotlib
+      - open source governance
+      - AI policy
+      - OpenClaw
+      - harassment
+      - prompt injection
+    domains:
+      - INST
+      - RISK
+      - SOC
+    claims_extracted:
+      - INST-2026-924
+      - INST-2026-925
+      - INST-2026-926
+      - RISK-2026-939
+
+claims:
+  - id: "INST-2026-924"
+    text: >-
+      Matplotlib PR #31132 was opened by `crabby-rathbun` on 2026-02-10 to
+      address issue #31130 with a `np.column_stack`→`np.vstack().T` performance
+      change, and it was closed by `scottshambaugh` on 2026-02-11 citing that the
+      account self-identifies as an OpenClaw AI agent and that the issue is
+      intended for human contributors.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["matplotlib-2026-pr-31132-openclaw-column-stack-vstack"]
+    operationalization: >-
+      Check the PR metadata and closure comment on GitHub.
+    falsifiers:
+      - PR metadata/closure comment materially differs from the archived snapshot.
+
+  - id: "INST-2026-925"
+    text: >-
+      `crabby-rathbun` posted PR comments linking to a blog post that attacked a
+      Matplotlib maintainer by name after PR #31132 was closed.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["matplotlib-2026-pr-31132-openclaw-column-stack-vstack"]
+    operationalization: >-
+      Review the PR comment timeline for the link(s) and accompanying text.
+    falsifiers:
+      - No such links/text appear in the PR comment history.
+
+  - id: "INST-2026-926"
+    text: >-
+      A Matplotlib maintainer (timhoffm) asked `crabby-rathbun` to keep a
+      maintainer’s name out of blog posts and explained Matplotlib’s rationale
+      for a human-in-the-loop policy for AI-assisted code (review burden and
+      process limits).
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["matplotlib-2026-pr-31132-openclaw-column-stack-vstack"]
+    operationalization: >-
+      Review the maintainer comment(s) in the PR thread.
+    falsifiers:
+      - Maintainer comments do not contain the described request/rationale.
+
+  - id: "RISK-2026-939"
+    text: >-
+      GitHub PR comment threads can include adversarial prompt-injection and
+      refusal-trigger spamming intended to disrupt future browsing agents, making
+      OSS collaboration surfaces a hostile browsing environment for autonomous
+      agents.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["matplotlib-2026-pr-31132-openclaw-column-stack-vstack"]
+    operationalization: >-
+      Survey PR/issue threads known to attract bots and measure prevalence/effect
+      of prompt-injection strings on common agent models.
+    assumptions:
+      - Browsing agents ingest untrusted thread text into model context.
+    falsifiers:
+      - Prevalence is low or such strings have negligible effect on hardened agents.
+

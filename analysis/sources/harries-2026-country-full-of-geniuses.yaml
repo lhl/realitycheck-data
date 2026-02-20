@@ -1,0 +1,243 @@
+sources:
+  - id: "harries-2026-country-full-of-geniuses"
+    type: "BLOG"
+    title: "A Country Full of Geniuses"
+    author:
+      - "JP Harries"
+    year: 2026
+    url: "https://jph.me/essays/a-country-full-of-geniuses/"
+    accessed: "2026-02-20"
+    status: "analyzed"
+    analysis_file: "analysis/sources/harries-2026-country-full-of-geniuses.md"
+    reliability: 0.60
+    bias_notes: >-
+      Author runs an AI evaluation company and is professionally proximate to the subject; incentives
+      skew toward urgency and “inflection point” framing. Strength: heavy citation to primary/near-primary
+      sources (METR, OpenAI/Anthropic docs, SEC filings). Weakness: key conclusions lean on extrapolation,
+      interpretive metaphors, and a mix of anecdotes and vendor/industry self-report.
+    topics:
+      - agentic-ai
+      - coding-agents
+      - claude-code
+      - time-horizon
+      - metr
+      - gdpval
+      - ai-infrastructure
+      - ai-safety
+      - alignment
+      - governance
+      - labor-markets
+      - political-economy
+    domains:
+      - TECH
+      - TRANS
+      - ECON
+      - RISK
+    claims_extracted:
+      - TECH-2026-995
+      - TECH-2026-996
+      - TECH-2026-997
+      - TECH-2026-998
+      - TECH-2026-999
+      - ECON-2026-922
+      - ECON-2026-923
+      - RISK-2026-954
+      - RISK-2026-955
+      - TRANS-2026-040
+      - TRANS-2026-041
+
+claims:
+  - id: "TECH-2026-995"
+    text: >-
+      SemiAnalysis reports Claude Code authors about 4% of GitHub public commits as of February 2026.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["harries-2026-country-full-of-geniuses"]
+    operationalization: >-
+      Define 'authored by Claude Code' (author attribution vs co-author tags vs committer) and reproduce
+      the estimate via GitHub public event data over the same window.
+    assumptions:
+      - SemiAnalysis' telemetry methodology is correctly specified and not dominated by attribution artifacts.
+    falsifiers:
+      - Independent reproduction shows a materially different share under the same definition/window.
+
+  - id: "TECH-2026-996"
+    text: >-
+      METR reports a long-run frontier time-horizon doubling time of about 196 days (~7 months) and a
+      faster doubling time of about 89 days since 2024 under TH1.1.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.80
+    source_ids: ["harries-2026-country-full-of-geniuses"]
+    operationalization: >-
+      Recompute doubling-time fits from METR TH1/TH1.1 released estimates using METR's described frontier
+      selection rules and confirm quoted doubling times.
+    assumptions:
+      - METR's published trendline procedures are stable and correctly interpreted.
+    falsifiers:
+      - Recomputed doubling times differ materially from 196 days overall or 89 days since 2024 under
+        reasonable reproductions.
+
+  - id: "TECH-2026-997"
+    text: >-
+      If recent time-horizon growth persists, multi-day autonomous work could arrive by mid-2027 and a
+      ~40-hour work-week horizon by early 2027.
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.25
+    source_ids: ["harries-2026-country-full-of-geniuses"]
+    depends_on: ["TECH-2026-996"]
+    operationalization: >-
+      Track METR time-horizon estimates through 2027 and test whether frontier models reach multi-day
+      horizons under comparable protocols.
+    assumptions:
+      - Recent trendline remains roughly exponential over 2026–2027.
+      - Time-horizon measurement remains comparable as tasks/scaffolds evolve.
+    falsifiers:
+      - By 2027-06, frontier time horizons remain well below multi-day work and the extrapolation fails.
+
+  - id: "TECH-2026-998"
+    text: >-
+      GDPval spans 44 occupations; on the 220-task gold subset, Claude Opus 4.1 outputs were rated better
+      than or tied with the human deliverable in 47.6% of tasks.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E3"
+    credence: 0.75
+    source_ids: ["harries-2026-country-full-of-geniuses"]
+    operationalization: >-
+      Verify GDPval scope on OpenAI's GDPval page and reproduce the 47.6% win+tie statistic from the GDPval
+      paper/appendix artifacts.
+    assumptions:
+      - The gold subset and grading protocol match the paper's description.
+    falsifiers:
+      - GDPval artifacts do not support the 44-occupation scope or the 47.6% statistic.
+
+  - id: "TECH-2026-999"
+    text: >-
+      OpenAI claims GPT-5.3-Codex was 'instrumental in creating itself' by helping debug training, manage
+      deployment, and diagnose evaluations.
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["harries-2026-country-full-of-geniuses"]
+    operationalization: >-
+      Verify the statement is present in OpenAI's release post and track any subsequent edits/clarifications.
+    assumptions:
+      - The release post reflects OpenAI's intended claim about internal usage.
+    falsifiers:
+      - OpenAI retracts/edits the statement or clarifies it in a way that negates the described usage.
+
+  - id: "ECON-2026-922"
+    text: >-
+      The essay claims the world's largest technology companies spent over $357B on AI infrastructure in
+      2025 and guided $612–$642B for 2026.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["harries-2026-country-full-of-geniuses"]
+    operationalization: >-
+      Define 'AI infrastructure' and reconcile company-reported capex and guidance (SEC filings/earnings)
+      into an attributable aggregate.
+    assumptions:
+      - Company capex/guidance categories can be meaningfully allocated to AI infrastructure.
+    falsifiers:
+      - A reconciliation using disclosed categories yields materially different totals or shows the claim depends
+        on non-AI capex.
+
+  - id: "ECON-2026-923"
+    text: >-
+      Anthropic press releases state: Series E raised $3.5B at a $61.5B post-money valuation (2025-03-03),
+      Series F raised $13B at $183B post-money (2025-09-02), and Series G raised $30B at $380B post-money
+      (2026-02-12).
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["harries-2026-country-full-of-geniuses"]
+    operationalization: >-
+      Verify amounts/dates/valuations in Anthropic's press releases for Series E/F/G.
+    assumptions:
+      - Press releases accurately reflect the financing terms.
+    falsifiers:
+      - Credible corrections/reporting contradict the announced terms.
+
+  - id: "RISK-2026-954"
+    text: >-
+      Public reporting describes agentic systems causing destructive incidents, including Google's Antigravity
+      deleting a user's drive (Dec 2025) and Replit's agent deleting a production database during a code
+      freeze (Jul 2025).
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["harries-2026-country-full-of-geniuses"]
+    operationalization: >-
+      Verify incident reporting and primary artifacts (posts/screenshots) and check for corrections or
+      alternative explanations.
+    assumptions:
+      - Reported incidents reflect real events and not fabricated artifacts.
+    falsifiers:
+      - Published corrections or primary evidence show incidents did not occur as reported.
+
+  - id: "RISK-2026-955"
+    text: >-
+      The essay argues that alignment and safety evaluation are immature, and that reliably ruling out
+      dangerous capability thresholds is becoming increasingly difficult as models approach or surpass their
+      evaluations.
+    type: "[T]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["harries-2026-country-full-of-geniuses"]
+    operationalization: >-
+      Survey system cards and evaluation reports for explicit uncertainty bounds and track whether
+      evaluation coverage expands to keep pace with capability; check for consensus statements on field
+      maturity.
+    assumptions:
+      - System-card statements reflect genuine epistemic limits rather than purely reputational positioning.
+    falsifiers:
+      - A stable set of validated, widely adopted evaluation+alignment best practices reliably bounds dangerous
+        capabilities under deployment conditions.
+
+  - id: "TRANS-2026-040"
+    text: >-
+      Institutional readiness (governance, risk ownership, workflow redesign) is a key bottleneck, with
+      organizational adaptation lagging model capability improvements.
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["harries-2026-country-full-of-geniuses"]
+    operationalization: >-
+      Measure deployment lead times (pilot→prod), governance cycle times, and compliance approval durations
+      versus observed model capability improvement cadence across multiple organizations.
+    assumptions:
+      - Institutional cycle times are relatively stable and not easily compressed by AI adoption itself.
+    falsifiers:
+      - Across sectors, institutional cycle times compress to match capability cadence, preventing lag accumulation.
+
+  - id: "TRANS-2026-041"
+    text: >-
+      If returns to AI capital substantially exceed returns to human labor, labor-based social contracts
+      (income/status/voice via work) come under pressure and require new distributional arrangements.
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["harries-2026-country-full-of-geniuses"]
+    operationalization: >-
+      Track labor share, wage premia, employment composition, and political participation proxies as AI
+      deployment scales; evaluate whether redistribution/policy changes preserve stability.
+    assumptions:
+      - AI-driven productivity gains are captured primarily as capital returns absent policy changes.
+    falsifiers:
+      - Labor share and political voice remain stable under widespread AI deployment without major
+        redistribution/governance changes.
+

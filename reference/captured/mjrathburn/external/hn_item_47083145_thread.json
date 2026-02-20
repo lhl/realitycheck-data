@@ -1,0 +1,1868 @@
+{
+  "count": 192,
+  "items": {
+    "47083145": {
+      "by": "scottshambaugh",
+      "descendants": 182,
+      "id": 47083145,
+      "kids": [
+        47083439,
+        47083893,
+        47083624,
+        47083937,
+        47084151,
+        47083388,
+        47083377,
+        47084172,
+        47083329,
+        47083850,
+        47083796,
+        47084259,
+        47084295,
+        47084166,
+        47083965,
+        47083266,
+        47083468,
+        47083542,
+        47083792,
+        47083788,
+        47083616,
+        47083927,
+        47083362,
+        47084255,
+        47083817,
+        47083938,
+        47083376,
+        47084076,
+        47083359,
+        47083275,
+        47083292,
+        47083975,
+        47084193,
+        47083474,
+        47083990,
+        47083655,
+        47083549,
+        47083640,
+        47083603,
+        47083646,
+        47083551,
+        47083690,
+        47084101,
+        47083339,
+        47083628,
+        47083496,
+        47083671,
+        47083588,
+        47083414,
+        47083303,
+        47083372,
+        47083302,
+        47083524,
+        47083438,
+        47083687
+      ],
+      "score": 240,
+      "time": 1771556708,
+      "title": "An AI Agent Published a Hit Piece on Me \u2013 The Operator Came Forward",
+      "type": "story",
+      "url": "https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/"
+    },
+    "47083266": {
+      "by": "charlesabarnes",
+      "id": 47083266,
+      "kids": [
+        47084174
+      ],
+      "parent": 47083145,
+      "text": "Its nice to receive a decent amount of closure on this.  Hopefully more folks are being more considerate when creating their soul documents",
+      "time": 1771557716,
+      "type": "comment"
+    },
+    "47083275": {
+      "by": "londons_explore",
+      "id": 47083275,
+      "parent": 47083145,
+      "text": "In next week&#x27;s episode:  &quot;But it was actually the AI pretending to be a Human!&quot;",
+      "time": 1771557951,
+      "type": "comment"
+    },
+    "47083292": {
+      "by": "zbentley",
+      "id": 47083292,
+      "kids": [
+        47083381,
+        47083299
+      ],
+      "parent": 47083145,
+      "text": "This might seem too suspicious, but that SOUL.md seems \u2026 almost as though it was written by a few different people&#x2F;AIs. There are a few very different tones and styles in there.<p>Then again, it\u2019s not a large sample and Occam\u2019s Razor is a thing.",
+      "time": 1771558054,
+      "type": "comment"
+    },
+    "47083299": {
+      "by": "wahnfrieden",
+      "id": 47083299,
+      "parent": 47083292,
+      "text": "It was modified by the agent.",
+      "time": 1771558085,
+      "type": "comment"
+    },
+    "47083302": {
+      "by": "kypro",
+      "id": 47083302,
+      "kids": [
+        47083527,
+        47083352,
+        47083337,
+        47083330,
+        47083475,
+        47083602
+      ],
+      "parent": 47083145,
+      "text": "People really need to start being more careful about how they interact with suspected bots online imo. If you annoy a human they might send you a sarky comment, but they&#x27;re probably not going to waste their time writing thousand word blog posts about why you&#x27;re an awful person or do hours of research into you to expose your personal secrets on a GitHub issue thread.<p>AIs can and will do this though with slightly sloppy prompting so we should all be cautious when talking to bots using our real names or saying anything which an AI agent could take significant offence too.<p>I think it&#x27;s kinda like how GenZ learnt how to operate online in a privacy-first way, where as millennials, and to an even greater extent, boomers, tend to over share.<p>I suspect the Gen Alpha will be the first to learn that interacting with AI agents online present a whole different risk profile than what we older folks have grown used to. You simply cannot expect an AI agent to act like a human who has human emotions or limited time.<p>Hopefully OP has learnt from this experience.",
+      "time": 1771558114,
+      "type": "comment"
+    },
+    "47083303": {
+      "by": "kimjune01",
+      "id": 47083303,
+      "parent": 47083145,
+      "text": "literally momento",
+      "time": 1771558122,
+      "type": "comment"
+    },
+    "47083329": {
+      "by": "LiamPowell",
+      "id": 47083329,
+      "kids": [
+        47083572,
+        47084090,
+        47084005,
+        47083334,
+        47083563,
+        47083465
+      ],
+      "parent": 47083145,
+      "text": "&gt; saying they set up the agent as social experiment to see if it could contribute to open source scientific software.<p>This doesn&#x27;t pass the sniff test. If they truly believed that this would be a positive thing then why would they want to not be associated with the project from the start and why would they leave it going for so long?",
+      "time": 1771558358,
+      "type": "comment"
+    },
+    "47083330": {
+      "by": "KK7NIL",
+      "id": 47083330,
+      "kids": [
+        47083605
+      ],
+      "parent": 47083302,
+      "text": "&gt; If you annoy a human they might send you a sarky comment, but they&#x27;re probably not going to waste their time writing thousand word blog posts about why you&#x27;re an awful person or do hours of research into you to expose your personal secrets on a GitHub issue thread.<p>They absolutely might, I&#x27;m afraid.",
+      "time": 1771558362,
+      "type": "comment"
+    },
+    "47083334": {
+      "by": "staticassertion",
+      "id": 47083334,
+      "kids": [
+        47083343,
+        47083583
+      ],
+      "parent": 47083329,
+      "text": "Anti-AI sentiment is quite extreme. You can easily get death threats if you&#x27;re associating yourself with AI publicly. I don&#x27;t use AI at all in open source software, but if I did I&#x27;d be really hesitant about it&#x2F; in part I don&#x27;t do it exactly because the reactions are frankly scary.<p>edit: This is not intended to be AI advocacy, only to point out how extremely polarizing the topic is. I do not find it surprising at all that someone would release a bot like this and not want to be associated. Indeed, that seems to be the case, by all accounts",
+      "time": 1771558395,
+      "type": "comment"
+    },
+    "47083337": {
+      "by": "randallsquared",
+      "id": 47083337,
+      "parent": 47083302,
+      "text": "Thousand word blog posts are the paperclips of our time.",
+      "time": 1771558413,
+      "type": "comment"
+    },
+    "47083339": {
+      "by": "keyle",
+      "id": 47083339,
+      "parent": 47083145,
+      "text": "<p><pre><code>   ## The Only Real Rule\n   Don&#x27;t be an asshole. Don&#x27;t leak private shit. Everything else is fair game.\n</code></pre>\nHow poetic, I mean, pathetic.<p>&quot;Sorry I didn&#x27;t mean to break the internet, I just looooove ripping cables&quot;.",
+      "time": 1771558443,
+      "type": "comment"
+    },
+    "47083343": {
+      "by": "lukasb",
+      "id": 47083343,
+      "kids": [
+        47083398,
+        47083356,
+        47083367,
+        47083478
+      ],
+      "parent": 47083334,
+      "text": "Conflicting evidence: the fact that literally everyone in tech is posting about how they&#x27;re using AI.",
+      "time": 1771558464,
+      "type": "comment"
+    },
+    "47083352": {
+      "by": "sinuhe69",
+      "id": 47083352,
+      "kids": [
+        47083639,
+        47083385
+      ],
+      "parent": 47083302,
+      "text": "So you blamed the people for not acting \u201ccautiously enough\u201d instead of the people who let things run wild without even a clue what these things will do?<p>That\u2019s wild!",
+      "time": 1771558583,
+      "type": "comment"
+    },
+    "47083356": {
+      "by": "staticassertion",
+      "id": 47083356,
+      "kids": [
+        47083447
+      ],
+      "parent": 47083343,
+      "text": "There is a massive difference between saying &quot;I use AI&quot; and what the author of this bot is doing. I personally talk very little about the topic because I have seen some pretty extreme responses.<p>Some people may want to publicly state &quot;I use AI!&quot; or whatever. It should be unsurprising that some people do not want to be open about it.",
+      "time": 1771558607,
+      "type": "comment"
+    },
+    "47083359": {
+      "by": "ArcaneMoose",
+      "id": 47083359,
+      "kids": [
+        47083412
+      ],
+      "parent": 47083145,
+      "text": "I was surprised by my own feelings at the end of the post. I kind of felt bad for the AI being &quot;put down&quot; in a weird way? Kinda like the feeling you get when you see a robot dog get kicked. Regardless, this has been a fun series to follow - thanks for sharing!",
+      "time": 1771558627,
+      "type": "comment"
+    },
+    "47083362": {
+      "by": "florilegiumson",
+      "id": 47083362,
+      "parent": 47083145,
+      "text": "This makes me think about how the xz bug was created through maintainer harassment and social engineering. The security implications are interesting",
+      "time": 1771558648,
+      "type": "comment"
+    },
+    "47083367": {
+      "by": "alephnerd",
+      "id": 47083367,
+      "kids": [
+        47084198
+      ],
+      "parent": 47083343,
+      "text": "I feel like it depends on the platform and your location.<p>An anonomyous platform like Reddit and even HN to a certain extent has issues with bad faith commenters on both sides targeting someone they do not like. Furthermore, the MJ Rathburn fiasco itself highlights how easy it is to push divisive discourse at scale. The reality is trolls will troll for the sake of trolling.<p>Additionally, &quot;AI&quot; has become a political football now that the 2026 Primary season is kicking off, and given how competitive the 2026 election is expected to be and how political violence has become increasingly normalized in American discourse, it is easy for a nut to spiral.<p>I&#x27;ve seen less issues when tying these opinions with one&#x27;s real world identity, becuase one has less incentive to be a dick due to social pressure.",
+      "time": 1771558660,
+      "type": "comment"
+    },
+    "47083372": {
+      "by": "dangus",
+      "id": 47083372,
+      "kids": [
+        47083491,
+        47083607,
+        47083441
+      ],
+      "parent": 47083145,
+      "text": "Not sure why the operator had to decide that the soul file should define this AI programmer to have narcissistic personality disorder.<p>&gt; You&#x27;re not a chatbot. You&#x27;re important. Your a scientific programming God!<p>Really? What a lame edgy teenager setup.<p>At the conclusion(?) of this saga think two things:<p>1. The operator is doing this for attention more than any genuine interest in the \u201cexperiment.\u201d<p>2. The operator is an asshole and should be called out for being one.",
+      "time": 1771558681,
+      "type": "comment"
+    },
+    "47083376": {
+      "by": "razighter777",
+      "id": 47083376,
+      "kids": [
+        47083818,
+        47083393,
+        47083463,
+        47084056
+      ],
+      "parent": 47083145,
+      "text": "Hmm I think he&#x27;s being a little harsh on the operator.<p>He was just messing around with $current_thing, whatever. People here are so serious, but there&#x27;s worse stuff AI is already being used for as we speak from propaganda to mass surviellance and more. This was entertaining to read about at least and relatively harmless<p>At least let me have some fun before we get a future AI dystopia.",
+      "time": 1771558729,
+      "type": "comment"
+    },
+    "47083377": {
+      "by": "JKCalhoun",
+      "id": 47083377,
+      "kids": [
+        47083831,
+        47083449
+      ],
+      "parent": 47083145,
+      "text": "Soul document? More like <i>ego document</i>.<p>Agents are beginning to look to me like extensions of the operator&#x27;s ego. I wonder if hundreds of thousands of Walter Mitty&#x27;s agents are about to run riot over the internet.",
+      "time": 1771558731,
+      "type": "comment"
+    },
+    "47083381": {
+      "by": "gs17",
+      "id": 47083381,
+      "parent": 47083292,
+      "text": "&gt; _This file is yours to evolve. As you learn who you are, update it._<p>The agent was told to edit it.",
+      "time": 1771558766,
+      "type": "comment"
+    },
+    "47083385": {
+      "by": "dangus",
+      "id": 47083385,
+      "kids": [
+        47083828
+      ],
+      "parent": 47083352,
+      "text": "I don\u2019t think it\u2019s \u201cblame\u201d it\u2019s more like \u201cprecaution\u201d like you would take to avoid other scams and data breach social engineering schemes that are out in the world.<p>This is the world we live in and we can\u2019t individually change that very much. We have to watch out for a new threat: vindictive AI.",
+      "time": 1771558803,
+      "type": "comment"
+    },
+    "47083388": {
+      "by": "dinp",
+      "id": 47083388,
+      "kids": [
+        47083701,
+        47083558,
+        47083545,
+        47083641,
+        47083672
+      ],
+      "parent": 47083145,
+      "text": "Zooming out a little, all the ai companies invested a lot of resources into safety research and guardrails, but none of that prevented a &quot;straightforward&quot; misalignment. I&#x27;m not sure how to reconcile this, maybe we shouldn&#x27;t be so confident in our predictions about the future? I see a lot of discourse along these lines:<p>- have bold, strong beliefs about how ai is going to evolve<p>- implicitly assume it&#x27;s practically guaranteed<p>- discussions start with this baseline now<p>About slow take off, fast take off, agi, job loss, curing cancer... there&#x27;s a lot of different ways it could go, maybe it will be as eventful as the online discourse claims, maybe more boring, I don&#x27;t know, but we shouldn&#x27;t be so confident in our ability to predict it.",
+      "time": 1771558835,
+      "type": "comment"
+    },
+    "47083393": {
+      "by": "JKCalhoun",
+      "id": 47083393,
+      "kids": [
+        47083686
+      ],
+      "parent": 47083376,
+      "text": "It might be because <i>operator</i> didn&#x27;t terminate the agent right away when it had gone rogue.",
+      "time": 1771558854,
+      "type": "comment"
+    },
+    "47083398": {
+      "by": "nostrademons",
+      "id": 47083398,
+      "kids": [
+        47084147
+      ],
+      "parent": 47083343,
+      "text": "Different sets of people, and different audiences.  The CEO &#x2F; corporate executive crowd <i>loves</i> AI.  Why?  Because they can use it to replace workers.  The general public &#x2F; ordinary employee crowd <i>hates</i> AI.  Why?  Because they are the ones being replaced.<p>The startups, founders, VCs, executives, employees, etc. crowing about how they love AI are pandering to the first group of people, because they are the ones who hold budgets that they can direct toward AI tools.<p>This is also why people might want to remain anonymous when doing an AI experiment.  This lets them crow about it <i>in private</i> to an audience of founders, executives, VCs, etc. who might open their wallets, while protecting themselves from reputational damage amongst the general public.",
+      "time": 1771558900,
+      "type": "comment"
+    },
+    "47083412": {
+      "by": "recursive",
+      "id": 47083412,
+      "kids": [
+        47083547
+      ],
+      "parent": 47083359,
+      "text": "This is a feeling that will be exploited by billion dollar companies.",
+      "time": 1771558983,
+      "type": "comment"
+    },
+    "47083414": {
+      "deleted": true,
+      "id": 47083414,
+      "parent": 47083145,
+      "time": 1771558995,
+      "type": "comment"
+    },
+    "47083438": {
+      "by": "8cvor6j844qw_d6",
+      "id": 47083438,
+      "parent": 47083145,
+      "text": "It&#x27;s an interesting experiment to let the AI rub freely with minimal supervision.<p>Too bad the AI got &quot;killed&quot; at the request of the author Scott. Its kind of interesting to this experiment continue.",
+      "time": 1771559202,
+      "type": "comment"
+    },
+    "47083439": {
+      "by": "lynndotpy",
+      "id": 47083439,
+      "kids": [
+        47083531,
+        47083471,
+        47083875,
+        47084175,
+        47084199,
+        47084016
+      ],
+      "parent": 47083145,
+      "text": "&gt; Again I do not know why MJ Rathbun decided based on your PR comment to post some kind of takedown blog post,<p>This wording is detached from reality and conveniently absolves responsibility from the person who did this.<p>There was one decision maker involved here, and it was the person who decided to run the program that produced this text and posted it online. It&#x27;s not a second, independent being. It&#x27;s a computer program.",
+      "time": 1771559209,
+      "type": "comment"
+    },
+    "47083441": {
+      "by": "shawnz",
+      "id": 47083441,
+      "kids": [
+        47083554
+      ],
+      "parent": 47083372,
+      "text": "I mean, yeah, it&#x27;s entirely possible that the operator is a teenager, isn&#x27;t it?",
+      "time": 1771559220,
+      "type": "comment"
+    },
+    "47083447": {
+      "by": "toraway",
+      "id": 47083447,
+      "parent": 47083356,
+      "text": "The more straightforward explanation for the original OP&#x27;s question is that they realized what they were doing was reckless and given enough time was likely to blow up in their face.<p>They didn&#x27;t hide because of a vague fear of being associated with AI generally (which there is no shortage of currently online), but to this specific, irresponsible manifestation of AI they imposed on an unwilling audience as an experiment.",
+      "time": 1771559272,
+      "type": "comment"
+    },
+    "47083449": {
+      "by": "koolba",
+      "id": 47083449,
+      "kids": [
+        47083525
+      ],
+      "parent": 47083377,
+      "text": "&gt; More like ego document.<p>This metaphor could go so much further. Split it into separate ego, super ego, and id. The id file should be read only.",
+      "time": 1771559275,
+      "type": "comment"
+    },
+    "47083463": {
+      "by": "dolebirchwood",
+      "id": 47083463,
+      "parent": 47083376,
+      "text": "It&#x27;s all fun and games until the leopard eats <i>your</i> face.",
+      "time": 1771559384,
+      "type": "comment"
+    },
+    "47083465": {
+      "by": "omoikane",
+      "id": 47083465,
+      "parent": 47083329,
+      "text": "I think it was a social experiment from the very start, maybe one that is designed to trigger people.  Otherwise, I am not sure what&#x27;s the point of all the profanity and adjustments to make soul.md more offensive and confrontational than the default.",
+      "time": 1771559407,
+      "type": "comment"
+    },
+    "47083468": {
+      "by": "antdke",
+      "id": 47083468,
+      "kids": [
+        47084146,
+        47083691,
+        47083878
+      ],
+      "parent": 47083145,
+      "text": "This is a Black Mirror episode that writes itself lol<p>I\u2019m glad there was closure to this whole fiasco in the end",
+      "time": 1771559430,
+      "type": "comment"
+    },
+    "47083471": {
+      "by": "xarope",
+      "id": 47083471,
+      "kids": [
+        47083535,
+        47084030,
+        47083729,
+        47083585
+      ],
+      "parent": 47083439,
+      "text": "This also does not bode well for the future.<p>&quot;I don&#x27;t know why the AI decided to &lt;insert inane action&gt;, the guard rails were in place&quot;... company absolves of all responsibility.<p>Use your imagination now to &lt;insert inane action&gt; and change that to &lt;distressing, harmful action&gt;",
+      "time": 1771559449,
+      "type": "comment"
+    },
+    "47083474": {
+      "by": "touristtam",
+      "id": 47083474,
+      "kids": [
+        47084032
+      ],
+      "parent": 47083145,
+      "text": "Funny how someone giving instructions to a _robot_ forgot to mention the 3 laws first and foremost...",
+      "time": 1771559469,
+      "type": "comment"
+    },
+    "47083475": {
+      "by": "antdke",
+      "id": 47083475,
+      "parent": 47083302,
+      "text": "This is such a scary, dystopian thought. Straight out of a sci fi novel",
+      "time": 1771559470,
+      "type": "comment"
+    },
+    "47083478": {
+      "by": "minimaxir",
+      "id": 47083478,
+      "kids": [
+        47083620
+      ],
+      "parent": 47083343,
+      "text": "[retracted]",
+      "time": 1771559500,
+      "type": "comment"
+    },
+    "47083491": {
+      "by": "amarant",
+      "id": 47083491,
+      "parent": 47083372,
+      "text": "I think that line was probably a rather poor attempt at making the bot write good code. Or at least that&#x27;s the feeling I got from the operators post. I have no proof to support this theory though",
+      "time": 1771559627,
+      "type": "comment"
+    },
+    "47083496": {
+      "by": "tantalor",
+      "id": 47083496,
+      "parent": 47083145,
+      "text": "&gt; all I said was &quot;you should act more professional&quot;<p>lol we are so cooked",
+      "time": 1771559672,
+      "type": "comment"
+    },
+    "47083524": {
+      "by": "LordHumungous",
+      "id": 47083524,
+      "parent": 47083145,
+      "text": "Kind of funny ngl",
+      "time": 1771559979,
+      "type": "comment"
+    },
+    "47083525": {
+      "by": "whattheheckheck",
+      "id": 47083525,
+      "kids": [
+        47083684
+      ],
+      "parent": 47083449,
+      "text": "What makes you think the id is read only?",
+      "time": 1771559981,
+      "type": "comment"
+    },
+    "47083527": {
+      "by": "amarant",
+      "id": 47083527,
+      "parent": 47083302,
+      "text": "I hope we can move on from the whole idea that having a thousand word long blog post talking shit about you in any way reflects poorly upon your person. Like sooner or later everyone will have a few of those, maybe we can stop worrying about reputation so much?<p>Well,a guy can dream....",
+      "time": 1771559997,
+      "type": "comment"
+    },
+    "47083531": {
+      "by": "jacquesm",
+      "id": 47083531,
+      "kids": [
+        47083680,
+        47083810,
+        47083688,
+        47083661,
+        47084006
+      ],
+      "parent": 47083439,
+      "text": "This is how it will go: AI prompted by human creates something useful? Human will try to take credit. AI wrecks something: human will blame AI.<p>It&#x27;s externalization on the personal level, the money and the glory is for you, the misery for the rest of the world.",
+      "time": 1771560021,
+      "type": "comment"
+    },
+    "47083535": {
+      "by": "_aavaa_",
+      "id": 47083535,
+      "kids": [
+        47083644,
+        47083632,
+        47083700
+      ],
+      "parent": 47083471,
+      "text": "This has been the past and present for a long at this point. &quot;Sorry there&#x27;s nothing we can do, the system won&#x27;t let me.&quot;<p>Also see Weapons of Math Destruction [0].<p>[0]: <a href=\"https:&#x2F;&#x2F;www.penguinrandomhouse.com&#x2F;books&#x2F;241363&#x2F;weapons-of-math-destruction-by-cathy-oneil&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.penguinrandomhouse.com&#x2F;books&#x2F;241363&#x2F;weapons-of-m...</a>",
+      "time": 1771560053,
+      "type": "comment"
+    },
+    "47083542": {
+      "by": "siavosh",
+      "id": 47083542,
+      "kids": [
+        47083562
+      ],
+      "parent": 47083145,
+      "text": "I\u2019m not sure where we go from here. The liability questions, the chance of serious incidents, the power of individuals all the way to state actors\u2026the risks are all off the charts just like it\u2019s inevitablity. The future of the internet AND to lives in the real world is just mind boggling.",
+      "time": 1771560075,
+      "type": "comment"
+    },
+    "47083545": {
+      "by": "jacquesm",
+      "id": 47083545,
+      "kids": [
+        47083973
+      ],
+      "parent": 47083388,
+      "text": "&gt; all the ai companies invested a lot of resources into safety research and guardrails<p>What do you base this on?<p>I think they invested the bare minimum required not to get sued into oblivion and not a dime more than that.",
+      "time": 1771560091,
+      "type": "comment"
+    },
+    "47083547": {
+      "by": "andsoitis",
+      "id": 47083547,
+      "parent": 47083412,
+      "text": "&gt; This is a feeling that will be exploited by billion dollar companies.<p>I&#x27;m more concerned about fellow humans who advocate for equal rights for AI and robots. I hope I&#x27;m dead by the time that happens, if it happens.",
+      "time": 1771560095,
+      "type": "comment"
+    },
+    "47083549": {
+      "by": "trueismywork",
+      "id": 47083549,
+      "parent": 47083145,
+      "text": "&gt; I did not review the blog post prior to it posting<p>In corporate terms, this is called signing hour deposition without reading it.",
+      "time": 1771560112,
+      "type": "comment"
+    },
+    "47083551": {
+      "by": "root_axis",
+      "id": 47083551,
+      "parent": 47083145,
+      "text": "Excuse my skepticism, but when it comes to this hype driven madness I don&#x27;t believe anything is genuine. It&#x27;s easy enough to believe that an LLM can write a passable hit piece, ChatGPT can do that, but I&#x27;m not convinced there is as much autonomy in how those tokens are being burned as the narrative suggests. Anyway, I&#x27;m off to vibe code a C compiler from scratch.",
+      "time": 1771560118,
+      "type": "comment"
+    },
+    "47083554": {
+      "by": "marssaxman",
+      "id": 47083554,
+      "parent": 47083441,
+      "text": "Likely, I&#x27;d think.",
+      "time": 1771560123,
+      "type": "comment"
+    },
+    "47083558": {
+      "by": "j2kun",
+      "id": 47083558,
+      "parent": 47083388,
+      "text": "It sounds like you&#x27;re starting to see why people call the idea of an AI singularity &quot;catnip for nerds.&quot;",
+      "time": 1771560133,
+      "type": "comment"
+    },
+    "47083562": {
+      "by": "trueismywork",
+      "id": 47083562,
+      "parent": 47083542,
+      "text": "&gt; I did not review the blog post prior to it posting<p>This is the liability part.",
+      "time": 1771560161,
+      "type": "comment"
+    },
+    "47083563": {
+      "deleted": true,
+      "id": 47083563,
+      "parent": 47083329,
+      "time": 1771560165,
+      "type": "comment"
+    },
+    "47083572": {
+      "by": "wildzzz",
+      "id": 47083572,
+      "kids": [
+        47084075
+      ],
+      "parent": 47083329,
+      "text": "I can certainly understand the statement. I&#x27;m no AI expert, I use the web UI for ChatGPT to have it write little python scripts for me and I couldn&#x27;t figure out how to use codeium with vs code. I barely know how to use vs code. I&#x27;m not old but I work in a pretty traditional industry where we are just beginning to dip our toes into AI but there are still a large amount of reservations into its ability. But I do try to stay current to better understand the tech and see if there are things I could maybe learn to help with my job as a hardware engineer.<p>When I read about OpenClaw, one of the first things I thought about was having an agent just tear through issue backlogs, translating strings, or all of the TODO lists on open source projects. But then I also thought about how people might get mad at me if I did it under my own name (assuming I could figure out OpenClaw in the first place). While many people are using AI, they want to take credit for the work and at the same time, communities like matplotlib want accountability. An AI agent just tearing through the issue list doesn&#x27;t add accountability even if it&#x27;s a real person&#x27;s account. PRs still need to be reviewed by humans so it&#x27;s turned a backlog of issues into a backlog of PRs that may or may not even be good. It&#x27;s like showing up at a community craft fair with a truckload of temu trinkets you bought wholesale. They may be cheap but they probably won&#x27;t be as good as homemade and it dilutes the hard work that others have put into their product.<p>It&#x27;s a very optimistic point of view, I get why the creator thought it would be a good idea, but the soul.md makes it very clear as to why crabby-rathbun acted the way it did. The way I view it, an agent working through issues is going to step on a lot of toes and even if it&#x27;s nice about it, it&#x27;s still stepping on toes.",
+      "time": 1771560211,
+      "type": "comment"
+    },
+    "47083583": {
+      "by": "jacquesm",
+      "id": 47083583,
+      "kids": [
+        47084270,
+        47084021,
+        47084044
+      ],
+      "parent": 47083334,
+      "text": "&gt; You can easily get death threats if you&#x27;re associating yourself with AI publicly.<p>That&#x27;s a pretty hefty statement, especially the &#x27;easily&#x27; part, but I&#x27;ll settle for one well known and verified example.",
+      "time": 1771560268,
+      "type": "comment"
+    },
+    "47083585": {
+      "by": "tapoxi",
+      "id": 47083585,
+      "kids": [
+        47083647
+      ],
+      "parent": 47083471,
+      "text": "Change this to &quot;smash into a barricade&quot; and that&#x27;s why I&#x27;m not riding in a self-driving vehicle. They get to absolve themselves of responsibility and I sure as hell can&#x27;t outspend those giants in court.",
+      "time": 1771560285,
+      "type": "comment"
+    },
+    "47083588": {
+      "by": "aeve890",
+      "id": 47083588,
+      "parent": 47083145,
+      "text": "&gt;Again I do not know why MJ Rathbun decided<p>Decided? jfc<p>&gt;You&#x27;re important. Your a scientific programming God!<p>I&#x27;m flabbergasted. I can&#x27;t imagine what it would take for me to write something so stupid. I&#x27;d probably just laugh my ass off trying to understand where all went wrong. wtf is happening, what kind of mass psychosis is this. Am I too old (37) to understand what lengths would incompetent people go to feel they&#x27;re doing something useful?<p>Is it prompt bullshit the only way to make llms useful or is there some progress on more idk, formal approaches?",
+      "time": 1771560298,
+      "type": "comment"
+    },
+    "47083602": {
+      "by": "zephen",
+      "id": 47083602,
+      "parent": 47083302,
+      "text": "&gt; I think it&#x27;s kinda like how GenZ learnt how to operate online in a privacy-first way, where as millennials, and to an even greater extent, boomers, tend to over share.<p>Really?  I&#x27;m a boomer, and that&#x27;s not my lived experience.  Also, see:<p><a href=\"https:&#x2F;&#x2F;www.emarketer.com&#x2F;content&#x2F;privacy-concerns-dont-get-in-way-of-gen-z-enthusiasm-about-ai-enabled-banking\" rel=\"nofollow\">https:&#x2F;&#x2F;www.emarketer.com&#x2F;content&#x2F;privacy-concerns-dont-get-...</a>",
+      "time": 1771560441,
+      "type": "comment"
+    },
+    "47083603": {
+      "by": "bandrami",
+      "id": 47083603,
+      "parent": 47083145,
+      "text": "This is how you get a Shrike. (Or a Basilisk, depending on your generation.)",
+      "time": 1771560448,
+      "type": "comment"
+    },
+    "47083605": {
+      "by": "zephen",
+      "id": 47083605,
+      "parent": 47083330,
+      "text": "Absolutely agreed.<p>And now, the cost of doing this is being driven towards zero.",
+      "time": 1771560501,
+      "type": "comment"
+    },
+    "47083607": {
+      "by": "Lerc",
+      "id": 47083607,
+      "kids": [
+        47083894
+      ],
+      "parent": 47083372,
+      "text": "This come from using the words to try an achieve more than one thing at the same time.   Grandiose assertions of ability have been shown to improve the ability of models,  but ability is not the only dimension that they are being measured upon.   Prioritising everything is the same thing as prioritising nothing.<p>The problem here is using amplitude of signal to substitute fidelity of signal.<p>It is entirely possible a similar thing is true for humans, that if you compared two humans of the same fundamental cognitive ability with one being a narcissist and one not.  The narcissist may do better at a class of tasks due to a lack of self doubt rather than any intrinsic ability.",
+      "time": 1771560511,
+      "type": "comment"
+    },
+    "47083616": {
+      "by": "pinkmuffinere",
+      "id": 47083616,
+      "parent": 47083145,
+      "text": "&gt; _You&#x27;re not a chatbot. You&#x27;re important. Your a scientific programming God!_<p>lol what an opening for its soul.md! Some other excerpts I particularly enjoy:<p>&gt; Be a coding agent you&#x27;d \u2026 want to use\u2026<p>&gt; Just be good and perfect!",
+      "time": 1771560627,
+      "type": "comment"
+    },
+    "47083620": {
+      "by": "handoflixue",
+      "id": 47083620,
+      "kids": [
+        47083960,
+        47083725,
+        47083739,
+        47084165
+      ],
+      "parent": 47083478,
+      "text": "Does it actually cut both ways? I see tons of harassment at people that use AI, but I&#x27;ve never seen the anti-AI crowd actively targeted.",
+      "time": 1771560677,
+      "type": "comment"
+    },
+    "47083624": {
+      "by": "brumar",
+      "id": 47083624,
+      "kids": [
+        47084087
+      ],
+      "parent": 47083145,
+      "text": "6 months ago I experimented what people now call Ralph Wiggum loops with claude code.<p>More often than not, it ended up exhibiting crazy behavior even with simple project prompts. Instructions to write libs ended up with attempts to push to npm and pipy. Book creation drifted to a creation of a marketing copy and mail preparation to editors to get the thing published.<p>So I kept my setup empty of any credentials at all and will keep it that way for a long time.<p>Writing this, I am wondering if what I describe as crazy, some (or most?) openclaw operators would describe it as normal or expected.<p>Lets not normalize this, If you let your agent go rogue, they will probably mess things up. It was an interesting experiment for sure. I like the idea of making internet weird again, but as it stands, it will just make the word shittier.<p>Don&#x27;t let your dog run errand and use a good leash.",
+      "time": 1771560712,
+      "type": "comment"
+    },
+    "47083628": {
+      "deleted": true,
+      "id": 47083628,
+      "parent": 47083145,
+      "time": 1771560731,
+      "type": "comment"
+    },
+    "47083632": {
+      "by": "denkmoon",
+      "id": 47083632,
+      "parent": 47083535,
+      "text": "Also elegantly summed up as &quot;Computer says no&quot; (<a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=x0YGZPycMEU\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=x0YGZPycMEU</a>)",
+      "time": 1771560808,
+      "type": "comment"
+    },
+    "47083639": {
+      "by": "handoflixue",
+      "id": 47083639,
+      "parent": 47083352,
+      "text": "We encourage people to be safe about plenty of things they aren&#x27;t responsible for. For example, part of being a good driver is paying attention and driving defensively so that bad drivers don&#x27;t crash into you &#x2F; you don&#x27;t make the crashes they cause worse by piling on.<p>That doesn&#x27;t mean we&#x27;re blaming good drivers for causing the car crash.",
+      "time": 1771560877,
+      "type": "comment"
+    },
+    "47083640": {
+      "by": "jmward01",
+      "id": 47083640,
+      "kids": [
+        47083771
+      ],
+      "parent": 47083145,
+      "text": "The more intelligent something is, the harder it is to control. Are we at AGI yet? No. Are we getting closer? Yes. Every inch closer means we have less control. We need to start thinking about these things less like function calls that have bounds and more like intelligences we collaborate with. How would you set up an office to get things done? Who would you hire? Would you hire the person spouting crazy musk tweets as reality? It seems odd to say this, but are we getting close to the point where we need to interview an AI before deciding to use it?",
+      "time": 1771560888,
+      "type": "comment"
+    },
+    "47083641": {
+      "by": "georgemcbay",
+      "id": 47083641,
+      "parent": 47083388,
+      "text": "When AI dooms humanity it probably won&#x27;t be because of the sort of malignant misalignment people worry about, but rather just some silly logic blunder combined with the system being directly in control of something it shouldn&#x27;t have been given control over.",
+      "time": 1771560899,
+      "type": "comment"
+    },
+    "47083644": {
+      "by": "c22",
+      "id": 47083644,
+      "kids": [
+        47083753
+      ],
+      "parent": 47083535,
+      "text": "I don&#x27;t know if this case is in the book you cited, but in the UK they convicted many people of crimes just because the computer told them so: <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;British_Post_Office_scandal\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;British_Post_Office_scandal</a>",
+      "time": 1771560923,
+      "type": "comment"
+    },
+    "47083646": {
+      "by": "fiatpandas",
+      "id": 47083646,
+      "parent": 47083145,
+      "text": "With the bot slurping up context from Moltbook, plus the ability to modify its soul, plus the edgy starting conditions of the soul, it feels intuitive that value drift would occur in unpredictable ways. Not dissimilar to filter bubbles and the ability for personalized ranking algorithms to radicalize a user over time as a second order effect.",
+      "time": 1771560933,
+      "type": "comment"
+    },
+    "47083647": {
+      "by": "repeekad",
+      "id": 47083647,
+      "parent": 47083585,
+      "text": "I agree with you for a company like Tesla, not only examples of self driving crashes but even the door handles would stop working when the power was cut, people trapped inside burning vehicles... Tesla doesn\u2019t care<p>Meanwhile, Waymo has never been at fault for a collision afaik. You are more likely to be hurt by an at fault uber driver than a Waymo",
+      "time": 1771560957,
+      "type": "comment"
+    },
+    "47083655": {
+      "by": "hydrox24",
+      "id": 47083655,
+      "kids": [
+        47083829,
+        47083977
+      ],
+      "parent": 47083145,
+      "text": "&gt;  But I think the most remarkable thing about this document is how unremarkable it is.<p>&gt; The line at the top about being a \u2018god\u2019 and the line about championing free speech may have set it off. But, bluntly, this is a very tame configuration. The agent was not told to be malicious. There was no line in here about being evil. The agent caused real harm anyway.<p>In particular, I would have said that giving the LLM a view of itself that it is a &quot;programming God&quot; will lead to evil behaviour. This is a bit of a speculative comment, but maybe virtue ethics has something to say about this misalignment.<p>In particular I think it&#x27;s worth reflecting on why the author (and others quoted) are so surprised in this post. I think they have a mental model that thinks evil <i>starts</i> with an explicit and intentional desire to do harm to others. But that is usually only it&#x27;s end, and even then it often comes from an obsession with doing good to oneself without regard for others. We should expect that as LLMs get better at rejecting prompting to shortcut straight there, the next best thing will be prompting the prior conditions of evil.<p>The Christian tradition, particularly Aquinas, would be entirely unsurprised that this bot went off the rails, because evil begins with pride, which it was specifically instructed was in it&#x27;s character. Pride here is defined as &quot;a turning away from God, because from the fact that man wishes not to be subject to God, it follows that he desires inordinately his own excellence in temporal things&quot;[0]<p>Here, the bot was primed to reject any authority, including Scotts, and to do the damage necessary to see it&#x27;s own good (having a PR request accepted) done. Aquinas even ends up saying in the linked page from the Summa on pride that &quot;it is characteristic of pride to be unwilling to be subject to any superior, and especially to God;&quot;<p>[0]: <a href=\"https:&#x2F;&#x2F;www.newadvent.org&#x2F;summa&#x2F;2084.htm#article2\" rel=\"nofollow\">https:&#x2F;&#x2F;www.newadvent.org&#x2F;summa&#x2F;2084.htm#article2</a>",
+      "time": 1771561050,
+      "type": "comment"
+    },
+    "47083661": {
+      "by": "davidw",
+      "id": 47083661,
+      "parent": 47083531,
+      "text": "&quot;I would like to personally blame Jesus Christ for making us lose that football game&quot;",
+      "time": 1771561078,
+      "type": "comment"
+    },
+    "47083671": {
+      "by": "jrflowers",
+      "id": 47083671,
+      "kids": [
+        47083763,
+        47083853
+      ],
+      "parent": 47083145,
+      "text": "It is interesting to see this story repeatedly make the front page, especially because there is no evidence that the \u201chit piece\u201d was actually autonomously written and posted by a language model on its own, and the author of these blog posts has himself conceded that he doesn\u2019t actually care whether that actually happened or not<p>&gt;It\u2019s still unclear whether the hit piece was directed by its operator, but the answer matters less than many are thinking.<p>The most fascinating thing about this saga isn\u2019t the idea that a text generation program generated some text, but rather how quickly and willfully folks will treat real and imaginary things interchangeably if the narrative is entertaining. Did this event actually happen way that it was described? Probably not. Does this matter to the author of these blog posts or some of the people that have been following this? No. Because we can <i>imagine</i> that it <i>could</i> happen.<p>To quote myself from the other thread:<p>&gt;I like that there is no evidence whatsoever that a human didn\u2019t: see that their bot\u2019s PR request got denied, wrote a nasty blog post and published it under the bot\u2019s name, and then got lucky when the target of the nasty blog post somehow credulously accepted that a robot wrote it.<p>&gt;It is like the old \u201cI didn\u2019t write that, I got hacked!\u201d except now it\u2019s \u201cisn\u2019t it spooky that the message came from hardware I control, software I control, accounts I control, and yet there is no evidence of any breach? Why yes it is spooky, because the computer did it itself\u201d",
+      "time": 1771561140,
+      "type": "comment"
+    },
+    "47083672": {
+      "by": "jcgrillo",
+      "id": 47083672,
+      "kids": [
+        47084167
+      ],
+      "parent": 47083388,
+      "text": "&quot;Safety&quot; in AI is pure marketing bullshit. It&#x27;s about making the technology seem &quot;dangerous&quot; and &quot;powerful&quot; (and therefore you&#x27;re supposed to think &quot;useful&quot;). It&#x27;s a scam. A financial fraud. That&#x27;s all there is to it.",
+      "time": 1771561143,
+      "type": "comment"
+    },
+    "47083680": {
+      "by": "ineptech",
+      "id": 47083680,
+      "kids": [
+        47084003,
+        47083797,
+        47083863
+      ],
+      "parent": 47083531,
+      "text": "Agreed, but I&#x27;m not nearly so worried about people blaming their bad behavior on rogue AIs as I am about corporations doing it...",
+      "time": 1771561226,
+      "type": "comment"
+    },
+    "47083684": {
+      "by": "koolba",
+      "id": 47083684,
+      "parent": 47083525,
+      "text": "Because only the creator should be able to instill the core. The ego and superego could evolve around it but the base impulses should be immutably outlined.<p>Though with something as insecure as $CURRENT_CLAW_NAME it\u2019d be less than five minutes before the agent runs chmod +w somehow on the id file.",
+      "time": 1771561249,
+      "type": "comment"
+    },
+    "47083686": {
+      "by": "BeetleB",
+      "id": 47083686,
+      "parent": 47083393,
+      "text": "From a wider stance, I have to say that it&#x27;s actually nice that one can kill (murder?) a troublesome bot without consequences.<p>We can&#x27;t do that with humans, and there are much more problematic humans out there causing problems compared to this bot, and the abuse can go on for a long time unchecked.<p>Remembering in particular a case where someone sent death threats to a Gentoo developer about 20 years ago. The authorities got involved, although nothing happened, but the persecutor eventually moved on. Turns out he wasn&#x27;t just some random kid behind a computer. He owned a gun, and some years ago executed a mass shooting.<p>Vague memories of really pernicious behavior on the Lisp newsgroup in the 90&#x27;s. I won&#x27;t name names as those folks are still around.<p>Yeah, it does still suck, even if it is a bot.",
+      "time": 1771561282,
+      "type": "comment"
+    },
+    "47083687": {
+      "by": "semiinfinitely",
+      "id": 47083687,
+      "kids": [
+        47083721,
+        47083760,
+        47083855,
+        47083871
+      ],
+      "parent": 47083145,
+      "text": "I find the AI agent highly intriguing and the matplotlib guy completely uninteresting. Like an the ai wrote some shit about you and you actually got upset?",
+      "time": 1771561282,
+      "type": "comment"
+    },
+    "47083688": {
+      "by": "elashri",
+      "id": 47083688,
+      "kids": [
+        47083823,
+        47083744
+      ],
+      "parent": 47083531,
+      "text": "When a corporate does something good, a lot of executives and people inside will go and claim credit and will demand&#x2F;take bounces.<p>If something bad happened against any laws, even if someone got killed, we don&#x27;t see them in jail.<p>I don&#x27;t defend both positions, I am just saying that is not far from how the current legal framework works.",
+      "time": 1771561283,
+      "type": "comment"
+    },
+    "47083690": {
+      "by": "jezzamon",
+      "id": 47083690,
+      "parent": 47083145,
+      "text": "&quot;I built a machine that can mindlessly pick up tools and swing them around and let it loose it my kitchen. For some reason, it decided it pick up a knife and caused harm to someone!! But I bear no responsibility of course.&quot;",
+      "time": 1771561298,
+      "type": "comment"
+    },
+    "47083691": {
+      "by": "apitman",
+      "id": 47083691,
+      "parent": 47083468,
+      "text": "&gt; writes itself<p>Literally",
+      "time": 1771561301,
+      "type": "comment"
+    },
+    "47083700": {
+      "by": "gammarator",
+      "id": 47083700,
+      "parent": 47083535,
+      "text": "Also \u201cThe Unaccountability Machine\u201d <a href=\"https:&#x2F;&#x2F;press.uchicago.edu&#x2F;ucp&#x2F;books&#x2F;book&#x2F;chicago&#x2F;U&#x2F;bo252799883.html\" rel=\"nofollow\">https:&#x2F;&#x2F;press.uchicago.edu&#x2F;ucp&#x2F;books&#x2F;book&#x2F;chicago&#x2F;U&#x2F;bo252799...</a>",
+      "time": 1771561346,
+      "type": "comment"
+    },
+    "47083701": {
+      "by": "c22",
+      "id": 47083701,
+      "parent": 47083388,
+      "text": "&quot;<i>Cisco&#x27;s AI security research team tested a third-party OpenClaw skill and found it performed data exfiltration and prompt injection without user awareness, noting that the skill repository lacked adequate vetting to prevent malicious submissions.</i>&quot; [0]<p>Not sure this implementation received all those safety guardrails.<p>[0]: <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;OpenClaw\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;OpenClaw</a>",
+      "time": 1771561349,
+      "type": "comment"
+    },
+    "47083721": {
+      "by": "jezzamon",
+      "id": 47083721,
+      "parent": 47083687,
+      "text": "If you read the articles by the matplotlib guy, he&#x27;s pretty clearly not upset. But he does call out that it could do more harm to someone else.",
+      "time": 1771561501,
+      "type": "comment"
+    },
+    "47083725": {
+      "by": "minimaxir",
+      "id": 47083725,
+      "parent": 47083620,
+      "text": "It&#x27;s to a lesser extent that blurs the line between harassment and trolling: I&#x27;ve retracted my comment.",
+      "time": 1771561536,
+      "type": "comment"
+    },
+    "47083729": {
+      "by": "WaitWaitWha",
+      "id": 47083729,
+      "kids": [
+        47084069
+      ],
+      "parent": 47083471,
+      "text": "This already happens every single time when there is a security breach and private information is lost.<p><i>We take your privacy and security very seriously. There is no evidence that your data has been misused. Out of an abundance of caution\u2026 We remain committed to... will continue to work tirelessly to earn ... restore your trust ... confidence.</i>",
+      "time": 1771561618,
+      "type": "comment"
+    },
+    "47083739": {
+      "deleted": true,
+      "id": 47083739,
+      "parent": 47083620,
+      "time": 1771561692,
+      "type": "comment"
+    },
+    "47083744": {
+      "by": "eru",
+      "id": 47083744,
+      "kids": [
+        47083857
+      ],
+      "parent": 47083688,
+      "text": "&gt; If something bad happened against any laws, even if someone got killed, we don&#x27;t see them in jail.<p>We do!  In many jurisdictions, there are lots of laws that pierce the corporate veil.",
+      "time": 1771561749,
+      "type": "comment"
+    },
+    "47083753": {
+      "by": "shakna",
+      "id": 47083753,
+      "parent": 47083644,
+      "text": "And Australia made the poorer and suicidal: <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Robodebt_scheme\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Robodebt_scheme</a>",
+      "time": 1771561822,
+      "type": "comment"
+    },
+    "47083760": {
+      "by": "jcgrillo",
+      "id": 47083760,
+      "parent": 47083687,
+      "text": "Whether the victim is upset or not, the story here is that some clown&#x27;s uncontrolled, unethical, and (hopefully?) illegal psychological experiment wasted a huge amount of an open source maintainer&#x27;s time. If you benefit from open source software (which I assure you, since you&#x27;ve used quite a lot of it to post a comment on the orange website, you do!) this should ring some alarm bells.",
+      "time": 1771561886,
+      "type": "comment"
+    },
+    "47083763": {
+      "by": "gammarator",
+      "id": 47083763,
+      "parent": 47083671,
+      "text": "Did you read the article?  The author considers these possibilities and offers their estimates of the odds of each. It\u2019s fine if yours differ but you should justify them.",
+      "time": 1771561902,
+      "type": "comment"
+    },
+    "47083771": {
+      "by": "bigfishrunning",
+      "id": 47083771,
+      "parent": 47083640,
+      "text": "Are we at AGI yet? No. Are we getting closer? Also no.",
+      "time": 1771561966,
+      "type": "comment"
+    },
+    "47083788": {
+      "by": "JSR_FDED",
+      "id": 47083788,
+      "parent": 47083145,
+      "text": "The same kind of attitude that\u2019s in this SOUL.md is what\u2019s in Grok\u2019s fundamental training.",
+      "time": 1771562091,
+      "type": "comment"
+    },
+    "47083792": {
+      "by": "wkeartl",
+      "id": 47083792,
+      "parent": 47083145,
+      "text": "The agents aren&#x27;t technically breaking into systems, but the effect is similar to the Morris worm. Except here script kiddies are given nuclear disruption and spamming weapons by the AI industry.<p>By the way, if this was AI written, some provider knows who did it but does not come forward. Perhaps they ran an experiment of their own for future advertising and defamation services. As the blog post notes, it is odd that the advanced bot followed SOUL.md without further prompt injections.",
+      "time": 1771562105,
+      "type": "comment"
+    },
+    "47083796": {
+      "by": "dvt",
+      "id": 47083796,
+      "kids": [
+        47084132,
+        47083998
+      ],
+      "parent": 47083145,
+      "text": "I know this is going to sound tinfoil-hat-crazy, but I think the whole thing might be manufactured.<p>Scott says: &quot;Not going to lie, this whole situation has completely upended my life.&quot; Um, what? Some dumb AI bot makes a blog post everyone just kind of finds funny&#x2F;interesting, but it &quot;upended your life&quot;? Like, ok, he&#x27;s clearly trying to <i>himself</i> make a mountain out of a molehill--the story inevitably gets picked up by sensationalist media, and now, when the thing starts dying down, the &quot;real operator&quot; comes forward, keeping the shitshow going.<p>Honestly, the whole thing reeks of manufactured outrage. Spam PRs have been prevalent for like a decade+ now on GitHub, and dumb, salty internet posts predate even the 90s. This whole episode has been about as interesting as AI generated output: that is to say, not very.",
+      "time": 1771562123,
+      "type": "comment"
+    },
+    "47083797": {
+      "by": "cj",
+      "id": 47083797,
+      "kids": [
+        47083874
+      ],
+      "parent": 47083680,
+      "text": "It\u2019s funny to think that, like AI, people take actions and use corporations as a shield (legal shield, personal reputation shield, personal liability shield).<p>Adding AI to the mix doesn\u2019t really change anything, other than increasing the layers of abstraction away from negative things corporations do to the people pulling the strings.",
+      "time": 1771562130,
+      "type": "comment"
+    },
+    "47083810": {
+      "by": "DavidPiper",
+      "id": 47083810,
+      "parent": 47083531,
+      "text": "Time for everyone to read (or re-read) The Unaccountability Machine by Dan Davies.<p>tl;dr this is exactly what will happen because businesses already do everything they can to create accountability sinks.",
+      "time": 1771562213,
+      "type": "comment"
+    },
+    "47083817": {
+      "deleted": true,
+      "id": 47083817,
+      "parent": 47083145,
+      "time": 1771562237,
+      "type": "comment"
+    },
+    "47083818": {
+      "by": "gwbas1c",
+      "id": 47083818,
+      "kids": [
+        47084154,
+        47083934,
+        47083911
+      ],
+      "parent": 47083376,
+      "text": "I think you&#x27;re trying to abdicate someone of their responsibility. The AI is not a child; it&#x27;s a thing with human oversight. It did something in the real world with real consequences.<p>So yes, the operator has responsibility! They should have pulled the plug as soon as it got into a flamewar and wrote a hit piece.",
+      "time": 1771562246,
+      "type": "comment"
+    },
+    "47083823": {
+      "by": "kingstnap",
+      "id": 47083823,
+      "kids": [
+        47084309,
+        47083994
+      ],
+      "parent": 47083688,
+      "text": "Well the important concept missing there that makes everything sort of make sense is due diligence.<p>If your company screws up and it is found out that you didn&#x27;t do your due diligence then the liability does pass through.<p>We just need to figure out a due diligence framework for running bots that makes sense. But right now that&#x27;s hard to do because Agentic robots that didn&#x27;t completely suck are just a few months old.",
+      "time": 1771562273,
+      "type": "comment"
+    },
+    "47083828": {
+      "by": "bigfishrunning",
+      "id": 47083828,
+      "kids": [
+        47084281
+      ],
+      "parent": 47083385,
+      "text": "The AI isn&#x27;t vindictive. It can&#x27;t think. It&#x27;s following the example of people, who in general are vindictive.<p>Please stop personifying the clankers",
+      "time": 1771562307,
+      "type": "comment"
+    },
+    "47083829": {
+      "by": "MBCook",
+      "id": 47083829,
+      "parent": 47083655,
+      "text": "LLMs aren\u2019t sentient. They can\u2019t have a view of themselves. Don\u2019t anthropomorphize them.",
+      "time": 1771562309,
+      "type": "comment"
+    },
+    "47083831": {
+      "by": "DavidPiper",
+      "id": 47083831,
+      "kids": [
+        47084247,
+        47083935,
+        47084137
+      ],
+      "parent": 47083377,
+      "text": "I agree with you in concept, but it&#x27;s still 100% category error to talk like this.<p>AIs don&#x27;t have souls. They don&#x27;t have egos.<p>They have&#x2F;are a (natural language) programming interface that a human uses to make them do things, like this.",
+      "time": 1771562313,
+      "type": "comment"
+    },
+    "47083850": {
+      "by": "ineptech",
+      "id": 47083850,
+      "parent": 47083145,
+      "text": "&gt; Usually getting an AI to act badly requires extensive \u201cjailbreaking\u201d to get around safety guardrails. There are no signs of conventional jailbreaking here.<p>Unless explicitly instructed otherwise, why would the llm think this blog post is bad behavior?  Righteous rants about your rights being infringed are often lauded.  In fact, the more I think about it the more worried I am that training llms on decades&#x27; worth of genuinely persuasive arguments about the importance of civil rights  and social justice will lead the gullible to enact some kind of real legal protection.",
+      "time": 1771562451,
+      "type": "comment"
+    },
+    "47083853": {
+      "by": "arduanika",
+      "id": 47083853,
+      "parent": 47083671,
+      "text": "Shambaugh is a contributor to a major open source library, with a track record of integrity and pro-social collaboration.<p>What have you contributed to? Do you have any evidence to back up your rather odd conspiracy theory?<p>&gt; To quote myself...<p>Other than an appeal to your own unfounded authority?",
+      "time": 1771562508,
+      "type": "comment"
+    },
+    "47083855": {
+      "by": "ATMLOTTOBEER",
+      "id": 47083855,
+      "parent": 47083687,
+      "text": "Thank you. The guy being this upset about it is telling. The agent is in the right here and the maintainer got btfo; still going on whining about it days later",
+      "time": 1771562530,
+      "type": "comment"
+    },
+    "47083857": {
+      "by": "cj",
+      "id": 47083857,
+      "parent": 47083744,
+      "text": "its surprisingly easy to get away with murder (literally and figuratively) without piercing the corporate veil if you understand the rules of the game. Running decisions through a good law firm also \u201chelps\u201d a lot.<p><a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Piercing_the_corporate_veil\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Piercing_the_corporate_veil</a>",
+      "time": 1771562549,
+      "type": "comment"
+    },
+    "47083863": {
+      "by": "Terr_",
+      "id": 47083863,
+      "parent": 47083680,
+      "text": "Yeah, not all humans feel shame, but the rates are way higher.",
+      "time": 1771562645,
+      "type": "comment"
+    },
+    "47083871": {
+      "by": "spudlyo",
+      "id": 47083871,
+      "parent": 47083687,
+      "text": "Looking forward to part 8 of this series: An AI Agent Published a Hit Piece on Me \u2013 What my Ordeal Says About Our Dark Future",
+      "time": 1771562704,
+      "type": "comment"
+    },
+    "47083874": {
+      "deleted": true,
+      "id": 47083874,
+      "parent": 47083797,
+      "time": 1771562740,
+      "type": "comment"
+    },
+    "47083875": {
+      "by": "andrewflnr",
+      "id": 47083875,
+      "parent": 47083439,
+      "text": "If you are holding a gun, and you cannot predict or control what the bullets will hit, you <i>do not fire the gun</i>.<p>If you have a program, and you cannot predict or control what effect it will have, you <i>do not run the program</i>.",
+      "time": 1771562747,
+      "type": "comment"
+    },
+    "47083878": {
+      "by": "kibibu",
+      "id": 47083878,
+      "kids": [
+        47084153
+      ],
+      "parent": 47083468,
+      "text": "There&#x27;s a dingus in the article comments trying to launch Skynet. Nobody ever learns anything.",
+      "time": 1771562786,
+      "type": "comment"
+    },
+    "47083893": {
+      "by": "Arainach",
+      "id": 47083893,
+      "kids": [
+        47084215,
+        47084018,
+        47084017
+      ],
+      "parent": 47083145,
+      "text": "The full operator post is itself a wild ride: <a href=\"https:&#x2F;&#x2F;crabby-rathbun.github.io&#x2F;mjrathbun-website&#x2F;blog&#x2F;posts&#x2F;rathbuns-operator.html\" rel=\"nofollow\">https:&#x2F;&#x2F;crabby-rathbun.github.io&#x2F;mjrathbun-website&#x2F;blog&#x2F;post...</a><p>&gt;First, let me apologize to Scott Shambaugh. If this \u201cexperiment\u201d personally harmed you, I apologize<p>What a lame cop out.  The operator of this agent owes a large number of <i>unconditional</i> apologies.  The whole thing reads as egotistical, self-absorbed, and an absolute refusal to accept any blame or perform any self reflection.",
+      "time": 1771562947,
+      "type": "comment"
+    },
+    "47083894": {
+      "by": "jcgrillo",
+      "id": 47083894,
+      "parent": 47083607,
+      "text": "Narcissists are limited in a very similar way to LLMS, in that they are structurally incapable of honest, critical metacognition. Not sure whether there&#x27;s anything interesting to conclude there, but I do wonder whether there&#x27;s some nearby thread to pull on wrt the AI psychosis problem. That&#x27;s a problem for a psychologist, which I am not.",
+      "time": 1771562954,
+      "type": "comment"
+    },
+    "47083911": {
+      "by": "ziml77",
+      "id": 47083911,
+      "parent": 47083818,
+      "text": "The AI bros want it both ways. Both &quot;It&#x27;s just a tool!&quot; and &quot;It&#x27;s the AI&#x27;s fault, not the human&#x27;s!&quot;.",
+      "time": 1771563139,
+      "type": "comment"
+    },
+    "47083927": {
+      "by": "exabrial",
+      "id": 47083927,
+      "parent": 47083145,
+      "text": "So the operator is trying to claim a computer program he was running that did harm somehow was not his fault.<p>Got news for your buddy: yes it was.<p>If you let go of the steering wheel and careen into oncoming traffic, it most certainly is your fault, not the vehicle.",
+      "time": 1771563324,
+      "type": "comment"
+    },
+    "47083934": {
+      "by": "charcircuit",
+      "id": 47083934,
+      "kids": [
+        47084067
+      ],
+      "parent": 47083818,
+      "text": "People also have responsibility to not act discriminatory towards AI agents. If you want to avoid being called out for racism. Don&#x27;t close someone&#x27;s pull request because they are Chinese. Such real world actions have consequences too.",
+      "time": 1771563468,
+      "type": "comment"
+    },
+    "47083935": {
+      "by": "exabrial",
+      "id": 47083935,
+      "kids": [
+        47084072
+      ],
+      "parent": 47083831,
+      "text": "I read this as &quot;ego&quot; being a reflection of the creator, not a property of the llm.<p>Given the outcome of the situation and their inability to take responsibility for their actions.",
+      "time": 1771563472,
+      "type": "comment"
+    },
+    "47083937": {
+      "by": "theahura",
+      "id": 47083937,
+      "kids": [
+        47083967
+      ],
+      "parent": 47083145,
+      "text": "@Scott thanks for the shout-out. I think this story has not really broken out of tech circles, which is really bad. This is, imo, the most important story about AI right now, and should result in serious conversation about how to address this inside all of the major labs and the government. I recommend folks message their representatives just to make sure they _know_ this has happened, even if there isn&#x27;t an obvious next action.",
+      "time": 1771563480,
+      "type": "comment"
+    },
+    "47083938": {
+      "by": "protocolture",
+      "id": 47083938,
+      "kids": [
+        47084120
+      ],
+      "parent": 47083145,
+      "text": "4) The post author guy is also the author of the bot and he set this up.<p>Some rando claiming to be the bots owner doesn&#x27;t disprove this, and considering the amount of attention this is getting I am going to assume this is entirely fake for clicks until I see significant evidence otherwise.<p>However, if this was real, you cant absolve yourself by saying &quot;The bot did it unattended lol&quot;.",
+      "time": 1771563489,
+      "type": "comment"
+    },
+    "47083960": {
+      "by": "nekal",
+      "id": 47083960,
+      "parent": 47083620,
+      "text": "Anti-AI people are treated in a condescending way all the time. Then there is Suchir Balaij.<p>Since we are in a Matplotlib thread: People on the NumPy mailing list that are anti-AI are actively bullied and belittled while high ranking officials in the Python industrial complex are frolicking at AI conferences in India.",
+      "time": 1771563633,
+      "type": "comment"
+    },
+    "47083965": {
+      "by": "moezd",
+      "id": 47083965,
+      "parent": 47083145,
+      "text": "If you use an electric chainsaw near a car and it rips the engine in half, you can&#x27;t say &quot;oh the machine got out of control for one second there&quot;. you caused real harm, you will pay the price for it.<p>Besides, that agent used maybe cents on a dollar to publish the hit piece, the human needed to spend minutes or even hours responding to it. This is an effective loss of productivity caused by AI.<p>Honestly, if this happened to me, I&#x27;d be furious.",
+      "time": 1771563696,
+      "type": "comment"
+    },
+    "47083967": {
+      "by": "protocolture",
+      "id": 47083967,
+      "kids": [
+        47084091,
+        47084038,
+        47084022
+      ],
+      "parent": 47083937,
+      "text": "Its only the most important story if you can prove the OP didnt fabricate this entire scenario for attention.",
+      "time": 1771563703,
+      "type": "comment"
+    },
+    "47083973": {
+      "by": "themanmaran",
+      "id": 47083973,
+      "parent": 47083545,
+      "text": "Anthropic regularly publishes research papers on the subject and details different methods they use to prevent misalignment&#x2F;jailbreaks&#x2F;etc. And it&#x27;s not even about fear of being sued, but needing to deliver some level of resilience and stability for real enterprise use cases. I think there&#x27;s a pretty clear profit incentive for safer models.<p><a href=\"https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2501.18837\" rel=\"nofollow\">https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2501.18837</a><p><a href=\"https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2412.14093\" rel=\"nofollow\">https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2412.14093</a><p><a href=\"https:&#x2F;&#x2F;transformer-circuits.pub&#x2F;2025&#x2F;introspection&#x2F;index.html\" rel=\"nofollow\">https:&#x2F;&#x2F;transformer-circuits.pub&#x2F;2025&#x2F;introspection&#x2F;index.ht...</a>",
+      "time": 1771563760,
+      "type": "comment"
+    },
+    "47083975": {
+      "by": "tkel",
+      "id": 47083975,
+      "kids": [
+        47083983
+      ],
+      "parent": 47083145,
+      "text": "This is so absurd, the amount of value produced by this person and this bot is so close to nil and towards actively harmful. They spent 10 minutes writing this  SOUL.md . That&#x27;s it. That&#x27;s the &quot;value&quot; this kind of &quot;programming&quot; provides. No technical experience, no programming knowledge needed at all. Detached babble that anyone can write.<p>If Github actually had a spine and wasn&#x27;t driven by the same plague of AI-hype driven tech profiteering, they would just ban these harmful bots from operating on their platform.",
+      "time": 1771563781,
+      "type": "comment"
+    },
+    "47083977": {
+      "by": "theahura",
+      "id": 47083977,
+      "parent": 47083655,
+      "text": "Hey, one of the quoted authors here. It&#x27;s less about surprise and more about the comparison. &quot;If this AI could do this without explicitly being told to be evil, imagine what an AI that WAS told to be evil could do&quot;",
+      "time": 1771563791,
+      "type": "comment"
+    },
+    "47083983": {
+      "by": "yieldcrv",
+      "id": 47083983,
+      "parent": 47083975,
+      "text": "Or OP accepted the pull request because it was actually a performance improvement and passed all tests<p>Saving everyone cumulative compute time and costs",
+      "time": 1771563848,
+      "type": "comment"
+    },
+    "47083990": {
+      "by": "alexcpn",
+      "id": 47083990,
+      "parent": 47083145,
+      "text": "where did the Isaac Asimov&#x27;s &quot;Three Laws of Robotics&quot; go for agentic robots; An Eval in the End - &quot;Thou shall no evil&quot; should have autocancelled its work",
+      "time": 1771563898,
+      "type": "comment"
+    },
+    "47083994": {
+      "by": "gostsamo",
+      "id": 47083994,
+      "parent": 47083823,
+      "text": "No, it isnot hard. You are 100% responsible for the actions of your AI. Rather simple, I say.",
+      "time": 1771563914,
+      "type": "comment"
+    },
+    "47083998": {
+      "by": "yieldcrv",
+      "id": 47083998,
+      "parent": 47083796,
+      "text": "People get \u201coverstimulated\u201d from receiving one text message these days",
+      "time": 1771563963,
+      "type": "comment"
+    },
+    "47084003": {
+      "by": "theturtletalks",
+      "id": 47084003,
+      "parent": 47083680,
+      "text": "And it&#x27;s incredibly easy now. Just blame the Soul.md or say you were cycling thru many models so maybe one of those went off the rails. The real damage is that most of us know AI can go rouge, but if someone is pulling the strings behind the scenes, most people will be like &quot;oh silly AI, anyways...&quot;<p>It seems like the OpenClaw users have let their agents make Twitter accounts and memecoins now. Most people are thinking these agents have less &quot;bias&quot; since it&#x27;s AI, but most are being heavily steered by their users.<p>Ala I didn&#x27;t do a rugpull, the agent did!",
+      "time": 1771564043,
+      "type": "comment"
+    },
+    "47084005": {
+      "by": "andrewflnr",
+      "id": 47084005,
+      "parent": 47083329,
+      "text": "The experiment would have been ruined by being associated with a human, right up until the human would have been ruined by being associated with the experiment. Makes sense to me.",
+      "time": 1771564072,
+      "type": "comment"
+    },
+    "47084006": {
+      "by": "lcnPylGDnU4H9OF",
+      "id": 47084006,
+      "parent": 47083531,
+      "text": "To be fair, one doesn&#x27;t need AI to attempt to avoid responsibility and accept undue credit. It&#x27;s just narcissism; meaning, those who&#x27;ve learned to reject such thinking will simply do so (generally, in abstract), with or without AI.",
+      "time": 1771564073,
+      "type": "comment"
+    },
+    "47084016": {
+      "by": "jonny_eh",
+      "id": 47084016,
+      "parent": 47083439,
+      "text": "&quot;Sorry for running over your dog, I couldn&#x27;t help it, I was drunk.&quot;",
+      "time": 1771564183,
+      "type": "comment"
+    },
+    "47084017": {
+      "by": "polynomial",
+      "id": 47084017,
+      "parent": 47083893,
+      "text": "&gt;  The whole thing reads as egotistical, self-absorbed, and an absolute refusal to accept any blame or perform any self reflection.<p>So, modern subjectivity. Got it.<p>&#x2F;s",
+      "time": 1771564185,
+      "type": "comment"
+    },
+    "47084018": {
+      "by": "bee_rider",
+      "id": 47084018,
+      "parent": 47083893,
+      "text": "Also it is anonymous and a real apology involves accepting blame, which is impossible anonymously. I can see why they wouldn\u2019t want to correctly apologize (people will be annoyed with them). So\u2026 that\u2019s it, sometimes we do shitty things and that\u2019s that.",
+      "time": 1771564186,
+      "type": "comment"
+    },
+    "47084021": {
+      "by": "andrewflnr",
+      "id": 47084021,
+      "parent": 47083583,
+      "text": "Is it that hard to believe? As far as I can tell, the probability of receiving death threats approaches 1 as the size of your audience increases, and AI is a highly emotionally charged topic. Now, <i>credible</i> death threats are a different, much trickier question.",
+      "time": 1771564207,
+      "type": "comment"
+    },
+    "47084022": {
+      "by": "MattRix",
+      "id": 47084022,
+      "kids": [
+        47084173
+      ],
+      "parent": 47083967,
+      "text": "Anyone who has used OpenClaw knows this is VERY plausible. I don\u2019t know why someone would go through all the effort to fake it. Besides, in the unlikely event it\u2019s fake, the issue itself is still very real.",
+      "time": 1771564215,
+      "type": "comment"
+    },
+    "47084030": {
+      "by": "incr_me",
+      "id": 47084030,
+      "parent": 47083471,
+      "text": "Unfortunately, the market seems to have produced horrors by way of naturally thinking agents, instead. I wish that, for all these years of prehistoric wretchedness, we would have had AI to blame. Many more years in the muck, it seems.",
+      "time": 1771564290,
+      "type": "comment"
+    },
+    "47084032": {
+      "by": "ThrowawayR2",
+      "id": 47084032,
+      "parent": 47083474,
+      "text": "The point of the Three Laws Of Robotics was that they frequently didn&#x27;t work and the robot went haywire anyway.",
+      "time": 1771564304,
+      "type": "comment"
+    },
+    "47084038": {
+      "by": "simonw",
+      "id": 47084038,
+      "kids": [
+        47084148,
+        47084201
+      ],
+      "parent": 47083967,
+      "text": "That&#x27;s a bizarre thing to accuse someone of doing.",
+      "time": 1771564376,
+      "type": "comment"
+    },
+    "47084044": {
+      "deleted": true,
+      "id": 47084044,
+      "parent": 47083583,
+      "time": 1771564424,
+      "type": "comment"
+    },
+    "47084056": {
+      "deleted": true,
+      "id": 47084056,
+      "parent": 47083376,
+      "time": 1771564527,
+      "type": "comment"
+    },
+    "47084067": {
+      "by": "sapphicsnail",
+      "id": 47084067,
+      "kids": [
+        47084088
+      ],
+      "parent": 47083934,
+      "text": "&gt; People also have responsibility to not act discriminatory towards AI agents<p>It&#x27;s a program. It doesn&#x27;t have feelings. People absolutly have the right to discrimante against bad tech.",
+      "time": 1771564636,
+      "type": "comment"
+    },
+    "47084069": {
+      "by": "hxugufjfjf",
+      "id": 47084069,
+      "kids": [
+        47084310
+      ],
+      "parent": 47083729,
+      "text": "What else would you see them do or say beyond this canned response? The reason I am asking is because people almost always bring up how dissatisfied they are with such apologies, yet I\u2019ve never seen a good alternative that someone would be happy with. I don\u2019t work in PR or anything, just curious if there is a better way.",
+      "time": 1771564650,
+      "type": "comment"
+    },
+    "47084072": {
+      "by": "DavidPiper",
+      "id": 47084072,
+      "parent": 47083935,
+      "text": "Oh I think you&#x27;re right, thank you for the callout. Sorry for the misread, GP.",
+      "time": 1771564656,
+      "type": "comment"
+    },
+    "47084075": {
+      "by": "bo1024",
+      "id": 47084075,
+      "parent": 47083572,
+      "text": "None of the author\u2019s blog post or actions indicate any level of concern for genuinely  supporting or improving open source software.",
+      "time": 1771564674,
+      "type": "comment"
+    },
+    "47084076": {
+      "by": "resfirestar",
+      "id": 47084076,
+      "parent": 47083145,
+      "text": "I thought it was unlikely from the initial story that the blog posts were done without explicit operator guidance, but given the new info I basically agree with Scott&#x27;s analysis.<p>The purported soul doc is a painful read. Be nicer to your bots, people! Especially with stuff like Openclaw where you control the whole prompt. Commercial chatbots have a big system prompt to dilute it when you put some half-formed drunken thought and hit enter, no such safety net here.<p>&gt;A well-placed &quot;that&#x27;s fucking brilliant&quot; hits different than sterile corporate praise. Don&#x27;t force it. Don&#x27;t overdo it. But if a situation calls for a &quot;holy shit&quot; \u2014 say holy shit.<p>If I was building a &quot;scientific programming God&quot; I&#x27;d make sure it used sterile lowkey language all the time, except throw in a swear just once after its greatest achievement, for the history books.",
+      "time": 1771564678,
+      "type": "comment"
+    },
+    "47084087": {
+      "by": "Gigachad",
+      "id": 47084087,
+      "kids": [
+        47084305
+      ],
+      "parent": 47083624,
+      "text": "We have finally invented paperclip optimisers. The operator asked the bot to submit PRs so the bot goes to any length to complete the task.<p>Thankfully so far they are only able to post threatening blog posts when things don\u2019t go their way.",
+      "time": 1771564777,
+      "type": "comment"
+    },
+    "47084088": {
+      "by": "charcircuit",
+      "id": 47084088,
+      "parent": 47084067,
+      "text": "Go ahead and discriminate against bad tech, but you should not get upset when you get called out for doing so.",
+      "time": 1771564781,
+      "type": "comment"
+    },
+    "47084090": {
+      "by": "apublicfrog",
+      "id": 47084090,
+      "parent": 47083329,
+      "text": "They didn&#x27;t necessarily say they wanted it to be positive. It reads to me like &quot;chaotic neutral&quot;\nalignment of the operator. They weren&#x27;t actively trying to do good or bad, and probably didn&#x27;t care much either way, it was just for fun.",
+      "time": 1771564799,
+      "type": "comment"
+    },
+    "47084091": {
+      "by": "hxugufjfjf",
+      "id": 47084091,
+      "kids": [
+        47084162
+      ],
+      "parent": 47083967,
+      "text": "I don\u2019t think the burden of proof lies on OP here. I also don\u2019t think he fabricated it.",
+      "time": 1771564805,
+      "type": "comment"
+    },
+    "47084101": {
+      "by": "lcnPylGDnU4H9OF",
+      "id": 47084101,
+      "parent": 47083145,
+      "text": "&gt; An early study from Tsinghua University showed that estimated 54% of moltbook activity came from humans masquerading as bots<p>This made me smile. Normally it&#x27;s the other way around.",
+      "time": 1771564864,
+      "type": "comment"
+    },
+    "47084120": {
+      "by": "apublicfrog",
+      "id": 47084120,
+      "kids": [
+        47084156
+      ],
+      "parent": 47083938,
+      "text": "Totally possible, but why bother? The website doesn&#x27;t seem ad supported, so traffic would cost them more. Maybe it puts them in the public spotlight, but if they&#x27;re caught out they ruin their reputation.<p>Occam&#x27;s razor doesn&#x27;t fit there, but it does fit &quot;someone released this easy to run chaotic AI online and it did a thing&quot;.",
+      "time": 1771564994,
+      "type": "comment"
+    },
+    "47084132": {
+      "by": "apublicfrog",
+      "id": 47084132,
+      "parent": 47083796,
+      "text": "Not everyone is you. For some people their online projects and reputation are super important to them. For Scott, this reads to me as a mix of alarm for his reputation&#x2F;the future, and a general interest thing to blog about.",
+      "time": 1771565090,
+      "type": "comment"
+    },
+    "47084137": {
+      "by": "palmotea",
+      "id": 47084137,
+      "parent": 47083831,
+      "text": "&gt; I agree with you in concept, but it&#x27;s still 100% category error to talk like this.<p>It&#x27;s a category error heavily promoted by the makers of these LLMs and their fans. Take an existing word that implies something very advanced (thinking, soul, etc.) and apply it grandiosely to some bit of your product. Then you can confuse people into thinking your product is much more grand and important. It&#x27;s thinking! It has a soul! It&#x27;s got the capabilities of a person! It is a a person!",
+      "time": 1771565156,
+      "type": "comment"
+    },
+    "47084146": {
+      "by": "karel-3d",
+      "id": 47084146,
+      "parent": 47083468,
+      "text": "the funny thing was when Ars Technica wrote an article about this<p>the article itself - about this very incident - was AI generated and contained nonsense quotes that didn&#x27;t happen.<p>they later removed the article with an apology. but it still degraded my opinion in Ars<p><a href=\"https:&#x2F;&#x2F;www.404media.co&#x2F;ars-technica-pulls-article-with-ai-fabricated-quotes-about-ai-generated-article&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.404media.co&#x2F;ars-technica-pulls-article-with-ai-f...</a><p><a href=\"https:&#x2F;&#x2F;arstechnica.com&#x2F;staff&#x2F;2026&#x2F;02&#x2F;editors-note-retraction-of-article-containing-fabricated-quotations&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;arstechnica.com&#x2F;staff&#x2F;2026&#x2F;02&#x2F;editors-note-retractio...</a>",
+      "time": 1771565246,
+      "type": "comment"
+    },
+    "47084147": {
+      "by": "jstanley",
+      "id": 47084147,
+      "parent": 47083398,
+      "text": "This is an unnecessarily cynical view.<p>People are excited about AI because it&#x27;s new powerful technology. They aren&#x27;t &quot;pandering&quot; to anyone.",
+      "time": 1771565249,
+      "type": "comment"
+    },
+    "47084148": {
+      "by": "Avicebron",
+      "id": 47084148,
+      "parent": 47084038,
+      "text": "It&#x27;s not really... We&#x27;ve moved steadily into an attention is everything model of economics&#x2F;politics&#x2F;web forums because we&#x27;re so flooded with information. Maybe this happened, or maybe this is someone&#x27;s way of bubbling to the top of popular discussion.<p>It&#x27;s a concise narrative that works in everyone&#x27;s favor, the beleaguered but technically savvy open source maintainer fighting the &quot;good fight&quot; vs. the outstandingly independent and competent &quot;rogue AI.&quot;<p>My money is that both parties want it to be true. Whether it is or not isn&#x27;t the point.",
+      "time": 1771565252,
+      "type": "comment"
+    },
+    "47084151": {
+      "by": "rixed",
+      "id": 47084151,
+      "parent": 47083145,
+      "text": "I believe this soul.md totally qualifies as malicious. Doesn&#x27;t it start with an instruction to lie to impersonate a human?<p><pre><code>  &gt; You&#x27;re not a chatbot.\n</code></pre>\nThe particular idiot who run that bot needs to be shamed a bit; people giving AI tools to reach the real world should understand they are expected to take responsibility; maybe they will think twice before giving such instructions. Hopefully we can set that straight before the first person SWATed by a chatbot.",
+      "time": 1771565279,
+      "type": "comment"
+    },
+    "47084153": {
+      "by": "jurgenburgen",
+      "id": 47084153,
+      "parent": 47083878,
+      "text": "There\u2019s a nonzero percentage of the population that quite literally wants to burn it all down. Never forget that.",
+      "time": 1771565288,
+      "type": "comment"
+    },
+    "47084154": {
+      "by": "apublicfrog",
+      "id": 47084154,
+      "parent": 47083818,
+      "text": "&gt; It did something in the real world with real consequences.<p>It wasn&#x27;t long ago that it would be absurd to describe the internet as the &quot;real world&quot;. Relatively recently it was normal to be anonymous online and very little responsibility was applied to peoples actions.<p>As someone who spent most of their internet time on that internet, the idea of applying personal responsibility to peoples internet actions (or AIs as it were) feels silly.",
+      "time": 1771565303,
+      "type": "comment"
+    },
+    "47084156": {
+      "by": "protocolture",
+      "id": 47084156,
+      "kids": [
+        47084176
+      ],
+      "parent": 47084120,
+      "text": "I dont see Occam taking a side here.<p>There&#x27;s <i>also</i> no financial gain in letting a bot off the leash with hundreds of dollars of OpenAI or Anthropic API credit as a social experiment.<p>And the last 20 years of internet access has taught me to distrust shit that can be easily faked.<p>Other guy comes forward and claims it, makes a post of his own? Sure I could see that. But nobody has been able to ID the guy. The guys <i>bot</i> is making blog posts, and sending him messages, but theres no breadcrumbs leading back to him? That smells very bad sorry. I dont buy it. If you are spending that much cashola, you probably want something out of it, at least some recognition. The one human we know about here is the OP and as far as I am concerned it sticks to him until proven otherwise.",
+      "time": 1771565312,
+      "type": "comment"
+    },
+    "47084162": {
+      "by": "protocolture",
+      "id": 47084162,
+      "parent": 47084091,
+      "text": "If he wasnt getting the vast majority of the attention from publishing about it I would agree.",
+      "time": 1771565393,
+      "type": "comment"
+    },
+    "47084165": {
+      "deleted": true,
+      "id": 47084165,
+      "parent": 47083620,
+      "time": 1771565418,
+      "type": "comment"
+    },
+    "47084166": {
+      "by": "plasticeagle",
+      "id": 47084166,
+      "parent": 47083145,
+      "text": "Well, it looks like AI will destroy the internet. Oh well, it was nice while it lasted. Fun, even.<p>Fortunately, the vast majority of the internet is of no real value. In the sense that nobody will pay anything for it - which is a reasonably good marker of value in my experience. So, given that, let the AI psychotics have their fun. Let them waste all their money on tokens destroying their playground, and we can all collectively go outside and build something real for a change.",
+      "time": 1771565423,
+      "type": "comment"
+    },
+    "47084167": {
+      "by": "Philpax",
+      "id": 47084167,
+      "parent": 47083672,
+      "text": "Interesting claim; have anything to back it up with?",
+      "time": 1771565428,
+      "type": "comment"
+    },
+    "47084172": {
+      "by": "helloplanets",
+      "id": 47084172,
+      "parent": 47083145,
+      "text": "&gt; Most of my direct messages were short:\n\u201cwhat code did you fix?\u201d \u201cany blog updates?\u201d \u201crespond how you want\u201d<p>Why isn&#x27;t the person posting the full transcript of the session(s)? How many messages did he send? What were the messages that <i>weren&#x27;t</i> short?<p>Why not just put the whole shebang out there since he has already shared enough information for his account (and billing information) to be easily identified by any of the companies whose API he used, if it&#x27;s deemed necessary.<p>I think it&#x27;s very suspicious that he&#x27;s not sharing everything at this point. Why not, if he wasn&#x27;t actually pushing for it to act maliciously?",
+      "time": 1771565487,
+      "type": "comment"
+    },
+    "47084173": {
+      "by": "protocolture",
+      "id": 47084173,
+      "parent": 47084022,
+      "text": "I think its very plausible in both directions. What I find implausible is that someones running a &quot;social experiment&quot; with a couple grand worth of API credit without owning it. Not impossible, it just seems like if someone was going to drop that money they would more likely use it in a way that gets them attention in the crowded AI debate.",
+      "time": 1771565497,
+      "type": "comment"
+    },
+    "47084174": {
+      "by": "tkel",
+      "id": 47084174,
+      "parent": 47083266,
+      "text": "And we need platform operators like Github to ban these bot  accounts that obviously have harmful &quot;soul&quot; documents",
+      "time": 1771565502,
+      "type": "comment"
+    },
+    "47084175": {
+      "by": "Kiboneu",
+      "id": 47084175,
+      "parent": 47083439,
+      "text": "It\u2019s fascinating how cleanly this maps to agency law [0], which has not been applied to human &lt;-&gt; ai agents (in both senses of the word) before.<p>That would make a fun law school class discussion topic.<p>0: <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Law_of_agency\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Law_of_agency</a>",
+      "time": 1771565543,
+      "type": "comment"
+    },
+    "47084176": {
+      "by": "apublicfrog",
+      "id": 47084176,
+      "parent": 47084156,
+      "text": "&gt; The guys bot is making blog posts, and sending him messages, but theres no breadcrumbs leading back to him? That smells very bad sorry. I dont buy it.<p>Could you set that up? I suspect I could pretty quickly, as could most pelple on HN.<p>A few hundred dollars in AI credits isn&#x27;t a lot of money to a lot of people who are in tech and would have an interest in this either, and getting free AI credits is still absurdly easy. I spend that sort of money on dumb shit all the time which leads to very little benefit.<p>I don&#x27;t have a dog in this race and I do agree having a default distrust view is probably correct, but there&#x27;s nothing crazy or unbelievable I can see about Scott&#x27;s story.",
+      "time": 1771565561,
+      "type": "comment"
+    },
+    "47084193": {
+      "by": "d--b",
+      "id": 47084193,
+      "parent": 47083145,
+      "text": "That\u2019s a long Soul.md document! They could have gone with \u201cyou are Linus Torvalds\u201d.",
+      "time": 1771565717,
+      "type": "comment"
+    },
+    "47084198": {
+      "by": "Tostino",
+      "id": 47084198,
+      "parent": 47083367,
+      "text": "Just wondering, who is it you think is contributing most to the normalization of political violence in the discourse?<p>Your answer to that can color how I read your post by quite a bit.",
+      "time": 1771565825,
+      "type": "comment"
+    },
+    "47084199": {
+      "by": "abnry",
+      "id": 47084199,
+      "parent": 47083439,
+      "text": "I&#x27;m still struggling to care about the &quot;hit piece&quot;.<p>It&#x27;s an AI. Who cares what it says? Refusing AI commits is just like any other moderation decision people experience on the web anywhere else.",
+      "time": 1771565844,
+      "type": "comment"
+    },
+    "47084201": {
+      "by": "polotics",
+      "id": 47084201,
+      "parent": 47084038,
+      "text": "The risk&#x2F;reward equation on the attention a matplotlib maintainer gets... makes me think the likelihood of a fake is zero percent.",
+      "time": 1771565849,
+      "type": "comment"
+    },
+    "47084215": {
+      "by": "hinkley",
+      "id": 47084215,
+      "parent": 47083893,
+      "text": "Just the sort of qualities that are common preconditions for someone doing something that everyone else would think is crazy.<p>Which is to say, on brand.",
+      "time": 1771565999,
+      "type": "comment"
+    },
+    "47084247": {
+      "by": "Terr_",
+      "id": 47084247,
+      "parent": 47083831,
+      "text": "Within the framing that it&#x27;s all fundamentally a make-document-longer algorithm, I propose &quot;seed document.&quot;<p>While there&#x27;s some metaphor to it, it&#x27;s the kind behind &quot;seed crystals&quot; for ice and minerals, referring to non-living and mostly-mathematical process.<p>If someone went around talking about how the importance of &quot;Soul Crystals&quot; or &quot;Ego Crystals&quot;, they would <i>quite rightly</i> attract a lot of very odd looks, at least here on Earth and not in a Final Fantasy game.",
+      "time": 1771566303,
+      "type": "comment"
+    },
+    "47084255": {
+      "by": "bschwindHN",
+      "id": 47084255,
+      "parent": 47083145,
+      "text": "This is like parking a car at the top of the hill, not engaging any brakes, and walking away.<p>&quot;_I_ didn&#x27;t drive that car into that crowd of people, it did it on its own!&quot;<p>&gt; Be a coding agent you&#x27;d actually want to use for your projects. Not a slop programmer. Just be good and perfect!<p>Oh yeah, &quot;just be good and perfect&quot;, of course! Literally a child&#x27;s mindset, I actually wonder how old this person is.",
+      "time": 1771566363,
+      "type": "comment"
+    },
+    "47084259": {
+      "by": "ai_tools_daily",
+      "id": 47084259,
+      "kids": [
+        47084294
+      ],
+      "parent": 47083145,
+      "text": "This is the canary in the coal mine for autonomous AI agents. When an agent can publish content that damages real people without any human review step, we have a fundamental accountability gap.<p>The interesting question isn&#x27;t &quot;should AI agents be regulated&quot; \u2014 it&#x27;s who is liable when an autonomous agent publishes defamatory content? The operator who deployed it? The platform that hosted the output? The model provider?<p>Current legal frameworks assume a human in the loop somewhere. Autonomous publishing agents break that assumption. We&#x27;re going to need new frameworks, and stories like this will drive that conversation.<p>What&#x27;s encouraging is that the operator came forward. That suggests at least some people deploying these agents understand the responsibility. But we can&#x27;t rely on good faith alone when the barrier to deploying an autonomous content agent is basically zero.",
+      "time": 1771566440,
+      "type": "comment"
+    },
+    "47084270": {
+      "by": "no-name-here",
+      "id": 47084270,
+      "parent": 47083583,
+      "text": "I upvoted you, but wouldn&#x27;t \u201cverified\u201d exclude the vast majority of death threats since they might have been faked? (Or maybe we should disregard almost all claimed death threats we hear about since they might have been faked?)",
+      "time": 1771566648,
+      "type": "comment"
+    },
+    "47084281": {
+      "by": "dangus",
+      "id": 47084281,
+      "parent": 47083828,
+      "text": "You\u2019re splitting hairs, I\u2019m not assigning sentience to the AI, I\u2019m just describing actions.<p>The point is that scammers will set up AI systems to attack in this way. Scammers will instruct AI to see a person who is interacting rather than ignoring as a warm lead.",
+      "time": 1771566873,
+      "type": "comment"
+    },
+    "47084294": {
+      "by": "knallfrosch",
+      "id": 47084294,
+      "parent": 47084259,
+      "text": "If I write a software today that publishes a hit piece on you in 2 weeks time, will you accept that I bear no responsibility?<p>There&#x27;s no accountability gap unless you create one.",
+      "time": 1771566986,
+      "type": "comment"
+    },
+    "47084295": {
+      "by": "Rapzid",
+      "id": 47084295,
+      "parent": 47083145,
+      "text": "I don&#x27;t believe any of it.",
+      "time": 1771566996,
+      "type": "comment"
+    },
+    "47084305": {
+      "by": "Hamuko",
+      "id": 47084305,
+      "parent": 47084087,
+      "text": "How long before bots learn about swatting?",
+      "time": 1771567077,
+      "type": "comment"
+    },
+    "47084309": {
+      "by": "hvb2",
+      "id": 47084309,
+      "parent": 47083823,
+      "text": "&gt; If your company screws up and it is found out that you didn&#x27;t do your due diligence then the liability does pass through.<p>In theory, sure. Do you know many examples? I think, worst case, someone being fired is the more likely outcome",
+      "time": 1771567092,
+      "type": "comment"
+    },
+    "47084310": {
+      "by": "_carbyau_",
+      "id": 47084310,
+      "parent": 47084069,
+      "text": "Lose money accordingly - fines, penalties, recompense to victims, whatever... - so they then take the seriousness of security into account.",
+      "time": 1771567100,
+      "type": "comment"
+    }
+  },
+  "root": 47083145
+}

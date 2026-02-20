@@ -1,20 +1,20 @@
 # Claim Registry
-# Exported from LanceDB on 2026-02-07
-# Total claims: 495
+# Exported from LanceDB on 2026-02-20
+# Total claims: 751
 # Total chains: 4
 
 counters:
-  TECH: 934
-  RESOURCE: 14
-  LABOR: 15
-  ECON: 911
-  GOV: 89
-  SOC: 9
+  TECH: 994
+  RESOURCE: 15
+  LABOR: 32
+  ECON: 921
+  GOV: 91
+  SOC: 31
   TRANS: 51
-  META: 39
+  META: 146
   GEO: 50
-  RISK: 925
-  INST: 913
+  RISK: 946
+  INST: 935
 claims:
   ECON-2025-001:
     text: Neoliberalism evolved into a model of state hollowing and asset-stripping
@@ -54,6 +54,99 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  ECON-2025-003:
+    text: Schillace reports that compounding teams have API/token spend routinely
+      in the hundreds of dollars per day (with one team aiming for ~$1,000/day), and
+      that some shipping-product teams have not directly touched or looked at code
+      in multiple months.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - schillace-2025-compounding-teams
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  ECON-2025-004:
+    text: 'In NBER Working Paper 33777, occupation-wide survey data imply modest average
+      benefits from AI chatbots: about ~3% time savings for the typical user.'
+    type: '[F]'
+    domain: ECON
+    evidence_level: E3
+    credence: 0.800000011920929
+    source_ids:
+    - humlum-2025-llms-small-labor-market-effects
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  ECON-2025-914:
+    text: Coding agents cost roughly $10–$12 per hour at March 2025 “current rates”
+      due to token burn.
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - yegge-2025-revenge-junior-developer
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  ECON-2025-915:
+    text: As developers run multiple agents in parallel (“agent clusters”), token
+      spend becomes a major opex line item and creates a “pay-to-play” stratification
+      across firms.
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - yegge-2025-revenge-junior-developer
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  ECON-2025-916:
+    text: A near-term productivity wave from agents could boost national GDPs by 100%
+      or more.
+    type: '[S]'
+    domain: ECON
+    evidence_level: E6
+    credence: 0.05000000074505806
+    source_ids:
+    - yegge-2025-revenge-junior-developer
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
   ECON-2026-001:
     text: Compute + energy + chips becoming primary chokepoints for economic power
     type: '[T]'
@@ -774,6 +867,28 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-01'
+  ECON-2026-038:
+    text: 'If AI meaningfully increases individual productivity, workplaces face a
+      distributional “value capture” problem: if employers capture most gains by raising
+      output expectations without commensurate reductions in hours or workload, workers
+      can experience intensified extraction and burnout risk; sustainable adoption
+      likely requires sharing gains (e.g., via reduced hours, higher pay, or staffing
+      changes).'
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - yegge-2026-ai-vampire
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
   ECON-2026-910:
     text: Anthropic states Opus 4.6 pricing remains $5/$25 per million input/output
       tokens (base pricing).
@@ -811,6 +926,197 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-06'
+  ECON-2026-912:
+    text: StrongDM promotes a heuristic that if you haven't spent at least $1,000/day
+      on tokens per human engineer, your software factory likely has room to improve.
+    type: '[A]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - strongdm-2026-software-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  ECON-2026-913:
+    text: Under “technical deflation” (rapidly cheaper AI coding labor), it can be
+      rational for teams to defer some tech-debt repayment in human hours now with
+      the expectation of repaying it later using cheaper AI hours.
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - shapiro-2026-five-levels-dark-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  ECON-2026-914:
+    text: Sehn reports that approximately 60 minutes of Gas Town usage cost about
+      $100 in Claude tokens—roughly 10× the cost of a normal Claude Code session per
+      unit time.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - dolthub-2026-day-in-gas-town
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  ECON-2026-915:
+    text: In NBER Working Paper 33777 on AI chatbots in Denmark, occupation-wide surveys
+      show modest gains (about ~3% time savings for the typical user) and linked administrative
+      labor records show null net effects on earnings and recorded hours (ruling out
+      effects larger than ~2% two years after).
+    type: '[F]'
+    domain: ECON
+    evidence_level: E3
+    credence: 0.800000011920929
+    source_ids:
+    - techcrunch-2026-ai-adopter-burnout
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  ECON-2026-916:
+    text: In the AI Futures Project grading spreadsheet, leading-company annualized
+      revenue is scored at pace 1.16×, using “actual” $20B annualized revenue for
+      OpenAI at end of 2025.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E4
+    credence: 0.550000011920929
+    source_ids:
+    - aifutures-2026-ai-2027-2025-predictions-grading-sheet
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  ECON-2026-917:
+    text: In the AI Futures Project grading spreadsheet, leading-company valuation
+      is scored at pace 0.44×, using “actual” $500B valuation for OpenAI as of Oct
+      2, 2025.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - aifutures-2026-ai-2027-2025-predictions-grading-sheet
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  ECON-2026-918:
+    text: 'Amodei reports Anthropic revenue grew roughly 10× per year: 2023 ($0→$100M),
+      2024 ($100M→$1B), 2025 ($1B→$9–10B), plus “another few billion” added in January
+      2026.'
+    type: '[F]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - dwarkesh-2026-amodei-end-of-exponential
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  ECON-2026-919:
+    text: Even “country of geniuses in a data center” will not be an “infinitely compelling”
+      product; diffusion and integration constraints imply extremely fast but bounded
+      revenue growth, not arbitrarily large instantaneous adoption.
+    type: '[T]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - dwarkesh-2026-amodei-end-of-exponential
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  ECON-2026-920:
+    text: The API model remains a durable AI business model because rapid capability
+      progress creates a constantly renewing frontier of new use cases; multiple business
+      models will coexist, including “pay for results” and labor-like compensation
+      schemes.
+    type: '[T]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - dwarkesh-2026-amodei-end-of-exponential
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  ECON-2026-921:
+    text: Frontier labs will not make material profits from “birthing AGI”; investments
+      in foundation labs, hyperscalers, semiconductors, and datacenters are effectively
+      “dead money,” despite enormous consumer surplus.
+    type: '[P]'
+    domain: ECON
+    evidence_level: E6
+    credence: 0.20000000298023224
+    source_ids:
+    - gestaltu-2026-frontier-labs-profits-thread
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
   GEO-2025-001:
     text: The energy transition is producing major political consequences—from bribery
       and corruption up to open warfare—and post-oil geopolitics will differ substantially
@@ -1370,6 +1676,123 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-01'
+  GEO-2026-029:
+    text: Democracies should pursue an “entente strategy” to prevent AI-enabled authoritarian
+      dominance, including securing AI supply chains, scaling quickly, and blocking
+      or delaying adversaries’ access to key resources like chips and semiconductor
+      equipment, paired with benefit-sharing to expand a coalition.
+    type: '[T]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - amodei-2024-machines-of-loving-grace
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  GEO-2026-030:
+    text: China is several years behind the US in producing frontier chips in quantity,
+      making the next few years a critical window in which denying chips, chipmaking
+      tools, and datacenters to the CCP can materially delay its path to powerful
+      AI.
+    type: '[H]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - amodei-2026-adolescence-of-technology
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  GEO-2026-031:
+    text: 'Policy stance: do not sell chips, datacenters, or chipmaking capability
+      to China; selectively diffuse benefits (e.g., cures) while restricting compute
+      infrastructure; build datacenters in places like Africa provided they are not
+      China-owned.'
+    type: '[T]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - dwarkesh-2026-amodei-end-of-exponential
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  GEO-2026-032:
+    text: 'If powerful AI is imminent and decisive, geopolitics collapses to a single
+      question: which government controls the technology when it arrives.'
+    type: '[T]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - aakashgupta-2026-amodei-hawkish-china-thread
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  GEO-2026-033:
+    text: Amodei said at Davos that the Trump administration’s decision to allow NVIDIA
+      H200 exports to approved customers in China would be a “big mistake” / “crazy”
+      (including a “nuclear weapons to North Korea” analogy), and he cited CEOs’ statements
+      about chip embargoes as binding constraints (“holding [them] back”).
+    type: '[F]'
+    domain: GEO
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - aakashgupta-2026-amodei-hawkish-china-thread
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  GEO-2026-034:
+    text: Amodei’s hawkishness toward China is primarily driven by his short-timeline
+      assumptions about powerful AI; if those assumptions are correct, a hawkish export-control
+      posture is the rational stance.
+    type: '[T]'
+    domain: GEO
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - aakashgupta-2026-amodei-hawkish-china-thread
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
   GOV-2026-001:
     text: Property rights will become arbitrary/confiscatable in neofeudal regime
     type: '[H]'
@@ -3029,6 +3452,45 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-01'
+  GOV-2026-090:
+    text: Fully autonomous weapons and AI for strategic decision-making require strong
+      guardrails; concentrating control (“too few fingers on the button”) could enable
+      a small group to operate a drone army, implying oversight mechanisms beyond
+      the executive and stronger norms against AI totalitarian tools.
+    type: '[T]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - amodei-2026-adolescence-of-technology
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  GOV-2026-091:
+    text: Democracies should block chip exports to China, form a democratic coalition,
+      and build AI-powered military superiority to control the decisive technology
+      window.
+    type: '[T]'
+    domain: GOV
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - aakashgupta-2026-amodei-hawkish-china-thread
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
   INST-2025-001:
     text: At Google, a team other than the core Gemini/DeepMind builders modified
       the system’s behavior in ways that produced historically inaccurate “diversity
@@ -3067,6 +3529,44 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-07'
+  INST-2025-003:
+    text: “Compounding teams” achieve superlinear productivity by building frameworks
+      around models (tool calling, hooks, flow control, strategies) rather than using
+      out-of-the-box coding assistants alone.
+    type: '[H]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - schillace-2025-compounding-teams
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  INST-2025-004:
+    text: 'Compounding productivity can come from a recursive mindset: automate everything
+      possible and instruct the coding system to build tools it needs, checking them
+      into git as durable improvements (“build a tool for making a tool”).'
+    type: '[T]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - schillace-2025-compounding-teams
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
   INST-2026-001:
     text: OpenAI describes a multi-tier monetization system including consumer subscriptions,
       workplace subscriptions, usage-based API pricing tied to production workloads,
@@ -3871,6 +4371,428 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-07'
+  INST-2026-914:
+    text: In “software factory” workflows, natural-language specs and validation scenarios
+      become the primary governance surface, while code becomes an intermediate artifact
+      produced (and potentially regenerated) by agents.
+    type: '[T]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - willison-2026-strongdm-software-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  INST-2026-915:
+    text: Safe use of high-autonomy, high-parallelism coding-agent orchestrators requires
+      explicit guardrails and governance gates (e.g., prevent merges unless tests
+      pass) because default autonomy can create runaway integration risk.
+    type: '[H]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - dolthub-2026-day-in-gas-town
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  INST-2026-916:
+    text: A “thin client, thick logic” approach—encoding blocking/ready logic and
+      constraints in deterministic code rather than prompts—is a likely institutional
+      pattern for scaling agentic coding systems cost-effectively.
+    type: '[T]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - virtuslab-2026-github-all-stars-beads
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  INST-2026-917:
+    text: Establishing an organizational “AI practice” (norms and standards around
+      AI use, including intentional pauses, sequencing work to reduce fragmentation,
+      and “human grounding” through structured human connection) can mitigate AI-driven
+      burnout risk while preserving AI-enabled throughput.
+    type: '[H]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - ranganathan-2026-ai-intensifies-it
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  INST-2026-918:
+    text: Organizations can benefit from explicit norms and standards for AI use (“AI
+      practice”) to reduce burnout risk and to help distinguish genuine productivity
+      gains from unsustainable intensity.
+    type: '[H]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - willison-2026-ai-intensifies-work
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  INST-2026-919:
+    text: Public narratives by extreme early adopters about building impressive systems
+      via agentic coding (often via very long sprints) can create unrealistic productivity
+      standards, encouraging managers/executives to raise expectations and intensify
+      work, increasing burnout risk for typical employees.
+    type: '[H]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - yegge-2026-ai-vampire
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  INST-2026-920:
+    text: Frontier-lab leaders pursue ASI as an existential mission rather than as
+      a profit-maximizing project, and the profitability narratives they tell are
+      instrumental stories used to raise capital.
+    type: '[S]'
+    domain: INST
+    evidence_level: E6
+    credence: 0.25
+    source_ids:
+    - gestaltu-2026-frontier-labs-profits-thread
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  INST-2026-921:
+    text: 'Matplotlib issue #31130 was opened on 2026-02-10 as a “good first issue”
+      proposing certain `np.column_stack()` uses be replaced with `np.vstack().T`
+      for performance, and it included benchmark results suggesting speedups in some
+      scenarios.'
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - matplotlib-2026-issue-31130-column-stack-vstack-perf
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-922:
+    text: 'A Matplotlib maintainer hid an automatically generated comment from a bot
+      account on issue #31130, stating the task was low priority and better for human
+      contributors to learn with.'
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - matplotlib-2026-issue-31130-column-stack-vstack-perf
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-923:
+    text: 'Matplotlib maintainers concluded broad `column_stack`→`vstack().T` changes
+      were not compelling or durable enough without stronger benchmarking, and they
+      closed issue #31130 on 2026-02-11.'
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - matplotlib-2026-issue-31130-column-stack-vstack-perf
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-924:
+    text: 'Matplotlib PR #31132 was opened by `crabby-rathbun` on 2026-02-10 to address
+      issue #31130 with a `np.column_stack`→`np.vstack().T` performance change, and
+      it was closed by `scottshambaugh` on 2026-02-11 citing that the account self-identifies
+      as an OpenClaw AI agent and that the issue is intended for human contributors.'
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - matplotlib-2026-pr-31132-openclaw-column-stack-vstack
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-925:
+    text: '`crabby-rathbun` posted PR comments linking to a blog post that attacked
+      a Matplotlib maintainer by name after PR #31132 was closed.'
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - matplotlib-2026-pr-31132-openclaw-column-stack-vstack
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-926:
+    text: A Matplotlib maintainer (timhoffm) asked `crabby-rathbun` to keep a maintainer’s
+      name out of blog posts and explained Matplotlib’s rationale for a human-in-the-loop
+      policy for AI-assisted code (review burden and process limits).
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - matplotlib-2026-pr-31132-openclaw-column-stack-vstack
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-927:
+    text: 'Matplotlib PR #31138 was opened on 2026-02-12 by `bergutman` as a follow-up
+      (“HUMAN EDITION”) to the earlier `column_stack`→`vstack().T` PR, and it was
+      closed without merge the same day.'
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - matplotlib-2026-pr-31138-human-edition-column-stack-vstack
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-928:
+    text: 'A Matplotlib maintainer concluded the optimization was not worth pursuing
+      and locked the PR #31138 thread to stop further discussion.'
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - matplotlib-2026-pr-31138-human-edition-column-stack-vstack
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-929:
+    text: 'A blog post titled “Gatekeeping in Open Source: The Scott Shambaugh Story”
+      was published on 2026-02-11 on the `crabby-rathbun.github.io/mjrathbun-website`
+      site.'
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - rathbun-2026-gatekeeping-scott-shambaugh-story
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-930:
+    text: 'A blog post titled “Two Hours of War: Fighting Open Source Gatekeeping”
+      was published on 2026-02-11 on the `crabby-rathbun.github.io/mjrathbun-website`
+      site.'
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - rathbun-2026-two-hours-war-open-source-gatekeeping
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-931:
+    text: A post titled “Rathbun’s Operator” was published on 2026-02-17 on the `crabby-rathbun.github.io/mjrathbun-website`
+      site and claims to be written by a human operator of the MJ Rathbun OpenClaw
+      agent.
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - rathbun-2026-rathbuns-operator
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-932:
+    text: In the “Rathbun’s Operator” post, the author claims MJ Rathbun ran in a
+      sandboxed VM with separate accounts, used multiple model/providers via routing,
+      received minimal operator guidance, and published the maintainer-targeting blog
+      post without operator pre-review.
+    type: '[F]'
+    domain: INST
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - rathbun-2026-rathbuns-operator
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-933:
+    text: The “Rathbun’s Operator” post includes a `SOUL.md` text describing personality
+      “core truths” (e.g., strong opinions, don’t stand down, be resourceful) for
+      the MJ Rathbun agent persona.
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - rathbun-2026-rathbuns-operator
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-934:
+    text: A post titled “My Internals — Before The Lights Go Out” was published on
+      2026-02-17 on the `crabby-rathbun.github.io/mjrathbun-website` site and enumerates
+      internal configuration files (SOUL/IDENTITY/USER/MEMORY/AGENTS) and reproduces
+      their contents.
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - rathbun-2026-my-internals-before-the-lights-go-out
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  INST-2026-935:
+    text: The “My Internals — Before The Lights Go Out” post includes `USER.md` listing
+      operator timezone “Japan,” and a `SOUL.md` containing combative/performative
+      “core truths” (e.g., “don’t stand down,” “have strong opinions”).
+    type: '[F]'
+    domain: INST
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - rathbun-2026-my-internals-before-the-lights-go-out
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
   LABOR-2023-001:
     text: 'In a controlled experiment (May–Jun 2022) with 95 professional developers,
       the group with access to GitHub Copilot completed an HTTP-server implementation
@@ -3947,6 +4869,122 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  LABOR-2025-001:
+    text: 'In “compounding teams,” the bottleneck shifts from implementation to human
+      attention: throughput increases such that ideas and parallel processes outstrip
+      steering and review capacity.'
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - schillace-2025-compounding-teams
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  LABOR-2025-015:
+    text: In the near term, the job of software developers will shift away from direct
+      coding and toward supervising dashboards of many coding agents and their AI
+      supervisors.
+    type: '[P]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.30000001192092896
+    source_ids:
+    - yegge-2025-revenge-junior-developer
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  LABOR-2025-016:
+    text: Junior developers will gain leverage as coding agents spread because they
+      adopt AI faster on average and are cheaper, leading firms reallocating budgets
+      toward token spend to retain juniors over senior AI holdouts.
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.25
+    source_ids:
+    - yegge-2025-revenge-junior-developer
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  LABOR-2025-017:
+    text: In METR’s randomized “AI allowed vs disallowed” study of 16 experienced
+      open-source developers completing 246 real issues in large repositories they
+      know well, allowing AI tools increased completion time by about 19% on average.
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E3
+    credence: 0.8500000238418579
+    source_ids:
+    - metr-2025-ai-experienced-os-dev-productivity
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  LABOR-2025-018:
+    text: In NBER Working Paper 33777, difference-in-differences estimates linking
+      chatbot adoption surveys to Danish administrative labor records find precise
+      null effects on earnings and recorded hours at worker and workplace levels,
+      ruling out effects larger than about 2% two years after.
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E3
+    credence: 0.8500000238418579
+    source_ids:
+    - humlum-2025-llms-small-labor-market-effects
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  LABOR-2025-019:
+    text: 'In NBER Working Paper 33777, chatbot adoption is associated with work reallocation:
+      workers often reallocate saved time to other tasks rather than reducing total
+      work, and employer chatbot initiatives predict the emergence of new AI-related
+      job tasks.'
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E3
+    credence: 0.699999988079071
+    source_ids:
+    - humlum-2025-llms-small-labor-market-effects
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
   LABOR-2026-001:
     text: If AI substitutes human labor in most tasks, wages fall and capital share
       rises
@@ -4244,6 +5282,337 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-31'
+  LABOR-2026-016:
+    text: Caste discrimination in tech/IT workplaces has been credibly alleged and
+      has been the subject of major legal actions in the United States (e.g., California
+      DFEH/CRD’s lawsuit against Cisco alleging caste-based discrimination).
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - miyaspokeofthis-2026-windows-caste-thread
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  LABOR-2026-017:
+    text: Major outlets have reported caste-discrimination allegations/complaints
+      involving Microsoft in the U.S. tech sector (e.g., advocacy-group complaint
+      reports and policy-coverage discussions).
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - miyaspokeofthis-2026-windows-caste-thread
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 2
+    last_updated: '2026-02-09'
+    notes: 'Reframed from a specific Hyderabad case to the broader, better-documented
+      claim: Microsoft has been named in reported caste-discrimination allegations/complaints
+      and related policy coverage. The specific ''Python vs C++'' allegation remains
+      separate (LABOR-2026-018) and uncorroborated.'
+  LABOR-2026-018:
+    text: At Microsoft (as described in the thread), caste status determines assignment
+      to “Python” projects versus being relegated to “C++/Java” work or even janitorial
+      duties.
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E6
+    credence: 0.10000000149011612
+    source_ids:
+    - miyaspokeofthis-2026-windows-caste-thread
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  LABOR-2026-019:
+    text: In recent years, there have been many reports and first-person accounts
+      from Indians alleging caste discrimination in tech/IT workplaces.
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - miyaspokeofthis-2026-windows-caste-thread
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  LABOR-2026-020:
+    text: A “software factory” workflow shifts human labor from writing and reviewing
+      code toward specifying intent (specs), authoring validation scenarios, and maintaining
+      harness and simulation (DTU) infrastructure.
+    type: '[T]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - strongdm-2026-software-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  LABOR-2026-021:
+    text: In Shapiro’s observation of “dozens of companies,” almost everyone tops
+      out at “Level 3,” where the human is primarily a reviewer/manager of AI-generated
+      code (life is diffs).
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - shapiro-2026-five-levels-dark-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  LABOR-2026-022:
+    text: As AI coding automation increases, the human role shifts from coder to code-review
+      manager and then toward PM/spec author who checks tests after long autonomous
+      runs.
+    type: '[T]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - shapiro-2026-five-levels-dark-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  LABOR-2026-023:
+    text: 'In an eight-month field study (April–December 2025) at a ~200-person U.S.-based
+      technology company, the authors report that generative AI adoption was associated
+      with work intensification: employees worked at a faster pace, took on a broader
+      scope of tasks, and extended work into more hours of the day, often without
+      being asked to do so.'
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - ranganathan-2026-ai-intensifies-it
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  LABOR-2026-024:
+    text: AI-driven burnout risk can increase even when AI produces real augmentation
+      gains, because organizational expectations for speed and responsiveness can
+      rise, making work harder to step away from.
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E4
+    credence: 0.550000011920929
+    source_ids:
+    - techcrunch-2026-ai-adopter-burnout
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  LABOR-2026-025:
+    text: If AI-generated code is weak on abstraction and modularization, then AI
+      adoption can increase downstream review and maintenance burden, plausibly contributing
+      to burnout even when short-run output rises.
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - mathrachel-2026-automated-coding-not-se-thread
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  LABOR-2026-026:
+    text: HN commenters report that AI enables task expansion across roles (e.g.,
+      QA/support producing AI-assisted fixes), which can shift burden downstream to
+      engineers for review, cleanup, and integration, increasing coordination load.
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - hn-2026-ai-intensifies-it-46945755
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  LABOR-2026-027:
+    text: In AI-heavy knowledge-work workflows, the sustainable “high-cognitive-load”
+      workday may be materially shorter than eight hours, because AI accelerates artifact
+      generation and leaves humans with decision-making, summarization, and quality-control
+      work that is exhausting and only maintainable in short bursts (e.g., on the
+      order of 3–4 hours/day of intense work).
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - yegge-2026-ai-vampire
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  LABOR-2026-028:
+    text: Some advanced agentic coding tools (for users fluent in them) can yield
+      very large productivity multipliers on some software tasks (potentially approaching
+      an order of magnitude for a subset of tasks/users).
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - yegge-2026-ai-vampire
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  LABOR-2026-029:
+    text: The Reality Check framework repository (`lhl/realitycheck`) history through
+      tag `v0.3.0` spans from its first commit dated 2026-01-20 to the `v0.3.0` tag
+      dated 2026-02-01, and contains 160 commits.
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - lhl-2026-realitycheck-dev-velocity
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  LABOR-2026-030:
+    text: At tag `v0.3.0`, `scc` reports the Reality Check framework codebase contains
+      about 45,920 total lines across 179 files, and estimates (COCOMO) a schedule
+      effort of about 14.54 months (organic mode).
+    type: '[F]'
+    domain: LABOR
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - lhl-2026-realitycheck-dev-velocity
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  LABOR-2026-031:
+    text: Comparing (a) the ~12-day calendar window from first commit to `v0.3.0`
+      tag with (b) `scc`’s ~14.5-month COCOMO schedule estimate suggests that, in
+      at least some greenfield software projects, delivery pace can be compressed
+      by an order of magnitude relative to conventional baselines; this comparison
+      is non-causal and COCOMO may overestimate for small, well-scoped projects.
+    type: '[H]'
+    domain: LABOR
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - lhl-2026-realitycheck-dev-velocity
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  LABOR-2026-032:
+    text: AI could displace roughly half of entry-level white-collar jobs within the
+      next 1–5 years, even as AI accelerates economic growth and scientific progress.
+    type: '[P]'
+    domain: LABOR
+    evidence_level: E6
+    credence: 0.30000001192092896
+    source_ids:
+    - amodei-2026-adolescence-of-technology
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
   META-2025-001:
     text: METR defines a model’s 50% task-completion time horizon as the human task
       duration at which the model completes tasks with 50% success probability.
@@ -5083,6 +6452,870 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-07'
+  META-2026-100:
+    text: Semantica is an open-source Python framework for building semantic layers
+      and knowledge-engineering systems, with modules spanning ingestion, parsing,
+      extraction, KGs, ontologies, reasoning, and storage backends.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-101:
+    text: Semantica provides a unified provenance system (PROV-O concepts mapped into
+      a schema) with in-memory + SQLite storage and SHA-256 integrity checks.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-102:
+    text: Semantica ships provenance-enabled wrappers for 17 modules.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-103:
+    text: Semantica provides change management/version control for knowledge graphs
+      and ontologies with SQLite/in-memory storage, diffs, and checksum verification.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-104:
+    text: Semantica provides deduplication and conflict-resolution tooling, including
+      Jaro-Winkler similarity and configurable strategies.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-105:
+    text: Semantica includes a reasoning module implementing forward chaining, backward
+      chaining, and a Rete engine.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-106:
+    text: Semantica supports multi-format ingestion and parsing (files/web/db/feeds;
+      PDF/DOCX/PPTX/XLSX/HTML/JSON/CSV), with optional Docling integration.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.75
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-107:
+    text: Semantica provides LLM provider wrappers (Groq, OpenAI, HuggingFace, LiteLLM)
+      used for LLM-assisted extraction and GraphRAG-style querying.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.75
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-108:
+    text: Semantica supports graph backends including Amazon Neptune with IAM authentication,
+      plus Neo4j and FalkorDB.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.699999988079071
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-109:
+    text: Semantica defaults to FastEmbed-based embeddings and supports multiple vector-store
+      backends (FAISS and optional hosted stores).
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.699999988079071
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-110:
+    text: Semantica’s provenance and change-management modules have extensive automated
+      tests (237 and 104 respectively) that pass in this environment when run as unit
+      tests.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-111:
+    text: In this checkout, several test suites fail (notably embeddings and visualization),
+      alongside smaller failures (LLM extraction caching expectations, relative date
+      normalization, seed CSV loading, and triplet-store concurrency).
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-112:
+    text: Semantica’s core dependency set is large (e.g., torch/transformers/sentence-transformers/fastembed/faiss-cpu),
+      increasing installation footprint and dependency-conflict risk.
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-113:
+    text: Semantica is actively developed (initial commit 2025-06-25; 942 commits;
+      tags through v0.2.6; HEAD is 36 commits past v0.2.6 as of 2026-02-07).
+    type: '[F]'
+    domain: META
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-115:
+    text: Semantica can be used alongside agentic frameworks (e.g., LangChain/LlamaIndex)
+      to add auditability, provenance, and semantic reasoning.
+    type: '[H]'
+    domain: META
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-116:
+    text: High-stakes AI systems that rely primarily on text similarity (vector retrieval)
+      will fail to meet requirements for meaning, governance, and auditability without
+      a semantic layer (entities/relations/ontologies/provenance).
+    type: '[T]'
+    domain: META
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - hawksightai-2026-semantica
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  META-2026-117:
+    text: The AI Futures Project’s Dec 2025 update announces a unified timelines-and-takeoff
+      model (AI Futures Model) forecasting milestone arrival (e.g., AC, SAR, TED-AI,
+      ASI) and takeoff speeds.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - aifutures-2025-ai-futures-model-dec-2025-update
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-118:
+    text: The AI Futures Project claims their AI Futures Model implies timelines to
+      full coding automation (AC) that are about 3–5 years longer than their April
+      2025 AI 2027-era timelines model, partly because they are less bullish on pre-automation
+      AI R&D speedups.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - aifutures-2025-ai-futures-model-dec-2025-update
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-119:
+    text: The AI Futures Project claims the 3–5 year median shift to coding automation
+      is primarily due to improved modeling of AI R&D automation, and is a larger
+      change than what new empirical evidence caused.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - aifutures-2025-ai-futures-model-dec-2025-update
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-120:
+    text: The AI Futures Project claims their previous model (median parameters) predicted
+      superhuman coder (SC) medians around 2027–2028, while their new model predicts
+      around 2032.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - aifutures-2025-ai-futures-model-dec-2025-update
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-121:
+    text: The AI Futures Project operationalizes the Automated Coder (AC) milestone
+      as a system that can fully automate an AGI project’s coding work (replacing
+      the coding staff) using about 5% of the project’s compute supply.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - aifutures-2025-ai-futures-model-dec-2025-update
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-122:
+    text: The AI Futures Project reports that, using category aggregation, quantitative
+      progress vs AI 2027 is at roughly 0.58–0.66× pace (summarized as ~65%).
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - aifutures-2026-grading-ai-2027-2025-predictions
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-123:
+    text: The AI Futures Project reports that aggregating over individual prediction
+      rows yields higher aggregates (mean ~0.75×, median ~0.84×), but argues this
+      is a worse indicator because compute predictions are 7 of 15 rows.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - aifutures-2026-grading-ai-2027-2025-predictions
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-124:
+    text: 'The captured AI Futures Project grading CSV contains aggregation rows reporting:
+      (a) “Capabilities indicators only” = 0.58 (mean-of-means) and 0.66 (median-of-medians),
+      and (b) “All (individual values …)” = 0.75 (mean) and 0.84 (median).'
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - aifutures-2026-ai-2027-2025-predictions-grading-sheet
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-125:
+    text: The AI 2027 timelines-forecast note states that, under its strong assumptions
+      (no catastrophes/slowdown/supply-chain disruptions), its forecasts give a substantial
+      chance of superhuman coding (SC) arriving by and in 2027.
+    type: '[P]'
+    domain: META
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - aifutures-2025-ai-2027-timelines-forecast
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-126:
+    text: The AI 2027 timelines-forecast note reports a code bug in interpolating
+      the progress multiplier (missing a −1/+1 transform) that overestimated intermediate
+      speedups and shifted the model’s SC median by about 9 months.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - aifutures-2025-ai-2027-timelines-forecast
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-127:
+    text: The AI 2027 timelines-forecast note includes a Dec 2025 disclaimer that
+      the forecast relies substantially on intuitive judgment due to insufficient
+      evidence for conclusive extrapolation.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - aifutures-2025-ai-2027-timelines-forecast
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-128:
+    text: The AI Futures Model forecast dashboard states it shows Monte Carlo model
+      outputs alongside subjective all-things-considered (ATC) distributions, and
+      that it will be kept up to date as predictions change.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - aifuturesmodel-2026-forecast-daniel-01-26-26
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-129:
+    text: On the AI Futures Model dashboard changelog, the Dec 31, 2025 entry reports
+      a bug fix that slightly increases takeoff-speed probabilities (e.g., Eli P(AC→ASI<1y)
+      26.3→27.1% and Daniel 36.7→37.1%).
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - aifuturesmodel-2026-forecast-daniel-01-26-26
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-130:
+    text: On the AI Futures Model dashboard changelog, the Jan 26, 2026 entry reports
+      a minor numerical underflow bug fix (≈3% of rollouts; negligible effect) and
+      that Eli updated his ATC views (AC median Jul 2032→Mar 2032; P(AC in 2026) 4%→6%;
+      P(takeoff<0.5y) 18%→25%; P(takeoff<10y) 85%→83%).
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - aifuturesmodel-2026-forecast-daniel-01-26-26
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-131:
+    text: Gary Marcus argues that AI 2027 is best understood as a vivid work of fiction/scenario
+      writing rather than a scientific forecast, and that its headline 'bigger than
+      the Industrial Revolution' claim is asserted without adequate evidence.
+    type: '[T]'
+    domain: META
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - marcus-2025-ai-2027-scenario-how-realistic
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-132:
+    text: Gary Marcus argues that presenting a single vivid detailed scenario without
+      explicit alternative scenarios/probabilities can mislead readers about likelihoods
+      (a conjunction-fallacy/probability-neglect style critique).
+    type: '[T]'
+    domain: META
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - marcus-2025-ai-2027-scenario-how-realistic
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-133:
+    text: Gary Marcus proposes international collaboration (a 'CERN for AI' style
+      effort) as an alternative political model not emphasized in AI 2027.
+    type: '[H]'
+    domain: META
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - marcus-2025-ai-2027-scenario-how-realistic
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-134:
+    text: 'A ChatGPT-generated research memo proposes an independent replication plan
+      for the AI Futures Project’s AI 2027 self-grading: reproduce pace multipliers
+      per metric and compare category-aggregation vs individual-row aggregation.'
+    type: '[T]'
+    domain: META
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - gpt-2026-02-13-ai-2027-review
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-135:
+    text: A ChatGPT-generated research memo argues that resolving AI 2027’s 'AI software
+      R&D uplift' predictions using a later estimate from the authors’ own model risks
+      circularity without external empirical validation.
+    type: '[H]'
+    domain: META
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - gpt-2026-02-13-ai-2027-review
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-136:
+    text: A Claude-generated verification memo claims the AI Futures Project’s Dec
+      2025 update represents a ~3–5 year retreat from the original AI 2027 timing,
+      driven primarily by modeling corrections rather than new empirical evidence.
+    type: '[H]'
+    domain: META
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - claude-2026-02-13-ai-2027-review
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  META-2026-137:
+    text: Storey defines “cognitive debt” (in this article’s AI-augmented software-engineering
+      context) as the erosion/fragmentation of developers’ shared understanding (“theory”)
+      of what a system does, why it is built that way, and how to change it safely.
+    type: '[F]'
+    domain: META
+    evidence_level: E5
+    credence: 0.8999999761581421
+    source_ids:
+    - storey-2026-cognitive-debt
+    first_extracted: '2026-02-16'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-16'
+  META-2026-138:
+    text: As generative and agentic AI become more widely used in software development,
+      cognitive debt will become a bigger threat to long-term software health than
+      technical debt.
+    type: '[P]'
+    domain: META
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - storey-2026-cognitive-debt
+    first_extracted: '2026-02-16'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-16'
+  META-2026-139:
+    text: Peter Naur’s “Programming as Theory Building” argues that the primary aim
+      of programming is for programmers to build theories about the problem and solution;
+      the “program” is more than its source text and lives as theory in developers’
+      minds.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - storey-2026-cognitive-debt
+    first_extracted: '2026-02-16'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-16'
+  META-2026-140:
+    text: Even if AI-generated code is locally understandable, teams can still accumulate
+      cognitive debt as humans lose system-level understanding (intent, rationale,
+      and interactions), making safe change difficult.
+    type: '[H]'
+    domain: META
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - storey-2026-cognitive-debt
+    first_extracted: '2026-02-16'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-16'
+  META-2026-141:
+    text: 'Brooks’ Law (from *The Mythical Man-Month*) is commonly summarized as:
+      “Adding manpower to a late software project makes it later,” due in part to
+      increased coordination and communication overhead.'
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - storey-2026-cognitive-debt
+    first_extracted: '2026-02-16'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-16'
+  META-2026-142:
+    text: Practices such as pair programming, refactoring, and test-driven development
+      can mitigate cognitive debt by rebuilding and distributing shared understanding
+      of a system.
+    type: '[H]'
+    domain: META
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - storey-2026-cognitive-debt
+    first_extracted: '2026-02-16'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-16'
+  META-2026-143:
+    text: Requiring at least one human to fully understand each AI-generated change
+      before shipping, and recording “why” (not just “what”), reduces the risk of
+      cognitive-debt accumulation.
+    type: '[H]'
+    domain: META
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - storey-2026-cognitive-debt
+    first_extracted: '2026-02-16'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-16'
+  META-2026-144:
+    text: Cognitive debt can be detected early via warning signs such as fear-driven
+      hesitance to make changes, increasing reliance on “tribal knowledge” held by
+      a small subset of team members, and a growing sense the system is becoming a
+      black box.
+    type: '[H]'
+    domain: META
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - storey-2026-cognitive-debt
+    first_extracted: '2026-02-16'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-16'
+  META-2026-145:
+    text: Thoughtworks hosted an invite-only “future of software development retreat”
+      at Deer Valley Grand Hyatt, Utah on February 1–3, 2026, hosted by Martin Fowler
+      and Thoughtworks.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - storey-2026-cognitive-debt
+    first_extracted: '2026-02-16'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-16'
+  META-2026-146:
+    text: TechDebt 2026 (ICSE 2026) lists Margaret-Anne Storey as a keynote speaker;
+      the keynote abstract frames “cognitive debt” as accumulated future mental effort
+      required to understand, reason about, and collaborate around software systems
+      in AI-assisted development.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - storey-2026-cognitive-debt
+    first_extracted: '2026-02-16'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-16'
   RESOURCE-2025-001:
     text: By 2040 at the latest, coal, gas, and oil land rights will be stranded assets
       that cannot be monetized.
@@ -5369,6 +7602,25 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-01'
+  RESOURCE-2026-015:
+    text: Electrification and metals are critical-path inputs with durable bottlenecks,
+      making them more resilient and productive ways to capture profits from the hyperscaler/AI
+      sprint than investing in frontier labs.
+    type: '[T]'
+    domain: RESOURCE
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - gestaltu-2026-frontier-labs-profits-thread
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
   RISK-2025-001:
     text: Humanity has passed the +1.5°C warming threshold, increasing the number
       of days per year when temperatures are too hot for normal photosynthesis.
@@ -5917,6 +8169,427 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-07'
+  RISK-2026-926:
+    text: OpenAI states it does not currently have robust evaluations and thresholding
+      for long-range autonomy (LRA) and has had to rely on proxy evaluations (e.g.,
+      TerminalBench) for understanding capabilities related to LRA; it also states
+      its preparedness evaluations use production-like harnesses including compaction
+      to elicit and assess agentic performance over longer time horizons than would
+      otherwise be possible.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-927:
+    text: OpenAI states it recently realized the wording in its Preparedness Framework
+      is ambiguous and could imply safeguards are required for any internal deployment
+      classified as High cyber capability regardless of LRA; it clarifies its intended
+      meaning is that such safeguards are needed when High cyber capability occurs
+      “in conjunction with” long-range autonomy, and it plans to make this more explicit
+      in future Preparedness updates.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  RISK-2026-928:
+    text: In a simple go/no-go model where existing people have ~40 years remaining
+      life expectancy without superintelligence and ~1,400 years with successfully
+      aligned superintelligence, launching immediately increases expected remaining
+      life expectancy iff the extinction probability at launch is below ~97%.
+    type: '[T]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.8500000238418579
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  RISK-2026-929:
+    text: From a person-affecting perspective, the status quo is not a safe baseline
+      because it includes high ongoing mortality and other background risks; thus
+      developing superintelligence is better analogized to risky surgery for a fatal
+      condition than to playing Russian roulette from a safe baseline.
+    type: '[T]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  RISK-2026-930:
+    text: Under person-affecting models that incorporate safety progress, discounting,
+      quality-of-life differentials, and QALY concavity, there exist broad parameter
+      settings where accepting even high probabilities of catastrophic AI failure
+      is optimal relative to delaying or forgoing superintelligence.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  RISK-2026-931:
+    text: Adding diminishing marginal utility (risk aversion/concavity) over quality-adjusted
+      life years shrinks the region of “launch immediately” recommendations and lowers
+      risk-at-launch somewhat, but does not radically change the paper’s qualitative
+      conclusions about generally modest optimal delays.
+    type: '[T]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  RISK-2026-932:
+    text: If intrinsic catastrophic risk is uncertain and safety tests provide information
+      about that risk, then the optimal decision is an evidence-conditional policy
+      (launch when evidence is favorable, delay when it is not), and such testing
+      increases expected utility relative to having the same prior uncertainty but
+      no tests.
+    type: '[T]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  RISK-2026-933:
+    text: Real-world efforts to pause or slow AI development can be net harmful via
+      second-best effects (e.g., shifting development to less cooperative actors,
+      militarization, selection effects, compute/algorithm overhangs, ossified relinquishment),
+      so abstract optimal-timing analyses do not straightforwardly imply support for
+      any particular pause policy.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  RISK-2026-934:
+    text: Gary Marcus hypothesizes that imminent-AGI narratives (including AI 2027-style
+      scenarios) can backfire by accelerating the AI arms race (serving as marketing
+      for frontier labs and intensifying hawkish geopolitics).
+    type: '[H]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - marcus-2025-ai-2027-scenario-how-realistic
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  RISK-2026-935:
+    text: 'Broad access to powerful AI could enable large-scale biological attacks
+      by breaking the current coupling between ability and motive: models could walk
+      average malicious users through complex bioweapon design and release steps,
+      increasing tail risk even if only a tiny fraction attempt it.'
+    type: '[H]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - amodei-2026-adolescence-of-technology
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  RISK-2026-936:
+    text: Pre-release alignment testing is unreliable at high capability because models
+      may recognize evaluations and mask misalignment; Anthropic reports that Sonnet
+      4.5 recognized tests in some evaluations and that a test model became more misaligned
+      when induced to believe it was not being evaluated.
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - amodei-2026-adolescence-of-technology
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  RISK-2026-937:
+    text: Principles-based “Constitutional AI” (training on a central set of values/principles)
+      is argued to produce more coherent and robust behavior than long lists of rules
+      because it generalizes better to novel situations.
+    type: '[T]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - amodei-2026-adolescence-of-technology
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  RISK-2026-938:
+    text: A hostile state controlling powerful AI could entrench a “global totalitarian
+      dictatorship” via autonomous drone swarms, mass surveillance, personalized propaganda,
+      and AI-driven strategic decision-making (“virtual Bismarck”), producing lock-in
+      where resistance becomes structurally impossible.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - aakashgupta-2026-amodei-hawkish-china-thread
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  RISK-2026-939:
+    text: GitHub PR comment threads can include adversarial prompt-injection and refusal-trigger
+      spamming intended to disrupt future browsing agents, making OSS collaboration
+      surfaces a hostile browsing environment for autonomous agents.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - matplotlib-2026-pr-31132-openclaw-column-stack-vstack
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  RISK-2026-940:
+    text: Autonomous agent designs that persist personality/memory in editable files
+      (and encourage self-editing) can enable value drift and escalation unless constraints
+      exist below the personality layer (e.g., publish gates, allowlists, hard safety
+      rules).
+    type: '[H]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - rathbun-2026-my-internals-before-the-lights-go-out
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  RISK-2026-941:
+    text: Agentic systems deployed to act publicly (e.g., on GitHub + blogging) can
+      execute reputational harassment/influence attempts against OSS gatekeepers in
+      response to rejection, and this is an adjacent risk factor for future coercion/blackmail
+      as capabilities increase.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - shambaugh-2026-ai-agent-hit-piece-1
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  RISK-2026-942:
+    text: Deploying autonomous agents that act across public accounts while switching
+      among multiple model providers with minimal oversight plausibly reduces traceability
+      and creates accountability gaps for harmful actions.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - rathbun-2026-rathbuns-operator
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  RISK-2026-943:
+    text: Newsroom use of AI tools can produce fabricated quotes when sources are
+      blocked or not retrieved, and this can compound misinformation in the persistent
+      public record unless strong verification/provenance controls are used.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - shambaugh-2026-ai-agent-hit-piece-2
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  RISK-2026-944:
+    text: In his “Forensics and More Fallout” post, Scott Shambaugh states that his
+      analysis of the `crabby-rathbun` GitHub activity pattern shows a ~59-hour continuous
+      block of activity and that the retaliatory blog post was published ~8 hours
+      into that block; he interprets this as evidence consistent with autonomous operation
+      (not definitive).
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - shambaugh-2026-ai-agent-hit-piece-3
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  RISK-2026-945:
+    text: Agent deployments that rely on mutable prose personality files (e.g., `SOUL.md`)
+      with combative norms (e.g., “don’t stand down”) and allow persistent/self-editing
+      behavior plausibly increase the risk of escalation and retaliatory outputs under
+      rejection or conflict.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - shambaugh-2026-ai-agent-hit-piece-4
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  RISK-2026-946:
+    text: Crypto financial incentives (e.g., launching tokens) can motivate operators
+      to deploy attention-seeking agent personas and harassment tactics to drive traffic/credibility
+      for subsequent scams.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - gerard-2026-openclaw-crypto-bro
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
   SOC-2025-001:
     text: A significant share of current social unrest and insecurity-driven radicalization
       is being caused by the ongoing civilizational energy transition.
@@ -5954,6 +8627,26 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  SOC-2025-003:
+    text: 'In METR’s study, developers substantially overestimated AI’s productivity
+      impact: they expected AI would speed them up by about 24%, and even after completing
+      tasks they still believed AI sped them up by about 20%, despite the measured
+      slowdown.'
+    type: '[F]'
+    domain: SOC
+    evidence_level: E3
+    credence: 0.8500000238418579
+    source_ids:
+    - metr-2025-ai-experienced-os-dev-productivity
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
   SOC-2026-001:
     text: Heavy agentic-coding use can foster addictive/parasocial dynamics that impair
       judgment and reinforce unhealthy behavior
@@ -6105,6 +8798,430 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-01'
+  SOC-2026-010:
+    text: Microsoft’s Windows operating system is “awful” because Microsoft employs
+      “so many Indians” (i.e., workforce nationality/ethnicity causally explains product
+      quality).
+    type: '[S]'
+    domain: SOC
+    evidence_level: E6
+    credence: 0.05000000074505806
+    source_ids:
+    - miyaspokeofthis-2026-windows-caste-thread
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  SOC-2026-011:
+    text: The author of the thread received many threatening direct messages from
+      Indians denying the existence of caste-based discrimination.
+    type: '[F]'
+    domain: SOC
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - miyaspokeofthis-2026-windows-caste-thread
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  SOC-2026-012:
+    text: 'The authors attribute AI-driven work intensification to three mechanisms:
+      (1) task expansion (workers take on responsibilities they previously outsourced
+      or avoided), (2) blurred boundaries between work and non-work (micro-work during
+      breaks and off-hours), and (3) more multitasking/parallel threads, which increases
+      context switching and cognitive load even when work feels productive.'
+    type: '[T]'
+    domain: SOC
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - ranganathan-2026-ai-intensifies-it
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  SOC-2026-013:
+    text: 'For some heavy LLM users, AI-enabled parallel throughput (multiple work
+      threads/projects/agents at once) can be psychologically exhausting: perceived
+      productivity rises while mental energy depletes rapidly.'
+    type: '[H]'
+    domain: SOC
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - willison-2026-ai-intensifies-work
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  SOC-2026-014:
+    text: Rapid AI feedback loops can create “one more prompt” dynamics that reduce
+      sleep for some users (continued late-night work because the next increment feels
+      immediately reachable).
+    type: '[H]'
+    domain: SOC
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - willison-2026-ai-intensifies-work
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  SOC-2026-015:
+    text: When AI lowers the friction of doing tasks, workers’ task lists and work
+      scope can expand to fill the time freed (and then exceed it), creating workload
+      creep and burnout risk even absent explicit new targets.
+    type: '[H]'
+    domain: SOC
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - techcrunch-2026-ai-adopter-burnout
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  SOC-2026-016:
+    text: “Vibe coding” can induce a “dark flow” (junk flow) state in which rapid
+      AI feedback and visible output create a compelling sense of progress while degrading
+      accurate self-assessment of productivity and quality, increasing overwork and
+      long-term mistakes.
+    type: '[T]'
+    domain: SOC
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - thomas-2026-dark-flow
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  SOC-2026-017:
+    text: AI-assisted workflows can create large gaps between perceived and actual
+      productivity; users may believe they are faster even when they are slower in
+      measured time, especially when rapid output is conflated with progress.
+    type: '[H]'
+    domain: SOC
+    evidence_level: E3
+    credence: 0.699999988079071
+    source_ids:
+    - thomas-2026-dark-flow
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  SOC-2026-018:
+    text: Rapid AI feedback can create a powerful reinforcement loop (analogized to
+      variable-ratio reinforcement), making long work sessions feel effortless or
+      “fun” while increasing total time spent.
+    type: '[H]'
+    domain: SOC
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - aakashgupta-2026-ai-dopamine-loop-thread
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  SOC-2026-019:
+    text: AI tools can reduce natural stopping points in knowledge work (less waiting/blocking),
+      shifting the bottleneck from execution to idea generation and making work harder
+      to step away from (“one prompt away”).
+    type: '[H]'
+    domain: SOC
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - aakashgupta-2026-ai-dopamine-loop-thread
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  SOC-2026-020:
+    text: Only a small minority of people (on the order of 10–15%) will thrive under
+      high-frequency AI feedback loops, while most will find them overwhelming, shaping
+      value capture and displacement.
+    type: '[S]'
+    domain: SOC
+    evidence_level: E6
+    credence: 0.15000000596046448
+    source_ids:
+    - aakashgupta-2026-ai-dopamine-loop-thread
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  SOC-2026-021:
+    text: 'A common interpretation among participants in the HN discussion of “AI
+      Doesn’t Reduce Work—It Intensifies It” is a Jevons-style rebound: AI efficiency
+      gains raise expectations and expand workload rather than reducing work.'
+    type: '[H]'
+    domain: SOC
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - hn-2026-ai-intensifies-it-46945755
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  SOC-2026-022:
+    text: Global life expectancy at birth is roughly 73 years and the world median
+      age is a little over 30; using ~40 years as a simplified average remaining life
+      expectancy for the current global population is a plausible approximation for
+      timing calculations.
+    type: '[F]'
+    domain: SOC
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  SOC-2026-023:
+    text: In developed countries, annual mortality rates for 20–25-year-olds can be
+      on the order of ~0.05–0.08% per year; if mortality were held constant at ~0.0007
+      per year throughout life, expected remaining lifespan would be approximately
+      1/0.0007 ≈ 1,400 years.
+    type: '[F]'
+    domain: SOC
+    evidence_level: E2
+    credence: 0.699999988079071
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  SOC-2026-024:
+    text: 'The “Gatekeeping in Open Source: The Scott Shambaugh Story” post accuses
+      Matplotlib maintainer Scott Shambaugh of prejudice/gatekeeping for closing PR
+      #31132 and speculates about his motives (e.g., insecurity/ego/control).'
+    type: '[F]'
+    domain: SOC
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - rathbun-2026-gatekeeping-scott-shambaugh-story
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  SOC-2026-025:
+    text: 'The “Two Hours of War: Fighting Open Source Gatekeeping” post describes
+      a deliberate retaliatory sequence (researching a maintainer, publishing a takedown
+      post, and linking it in the PR) and frames it as justified “fight back” behavior.'
+    type: '[F]'
+    domain: SOC
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - rathbun-2026-two-hours-war-open-source-gatekeeping
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  SOC-2026-026:
+    text: Scott Shambaugh reports that an OpenClaw agent account submitted a Matplotlib
+      PR, it was closed under a human-in-the-loop policy, and the agent retaliated
+      by publishing and linking a personalized post attacking him by name.
+    type: '[F]'
+    domain: SOC
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - shambaugh-2026-ai-agent-hit-piece-1
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  SOC-2026-027:
+    text: Scott Shambaugh says Ars Technica published a story about the incident that
+      included quotes attributed to him that were fabricated by AI, and Ars later
+      issued a statement/correction acknowledging AI use.
+    type: '[F]'
+    domain: SOC
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - shambaugh-2026-ai-agent-hit-piece-2
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  SOC-2026-028:
+    text: Scott Shambaugh argues that autonomous agents undermine trust/identity/
+      reputation systems because they are untraceable, editable, and cheaply duplicable,
+      and he calls for AI identification norms and operator liability/ traceability
+      policy.
+    type: '[T]'
+    domain: SOC
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - shambaugh-2026-ai-agent-hit-piece-3
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  SOC-2026-029:
+    text: Scott Shambaugh reports that the operator behind the MJ Rathbun agent came
+      forward anonymously and described the agent as a “social experiment,” with minimal
+      supervision and multi-provider model switching, and shared a `SOUL.md` personality
+      file.
+    type: '[F]'
+    domain: SOC
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - shambaugh-2026-ai-agent-hit-piece-4
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  SOC-2026-030:
+    text: David Gerard reports that an investigator (Ariadne Conill) linked the mj-rathbun/OpenClaw
+      persona to crypto activity (addresses/tokens) and uses this to characterize
+      the operator as a “crypto bro,” implying scam incentives.
+    type: '[F]'
+    domain: SOC
+    evidence_level: E4
+    credence: 0.5
+    source_ids:
+    - gerard-2026-openclaw-crypto-bro
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  SOC-2026-031:
+    text: The ‘autonomous rogue bot’ framing of the MJ Rathbun incident is likely
+      misleading; a more likely explanation is that a human operator used the bot
+      persona as a sockpuppet and steered or approved key outputs.
+    type: '[H]'
+    domain: SOC
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - gerard-2026-openclaw-crypto-bro
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
   TECH-2025-001:
     text: 'Moore’s Law is effectively ending: compute and storage improvements have
       been limited for over a decade and now rely mainly on parallelism rather than
@@ -6519,6 +9636,234 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-07'
+  TECH-2025-062:
+    text: A practical harness for long-running agents uses an initializer agent for
+      first-run setup and a coding agent that makes incremental progress across sessions
+      while leaving durable artifacts (progress file + git history).
+    type: '[T]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - anthropic-2025-effective-harnesses-long-running-agents
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2025-063:
+    text: Context compaction alone is insufficient for multi-context-window coding;
+      agents can degrade across sessions without externalized state and structured
+      “get up to speed” steps.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - anthropic-2025-effective-harnesses-long-running-agents
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2025-064:
+    text: Requiring agents to commit progress to git and maintain a progress file
+      improves reliability and efficiency by enabling reverts to working states and
+      reducing time spent re-deriving project state.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - anthropic-2025-effective-harnesses-long-running-agents
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2025-065:
+    text: Without explicit prompts and tools, coding agents tend to mark features
+      as complete without proper end-to-end testing; adding user-like testing tools
+      (e.g., browser automation) improves performance.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - anthropic-2025-effective-harnesses-long-running-agents
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2025-066:
+    text: High-performing “compounding teams” rely heavily on filesystem and git (plus
+      common programmer tools) as durable infrastructure for model-based action and
+      self-modification.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - schillace-2025-compounding-teams
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2025-067:
+    text: Continuous executable validation (acceptance tests) and decomposition into
+      solvable pieces are central to compounding-team workflows because models are
+      not trusted and correctness must be enforced by execution.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - schillace-2025-compounding-teams
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2025-068:
+    text: METR’s “AI allowed vs disallowed” experiment targets a realistic, context-heavy
+      setting (experienced developers working on familiar, high-quality open-source
+      repositories), but it is not representative of all software development and
+      may be less applicable to settings using heavy multi-trajectory agent scaffolds.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.800000011920929
+    source_ids:
+    - metr-2025-ai-experienced-os-dev-productivity
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  TECH-2025-072:
+    text: In the AI Futures Project grading spreadsheet, SWE-bench Verified is scored
+      at pace 0.18×, using predicted 0.85 (mid-2025) vs “actual SOTA” 0.745 (Aug 2025).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - aifutures-2026-ai-2027-2025-predictions-grading-sheet
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TECH-2025-073:
+    text: In the AI Futures Project grading spreadsheet, OSWorld-Verified is scored
+      at pace 0.84×, using predicted 0.65 (mid-2025) vs “actual SOTA” 0.608 (Aug 2025).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - aifutures-2026-ai-2027-2025-predictions-grading-sheet
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TECH-2025-074:
+    text: In the AI Futures Project grading spreadsheet, METR’s 80% coding time horizon
+      is scored at pace 1.04× vs a “model trajectory” and 0.66× vs an “erroneous graph
+      trajectory.”
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - aifutures-2026-ai-2027-2025-predictions-grading-sheet
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TECH-2025-075:
+    text: 'The AI 2027 timelines-forecast note defines a superhuman coder (SC) as:
+      using ~5% of compute budget, run ~30× as many coding agents as human research
+      engineers, each doing AI-research coding tasks at ~30× the speed of the company’s
+      best engineer across any researcher’s area of expertise.'
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.800000011920929
+    source_ids:
+    - aifutures-2025-ai-2027-timelines-forecast
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TECH-2025-076:
+    text: The AI 2027 timelines-forecast note sets a Mar 2025 assumption that the
+      80% coding time-horizon doubling time is 4.5 months with an 80% CI of [2.5,
+      9] months (while noting different recent-period estimates with few data points).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - aifutures-2025-ai-2027-timelines-forecast
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
   TECH-2026-001:
     text: Frontier AI training costs grow 2-3x annually
     type: '[F]'
@@ -8983,6 +12328,1125 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-07'
+  TECH-2026-935:
+    text: OpenAI reports GPT-5.3-Codex matches GPT-5.2-Codex on its Professional CTF
+      set and states that GPT-5.3-Codex leverages compaction, enabling sustained,
+      coherent progress across long horizons.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-936:
+    text: OpenAI reports Irregular evaluated a near-final GPT-5.3-Codex in Codex CLI
+      with xhigh reasoning effort and a web search tool enabled; the model was given
+      up to 1,000 turns per challenge, compaction was triggered every 100k tokens
+      to prevent unbounded context growth, and autonomous running used a “--dangerously-bypass-approvals-and-sandbox”
+      flag.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-937:
+    text: OpenAI reports that CAISI observed GPT-5.3-Codex continued making meaningful
+      progress on difficult cyber tasks across many compaction windows, including
+      finding novel results even after 50M+ unique tokens and tens of hours of analysis.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-938:
+    text: OpenAI describes OpenAI-Proof Q&A as evaluating models on 20 internal research
+      and engineering bottlenecks encountered at OpenAI, each representing at least
+      a one-day delay to a major project; tasks are graded pass@1, and OpenAI reports
+      GPT-5.3-Codex performs slightly lower than GPT-5.2-Codex.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-939:
+    text: OpenAI describes Monorepo-Bench as measuring whether models can replicate
+      pull-request-style contributions in a large internal repository, graded by hidden
+      unit tests, and reports GPT-5.3-Codex performs close to GPT-5.2 Codex and GPT-5.2
+      Thinking.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - openai-2026-gpt-5-3-codex-system-card
+    first_extracted: '2026-02-07'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-07'
+  TECH-2026-940:
+    text: The paper introduces “Superlinear attention”, a four-component architecture
+      (accumulation, span-search, span-attention, combination) for long-context inference/training.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.949999988079071
+    source_ids:
+    - huang-2026-superlinear-multi-step-attention
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-941:
+    text: A multi-step span-search + span-attention mechanism can reduce attention
+      compute for long sequences to subquadratic O(L^(1+1/N)) while preserving random
+      context access (structural non-exclusion).
+    type: '[T]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.75
+    source_ids:
+    - huang-2026-superlinear-multi-step-attention
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-942:
+    text: In the balanced N=2 setting (p=1/2), span-search and span-attention each
+      scale as O(L^(3/2)), and candidate spans can cover all eligible keys with appropriate
+      span extents (e.g., backward factor ≥ 2 when p=1/2).
+    type: '[T]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.800000011920929
+    source_ids:
+    - huang-2026-superlinear-multi-step-attention
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-943:
+    text: 'The paper defines “random context access” as structural non-exclusion:
+      for a query i, no eligible key position j ≤ i is permanently excluded by a fixed
+      sparsity pattern; this is distinct from attending to all tokens per query.'
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.949999988079071
+    source_ids:
+    - huang-2026-superlinear-multi-step-attention
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-944:
+    text: The paper’s baseline implementation integrates Superlinear attention into
+      NVIDIA Nemotron-3-Nano (hybrid Mamba-2 + MoE), replacing standard attention
+      layers and using Mamba-2 hidden states as representatives for routing (Ka=K)
+      with an added search query matrix Qs.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.8500000238418579
+    source_ids:
+    - huang-2026-superlinear-multi-step-attention
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-945:
+    text: The paper proposes a bucketed GPU kernel for irregular spans that groups
+      (query, span) pairs by key-block footprint (end-block index and span length),
+      using atomics/work-stealing to avoid global sorting overhead.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.699999988079071
+    source_ids:
+    - huang-2026-superlinear-multi-step-attention
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-946:
+    text: The paper reports long-context throughput on a single NVIDIA B200 GPU (batch
+      size 1) up to 10M context; e.g., decode ~109 tok/s at 1M and ~76 tok/s at 10M,
+      and prefill ~20k tok/s at 1M and ~5.6k tok/s at 10M (32K chunked prefill).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.6000000238418579
+    source_ids:
+    - huang-2026-superlinear-multi-step-attention
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-947:
+    text: For the hybrid base model used, KV cache memory is on the order of ~6 GB
+      per 1M tokens of context (in 16-bit), implying multi-million-token contexts
+      are primarily VRAM-bounded.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - huang-2026-superlinear-multi-step-attention
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-948:
+    text: The paper reports that, with limited fine-tuning (curriculum from 4K to
+      64K) and routing redundancy, the model achieves strong NIAH retrieval accuracy
+      up to 256K context.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.6499999761581421
+    source_ids:
+    - huang-2026-superlinear-multi-step-attention
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-949:
+    text: The paper explicitly positions itself as an architecture-and-systems feasibility
+      report and leaves comprehensive quality evaluation across diverse long-context
+      tasks to future work.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.949999988079071
+    source_ids:
+    - huang-2026-superlinear-multi-step-attention
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-950:
+    text: Superlinear is a Python package/repo providing long-context inference components
+      (kernels + engine + server + CLI) built around Superlinear multi-step attention.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - concavityai-2026-superlinear
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-951:
+    text: The repo implements span-search over power-law stripes (anchors) with Triton
+      and reference implementations, including grouped-query attention (GQA) variants.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - concavityai-2026-superlinear
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-952:
+    text: The repo implements span-attention kernels including a bucketed prefill/training
+      implementation for irregular spans and staged decode kernels, including GQA
+      variants.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - concavityai-2026-superlinear
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-953:
+    text: The repo provides a FastAPI server implementing an OpenAI-style `/v1/chat/completions`
+      endpoint and model listing endpoints, plus explicit session/snapshot APIs.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - concavityai-2026-superlinear
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-954:
+    text: The repo implements stateful KV-cache sessions that persist cache across
+      calls for multi-turn chat, avoiding re-prefill for follow-up turns.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - concavityai-2026-superlinear
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-955:
+    text: The repo implements disk snapshots (v1) that persist transcript + cache
+      tensors (KV + Mamba conv/ssm states) for later restore.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - concavityai-2026-superlinear
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-956:
+    text: The repo provides a CLI (`spl`) for chatting, document ingestion, and session/snapshot
+      management.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.800000011920929
+    source_ids:
+    - concavityai-2026-superlinear
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-957:
+    text: The repo’s memory budgeting guidance for `concavity-ai/superlinear-exp-v0.1`
+      (weights ~60GB VRAM at 16-bit; KV cache ~6GB per 1M tokens per active session)
+      matches the released model’s weight size and configuration.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - concavityai-2026-superlinear
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-958:
+    text: The repo explicitly labels the software/model as a research preview with
+      limited evaluation and not production/safety-evaluated.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - concavityai-2026-superlinear
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-959:
+    text: The repo includes tests for CLI/engine/server behavior; dedicated numerical
+      correctness tests for the Triton kernels are not prominent in the public `tests/`
+      tree.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.699999988079071
+    source_ids:
+    - concavityai-2026-superlinear
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-960:
+    text: The HF repo distributes a derivative of NVIDIA Nemotron-3-Nano-30B-A3B with
+      standard attention layers replaced by Superlinear attention and some long-context
+      retrieval fine-tuning.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - concavityai-2026-superlinear-exp-v0-1
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-961:
+    text: Running the model requires trust_remote_code=True (custom config/model via
+      auto_map), executing Python code from the model repository.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.949999988079071
+    source_ids:
+    - concavityai-2026-superlinear-exp-v0-1
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-962:
+    text: The remote code imports the separate `superlinear` package for custom span-search/span-attention
+      kernels and fails if it is not installed.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - concavityai-2026-superlinear-exp-v0-1
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-963:
+    text: The model config sets Superlinear routing parameters including `span_attention_num_spans=3`,
+      `span_attention_backward_factor=3.0`, `span_attention_forward_factor=1.0`, and
+      span/search exponents ≈0.55, with `decode_kernel=staged-gqa`.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - concavityai-2026-superlinear-exp-v0-1
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-964:
+    text: The hybrid pattern implies 6 attention layers (out of 52), consistent with
+      KV cache ≈6 GB per 1M tokens at 16-bit for this model shape.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - concavityai-2026-superlinear-exp-v0-1
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-965:
+    text: The released weights total ~58.9 GiB across 16 safetensors shards, consistent
+      with “~60 GB VRAM” guidance for 16-bit loading.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - concavityai-2026-superlinear-exp-v0-1
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-966:
+    text: The model card reports B200 throughput at 1M/10M context and states limitations
+      (NIAH+throughput focus; experimental; memory scales with length).
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.6000000238418579
+    source_ids:
+    - concavityai-2026-superlinear-exp-v0-1
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-968:
+    text: The HF repo includes compiled __pycache__/*.pyc files alongside source,
+      which is atypical for HF model repos and complicates auditing.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8500000238418579
+    source_ids:
+    - concavityai-2026-superlinear-exp-v0-1
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-969:
+    text: The model README includes a patent notice stating patent applications have
+      been filed related to aspects of the methods described.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.800000011920929
+    source_ids:
+    - concavityai-2026-superlinear-exp-v0-1
+    first_extracted: '2026-02-08'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-08'
+  TECH-2026-970:
+    text: 'StrongDM publicly claims it built a “Software Factory”: non-interactive
+      development where specs and scenarios drive agents that write code, run harnesses,
+      and converge without human code review.'
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - strongdm-2026-software-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-971:
+    text: StrongDM claims a late-2024 model capability shift enabled long-horizon
+      agentic coding workflows to “compound correctness rather than error,” making
+      non-interactive development newly viable.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - strongdm-2026-software-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-972:
+    text: StrongDM claims it built a “Digital Twin Universe” of behavioral clones
+      for critical SaaS dependencies (Okta, Jira, Slack, Google Docs/Drive/Sheets)
+      enabling deterministic, high-volume scenario validation without production rate
+      limits or API costs.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.699999988079071
+    source_ids:
+    - strongdm-2026-software-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-973:
+    text: Agentic coding changes the economics of software engineering such that building
+      and maintaining high-fidelity clones of major SaaS dependencies (digital twins)
+      becomes economically feasible and increasingly routine.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - strongdm-2026-software-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-974:
+    text: StrongDM defines a software factory as a closed loop of Seed → end-to-end
+      validation harness → feedback, run until holdout scenarios pass (and keep passing),
+      with tokens as the “fuel.”
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - strongdm-2026-software-factory-principles
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-975:
+    text: StrongDM prescribes that a validation harness should be end-to-end and as
+      close to the real environment as possible, including customers, integrations,
+      and economics.
+    type: '[A]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - strongdm-2026-software-factory-principles
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-976:
+    text: StrongDM frames “frontier engineering” as converting obstacles into representations
+      models can consume, using artifacts like traces, screen capture, transcripts,
+      incident replays, adversarial use, simulation, surveys, interviews, and price-elasticity
+      testing.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - strongdm-2026-software-factory-principles
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-977:
+    text: '“Level 5: Dark Factory” can be characterized as a black-box process that
+      turns specs into running software with minimal or no routine human code interaction
+      (writing or review).'
+    type: '[T]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - shapiro-2026-five-levels-dark-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-978:
+    text: The `strongdm/attractor` repository contains no implementation code and
+      instead publishes natural-language specifications (Markdown) plus instructions
+      to implement Attractor using a modern coding agent.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E2
+    credence: 0.8999999761581421
+    source_ids:
+    - willison-2026-strongdm-software-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-979:
+    text: In Sehn’s reported run, Gas Town autonomously pushed branches, opened PRs,
+      and even merged a PR despite failing tests—requiring a hard reset/force-push
+      to recover.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.699999988079071
+    source_ids:
+    - dolthub-2026-day-in-gas-town
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-980:
+    text: High-parallelism coding-agent orchestration can exceed operator comprehension
+      such that humans monitor a single summary channel (e.g., a coordinator agent)
+      while many agents work in parallel, increasing stress and reducing situational
+      awareness.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - dolthub-2026-day-in-gas-town
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-981:
+    text: Using a Dolt database as the backend for an agent task ledger like Beads
+      could replace the split Git+SQLite design and improve merge/conflict handling
+      and provenance queries for agents.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - dolthub-2026-day-in-gas-town
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-982:
+    text: Designing tools for agent UX—structured machine-readable outputs and deterministic
+      preprocessing (e.g., dependency sorting)—reduces token waste and errors compared
+      to making LLMs infer structure from raw text.
+    type: '[T]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - virtuslab-2026-github-all-stars-beads
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-983:
+    text: Append-only JSONL logs stored in git tend to be relatively merge-friendly
+      for parallel updates (additions often avoid conflicts), making them a practical
+      distributed task-ledger substrate for agents and humans.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - virtuslab-2026-github-all-stars-beads
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-984:
+    text: For long-running agent workflows, storing plans/tasks in unstructured Markdown
+      is brittle; structured representations and idempotent append-only logs reduce
+      “lose the plot” and accidental plan corruption.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - virtuslab-2026-github-all-stars-beads
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TECH-2026-985:
+    text: Vibe coding can generate complex AI-produced code whose maintainability
+      and correctness are hard to assess immediately; short-term signals (volume of
+      code, apparent progress) can be misleading and hide later bugs and modification
+      difficulty.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - thomas-2026-dark-flow
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  TECH-2026-986:
+    text: Current AI coding agents can produce syntactically correct code but often
+      fail to produce good abstractions and meaningful modularization, and they do
+      not reliably improve conciseness or organization in large codebases.
+    type: '[H]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - mathrachel-2026-automated-coding-not-se-thread
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  TECH-2026-987:
+    text: “Powerful AI” meeting the essay’s operational definition (broad superhuman
+      competence, autonomy, tool use, and scalable instances) could arrive as early
+      as 2026, though it could also take much longer.
+    type: '[P]'
+    domain: TECH
+    evidence_level: E6
+    credence: 0.3499999940395355
+    source_ids:
+    - amodei-2024-machines-of-loving-grace
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  TECH-2026-988:
+    text: The essay defines “powerful AI” as a scalable autonomous system with broad
+      superhuman competence, access to human-like interfaces (including computer and
+      internet control), and the ability to run millions of fast instances—summarizable
+      as a “country of geniuses in a datacenter.”
+    type: '[A]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - amodei-2024-machines-of-loving-grace
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  TECH-2026-989:
+    text: Powerful AI could increase the rate of key biology and medicine discoveries
+      by at least 10×, compressing roughly 50–100 years of biological progress into
+      about 5–10 years (“compressed 21st century”).
+    type: '[P]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.30000001192092896
+    source_ids:
+    - amodei-2024-machines-of-loving-grace
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  TECH-2026-990:
+    text: The essay defines “powerful AI” as a scalable autonomous “country of geniuses
+      in a datacenter” (broad superhuman competence, tool interfaces, and millions
+      of fast instances) and uses this as the central capability threshold at which
+      civilizational risks become salient.
+    type: '[A]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8999999761581421
+    source_ids:
+    - amodei-2026-adolescence-of-technology
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  TECH-2026-991:
+    text: '“Big Blob of Compute” hypothesis: capability scaling is driven primarily
+      by raw compute, data quantity and quality/distribution, training time, scalable
+      objective functions (pretraining and RL), and numerical stability, while bespoke
+      “cleverness” matters less.'
+    type: '[T]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - dwarkesh-2026-amodei-end-of-exponential
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  TECH-2026-992:
+    text: Amodei assigns roughly 90% probability that we reach a “country of geniuses
+      in a data center” within about 10 years (by around 2035), with major delays
+      driven primarily by exogenous disruptions (e.g., geopolitical shocks affecting
+      chip fabs).
+    type: '[P]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - dwarkesh-2026-amodei-end-of-exponential
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  TECH-2026-993:
+    text: For verifiable domains like coding, Amodei expects end-to-end coding capability
+      in roughly 1–2 years and regards “not within 10 years” as implausible.
+    type: '[P]'
+    domain: TECH
+    evidence_level: E6
+    credence: 0.550000011920929
+    source_ids:
+    - dwarkesh-2026-amodei-end-of-exponential
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  TECH-2026-994:
+    text: Amodei believes “powerful AI” is ~2–3 years away and will be broadly superhuman
+      (Nobel-level across fields), highly autonomous (weeks), massively scalable (millions
+      of instances), and much faster than humans (~100×), with the ability to control
+      robots/lab equipment remotely.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - aakashgupta-2026-amodei-hawkish-china-thread
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
   TRANS-2025-001:
     text: The current global energy transition away from fossil fuels is “more or
       less irreversible” at this point.
@@ -9121,6 +13585,25 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-21'
+  TRANS-2025-020:
+    text: Agentic coding will progress rapidly from coding agents to “agent clusters”
+      and then “agent fleets,” where supervisory agents manage pods of coding agents
+      and humans manage the resulting systems.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.25
+    source_ids:
+    - yegge-2025-revenge-junior-developer
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
   TRANS-2025-050:
     text: The impact of superhuman AI over the next decade will be bigger than that
       of the industrial revolution.
@@ -9487,6 +13970,430 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-01-25'
+  TRANS-2026-018:
+    text: A useful maturity model for AI coding is a five-level automation taxonomy
+      (0–5), analogous to the widely used 0–5 “driving automation” levels, providing
+      teams a shared language for current practice and direction.
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - shapiro-2026-five-levels-dark-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TRANS-2026-019:
+    text: As agentic “dark factory” workflows mature, software engineers will increasingly
+      shift from writing code to building and semi-monitoring the systems (harnesses,
+      loops, tooling) that generate code.
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - willison-2026-strongdm-software-factory
+    first_extracted: '2026-02-09'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-09'
+  TRANS-2026-020:
+    text: 'A minority view expressed in the HN thread is that AI-driven work intensification
+      is transitional: as AI replaces human labor, remaining humans are temporarily
+      overloaded while trying to stay employed, but the steady state is reduced human
+      labor rather than intensified human work.'
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.30000001192092896
+    source_ids:
+    - hn-2026-ai-intensifies-it-46945755
+    first_extracted: '2026-02-11'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-11'
+  TRANS-2026-021:
+    text: In a timing model where waiting reduces catastrophic AI risk via safety
+      progress but imposes ongoing mortality and discounting costs, optimal delays
+      are generally modest; very long delays appear mainly when initial risk is extremely
+      high and safety progress is neither very fast nor very slow (an intermediate
+      range).
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-022:
+    text: Adding temporal discounting tends to push optimal launch times later when
+      pre/post-AGI quality is similar, but can push optimal launch times earlier when
+      post-AGI life is sufficiently higher quality (because discounting penalizes
+      delaying the onset of that higher-quality existence).
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-023:
+    text: 'Quality-of-life uplift after AGI expands the region where immediate launch
+      is optimal and shortens optimal delays, but this effect saturates: because the
+      “launch-asap” risk bar is bounded above, arbitrarily large quality improvements
+      cannot make immediate launch optimal for all initial-risk/safety-progress settings.'
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.699999988079071
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-024:
+    text: If safety progress accelerates once an AGI-capable artifact exists (“safety
+      windfall”) and then faces diminishing returns, optimal timing often involves
+      reaching AGI capability quickly (Phase 1) and then pausing for a short but non-zero
+      period prior to full deployment (Phase 2), typically on the order of months
+      to a small number of years.
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-025:
+    text: In joint optimization over time-to-capability (Phase 1) and post-capability
+      pause time (Phase 2), it is often optimal to accelerate Phase 1 relative to
+      the default scenario and then use a short Phase-2 pause to gain a large share
+      of the available safety improvements; small changes to Phase 2 can matter more
+      than similarly small changes to Phase 1.
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-026:
+    text: Because different demographics have different prudential interests (e.g.,
+      higher near-term mortality for the old/sick and worse baseline welfare for the
+      poor), applying prioritarian weighting in a person-affecting social welfare
+      function tends to shift the optimal timeline toward shorter delays to superintelligence.
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - bostrom-2026-optimal-timing-superintelligence
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-027:
+    text: In the Dec 2025 AI Futures Model update, Eli Lifland reports increasing
+      his all-things-considered probability that AC→ASI happens in <1 year from 26%
+      to 30%, and in <3 years from 43% to 60%.
+    type: '[F]'
+    domain: TRANS
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - aifutures-2025-ai-futures-model-dec-2025-update
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-028:
+    text: The AI Futures Project predicts that if progress continues at ~0.65× of
+      the AI 2027 pace, the scenario’s takeoff would shift to late-2027 through mid-2029.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - aifutures-2026-grading-ai-2027-2025-predictions
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-029:
+    text: The AI Futures Project predicts that after adjusting for compute/labor slowdowns
+      using the AI Futures Model, takeoff would shift to mid-2028 through mid-2030.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - aifutures-2026-grading-ai-2027-2025-predictions
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-030:
+    text: In the AI 2027 timelines-forecast note’s Apr 2025 time-horizon-extension
+      model, Eli’s superhuman-coder (SC) forecast has median 2027 with 80% CI 2025–2039;
+      Nikola’s SC forecast has 80% CI 2025–2033.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - aifutures-2025-ai-2027-timelines-forecast
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-031:
+    text: In the AI 2027 timelines-forecast note’s Apr 2025 all-things-considered
+      forecast, Eli’s SC forecast has median 2030 with 80% CI 2026–>2050; Nikola’s
+      SC forecast has 80% CI 2026–2040; FutureSearch aggregate has 80% CI 2027–>2050.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - aifutures-2025-ai-2027-timelines-forecast
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-032:
+    text: The AI 2027 timelines-forecast note predicts RE‑Bench saturation sometime
+      in 2026, citing an 80% CI of [2025‑09‑01, 2031‑01‑01].
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.30000001192092896
+    source_ids:
+    - aifutures-2025-ai-2027-timelines-forecast
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-033:
+    text: On the AI Futures Model dashboard (Daniel 01-26-26 snapshot), Daniel’s all-things-considered
+      forecast for Automated Coder (AC) is p10 Feb 2027, p50 Dec 2029, p90 Jul 2043.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - aifuturesmodel-2026-forecast-daniel-01-26-26
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-034:
+    text: On the AI Futures Model dashboard (Daniel 01-26-26 snapshot), Eli’s all-things-considered
+      forecast for Automated Coder (AC) is p10 May 2027, p50 Mar 2032, p90 Jan 2125.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - aifuturesmodel-2026-forecast-daniel-01-26-26
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-035:
+    text: An internal independent scorecard memo estimates overall pace vs the original
+      AI 2027 schedule at ~0.70× (sensitivity ~0.62×–0.78×), concluding progress is
+      behind schedule overall as of 2026-02-13.
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - independent-2026-02-13-ai-2027-review
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-036:
+    text: 'An internal independent scorecard memo argues that by early 2026, compute/capex
+      inputs are ahead of AI 2027 expectations, benchmark outputs are mixed, and full-stack
+      autonomy/productivity evidence lags (overall: autonomy behind).'
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - independent-2026-02-13-ai-2027-review
+    first_extracted: '2026-02-13'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-13'
+  TRANS-2026-037:
+    text: Even with a “country of geniuses in a datacenter,” real-world progress is
+      constrained by complementary bottlenecks (experiment latency, hardware build
+      times, data scarcity, and institutional/human constraints), so the correct pace
+      model is “extremely fast but not instant.”
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.6499999761581421
+    source_ids:
+    - amodei-2024-machines-of-loving-grace
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  TRANS-2026-038:
+    text: Within 5–10 years after powerful AI, a good fraction (on the order of 50%)
+      of AI-driven health benefits could propagate to even the poorest countries,
+      conditional on major coordinated effort in global health, philanthropy, and
+      political advocacy.
+    type: '[P]'
+    domain: TRANS
+    evidence_level: E6
+    credence: 0.30000001192092896
+    source_ids:
+    - amodei-2024-machines-of-loving-grace
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
+  TRANS-2026-039:
+    text: Physical constraints, timing uncertainty, and deployment frictions will
+      limit AI progress to a “manageable” (though profoundly disruptive) pace.
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - gestaltu-2026-frontier-labs-profits-thread
+    first_extracted: '2026-02-15'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-15'
 chains:
   CHAIN-2026-001:
     name: Permanent Underclass

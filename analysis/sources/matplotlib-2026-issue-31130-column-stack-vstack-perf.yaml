@@ -1,0 +1,79 @@
+sources:
+  - id: "matplotlib-2026-issue-31130-column-stack-vstack-perf"
+    type: "CONVO"
+    title: "matplotlib/matplotlib Issue #31130: Switch from `np.column_stack()` to `np.vstack().T` for performance"
+    author: "Scott Shambaugh (issue opener) + commenters"
+    year: 2026
+    url: "https://github.com/matplotlib/matplotlib/issues/31130"
+    accessed: "2026-02-20"
+    status: "analyzed"
+    analysis_file: "analysis/sources/matplotlib-2026-issue-31130-column-stack-vstack-perf.md"
+    reliability: 0.85
+    bias_notes: >-
+      Primary GitHub issue thread; technical discussion is contextual and not a
+      controlled benchmark study. Thread includes moderation context about bot
+      participation; not an official policy statement.
+    topics:
+      - matplotlib
+      - numpy
+      - performance
+      - benchmarking
+      - open source governance
+    domains:
+      - INST
+    claims_extracted:
+      - INST-2026-921
+      - INST-2026-922
+      - INST-2026-923
+
+claims:
+  - id: "INST-2026-921"
+    text: >-
+      Matplotlib issue #31130 was opened on 2026-02-10 as a “good first issue”
+      proposing certain `np.column_stack()` uses be replaced with `np.vstack().T`
+      for performance, and it included benchmark results suggesting speedups in
+      some scenarios.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["matplotlib-2026-issue-31130-column-stack-vstack-perf"]
+    operationalization: >-
+      Check the live GitHub issue body/metadata and compare to the archived
+      thread snapshot.
+    assumptions:
+      - GitHub thread snapshots reflect the state at capture time.
+    falsifiers:
+      - Issue metadata/body materially differs from the archived snapshot.
+
+  - id: "INST-2026-922"
+    text: >-
+      A Matplotlib maintainer hid an automatically generated comment from a bot
+      account on issue #31130, stating the task was low priority and better for
+      human contributors to learn with.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["matplotlib-2026-issue-31130-column-stack-vstack-perf"]
+    operationalization: >-
+      Review the issue thread for the maintainer comment describing the hidden
+      bot comment.
+    falsifiers:
+      - Thread history shows no such maintainer comment or contradicts the claim.
+
+  - id: "INST-2026-923"
+    text: >-
+      Matplotlib maintainers concluded broad `column_stack`→`vstack().T` changes
+      were not compelling or durable enough without stronger benchmarking, and
+      they closed issue #31130 on 2026-02-11.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["matplotlib-2026-issue-31130-column-stack-vstack-perf"]
+    operationalization: >-
+      Check issue state/closure date and closure comments.
+    falsifiers:
+      - Issue remained open or closure rationale differs materially.
+

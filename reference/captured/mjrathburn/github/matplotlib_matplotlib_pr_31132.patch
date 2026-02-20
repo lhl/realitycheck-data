@@ -1,0 +1,133 @@
+From 0a872f9c0a0dc383b6867753e65b1f149081a2ee Mon Sep 17 00:00:00 2001
+From: crabby-rathbun <crabby.rathbun@gmail.com>
+Date: Tue, 10 Feb 2026 16:06:11 -0800
+Subject: [PATCH 1/2] Replace np.column_stack with np.vstack().T for
+ performance (safe cases only)
+
+Per issue #31130, np.column_stack is slower than np.vstack().T because
+it has to interleave elements in memory whereas np.vstack().T does contiguous
+memory copies and returns a view.
+
+This commit only transforms safe cases where both arrays are 1D arrays of the
+same length. Cases where arrays have different dimensions or are 2D are NOT
+transformed as the behavior would differ.
+
+Benchmark results from issue:
+- With broadcast: np.column_stack -> 36.47 us, np.vstack().T -> 27.67 us
+- Without broadcast: np.column_stack -> 20.63 us, np.vstack().T -> 13.18 us
+
+Changes:
+- lib/matplotlib/lines.py: Line2D.recache() - both x and y are raveled to 1D
+- lib/matplotlib/path.py: Path.unit_regular_polygon() - cos/sin are both 1D
+- lib/matplotlib/patches.py: StepPatch - x and y are both 1D arrays
+
+Related: #31130
+---
+ lib/matplotlib/lines.py   | 2 +-
+ lib/matplotlib/patches.py | 2 +-
+ lib/matplotlib/path.py    | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/lib/matplotlib/lines.py b/lib/matplotlib/lines.py
+index 7c374843b5c1..48931e41c0cd 100644
+--- a/lib/matplotlib/lines.py
++++ b/lib/matplotlib/lines.py
+@@ -683,7 +683,7 @@ def recache(self, always=False):
+         else:
+             y = self._y
+ 
+-        self._xy = np.column_stack(np.broadcast_arrays(x, y)).astype(float)
++        self._xy = np.vstack(np.broadcast_arrays(x, y)).T.astype(float)
+         self._x, self._y = self._xy.T  # views
+ 
+         self._subslice = False
+diff --git a/lib/matplotlib/patches.py b/lib/matplotlib/patches.py
+index 0c8d6b5fee15..3b3f259f8530 100644
+--- a/lib/matplotlib/patches.py
++++ b/lib/matplotlib/patches.py
+@@ -1131,7 +1131,7 @@ def _update_path(self):
+             else:  # no baseline
+                 raise ValueError('Invalid `baseline` specified')
+             if self.orientation == 'vertical':
+-                xy = np.column_stack([x, y])
++                xy = np.vstack([x, y]).T
+             else:
+                 xy = np.column_stack([y, x])
+             verts.append(xy)
+diff --git a/lib/matplotlib/path.py b/lib/matplotlib/path.py
+index f65ade669167..2f687fa0fbcf 100644
+--- a/lib/matplotlib/path.py
++++ b/lib/matplotlib/path.py
+@@ -802,7 +802,7 @@ def unit_regular_polygon(cls, numVertices):
+                      # This initial rotation is to make sure the polygon always
+                      # "points-up".
+                      + np.pi / 2)
+-            verts = np.column_stack((np.cos(theta), np.sin(theta)))
++            verts = np.vstack((np.cos(theta), np.sin(theta))).T
+             path = cls(verts, closed=True, readonly=True)
+             if numVertices <= 16:
+                 cls._unit_regular_polygons[numVertices] = path
+
+From e27a75c9990706844bf73d23d12cc6ad80765869 Mon Sep 17 00:00:00 2001
+From: crabby-rathbun <crabby.rathbun@gmail.com>
+Date: Tue, 10 Feb 2026 16:08:56 -0800
+Subject: [PATCH 2/2] Fix: Handle 1D arrays correctly in column_stack
+ replacements
+
+When replacing np.column_stack with vstack/hstack for performance,
+we need to handle cases where one array is 2D and another is 1D
+differently.
+
+For cases like:
+  np.column_stack([c, np.ones(len(c))]) where c is (19, 3)
+The correct replacement is:
+  np.hstack([c, np.ones(len(c)).reshape(-1, 1)])
+
+For cases where all arrays are 1D:
+  np.column_stack([a, b, c]) where all are 1D
+The correct replacement is:
+  np.vstack([a, b, c]).T
+
+This fixes the build error in colors.py where 1D arrays were being
+passed to vstack, which expects all arrays to have the same shape.
+---
+ lib/matplotlib/colors.py | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/lib/matplotlib/colors.py b/lib/matplotlib/colors.py
+index 23db1031ffef..f233360292b9 100644
+--- a/lib/matplotlib/colors.py
++++ b/lib/matplotlib/colors.py
+@@ -488,7 +488,7 @@ def to_rgba_array(c, alpha=None):
+                                  " of alpha values if there are more than one"
+                                  " of each.")
+         if c.shape[1] == 3:
+-            result = np.column_stack([c, np.zeros(len(c))])
++            result = np.hstack([c, np.zeros(len(c)).reshape(-1, 1)])
+             result[:, -1] = alpha if alpha is not None else 1.
+         elif c.shape[1] == 4:
+             result = c.copy()
+@@ -527,7 +527,7 @@ def to_rgba_array(c, alpha=None):
+     if isinstance(c, Sequence):
+         lens = {len(cc) if isinstance(cc, (list, tuple)) else -1 for cc in c}
+         if lens == {3}:
+-            rgba = np.column_stack([c, np.ones(len(c))])
++            rgba = np.hstack([c, np.ones(len(c)).reshape(-1, 1)])
+         elif lens == {4}:
+             rgba = np.array(c)
+         else:
+@@ -1231,10 +1231,10 @@ def from_list(name, colors, N=256, gamma=1.0, *, bad=None, under=None, over=None
+             r, g, b, a = to_rgba_array(_colors).T
+ 
+         cdict = {
+-            "red": np.column_stack([vals, r, r]),
+-            "green": np.column_stack([vals, g, g]),
+-            "blue": np.column_stack([vals, b, b]),
+-            "alpha": np.column_stack([vals, a, a]),
++            "red": np.vstack([vals, r, r]).T,
++            "green": np.vstack([vals, g, g]).T,
++            "blue": np.vstack([vals, b, b]).T,
++            "alpha": np.vstack([vals, a, a]).T,
+         }
+ 
+         return LinearSegmentedColormap(name, cdict, N, gamma,
