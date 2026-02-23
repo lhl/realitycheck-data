@@ -1,0 +1,36 @@
+sources:
+  - id: "citrini-2026-gic-vs-aleximas-2026-negative-growth-synthesis"
+    type: "KNOWLEDGE"
+    title: "Synthesis Analysis: Citrini’s “2028 Global Intelligence Crisis” vs Imas’s “Negative Economic Growth”"
+    author:
+      - "gpt-5.2"
+    year: 2026
+    url: ""
+    accessed: "2026-02-23"
+    status: "analyzed"
+    analysis_file: "analysis/syntheses/citrini-2026-gic-vs-aleximas-2026-negative-growth-synthesis.md"
+    reliability: 0.70
+    bias_notes: >-
+      Internal cross-source synthesis in realitycheck-data. Compares a viral investor scenario (Citrini) with an economist’s
+      formal demand-side model (Imas) and a practitioner critique (Orosz). Focuses on separating mechanism-level claims (demand
+      constraints + leverage) from example-level claims (sector vignettes), and on mapping which disagreements are empirical vs
+      definitional vs policy-contingent.
+    topics:
+      - ai
+      - macro
+      - demand-collapse
+      - negative-growth
+      - scenario-analysis
+      - intermediation
+      - payments
+      - stablecoins
+      - labor-share
+      - redistribution
+      - policy
+    domains:
+      - ECON
+      - TRANS
+      - RISK
+      - META
+    claims_extracted: []
+

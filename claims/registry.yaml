@@ -1,19 +1,19 @@
 # Claim Registry
-# Exported from LanceDB on 2026-02-20
-# Total claims: 751
+# Exported from LanceDB on 2026-02-23
+# Total claims: 780
 # Total chains: 4
 
 counters:
-  TECH: 994
+  TECH: 999
   RESOURCE: 15
   LABOR: 32
-  ECON: 921
+  ECON: 933
   GOV: 91
   SOC: 31
   TRANS: 51
-  META: 146
+  META: 149
   GEO: 50
-  RISK: 946
+  RISK: 956
   INST: 935
 claims:
   ECON-2025-001:
@@ -1117,6 +1117,237 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-15'
+  ECON-2026-922:
+    text: The essay claims the world's largest technology companies spent over $357B
+      on AI infrastructure in 2025 and guided $612–$642B for 2026.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E4
+    credence: 0.550000011920929
+    source_ids:
+    - harries-2026-country-full-of-geniuses
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  ECON-2026-923:
+    text: 'Anthropic press releases state: Series E raised $3.5B at a $61.5B post-money
+      valuation (2025-03-03), Series F raised $13B at $183B post-money (2025-09-02),
+      and Series G raised $30B at $380B post-money (2026-02-12).'
+    type: '[F]'
+    domain: ECON
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - harries-2026-country-full-of-geniuses
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  ECON-2026-924:
+    text: 'The scenario argues that because household consumption is roughly two-thirds
+      of GDP and machines do not consume, rapid AI-driven income displacement can
+      produce “ghost GDP”: measured productivity/output rises while money velocity
+      and discretionary demand collapse.'
+    type: '[T]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - citrini-2026-global-intelligence-crisis
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  ECON-2026-925:
+    text: 'The scenario proposes a self-reinforcing “intelligence displacement spiral”:
+      AI gets better/cheaper, firms substitute AI for payroll (often as OpEx substitution),
+      layoffs reduce demand, margin pressure increases AI substitution, and the loop
+      continues without an automatic macro stabilizer.'
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.3499999940395355
+    source_ids:
+    - citrini-2026-global-intelligence-crisis
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  ECON-2026-926:
+    text: The scenario argues that agent-mediated commerce seeks to eliminate fees,
+      routing around ~2–3% card interchange by using stablecoins (or similar rails),
+      structurally pressuring card networks and rewards-funded issuers.
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.25
+    source_ids:
+    - citrini-2026-global-intelligence-crisis
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  ECON-2026-927:
+    text: Imas argues that if advanced AI/AGI automates most labor and labor’s income
+      share collapses, aggregate demand can fall enough that realized output shrinks
+      (negative growth) even when productive capacity expands.
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - aleximas-2026-negative-economic-growth
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  ECON-2026-928:
+    text: Imas presents a demand-determined (Keynesian) model with MPC heterogeneity
+      and satiated preferences in which GDP falls after AGI when the consumption-multiplier
+      effect from falling labor share dominates the baseline consumption increase
+      from lower prices (a condition he writes as an inequality over a “consumption
+      expansion factor” and the aggregate MPC).
+    type: '[T]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - aleximas-2026-negative-economic-growth
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  ECON-2026-929:
+    text: Imas claims that from ~1800 to the 1990s the real price of lighting fell
+      by roughly four orders of magnitude (≈40,000×), yet consumption of light did
+      not scale proportionally, illustrating finite/satiated demand for some goods.
+    type: '[F]'
+    domain: ECON
+    evidence_level: E4
+    credence: 0.6499999761581421
+    source_ids:
+    - aleximas-2026-negative-economic-growth
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  ECON-2026-930:
+    text: 'Imas argues that “immiserating growth” is possible via capital decumulation:
+      if automation reduces wages enough to reduce saving, the capital stock can shrink
+      over time (in an OLG setting), lowering long-run output even as technology improves.'
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - aleximas-2026-negative-economic-growth
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  ECON-2026-931:
+    text: Imas concludes that advanced AI is unlikely to cause negative GDP growth
+      because the assumptions required for negative growth are too extreme; the models
+      are better interpreted as mechanisms that could temper (not reverse) growth.
+    type: '[P]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - aleximas-2026-negative-economic-growth
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  ECON-2026-932:
+    text: Imas proposes that broadening capital ownership (e.g., via a sovereign wealth
+      fund paying citizen dividends with inalienable stakes) could mitigate AI-driven
+      demand collapse while also supporting saving/investment dynamics.
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - aleximas-2026-negative-economic-growth
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  ECON-2026-933:
+    text: Orosz argues that stablecoins are unlikely to replace credit cards for consumer
+      purchases at scale because credit cards are sticky due to chargebacks and rewards,
+      and on-chain transfers typically lack comparable consumer protections.
+    type: '[H]'
+    domain: ECON
+    evidence_level: E5
+    credence: 0.5
+    source_ids:
+    - orosz-2026-2028-gic-critique-thread
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
   GEO-2025-001:
     text: The energy transition is producing major political consequences—from bribery
       and corruption up to open warfare—and post-oil geopolitics will differ substantially
@@ -7316,6 +7547,63 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-16'
+  META-2026-147:
+    text: Citrini and Alap Shah present “The 2028 Global Intelligence Crisis” as a
+      scenario/thought-exercise (not a prediction) intended to model an under-discussed
+      left-tail macro/market risk from widespread AI adoption.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.949999988079071
+    source_ids:
+    - citrini-2026-global-intelligence-crisis
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  META-2026-148:
+    text: Alex Imas argues that prominent AI-driven growth forecasts and the economics
+      literature he reviewed generally predict positive growth effects, while the
+      possibility of AGI-driven demand collapse and negative growth is rarely discussed.
+    type: '[F]'
+    domain: META
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - aleximas-2026-negative-economic-growth
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  META-2026-149:
+    text: Orosz argues that because multiple domain-specific examples in the Citrini
+      scenario appear wrong to him (delivery, travel, payments), the article is being
+      treated too uncritically relative to its evidential basis.
+    type: '[T]'
+    domain: META
+    evidence_level: E5
+    credence: 0.6000000238418579
+    source_ids:
+    - orosz-2026-2028-gic-critique-thread
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
   RESOURCE-2025-001:
     text: By 2040 at the latest, coal, gas, and oil land rights will be stranded assets
       that cannot be monetized.
@@ -8590,6 +8878,64 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-20'
+  RISK-2026-954:
+    text: Public reporting describes agentic systems causing destructive incidents,
+      including Google's Antigravity deleting a user's drive (Dec 2025) and Replit's
+      agent deleting a production database during a code freeze (Jul 2025).
+    type: '[F]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.75
+    source_ids:
+    - harries-2026-country-full-of-geniuses
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  RISK-2026-955:
+    text: The essay argues that alignment and safety evaluation are immature, and
+      that reliably ruling out dangerous capability thresholds is becoming increasingly
+      difficult as models approach or surpass their evaluations.
+    type: '[T]'
+    domain: RISK
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - harries-2026-country-full-of-geniuses
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  RISK-2026-956:
+    text: The scenario argues that widespread AI-driven disruption of white-collar
+      income can propagate into systemic financial risk via correlated exposures (leveraged
+      software/private credit, insurer balance sheets, and prime mortgage underwriting),
+      with policy response lagging capability-driven change.
+    type: '[H]'
+    domain: RISK
+    evidence_level: E5
+    credence: 0.25
+    source_ids:
+    - citrini-2026-global-intelligence-crisis
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
   SOC-2025-001:
     text: A significant share of current social unrest and insecurity-driven radicalization
       is being caused by the ongoing civilizational energy transition.
@@ -13447,6 +13793,99 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-15'
+  TECH-2026-995:
+    text: SemiAnalysis reports Claude Code authors about 4% of GitHub public commits
+      as of February 2026.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.6000000238418579
+    source_ids:
+    - harries-2026-country-full-of-geniuses
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  TECH-2026-996:
+    text: METR reports a long-run frontier time-horizon doubling time of about 196
+      days (~7 months) and a faster doubling time of about 89 days since 2024 under
+      TH1.1.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.800000011920929
+    source_ids:
+    - harries-2026-country-full-of-geniuses
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  TECH-2026-997:
+    text: If recent time-horizon growth persists, multi-day autonomous work could
+      arrive by mid-2027 and a ~40-hour work-week horizon by early 2027.
+    type: '[P]'
+    domain: TECH
+    evidence_level: E5
+    credence: 0.25
+    source_ids:
+    - harries-2026-country-full-of-geniuses
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on:
+    - TECH-2026-996
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  TECH-2026-998:
+    text: GDPval spans 44 occupations; on the 220-task gold subset, Claude Opus 4.1
+      outputs were rated better than or tied with the human deliverable in 47.6% of
+      tasks.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E3
+    credence: 0.75
+    source_ids:
+    - harries-2026-country-full-of-geniuses
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  TECH-2026-999:
+    text: OpenAI claims GPT-5.3-Codex was 'instrumental in creating itself' by helping
+      debug training, manage deployment, and diagnose evaluations.
+    type: '[F]'
+    domain: TECH
+    evidence_level: E4
+    credence: 0.8500000238418579
+    source_ids:
+    - harries-2026-country-full-of-geniuses
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
   TRANS-2025-001:
     text: The current global energy transition away from fossil fuels is “more or
       less irreversible” at this point.
@@ -14394,6 +14833,125 @@ claims:
     part_of_chain: ''
     version: 1
     last_updated: '2026-02-15'
+  TRANS-2026-040:
+    text: Institutional readiness (governance, risk ownership, workflow redesign)
+      is a key bottleneck, with organizational adaptation lagging model capability
+      improvements.
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - harries-2026-country-full-of-geniuses
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  TRANS-2026-041:
+    text: If returns to AI capital substantially exceed returns to human labor, labor-based
+      social contracts (income/status/voice via work) come under pressure and require
+      new distributional arrangements.
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - harries-2026-country-full-of-geniuses
+    first_extracted: '2026-02-20'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-20'
+  TRANS-2026-042:
+    text: The scenario argues that step-function improvements in agentic coding (late
+      2025 onward) materially reduce the effective switching costs of many mid-market
+      SaaS products (via “build it ourselves” credible threat), compressing SaaS margins
+      and triggering a wave of enterprise renegotiations and defaults in leveraged
+      software deals.
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.44999998807907104
+    source_ids:
+    - citrini-2026-global-intelligence-crisis
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  TRANS-2026-043:
+    text: The scenario argues that consumer-facing agents (continuous background price/fit
+      optimization and automated negotiation) erode “habitual intermediation” moats,
+      driving rapid disruption of friction-based intermediaries (e.g., travel booking,
+      insurance renewals, delivery apps, real-estate commissions).
+    type: '[H]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.4000000059604645
+    source_ids:
+    - citrini-2026-global-intelligence-crisis
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  TRANS-2026-044:
+    text: Gergely Orosz argues that DoorDash/Uber’s moat is not primarily software;
+      it is real-world physical logistics, and “vibe-coded” alternatives plus AI agents
+      are unlikely to rapidly disrupt incumbents in the way described in the Citrini
+      scenario.
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - orosz-2026-2028-gic-critique-thread
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
+  TRANS-2026-045:
+    text: 'Orosz argues that “AI agents disrupt travel agents/aggregators by finding
+      cheaper deals” is backwards: travel agents and aggregators already specialize
+      in finding the cheapest offers; AI agents would route through them rather than
+      disintermediate them.'
+    type: '[T]'
+    domain: TRANS
+    evidence_level: E5
+    credence: 0.550000011920929
+    source_ids:
+    - orosz-2026-2028-gic-critique-thread
+    first_extracted: '2026-02-23'
+    extracted_by: import
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ''
+    version: 1
+    last_updated: '2026-02-23'
 chains:
   CHAIN-2026-001:
     name: Permanent Underclass

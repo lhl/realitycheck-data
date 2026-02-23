@@ -1,0 +1,173 @@
+sources:
+  - id: "citrini-2026-global-intelligence-crisis"
+    type: "BLOG"
+    title: "THE 2028 GLOBAL INTELLIGENCE CRISIS"
+    author:
+      - "Citrini"
+      - "Alap Shah"
+    year: 2026
+    url: "https://www.citriniresearch.com/p/2028gic"
+    accessed: "2026-02-23"
+    status: "analyzed"
+    analysis_file: "analysis/sources/citrini-2026-global-intelligence-crisis.md"
+    reliability: 0.55
+    bias_notes: >-
+      Investor-oriented scenario written in the style of a future “macro memo.” Strength: highlights a plausible macro
+      failure mode (demand shortfall + balance-sheet leverage) and makes assumptions legible via concrete vignettes. Weakness:
+      uses vivid narrative and pseudo-news headlines that can be mistaken for sourced evidence; many links are speculative and
+      not probabilistically calibrated; incentives may favor contrarian/viral framing.
+    topics:
+      - ai
+      - scenario-analysis
+      - macro
+      - financial-crisis
+      - demand
+      - labor-share
+      - white-collar
+      - intermediation
+      - agentic-commerce
+      - stablecoins
+      - private-credit
+      - mortgages
+    domains:
+      - META
+      - TRANS
+      - ECON
+      - RISK
+    claims_extracted:
+      - META-2026-147
+      - TRANS-2026-042
+      - TRANS-2026-043
+      - ECON-2026-924
+      - ECON-2026-925
+      - ECON-2026-926
+      - RISK-2026-956
+
+claims:
+  - id: "META-2026-147"
+    text: >-
+      Citrini and Alap Shah present “The 2028 Global Intelligence Crisis” as a scenario/thought-exercise (not a prediction)
+      intended to model an under-discussed left-tail macro/market risk from widespread AI adoption.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.95
+    source_ids: ["citrini-2026-global-intelligence-crisis"]
+    operationalization: >-
+      Check whether the authors explicitly frame the piece as a scenario (not a prediction) and describe it as left-tail risk modeling.
+    assumptions: []
+    falsifiers:
+      - The authors present the piece as a probabilistic forecast/prediction rather than a scenario.
+
+  - id: "TRANS-2026-042"
+    text: >-
+      The scenario argues that step-function improvements in agentic coding (late 2025 onward) materially reduce the effective
+      switching costs of many mid-market SaaS products (via “build it ourselves” credible threat), compressing SaaS margins and
+      triggering a wave of enterprise renegotiations and defaults in leveraged software deals.
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["citrini-2026-global-intelligence-crisis"]
+    operationalization: >-
+      Measure whether agentic coding tools (a) reduce development time/cost for SaaS-like features and (b) causally increase
+      SaaS churn/renegotiation rates and impair leveraged software credit performance.
+    assumptions:
+      - “Good-enough” internal reimplementation is sufficient to drive procurement renegotiations.
+      - Enterprise buyers have enough engineering slack to pursue internal builds.
+    falsifiers:
+      - Agentic coding does not materially change SaaS switching costs or renewal economics at scale.
+
+  - id: "TRANS-2026-043"
+    text: >-
+      The scenario argues that consumer-facing agents (continuous background price/fit optimization and automated negotiation)
+      erode “habitual intermediation” moats, driving rapid disruption of friction-based intermediaries (e.g., travel booking,
+      insurance renewals, delivery apps, real-estate commissions).
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["citrini-2026-global-intelligence-crisis"]
+    operationalization: >-
+      Track adoption of autonomous shopping/negotiation agents and test whether they reduce platform stickiness, increase
+      multi-homing, and compress intermediary take-rates in targeted categories.
+    assumptions:
+      - Agents have reliable access to price/offer surfaces (APIs, partnerships, scraping) and can transact safely at scale.
+      - Consumers delegate decisions to agents at high frequency.
+    falsifiers:
+      - Agent adoption remains niche or intermediaries retain take-rates via logistics, regulation, or privileged inventory.
+
+  - id: "ECON-2026-924"
+    text: >-
+      The scenario argues that because household consumption is roughly two-thirds of GDP and machines do not consume,
+      rapid AI-driven income displacement can produce “ghost GDP”: measured productivity/output rises while money velocity and
+      discretionary demand collapse.
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["citrini-2026-global-intelligence-crisis"]
+    operationalization: >-
+      Compare changes in labor income, distribution, and PCE with measured productivity/output; test for sustained gaps between
+      potential output and realized demand (inventory accumulation, utilization declines) attributable to income displacement.
+    assumptions:
+      - Displacement is fast relative to redistribution/institutional adaptation.
+      - High-MPC households lose income faster than they gain transfers/ownership income.
+    falsifiers:
+      - Consumption remains robust via transfers, broad capital ownership, new goods, or labor reallocation.
+
+  - id: "ECON-2026-925"
+    text: >-
+      The scenario proposes a self-reinforcing “intelligence displacement spiral”: AI gets better/cheaper, firms substitute AI
+      for payroll (often as OpEx substitution), layoffs reduce demand, margin pressure increases AI substitution, and the loop
+      continues without an automatic macro stabilizer.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["citrini-2026-global-intelligence-crisis"]
+    operationalization: >-
+      Test whether firms’ AI spend increases primarily as payroll substitution during downturns, and whether that substitution
+      measurably reduces labor income and aggregate demand in affected income deciles.
+    assumptions:
+      - AI substitution is net-labor-reducing rather than primarily complementary.
+      - Capital markets continue funding capability gains during demand weakness.
+    falsifiers:
+      - AI substitution slows materially when demand weakens, or is offset by rapid job creation/redistribution.
+
+  - id: "ECON-2026-926"
+    text: >-
+      The scenario argues that agent-mediated commerce seeks to eliminate fees, routing around ~2–3% card interchange by using
+      stablecoins (or similar rails), structurally pressuring card networks and rewards-funded issuers.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.25
+    source_ids: ["citrini-2026-global-intelligence-crisis"]
+    operationalization: >-
+      Measure whether stablecoin/card alternative rails capture meaningful share of consumer payments (not only settlement/FX),
+      and whether effective interchange/take-rates fall due to agent routing/steering.
+    assumptions:
+      - Stablecoin payments offer sufficient consumer protections (or substitutes) to be acceptable at scale.
+      - Regulatory and fraud constraints do not block mainstream adoption.
+    falsifiers:
+      - Card rails remain dominant in consumer payments and interchange economics remain durable despite agentic shopping.
+
+  - id: "RISK-2026-956"
+    text: >-
+      The scenario argues that widespread AI-driven disruption of white-collar income can propagate into systemic financial risk
+      via correlated exposures (leveraged software/private credit, insurer balance sheets, and prime mortgage underwriting),
+      with policy response lagging capability-driven change.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.25
+    source_ids: ["citrini-2026-global-intelligence-crisis"]
+    operationalization: >-
+      Stress test private-credit and insurer portfolios for concentrated exposure to AI-disrupted cashflows; track delinquency
+      and default metrics in high-white-collar regions; evaluate policy latency vs measured displacement.
+    assumptions:
+      - Credit models materially underestimate structural income risk for historically “prime” borrowers.
+      - Illiquidity + regulatory capital changes can force deleveraging.
+    falsifiers:
+      - Losses are absorbed without forced deleveraging and prime mortgage performance remains stable after adjustment.

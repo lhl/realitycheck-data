@@ -1,0 +1,164 @@
+sources:
+  - id: "aleximas-2026-negative-economic-growth"
+    type: "BLOG"
+    title: "Can advanced AI lead to negative economic growth?"
+    author:
+      - "Alex Imas"
+    year: 2026
+    url: "https://aleximas.substack.com/p/will-advanced-ai-lead-to-negative"
+    accessed: "2026-02-23"
+    status: "analyzed"
+    analysis_file: "analysis/sources/aleximas-2026-negative-economic-growth.md"
+    reliability: 0.70
+    bias_notes: >-
+      Economist-authored essay with explicit caveats (author not a macro specialist) that formalizes a demand-side failure
+      mode for AI-driven growth projections. Strength: clear assumptions, toy models, and policy discussion; engages prior
+      literature (MPC heterogeneity, secular stagnation, OLG savings dynamics). Weakness: results hinge on strong modeling
+      assumptions (satiation, near-total automation, limited institutional response) and selectively emphasizes demand-side
+      constraints relative to supply-side diffusion/innovation mechanisms.
+    topics:
+      - ai
+      - macroeconomics
+      - demand
+      - marginal-propensity-to-consume
+      - labor-share
+      - satiation
+      - secular-stagnation
+      - liquidity-trap
+      - immiserating-growth
+      - saving-rate
+      - sovereign-wealth-fund
+      - capital-ownership
+    domains:
+      - ECON
+      - META
+      - TRANS
+    claims_extracted:
+      - META-2026-148
+      - ECON-2026-927
+      - ECON-2026-928
+      - ECON-2026-929
+      - ECON-2026-930
+      - ECON-2026-931
+      - ECON-2026-932
+
+claims:
+  - id: "META-2026-148"
+    text: >-
+      Alex Imas argues that prominent AI-driven growth forecasts and the economics literature he reviewed generally predict
+      positive growth effects, while the possibility of AGI-driven demand collapse and negative growth is rarely discussed.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["aleximas-2026-negative-economic-growth"]
+    operationalization: >-
+      Review curated forecast aggregations and cited growth-forecast papers for whether they include negative-growth scenarios
+      driven by demand collapse; count explicit negative vs positive forecasts and whether demand-side mechanisms are modeled.
+    assumptions: []
+    falsifiers:
+      - Forecast aggregations and/or key papers prominently discuss demand-collapse pathways and include negative growth forecasts.
+
+  - id: "ECON-2026-927"
+    text: >-
+      Imas argues that if advanced AI/AGI automates most labor and labor’s income share collapses, aggregate demand can fall
+      enough that realized output shrinks (negative growth) even when productive capacity expands.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["aleximas-2026-negative-economic-growth"]
+    operationalization: >-
+      Model and empirically estimate whether large redistributions from high-MPC labor income to low-MPC capital income can
+      produce persistent demand shortfalls (utilization declines, inventory accumulation, investment pullback) despite lower costs.
+    assumptions:
+      - Labor income is the primary spending base for broad consumption.
+      - Redistribution/ownership expansion does not offset income loss quickly.
+    falsifiers:
+      - Consumption and investment remain strong through redistribution, new goods, or broad capital ownership.
+
+  - id: "ECON-2026-928"
+    text: >-
+      Imas presents a demand-determined (Keynesian) model with MPC heterogeneity and satiated preferences in which GDP falls
+      after AGI when the consumption-multiplier effect from falling labor share dominates the baseline consumption increase from
+      lower prices (a condition he writes as an inequality over a “consumption expansion factor” and the aggregate MPC).
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["aleximas-2026-negative-economic-growth"]
+    operationalization: >-
+      Replicate the model algebra and sensitivity; stress-test whether plausible parameter ranges for MPCs, satiation, and price
+      drops allow the inequality for negative growth to hold.
+    assumptions:
+      - Output is demand-determined in the relevant horizon.
+      - Satiation bounds baseline consumption as prices fall.
+    falsifiers:
+      - Under plausible parameterizations, the model cannot generate negative growth without implausible assumptions.
+
+  - id: "ECON-2026-929"
+    text: >-
+      Imas claims that from ~1800 to the 1990s the real price of lighting fell by roughly four orders of magnitude (≈40,000×),
+      yet consumption of light did not scale proportionally, illustrating finite/satiated demand for some goods.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["aleximas-2026-negative-economic-growth"]
+    operationalization: >-
+      Use historical “cost of light” series (e.g., lumen-hours per labor hour) to compute the price ratio between ~1800 and late-20th century.
+    assumptions: []
+    falsifiers:
+      - Historical series show materially smaller price declines or contradict the direction of change.
+
+  - id: "ECON-2026-930"
+    text: >-
+      Imas argues that “immiserating growth” is possible via capital decumulation: if automation reduces wages enough to reduce
+      saving, the capital stock can shrink over time (in an OLG setting), lowering long-run output even as technology improves.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["aleximas-2026-negative-economic-growth"]
+    operationalization: >-
+      Evaluate whether plausible automation-driven wage declines can reduce national saving rates enough to shrink capital stock
+      in OLG-like settings; compare with empirical saving behavior and policy institutions (pensions/SWFs).
+    assumptions:
+      - Saving is wage-linked and not fully offset by higher returns to scarce capital.
+      - Institutional investors/policy do not fully stabilize investment.
+    falsifiers:
+      - Saving/investment adjusts endogenously (or via institutions) such that capital stock does not shrink materially.
+
+  - id: "ECON-2026-931"
+    text: >-
+      Imas concludes that advanced AI is unlikely to cause negative GDP growth because the assumptions required for negative
+      growth are too extreme; the models are better interpreted as mechanisms that could temper (not reverse) growth.
+    type: "[P]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["aleximas-2026-negative-economic-growth"]
+    operationalization: >-
+      Track labor-share, transfers, capital ownership expansion, and demand indicators as AI adoption increases; evaluate whether
+      negative-growth conditions (as formalized) appear.
+    assumptions:
+      - Institutions adapt before the economy reaches a negative-growth regime.
+    falsifiers:
+      - Observed adoption/displacement dynamics satisfy negative-growth conditions and GDP contracts persistently.
+
+  - id: "ECON-2026-932"
+    text: >-
+      Imas proposes that broadening capital ownership (e.g., via a sovereign wealth fund paying citizen dividends with
+      inalienable stakes) could mitigate AI-driven demand collapse while also supporting saving/investment dynamics.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["aleximas-2026-negative-economic-growth"]
+    operationalization: >-
+      Model whether a SWF-style citizen dividend stabilizes aggregate demand under falling labor share while maintaining
+      investment; compare implementations (e.g., Alaska Permanent Fund) and political feasibility constraints.
+    assumptions:
+      - Political systems can implement and maintain broad capital ownership institutions before severe crisis.
+    falsifiers:
+      - Such policies are infeasible or fail to stabilize demand/investment in relevant scenarios.

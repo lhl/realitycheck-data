@@ -1,0 +1,107 @@
+sources:
+  - id: "orosz-2026-2028-gic-critique-thread"
+    type: "SOCIAL"
+    title: "Thread critique of examples in “THE 2028 GLOBAL INTELLIGENCE CRISIS”"
+    author:
+      - "Gergely Orosz"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2025810187173474664.html"
+    accessed: "2026-02-23"
+    status: "analyzed"
+    analysis_file: "analysis/sources/orosz-2026-2028-gic-critique-thread.md"
+    reliability: 0.60
+    bias_notes: >-
+      Practitioner critique (software/marketplace/payments experience) focused on “example layer” plausibility. Strength:
+      challenges vivid scenario claims with industry-mechanism objections (logistics, aggregation economics, consumer payment
+      protections). Weakness: short-form thread; may overgeneralize from personal experience; does not quantify probabilities
+      or fully engage with the scenario’s macro-level mechanism (demand + leverage) independent of specific examples.
+    topics:
+      - ai
+      - scenario-analysis
+      - critique
+      - doordash
+      - travel
+      - payments
+      - stablecoins
+      - credit-cards
+      - consumer-protection
+      - intermediation
+    domains:
+      - TRANS
+      - ECON
+      - META
+    claims_extracted:
+      - TRANS-2026-044
+      - TRANS-2026-045
+      - ECON-2026-933
+      - META-2026-149
+
+claims:
+  - id: "TRANS-2026-044"
+    text: >-
+      Gergely Orosz argues that DoorDash/Uber’s moat is not primarily software; it is real-world physical logistics, and “vibe-coded”
+      alternatives plus AI agents are unlikely to rapidly disrupt incumbents in the way described in the Citrini scenario.
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["orosz-2026-2028-gic-critique-thread"]
+    operationalization: >-
+      Decompose delivery-platform unit economics and defensibility into software vs logistics density, supply acquisition, and
+      operational execution; test whether low-cost app replication alone materially compresses take-rates absent new logistics capacity.
+    assumptions:
+      - Logistics density and execution are the binding constraints, not app UX/software features.
+    falsifiers:
+      - Empirical evidence shows rapid displacement of delivery incumbents driven mainly by software replication and agent routing.
+
+  - id: "TRANS-2026-045"
+    text: >-
+      Orosz argues that “AI agents disrupt travel agents/aggregators by finding cheaper deals” is backwards: travel agents and
+      aggregators already specialize in finding the cheapest offers; AI agents would route through them rather than disintermediate them.
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["orosz-2026-2028-gic-critique-thread"]
+    operationalization: >-
+      Compare where an optimizing “agentic travel shopper” sources inventory/prices (direct airline vs OTA vs agent) and whether
+      agent optimization shifts market share toward aggregators/agents or away from them.
+    assumptions:
+      - Aggregators/agents retain privileged inventory access or pricing through integrations/relationships.
+    falsifiers:
+      - Agents demonstrably disintermediate OTAs/agents by reliably obtaining better direct pricing across major routes.
+
+  - id: "ECON-2026-933"
+    text: >-
+      Orosz argues that stablecoins are unlikely to replace credit cards for consumer purchases at scale because credit cards are
+      sticky due to chargebacks and rewards, and on-chain transfers typically lack comparable consumer protections.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["orosz-2026-2028-gic-critique-thread"]
+    operationalization: >-
+      Track consumer payment instrument shares by use-case; evaluate whether stablecoin rails gain share in consumer purchases
+      without recreating chargeback-like dispute rights and reward economics.
+    assumptions:
+      - Consumer-protection and reversibility are central to card stickiness.
+    falsifiers:
+      - Stablecoin-based consumer payments achieve wide adoption with protections/reversibility comparable to cards.
+
+  - id: "META-2026-149"
+    text: >-
+      Orosz argues that because multiple domain-specific examples in the Citrini scenario appear wrong to him (delivery, travel, payments),
+      the article is being treated too uncritically relative to its evidential basis.
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["orosz-2026-2028-gic-critique-thread"]
+    operationalization: >-
+      Systematically audit scenario examples against domain expertise and available data; measure how often readers share the scenario
+      without engaging with mechanism validity or uncertainty.
+    assumptions:
+      - The contested examples are representative of the scenario’s overall evidential quality.
+    falsifiers:
+      - Independent audits find most scenario examples mechanistically sound and supported by data or strong analogies.
+

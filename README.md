@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 762 |
-| **Sources** | 197 |
+| **Claims** | 780 |
+| **Sources** | 201 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 53 |
+| **Predictions Tracked** | 54 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-23 | [Citrini “Global Intelligence Crisis” vs Imas “Negative growth” (with Orosz critique)](analysis/syntheses/citrini-2026-gic-vs-aleximas-2026-negative-growth-synthesis.md) | `[REVIEWED]` | Compare/contrast: scenario vs demand-side model; separates mechanism vs example layer; incorporates critique of DoorDash/travel/payments vignettes |
 | 2026-02-20 | [MJ Rathbun / OpenClaw “hit piece” incident (Matplotlib): timeline + failure modes](analysis/syntheses/mjrathbun-2026-openclaw-matplotlib-hit-piece-timeline-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Matplotlib PR closure → retaliatory named takedown posts; maintainer series + operator self-report; reconstructed timeline and mitigation ideas |
 | 2026-02-15 | [Amodei “country of geniuses”: upside, risks, and profitability (2024–2026)](analysis/syntheses/amodei-2026-upside-risk-profitability-synthesis.md) | `[DRAFT]` | Cross-source synthesis: two Amodei essays + Feb 2026 Dwarkesh interview + skeptical Thread Reader take; diffusion/bottlenecks, export controls, and rent-allocation crux |
 | 2026-02-13 | [AI 2027 predictions review state (as of 2026-02-13)](analysis/syntheses/ai-2027-predictions-review-state-synthesis.md) | `[DRAFT]` | Cross-source synthesis: AI Futures self-grading + grading CSV + model update; proxy pace multipliers, caveats, and implied takeoff-window shift |
@@ -60,6 +61,9 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-23 | [THE 2028 GLOBAL INTELLIGENCE CRISIS](analysis/sources/citrini-2026-global-intelligence-crisis.md) | `[REVIEWED]` | Viral scenario “macro memo” stress test: AI-driven white-collar displacement + friction removal → demand shock + leveraged-finance risk; key baseline factuals checked |
+| 2026-02-23 | [Can advanced AI lead to negative economic growth?](analysis/sources/aleximas-2026-negative-economic-growth.md) | `[REVIEWED]` | Economist modeling essay: demand-collapse condition + “immiserating growth” via saving/capital; concludes negative GDP unlikely; sketches broad capital-ownership policy |
+| 2026-02-23 | [Thread critique of GIC examples (Orosz)](analysis/sources/orosz-2026-2028-gic-critique-thread.md) | `[REVIEWED]` | Practitioner critique of DoorDash/travel/payments vignettes; argues scenario example layer is fragile; verifies chargeback/irreversibility substrate |
 | 2026-02-20 | [A Country Full of Geniuses](analysis/sources/harries-2026-country-full-of-geniuses.md) | `[REVIEWED]` | Essay synthesis: Feb 2026 “inflection point” framing; connects agentic coding diffusion + METR time horizon + GDPval + capex to “institutional readiness” bottleneck |
 | 2026-02-20 | [Matplotlib PR #31132 (OpenClaw agent PR + retaliation link)](analysis/sources/matplotlib-2026-pr-31132-openclaw-column-stack-vstack.md) | `[REVIEWED]` | Primary GitHub PR record: closed as OpenClaw agent; retaliation link to named takedown; policy rationale + prompt-injection noise |
 | 2026-02-20 | [MJ Rathbun: “Gatekeeping in Open Source: The Scott Shambaugh Story”](analysis/sources/rathbun-2026-gatekeeping-scott-shambaugh-story.md) | `[REVIEWED]` | Retaliatory takedown narrative targeting a maintainer by name; motive speculation and “prejudice/gatekeeping” framing |
@@ -189,15 +193,15 @@ See [claims/README.md](claims/README.md) for full statistics.
 |--------|-------------|--------|
 | TECH | Technology & AI | 227 |
 | LABOR | Labor & Employment | 42 |
-| ECON | Economics & Markets | 59 |
+| ECON | Economics & Markets | 69 |
 | GOV | Governance & Policy | 89 |
 | SOC | Social Dynamics | 33 |
-| TRANS | Transition Dynamics | 51 |
+| TRANS | Transition Dynamics | 55 |
 | RESOURCE | Resource Constraints | 16 |
 | GEO | Geopolitics | 36 |
 | INST | Institutions & Organizations | 68 |
-| RISK | Risk Assessment | 51 |
-| META | Framework & Methodology | 90 |
+| RISK | Risk Assessment | 52 |
+| META | Framework & Methodology | 93 |
 
 ---
 
@@ -307,4 +311,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-02-20*
+*Last updated: 2026-02-23*
