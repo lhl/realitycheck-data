@@ -1,0 +1,136 @@
+sources:
+  - id: "openai-2026-agreement-department-of-war"
+    type: "ARTICLE"
+    title: "Our agreement with the Department of War"
+    author:
+      - "OpenAI"
+    year: 2026
+    url: "https://openai.com/index/our-agreement-with-the-department-of-war/"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/openai-2026-agreement-department-of-war.md"
+    reliability: 0.70
+    bias_notes: >-
+      Corporate contract disclosure and framing statement. Reliable for what is published as contract language;
+      lower reliability for comparative marketing claims and for operational interpretation of ambiguous terms.
+    topics:
+      - openai
+      - department-of-war
+      - any-lawful-use
+      - autonomous-weapons
+      - surveillance
+      - domestic-law-enforcement
+      - contract
+      - transparency
+    domains:
+      - GOV
+      - INST
+      - META
+    claims_extracted:
+      - GOV-2026-130
+      - GOV-2026-131
+      - GOV-2026-132
+      - GOV-2026-133
+      - GOV-2026-134
+      - INST-2026-947
+      - META-2026-154
+
+claims:
+  - id: "GOV-2026-130"
+    text: >-
+      OpenAI published an excerpt of its DoW agreement stating that DoW may use OpenAI’s system for all lawful
+      purposes, consistent with law, operational requirements, and well-established safety and oversight
+      protocols.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["openai-2026-agreement-department-of-war"]
+    operationalization: "Confirm the published excerpt and track any subsequent version changes; identify implementing guidance for the referenced safety/oversight protocols."
+    assumptions: []
+    falsifiers:
+      - "The published excerpt is changed to remove or materially alter this clause."
+
+  - id: "GOV-2026-131"
+    text: >-
+      OpenAI’s published excerpt states its system may not be used to independently direct autonomous weapons
+      systems where DoW policy requires human control, referencing DoD Directive 3000.09.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["openai-2026-agreement-department-of-war"]
+    operationalization: "Verify the excerpted clause and compare to the requirements of DoD Directive 3000.09; assess how 'independently direct' is implemented in practice."
+    assumptions: []
+    falsifiers:
+      - "No such clause exists or it is materially different."
+
+  - id: "GOV-2026-132"
+    text: >-
+      OpenAI’s published excerpt states its system may not be used for unconstrained monitoring of U.S.
+      persons/American citizens or unconstrained collection of their data, and references FISA and EO 12333.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["openai-2026-agreement-department-of-war"]
+    operationalization: "Verify excerpted clauses and examine how 'unconstrained' is defined operationally; compare to FISA/EO 12333 compliance regimes."
+    assumptions: []
+    falsifiers:
+      - "No such clause exists or it is materially different."
+
+  - id: "GOV-2026-133"
+    text: >-
+      OpenAI’s published excerpt restricts use of its system for domestic law enforcement or domestic
+      intelligence collection, except as consistent with the Posse Comitatus Act and applicable law.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["openai-2026-agreement-department-of-war"]
+    operationalization: "Verify excerpted clauses and interpret the scope of the Posse Comitatus exception; track any implementing guidance."
+    assumptions: []
+    falsifiers:
+      - "No such clause exists or it is materially different."
+
+  - id: "GOV-2026-134"
+    text: "OpenAI claims its DoW agreement includes more guardrails than any previous government AI model agreement."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["openai-2026-agreement-department-of-war"]
+    operationalization: "Compile a corpus of prior government AI model agreements and compare guardrail clauses to assess the comparative claim."
+    assumptions:
+      - "Prior agreements are accessible or can be characterized via credible reporting."
+    falsifiers:
+      - "Prior agreements contain equal or stronger guardrails."
+
+  - id: "INST-2026-947"
+    text: >-
+      OpenAI states it asked DoW to make its agreement available to all AI companies that want to support national
+      security under clear standardized terms.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["openai-2026-agreement-department-of-war"]
+    operationalization: "Confirm the request in OpenAI’s statement and identify whether DoW later publishes a standard agreement template."
+    assumptions: []
+    falsifiers:
+      - "No such request is described or DoW rejects standardization and keeps bespoke agreements."
+
+  - id: "META-2026-154"
+    text: >-
+      OpenAI frames the key governance distinction as embedding constraints via existing public law and policy
+      references rather than via private 'prudential constraints' interpreted by a CEO.
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["openai-2026-agreement-department-of-war"]
+    operationalization: "Assess whether the agreement’s key constraints are actually determinate under public law/policy, or remain effectively delegated to private interpretation via vague terms."
+    assumptions: []
+    falsifiers:
+      - "Practical implementation shows decisive constraints are still privately interpreted and enforced."
+

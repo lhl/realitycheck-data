@@ -1,0 +1,89 @@
+sources:
+  - id: "adamscochran-2026-openai-doublespeak-thread"
+    type: "SOCIAL"
+    title: "Thread: OpenAI “doublespeak” — technical vs contractual enforcement"
+    author:
+      - "@adamscochran"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2027586100504445248.html"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/adamscochran-2026-openai-doublespeak-thread.md"
+    reliability: 0.35
+    bias_notes: >-
+      High-opinion commentary with speculative interpretations. Useful as hypothesis generation about semantic
+      ambiguity and enforcement differences, not as a factual source about contract details.
+    topics:
+      - openai
+      - anthropic
+      - any-lawful-use
+      - contracts
+      - surveillance
+      - autonomous-weapons
+      - discourse
+    domains:
+      - GOV
+      - META
+    claims_extracted:
+      - META-2026-158
+      - GOV-2026-144
+      - META-2026-159
+      - GOV-2026-143
+
+claims:
+  - id: "META-2026-158"
+    text: >-
+      Adam Cochran alleges Sam Altman used intentional vagueness (“doublespeak”) about term phrasing to obscure
+      more permissive OpenAI-DoW contract language.
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E6"
+    credence: 0.40
+    source_ids: ["adamscochran-2026-openai-doublespeak-thread"]
+    operationalization: "Compare Altman’s public statements to the full contract text and implementing guidance; evaluate whether vagueness materially misled about binding terms."
+    assumptions: []
+    falsifiers:
+      - "Full contract text matches the strongest public interpretation and is not more permissive."
+
+  - id: "GOV-2026-144"
+    text: >-
+      Adam Cochran hypothesizes that OpenAI’s surveillance/autonomous weapons constraints include carve-outs and
+      are materially laxer than Anthropic’s red lines while still sounding principled.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E6"
+    credence: 0.45
+    source_ids: ["adamscochran-2026-openai-doublespeak-thread"]
+    operationalization: "Compare OpenAI’s binding contract terms and technical enforcement to Anthropic’s; identify concrete carve-outs and their operational impact."
+    assumptions: []
+    falsifiers:
+      - "OpenAI’s constraints are at least as strict as Anthropic’s in binding terms and enforcement."
+
+  - id: "META-2026-159"
+    text: >-
+      Adam Cochran suggests Anthropic and OpenAI may use different definitions of “spying on Americans” (e.g.,
+      dragnet metadata analysis), enabling semantic room under “all lawful use” clauses.
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E6"
+    credence: 0.45
+    source_ids: ["adamscochran-2026-openai-doublespeak-thread"]
+    operationalization: "Identify each company’s written definitions and constraints regarding surveillance-like uses and metadata analysis; map differences to concrete allowed activities."
+    assumptions: []
+    falsifiers:
+      - "Primary policies show definitions and constraints are materially aligned."
+
+  - id: "GOV-2026-143"
+    text: >-
+      Adam Cochran asserts Anthropic requires human sign-off on all autonomous weapons decisions and suggests
+      OpenAI’s constraints are weaker, allowing DoW to do something Anthropic refused on moral grounds.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["adamscochran-2026-openai-doublespeak-thread"]
+    operationalization: "Verify Anthropic’s autonomous weapons policy requirements and compare them to OpenAI’s binding agreement language and enforcement mechanisms."
+    assumptions: []
+    falsifiers:
+      - "Anthropic does not have the claimed blanket requirement or OpenAI’s agreement is equally restrictive."
+

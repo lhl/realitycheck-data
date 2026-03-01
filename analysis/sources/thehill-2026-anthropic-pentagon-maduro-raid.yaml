@@ -1,0 +1,133 @@
+sources:
+  - id: "thehill-2026-anthropic-pentagon-maduro-raid"
+    type: "ARTICLE"
+    title: "Anthropic on shaky ground with Pentagon amid feud after Maduro raid"
+    author:
+      - "Filip Timotija"
+      - "Julia Shapero"
+    year: 2026
+    url: "https://thehill.com/policy/defense/5744403-anthropic-pentagon-ai-dispute/"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/thehill-2026-anthropic-pentagon-maduro-raid.md"
+    reliability: 0.60
+    bias_notes: >-
+      Mixes reporting with expert interpretation; includes anonymous senior DoD official assertions. Stronger on
+      narrative and stated positions than on operational details and exclusivity claims.
+    topics:
+      - maduro-raid
+      - genai-mil
+      - pentagon
+      - anthropic
+      - palantir
+      - supply-chain-risk
+      - any-lawful-use
+      - classified-systems
+    domains:
+      - GOV
+      - INST
+    claims_extracted:
+      - GOV-2026-121
+      - GOV-2026-123
+      - INST-2026-942
+      - GOV-2026-122
+      - INST-2026-943
+      - INST-2026-944
+      - GOV-2026-124
+
+claims:
+  - id: "GOV-2026-121"
+    text: >-
+      The Hill reports that the Pentagon confirmed it is reviewing its relationship with Anthropic, with chief
+      Pentagon spokesperson Sean Parnell stating that partners must help warfighters win.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["thehill-2026-anthropic-pentagon-maduro-raid"]
+    operationalization: "Locate the Pentagon statement and confirm consistent quotations across outlets."
+    assumptions: []
+    falsifiers:
+      - "No such statement exists or quotes are materially inaccurate."
+
+  - id: "GOV-2026-123"
+    text: "The Hill reports that Anthropic, Google, OpenAI, and xAI received a DoD contract for up to $200 million (July 2025)."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["thehill-2026-anthropic-pentagon-maduro-raid"]
+    operationalization: "Verify contract award details via procurement records or multiple independent reports."
+    assumptions: []
+    falsifiers:
+      - "Procurement records contradict the contract value or participants."
+
+  - id: "INST-2026-942"
+    text: >-
+      The Hill reports that DoW’s GenAI.mil platform onboarded Google and xAI in December and OpenAI shortly
+      thereafter, while Anthropic has not been added.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["thehill-2026-anthropic-pentagon-maduro-raid"]
+    operationalization: "Confirm GenAI.mil onboarding announcements and dates; verify whether Anthropic is absent."
+    assumptions: []
+    falsifiers:
+      - "Evidence shows different onboarding dates or that Anthropic is included."
+
+  - id: "GOV-2026-122"
+    text: >-
+      The Hill reports that after the Maduro raid, an Anthropic executive asked Palantir whether Anthropic
+      software was used; Palantir informed the Pentagon, contributing to Anthropic being viewed as a supply chain
+      risk.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["thehill-2026-anthropic-pentagon-maduro-raid"]
+    operationalization: "Cross-check the inquiry chain via additional reporting and on-the-record statements from Anthropic/Palantir/DoW."
+    assumptions: []
+    falsifiers:
+      - "Parties deny or contradict the inquiry chain."
+
+  - id: "INST-2026-943"
+    text: "The Hill reports that Claude is currently the only large language model that can operate on fully classified systems for the Pentagon."
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["thehill-2026-anthropic-pentagon-maduro-raid"]
+    operationalization: "Identify DoW documentation or credible reporting listing which models operate on fully classified systems and the criteria for that status."
+    assumptions: []
+    falsifiers:
+      - "Evidence shows other models operate equivalently on fully classified systems."
+
+  - id: "INST-2026-944"
+    text: >-
+      The Hill reports that DoW may require vendors/contractors to certify they do not use Anthropic models if
+      Anthropic is designated a supply chain risk.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["thehill-2026-anthropic-pentagon-maduro-raid"]
+    operationalization: "Track official DoW guidance requiring vendor certifications and how it is enforced."
+    assumptions: []
+    falsifiers:
+      - "No certification requirement is issued."
+
+  - id: "GOV-2026-124"
+    text: >-
+      A senior DoD official told The Hill that other AI companies agreed to enable their models for “all lawful
+      purposes” on unclassified systems and DoW is optimistic about progress on classified settings.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["thehill-2026-anthropic-pentagon-maduro-raid"]
+    operationalization: "Confirm by identifying statements from the named companies or DoW about unclassified vs classified agreement status."
+    assumptions: []
+    falsifiers:
+      - "Companies or DoW contradict the claimed agreement status."
+

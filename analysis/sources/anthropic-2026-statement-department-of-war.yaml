@@ -1,0 +1,142 @@
+sources:
+  - id: "anthropic-2026-statement-department-of-war"
+    type: "ARTICLE"
+    title: "Statement from Dario Amodei on our discussions with the Department of War"
+    author:
+      - "Dario Amodei"
+    year: 2026
+    url: "https://www.anthropic.com/news/statement-department-of-war"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/anthropic-2026-statement-department-of-war.md"
+    reliability: 0.60
+    bias_notes: >-
+      Corporate positioning in an active negotiation. Likely reliable about Anthropic’s stated policy/intent;
+      potentially biased about the Pentagon’s exact demands and about claimed “firsts”/deployment scope.
+    topics:
+      - ai
+      - national-security
+      - defense-production-act
+      - military-ai
+      - surveillance
+      - autonomous-weapons
+      - contracts
+      - anthropic
+      - department-of-war
+    domains:
+      - GOV
+      - INST
+      - RISK
+    claims_extracted:
+      - INST-2026-936
+      - GOV-2026-092
+      - GOV-2026-093
+      - GOV-2026-094
+      - RISK-2026-962
+      - RISK-2026-963
+
+claims:
+  - id: "INST-2026-936"
+    text: >-
+      Anthropic claims it deployed Claude on U.S. government classified networks and at National Labs, and that
+      Claude is extensively deployed across the Department of War and other national security agencies for
+      mission-critical applications.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["anthropic-2026-statement-department-of-war"]
+    operationalization: >-
+      Identify independent reporting, procurement records, or official program documentation confirming Claude
+      deployments on classified networks / National Labs and the claimed scope of mission-critical usage.
+    assumptions:
+      - "Anthropic’s public statement accurately reflects the scope and primacy (“first”) of these deployments."
+    falsifiers:
+      - "Credible reporting or official records contradict the claimed deployment scope or priority."
+
+  - id: "GOV-2026-092"
+    text: >-
+      Anthropic states its Department of War contracts have never included mass domestic surveillance or fully
+      autonomous weapons, and it is requesting those safeguards remain excluded.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["anthropic-2026-statement-department-of-war"]
+    operationalization: >-
+      Obtain contract language or credible excerpts describing Anthropic’s DoW usage-policy clauses and whether
+      surveillance/autonomy exclusions were included.
+    assumptions:
+      - "Anthropic’s usage-policy restrictions are implemented contractually (not only technically)."
+    falsifiers:
+      - "Contract language shows those use cases were allowed or not excluded."
+
+  - id: "GOV-2026-093"
+    text: >-
+      Anthropic claims the Department of War is insisting on “any lawful use” terms and has threatened to
+      offboard Anthropic, label it a supply chain risk, and invoke the Defense Production Act to force removal
+      of safeguards.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["anthropic-2026-statement-department-of-war"]
+    operationalization: >-
+      Confirm via independent reporting and/or official statements whether DoW communicated an “any lawful use”
+      requirement and whether DPA/supply-chain-risk/offboarding were explicitly threatened.
+    assumptions:
+      - "Multiple journalism sources are not solely recycling a single anonymous briefing without independent confirmation."
+    falsifiers:
+      - "Official DoW statements or documentary evidence deny or contradict the described threats/terms."
+
+  - id: "GOV-2026-094"
+    text: >-
+      Under current law, the U.S. government can purchase detailed records of Americans’ movements, web
+      browsing, and associations from public/commercial sources without obtaining a warrant.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["anthropic-2026-statement-department-of-war"]
+    operationalization: >-
+      Review relevant case law, statutory restrictions, and documented government purchase practices for
+      location/browsing data (including any IC or agency guidance) to determine when warrants are required.
+    assumptions:
+      - "Commercial data purchase is treated differently than compelled collection under Fourth Amendment doctrines."
+    falsifiers:
+      - "Authoritative legal guidance or binding precedent clearly requires a warrant for the described acquisition."
+
+  - id: "RISK-2026-962"
+    text: >-
+      Powerful AI increases the risk of mass domestic surveillance by enabling aggregation of dispersed data into
+      comprehensive life profiles automatically and at massive scale, creating novel liberty risks.
+    type: "[T]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["anthropic-2026-statement-department-of-war"]
+    operationalization: >-
+      Measure how AI-driven entity resolution and pattern analysis change surveillance capability (coverage,
+      false positive/negative rates, and cost) given typical commercial data availability.
+    assumptions:
+      - "The relevant dispersed data is available at scale (legally or practically) to government actors."
+    falsifiers:
+      - "Empirical evaluations show AI does not meaningfully increase surveillance power under realistic data and governance constraints."
+
+  - id: "RISK-2026-963"
+    text: >-
+      Today’s frontier AI systems are not reliable enough to be used for fully autonomous weapons (humans out of
+      the loop), and lack of oversight/guardrails creates unacceptable risk to civilians and warfighters.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["anthropic-2026-statement-department-of-war"]
+    operationalization: >-
+      Evaluate autonomous target selection/engagement systems under adversarial and edge-case stress testing;
+      compare outcomes against human-in-the-loop baselines and established ROE/LOAC compliance metrics.
+    assumptions:
+      - "Current frontier LLMs/agents would be part of the decision loop for 'fully autonomous weapons' as discussed."
+    falsifiers:
+      - "Demonstrated safe, robust fully autonomous weapons performance under realistic operational conditions and oversight regimes."
+

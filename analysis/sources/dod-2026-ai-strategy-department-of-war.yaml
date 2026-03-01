@@ -1,0 +1,141 @@
+sources:
+  - id: "dod-2026-ai-strategy-department-of-war"
+    type: "REPORT"
+    title: "Artificial Intelligence Strategy for the Department of War"
+    author:
+      - "Department of War"
+      - "Pete Hegseth"
+    year: 2026
+    url: "https://media.defense.gov/2026/Jan/12/2003855671/-1/-1/0/ARTIFICIAL-INTELLIGENCE-STRATEGY-FOR-THE-DEPARTMENT-OF-WAR.PDF"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/dod-2026-ai-strategy-department-of-war.md"
+    reliability: 0.85
+    bias_notes: >-
+      Official DoW policy memo: high reliability for stated directives and timelines; weaker for feasibility and
+      for embedded normative framing (“woke/ideological tuning,” speed-first vs alignment).
+    topics:
+      - ai
+      - national-security
+      - military-ai
+      - procurement
+      - contracts
+      - any-lawful-use
+      - data-access
+      - alignment
+    domains:
+      - GOV
+      - INST
+      - RISK
+    claims_extracted:
+      - GOV-2026-095
+      - GOV-2026-097
+      - RISK-2026-964
+      - GOV-2026-096
+      - GOV-2026-098
+      - INST-2026-937
+
+claims:
+  - id: "GOV-2026-095"
+    text: >-
+      The Department of War AI Strategy memo directs acquisition leadership to incorporate standard “any lawful
+      use” language into any DoW contract involving AI systems and/or data within 180 days.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["dod-2026-ai-strategy-department-of-war"]
+    operationalization: >-
+      Locate implementing guidance and sample contract language updates across DoW procurement actions within 180
+      days of the memo; verify inclusion of the standardized clause.
+    assumptions:
+      - "The memo is authoritative and is implemented as written across components."
+    falsifiers:
+      - "Subsequent DoW procurement documents do not adopt standardized “any lawful use” language within the specified timeline."
+
+  - id: "GOV-2026-097"
+    text: >-
+      The memo states that DoW must use AI models free from “usage policy constraints” that may limit lawful
+      military applications in national security contexts.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["dod-2026-ai-strategy-department-of-war"]
+    operationalization: >-
+      Compare DoW vendor selection and contract clauses before/after the memo for explicit requirements rejecting
+      vendor usage policy constraints beyond law/policy.
+    assumptions:
+      - "“Usage policy constraints” refers to vendor-imposed restrictions beyond existing law/policy."
+    falsifiers:
+      - "Implementation guidance clarifies that vendor safeguards remain required and are not treated as disqualifying constraints."
+
+  - id: "RISK-2026-964"
+    text: >-
+      The memo asserts that the risks of not moving fast enough on AI adoption outweigh the risks of imperfect
+      alignment.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["dod-2026-ai-strategy-department-of-war"]
+    operationalization: >-
+      Track subsequent DoW policy and procurement decisions for systematic preference of rapid deployment over
+      alignment/safety gating (e.g., reduced evaluation requirements, accelerated accreditation).
+    assumptions:
+      - "The stated tradeoff reflects actual operational priorities rather than rhetorical emphasis."
+    falsifiers:
+      - "Subsequent policy increases alignment/safety gating even when it slows adoption."
+
+  - id: "GOV-2026-096"
+    text: >-
+      The memo directs the CDAO to establish benchmarks for model “objectivity” as a procurement criterion within
+      90 days and warns against ideological tuning that interferes with truth-seeking.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["dod-2026-ai-strategy-department-of-war"]
+    operationalization: >-
+      Identify CDAO-issued benchmark definitions and whether they are integrated into procurement scoring/rubrics
+      within 90 days.
+    assumptions:
+      - "“Objectivity” can be operationalized into measurable benchmark criteria."
+    falsifiers:
+      - "No benchmark definitions are issued, or issued benchmarks are not used in procurement."
+
+  - id: "GOV-2026-098"
+    text: >-
+      The memo directs DoW to adopt the latest frontier AI models within 30 days of public release and requires
+      vendors to keep models updated in DoW systems.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["dod-2026-ai-strategy-department-of-war"]
+    operationalization: >-
+      Compare public model release dates to DoW deployment dates on relevant networks; evaluate whether vendors
+      are contractually required to update models on DoW systems within 30 days.
+    assumptions:
+      - "DoW systems and accreditation processes can support a 30-day update cadence."
+    falsifiers:
+      - "Observed deployment/update cadences are substantially slower in practice due to accreditation, security, or procurement constraints."
+
+  - id: "INST-2026-937"
+    text: >-
+      The memo directs accelerated data access reforms (federated data catalogs across classification levels, with
+      CDAO authority to direct release of data to cleared users with valid purpose and written justifications for
+      denials within 7 days).
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["dod-2026-ai-strategy-department-of-war"]
+    operationalization: >-
+      Monitor whether federated catalogs are created and whether release/denial processes match the memo’s
+      timelines and documentation requirements.
+    assumptions:
+      - "DoW components have the technical capacity and incentives to comply with rapid cataloging and release processes."
+    falsifiers:
+      - "Catalogs are not created or release authority is not exercised as described."
+

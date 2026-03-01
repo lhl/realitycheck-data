@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 780 |
-| **Sources** | 201 |
+| **Claims** | 865 |
+| **Sources** | 218 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 54 |
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-28 | [Anthropic–Pentagon standoff (Feb 2026): “any lawful use,” DPA leverage, and safety red lines](analysis/syntheses/anthropic-pentagon-standoff-2026-synthesis.md) | `[DRAFT]` | Cross-source synthesis: DoW “any lawful use” push collides with Anthropic red lines; DPA vs supply-chain-risk leverage; OpenAI contract compromise; key uncertainties |
 | 2026-02-23 | [Citrini “Global Intelligence Crisis” vs Imas “Negative growth” (with Orosz critique)](analysis/syntheses/citrini-2026-gic-vs-aleximas-2026-negative-growth-synthesis.md) | `[REVIEWED]` | Compare/contrast: scenario vs demand-side model; separates mechanism vs example layer; incorporates critique of DoorDash/travel/payments vignettes |
 | 2026-02-20 | [MJ Rathbun / OpenClaw “hit piece” incident (Matplotlib): timeline + failure modes](analysis/syntheses/mjrathbun-2026-openclaw-matplotlib-hit-piece-timeline-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Matplotlib PR closure → retaliatory named takedown posts; maintainer series + operator self-report; reconstructed timeline and mitigation ideas |
 | 2026-02-15 | [Amodei “country of geniuses”: upside, risks, and profitability (2024–2026)](analysis/syntheses/amodei-2026-upside-risk-profitability-synthesis.md) | `[DRAFT]` | Cross-source synthesis: two Amodei essays + Feb 2026 Dwarkesh interview + skeptical Thread Reader take; diffusion/bottlenecks, export controls, and rent-allocation crux |
@@ -61,6 +62,22 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-02-28 | [Artificial Intelligence Strategy for the Department of War](analysis/sources/dod-2026-ai-strategy-department-of-war.md) | `[DRAFT]` | Official DoW policy memo: standardize “any lawful use,” reject vendor usage constraints, and prioritize speed over alignment |
+| 2026-02-28 | [Statement from Dario Amodei on our discussions with the Department of War](analysis/sources/anthropic-2026-statement-department-of-war.md) | `[DRAFT]` | Anthropic statement: refuses mass domestic surveillance + fully autonomous weapons; describes DoW threats (offboard/supply-chain-risk/DPA) |
+| 2026-02-28 | [Our agreement with the Department of War](analysis/sources/openai-2026-agreement-department-of-war.md) | `[DRAFT]` | OpenAI publishes DoW agreement excerpt: “all lawful purposes” plus law/policy-referenced constraints (autonomy, surveillance, domestic LE) |
+| 2026-02-28 | [What the Defense Production Act Can and Can’t Do to Anthropic](analysis/sources/rozenshtein-2026-dpa-anthropic.md) | `[DRAFT]` | Legal analysis: DPA Title I priority vs allocation/compulsion; forced retraining raises major-questions and First Amendment issues |
+| 2026-02-28 | [Anthropic, the Pentagon, and the Defense Production Act](analysis/sources/reason-2026-anthropic-pentagon-dpa-volokh.md) | `[DRAFT]` | Link post relaying Lawfare excerpt; disclaimer of expertise; propagation node |
+| 2026-02-28 | [What to know about the Defense Production Act and the Pentagon’s Anthropic ultimatum](analysis/sources/ap-2026-dpa-anthropic-ultimatum.md) | `[DRAFT]` | AP explainer: DPA background + reported ultimatum; emphasizes novelty of compelling removal of AI safety limits |
+| 2026-02-28 | [Pentagon gives Anthropic ultimatum over Claude](analysis/sources/axios-2026-anthropic-pentagon-standoff.md) | `[DRAFT]` | Axios: deadline ultimatum; contractor ecosystem pressure; ties escalation to “any lawful use” contracting push |
+| 2026-02-28 | [Claude caught in the middle of Pentagon controversy](analysis/sources/axios-2026-claude-maduro-raid.md) | `[DRAFT]` | Axios: Maduro-raid disclosure as flashpoint; red lines vs lawful use; stakes of classified deployment |
+| 2026-02-28 | [Anthropic on shaky ground with Pentagon amid feud after Maduro raid](analysis/sources/thehill-2026-anthropic-pentagon-maduro-raid.md) | `[DRAFT]` | The Hill: GenAI.mil platform context; anonymous official claims about Palantir inquiry chain and supply-chain-risk posture |
+| 2026-02-28 | [‘Incoherent’: Hegseth’s Anthropic ultimatum confounds AI policymakers](analysis/sources/politico-2026-hegseth-anthropic-ultimatum.md) | `[DRAFT]` | Politico: reporting + expert reaction; contradiction of supply-chain-risk plus DPA threat; partnership chilling-effect concerns |
+| 2026-02-28 | [OpenAI reaches agreement with Pentagon to use AI models](analysis/sources/axios-2026-openai-pentagon-agreement.md) | `[DRAFT]` | Axios: OpenAI deal as compromise leverage; (unverified) claims about Anthropic litigation and presidential posting |
+| 2026-02-28 | [Thread: DoW confirms OpenAI deal is “all lawful use” (law/policy vs CEO prudence framing)](analysis/sources/undersecretaryf-2026-openai-all-lawful-use-thread.md) | `[DRAFT]` | DoW-aligned thread: legitimacy argument law/policy vs CEO prudence; claims compromise offered to Anthropic |
+| 2026-02-28 | [Thread: OpenAI “doublespeak” — technical vs contractual enforcement](analysis/sources/adamscochran-2026-openai-doublespeak-thread.md) | `[DRAFT]` | Speculative thread: semantic ambiguity and contract vs technical enforcement; OpenAI may be laxer than Anthropic |
+| 2026-02-28 | [Thread: “OpenAI still has ‘all lawful use’ — nobody read the articles”](analysis/sources/livgorton-2026-openai-all-lawful-use-thread.md) | `[DRAFT]` | Commentary: argues OpenAI deal still includes “all lawful use” and may be functionally unchanged |
+| 2026-02-28 | [Thread: Supply chain risk designation pushes world toward open-source dominance (favors China; higher variance)](analysis/sources/deanwball-2026-supply-chain-risk-open-source-thread.md) | `[DRAFT]` | Scenario: coercion increases closed-lab risk premium; pushes open-source dominance; geopolitical and misuse implications |
+| 2026-02-28 | [Thread: “Trump has proof the election was stolen!” (rebuttal list)](analysis/sources/adamscochran-2026-election-stolen-thread.md) | `[DRAFT]` | Tangential: election rebuttal list; misattribution flagged (Kemp vs Raffensperger) |
 | 2026-02-23 | [THE 2028 GLOBAL INTELLIGENCE CRISIS](analysis/sources/citrini-2026-global-intelligence-crisis.md) | `[REVIEWED]` | Viral scenario “macro memo” stress test: AI-driven white-collar displacement + friction removal → demand shock + leveraged-finance risk; key baseline factuals checked |
 | 2026-02-23 | [Can advanced AI lead to negative economic growth?](analysis/sources/aleximas-2026-negative-economic-growth.md) | `[REVIEWED]` | Economist modeling essay: demand-collapse condition + “immiserating growth” via saving/capital; concludes negative GDP unlikely; sketches broad capital-ownership policy |
 | 2026-02-23 | [Thread critique of GIC examples (Orosz)](analysis/sources/orosz-2026-2028-gic-critique-thread.md) | `[REVIEWED]` | Practitioner critique of DoorDash/travel/payments vignettes; argues scenario example layer is fragile; verifies chargeback/irreversibility substrate |
@@ -194,14 +211,14 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TECH | Technology & AI | 227 |
 | LABOR | Labor & Employment | 42 |
 | ECON | Economics & Markets | 69 |
-| GOV | Governance & Policy | 89 |
+| GOV | Governance & Policy | 143 |
 | SOC | Social Dynamics | 33 |
-| TRANS | Transition Dynamics | 55 |
+| TRANS | Transition Dynamics | 56 |
 | RESOURCE | Resource Constraints | 16 |
-| GEO | Geopolitics | 36 |
-| INST | Institutions & Organizations | 68 |
-| RISK | Risk Assessment | 52 |
-| META | Framework & Methodology | 93 |
+| GEO | Geopolitics | 37 |
+| INST | Institutions & Organizations | 84 |
+| RISK | Risk Assessment | 57 |
+| META | Framework & Methodology | 101 |
 
 ---
 
@@ -311,4 +328,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-02-23*
+*Last updated: 2026-03-01*

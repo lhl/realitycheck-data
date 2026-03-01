@@ -1,0 +1,76 @@
+sources:
+  - id: "reason-2026-anthropic-pentagon-dpa-volokh"
+    type: "ARTICLE"
+    title: "Anthropic, the Pentagon, and the Defense Production Act"
+    author:
+      - "Eugene Volokh"
+    year: 2026
+    url: "https://reason.com/volokh/2026/02/25/anthropic-the-pentagon-and-the-defense-production-act/"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/reason-2026-anthropic-pentagon-dpa-volokh.md"
+    reliability: 0.60
+    bias_notes: >-
+      Secondary relay / link post. Explicitly disclaims independent expertise and primarily shares an excerpt of
+      Rozenshtein’s Lawfare analysis. Useful as a propagation node, not as independent reporting.
+    topics:
+      - defense-production-act
+      - any-lawful-use
+      - military-ai
+      - contracts
+      - commentary
+    domains:
+      - GOV
+      - META
+    claims_extracted:
+      - META-2026-153
+      - GOV-2026-104
+      - GOV-2026-105
+
+claims:
+  - id: "META-2026-153"
+    text: >-
+      Volokh’s post explicitly disclaims independent expertise, frames itself as passing along Rozenshtein’s
+      Lawfare analysis, and invites credible contrary views.
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["reason-2026-anthropic-pentagon-dpa-volokh"]
+    operationalization: "Read the post text and identify explicit disclaimers and requests for contrary views."
+    assumptions: []
+    falsifiers:
+      - "The post lacks disclaimers or does not request contrary views."
+
+  - id: "GOV-2026-104"
+    text: >-
+      Volokh’s post relays (via excerpt) that Defense Secretary Pete Hegseth met Anthropic CEO Dario Amodei on Feb.
+      24 and threatened to invoke the Defense Production Act if Anthropic does not agree to the Pentagon’s terms
+      by Friday.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["reason-2026-anthropic-pentagon-dpa-volokh"]
+    operationalization: >-
+      Cross-check the relayed ultimatum details against the primary Lawfare source and other independent
+      reporting; identify any official confirmation.
+    assumptions:
+      - "The excerpt accurately represents the underlying Lawfare text and reporting."
+    falsifiers:
+      - "Primary reporting contradicts the meeting date or DPA threat framing."
+
+  - id: "GOV-2026-105"
+    text: >-
+      The post’s excerpt frames the Defense Production Act as a Korean War–era statute with broad authority to
+      direct private industry for national defense and notes reauthorization through September 2026.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["reason-2026-anthropic-pentagon-dpa-volokh"]
+    operationalization: "Verify statutory history and current sunset/reauthorization date in official sources."
+    assumptions: []
+    falsifiers:
+      - "Authoritative statutory sources contradict the described extension timeline."
+

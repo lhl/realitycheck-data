@@ -1,0 +1,58 @@
+sources:
+  - id: "livgorton-2026-openai-all-lawful-use-thread"
+    type: "SOCIAL"
+    title: "Thread: “OpenAI still has ‘all lawful use’ — nobody read the articles”"
+    author:
+      - "@livgorton"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2027616963942617195.html"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/livgorton-2026-openai-all-lawful-use-thread.md"
+    reliability: 0.40
+    bias_notes: >-
+      Short commentary expressing frustration; includes an interpretive historical claim about contract continuity
+      that requires primary negotiation documents to verify.
+    topics:
+      - openai
+      - department-of-war
+      - any-lawful-use
+      - contracts
+      - discourse
+    domains:
+      - GOV
+      - META
+    claims_extracted:
+      - GOV-2026-142
+      - META-2026-157
+
+claims:
+  - id: "GOV-2026-142"
+    text: >-
+      Liv Gorton claims OpenAI’s DoW contract still contains an “all lawful use” clause and is functionally the
+      same contract OpenAI has always been offered.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["livgorton-2026-openai-all-lawful-use-thread"]
+    operationalization: "Compare OpenAI’s current published excerpt to any prior offered term sheets or historical reporting to determine whether terms materially changed."
+    assumptions:
+      - "The author has access to or correctly infers the historical offer terms."
+    falsifiers:
+      - "Primary documents show prior offered terms were materially different."
+
+  - id: "META-2026-157"
+    text: >-
+      Liv Gorton claims many commentators have not read the underlying articles/documents about the OpenAI-DoW
+      agreement and are misinformed.
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E6"
+    credence: 0.40
+    source_ids: ["livgorton-2026-openai-all-lawful-use-thread"]
+    operationalization: "Sample public commentary and compare stated claims to the actual published contract language/excerpts."
+    assumptions: []
+    falsifiers:
+      - "A representative sample of discourse accurately reflects the underlying documents."
+

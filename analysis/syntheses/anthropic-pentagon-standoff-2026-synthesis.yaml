@@ -1,0 +1,35 @@
+sources:
+  - id: "anthropic-pentagon-standoff-2026-synthesis"
+    type: "KNOWLEDGE"
+    title: "Synthesis Analysis: Anthropic–Pentagon standoff (Feb 2026) — “any lawful use,” DPA leverage, and safety red lines"
+    author:
+      - "gpt-5.2"
+    year: 2026
+    url: ""
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/syntheses/anthropic-pentagon-standoff-2026-synthesis.md"
+    reliability: 0.70
+    bias_notes: >-
+      Internal cross-source synthesis document in realitycheck-data (analysis/syntheses). Synthesizes multiple
+      journalism, official-doc, and social sources; conclusions are credence-weighted and provisional.
+    topics:
+      - anthropic
+      - openai
+      - department-of-war
+      - pentagon
+      - any-lawful-use
+      - defense-production-act
+      - supply-chain-risk
+      - autonomous-weapons
+      - surveillance
+      - governance
+      - contracts
+    domains:
+      - GOV
+      - INST
+      - RISK
+      - GEO
+      - META
+    claims_extracted: []
+

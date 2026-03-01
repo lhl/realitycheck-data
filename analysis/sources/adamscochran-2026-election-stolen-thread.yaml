@@ -1,0 +1,57 @@
+sources:
+  - id: "adamscochran-2026-election-stolen-thread"
+    type: "SOCIAL"
+    title: "Thread: “Trump has proof the election was stolen!” (rebuttal list)"
+    author:
+      - "@adamscochran"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2027603228104253607.html"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/adamscochran-2026-election-stolen-thread.md"
+    reliability: 0.45
+    bias_notes: >-
+      Political rebuttal list with factual attributions that require primary sourcing. Included because it was in
+      the user’s source list; tangential to the Anthropic–DoW dispute.
+    topics:
+      - misinformation
+      - elections
+      - trump
+      - politics
+    domains:
+      - GOV
+      - META
+    claims_extracted:
+      - GOV-2026-145
+      - META-2026-160
+
+claims:
+  - id: "GOV-2026-145"
+    text: >-
+      Adam Cochran’s thread claims there is recorded audio of Trump telling Georgia Gov. Brian Kemp to “find”
+      11,000 votes; this appears to misattribute the widely cited “find votes” recording (commonly reported as a
+      call with Georgia Secretary of State Brad Raffensperger).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["adamscochran-2026-election-stolen-thread"]
+    operationalization: "Verify against primary recordings/transcripts and identify the actual participant(s) in the recorded call."
+    assumptions: []
+    falsifiers:
+      - "Primary recordings show Kemp was the interlocutor in the referenced call."
+
+  - id: "META-2026-160"
+    text: >-
+      Adam Cochran asserts that claims of “proof” the 2020 election was stolen are false and provides a rebuttal
+      list of counterevidence and legal/prosecutorial citations.
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["adamscochran-2026-election-stolen-thread"]
+    operationalization: "Trace each cited item to its primary source (recordings, court filings, sworn statements) and evaluate whether it supports the thread’s conclusions."
+    assumptions: []
+    falsifiers:
+      - "The cited items are misrepresented or credible contrary evidence exists."
+

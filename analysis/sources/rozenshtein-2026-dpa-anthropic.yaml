@@ -1,0 +1,144 @@
+sources:
+  - id: "rozenshtein-2026-dpa-anthropic"
+    type: "ARTICLE"
+    title: "What the Defense Production Act Can and Can’t Do to Anthropic"
+    author:
+      - "Alan Z. Rozenshtein"
+    year: 2026
+    url: "https://www.lawfaremedia.org/article/what-the-defense-production-act-can-and-can%27t-do-to-anthropic"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/rozenshtein-2026-dpa-anthropic.md"
+    reliability: 0.75
+    bias_notes: >-
+      Legal analysis with a normative thesis (Congress should set military AI rules). High value for mapping DPA
+      ambiguity; relies on reporting for underlying facts and makes judicial-outcome predictions.
+    topics:
+      - defense-production-act
+      - any-lawful-use
+      - procurement
+      - military-ai
+      - surveillance
+      - autonomous-weapons
+      - first-amendment
+      - major-questions-doctrine
+    domains:
+      - GOV
+      - RISK
+    claims_extracted:
+      - GOV-2026-099
+      - GOV-2026-100
+      - GOV-2026-101
+      - GOV-2026-102
+      - GOV-2026-103
+      - RISK-2026-965
+
+claims:
+  - id: "GOV-2026-099"
+    text: >-
+      On Feb. 24, 2026, Defense Secretary Pete Hegseth reportedly threatened to invoke the Defense Production Act
+      if Anthropic did not accept DoW terms by Friday, framing the DPA as a way to compel Anthropic to provide its
+      technology on the Pentagon’s terms.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["rozenshtein-2026-dpa-anthropic"]
+    operationalization: >-
+      Confirm the ultimatum timeline and DPA threat via multiple independent reports and/or official DoW
+      statements; identify whether any formal DPA order was issued.
+    assumptions:
+      - "Reporting reflects actual DoW negotiation posture rather than speculative commentary."
+    falsifiers:
+      - "Credible sources or official records deny the DPA threat or contradict the timeline."
+
+  - id: "GOV-2026-100"
+    text: >-
+      Title I of the Defense Production Act (50 U.S.C. § 4511) includes both priority performance authority for
+      contracts/orders and broader authority to require acceptance/performance and to allocate materials,
+      services, and facilities upon conditions the President deems necessary for national defense.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["rozenshtein-2026-dpa-anthropic"]
+    operationalization: >-
+      Verify against the statutory text and authoritative interpretations; map which sub-clauses correspond to
+      priority vs allocation/compulsion powers.
+    assumptions:
+      - "Statutory text is the controlling authority for this high-level characterization."
+    falsifiers:
+      - "Authoritative interpretation shows the characterization materially misstates the scope or structure of § 4511."
+
+  - id: "GOV-2026-101"
+    text: >-
+      The DPA’s broader allocation/compelled-contracting authorities are historically underused and undertested,
+      making their extension to an AI safety-guardrails dispute legally uncertain and potentially vulnerable under
+      the major questions doctrine.
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["rozenshtein-2026-dpa-anthropic"]
+    operationalization: >-
+      Survey post–Korean War DPA Title I allocation/compulsion litigation and analyze whether courts have upheld
+      analogous uses for software/services and contract-term coercion.
+    assumptions:
+      - "Courts apply major-questions reasoning to novel DPA applications with large economic/political significance."
+    falsifiers:
+      - "Clear precedent or statutory amendments establish broad, routinely upheld allocation/compulsion authority for comparable disputes."
+
+  - id: "GOV-2026-102"
+    text: >-
+      The legality of using the DPA against Anthropic depends on whether DoW is demanding (a) dropping contractual
+      guardrails (same model, different terms) or (b) forced retraining to remove guardrails in the model itself;
+      the latter is more like compelling a new product and is harder to justify.
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.70
+    source_ids: ["rozenshtein-2026-dpa-anthropic"]
+    operationalization: >-
+      Identify the exact government demand (contract-language change vs retraining) and analyze statutory
+      'services'/'development' definitions and judicial treatment of compelled software development.
+    assumptions:
+      - "Courts distinguish contract-term changes from compelled creation/modification of a substantially different product."
+    falsifiers:
+      - "Judicial decisions treat compelled retraining as clearly within DPA compulsion without heightened scrutiny."
+
+  - id: "GOV-2026-103"
+    text: >-
+      If Anthropic resists a formal DPA order, a likely path is compliance under protest followed by immediate
+      litigation seeking a temporary restraining order, with legal uncertainty functioning as leverage even absent
+      a clear court victory.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["rozenshtein-2026-dpa-anthropic"]
+    operationalization: >-
+      Observe Anthropic’s response to any issued DPA order and whether it seeks emergency injunctive relief;
+      assess timing and outcomes of TRO proceedings.
+    assumptions:
+      - "Criminal penalties and operational disruption risks make outright refusal unlikely absent very strong legal confidence."
+    falsifiers:
+      - "Anthropic refuses to comply pending adjudication and courts deny early injunctive relief, establishing a different practical path."
+
+  - id: "RISK-2026-965"
+    text: >-
+      Compelling Anthropic to retrain Claude to remove safety guardrails may raise unsettled First Amendment
+      issues if model training and output constraints are treated as protected editorial judgment, making the
+      compulsion a form of compelled speech.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["rozenshtein-2026-dpa-anthropic"]
+    operationalization: >-
+      Track litigation and scholarship addressing whether AI model training/curation is expressive conduct and
+      how compelled modifications are analyzed under the First Amendment.
+    assumptions:
+      - "Courts analogize model training/guardrails to editorial or curatorial choices rather than purely functional engineering."
+    falsifiers:
+      - "Courts hold such training/guardrail choices are not expressive and First Amendment scrutiny does not apply."
+

@@ -1,0 +1,115 @@
+sources:
+  - id: "axios-2026-claude-maduro-raid"
+    type: "ARTICLE"
+    title: "Claude caught in the middle of Pentagon controversy"
+    author:
+      - "Tal Axelrod"
+    year: 2026
+    url: "https://www.axios.com/2026/02/13/anthropic-claude-maduro-raid-pentagon"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/axios-2026-claude-maduro-raid.md"
+    reliability: 0.60
+    bias_notes: >-
+      Short, highly compressed Axios reporting. Central factual hook (Maduro raid) is attributed to WSJ; other
+      causal connections are plausible but not fully evidenced here.
+    topics:
+      - maduro-raid
+      - anthropic
+      - claude
+      - palantir
+      - pentagon
+      - any-lawful-use
+      - classified-systems
+    domains:
+      - GOV
+      - INST
+    claims_extracted:
+      - GOV-2026-117
+      - GOV-2026-118
+      - GOV-2026-120
+      - INST-2026-940
+      - INST-2026-941
+      - GOV-2026-119
+
+claims:
+  - id: "GOV-2026-117"
+    text: >-
+      Axios reports that The Wall Street Journal disclosed the U.S. military used Anthropic’s Claude in the
+      January 2026 raid that captured Nicolás Maduro.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["axios-2026-claude-maduro-raid"]
+    operationalization: "Locate WSJ’s original reporting and any official confirmations/denials; cross-check consistent details across independent outlets."
+    assumptions: []
+    falsifiers:
+      - "Credible evidence contradicts Claude’s role in the operation."
+
+  - id: "GOV-2026-118"
+    text: >-
+      Axios reports that after the raid disclosure, Anthropic asked Palantir whether Claude was used in the
+      operation, contributing to DoW anger and escalation.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["axios-2026-claude-maduro-raid"]
+    operationalization: "Confirm the inquiry chain via multiple sources and any on-the-record statements from Anthropic/Palantir/DoW."
+    assumptions: []
+    falsifiers:
+      - "Parties deny the inquiry chain or show it did not influence the dispute."
+
+  - id: "GOV-2026-120"
+    text: >-
+      The reported dispute between Anthropic and DoW centers on Anthropic’s red lines on surveillance/autonomous
+      weapons versus DoW’s emphasis on “any lawful use” access for military operations.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["axios-2026-claude-maduro-raid"]
+    operationalization: "Compare Anthropic’s published red lines and contract language to DoW policy documents and contracting language emphasizing “any lawful use”."
+    assumptions: []
+    falsifiers:
+      - "Primary documents show both sides’ positions are compatible without meaningful conflict."
+
+  - id: "INST-2026-940"
+    text: "Axios reports that Claude is the only AI model currently available on fully classified DoW systems for certain uses."
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["axios-2026-claude-maduro-raid"]
+    operationalization: "Identify DoW documentation or credible reporting on which frontier models are deployed on fully classified systems and under what conditions."
+    assumptions: []
+    falsifiers:
+      - "Evidence that other frontier models are equivalently deployed on fully classified systems."
+
+  - id: "INST-2026-941"
+    text: >-
+      Axios reports that DoW is working with other AI firms to bring additional frontier models into
+      sensitive/classified settings, reducing dependence on a single vendor.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["axios-2026-claude-maduro-raid"]
+    operationalization: "Track announcements and procurement actions enabling other AI companies’ models on classified networks."
+    assumptions: []
+    falsifiers:
+      - "No additional vendors/models are deployed or progressed on classified systems despite the reported effort."
+
+  - id: "GOV-2026-119"
+    text: "Axios suggests the Maduro raid disclosure was a key causal trigger that escalated DoW’s posture toward Anthropic into an ultimatum."
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["axios-2026-claude-maduro-raid"]
+    operationalization: "Reconstruct a detailed timeline of DoW policy decisions and negotiation steps to test whether the raid disclosure preceded and drove escalation versus merely providing a pretext."
+    assumptions: []
+    falsifiers:
+      - "Evidence shows escalation was decided independently of the raid disclosure."
+

@@ -1,0 +1,131 @@
+sources:
+  - id: "axios-2026-openai-pentagon-agreement"
+    type: "ARTICLE"
+    title: "OpenAI reaches agreement with Pentagon to use AI models"
+    author:
+      - "Dave Lawler"
+      - "Maria Curi"
+    year: 2026
+    url: "https://www.axios.com/2026/02/27/pentagon-openai-safety-red-lines-anthropic"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/axios-2026-openai-pentagon-agreement.md"
+    reliability: 0.65
+    bias_notes: >-
+      Event-driven scoop connecting OpenAI’s agreement to the Anthropic standoff. Strong for chronology and
+      reported agreement existence; weaker for claims about identical compromise terms, litigation intent, and
+      presidential posting without primary artifacts embedded.
+    topics:
+      - openai
+      - department-of-war
+      - any-lawful-use
+      - contracts
+      - anthropic
+      - supply-chain-risk
+      - defense-production-act
+    domains:
+      - GOV
+      - INST
+    claims_extracted:
+      - GOV-2026-135
+      - INST-2026-948
+      - GOV-2026-137
+      - GOV-2026-138
+      - GOV-2026-136
+      - GOV-2026-139
+      - INST-2026-949
+
+claims:
+  - id: "GOV-2026-135"
+    text: >-
+      Axios reports that OpenAI reached an agreement with DoW allowing the use of OpenAI’s AI models for “all
+      lawful purposes,” referencing a disclosed document/excerpt.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["axios-2026-openai-pentagon-agreement"]
+    operationalization: "Confirm OpenAI’s disclosed agreement language and any DoW confirmations; track whether the agreement terms change over time."
+    assumptions: []
+    falsifiers:
+      - "No such agreement exists or the terms are materially different."
+
+  - id: "INST-2026-948"
+    text: >-
+      Axios frames OpenAI’s “all lawful purposes” agreement as the compromise Anthropic was offered but rejected,
+      implying Anthropic’s stance is a refusal of law/policy-referenced safety mechanisms in favor of CEO-defined
+      prudential constraints.
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["axios-2026-openai-pentagon-agreement"]
+    operationalization: "Compare Anthropic’s offered terms (if disclosed) against OpenAI’s agreement; assess whether differences are primarily in interpretation authority or substantive allowed uses."
+    assumptions: []
+    falsifiers:
+      - "Evidence shows Anthropic was not offered materially similar terms or that OpenAI’s agreement differs materially in allowed uses."
+
+  - id: "GOV-2026-137"
+    text: "Axios reports that Anthropic planned or threatened to sue DoW in response to the ultimatum and threatened offboarding/escalation."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["axios-2026-openai-pentagon-agreement"]
+    operationalization: "Track whether litigation is filed and review any on-the-record Anthropic statements about intent to sue."
+    assumptions: []
+    falsifiers:
+      - "Anthropic denies intent and no litigation is filed despite offboarding."
+
+  - id: "GOV-2026-138"
+    text: "Axios reports President Trump posted an order/threat contingent on Anthropic suing DoW."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["axios-2026-openai-pentagon-agreement"]
+    operationalization: "Locate the referenced post and confirm its content and timing; track subsequent agency actions."
+    assumptions: []
+    falsifiers:
+      - "No such post exists or it is materially different."
+
+  - id: "GOV-2026-136"
+    text: >-
+      Axios suggests DoW is using OpenAI’s agreement to increase pressure on Anthropic and to demonstrate that
+      other labs will accept “all lawful purposes” terms.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["axios-2026-openai-pentagon-agreement"]
+    operationalization: "Compare negotiation posture and public statements before/after OpenAI’s agreement; identify whether DoW explicitly cites the agreement as leverage."
+    assumptions: []
+    falsifiers:
+      - "Evidence shows DoW posture was unchanged by OpenAI’s agreement."
+
+  - id: "GOV-2026-139"
+    text: >-
+      Axios reports DoW insists on “all lawful use/purposes” as the touchstone for AI contracts, and that xAI and
+      OpenAI agreed under referenced safety mechanisms.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["axios-2026-openai-pentagon-agreement"]
+    operationalization: "Verify touchstone language in DoW strategy memos and check company statements for agreement status (unclassified vs classified)."
+    assumptions: []
+    falsifiers:
+      - "Official statements contradict the touchstone claim or vendor agreement status."
+
+  - id: "INST-2026-949"
+    text: "Axios suggests OpenAI’s agreement (and other labs’ movement) reduces Anthropic’s bargaining leverage, increasing the likelihood of offboarding."
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["axios-2026-openai-pentagon-agreement"]
+    operationalization: "Observe negotiation outcomes and contract continuity; compare to counterfactual where OpenAI/xAI did not agree."
+    assumptions: []
+    falsifiers:
+      - "Anthropic retains its contract and terms without meaningful concessions despite others’ agreements."
+

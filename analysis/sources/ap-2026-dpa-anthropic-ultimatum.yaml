@@ -1,0 +1,122 @@
+sources:
+  - id: "ap-2026-dpa-anthropic-ultimatum"
+    type: "ARTICLE"
+    title: "What to know about the Defense Production Act and the Pentagon’s Anthropic ultimatum"
+    author:
+      - "Wyatte Grantham-Philips (AP)"
+    year: 2026
+    url: "https://federalnewsnetwork.com/defense-news/2026/02/what-to-know-about-defense-protection-act-and-the-pentagons-anthropic-ultimatum/"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/ap-2026-dpa-anthropic-ultimatum.md"
+    reliability: 0.70
+    bias_notes: >-
+      Wire-service explainer with expert quotes and historical DPA background. Still dependent on reporting for
+      closed-door negotiation details and for DoW’s intentions.
+    topics:
+      - defense-production-act
+      - any-lawful-use
+      - supply-chain-risk
+      - military-ai
+      - procurement
+      - contracts
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-106
+      - GOV-2026-107
+      - GOV-2026-108
+      - GOV-2026-109
+      - GOV-2026-110
+      - GOV-2026-111
+
+claims:
+  - id: "GOV-2026-106"
+    text: >-
+      Defense Secretary Pete Hegseth reportedly gave Anthropic an ultimatum to allow unrestricted military use of
+      its AI technology by a Friday deadline, with threats including contract termination, a supply-chain-risk
+      designation, and/or Defense Production Act invocation.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["ap-2026-dpa-anthropic-ultimatum"]
+    operationalization: "Confirm ultimatum details and threatened tools via multiple independent sources and any available official statements."
+    assumptions:
+      - "Reporting reflects actual DoW negotiation posture."
+    falsifiers:
+      - "Credible sources contradict the ultimatum timeline or the inclusion of DPA/supply-chain-risk threats."
+
+  - id: "GOV-2026-107"
+    text: >-
+      The Defense Production Act grants the federal government broad authority to direct private industry for
+      national defense, including prioritizing government contracts/orders and using incentives to increase
+      production of critical goods.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["ap-2026-dpa-anthropic-ultimatum"]
+    operationalization: "Verify baseline authorities against statutory text and authoritative summaries; map which DPA titles provide which powers."
+    assumptions: []
+    falsifiers:
+      - "Statutory text does not support the described baseline authorities."
+
+  - id: "GOV-2026-108"
+    text: >-
+      Expert commentary in the AP piece argues that using the DPA to compel Anthropic to remove AI safety limits
+      or to dictate its terms of service would be unprecedented and would likely invite litigation.
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["ap-2026-dpa-anthropic-ultimatum"]
+    operationalization: "Survey DPA Title I compulsion precedent (especially for software/services) and compare to the proposed use; track any litigation if DoW proceeds."
+    assumptions:
+      - "Existing precedent does not cover comparable software policy/ToS compulsion."
+    falsifiers:
+      - "Clear precedent exists for comparable DPA use compelling software/service modifications and policy constraints."
+
+  - id: "GOV-2026-109"
+    text: >-
+      The Pentagon has maintained that it has no interest in using AI for mass surveillance or to develop
+      autonomous weapons to operate without human involvement.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["ap-2026-dpa-anthropic-ultimatum"]
+    operationalization: "Compare public statements to internal guidance, procurement language, and operational deployment reporting; look for contradictions."
+    assumptions: []
+    falsifiers:
+      - "Credible evidence shows DoW is pursuing mass surveillance or fully autonomous weapons uses contrary to public denials."
+
+  - id: "GOV-2026-110"
+    text: >-
+      The Defense Production Act’s next expiration date is Sept. 30, 2026, requiring periodic congressional
+      reauthorization.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["ap-2026-dpa-anthropic-ultimatum"]
+    operationalization: "Verify current sunset date in official statutory or congressional sources."
+    assumptions: []
+    falsifiers:
+      - "Authoritative sources show a different expiration date."
+
+  - id: "GOV-2026-111"
+    text: >-
+      Chief Pentagon spokesperson Sean Parnell publicly stated that if Anthropic did not cooperate by 5:01 p.m.
+      ET on Friday, DoW would terminate its partnership with Anthropic and deem the company a supply chain risk,
+      emphasizing termination/supply-chain-risk over DPA.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["ap-2026-dpa-anthropic-ultimatum"]
+    operationalization: "Locate Parnell’s post and subsequent official statements; track whether DoW continues to pursue DPA action or focuses on termination/supply-chain-risk determinations."
+    assumptions: []
+    falsifiers:
+      - "Official statements show DoW continued to pursue DPA compulsion as the primary path."
+

@@ -1,0 +1,107 @@
+sources:
+  - id: "deanwball-2026-supply-chain-risk-open-source-thread"
+    type: "SOCIAL"
+    title: "Thread: Supply chain risk designation pushes world toward open-source dominance (favors China; higher variance)"
+    author:
+      - "@deanwball"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2027815164108476459.html"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/deanwball-2026-supply-chain-risk-open-source-thread.md"
+    reliability: 0.45
+    bias_notes: >-
+      Political economy forecasting with strong priors (pro open-source; skeptical of USG capture of closed labs).
+      Coherent scenario narrative but largely speculative and not quantified in-thread.
+    topics:
+      - supply-chain-risk
+      - open-source
+      - china
+      - surveillance
+      - ai-governance
+      - industrial-policy
+    domains:
+      - INST
+      - GEO
+      - RISK
+      - TRANS
+    claims_extracted:
+      - INST-2026-950
+      - INST-2026-951
+      - GEO-2026-035
+      - RISK-2026-966
+      - TRANS-2026-048
+
+claims:
+  - id: "INST-2026-950"
+    text: >-
+      Dean Ball predicts that a (credible) U.S. government “supply chain risk” designation against a closed-source
+      AI lab materially increases regulatory risk and makes closed-source models less attractive to many global
+      customers.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["deanwball-2026-supply-chain-risk-open-source-thread"]
+    operationalization: "Measure post-designation (or post-threat) shifts in enterprise/government procurement, international adoption, and contractual risk premiums for closed-source vendors."
+    assumptions: []
+    falsifiers:
+      - "No measurable adoption or contracting shift away from closed-source vendors occurs."
+
+  - id: "INST-2026-951"
+    text: >-
+      Dean Ball predicts the supply-chain-risk shock reduces the likelihood of a balanced hybrid open/closed AI
+      ecosystem and increases the likelihood of open-source dominance.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["deanwball-2026-supply-chain-risk-open-source-thread"]
+    operationalization: "Track relative market share, deployment patterns, and capability gaps between open-weight and closed-source models over 2026–2028."
+    assumptions: []
+    falsifiers:
+      - "Closed-source labs remain dominant and open weights do not become the primary deployment mode."
+
+  - id: "GEO-2026-035"
+    text: >-
+      Dean Ball predicts an open-source-dominant AI world structurally favors China because China can subsidize AI
+      as digital public infrastructure and has institutions more compatible with pervasive AI-enabled
+      surveillance.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["deanwball-2026-supply-chain-risk-open-source-thread"]
+    operationalization: "Compare relative capability, adoption, and institutional leverage under open-weight diffusion scenarios across major economies."
+    assumptions: []
+    falsifiers:
+      - "Empirical indicators show no Chinese advantage (or a Western advantage) under open-weight dominance."
+
+  - id: "RISK-2026-966"
+    text: >-
+      Dean Ball predicts open-source dominance increases catastrophic misuse and surveillance risks, making the
+      future more dangerous and decentralized.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["deanwball-2026-supply-chain-risk-open-source-thread"]
+    operationalization: "Track misuse incidents, proliferation of surveillance deployments, and the effectiveness of defensive countermeasures under increasing open-weight capability diffusion."
+    assumptions: []
+    falsifiers:
+      - "Misuse and surveillance externalities do not increase materially under open-weight diffusion."
+
+  - id: "TRANS-2026-048"
+    text: >-
+      Dean Ball predicts the standoff pushes the AI transition toward higher-variance outcomes and lowers odds of
+      a “normal” transition to machine intelligence.
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E6"
+    credence: 0.40
+    source_ids: ["deanwball-2026-supply-chain-risk-open-source-thread"]
+    operationalization: "Define measurable proxies for transition variance (policy volatility, market fragmentation, misuse incidence) and monitor trend changes after the standoff."
+    assumptions: []
+    falsifiers:
+      - "No measurable increase in variance proxies occurs."
+

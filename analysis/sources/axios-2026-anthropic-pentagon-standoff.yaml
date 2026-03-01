@@ -1,0 +1,137 @@
+sources:
+  - id: "axios-2026-anthropic-pentagon-standoff"
+    type: "ARTICLE"
+    title: "Pentagon gives Anthropic ultimatum over Claude"
+    author:
+      - "Dave Lawler"
+      - "Maria Curi"
+    year: 2026
+    url: "https://www.axios.com/2026/02/24/anthropic-pentagon-claude-hegseth-dario"
+    accessed: "2026-02-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/axios-2026-anthropic-pentagon-standoff.md"
+    reliability: 0.65
+    bias_notes: >-
+      Scoop-style reporting with anonymous sourcing; valuable for the reported ultimatum and timeline but requires
+      corroboration for classified-deployment exclusivity and contractor-assessment details.
+    topics:
+      - anthropic
+      - pentagon
+      - department-of-war
+      - any-lawful-use
+      - defense-production-act
+      - supply-chain-risk
+      - maduro-raid
+      - palantir
+    domains:
+      - GOV
+      - INST
+    claims_extracted:
+      - GOV-2026-112
+      - GOV-2026-113
+      - GOV-2026-114
+      - GOV-2026-115
+      - INST-2026-938
+      - INST-2026-939
+      - GOV-2026-116
+
+claims:
+  - id: "GOV-2026-112"
+    text: >-
+      Axios reports that DoW gave Anthropic a Friday-evening deadline to provide unfettered access to Claude or
+      face termination, a supply-chain-risk designation, and potentially Defense Production Act leverage.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["axios-2026-anthropic-pentagon-standoff"]
+    operationalization: "Cross-check the ultimatum terms and threatened tools across multiple outlets and official statements; identify whether any formal DPA step occurred."
+    assumptions: []
+    falsifiers:
+      - "Credible reporting or official documents contradict the terms/timeline."
+
+  - id: "GOV-2026-113"
+    text: >-
+      Axios reports that DoW asked major defense contractors to assess their use of Anthropic’s model as
+      groundwork for potentially designating Anthropic a supply-chain risk.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["axios-2026-anthropic-pentagon-standoff"]
+    operationalization: "Obtain contractor confirmations or DoW documentation showing dependency assessment requests tied to a supply-chain-risk determination."
+    assumptions:
+      - "Axios’s anonymous-sourcing accurately reflects DoW actions."
+    falsifiers:
+      - "Contractors/DoW deny or contradict the assessment request."
+
+  - id: "GOV-2026-114"
+    text: >-
+      Axios reports that the Anthropic-DoW standoff traces back to Claude’s reported use in the January Maduro
+      capture raid and DoW anger at Anthropic’s follow-up questions (including via Palantir).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["axios-2026-anthropic-pentagon-standoff"]
+    operationalization: "Confirm Claude’s role in the Maduro operation and the subsequent inquiry chain via multiple independent reports and/or official statements."
+    assumptions: []
+    falsifiers:
+      - "Primary reporting contradicts Claude’s role or the causal link to the ultimatum."
+
+  - id: "GOV-2026-115"
+    text: >-
+      Anthropic’s stated red lines include bans on mass surveillance and fully autonomous weapons, while DoW’s
+      contracting posture emphasizes “any lawful use” that would remove such prudential restrictions.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["axios-2026-anthropic-pentagon-standoff"]
+    operationalization: "Compare Anthropic’s policy statements and contract terms to DoW’s published strategy memo and contract language; identify how “any lawful use” is operationalized."
+    assumptions: []
+    falsifiers:
+      - "DoW and vendor contracts show compatibility (e.g., “lawful use” implemented with explicit safety mechanisms consistent with red lines)."
+
+  - id: "INST-2026-938"
+    text: >-
+      Axios reports that Claude is the only AI model currently used for the military’s most sensitive work on
+      classified networks.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["axios-2026-anthropic-pentagon-standoff"]
+    operationalization: "Identify DoW statements or procurement/deployment documentation about which frontier models are deployed on fully classified systems and for which workloads."
+    assumptions: []
+    falsifiers:
+      - "Evidence that other frontier models are deployed equivalently on classified networks for sensitive work."
+
+  - id: "INST-2026-939"
+    text: >-
+      Axios reports that a DoW supply-chain-risk designation for Anthropic could require government contractors to
+      cut ties with Anthropic or certify non-use of Anthropic models.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["axios-2026-anthropic-pentagon-standoff"]
+    operationalization: "Track any issued DoW guidance requiring vendors/contractors to avoid Anthropic models and the certification requirements tied to a supply-chain-risk determination."
+    assumptions: []
+    falsifiers:
+      - "No such contractor restrictions are issued despite the supply-chain-risk threat."
+
+  - id: "GOV-2026-116"
+    text: >-
+      Axios frames the ultimatum as an application of DoW’s broader policy push to standardize “any lawful use”
+      language across AI contracts.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["axios-2026-anthropic-pentagon-standoff"]
+    operationalization: "Compare Axios framing against DoW’s AI strategy memo directives and any implementing procurement guidance."
+    assumptions: []
+    falsifiers:
+      - "DoW strategy documents lack an “any lawful use” standardization directive."
+
