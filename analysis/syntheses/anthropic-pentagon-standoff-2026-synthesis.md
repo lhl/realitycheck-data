@@ -1,6 +1,6 @@
 # Synthesis Analysis: Anthropic–Pentagon standoff (Feb 2026) — “any lawful use,” DPA leverage, and safety red lines
 
-> **Source IDs**: `dod-2026-ai-strategy-department-of-war`, `anthropic-2026-statement-department-of-war`, `openai-2026-agreement-department-of-war`, `rozenshtein-2026-dpa-anthropic`, `ap-2026-dpa-anthropic-ultimatum`, `politico-2026-hegseth-anthropic-ultimatum`, `axios-2026-anthropic-pentagon-standoff`, `axios-2026-claude-maduro-raid`, `thehill-2026-anthropic-pentagon-maduro-raid`, `axios-2026-openai-pentagon-agreement`, `undersecretaryf-2026-openai-all-lawful-use-thread`, `adamscochran-2026-openai-doublespeak-thread`, `livgorton-2026-openai-all-lawful-use-thread`, `deanwball-2026-supply-chain-risk-open-source-thread`
+> **Source IDs**: `dod-2026-ai-strategy-department-of-war`, `anthropic-2026-statement-department-of-war`, `openai-2026-agreement-department-of-war`, `rozenshtein-2026-dpa-anthropic`, `reason-2026-anthropic-pentagon-dpa-volokh`, `ap-2026-dpa-anthropic-ultimatum`, `politico-2026-hegseth-anthropic-ultimatum`, `axios-2026-anthropic-pentagon-standoff`, `axios-2026-claude-maduro-raid`, `thehill-2026-anthropic-pentagon-maduro-raid`, `axios-2026-openai-pentagon-agreement`, `undersecretaryf-2026-openai-all-lawful-use-thread`, `adamscochran-2026-openai-doublespeak-thread`, `livgorton-2026-openai-all-lawful-use-thread`, `deanwball-2026-supply-chain-risk-open-source-thread`
 > **Analysis Date**: 2026-02-28
 > **Analyst**: codex (gpt-5.2)
 > **Rigor Level**: `[DRAFT]`
@@ -22,6 +22,7 @@ What is the Anthropic–DoW dispute *actually* about (policy authority, contract
 | `anthropic-2026-statement-department-of-war` | ARTICLE | Anthropic’s public position + red lines + claimed DoW threats (GOV-2026-093) |
 | `openai-2026-agreement-department-of-war` | ARTICLE | OpenAI’s disclosed agreement excerpt: “all lawful purposes” + referenced constraints (GOV-2026-130..133) |
 | `rozenshtein-2026-dpa-anthropic` | ARTICLE | Legal map of DPA Title I powers and why “what DoW demands” matters (GOV-2026-100..102) |
+| `reason-2026-anthropic-pentagon-dpa-volokh` | ARTICLE | Propagation/link post relaying the Lawfare excerpt; limited incremental content beyond `rozenshtein-2026-dpa-anthropic` |
 | `ap-2026-dpa-anthropic-ultimatum` | ARTICLE | DPA explainer + “unprecedented use” framing + public DoW posture shift toward termination/supply-chain-risk (GOV-2026-106, GOV-2026-111) |
 | `politico-2026-hegseth-anthropic-ultimatum` | ARTICLE | Elite policy reaction (“incoherent” two-track threat) + DoW spokesperson confirmation of review (GOV-2026-125, GOV-2026-128) |
 | `axios-2026-anthropic-pentagon-standoff` | ARTICLE | Ultimatum framing + contractor ecosystem pressure + “Claude on classified” exclusivity claim (GOV-2026-112, INST-2026-938) |
@@ -168,4 +169,3 @@ These are hypotheses/predictions, not settled facts:
 ## Bottom Line (Synthesis View)
 
 This is not only a dispute about two edge-case red lines. It is a contest over **institutional authority** and the shape of AI governance in national security: DoW is pushing for standardized lawful-use access with minimal vendor veto, while Anthropic argues that some “lawful” uses are democratically corrosive or technically unsafe today and must remain guarded. The DPA threat functions primarily as leverage under uncertainty; the more durable driver is DoW’s own strategy memo demanding “any lawful use” standardization and rejecting vendor usage-policy constraints.
-
