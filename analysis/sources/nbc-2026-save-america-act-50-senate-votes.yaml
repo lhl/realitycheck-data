@@ -1,0 +1,111 @@
+sources:
+  - id: "nbc-2026-save-america-act-50-senate-votes"
+    type: "ARTICLE"
+    title: "Trump's election bill tops 50 Senate votes, but Democrats could still block it"
+    author:
+      - "Sahil Kapur"
+    year: 2026
+    url: "https://www.nbcnews.com/politics/congress/trumps-election-bill-save-america-act-50-senate-votes-democrats-block-rcna259351"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/nbc-2026-save-america-act-50-senate-votes.md"
+    reliability: 0.70
+    bias_notes: >-
+      Mainstream political reporting with direct quotes and a verifiable polling reference (Pew). Legislative-status and
+      bill-text specifics should be cross-checked against primary congressional records.
+    topics:
+      - elections
+      - voter-id
+      - proof-of-citizenship
+      - save-act
+      - senate
+      - filibuster
+      - polling
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-166
+      - GOV-2026-167
+      - GOV-2026-168
+      - GOV-2026-169
+      - GOV-2026-170
+      - GOV-2026-171
+
+claims:
+  - id: "GOV-2026-166"
+    text: >-
+      NBC reports the SAVE America Act would require proof of U.S. citizenship in person to register to vote and would
+      mandate photo ID for voting (including requiring mail voters to enclose a copy of photo ID).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["nbc-2026-save-america-act-50-senate-votes"]
+    operationalization: "Obtain the bill text and authoritative summaries; verify the described registration and voting-ID requirements."
+    assumptions: ["NBC’s legislative summary is accurate."]
+    falsifiers: ["Bill text/official summaries contradict the described requirements."]
+
+  - id: "GOV-2026-167"
+    text: >-
+      NBC reports the SAVE America Act had topped 50 votes among Senate Republicans in February 2026, with Susan Collins
+      becoming the 50th Republican supporter and Lisa Murkowski and Mitch McConnell among holdouts.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["nbc-2026-save-america-act-50-senate-votes"]
+    operationalization: "Verify via sponsor/cosponsor lists, whip counts, public statements, and/or cloture vote tallies."
+    assumptions: ["The reported '50' reflects a meaningful vote commitment set."]
+    falsifiers: ["Public commitments or vote tallies do not support the count."]
+
+  - id: "GOV-2026-168"
+    text: "NBC reports that the SAVE America Act passed the U.S. House of Representatives in the week prior to 2026-02-17."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["nbc-2026-save-america-act-50-senate-votes"]
+    operationalization: "Verify via official House vote records and bill status history."
+    assumptions: ["NBC’s timing/House-passage statement is accurate."]
+    falsifiers: ["Official House records show no such passage or a different timing."]
+
+  - id: "GOV-2026-169"
+    text: >-
+      NBC reports that Senate Majority Leader John Thune promised a vote on the SAVE America Act but said there are “not
+      even close” to enough votes to eliminate the legislative filibuster; as a result, the 60-vote cloture threshold is
+      the main barrier to the bill becoming law.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["nbc-2026-save-america-act-50-senate-votes"]
+    operationalization: "Verify Thune’s public statements and confirm Senate cloture requirements for this bill."
+    assumptions: ["Quoted statements are accurate."]
+    falsifiers: ["Statements/timing differ materially or procedural description is wrong."]
+
+  - id: "GOV-2026-170"
+    text: >-
+      NBC reports that Chuck Schumer called the SAVE America Act “Jim Crow 2.0” and claimed it would prevent more than
+      20 million legitimate people, mainly poorer people and people of color, from being able to vote.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["nbc-2026-save-america-act-50-senate-votes"]
+    operationalization: "Verify via CNN transcript/video and identify the basis of the 20M estimate (if any)."
+    assumptions: ["The quote is accurate."]
+    falsifiers: ["Transcript differs materially or estimate has no basis."]
+
+  - id: "GOV-2026-171"
+    text: >-
+      A Pew Research Center survey published in August 2025 reports that 83% of U.S. adults favor requiring all voters
+      to show government-issued photo identification to vote, including 95% of Republicans and 71% of Democrats.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["nbc-2026-save-america-act-50-senate-votes"]
+    operationalization: "Verify by reading Pew toplines and methodology; track whether later surveys materially differ."
+    assumptions: ["Pew’s survey is representative and accurately reported."]
+    falsifiers: ["Pew report does not contain these toplines or is corrected materially."]
+

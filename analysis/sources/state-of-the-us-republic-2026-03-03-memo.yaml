@@ -1,0 +1,175 @@
+sources:
+  - id: "state-of-the-us-republic-2026-03-03-memo"
+    type: "CONVO"
+    title: "State of the US Republic: A Synthesis (March 2026)"
+    author:
+      - "human (unnamed)"
+      - "Claude (Opus 4.6)"
+    year: 2026
+    url: null
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/state-of-the-us-republic-2026-03-03-memo.md"
+    reliability: 0.45
+    bias_notes: >-
+      High-temperature political synthesis mixing verified claim IDs, partially checked media reporting, and unsourced
+      assertions. Best used as a hypothesis generator and cross-claim organizer; requires primary-source verification
+      for disputed factual claims and for any quantitative checklist scoring.
+    topics:
+      - authoritarianism
+      - elections
+      - corruption
+      - project-2025
+      - fascism-checklists
+      - judicial-power
+      - media-control
+      - ai-governance
+    domains:
+      - GOV
+      - SOC
+    claims_extracted:
+      - GOV-2026-241
+      - GOV-2026-242
+      - GOV-2026-243
+      - GOV-2026-244
+      - GOV-2026-245
+      - GOV-2026-246
+      - GOV-2026-247
+      - GOV-2026-248
+      - GOV-2026-249
+      - GOV-2026-250
+
+claims:
+  - id: "GOV-2026-241"
+    text: >-
+      An internal March 2026 synthesis memo argues that the United States is undergoing rapid authoritarian
+      consolidation (active demolition of republican self-governance) across multiple reinforcing axes, not merely
+      gradual democratic backsliding.
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["state-of-the-us-republic-2026-03-03-memo"]
+    operationalization: "Define measurable consolidation indicators and test for a significant level shift over 2025–2026 vs prior years."
+    assumptions: ["Comparable indicators exist and are measurable consistently over time."]
+    falsifiers: ["Indicators do not show a level shift or suggest normal variance/reversibility."]
+
+  - id: "GOV-2026-242"
+    text: >-
+      The memo states that approximately 52% of the Project 2025 agenda is complete as of March 2026, attributing the
+      figure to the Project 2025 Observer tracker.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["state-of-the-us-republic-2026-03-03-memo"]
+    operationalization: "Capture the tracker UI percentage and its computation method (weights/formula) and verify against objective status counts."
+    assumptions: ["Tracker provides an interpretable percentage and stable methodology."]
+    falsifiers: ["Tracker does not show ~52% or uses a non-comparable computation."]
+
+  - id: "GOV-2026-243"
+    text: >-
+      Using Britt’s 14 characteristics checklist, the memo claims that 12–13 of 14 characteristics are active or in
+      progress in the United States as of March 2026.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["state-of-the-us-republic-2026-03-03-memo"]
+    operationalization: "Define objective activation criteria for each characteristic and score with transparent evidence citations."
+    assumptions: ["Checklist items can be operationalized without excessive subjectivity."]
+    falsifiers: ["Operational scoring yields materially fewer/ambiguous active characteristics."]
+
+  - id: "GOV-2026-244"
+    text: >-
+      The memo argues that systemic graft and corruption function as a governing mechanism (loyalty economy, mutual
+      complicity, selective enforcement), rather than incidental misconduct, in the described consolidation dynamic.
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["state-of-the-us-republic-2026-03-03-memo"]
+    operationalization: "Test whether corruption networks measurably correlate with enforcement selectivity, patronage allocation, and regime-support coalition stability."
+    assumptions: ["Corruption cases and enforcement outcomes can be measured and linked."]
+    falsifiers: ["No systematic relationship exists beyond isolated cases."]
+
+  - id: "GOV-2026-245"
+    text: >-
+      The memo claims Supreme Court developments (including Citizens United and Trump v. United States) and Supreme
+      Court stacking weakened institutional checks and enabled near-impunity for executive action framed as “official
+      acts.”
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["state-of-the-us-republic-2026-03-03-memo"]
+    operationalization: "Analyze post-2024 prosecutability constraints under the immunity framework and compare to counterfactual legal environment."
+    assumptions: ["Legal doctrines translate into measurable enforcement outcomes."]
+    falsifiers: ["Empirical enforcement shows accountability remains robust for comparable official-abuse scenarios."]
+
+  - id: "GOV-2026-246"
+    text: >-
+      The memo claims elections are moving toward fraudulent outcomes via the SAVE America Act, a push to eliminate
+      mail-in ballots, executive actions targeting election activists, and large-scale disenfranchisement effects.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["state-of-the-us-republic-2026-03-03-memo"]
+    operationalization: "Capture primary legislative records and bill text; quantify likely disenfranchisement using validated turnout/ID datasets."
+    assumptions: ["Bill status/provisions and impact can be mapped cleanly to primary records and datasets."]
+    falsifiers: ["Primary records contradict status/provisions or impact estimates are much smaller/offset."]
+
+  - id: "GOV-2026-247"
+    text: >-
+      The memo asserts multiple corruption trackers document Trump-linked graft at multi‑billion‑dollar scale (e.g.,
+      Oversight Democrats’ $2.25B realized estimate and CorruptionCounter’s $2.9B+ headline), treating them as
+      convergent evidence.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["state-of-the-us-republic-2026-03-03-memo"]
+    operationalization: "Audit each tracker’s methodology and reconcile datasets for overlap, double counting, and inconsistent definitions."
+    assumptions: ["Trackers provide auditable inclusion criteria and data sources."]
+    falsifiers: ["Reconciliation shows major inconsistency or methodological flaws."]
+
+  - id: "GOV-2026-248"
+    text: >-
+      The memo claims specific corporate deals (CBS, TikTok, Warner Bros) imply increasing major-media control by
+      executives aligned with the ruling party; the memo flags these as not individually sourced.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E6"
+    credence: 0.20
+    source_ids: ["state-of-the-us-republic-2026-03-03-memo"]
+    operationalization: "Verify each claimed deal via primary filings and credible reporting; define what counts as 'control' and 'alignment.'"
+    assumptions: ["Deals exist and materially change editorial/ownership control."]
+    falsifiers: ["Deals do not exist or do not change control as claimed."]
+
+  - id: "GOV-2026-249"
+    text: >-
+      The memo argues that domestic constitutional demolition implies collapse of the rules-based international order,
+      citing a view that Pax Americana constrained U.S. power and its collapse unleashes an unrestrained hegemon.
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["state-of-the-us-republic-2026-03-03-memo"]
+    operationalization: "Compare U.S. behavior indicators (treaty compliance, coercive threats, territorial rhetoric) before/after domestic institutional shifts."
+    assumptions: ["Domestic-constraint changes causally affect international behavior."]
+    falsifiers: ["International behavior metrics do not shift or shift independently of domestic changes."]
+
+  - id: "GOV-2026-250"
+    text: >-
+      The memo claims AI is an accelerant and prize: unconstrained state access to frontier AI combined with coercive
+      state dynamics materially increases repression risk.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["state-of-the-us-republic-2026-03-03-memo"]
+    operationalization: "Track AI capability deployment into surveillance/law enforcement and test whether it increases repression effectiveness relative to baseline."
+    assumptions: ["AI deployments are observable and can be causally linked to repression outcomes."]
+    falsifiers: ["AI deployment does not increase repression effectiveness or is constrained/offset by governance."]
+

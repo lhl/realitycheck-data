@@ -1,0 +1,100 @@
+sources:
+  - id: "trumpcorruptiontracker-2026-site"
+    type: "REPORT"
+    title: "Trump Corruption Tracker"
+    author:
+      - "Trump Corruption Tracker"
+    year: 2026
+    url: "https://trumpcorruptiontracker.com/"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/trumpcorruptiontracker-2026-site.md"
+    reliability: 0.45
+    bias_notes: >-
+      Aggregation/tracker site with a publicly queryable incident dataset. Useful as an index, but summaries and data
+      quality are uneven (e.g., anomalous date formats), requiring auditing against linked sources.
+    topics:
+      - corruption
+      - tracking
+      - trump
+      - ethics
+      - supabase
+      - data-quality
+    domains:
+      - GOV
+      - ECON
+    claims_extracted:
+      - GOV-2026-209
+      - GOV-2026-210
+      - GOV-2026-211
+      - GOV-2026-212
+      - GOV-2026-213
+      - GOV-2026-214
+
+claims:
+  - id: "GOV-2026-209"
+    text: "TrumpCorruptionTracker.com is a client-side web app intended to track and display incidents described as 'Trump’s White House Financial Corruptions.'"
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["trumpcorruptiontracker-2026-site"]
+    operationalization: "Verify via site landing HTML/JS and stated purpose text."
+    assumptions: []
+    falsifiers: ["Site purpose text contradicts this description."]
+
+  - id: "GOV-2026-210"
+    text: "TrumpCorruptionTracker.com’s bundled JavaScript uses a public Supabase project endpoint to query a table named `incidents`."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["trumpcorruptiontracker-2026-site"]
+    operationalization: "Inspect the bundled JS for the endpoint and query code; confirm API responses match the site’s displayed incidents."
+    assumptions: ["The deployed JS bundle corresponds to the production site."]
+    falsifiers: ["No such endpoint/table exists or code differs materially."]
+
+  - id: "GOV-2026-211"
+    text: "A direct query of TrumpCorruptionTracker’s public Supabase/PostgREST endpoint returned 266 non-hidden incidents in its `incidents` table (as of 2026-03-03)."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["trumpcorruptiontracker-2026-site"]
+    operationalization: "Repeat the API query at later dates; record changes in total count and visibility rules."
+    assumptions: ["The public API reflects the same dataset the website displays."]
+    falsifiers: ["Public API and website totals diverge systematically."]
+
+  - id: "GOV-2026-212"
+    text: "Incident records in TrumpCorruptionTracker’s dataset include fields such as `number`, `date`, `headline`, `description`, `categories`, `votes`, `source_name`, `sources`, and `hidden`."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["trumpcorruptiontracker-2026-site"]
+    operationalization: "Inspect the table schema via API samples and confirm fields exist across records."
+    assumptions: []
+    falsifiers: ["Schema differs materially."]
+
+  - id: "GOV-2026-213"
+    text: "A query of TrumpCorruptionTracker’s visible incidents found a maximum incident `number` of 269 (dated 2025-11-14; source_name 'Pro Publica'), indicating numbering is not strictly contiguous with visible count."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.70
+    source_ids: ["trumpcorruptiontracker-2026-site"]
+    operationalization: "Re-run max-number query and compare to visible count; test whether hidden incidents fill gaps."
+    assumptions: ["`number` is intended as a sequential incident identifier."]
+    falsifiers: ["Later queries show different semantics or contiguity."]
+
+  - id: "GOV-2026-214"
+    text: "TrumpCorruptionTracker’s visible incident dataset contains at least one record with an implausible date string formatted as '29026-01-30' (as observed on 2026-03-03)."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.75
+    source_ids: ["trumpcorruptiontracker-2026-site"]
+    operationalization: "Scan all visible incident dates for format anomalies and quantify frequency."
+    assumptions: ["The date field is intended to be an ISO-like YYYY-MM-DD string."]
+    falsifiers: ["No anomalies are found in a full scan."]
+

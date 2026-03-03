@@ -1,0 +1,126 @@
+sources:
+  - id: "corruptioncounter-2025-trump-profiteering-tracker"
+    type: "REPORT"
+    title: "Trump's Presidential Profiteering: A Real-Time Corruption Tracker"
+    author:
+      - "CorruptionCounter"
+    year: 2025
+    url: "https://corruptioncounter.com/"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/corruptioncounter-2025-trump-profiteering-tracker.md"
+    reliability: 0.40
+    bias_notes: >-
+      Advocacy-style corruption tracker with strong rhetoric. Useful for enumerating alleged cases and source links, but
+      topline dollar aggregation is unclear and appears internally inconsistent with the embedded dataset captured.
+    topics:
+      - corruption
+      - profiteering
+      - trump
+      - pardons
+      - foreign-influence
+      - tracking
+    domains:
+      - GOV
+      - ECON
+    claims_extracted:
+      - GOV-2026-196
+      - GOV-2026-197
+      - GOV-2026-198
+      - GOV-2026-199
+      - GOV-2026-200
+      - GOV-2026-201
+      - GOV-2026-202
+
+claims:
+  - id: "GOV-2026-196"
+    text: >-
+      CorruptionCounter claims to provide comprehensive, real-time tracking of alleged corruption cases involving Trump’s
+      presidency and says each case includes verified sources from major news organizations.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["corruptioncounter-2025-trump-profiteering-tracker"]
+    operationalization: "Sample cases and audit source links and accuracy of summaries."
+    assumptions: ["Tracker summaries are faithful to linked sources."]
+    falsifiers: ["Systematic misquoting or low-quality sourcing is found."]
+
+  - id: "GOV-2026-197"
+    text: >-
+      CorruptionCounter’s page metadata/structured text claims that $2.9B+ of alleged Trump corruption has been
+      documented (including a line stating that as of June 2025 it had documented over $2.9B).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["corruptioncounter-2025-trump-profiteering-tracker"]
+    operationalization: "Reconcile the headline figure with the tracker’s canonical dataset and aggregation method."
+    assumptions: ["Headline figure is meant to correspond to an auditable dataset."]
+    falsifiers: ["No plausible dataset/aggregation supports the claimed figure."]
+
+  - id: "GOV-2026-198"
+    text: >-
+      A parse of CorruptionCounter’s embedded landing-page dataset (`corruptionCases`) on 2026-03-03 yields 25 cases
+      dated 2024-12-20..2025-10-30 whose numeric `amount` fields sum to $2,165,900,000.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.70
+    source_ids: ["corruptioncounter-2025-trump-profiteering-tracker"]
+    operationalization: "Re-run the parse on later dates; compare to CSV export output; reconcile any differences."
+    assumptions: ["Embedded dataset reflects the tracker’s canonical list at capture time."]
+    falsifiers: ["Later captures contradict this parse under consistent methods."]
+
+  - id: "GOV-2026-199"
+    text: >-
+      CorruptionCounter lists corruption categories including Foreign Bribes, Pardons for Sale, Quid Pro Quo, Pocket
+      Lining, Extortion, and Graft.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.75
+    source_ids: ["corruptioncounter-2025-trump-profiteering-tracker"]
+    operationalization: "Verify by capturing the landing page text and/or dataset category fields."
+    assumptions: []
+    falsifiers: ["Categories differ materially in later captures."]
+
+  - id: "GOV-2026-200"
+    text: >-
+      CorruptionCounter includes a client-side “Export Data as CSV” feature that exports a generated timestamp, a total
+      amount line, and per-case rows including date, title, description, amount, category, and source.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.70
+    source_ids: ["corruptioncounter-2025-trump-profiteering-tracker"]
+    operationalization: "Trigger the export function and compare output format to the described fields."
+    assumptions: ["Client-side export reflects the canonical dataset."]
+    falsifiers: ["Export output contradicts the described fields or totals."]
+
+  - id: "GOV-2026-201"
+    text: >-
+      CorruptionCounter’s embedded dataset includes an entry titled “$Trump Memecoin Sales Fees” dated 2025-05-22 with an
+      amount of $320,000,000 categorized as “Pocket Lining,” citing a New York Times source.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["corruptioncounter-2025-trump-profiteering-tracker"]
+    operationalization: "Verify via HTML dataset capture and by reading the linked NYT source."
+    assumptions: ["Entry is not fabricated and link is accurate."]
+    falsifiers: ["Entry absent or link contradicts the summary."]
+
+  - id: "GOV-2026-202"
+    text: >-
+      CorruptionCounter’s embedded dataset includes an entry titled “The 747 from Qatar” dated 2025-05-26 with an amount
+      of $200,000,000 categorized as “Foreign Bribe,” citing a New York Times source.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["corruptioncounter-2025-trump-profiteering-tracker"]
+    operationalization: "Verify via HTML dataset capture and by reading the linked NYT source."
+    assumptions: ["Entry is not fabricated and link is accurate."]
+    falsifiers: ["Entry absent or link contradicts the summary."]
+

@@ -1,0 +1,99 @@
+sources:
+  - id: "guardian-2026-biden-warns-trump-steal-midterms"
+    type: "ARTICLE"
+    title: "Joe Biden warns that Donald Trump will try to ‘steal’ midterm elections"
+    author:
+      - "The Guardian"
+    year: 2026
+    url: "https://www.theguardian.com/us-news/2026/feb/28/joe-biden-donald-trump-midterm-elections"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/guardian-2026-biden-warns-trump-steal-midterms.md"
+    reliability: 0.70
+    bias_notes: >-
+      News reporting centered on a public speech; strongest where it quotes Biden and anchors time/place. Contextual
+      claims (polls; enforcement incidents; Iran strikes) should be independently verified.
+    topics:
+      - elections
+      - midterms-2026
+      - biden
+      - voter-restrictions
+      - polling
+      - iran
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-156
+      - GOV-2026-157
+      - GOV-2026-158
+      - GOV-2026-159
+      - GOV-2026-160
+
+claims:
+  - id: "GOV-2026-156"
+    text: >-
+      Joe Biden warned that Donald Trump will try to “steal” the 2026 midterm elections by putting up barriers to
+      voting and preventing people from wanting to vote.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["guardian-2026-biden-warns-trump-steal-midterms"]
+    operationalization: "Obtain the full speech transcript/video and verify the quoted lines and context."
+    assumptions: ["The Guardian quote is accurate and not materially truncated."]
+    falsifiers: ["Primary transcript/video shows different wording or meaning."]
+
+  - id: "GOV-2026-157"
+    text: >-
+      The Guardian reports Biden delivered his warning speech at the Columbia Museum of Art in Columbia, South Carolina
+      on February 27, 2026, while being honored for lifetime achievement.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["guardian-2026-biden-warns-trump-steal-midterms"]
+    operationalization: "Verify venue/date via event listing, video metadata, or local coverage."
+    assumptions: ["The article’s event description is accurate."]
+    falsifiers: ["Event records show a different venue/date."]
+
+  - id: "GOV-2026-158"
+    text: >-
+      The Guardian reports Biden criticized the immigration crackdown and referenced the deaths of U.S. citizens Renee
+      Good and Alex Pretti in Minneapolis in January 2026.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["guardian-2026-biden-warns-trump-steal-midterms"]
+    operationalization: >-
+      Verify (a) that Biden made the reference, and (b) that the named deaths occurred as described, via primary
+      reporting and official statements.
+    assumptions: ["The Guardian’s summary is accurate."]
+    falsifiers: ["The incidents did not occur or were materially different."]
+
+  - id: "GOV-2026-159"
+    text: >-
+      The Guardian cites polling indicating high disapproval of Trump’s job performance and that most U.S. adults think
+      Trump is moving the country in the wrong direction.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.65
+    source_ids: ["guardian-2026-biden-warns-trump-steal-midterms"]
+    operationalization: "Locate the referenced poll releases and confirm question wording, field dates, and toplines."
+    assumptions: ["The article accurately summarizes the poll toplines."]
+    falsifiers: ["Poll releases do not support the figures/direction framing."]
+
+  - id: "GOV-2026-160"
+    text: >-
+      The Guardian reports Biden’s February 27, 2026 speech occurred hours before the Trump administration launched
+      attacks on Iran.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["guardian-2026-biden-warns-trump-steal-midterms"]
+    operationalization: "Construct a timeline of Iran-strikes reporting and verify the claimed sequencing."
+    assumptions: ["The Iran-strikes framing reflects actual events and timing."]
+    falsifiers: ["No attacks occurred or the sequencing differs materially."]
+

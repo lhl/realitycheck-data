@@ -1,0 +1,82 @@
+sources:
+  - id: "secularhumanism-2003-britt-fascism-anyone"
+    type: "ARTICLE"
+    title: "Fascism Anyone?"
+    author:
+      - "Laurence W. Britt"
+    year: 2003
+    url: "https://secularhumanism.org/2003/03/fascism-anyone/"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/secularhumanism-2003-britt-fascism-anyone.md"
+    reliability: 0.55
+    bias_notes: >-
+      Popular political-analysis essay (not peer-reviewed political science). Strong as an accessible checklist and
+      historical reminder; weaker as a validated typology with operational definitions and base-rate calibration.
+    topics:
+      - fascism
+      - authoritarianism
+      - political-theory
+      - diagnostic-frameworks
+    domains:
+      - SOC
+      - GOV
+    claims_extracted:
+      - SOC-2026-032
+      - SOC-2026-033
+      - SOC-2026-034
+      - SOC-2026-035
+
+claims:
+  - id: "SOC-2026-032"
+    text: >-
+      Britt claims that analysis of seven regimes reveals fourteen “common threads” linking fascist/protofascist
+      regimes in recognizable patterns of behavior and abuse of power.
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["secularhumanism-2003-britt-fascism-anyone"]
+    operationalization: "Define criteria for 'fascist/protofascist' and test whether the 14 traits robustly distinguish such regimes from others."
+    assumptions: ["Selected regimes are representative of fascist/protofascist category."]
+    falsifiers: ["Comparative coding fails to reproduce the claimed convergence or selection is non-representative."]
+
+  - id: "SOC-2026-033"
+    text: >-
+      In ‘Fascism Anyone?’ (Free Inquiry, Spring 2003), Laurence W. Britt presents a list of fourteen defining
+      characteristics of fascism/protofascism, including nationalism, disdain for human rights, scapegoating,
+      controlled mass media, corporate protection, labor suppression, cronyism/corruption, and fraudulent elections.
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["secularhumanism-2003-britt-fascism-anyone"]
+    operationalization: "Quote/encode the list and define measurable indicators for each characteristic if using it as a scoring tool."
+    assumptions: []
+    falsifiers: ["The published article does not contain the described list."]
+
+  - id: "SOC-2026-034"
+    text: >-
+      Britt asserts that the selected regimes (Germany/Italy/Spain/Portugal/Greece/Chile/Indonesia) all followed a
+      fascist or protofascist model in obtaining, expanding, and maintaining power.
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["secularhumanism-2003-britt-fascism-anyone"]
+    operationalization: "Compare regime classifications against standard comparative-politics typologies and historical scholarship."
+    assumptions: ["The label 'protofascist' is appropriately applied to the selected cases."]
+    falsifiers: ["Scholarly consensus rejects the classification for key cases."]
+
+  - id: "SOC-2026-035"
+    text: >-
+      The Free Inquiry web page states Laurence W. Britt is a retired international businessperson and calls “Fascism
+      Anyone?” the most reprinted—and most pirated—article in the magazine’s history.
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["secularhumanism-2003-britt-fascism-anyone"]
+    operationalization: "Confirm the on-page bio text and any editorial records supporting the reprint/piracy claim."
+    assumptions: ["The editorial claim accurately reflects internal metrics."]
+    falsifiers: ["Editorial records contradict the claim or page text changes materially."]

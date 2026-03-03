@@ -1,0 +1,146 @@
+sources:
+  - id: "washpost-2026-executive-order-election-activists"
+    type: "ARTICLE"
+    title: "Trump, seeking executive power over elections, is urged to declare emergency"
+    author:
+      - "Isaac Arnsdorf"
+    year: 2026
+    url: "https://www.washingtonpost.com/politics/2026/02/26/trump-elections-executive-order-activists/"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/washpost-2026-executive-order-election-activists.md"
+    reliability: 0.78
+    bias_notes: >-
+      Investigative reporting anchored on an obtained draft executive order and multiple linked primary sources (ODNI ICA,
+      Constitution text, and poll toplines). Uncertainty remains about the draft’s actual adoption and the activists’
+      degree of coordination with the White House.
+    topics:
+      - elections
+      - executive-orders
+      - national-emergency
+      - election-administration
+      - voter-rolls
+      - save-act
+      - foreign-interference
+      - china
+      - polling
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-177
+      - GOV-2026-178
+      - GOV-2026-179
+      - GOV-2026-180
+      - GOV-2026-181
+      - GOV-2026-182
+      - GOV-2026-183
+      - GOV-2026-184
+
+claims:
+  - id: "GOV-2026-177"
+    text: >-
+      The Washington Post reports that pro-Trump activists circulated a 17-page draft executive order (dated April 2025)
+      claiming China interfered in the 2020 election as a basis to declare a national emergency unlocking extraordinary
+      presidential power over voting.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["washpost-2026-executive-order-election-activists"]
+    operationalization: "Obtain the draft document and verify its length, date, and claims; confirm circulation among named advocates."
+    assumptions: ["The Post accurately describes the obtained draft and its provenance."]
+    falsifiers: ["Draft does not exist or differs materially from the described contents."]
+
+  - id: "GOV-2026-178"
+    text: >-
+      Peter Ticktin argued that declaring an emergency based on alleged foreign election interference would allow the
+      president to ban mail ballots and voting machines as vectors of interference.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["washpost-2026-executive-order-election-activists"]
+    operationalization: "Verify via recording/transcript of Ticktin interview and compare to Post quotations."
+    assumptions: ["The quote is accurate."]
+    falsifiers: ["No record exists or quote is materially different."]
+
+  - id: "GOV-2026-179"
+    text: >-
+      A 2021 U.S. intelligence community assessment concluded China considered efforts to influence the 2020 U.S.
+      presidential election but did not go through with them.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["washpost-2026-executive-order-election-activists"]
+    operationalization: "Verify by reading the declassified ICA language about PRC election-influence activity."
+    assumptions: ["The declassified document is accurately interpreted at this level of summary."]
+    falsifiers: ["ICA does not support the stated summary."]
+
+  - id: "GOV-2026-180"
+    text: >-
+      The Washington Post reports Trump said on 2026-02-13 that he had “irrefutable” legal arguments and would present
+      them soon “in the form of an Executive Order.”
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["washpost-2026-executive-order-election-activists"]
+    operationalization: "Locate the original Trump post(s) and verify wording/date."
+    assumptions: ["The Post accurately quotes the post(s)."]
+    falsifiers: ["No such post exists or wording/date differs materially."]
+
+  - id: "GOV-2026-181"
+    text: >-
+      The Washington Post reports that a measure it calls the “Save America Act” passed the House but faces obstacles in
+      the Senate, where Republican leaders rejected changing Senate rules to move it forward.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["washpost-2026-executive-order-election-activists"]
+    operationalization: "Verify via official bill status history and leadership statements about rule-change demands."
+    assumptions: ["The bill naming and status are correctly stated."]
+    falsifiers: ["Legislative record contradicts the passage/status or leaders’ posture."]
+
+  - id: "GOV-2026-182"
+    text: >-
+      The Washington Post reports that a draft executive order proposes (1) hand-marked and hand-counted paper ballots,
+      (2) requiring voters to register anew for the 2026 midterms with proof of citizenship, (3) restricting mail ballots,
+      and (4) authorizing DOJ, USCIS, SSA, and USPS roles in identifying ineligible voters.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["washpost-2026-executive-order-election-activists"]
+    operationalization: "Obtain the draft executive order and confirm each listed measure exists in the text."
+    assumptions: ["The Post’s summary reflects the draft text."]
+    falsifiers: ["Draft text lacks these measures or materially differs."]
+
+  - id: "GOV-2026-183"
+    text: >-
+      Article I, Section 4 of the U.S. Constitution assigns power to regulate elections to state legislatures and
+      Congress, with no explicit role for the president.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["washpost-2026-executive-order-election-activists"]
+    operationalization: "Verify by quoting the Elections Clause text from an authoritative transcription."
+    assumptions: []
+    falsifiers: ["Constitution text contradicts the claim."]
+
+  - id: "GOV-2026-184"
+    text: >-
+      A Washington Post–ABC News–Ipsos poll conducted Feb. 12–17, 2026 reports that 54% of U.S. adults oppose Trump’s
+      stated desire for the federal government to take over election administration and vote counting in certain states,
+      while 23% support it (with about 24% no opinion/skipped).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["washpost-2026-executive-order-election-activists"]
+    operationalization: "Verify by reading the poll toplines PDF and confirming the wording and topline percentages."
+    assumptions: ["The poll toplines correspond to the referenced question."]
+    falsifiers: ["Toplines show materially different percentages or different wording."]
+

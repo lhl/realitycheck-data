@@ -1,0 +1,99 @@
+sources:
+  - id: "supremecourt-2024-trump-v-united-states-opinion"
+    type: "REPORT"
+    title: "Trump v. United States"
+    author:
+      - "Supreme Court of the United States"
+    year: 2024
+    url: "https://www.supremecourt.gov/opinions/23pdf/603us1r57_6k47.pdf"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/supremecourt-2024-trump-v-united-states-opinion.md"
+    reliability: 0.95
+    bias_notes: >-
+      Primary legal document. Holdings and quoted text are authoritative for U.S. law unless superseded.
+      Interpretive claims about political consequences require separate analysis.
+    topics:
+      - scotus
+      - presidential-immunity
+      - criminal-law
+      - separation-of-powers
+      - elections
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-236
+      - GOV-2026-237
+      - GOV-2026-238
+      - GOV-2026-239
+      - GOV-2026-240
+
+claims:
+  - id: "GOV-2026-236"
+    text: >-
+      In Trump v. United States (2024), the U.S. Supreme Court held that a former President has absolute immunity
+      from criminal prosecution for actions within his conclusive and preclusive constitutional authority, is entitled
+      to at least presumptive immunity for official acts, and has no immunity for unofficial acts.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["supremecourt-2024-trump-v-united-states-opinion"]
+    operationalization: "Verify in the syllabus/holding language; track remand outcomes and any later limiting/superseding rulings."
+    assumptions: []
+    falsifiers: ["Official opinion lacks the stated framework."]
+
+  - id: "GOV-2026-237"
+    text: >-
+      The Trump v. United States syllabus states that in dividing official from unofficial conduct, courts may not
+      inquire into the President’s motives and may not deem an action unofficial merely because it allegedly violates
+      generally applicable law.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["supremecourt-2024-trump-v-united-states-opinion"]
+    operationalization: "Verify in the syllabus section providing guidance on distinguishing official vs unofficial conduct."
+    assumptions: []
+    falsifiers: ["Syllabus does not include these constraints."]
+
+  - id: "GOV-2026-238"
+    text: >-
+      The Trump v. United States syllabus describes the indictment as alleging that Trump conspired to overturn the
+      2020 election by spreading knowingly false claims of election fraud to obstruct collecting, counting, and
+      certifying election results.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["supremecourt-2024-trump-v-united-states-opinion"]
+    operationalization: "Verify in the syllabus case-background description."
+    assumptions: []
+    falsifiers: ["Syllabus background materially differs from this description."]
+
+  - id: "GOV-2026-239"
+    text: >-
+      In Trump v. United States (2024), the Supreme Court remanded to the District Court to determine, in the first
+      instance, whether categories of alleged conduct qualify as official or unofficial acts and whether presumptive
+      immunity is rebutted.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["supremecourt-2024-trump-v-united-states-opinion"]
+    operationalization: "Verify the procedural disposition and remand guidance in the syllabus."
+    assumptions: []
+    falsifiers: ["The opinion does not remand as described."]
+
+  - id: "GOV-2026-240"
+    text: >-
+      The Trump v. United States syllabus states that testimony or private records of the President or his advisers
+      probing conduct for which the President is immune from prosecution may not be admitted as evidence at trial.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["supremecourt-2024-trump-v-united-states-opinion"]
+    operationalization: "Verify in the syllabus guidance on indictment sufficiency and evidentiary limits for immune conduct."
+    assumptions: []
+    falsifiers: ["Syllabus does not include the stated evidentiary limitation."]

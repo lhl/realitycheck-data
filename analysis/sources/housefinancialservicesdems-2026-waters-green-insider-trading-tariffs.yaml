@@ -1,0 +1,100 @@
+sources:
+  - id: "housefinancialservicesdems-2026-waters-green-insider-trading-tariffs"
+    type: "ARTICLE"
+    title: "Ranking Member Maxine Waters and Rep. Al Green Lead Democrats in Urging Chair Hill to Launch Immediate Committee Investigation into Insider Trading and Market Manipulation Tied to Trump Tariffs"
+    author:
+      - "House Financial Services Democrats"
+    year: 2026
+    url: "https://democrats-financialservices.house.gov/news/documentsingle.aspx?DocumentID=415221"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/housefinancialservicesdems-2026-waters-green-insider-trading-tariffs.md"
+    reliability: 0.65
+    bias_notes: >-
+      Official partisan committee press release. High confidence about what it asserts and the existence/contents of
+      the attached letter; limited confidence about contested factual predicates (e.g., options-flow claims) without
+      underlying trading records.
+    topics:
+      - tariffs
+      - insider-trading
+      - market-manipulation
+      - securities
+      - oversight
+      - truth-social
+    domains:
+      - GOV
+      - ECON
+    claims_extracted:
+      - GOV-2026-226
+      - GOV-2026-227
+      - GOV-2026-228
+      - GOV-2026-229
+      - GOV-2026-230
+
+claims:
+  - id: "GOV-2026-226"
+    text: >-
+      A House Financial Services Committee Democrats press release states that on February 24, 2026, Ranking Member
+      Maxine Waters and Rep. Al Green sent a letter urging Chair French Hill to launch a committee investigation into
+      possible insider trading and market manipulation tied to Trump tariffs.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["housefinancialservicesdems-2026-waters-green-insider-trading-tariffs"]
+    operationalization: "Verify via the attached letter and committee posting metadata."
+    assumptions: []
+    falsifiers: ["Letter does not exist or does not request an investigation."]
+
+  - id: "GOV-2026-227"
+    text: >-
+      The Waters/Green letter frames a risk window from April 6, 2025 (Treasury Secretary Scott Bessent visiting
+      Trump at his Florida resort) to April 9, 2025 (Trump announcing a tariff pause), as a period in which insider
+      trading or manipulation could have occurred.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["housefinancialservicesdems-2026-waters-green-insider-trading-tariffs"]
+    operationalization: "Verify the visit and announcement dates via primary schedules/posts and multiple independent reports."
+    assumptions: ["Public reporting accurately reflects the visit timing and the policy announcement timing."]
+    falsifiers: ["Credible reporting shows the visit or announcement timing is materially different."]
+
+  - id: "GOV-2026-228"
+    text: >-
+      The Waters/Green letter states that Trump posted at 9:37am ET on April 9, 2025: “THIS IS A GREAT TIME TO BUY!!!
+      DJT.”
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["housefinancialservicesdems-2026-waters-green-insider-trading-tariffs"]
+    operationalization: "Verify via archived Truth Social post records and independent reporting that captures the post text/time."
+    assumptions: []
+    falsifiers: ["No archive/reporting supports the quoted post text/time."]
+
+  - id: "GOV-2026-229"
+    text: >-
+      The Waters/Green letter claims trading records show a spike in purchases of Nasdaq and S&P 500 call options in
+      the ten-minute window leading up to the tariff pause announcement on April 9, 2025.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.45
+    source_ids: ["housefinancialservicesdems-2026-waters-green-insider-trading-tariffs"]
+    operationalization: "Obtain auditable options-flow data for the relevant window and test for statistically unusual volume."
+    assumptions: ["Publicly auditable data exists that can validate the described spike."]
+    falsifiers: ["Auditable data shows no unusual spike in the claimed window."]
+
+  - id: "GOV-2026-230"
+    text: >-
+      The Waters/Green letter claims that after the tariff pause announcement on April 9, 2025, the S&P 500 rose
+      about 9.5% and the Nasdaq Composite rose about 12.2% that day.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["housefinancialservicesdems-2026-waters-green-insider-trading-tariffs"]
+    operationalization: "Compute index returns for the relevant trading day from authoritative market data and cross-check with reporting."
+    assumptions: []
+    falsifiers: ["Authoritative market data show materially different day returns."]

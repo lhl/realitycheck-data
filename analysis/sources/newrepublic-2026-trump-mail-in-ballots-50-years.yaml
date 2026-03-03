@@ -1,0 +1,93 @@
+sources:
+  - id: "newrepublic-2026-trump-mail-in-ballots-50-years"
+    type: "ARTICLE"
+    title: "Trump Reveals Ominous Plot for 50 Years of Rigged Elections"
+    author:
+      - "The New Republic"
+    year: 2026
+    url: "https://newrepublic.com/post/206815/trump-mail-in-ballots-midterms-50-years-rigged-elections"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/newrepublic-2026-trump-mail-in-ballots-50-years.md"
+    reliability: 0.55
+    bias_notes: >-
+      Strongly framed commentary anchored on quoted rally remarks and a checkable factual dispute about whether postal
+      voting exists outside the U.S. Quote-level claims should be verified against primary rally video/transcript.
+    topics:
+      - elections
+      - mail-in-voting
+      - voter-id
+      - proof-of-citizenship
+      - midterms-2026
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-172
+      - GOV-2026-173
+      - GOV-2026-174
+      - GOV-2026-175
+      - GOV-2026-176
+
+claims:
+  - id: "GOV-2026-172"
+    text: >-
+      Trump claimed at a 2026-02-19 rally in Rome, Georgia that the U.S. is “the only country in the world” that uses
+      “this type” of mail-in ballot.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["newrepublic-2026-trump-mail-in-ballots-50-years"]
+    operationalization: "Verify quote against primary rally video/transcript; verify the factual predicate using official election sources."
+    assumptions: ["The quoted line is accurately reproduced."]
+    falsifiers: ["Primary transcript differs materially; or postal voting is shown to be unique to the U.S. (unlikely)."]
+
+  - id: "GOV-2026-173"
+    text: >-
+      Trump said restricting/eliminating mail-in ballots would mean Republicans “will never lose a race for fifty years.”
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["newrepublic-2026-trump-mail-in-ballots-50-years"]
+    operationalization: "Verify against the full rally transcript/video and confirm the context of the remark."
+    assumptions: ["The quote is accurately reproduced."]
+    falsifiers: ["Primary transcript differs materially."]
+
+  - id: "GOV-2026-174"
+    text: >-
+      Trump advocated voter ID and proof-of-citizenship requirements and said mail-in ballots should be limited to
+      narrow exceptions (military, ill/disabled, or away).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["newrepublic-2026-trump-mail-in-ballots-50-years"]
+    operationalization: "Verify against the full rally transcript/video and confirm the context."
+    assumptions: ["The quote is accurately reproduced."]
+    falsifiers: ["Primary transcript differs materially."]
+
+  - id: "GOV-2026-175"
+    text: "The New Republic post claims that 34 countries and territories use some kind of postal voting."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["newrepublic-2026-trump-mail-in-ballots-50-years"]
+    operationalization: "Identify the underlying comparative dataset/list and recompute the count under the same definition."
+    assumptions: ["The post is based on a consistent definition of postal voting."]
+    falsifiers: ["Authoritative comparative sources show materially different counts under comparable definitions."]
+
+  - id: "GOV-2026-176"
+    text: >-
+      The New Republic post claims that 12 countries allow all voters to vote by mail (examples given include the UK,
+      Germany, Poland, Greece, and Canada).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.50
+    source_ids: ["newrepublic-2026-trump-mail-in-ballots-50-years"]
+    operationalization: "Check each cited country’s election authority rules and verify whether postal voting is available to all voters."
+    assumptions: ["The examples are correctly classified as universal vote-by-mail countries."]
+    falsifiers: ["Election authority rules show mail voting is restricted or materially different."]
+

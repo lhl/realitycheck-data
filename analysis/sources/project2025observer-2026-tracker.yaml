@@ -1,0 +1,93 @@
+sources:
+  - id: "project2025observer-2026-tracker"
+    type: "REPORT"
+    title: "Project 2025 Tracker"
+    author:
+      - "Project 2025 Observer"
+    year: 2026
+    url: "https://www.project2025.observer/en"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/project2025observer-2026-tracker.md"
+    reliability: 0.55
+    bias_notes: >-
+      Community-driven tracker that organizes objectives and cites sources; valuable as an index but status labels and any
+      overall completion metric can embed subjective judgments or opaque weighting.
+    topics:
+      - project-2025
+      - governance
+      - policy-tracker
+      - institutions
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-185
+      - GOV-2026-186
+      - GOV-2026-187
+      - GOV-2026-188
+      - GOV-2026-189
+
+claims:
+  - id: "GOV-2026-185"
+    text: >-
+      The Project 2025 Observer tracker describes itself as a comprehensive, community-driven initiative to track the
+      implementation of Project 2025’s policy proposals without advocating for or against them.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.70
+    source_ids: ["project2025observer-2026-tracker"]
+    operationalization: "Review the site’s About/mission statements and any governance docs for neutrality and process commitments."
+    assumptions: ["Self-description corresponds to actual community process."]
+    falsifiers: ["Governance/docs contradict neutrality or show systematic advocacy."]
+
+  - id: "GOV-2026-186"
+    text: "The Project 2025 Observer tracker reports that it is tracking 320 total objectives across 34 agencies (as of 2026-03-03)."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["project2025observer-2026-tracker"]
+    operationalization: "Re-check the site dashboard at later dates and confirm the displayed totals and any changes."
+    assumptions: ["The site’s displayed counts reflect its underlying objective database."]
+    falsifiers: ["Later snapshots show materially different totals without clear explanation."]
+
+  - id: "GOV-2026-187"
+    text: >-
+      The Project 2025 Observer tracker reports aggregate status counts including 131 objectives marked “Done” and 69
+      marked “In Progress” (as of 2026-03-03).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["project2025observer-2026-tracker"]
+    operationalization: "Re-check the site’s aggregate counts and document changes over time; request the definition of each status."
+    assumptions: ["Status counts are internally consistent and definitions are stable."]
+    falsifiers: ["Counts/definitions change without documentation or are internally inconsistent."]
+
+  - id: "GOV-2026-188"
+    text: >-
+      The Project 2025 Observer tracker shows USAID at 100% completion (6 objectives), the White House at 92% (13
+      objectives), and the Department of State at 77% (11 objectives), as of 2026-03-03.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["project2025observer-2026-tracker"]
+    operationalization: "Verify via site agency breakdown and cross-check by sampling objectives and their cited sources."
+    assumptions: ["Agency objective mapping is correct."]
+    falsifiers: ["Agency mapping is shown to be incorrect or cherry-picked."]
+
+  - id: "GOV-2026-189"
+    text: >-
+      The Project 2025 Observer tracker provides per-objective “Sources” and “Discuss” links, indicating each objective
+      is intended to be auditable via cited references and community discussion.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["project2025observer-2026-tracker"]
+    operationalization: "Sample objectives and evaluate whether linked sources are relevant and sufficient to justify status labels."
+    assumptions: ["Source links are maintained and relevant."]
+    falsifiers: ["Objectives frequently lack sources or linked sources are irrelevant/broken."]
+

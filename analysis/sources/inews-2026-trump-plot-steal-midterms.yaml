@@ -1,0 +1,132 @@
+sources:
+  - id: "inews-2026-trump-plot-steal-midterms"
+    type: "ARTICLE"
+    title: "Trump’s plot to steal the midterm elections is becoming clear"
+    author:
+      - "Sarah Baxter"
+    year: 2026
+    url: "https://inews.co.uk/opinion/trumps-plot-steal-midterm-elections-becoming-clear-4236253"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/inews-2026-trump-plot-steal-midterms.md"
+    reliability: 0.45
+    bias_notes: >-
+      Politically charged opinion column; mixes reported quotes with speculative inferences and does not provide primary
+      documentation for several key assertions. Useful for extracting leads and candidate mechanisms rather than as a
+      primary factual record.
+    topics:
+      - elections
+      - midterms-2026
+      - voter-suppression
+      - election-administration
+      - intimidation
+      - executive-power
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-150
+      - GOV-2026-151
+      - GOV-2026-152
+      - GOV-2026-153
+      - GOV-2026-154
+      - GOV-2026-155
+
+claims:
+  - id: "GOV-2026-150"
+    text: >-
+      Trump told Dan Bongino that Republicans should "take over the voting" in "at least 15 places" and that Republicans
+      should "nationalize the voting."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["inews-2026-trump-plot-steal-midterms"]
+    operationalization: >-
+      Obtain primary audio/video/transcript of the Bongino appearance and verify the exact wording and context.
+    assumptions:
+      - "Secondary writeups accurately quote the interview."
+    falsifiers:
+      - "Primary recording lacks the quote or shows a materially different meaning."
+
+  - id: "GOV-2026-151"
+    text: >-
+      An iNews opinion column claims the House passed a Trump-backed “SAVE America Act” that would tighten voter
+      identification/proof-of-citizenship requirements and reduce/undermine mail-in voting.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.50
+    source_ids: ["inews-2026-trump-plot-steal-midterms"]
+    operationalization: >-
+      Identify the specific bill text and authoritative vote record; verify whether and when it passed the House and
+      what provisions it contains regarding registration, ID, and mail-in voting.
+    assumptions:
+      - "The column’s legislative characterization is not materially mistaken."
+    falsifiers:
+      - "Legislative records show different status and/or materially different provisions."
+
+  - id: "GOV-2026-152"
+    text: >-
+      The iNews column claims the “SAVE America Act” would enable the Department of Homeland Security to seize voter
+      rolls in any state.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.40
+    source_ids: ["inews-2026-trump-plot-steal-midterms"]
+    operationalization: >-
+      Read the bill text and associated legal analyses to determine whether DHS receives authority to seize voter rolls,
+      and under what conditions.
+    assumptions:
+      - "The author is describing an actual statutory authority rather than a rhetorical extrapolation."
+    falsifiers:
+      - "Bill text and authoritative summaries contain no DHS seizure authority."
+
+  - id: "GOV-2026-153"
+    text: >-
+      The iNews column reports that Steve Bannon predicted ICE would “surround the polls” in November 2026, which would
+      likely intimidate voters in minority communities.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["inews-2026-trump-plot-steal-midterms"]
+    operationalization: >-
+      Locate the original Bannon statement (audio/video/transcript) and verify its date, wording, and context.
+    assumptions:
+      - "The quote is not misattributed or paraphrased beyond recognition."
+    falsifiers:
+      - "No primary record supports the quote."
+
+  - id: "GOV-2026-154"
+    text: >-
+      The iNews column speculates that Nicolás Maduro (in U.S. custody) could validate debunked claims about Venezuela
+      helping steal the 2020 U.S. election in exchange for a pardon.
+    type: "[S]"
+    domain: "GOV"
+    evidence_level: "E6"
+    credence: 0.20
+    source_ids: ["inews-2026-trump-plot-steal-midterms"]
+    operationalization: >-
+      Identify any evidence of negotiations or statements indicating such a bargain; otherwise treat as conjecture.
+    assumptions:
+      - "Such a bargain is politically/legally feasible in the described scenario."
+    falsifiers:
+      - "No evidence emerges; scenario remains purely speculative."
+
+  - id: "GOV-2026-155"
+    text: >-
+      The iNews column cites a Harvard-Harris poll result (as described by the author) that finds voters rate Trump as
+      doing a worse job than Biden by about 51–49.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.45
+    source_ids: ["inews-2026-trump-plot-steal-midterms"]
+    operationalization: >-
+      Locate the relevant Harvard-Harris poll release and verify the question wording, field dates, and reported topline.
+    assumptions:
+      - "The author accurately summarized the poll question and result."
+    falsifiers:
+      - "The poll does not contain the item or the result differs materially."
+

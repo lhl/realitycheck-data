@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 872 |
-| **Sources** | 219 |
+| **Claims** | 987 |
+| **Sources** | 240 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 54 |
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-03-03 | [State of the US Republic (March 2026): source-checked synthesis](analysis/syntheses/state-of-the-us-republic-2026-synthesis.md) | `[DRAFT]` | Cross-source synthesis of an internal memo; checks referenced reporting/trackers/frameworks; highlights unresolved cruxes (Project 2025 “%”, SAVE act status, corruption totals) |
 | 2026-02-28 | [Anthropic–Pentagon standoff (Feb 2026): “any lawful use,” DPA leverage, and safety red lines](analysis/syntheses/anthropic-pentagon-standoff-2026-synthesis.md) | `[DRAFT]` | Cross-source synthesis: DoW “any lawful use” push collides with Anthropic red lines; DPA vs supply-chain-risk leverage; OpenAI contract compromise; key uncertainties |
 | 2026-02-23 | [Citrini “Global Intelligence Crisis” vs Imas “Negative growth” (with Orosz critique)](analysis/syntheses/citrini-2026-gic-vs-aleximas-2026-negative-growth-synthesis.md) | `[REVIEWED]` | Compare/contrast: scenario vs demand-side model; separates mechanism vs example layer; incorporates critique of DoorDash/travel/payments vignettes |
 | 2026-02-20 | [MJ Rathbun / OpenClaw “hit piece” incident (Matplotlib): timeline + failure modes](analysis/syntheses/mjrathbun-2026-openclaw-matplotlib-hit-piece-timeline-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Matplotlib PR closure → retaliatory named takedown posts; maintainer series + operator self-report; reconstructed timeline and mitigation ideas |
@@ -62,6 +63,26 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-03-03 | [State of the US Republic: A Synthesis (March 2026) — memo](analysis/sources/state-of-the-us-republic-2026-03-03-memo.md) | `[DRAFT]` | Internal LLM-assisted political synthesis; claims extracted; key quantitative assertions flagged as disputed/unsourced |
+| 2026-03-03 | [Ranking Member Raskin demands records over tariff profiteering](analysis/sources/housejudiciarydems-2026-raskin-lutnick-tariff-profiteering.md) | `[DRAFT]` | Committee press release + letter: document demand re alleged tariff-refund-rights trades; underlying MNPI/insider claims unresolved |
+| 2026-03-03 | [HFSC Democrats urge insider trading investigation tied to tariffs](analysis/sources/housefinancialservicesdems-2026-waters-green-insider-trading-tariffs.md) | `[DRAFT]` | Committee press release + letter: requests investigation; corroborates Truth Social “DJT” buy post; options-flow claims unverified |
+| 2026-03-03 | [Project 2025 Observer tracker](analysis/sources/project2025observer-2026-tracker.md) | `[DRAFT]` | Self-reported implementation tracker: 320 objectives/34 agencies; counts verifiable; overall “% complete” methodology unclear |
+| 2026-03-03 | [Trump Family Digital Grift Wealth Tracker (Oversight Dems)](analysis/sources/houseoversightdems-2026-digital-grift-tracker.md) | `[DRAFT]` | Partisan tracker asserts $2.25B realized and $9.7B incl assets; methodology undisclosed |
+| 2026-03-03 | [CorruptionCounter Trump profiteering tracker](analysis/sources/corruptioncounter-2025-trump-profiteering-tracker.md) | `[DRAFT]` | Tracker headline $2.9B+ conflicts with embedded dataset sum (~$2.166B across 25 cases in capture); data inconsistencies noted |
+| 2026-03-03 | [Campaign Legal Center Trump transaction tracker (Feb 2026)](analysis/sources/campaignlegalcenter-2026-trump-corrupt-transactions.md) | `[DRAFT]` | CLC PDF tracker of alleged transactions/conflicts; partial extraction; not fully audited |
+| 2026-03-03 | [TrumpCorruptionTracker.com (site)](analysis/sources/trumpcorruptiontracker-2026-site.md) | `[DRAFT]` | Verified via public backend: 266 visible incidents; data quality anomalies; total-dollar estimates not established |
+| 2026-03-03 | [CREW: tracking Trump property visits/conflicts](analysis/sources/crew-2025-tracking-trump-property-visits.md) | `[DRAFT]` | Watchdog tracker; some discrete items corroborated (Binance pardon, memecoin dinner); visit-count and OCC-license claims unverified |
+| 2026-03-03 | [Elections package: iNews opinion on “stealing midterms”](analysis/sources/inews-2026-trump-plot-steal-midterms.md) | `[DRAFT]` | Opinion lead list; Bongino “nationalize voting” quote corroborated; SAVE act status still ambiguous |
+| 2026-03-03 | [Guardian: Biden warns Trump could steal midterms](analysis/sources/guardian-2026-biden-warns-trump-steal-midterms.md) | `[DRAFT]` | Biden warning + Marist poll reporting; some poll-detail verification incomplete |
+| 2026-03-03 | [New Republic: McConnell stalls SAVE America Act](analysis/sources/newrepublic-2026-mcconnell-stalls-save-america-act.md) | `[DRAFT]` | Senate procedural stall framing; some quotes corroborated; legislative mapping still uncertain |
+| 2026-03-03 | [NBC: SAVE America Act gets 50 Senate votes](analysis/sources/nbc-2026-save-america-act-50-senate-votes.md) | `[DRAFT]` | Reports 50-vote cloture failure; voter-ID polling supported; House-passage timing unresolved |
+| 2026-03-03 | [New Republic: Trump mail-in ballots “never lose for 50 years”](analysis/sources/newrepublic-2026-trump-mail-in-ballots-50-years.md) | `[DRAFT]` | Rhetoric captured; refutes claim that only the U.S. uses mail-in ballots |
+| 2026-03-03 | [Washington Post: elections executive order targets activists](analysis/sources/washpost-2026-executive-order-election-activists.md) | `[DRAFT]` | Anchors to primary documents (Constitution, ODNI ICA, poll PDF); SAVE act status still ambiguous |
+| 2026-03-03 | [Noahpinion: Shape of the Multipolar World](analysis/sources/noahsmith-2026-shape-multipolar-world.md) | `[DRAFT]` | “Constraints” inversion framing; some high-uncertainty factual asides flagged |
+| 2026-03-03 | [Britt: “Fascism Anyone?” (Free Inquiry)](analysis/sources/secularhumanism-2003-britt-fascism-anyone.md) | `[DRAFT]` | Checklist source audit: 14 characteristics exist; cautions on operationalization and false positives |
+| 2026-03-03 | [Eco: “Ur-Fascism” (NYRB)](analysis/sources/nybooks-1995-eco-ur-fascism.md) | `[REVIEWED]` | Canonical family-resemblance framework + feature list; conceptual, not a measurement protocol |
+| 2026-03-03 | [Citizens United v. FEC (opinion PDF)](analysis/sources/fec-2010-citizens-united-v-fec-opinion.md) | `[REVIEWED]` | Holding-level extraction: overrules Austin/McConnell portion; upholds disclosure/disclaimer |
+| 2026-03-03 | [Trump v. United States (opinion PDF)](analysis/sources/supremecourt-2024-trump-v-united-states-opinion.md) | `[REVIEWED]` | Holding-level extraction: absolute/presumptive/no-immunity framework; motive inquiry and evidence limits noted |
 | 2026-03-03 | [Clawed](analysis/sources/deanwball-2026-clawed.md) | `[REVIEWED]` | Ball polemic on Anthropic–DoD standoff; verifies core dispute facts; argues coercive procurement increases political risk for U.S. AI |
 | 2026-02-28 | [Artificial Intelligence Strategy for the Department of War](analysis/sources/dod-2026-ai-strategy-department-of-war.md) | `[DRAFT]` | Official DoW policy memo: standardize “any lawful use,” reject vendor usage constraints, and prioritize speed over alignment |
 | 2026-02-28 | [Statement from Dario Amodei on our discussions with the Department of War](analysis/sources/anthropic-2026-statement-department-of-war.md) | `[DRAFT]` | Anthropic statement: refuses mass domestic surveillance + fully autonomous weapons; describes DoW threats (offboard/supply-chain-risk/DPA) |
@@ -212,11 +233,11 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TECH | Technology & AI | 227 |
 | LABOR | Labor & Employment | 42 |
 | ECON | Economics & Markets | 70 |
-| GOV | Governance & Policy | 147 |
-| SOC | Social Dynamics | 33 |
+| GOV | Governance & Policy | 248 |
+| SOC | Social Dynamics | 41 |
 | TRANS | Transition Dynamics | 56 |
 | RESOURCE | Resource Constraints | 16 |
-| GEO | Geopolitics | 37 |
+| GEO | Geopolitics | 43 |
 | INST | Institutions & Organizations | 86 |
 | RISK | Risk Assessment | 57 |
 | META | Framework & Methodology | 101 |

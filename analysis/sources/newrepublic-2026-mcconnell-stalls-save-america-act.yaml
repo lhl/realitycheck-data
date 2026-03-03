@@ -1,0 +1,101 @@
+sources:
+  - id: "newrepublic-2026-mcconnell-stalls-save-america-act"
+    type: "ARTICLE"
+    title: "McConnell Stalls Trump’s Election Overhaul Bill as Republicans Fume"
+    author:
+      - "The New Republic"
+    year: 2026
+    url: "https://newrepublic.com/post/206864/mcconnell-trump-election-overhaul-bill-save-america-act"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/newrepublic-2026-mcconnell-stalls-save-america-act.md"
+    reliability: 0.55
+    bias_notes: >-
+      Politically opinionated outlet; combines reporting on committee roles and public posts with interpretive framing and
+      partisan critique. Best used as a pointer to underlying artifacts (tweet, letter, op-ed) and to map actor rhetoric.
+    topics:
+      - elections
+      - voter-id
+      - proof-of-citizenship
+      - save-act
+      - senate
+      - mcconnell
+      - filibuster
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-161
+      - GOV-2026-162
+      - GOV-2026-163
+      - GOV-2026-164
+      - GOV-2026-165
+
+claims:
+  - id: "GOV-2026-161"
+    text: >-
+      Mitch McConnell, as chair of the Senate Rules and Administration Committee, refused to schedule consideration of
+      the Trump-backed SAVE Act/SAVE America Act in February 2026, stalling the bill.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["newrepublic-2026-mcconnell-stalls-save-america-act"]
+    operationalization: >-
+      Verify Senate committee schedule/agenda and on-the-record statements from McConnell/leadership about whether and
+      why the bill was not advanced.
+    assumptions: ["Secondary reporting correctly describes the procedural choke point."]
+    falsifiers: ["Committee records show the bill advanced or that McConnell did not control scheduling."]
+
+  - id: "GOV-2026-162"
+    text: >-
+      The New Republic post characterizes the SAVE Act/SAVE America Act as imposing voter-identification requirements
+      that create barriers to voting.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["newrepublic-2026-mcconnell-stalls-save-america-act"]
+    operationalization: "Obtain the bill text and verify what ID/citizenship documentation requirements it actually imposes."
+    assumptions: ["The post’s summary is not materially misleading."]
+    falsifiers: ["The bill text does not impose the described requirements."]
+
+  - id: "GOV-2026-163"
+    text: >-
+      Rep. Tim Burchett posted a video on X on 2026-02-20 accusing McConnell of blocking the SAVE Act and questioning
+      whether staffers are acting due to McConnell’s cognitive decline.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["newrepublic-2026-mcconnell-stalls-save-america-act"]
+    operationalization: "Locate the original post/video and verify the date, wording, and context."
+    assumptions: ["The embedded post in the article is authentic."]
+    falsifiers: ["No such post exists or it is materially different."]
+
+  - id: "GOV-2026-164"
+    text: >-
+      Rep. Anna Paulina Luna claimed (in an X post referenced by the article) that over 84% of Americans and 95% of
+      Republicans want voter ID.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["newrepublic-2026-mcconnell-stalls-save-america-act"]
+    operationalization: "Locate the original post and identify the cited poll (if any); verify whether the numbers match the poll."
+    assumptions: ["The quote is accurately reproduced."]
+    falsifiers: ["Original post/poll shows different numbers or no such claim."]
+
+  - id: "GOV-2026-165"
+    text: >-
+      Mitch McConnell argued in a Wall Street Journal op-ed (referenced by the article) that even targeted federal
+      election mandates could make it easier for a future Democratic administration to use sweeping mandates to carry
+      out a “complete federal takeover of American elections.”
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["newrepublic-2026-mcconnell-stalls-save-america-act"]
+    operationalization: "Locate the WSJ op-ed and verify the quoted language and its context."
+    assumptions: ["Secondary excerpts quote the op-ed accurately."]
+    falsifiers: ["No such op-ed exists or quotes are materially wrong."]
+

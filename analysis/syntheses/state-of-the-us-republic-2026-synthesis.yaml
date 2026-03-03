@@ -1,0 +1,36 @@
+sources:
+  - id: "state-of-the-us-republic-2026-synthesis"
+    type: "KNOWLEDGE"
+    title: "Synthesis Analysis: State of the US Republic (March 2026) — source-checked synthesis"
+    author:
+      - "gpt-5.2"
+    year: 2026
+    url: ""
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/syntheses/state-of-the-us-republic-2026-synthesis.md"
+    reliability: 0.65
+    bias_notes: >-
+      Internal cross-source synthesis document in realitycheck-data (analysis/syntheses). Synthesizes multiple
+      journalism, official-doc, and watchdog-tracker sources; conclusions are credence-weighted and provisional.
+    topics:
+      - authoritarianism
+      - elections
+      - project-2025
+      - corruption
+      - conflicts-of-interest
+      - supreme-court
+      - immunity
+      - campaign-finance
+      - fascism-checklists
+      - media-control
+      - tariffs
+      - insider-trading
+    domains:
+      - GOV
+      - SOC
+      - ECON
+      - INST
+      - GEO
+    claims_extracted: []
+

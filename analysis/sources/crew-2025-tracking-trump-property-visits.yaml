@@ -1,0 +1,107 @@
+sources:
+  - id: "crew-2025-tracking-trump-property-visits"
+    type: "REPORT"
+    title: "Tracking Trump's visits to his properties and other conflicts of interest"
+    author:
+      - "CREW"
+    year: 2025
+    url: "https://www.citizensforethics.org/reports-investigations/crew-reports/tracking-trumps-visits-to-his-properties-and-other-conflicts-of-interest/"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/crew-2025-tracking-trump-property-visits.md"
+    reliability: 0.60
+    bias_notes: >-
+      Watchdog tracker with strong normative framing. Valuable for enumerating specific alleged conflict events and for
+      pointing to underlying sources; quantitative and causal claims require careful definition and auditing.
+    topics:
+      - corruption
+      - conflicts-of-interest
+      - trump-properties
+      - memecoin
+      - crypto
+      - pardons
+      - ethics
+    domains:
+      - GOV
+      - ECON
+    claims_extracted:
+      - GOV-2026-215
+      - GOV-2026-216
+      - GOV-2026-217
+      - GOV-2026-218
+      - GOV-2026-219
+      - GOV-2026-220
+
+claims:
+  - id: "GOV-2026-215"
+    text: "CREW claims Trump failed to divest from his business interests before taking office for his second term, creating conflicts of interest."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["crew-2025-tracking-trump-property-visits"]
+    operationalization: "Verify via financial disclosures, trust/divestment arrangements, and documented ownership structures."
+    assumptions: ["Divestment would be visible in disclosure records."]
+    falsifiers: ["Records show meaningful divestment or separation."]
+
+  - id: "GOV-2026-216"
+    text: "CREW claims Trump made hundreds of visits to his properties during his first term and is continuing that trend in his second term."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["crew-2025-tracking-trump-property-visits"]
+    operationalization: "Recompute visit counts from CREW’s first-term dataset and updated second-term logs under a clear definition of 'visit.'"
+    assumptions: ["A consistent definition of 'visit' is available."]
+    falsifiers: ["Recomputed counts are materially lower or trend claim fails."]
+
+  - id: "GOV-2026-217"
+    text: >-
+      CREW lists that on 2025-05-22 Trump hosted a dinner at his Virginia property for the top 220 holders of his memecoin,
+      with the top 25 holders receiving additional VIP benefits (including a claimed White House tour and exclusive gathering).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["crew-2025-tracking-trump-property-visits"]
+    operationalization: "Verify via primary event materials and multiple independent reports; confirm whether a White House tour occurred and for whom."
+    assumptions: ["Public reporting reflects actual event structure."]
+    falsifiers: ["Event structure is disproven or tour claim is false."]
+
+  - id: "GOV-2026-218"
+    text: >-
+      CREW lists that Trump pardoned the founder of Binance in October 2025 after reporting about business talks between
+      Binance and the Trump family’s crypto interests.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["crew-2025-tracking-trump-property-visits"]
+    operationalization: "Verify the pardon via official records and corroborating reporting; verify business talks via WSJ or other primary reporting."
+    assumptions: ["Linked reporting accurately describes talks and timing."]
+    falsifiers: ["No pardon record exists or talks are disproven."]
+
+  - id: "GOV-2026-219"
+    text: "CREW lists that World Liberty Financial applied for a national banking license from the Office of the Comptroller of the Currency on 2026-01-07."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.50
+    source_ids: ["crew-2025-tracking-trump-property-visits"]
+    operationalization: "Verify via OCC application disclosures or credible reporting citing official records."
+    assumptions: ["Such an application would be publicly documented or credibly reportable."]
+    falsifiers: ["No evidence of application exists."]
+
+  - id: "GOV-2026-220"
+    text: >-
+      CREW argues that Trump’s frequent presence at properties he owns signals influence-seekers to patronize those
+      properties, generates free advertising, and may generate revenue via government protective travel spending.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["crew-2025-tracking-trump-property-visits"]
+    operationalization: "Measure property revenues/booking patterns and government spend associated with trips; test for spikes correlated with presidential presence."
+    assumptions: ["Financial and travel-spend data is obtainable and attributable."]
+    falsifiers: ["No measurable revenue/advertising or spend linkage is found."]
+

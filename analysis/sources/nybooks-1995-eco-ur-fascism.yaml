@@ -1,0 +1,84 @@
+sources:
+  - id: "nybooks-1995-eco-ur-fascism"
+    type: "ARTICLE"
+    title: "Ur-Fascism"
+    author:
+      - "Umberto Eco"
+    year: 1995
+    url: "https://www.nybooks.com/articles/1995/06/22/ur-fascism/"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/nybooks-1995-eco-ur-fascism.md"
+    reliability: 0.75
+    bias_notes: >-
+      Canonical reflective essay by a major intellectual. Strong as conceptual framing and historical memory;
+      not a quantitative political-science model and should be operationalized before checklist scoring.
+    topics:
+      - fascism
+      - authoritarianism
+      - political-theory
+      - family-resemblance
+      - ur-fascism
+    domains:
+      - SOC
+      - GOV
+    claims_extracted:
+      - SOC-2026-036
+      - SOC-2026-037
+      - SOC-2026-038
+      - SOC-2026-039
+
+claims:
+  - id: "SOC-2026-036"
+    text: >-
+      In ‘Ur-Fascism’ (NYRB, 1995), Umberto Eco argues that Ur-Fascism’s features cannot be organized into a coherent
+      system and may contradict each other, and that the presence of even one feature can be enough to allow fascism
+      to “coagulate” around it.
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.70
+    source_ids: ["nybooks-1995-eco-ur-fascism"]
+    operationalization: "Operationalize Eco’s features and test how often single-feature presence predicts broader fascist dynamics across cases."
+    assumptions: ["Eco’s feature set is meaningfully discriminative across cases."]
+    falsifiers: ["Single-feature presence is common in non-fascist regimes and does not predict consolidation."]
+
+  - id: "SOC-2026-037"
+    text: >-
+      Eco’s essay ‘Ur-Fascism’ provides a list of features intended to characterize “Ur-Fascism” (Eternal Fascism),
+      including cult of tradition, rejection of modernism, action for action’s sake, fear of difference, selective
+      populism, and “Newspeak.”
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["nybooks-1995-eco-ur-fascism"]
+    operationalization: "Extract the full list and define observable indicators for each feature."
+    assumptions: []
+    falsifiers: ["The essay does not contain the described list."]
+
+  - id: "SOC-2026-038"
+    text: >-
+      Eco argues that “fascism” functions like a Wittgensteinian “family resemblance” category: different movements
+      can share overlapping subsets of traits without a single defining essence.
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.70
+    source_ids: ["nybooks-1995-eco-ur-fascism"]
+    operationalization: "Compare Eco’s category model against alternative definitional approaches and test explanatory power across cases."
+    assumptions: ["Family resemblance captures real clustering rather than rhetorical ambiguity."]
+    falsifiers: ["A small set of necessary-and-sufficient conditions better explains classification across cases."]
+
+  - id: "SOC-2026-039"
+    text: >-
+      Eco claims there was only one Nazism, but “the fascist game can be played in many forms,” and removing or adding
+      features can still yield recognizable fascism.
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["nybooks-1995-eco-ur-fascism"]
+    operationalization: "Assess whether historical cases commonly labeled fascist share only partial feature overlaps and whether that justifies a family-resemblance definition."
+    assumptions: ["Non-Nazi fascisms share enough structural similarities to be meaningfully grouped."]
+    falsifiers: ["Historical cases cluster into distinct, non-overlapping regime types undermining the recombination claim."]

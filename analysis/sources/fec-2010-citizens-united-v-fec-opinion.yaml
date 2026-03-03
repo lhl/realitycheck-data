@@ -1,0 +1,99 @@
+sources:
+  - id: "fec-2010-citizens-united-v-fec-opinion"
+    type: "REPORT"
+    title: "Citizens United v. Federal Election Commission"
+    author:
+      - "Supreme Court of the United States"
+    year: 2010
+    url: "https://www.fec.gov/resources/legal-resources/litigation/cu_sc08_opinion.pdf"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/fec-2010-citizens-united-v-fec-opinion.md"
+    reliability: 0.95
+    bias_notes: >-
+      Primary legal document. Holdings and quoted text are authoritative for U.S. law unless superseded.
+      Normative/legal reasoning is contestable and should be paired with downstream empirical evidence for causal claims.
+    topics:
+      - campaign-finance
+      - first-amendment
+      - elections
+      - corporations
+      - disclosure
+      - scotus
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-231
+      - GOV-2026-232
+      - GOV-2026-233
+      - GOV-2026-234
+      - GOV-2026-235
+
+claims:
+  - id: "GOV-2026-231"
+    text: >-
+      Citizens United v. Federal Election Commission was decided on January 21, 2010 and addressed BCRA restrictions
+      (2 U.S.C. §441b) on corporate and union independent expenditures and electioneering communications funded from
+      general treasuries.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["fec-2010-citizens-united-v-fec-opinion"]
+    operationalization: "Verify in the opinion’s syllabus and holding summary."
+    assumptions: []
+    falsifiers: ["Official opinion contradicts date or subject matter."]
+
+  - id: "GOV-2026-232"
+    text: >-
+      In Citizens United v. FEC (2010), the U.S. Supreme Court overruled Austin v. Michigan Chamber of Commerce and
+      overruled the portion of McConnell v. FEC that upheld corporate expenditure restrictions, holding that political
+      speech cannot be suppressed based on the speaker’s corporate identity.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["fec-2010-citizens-united-v-fec-opinion"]
+    operationalization: "Verify directly in the opinion syllabus/holding language and track any subsequent superseding law or decisions."
+    assumptions: []
+    falsifiers: ["Official opinion does not contain the stated overruling/holding."]
+
+  - id: "GOV-2026-233"
+    text: >-
+      The Citizens United syllabus states the government may not suppress political speech on the basis of the
+      speaker’s corporate identity in this campaign-finance context.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["fec-2010-citizens-united-v-fec-opinion"]
+    operationalization: "Verify the stated principle in the syllabus and relevant opinion passages."
+    assumptions: []
+    falsifiers: ["Syllabus/opinion does not support the stated principle."]
+
+  - id: "GOV-2026-234"
+    text: >-
+      In Citizens United (2010), the Court held BCRA §§201 and 311 disclaimer and disclosure requirements were valid
+      as applied to the film/ads at issue.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["fec-2010-citizens-united-v-fec-opinion"]
+    operationalization: "Verify in the syllabus sections addressing §§201 and 311."
+    assumptions: []
+    falsifiers: ["Opinion invalidates the requirements as applied."]
+
+  - id: "GOV-2026-235"
+    text: >-
+      The Citizens United syllabus describes an “electioneering communication” as certain broadcast/cable/satellite
+      communications referring to a clearly identified federal candidate within 30 days of a primary election, with
+      a public-distribution threshold (including a 50,000-person reception threshold for presidential primaries).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["fec-2010-citizens-united-v-fec-opinion"]
+    operationalization: "Verify the statutory and regulatory definition fragments as quoted in the syllabus."
+    assumptions: []
+    falsifiers: ["Syllabus definition fragments materially differ."]

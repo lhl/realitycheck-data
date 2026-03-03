@@ -1,0 +1,110 @@
+sources:
+  - id: "campaignlegalcenter-2026-trump-corrupt-transactions"
+    type: "REPORT"
+    title: "Trump’s Corrupt Transactions: How the 47th President Has Brazenly Traded Official Benefits for Personal and Political Gain"
+    author:
+      - "Campaign Legal Center"
+    year: 2026
+    url: "https://campaignlegal.org/sites/default/files/2026-02/Trump_Transaction_Tracker_February_2026.pdf"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/campaignlegalcenter-2026-trump-corrupt-transactions.md"
+    reliability: 0.55
+    bias_notes: >-
+      Anti-corruption advocacy report. Strongest as a structured catalog of alleged “transactions” with citations; broad
+      historical and causal claims require careful audit of entries and standards for linking benefits to actions.
+    topics:
+      - corruption
+      - ethics
+      - campaign-finance
+      - pardons
+      - appointments
+      - conflicts-of-interest
+      - tracking
+    domains:
+      - GOV
+      - ECON
+    claims_extracted:
+      - GOV-2026-203
+      - GOV-2026-204
+      - GOV-2026-205
+      - GOV-2026-206
+      - GOV-2026-207
+      - GOV-2026-208
+
+claims:
+  - id: "GOV-2026-203"
+    text: >-
+      The Campaign Legal Center report argues that favorable treatment from Trump’s administration is available “for a
+      price” and that wealthy donors and special interests have lined up to pay.
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["campaignlegalcenter-2026-trump-corrupt-transactions"]
+    operationalization: "Audit individual entries for causal linkage standards and compare to a null model of patronage politics."
+    assumptions: ["Transactional corruption can be operationalized from the tracker entries."]
+    falsifiers: ["Entries do not support the claimed generalized pattern."]
+
+  - id: "GOV-2026-204"
+    text: >-
+      The Campaign Legal Center report claims that multimillion-dollar political donors have been rewarded with prominent
+      government positions and that pardons/commutations and dropped investigations/enforcement actions are among the
+      official benefits exchanged.
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["campaignlegalcenter-2026-trump-corrupt-transactions"]
+    operationalization: "Audit the tracker’s examples and identify whether the linkage is documented vs inferred."
+    assumptions: ["The tracker includes sufficient documentation to evaluate linkage."]
+    falsifiers: ["Most entries lack evidence of quid pro quo beyond temporal correlation."]
+
+  - id: "GOV-2026-205"
+    text: >-
+      The Campaign Legal Center report claims no other president appears to have filled executive-branch roles with as
+      many wealthy donors or established as explicit a nexus between major donations and favorable official actions.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["campaignlegalcenter-2026-trump-corrupt-transactions"]
+    operationalization: "Construct a historical comparative dataset of donor appointments and related official actions across administrations."
+    assumptions: ["Comparable data exists for prior administrations."]
+    falsifiers: ["Comparable data shows similar or greater patterns previously."]
+
+  - id: "GOV-2026-206"
+    text: "The Campaign Legal Center PDF report 'Trump’s Corrupt Transactions' states it was last updated on February 24, 2026."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["campaignlegalcenter-2026-trump-corrupt-transactions"]
+    operationalization: "Verify by reading the PDF’s update line and document metadata."
+    assumptions: []
+    falsifiers: ["Later corrections show a different update date or version history."]
+
+  - id: "GOV-2026-207"
+    text: >-
+      The Campaign Legal Center report includes an “At a glance: latest tracker entries and updates” section listing
+      named entries, the benefit given to Trump, and the associated official action (with page references).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["campaignlegalcenter-2026-trump-corrupt-transactions"]
+    operationalization: "Verify by extracting the relevant pages and confirming the entry format and content."
+    assumptions: []
+    falsifiers: ["The section is absent or materially different."]
+
+  - id: "GOV-2026-208"
+    text: "The Campaign Legal Center report states it describes legal and policy solutions needed to stop the documented corrupt transactions now and in the future."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.75
+    source_ids: ["campaignlegalcenter-2026-trump-corrupt-transactions"]
+    operationalization: "Confirm the report contains a solutions section and characterize the proposed reforms."
+    assumptions: []
+    falsifiers: ["The report does not propose reforms or differs materially."]
+

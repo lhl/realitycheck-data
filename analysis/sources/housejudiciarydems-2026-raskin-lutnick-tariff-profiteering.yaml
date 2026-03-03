@@ -1,0 +1,101 @@
+sources:
+  - id: "housejudiciarydems-2026-raskin-lutnick-tariff-profiteering"
+    type: "ARTICLE"
+    title: "Ranking Member Raskin Demands Records From Secretary Lutnick, Son Over Appearance of Tariff Profiteering"
+    author:
+      - "House Judiciary Democrats"
+    year: 2026
+    url: "https://democrats-judiciary.house.gov/media-center/press-releases/ranking-member-raskin-demands-records-from-secretary-lutnick-son-over-appearance-of-tariff-profiteering"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/housejudiciarydems-2026-raskin-lutnick-tariff-profiteering.md"
+    reliability: 0.65
+    bias_notes: >-
+      Official partisan committee press release. High confidence about what it asserts and the existence/contents of
+      the attached letter; limited confidence about the underlying allegations without independent corroboration and
+      transactional evidence.
+    topics:
+      - tariffs
+      - ethics
+      - corruption
+      - conflicts-of-interest
+      - insider-trading
+      - oversight
+      - commerce
+    domains:
+      - GOV
+      - ECON
+    claims_extracted:
+      - GOV-2026-221
+      - GOV-2026-222
+      - GOV-2026-223
+      - GOV-2026-224
+      - GOV-2026-225
+
+claims:
+  - id: "GOV-2026-221"
+    text: >-
+      A House Judiciary Democrats press release states Ranking Member Jamie Raskin demanded records from Commerce
+      Secretary Howard Lutnick and Brandon Lutnick (Cantor Fitzgerald) regarding alleged tariff-refund-rights
+      transactions, with a deadline of March 9, 2026.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["housejudiciarydems-2026-raskin-lutnick-tariff-profiteering"]
+    operationalization: "Verify the attached letter contents and deadline; confirm recipients and scope."
+    assumptions: []
+    falsifiers: ["Letter does not include the stated deadline/recipients/requests."]
+
+  - id: "GOV-2026-222"
+    text: >-
+      The press release states internal documents reviewed by Wired indicate Cantor Fitzgerald paid 20–30 cents on the
+      dollar for tariff refund rights, targeting roughly three-to-five-fold returns if courts struck tariffs down.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["housejudiciarydems-2026-raskin-lutnick-tariff-profiteering"]
+    operationalization: "Read Wired reporting and obtain/verify the underlying internal documents (term sheets/letters)."
+    assumptions: ["Wired accurately reported the documents’ contents."]
+    falsifiers: ["Underlying documents do not support the described pricing/returns."]
+
+  - id: "GOV-2026-223"
+    text: >-
+      The press release claims a Supreme Court decision struck down Trump’s sweeping “Liberation Day” tariffs and
+      that roughly $175 billion in tariff revenue is subject to refunds (with the economic burden borne primarily
+      domestically).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.45
+    source_ids: ["housejudiciarydems-2026-raskin-lutnick-tariff-profiteering"]
+    operationalization: "Verify the cited ruling and estimate via primary court documents and independent fiscal analyses."
+    assumptions: ["Public estimates correctly quantify refund exposure and tariff incidence."]
+    falsifiers: ["Primary documents/estimates contradict the ruling or the order-of-magnitude exposure."]
+
+  - id: "GOV-2026-224"
+    text: >-
+      The press release states Cantor Fitzgerald denied Wired’s reporting, but internal documents suggested the firm
+      had “already put a trade through” worth about $10 million in tariff refund rights.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["housejudiciarydems-2026-raskin-lutnick-tariff-profiteering"]
+    operationalization: "Compare Cantor public statements with the referenced internal document language and any executed trade records."
+    assumptions: ["The quoted internal-document phrasing reflects actual execution intent or completion."]
+    falsifiers: ["Cantor statements and documents do not support a contradiction or no trade occurred."]
+
+  - id: "GOV-2026-225"
+    text: >-
+      The press release implies Cantor Fitzgerald may have benefited from material nonpublic information about tariff
+      legal vulnerabilities or litigation strategy due to the Lutnick family connection to the Administration.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["housejudiciarydems-2026-raskin-lutnick-tariff-profiteering"]
+    operationalization: "Establish whether any nonpublic tariff-related information was shared and used for trading decisions."
+    assumptions: ["Relevant MNPI existed and could be transferred/acted upon."]
+    falsifiers: ["Evidence shows no MNPI transfer/use or no relevant trading occurred."]

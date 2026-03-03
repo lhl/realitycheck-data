@@ -1,0 +1,104 @@
+sources:
+  - id: "houseoversightdems-2026-digital-grift-tracker"
+    type: "REPORT"
+    title: "Trump Family Digital Grift Wealth Tracker"
+    author:
+      - "House Oversight Democrats"
+    year: 2026
+    url: "https://oversightdemocrats.house.gov/trump-family-corruption-tracker"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/houseoversightdems-2026-digital-grift-tracker.md"
+    reliability: 0.60
+    bias_notes: >-
+      Official partisan committee resource page. High confidence about what the page asserts; low confidence about the
+      underlying dollar estimates absent a disclosed methodology and data.
+    topics:
+      - corruption
+      - conflicts-of-interest
+      - trump
+      - crypto
+      - pardons
+      - oversight
+    domains:
+      - GOV
+      - ECON
+    claims_extracted:
+      - GOV-2026-190
+      - GOV-2026-191
+      - GOV-2026-192
+      - GOV-2026-193
+      - GOV-2026-194
+      - GOV-2026-195
+
+claims:
+  - id: "GOV-2026-190"
+    text: >-
+      A House Oversight Democrats resource page claims that as of January 2026, Trump’s digital grift schemes produced
+      an estimated $2.25 billion in realized profits.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["houseoversightdems-2026-digital-grift-tracker"]
+    operationalization: "Obtain methodology/data and recompute the estimate; verify inclusion criteria."
+    assumptions: ["Committee analysis defines 'realized profits' and uses defensible data sources."]
+    falsifiers: ["Disclosed method/data does not support the topline estimate."]
+
+  - id: "GOV-2026-191"
+    text: >-
+      The House Oversight Democrats tracker claims total Trump family digital grift wealth rises to as much as $9.7
+      billion when the value of Trump’s digital assets is factored in.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["houseoversightdems-2026-digital-grift-tracker"]
+    operationalization: "Audit valuation method for digital assets and reconcile realized vs unrealized components."
+    assumptions: ["Digital-asset valuations are meaningful and not manipulable for political signaling."]
+    falsifiers: ["Valuation method is shown to be unsound or produces materially different totals."]
+
+  - id: "GOV-2026-192"
+    text: "The House Oversight Democrats tracker claims as much as $600 million of Trump’s digital grift wealth came from foreign interests."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["houseoversightdems-2026-digital-grift-tracker"]
+    operationalization: "Define 'foreign interests' and audit classification and transaction tracing."
+    assumptions: ["Foreign-interest classification is consistent and evidence-based."]
+    falsifiers: ["Classification is shown to be arbitrary or unsupported."]
+
+  - id: "GOV-2026-193"
+    text: "The House Oversight Democrats tracker alleges Trump is granting pardons to the highest bidders as part of the described corruption scheme."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["houseoversightdems-2026-digital-grift-tracker"]
+    operationalization: "Identify cited pardon cases (if any), trace payments/benefits, and test for quid-pro-quo patterns."
+    assumptions: ["The allegation corresponds to specific documented cases."]
+    falsifiers: ["Case review shows no plausible quid-pro-quo linkage."]
+
+  - id: "GOV-2026-194"
+    text: "The House Oversight Democrats tracker states it is tracking every cent of Trump family digital grift profits/wealth, including foreign-interest components."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["houseoversightdems-2026-digital-grift-tracker"]
+    operationalization: "Assess completeness by comparing known transactions to entries (if published) and sampling omissions."
+    assumptions: ["The phrase reflects an intent of comprehensive coverage."]
+    falsifiers: ["Material omissions exist without clear inclusion criteria."]
+
+  - id: "GOV-2026-195"
+    text: "The House Oversight Democrats tracker page presents topline categories for digital grift profits, total digital grift wealth, and foreign-interest components."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.75
+    source_ids: ["houseoversightdems-2026-digital-grift-tracker"]
+    operationalization: "Verify by capturing the page headings/structure over time."
+    assumptions: []
+    falsifiers: ["Page structure changes materially."]
+

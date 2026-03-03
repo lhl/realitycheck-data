@@ -1,0 +1,112 @@
+sources:
+  - id: "noahsmith-2026-shape-multipolar-world"
+    type: "BLOG"
+    title: "The shape of the multipolar world is a little clearer"
+    author:
+      - "Noah Smith"
+    year: 2026
+    url: "https://www.noahpinion.blog/p/the-shape-of-the-multipolar-world"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/noahsmith-2026-shape-multipolar-world.md"
+    reliability: 0.55
+    bias_notes: >-
+      Commentary post mixing factual assertions about fast-moving events with interpretive claims about the rules-based
+      order. Key event claims should be corroborated with primary reporting.
+    topics:
+      - geopolitics
+      - multipolarity
+      - rules-based-order
+      - iran
+      - israel
+      - us-foreign-policy
+    domains:
+      - GEO
+      - GOV
+    claims_extracted:
+      - GEO-2026-036
+      - GEO-2026-037
+      - GEO-2026-038
+      - GEO-2026-039
+      - GEO-2026-040
+      - GEO-2026-041
+
+claims:
+  - id: "GEO-2026-036"
+    text: >-
+      Noah Smith argues that Pax Americana constrained U.S. power through self-imposed rules and norms (e.g., avoiding
+      territorial conquest and restraining the use of military force), and that those constraints are weakening.
+    type: "[T]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["noahsmith-2026-shape-multipolar-world"]
+    operationalization: "Compare U.S. foreign-policy behavior across periods with stronger vs weaker institutional/norm commitments."
+    assumptions: ["Constraints can be operationalized and compared over time."]
+    falsifiers: ["Empirical patterns show no meaningful change attributable to norms/institutions."]
+
+  - id: "GEO-2026-037"
+    text: >-
+      Noah Smith argues that weakening the rules-based international order has “unleashed” a more aggressive U.S. rather
+      than producing the constraints multipolarity advocates expected.
+    type: "[T]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["noahsmith-2026-shape-multipolar-world"]
+    operationalization: "Track shifts in U.S. coercive actions and norm compliance as international institutions weaken."
+    assumptions: ["The counterfactual behavior under stronger norms can be reasonably estimated."]
+    falsifiers: ["Behavior does not become more aggressive or is constrained despite norm erosion."]
+
+  - id: "GEO-2026-038"
+    text: >-
+      Noah Smith claims Israeli strikes in the current Iran escalation killed Iran’s Supreme Leader Ayatollah Ali
+      Khamenei (and other top leaders).
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.35
+    source_ids: ["noahsmith-2026-shape-multipolar-world"]
+    operationalization: "Corroborate via major wire services and official statements."
+    assumptions: ["The post is referring to real events and not speculation/hypothetical."]
+    falsifiers: ["High-authority reporting denies or fails to corroborate the claim."]
+
+  - id: "GEO-2026-039"
+    text: >-
+      Noah Smith argues that China and Russia not coming to Iran’s aid during prior strikes suggests Iran is not a core
+      member of their alliance.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["noahsmith-2026-shape-multipolar-world"]
+    operationalization: "Measure realized military/diplomatic support and formal commitments from China/Russia to Iran during crises."
+    assumptions: ["Alliance 'core membership' can be inferred from crisis behavior."]
+    falsifiers: ["Evidence shows meaningful Chinese/Russian military support consistent with core alliance commitments."]
+
+  - id: "GEO-2026-040"
+    text: >-
+      Noah Smith claims the White House stated Iran’s nuclear facilities were “obliterated” after prior strikes and that
+      this was false.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.50
+    source_ids: ["noahsmith-2026-shape-multipolar-world"]
+    operationalization: "Locate the original White House statement and compare to later assessments of facility status."
+    assumptions: ["The quoted statement exists and is accurately represented."]
+    falsifiers: ["No statement exists or facilities were actually destroyed as claimed."]
+
+  - id: "GEO-2026-041"
+    text: >-
+      Noah Smith argues that without binding rules and norms, Trump is freer to threaten territorial conquest (e.g.,
+      Greenland) and use U.S. power more aggressively than during his first term.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["noahsmith-2026-shape-multipolar-world"]
+    operationalization: "Track instances of coercive threats and actions; compare to first-term baselines and institutional pushback."
+    assumptions: ["Rhetorical threats correlate with policy willingness."]
+    falsifiers: ["Observed policy remains constrained despite rhetoric."]
+
