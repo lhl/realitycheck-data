@@ -1,0 +1,217 @@
+sources:
+  - id: "gpt-2026-trump-midterm-elections-report"
+    type: "REPORT"
+    title: "Documented Trump administration actions affecting the 2026 midterm elections"
+    author:
+      - "GPT (ChatGPT)"
+    year: 2026
+    url: null
+    accessed: "2026-03-04"
+    status: "analyzed"
+    analysis_file: "analysis/sources/gpt-2026-trump-midterm-elections-report.md"
+    reliability: 0.30
+    bias_notes: >-
+      LLM-generated synthesis with non-resolvable in-chat “turn…” citations; high risk of hallucinated or
+      misattributed reporting. Useful as a lead list for verification, not as primary evidence.
+    topics:
+      - elections
+      - midterms-2026
+      - election-administration
+      - voter-rolls
+      - executive-orders
+      - emergency-powers
+      - fbi
+      - doj
+      - doge
+      - odni
+    domains:
+      - GOV
+    claims_extracted:
+      - GOV-2026-251
+      - GOV-2026-252
+      - GOV-2026-253
+      - GOV-2026-254
+      - GOV-2026-255
+      - GOV-2026-256
+      - GOV-2026-257
+      - GOV-2026-258
+      - GOV-2026-259
+      - GOV-2026-260
+
+claims:
+  - id: "GOV-2026-251"
+    text: >-
+      On 2026-01-28, the FBI executed a search warrant at the Fulton County Election Hub and Operation Center in Union
+      City, Georgia, and seized 2020 election materials including physical ballots, tabulator tapes, ballot images, and
+      voter rolls.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.69
+    source_ids: ["gpt-2026-trump-midterm-elections-report"]
+    operationalization: >-
+      Locate the warrant return / court filings describing the scope of seized materials; corroborate with multiple
+      independent outlets and local officials.
+    assumptions:
+      - "Press reporting accurately summarizes the warrant and seized materials."
+    falsifiers:
+      - "Court filings show no such seizure occurred, or show materially narrower seized materials."
+
+  - id: "GOV-2026-252"
+    text: >-
+      Reporting says ODNI conducted a forensic review of Puerto Rico voting machines, taking machines and copies of
+      data; reporting attributed the probe to Venezuela-hacking allegations (which ODNI denied) and said investigators
+      found no clear evidence of Venezuelan interference.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["gpt-2026-trump-midterm-elections-report"]
+    operationalization: >-
+      Verify via ODNI public statements and Reuters reporting; locate any formal ODNI report or congressional notice
+      describing the scope, dates, and findings.
+    assumptions:
+      - "Reuters-derived summaries accurately reflect ODNI statements and sourced reporting."
+    falsifiers:
+      - "ODNI statements deny machine/data custody or contradict key reported facts; no credible reporting exists."
+
+  - id: "GOV-2026-253"
+    text: >-
+      As of 2026-02-26, the U.S. Department of Justice said it had sued 29 states and the District of Columbia for
+      failing to provide voter registration lists requested under federal law.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.69
+    source_ids: ["gpt-2026-trump-midterm-elections-report"]
+    operationalization: >-
+      Verify the count and target jurisdictions from DOJ press releases and case dockets; confirm which fields were
+      requested and the cited statutory basis.
+    assumptions:
+      - "DOJ press releases accurately reflect filed cases and totals."
+    falsifiers:
+      - "Case dockets show materially fewer lawsuits or different targets than DOJ claims."
+
+  - id: "GOV-2026-254"
+    text: >-
+      Reuters reported that DOJ discussed transferring voter-roll data it obtained from states to Homeland Security
+      Investigations for criminal and immigration probes, and that internal documents raised Privacy Act concerns.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["gpt-2026-trump-midterm-elections-report"]
+    operationalization: >-
+      Locate the Reuters report and any underlying memoranda/court filings; confirm whether and how any transfers
+      occurred and what safeguards were documented.
+    assumptions:
+      - "Reuters’ characterization of internal DOJ documents is accurate."
+    falsifiers:
+      - "Underlying documents contradict the transfer discussion or show no Privacy Act concerns."
+
+  - id: "GOV-2026-255"
+    text: >-
+      In a 2026-01-24 letter to Minnesota Governor Tim Walz, Attorney General Pam Bondi demanded that Minnesota allow
+      the DOJ Civil Rights Division to access voter rolls, among other federal demands framed as tied to immigration and
+      public assistance policy.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.69
+    source_ids: ["gpt-2026-trump-midterm-elections-report"]
+    operationalization: >-
+      Obtain the full letter and verify the wording of the voter-roll demand and the stated conditions/requests.
+    assumptions:
+      - "Published excerpts accurately quote the letter."
+    falsifiers:
+      - "The letter does not exist or does not include the voter-roll demand."
+
+  - id: "GOV-2026-256"
+    text: >-
+      A 2025-03-25 executive order titled “Preserving and Protecting the Integrity of American Elections” directed the
+      U.S. Election Assistance Commission to require documentary proof of U.S. citizenship on the federal voter
+      registration form.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.69
+    source_ids: ["gpt-2026-trump-midterm-elections-report"]
+    operationalization: >-
+      Verify by reading the executive order text and identifying the section directing EAC proof-of-citizenship for the
+      federal form.
+    assumptions:
+      - "The EO text is correctly dated and captured."
+    falsifiers:
+      - "The EO text does not contain the cited directive or is misdated/misattributed."
+
+  - id: "GOV-2026-257"
+    text: >-
+      Court decisions in 2025 granted summary judgment and permanently enjoined implementation of the executive order’s
+      documentary proof-of-citizenship requirement for the federal registration form.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.69
+    source_ids: ["gpt-2026-trump-midterm-elections-report"]
+    operationalization: >-
+      Locate the operative court order(s) and confirm the scope of the injunction and the legal basis, including any
+      Elections Clause and Administrative Procedure Act reasoning.
+    assumptions:
+      - "Advocacy-group summaries accurately reflect the court’s holding and remedy."
+    falsifiers:
+      - "Court records do not show a permanent injunction or show a materially different scope/basis."
+
+  - id: "GOV-2026-258"
+    text: >-
+      Reporting says pro-Trump activists circulated a draft executive order proposing a national-emergency theory of
+      foreign interference (including alleged Chinese interference in some versions) to justify extraordinary federal
+      control over elections, including voter ID mandates, hand-counted ballots, and restrictions on mail ballots and
+      voting machines.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["gpt-2026-trump-midterm-elections-report"]
+    operationalization: >-
+      Obtain the draft executive order text (e.g., via Democracy Docket) and compare versions; verify claims about
+      foreign interference allegations and proposed measures.
+    assumptions:
+      - "The published draft is authentic and representative of what advocates circulated."
+    falsifiers:
+      - "No draft exists, or its contents differ materially from the described measures/allegations."
+
+  - id: "GOV-2026-259"
+    text: >-
+      A presidential notice dated 2025-08-29 continued the national emergency declared in Executive Order 13848 and
+      stated there was “no evidence” of a foreign power altering the outcomes or vote tabulation in any U.S. election.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.69
+    source_ids: ["gpt-2026-trump-midterm-elections-report"]
+    operationalization: >-
+      Verify by reading the notice text in official repositories (GovInfo/Federal Register) and extracting the quoted
+      sentence.
+    assumptions:
+      - "GovInfo text reflects the official presidential document."
+    falsifiers:
+      - "The notice lacks the quoted language or is misdated/misattributed."
+
+  - id: "GOV-2026-260"
+    text: >-
+      Reporting on a DOJ court filing says DOGE staff at SSA used an unapproved third-party server (Cloudflare) to share
+      SSA data and that a DOGE member signed a “Voter Data Agreement” with an advocacy group seeking to overturn
+      election results; the same reporting says the filing stated there was no evidence SSA data were shared with that
+      advocacy group.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["gpt-2026-trump-midterm-elections-report"]
+    operationalization: >-
+      Locate and read the DOJ filing and any SSA declarations describing the Cloudflare server use and the “Voter Data
+      Agreement,” and confirm what data transfer could/could not be determined.
+    assumptions:
+      - "Journalistic summaries accurately reflect the filing’s key statements."
+    falsifiers:
+      - "The filing does not contain these statements, or contradicts the claimed 'no evidence' qualifier."

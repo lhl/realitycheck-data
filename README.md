@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 987 |
-| **Sources** | 240 |
+| **Claims** | 997 |
+| **Sources** | 241 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 54 |
 
@@ -63,6 +63,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-03-04 | [Documented Trump administration actions affecting the 2026 midterm elections (ChatGPT report)](analysis/sources/gpt-2026-trump-midterm-elections-report.md) | `[REVIEWED]` | Audited LLM memo: major factual anchors corroborated (Fulton County seizure; DOJ voter-roll suits; EO 14248 + EO 13848 notice; SSA/DOGE filing); memo citations non-auditable |
 | 2026-03-03 | [State of the US Republic: A Synthesis (March 2026) — memo](analysis/sources/state-of-the-us-republic-2026-03-03-memo.md) | `[DRAFT]` | Internal LLM-assisted political synthesis; claims extracted; key quantitative assertions flagged as disputed/unsourced |
 | 2026-03-03 | [Ranking Member Raskin demands records over tariff profiteering](analysis/sources/housejudiciarydems-2026-raskin-lutnick-tariff-profiteering.md) | `[DRAFT]` | Committee press release + letter: document demand re alleged tariff-refund-rights trades; underlying MNPI/insider claims unresolved |
 | 2026-03-03 | [HFSC Democrats urge insider trading investigation tied to tariffs](analysis/sources/housefinancialservicesdems-2026-waters-green-insider-trading-tariffs.md) | `[DRAFT]` | Committee press release + letter: requests investigation; corroborates Truth Social “DJT” buy post; options-flow claims unverified |
@@ -233,7 +234,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 | TECH | Technology & AI | 227 |
 | LABOR | Labor & Employment | 42 |
 | ECON | Economics & Markets | 70 |
-| GOV | Governance & Policy | 248 |
+| GOV | Governance & Policy | 258 |
 | SOC | Social Dynamics | 41 |
 | TRANS | Transition Dynamics | 56 |
 | RESOURCE | Resource Constraints | 16 |
@@ -350,4 +351,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-03-03*
+*Last updated: 2026-03-04*
