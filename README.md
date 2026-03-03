@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 865 |
-| **Sources** | 218 |
+| **Claims** | 872 |
+| **Sources** | 219 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 54 |
 
@@ -62,6 +62,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-03-03 | [Clawed](analysis/sources/deanwball-2026-clawed.md) | `[REVIEWED]` | Ball polemic on Anthropic–DoD standoff; verifies core dispute facts; argues coercive procurement increases political risk for U.S. AI |
 | 2026-02-28 | [Artificial Intelligence Strategy for the Department of War](analysis/sources/dod-2026-ai-strategy-department-of-war.md) | `[DRAFT]` | Official DoW policy memo: standardize “any lawful use,” reject vendor usage constraints, and prioritize speed over alignment |
 | 2026-02-28 | [Statement from Dario Amodei on our discussions with the Department of War](analysis/sources/anthropic-2026-statement-department-of-war.md) | `[DRAFT]` | Anthropic statement: refuses mass domestic surveillance + fully autonomous weapons; describes DoW threats (offboard/supply-chain-risk/DPA) |
 | 2026-02-28 | [Our agreement with the Department of War](analysis/sources/openai-2026-agreement-department-of-war.md) | `[DRAFT]` | OpenAI publishes DoW agreement excerpt: “all lawful purposes” plus law/policy-referenced constraints (autonomy, surveillance, domestic LE) |
@@ -210,13 +211,13 @@ See [claims/README.md](claims/README.md) for full statistics.
 |--------|-------------|--------|
 | TECH | Technology & AI | 227 |
 | LABOR | Labor & Employment | 42 |
-| ECON | Economics & Markets | 69 |
-| GOV | Governance & Policy | 143 |
+| ECON | Economics & Markets | 70 |
+| GOV | Governance & Policy | 147 |
 | SOC | Social Dynamics | 33 |
 | TRANS | Transition Dynamics | 56 |
 | RESOURCE | Resource Constraints | 16 |
 | GEO | Geopolitics | 37 |
-| INST | Institutions & Organizations | 84 |
+| INST | Institutions & Organizations | 86 |
 | RISK | Risk Assessment | 57 |
 | META | Framework & Methodology | 101 |
 
@@ -328,4 +329,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-03-01*
+*Last updated: 2026-03-03*

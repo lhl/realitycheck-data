@@ -1,0 +1,162 @@
+sources:
+  - id: "deanwball-2026-clawed"
+    type: "BLOG"
+    title: "Clawed"
+    author:
+      - "Dean W. Ball"
+    year: 2026
+    url: "https://www.hyperdimensional.co/p/clawed"
+    accessed: "2026-03-03"
+    status: "analyzed"
+    analysis_file: "analysis/sources/deanwball-2026-clawed.md"
+    reliability: 0.55
+    bias_notes: >-
+      Politically charged polemic from a former Trump Administration staffer; strong priors about republican
+      decline and executive thuggery. Contains some concrete factual assertions about U.S. DoD procurement and
+      policy, but is not written as reported journalism and provides few citations.
+    topics:
+      - ai
+      - anthropic
+      - claude
+      - national-security
+      - defense-procurement
+      - supply-chain-risk
+      - defense-production-act
+      - surveillance
+      - autonomous-weapons
+      - governance
+    domains:
+      - INST
+      - GOV
+      - ECON
+    claims_extracted:
+      - INST-2026-952
+      - GOV-2026-146
+      - GOV-2026-147
+      - GOV-2026-148
+      - GOV-2026-149
+      - ECON-2026-934
+      - INST-2026-957
+
+claims:
+  - id: "INST-2026-952"
+    text: >-
+      Anthropic’s relationship with U.S. defense/intelligence customers for Claude in classified environments
+      dates to at least 2024, and on 2025-07-14 the DoD’s CDAO announced a $200M-ceiling contract award to
+      Anthropic for frontier AI capabilities.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["deanwball-2026-clawed"]
+    operationalization: >-
+      Verify the 2024 partnership announcement and the 2025-07-14 CDAO contract-award announcement; establish
+      that these relate to defense/intel usage in classified environments.
+    assumptions:
+      - "The referenced announcements reflect real deployments/availability in classified environments (not merely exploratory intent)."
+    falsifiers:
+      - "Primary sources contradict the timing/existence of these announcements or their classified-environment relevance."
+
+  - id: "GOV-2026-146"
+    text: >-
+      Anthropic’s DoD-related contracts/policy posture excluded two red-line use cases: mass domestic
+      surveillance and fully autonomous weapons (humans out of the loop).
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["deanwball-2026-clawed"]
+    operationalization: >-
+      Locate Anthropic and/or DoD statements and any contract excerpts describing whether mass domestic
+      surveillance and fully autonomous weapons were excluded.
+    assumptions:
+      - "Anthropic’s public statements accurately describe its contract terms and negotiation stance."
+    falsifiers:
+      - "Contract language or credible reporting shows these uses were permitted or not excluded."
+
+  - id: "GOV-2026-147"
+    text: >-
+      Defense Secretary Pete Hegseth publicly ordered an immediate cutoff of commercial activity between U.S.
+      military contractors/suppliers/partners and Anthropic, and directed the Pentagon to proceed with a supply
+      chain risk designation process.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["deanwball-2026-clawed"]
+    operationalization: >-
+      Locate the public post(s) and/or multiple independent reports quoting them, and confirm the described
+      cutoff and directive language.
+    assumptions:
+      - "Quoted posts are authentic and not materially misquoted."
+    falsifiers:
+      - "No record exists, or the statement is materially narrower/different."
+
+  - id: "GOV-2026-148"
+    text: >-
+      In reporting and company statements about this dispute, a “supply chain risk” designation is described as
+      historically used for adversary-linked firms (e.g., Huawei/ZTE) and as requiring procedural steps (risk
+      assessment + congressional notification) before taking effect.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["deanwball-2026-clawed"]
+    operationalization: >-
+      Identify the statutory/process basis invoked in statements and reporting; map which procurement
+      mechanisms apply and what notice/assessment requirements exist.
+    assumptions:
+      - "The term refers to an operative procurement mechanism rather than purely rhetorical signaling."
+    falsifiers:
+      - "Authoritative legal sources show the described procedural requirements do not exist or are inapplicable."
+
+  - id: "GOV-2026-149"
+    text: >-
+      As of late February 2026, DeepSeek had not been labeled a supply chain risk by the U.S. government.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E6"
+    credence: 0.50
+    source_ids: ["deanwball-2026-clawed"]
+    operationalization: >-
+      Search official U.S. procurement restriction lists, announcements, and high-quality reporting for
+      DeepSeek designation status.
+    assumptions:
+      - "Such a label would be publicly documented if applied."
+    falsifiers:
+      - "Official sources show DeepSeek was designated/restricted as a supply chain risk on the relevant timeline."
+
+  - id: "ECON-2026-934"
+    text: >-
+      Procurement retaliation against a major U.S. frontier AI lab raises regulatory risk and increases the cost
+      of capital for the U.S. AI sector, reducing investment and infrastructure buildout.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["deanwball-2026-clawed"]
+    operationalization: >-
+      Track changes in financing terms, capex announcements, and market indicators after major procurement
+      retaliation events.
+    assumptions:
+      - "Investors incorporate political/procurement risk into financing terms."
+      - "Effects generalize beyond the targeted firm."
+    falsifiers:
+      - "No observable change in financing/capex relative to baseline; investment increases despite similar threats."
+
+  - id: "INST-2026-957"
+    text: >-
+      The Anthropic–DoD dispute is an early major public debate about where control of frontier AI should reside,
+      revealing erratic and strategically unclear institutional behavior.
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["deanwball-2026-clawed"]
+    operationalization: >-
+      Compare this episode to prior public AI governance debates and evaluate institutional decision quality and
+      clarity via documents and expert analysis.
+    assumptions:
+      - "Comparable debates were less directly about locus of control over frontier AI."
+    falsifiers:
+      - "Clear evidence of coherent institutional strategy, or prior debates are equally salient locus-of-control controversies."
