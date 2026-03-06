@@ -1,0 +1,138 @@
+sources:
+  - id: "ripplebrain-2026-negotiate-and-kill-you"
+    type: "SOCIAL"
+    title: "Iran deterrence after \"negotiate and we'll kill you\" (thread)"
+    author:
+      - "Amerikanets (@ripplebrain)"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2029249013535445428.html"
+    accessed: "2026-03-07"
+    status: "analyzed"
+    analysis_file: "analysis/sources/ripplebrain-2026-negotiate-and-kill-you.md"
+    reliability: 0.30
+    bias_notes: >-
+      Single-account geopolitical opinion thread with strong moral and strategic framing. It mixes a small amount of
+      checkable diplomatic context with high-inference claims about Iranian incentives, Israeli influence, and likely
+      escalation paths.
+    topics:
+      - iran
+      - israel
+      - us-iran
+      - diplomacy
+      - deterrence
+      - gulf-oil
+      - trust
+      - social-media
+    domains:
+      - GEO
+      - GOV
+    claims_extracted:
+      - GEO-2026-042
+      - GEO-2026-043
+      - GEO-2026-044
+      - GOV-2026-261
+      - GOV-2026-262
+      - GOV-2026-263
+
+claims:
+  - id: "GEO-2026-042"
+    text: >-
+      The thread predicts Iran is now more likely to re-establish deterrence through regional cost-imposition than to
+      rely on U.S. diplomatic assurances.
+    type: "[P]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["ripplebrain-2026-negotiate-and-kill-you"]
+    operationalization: >-
+      Track subsequent Iranian behavior toward Gulf energy infrastructure, U.S. regional bases, shipping, and
+      willingness to resume direct talks.
+    assumptions:
+      - "Iranian leaders see U.S. assurances as insufficiently credible to anchor de-escalation."
+    falsifiers:
+      - "Iran quickly resumes meaningful direct bargaining without comparable cost-imposition."
+
+  - id: "GEO-2026-043"
+    text: >-
+      The thread argues Iran's only reasonable option is to raise U.S. regional costs rather than depend on
+      treaty-based de-escalation.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["ripplebrain-2026-negotiate-and-kill-you"]
+    operationalization: >-
+      Compare the availability and credibility of diplomatic off-ramps against observed coercive options in the months
+      after the thread.
+    assumptions:
+      - "Credible mediated or direct bargaining channels are effectively unavailable."
+    falsifiers:
+      - "A credible diplomatic off-ramp emerges and is pursued without the claimed coercive prerequisites."
+
+  - id: "GEO-2026-044"
+    text: >-
+      The thread claims Iranian leaders now perceive even video-call engagement with American negotiators as
+      potentially lethal.
+    type: "[H]"
+    domain: "GEO"
+    evidence_level: "E6"
+    credence: 0.20
+    source_ids: ["ripplebrain-2026-negotiate-and-kill-you"]
+    operationalization: >-
+      Look for primary statements, credible reporting, or concrete incidents linking diplomatic contact to targeted
+      violence.
+    assumptions:
+      - "The thread is describing a literal belief held by decision-makers rather than hyperbolic rhetoric."
+    falsifiers:
+      - "No concrete incident or credible official/public reporting supports the implied danger scenario."
+
+  - id: "GOV-2026-261"
+    text: >-
+      As of early March 2026, near-term regime change in Iran did not appear likely or well-supported by public
+      reporting.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.68
+    source_ids: ["ripplebrain-2026-negotiate-and-kill-you"]
+    operationalization: >-
+      Review contemporaneous Reuters/AP/major-outlet reporting for elite assessments of opposition capacity and regime
+      stability.
+    assumptions:
+      - "Public reporting captured at least part of the real state of regime fragility."
+    falsifiers:
+      - "Contemporaneous high-authority reporting shows widespread expectation of imminent regime collapse."
+
+  - id: "GOV-2026-262"
+    text: >-
+      Iranian officials publicly framed recent U.S./Israeli actions as evidence of bad-faith diplomacy that severely
+      damaged trust and near-term negotiating space.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.67
+    source_ids: ["ripplebrain-2026-negotiate-and-kill-you"]
+    operationalization: >-
+      Compare official/public Iranian statements and major-outlet reporting before and after the strikes for changes in
+      willingness to negotiate.
+    assumptions:
+      - "Public statements are a useful proxy for near-term negotiating posture."
+    falsifiers:
+      - "Official statements and credible reporting show diplomacy remained substantively unaffected."
+
+  - id: "GOV-2026-263"
+    text: >-
+      The thread argues Israeli influence over U.S. regional policy has shifted Tehran's incentives away from future
+      direct negotiation with Washington.
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["ripplebrain-2026-negotiate-and-kill-you"]
+    operationalization: >-
+      Track Iranian framing of Israeli-U.S. coordination and whether it is explicitly cited as a reason to avoid future
+      direct talks.
+    assumptions:
+      - "Israeli leverage over U.S. crisis policy is both real and visible enough to shape Tehran's bargaining calculus."
+    falsifiers:
+      - "Iranian posture changes are better explained by independent U.S. actions or domestic Iranian considerations."

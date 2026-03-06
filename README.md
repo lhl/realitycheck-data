@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 997 |
-| **Sources** | 241 |
+| **Claims** | 1003 |
+| **Sources** | 242 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 54 |
+| **Predictions Tracked** | 55 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -63,6 +63,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-03-07 | [Iran deterrence after "negotiate and we'll kill you" (thread)](analysis/sources/ripplebrain-2026-negotiate-and-kill-you.md) | `[DRAFT]` | Thread Reader/X thread argues coercive diplomacy destroyed trust with Iran; regime-change skepticism and trust damage partly corroborated, escalation thesis remains speculative |
 | 2026-03-04 | [Documented Trump administration actions affecting the 2026 midterm elections (ChatGPT report)](analysis/sources/gpt-2026-trump-midterm-elections-report.md) | `[REVIEWED]` | Audited LLM memo: major factual anchors corroborated (Fulton County seizure; DOJ voter-roll suits; EO 14248 + EO 13848 notice; SSA/DOGE filing); memo citations non-auditable |
 | 2026-03-03 | [State of the US Republic: A Synthesis (March 2026) — memo](analysis/sources/state-of-the-us-republic-2026-03-03-memo.md) | `[DRAFT]` | Internal LLM-assisted political synthesis; claims extracted; key quantitative assertions flagged as disputed/unsourced |
 | 2026-03-03 | [Ranking Member Raskin demands records over tariff profiteering](analysis/sources/housejudiciarydems-2026-raskin-lutnick-tariff-profiteering.md) | `[DRAFT]` | Committee press release + letter: document demand re alleged tariff-refund-rights trades; underlying MNPI/insider claims unresolved |
@@ -238,7 +239,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 | SOC | Social Dynamics | 41 |
 | TRANS | Transition Dynamics | 56 |
 | RESOURCE | Resource Constraints | 16 |
-| GEO | Geopolitics | 43 |
+| GEO | Geopolitics | 46 |
 | INST | Institutions & Organizations | 86 |
 | RISK | Risk Assessment | 57 |
 | META | Framework & Methodology | 101 |
@@ -351,4 +352,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-03-04*
+*Last updated: 2026-03-07*
