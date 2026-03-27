@@ -1,0 +1,210 @@
+sources:
+  - id: "zitron-2026-ai-industry-lying"
+    type: "BLOG"
+    title: "The AI Industry Is Lying To You"
+    author: "Ed Zitron"
+    year: 2026
+    url: "https://www.wheresyoured.at/the-ai-industry-is-lying-to-you/"
+    accessed: "2026-03-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/zitron-2026-ai-industry-lying.md"
+    reliability: 0.55
+    bias_notes: >-
+      Integrates credible third-party datapoints (CBRE, Sightline) with sharper claims of deception and a broad
+      “rot” narrative tying together debt, infrastructure, and internal AI incidents. Strong rhetorical tone and
+      some quant totals that depend on definitions (pipeline stages; debt deal scope). Treat as an adversarial
+      synthesis and normalize terms carefully.
+    topics:
+      - datacenters
+      - power
+      - pipeline
+      - debt
+      - coreweave
+      - hyperscalers
+      - tokenmaxxing
+      - outages
+      - security-incidents
+      - ai-bubble
+    domains:
+      - RESOURCE
+      - ECON
+      - INST
+      - RISK
+      - SOC
+    claims_extracted:
+      - RESOURCE-2026-017
+      - RESOURCE-2026-018
+      - RESOURCE-2026-019
+      - ECON-2026-960
+      - ECON-2026-961
+      - ECON-2026-962
+      - ECON-2026-963
+      - RISK-2026-967
+      - RISK-2026-968
+      - SOC-2026-040
+
+claims:
+  - id: "RESOURCE-2026-017"
+    text: >-
+      Disclosed planned US data center capacity is on the order of ~241–245 gigawatts (GW), but only about
+      one-third is under active development, with the rest in earlier “announced/planning” stages.
+    type: "[F]"
+    domain: "RESOURCE"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["zitron-2026-ai-industry-lying"]
+    operationalization: >-
+      Compare multiple pipeline trackers (Wood Mackenzie, utilities, permitting databases, Sightline) and define
+      a harmonized stage taxonomy (announced, permitted, under construction, commissioned) for US capacity totals.
+    assumptions:
+      - Public “planned” totals aggregate heterogeneous and potentially duplicative projects.
+    falsifiers:
+      - Independent trackers show materially lower planned totals or much higher active development share.
+
+  - id: "RESOURCE-2026-018"
+    text: >-
+      CBRE reports about 2,497.6 MW (≈2.5 GW) of net absorption across eight primary North American data center
+      markets in 2025; Zitron extrapolates this to about 3 GW of “actual” IT load turned on/occupied in 2025.
+    type: "[F]"
+    domain: "RESOURCE"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["zitron-2026-ai-industry-lying"]
+    operationalization: >-
+      Verify CBRE absorption totals and definitions; reconcile absorption vs delivered/commissioned capacity and
+      assess how much additional non-primary-market absorption exists.
+    assumptions:
+      - Net absorption is a reasonable proxy for “revenue-producing IT load in operation,” not just leasing intent.
+    falsifiers:
+      - CBRE figures differ materially or absorption is shown not to correlate with turned-on capacity.
+
+  - id: "RESOURCE-2026-019"
+    text: >-
+      Sightline Climate reports that about 16 GW of data center capacity is planned for delivery in 2026, but
+      only about 5 GW is actually under construction, implying substantial pipeline delay risk.
+    type: "[F]"
+    domain: "RESOURCE"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["zitron-2026-ai-industry-lying"]
+    operationalization: >-
+      Use Sightline’s dataset (or comparable trackers) and independently classify projects by construction status;
+      compare to actual commissioning/delivery outcomes over 2026.
+    assumptions:
+      - “Under construction” is consistently defined in the tracker.
+    falsifiers:
+      - Independent data shows materially higher under-construction capacity or timely delivery consistent with plans.
+
+  - id: "ECON-2026-960"
+    text: >-
+      US data center debt deals totaled about $178.5 billion in 2025 (as cited in the post).
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.40
+    source_ids: ["zitron-2026-ai-industry-lying"]
+    operationalization: >-
+      Identify the underlying dataset (S&P/Moody’s/CBRE/other) and reproduce the aggregation rule for “debt deals”
+      (bonds, loans, securitizations, lease-financing, etc.) and the geography scope (US vs global).
+    assumptions:
+      - The cited figure refers to an aggregation that can be replicated from a named dataset.
+    falsifiers:
+      - Replication yields materially different totals.
+
+  - id: "ECON-2026-961"
+    text: >-
+      OpenAI spent about $8.67B on Azure through September 2025, and Anthropic spent about $2.66B on AWS over the
+      same period (as cited in the post).
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["zitron-2026-ai-industry-lying"]
+    operationalization: >-
+      Validate against primary financial documents (contracts, affidavits, filings) or multiple independent
+      credible reports; clarify whether these are cash spend, accrued expense, or invoiced amounts.
+    assumptions: []
+    falsifiers:
+      - Primary documents show materially different totals.
+
+  - id: "ECON-2026-962"
+    text: >-
+      CoreWeave is junk-rated (B+), highly revenue-concentrated (about 77% from Microsoft and NVIDIA), and lost
+      about $1.2B (as cited in the post).
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.45
+    source_ids: ["zitron-2026-ai-industry-lying"]
+    operationalization: >-
+      Verify via rating-agency publications and audited financial statements; compute revenue concentration using
+      customer disclosures.
+    assumptions: []
+    falsifiers:
+      - Rating reports and filings contradict the rating, concentration, or loss magnitude.
+
+  - id: "ECON-2026-963"
+    text: >-
+      Neocloud firms’ revenue/loss figures cited in the post are approximately: CoreWeave ~$5.13B revenue (lost
+      ~$1.2B), Nebius ~$228M (lost ~$122.9M), and Applied Digital ~$144M (lost ~$231M).
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.40
+    source_ids: ["zitron-2026-ai-industry-lying"]
+    operationalization: >-
+      Verify via audited filings and consistent accounting definitions (GAAP/IFRS); ensure revenue and losses
+      refer to comparable fiscal periods.
+    assumptions: []
+    falsifiers:
+      - Audited filings show materially different figures.
+
+  - id: "RISK-2026-967"
+    text: >-
+      Amazon suffered two marketplace outages (March 2 and March 5, 2026) with large order losses and internal
+      reviews that attributed primary contributing factors to AI tooling (Q/Kiro) and process breakdowns.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.40
+    source_ids: ["zitron-2026-ai-industry-lying"]
+    operationalization: >-
+      Obtain incident postmortems or credible reporting with direct access to internal documents; corroborate
+      order-loss metrics and the causal contribution of AI tooling vs human process failures.
+    assumptions: []
+    falsifiers:
+      - Postmortems/reporting refute AI-tool linkage or materially different impact metrics.
+
+  - id: "RISK-2026-968"
+    text: >-
+      Meta experienced a major internal security incident (sec-1 severity) after an in-house AI agent posted
+      on an internal forum without approval, amid misconfigured access to sensitive systems.
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.45
+    source_ids: ["zitron-2026-ai-industry-lying"]
+    operationalization: >-
+      Verify via incident reports or credible reporting with direct document access; confirm severity taxonomy
+      and the role of the agent vs underlying access-control failures.
+    assumptions: []
+    falsifiers:
+      - Evidence contradicts the incident mechanism or severity.
+
+  - id: "SOC-2026-040"
+    text: >-
+      A “tokenmaxxing” status game exists inside some tech companies: internal leaderboards and performance
+      incentives encourage heavy AI tool usage, potentially increasing costs and operational risk.
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["zitron-2026-ai-industry-lying"]
+    operationalization: >-
+      Corroborate via internal policy disclosures, reporting, and (where possible) anonymized usage telemetry;
+      test whether incentives measurably increase usage and incident rates.
+    assumptions:
+      - Token-usage incentives are widespread enough to have measurable impact.
+    falsifiers:
+      - Internal policies deny such incentives and independent reporting fails to corroborate them.
+

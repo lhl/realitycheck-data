@@ -1,0 +1,101 @@
+sources:
+  - id: "podscan-2026-tech-report-zitron-unsubsidised-ai"
+    type: "CONVO"
+    title: "AI Bubble: Nobody will pay for unsubsidised AI | Ed Zitron (The Tech Report; Podscan transcript)"
+    author:
+      - "The Tech Report (Times Radio)"
+      - "Ed Zitron"
+    year: 2026
+    url: "https://podscan.fm/podcasts/the-tech-report/episodes/ai-bubble-nobody-will-pay-for-unsubsidised-ai-ed-zitron"
+    accessed: "2026-03-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/podscan-2026-tech-report-zitron-unsubsidised-ai.md"
+    reliability: 0.45
+    bias_notes: >-
+      Transcript of a media interview. Useful for Zitron’s stated beliefs and framing; not audited evidence for
+      financial or operational claims. Some numbers are conversational and may be imprecise.
+    topics:
+      - ai
+      - ai-bubble
+      - pricing
+      - subscriptions
+      - api
+      - enterprise
+      - nvidia
+      - datacenters
+    domains:
+      - ECON
+      - INST
+      - TRANS
+    claims_extracted:
+      - INST-2026-959
+      - ECON-2026-957
+      - ECON-2026-958
+      - INST-2026-960
+
+claims:
+  - id: "INST-2026-959"
+    text: >-
+      In the interview transcript, Zitron claims that if AI services were actually worthwhile, they would not
+      be sold via subscriptions; they would charge only for API access because the value would compel payment.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.95
+    source_ids: ["podscan-2026-tech-report-zitron-unsubsidised-ai"]
+    operationalization: >-
+      Verify against the audio/transcript text for the exact wording and context.
+    assumptions: []
+    falsifiers:
+      - The transcript/audio materially contradicts the quoted claim.
+
+  - id: "ECON-2026-957"
+    text: >-
+      Zitron argues current AI service costs are subsidized and that removing the subsidy implies there is “no
+      path forward” for providers because customers will not bear true-cost pricing.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["podscan-2026-tech-report-zitron-unsubsidised-ai"]
+    operationalization: >-
+      Measure margins under subscription and enterprise contracts; test demand elasticity under price increases
+      that track modeled “true costs.”
+    assumptions:
+      - Providers’ current prices are materially below cost for typical workloads.
+    falsifiers:
+      - Providers shift to higher pricing while maintaining demand and achieving sustainable margins.
+
+  - id: "ECON-2026-958"
+    text: >-
+      Prediction: AI providers will start moving enterprise accounts to less-subsidized (higher, more true-cost)
+      pricing, and many companies will not continue paying at those rates.
+    type: "[P]"
+    domain: "ECON"
+    evidence_level: "E6"
+    credence: 0.35
+    source_ids: ["podscan-2026-tech-report-zitron-unsubsidised-ai"]
+    operationalization: >-
+      Track enterprise contract repricing and renewal rates at major providers over 2026–2027; compare seat/token
+      volumes and churn before vs after repricing events.
+    assumptions:
+      - Repricing events are observable (or inferable) and comparable across cohorts.
+    falsifiers:
+      - Renewals and spend remain strong after repricing to higher rates.
+
+  - id: "INST-2026-960"
+    text: >-
+      Flat-fee “all-you-can-eat” subscriptions prevent users from building the mental arithmetic required for
+      metered usage, making a transition to per-use pricing behaviorally difficult.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["podscan-2026-tech-report-zitron-unsubsidised-ai"]
+    operationalization: >-
+      Study user behavior across pricing migrations (subscription → metered) and compare retention and usage
+      changes, controlling for product quality changes.
+    assumptions: []
+    falsifiers:
+      - Large cohorts migrate to metered usage with minimal churn and stable satisfaction.
+

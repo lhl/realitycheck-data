@@ -1,0 +1,41 @@
+sources:
+  - id: "zitron-2026-subprime-ai-thesis-synthesis"
+    type: "KNOWLEDGE"
+    title: >-
+      Synthesis Analysis: Zitron's "Subprime AI" Thesis (2024-2026) - Pricing, Profit Levers, and Infrastructure
+      Reality Check
+    author:
+      - "gpt-5"
+    year: 2026
+    url: ""
+    accessed: "2026-03-28"
+    status: "analyzed"
+    analysis_file: "analysis/syntheses/zitron-2026-subprime-ai-thesis-synthesis.md"
+    reliability: 0.70
+    bias_notes: >-
+      Internal cross-source synthesis document in realitycheck-data. Synthesizes multiple Zitron posts and existing
+      unit-economics and productivity evidence in the repo; conclusions are credence-weighted and provisional.
+    topics:
+      - ed-zitron
+      - wheresyoured
+      - subprime-ai
+      - ai-bubble
+      - pricing
+      - subscriptions
+      - unit-economics
+      - prompt-caching
+      - datacenters
+      - debt
+      - ai-coding
+      - productivity
+    domains:
+      - ECON
+      - RESOURCE
+      - TRANS
+      - INST
+      - LABOR
+      - RISK
+      - SOC
+      - META
+    claims_extracted: []
+

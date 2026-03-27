@@ -1,0 +1,159 @@
+sources:
+  - id: "zitron-2024-subprime-ai-crisis"
+    type: "BLOG"
+    title: "The Subprime AI Crisis"
+    author: "Ed Zitron"
+    year: 2024
+    url: "https://www.wheresyoured.at/subprimeai/"
+    accessed: "2026-03-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/zitron-2024-subprime-ai-crisis.md"
+    reliability: 0.60
+    bias_notes: >-
+      Independent tech critic with a strong anti-bubble, anti-hype orientation. Mixes reported deal terms and
+      fundraising facts with speculative, rhetorically forceful predictions about industry-wide collapse.
+      Tends to emphasize fragility and downplay cost-decline trajectories, pricing segmentation, and enterprise
+      usage-based economics.
+    topics:
+      - ai
+      - llms
+      - openai
+      - microsoft
+      - venture-capital
+      - pricing
+      - unit-economics
+      - bubble
+      - debt
+    domains:
+      - ECON
+      - TRANS
+      - INST
+    claims_extracted:
+      - ECON-2026-935
+      - ECON-2026-936
+      - ECON-2026-937
+      - ECON-2026-938
+      - ECON-2026-939
+      - TRANS-2026-049
+      - ECON-2026-940
+
+claims:
+  - id: "ECON-2026-935"
+    text: >-
+      In 2024, OpenAI was reported to be seeking multi-billion-dollar debt financing via a revolving credit
+      facility alongside large equity fundraising.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["zitron-2024-subprime-ai-crisis"]
+    operationalization: >-
+      Verify via primary reporting (Bloomberg/Reuters) and (if available) filings or official statements about
+      a revolving credit facility, its size, and its timing.
+    assumptions:
+      - Reported debt facility refers to a real, actively negotiated instrument (not a tentative exploration).
+    falsifiers:
+      - Credible reporting or official disclosure shows no such facility existed or the magnitude differs materially.
+
+  - id: "ECON-2026-936"
+    text: >-
+      Microsoft is entitled to receive 75% of OpenAI’s profits until it recoups its investment, and then 49%
+      of profits until a cap under OpenAI’s capped-profit structure, per widely reported deal terms.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["zitron-2024-subprime-ai-crisis"]
+    operationalization: >-
+      Cross-check multiple reputable outlets describing the OpenAI/Microsoft deal terms; prefer official
+      disclosures or documents when available.
+    assumptions:
+      - Public reporting accurately reflects the agreement (or a stable description of it).
+    falsifiers:
+      - Authoritative disclosure contradicts the 75%/49% profit-share structure.
+
+  - id: "ECON-2026-937"
+    text: >-
+      OpenAI uses profit participation units (PPUs) rather than conventional transferable equity for at least
+      some stakeholders, creating exposure primarily to future profits rather than ownership control.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["zitron-2024-subprime-ai-crisis"]
+    operationalization: >-
+      Verify through credible reporting that describes OpenAI’s compensation/investment units (PPUs), including
+      transfer restrictions and how (and whether) they convert to equity in restructuring.
+    assumptions: []
+    falsifiers:
+      - Documentation shows stakeholders hold standard equity with ordinary transferability.
+
+  - id: "ECON-2026-938"
+    text: >-
+      Frontier LLM businesses at ChatGPT/Claude/Gemini scale lack a clear path to profitability because
+      training and inference are compute-intensive and usage is difficult to constrain without harming value.
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["zitron-2024-subprime-ai-crisis"]
+    operationalization: >-
+      Estimate full-stack unit economics (inference COGS + amortized training + serving overhead) and compare
+      against realized prices across subscription and API tiers under realistic utilization distributions.
+    assumptions:
+      - Usage distributions have heavy tails that are costly to serve even with caps/segmentation.
+    falsifiers:
+      - Providers demonstrate sustained positive unit economics at scale with transparent accounting.
+
+  - id: "ECON-2026-939"
+    text: >-
+      If OpenAI/Anthropic charged prices closer to their “true” costs, API call prices would rise by roughly
+      an order of magnitude (10–100x).
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E6"
+    credence: 0.25
+    source_ids: ["zitron-2024-subprime-ai-crisis"]
+    operationalization: >-
+      Build cost-per-token estimates using hardware prices, utilization, serving efficiency, and energy, then
+      compare implied costs against list prices for comparable workloads.
+    assumptions:
+      - Current list prices are substantially below variable costs for typical workloads (not just tail users).
+    falsifiers:
+      - Cost modeling shows current prices are close to cost for typical workloads at scale.
+
+  - id: "TRANS-2026-049"
+    text: >-
+      A “subprime AI crisis” is plausible: widespread integration of generative AI at subsidized or unstable
+      prices creates downstream fragility that could surface as price hikes, tightened access, or subsidy
+      withdrawal, causing product failures and ecosystem contraction.
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["zitron-2024-subprime-ai-crisis"]
+    operationalization: >-
+      Track AI API price changes and access restrictions, then measure downstream churn, product shutdowns,
+      and feature removals among AI-dependent startups and enterprise deployments.
+    assumptions:
+      - Downstream integrations are sufficiently dependent that a price/access shock causes material failure.
+    falsifiers:
+      - Prices/access tighten without significant downstream disruption or cost declines keep prices stable.
+
+  - id: "ECON-2026-940"
+    text: >-
+      It is plausible that hyperscalers (AWS/Azure/GCP) absorb and obscure generative-AI losses inside other
+      reporting segments; if AI were meaningfully profitable, they would highlight the revenue and margins.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["zitron-2024-subprime-ai-crisis"]
+    operationalization: >-
+      Monitor segment reporting and disclosures for dedicated AI revenue/margin breakouts; compare changes over
+      time with capex and depreciation attributable to AI infrastructure.
+    assumptions:
+      - Firms have incentives and flexibility to highlight profitable segments when material.
+    falsifiers:
+      - Audited disclosures show AI segment profitability is strong and explain prior omission.
+

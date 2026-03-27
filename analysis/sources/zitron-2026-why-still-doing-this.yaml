@@ -1,0 +1,155 @@
+sources:
+  - id: "zitron-2026-why-still-doing-this"
+    type: "BLOG"
+    title: "Why Are We Still Doing This?"
+    author: "Ed Zitron"
+    year: 2026
+    url: "https://www.wheresyoured.at/why-are-we-still-doing-this/"
+    accessed: "2026-03-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/zitron-2026-why-still-doing-this.md"
+    reliability: 0.55
+    bias_notes: >-
+      Strongly anti-hype critique focused on pricing mental models and subscription-unit-economics fragility.
+      Mixes auditable provider documentation (Claude Code cost guidance) with derived estimates and extreme
+      examples. Treat illustrative numerics as hypotheses unless traced to primary disclosures.
+    topics:
+      - ai
+      - subscriptions
+      - metered-pricing
+      - token-burn
+      - claude
+      - claude-code
+      - anthropic
+      - openai
+      - unit-economics
+    domains:
+      - ECON
+      - INST
+      - LABOR
+    claims_extracted:
+      - INST-2026-958
+      - ECON-2026-952
+      - ECON-2026-953
+      - ECON-2026-954
+      - ECON-2026-955
+      - ECON-2026-956
+      - LABOR-2026-033
+
+claims:
+  - id: "INST-2026-958"
+    text: >-
+      Subscription pricing for frontier AI tools creates user habits and cost opacity that make migration to
+      usage-based metered pricing difficult without major churn.
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["zitron-2026-why-still-doing-this"]
+    operationalization: >-
+      Observe real provider migrations (subscription tightening, tier changes, metering introduction) and measure
+      retention and usage changes, controlling for model quality and competition.
+    assumptions:
+      - Users have limited tolerance for learning a cost model tied to tokens/compute.
+    falsifiers:
+      - Providers migrate large cohorts from subscriptions to metering with high retention and stable usage.
+
+  - id: "ECON-2026-952"
+    text: >-
+      A $20/month Claude subscriber can (per Zitron’s estimate) consume up to about $163 worth of compute.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["zitron-2026-why-still-doing-this"]
+    operationalization: >-
+      Obtain subscription token caps and convert to API-equivalent pricing under a specified model and pricing
+      schedule; confirm with Anthropic disclosures.
+    assumptions:
+      - Subscription usage caps and API prices are comparable for the same model and context lengths.
+    falsifiers:
+      - Official disclosures show materially different maximum API-equivalent value under the plan.
+
+  - id: "ECON-2026-953"
+    text: >-
+      If frontier AI subscriptions were repriced to reflect compute costs, monthly prices might need to rise
+      to roughly $80–$800, which would likely produce major user churn.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E6"
+    credence: 0.35
+    source_ids: ["zitron-2026-why-still-doing-this"]
+    operationalization: >-
+      Track subscription price experiments and elasticity (churn vs price) across AI tools; compare required
+      revenue per user to modeled cost distributions.
+    assumptions:
+      - Users are price sensitive in this range and alternatives exist.
+    falsifiers:
+      - Providers raise prices substantially into this range without major churn or margin stress.
+
+  - id: "ECON-2026-954"
+    text: >-
+      For a 100-engineer company paying $200/month per engineer for an AI subscription, annual subscription
+      spend is $240,000.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E2"
+    credence: 0.95
+    source_ids: ["zitron-2026-why-still-doing-this"]
+    operationalization: >-
+      Check arithmetic: 100 * $200 * 12.
+    assumptions: []
+    falsifiers:
+      - The arithmetic is incorrect.
+
+  - id: "ECON-2026-955"
+    text: >-
+      Anthropic’s Claude Code documentation states the average cost is $6 per developer per day, with daily
+      costs remaining below $12 for 90% of users.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["zitron-2026-why-still-doing-this"]
+    operationalization: >-
+      Verify directly in the Claude Code “costs” documentation and monitor updates for changes in the quoted
+      distribution.
+    assumptions: []
+    falsifiers:
+      - The documentation does not contain this statement or is revised to materially different figures.
+
+  - id: "ECON-2026-956"
+    text: >-
+      Usage-based API pricing is difficult for users to budget because token burn is unpredictable per prompt,
+      retries and iterative refinement are common, and model “thinking” loops can consume tokens without obvious
+      value.
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["zitron-2026-why-still-doing-this"]
+    operationalization: >-
+      Measure per-task token distributions and variance in realistic workflows; compare budgeting error under
+      metering with and without tooling that estimates costs before execution.
+    assumptions:
+      - Typical workflows have heavy-tailed token use and frequent retries.
+    falsifiers:
+      - Empirical measurement shows low-variance token burn and easy budgeting with simple heuristics/tools.
+
+  - id: "LABOR-2026-033"
+    text: >-
+      Coding workflows are a worst case for cost predictability because iterative prompting, debugging, and
+      repeated test-and-fix loops can drive repeated token spend.
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["zitron-2026-why-still-doing-this"]
+    operationalization: >-
+      Collect telemetry on AI coding sessions (token use per task, retries, loop frequency) and compare variance
+      to non-coding tasks; relate variance to user budgeting accuracy and willingness-to-pay.
+    assumptions:
+      - Token-use variance is meaningfully higher for coding than for typical non-coding tasks.
+    falsifiers:
+      - Telemetry shows coding token use is not materially more variable than other tasks.
+

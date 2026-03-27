@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 1003 |
-| **Sources** | 242 |
+| **Claims** | 1047 |
+| **Sources** | 249 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 55 |
+| **Predictions Tracked** | 56 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-03-28 | [Zitron's "Subprime AI" thesis (2024-2026): pricing, profit levers, and infrastructure reality check](analysis/syntheses/zitron-2026-subprime-ai-thesis-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Zitron posts + token-unit-econ + coding productivity evidence; separates verified anchors from open numerics and overreach |
 | 2026-03-03 | [State of the US Republic (March 2026): source-checked synthesis](analysis/syntheses/state-of-the-us-republic-2026-synthesis.md) | `[DRAFT]` | Cross-source synthesis of an internal memo; checks referenced reporting/trackers/frameworks; highlights unresolved cruxes (Project 2025 “%”, SAVE act status, corruption totals) |
 | 2026-02-28 | [Anthropic–Pentagon standoff (Feb 2026): “any lawful use,” DPA leverage, and safety red lines](analysis/syntheses/anthropic-pentagon-standoff-2026-synthesis.md) | `[DRAFT]` | Cross-source synthesis: DoW “any lawful use” push collides with Anthropic red lines; DPA vs supply-chain-risk leverage; OpenAI contract compromise; key uncertainties |
 | 2026-02-23 | [Citrini “Global Intelligence Crisis” vs Imas “Negative growth” (with Orosz critique)](analysis/syntheses/citrini-2026-gic-vs-aleximas-2026-negative-growth-synthesis.md) | `[REVIEWED]` | Compare/contrast: scenario vs demand-side model; separates mechanism vs example layer; incorporates critique of DoorDash/travel/payments vignettes |
@@ -63,6 +64,12 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-03-28 | [The AI Industry Is Lying To You](analysis/sources/zitron-2026-ai-industry-lying.md) | `[DRAFT]` | Zitron on data center hype vs delivered capacity: CBRE absorption + Sightline pipeline-risk anchors corroborated; big debt totals and AI-incident attributions not yet audited |
+| 2026-03-28 | [Why Are We Still Doing This?](analysis/sources/zitron-2026-why-still-doing-this.md) | `[DRAFT]` | Subscription mental-model critique: verified Anthropic Claude Code cost guidance; derived "$163 compute on $20 plan" figure not found; migration/churn claims remain hypotheses |
+| 2026-03-28 | [Premium: The Hater's Guide To The SaaSpocalypse](analysis/sources/zitron-2026-haters-guide-saasapocalypse.md) | `[DRAFT]` | "Rot-Com" framing for SaaS slowdown: verified Carta sector share + IBM/Salesforce genAI revenue disclosures; broader VC/PE/private-credit stats not audited |
+| 2026-03-28 | [The Beginning Of History](analysis/sources/zitron-2026-beginning-of-history.md) | `[DRAFT]` | Macro shock channel (Hormuz disruption -> inflation/rates -> AI infra stress): closure-threat framing corroborated; "30% overnight oil spike" refuted; bubble-timing remains speculative |
+| 2026-03-28 | [AI Bubble: Nobody will pay for unsubsidised AI | Ed Zitron (The Tech Report; Podscan transcript)](analysis/sources/podscan-2026-tech-report-zitron-unsubsidised-ai.md) | `[DRAFT]` | Transcript-backed interview framing: verifies Zitron's "subscriptions imply low value" quote; core elasticity and repricing claims are predictions |
+| 2026-03-28 | [The Subprime AI Crisis](analysis/sources/zitron-2024-subprime-ai-crisis.md) | `[DRAFT]` | Foundational "subprime AI" framing: subsidy dependence and downstream fragility; profit-share deal-term reporting corroborated; magnitude claims remain uncertain |
 | 2026-03-07 | [Iran deterrence after "negotiate and we'll kill you" (thread)](analysis/sources/ripplebrain-2026-negotiate-and-kill-you.md) | `[DRAFT]` | Thread Reader/X thread argues coercive diplomacy destroyed trust with Iran; regime-change skepticism and trust damage partly corroborated, escalation thesis remains speculative |
 | 2026-03-04 | [Documented Trump administration actions affecting the 2026 midterm elections (ChatGPT report)](analysis/sources/gpt-2026-trump-midterm-elections-report.md) | `[REVIEWED]` | Audited LLM memo: major factual anchors corroborated (Fulton County seizure; DOJ voter-roll suits; EO 14248 + EO 13848 notice; SSA/DOGE filing); memo citations non-auditable |
 | 2026-03-03 | [State of the US Republic: A Synthesis (March 2026) — memo](analysis/sources/state-of-the-us-republic-2026-03-03-memo.md) | `[DRAFT]` | Internal LLM-assisted political synthesis; claims extracted; key quantitative assertions flagged as disputed/unsourced |
@@ -352,4 +359,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-03-07*
+*Last updated: 2026-03-28*

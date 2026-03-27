@@ -1,0 +1,170 @@
+sources:
+  - id: "zitron-2026-beginning-of-history"
+    type: "BLOG"
+    title: "The Beginning Of History"
+    author: "Ed Zitron"
+    year: 2026
+    url: "https://www.wheresyoured.at/the-beginning-of-history/"
+    accessed: "2026-03-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/zitron-2026-beginning-of-history.md"
+    reliability: 0.55
+    bias_notes: >-
+      Tech critic integrating fast-moving geopolitical events into an AI-bubble narrative. Strong rhetorical
+      tone; several quantitative anchors depend on third-party sources and can be exaggerated or sensitive to
+      reference points (e.g., "overnight" price moves). Treat as a hypothesis generator and verify key numerics.
+    topics:
+      - iran
+      - strait-of-hormuz
+      - oil
+      - inflation
+      - interest-rates
+      - ai-bubble
+      - anthropic
+      - debt
+    domains:
+      - GEO
+      - RESOURCE
+      - ECON
+      - INST
+    claims_extracted:
+      - GEO-2026-048
+      - GEO-2026-049
+      - RESOURCE-2026-016
+      - GEO-2026-050
+      - ECON-2026-941
+      - ECON-2026-942
+      - ECON-2026-943
+      - ECON-2026-944
+
+claims:
+  - id: "GEO-2026-048"
+    text: >-
+      In early March 2026, Iran’s IRGC stated that the Strait of Hormuz was “closed” and warned that vessels
+      attempting transit would be attacked, producing an effective (though not internationally recognized legal)
+      closure via risk and commercial avoidance.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["zitron-2026-beginning-of-history"]
+    operationalization: >-
+      Verify with independent maritime advisories (insurers, shipping associations, UKMTO/MARAD) and shipping
+      traffic data showing substantial reductions in transits versus baseline.
+    assumptions:
+      - “Effective closure” is meaningfully operationalized by traffic collapse and avoidance.
+    falsifiers:
+      - Credible reporting and traffic data show routine, near-normal commercial transit continued.
+
+  - id: "GEO-2026-049"
+    text: >-
+      Roughly 20% of global oil and a similar share of global liquefied natural gas (LNG) flows transit the
+      Strait of Hormuz in a typical year.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["zitron-2026-beginning-of-history"]
+    operationalization: >-
+      Cross-check against authoritative energy and shipping statistics (EIA/IEA, tanker/LNG flow datasets).
+    assumptions: []
+    falsifiers:
+      - Authoritative statistics show materially different shares.
+
+  - id: "RESOURCE-2026-016"
+    text: >-
+      Oil prices spiked by about 30% overnight to above $100/barrel (first time since 2022) around the Hormuz
+      disruption, then eased to around $95 at the time of writing.
+    type: "[F]"
+    domain: "RESOURCE"
+    evidence_level: "E4"
+    credence: 0.45
+    source_ids: ["zitron-2026-beginning-of-history"]
+    operationalization: >-
+      Check Brent/WTI futures time series at daily and intraday resolution around the claimed event window;
+      compute the relevant percentage change using a documented baseline.
+    assumptions:
+      - “Overnight” refers to a specific close-to-open window with a stable baseline.
+    falsifiers:
+      - Price series shows materially smaller (or different) overnight change than 30%.
+
+  - id: "GEO-2026-050"
+    text: >-
+      Iran sends over 80% of its oil exports to China.
+    type: "[F]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["zitron-2026-beginning-of-history"]
+    operationalization: >-
+      Use trade-flow statistics (customs, tanker tracking, and independent commodity analytics) to compute
+      destination shares for Iranian crude/oil products.
+    assumptions: []
+    falsifiers:
+      - Data shows a materially lower share of exports going to China.
+
+  - id: "ECON-2026-941"
+    text: >-
+      IMF leadership stated that a 10% increase in energy prices persisting for a year would push global
+      inflation up by about 40 basis points and slow global economic growth by about 0.1–0.2%.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["zitron-2026-beginning-of-history"]
+    operationalization: >-
+      Locate the original IMF speech/interview and validate the quoted sensitivity numbers and context.
+    assumptions:
+      - The quote is accurately reproduced and refers to a standard macro-model sensitivity.
+    falsifiers:
+      - IMF source cannot be found or reports materially different sensitivity numbers.
+
+  - id: "ECON-2026-942"
+    text: >-
+      The AI datacenter buildout is heavily debt-financed; higher interest rates and risk premia can make
+      financing tens/hundreds of billions of AI borrowing significantly more expensive and destabilize investment.
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["zitron-2026-beginning-of-history"]
+    operationalization: >-
+      Measure leverage, refinancing cadence, and spreads for datacenter/AI-infra debt and correlate with
+      project cancellations/delays under rate shocks.
+    assumptions:
+      - A significant portion of AI infra funding is floating-rate or frequently refinanced.
+    falsifiers:
+      - Rates/spreads rise materially without measurable stress in AI infra financing and buildout.
+
+  - id: "ECON-2026-943"
+    text: >-
+      In December 2025 guidance, the US Federal Reserve projected policy rates around 3.4% by the end of 2026.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E2"
+    credence: 0.80
+    source_ids: ["zitron-2026-beginning-of-history"]
+    operationalization: >-
+      Verify via official Fed projections (SEP/dot plot summaries) for the referenced meeting.
+    assumptions: []
+    falsifiers:
+      - Official projections show a materially different end-2026 rate path.
+
+  - id: "ECON-2026-944"
+    text: >-
+      Anthropic’s stated lifetime revenue (“exceeding $5B”) and a timeline of leaked “annualized revenue”
+      figures do not reconcile under a standard definition of annual recurring revenue, implying a non-standard
+      annualization definition or misleading reporting.
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["zitron-2026-beginning-of-history"]
+    operationalization: >-
+      Obtain the affidavit text and a sourced “annualized revenue” timeline, then reconcile via accounting
+      definitions (recognized revenue vs bookings vs contracted run-rate).
+    assumptions:
+      - The leak timeline is authentic and comparable across dates.
+    falsifiers:
+      - Audited disclosures reconcile the numbers under standard definitions.
+

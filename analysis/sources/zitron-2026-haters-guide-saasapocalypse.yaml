@@ -1,0 +1,168 @@
+sources:
+  - id: "zitron-2026-haters-guide-saasapocalypse"
+    type: "BLOG"
+    title: "Premium: The Hater's Guide To The SaaSpocalypse"
+    author: "Ed Zitron"
+    year: 2026
+    url: "https://www.wheresyoured.at/hatersguide-saas/"
+    accessed: "2026-03-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/zitron-2026-haters-guide-saasapocalypse.md"
+    reliability: 0.55
+    bias_notes: >-
+      Polemical market-structure critique with many numeric anchors sourced from earnings docs and vendor data.
+      Strong rhetorical tone; “AI revenue is tiny” arguments depend heavily on definitional comparability (ARR vs
+      ACV vs “book of business” vs services). Treat as a useful adversarial perspective and normalize metrics.
+    topics:
+      - saas
+      - private-equity
+      - venture-capital
+      - private-credit
+      - zirp
+      - rot-com
+      - ai-revenue
+      - salesforce
+      - ibm
+      - carta
+    domains:
+      - ECON
+      - INST
+      - TRANS
+    claims_extracted:
+      - TRANS-2026-050
+      - ECON-2026-945
+      - ECON-2026-946
+      - ECON-2026-947
+      - ECON-2026-948
+      - ECON-2026-949
+      - ECON-2026-950
+      - ECON-2026-951
+
+claims:
+  - id: "TRANS-2026-050"
+    text: >-
+      The “SaaSpocalypse” narrative (AI destroying SaaS) misdiagnoses the main driver; the larger driver is a
+      pre-existing end of the hypergrowth era in software (“Rot-Com Bubble”) rooted in slowing SaaS growth and
+      leverage built during ZIRP.
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["zitron-2026-haters-guide-saasapocalypse"]
+    operationalization: >-
+      Build a time series of SaaS growth/NRR and valuation compression, then test whether inflection points
+      precede major AI shocks (model releases/adoption). Control for interest rates and macro conditions.
+    assumptions:
+      - Available SaaS datasets are comparable over time and not biased by survivorship.
+    falsifiers:
+      - Empirical analysis shows SaaS slowdown is primarily post-AI or attributable mainly to AI substitution.
+
+  - id: "ECON-2026-945"
+    text: >-
+      Venture capital vintages after 2018 have mostly delivered total value to paid-in (TVPI) multiples of
+      about 0.8x to 1.2x.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.60
+    source_ids: ["zitron-2026-haters-guide-saasapocalypse"]
+    operationalization: >-
+      Verify with multiple VC benchmark datasets (Cambridge Associates, PitchBook, Burgiss, etc.) for post-2018
+      vintages; document any selection bias and methodology differences.
+    assumptions: []
+    falsifiers:
+      - Benchmark datasets show materially higher TVPI for the majority of post-2018 vintages.
+
+  - id: "ECON-2026-946"
+    text: >-
+      Between 2018 and 2022, roughly 30% to 40% of private equity deals were in software companies.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["zitron-2026-haters-guide-saasapocalypse"]
+    operationalization: >-
+      Use PE deal databases (PitchBook/Preqin/Refinitiv) to compute software sector deal shares for 2018–2022.
+    assumptions: []
+    falsifiers:
+      - Deal databases show materially lower software deal shares.
+
+  - id: "ECON-2026-947"
+    text: >-
+      Carta reports that about 33% of venture funding went to SaaS startups in Q3 2025.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["zitron-2026-haters-guide-saasapocalypse"]
+    operationalization: >-
+      Confirm in Carta’s Q3 2025 reporting and compare with other venture datasets to assess representativeness.
+    assumptions:
+      - Carta’s dataset coverage is sufficiently representative of overall venture funding.
+    falsifiers:
+      - Carta’s own report shows a materially different sector share.
+
+  - id: "ECON-2026-948"
+    text: >-
+      SaaS private equity acquisitions reached about $250 billion in 2021.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.55
+    source_ids: ["zitron-2026-haters-guide-saasapocalypse"]
+    operationalization: >-
+      Validate against PE transaction datasets and published market reports for 2021 SaaS acquisition totals.
+    assumptions: []
+    falsifiers:
+      - Credible datasets show materially different totals.
+
+  - id: "ECON-2026-949"
+    text: >-
+      9fin estimates that IT and communications sector companies accounted for roughly 20% to 25% of tracked
+      private credit deals, and that public BDCs issued around 20% of loans to software firms.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.50
+    source_ids: ["zitron-2026-haters-guide-saasapocalypse"]
+    operationalization: >-
+      Locate the referenced 9fin analysis and BDC loan composition summaries and replicate the sector share
+      calculations.
+    assumptions:
+      - 9fin’s tracking coverage and sector mapping are accurate.
+    falsifiers:
+      - Replication shows materially different sector shares.
+
+  - id: "ECON-2026-950"
+    text: >-
+      IBM stated its cumulative generative AI “book of business” exceeded $12.5 billion and that the majority
+      came from consulting; IBM also indicated it would stop reporting this as a standalone metric starting in
+      2026 because AI is embedded across the business.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E2"
+    credence: 0.85
+    source_ids: ["zitron-2026-haters-guide-saasapocalypse"]
+    operationalization: >-
+      Verify in IBM earnings prepared remarks and annual reports; compute consulting vs software shares using
+      IBM-provided breakdowns (e.g., consulting “book” vs software “book”).
+    assumptions: []
+    falsifiers:
+      - IBM disclosures do not support the $12.5B figure or “majority consulting” characterization.
+
+  - id: "ECON-2026-951"
+    text: >-
+      Salesforce disclosed that Agentforce and Data 360 annual recurring revenue (ARR) exceeded $2.9 billion,
+      including $1.1 billion Informatica Cloud ARR and $800 million Agentforce ARR.
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["zitron-2026-haters-guide-saasapocalypse"]
+    operationalization: >-
+      Verify in Salesforce earnings release exhibits or SEC filings and confirm definitions and time windows
+      for ARR and the included components.
+    assumptions: []
+    falsifiers:
+      - The referenced disclosure does not contain these ARR component values.
+
