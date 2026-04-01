@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 1047 |
-| **Sources** | 249 |
+| **Claims** | 1063 |
+| **Sources** | 253 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 56 |
+| **Predictions Tracked** | 57 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-04-01 | [chardet relicensing dispute (Mar 2026): clean room, derivative risk, and AI-era license governance](analysis/syntheses/chardet-2026-licensing-theseus-synthesis.md) | `[DRAFT]` | Cross-source synthesis of issue #327, Ronacher’s Theseus framing, and Ars reporting; separates artifact certainty from unresolved legal doctrine |
 | 2026-03-28 | [Zitron's "Subprime AI" thesis (2024-2026): pricing, profit levers, and infrastructure reality check](analysis/syntheses/zitron-2026-subprime-ai-thesis-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Zitron posts + token-unit-econ + coding productivity evidence; separates verified anchors from open numerics and overreach |
 | 2026-03-03 | [State of the US Republic (March 2026): source-checked synthesis](analysis/syntheses/state-of-the-us-republic-2026-synthesis.md) | `[DRAFT]` | Cross-source synthesis of an internal memo; checks referenced reporting/trackers/frameworks; highlights unresolved cruxes (Project 2025 “%”, SAVE act status, corruption totals) |
 | 2026-02-28 | [Anthropic–Pentagon standoff (Feb 2026): “any lawful use,” DPA leverage, and safety red lines](analysis/syntheses/anthropic-pentagon-standoff-2026-synthesis.md) | `[DRAFT]` | Cross-source synthesis: DoW “any lawful use” push collides with Anthropic red lines; DPA vs supply-chain-risk leverage; OpenAI contract compromise; key uncertainties |
@@ -64,6 +65,9 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-04-01 | [No right to relicense this project (chardet/chardet issue #327)](analysis/sources/chardet-2026-issue-327-no-right-to-relicense.md) | `[DRAFT]` | Primary thread audit: issue/release/comment timeline, closure rationale, and unresolved derivative-work/legal-risk crux |
+| 2026-04-01 | [AI And The Ship of Theseus](analysis/sources/ronacher-2026-ai-and-the-ship-of-theseus.md) | `[DRAFT]` | Ronacher’s permissive-license framing of AI rewrites as “new ship” identity; strong thesis, limited legal conclusiveness |
+| 2026-04-01 | [AI can rewrite open source code—but can it rewrite the license, too?](analysis/sources/arstechnica-2026-ai-rewrite-open-source-license.md) | `[DRAFT]` | Ars synthesis of chardet controversy: reconciles primary artifacts, highlights clean-room vs taint arguments and unresolved legal status |
 | 2026-03-28 | [The AI Industry Is Lying To You](analysis/sources/zitron-2026-ai-industry-lying.md) | `[DRAFT]` | Zitron on data center hype vs delivered capacity: CBRE absorption + Sightline pipeline-risk anchors corroborated; big debt totals and AI-incident attributions not yet audited |
 | 2026-03-28 | [Why Are We Still Doing This?](analysis/sources/zitron-2026-why-still-doing-this.md) | `[DRAFT]` | Subscription mental-model critique: verified Anthropic Claude Code cost guidance; derived "$163 compute on $20 plan" figure not found; migration/churn claims remain hypotheses |
 | 2026-03-28 | [Premium: The Hater's Guide To The SaaSpocalypse](analysis/sources/zitron-2026-haters-guide-saasapocalypse.md) | `[DRAFT]` | "Rot-Com" framing for SaaS slowdown: verified Carta sector share + IBM/Salesforce genAI revenue disclosures; broader VC/PE/private-credit stats not audited |
@@ -359,4 +363,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-03-28*
+*Last updated: 2026-04-01*

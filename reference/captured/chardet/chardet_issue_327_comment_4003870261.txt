@@ -1,0 +1,9 @@
+I have not investigated this any further, but the agent was looking at some of the original files, according to its plan: https://github.com/chardet/chardet/commit/925bccbc85d1b13292e7dc782254fd44cc1e7856#diff-704d0561e3e878b036836b56870212b2d8b7e4a813bf2805df868a1bf9e0094cR309-R314
+```markdown
+**Context:** The registry maps every supported encoding to its metadata.
+Era assignments MUST match chardet 6.0.0's `chardet/metadata/charsets.py` at
+https://raw.githubusercontent.com/chardet/chardet/f0676c0d6a4263827924b78a62957547fca40052/chardet/metadata/charsets.py
+
+Fetch that file and use it as the authoritative reference for which encodings
+belong to which era. Do not invent era assignments.
+```

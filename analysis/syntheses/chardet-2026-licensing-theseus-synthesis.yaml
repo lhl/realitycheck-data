@@ -1,0 +1,30 @@
+sources:
+  - id: "chardet-2026-licensing-theseus-synthesis"
+    type: "KNOWLEDGE"
+    title: "Synthesis Analysis: chardet relicensing dispute (Mar 2026) — clean room, derivative risk, and AI-era license governance"
+    author:
+      - "gpt-5"
+    year: 2026
+    url: ""
+    accessed: "2026-04-01"
+    status: "analyzed"
+    analysis_file: "analysis/syntheses/chardet-2026-licensing-theseus-synthesis.md"
+    reliability: 0.73
+    bias_notes: >-
+      Cross-source synthesis over one primary issue thread, one opinion blog, and one
+      journalistic synthesis; legal conclusions are explicitly probabilistic pending adjudication.
+    topics:
+      - chardet
+      - open-source licensing
+      - clean room
+      - derivative work
+      - AI-assisted rewrites
+      - governance
+      - legal uncertainty
+    domains:
+      - INST
+      - GOV
+      - RISK
+      - SOC
+      - META
+    claims_extracted: []

@@ -1,0 +1,105 @@
+sources:
+  - id: "chardet-2026-issue-327-no-right-to-relicense"
+    type: "CONVO"
+    title: "No right to relicense this project (chardet/chardet issue #327)"
+    author: "a2mark (issue opener) + repository maintainers/commenters"
+    year: 2026
+    url: "https://github.com/chardet/chardet/issues/327"
+    accessed: "2026-04-01"
+    status: "analyzed"
+    analysis_file: "analysis/sources/chardet-2026-issue-327-no-right-to-relicense.md"
+    reliability: 0.88
+    bias_notes: >-
+      Primary GitHub issue artifacts are high-fidelity for timeline and posted statements,
+      but legal conclusions in-thread are adversarial/opinionated and not adjudicated.
+    topics:
+      - chardet
+      - open-source licensing
+      - LGPL
+      - MIT
+      - AI-assisted rewrite
+      - clean room
+      - derivative work
+    domains:
+      - INST
+      - GOV
+      - RISK
+    claims_extracted:
+      - INST-2026-966
+      - INST-2026-967
+      - INST-2026-968
+      - GOV-2026-265
+      - RISK-2026-977
+
+claims:
+  - id: "INST-2026-966"
+    text: >-
+      Issue #327 titled "No right to relicense this project" was opened by a2mark on
+      2026-03-04 and requests reverting chardet to its original LGPL license.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.98
+    source_ids: ["chardet-2026-issue-327-no-right-to-relicense"]
+    operationalization: "Inspect issue #327 title/body/created_at via GitHub issue API or page."
+    falsifiers:
+      - "Issue title/body/timestamp materially differ from captured records."
+
+  - id: "INST-2026-967"
+    text: >-
+      chardet release 7.0.0 (published 2026-03-04) describes a "ground-up,
+      MIT-licensed rewrite" and states previous versions were LGPL.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.97
+    source_ids: ["chardet-2026-issue-327-no-right-to-relicense"]
+    operationalization: "Inspect release tag 7.0.0 notes and associated LICENSE snapshots."
+    falsifiers:
+      - "Release notes for tag 7.0.0 do not include MIT rewrite/LGPL comparison language."
+
+  - id: "INST-2026-968"
+    text: >-
+      Issue #327 reached 245 comments, was locked on 2026-03-07, and was closed on
+      2026-03-26 by dan-blanchard with a link to issue #334 comment 4098524555.
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.96
+    source_ids: ["chardet-2026-issue-327-no-right-to-relicense"]
+    operationalization: >-
+      Inspect issue metadata plus comment timeline and closure comment ID in the
+      comments API export.
+    falsifiers:
+      - "Issue metadata/comments do not match the claimed count/timestamps/linkage."
+
+  - id: "GOV-2026-265"
+    text: >-
+      In issue #334 comment 4098524555, richardfontana states he does not currently
+      see a basis for concluding chardet 7.0.0 is required to be released under LGPL.
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    credence: 0.90
+    source_ids: ["chardet-2026-issue-327-no-right-to-relicense"]
+    operationalization: "Inspect issue comment 4098524555 text directly."
+    falsifiers:
+      - "The referenced comment does not contain this position."
+
+  - id: "RISK-2026-977"
+    text: >-
+      Public artifacts in the chardet relicensing dispute support both independent-
+      rewrite and derivative-taint interpretations, leaving legal outcome unresolved
+      absent adjudication.
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["chardet-2026-issue-327-no-right-to-relicense"]
+    operationalization: >-
+      Track whether any court filing/judgment or rights-holder settlement definitively
+      resolves derivative-work status for this rewrite.
+    assumptions:
+      - "Forum evidence and similarity metrics are not independently dispositive legal determinations."
+    falsifiers:
+      - "A binding legal outcome or authoritative settlement conclusively resolves status."

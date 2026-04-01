@@ -1,0 +1,104 @@
+sources:
+  - id: "ronacher-2026-ai-and-the-ship-of-theseus"
+    type: "BLOG"
+    title: "AI And The Ship of Theseus"
+    author: "Armin Ronacher"
+    year: 2026
+    url: "https://lucumr.pocoo.org/2026/3/5/theseus/"
+    accessed: "2026-04-01"
+    status: "analyzed"
+    analysis_file: "analysis/sources/ronacher-2026-ai-and-the-ship-of-theseus.md"
+    reliability: 0.62
+    bias_notes: >-
+      Opinionated essay with explicit pro-permissive licensing bias disclosure.
+      Strong for framing and argument structure, weak for legal conclusiveness.
+    topics:
+      - chardet
+      - AI rewrite
+      - licensing
+      - ship of theseus
+      - copyleft
+      - permissive licenses
+    domains:
+      - SOC
+      - META
+      - RISK
+      - GOV
+    claims_extracted:
+      - SOC-2026-046
+      - SOC-2026-047
+      - META-2026-161
+      - RISK-2026-978
+      - SOC-2026-048
+
+claims:
+  - id: "SOC-2026-046"
+    text: >-
+      The post "AI And The Ship of Theseus" was published on 2026-03-05 on
+      lucumr.pocoo.org by Armin Ronacher.
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E2"
+    credence: 0.99
+    source_ids: ["ronacher-2026-ai-and-the-ship-of-theseus"]
+    operationalization: "Check page title, article:published_time, and article:author metadata."
+    falsifiers:
+      - "Captured metadata does not match title/date/author."
+
+  - id: "SOC-2026-047"
+    text: >-
+      The post characterizes the chardet rewrite as API-and-test-suite-driven and
+      motivated by moving from LGPL to MIT licensing.
+    type: "[F]"
+    domain: "SOC"
+    evidence_level: "E4"
+    credence: 0.78
+    source_ids: ["ronacher-2026-ai-and-the-ship-of-theseus"]
+    operationalization: >-
+      Verify the post text and cross-check against chardet release notes and issue-thread
+      process descriptions.
+    falsifiers:
+      - "The post does not make this characterization or primary artifacts strongly contradict it."
+
+  - id: "META-2026-161"
+    text: >-
+      If code is fully replaced from scratch while preserving behavior, the result can be
+      treated as a "new ship" (new work) despite interface continuity.
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["ronacher-2026-ai-and-the-ship-of-theseus"]
+    operationalization: >-
+      Evaluate consistency with derivative-work doctrine and comparable rewrite cases where
+      behavioral parity is preserved.
+    assumptions:
+      - "Identity of software in governance/legal contexts can turn on implementation lineage, not interface continuity alone."
+    falsifiers:
+      - "Authoritative legal/theoretical analysis shows behavioral replacement cannot support 'new work' treatment."
+
+  - id: "RISK-2026-978"
+    text: >-
+      Courts might eventually treat sufficiently AI-generated code as uncopyrightable or
+      public-domain-like output when human authorship is insufficient.
+    type: "[S]"
+    domain: "RISK"
+    evidence_level: "E6"
+    credence: 0.25
+    source_ids: ["ronacher-2026-ai-and-the-ship-of-theseus"]
+    operationalization: "Track software-specific rulings on AI-generated code authorship/copyrightability."
+    falsifiers:
+      - "Stable controlling precedent establishes the opposite treatment for AI-heavy software outputs."
+
+  - id: "SOC-2026-048"
+    text: >-
+      The author explicitly discloses pro-permissive licensing bias and describes the
+      transition as exciting while anticipating increased conflict.
+    type: "[A]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.90
+    source_ids: ["ronacher-2026-ai-and-the-ship-of-theseus"]
+    operationalization: "Inspect concluding sections for explicit stance and bias disclosure language."
+    falsifiers:
+      - "Text lacks explicit bias disclosure and/or conflict forecast."
