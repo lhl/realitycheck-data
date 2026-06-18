@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 1063 |
-| **Sources** | 253 |
+| **Claims** | 1085 |
+| **Sources** | 260 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 57 |
+| **Predictions Tracked** | 58 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-06-18 | [Anthropic Fable/Mythos export-control takedown](analysis/syntheses/anthropic-fable-mythos-export-control-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Lutnick letter scope, legal/API-access uncertainty, Sacks/DoW mixed-motive dispute, patch-and-unwind vs shadow-regime scenarios, and sovereignty/open-weight/citizenship consequences |
 | 2026-04-01 | [chardet relicensing dispute (Mar 2026): clean room, derivative risk, and AI-era license governance](analysis/syntheses/chardet-2026-licensing-theseus-synthesis.md) | `[DRAFT]` | Cross-source synthesis of issue #327, Ronacher’s Theseus framing, and Ars reporting; separates artifact certainty from unresolved legal doctrine |
 | 2026-03-28 | [Zitron's "Subprime AI" thesis (2024-2026): pricing, profit levers, and infrastructure reality check](analysis/syntheses/zitron-2026-subprime-ai-thesis-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Zitron posts + token-unit-econ + coding productivity evidence; separates verified anchors from open numerics and overreach |
 | 2026-03-03 | [State of the US Republic (March 2026): source-checked synthesis](analysis/syntheses/state-of-the-us-republic-2026-synthesis.md) | `[DRAFT]` | Cross-source synthesis of an internal memo; checks referenced reporting/trackers/frameworks; highlights unresolved cruxes (Project 2025 “%”, SAVE act status, corruption totals) |
@@ -65,6 +66,12 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-06-18 | [Geostrategic wargame: Fable/Mythos takedown](analysis/sources/lhl-2026-ai-geo-wargame.md) | `[DRAFT]` | Scenario memo: revocability, Zone of Thought, chaebol/state-lab, open-weight/sovereign consequences |
+| 2026-06-18 | [Bloomberg: Lutnick letter to Anthropic](analysis/sources/bloomberg-2026-lutnick-letter-anthropic.md) | `[REVIEWED]` | Letter-scope reporting: worldwide foreign-person licenses, penalties, lack of public basis, follow-up meetings |
+| 2026-06-18 | [Thread: Lutnick letter excerpt (@AndrewCurran_)](analysis/sources/curran-2026-lutnick-letter-thread.md) | `[REVIEWED]` | Social transcription of ECRA/EAR authorities and SNAP-R process |
+| 2026-06-18 | [Thread: Fable letter legal vulnerability (@CharlieBull0ck)](analysis/sources/bullock-2026-lutnick-letter-legal-thread.md) | `[DRAFT]` | Published-software/First Amendment critique; negotiation-restoration prediction |
+| 2026-06-18 | [Thread: Fable/Mythos service-access legal critique (@alasdairpr)](analysis/sources/phillipsrobins-2026-lutnick-letter-legal-thread.md) | `[DRAFT]` | AI-as-service/API gap, worldwide scope overbreadth, possible over-compliance |
+| 2026-06-18 | [Thread: Fable and citizenship verification (@jachiam0)](analysis/sources/jachiam-2026-fable-citizenship-thread.md) | `[DRAFT]` | Risk that AI access controls normalize person-status/citizenship verification |
 | 2026-04-01 | [No right to relicense this project (chardet/chardet issue #327)](analysis/sources/chardet-2026-issue-327-no-right-to-relicense.md) | `[DRAFT]` | Primary thread audit: issue/release/comment timeline, closure rationale, and unresolved derivative-work/legal-risk crux |
 | 2026-04-01 | [AI And The Ship of Theseus](analysis/sources/ronacher-2026-ai-and-the-ship-of-theseus.md) | `[DRAFT]` | Ronacher’s permissive-license framing of AI rewrites as “new ship” identity; strong thesis, limited legal conclusiveness |
 | 2026-04-01 | [AI can rewrite open source code—but can it rewrite the license, too?](analysis/sources/arstechnica-2026-ai-rewrite-open-source-license.md) | `[DRAFT]` | Ars synthesis of chardet controversy: reconciles primary artifacts, highlights clean-room vs taint arguments and unresolved legal status |
@@ -363,4 +370,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-04-01*
+*Last updated: 2026-06-18*

@@ -1,0 +1,47 @@
+sources:
+  - id: "curran-2026-lutnick-letter-thread"
+    type: "SOCIAL"
+    title: "Thread: excerpt of Lutnick's Is Informed letter to Anthropic"
+    author:
+      - "@AndrewCurran_"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2066975654604881983.html"
+    accessed: "2026-06-18"
+    status: "analyzed"
+    analysis_file: "analysis/sources/curran-2026-lutnick-letter-thread.md"
+    reliability: 0.55
+    bias_notes: "Social-media transcription of a not-yet-public letter; useful but should be superseded by the official PDF if released."
+    topics: [anthropic, fable-5, mythos-5, export-controls, bis, lutnick, deemed-export]
+    domains: [GOV, INST]
+    claims_extracted: [GOV-2026-272, GOV-2026-273, GOV-2026-274]
+claims:
+  - id: "GOV-2026-272"
+    text: "The Lutnick letter invoked ECRA 50 USC 4817(b)(1), 50 USC 4813(a)(15), and EAR 744.22(b) as authority for the Fable/Mythos license requirement."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.78
+    source_ids: ["curran-2026-lutnick-letter-thread"]
+    operationalization: "Verify against full public letter or FOIA release."
+    assumptions: ["Thread transcription is accurate."]
+    falsifiers: ["Public letter cites materially different authorities."]
+  - id: "GOV-2026-273"
+    text: "The Lutnick letter directed Anthropic to submit license applications through SNAP-R and attach the Is Informed letter."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.75
+    source_ids: ["curran-2026-lutnick-letter-thread"]
+    operationalization: "Verify against full public letter and BIS licensing records if disclosed."
+    assumptions: ["Thread transcription is accurate."]
+    falsifiers: ["Public letter lacks SNAP-R instruction."]
+  - id: "GOV-2026-274"
+    text: "The Lutnick letter treated release of the Fable/Mythos models to a foreign person as a deemed export or deemed reexport requiring a license."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.80
+    source_ids: ["curran-2026-lutnick-letter-thread"]
+    operationalization: "Compare letter wording to EAR definitions and any BIS guidance on hosted AI model access."
+    assumptions: ["The letter's model language is intended to reach deployed access."]
+    falsifiers: ["BIS clarifies that the notice applied only to model weights or other non-API transfers."]

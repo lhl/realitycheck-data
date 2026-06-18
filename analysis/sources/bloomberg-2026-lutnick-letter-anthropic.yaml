@@ -1,0 +1,76 @@
+sources:
+  - id: "bloomberg-2026-lutnick-letter-anthropic"
+    type: "ARTICLE"
+    title: "Lutnick's letter to Anthropic warned of curbs on top AI models"
+    author:
+      - "Michael Shepard"
+      - "Maggie Eastland"
+      - "Bloomberg News"
+    year: 2026
+    url: "https://www.straitstimes.com/world/united-states/lutnicks-letter-to-anthropic-warned-of-curbs-on-top-ai-models"
+    accessed: "2026-06-18"
+    status: "analyzed"
+    analysis_file: "analysis/sources/bloomberg-2026-lutnick-letter-anthropic.md"
+    reliability: 0.78
+    bias_notes: >-
+      Credible journalism based on a copy of the Lutnick letter, accessed through Straits Times syndication and
+      Bloomberg Law extract. Not a public official PDF; legal interpretation requires separate analysis.
+    topics:
+      - anthropic
+      - fable-5
+      - mythos-5
+      - export-controls
+      - bis
+      - lutnick
+      - ai-governance
+    domains:
+      - GOV
+      - INST
+      - RISK
+    claims_extracted:
+      - GOV-2026-269
+      - GOV-2026-270
+      - GOV-2026-271
+      - INST-2026-973
+
+claims:
+  - id: "GOV-2026-269"
+    text: "The June 12 Lutnick letter required individual validated licenses before export, reexport, transfer, deemed export, or deemed reexport of Fable/Mythos to foreign persons worldwide."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["bloomberg-2026-lutnick-letter-anthropic"]
+    operationalization: "Compare Bloomberg/Straits Times text, Bloomberg Law excerpt, and any later public PDF of the letter."
+    assumptions: ["Bloomberg accurately reported the letter language."]
+    falsifiers: ["The published full letter materially narrows or omits the reported license requirement."]
+  - id: "GOV-2026-270"
+    text: "The June 12 Lutnick letter threatened criminal and civil penalties if Anthropic failed to comply."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["bloomberg-2026-lutnick-letter-anthropic"]
+    operationalization: "Verify against the full public letter if/when released."
+    assumptions: ["Quoted penalty language is from the letter."]
+    falsifiers: ["Full letter lacks penalty language."]
+  - id: "GOV-2026-271"
+    text: "The June 12 Lutnick letter cited export-control authorities but did not provide a specific public basis for why the Fable/Mythos restrictions were necessary."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["bloomberg-2026-lutnick-letter-anthropic"]
+    operationalization: "Review the full letter and any public BIS/Commerce explanation."
+    assumptions: ["Bloomberg's characterization of the letter's basis is accurate."]
+    falsifiers: ["The full letter contains a specific technical and legal rationale not reflected in reporting."]
+  - id: "INST-2026-973"
+    text: "Anthropic technical staff met with US Commerce officials on June 15, 2026, after the Fable/Mythos directive."
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.70
+    source_ids: ["bloomberg-2026-lutnick-letter-anthropic"]
+    operationalization: "Confirm meeting timing and participants via Anthropic, Commerce, or further reporting."
+    assumptions: ["Company spokesperson account is accurate."]
+    falsifiers: ["Anthropic or Commerce denies the meeting."]

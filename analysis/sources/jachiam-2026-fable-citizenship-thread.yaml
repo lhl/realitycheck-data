@@ -1,0 +1,47 @@
+sources:
+  - id: "jachiam-2026-fable-citizenship-thread"
+    type: "SOCIAL"
+    title: "Thread: Fable dispute could normalize electronic citizenship verification"
+    author:
+      - "@jachiam0"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2067041785063608625.html"
+    accessed: "2026-06-18"
+    status: "analyzed"
+    analysis_file: "analysis/sources/jachiam-2026-fable-citizenship-thread.md"
+    reliability: 0.45
+    bias_notes: "Short speculative governance-risk thread. Captured via browser because rc-html-extract selected an older related thread."
+    topics: [anthropic, fable-5, citizenship-verification, digital-identity, ai-governance, state-power]
+    domains: [SOC, INST, RISK]
+    claims_extracted: [SOC-2026-051, INST-2026-974, RISK-2026-982]
+claims:
+  - id: "SOC-2026-051"
+    text: "The Fable dispute could normalize electronic citizenship verification as a step in using powerful software."
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.35
+    source_ids: ["jachiam-2026-fable-citizenship-thread"]
+    operationalization: "Track whether AI model platforms add citizenship, foreign-person, or protected-status verification after the Fable/Mythos directive."
+    assumptions: ["Foreign-person controls become repeated enough to justify platform-level verification."]
+    falsifiers: ["Access controls are reversed or implemented only through organization-level licenses without individual status checks."]
+  - id: "INST-2026-974"
+    text: "Private-sector failure to respect state power can provoke governments to use extraordinary powers against digital systems."
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["jachiam-2026-fable-citizenship-thread"]
+    operationalization: "Compare AI governance conflicts where private actors refuse remediation with subsequent state coercion."
+    assumptions: ["The Fable dispute involved perceived private-sector intransigence."]
+    falsifiers: ["The dispute is resolved through normal process without extraordinary coercion and no similar pattern recurs."]
+  - id: "RISK-2026-982"
+    text: "The Fable conflict could contribute to broader state digital-firewall dynamics."
+    type: "[S]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.30
+    source_ids: ["jachiam-2026-fable-citizenship-thread"]
+    operationalization: "Track digital identity, national firewall, and software-access control proposals following AI model-access conflicts."
+    assumptions: ["States generalize the lesson from frontier AI access to broader software control."]
+    falsifiers: ["No broader digital-access policy follows and the dispute remains model-specific."]

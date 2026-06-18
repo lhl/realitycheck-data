@@ -1,0 +1,35 @@
+sources:
+  - id: "anthropic-fable-mythos-export-control-synthesis"
+    type: "KNOWLEDGE"
+    title: "Synthesis: Anthropic Fable/Mythos Export-Control Takedown"
+    author:
+      - "codex"
+    year: 2026
+    url: ""
+    accessed: "2026-06-18"
+    status: "analyzed"
+    analysis_file: "analysis/syntheses/anthropic-fable-mythos-export-control-synthesis.md"
+    reliability: 0.70
+    bias_notes: >-
+      Cross-source synthesis combining primary Anthropic statements, accessible Bloomberg/letter reporting,
+      Thread Reader legal/social commentary, official legal texts, and current June 17-18 reporting. Scenario
+      probabilities are analytic judgments; legal outcomes and technical-jailbreak severity remain unresolved.
+    topics:
+      - anthropic
+      - fable-5
+      - mythos-5
+      - export-controls
+      - ai-governance
+      - ai-sovereignty
+      - open-weights
+      - citizenship-verification
+      - enterprise-risk
+      - us-china
+    domains:
+      - GOV
+      - GEO
+      - INST
+      - ECON
+      - SOC
+      - RISK
+    claims_extracted: []

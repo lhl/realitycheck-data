@@ -1,0 +1,57 @@
+sources:
+  - id: "phillipsrobins-2026-lutnick-letter-legal-thread"
+    type: "SOCIAL"
+    title: "Thread: four legal flaws in the Fable/Mythos export-control letter"
+    author:
+      - "@alasdairpr"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2067052688508899577.html"
+    accessed: "2026-06-18"
+    status: "analyzed"
+    analysis_file: "analysis/sources/phillipsrobins-2026-lutnick-letter-legal-thread.md"
+    reliability: 0.52
+    bias_notes: "Short but substantive legal critique. Strong for issue-spotting; ultimate legal outcome remains unresolved."
+    topics: [anthropic, fable-5, mythos-5, export-controls, ai-as-a-service, first-amendment, ear]
+    domains: [GOV, GEO, RISK]
+    claims_extracted: [GOV-2026-278, GEO-2026-052, RISK-2026-980, RISK-2026-981]
+claims:
+  - id: "GOV-2026-278"
+    text: "Current US export controls do not clearly cover AI-as-a-service or remote API access as an export of an item."
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.60
+    source_ids: ["phillipsrobins-2026-lutnick-letter-legal-thread"]
+    operationalization: "Compare hosted model access to EAR definitions of item, software, technology, export, and release; track BIS guidance or court rulings."
+    assumptions: ["API users do not receive the controlled model, weights, source code, or technical data."]
+    falsifiers: ["BIS or a court confirms remote model access is controlled under existing law."]
+  - id: "GEO-2026-052"
+    text: "The Lutnick letter's worldwide foreign-person restriction is broader than the adversary military-intelligence focus of EAR 744.22."
+    type: "[T]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.58
+    source_ids: ["phillipsrobins-2026-lutnick-letter-legal-thread"]
+    operationalization: "Compare letter scope to 15 CFR 744.22 and any separate ECRA basis asserted by BIS."
+    assumptions: ["744.22 is a central operative authority, not merely one supporting citation."]
+    falsifiers: ["BIS identifies a separate valid global authority that matches the letter's scope."]
+  - id: "RISK-2026-980"
+    text: "The Fable/Mythos order risks First Amendment problems for US residents, including noncitizens, who receive information."
+    type: "[T]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.42
+    source_ids: ["phillipsrobins-2026-lutnick-letter-legal-thread"]
+    operationalization: "Track constitutional litigation and expert First Amendment analysis of AI model access restrictions."
+    assumptions: ["Model access or outputs are protected information receipt."]
+    falsifiers: ["Courts reject the First Amendment framing for this access restriction."]
+  - id: "RISK-2026-981"
+    text: "Anthropic may have over-complied with the Lutnick letter because the letter's model-transfer language may not require shutting off API or chatbot access."
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.48
+    source_ids: ["phillipsrobins-2026-lutnick-letter-legal-thread"]
+    operationalization: "Compare letter wording, Anthropic compliance decisions, and any BIS clarification on whether API queries constitute model transfer."
+    assumptions: ["The controlled model is distinguishable from query/output service access."]
+    falsifiers: ["BIS clarifies that the notice explicitly reaches API and chatbot access."]

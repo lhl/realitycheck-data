@@ -1,0 +1,47 @@
+sources:
+  - id: "bullock-2026-lutnick-letter-legal-thread"
+    type: "SOCIAL"
+    title: "Thread: BIS legal theory on Fable access is aggressive and vulnerable"
+    author:
+      - "@CharlieBull0ck"
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2066987766924128464.html"
+    accessed: "2026-06-18"
+    status: "analyzed"
+    analysis_file: "analysis/sources/bullock-2026-lutnick-letter-legal-thread.md"
+    reliability: 0.48
+    bias_notes: "Short social legal analysis. Useful issue spotting, but not a full memo and some conclusions are contested."
+    topics: [anthropic, fable-5, mythos-5, export-controls, first-amendment, ear, published-software]
+    domains: [GOV, RISK]
+    claims_extracted: [GOV-2026-275, GOV-2026-276, GOV-2026-277]
+claims:
+  - id: "GOV-2026-275"
+    text: "BIS's legal theory in the Fable/Mythos letter is aggressive and likely vulnerable to legal or constitutional challenge."
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["bullock-2026-lutnick-letter-legal-thread"]
+    operationalization: "Track legal filings, agency narrowing, expert commentary, and any court ruling."
+    assumptions: ["The letter targets deployed model access rather than only weights or controlled technical data."]
+    falsifiers: ["A court upholds the broad theory or BIS issues a narrow, clearly supported replacement."]
+  - id: "GOV-2026-276"
+    text: "Published information and software exclusions under the EAR create a legal problem for controlling Fable if the deployed model is considered published software or technology."
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["bullock-2026-lutnick-letter-legal-thread"]
+    operationalization: "Compare Fable's deployment facts against 15 CFR 734.7 and 734.3(b), and review expert analyses."
+    assumptions: ["Public API/chat access can count as publication of software or technology."]
+    falsifiers: ["BIS or courts conclude hosted model access is not published software or technology."]
+  - id: "GOV-2026-277"
+    text: "Anthropic is more likely to resolve the Fable/Mythos dispute through negotiation than litigation, leading to some version of Fable returning."
+    type: "[P]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.55
+    source_ids: ["bullock-2026-lutnick-letter-legal-thread"]
+    operationalization: "Track lawsuits, licenses, settlement, public restoration, and conditions on restored access."
+    assumptions: ["Both Anthropic and the administration prefer face-saving restoration."]
+    falsifiers: ["Anthropic sues or Fable remains unavailable for an extended period."]

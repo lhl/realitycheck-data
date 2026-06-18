@@ -1,0 +1,90 @@
+sources:
+  - id: "lhl-2026-ai-geo-wargame"
+    type: "REPORT"
+    title: "Geostrategic Wargame: The June 2026 Fable/Mythos Export-Control Takedown"
+    author:
+      - "lhl / AI-assisted memo"
+    year: 2026
+    url: "reference/primary/lhl-2026-ai-geo-wargame.md"
+    accessed: "2026-06-18"
+    status: "analyzed"
+    analysis_file: "analysis/sources/lhl-2026-ai-geo-wargame.md"
+    reliability: 0.55
+    bias_notes: >-
+      Local AI-assisted scenario memo. Strong as a synthesis and scenario generator, weaker as a primary factual
+      source. Treat factual event claims as requiring external confirmation and scenario claims as provisional.
+    topics:
+      - ai
+      - export-controls
+      - fable-5
+      - mythos-5
+      - ai-sovereignty
+      - open-weights
+      - citizenship
+      - enterprise-architecture
+      - us-china
+    domains:
+      - GEO
+      - INST
+      - ECON
+      - SOC
+      - GOV
+      - RISK
+    claims_extracted:
+      - GEO-2026-051
+      - INST-2026-971
+      - ECON-2026-964
+      - SOC-2026-050
+      - INST-2026-972
+
+claims:
+  - id: "GEO-2026-051"
+    text: "US model-access revocability will accelerate sovereign AI, open-weight fallback, and distrust of US-hosted frontier APIs."
+    type: "[T]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.65
+    source_ids: ["lhl-2026-ai-geo-wargame"]
+    operationalization: "Track sovereign-AI funding, procurement requirements for self-hosted fallback, and open-weight adoption after the Fable/Mythos takedown."
+    assumptions: ["Buyers treat the Anthropic event as a reusable precedent."]
+    falsifiers: ["Fable/Mythos access is restored with binding guarantees and no measurable procurement or sovereign-AI response follows."]
+  - id: "INST-2026-971"
+    text: "A standing access-control regime would pace US frontier model releases through government hardening, classified benchmarking, or trusted-partner review."
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["lhl-2026-ai-geo-wargame"]
+    operationalization: "Track whether subsequent frontier launches are delayed, licensed, or conditioned on government benchmarking."
+    assumptions: ["The Fable/Mythos directive becomes repeatable beyond Anthropic."]
+    falsifiers: ["Comparable frontier releases proceed without government access controls or delay."]
+  - id: "ECON-2026-964"
+    text: "Enterprises should treat single proprietary frontier APIs as revocation risks and build model-agnostic routing plus self-hosted fallback."
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.70
+    source_ids: ["lhl-2026-ai-geo-wargame"]
+    operationalization: "Track enterprise RFPs, gateway adoption, fallback-model clauses, and vendor incident postmortems."
+    assumptions: ["Critical workloads cannot tolerate sudden legal model loss."]
+    falsifiers: ["Vendors provide enforceable continuity guarantees that make revocation immaterial."]
+  - id: "SOC-2026-050"
+    text: "A Zone of Thought could make access to frontier cognition a legal-status good tied to citizenship, permanent residence, protected status, or allied licensing."
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["lhl-2026-ai-geo-wargame"]
+    operationalization: "Observe whether frontier models require citizenship/person-status verification or allied-license tiers."
+    assumptions: ["Frontier models remain materially more capable than substitutes."]
+    falsifiers: ["Access controls never use person-status gates after this incident."]
+  - id: "INST-2026-972"
+    text: "Restricted external access to frontier models can push frontier labs to sell managed outputs or downstream services rather than raw model access."
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.40
+    source_ids: ["lhl-2026-ai-geo-wargame"]
+    operationalization: "Track acquisitions, managed-service offerings, and contracts where labs operate the AI work internally for external customers."
+    assumptions: ["Outputs are easier to export than direct model access."]
+    falsifiers: ["Model access remains broadly sellable and labs do not vertically integrate downstream services."]
