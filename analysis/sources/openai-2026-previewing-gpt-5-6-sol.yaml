@@ -1,0 +1,83 @@
+sources:
+  - id: "openai-2026-previewing-gpt-5-6-sol"
+    type: "ARTICLE"
+    title: "Previewing GPT-5.6 Sol: a next-generation model"
+    author:
+      - "OpenAI"
+    year: 2026
+    url: "https://openai.com/index/previewing-gpt-5-6-sol/"
+    accessed: "2026-06-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/openai-2026-previewing-gpt-5-6-sol.md"
+    reliability: 0.72
+    bias_notes: >-
+      First-party model release and safety/access positioning. Strong evidence for what OpenAI
+      announced and how it framed the rollout; weaker for benchmark, threshold, and safeguard
+      effectiveness claims without system-card or third-party evaluation.
+    topics:
+      - openai
+      - gpt-5-6
+      - sol
+      - frontier-ai
+      - cyber-capability
+      - government-vetting
+      - trusted-access
+    domains:
+      - GOV
+      - INST
+      - RISK
+    claims_extracted:
+      - GOV-2026-279
+      - INST-2026-975
+      - RISK-2026-983
+      - RISK-2026-984
+
+claims:
+  - id: "GOV-2026-279"
+    text: "OpenAI says GPT-5.6 begins as a limited preview for a small group of trusted partners whose participation has been shared with the US government, at the government's request."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.95
+    source_ids: ["openai-2026-previewing-gpt-5-6-sol"]
+    operationalization: "Compare OpenAI's official release page with independent reporting and later access documentation."
+    assumptions:
+      - "OpenAI's post accurately describes the government's role in the preview."
+    falsifiers:
+      - "OpenAI retracts the government-request language or later documentation shows no government-requested limitation."
+  - id: "INST-2026-975"
+    text: "OpenAI says the government access process for GPT-5.6 should not become the long-term default and frames the limited preview as a short-term step toward broader availability while a repeatable cyber Executive Order process is developed."
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.90
+    source_ids: ["openai-2026-previewing-gpt-5-6-sol"]
+    operationalization: "Track OpenAI and White House statements over later model releases to see whether customer-by-customer government access approval recurs."
+    assumptions:
+      - "The official post reflects OpenAI's actual policy preference."
+    falsifiers:
+      - "OpenAI endorses government access approval as the normal release default for future frontier models."
+  - id: "RISK-2026-983"
+    text: "OpenAI says GPT-5.6 Sol is its strongest cybersecurity model yet, improves long-horizon vulnerability research and exploitation tasks, and did not cross OpenAI's Cyber Critical threshold in tested conditions."
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["openai-2026-previewing-gpt-5-6-sol"]
+    operationalization: "Review GPT-5.6 system-card details and independent cyber evaluations for threshold and task-performance claims."
+    assumptions:
+      - "OpenAI's Cyber Critical threshold is consistently applied and relevant to the reported tests."
+    falsifiers:
+      - "OpenAI or independent evaluators show GPT-5.6 Sol crossed Cyber Critical conditions or that the stated tests were materially mischaracterized."
+  - id: "RISK-2026-984"
+    text: "OpenAI describes a layered safeguard stack for GPT-5.6 that includes model-level refusals, real-time misuse classifiers, account-level signals, differentiated access, monitoring, enforcement, and continued testing."
+    type: "[F]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["openai-2026-previewing-gpt-5-6-sol"]
+    operationalization: "Compare the official post, system card, and product behavior against each named safeguard layer."
+    assumptions:
+      - "The named safeguards are deployed in production for the preview models."
+    falsifiers:
+      - "System-card or product evidence shows key listed safeguards are absent or materially narrower than described."

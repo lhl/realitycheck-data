@@ -1,0 +1,54 @@
+sources:
+  - id: "hn-2026-gpt-5-6-sol-48690101"
+    type: "SOCIAL"
+    title: "HN discussion: U.S. government will decide who gets to use GPT-5.6"
+    author:
+      - "Hacker News commenters"
+    year: 2026
+    url: "https://news.ycombinator.com/item?id=48690101"
+    accessed: "2026-06-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/hn-2026-gpt-5-6-sol-48690101.md"
+    reliability: 0.38
+    bias_notes: >-
+      Non-representative technical forum thread. Useful for surfacing developer sentiment,
+      trust concerns, and open-weight/sovereign-access hypotheses; weak evidence for
+      prevalence, causality, or policy facts.
+    topics:
+      - hacker-news
+      - openai
+      - gpt-5-6
+      - government-vetting
+      - open-weights
+      - digital-sovereignty
+    domains:
+      - SOC
+    claims_extracted:
+      - SOC-2026-052
+      - SOC-2026-053
+
+claims:
+  - id: "SOC-2026-052"
+    text: "A salient reaction in the Hacker News thread on government-vetted GPT-5.6 access is that open-weight or sovereign alternatives become more attractive when proprietary frontier access can be politically gated."
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.45
+    source_ids: ["hn-2026-gpt-5-6-sol-48690101"]
+    operationalization: "Track developer and enterprise sentiment plus adoption of open-weight/sovereign fallback models after restricted frontier rollouts."
+    assumptions:
+      - "HN commenters are an early signal for broader technical-user trust concerns."
+    falsifiers:
+      - "Representative buyer/user data shows no shift in trust or adoption toward open-weight or sovereign alternatives after restricted rollouts."
+  - id: "SOC-2026-053"
+    text: "The Hacker News thread surfaces a civil-liberties and industrial-policy concern that frontier AI controls may become political allocation of private technology rather than neutral safety review."
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.50
+    source_ids: ["hn-2026-gpt-5-6-sol-48690101"]
+    operationalization: "Track whether public discourse, civil-society commentary, and policy filings frame frontier model access as political allocation or as neutral safety process."
+    assumptions:
+      - "The captured comments reflect a real discourse cluster rather than isolated venting."
+    falsifiers:
+      - "A transparent access framework with stable criteria and appeal process substantially removes this concern in subsequent discourse."

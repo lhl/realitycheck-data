@@ -6,8 +6,8 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 1085 |
-| **Sources** | 260 |
+| **Claims** | 1106 |
+| **Sources** | 268 |
 | **Argument Chains** | 4 |
 | **Predictions Tracked** | 58 |
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-06-28 | [GPT-5.6 Sol White House vetting and frontier AI access regime](analysis/syntheses/gpt-5-6-sol-white-house-vetting-synthesis.md) | `[DRAFT]` | Cross-source synthesis: OpenAI GPT-5.6 trusted-partner preview, WaPo/CNN government-vetting reports, HN reaction, Reuters litigation, and Semafor Mythos carveout |
 | 2026-06-18 | [Anthropic Fable/Mythos export-control takedown](analysis/syntheses/anthropic-fable-mythos-export-control-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Lutnick letter scope, legal/API-access uncertainty, Sacks/DoW mixed-motive dispute, patch-and-unwind vs shadow-regime scenarios, and sovereignty/open-weight/citizenship consequences |
 | 2026-04-01 | [chardet relicensing dispute (Mar 2026): clean room, derivative risk, and AI-era license governance](analysis/syntheses/chardet-2026-licensing-theseus-synthesis.md) | `[DRAFT]` | Cross-source synthesis of issue #327, Ronacher’s Theseus framing, and Ars reporting; separates artifact certainty from unresolved legal doctrine |
 | 2026-03-28 | [Zitron's "Subprime AI" thesis (2024-2026): pricing, profit levers, and infrastructure reality check](analysis/syntheses/zitron-2026-subprime-ai-thesis-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Zitron posts + token-unit-econ + coding productivity evidence; separates verified anchors from open numerics and overreach |
@@ -66,6 +67,12 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-06-28 | [OpenAI: Previewing GPT-5.6 Sol](analysis/sources/openai-2026-previewing-gpt-5-6-sol.md) | `[REVIEWED]` | Official release: government-requested trusted-partner preview, cyber capability/safeguard claims, and short-term/default-process tension |
+| 2026-06-28 | [Washington Post: US government will vet GPT-5.6 users](analysis/sources/washpost-2026-openai-government-vet-users-gpt-5-6.md) | `[REVIEWED]` | Archive-backed report: federal company vetting, no individual access path, and Anthropic precedent context |
+| 2026-06-28 | [CNN: White House asks OpenAI to limit release](analysis/sources/cnn-2026-openai-limit-release-white-house.md) | `[REVIEWED]` | Reporting on White House request, customer-by-customer approval detail, Mythos comparability, and opaque-framework risk |
+| 2026-06-28 | [HN discussion: GPT-5.6 government access gate](analysis/sources/hn-2026-gpt-5-6-sol-48690101.md) | `[DRAFT]` | Technical-community reaction: open-weight/sovereign alternatives and political-allocation concerns as low-rigor sentiment signals |
+| 2026-06-28 | [Reuters: legal tech firm sues over Anthropic access order](analysis/sources/reuters-2026-legal-tech-sues-us-anthropic-access.md) | `[REVIEWED]` | Syndicated Reuters capture: Legion LegalTech lawsuit, alleged Canada-team harm, and requested vacatur/preliminary relief |
+| 2026-06-28 | [Semafor: US releases Anthropic Mythos to some US companies](analysis/sources/semafor-2026-us-releases-anthropic-mythos.md) | `[REVIEWED]` | Mythos carveout: more than 100 US institutions, foreign-national employee exception, and trusted-partner regime implications |
 | 2026-06-18 | [Geostrategic wargame: Fable/Mythos takedown](analysis/sources/lhl-2026-ai-geo-wargame.md) | `[DRAFT]` | Scenario memo: revocability, Zone of Thought, chaebol/state-lab, open-weight/sovereign consequences |
 | 2026-06-18 | [Bloomberg: Lutnick letter to Anthropic](analysis/sources/bloomberg-2026-lutnick-letter-anthropic.md) | `[REVIEWED]` | Letter-scope reporting: worldwide foreign-person licenses, penalties, lack of public basis, follow-up meetings |
 | 2026-06-18 | [Thread: Lutnick letter excerpt (@AndrewCurran_)](analysis/sources/curran-2026-lutnick-letter-thread.md) | `[REVIEWED]` | Social transcription of ECRA/EAR authorities and SNAP-R process |
@@ -370,4 +377,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-06-18*
+*Last updated: 2026-06-28*

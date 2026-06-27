@@ -1,0 +1,37 @@
+sources:
+  - id: "gpt-5-6-sol-white-house-vetting-synthesis"
+    type: "KNOWLEDGE"
+    title: "Synthesis: GPT-5.6 Sol White House Vetting and Frontier AI Access Regime"
+    author:
+      - "codex"
+    year: 2026
+    url: ""
+    accessed: "2026-06-28"
+    status: "analyzed"
+    analysis_file: "analysis/syntheses/gpt-5-6-sol-white-house-vetting-synthesis.md"
+    reliability: 0.72
+    bias_notes: >-
+      Cross-source synthesis combining OpenAI first-party release text, CNN/WaPo reporting,
+      HN discourse, Reuters-syndicated litigation reporting, Semafor exclusive Mythos
+      reporting, prior Reality Check analyses, and White House EO checks. Scenario
+      probabilities are analytic judgments; access-list criteria, legal merits, and system-card
+      details remain unresolved.
+    topics:
+      - openai
+      - gpt-5-6
+      - white-house
+      - anthropic
+      - mythos-5
+      - fable-5
+      - frontier-ai
+      - trusted-access
+      - export-controls
+      - digital-sovereignty
+    domains:
+      - GOV
+      - INST
+      - RISK
+      - SOC
+      - ECON
+      - GEO
+    claims_extracted: []

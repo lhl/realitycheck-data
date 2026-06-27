@@ -1,0 +1,68 @@
+sources:
+  - id: "cnn-2026-openai-limit-release-white-house"
+    type: "ARTICLE"
+    title: "White House asks OpenAI to limit its next model release"
+    author:
+      - "Hadas Gold"
+    year: 2026
+    url: "https://edition.cnn.com/2026/06/25/tech/openai-limit-release-white-house"
+    accessed: "2026-06-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/cnn-2026-openai-limit-release-white-house.md"
+    reliability: 0.76
+    bias_notes: >-
+      Credible journalism with some unnamed-source and internal-memo dependent details.
+      Strong for the White House-requested limited release because OpenAI later confirmed the
+      core point; moderate for exact customer-by-customer mechanics and Mythos equivalence.
+    topics:
+      - openai
+      - gpt-5-6
+      - white-house
+      - mythos
+      - frontier-ai
+      - regulation
+    domains:
+      - GOV
+      - RISK
+    claims_extracted:
+      - GOV-2026-282
+      - GOV-2026-283
+      - RISK-2026-985
+
+claims:
+  - id: "GOV-2026-282"
+    text: "CNN reports the White House requested that OpenAI limit GPT-5.6 release to a small number of government-approved partners because of advanced capabilities."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.82
+    source_ids: ["cnn-2026-openai-limit-release-white-house"]
+    operationalization: "Compare CNN reporting with OpenAI's official post, White House statements, and any later release-process documentation."
+    assumptions:
+      - "CNN's source accurately described the White House request."
+    falsifiers:
+      - "OpenAI or White House records show there was no White House request to limit access."
+  - id: "GOV-2026-283"
+    text: "CNN reports OpenAI and the administration viewed GPT-5.6 as on par with Mythos, and that the government was approving access customer by customer during the preview period."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.72
+    source_ids: ["cnn-2026-openai-limit-release-white-house"]
+    operationalization: "Look for the referenced internal memo, The Information reporting, or official access-process records."
+    assumptions:
+      - "The source and memo characterization are accurate."
+    falsifiers:
+      - "The memo is published and does not contain customer-by-customer approval or Mythos-comparability language."
+  - id: "RISK-2026-985"
+    text: "CNN reports that no transparent, consistent federal framework existed yet for frontier AI release governance, creating an ad hoc and opaque release-governance environment."
+    type: "[T]"
+    domain: "RISK"
+    evidence_level: "E4"
+    credence: 0.65
+    source_ids: ["cnn-2026-openai-limit-release-white-house"]
+    operationalization: "Track whether a public framework with clear criteria, roles, timelines, and appeals existed before or during the GPT-5.6 preview."
+    assumptions:
+      - "The June 2 EO framework had not yet matured into a transparent operational process."
+    falsifiers:
+      - "A public binding framework with clear criteria and process is shown to have governed GPT-5.6 access decisions."

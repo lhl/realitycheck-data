@@ -1,0 +1,70 @@
+sources:
+  - id: "reuters-2026-legal-tech-sues-us-anthropic-access"
+    type: "ARTICLE"
+    title: "Legal tech firm sues US over order limiting foreign access to top-tier Anthropic models"
+    author:
+      - "Mike Scarcella"
+      - "Reuters"
+    year: 2026
+    url: "https://www.reuters.com/legal/litigation/legal-tech-firm-sues-us-over-order-limiting-foreign-access-top-tier-anthropic-2026-06-23/"
+    accessed: "2026-06-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/reuters-2026-legal-tech-sues-us-anthropic-access.md"
+    reliability: 0.80
+    bias_notes: >-
+      Reuters direct capture was blocked by Datadome/401, so analysis uses Reuters syndicated
+      copies via AOL and Economic Times. Strong for reporting that a lawsuit and allegations exist;
+      does not adjudicate legal merits or the truth of plaintiff harm claims.
+    topics:
+      - reuters
+      - anthropic
+      - fable-5
+      - mythos-5
+      - export-controls
+      - litigation
+      - foreign-national-access
+    domains:
+      - GOV
+      - ECON
+    claims_extracted:
+      - GOV-2026-284
+      - ECON-2026-965
+      - GOV-2026-285
+
+claims:
+  - id: "GOV-2026-284"
+    text: "Legion LegalTech filed a lawsuit in Washington, D.C. federal court challenging a June 12 BIS order that it says unlawfully required Anthropic to disable Fable 5 and Mythos 5 for any foreign national."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.86
+    source_ids: ["reuters-2026-legal-tech-sues-us-anthropic-access"]
+    operationalization: "Retrieve the D.D.C. complaint/docket and compare it to Reuters' description of parties, claims, and challenged order."
+    assumptions:
+      - "Reuters accurately summarized the complaint filing."
+    falsifiers:
+      - "Court docket or complaint contradicts the reported filing, target order, or challenged foreign-national restriction."
+  - id: "ECON-2026-965"
+    text: "Legion alleges the Anthropic access order cut off access for members of its Canada-based software development team and caused immediate, irreparable, existential business harm."
+    type: "[F]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.75
+    source_ids: ["reuters-2026-legal-tech-sues-us-anthropic-access"]
+    operationalization: "Compare complaint allegations with company architecture, Anthropic account logs, and evidence submitted in preliminary-injunction briefing."
+    assumptions:
+      - "Reuters accurately quoted or paraphrased Legion's harm allegations."
+    falsifiers:
+      - "The complaint does not contain the reported harm allegation or later evidence shows the Canada-based team was not affected."
+  - id: "GOV-2026-285"
+    text: "Legion asked the court to vacate and set aside the Anthropic access directive and said it would seek a preliminary order barring the administration from enforcing it."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.84
+    source_ids: ["reuters-2026-legal-tech-sues-us-anthropic-access"]
+    operationalization: "Review complaint prayer for relief and preliminary-injunction docket entries."
+    assumptions:
+      - "Reuters accurately described the requested relief."
+    falsifiers:
+      - "The court filings do not request vacatur or preliminary enforcement relief."

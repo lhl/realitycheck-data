@@ -1,0 +1,68 @@
+sources:
+  - id: "washpost-2026-openai-government-vet-users-gpt-5-6"
+    type: "ARTICLE"
+    title: "OpenAI says the U.S. government will vet users of its latest AI model"
+    author:
+      - "Gerrit De Vynck"
+    year: 2026
+    url: "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/"
+    accessed: "2026-06-28"
+    status: "analyzed"
+    analysis_file: "analysis/sources/washpost-2026-openai-government-vet-users-gpt-5-6.md"
+    reliability: 0.78
+    bias_notes: >-
+      Credible technology reporting, captured through archive.md because direct capture failed.
+      Strong for public rollout framing and access-process description; limited on legal mechanism
+      and partner-selection criteria.
+    topics:
+      - openai
+      - gpt-5-6
+      - white-house
+      - government-vetting
+      - frontier-ai
+      - anthropic
+    domains:
+      - GOV
+      - INST
+    claims_extracted:
+      - GOV-2026-280
+      - INST-2026-976
+      - GOV-2026-281
+
+claims:
+  - id: "GOV-2026-280"
+    text: "The federal government will vet companies seeking access to OpenAI's GPT-5.6 Sol during the initial rollout."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.85
+    source_ids: ["washpost-2026-openai-government-vet-users-gpt-5-6"]
+    operationalization: "Track official partner lists, access terms, and later reporting on who approved GPT-5.6 preview customers."
+    assumptions:
+      - "WaPo's characterization of government vetting accurately reflects the access process."
+    falsifiers:
+      - "OpenAI or the White House documents show there was no government vetting or approval role."
+  - id: "INST-2026-976"
+    text: "During the initial GPT-5.6 Sol access process, only government-approved companies get access and there is no individual-user access path for the new model."
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["washpost-2026-openai-government-vet-users-gpt-5-6"]
+    operationalization: "Check OpenAI product/API access documentation and account eligibility during the preview period."
+    assumptions:
+      - "Approved organizations may include individual employees, but individuals cannot directly apply as ordinary users."
+    falsifiers:
+      - "OpenAI offers direct individual GPT-5.6 preview access outside approved organizations."
+  - id: "GOV-2026-281"
+    text: "The Trump administration had already become more hands-on with AI companies through the Anthropic Fable/Mythos intervention before the OpenAI GPT-5.6 rollout."
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E4"
+    credence: 0.80
+    source_ids: ["washpost-2026-openai-government-vet-users-gpt-5-6"]
+    operationalization: "Compare the timing and mechanics of the Anthropic export-control action with the OpenAI GPT-5.6 limited preview."
+    assumptions:
+      - "The Fable/Mythos intervention is relevant precedent rather than an isolated unrelated episode."
+    falsifiers:
+      - "Later evidence shows the Anthropic action was not government-directed or had no bearing on OpenAI's rollout decisions."
