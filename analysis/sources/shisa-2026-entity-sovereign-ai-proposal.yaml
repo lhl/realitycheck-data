@@ -1,0 +1,94 @@
+source:
+  id: "shisa-2026-entity-sovereign-ai-proposal"
+  title: "Shisa.AI — Sovereign AI stack for ENTITY (open models, open evals, open datasets)"
+  type: "PROPOSAL"
+  author: "Shisa.AI"
+  year: 2026
+  url: "n/a (embedded in inbox/ANALYSIS-palantir-claude-fable.md)"
+  analysis_file: "analysis/sources/shisa-2026-entity-sovereign-ai-proposal.md"
+  topics: ["sovereign-ai","open-weights","open-evals","open-datasets","national-champion","cultural-sovereignty","digital-sovereignty","multipolar","entity","shisa","public-infrastructure","ai-policy"]
+  domains: ["GOV","INST","SOC","ECON"]
+  reliability: 0.60
+  rigor_level: "REVIEWED"
+
+claims:
+  - id: "INST-2026-993"
+    text: "The strongest open ENTITY-capable models today are largely foreign-origin (especially Chinese-origin); they can be fluent in ENTITY while still carrying foreign alignment defaults on sensitive questions of history, identity, or politics."
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E3"
+    credence: 0.70
+    operationalization: "Run independent eval of leading Chinese-origin open models (Qwen, DeepSeek) on ENTITY cultural/historical/political sensitivity benchmarks; compare framing to ENTITY-grounded references."
+    assumptions: ["'Foreign alignment default' is detectable and meaningful at the model level (rather than per-deployment)."]
+    falsifiers: ["Independent eval showing ENTITY-origin and foreign-origin models produce indistinguishable framings on ENTITY contested history."]
+    source_ids: ["shisa-2026-entity-sovereign-ai-proposal"]
+  - id: "INST-2026-994"
+    text: "A national-champion 'sovereign AI' vendor that secures exclusive control over government contracts, archives, and data access replaces foreign dependence with domestic lock-in rather than achieving genuine sovereignty."
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.55
+    operationalization: "Audit specific sovereign-AI national-champion programs for exclusive-archive licensing and gatekept procurement; compare to open-stack alternatives on auditability and ecosystem formation."
+    assumptions: ["The pattern generalizes from the US Palantir case to the unnamed ENTITY vendor."]
+    falsifiers: ["National-champion sovereign AI programs producing comparable auditability and innovation to open-stack programs."]
+    source_ids: ["shisa-2026-entity-sovereign-ai-proposal"]
+  - id: "INST-2026-996"
+    text: "Open evaluation benchmarks make AI quality measurable instead of dependent on vendor claims; they expose weaknesses early and prevent public institutions from being forced to trust vendor claims without independent measurement."
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E3"
+    credence: 0.80
+    operationalization: "Definitional; verify via surveys of public-procurement AI evaluation practices."
+    assumptions: []
+    falsifiers: ["Widespread adoption of closed proprietary benchmarks producing equivalent public-accountability outcomes (empirically unlikely)."]
+    source_ids: ["shisa-2026-entity-sovereign-ai-proposal"]
+  - id: "INST-2026-997"
+    text: "Open datasets become shared national infrastructure that universities, startups, ministries, and researchers can all build on, rather than remaining locked inside a single vendor relationship."
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E3"
+    credence: 0.75
+    operationalization: "Compare ecosystem formation (number of distinct builders, derivative innovations) under open-data vs closed-data sovereign-AI programs."
+    assumptions: ["Ecosystem absorptive capacity (talent, capital) exists to exploit open data."]
+    falsifiers: ["Open datasets failing to generate ecosystem when complementary talent/capital are absent."]
+    source_ids: ["shisa-2026-entity-sovereign-ai-proposal"]
+  - id: "SOC-2026-056"
+    text: "A model fluent in ENTITY but framing ENTITY history through a foreign lens is not a sovereign ENTITY model; cultural and historical reliability is a sovereignty requirement for models deployed in ENTITY contexts."
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E4"
+    credence: 0.75
+    operationalization: "Independent eval of model framings on ENTITY contested history; compare against ENTITY-grounded reference framings."
+    assumptions: ["'Foreign lens' is operationalizable and distinguishable from neutral framing (non-trivial)."]
+    falsifiers: ["Independent eval showing ENTITY-origin and foreign-origin models produce indistinguishable framings on ENTITY contested history."]
+    source_ids: ["shisa-2026-entity-sovereign-ai-proposal"]
+  - id: "INST-2026-998"
+    text: "Current open ENTITY-capable models: best linguistic performance is mostly foreign-origin (especially Chinese); proprietary systems are what most users can easily access; existing ENTITY benchmarks are sparse, partially gated, or too narrow; there is no comprehensive open evaluation stack for ENTITY AI tasks."
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E3"
+    credence: 0.65
+    operationalization: "Independent survey of ENTITY-facing models and ENTITY-language benchmarks."
+    assumptions: ["Author's early-evaluation work generalizes."]
+    falsifiers: ["Independent comprehensive ENTITY benchmark survey showing substantial open native infrastructure."]
+    source_ids: ["shisa-2026-entity-sovereign-ai-proposal"]
+  - id: "INST-2026-998a"
+    text: "Existing ENTITY fine-tuning efforts have not yet shown that local adaptation reliably improves quality at frontier levels."
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E3"
+    credence: 0.60
+    operationalization: "Track ENTITY fine-tunes against frontier baselines on standardized benchmarks over time."
+    assumptions: ["Author's claim about early-evaluation work generalizes."]
+    falsifiers: ["Published frontier-level ENTITY fine-tune matching or exceeding frontier baselines."]
+    source_ids: ["shisa-2026-entity-sovereign-ai-proposal"]
+  - id: "SOC-2026-056a"
+    text: "For ENTITY, cultural sovereignty is a practical deployment requirement (not an abstract ethics issue) because ENTITY sits at the intersection of several powerful external narratives."
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E4"
+    credence: 0.65
+    operationalization: "Survey ENTITY public-entity deployment requirements for cultural-framing controls."
+    assumptions: ["Generalizes from contested-history deployments to deployments broadly (contested)."]
+    falsifiers: ["Survey showing cultural-framing controls required only for a narrow scoped subset of deployments."]
+    source_ids: ["shisa-2026-entity-sovereign-ai-proposal"]

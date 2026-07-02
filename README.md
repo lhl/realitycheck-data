@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 1106 |
-| **Sources** | 268 |
+| **Claims** | 1146 |
+| **Sources** | 272 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 58 |
+| **Predictions Tracked** | 60 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-07-03 | [Palantir, Sovereign AI, and the Frontier-Lab Extraction Question](analysis/syntheses/palantir-sovereign-ai-frontier-lab-extraction-synthesis.md) | `[REVIEWED]` | Cross-source synthesis: Karp CNBC tokenmaxxing interview + Claude 5 Fable Palantir/Claude Tag conversation + Shisa.AI ENTITY sovereign-AI proposal; resolves "extractive" to context ownership, sovereignty to open substrate, and posture to portfolio architecture |
 | 2026-06-28 | [GPT-5.6 Sol White House vetting and frontier AI access regime](analysis/syntheses/gpt-5-6-sol-white-house-vetting-synthesis.md) | `[DRAFT]` | Cross-source synthesis: OpenAI GPT-5.6 trusted-partner preview, WaPo/CNN government-vetting reports, HN reaction, Reuters litigation, and Semafor Mythos carveout |
 | 2026-06-18 | [Anthropic Fable/Mythos export-control takedown](analysis/syntheses/anthropic-fable-mythos-export-control-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Lutnick letter scope, legal/API-access uncertainty, Sacks/DoW mixed-motive dispute, patch-and-unwind vs shadow-regime scenarios, and sovereignty/open-weight/citizenship consequences |
 | 2026-04-01 | [chardet relicensing dispute (Mar 2026): clean room, derivative risk, and AI-era license governance](analysis/syntheses/chardet-2026-licensing-theseus-synthesis.md) | `[DRAFT]` | Cross-source synthesis of issue #327, Ronacher’s Theseus framing, and Ars reporting; separates artifact certainty from unresolved legal doctrine |
@@ -67,6 +68,9 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-07-03 | [Alex Karp on CNBC Squawk Box (July 1, 2026) — tokenmaxxing / sovereign-AI interview](analysis/sources/karp-2026-cnbc-squawk-box-tokenmaxxing.md) | `[REVIEWED]` | Karp interview: commoditize-the-model doctrine, Palantir+NVIDIA sovereign AI stack (June 29), "labs extractive" framing; IP-theft allegation uncorroborated; Anthropic-weight framing misframes target |
+| 2026-07-03 | [Palantir / WarClaude / Ontology / Claude Tag kills Palantir / sovereign AI — conversation with Claude 5 Fable](analysis/sources/lhl-2026-palantir-sovereignty-fable-chat.md) | `[REVIEWED]` | Claude 5 Fable analysis: ontology-as-moat, Claude Tag vs Ontology (orders-of-magnitude gap currently), Anthropic-DoW + Claude Code steganography context; generalizes extractive layer to context ownership; portfolio architecture conclusion |
+| 2026-07-03 | [Shisa.AI — Sovereign AI stack for ENTITY](analysis/sources/shisa-2026-entity-sovereign-ai-proposal.md) | `[REVIEWED]` | Open-stack sovereign-AI proposal: openness as credibility mechanism, weight-availability-is-not-sovereignty, evals-first framing, national-champion-as-relocated-lock-in; cultural sovereignty as deployment requirement |
 | 2026-06-28 | [OpenAI: Previewing GPT-5.6 Sol](analysis/sources/openai-2026-previewing-gpt-5-6-sol.md) | `[REVIEWED]` | Official release: government-requested trusted-partner preview, cyber capability/safeguard claims, and short-term/default-process tension |
 | 2026-06-28 | [Washington Post: US government will vet GPT-5.6 users](analysis/sources/washpost-2026-openai-government-vet-users-gpt-5-6.md) | `[REVIEWED]` | Archive-backed report: federal company vetting, no individual access path, and Anthropic precedent context |
 | 2026-06-28 | [CNN: White House asks OpenAI to limit release](analysis/sources/cnn-2026-openai-limit-release-white-house.md) | `[REVIEWED]` | Reporting on White House request, customer-by-customer approval detail, Mythos comparability, and opaque-framework risk |
@@ -377,4 +381,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-06-28*
+*Last updated: 2026-07-03*

@@ -1,0 +1,144 @@
+source:
+  id: "karp-2026-cnbc-squawk-box-tokenmaxxing"
+  title: "Alex Karp on CNBC Squawk Box (July 1, 2026) — full ~20-min interview with Seema Mody"
+  type: "INTERVIEW"
+  author: "Alex Karp (speaker); Seema Mody (interviewer); CNBC Squawk Box"
+  year: 2026
+  url: "n/a (broadcast; transcript captured by Whisper from audio)"
+  analysis_file: "analysis/sources/karp-2026-cnbc-squawk-box-tokenmaxxing.md"
+  topics: ["palantir","karp","nvidia","sovereign-ai","tokenmaxxing","anthropic","frontier-labs","ontology","us-china","ai-economics","ai-bubble","open-weights","national-champion"]
+  domains: ["INST","ECON","GOV","SOC","GEO"]
+  reliability: 0.55
+  rigor_level: "REVIEWED"
+
+claims:
+  - id: "INST-2026-978"
+    text: "Alex Karp asserts that value in the enterprise AI stack accrues to the application layer (Palantir's ontology) and to compute (NVIDIA), not to frontier model APIs."
+    type: "[T]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.45
+    operationalization: "Compare segment operating margins across model layer (labs), application/integration layer (Palantir), and compute (NVIDIA) over 2026-2028; test whether labs reach durable positive operating margin at scale."
+    assumptions: ["Current margin distribution reflects equilibrium rather than transitional subsidy."]
+    falsifiers: ["Frontier labs reach durable positive operating margin at scale while Palantir margin compresses."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]
+  - id: "ECON-2026-980"
+    text: "Karp asserts frontier labs lose money because clients 'refuse to pay the true cost' of tokens."
+    type: "[H]"
+    domain: "ECON"
+    evidence_level: "E4"
+    credence: 0.40
+    operationalization: "Decompose lab unit economics: is per-token price below per-token fully-loaded cost? At what volume / price point do labs cross over?"
+    assumptions: ["Loss-making labs are caused by underpricing rather than by capex build or market-share pricing."]
+    falsifiers: ["Labs reach positive unit economics on inference at scale while holding prices flat."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]
+  - id: "SOC-2026-054"
+    text: "Karp asserts that US enterprises are 'livid' at frontier labs, paying for tokens that create no value while labs 'steal the weights and alpha' of their business."
+    type: "[H]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.30
+    operationalization: "Independent enterprise survey on token-ROI satisfaction and on perceived IP-transfer risk under standard enterprise API terms."
+    assumptions: ["Off-record enterprise complaints reported by Karp generalize to the population of enterprise buyers."]
+    falsifiers: ["On-record enterprise survey showing majority satisfaction with token ROI and low IP-transfer concern under enterprise ToS."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]
+  - id: "INST-2026-979"
+    text: "Karp asserts that critical infrastructure (US defense, regulated enterprise, clinical) only runs frontier models inside Palantir's ontology."
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E4"
+    credence: 0.55
+    operationalization: "Inventory classified-environment frontier-model deployments; check whether any run outside AIP/Ontology harness."
+    assumptions: ["Currently true for US classified deployments via AIP/Maven; 'only' overreaches for civilian/regulated."]
+    falsifiers: ["Public contract showing frontier model deployed in classified env outside AIP."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]
+  - id: "INST-2026-980"
+    text: "Karp claims Palantir can take an open model and reach frontier-model quality in classified or unclassified contexts, with customer-owned weights."
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.40
+    operationalization: "Independent benchmark of open-weight-in-ontology vs frontier API on frontier reasoning and long-horizon agentic tasks."
+    assumptions: ["Narrow-task parity generalizes to frontier reasoning parity (contested)."]
+    falsifiers: ["Open-weight-in-ontology underperforms frontier API by a stable margin on long-horizon agentic benchmarks."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]
+  - id: "INST-2026-981"
+    text: "Karp alleges hosted model APIs put customer IP at risk by caching data and replicating the customer's business ('stealing the weights and alpha')."
+    type: "[H]"
+    domain: "INST"
+    evidence_level: "E5"
+    credence: 0.25
+    operationalization: "Audit enterprise API ToS (no-training clauses) and inference-time retention; check for documented cases of alpha-transfer via hosted API."
+    assumptions: ["Standard enterprise API no-training clauses are not enforced or are bypassed."]
+    falsifiers: ["Published enterprise ToS plus third-party audit confirming no training on customer data and no documented alpha-transfer cases."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]
+  - id: "INST-2026-982"
+    text: "On 2026-06-29 Palantir and NVIDIA announced a Sovereign AI Operating System reference architecture running NVIDIA Nemotron open models air-gapped on NVIDIA accelerated compute, integrated with AIP/Foundry/Ontology/Apollo, with customers owning weights and data."
+    type: "[F]"
+    domain: "INST"
+    evidence_level: "E2"
+    credence: 0.90
+    operationalization: "Cross-check NVIDIA and Palantir press releases and any deployed-customer announcement."
+    assumptions: []
+    falsifiers: ["Public retraction, non-deployment, or material misrepresentation of air-gap / weight-ownership terms."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]
+  - id: "ECON-2026-981"
+    text: "Karp states that looking two years out, Palantir can see $15-18B in free cash flow."
+    type: "[P]"
+    domain: "ECON"
+    evidence_level: "E5"
+    credence: 0.25
+    operationalization: "Track Palantir FY2027 and FY2028 adjusted free cash flow against the $15-18B range."
+    assumptions: ["Current Q1 2026 AFCF ~$925M annualizing ~$3.7B run-rate; FY2026 guidance $4.2-4.4B. $15-18B by 2028 implies ~4-5x growth in 24 months."]
+    falsifiers: ["Palantir FY2028 AFCF comes in materially below $15B."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]
+  - id: "GEO-2026-056"
+    text: "Karp asserts the relevant AI tech centers are the US, China, and Israel, with China a peer adversary; Europe is not currently relevant."
+    type: "[T]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.55
+    operationalization: "Compare frontier-model output, basic-research output, and AI-related GDP contribution across US/China/Israel/EU/UK."
+    assumptions: ["'Relevant' = frontier-capability producing."]
+    falsifiers: ["Comparative indices showing EU/UK producing meaningful share of frontier-tier AI capability."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]
+  - id: "GOV-2026-287"
+    text: "Karp asserts it is illegitimate ('a loser') for a lab to restrict government use of AI on policy grounds while opening the model to adversaries."
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.20
+    operationalization: "Check whether the implicit target (Anthropic) actually open-sourced frontier weights or applied restrictions to government-only."
+    assumptions: ["Implicit target is Anthropic; Anthropic open-sourced frontier weights and restricted only government use."]
+    falsifiers: ["Anthropic did not open-source frontier weights and applied restrictions to all customers (already established — claim misframes target)."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]
+  - id: "GEO-2026-057"
+    text: "Karp asserts the US is on the cutting edge of every AI technology but China has creativity/ingenuity disadvantages."
+    type: "[T]"
+    domain: "GEO"
+    evidence_level: "E4"
+    credence: 0.45
+    operationalization: "Compare frontier-model capability, basic research output, and novel-architecture contributions US vs China."
+    assumptions: ["US edge is durable; Chinese ingenuity disadvantage is cultural rather than transitional."]
+    falsifiers: ["Chinese labs produce frontier-parity novel architectures at scale."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]
+  - id: "SOC-2026-055"
+    text: "Karp asserts US internal politics (far-left anti-tech; far-right 'warlocks' attacking tech firms) is the biggest obstacle to winning the AI contest with China."
+    type: "[T]"
+    domain: "SOC"
+    evidence_level: "E5"
+    credence: 0.30
+    operationalization: "Compare binding constraints on US AI competitiveness: politics vs chips vs capital vs talent."
+    assumptions: ["Political dissent is binding; chip/capital/talent constraints are not."]
+    falsifiers: ["Industry surveys showing chip/capital/talent, not politics, as the binding constraint."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]
+  - id: "ECON-2026-982"
+    text: "Karp characterizes token pricing as a 'wealth tax that does not help the poor… just punishes, starts with the billionaires.'"
+    type: "[S]"
+    domain: "ECON"
+    evidence_level: "E6"
+    credence: 0.10
+    operationalization: "Check incidence: who bears token-pricing cost (buyers vs labs/investors subsidizing below cost)."
+    assumptions: ["Token pricing is a tax (compulsory transfer to state/favored party) rather than a unit-priced service."]
+    falsifiers: ["Token pricing is voluntary unit-priced consumption; incidence of current below-cost pricing falls on labs/investors, not buyers."]
+    source_ids: ["karp-2026-cnbc-squawk-box-tokenmaxxing"]

@@ -1,0 +1,183 @@
+{
+  "nextId": 10,
+  "tasks": [
+    {
+      "id": "1",
+      "subject": "Start analysis lifecycle (token tracking)",
+      "description": "Run rc-db analysis start for the multi-source analysis session to capture token baseline.",
+      "status": "completed",
+      "activeForm": "Starting analysis lifecycle",
+      "metadata": {
+        "executionStats": {
+          "startedAt": 1783032956076,
+          "completedAt": 1783032967356,
+          "durationMs": 11280,
+          "inputTokens": 933,
+          "outputTokens": 133
+        }
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1783032952970,
+      "updatedAt": 1783032967357
+    },
+    {
+      "id": "2",
+      "subject": "Reserve claim IDs/tickets for new claims",
+      "description": "Reserve claim IDs across TECH/ECON/GOV/INST/GEO/SOC/RISK/META for the three sources + synthesis.",
+      "status": "completed",
+      "activeForm": "Reserving claim IDs",
+      "metadata": {
+        "executionStats": {
+          "startedAt": 1783032970178,
+          "completedAt": 1783033090091,
+          "durationMs": 119913,
+          "inputTokens": 14243,
+          "outputTokens": 2468
+        }
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1783032952970,
+      "updatedAt": 1783033090092
+    },
+    {
+      "id": "3",
+      "subject": "Analyze Karp CNBC interview (source 1)",
+      "description": "Produce analysis/sources/karp-2026-cnbc-squawk-box-tokenmaxxing.md + .yaml with full 3-stage analysis and claim extraction.",
+      "status": "completed",
+      "activeForm": "Writing Karp interview analysis",
+      "metadata": {
+        "executionStats": {
+          "startedAt": 1783033096191,
+          "completedAt": 1783033630672,
+          "durationMs": 534481,
+          "inputTokens": 19995,
+          "outputTokens": 14846
+        }
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1783032952970,
+      "updatedAt": 1783033630673
+    },
+    {
+      "id": "4",
+      "subject": "Analyze Claude 5 Fable Palantir chat (source 2)",
+      "description": "Produce analysis/sources/lhl-2026-palantir-sovereignty-fable-chat.md + .yaml for the Palantir/AI-sovereignty conversation.",
+      "status": "completed",
+      "activeForm": "Writing Claude Fable chat analysis",
+      "metadata": {
+        "executionStats": {
+          "startedAt": 1783033646200,
+          "completedAt": 1783033854612,
+          "durationMs": 208412,
+          "inputTokens": 17502,
+          "outputTokens": 15568
+        }
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1783032952970,
+      "updatedAt": 1783033854613
+    },
+    {
+      "id": "5",
+      "subject": "Analyze Shisa.AI ENTITY sovereignty proposal (source 3)",
+      "description": "Produce analysis/sources/shisa-2026-entity-sovereign-ai-proposal.md + .yaml for the sovereign AI stack one-pager.",
+      "status": "completed",
+      "activeForm": "Writing Shisa sovereignty proposal analysis",
+      "metadata": {
+        "executionStats": {
+          "startedAt": 1783033863576,
+          "completedAt": 1783034022402,
+          "durationMs": 158826,
+          "inputTokens": 13495,
+          "outputTokens": 10929
+        }
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1783032952970,
+      "updatedAt": 1783034022403
+    },
+    {
+      "id": "6",
+      "subject": "Register sources and claims to DB",
+      "description": "Use rc-db import for the three source yaml files; add evidence_links and reasoning_trails for high-credence claims.",
+      "status": "completed",
+      "activeForm": "Registering sources and claims",
+      "metadata": {
+        "executionStats": {
+          "startedAt": 1783034028013,
+          "completedAt": 1783034227179,
+          "durationMs": 199166,
+          "inputTokens": 7036,
+          "outputTokens": 5763
+        }
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1783032952970,
+      "updatedAt": 1783034227179
+    },
+    {
+      "id": "7",
+      "subject": "Write cross-source synthesis",
+      "description": "Produce analysis/syntheses/palantir-sovereign-ai-frontier-lab-extraction-synthesis.md + .yaml tying the three sources to existing Karp/Anthropic-Pentagon/sovereign-AI claims.",
+      "status": "completed",
+      "activeForm": "Writing cross-source synthesis",
+      "metadata": {
+        "executionStats": {
+          "startedAt": 1783034230471,
+          "completedAt": 1783034345329,
+          "durationMs": 114858,
+          "inputTokens": 5891,
+          "outputTokens": 6024
+        }
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1783032952970,
+      "updatedAt": 1783034345330
+    },
+    {
+      "id": "8",
+      "subject": "Validate, file inbox, complete lifecycle",
+      "description": "Run rc-validate, file inbox items to reference/primary or delete, complete analysis lifecycle.",
+      "status": "completed",
+      "activeForm": "Validing and filing",
+      "metadata": {
+        "executionStats": {
+          "startedAt": 1783034348922,
+          "completedAt": 1783034419645,
+          "durationMs": 70723,
+          "inputTokens": 4784,
+          "outputTokens": 2380
+        }
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1783032952970,
+      "updatedAt": 1783034419645
+    },
+    {
+      "id": "9",
+      "subject": "Update README, commit, push",
+      "description": "Add new rows to README.md tables (syntheses above source analyses), refresh stats, git commit + push.",
+      "status": "in_progress",
+      "activeForm": "Updating README and committing",
+      "metadata": {
+        "executionStats": {
+          "startedAt": 1783034425366,
+          "inputTokens": 0,
+          "outputTokens": 0
+        }
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1783032952970,
+      "updatedAt": 1783034425366
+    }
+  ]
+}

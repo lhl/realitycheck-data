@@ -1,0 +1,54 @@
+source:
+  id: "palantir-sovereign-ai-frontier-lab-extraction-synthesis"
+  title: "Synthesis: Palantir, Sovereign AI, and the Frontier-Lab Extraction Question (July 2026)"
+  type: "SYNTHESIS"
+  author: "claude (claude-sonnet-4 via claude-code)"
+  year: 2026
+  url: "n/a"
+  analysis_file: "analysis/syntheses/palantir-sovereign-ai-frontier-lab-extraction-synthesis.md"
+  topics: ["palantir","karp","sovereign-ai","frontier-labs","extractive","context-lock-in","anthropic-pentagon-standoff","open-weights","open-evals","national-champion","portfolio-architecture","multipolar","entity","cultural-sovereignty","nvidia","tokenmaxxing"]
+  domains: ["GOV","ECON","INST","SOC","META"]
+  reliability: 0.75
+  rigor_level: "REVIEWED"
+
+claims:
+  - id: "META-2026-164"
+    text: "Foreign and domestic AI vendors are symmetric on concentration risk: a domestic national champion is a relocation of foreign-vendor dependence, not a resolution of it."
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.75
+    operationalization: "Compare sovereign-AI program outcomes (auditability, innovation, ecosystem formation) under foreign-vendor, national-champion, and open-stack models."
+    assumptions: ["Concentration pathology is scale-free; it reproduces at national level."]
+    falsifiers: ["National-champion + open-stack mandate programs producing equivalent outcomes to open-stack alone."]
+    source_ids: ["palantir-sovereign-ai-frontier-lab-extraction-synthesis"]
+  - id: "META-2026-165"
+    text: "The Anthropic-DoW blacklist episode is load-bearing evidence for three distinct RCDB claim clusters simultaneously: (a) policy/ethics (lab usage-policy restrictions), (b) sovereign AI (foreign vendor revoked by foreign state), (c) concentration risk (single-vendor dependency)."
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.80
+    operationalization: "Cross-reference density: count distinct claim clusters citing the episode as evidence."
+    assumptions: []
+    falsifiers: ["Episode resolves (access restored) in a way that materially weakens one of the three clusters without weakening the others."]
+    source_ids: ["palantir-sovereign-ai-frontier-lab-extraction-synthesis"]
+  - id: "META-2026-166"
+    text: "Eval-and-audit infrastructure is the binding constraint that makes 'open' mean accountable rather than merely downloadable; it is also what makes sovereign AI measurable rather than claim-dependent."
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.75
+    operationalization: "Compare open-stack sovereign-AI programs with and without strong eval infrastructure on outcome quality and public accountability."
+    assumptions: ["Evals are durable infrastructure rather than vendor-claim artifacts."]
+    falsifiers: ["Widespread adoption of closed proprietary benchmarks producing equivalent public-accountability outcomes."]
+    source_ids: ["palantir-sovereign-ai-frontier-lab-extraction-synthesis"]
+  - id: "META-2026-167"
+    text: "The failure mode to watch in AI policy: 'safety' arguments and 'moat-protection' arguments produce identical policy recommendations, which should make everyone suspicious of how conveniently they align."
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E5"
+    credence: 0.70
+    operationalization: "Inventory cases where lab safety rationale and moat-protection rationale imply the same policy; check whether rationale is distinguishable from effect."
+    assumptions: []
+    falsifiers: ["Empirical separation of safety-driven vs moat-driven policies with consistently distinct outcomes."]
+    source_ids: ["palantir-sovereign-ai-frontier-lab-extraction-synthesis"]
