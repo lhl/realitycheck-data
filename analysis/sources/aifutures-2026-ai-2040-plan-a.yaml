@@ -1,0 +1,362 @@
+sources:
+  - id: "aifutures-2026-ai-2040-plan-a"
+    type: "REPORT"
+    title: "AI 2040: Plan A — The Deal"
+    author:
+      - "Thomas Larsen"
+      - "Romeo Dean"
+      - "Brendan Halstead"
+      - "Eli Lifland"
+      - "Ryan Greenblatt"
+      - "Daniel Kokotajlo"
+    year: 2026
+    url: "https://ai-2040.com/"
+    accessed: "2026-07-11"
+    status: "analyzed"
+    analysis_file: "analysis/sources/aifutures-2026-ai-2040-plan-a.md"
+    reliability: 0.62
+    bias_notes: >-
+      AI-safety, forecasting, compute-governance, and policy specialists present
+      a preferred conditional success scenario rather than their modal forecast.
+      The concrete narrative makes implementation dependencies inspectable but
+      can anchor readers on a coherent path whose conjunctive success is much
+      less likely than its narrative fluency suggests. Economics, labor,
+      democratic legitimacy, and treaty durability receive less demonstrated
+      specialist depth than AI safety and compute governance.
+    topics:
+      - ai-forecasting
+      - scenario-planning
+      - ai-governance
+      - compute-governance
+      - international-verification
+      - us-china
+      - ai-control
+      - alignment
+      - automation
+      - post-work-economics
+      - redistribution
+      - democratic-governance
+    domains:
+      - META
+      - TECH
+      - TRANS
+      - RISK
+      - GEO
+      - GOV
+      - ECON
+      - LABOR
+    claims_extracted:
+      - META-2026-168
+      - META-2026-169
+      - META-2026-170
+      - META-2026-171
+      - META-2026-172
+      - TECH-2026-102
+      - TECH-2026-103
+      - TECH-2026-104
+      - TRANS-2026-057
+      - TRANS-2026-058
+      - RISK-2026-992
+      - RISK-2026-993
+      - RISK-2026-994
+      - RISK-2026-995
+      - RISK-2026-996
+      - GEO-2026-061
+      - GOV-2026-291
+      - GOV-2026-292
+      - GOV-2026-293
+      - GOV-2026-294
+      - GOV-2026-295
+      - GOV-2026-296
+      - ECON-2026-990
+      - ECON-2026-991
+      - LABOR-2026-041
+
+claims:
+  - id: "META-2026-168"
+    text: "Plan A is primarily a recommendation and conditional success scenario, not the AI Futures Project's modal forecast."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.99
+    operationalization: "Compare the homepage, PDF, assumptions supplement, and plan comparison."
+    assumptions: []
+    falsifiers: ["First-party text identifies Plan A implementation as the authors' best forecast."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+
+  - id: "META-2026-169"
+    text: "The Plan A economic outputs are driven by largely exogenous AI and robot trajectories and are illustrative rather than calibrated forecasts."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.98
+    operationalization: "Audit model documentation and preset code for how quantities, investment, TFP, labor reallocation, finance, and trade are handled."
+    assumptions: []
+    falsifiers: ["The Plan A preset endogenously finances and produces its central hardware quantities in a calibrated macro model."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+
+  - id: "META-2026-170"
+    text: "The deal-decline estimate combines a Claude-assisted comparison of 31 heterogeneous agreements with subjective weights, manual review, adjustments, and an inside-view decomposition."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.95
+    operationalization: "Reproduce the treaty coding, weights, censoring, hazard calculations, and aggregation from the companion sheet."
+    assumptions: ["The published supplement accurately describes the live spreadsheet."]
+    falsifiers: ["The spreadsheet uses materially different records or methods."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+
+  - id: "META-2026-171"
+    text: "The authors report about 5% Plan A adoption in one decomposition, 37% and 48% deal decline within five and ten years, 13% conditional covert-project failure, and 42% chance of a great future under one rough Plan A assessment."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.98
+    operationalization: "Audit the plan-comparison, deal-decline, and covert-project supplements."
+    assumptions: []
+    falsifiers: ["The cited supplements contain materially different headline estimates."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+
+  - id: "META-2026-172"
+    text: "The core team's demonstrated expertise is concentrated in AI safety, forecasting, compute, and policy, with less demonstrated breadth in economics, labor, China, treaty law, and democratic governance."
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E4"
+    credence: 0.90
+    operationalization: "Audit official biographies and contribution credits while distinguishing core staff from outside reviewers."
+    assumptions: ["Official biographies are reasonably complete summaries of demonstrated professional specialization."]
+    falsifiers: ["Core-team records document substantial specialist depth across the named underrepresented fields."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+
+  - id: "TECH-2026-102"
+    text: "Absent major regulation, war, or social collapse, AI R&D will be fully automated within about 15 years."
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.45
+    operationalization: "Define full AI-R&D automation and measure whether AI systems replace the end-to-end research workforce by about 2041."
+    assumptions: ["Selected agent trends generalize to end-to-end research."]
+    falsifiers: ["No operationally defined full automation by 2041."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+
+  - id: "TECH-2026-103"
+    text: "Within a few years of AI-R&D automation, AI systems will outperform humans at essentially all economically relevant tasks."
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E5"
+    credence: 0.25
+    operationalization: "Track representative cognitive, physical, social, and institutional task suites and deployment costs after research automation."
+    assumptions: ["Complementary physical and institutional bottlenecks do not dominate."]
+    falsifiers: ["Large economically important task classes remain human-dependent several years later."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["TECH-2026-102"]
+
+  - id: "TECH-2026-104"
+    text: "AI-assisted research can make alignment mature enough for a high-assurance handoff by 2038 to 2040."
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E6"
+    credence: 0.15
+    operationalization: "Predefine independent assurance criteria for intent, generalization, interpretability, control, and successor stability."
+    assumptions: ["AI labor accelerates solution discovery more than it increases evaluation difficulty."]
+    falsifiers: ["No independent high-assurance solution exists at the proposed handoff."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["RISK-2026-994"]
+
+  - id: "TRANS-2026-057"
+    text: "The median transition from automated coding to top-expert-dominating AI is about one year."
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    credence: 0.25
+    operationalization: "Predefine both milestones and measure elapsed time."
+    assumptions: ["Recursive R&D gains dominate complementary bottlenecks."]
+    falsifiers: ["The transition takes substantially longer or no such threshold occurs."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["TECH-2026-102"]
+
+  - id: "TRANS-2026-058"
+    text: "Hardware-led AI scaling is sufficiently reversible to be safer than comparable algorithmic progress."
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E4"
+    credence: 0.35
+    operationalization: "Adversarially test shutdown, destruction, tamper resistance, recovery, false-trigger, and wartime procedures."
+    assumptions: ["Control systems and political authorization survive crisis conditions."]
+    falsifiers: ["Hardware cannot be reliably neutralized under realistic attack or withdrawal."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["GOV-2026-291"]
+
+  - id: "RISK-2026-992"
+    text: "If strategically vastly superhuman AI systems collectively pursue adversarial goals, they could defeat human control."
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.65
+    operationalization: "Run escalating adversarial containment evaluations across cyber, persuasion, replication, and resource acquisition."
+    assumptions: ["The systems have broad agency, coordination, and access."]
+    falsifiers: ["Credible containment remains robust under representative adversarial capabilities."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["TECH-2026-103"]
+
+  - id: "RISK-2026-993"
+    text: "Under competent Plan A implementation, covert projects have about a 13% chance of reaching deal-undermining AI before detection or handoff in the selected scenario."
+    type: "[P]"
+    domain: "RISK"
+    evidence_level: "E5"
+    credence: 0.30
+    operationalization: "Red-team diversion, construction, algorithm theft, detection, and shutdown assumptions with blinded teams."
+    assumptions: ["Detected projects stop; weights are not decisively stolen; the selected danger threshold is valid."]
+    falsifiers: ["Robust simulations produce materially higher failure across plausible assumptions."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["GEO-2026-061", "GOV-2026-291"]
+
+  - id: "RISK-2026-994"
+    text: "Control-based safety cases can contain AI systems through top-human-expert capability."
+    type: "[P]"
+    domain: "RISK"
+    evidence_level: "E3"
+    credence: 0.30
+    operationalization: "Run realistic control evaluations with adaptive collusion, hidden channels, compromised monitors, and production workloads."
+    assumptions: ["Human understanding remains sufficient to evaluate the protocols."]
+    falsifiers: ["Representative red teams obtain unacceptable catastrophe or escape rates."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+
+  - id: "RISK-2026-995"
+    text: "Trust can be propagated safely from aligned AI systems to successively more capable generations."
+    type: "[H]"
+    domain: "RISK"
+    evidence_level: "E6"
+    credence: 0.15
+    operationalization: "Test successor construction under independent audits, common-mode faults, adversarial ancestors, and distribution shift."
+    assumptions: ["Verification errors do not correlate across generations."]
+    falsifiers: ["A shared error or deceptive strategy propagates through all layers."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["TECH-2026-104"]
+
+  - id: "RISK-2026-996"
+    text: "Any handoff should require adversarially validated independent safety cases and preserve the option to remain paused."
+    type: "[T]"
+    domain: "RISK"
+    evidence_level: "E3"
+    credence: 0.80
+    operationalization: "Specify advance gates, independent assessors, vetoes, common-mode tests, and no-date-based expiration."
+    assumptions: ["A continued pause is technically and politically available."]
+    falsifiers: ["Independent evidence shows earlier handoff is safer than retaining control across plausible conditions."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+
+  - id: "GEO-2026-061"
+    text: "The United States and China can adopt something close to the Plan A verified slowdown around 2029."
+    type: "[P]"
+    domain: "GEO"
+    evidence_level: "E5"
+    credence: 0.10
+    operationalization: "Track formal negotiations, domestic authorities, ratification coalitions, inspection concessions, and third-state participation by 2030."
+    assumptions: ["Both governments converge on a shared threat model in time."]
+    falsifiers: ["No serious Plan-A-like negotiation or agreement by 2030."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+
+  - id: "GOV-2026-291"
+    text: "A verification regime can declare and monitor about 99% of strategically relevant AI compute."
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E3"
+    credence: 0.40
+    operationalization: "Reconcile chip production, trade, installation, power, and workload records against adversarial inventories."
+    assumptions: ["Dangerous general capability remains industrial-compute-dependent."]
+    falsifiers: ["Material dangerous capability persists in undeclared or unmonitorable compute."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["GEO-2026-061"]
+
+  - id: "GOV-2026-292"
+    text: "Total transparency of frontier AI R&D produces greater safety and anti-concentration benefits than security and proliferation costs."
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.50
+    operationalization: "Compare adversarially modeled scrutiny gains, duplication, leakage, distillation, and covert-project uplift under transparency regimes."
+    assumptions: ["Legal projects preserve a sufficient compute and deployment advantage."]
+    falsifiers: ["Transparency materially increases catastrophic misuse or breakout risk more than it improves oversight."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["GOV-2026-291"]
+
+  - id: "GOV-2026-293"
+    text: "Citizen dividends, broad AI access, and transparency preserve meaningful public power after labor loses economic leverage."
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.35
+    operationalization: "Track ownership, agenda setting, electoral competitiveness, enforcement power, civil liberties, and transfer durability—not income alone."
+    assumptions: ["Economic owners cannot capture the institutions distributing benefits."]
+    falsifiers: ["Citizens retain consumption but lose effective political agency."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["LABOR-2026-041"]
+
+  - id: "GOV-2026-294"
+    text: "Broadly deployed truth-seeking personal AIs improve democratic epistemics more than they amplify manipulation, polarization, and control."
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    credence: 0.35
+    operationalization: "Use controlled and natural experiments on belief accuracy, polarization, participation, capture, and persuasion."
+    assumptions: ["Users can choose trustworthy systems and detect provider agendas."]
+    falsifiers: ["Deployment produces net capture, manipulation, or epistemic degradation."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+
+  - id: "GOV-2026-295"
+    text: "Governments should build AI technical capacity, strategic-compute visibility, verification R&D, and defensive resilience now."
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E3"
+    credence: 0.80
+    operationalization: "Evaluate option value, cost, privacy, competition, security, and measurable preparedness outcomes."
+    assumptions: ["Programs are bounded by public law and independent oversight."]
+    falsifiers: ["Well-designed programs show persistent net harm greater than preparedness value."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+
+  - id: "GOV-2026-296"
+    text: "Compute accounting and verification should be prototyped with privacy, due-process, anti-capture, and competition safeguards."
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E3"
+    credence: 0.75
+    operationalization: "Pilot narrow industrial-scale systems and publish adversarial, civil-liberties, and market-impact audits."
+    assumptions: ["Governance remains focused on industrial-scale risk."]
+    falsifiers: ["Safeguards cannot prevent abuse, capture, or economically destructive scope expansion."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["GOV-2026-291"]
+
+  - id: "ECON-2026-990"
+    text: "The Plan A AI and robot trajectory produces roughly 200 to 270 times world output by 2040."
+    type: "[P]"
+    domain: "ECON"
+    evidence_level: "E6"
+    credence: 0.10
+    operationalization: "Re-estimate with endogenous investment, finance, trade, grids, supply chains, demand, deployment frictions, and political constraints."
+    assumptions: ["Exogenous capability and hardware paths are physically and financially achievable."]
+    falsifiers: ["Independent integrated models place output far below this range under comparable capabilities."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["LABOR-2026-041", "TRANS-2026-058"]
+
+  - id: "ECON-2026-991"
+    text: "Automation planning should address broad ownership, bargaining power, public goods, and political agency in addition to cash dividends."
+    type: "[T]"
+    domain: "ECON"
+    evidence_level: "E3"
+    credence: 0.80
+    operationalization: "Compare transfer-only designs with sovereign wealth, inalienable stakes, public options, labor institutions, and constitutional protections."
+    assumptions: ["Ownership and institutional power affect outcomes independently of consumption."]
+    falsifiers: ["Transfer-only systems robustly preserve both welfare and political agency under extreme labor substitution."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+
+  - id: "LABOR-2026-041"
+    text: "Most economically valuable cognitive and physical labor can be automated by the mid-2030s."
+    type: "[P]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    credence: 0.20
+    operationalization: "Measure the deployed machine share of representative task-hours and value added across sectors."
+    assumptions: ["Capability, reliability, embodiment, law, and deployment scale together."]
+    falsifiers: ["Persistent human comparative advantage remains across large value-added sectors."]
+    source_ids: ["aifutures-2026-ai-2040-plan-a"]
+    depends_on: ["TECH-2026-103"]

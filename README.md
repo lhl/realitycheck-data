@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 1146 |
-| **Sources** | 272 |
+| **Claims** | 1171 |
+| **Sources** | 283 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 60 |
+| **Predictions Tracked** | 69 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -68,6 +68,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-07-11 | [AI 2040: Plan A — The Deal](analysis/sources/aifutures-2026-ai-2040-plan-a.md) | `[REVIEWED]` | Conditional success scenario and policy package: rigorous separation of recommendations, forecasts, model outputs, assumptions, and rhetoric; 25 claims calibrated against capability, labor, macroeconomic, verification, treaty, and alignment evidence |
 | 2026-07-03 | [Alex Karp on CNBC Squawk Box (July 1, 2026) — tokenmaxxing / sovereign-AI interview](analysis/sources/karp-2026-cnbc-squawk-box-tokenmaxxing.md) | `[REVIEWED]` | Karp interview: commoditize-the-model doctrine, Palantir+NVIDIA sovereign AI stack (June 29), "labs extractive" framing; IP-theft allegation uncorroborated; Anthropic-weight framing misframes target |
 | 2026-07-03 | [Palantir / WarClaude / Ontology / Claude Tag kills Palantir / sovereign AI — conversation with Claude 5 Fable](analysis/sources/lhl-2026-palantir-sovereignty-fable-chat.md) | `[REVIEWED]` | Claude 5 Fable analysis: ontology-as-moat, Claude Tag vs Ontology (orders-of-magnitude gap currently), Anthropic-DoW + Claude Code steganography context; generalizes extractive layer to context ownership; portfolio architecture conclusion |
 | 2026-07-03 | [Shisa.AI — Sovereign AI stack for ENTITY](analysis/sources/shisa-2026-entity-sovereign-ai-proposal.md) | `[REVIEWED]` | Open-stack sovereign-AI proposal: openness as credibility mechanism, weight-availability-is-not-sovereignty, evals-first framing, national-champion-as-relocated-lock-in; cultural sovereignty as deployment requirement |
@@ -381,4 +382,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-07-03*
+*Last updated: 2026-07-14*
