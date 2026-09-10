@@ -1,0 +1,68 @@
+sources:
+- id: fernandez-perez-2026-navier-stokes-plagiarism-dispute
+  title: El anuncio de OpenAI ... desata acusaciones de plagio
+  author:
+  - Patricia Fernández de Lis and Jordi Pérez Colomé
+  year: 2026
+  type: ARTICLE
+  url: https://elpais.com/ciencia/2026-09-09/el-anuncio-de-openai-de-que-ha-resuelto-uno-de-los-mayores-enigmas-matematicos-de-la-historia-desata-acusaciones-de-plagio.html
+  analysis_file: analysis/sources/fernandez-perez-2026-navier-stokes-plagiarism-dispute.md
+  reliability: 0.8
+  topics:
+  - navier-stokes
+  - research-credit
+  - customer-data
+  - frontier-lab-competition
+  domains:
+  - INST
+  - TECH
+  claims_extracted:
+  - INST-2026-336
+  - TECH-2026-305
+  - INST-2026-308
+  - INST-2026-323
+  - INST-2026-338
+  bias_notes: 'Source reliability is scope-dependent: direct records support attribution; motives, private conduct
+    and technical validity require separate checks.'
+claims:
+- id: INST-2026-336
+  text: El País reports on September 9 that the newly published OpenAI proof had not yet received independent external
+    verification.
+  type: '[F]'
+  domain: INST
+  evidence_level: E4
+  credence: 0.9
+  operationalization: Check the cited primary record, versions and counterevidence. Verified as a dated report;
+    this pass also does not certify the proof or establish all later review activity.
+  assumptions:
+  - Attribution does not independently establish the underlying allegation.
+  falsifiers:
+  - Authenticated source records contradicting the attribution or chronology.
+  source_ids:
+  - fernandez-perez-2026-navier-stokes-plagiarism-dispute
+  - openai-2026-navier-stokes-solution
+  - maguire-bowler-2026-navier-stokes-controversy
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1
+- id: TECH-2026-305
+  text: El País places the start of OpenAI model training on September 1, while OpenAI’s primary release says training
+    began August 28 and evaluation began September 1.
+  type: '[F]'
+  domain: TECH
+  evidence_level: E4
+  credence: 0.99
+  operationalization: Check the cited primary record, versions and counterevidence. Direct discrepancy between report
+    and primary source.
+  assumptions:
+  - Attribution does not independently establish the underlying allegation.
+  falsifiers:
+  - Authenticated source records contradicting the attribution or chronology.
+  source_ids:
+  - fernandez-perez-2026-navier-stokes-plagiarism-dispute
+  - openai-2026-navier-stokes-solution
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1

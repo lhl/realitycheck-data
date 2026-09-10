@@ -1,0 +1,151 @@
+[
+  {
+    "id": "INST-2026-339",
+    "text": "OpenAI\u2019s API documentation states that since March 1, 2023 API data is not used to train or improve models unless the customer explicitly opts in.",
+    "type": "[F]",
+    "domain": "INST",
+    "evidence_level": "E4",
+    "credence": 0.9900000095367432,
+    "operationalization": "Check the cited primary record, versions and counterevidence. Explicit in the official data guide. Applies to API policy, not all products by assumption.",
+    "assumptions": [
+      "Attribution does not independently establish the underlying allegation."
+    ],
+    "falsifiers": [
+      "Authenticated source records contradicting the attribution or chronology."
+    ],
+    "source_ids": [
+      "openai-2026-api-data-controls",
+      "lhl-2026-ai-value-chain"
+    ],
+    "first_extracted": "2026-09-10",
+    "extracted_by": "codex",
+    "supports": [],
+    "contradicts": [],
+    "depends_on": [],
+    "modified_by": [],
+    "part_of_chain": null,
+    "version": 1,
+    "last_updated": "2026-09-10",
+    "notes": null
+  },
+  {
+    "id": "INST-2026-306",
+    "text": "OpenAI trained on Buckmaster and Alp\u00f6ge\u2019s unpublished mathematical work and that training materially helped its Navier\u2013Stokes result.",
+    "type": "[H]",
+    "domain": "INST",
+    "evidence_level": "E6",
+    "credence": 0.3499999940395355,
+    "operationalization": "Check the cited primary record, versions and counterevidence. Not established. OpenAI leaves training influence open; no dataset manifest, account-specific lineage or causal ablation was supplied.",
+    "assumptions": [
+      "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+    ],
+    "falsifiers": [
+      "Audited exclusion of all relevant original and derived data from relevant checkpoints, or a controlled ablation establishing no material influence."
+    ],
+    "source_ids": [
+      "buckmaster-2026-training-and-malpractice-posts",
+      "openai-2026-navier-stokes-data-response",
+      "alpoge-2026-training-authorship-response",
+      "thom-2026-unpublished-math-transparency"
+    ],
+    "first_extracted": "2026-09-10",
+    "extracted_by": "codex",
+    "supports": [],
+    "contradicts": [],
+    "depends_on": [],
+    "modified_by": [],
+    "part_of_chain": null,
+    "version": 1,
+    "last_updated": "2026-09-10",
+    "notes": null
+  },
+  {
+    "id": "INST-2026-332",
+    "text": "Enterprise no-training defaults establish that no unpublished mathematical data from these researchers could have influenced OpenAI\u2019s model.",
+    "type": "[H]",
+    "domain": "INST",
+    "evidence_level": "E6",
+    "credence": 0.019999999552965164,
+    "operationalization": "Check the cited primary record, versions and counterevidence. The inference is invalid without the researchers\u2019 products, account tiers, opt-ins, dates and applicable terms.",
+    "assumptions": [
+      "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+    ],
+    "falsifiers": [
+      "Account-specific records establishing applicable exclusion throughout all relevant uses and derivative pipelines."
+    ],
+    "source_ids": [
+      "lhl-2026-ai-value-chain",
+      "openai-2026-api-data-controls",
+      "openai-2026-navier-stokes-data-response"
+    ],
+    "first_extracted": "2026-09-10",
+    "extracted_by": "codex",
+    "supports": [],
+    "contradicts": [],
+    "depends_on": [],
+    "modified_by": [],
+    "part_of_chain": null,
+    "version": 1,
+    "last_updated": "2026-09-10",
+    "notes": null
+  },
+  {
+    "id": "INST-2026-313",
+    "text": "OpenAI explicitly says it cannot rule out that de-identified data derived from the researchers\u2019 product usage helped improve its models.",
+    "type": "[F]",
+    "domain": "INST",
+    "evidence_level": "E5",
+    "credence": 0.9900000095367432,
+    "operationalization": "Check the cited primary record, versions and counterevidence. Exact caveat is present in the official response and launch article.",
+    "assumptions": [
+      "Attribution does not independently establish the underlying allegation."
+    ],
+    "falsifiers": [
+      "Authenticated source records contradicting the attribution or chronology."
+    ],
+    "source_ids": [
+      "openai-2026-navier-stokes-data-response",
+      "openai-2026-navier-stokes-solution",
+      "wired-2026-navier-stokes-discovery-dispute",
+      "maguire-bowler-2026-navier-stokes-controversy"
+    ],
+    "first_extracted": "2026-09-10",
+    "extracted_by": "codex",
+    "supports": [],
+    "contradicts": [],
+    "depends_on": [],
+    "modified_by": [],
+    "part_of_chain": null,
+    "version": 1,
+    "last_updated": "2026-09-10",
+    "notes": null
+  },
+  {
+    "id": "GOV-2026-098",
+    "text": "The memo directs DoW to adopt the latest frontier AI models within 30 days of public release and requires vendors to keep models updated in DoW systems.",
+    "type": "[F]",
+    "domain": "GOV",
+    "evidence_level": "E2",
+    "credence": 0.800000011920929,
+    "operationalization": "Compare public model release dates to DoW deployment dates on relevant networks; evaluate whether vendors are contractually required to update models on DoW systems within 30 days.",
+    "assumptions": [
+      "DoW systems and accreditation processes can support a 30-day update cadence."
+    ],
+    "falsifiers": [
+      "Observed deployment/update cadences are substantially slower in practice due to accreditation, security, or procurement constraints."
+    ],
+    "source_ids": [
+      "dod-2026-ai-strategy-department-of-war"
+    ],
+    "first_extracted": "2026-03-01",
+    "extracted_by": "import",
+    "supports": [],
+    "contradicts": [],
+    "depends_on": [],
+    "modified_by": [],
+    "part_of_chain": null,
+    "version": 1,
+    "last_updated": "2026-03-01",
+    "notes": null
+  }
+]

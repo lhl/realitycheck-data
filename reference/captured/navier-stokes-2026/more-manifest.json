@@ -1,0 +1,58 @@
+[
+  {
+    "name": "thom-recent",
+    "url": "https://mathstodon.xyz/api/v1/accounts/108211547817709801/statuses?limit=40",
+    "exit": 0,
+    "error": "",
+    "sha256": "49cc8eea115a1bc7bc1f1c4d2a181cea71a6c578c5e4d7e89695ec549053bf17"
+  },
+  {
+    "name": "openai-proof-pdf",
+    "url": "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+    "exit": 0,
+    "error": "",
+    "sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f"
+  },
+  {
+    "name": "clay-pdf",
+    "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+    "exit": 0,
+    "error": "",
+    "sha256": "c1b5f27b1a64705cfaf1afceea513db5deedca8a18ca56ab32e7f86445a06d0c"
+  },
+  {
+    "name": "euler-pdf",
+    "url": "https://cims.nyu.edu/~tristanb/euler.pdf",
+    "exit": 0,
+    "error": "",
+    "sha256": "97ef408bff09b4f6ed9f3867734d1eb2245f3f34e6334b28136c84c02d0ae8d8"
+  },
+  {
+    "name": "search-bing1",
+    "url": "https://www.bing.com/search?q=OpenAI+Navier+Stokes+academic+fraud+plagiarism",
+    "exit": 0,
+    "error": "",
+    "sha256": "a7eec511a705b2547e6fd038e60be95645e9ae3186f795e05feaeac5c1921117"
+  },
+  {
+    "name": "search-bing2",
+    "url": "https://www.bing.com/search?q=Buckmaster+Bubeck+Navier+Stokes+September+2026+response",
+    "exit": 0,
+    "error": "",
+    "sha256": "9c2727437d232ecd6fc99865b195ae2044c4a7008eb8e47a30254015a3802050"
+  },
+  {
+    "name": "search-jina",
+    "url": "https://r.jina.ai/https://www.google.com/search?q=OpenAI%20Navier%20Stokes%20controversy%20plagiarism",
+    "exit": 0,
+    "error": "",
+    "sha256": "d40098cbc7a850575f55daf135643f13c31cb543420239328ee0d35d0904b3ef"
+  },
+  {
+    "name": "thom-lookup",
+    "url": "https://mathstodon.xyz/api/v2/search?q=%22andreasthom%22%20%222%2F3%22&type=statuses&resolve=true",
+    "exit": 0,
+    "error": "",
+    "sha256": "cd54e08f97cf8b32c2cd9c7218de76ec43defdce565bc42627d82298602a5b18"
+  }
+]

@@ -1,0 +1,7 @@
+Visual transcription, September 10, 2026. Posted by Bubeck; excerpt, not a complete authenticated message export.
+
+Outgoing: Sorry to ask you this on a Sunday (I wouldn't if it wasn't important): could we talk?
+11:48 AM
+Outgoing: I would like to be maximally open with you. I want to talk about coordinating the release of our concurrent discoveries. To be very clear: an internal model produced a proof (both formal and informal) of NS with very little human input, BUT it is of the utmost importance to us to recognize YOUR priority and that all the academic accolades for this historic result goes to you and Tristan. We are ready to share everything we have with you, including the human prompts and everything. Just let me know what you want to do. I think a call would be productive.
+Incoming: what is the precise theorem you are claiming?
+Outgoing: Existence of forced blowup in R^3 and T^3

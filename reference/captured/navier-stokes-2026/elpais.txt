@@ -1,0 +1,99 @@
+Patricia Fernández de Lis
+Jordi Pérez Colomé
+Madrid -
+09 sept 2026 - 10:44
+CEST
+Compartir en Whatsapp
+Compartir en Facebook
+Compartir en Twitter
+Desplegar Redes Sociales
+Ir a los comentarios
+Añadir EL PAÍS en Google
+Compartir:
+Whatsapp
+Facebook
+Twitter
+Bluesky
+Linkedin
+Copiar enlace
+Este martes,
+OpenAI aseguró haber resuelto
+uno de los mayores problemas de la historia de las matemáticas: el llamado “problema de existencia y suavidad” de
+Navier-Stokes
+, uno de los siete Problemas del Milenio del Clay Mathematics Institute, que están premiados con un millón de dólares cada uno, y que está sin resolver desde hace casi 90 años. Este era uno de los grandes objetivos de las compañías de IA desde hace años y otras empresas, como Google Deepmind, estaban en la misma carrera. Sobre el papel, es un hito: solo un
+Problema del Milenio
+se había resuelto antes (la conjetura de Poincaré), y sería la primera vez que una máquina resuelve un problema matemático de esta envergadura. Ningún científico externo ha verificado todavía, de forma independiente, la prueba de OpenAI:
+se publicó el 8 de septiembre,
+y una revisión de esta importancia suele tardar meses.
+Navier-Stokes intenta responder a una pregunta aparentemente simple: ¿Puede un fluido (agua, aire, cualquier líquido o gas) moverse de forma suave, sin remolinos infinitos ni velocidades que se disparan, para siempre, sin importar cuánto tiempo pase? Las ecuaciones de Navier-Stokes son las fórmulas matemáticas que describen cómo se mueve cualquier fluido. Se escribieron hace más de 250 años y funcionan muy bien: con ellas se diseñan aviones o se predice el tiempo. El problema es que, matemáticamente, nadie sabe si esas ecuaciones son
+seguras
+en un sentido muy concreto: si un fluido se mueve de forma suave y ordenada sin ningún punto raro, sin ninguna turbulencia extrema desde el principio, ¿puede ese fluido, con el simple paso del tiempo y siguiendo esas mismas ecuaciones, acabar generando un punto donde la velocidad se vuelve infinita? A eso se le llama una “singularidad”, y es la pregunta que lleva 90 años en el aire. Hasta, supuestamente, ahora.
+“Sin duda es un día emocionante, al contemplar el anuncio de importantes avances en la comprensión humana de las matemáticas”, ha afirmado el matemático Martin Bridson, presidente del Instituto de Matemáticas Clay. “Nuestra demostración revela que existen fluidos que comienzan siendo perfectamente normales y que, bajo las ecuaciones de Navier-Stokes, llegan a alcanzar una velocidad infinita en un tiempo finito”, señaló en rueda de prensa Ven Chandrasekaran, informático de OpenAI. La compañía ya ha dicho que no va a reclamar el millón de dólares del premio.
+Pero el anuncio ha quedado eclipsado por una disputa de prioridad y de ética que ha sacudido tanto a la comunidad matemática como a la de la inteligencia artificial.
+Todo empezó con una serie de rumores: “Es cierto que nos metimos en esto porque la semana pasada circulaban rumores en internet de que los modelos de Anthropic habían resuelto un problema del milenio, y teníamos curiosidad por saber si el nuestro también podía hacerlo”, escribió Sam Altman, presidente ejecutivo de OpenAI, en X. OpenAI dice que el 1 de septiembre empezó a entrenar su nuevo modelo para resolver los Problemas del Milenio, tras oír que dos investigadores (Tristan Buckmaster, matemático de la Universidad de Nueva York, y Levent Alpöge, investigador de Anthropic que trabajaba en el proyecto a título personal) habían resuelto ya alguno.
+No era del todo cierto: Buckmaster y Alpöge, apoyándose en un método ideado por los españoles Diego Córdoba y Luis Martínez-Zoroa, habían logrado el 15 de agosto dar un paso hacia Navier-Stokes, pero no la solución completa.
+Terence Tao, medalla Fields
+y una de las pocas personas en el mundo capaces de evaluar si esto se sostiene, calificó ese trabajo de “logro notable” y dijo no ver obstáculos evidentes para extender el método hasta Navier-Stokes. Fue justo esa dirección la que OpenAI utilizó para completar su propia prueba. La compañía usó un modelo interno muy superior
+al ChatGPt-6 Astra que acaban de sacar.
+Y llegaron a desplegar cerca de 10.000 agentes de IA autónomos durante 88 horas.
+I understand how, looking at today’s LLMs, people might think the only way we'd achieve NS is by using Levent’s/Tristan’s prompts. But I hope this plot conveys the model used is a huge step up from today’s LLMs. Nobody looked at Levent’s/Tristan’s prompts. That’d be insane.
+https://t.co/FHuPoLvcPk
+pic.twitter.com/hdAQbP486X
+— Noam Brown (@polynoamial)
+September 8, 2026
+La noche antes del anuncio de OpenAI,
+Buckmaster publicó una declaración (un PDF colgado en su web de la NYU
+) con acusaciones graves: que OpenAI se había enterado de su investigación privada e inédita en la última semana, que la empresa ya tenía una prueba de la resolución antes de contactar con él y que le ofrecieron elegir entre una publicación conjunta o escribir él mismo el resultado atribuyéndoselo a un modelo de OpenAI.
+Según su relato, el científico de OpenAI Sébastien Bubeck presionó en dos ocasiones para excluir a Alpöge de la autoría por su vínculo con Anthropic. Bubeck ha calificado la versión de Buckmaster de “falsa e incendiaria” y ha prometido dar más detalles. “Una de las opciones que comentamos era que Buckmaster fuera el autor principal de una reescritura de la demostración de Navier-Stokes de OpenAI. Fue en ese contexto en el que dije que ‘sería más sencillo si Levent no fuera empleado de Anthropic’, porque me parecía inapropiado que un empleado de Anthropic firmara un trabajo de OpenAI”, dice Bubeck, en una de las explicaciones que ha dado en X dentro de un debate muy polémico sobre quién debe tener más mérito en esta solución: no solo qué humanos, sino también qué máquina.
+unfortunately i contacted them on the night of wednesday, september 2nd making the following points
+1. i had intel they had information about math work i was doing and a few days before they had spun up a group to try to compete.
+2. i emphasized and reemphasized mine was a…
+https://t.co/MreJNmPBTQ
+— levent (@__alpoge__)
+September 9, 2026
+A esto se suma otro frente: Buckmaster llega a preguntarse si OpenAI pudo acceder a sus notas y prompts en Codex, la herramienta de programación de OpenAI para agilizar su investigación. Es decir, para plagiar su trabajo. Este hecho, si se confirma, sería una catástrofe para la imagen pública de las herramientas de OpenAI como ChatGPT y Codex.
+OpenAI sostiene que sus agentes
+no accedieron al trabajo de los dos investigadores por ningún medio antes de que se hiciera público, aunque no descarta del todo el acceso a datos “desidentificados”, es decir, que el modelo de OpenAI los haya usado porque se habían quedado en su sistema una vez introducidos. Así lo explica OpenAI en su nota de prensa: “Nosotros (los investigadores y los agentes) no vimos su trabajo por ningún medio hasta que lo hicieron público; en particular, no se accedió a ningún dato concreto de usuario para resolver este problema. Aunque es poco probable, no podemos descartar que datos desidentificados derivados de su uso de nuestros productos hayan contribuido a [mejorar nuestros modelos]”. Esta consecuencia sería una advertencia seria para quien usa estos modelos con datos confidenciales o privados.
+Más allá del quién dijo qué,
+Tao ha planteado la pregunta que de verdad inquieta a la comunidad
+: si un rumor puede convertirse en el detonante de un despliegue de miles de agentes con millones de dólares en cómputo por parte de un competidor con más recursos, ¿qué incentivo le queda a nadie para compartir ideas prometedoras antes de tenerlas cerradas? Tao también ha criticado que se oculten los intentos fallidos y el proceso de la demostración, y ha pedido estándares que valoren tanto la idea matemática como el resultado final.
+La involucración y presión de las empresas de IA en matemáticas ya ha supuesto problemas en el pasado: OpenAI aseguró el pasado verano que había ganado una medalla en la
+Olimpiada Matemática
+cuando lo cierto, según contó este diario, es que ni siquiera había participado.
+Recibe el boletín de Ciencia
+Ciencia El País en Facebook
+Ciencia El País en Instagram
+Ciencia El País en Twitter
+Comentarios
+Ir a los comentarios
+Normas
+›
+Mis comentarios
+Normas
+Rellena tu
+nombre y apellido
+para comentar
+completar datos
+Suscríbete en El País para participar
+Ya tengo una suscripción
+Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow"> comments powered by Disqus.</a>
+Cerrar
+Más información
+OpenAI lanza GPT-6 Astra, su modelo más potente, entre especulaciones sobre si han alcanzado la superinteligencia artificial
+M. G. Pascual
+| Madrid
+¿Están obsoletas las matemáticas? Los investigadores replantean para qué sirven en la era de la IA
+Jordi Pérez Colomé
+| Madrid
+Archivado En
+Ciencia
+Tecnología
+OpenAI
+Inteligencia artificial
+Matemáticas
+Anthropic
+Medalla Fields
+Se adhiere a los criterios de
+Más información
+Si está interesado en licenciar este contenido, pinche
+aquí

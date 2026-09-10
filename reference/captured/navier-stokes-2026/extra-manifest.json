@@ -1,0 +1,72 @@
+[
+  {
+    "name": "buckmaster-status",
+    "url": "https://mastodon.social/api/v1/statuses/117236471352470303",
+    "exit": 0,
+    "error": "",
+    "sha256": "fec5269f92331829880e47fb9917ee1526cf4395bc25291f1c741f8b62e9e323"
+  },
+  {
+    "name": "buckmaster-context",
+    "url": "https://mastodon.social/api/v1/statuses/117236471352470303/context",
+    "exit": 0,
+    "error": "",
+    "sha256": "e7f17c30b6c83578a1bd67b0ab6dd2a0adb7644c511fa704b3fc149901b0dafa"
+  },
+  {
+    "name": "thom-status",
+    "url": "https://mathstodon.xyz/api/v1/statuses/117240535270608201",
+    "exit": 0,
+    "error": "",
+    "sha256": "209d4f70d75c7298873a23e844633972c7467096a47143545d537c8c343356b4"
+  },
+  {
+    "name": "thom-context",
+    "url": "https://mathstodon.xyz/api/v1/statuses/117240535270608201/context",
+    "exit": 0,
+    "error": "",
+    "sha256": "641827e8b471b99e6a82749710f9f1e6b90ed247eac52ab10d3a92ac42880527"
+  },
+  {
+    "name": "tao-status",
+    "url": "https://mathstodon.xyz/api/v1/statuses/117237320796901560",
+    "exit": 0,
+    "error": "",
+    "sha256": "9084e9dd9333fecc69aef08c01eaaa780acbdd9cad843237311a7077312d3b99"
+  },
+  {
+    "name": "tao-context",
+    "url": "https://mathstodon.xyz/api/v1/statuses/117237320796901560/context",
+    "exit": 0,
+    "error": "",
+    "sha256": "f5b73dd4dc14a9c482993b4dfcf1d5c6a21055bf5dec8b6c13c9209d72652f18"
+  },
+  {
+    "name": "openai-mirror",
+    "url": "https://r.jina.ai/https://openai.com/index/navier-stokes-solution/",
+    "exit": 0,
+    "error": "",
+    "sha256": "3e37aecc57681933537c8780faa3de593a2acb57e48cabcd03ab3701853b80fb"
+  },
+  {
+    "name": "search-ddg1",
+    "url": "https://html.duckduckgo.com/html/?q=OpenAI+Navier+Stokes+plagiarism+Buckmaster",
+    "exit": 0,
+    "error": "",
+    "sha256": "4e963b1f540bd73c2059b56ecff9de9280f505e560eb579ea2b2a58c1416f6b9"
+  },
+  {
+    "name": "search-ddg2",
+    "url": "https://html.duckduckgo.com/html/?q=OpenAI+Navier+Stokes+training+data+fraud",
+    "exit": 0,
+    "error": "",
+    "sha256": "0153e6ad021681a65fa7e754a274cade34fbac9818772645fb59fb690746b04c"
+  },
+  {
+    "name": "openai-launch-thread",
+    "url": "https://threadreaderapp.com/thread/2097374640582668336.html",
+    "exit": 0,
+    "error": "",
+    "sha256": "fc20a682c1b6cc61394df09a7c3da95ca51ff584ad5d91b7c2e2b42941939ae2"
+  }
+]

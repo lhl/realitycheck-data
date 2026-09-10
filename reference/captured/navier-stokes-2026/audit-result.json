@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "source_analyses": 23,
+  "claims_checked": 55,
+  "completed_lifecycles": 24,
+  "pdf_hashes_checked": 3,
+  "local_links": "pass",
+  "embeddings": "present",
+  "provenance": "present"
+}

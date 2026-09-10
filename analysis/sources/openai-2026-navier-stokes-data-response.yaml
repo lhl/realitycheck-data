@@ -1,0 +1,98 @@
+sources:
+- id: openai-2026-navier-stokes-data-response
+  title: Official response on direct access and training uncertainty
+  author:
+  - OpenAI
+  year: 2026
+  type: REPORT
+  url: https://threadreaderapp.com/thread/2097375276384567642.html
+  analysis_file: analysis/sources/openai-2026-navier-stokes-data-response.md
+  reliability: 0.8
+  topics:
+  - navier-stokes
+  - research-credit
+  - customer-data
+  - frontier-lab-competition
+  domains:
+  - INST
+  claims_extracted:
+  - INST-2026-312
+  - INST-2026-313
+  - INST-2026-314
+  - INST-2026-306
+  - INST-2026-322
+  - INST-2026-330
+  - INST-2026-331
+  - INST-2026-332
+  - TECH-2026-306
+  - INST-2026-338
+  - TECH-2026-307
+  bias_notes: 'Source reliability is scope-dependent: direct records support attribution; motives, private conduct
+    and technical validity require separate checks.'
+claims:
+- id: INST-2026-312
+  text: OpenAI publicly denies that its researchers or agents saw the pair’s work before publication or accessed
+    specific user data to solve this problem.
+  type: '[F]'
+  domain: INST
+  evidence_level: E5
+  credence: 0.99
+  operationalization: Check the cited primary record, versions and counterevidence. Verified denial, not independent
+    verification that access did not occur.
+  assumptions:
+  - Attribution does not independently establish the underlying allegation.
+  falsifiers:
+  - Authenticated source records contradicting the attribution or chronology.
+  source_ids:
+  - openai-2026-navier-stokes-data-response
+  - openai-2026-navier-stokes-solution
+  - wired-2026-navier-stokes-discovery-dispute
+  - brown-2026-navier-stokes-access-denial
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1
+- id: INST-2026-313
+  text: OpenAI explicitly says it cannot rule out that de-identified data derived from the researchers’ product
+    usage helped improve its models.
+  type: '[F]'
+  domain: INST
+  evidence_level: E5
+  credence: 0.99
+  operationalization: Check the cited primary record, versions and counterevidence. Exact caveat is present in the
+    official response and launch article.
+  assumptions:
+  - Attribution does not independently establish the underlying allegation.
+  falsifiers:
+  - Authenticated source records contradicting the attribution or chronology.
+  source_ids:
+  - openai-2026-navier-stokes-data-response
+  - openai-2026-navier-stokes-solution
+  - wired-2026-navier-stokes-discovery-dispute
+  - maguire-bowler-2026-navier-stokes-controversy
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1
+- id: INST-2026-314
+  text: The official training caveat establishes that the researchers’ data was actually ingested or that any contract
+    was breached.
+  type: '[H]'
+  domain: INST
+  evidence_level: E6
+  credence: 0.03
+  operationalization: Check the cited primary record, versions and counterevidence. The inference does not follow.
+    The caveat leaves both ingestion and causal contribution unresolved; account terms/settings are unknown.
+  assumptions:
+  - Mechanism or inference is bounded by the stated conditions; no universal effect assumed.
+  falsifiers:
+  - The same non-exclusion caveat is compatible with an audited absence of ingestion and breach; its wording makes
+    no positive assertion of either.
+  source_ids:
+  - openai-2026-navier-stokes-data-response
+  - openai-2026-api-data-controls
+  - buckmaster-2026-navier-stokes-statement
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1

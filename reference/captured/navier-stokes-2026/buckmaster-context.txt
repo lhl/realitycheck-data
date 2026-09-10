@@ -1,0 +1,199 @@
+https://mastodon.social/@tristanbuckmaster/117233413705701198 2026-09-08T03:58:50.814Z tristanbuckmaster
+Today, Levent Alpöge and I have made public three results: finite-time blowup with smooth forcing for incompressible porous media, for Boussinesq, and for 3d incompressible Euler.
+https://
+cims.nyu.edu/~tristanb/stateme
+nt.pdf
+https://
+cims.nyu.edu/~tristanb/euler.p
+df
+https://
+cims.nyu.edu/~tristanb/ipm.pdf
+https://
+cims.nyu.edu/~tristanb/boussin
+esq.pdf
+https://
+github.com/tristanbuckmaster/f
+luid_lean
+
+https://mastodon.social/@tristanbuckmaster/117234822696475513 2026-09-08T09:57:10.302Z tristanbuckmaster
+I want to again express my profound gratitude to the outpouring of support from the greater mathematical community. I also want to remark that there is a far bigger story here than the one in my statement: the sheer magnitude of what frontier models can now do, and what that means for us all. I hope the labs can see this and set the petty posturing aside.
+
+https://mastodon.social/@katsur/117236764041138874 2026-09-08T18:10:52.876Z katsur
+@
+tristanbuckmaster
+Not trying to be contrarian or anything but I don't think this is how you want to tackle the argument.
+This is only an real issue if you disabled the "Help improve your model for everyone" which is enabled for everyone by default.
+If it was left enabled then I don't think it is a violation of ToC - which I think is why they are not guaranteeing that it hasn't been trained on it in the blog.
+Whether it is an academic violation regardless I am not an academic so have no clue.
+
+https://mastodon.social/@felixgloom/117236852752082150 2026-09-08T18:33:26.500Z felixgloom
+@
+katsur
+@
+tristanbuckmaster
+well, so now huge corp got the benefit of the doubt.. if I go to the cinema, I dont have to sign anything, but if I record the movie and upload it, I would get repercussions. the question is not about legality (you can make anything legal if you have enough guns and money) but rather about ethics... no?
+
+https://mastodon.social/@katsur/117237420191139510 2026-09-08T20:57:44.933Z katsur
+I'm having trouble understanding this and relating it to the post.
+There are two broad categories:
+- Snoop'ing as in directly guidance via the prompt
+- The usage of such data to begin with
+The second is easy, the ToC and contract govern over this, parallel to a proof. I think the defense in this case is generally lacking.
+The first would likely support a violation, but that would need the LLM to directly access user data which no [public] evidence points.
+
+https://mastodon.social/@katsur/117237437872187593 2026-09-08T21:02:14.718Z katsur
+What I mean by the second case is that the conversation of the user being accessed and then being used to guide the prompt.
+Or if you mean the presence of such similar data being in the RL dataset would imply such a fact, that is messy because it is hard to tell how much it would actually contribute to forcing such a result, but again, I think this would circle back the usage of the service which is then just the ToC which is an unfortunate circumstance but it is hard to say OpenAI violated.
+
+https://mastodon.online/@MoBlack/117237183065312423 2026-09-08T19:57:26.000Z MoBlack@mastodon.online
+@
+katsur
+@
+tristanbuckmaster
+no one is arguing anything illegal took place. We are arguing if something immoral took place. It is immoral to take someone else's work and present it as your own, even if you technically had permission
+
+https://mastodon.social/@katsur/117237486728566496 2026-09-08T21:14:40.207Z katsur
+If this is what the post is insinuating then my bad for misinterpreting but even after reading it after a few hours I have trouble seeing that as the core point.
+Based on the information known, it does seem like they were attempts to coordinate release and arrange credit, but then falls under academic etiquette which I am not familiar with.
+
+https://mathstodon.xyz/@skewray/117236773384352886 2026-09-08T18:13:15.000Z skewray@mathstodon.xyz
+@
+tristanbuckmaster
+If you use an unethical product, this result is called "comeuppance".
+
+https://mastodon.social/@felixgloom/117236867052925780 2026-09-08T18:37:04.714Z felixgloom
+@
+skewray
+@
+tristanbuckmaster
+if we are to whatabout: which device were you using to type this toot?
+
+https://mathstodon.xyz/@dimpase/117237081394320241 2026-09-08T19:31:35.000Z dimpase@mathstodon.xyz
+@
+felixgloom
+@
+skewray
+@
+tristanbuckmaster
+they'll claim their oh so very powerful agents hacked around a bit in their systems and found some relevant logs to read through...
+
+https://mastodon.social/@zig_maths/117236800689074050 2026-09-08T18:20:12.082Z zig_maths
+@
+tristanbuckmaster
+i wonder do your approach looks like what openai used to disproof NS has smooth solution problem?
+
+https://troet.cafe/@gnuplusknoppers/117236952776499072 2026-09-08T18:58:52.000Z gnuplusknoppers@troet.cafe
+@
+tristanbuckmaster
+they trained on anyones data, customer or not, why would they suddenly stop doing that?
+
+https://cyberplace.social/@azur/117237072705544888 2026-09-08T19:29:22.000Z azur@cyberplace.social
+@
+tristanbuckmaster
+i mean...what did you expected lmao
+
+https://kolektiva.social/@arsonatdennys/117237161049104134 2026-09-08T19:51:50.000Z arsonatdennys@kolektiva.social
+@
+tristanbuckmaster
+doesn’t make it acceptable even without but any idea if you were using an account with a Zero Data Retention policy or opted out from including in training in settings?
+
+https://kolektiva.social/@arsonatdennys/117237182841616143 2026-09-08T19:57:23.000Z arsonatdennys@kolektiva.social
+@
+tristanbuckmaster
+congrats on your result with Alpoge btw. I’m excited for what’s to come.
+
+https://kolektiva.social/@arsonatdennys/117237865214642278 2026-09-08T22:50:55.000Z arsonatdennys@kolektiva.social
+@
+tristanbuckmaster
+would very much appreciate if you could check and clarify:
+1. Were either or both of yours edu accounts?
+2. If either was personal, were you opted out of training?
+These are immaterial to the academic scandal but are *critical* details for the public at large and especially any/all users of OpenAI’s models.
+
+https://mathstodon.xyz/@devr/117237183955679296 2026-09-08T19:57:40.000Z devr@mathstodon.xyz
+@
+arsonatdennys
+@
+tristanbuckmaster
+Correct, this is the most important question, if OAI trained on data that was under ZDR, or account opt out, thats a huge scandal that goes far beyond mathematics. If they trained on data they disclosed they would train on, that is an unfortunate mistake for Tristan and Levant, but expected. Anthropic says they do the same iirc. If OAI provably got here without any help, thats also interesting too, but we need to know which it was. OAI should be able to check I would imagine if Tristan and Levant's chatlogs are in their training data or not.
+
+https://kolektiva.social/@arsonatdennys/117237738641561411 2026-09-08T22:18:44.000Z arsonatdennys@kolektiva.social
+@
+devr
+@
+tristanbuckmaster
+it would still be unethical by math standards to use the platforms advantage to try and scoop people who use your platform. Like if someone who hosted sage math used insights derived from you computations to scoop you.
+
+https://mathstodon.xyz/@devr/117237750131186073 2026-09-08T22:21:39.000Z devr@mathstodon.xyz
+@
+arsonatdennys
+@
+tristanbuckmaster
+Completely agree if they had no training data turned on or a ZDR agreement. If not, it isn't any different than what OAI or Anthropic subject the rest of their customers with daily, which is opt-out, not opt-in data training, and while I agree that its a bad thing to have it be that way, it isn't unusual and its known best practice to disable that toggle. My point is, if it ended up in a data training corpus for *that reason* its part of a much larger data scooping operating, not one targeting Levant or Tristan, or other mathematicians in particular, work.
+To be clear, the existing data policies are still a problem, just a political one that is far beyond the scope of math academia, and one that carries no malicious intent between the people involved.
+
+https://kolektiva.social/@arsonatdennys/117237874616931768 2026-09-08T22:53:18.000Z arsonatdennys@kolektiva.social
+@
+devr
+@
+tristanbuckmaster
+if that’s the case it wasn’t designed maliciously to target Alpoge and Buckmaster (or even mathematicians) but it’s still a factor in making their actions more of an academic scandal.
+E.g. if sage math disclosed it uses user data in their own research but then committed vast amount of money to try and scoop their users lol.
+
+https://c.im/@yiannissak/117237240133170702 2026-09-08T20:11:57.000Z yiannissak@c.im
+@
+tristanbuckmaster
+, for the record, can you please state whether you had the button that allows model training on your data off while working on this? (It shows as “improve the model for everyone” on my ChatGPT settings.)
+
+https://mastodon.social/@silverqx/117237795326537459 2026-09-08T22:33:09.047Z silverqx
+I would also like to know that cause thats the whole point, once you uncheck that checkbox they cant train on your data.
+@
+yiannissak
+@
+tristanbuckmaster
+
+https://todon.eu/@rhelune/117239446209845827 2026-09-09T05:32:59.000Z rhelune@todon.eu
+@
+silverqx
+@
+yiannissak
+@
+tristanbuckmaster
+They can't? What's stopping them?
+
+https://mastodon.social/@yuzej/117237375898537613 2026-09-08T20:46:29.079Z yuzej
+@
+tristanbuckmaster
+I also read Bubeck’s post saying how kind he was trying to be.
+Question is: suppose OpenAI people had nothing to hide and had simply solved the problem solely within their internal efforts, why would they want to share the credit, let alone asking you to author ‘their paper’?
+Dont know how they got the idea of proof. Their aim to me is simply ‘beat Anthropic as fast as possible’ since they believed ‘anthropic, somehow related, got this proved’
+World is crazy.
+
+https://mathstodon.xyz/@hvc/117237477737588936 2026-09-08T21:12:23.000Z hvc@mathstodon.xyz
+@
+tristanbuckmaster
+,
+https://
+mathstodon.xyz/@hvc/1172372571
+92237552
+
+https://tech.lgbt/@camelcdr/117239286512908898 2026-09-09T04:52:22.000Z camelcdr@tech.lgbt
+@
+tristanbuckmaster
+> Is it ethical to use customer's data to try to scoop their customer?
+No, but this is the entire business model of OpenAI and Anthropic.
+
+https://mathstodon.xyz/@HydrePrever/117240025662589786 2026-09-09T08:00:21.000Z HydrePrever@mathstodon.xyz
+@
+tristanbuckmaster
+leopards ate my face!!
+
+https://tech.lgbt/@glitchcake/117241218217718845 2026-09-09T13:03:38.000Z glitchcake@tech.lgbt
+@
+tristanbuckmaster
+First time having your work stolen by technofascists? My apologies, welcome to the club.
+
+https://mastodon.social/@BorisBarbour/117243166240014304 2026-09-09T21:19:02.682Z BorisBarbour
+@
+tristanbuckmaster
+It's quite transparently part of the business model for AI.

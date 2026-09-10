@@ -1,0 +1,1957 @@
+{
+  "sources": [
+    {
+      "id": "openai-2026-navier-stokes-solution",
+      "title": "On the Navier–Stokes Millennium Prize Problem",
+      "author": [
+        "OpenAI"
+      ],
+      "year": 2026,
+      "type": "REPORT",
+      "url": "https://openai.com/index/navier-stokes-solution/",
+      "analysis_file": "analysis/sources/openai-2026-navier-stokes-solution.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST",
+        "TECH"
+      ],
+      "claims_extracted": [
+        "INST-2026-300",
+        "TECH-2026-300",
+        "TECH-2026-301",
+        "TECH-2026-302"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "buckmaster-2026-navier-stokes-statement",
+      "title": "Statement on fluid blowup results and OpenAI discussions",
+      "author": [
+        "Tristan Buckmaster"
+      ],
+      "year": 2026,
+      "type": "REPORT",
+      "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
+      "analysis_file": "analysis/sources/buckmaster-2026-navier-stokes-statement.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-301",
+        "INST-2026-302",
+        "INST-2026-303",
+        "INST-2026-304"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "buckmaster-2026-training-and-malpractice-posts",
+      "title": "Training chronology and academic-malpractice criticism",
+      "author": [
+        "Tristan Buckmaster"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://mastodon.social/@tristanbuckmaster/117236471352470303",
+      "analysis_file": "analysis/sources/buckmaster-2026-training-and-malpractice-posts.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-305",
+        "INST-2026-306",
+        "INST-2026-307"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "alpoge-2026-september-two-contact",
+      "title": "September 2 contact and personal-collaboration account",
+      "author": [
+        "Levent Alpöge"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://threadreaderapp.com/thread/2097548261666033993.html",
+      "analysis_file": "analysis/sources/alpoge-2026-september-two-contact.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-308",
+        "INST-2026-309"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "alpoge-2026-training-authorship-response",
+      "title": "Response on training caveat, unpublished approaches and authorship",
+      "author": [
+        "Levent Alpöge"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://x.com/__alpoge__/status/2097383870773748190",
+      "analysis_file": "analysis/sources/alpoge-2026-training-authorship-response.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-310",
+        "INST-2026-311"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "openai-2026-navier-stokes-data-response",
+      "title": "Official response on direct access and training uncertainty",
+      "author": [
+        "OpenAI"
+      ],
+      "year": 2026,
+      "type": "REPORT",
+      "url": "https://threadreaderapp.com/thread/2097375276384567642.html",
+      "analysis_file": "analysis/sources/openai-2026-navier-stokes-data-response.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-312",
+        "INST-2026-313",
+        "INST-2026-314"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "bubeck-2026-navier-stokes-response",
+      "title": "Clarification of release discussions and human involvement",
+      "author": [
+        "Sébastien Bubeck"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://threadreaderapp.com/thread/2097379411691516310.html",
+      "analysis_file": "analysis/sources/bubeck-2026-navier-stokes-response.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-315",
+        "INST-2026-316",
+        "INST-2026-317"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "altman-2026-navier-stokes-defense",
+      "title": "Defense of team conduct and coordination offers",
+      "author": [
+        "Sam Altman"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://threadreaderapp.com/thread/2097385167002415140.html",
+      "analysis_file": "analysis/sources/altman-2026-navier-stokes-defense.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-318",
+        "INST-2026-319"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "thom-2026-unpublished-math-transparency",
+      "title": "Unpublished mathematics, non-sofic groups and training transparency",
+      "author": [
+        "Andreas Thom"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://mathstodon.xyz/@andreasthom/117240535270608201",
+      "analysis_file": "analysis/sources/thom-2026-unpublished-math-transparency.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-320",
+        "INST-2026-321",
+        "INST-2026-322"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "tao-2026-promising-problems-open-science",
+      "title": "Promising problems, solution extraction and open-science incentives",
+      "author": [
+        "Terence Tao"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://mathstodon.xyz/@tao/117237320796901560",
+      "analysis_file": "analysis/sources/tao-2026-promising-problems-open-science.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST",
+        "RISK"
+      ],
+      "claims_extracted": [
+        "INST-2026-323",
+        "RISK-2026-300"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "wired-2026-navier-stokes-discovery-dispute",
+      "title": "OpenAI Just Claimed a Huge Math Discovery. Some Academics Are Crying Foul",
+      "author": [
+        "Will Knight and Maxwell Zeff"
+      ],
+      "year": 2026,
+      "type": "ARTICLE",
+      "url": "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics/",
+      "analysis_file": "analysis/sources/wired-2026-navier-stokes-discovery-dispute.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "ECON",
+        "TECH"
+      ],
+      "claims_extracted": [
+        "ECON-2026-300",
+        "TECH-2026-303"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "wohlwend-2026-navier-stokes-timeline",
+      "title": "Early timeline of the Navier–Stokes dispute",
+      "author": [
+        "Konsti Wohlwend"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://threadreaderapp.com/thread/2097235335034056835.html",
+      "analysis_file": "analysis/sources/wohlwend-2026-navier-stokes-timeline.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-324",
+        "INST-2026-325"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "allen-2026-private-model-competition",
+      "title": "Private frontier models and customer competition",
+      "author": [
+        "Joseph Allen"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://threadreaderapp.com/thread/2097635374197510317.html",
+      "analysis_file": "analysis/sources/allen-2026-private-model-competition.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "ECON",
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-326",
+        "ECON-2026-301"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "orhan-2026-research-customer-scooping",
+      "title": "Research customers and the scooping precedent",
+      "author": [
+        "Ryan Orhan"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://threadreaderapp.com/thread/2097471623490150754.html",
+      "analysis_file": "analysis/sources/orhan-2026-research-customer-scooping.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST",
+        "RISK"
+      ],
+      "claims_extracted": [
+        "INST-2026-327",
+        "RISK-2026-301"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "wolf-2026-mathematics-marketing-pressure",
+      "title": "Scientific communication and marketing pressure",
+      "author": [
+        "Thomas Wolf"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://threadreaderapp.com/thread/2097215782484607029.html",
+      "analysis_file": "analysis/sources/wolf-2026-mathematics-marketing-pressure.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-328",
+        "INST-2026-329"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "taylor-king-2026-drug-discovery-trust",
+      "title": "Drug-discovery IP and trust in frontier labs",
+      "author": [
+        "Jake P. Taylor-King"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://threadreaderapp.com/thread/2097255157020921950.html",
+      "analysis_file": "analysis/sources/taylor-king-2026-drug-discovery-trust.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST",
+        "RISK"
+      ],
+      "claims_extracted": [
+        "INST-2026-330",
+        "RISK-2026-302"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "lhl-2026-ai-value-chain",
+      "title": "Frontier Labs, Enterprises, and the AI Value Chain",
+      "author": [
+        "lhl / Shisa.AI"
+      ],
+      "year": 2026,
+      "type": "BLOG",
+      "url": "https://blog.shisa.ai/posts/ai-value-chain/",
+      "analysis_file": "analysis/sources/lhl-2026-ai-value-chain.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "ECON",
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-331",
+        "INST-2026-332",
+        "ECON-2026-302"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "bastian-2026-navier-stokes-trust",
+      "title": "OpenAI’s millennium proof dispute raises the question of whether researchers can trust AI labs",
+      "author": [
+        "Matthias Bastian"
+      ],
+      "year": 2026,
+      "type": "ARTICLE",
+      "url": "https://the-decoder.com/openais-millennium-proof-dispute-raises-the-question-of-whether-researchers-can-trust-ai-labs/",
+      "analysis_file": "analysis/sources/bastian-2026-navier-stokes-trust.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST",
+        "TECH"
+      ],
+      "claims_extracted": [
+        "INST-2026-333",
+        "TECH-2026-304"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "maguire-bowler-2026-navier-stokes-controversy",
+      "title": "Controversy erupts as OpenAI claims solution to Navier Stokes maths problem",
+      "author": [
+        "Dannielle Maguire and Jacinta Bowler"
+      ],
+      "year": 2026,
+      "type": "ARTICLE",
+      "url": "https://www.abc.net.au/news/2026-09-10/openai-navier-stokes-millennium-problem-claims/107132242",
+      "analysis_file": "analysis/sources/maguire-bowler-2026-navier-stokes-controversy.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-334",
+        "INST-2026-335"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "fernandez-perez-2026-navier-stokes-plagiarism-dispute",
+      "title": "El anuncio de OpenAI ... desata acusaciones de plagio",
+      "author": [
+        "Patricia Fernández de Lis and Jordi Pérez Colomé"
+      ],
+      "year": 2026,
+      "type": "ARTICLE",
+      "url": "https://elpais.com/ciencia/2026-09-09/el-anuncio-de-openai-de-que-ha-resuelto-uno-de-los-mayores-enigmas-matematicos-de-la-historia-desata-acusaciones-de-plagio.html",
+      "analysis_file": "analysis/sources/fernandez-perez-2026-navier-stokes-plagiarism-dispute.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST",
+        "TECH"
+      ],
+      "claims_extracted": [
+        "INST-2026-336",
+        "TECH-2026-305"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "barak-2026-navier-stokes-hints-defense",
+      "title": "Defense that the model did not need mathematical hints",
+      "author": [
+        "Boaz Barak"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://x.com/boazbaraktcs/status/2097394435092861410",
+      "analysis_file": "analysis/sources/barak-2026-navier-stokes-hints-defense.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST",
+        "TECH"
+      ],
+      "claims_extracted": [
+        "INST-2026-337",
+        "TECH-2026-306"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "brown-2026-navier-stokes-access-denial",
+      "title": "Direct-access denial and private-model capability defense",
+      "author": [
+        "Noam Brown"
+      ],
+      "year": 2026,
+      "type": "SOCIAL",
+      "url": "https://x.com/polynoamial/status/2097381286193316203",
+      "analysis_file": "analysis/sources/brown-2026-navier-stokes-access-denial.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST",
+        "TECH"
+      ],
+      "claims_extracted": [
+        "INST-2026-338",
+        "TECH-2026-307"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    },
+    {
+      "id": "openai-2026-api-data-controls",
+      "title": "OpenAI API data controls: training and retention",
+      "author": [
+        "OpenAI"
+      ],
+      "year": 2026,
+      "type": "KNOWLEDGE",
+      "url": "https://platform.openai.com/docs/guides/your-data",
+      "analysis_file": "analysis/sources/openai-2026-api-data-controls.md",
+      "reliability": 0.8,
+      "rigor_level": "DRAFT",
+      "topics": [
+        "navier-stokes",
+        "research-credit",
+        "customer-data",
+        "frontier-lab-competition"
+      ],
+      "domains": [
+        "INST"
+      ],
+      "claims_extracted": [
+        "INST-2026-339",
+        "INST-2026-340"
+      ],
+      "bias_notes": "Source reliability is scope-dependent: direct records support attribution; motives, private conduct and technical validity require separate checks."
+    }
+  ],
+  "claims": [
+    {
+      "id": "INST-2026-300",
+      "text": "OpenAI states it began the Millennium-problem evaluation on September 1 after hearing rumors of solutions, and concentrated resources on Navier–Stokes after its own Euler result.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.9,
+      "operationalization": "Check the cited primary record, versions and counterevidence. The launch account, Bubeck and Altman agree on the rumor trigger. This is not proof that private draft content guided the run.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "openai-2026-navier-stokes-solution",
+        "bubeck-2026-navier-stokes-response",
+        "altman-2026-navier-stokes-defense",
+        "wired-2026-navier-stokes-discovery-dispute"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "TECH-2026-300",
+      "text": "OpenAI reports approximately 10,000 concurrent agents on the successful Navier–Stokes group, 88 hours to a candidate proof, a further 17 hours for formalization, and about 130 billion output tokens for Navier–Stokes.",
+      "type": "[F]",
+      "domain": "TECH",
+      "evidence_level": "E4",
+      "credence": 0.8,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Counts are company-reported; WIRED independently reports the briefing but does not audit telemetry. 88 hours excludes the stated extra formalization period.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "openai-2026-navier-stokes-solution",
+        "wired-2026-navier-stokes-discovery-dispute",
+        "maguire-bowler-2026-navier-stokes-controversy"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "TECH-2026-301",
+      "text": "OpenAI’s published theorem claims finite-time blowup for three-dimensional Navier–Stokes with positive viscosity and smooth compactly supported forcing, establishing Clay alternatives C and D.",
+      "type": "[F]",
+      "domain": "TECH",
+      "evidence_level": "E3",
+      "credence": 0.98,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Theorem 1.1 and Corollary 10.6 match the claimed forced setting; the Clay formulation allows forced counterexamples. This verifies what is claimed, not the full proof.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "openai-2026-navier-stokes-solution"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "TECH-2026-302",
+      "text": "The disclosed Navier–Stokes effort involved human selection of problems, reallocating agents, consolidating intermediate outputs with Codex and upgrading models during the run.",
+      "type": "[F]",
+      "domain": "TECH",
+      "evidence_level": "E4",
+      "credence": 0.95,
+      "operationalization": "Check the cited primary record, versions and counterevidence. These orchestration interventions are described in the release. Their contribution to mathematical ideas is a separate, unaudited question.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "openai-2026-navier-stokes-solution",
+        "buckmaster-2026-navier-stokes-statement",
+        "bubeck-2026-navier-stokes-response"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-301",
+      "text": "Buckmaster reports obtaining smooth-forced Euler and Boussinesq blowup results with Alpöge on August 15 and Lean verification on August 22, building on Córdoba and Martínez-Zoroa.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.85,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Participant chronology; Euler PDF confirms the forced setting and explicitly names the prior program. August timestamps were not independently audited.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "buckmaster-2026-navier-stokes-statement",
+        "alpoge-2026-september-two-contact",
+        "maguire-bowler-2026-navier-stokes-controversy"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-302",
+      "text": "Buckmaster’s statement quotes the career remark and describes offers to coordinate releases or have him write OpenAI’s Navier–Stokes result without Alpöge.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.97,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Bubeck and Altman corroborate the broad rewrite proposal; Bubeck acknowledges the career wording while disputing intent and the removal characterization.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "buckmaster-2026-navier-stokes-statement",
+        "bubeck-2026-navier-stokes-response",
+        "altman-2026-navier-stokes-defense"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-303",
+      "text": "Buckmaster expressly says in his initial statement that he does not know whether his and Alpöge’s data was used by OpenAI.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Page 4 states this directly; later suspicion is not an admission in this initial statement.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "buckmaster-2026-navier-stokes-statement",
+        "maguire-bowler-2026-navier-stokes-controversy"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-304",
+      "text": "The publication discussions exerted coercive pressure on Buckmaster to accept an account of authorship and credit shaped by institutional rivalry.",
+      "type": "[H]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.75,
+      "operationalization": "Check the cited primary record, versions and counterevidence. The career remark and affiliation restriction support this interpretation; coercive intent is disputed and there is no complete recording.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "Complete contemporaneous correspondence and recordings showing no conditional pressure and a materially different negotiation context."
+      ],
+      "source_ids": [
+        "buckmaster-2026-navier-stokes-statement",
+        "bubeck-2026-navier-stokes-response",
+        "alpoge-2026-training-authorship-response",
+        "altman-2026-navier-stokes-defense"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-305",
+      "text": "Buckmaster’s September 8 follow-up calls the situation “absolute academic malpractice” and says, as he understands it, their unpublished hypodissipative result was part of OpenAI’s training data.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.98,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Verified as his later allegation, not as a verified account of training ingestion.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "buckmaster-2026-training-and-malpractice-posts",
+        "bastian-2026-navier-stokes-trust"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-306",
+      "text": "OpenAI trained on Buckmaster and Alpöge’s unpublished mathematical work and that training materially helped its Navier–Stokes result.",
+      "type": "[H]",
+      "domain": "INST",
+      "evidence_level": "E6",
+      "credence": 0.35,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Not established. OpenAI leaves training influence open; no dataset manifest, account-specific lineage or causal ablation was supplied.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "Audited exclusion of all relevant original and derived data from relevant checkpoints, or a controlled ablation establishing no material influence."
+      ],
+      "source_ids": [
+        "buckmaster-2026-training-and-malpractice-posts",
+        "openai-2026-navier-stokes-data-response",
+        "alpoge-2026-training-authorship-response",
+        "thom-2026-unpublished-math-transparency"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-307",
+      "text": "The bibliography screenshot amplified by Buckmaster omits Córdoba and Martínez-Zoroa, whereas the PDF retrieved on September 10 cites their forced-blowup work and discusses its relation to the construction.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E4",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Confirmed against independently archived September 8 PDFs: 16 references at 17:29:48 UTC, 22 at 20:04:49 UTC. The later copy includes the previously missing Córdoba/Martínez-Zoroa literature. This verifies the omission and amendment, not plagiarism or motivation.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "buckmaster-2026-training-and-malpractice-posts",
+        "openai-2026-navier-stokes-solution"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-308",
+      "text": "Alpöge says he contacted OpenAI on Wednesday September 2 to explain that the collaboration was personal and used both Claude and Codex; Bubeck independently acknowledges Wednesday contact.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.92,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Contact date corroborated; full wording and receipt by all leadership remain participant-reported.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "alpoge-2026-september-two-contact",
+        "bubeck-2026-navier-stokes-response",
+        "fernandez-perez-2026-navier-stokes-plagiarism-dispute"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-309",
+      "text": "The personal-collaboration account conflicts with Bubeck’s interpretation of the discussions as a proxy negotiation with Anthropic.",
+      "type": "[T]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.9,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Both positions are explicit; no employment or IP agreement was reviewed.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "Agreements or contemporaneous instructions establishing an authorized institutional project."
+      ],
+      "source_ids": [
+        "alpoge-2026-september-two-contact",
+        "bubeck-2026-navier-stokes-response",
+        "buckmaster-2026-navier-stokes-statement"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-310",
+      "text": "Alpöge says OpenAI’s proof resembles another Euler approach the pair had explored, rather than only their released Euler proof.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.97,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Verified as a participant assertion. The other manuscript and time-stamped Codex history were not public in the captured record.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "alpoge-2026-training-authorship-response",
+        "buckmaster-2026-training-and-malpractice-posts"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-311",
+      "text": "Alpöge states he would have welcomed collaboration and did not regard broad coauthorship with OpenAI staff as an obstacle.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.98,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Directly stated; does not contradict his refusal of specific later calls.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "alpoge-2026-training-authorship-response",
+        "alpoge-2026-september-two-contact",
+        "bastian-2026-navier-stokes-trust"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-312",
+      "text": "OpenAI publicly denies that its researchers or agents saw the pair’s work before publication or accessed specific user data to solve this problem.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Verified denial, not independent verification that access did not occur.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "openai-2026-navier-stokes-data-response",
+        "openai-2026-navier-stokes-solution",
+        "wired-2026-navier-stokes-discovery-dispute",
+        "brown-2026-navier-stokes-access-denial"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-313",
+      "text": "OpenAI explicitly says it cannot rule out that de-identified data derived from the researchers’ product usage helped improve its models.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Exact caveat is present in the official response and launch article.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "openai-2026-navier-stokes-data-response",
+        "openai-2026-navier-stokes-solution",
+        "wired-2026-navier-stokes-discovery-dispute",
+        "maguire-bowler-2026-navier-stokes-controversy"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-314",
+      "text": "The official training caveat establishes that the researchers’ data was actually ingested or that any contract was breached.",
+      "type": "[H]",
+      "domain": "INST",
+      "evidence_level": "E6",
+      "credence": 0.03,
+      "operationalization": "Check the cited primary record, versions and counterevidence. The inference does not follow. The caveat leaves both ingestion and causal contribution unresolved; account terms/settings are unknown.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "The same non-exclusion caveat is compatible with an audited absence of ingestion and breach; its wording makes no positive assertion of either."
+      ],
+      "source_ids": [
+        "openai-2026-navier-stokes-data-response",
+        "openai-2026-api-data-controls",
+        "buckmaster-2026-navier-stokes-statement"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-315",
+      "text": "Bubeck acknowledges saying he did not understand why Buckmaster would risk his career, apologizes for the wording, and says he retracted it immediately.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Acknowledged remark and public apology; immediate retraction is only Bubeck’s account.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "bubeck-2026-navier-stokes-response",
+        "buckmaster-2026-navier-stokes-statement",
+        "maguire-bowler-2026-navier-stokes-controversy"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-316",
+      "text": "Bubeck says his affiliation objection concerned Alpöge authoring a rewrite of OpenAI’s proof, and denies asking to remove him from his own work.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Explicit narrower denial; it does not deny an affiliation-based objection to the proposed new paper.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "bubeck-2026-navier-stokes-response",
+        "altman-2026-navier-stokes-defense",
+        "maguire-bowler-2026-navier-stokes-controversy"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-317",
+      "text": "Bubeck’s posted screenshot contains an offer to coordinate releases, recognize the pair’s priority and share prompts, and identifies the claimed theorem as forced blowup on R3 and T3.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.96,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Visually inspected screenshot; authenticity is participant-attributed and the excerpt does not include the complete later negotiation.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "bubeck-2026-navier-stokes-response",
+        "buckmaster-2026-navier-stokes-statement"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-318",
+      "text": "Altman confirms rumors motivated OpenAI’s attempt and describes an offer for Buckmaster to lead a rewrite while finding an equivalent offer to Alpöge difficult because of his Anthropic employment.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.98,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Matches the central institutional facts in Bubeck’s response.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "altman-2026-navier-stokes-defense",
+        "openai-2026-navier-stokes-solution",
+        "bubeck-2026-navier-stokes-response"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-319",
+      "text": "Altman’s defense establishes that all OpenAI participants acted with integrity and generosity throughout the discussions.",
+      "type": "[H]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.3,
+      "operationalization": "Check the cited primary record, versions and counterevidence. A disputed evaluation; the confirmed career remark and disagreement about credit prevent treating it as an established fact.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "Authenticated communications showing coercion, knowingly false claims, or credit conditions unrelated to contribution."
+      ],
+      "source_ids": [
+        "altman-2026-navier-stokes-defense",
+        "buckmaster-2026-navier-stokes-statement",
+        "alpoge-2026-september-two-contact"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-320",
+      "text": "Thom quotes a prior two-part question about training and solving-time access and Sellke’s answer, “Regarding your conversations with ChatGPT: that did not happen.”",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.93,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Verified as Thom’s published account; original email files were not independently authenticated.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "thom-2026-unpublished-math-transparency"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-321",
+      "text": "Thom states he disabled model training on June 29 and argues this leaves earlier conversations and derivatives unresolved.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.97,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Stated in part 2/3 and a separate reply; year inferred from the September 2026 discussion.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "thom-2026-unpublished-math-transparency"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-322",
+      "text": "De-identification of research conversations does not by itself remove their mathematical ideas or settle credit for their subsequent use.",
+      "type": "[T]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.95,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Distinguishes identity protection from information content; an empirical data-lineage audit is still needed in any individual case.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "A demonstrated transformation removing all relevant technical content, not just identifying metadata."
+      ],
+      "source_ids": [
+        "thom-2026-unpublished-math-transparency",
+        "openai-2026-navier-stokes-data-response",
+        "alpoge-2026-training-authorship-response"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-323",
+      "text": "Tao explicitly argues that even a rumor of promising research can trigger massive AI effort and incentivize researchers to stop sharing directions.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Part 3/4 states the mechanism; these reports repeat it rather than independently measuring the effect.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "tao-2026-promising-problems-open-science",
+        "bastian-2026-navier-stokes-trust",
+        "fernandez-perez-2026-navier-stokes-plagiarism-dispute"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "RISK-2026-300",
+      "text": "Rewarding rapid opaque solution extraction over explanation and problem cultivation can reduce open sharing and weaken future mathematical discovery.",
+      "type": "[H]",
+      "domain": "RISK",
+      "evidence_level": "E5",
+      "credence": 0.7,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Plausible incentive mechanism with an illustrative case; long-run net effect is not measured.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "Longitudinal evidence showing equal or greater early sharing, useful problem generation and accessible explanatory output despite comparable competitive incentives."
+      ],
+      "source_ids": [
+        "tao-2026-promising-problems-open-science",
+        "buckmaster-2026-navier-stokes-statement",
+        "openai-2026-navier-stokes-solution"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "ECON-2026-300",
+      "text": "WIRED reports Mark Chen described the compute expenditure for OpenAI’s mathematical effort as “in the millions of dollars.”",
+      "type": "[F]",
+      "domain": "ECON",
+      "evidence_level": "E4",
+      "credence": 0.95,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Verified as an on-record reported cost statement, not audited expenditure. Scope is the described mathematical effort, not a measured general cost per theorem.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "wired-2026-navier-stokes-discovery-dispute",
+        "openai-2026-navier-stokes-solution"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "TECH-2026-303",
+      "text": "WIRED attributes an “unforced Euler” priority statement to Bubeck, but Buckmaster and Alpöge’s released Euler paper explicitly concerns smooth forcing.",
+      "type": "[F]",
+      "domain": "TECH",
+      "evidence_level": "E3",
+      "credence": 0.98,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Direct textual discrepancy; the paper and OpenAI blog agree on forced Euler for the pair.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "wired-2026-navier-stokes-discovery-dispute",
+        "buckmaster-2026-navier-stokes-statement",
+        "openai-2026-navier-stokes-solution"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-324",
+      "text": "Wohlwend’s timeline distinguishes the pair’s intermediate fluid results from a claimed solution to the Navier–Stokes Millennium problem.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.98,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Correct distinction; their hypodissipative result was not released in the initial package.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "wohlwend-2026-navier-stokes-timeline",
+        "buckmaster-2026-navier-stokes-statement",
+        "openai-2026-navier-stokes-solution"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-325",
+      "text": "Wohlwend characterizes OpenAI’s conduct as front-running and the career remark as a threat, while explicitly noting that the account precedes Bubeck’s side.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.98,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Verified as an early interpretation; Bubeck later acknowledges the phrase but denies threatening intent.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "wohlwend-2026-navier-stokes-timeline",
+        "bubeck-2026-navier-stokes-response"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-326",
+      "text": "Allen describes the researchers as using only publicly available AI, but participant accounts say internal Anthropic models were also involved.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.95,
+      "operationalization": "Check the cited primary record, versions and counterevidence. The simplified public-versus-private contrast is incomplete; the exact models and access histories still require documentation.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "allen-2026-private-model-competition",
+        "bubeck-2026-navier-stokes-response",
+        "alpoge-2026-september-two-contact"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "ECON-2026-301",
+      "text": "A provider can use a customer’s visible feasibility signal and a private model or compute advantage to compete without copying the customer’s data.",
+      "type": "[T]",
+      "domain": "ECON",
+      "evidence_level": "E5",
+      "credence": 0.85,
+      "operationalization": "Check the cited primary record, versions and counterevidence. The admitted rumor trigger supports the informational mechanism; universal commercial success is not established.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "Evidence that the provider cannot obtain or exploit the signal or that legal, technical and commercial constraints prevent the proposed entry."
+      ],
+      "source_ids": [
+        "allen-2026-private-model-competition",
+        "openai-2026-navier-stokes-solution",
+        "lhl-2026-ai-value-chain",
+        "tao-2026-promising-problems-open-science"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-327",
+      "text": "Orhan publicly interprets the dispute as researchers being scooped by the lab they trusted with their work.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Verified reaction; this is not an audit of the alleged information path.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "orhan-2026-research-customer-scooping",
+        "tao-2026-promising-problems-open-science",
+        "lhl-2026-ai-value-chain"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "RISK-2026-301",
+      "text": "Perceived provider competition can damage researchers’ willingness to share work even when data misuse is not established.",
+      "type": "[H]",
+      "domain": "RISK",
+      "evidence_level": "E5",
+      "credence": 0.8,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Supported as a trust mechanism; no adoption or behavior effect size is measured.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "Researcher behavior and trust measures remain unchanged after comparable well-publicized disputes."
+      ],
+      "source_ids": [
+        "orhan-2026-research-customer-scooping",
+        "tao-2026-promising-problems-open-science",
+        "maguire-bowler-2026-navier-stokes-controversy"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-328",
+      "text": "Wolf criticizes alleged communication and authorship pressure but explicitly says to wait and hear the other side.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Both positions appear in the two-post thread.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "wolf-2026-mathematics-marketing-pressure",
+        "bubeck-2026-navier-stokes-response"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-329",
+      "text": "Control of scientific announcements by dominant AI providers can create conflicts between marketing goals and research-community norms.",
+      "type": "[H]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.8,
+      "operationalization": "Check the cited primary record, versions and counterevidence. The documented credit negotiation illustrates a conflict; prevalence across science is unknown.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "Transparent contribution-based publication processes consistently operate independently of competitive marketing constraints."
+      ],
+      "source_ids": [
+        "wolf-2026-mathematics-marketing-pressure",
+        "buckmaster-2026-navier-stokes-statement",
+        "altman-2026-navier-stokes-defense",
+        "tao-2026-promising-problems-open-science"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-330",
+      "text": "Taylor-King interprets the controversy as a warning about prompt monitoring and predicts pharma restrictions on AI tools.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Verified as interpretation and prediction; the source does not demonstrate monitoring.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "taylor-king-2026-drug-discovery-trust",
+        "openai-2026-navier-stokes-data-response",
+        "openai-2026-navier-stokes-solution"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "RISK-2026-302",
+      "text": "Following this controversy, pharma firms will materially restrict frontier AI use or add internal controls over unpublished target information.",
+      "type": "[P]",
+      "domain": "RISK",
+      "evidence_level": "E5",
+      "credence": 0.6,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Prospective claim; requires follow-up over the next 12 months, not inference from social engagement.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "No material policy or usage change among sampled pharma firms by September 2027, controlling for other drivers."
+      ],
+      "source_ids": [
+        "taylor-king-2026-drug-discovery-trust",
+        "maguire-bowler-2026-navier-stokes-controversy",
+        "lhl-2026-ai-value-chain"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-331",
+      "text": "The essay explicitly distinguishes training on content, ownership of deployment byproducts and provider competition as three different mechanisms.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Sections 1–2 state the distinction. The current case shows why the mechanisms should remain separate.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "lhl-2026-ai-value-chain",
+        "openai-2026-navier-stokes-data-response",
+        "openai-2026-navier-stokes-solution"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-332",
+      "text": "Enterprise no-training defaults establish that no unpublished mathematical data from these researchers could have influenced OpenAI’s model.",
+      "type": "[H]",
+      "domain": "INST",
+      "evidence_level": "E6",
+      "credence": 0.02,
+      "operationalization": "Check the cited primary record, versions and counterevidence. The inference is invalid without the researchers’ products, account tiers, opt-ins, dates and applicable terms.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "Records showing the researchers used products or settings outside the claimed enterprise exclusion, or an audited failure of the applicable exclusion."
+      ],
+      "source_ids": [
+        "lhl-2026-ai-value-chain",
+        "openai-2026-api-data-controls",
+        "openai-2026-navier-stokes-data-response"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "ECON-2026-302",
+      "text": "Customer-controlled models and workflows reduce exposure and exit dependence, but do not by themselves prevent competition from a stronger private model after a research opportunity becomes visible.",
+      "type": "[T]",
+      "domain": "ECON",
+      "evidence_level": "E5",
+      "credence": 0.9,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Mechanistic extension of the essay; distinguishes control of disclosure from competitive capability.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "Evidence that control of disclosure and switching also eliminates the relevant private capability or scale advantage."
+      ],
+      "source_ids": [
+        "lhl-2026-ai-value-chain",
+        "openai-2026-navier-stokes-solution",
+        "tao-2026-promising-problems-open-science",
+        "allen-2026-private-model-competition"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-333",
+      "text": "The Decoder links Buckmaster’s later malpractice allegation and Barak’s defense that the model did not need hints.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E4",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Both linked primary sources were recovered and match the attributed positions.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "bastian-2026-navier-stokes-trust",
+        "buckmaster-2026-training-and-malpractice-posts",
+        "barak-2026-navier-stokes-hints-defense"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "TECH-2026-304",
+      "text": "OpenAI’s model training began only after the September 1 rumor-triggered Millennium evaluation.",
+      "type": "[H]",
+      "domain": "TECH",
+      "evidence_level": "E4",
+      "credence": 0.02,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Primary timeline states training since August 28 and evaluation from September 1. Conflating these dates is misleading.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "A primary dated statement or checkpoint record showing model training before September 1, 2026."
+      ],
+      "source_ids": [
+        "bastian-2026-navier-stokes-trust",
+        "openai-2026-navier-stokes-solution",
+        "maguire-bowler-2026-navier-stokes-controversy"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-334",
+      "text": "ABC quotes Zsuzsanna Dancso criticizing source and collaborator acknowledgment and Melissa Lee calling for clarity about unpublished work entered into AI systems.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E4",
+      "credence": 0.96,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Named interviews are present; underlying misconduct remains disputed.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "maguire-bowler-2026-navier-stokes-controversy",
+        "thom-2026-unpublished-math-transparency",
+        "tao-2026-promising-problems-open-science"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-335",
+      "text": "ABC preserves both the initial statement’s uncertainty about data use and Bubeck’s apology and narrower authorship defense.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E4",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Matches the recovered primary texts.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "maguire-bowler-2026-navier-stokes-controversy",
+        "buckmaster-2026-navier-stokes-statement",
+        "bubeck-2026-navier-stokes-response"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-336",
+      "text": "El País reports on September 9 that the newly published OpenAI proof had not yet received independent external verification.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E4",
+      "credence": 0.9,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Verified as a dated report; this pass also does not certify the proof or establish all later review activity.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "fernandez-perez-2026-navier-stokes-plagiarism-dispute",
+        "openai-2026-navier-stokes-solution",
+        "maguire-bowler-2026-navier-stokes-controversy"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "TECH-2026-305",
+      "text": "El País places the start of OpenAI model training on September 1, while OpenAI’s primary release says training began August 28 and evaluation began September 1.",
+      "type": "[F]",
+      "domain": "TECH",
+      "evidence_level": "E4",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Direct discrepancy between report and primary source.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "fernandez-perez-2026-navier-stokes-plagiarism-dispute",
+        "openai-2026-navier-stokes-solution"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-337",
+      "text": "Barak publicly argues that the internal model did not need hints and had first proved a stronger claim than the pair.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Verified as his defense; strength and independence remain different propositions.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "barak-2026-navier-stokes-hints-defense",
+        "bastian-2026-navier-stokes-trust",
+        "openai-2026-navier-stokes-solution"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "TECH-2026-306",
+      "text": "The ability to produce a stronger result is sufficient evidence that no unpublished customer research contributed to the model or run.",
+      "type": "[H]",
+      "domain": "TECH",
+      "evidence_level": "E6",
+      "credence": 0.02,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Invalid sufficiency inference; a stronger result can still use earlier information.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "A documented counterexample where a stronger theorem is produced using earlier unpublished research as input; capability alone cannot exclude that path."
+      ],
+      "source_ids": [
+        "barak-2026-navier-stokes-hints-defense",
+        "openai-2026-navier-stokes-data-response",
+        "thom-2026-unpublished-math-transparency"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-338",
+      "text": "Brown explicitly denies that anyone looked at Alpöge and Buckmaster’s prompts and invokes the internal model’s greater capability.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E5",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Verified statement; not independent confirmation of access controls.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "brown-2026-navier-stokes-access-denial",
+        "openai-2026-navier-stokes-data-response",
+        "fernandez-perez-2026-navier-stokes-plagiarism-dispute"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "TECH-2026-307",
+      "text": "An unaudited capability demonstration cannot establish the absence of training-data influence or unauthorized access in a particular research run.",
+      "type": "[T]",
+      "domain": "TECH",
+      "evidence_level": "E5",
+      "credence": 0.97,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Capability and provenance answer different questions; both should be tested separately.",
+      "assumptions": [
+        "Mechanism or inference is bounded by the stated conditions; no universal effect assumed."
+      ],
+      "falsifiers": [
+        "A valid method that establishes absence of specific training or access paths from capability scores alone, without additional process or data-lineage evidence."
+      ],
+      "source_ids": [
+        "brown-2026-navier-stokes-access-denial",
+        "openai-2026-navier-stokes-data-response",
+        "barak-2026-navier-stokes-hints-defense"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-339",
+      "text": "OpenAI’s API documentation states that since March 1, 2023 API data is not used to train or improve models unless the customer explicitly opts in.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E4",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. Explicit in the official data guide. Applies to API policy, not all products by assumption.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "openai-2026-api-data-controls",
+        "lhl-2026-ai-value-chain"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    },
+    {
+      "id": "INST-2026-340",
+      "text": "OpenAI’s API documentation allows retention of abuse-monitoring logs containing prompts, responses and derived metadata, distinct from model training.",
+      "type": "[F]",
+      "domain": "INST",
+      "evidence_level": "E4",
+      "credence": 0.99,
+      "operationalization": "Check the cited primary record, versions and counterevidence. The guide describes default retention up to 30 days and specified exceptions and controls.",
+      "assumptions": [
+        "Attribution does not independently establish the underlying allegation."
+      ],
+      "falsifiers": [
+        "Authenticated source records contradicting the attribution or chronology."
+      ],
+      "source_ids": [
+        "openai-2026-api-data-controls"
+      ],
+      "first_extracted": "2026-09-10",
+      "last_updated": "2026-09-10",
+      "extracted_by": "codex",
+      "version": 1
+    }
+  ]
+}

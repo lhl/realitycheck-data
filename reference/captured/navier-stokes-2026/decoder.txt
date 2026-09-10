@@ -1,0 +1,68 @@
+OpenAI's millennium proof dispute raises the question of whether researchers can trust AI labs
+Matthias Bastian
+View the LinkedIn Profile of Matthias Bastian
+Sep 9, 2026
+Key Points
+In the dispute over AI-generated evidence for a mathematical Millennium Problem, researcher Tristan Buckmaster accuses OpenAI of using his drafts, pressuring him, and rejecting his co-author Levent Alpöge—who is employed by Anthropic—as an author.
+OpenAI CEO Sam Altman and researcher Sébastien Bubeck deny the allegations of plagiarism but admit to having specifically trained their own model following rumors of a possible solution.
+The incident raises fundamental questions about open science. Mathematician Terence Tao warns that, in the future, tech companies could mobilize massive resources based solely on rumors to overtake original research projects.
+Ask about this article…
+Search
+After mathematician Tristan Buckmaster accused OpenAI of misconduct, all parties have now gone on the record. The case raises hard questions for open science.
+The
+dispute over OpenAI's claimed AI-generated result on the Navier-Stokes equations
+has drawn public statements from everyone involved. The Navier-Stokes problem is one of the
+Clay Millennium Problems
+and carries a $1 million prize.
+Mathematician Tristan B
+uckmaster had previously leveled serious allegations against OpenAI
+, claiming that after information about his research leaked, the company pressured him, tried to remove his co-author Levent Alpöge from the paper because Alpöge works at Anthropic, and threatened him with career consequences. There's also suspicion that OpenAI may have trained its models on drafts the two researchers uploaded to Codex.
+Ad
+One thing is undisputed. By its own account, OpenAI heard rumors that Anthropic's models had solved a Millennium Problem and then pointed its own resources at the same problem. On several other points, the stories diverge.
+Ad
+Buckmaster calls it "absolute academic malpractice"
+Alpöge and Buckmaster dispute OpenAI's claim that its own solution differs significantly from theirs. They
+say they had entered a similar approach into OpenAI's systems
+. As far as Buckmaster understands, that input ended up in the training data.
+Buckmaster sees this as "absolute academic malpractice."
+OpenAI employees say
+the chance that OpenAI actually trained on the submitted solutions is low, especially if the two had disabled the option to exclude their inputs from training. Whether they did so isn't publicly known.
+OpenAI employee Boaz Barak
+also pushed back on the idea that the model needed outside help at all. "It's just cope to think that the model would have needed this. It actually started off by proving a stronger claim than they did. Anyone who has seen this model at work would not think it needs 'hints.'"
+Ad
+In
+its official blog post
+, OpenAI acknowledges the gap in certainty. "While unlikely, we cannot rule out that de-identified data derived from their usage of our products helped improve our models⁠."
+Altman backs Bubeck while Alpöge pushes back
+OpenAI CEO Sam Altman
+backed Bubeck on X
+, saying the team had "acted with integrity and generosity throughout." He said it had been suggested that Buckmaster and Alpöge should receive the award, but the team was met with "unfounded accusations of plagiarism."
+Ad
+Altman also wrote that the effort started because of "rumors on the internet last week that Anthropic's models had solved a millennium problem and we were curious if ours could do it too."
+Ad
+Alpöge contradicts Altman on one key point
+. Altman writes that it was difficult to make the same offer to Alpöge because he "who was not willing to talk or coordinate with us anyway." Alpöge says he would have liked to work with OpenAI, and the authorship question didn't matter to him. "I also like the idea of the labs cooperating, and even better on scientific progress. It’s a shame!" Alpöge writes.
+What this means for open science
+Regardless of who is right on every detail, the case raises a basic question about how AI labs interact with the research community. Rumors alone were enough for OpenAI to throw massive resources at a research problem on short notice, racing to solve it and possibly publish first. And it can't be ruled out that the company trained on data fed into its own systems.
+For academics and companies alike, the takeaway is simple. Anyone who feeds research data into OpenAI's systems risks being beaten by their own findings. Opting out of data training through settings offers thin protection at best, especially since AI labs haven't earned the benefit of the doubt on training and data practices.
+Mathematician Terence Tao, one of the most influential living mathematicians,
+warns on Mastodon
+that "even the rumor of someone working on a problem can trigger a massive amount of AI-powered effort to flatten it before the original research project has time to reach its full potential."
+"The incentives may now be pointing in the direction of no longer sharing any promising research directions with the broader community, which would reverse centuries of traditions of open science and do serious long-term damage to the future of the field," Tao writes.
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source:
+Clay Math / Millennium Problems
+|
+Alpöge / Statement
+|
+Buckmaster / Fraud allegation
+|
+Boaz Barak / Training data
+|
+Bubeck / Apology
+|
+Sam Altman / Defense
+|
+Terence Tao / Warning

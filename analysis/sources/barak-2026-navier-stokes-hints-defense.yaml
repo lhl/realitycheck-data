@@ -1,0 +1,69 @@
+sources:
+- id: barak-2026-navier-stokes-hints-defense
+  title: Defense that the model did not need mathematical hints
+  author:
+  - Boaz Barak
+  year: 2026
+  type: SOCIAL
+  url: https://x.com/boazbaraktcs/status/2097394435092861410
+  analysis_file: analysis/sources/barak-2026-navier-stokes-hints-defense.md
+  reliability: 0.8
+  topics:
+  - navier-stokes
+  - research-credit
+  - customer-data
+  - frontier-lab-competition
+  domains:
+  - INST
+  - TECH
+  claims_extracted:
+  - INST-2026-337
+  - TECH-2026-306
+  - INST-2026-333
+  - TECH-2026-307
+  bias_notes: 'Source reliability is scope-dependent: direct records support attribution; motives, private conduct
+    and technical validity require separate checks.'
+claims:
+- id: INST-2026-337
+  text: Barak publicly argues that the internal model did not need hints and had first proved a stronger claim than
+    the pair.
+  type: '[F]'
+  domain: INST
+  evidence_level: E5
+  credence: 0.99
+  operationalization: Check the cited primary record, versions and counterevidence. Verified as his defense; strength
+    and independence remain different propositions.
+  assumptions:
+  - Attribution does not independently establish the underlying allegation.
+  falsifiers:
+  - Authenticated source records contradicting the attribution or chronology.
+  source_ids:
+  - barak-2026-navier-stokes-hints-defense
+  - bastian-2026-navier-stokes-trust
+  - openai-2026-navier-stokes-solution
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1
+- id: TECH-2026-306
+  text: The ability to produce a stronger result is sufficient evidence that no unpublished customer research contributed
+    to the model or run.
+  type: '[H]'
+  domain: TECH
+  evidence_level: E6
+  credence: 0.02
+  operationalization: Check the cited primary record, versions and counterevidence. Invalid sufficiency inference;
+    a stronger result can still use earlier information.
+  assumptions:
+  - Mechanism or inference is bounded by the stated conditions; no universal effect assumed.
+  falsifiers:
+  - A documented counterexample where a stronger theorem is produced using earlier unpublished research as input;
+    capability alone cannot exclude that path.
+  source_ids:
+  - barak-2026-navier-stokes-hints-defense
+  - openai-2026-navier-stokes-data-response
+  - thom-2026-unpublished-math-transparency
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1

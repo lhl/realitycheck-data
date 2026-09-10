@@ -1,0 +1,10 @@
+Apply this situation to the economy and you see why there are big problems ahead
+The situation:
+-two math whizzes leverage the latest *publicly available* AI to work on solving Navier-Stokes. They’re onto something.
+-openAI sees it, wants to win, so puts 10,000 agents from their latest *private*  model that is already light-years ahead of what’s publicly available on it
+-they solve it in just a few days
+The economy problem
+-let’s say I leverage the latest publicly available model and find a way to detect skin cancer. I’ve spent tens of thousands on tokens, proven it can work. I get investors and build a company. A path to saving many lives and making hundreds of millions is clear
+-openAI (or Google or Meta or Anthropic) see this hundred million opportunity and point their private most-advanced AI model and 10,000 agents toward my idea. In a few days, they win.
+Repeat this thought experiment for pharma, legal, medicine, advanced materials, software…
+https://x.com/j_g_allen/status/2097374643518640382

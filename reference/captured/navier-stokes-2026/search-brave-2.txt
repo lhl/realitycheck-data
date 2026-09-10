@@ -1,0 +1,61 @@
+"Navier Stokes" "OpenAI" data training - Brave Search
+Query contains
+search operators
+Ignore operators
+More
+Reddit
+reddit.com
+› r/wallstreetbets  › [ removed by moderator ]
+r/wallstreetbets on Reddit: [ Removed by moderator ]
+1 day ago -
+• ⁠Sep 6th: OpenAI's Sebastien Bubeck tells Tristan that they solved the $1,000,000 Millenium Prize Navier Stokes problem. The approach is very similar to Tristan & Levent's approach to the non-Millenium problem. • ⁠Tristan is suspicious of the timing, as only few others were trying this approach. OpenAI says the model didn't access his user data directly, but leaves unanswered whether Tristan's chat conversations were part of the training.
+Reddit
+reddit.com
+› r/openai  › openai stole the navier stokes solution
+r/OpenAI on Reddit: OpenAI stole the Navier Stokes solution
+2 days ago -
+As part of the press release they clearly say that OpenAI can't guarantee that one of their agents didn't look at the user chats to derive the solution.
+Levent had been working on this for more than a year and the agents just went through his personal chats.
+None of our chats is safe, OpenAI can and will steal everything at will.
+Top answer
+1 of 5
+64
+"the agents went through his personal chats" is a gross misunderstanding of how AI works.
+2 of 5
+41
+trash post that shows your deep lack of reading comprehension and overall understanding of what is even going on let alone common sense, which otherwise tells you someone who steals work doesn’t publicly mention the people from whom they stole
+Reddit
+reddit.com
+› r/mathematics  › on the navier–stokes millennium prize problem
+r/mathematics on Reddit: On the Navier–Stokes Millennium Prize Problem
+2 days ago -
+To an extent they can’t. Even ... of its data comes from. It’s obviously making major contributions but exactly where credit lies in its sources gets very difficult to say. ... OpenAI may have its ethical issues but they're not just faking math proofs while publishing the papers where the whole world can analyze and call them out on mistakes, that's just silly ... Well they at least solved the Jacobian conjecture, its pretty trivial to verify. Their article for Navier Stokes would have ...
+ABC News
+abc.net.au
+› news  › 2026-09-10  › openai-navier-stokes-millennium-problem-claims  › 107132242
+Controversy erupts as OpenAI claims solution to Navier Stokes maths problem - ABC News
+3 hours ago -
+"I was told the model did not look up user data. "I asked again, about training, and I did not get an answer." Professor Buckmaster said he was presented with two options: Option one: The pair posts their Euler result and OpenAI post its Navier-Stokes result the next day, saying the pair deserved the prize ·
+Reddit
+reddit.com
+› r/physics  › navier-stokes millennium problem solved
+r/Physics on Reddit: Navier-Stokes Millennium Problem Solved
+2 days ago -
+https://openai.com/index/navier-stokes-solution/
+Top answer
+1 of 5
+1204
+People should know: there is drama going on about who deserves credit for this. There is a possibility that OpenAI used some unpublished work from other researchers, even though they have claimed otherwise in the announcement above: https://cims.nyu.edu/~tristanb/statement.pdf
+2 of 5
+855
+Two proposals were offered to me. The first was that we post our Euler result, and that OpenAI post its Navier-Stokes result the next day. The second was that, after posting Euler, I alone write a paper presenting the Navier-Stokes result, acknowledging that an internal OpenAI model had resolved it. Sebastien twice asserted that he wanted Levent removed from authorship, and said it would all be simple if only it were not the case that, and it was so annoying that, Levent works at Anthropic. It was also said that if OpenAI posted after us, they would say that we deserved the Clay Prize, and that we were the “closest humans to the problem”. I declined both offers. I said that if OpenAI released its result in the way proposed I would go public with what happened. The reply was, “Why would you ruin your career?” I replied that I am an academic, and asked why he thought going public would ruin my career. The reply was, “If you don’t want me to be nice, then I don’t have to be nice.” This is fucked up.
+Reddit
+reddit.com
+› r/accelerate  › openai solved navier stokes
+r/accelerate on Reddit: OpenAI solved Navier Stokes
+2 days ago -
+I recommend everyone read the official press release at https://openai.com/index/navier-stokes-solution/. I am still shaking in awe.
+Google
+Bing
+Mojeek
+Next

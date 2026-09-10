@@ -1,0 +1,18 @@
+Brave Search
+This page needs JavaScript to function.
+Your request has been flagged as being suspicious and Brave Search decided to schedule a captcha for
+    you. Unfortunately,
+your browser does not seem to have JavaScript enabled.
+Here are a few things you can do:
+If you are using the
+Brave Browser
+with scripts blocked, you can enable scripts
+        again for Brave Search then reload this page.
+If you are using the
+Tor browser
+with its
+safest
+security level, you can selectively enable JavaScript on Brave Search via the noscript extension
+        toggle then reload this page.
+If the above does not match your situation, make sure that your browser supports JavaScript
+        and that no extension is currently disabling JavaScript on Brave Search.

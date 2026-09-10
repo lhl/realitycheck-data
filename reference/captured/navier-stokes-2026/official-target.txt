@@ -1,0 +1,5 @@
+We congratulate Levent Alpöge and Tristan Buckmaster on their remarkable mathematical work.
+We (the researchers and the agents) did not see any of their work through any means until they released it publicly — in particular, no specific user data was accessed in order to solve this problem.
+While unlikely, we cannot rule out that de-identified data derived from their usage of our products helped improve our models.
+However, our proofs differ significantly and even the precise results proved are different in the Euler case (forced vs. unforced).
+https://x.com/OpenAI/status/2097374640582668336

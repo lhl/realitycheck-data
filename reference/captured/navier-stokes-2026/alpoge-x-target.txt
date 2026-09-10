@@ -1,0 +1,23 @@
+levent
+@__alpoge__
+“we cannot rule out that de-identified data derived from their usage of our products helped improve our models.”
+
+i mean props to them for straight coming clean.
+
+(so far the proof looks more along the lines of another euler blowup proof we had, off of whose ansatz naming we were making really stupid puns like “smooth criminale”, unlike the much better “ideal fluids explode”, Tristan)
+
+so i’ll now give a bit on my thinking here. i actually woulda been pumped to collaborate on this, there are a lot of people at oai i like (ok, clearly some were indirectly dicks to me because of being part of the whole situation, but im a big boy, i still like them), idgaf about authorship on that step anyway, coulda been me Tristan and every fte at oai for all i care (on that Tristan would disagree:p). but on hearing the loud convo in the hallway, especially the part where a millennium prize was offered if i’d just be removed from the paper, it was kinda clear the die had been cast and things were locked. pretty wacky, unstrategic, and unnecessary, since on my side things were mostly me and claude having a good time yoloing random stuff in the corner rather than anything institutional. i also like the idea of the labs cooperating, and even better on scientific progress. it’s a shame!
+OpenAI
+@OpenAI
+Sep 8
+We congratulate Levent Alpöge and Tristan Buckmaster on their remarkable mathematical work.
+
+We (the researchers and the agents) did not see any of their work through any means until they released it publicly — in particular, no specific user data was accessed in order to solve
+Show more
+5:57 PM · Sep 8, 2026
+1.6M
+Views
+248
+1.1K
+12K
+2.2K

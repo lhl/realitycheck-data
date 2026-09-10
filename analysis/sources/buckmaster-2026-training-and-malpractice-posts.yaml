@@ -1,0 +1,90 @@
+sources:
+- id: buckmaster-2026-training-and-malpractice-posts
+  title: Training chronology and academic-malpractice criticism
+  author:
+  - Tristan Buckmaster
+  year: 2026
+  type: SOCIAL
+  url: https://mastodon.social/@tristanbuckmaster/117236471352470303
+  analysis_file: analysis/sources/buckmaster-2026-training-and-malpractice-posts.md
+  reliability: 0.8
+  topics:
+  - navier-stokes
+  - research-credit
+  - customer-data
+  - frontier-lab-competition
+  domains:
+  - INST
+  claims_extracted:
+  - INST-2026-305
+  - INST-2026-306
+  - INST-2026-307
+  - INST-2026-310
+  - INST-2026-333
+  bias_notes: 'Source reliability is scope-dependent: direct records support attribution; motives, private conduct
+    and technical validity require separate checks.'
+claims:
+- id: INST-2026-305
+  text: Buckmaster’s September 8 follow-up calls the situation “absolute academic malpractice” and says, as he understands
+    it, their unpublished hypodissipative result was part of OpenAI’s training data.
+  type: '[F]'
+  domain: INST
+  evidence_level: E5
+  credence: 0.98
+  operationalization: Check the cited primary record, versions and counterevidence. Verified as his later allegation,
+    not as a verified account of training ingestion.
+  assumptions:
+  - Attribution does not independently establish the underlying allegation.
+  falsifiers:
+  - Authenticated source records contradicting the attribution or chronology.
+  source_ids:
+  - buckmaster-2026-training-and-malpractice-posts
+  - bastian-2026-navier-stokes-trust
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1
+- id: INST-2026-306
+  text: OpenAI trained on Buckmaster and Alpöge’s unpublished mathematical work and that training materially helped
+    its Navier–Stokes result.
+  type: '[H]'
+  domain: INST
+  evidence_level: E6
+  credence: 0.35
+  operationalization: Check the cited primary record, versions and counterevidence. Not established. OpenAI leaves
+    training influence open; no dataset manifest, account-specific lineage or causal ablation was supplied.
+  assumptions:
+  - Mechanism or inference is bounded by the stated conditions; no universal effect assumed.
+  falsifiers:
+  - Audited exclusion of all relevant original and derived data from relevant checkpoints, or a controlled ablation
+    establishing no material influence.
+  source_ids:
+  - buckmaster-2026-training-and-malpractice-posts
+  - openai-2026-navier-stokes-data-response
+  - alpoge-2026-training-authorship-response
+  - thom-2026-unpublished-math-transparency
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1
+- id: INST-2026-307
+  text: The bibliography screenshot amplified by Buckmaster omits Córdoba and Martínez-Zoroa, whereas the PDF retrieved
+    on September 10 cites their forced-blowup work and discusses its relation to the construction.
+  type: '[F]'
+  domain: INST
+  evidence_level: E4
+  credence: 0.99
+  operationalization: 'Check the cited primary record, versions and counterevidence. Confirmed against independently
+    archived September 8 PDFs: 16 references at 17:29:48 UTC, 22 at 20:04:49 UTC. The later copy includes the previously
+    missing Córdoba/Martínez-Zoroa literature. This verifies the omission and amendment, not plagiarism or motivation.'
+  assumptions:
+  - Attribution does not independently establish the underlying allegation.
+  falsifiers:
+  - Authenticated source records contradicting the attribution or chronology.
+  source_ids:
+  - buckmaster-2026-training-and-malpractice-posts
+  - openai-2026-navier-stokes-solution
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1

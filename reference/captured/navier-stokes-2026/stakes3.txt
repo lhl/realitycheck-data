@@ -1,0 +1,185 @@
+Thread by @Thom_Wolf on Thread Reader App – Thread Reader App
+Share this page!
+×
+Post
+Share
+Email
+Enter URL or ID to Unroll
+×
+Unroll Thread
+You can paste full URL like: https://x.com/threadreaderapp/status/1644127596119195649
+or just the ID like: 1644127596119195649
+How to get URL link on X (Twitter) App
+On the Twitter thread, click on
+or
+icon on the bottom
+Click again on
+or
+Share Via icon
+Click on
+Copy Link to Tweet
+Paste it above and click "Unroll Thread"!
+More info at
+Twitter Help
+Thomas Wolf
+Subscribe
+@Thom_Wolf
+Sep  8
+•
+2 tweets
+•
+2 min read
+•
+Read on X
+Bookmark
+Gift Link
+Save as PDF
+wtf is this way to handle mathematicians work and scientific communication
+TLDR: Leven and Tristan worked over several months on one of the Millenium Prize Problems with various AIs to reach final interesting results. OpenAI apparently heard about it in the last days and prompted their latest models to work on the direction Leven and Tristan found fruitful. They then tried to push for controlling communication of the result and dropping Leven from authorship with some very bad taste social pressure.
+Hope this is not a glimpse of the future we’ll get in science research with these dominating players playing marketing games hurtful for the real scientific community.
+https://x.com/Thom_Wolf/status/2097175612930539793
+Now even if it’s triggering to read Tristan’s report we should wait and hear the other side of the story as well
+https://twitter.com/sebastienbubeck/status/2097214122471432349
+• • •
+Missing some Tweet in this thread? You can try to
+force a refresh
+Post
+Share
+Email
+Keep Current with
+Thomas Wolf
+Stay in touch and get notified when new unrolls are available from this author!
+Add to "My Authors"
+Read all threads
+This Thread may be Removed Anytime!
+Twitter may remove this content at anytime! Save it as PDF for later use!
+Save this thread as PDF
+Try unrolling a thread yourself!
+Follow
+@ThreadReaderApp
+to mention us!
+From a Twitter thread mention us with a keyword "unroll"
+@threadreaderapp unroll
+Practice here
+first or read more on our
+help page
+!
+More from @Thom_Wolf
+Thomas Wolf
+@Thom_Wolf
+May 15, 2025
+A thread of my favorite recent ultra small AI models that you can run locally (text, vision, speech, video) – most of them are <1B some up to 3-4B 👇
+Running your small VLM in browser
+https://x.com/ngxson/status/1921980096421806127
+How to train your nano VLM
+https://x.com/lusxvr/status/1919766108250292224
+Read 10 tweets
+Thomas Wolf
+@Thom_Wolf
+Feb 25, 2023
+Ok friends, it's weekend, we've some time for us. So let me tell you about a possible future for AI where the largest AI spendings, in billions of dollars, in 2-3 years would be on...
+... antitrust legal fees
+A quick 🧵1/8
+let's go back to early 2000 – Microsoft was at that time the archenemy of the free and open source movements and the fight between OSS and private software was going strong
+2/8
+With smart moves like its partnership with IBM bundling Windows in IBM computers, Microsoft was able to reach a strong market-dominance in the PC world
+3/8
+Read 8 tweets
+Thomas Wolf
+@Thom_Wolf
+Dec 27, 2021
+I read a lot of books this year to broaden my horizons in AI/ML with adjacent or complementary disciplines. It was a great pleasure so I’m sharing some my reading list here with a couple of notes:
+[1/12]
+P. Miller – Theories of Developmental Psychology
+A great introduction to the major theoretical schools of child development
+Orienting yourself in a field is easier when you’re familiar with a few important researchers & how each brought new views & approaches to the field
+[2/12]
+In AI, we have G. Hinton, Y LeCun or J. Pearl, in developmental and child psychology, similar pioneers are Jean Piaget, Lev Vygotsky or Eleanor Gibson (among many others) – most of today's research is build following or against some of their ideas
+amazon.com/Theories-Devel…
+[3/12]
+Read 12 tweets
+Thomas Wolf
+@Thom_Wolf
+Dec  2, 2021
+In 2021, we've seen an explosion of grounded Langage Models: from "image/video+text" to more embodied models in "simulation+text"
+But, when tested on text benchmarks, these grounded models really struggle to improve over pure text-LM e.g T5/GPT3
+Why?
+>>
+When we, humans, read sentences like "lemons are yellow" or "the dog is barking", we have the impression to recruit visual and auditory experiences.
+Why then is it so difficult for grounded models to use multimodal inputs like we do to improve on text processing benchmarks?
+>>
+One reason might be that multimodal inputs are harder to efficiently use
+I want to talk about another option here which is:
+*langage is more abstract than we often think*
+I'll summarise this fascinating cog. science opinion piece from Lupyan & Winter
+royalsocietypublishing.org/doi/10.1098/rs…
+>>
+Read 9 tweets
+Thomas Wolf
+@Thom_Wolf
+Sep 17, 2021
+I'm not sure many people know how easy it is to share a dataset with the new versions of the
+@huggingface
+hub and Dataset library
+So I make a quick video 📺 about it 👇
+This works both for public and for private (within an org) datasets sharing
+Sorry, your browser doesn't support embedded videos
+More info:
+huggingface.co/docs/datasets/…
+And soon here:
+github.com/huggingface/da…
+And feel free to ping the awesome
+@qlhoest
+@avillanovamoral
+and our new documentation king
+@stevhliu
+about this!
+You can do exactly the same with models weights by the way!
+Read 4 tweets
+Thomas Wolf
+@Thom_Wolf
+Jan 22, 2021
+I like
+@_KarenHao
+'s work and I think I can understand her point.
+As someone a bit in the field, let me try to offer my angle on this.
+I don't usually write complex/nuanced arguments on Twitter but let's try it again for once :-)
+[Short thread]
+https://twitter.com/_KarenHao/status/1352351447803965441
+In my view, this perception of large language models is mostly due to a narrative created by a few teams leveraging large language models as an instrument of power/showcase/business
+In my view, these models:
+1/
+Are interesting artifacts to study and try to understand from a research NLP/Ethics/CL/AI point of view.
+We are not talking about creating virus or nuclear stuff here. Releasing a 1T parameters model won't blow up :) it's actually a lot harder/costly/less-usable in practice.
+Read 6 tweets
+Did Thread Reader help you today?
+Support us! We are indie developers!
+This site is made by just two indie developers on a laptop doing marketing, support and development!
+Read more about the story
+.
+Become a Premium Member
+($3/month or $30/year) and get exclusive features!
+Become Premium
+Don't want to be a Premium member but still want to support us?
+Make a small donation
+by buying us coffee ($5) or help with server cost ($10)
+Donate via Paypal
+Or Donate anonymously using crypto!
+Ethereum
+0xfe58350B80634f60Fa6Dc149a72b4DFbc17D341E
+copy
+Bitcoin
+3ATGMxNzCUFzxpMCHL5sWSt4DVtS8UqXpi
+copy
+Thank you for your support!
+Follow Us!
+Post
+Share
+Send Email!
+×
+Email the whole thread instead of just a link!
+Separate emails with commas
+Message
+Here's a great thread you should read right now!
+Send Thread As Email!
+Email Successfully Sent!

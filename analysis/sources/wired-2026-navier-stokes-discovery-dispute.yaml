@@ -1,0 +1,70 @@
+sources:
+- id: wired-2026-navier-stokes-discovery-dispute
+  title: OpenAI Just Claimed a Huge Math Discovery. Some Academics Are Crying Foul
+  author:
+  - Will Knight and Maxwell Zeff
+  year: 2026
+  type: ARTICLE
+  url: https://www.wired.com/story/openai-navier-stokes-math-discovery-academics/
+  analysis_file: analysis/sources/wired-2026-navier-stokes-discovery-dispute.md
+  reliability: 0.8
+  topics:
+  - navier-stokes
+  - research-credit
+  - customer-data
+  - frontier-lab-competition
+  domains:
+  - ECON
+  - TECH
+  claims_extracted:
+  - ECON-2026-300
+  - TECH-2026-303
+  - INST-2026-300
+  - TECH-2026-300
+  - INST-2026-312
+  - INST-2026-313
+  bias_notes: 'Source reliability is scope-dependent: direct records support attribution; motives, private conduct
+    and technical validity require separate checks.'
+claims:
+- id: ECON-2026-300
+  text: WIRED reports Mark Chen described the compute expenditure for OpenAI’s mathematical effort as “in the millions
+    of dollars.”
+  type: '[F]'
+  domain: ECON
+  evidence_level: E4
+  credence: 0.95
+  operationalization: Check the cited primary record, versions and counterevidence. Verified as an on-record reported
+    cost statement, not audited expenditure. Scope is the described mathematical effort, not a measured general
+    cost per theorem.
+  assumptions:
+  - Attribution does not independently establish the underlying allegation.
+  falsifiers:
+  - Authenticated source records contradicting the attribution or chronology.
+  source_ids:
+  - wired-2026-navier-stokes-discovery-dispute
+  - openai-2026-navier-stokes-solution
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1
+- id: TECH-2026-303
+  text: WIRED attributes an “unforced Euler” priority statement to Bubeck, but Buckmaster and Alpöge’s released
+    Euler paper explicitly concerns smooth forcing.
+  type: '[F]'
+  domain: TECH
+  evidence_level: E3
+  credence: 0.98
+  operationalization: Check the cited primary record, versions and counterevidence. Direct textual discrepancy;
+    the paper and OpenAI blog agree on forced Euler for the pair.
+  assumptions:
+  - Attribution does not independently establish the underlying allegation.
+  falsifiers:
+  - Authenticated source records contradicting the attribution or chronology.
+  source_ids:
+  - wired-2026-navier-stokes-discovery-dispute
+  - buckmaster-2026-navier-stokes-statement
+  - openai-2026-navier-stokes-solution
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1

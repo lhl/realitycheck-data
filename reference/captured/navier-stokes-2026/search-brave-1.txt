@@ -1,0 +1,22 @@
+"Buckmaster" "academic fraud" - Brave Search
+Query contains
+search operators
+Ignore operators
+More
+The Decoder
+the-decoder.com
+› startseite  › openai's millennium proof dispute raises the question of whether researchers can trust ai labs
+OpenAI's millennium proof dispute raises the question of whether researchers can trust AI labs
+1 day ago -
+Mathematician Tristan Buckmaster accuses OpenAI of academic fraud
+, CEO Sam Altman rejects the allegations. Terence Tao warns that cases like this could "reverse centuries of tradition in open science."
+Mastodon
+mastodon.social
+› @tristanbuckmaster  › 117233413705701198
+tristanbuckmaster: "Today, Levent Alpöge and I hav…" - Mastodon
+2 days ago -
+@tristanbuckmaster on training, the answer to your question is that if you didn't "opt out," your data is part of a large corpus of chats that is used for RL. Unclear when their last RL run was, and how likely it would have been for models to memorize that very small fragment of RL data. Being scooped and then pressured to commit academic fraud is the bigger story to me though.
+Google
+Bing
+Mojeek
+Next

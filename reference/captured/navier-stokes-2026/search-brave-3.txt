@@ -1,0 +1,165 @@
+"Bubeck" "authorship" "September" - Brave Search
+Query contains
+search operators
+Ignore operators
+More
+Sébastien Bubeck (born April 16, 1985) is a French-American computer scientist. He was Microsoft's vice president of applied research, distinguished scientist, and led the Machine Learning Foundations group at Microsoft Research Redmond. …
+Wikipedia
+Books
+Factsheet
+Born
+(1985-04-16) April 16, 1985 (age 41)
+Education
+École normale supérieure Paris-Saclay
+Occupation
+Computer scientist
+More about Sébastien Bubeck
+Born
+(1985-04-16) April 16, 1985 (age 41)
+Education
+École normale supérieure Paris-Saclay
+Occupation
+Computer scientist
+More about Sébastien Bubeck
+Wikipedia
+en.wikipedia.org
+› wiki  › Sébastien_Bubeck
+Sébastien Bubeck - Wikipedia
+7 hours ago -
+In
+September
+2026,
+Bubeck
+got involved in a public dispute with mathematician Tristan Buckmaster, Professor at Courant Institute of Mathematical Sciences, New York University, and Anthropic researcher, mathematician Levent Alpöge, over
+authorship
+of recent results on Euler and Navier-Stokes ...
+Work
+Honors and awards
+Controversies
+Selected publications
+Yahoo!
+yahoo.com
+› news  › science  › articles  › openai-says-solved-1m-math-213834303.html
+OpenAI Says It Solved a $1M Math Problem. A Rival Mathematician Says He Did It First
+17 hours ago -
+Buckmaster says that on September 3, amid rumors Anthropic had solved a major problem, he told a mathematician at OpenAI about the project, stressing it was personal and unaffiliated with either company ... Three days later, on a call, OpenAI's Sébastien Bubeck told him an internal model had already produced a 100-page proof for forced Navier-Stokes—the same narrow approach Buckmaster says almost nobody else was pursuing.
+BigGo Finance
+finance.biggo.com
+› news  › b05bc0db-1896-4282-9106-fb3da78adc03
+AI cracks a Millennium Prize-adjacent problem, igniting a credit war: NYU mathematician accuses OpenAI of scooping his work — BigGo Finance
+1 day ago -
+On September 7, NYU mathematician Tristan Buckmaster publicly released three fluid mechanics papers and a four-page personal statement, accusing OpenAI of not only rapidly mobilizing resources to beat him to the same problem after learning of his progress, but also proposing a publication plan that would exclude his collaborator from authorship. The named OpenAI researcher, Sébastien Bubeck, promptly denied the allegations; the following day, OpenAI published its own proof manuscript and formal verification code—but the complete recording of the key phone calls has yet to be released.
+Anothercodingblog
+anothercodingblog.com
+› another coding blog  › another daily ai newsletter - september 9
+Another Daily AI Newsletter - September 9 - by Taylor Ortiz
+19 hours ago -
+Bubeck disputes the authorship accusation and apologizes for his wording. His reply says he never asked to remove Alpöge from the researchers’ own paper. The proposal concerned rewriting OpenAI’s proof, where he considered an Anthropic employee’s involvement inappropriate.
+OfficeChai
+officechai.com
+› home  › openai’s sebastien bubeck calls tristan buckmaster’s claims of trying to take credit for fluid dynamics proofs “false and inflammatory”
+OpenAI's Sebastien Bubeck Calls Tristan Buckmaster's Claims Of Trying To Take Credit For Fluid Dynamics Proofs "False And Inflammatory"
+2 days ago -
+Buckmaster claims he was presented with two options: a coordinated joint announcement with OpenAI releasing its own Navier-Stokes claim the following day, or a plan where he alone would author a paper on the Navier-Stokes result while crediting an internal OpenAI model. He alleges Bubeck twice pushed to have Alpöge dropped from authorship entirely, citing Alpöge’s employment at Anthropic — a direct OpenAI competitor — as an “annoying” complication.
+Kingy AI
+kingy.ai
+› home  › openai releases a navier–stokes proof claim: the evidence and the dispute
+OpenAI’s Navier–Stokes Proof Claim: Evidence and Dispute
+1 day ago -
+Buckmaster’s account of the
+September 6
+discussions: According to Buckmaster, during
+September 6
+calls involving Sébastien Bubeck, OpenAI described an internal, roughly 100-page proof for forced Navier–Stokes under Clay options C and D. ...
+Glitchwire
+glitchwire.com
+› home  › news  › ai  › two teams claim progress on fluid dynamics' hardest problem. the fight over credit has already begun.
+Two Teams Claim Progress on Fluid Dynamics' Hardest Problem. The Fight Over Credit Has Already Begun. — Glitchwire
+2 days ago -
+According to Buckmaster's public statement, rumors of his and Alpöge's work reached OpenAI on September 3. He proactively contacted a mathematician affiliated with the company to clarify that this was a personal, independent collaboration with no institutional backing from either Anthropic or NYU. Three days later, on September 6, Buckmaster says he spoke twice with OpenAI technical staff member Sébastien Bubeck, who allegedly told him an internal OpenAI model had produced a roughly 100-page proof for forced Navier-Stokes.
+The Next Web
+thenextweb.com
+› home  › agi  › the mathematicians published machine-checkable proofs. openai announced its result on a call with reporters.
+The mathematicians published machine-checkable proofs. OpenAI announced its result on a call with reporters.
+2 days ago -
+Sébastien Bubeck has said the internal model solved the Euler problem by entirely different means. Buckmaster’s account also describes
+6 September
+calls in which he says he was pressed over publication and authorship.
+Venturebeat
+venturebeat.com
+› technology  › openai-solves-longstanding-math-problem-with-10-000-agent-swarm-but-cant-rule-out-benefitting-from-a-researchers-private-codex-data
+OpenAI solves longstanding math problem with 10,000-agent swarm — but can't rule out benefitting from a researcher's private Codex data | VentureBeat
+1 day ago -
+On
+September 1, word spread online that researchers associated with Anthropic might have solved two Millennium Prize Problems. OpenAI says that was what sent its newly trained internal model after the remaining problems. OpenAI technical staffer and esteemed AI researcher Sébastien Bubeck
+...
+Google
+Bing
+Mojeek
+X
+x.com
+› adiix_official  › status  › 2097356260752433344
+AdiiX on X: "Scandal in mathematics: OpenAI asked an NYU professor to cut his coauthor from the paper because the coauthor works at Anthropic. Tristan Buckmaster, professor at NYU's Courant Institute and a Clay Research Award winner, published a statement on September 8. What follows is his accoun… / X
+2 days ago -
+Scandal in mathematics: OpenAI ... coauthor works at Anthropic.
+Tristan Buckmaster, professor at NYU's Courant Institute and a Clay Research Award winner, published a statement on September 8.
+What follows is his account of ...
+Indiatimes
+indiatimes.com
+› trending
+Who is Tristan Buckmaster? NYU mathematician at centre of OpenAI Navier Stokes controversy over private Codex logs and research credit
+1 day ago -
+BUT, they do claim to have a proof for a similar (non-Millenium) Navier Stokes… https://t.co/b2CyqYPsf9 pic.twitter.com/PZIOfEyf4E— Konsti Wohlwend (@konstiwohlwend)
+September 8, 2026
+The dispute also became personal over authorship.
+The Hindu BusinessLine
+thehindubusinessline.com
+› info-tech  › openai-faces-scrutiny-over-alleged-codex-leak-for-navier-stokes  › article71448657.ece
+OpenAI faces scrutiny over alleged Codex leak for Navier-Stokes - The HinduBusinessLine
+16 hours ago -
+Then, on
+September 6,
+Buckmaster said he joined an urgent discussion called by OpenAI computer scientist Sebastien Bubeck and another company representative, where Bubeck allegedly revealed that OpenAI had committed resources worth “millions ...
+Clash Report
+clashreport.com
+› home  › world  › america  › openai solved a $1m millennium prize problem. or did it just steal the answer?
+OpenAI Solved a $1M Millennium Prize Problem. Or Did It Just Steal the Answer? · Clash Report
+18 hours ago -
+Buckmaster said OpenAI offered two arrangements during the
+September 6
+discussions. Under one, his team would publish its Euler result before OpenAI announced Navier-Stokes. Under another, he said he would write up OpenAI’s Navier-Stokes result ...
+Decrypt
+decrypt.co
+› resources  › openai-solved-1m-math-problem-rival-mathematician
+OpenAI Says It Solved a $1M Math Problem. A Rival Mathematician Says He Did It First - Decrypt
+1 day ago -
+Buckmaster says that on September 3, amid rumors Anthropic had solved a major problem, he told a mathematician at OpenAI about the project, stressing it was personal and unaffiliated with either company · Three days later, on a call, OpenAI's Sébastien Bubeck told him an internal model had already produced a 100-page proof for forced Navier-Stokes—the same narrow approach Buckmaster says almost nobody else was pursuing.
+OfficeChai
+officechai.com
+› home  › openai says it didn’t see any of buckmaster and alpöge’s work while resolving navier-stokes
+OpenAI Says It Didn't See Any Of Buckmaster And Alpöge's Work While Resolving Navier-Stokes
+2 days ago -
+The statement is OpenAI’s first formal response since Buckmaster went public on the morning of
+September 8
+with a four-page account accusing the company of learning about his and Alpöge’s unpublished research and moving to scoop it.
+OfficeChai
+officechai.com
+› home  › anthropic, openai researchers spar over what appears to be credit for progress towards solving navier-stokes equation
+Anthropic, OpenAI Researchers Spar Over What Appears To Be Credit For Progress Towards Solving Navier-Stokes Equation
+2 days ago -
+Buckmaster’s accompanying statement also alleged that OpenAI, including scientist Sebastien Bubeck, pressured him during the release — pushing to drop Alpöge from authorship and proposing deals over how a related OpenAI-claimed Navier-Stokes result should be announced.
+Times of India
+timesofindia.indiatimes.com
+› news  › technology news  › tech news
+OpenAI solves 90-year-old Navier-Stokes maths problem with 10,000 AI agents; NYU professor who spent a year on the same problem using OpenAI's own AI says: "I asked again, about training, and I did…" | - The Times of India
+1 day ago -
+He posted the results at 11:58 pm on Monday with a statement describing his calls with OpenAI researcher Sébastien Bubeck. "I asked again, about training, and I did not get an answer," he wrote of his questions about the Codex sessions. He alleges he was offered sole authorship on a paper that left Alpöge's name off, and that when he threatened to go public the response was: "Why would you ruin your career?"
+Unite.AI
+unite.ai
+› buckmaster-and-alpoge-post-ai-fluid-blowup-proofs-dispute-openai-contact
+Buckmaster and Alpöge Post AI Fluid Blowup Proofs, Dispute OpenAI Contact – Unite.AI
+2 days ago -
+The latter half of Buckmaster’s statement is his account of events beginning
+September 3, 2026
+, when, with a rumor circulating that Anthropic had resolved a major open problem, he emailed a mathematician at OpenAI to clarify that the work ...
+Next

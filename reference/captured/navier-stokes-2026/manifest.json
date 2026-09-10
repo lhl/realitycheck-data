@@ -1,0 +1,124 @@
+{
+  "captured": "2026-09-10",
+  "sources": [
+    {
+      "name": "shisa",
+      "url": "https://blog.shisa.ai/posts/ai-value-chain/",
+      "exit": 0,
+      "error": "",
+      "sha256": "fed8176dea1fec3b9d7724043b03519af7e7c52091e9297a033aa5e878956560"
+    },
+    {
+      "name": "openai",
+      "url": "https://openai.com/index/navier-stokes-solution/",
+      "exit": 0,
+      "error": "",
+      "sha256": "f382cb81e6256231559000f01a2ddf899d8811aa721b754cf06c5921d3f2fbc1"
+    },
+    {
+      "name": "buckmaster",
+      "url": "https://mastodon.social/@tristanbuckmaster/117236471352470303",
+      "exit": 0,
+      "error": "",
+      "sha256": "43e2da0cfa65bad24b88ebce09603ca85a6da04998438246fad497f0bf81b9cb"
+    },
+    {
+      "name": "buckmaster-pdf",
+      "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
+      "exit": 0,
+      "error": "",
+      "sha256": "8d7723941bcda2fa55c1e74faa6298e04c706d17ff8abd2ad01878039c621f9d"
+    },
+    {
+      "name": "alpoge-x",
+      "url": "https://x.com/__alpoge__/status/2097383870773748190",
+      "exit": 0,
+      "error": "",
+      "sha256": "e12a34ccf3a1d2fb0ea705e1412cb0027d87878554f7351c7ee40b2f15c3ce5c"
+    },
+    {
+      "name": "thom",
+      "url": "https://mathstodon.xyz/@andreasthom/117240535270608201",
+      "exit": 0,
+      "error": "",
+      "sha256": "d4daa74961d8462abf8194a37ff07ddbbf44b576efe8d57dc9fa775b9d756ad2"
+    },
+    {
+      "name": "tao",
+      "url": "https://mathstodon.xyz/@tao/117237320796901560",
+      "exit": 0,
+      "error": "",
+      "sha256": "61adc9789f02043c2bb5bd7abce9ca4ff4cd0fe918a58c40f6f33eb144f5354b"
+    },
+    {
+      "name": "wired",
+      "url": "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics/",
+      "exit": 0,
+      "error": "",
+      "sha256": "e6147dab79b92f2f9b06df0a80b67c9560695ac4f025d07f26c6630c2a0dfe07"
+    },
+    {
+      "name": "alpoge",
+      "url": "https://threadreaderapp.com/thread/2097548261666033993.html",
+      "exit": 0,
+      "error": "",
+      "sha256": "e2100f40274c83c28421f0b4b2566833a7696baa973a0a239b6838308131c34d"
+    },
+    {
+      "name": "official",
+      "url": "https://threadreaderapp.com/thread/2097375276384567642.html",
+      "exit": 0,
+      "error": "",
+      "sha256": "5240c02c8f47da8bcb1604452b91aa23879be46d15f9d988fa306d6965d943aa"
+    },
+    {
+      "name": "bubeck",
+      "url": "https://threadreaderapp.com/thread/2097379411691516310.html",
+      "exit": 0,
+      "error": "",
+      "sha256": "3de2757c3e56606d7102dd3d3c8c3cc378289d8711eed559695fc33c83898379"
+    },
+    {
+      "name": "altman",
+      "url": "https://threadreaderapp.com/thread/2097385167002415140.html",
+      "exit": 0,
+      "error": "",
+      "sha256": "f8a80d00ad83035e96a6b70a6e5a206aad0fe6170a5865f577a317735b054134"
+    },
+    {
+      "name": "report",
+      "url": "https://threadreaderapp.com/thread/2097235335034056835.html",
+      "exit": 0,
+      "error": "",
+      "sha256": "16e981c410fd209c61ad8678d562bb5822688973db0303b01a011d52b6f6a7ae"
+    },
+    {
+      "name": "stakes1",
+      "url": "https://threadreaderapp.com/thread/2097635374197510317.html",
+      "exit": 0,
+      "error": "",
+      "sha256": "1a1d4cc4dd8692c3ed271fc9eb4b1cb4473cde134daab9886a17937639de2ee6"
+    },
+    {
+      "name": "stakes2",
+      "url": "https://threadreaderapp.com/thread/2097471623490150754.html",
+      "exit": 0,
+      "error": "",
+      "sha256": "d35cb60e7bd41327c1aab9ab4e4f06cf517260c7924e662e259fb5b3133363c1"
+    },
+    {
+      "name": "stakes3",
+      "url": "https://threadreaderapp.com/thread/2097215782484607029.html",
+      "exit": 0,
+      "error": "",
+      "sha256": "e2a2a47c25c9a1773a5c1f325b3c8e7bc69fe6128824b153d906ce23115ee11a"
+    },
+    {
+      "name": "stakes4",
+      "url": "https://threadreaderapp.com/thread/2097255157020921950.html",
+      "exit": 0,
+      "error": "",
+      "sha256": "fa6a074d8c83b92f4f4e30cf364021fe3e3118648c936324ed874559d3b3a541"
+    }
+  ]
+}

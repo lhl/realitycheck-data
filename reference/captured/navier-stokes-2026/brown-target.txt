@@ -1,0 +1,78 @@
+Noam Brown on X: "I understand how, looking at today’s LLMs, people might think the only way we'd achieve NS is by using Levent’s/Tristan’s prompts. But I hope this plot conveys the model used is a huge step up from today’s LLMs. Nobody looked at Levent’s/Tristan’s prompts. That’d be insane." / X
+Post
+Log in
+Sign up
+Post
+Noam Brown on X: "I understand how, looking at today’s LLMs, people might think the only way we'd achieve NS is by using Levent’s/Tristan’s prompts. But I hope this plot conveys the model used is a huge step up from today’s LLMs. Nobody looked at Levent’s/Tristan’s prompts. That’d be insane."
+Noam Brown
+@polynoamial
+I understand how, looking at today’s LLMs, people might think the only way we'd achieve NS is by using Levent’s/Tristan’s prompts. But I hope this plot conveys the model used is a huge step up from today’s LLMs. Nobody looked at Levent’s/Tristan’s prompts. That’d be insane.
+Sebastien Bubeck
+@SebastienBubeck
+Sep 8
+I would like to clarify a few things:
+
+1) The screenshot is my reaching out to Levent to coordinate our releases. I hope it’s clear from the message that we came in with the best possible intentions.
+
+2) I never ever asked for Levent to be removed from authorship of his own work
+Show more
+5:47 PM · Sep 8, 2026
+159.7K
+Views
+91
+81
+1.6K
+248
+Log in or sign up for X
+See what’s happening and join the conversation
+Continue with phone
+Continue with Apple
+Continue with Google
+or
+Log in with username or email
+Relevant people
+Noam Brown
+@
+polynoamial
+Follow
+Trending now
+Noam Brown
+@polynoamial
+I understand how, looking at today’s LLMs, people might think the only way we'd achieve NS is by using Levent’s/Tristan’s prompts. But I hope this plot conveys the model used is a huge step up from today’s LLMs. Nobody looked at Levent’s/Tristan’s prompts. That’d be insane.
+Sebastien Bubeck
+@SebastienBubeck
+Sep 8
+I would like to clarify a few things:
+
+1) The screenshot is my reaching out to Levent to coordinate our releases. I hope it’s clear from the message that we came in with the best possible intentions.
+
+2) I never ever asked for Levent to be removed from authorship of his own work
+Show more
+5:47 PM · Sep 8, 2026
+159.7K
+Views
+91
+81
+1.6K
+248
+Michael Nielsen
+@michael_nielsen
+Sep 8
+How do you know it didn't hack your internal systems and look?
+4
+2
+258
+16K
+Josh You
+@justjoshinyou13
+Sep 8
+if this isn't a typo, you made a breakthrough four days before you started using the model on Millennium problems?
+1
+58
+2.8K
+Christian Catalini
+@ccatalini
+Sep 8
+Agreed. I find it extremely unlikely that it happened intentionally. The possibility that it happened unintentionally is still a problem.
+50
+2.7K

@@ -1,0 +1,1887 @@
+{
+  "ok": false,
+  "error_count": 19,
+  "warning_count": 357,
+  "findings": [
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-051: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-971: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "ECON-2026-964: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "SOC-2026-050: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-972: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-269: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-270: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-271: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-973: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-272: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-273: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-274: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-275: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-276: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-277: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-278: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-052: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-980: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-981: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "SOC-2026-051: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-974: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-982: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-279: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-975: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-983: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-984: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-280: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-976: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-281: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-282: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-283: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-985: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "SOC-2026-052: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "SOC-2026-053: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-284: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "ECON-2026-965: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-285: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-286: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-977: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-053: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-978: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "ECON-2026-980: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "SOC-2026-054: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-979: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-980: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-981: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-982: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "ECON-2026-981: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-056: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-287: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-057: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "SOC-2026-055: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "ECON-2026-982: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-983: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-984: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-985: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-986: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-987: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-988: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-989: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-990: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-288: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-289: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-991: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "ECON-2026-983: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "ECON-2026-984: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-992: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-290: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-993: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-994: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-996: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-997: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "SOC-2026-056: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-998: Missing embedding"
+    },
+    {
+      "level": "ERROR",
+      "code": "CLAIM_ID_FORMAT",
+      "message": "Invalid claim ID format: INST-2026-998a"
+    },
+    {
+      "level": "ERROR",
+      "code": "CLAIM_ID_FORMAT",
+      "message": "Invalid claim ID format: SOC-2026-056a"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-164: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-165: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-166: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-167: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-168: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-169: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-170: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-171: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-172: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "TECH-2026-102: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "TECH-2026-103: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "TECH-2026-104: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "TRANS-2026-057: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "TRANS-2026-058: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-992: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-993: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-994: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-995: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-996: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-061: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-291: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-292: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-293: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-294: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-295: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-296: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "ECON-2026-990: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "ECON-2026-991: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "LABOR-2026-041: Missing embedding"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim INST-2026-978 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim ECON-2026-980 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim SOC-2026-054 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim INST-2026-979 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim INST-2026-980 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim INST-2026-981 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim INST-2026-982 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim ECON-2026-981 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim GEO-2026-056 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim GOV-2026-287 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim GEO-2026-057 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim SOC-2026-055 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_CLAIM_NOT_LISTED",
+      "message": "karp-2026-cnbc-squawk-box-tokenmaxxing: claim ECON-2026-982 cites this source but not in claims_extracted"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_TYPE_INVALID",
+      "message": "lhl-2026-palantir-sovereignty-fable-chat: Invalid type 'CHAT'"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_TYPE_INVALID",
+      "message": "shisa-2026-entity-sovereign-ai-proposal: Invalid type 'PROPOSAL'"
+    },
+    {
+      "level": "ERROR",
+      "code": "SOURCE_TYPE_INVALID",
+      "message": "palantir-sovereign-ai-frontier-lab-extraction-synthesis: Invalid type 'SYNTHESIS'"
+    },
+    {
+      "level": "ERROR",
+      "code": "ANALYSIS_CLAIM_MISSING",
+      "message": "ANALYSIS-2026-039: claims_extracted references unknown claim 'INST-2026-995'"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-940: High credence (0.949999988079071) or evidence level (E3) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-940: High credence (0.949999988079071) or evidence level (E3) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-941: High credence (0.75) or evidence level (E3) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-941: High credence (0.75) or evidence level (E3) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-942: High credence (0.800000011920929) or evidence level (E3) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-942: High credence (0.800000011920929) or evidence level (E3) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-943: High credence (0.949999988079071) or evidence level (E3) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-943: High credence (0.949999988079071) or evidence level (E3) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-944: High credence (0.8500000238418579) or evidence level (E3) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-944: High credence (0.8500000238418579) or evidence level (E3) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-947: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-947: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-949: High credence (0.949999988079071) or evidence level (E3) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-949: High credence (0.949999988079071) or evidence level (E3) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-950: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-950: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-951: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-951: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-952: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-952: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-953: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-953: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-954: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-954: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-955: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-955: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-956: High credence (0.800000011920929) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-956: High credence (0.800000011920929) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-957: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-957: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-958: High credence (0.949999988079071) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-958: High credence (0.949999988079071) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-959: High credence (0.699999988079071) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-959: High credence (0.699999988079071) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-960: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-960: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-961: High credence (0.949999988079071) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-961: High credence (0.949999988079071) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-962: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-962: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-963: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-963: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-964: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-964: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-965: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-965: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-968: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-968: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-969: High credence (0.800000011920929) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-969: High credence (0.800000011920929) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-988: High credence (0.8999999761581421) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-988: High credence (0.8999999761581421) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-990: High credence (0.8999999761581421) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-990: High credence (0.8999999761581421) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-996: High credence (0.800000011920929) or evidence level (E3) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-996: High credence (0.800000011920929) or evidence level (E3) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-998: High credence (0.75) or evidence level (E3) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-998: High credence (0.75) or evidence level (E3) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-999: High credence (0.8500000238418579) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-999: High credence (0.8500000238418579) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "ECON-2026-923: High credence (0.8500000238418579) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "ECON-2026-923: High credence (0.8500000238418579) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "RISK-2026-954: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "RISK-2026-954: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-093: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-093: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-095: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-095: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-097: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-097: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "RISK-2026-964: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "RISK-2026-964: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-096: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-096: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-098: High credence (0.800000011920929) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-098: High credence (0.800000011920929) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "INST-2026-937: High credence (0.800000011920929) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "INST-2026-937: High credence (0.800000011920929) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-099: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-099: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-100: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-100: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "META-2026-153: High credence (0.8999999761581421) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "META-2026-153: High credence (0.8999999761581421) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-105: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-105: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-106: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-106: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-107: High credence (0.8500000238418579) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-107: High credence (0.8500000238418579) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-110: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-110: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-112: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-112: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-115: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-115: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-121: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-121: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-125: High credence (0.800000011920929) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-125: High credence (0.800000011920929) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-128: High credence (0.800000011920929) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-128: High credence (0.800000011920929) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-130: High credence (0.8500000238418579) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-130: High credence (0.8500000238418579) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-131: High credence (0.800000011920929) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-131: High credence (0.800000011920929) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-132: High credence (0.800000011920929) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-132: High credence (0.800000011920929) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-133: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-133: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-135: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-135: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "INST-2026-952: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "INST-2026-952: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-146: High credence (0.800000011920929) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-146: High credence (0.800000011920929) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-147: High credence (0.8999999761581421) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-147: High credence (0.8999999761581421) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-156: High credence (0.800000011920929) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-156: High credence (0.800000011920929) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-157: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-157: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-159: High credence (0.6499999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-159: High credence (0.6499999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-165: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-165: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-171: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-171: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-177: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-177: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-179: High credence (0.800000011920929) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-179: High credence (0.800000011920929) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-183: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-183: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-184: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-184: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-195: High credence (0.75) or evidence level (E5) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-195: High credence (0.75) or evidence level (E5) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-199: High credence (0.75) or evidence level (E5) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-199: High credence (0.75) or evidence level (E5) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-206: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-206: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-208: High credence (0.75) or evidence level (E5) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-208: High credence (0.75) or evidence level (E5) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-210: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-210: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-211: High credence (0.800000011920929) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-211: High credence (0.800000011920929) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-212: High credence (0.800000011920929) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-212: High credence (0.800000011920929) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-213: High credence (0.699999988079071) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-213: High credence (0.699999988079071) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-214: High credence (0.75) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-214: High credence (0.75) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-221: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-221: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-226: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-226: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "SOC-2026-033: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "SOC-2026-033: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "SOC-2026-035: High credence (0.800000011920929) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "SOC-2026-035: High credence (0.800000011920929) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "SOC-2026-037: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "SOC-2026-037: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-231: High credence (0.949999988079071) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-231: High credence (0.949999988079071) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-232: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-232: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-233: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-233: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-234: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-234: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-235: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-235: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-236: High credence (0.949999988079071) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-236: High credence (0.949999988079071) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-237: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-237: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-238: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-238: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-239: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-239: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-240: High credence (0.800000011920929) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-240: High credence (0.800000011920929) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "ECON-2026-936: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "ECON-2026-936: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GEO-2026-048: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GEO-2026-048: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GEO-2026-049: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GEO-2026-049: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "ECON-2026-941: High credence (0.800000011920929) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "ECON-2026-941: High credence (0.800000011920929) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "ECON-2026-943: High credence (0.800000011920929) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "ECON-2026-943: High credence (0.800000011920929) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "ECON-2026-947: High credence (0.800000011920929) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "ECON-2026-947: High credence (0.800000011920929) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "ECON-2026-950: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "ECON-2026-950: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "ECON-2026-951: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "ECON-2026-951: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "ECON-2026-954: High credence (0.949999988079071) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "ECON-2026-954: High credence (0.949999988079071) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "ECON-2026-955: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "ECON-2026-955: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "INST-2026-959: High credence (0.949999988079071) or evidence level (E5) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "INST-2026-959: High credence (0.949999988079071) or evidence level (E5) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "RESOURCE-2026-018: High credence (0.800000011920929) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "RESOURCE-2026-018: High credence (0.800000011920929) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "RESOURCE-2026-019: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "RESOURCE-2026-019: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "INST-2026-966: High credence (0.9800000190734863) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "INST-2026-966: High credence (0.9800000190734863) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "INST-2026-967: High credence (0.9700000286102295) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "INST-2026-967: High credence (0.9700000286102295) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "INST-2026-968: High credence (0.9599999785423279) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "INST-2026-968: High credence (0.9599999785423279) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-265: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-265: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "SOC-2026-046: High credence (0.9900000095367432) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "SOC-2026-046: High credence (0.9900000095367432) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "SOC-2026-047: High credence (0.7799999713897705) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "SOC-2026-047: High credence (0.7799999713897705) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "SOC-2026-048: High credence (0.8999999761581421) or evidence level (E5) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "SOC-2026-048: High credence (0.8999999761581421) or evidence level (E5) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "SOC-2026-049: High credence (0.9900000095367432) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "SOC-2026-049: High credence (0.9900000095367432) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "INST-2026-969: High credence (0.8199999928474426) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "INST-2026-969: High credence (0.8199999928474426) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "INST-2026-970: High credence (0.8399999737739563) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "INST-2026-970: High credence (0.8399999737739563) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-267: High credence (0.800000011920929) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-267: High credence (0.800000011920929) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "GOV-2026-268: High credence (0.7200000286102295) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "GOV-2026-268: High credence (0.7200000286102295) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-035: High credence (0.9900000095367432) or evidence level (E1) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-035: High credence (0.9900000095367432) or evidence level (E1) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-036: High credence (0.8999999761581421) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-036: High credence (0.8999999761581421) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "TECH-2026-037: High credence (0.8500000238418579) or evidence level (E2) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "TECH-2026-037: High credence (0.8500000238418579) or evidence level (E2) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "INST-2026-985: High credence (0.800000011920929) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "INST-2026-990: High credence (0.800000011920929) or evidence level (E3) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "INST-2026-996: High credence (0.800000011920929) or evidence level (E3) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "INST-2026-996: High credence (0.800000011920929) or evidence level (E3) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "INST-2026-997: High credence (0.75) or evidence level (E3) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "INST-2026-997: High credence (0.75) or evidence level (E3) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "SOC-2026-056: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "SOC-2026-056: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "META-2026-164: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "META-2026-164: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "META-2026-165: High credence (0.800000011920929) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "META-2026-165: High credence (0.800000011920929) or evidence level (E4) requires reasoning trail"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_BACKING",
+      "message": "META-2026-166: High credence (0.75) or evidence level (E4) requires supporting evidence link"
+    },
+    {
+      "level": "WARN",
+      "code": "HIGH_CREDENCE_NO_REASONING_TRAIL",
+      "message": "META-2026-166: High credence (0.75) or evidence level (E4) requires reasoning trail"
+    }
+  ]
+}

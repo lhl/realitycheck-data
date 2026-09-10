@@ -1,0 +1,84 @@
+"OpenAI" "Navier" "10000" - Brave Search
+Query contains
+search operators
+Ignore operators
+More
+Reddit
+reddit.com
+› r/openai  › openai stole the navier stokes solution
+r/OpenAI on Reddit: OpenAI stole the Navier Stokes solution
+2 days ago -
+As part of the press release they clearly say that OpenAI can't guarantee that one of their agents didn't look at the user chats to derive the solution.
+Levent had been working on this for more than a year and the agents just went through his personal chats.
+None of our chats is safe, OpenAI can and will steal everything at will.
+Top answer
+1 of 5
+64
+"the agents went through his personal chats" is a gross misunderstanding of how AI works.
+2 of 5
+41
+trash post that shows your deep lack of reading comprehension and overall understanding of what is even going on let alone common sense, which otherwise tells you someone who steals work doesn’t publicly mention the people from whom they stole
+OpenAI
+alleged of stealing mathematicians work
+Sep 8, 2026
+r/LocalLLaMA
+yesterday
+OpenAI
+solved
+Navier
+Stokes
+Sep 8, 2026
+r/accelerate
+yesterday
+A Solution to the
+Navier
+-Stokes Millennium Prize Problem
+Sep 8, 2026
+r/singularity
+yesterday
+OpenAI
+may have solved
+Navier
+–Stokes
+Sep 8, 2026
+r/accelerate
+2d ago
+Blown up:
+OpenAI
+allegedly stole mathematicians' private research from their Codex chats!
+Sep 8, 2026
+r/codex
+yesterday
+More results from reddit.com
+Reddit
+reddit.com
+› r/slatestarcodex  › openai claims navier-stokes proof
+r/slatestarcodex on Reddit: OpenAI claims Navier-Stokes proof
+2 days ago -
+How many of you had 2026 for your "Millennium Prize Problem solved" timeline? This is insane. I expected this in mid-2027 to early 2028.
+Top answer
+1 of 5
+1
+Based on this, I've updated my timeline for the Riemann Hypothesis to 50% by the end of 2026. For the disjunction of Riemann solved and Twin Primes solved, I give ~70% by the end of the year. Feel free to share predictions here.
+2 of 5
+1
+"How many of you had 2026 for your "Millennium Prize Problem solved" timeline?" Probably most people here tbh
+Reddit
+reddit.com
+› r/mathematics  › navier-stokes answer: what does it imply for research going forward?
+r/mathematics on Reddit: Navier-Stokes Answer: What does it imply for research going forward?
+1 day ago -
+I haven't touched Navier-Stokes in quite some time. So, I have been rather quickly reading up on everything that's happened. Now that we know singularities can occur, what does this actually mean for research going forward? That is, if anyone really has any idea. Thx!
+Edit:
+Wow, did not expect this to get so many views/answers. Thanks y'all for your responses. They really shed a lot of light on things! ( :
+Top answer
+1 of 20
+349
+Three things come to mind: 1. A good researcher with a powerful LLM chat can do magical things. 2. The LLM still requires the guidance of people who know the problem to tell it what to explore. When people say GPT solved NS, it is technically not true; it needed prompts and guidance (at least for now). 3. If you are a researcher, you will think twice before using LLM chats, even if it is only to help you improve the writing. The fact that people working for these companies can use your unpublished ideas in closed environments, with computer power you don't have, without any credit to you is, to put it bluntly, suuuupeeer fucked up.
+2 of 20
+92
+we could use it in pools for fun whirlpools that spin your around in the center. or what about a toilet that would flush so hard at it's singularity it would disintegrate the shit, like a sink grinder for the toilet
+Google
+Bing
+Mojeek
+Next

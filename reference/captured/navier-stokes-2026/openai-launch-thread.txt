@@ -1,0 +1,167 @@
+Thread by @OpenAI on Thread Reader App – Thread Reader App
+Share this page!
+×
+Post
+Share
+Email
+Enter URL or ID to Unroll
+×
+Unroll Thread
+You can paste full URL like: https://x.com/threadreaderapp/status/1644127596119195649
+or just the ID like: 1644127596119195649
+How to get URL link on X (Twitter) App
+On the Twitter thread, click on
+or
+icon on the bottom
+Click again on
+or
+Share Via icon
+Click on
+Copy Link to Tweet
+Paste it above and click "Unroll Thread"!
+More info at
+Twitter Help
+OpenAI
+Subscribe
+@OpenAI
+Sep  8
+•
+4 tweets
+•
+2 min read
+•
+Read on X
+Bookmark
+Gift Link
+Save as PDF
+We’re sharing a solution to the Navier-Stokes Millennium Prize Problem, one of the deepest problems at the frontier of mathematics.
+The proof was produced by a group of agents, using an OpenAI next-generation model significantly more capable than GPT-6 Astra.
+The problem concerns whether the description of smooth three-dimensional fluid motion modeled by the Navier-Stokes equations can break down. It has remained unresolved for roughly 90 years.
+This model represents a step-function improvement on many benchmarks, and its training is ongoing.
+Our internal model group arrived at the Navier–Stokes solution in 88 hours, using around 10,000 coordinating AI agents.
+Throughout the effort, we maintained the strict safeguards—including monitoring and isolation—that we apply to all our frontier evaluations.
+The group produced an analytical proof and Lean formalization that via Navier-Stokes dynamics a fluid can develop a singularity in finite time.
+The solution is a vortex, a spinning swirl of fluid, that spirals inward and gets increasingly elongated, like spaghetti.
+cdn.openai.com/pdf/32d9f210-8…
+We are focusing on understanding this model, and using what we learn to help us guide and pace how we pursue further advances in capability.
+Our goal is to build AI systems which are steerable, accountable, and connected to people, which may require more deliberate choices about the pace of progress, as we continue our mission to ensure AGI benefits all of humanity.
+openai.com/index/navier-s…
+• • •
+Missing some Tweet in this thread? You can try to
+force a refresh
+Post
+Share
+Email
+Keep Current with
+OpenAI
+Stay in touch and get notified when new unrolls are available from this author!
+Add to "My Authors"
+Read all threads
+This Thread may be Removed Anytime!
+Twitter may remove this content at anytime! Save it as PDF for later use!
+Save this thread as PDF
+Try unrolling a thread yourself!
+Follow
+@ThreadReaderApp
+to mention us!
+From a Twitter thread mention us with a keyword "unroll"
+@threadreaderapp unroll
+Practice here
+first or read more on our
+help page
+!
+More from @OpenAI
+OpenAI
+@OpenAI
+Sep  3
+This is GPT-6 Astra.
+Anything you can do on a computer, Astra can do for you. Fast.
+GPT-6 Astra is the most intelligent and aligned model in the world, and sets a new state of the art for computer use, browsing, software engineering, cybersecurity, science, and professional work.
+openai.com/index/gpt-6-as…
+Astra achieves state-of-the-art results on Agents’ Last Exam, AutomationBench, and ScreenSpot Pro, benchmarks for computer workflow tasks across professions.
+Read 7 tweets
+OpenAI
+@OpenAI
+Jul 29
+GPT-5.6 Sol has been used to solve open problems in mathematics. So why was it struggling with ARC-AGI-3, a benchmark of 2D puzzle games?
+We investigated. The harness was not letting it remember what it had learned.
+We found that enabling two API settings tripled our scores with 6x fewer output tokens.
+ARC-AGI-3 tests how well models can learn unfamiliar 2D games without instructions.
+The standard harness discarded GPT-5.6 Sol’s reasoning after each move and dropped earlier actions as the context filled up. The model had to keep starting over.
+We implemented the harness with the Responses API and turned on:
+→ Retained reasoning
+→ Context compaction
+On the public set, GPT-5.6 Sol’s score rose 188% while using 6x fewer output tokens.
+Read 5 tweets
+OpenAI
+@OpenAI
+Jun 26
+Introducing a limited preview of GPT-5.6 Sol, our next generation frontier model, as well as GPT-5.6 Terra, a balanced model for efficient, everyday work, and GPT-5.6 Luna, a fast and affordable model for high-volume work.
+openai.com/index/previewi…
+We believe in broad access and plan to make GPT-5.6 Sol, Terra, and Luna generally available in the coming weeks.
+For now, at the request of the U.S. government, we’re starting with a limited preview among a small group of trusted partners in Codex and the API.
+Sol is our new flagship and a step function better than GPT-5.5.
+Terra delivers performance competitive to GPT-5.5 at 2x lower cost.
+Luna is our most cost-efficient model, delivering strong capability at our lowest cost.
+Together, the GPT-5.6 family gives people and developers more choice in how they balance intelligence, speed, and cost.
+Read 6 tweets
+OpenAI
+@OpenAI
+Jun 18
+Together with researchers at Boston Children’s Hospital and Harvard, we published a study in NEJM AI showing how o3 Deep Research helped clinicians revisit previously unsolved rare pediatric disease cases, and find answers for families who had waited years.
+The team reanalyzed 376 de-identified cases that had already gone through genetic testing and expert review, helping identify 18 diagnoses across neurodevelopmental disorders, rare neuromuscular disease, sudden unexpected death in pediatrics, and early-onset psychosis.
+Rare disease diagnosis is challenging, as sequencing can surface millions of variants, and medical knowledge changes constantly.
+o3 Deep Research helped connect clinical features, inheritance patterns, variant evidence, and scientific literature into hypotheses for specialists to review.
+Every result went through human adjudication and clinical confirmation. AI’s role here was to help experts reason through complex, fragmented evidence faster and more thoroughly.
+Read 4 tweets
+OpenAI
+@OpenAI
+May 11
+Introducing Daybreak: frontier AI for cyber defenders.
+Daybreak brings together the most capable OpenAI models, Codex, and our security partners to accelerate cyber defense and continuously secure software.
+A step toward a future where security teams can move at the speed defense demands.
+Find and fix vulnerabilities earlier with Daybreak
+Cut through the security backlog with Daybreak
+Read 5 tweets
+OpenAI
+@OpenAI
+May  7
+Codex now works directly in Chrome on macOS and Windows.
+It’s even better at working with apps and sites in Chrome, and now works in parallel across tabs in the background without taking over your browser.
+To get started, install the Chrome plugin in the Codex app.
+With the new Chrome extension, Codex can quickly move through repetitive browser work, like navigating structured pages and complex data entry flows.
+Under the hood, it writes and runs code to navigate and complete tasks.
+If a task needs multiple tools, Codex chooses the best one for each step.
+It uses plugins when they can handle the job, Chrome when it needs a logged-in website, and combines approaches as needed.
+Read 4 tweets
+Did Thread Reader help you today?
+Support us! We are indie developers!
+This site is made by just two indie developers on a laptop doing marketing, support and development!
+Read more about the story
+.
+Become a Premium Member
+($3/month or $30/year) and get exclusive features!
+Become Premium
+Don't want to be a Premium member but still want to support us?
+Make a small donation
+by buying us coffee ($5) or help with server cost ($10)
+Donate via Paypal
+Or Donate anonymously using crypto!
+Ethereum
+0xfe58350B80634f60Fa6Dc149a72b4DFbc17D341E
+copy
+Bitcoin
+3ATGMxNzCUFzxpMCHL5sWSt4DVtS8UqXpi
+copy
+Thank you for your support!
+Follow Us!
+Post
+Share
+Send Email!
+×
+Email the whole thread instead of just a link!
+Separate emails with commas
+Message
+Here's a great thread you should read right now!
+Send Thread As Email!
+Email Successfully Sent!

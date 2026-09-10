@@ -1,0 +1,9 @@
+https://mathstodon.xyz/@andreasthom/117240535270608201 2026-09-09T10:09:57.269Z andreasthom
+@
+tristanbuckmaster
+1/3 I want to record a number of points that I realized after reading up on the controversy. In fact it recalls an exchange I had with OpenAI after its non-sofic-group announcement. It exposes a serious, unanswered question about whether researchers can trust OpenAI with unpublished mathematics.
+I wrote in an email to Mark Sellke and Sebastien Bubeck shortly after the surprising finding of a non-sofic group using the methods of Kun and myself:
+“Another point is that I and a colleague in Dresden were discussing the expander matching problem and various extensions of the work with Gabor Kun actively over the last months with ChatGPT, so that we are of course curious if that was part of the training data or accessible to the reasoning process. There is a certain (frankly unacceptable) lack of transparency here; and I fear it will damage the communal process of math more than the new AI-generated results will benefit the subject.”
+Mark Sellke’s complete answer was: “Regarding your conversations with ChatGPT: that did not happen.”
+I had explicitly asked about two different things: (1) whether our conversations entered training data, and (2) whether they were accessible to the solving process. The categorical answer now looks as though it addressed only direct access under (2). No such qualification, explanation, or evidence was given. I take this as dishonesty to say the least.
+OpenAI now says in the Buckmaster-Alpöge case that no specific user data was accessed, but adds that it “cannot rule out that de-identified data derived from their usage of our products helped improve our models.”

@@ -1,0 +1,159 @@
+Thread by @sama on Thread Reader App – Thread Reader App
+Share this page!
+×
+Post
+Share
+Email
+Enter URL or ID to Unroll
+×
+Unroll Thread
+You can paste full URL like: https://x.com/threadreaderapp/status/1644127596119195649
+or just the ID like: 1644127596119195649
+How to get URL link on X (Twitter) App
+On the Twitter thread, click on
+or
+icon on the bottom
+Click again on
+or
+Share Via icon
+Click on
+Copy Link to Tweet
+Paste it above and click "Unroll Thread"!
+More info at
+Twitter Help
+Sam Altman
+Subscribe
+@sama
+Sep  8
+•
+1 tweets
+•
+1 min read
+•
+Read on X
+Bookmark
+Gift Link
+Save as PDF
+I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted with integrity and generosity throughout.
+Initially we believed the other team had also solved the problem. We wanted to collaborate and do a joint release.
+When we learned that they had Euler but not Navier-Stokes, we offered to let them go first, to suggest that they should be the ones to get the prize, and optionally for Tristan to be the lead author on a rewrite of the OpenAI proof. We felt it was challenging to offer the same to Levent (an Anthropic employee), who was not willing to talk or coordinate with us anyway. We were open to other solutions.
+We would have greatly preferred coordination. We did not rush to publish even though the other team wasn't communicating with us. The team threatened us with unfounded accusations of plagarism.
+Now that we can see their work, the approaches appear to be different. It is also worth noting that our latest model can solve many, many other math problems.
+It is true that we tried this because there were rumors on the internet last week that Anthropic's models had solved a millennium problem and we were curious if ours could do it too.
+https://x.com/sama/status/2097379411691516310
+• • •
+Missing some Tweet in this thread? You can try to
+force a refresh
+Post
+Share
+Email
+Keep Current with
+Sam Altman
+Stay in touch and get notified when new unrolls are available from this author!
+Add to "My Authors"
+Read all threads
+This Thread may be Removed Anytime!
+Twitter may remove this content at anytime! Save it as PDF for later use!
+Save this thread as PDF
+Try unrolling a thread yourself!
+Follow
+@ThreadReaderApp
+to mention us!
+From a Twitter thread mention us with a keyword "unroll"
+@threadreaderapp unroll
+Practice here
+first or read more on our
+help page
+!
+More from @sama
+Sam Altman
+@sama
+Mar  1
+I'd like to answer questions about our work with the DoW and our thinking over the past few days. Please AMA.
+@natseckatrina who leads some of our national security work is going to jump in to answer some of your questions
+@boazbaraktcs is also going to help out with answers!
+Read 5 tweets
+Sam Altman
+@sama
+Feb 27
+We have raised a $110 billion round of funding from Amazon, NVIDIA, and SoftBank.
+We are grateful for the support from our partners, and have a lot of work to do to bring you the tools you deserve.
+We are excited to partner with Amazon to bring a new generation of products to market, especially around new enterprise products like the stateful runtime environment. We are also very excited to make great use of Tranium.
+We continue to have a great relationship with Microsoft. Our stateless API will remain exclusive to Azure, and we will build out much more capacity with them.
+Read 5 tweets
+Sam Altman
+@sama
+Aug  7, 2025
+going to try live-tweeting the GPT-5 livestream.
+first, GPT-5 in an integrated model, meaning no more model switcher and it decides when it needs to think harder or not.
+it is very smart, intuitive, and fast.
+it is available to everyone, including the free tier, w/reasoning!
+evals aren't the most important thing--the most important thing is how useful we think the model will be--but it does well on evals. for example, a new high on SWE-bench and many other metrics.
+it is by far our most reliable and factual model ever.
+rolling out today for free, plus, pro, and team users. next week to enterprise and edu.
+making this available in the free tier is a big deal to us; PhD-level intelligence for everyone!
+plus users get much higher rate limits.
+pro users get GPT-5 pro; really smart!
+Read 20 tweets
+Sam Altman
+@sama
+Apr 10, 2025
+a lot of people were interested in how we made GPT-4.5 and what comes next.
+we did a podcast with alex paino, dan selsam, and @atootoon who helped drive the project.
+full episode coming soon, but here are some interesting clips:
+Read 7 tweets
+Sam Altman
+@sama
+Feb  3, 2025
+today we launch deep research, our next agent.
+this is like a superpower; experts on demand!
+it can go use the internet, do complex research and reasoning, and give you back a report.
+it is really good, and can do tasks that would take hours/days and cost hundreds of dollars.
+people will post lots of great examples, but here is a fun one:
+i am in japan right now and looking for an old NSX. i spent hours searching unsuccessfully for the perfect one. i was about to give up and deep research just...found it.
+it is very compute-intensive and slow, but it's the first ai system that can do such a wide variety of complex, valuable tasks.
+going live in our pro tier now, with 100 queries per month.
+plus, team, and enterprise will come soon, and then free tier.
+Read 6 tweets
+Sam Altman
+@sama
+Sep 12, 2024
+here is o1, a series of our most capable and aligned models yet:
+o1 is still flawed, still limited, and it still seems more impressive on first use than it does after you spend more time with it.
+openai.com/index/learning…
+but also, it is the beginning of a new paradigm: AI that can do general-purpose complex reasoning.
+o1-preview and o1-mini are available today (ramping over some number of hours) in ChatGPT for plus and team users and our API for tier 5 users.
+screenshot of eval results in the tweet above and more in the blog post, but worth especially noting:
+a fine-tuned version of o1 scored at the 49th percentile in the IOI under competition conditions! and got gold with 10k submissions per problem.
+Read 4 tweets
+Did Thread Reader help you today?
+Support us! We are indie developers!
+This site is made by just two indie developers on a laptop doing marketing, support and development!
+Read more about the story
+.
+Become a Premium Member
+($3/month or $30/year) and get exclusive features!
+Become Premium
+Don't want to be a Premium member but still want to support us?
+Make a small donation
+by buying us coffee ($5) or help with server cost ($10)
+Donate via Paypal
+Or Donate anonymously using crypto!
+Ethereum
+0xfe58350B80634f60Fa6Dc149a72b4DFbc17D341E
+copy
+Bitcoin
+3ATGMxNzCUFzxpMCHL5sWSt4DVtS8UqXpi
+copy
+Thank you for your support!
+Follow Us!
+Post
+Share
+Send Email!
+×
+Email the whole thread instead of just a link!
+Separate emails with commas
+Message
+Here's a great thread you should read right now!
+Send Thread As Email!
+Email Successfully Sent!

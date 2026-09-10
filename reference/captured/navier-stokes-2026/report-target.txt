@@ -1,0 +1,16 @@
+drama summary for those confused:
+- Aug 15th: Tristan Buckmaster & Levent Alpöge make progress on a few important math problems
+- they do NOT have a proof for the $1,000,000 Millenium Prize problem. BUT, they do claim to have a proof for a similar (non-Millenium) Navier Stokes problem that could help lead the way there
+- Levent works at Anthropic, but this research was independent of his work there, with a mix of GPT and Claude models. Tristan is not related to Anthropic.
+- Early Sep: Rumor spreads to OpenAI that Anthropic has solved a major problem. Tristan emails OpenAI to clarify. without revealing the problem they solved or how they did it.
+- After hearing of the rumor, OpenAI started researching Navier Stokes with a new internal model.
+- Sep 6th: OpenAI's Sebastien Bubeck tells Tristan that they solved the $1,000,000 Millenium Prize Navier Stokes problem. The approach is very similar to Tristan & Levent's approach to the non-Millenium problem.
+- Tristan is suspicious of the timing, as only few others were trying this approach. OpenAI says the model didn't access his user data directly, but leaves unanswered whether Tristan's chat conversations were part of the training.
+- OpenAI says they would partially credit Tristan for the $1,000,000 discovery (even though Tristan did not solve the $1,000,000 problem) — but only if they remove Levent as an author, as he works for Anthropic.
+- Sep 8th: Tristan refuses to remove Levent, and rushes to publish their results independently.
+Currently unclear is whether Anthropic had a separate solution for the $1,000,000 problem, or whether the rumor was about Tristan & Levent's independent research.
+https://x.com/konstiwohlwend/status/2097200251312701479
+my personal opinion (just based on Tristan's perspective, things might change once we get Bubeck's side):
+- i doubt openai used Tristan's user data. it's tightly protected, and i'd be surprised if even a senior researcher had access. training takes too long and one extra training point probably wouldn't change much
+- i do believe that OpenAI probably heard about the rumor, and rushed to frontrun Anthropic. both of these companies have been copying each other's homework for a while now
+- OpenAI asking Tristan to remove Levent as a co-author is shitty. the way they asked for it — with a "why would you ruin your career" — is definitely a threat

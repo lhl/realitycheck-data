@@ -1,0 +1,205 @@
+{
+  "Navier": {
+    "claims": [],
+    "sources": []
+  },
+  "Buckmaster": {
+    "claims": [],
+    "sources": []
+  },
+  "value chain": {
+    "claims": [],
+    "sources": []
+  },
+  "customer": {
+    "claims": [
+      {
+        "id": "ECON-2026-017",
+        "text": "OpenAI asserts that if it had access to more compute during 2023\u20132025, it would have achieved faster customer adoption and monetization during those periods.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "TECH-2026-917",
+        "text": "Anthropic states Claude Opus 4.6 retains \u201cextended thinking mode\u201d and adds \u201cadaptive thinking\u201d for API customers; the effort parameter has four settings (low/medium/high/max) that affect when extended thinking is used, enabling cost/speed/intelligence tradeoffs.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "TECH-2026-975",
+        "text": "StrongDM prescribes that a validation harness should be end-to-end and as close to the real environment as possible, including customers, integrations, and economics.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "GEO-2026-033",
+        "text": "Amodei said at Davos that the Trump administration\u2019s decision to allow NVIDIA H200 exports to approved customers in China would be a \u201cbig mistake\u201d / \u201ccrazy\u201d (including a \u201cnuclear weapons to North Korea\u201d analogy), and he cited CEOs\u2019 statements about chip embargoes as binding constraints (\u201cholding [them] back\u201d).",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "INST-2026-950",
+        "text": "Dean Ball predicts that a (credible) U.S. government \u201csupply chain risk\u201d designation against a closed-source AI lab materially increases regulatory risk and makes closed-source models less attractive to many global customers.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "INST-2026-952",
+        "text": "Anthropic\u2019s relationship with U.S. defense/intelligence customers for Claude in classified environments dates to at least 2024, and on 2025-07-14 the DoD\u2019s CDAO announced a $200M-ceiling contract award to Anthropic for frontier AI capabilities.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "ECON-2026-957",
+        "text": "Zitron argues current AI service costs are subsidized and that removing the subsidy implies there is \u201cno path forward\u201d for providers because customers will not bear true-cost pricing.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "GOV-2026-283",
+        "text": "CNN reports OpenAI and the administration viewed GPT-5.6 as on par with Mythos, and that the government was approving access customer by customer during the preview period.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "INST-2026-980",
+        "text": "Karp claims Palantir can take an open model and reach frontier-model quality in classified or unclassified contexts, with customer-owned weights.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "INST-2026-981",
+        "text": "Karp alleges hosted model APIs put customer IP at risk by caching data and replicating the customer's business ('stealing the weights and alpha').",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "INST-2026-982",
+        "text": "On 2026-06-29 Palantir and NVIDIA announced a Sovereign AI Operating System reference architecture running NVIDIA Nemotron open models air-gapped on NVIDIA accelerated compute, integrated with AIP/Foundry/Ontology/Apollo, with customers owning weights and data.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "INST-2026-983",
+        "text": "Palantir's actual product is the Ontology: a typed object graph + write-back actions + ABAC, hand-built per customer via forward-deployed engineers, billed as software.",
+        "title": null,
+        "analysis_file": null
+      }
+    ],
+    "sources": []
+  },
+  "sovereign": {
+    "claims": [
+      {
+        "id": "GOV-2026-068",
+        "text": "U.S. sovereignty-violating precedents (e.g., Venezuela intervention) and Greenland-related threats weaken Washington\u2019s legitimacy as a defender of the rules-based order, potentially lowering expected international resistance to PRC coercion against Taiwan.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "GOV-2026-070",
+        "text": "UN officials and international law experts said the 2026 U.S. operation in Venezuela violated the UN Charter and Venezuela\u2019s sovereignty.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "INST-2026-033",
+        "text": "Building Mirror as a fully in-house (\\\"sovereign\\\") stack with Arclight-owned data avoids partner incentive contamination and enables long-horizon governance and roadmap control.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "ECON-2026-932",
+        "text": "Imas proposes that broadening capital ownership (e.g., via a sovereign wealth fund paying citizen dividends with inalienable stakes) could mitigate AI-driven demand collapse while also supporting saving/investment dynamics.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "META-2026-155",
+        "text": "The author argues that embedding constraints by reference to public laws and policies appropriately vests decisions in democratic institutions, while CEO-defined prudential constraints illegitimately shift sovereign authority to a private actor.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "GEO-2026-051",
+        "text": "US model-access revocability will accelerate sovereign AI, open-weight fallback, and distrust of US-hosted frontier APIs.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "SOC-2026-052",
+        "text": "A salient reaction in the Hacker News thread on government-vetted GPT-5.6 access is that open-weight or sovereign alternatives become more attractive when proprietary frontier access can be politically gated.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "INST-2026-982",
+        "text": "On 2026-06-29 Palantir and NVIDIA announced a Sovereign AI Operating System reference architecture running NVIDIA Nemotron open models air-gapped on NVIDIA accelerated compute, integrated with AIP/Foundry/Ontology/Apollo, with customers owning weights and data.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "INST-2026-992",
+        "text": "The correct enterprise posture is a portfolio: frontier APIs where capability delta is decisive, open-weight floor for sovereignty/cost/policy-independence, and self-controlled orchestration/policy/memory layer.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "GOV-2026-290",
+        "text": "Sovereign AI requires open models + open evals + open datasets; programs that replace foreign dependence with a domestic national champion replace one form of external dependence with another.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "INST-2026-994",
+        "text": "A national-champion 'sovereign AI' vendor that secures exclusive control over government contracts, archives, and data access replaces foreign dependence with domestic lock-in rather than achieving genuine sovereignty.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "SOC-2026-056",
+        "text": "A model fluent in ENTITY but framing ENTITY history through a foreign lens is not a sovereign ENTITY model; cultural and historical reliability is a sovereignty requirement for models deployed in ENTITY contexts.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "SOC-2026-056a",
+        "text": "For ENTITY, cultural sovereignty is a practical deployment requirement (not an abstract ethics issue) because ENTITY sits at the intersection of several powerful external narratives.",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "META-2026-165",
+        "text": "The Anthropic-DoW blacklist episode is load-bearing evidence for three distinct RCDB claim clusters simultaneously: (a) policy/ethics (lab usage-policy restrictions), (b) sovereign AI (foreign vendor revoked by foreign state), (c) concentration risk (single-vendor dependency).",
+        "title": null,
+        "analysis_file": null
+      },
+      {
+        "id": "META-2026-166",
+        "text": "Eval-and-audit infrastructure is the binding constraint that makes 'open' mean accountable rather than merely downloadable; it is also what makes sovereign AI measurable rather than claim-dependent.",
+        "title": null,
+        "analysis_file": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "lhl-2026-palantir-sovereignty-fable-chat",
+        "text": null,
+        "title": "Palantir / WarClaude / Ontology / Claude Tag kills Palantir / sovereign AI \u2014 conversation with Claude 5 Fable",
+        "analysis_file": "analysis/sources/lhl-2026-palantir-sovereignty-fable-chat.md"
+      },
+      {
+        "id": "shisa-2026-entity-sovereign-ai-proposal",
+        "text": null,
+        "title": "Shisa.AI \u2014 Sovereign AI stack for ENTITY (open models, open evals, open datasets)",
+        "analysis_file": "analysis/sources/shisa-2026-entity-sovereign-ai-proposal.md"
+      },
+      {
+        "id": "palantir-sovereign-ai-frontier-lab-extraction-synthesis",
+        "text": null,
+        "title": "Synthesis: Palantir, Sovereign AI, and the Frontier-Lab Extraction Question (July 2026)",
+        "analysis_file": "analysis/syntheses/palantir-sovereign-ai-frontier-lab-extraction-synthesis.md"
+      }
+    ]
+  }
+}

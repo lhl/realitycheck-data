@@ -1,0 +1,155 @@
+"Navier Stokes" "OpenAI" plagiarism - Brave Search
+Query contains
+search operators
+Ignore operators
+More
+Reddit
+reddit.com
+› r/mathematics  › on the navier–stokes millennium prize problem
+r/mathematics on Reddit: On the Navier–Stokes Millennium Prize Problem
+2 days ago -
+In fact, it's actually looking ... and Buckmaster's.
+OpenAI claims the model established blowup in incompressible Euler without forcing first, before proceeding to the Navier Stokes solution
+....
+On the
+Navier
+–
+Stokes
+Millennium Prize Problem
+Sep 8, 2026
+r/technology
+yesterday
+OpenAI
+Says It Has Solved a Millennium Prize Problem—a Holy Grail of Math
+Sep 8, 2026
+r/technology
+yesterday
+Finite Time Blowup For
+Navier
+–
+Stokes
+Sep 8, 2026
+r/mathematics
+yesterday
+What's going on with
+OpenAI
+, Anthropic and the
+Navier
+-
+Stokes
+equation?
+Sep 8, 2026
+r/OutOfTheLoop
+yesterday
+A Solution to the
+Navier
+-
+Stokes
+Millennium Prize Problem
+Sep 8, 2026
+r/accelerate
+yesterday
+More results from reddit.com
+Reddit
+reddit.com
+› r/openai  › openai stole the navier stokes solution
+r/OpenAI on Reddit: OpenAI stole the Navier Stokes solution
+2 days ago -
+As part of the press release they clearly say that OpenAI can't guarantee that one of their agents didn't look at the user chats to derive the solution.
+Levent had been working on this for more than a year and the agents just went through his personal chats.
+None of our chats is safe, OpenAI can and will steal everything at will.
+Top answer
+1 of 5
+64
+"the agents went through his personal chats" is a gross misunderstanding of how AI works.
+2 of 5
+41
+trash post that shows your deep lack of reading comprehension and overall understanding of what is even going on let alone common sense, which otherwise tells you someone who steals work doesn’t publicly mention the people from whom they stole
+ABC News
+abc.net.au
+› news  › 2026-09-10  › openai-navier-stokes-millennium-problem-claims  › 107132242
+Controversy erupts as OpenAI claims solution to Navier Stokes maths problem - ABC News
+3 hours ago -
+Option two: After posting Euler, Professor Buckmaster alone write a paper presenting the Navier-Stokes result, acknowledging that an internal OpenAI model had resolved it — leaving Alpöge off because he works for Anthropic
+Did OpenAI solve the Navier–Stokes problem?
+OpenAI
+has published a candidate solution consisting of a 166-page analytical proof and a formal Lean proof. Its theorem constructs a three-dimensional
+Navier
+–
+Stokes
+flow with smooth forcing whose kinetic energy remains bounded while its velocity becomes unbounded in finite time, which the paper says establishes alternatives C and D of the official Millennium Problem formulation. The result is therefore much stronger than an informal AI claim, but it still requires independent mathematical scrutiny and eventual acceptance.
+binaryverseai.com
+binaryverseai.com
+› home  › ai applications & use cases  › navier–stokes problem: did openai really solve it? what the lean proof proves and what it doesn’t
+Navier Stokes Problem: Did OpenAI Really Solve It?
+Does Lean verification prove OpenAI's Navier–Stokes solution is correct?
+Lean provides unusually strong evidence that the
+formalized theorem follows logically from its encoded assumptions
+. However, formal verification does not eliminate the need to check that the formal theorem faithfully represents the intended mathematical result and precisely matches the Millennium Problem's requirements. Lean verification and expert mathematical review answer related but different questions.
+binaryverseai.com
+binaryverseai.com
+› home  › ai applications & use cases  › navier–stokes problem: did openai really solve it? what the lean proof proves and what it doesn’t
+Navier Stokes Problem: Did OpenAI Really Solve It?
+What does it mean to solve the Navier–Stokes problem?
+The Millennium Problem does
+not
+ask mathematicians to find one universal formula for every fluid flow. It asks whether smooth three-dimensional Navier–Stokes solutions always remain smooth or whether a valid finite-time breakdown can occur. Establishing either permitted outcome can resolve the problem.
+binaryverseai.com
+binaryverseai.com
+› home  › ai applications & use cases  › navier–stokes problem: did openai really solve it? what the lean proof proves and what it doesn’t
+Navier Stokes Problem: Did OpenAI Really Solve It?
+Reddit
+reddit.com
+› r/accelerate  › openai solved navier stokes
+r/accelerate on Reddit: OpenAI solved Navier Stokes
+2 days ago -
+In fact, it's actually looking more likely that OpenAI's solution uses an independent approach from Alpöge and Buckmaster's. OpenAI claims the model established blowup in incompressible Euler without forcing first, before proceeding to the Navier Stokes solution.
+Reddit
+reddit.com
+› r/accelerate  › openai may have solved navier–stokes
+r/accelerate on Reddit: OpenAI may have solved Navier–Stokes
+2 days ago -
+tldr: Buckmaster is an NYU mathematician who’s been working with Levent Alpöge, a researcher at Anthropic. Buckmaster says OpenAI told him they’d achieved a Navier–Stokes breakthrough, then pushed to exclude Alpöge from authorship because of his Anthropic ties and threatened Buckmaster’s career when he said he’d go public. He hasn’t seen OpenAI’s proof. He also says they’d been putting their own research drafts into Codex throughout the project, but doesn’t know whether OpenAI used that data.
+Source: Mastodon
+Top answer
+1 of 4
+195
+Just to sum up: Buckmaster (mathematician) was working with his friend (from Anthropic) on Navier-Stokes. This was not an "official" collaboration; they are friends. Buckmaster used OpenAI Sol and Astra to write up and check his ideas. He is not in official collaboration with OpenAI or Anthropic. OpenAI likely learned about this. They quickly realized Navier-Stokes can be attacked from this point of view. OpenAI mathematicians used Astra or Bel to solve Navier-Stokes. OpenAI contacted Buckmaster and offered him credit for the discovery, provided he does not mention his Anthropic friend's contributions. Buckmaster refused.
+2 of 4
+184
+academic drama is always the most dramatic
+Reddit
+reddit.com
+› r/physics  › navier-stokes millennium problem solved
+r/Physics on Reddit: Navier-Stokes Millennium Problem Solved
+2 days ago -
+https://openai.com/index/navier-stokes-solution/
+Top answer
+1 of 5
+1204
+People should know: there is drama going on about who deserves credit for this. There is a possibility that OpenAI used some unpublished work from other researchers, even though they have claimed otherwise in the announcement above: https://cims.nyu.edu/~tristanb/statement.pdf
+2 of 5
+855
+Two proposals were offered to me. The first was that we post our Euler result, and that OpenAI post its Navier-Stokes result the next day. The second was that, after posting Euler, I alone write a paper presenting the Navier-Stokes result, acknowledging that an internal OpenAI model had resolved it. Sebastien twice asserted that he wanted Levent removed from authorship, and said it would all be simple if only it were not the case that, and it was so annoying that, Levent works at Anthropic. It was also said that if OpenAI posted after us, they would say that we deserved the Clay Prize, and that we were the “closest humans to the problem”. I declined both offers. I said that if OpenAI released its result in the way proposed I would go public with what happened. The reply was, “Why would you ruin your career?” I replied that I am an academic, and asked why he thought going public would ruin my career. The reply was, “If you don’t want me to be nice, then I don’t have to be nice.” This is fucked up.
+Reddit
+reddit.com
+› r/singularity  › a solution to the navier-stokes millennium prize problem
+r/singularity on Reddit: A Solution to the Navier-Stokes Millennium Prize Problem
+2 days ago -
+The proof actually is that Navier-Stokes breaks down under certain conditions, as in the physical predictions do not hold under all circumstances. ... FLT was already solved thirty years ago, but was formalized this week. ... So Alpoge and Buckmaster are basically accusing OpenAI of using data from their Codex sessions to solve the problem but they used SOTA models to blow up the Euler equations.
+Binary Verse AI
+binaryverseai.com
+› home  › ai applications & use cases  › navier–stokes problem: did openai really solve it? what the lean proof proves and what it doesn’t
+Navier Stokes Problem: Did OpenAI Really Solve It?
+1 day ago -
+OpenAI’s overview notes that viscosity normally smooths motion, which is exactly why a finite-time blowup would be so striking. This is also why a common description of the problem is misleading. Mathematicians are not looking for one universal closed-form formula that solves every Navier–Stokes flow.
+Reddit
+reddit.com
+› r/wallstreetbets  › [ removed by moderator ]
+r/wallstreetbets on Reddit: [ Removed by moderator ]
+1 day ago -
+BUT, they do claim to have a proof for a similar (non-Millenium) Navier Stokes problem that could help lead the way there • ⁠Levent works at Anthropic, but this research was independent of his work there, with a mix of GPT and Claude models. Tristan is not related to Anthropic. • ⁠Early Sep: Rumor spreads to OpenAI that Anthropic solved a major problem.
+Google
+Bing
+Mojeek
+Next

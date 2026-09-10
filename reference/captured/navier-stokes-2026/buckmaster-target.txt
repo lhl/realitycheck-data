@@ -1,0 +1,15 @@
+https://mastodon.social/@tristanbuckmaster/117233413705701198
+2026-09-08T03:58:50.814Z
+Today, Levent Alpöge and I have made public three results: finite-time blowup with smooth forcing for incompressible porous media, for Boussinesq, and for 3d incompressible Euler. https:// cims.nyu.edu/~tristanb/stateme nt.pdf https:// cims.nyu.edu/~tristanb/euler.p df https:// cims.nyu.edu/~tristanb/ipm.pdf https:// cims.nyu.edu/~tristanb/boussin esq.pdf https:// github.com/tristanbuckmaster/f luid_lean
+
+https://mastodon.social/@tristanbuckmaster/117234822696475513
+2026-09-08T09:57:10.302Z
+I want to again express my profound gratitude to the outpouring of support from the greater mathematical community. I also want to remark that there is a far bigger story here than the one in my statement: the sheer magnitude of what frontier models can now do, and what that means for us all. I hope the labs can see this and set the petty posturing aside.
+
+https://mastodon.social/@tristanbuckmaster/117236471352470303
+2026-09-08T16:56:26.798Z
+"Since August 28 we have been training a new internal model that has exhibited unprecedented performance in our benchmarks, including mathematics. This model’s training is ongoing and its performance continues to improve." Note that they are openly admitting they used training data from a period after we found our result. Is it ethical to use customer's data to try to scoop their customer?
+
+https://mastodon.social/@tristanbuckmaster/117237555794407063
+2026-09-08T21:32:14.072Z
+Just to point something out to Open AI since they do not seem to have any mathematicians capable of understanding what they put out. They like to point out that their work was inspired by unforced Euler. As I said in my statement, our hypodissipative result  (which is not public), but as I understand it part of their training data was already pointing to the fact that unforced Euler was possible. This below is absolute academic malpractice:

@@ -1,0 +1,65 @@
+sources:
+- id: orhan-2026-research-customer-scooping
+  title: Research customers and the scooping precedent
+  author:
+  - Ryan Orhan
+  year: 2026
+  type: SOCIAL
+  url: https://threadreaderapp.com/thread/2097471623490150754.html
+  analysis_file: analysis/sources/orhan-2026-research-customer-scooping.md
+  reliability: 0.8
+  topics:
+  - navier-stokes
+  - research-credit
+  - customer-data
+  - frontier-lab-competition
+  domains:
+  - INST
+  - RISK
+  claims_extracted:
+  - INST-2026-327
+  - RISK-2026-301
+  bias_notes: 'Source reliability is scope-dependent: direct records support attribution; motives, private conduct
+    and technical validity require separate checks.'
+claims:
+- id: INST-2026-327
+  text: Orhan publicly interprets the dispute as researchers being scooped by the lab they trusted with their work.
+  type: '[F]'
+  domain: INST
+  evidence_level: E5
+  credence: 0.99
+  operationalization: Check the cited primary record, versions and counterevidence. Verified reaction; this is not
+    an audit of the alleged information path.
+  assumptions:
+  - Attribution does not independently establish the underlying allegation.
+  falsifiers:
+  - Authenticated source records contradicting the attribution or chronology.
+  source_ids:
+  - orhan-2026-research-customer-scooping
+  - tao-2026-promising-problems-open-science
+  - lhl-2026-ai-value-chain
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1
+- id: RISK-2026-301
+  text: Perceived provider competition can damage researchers’ willingness to share work even when data misuse is
+    not established.
+  type: '[H]'
+  domain: RISK
+  evidence_level: E5
+  credence: 0.8
+  operationalization: Check the cited primary record, versions and counterevidence. Supported as a trust mechanism;
+    no adoption or behavior effect size is measured.
+  assumptions:
+  - Mechanism or inference is bounded by the stated conditions; no universal effect assumed.
+  falsifiers:
+  - Researcher behavior and trust measures remain unchanged after comparable well-publicized disputes.
+  source_ids:
+  - orhan-2026-research-customer-scooping
+  - tao-2026-promising-problems-open-science
+  - maguire-bowler-2026-navier-stokes-controversy
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1

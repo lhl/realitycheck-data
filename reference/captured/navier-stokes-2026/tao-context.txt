@@ -1,0 +1,453 @@
+https://mathstodon.xyz/@tao/117237321472650215 2026-09-08T20:32:38.602Z tao
+Working out whether a question is actually worth highlighting is a lengthy, deliberate, and subjective process, often informed by historical experience on what good mathematics was generated (or not generated) while working on earlier problems of this type.  In particular, being aware of the "difficulty landscape" in a field - what questions are very easy to answer with known methods, which ones can be solved but only with some effort, and which ones are impossible - is of crucial importance in making such determinations.  And some problems only become interesting after an external connection is made.  For instance, there could hypothetically be an unexpected connection between the Riemann zeta function and the 10^10^nth digits of pi for various n... at which point the previous question of determining the 10^10^10th digit suddenly becomes relevant again.  (I should emphasize though that this specific scenario is incredibly unlikely to actually be the case; I use it only as a hypothetical iilustration.)
+Every new advance in mathematics, whether it comes from technique, technology, or infrastructure (such as access to libraries of past literature) reduces the difficulty of solving problems.  This is generally a good thing; but it comes at the cost of flattening out the difficulty landscape of a field, to the point where one can no longer discern its geometry to the extent that promising questions can be extracted within the range of applicability of the tool.  Often this effect is counteracted by the ability of such a tool to enlarge the radius of the sphere of results one can plausibly reach, creating new boundaries to fruitfully explore. (2/4)
+
+https://mathstodon.xyz/@tao/117237322160500501 2026-09-08T20:32:49.098Z tao
+However, one notable feature of the current AI era is the absence of any definitive such boundaries.  While AI tools have flattened the difficulty landscape now in many areas of the subject, thus destroying the ability to locate promising new problems in that area, there are no clear frontiers that are separating the "AI-feasible" problems from the "AI-hard" problems (which certainly still exist, given that the difficulty level of problems are unbounded, and can even be undecidable).  This is in part due to the rapidly changing nature of the technology, but also compounded by the refusal of AI companies to disclose their negative results, or reveal the process towards obtaining their solutions.
+In fact, it is now the identification of a promising problem which is the scarce and precious resource.  We have now seen that even the rumor of someone working on a problem can trigger a massive amount of AI-powered effort to flatten it before the original research project has time to reach its full potential.  The incentives may now be pointing in the direction of no longer sharing any promising research directions with the broader community, which would reverse centuries of traditions of open science and do serious long-term damage to the future of the field. (3/4)
+
+https://mathstodon.xyz/@tao/117237322698385581 2026-09-08T20:32:57.305Z tao
+In short, the indiscriminate use of powerful solution-extraction tools can achieve the immediate short-term goal of solving problems at hand, but at the cost of sustaining the ecosystem for the next wave of progress, or in understanding the progress already obtained.
+While it may be technically infeasible to completely prohibit the use of automated tools to perform indiscriminate solution extraction, I believe that we can still designate many classes of problems as being desirous of a careful analysis that not only solves the problem, but identifies insights from the solution process, and learn more about the difficulty landscape for nearby problems, and for which raw solutions without such analysis would be of negligible or even negative value for these purposes.  This is analogous to how a modern food donation drive no longer accepts arbitrary contributions even when they are verified to be technically edible, but instead maintains explicit and socially accepted standards on what level of contributions are actually sought. (4/4)
+
+https://social.vivaldi.net/@slowcoding/117237394190418819 2026-09-08T20:51:08.000Z slowcoding@vivaldi.net
+@
+tao
+curious to know what makes LLM fundamentally different compared to (other) automatic theorem provers?
+
+https://mathstodon.xyz/@davidlowryduda/117237438068681283 2026-09-08T21:02:17.717Z davidlowryduda
+@
+slowcoding
+Largely their effectiveness. Automated theorem provers aren't very good at proving theorems and the field is instead dominated by what might be better called "automated theorem verifiers"
+
+https://fosstodon.org/@StephanSchulz/117239790722897826 2026-09-09T07:00:36.000Z StephanSchulz@fosstodon.org
+@
+davidlowryduda
+@
+slowcoding
+Automated Theorem Provers are quite good at solving some kinds of problems. But they are not, in themselves, good at building deeply nested proofs, and coming up with new definitions and lemmas. They are also only now getting access to vast libraries of mathematics in their formalisms (autoformalization as a field largely grew out of ATP). Their successes are in limited fields (like loop theory or Tao's Equational Theories Project - ATPs can essentially solve that).
+
+https://social.vivaldi.net/@slowcoding/117243138241977838 2026-09-09T21:11:55.000Z slowcoding@vivaldi.net
+@
+StephanSchulz
+@
+davidlowryduda
+ok, but is that an inherent problem with how these tools work? Have we ever tried to throw as much compute to them as we are doing with LLM (training+inference)? How would they scale?
+LLMs sound like clever random walks in the solution space whereas these tools sound like systematic explorations. Is there more to it fundamentally ?
+
+https://mathstodon.xyz/@solrize/117237475283710746 2026-09-08T21:11:45.575Z solrize
+@
+slowcoding
+@
+tao
+Automatic theorem provers in the past haven't been able to solve mainstream open problems.  Or anyway, occasional exceptions were noteworthy and interesting, rather than the sound of an oncoming steamroller.  Meanwhile here's something by
+@
+wtgowers
+referencing Doron Zeilberger saying any human-proved theorem must be "trivial":
+https://www.
+dpmms.cam.ac.uk/~wtg10/zeilber
+ger.html
+
+https://mathstodon.xyz/@wikiemol/117237989166565985 2026-09-08T23:22:26.805Z wikiemol
+@
+slowcoding
+@
+tao
+There is another major difference, which is that automatic theorem provers are exact. They produce a proof certificate and nothing else. In contrast, LLMs work in Natural language, meaning that in addition to a proof certificate, it produces other information that is not verified. A well known source of unverified information is definitions, specific choices of lemmas, and other concepts in the paper: we cannot be sure that the formal definitions and other concepts it produces actually correspond to anything useful or insightful (or even correct). An automatic theorem prover does not give any illusion of having generated 'insightful' definitions or concepts.
+But in my opinion, there are many other important sources of 'unverified' information contained in natural language. Unlike lean proofs, Natural language proofs guide mathematicians toward thinking in a certain way. We have no way of verifying that guidance. I think despite appearances, there is a  substantial amount of 'philosophical' content to natural language proofs than mathematicians like to admit. A natural language proof conveys intuitions, interpretations of results, emphasis based on importance, connections to other fields, directions for future research, the personality and way of thinking of the writer, and more, all in its structure and word choice alone. Typically, they also convey many other things, like past related work, sources, inspirations, acknowledgements, etc,
+None of this information can be verified in the same way a purely formal proof can, and as a result, an LLM produces a lot more 'noise' than an automatic theorem prover does. It is this 'noise' that is the problem.
+
+https://hachyderm.io/@briankung/117241402438807826 2026-09-09T13:50:29.000Z briankung@hachyderm.io
+@
+slowcoding
+@
+tao
+I would venture to guess that billions of dollars and the incentives to top the leaderboard of math problems is the difference, besides the network effect of quashing the mathematics community
+
+https://social.vivaldi.net/@slowcoding/117243042315759422 2026-09-09T20:47:31.000Z slowcoding@vivaldi.net
+@
+briankung
+@
+tao
+agreed. But as a non mathematician I am curious to understand what is the core difference between what LLMs do and what a more standard theorem prover could do, given the same monstrous compute power?
+In other words, is that not just a roll of a gigallion dice’s, a massive brute-force solving with a very energy-inefficient fancy stochastic method, or do we have elements to tell this is more?
+
+https://sfba.social/@subterfugue/117242841132847729 2026-09-09T19:56:21.000Z subterfugue@sfba.social
+@
+slowcoding
+@
+tao
+have you considered the resources poured into these problems by OpenAI and Anthropic?
+It’s not like this tech is all that impressive. But there’s vast amounts of resources poured into these efforts and the compute infrastructure
+
+https://social.vivaldi.net/@slowcoding/117242897731307685 2026-09-09T20:10:45.000Z slowcoding@vivaldi.net
+@
+subterfugue
+@
+tao
+I was getting there :)
+
+https://mathstodon.xyz/@abelc/117237469924258127 2026-09-08T21:10:23.795Z abelc
+@
+tao
+I would like to add that the current situation is also seriously damaging the training and development of mathematicians, particularly early-career researchers who have not yet secured tenure. Publication inflation makes it difficult for them to concentrate on their research. They feel anxious and often seriously question whether their work has any real value. In particular, the uncertainty this creates about how the mathematical community and universities will evaluate research in the future leaves them with little hope for their careers. If the current situation drives young mathematicians out of the field in large numbers, creating a generational gap, I believe this will be even more detrimental to the development of mathematics.
+
+https://fosstodon.org/@nilesh/117237525824667082 2026-09-08T21:24:36.000Z nilesh@fosstodon.org
+@
+tao
+I still am not persuaded by this.
+When AI companies find incomprehensible solutions to open problems, this either advances the field, or it does not.
+If it does, then that's a good thing and we should have more of it.
+If it doesn't, then no incentives for humans to advance the field are lost. Existence of a raw solution won't make a difference.
+Only our math artifacts and systems need to change towards what we consider truly valuable: insights, not results.
+
+https://mathstodon.xyz/@drScott/117237704906958243 2026-09-08T22:10:09.346Z drScott
+@
+nilesh
+@
+tao
+I'm curious about what precise statement you are not persuaded to; the most clear thesis statements I see above are exactly about artifacts and systems. Good problems are likely to be scarce because of our choice of artifacts and systems.
+
+https://fosstodon.org/@nilesh/117237824783041971 2026-09-08T22:40:38.000Z nilesh@fosstodon.org
+@
+drScott
+@
+tao
+This one:
+> but at the cost of sustaining the ecosystem for the next wave of progress
+I don't believe there is any cost incurred when AI companies solve open math problems. If the goal is to produce insights and tools, existence of an inscrutable proof takes away nothing, and only adds.
+
+https://mathstodon.xyz/@drScott/117237895467659206 2026-09-08T22:58:37.073Z drScott
+@
+nilesh
+@
+tao
+I understand the argument for that claim as follows:
+1) If a mathematician is scooped on a problem, it is hard for them to disseminate their insights and tools.
+2) AI can, with sufficient investment, convert a tractable problem into a solution (and thus a scoop).
+3) Mathematicians can (only?) avoid being scooped by being secretive about their work.
+4) Good open problems are hard to make without an open mathematics community.
+(2-3) have just been given a major example, and seem quite plausible. (1) has a long history in the field, no? Plenty of careers ended or interrupted, and several famous and messy fights over priority. I think Tao argues for (4) persuasively.
+
+https://fosstodon.org/@nilesh/117238043563778880 2026-09-08T23:36:16.000Z nilesh@fosstodon.org
+@
+drScott
+@
+tao
+I need to ponder more on this. I was reasoning under the scenario where most people have equal access to frontier AI.
+So, using AI becomes akin to using a calculator or a personal computer. But currently, it's definitely unequal (OpenAI reportedly spent more than $1m for Navier-Stokes), which is where "scooping" becomes possible, and might encourage not sharing promising research directions in the first place.
+
+https://mathstodon.xyz/@drScott/117238869618663614 2026-09-09T03:06:21.437Z drScott
+@
+nilesh
+@
+tao
+I'm seeing reporting of $15m (
+https://www.
+newscientist.com/article/25880
+63-openai-has-solved-the-navier-stokes-millennium-problem-using-15m-of-ai-effort/
+), though I haven't had time to check the sources. A wild amount of money to burn in a weekend.
+
+https://mathstodon.xyz/@fenjen/117241648058709158 2026-09-09T14:52:57.068Z fenjen
+@
+nilesh
+@
+drScott
+@
+tao
+I feel you're missing one reason even that I do feel Tao's post touched on. It's not a hard reason, but more of a practical one: The system of mathematicians just practically doesn't really explore the search space of dead end paths after a path to a solution already has been found. The reasons for this can be multiple, perhaps incentive structures at an institutional level, or perhaps personal motivations not aligning or otherwise. Tao argue that this process is necessary, however, for important discovery and understanding.
+This is my understanding at least.
+
+https://mathstodon.xyz/@TobyBartels/117243476298554533 2026-09-09T22:37:53.794Z TobyBartels
+@
+nilesh
+@
+drScott
+@
+tao
+I think that this is correct in a well-functioning community, but I'm not sure that the mathematical community functions well enough for this.  Ideally, knowing a bad, inscrutable proof still gives us the incentive to find a good, insightful proof (whether by understanding the known proof better or by taking another approach), while at the same time cutting off inevitably fruitless efforts at finding a counterexample, so it's only to the good.  But the community that we have now is driven more by the search for new results than by better understanding old ones, so the bad, inscrutable proof can make a good, insightful proof harder to find in practice.
+
+https://mastodonapp.uk/@taoish/117244792561354147 2026-09-10T04:12:38.000Z taoish@mastodonapp.uk
+@
+nilesh
+You assert a mutually-exclusive binary dichotomy:
+"When AI companies find incomprehensible solutions to open problems, this either advances the field, or it does not. "
+Says who? What is your proof for this drastic proposition? Why couldn't an incomprehensible solution "advance the field" in some ways and set it back in others?
+@
+tao
+
+https://mathstodon.xyz/@cosmo_chou/117237801225398342 2026-09-08T22:34:39.050Z cosmo_chou
+@
+tao
+Dear Professor Tao (
+@
+tao
+), Your freshwater analogy on the non-renewable depletion of fruitful open problems—and the flattening of the difficulty landscape by brute-force AI—hits the core crisis facing mathematics.
+When automated systems bulldoze conjectures via continuous gradient fitting (PINNs) or million-line formal syntax trees, they solve equations while obscuring why they were hard, while the preemption chilling effect drives researchers into secrecy.
+In direct response to your food bank standard, we formalized the quantitative Proof Digestibility Index (D_CAP >= 0.70) in our new open paper:
+"Restoring the Mathematical Difficulty Landscape: Why Constructive Topological Manifolds and Proof Digestibility Outshine Brute-Force AI Mining"
+DOI:
+https://
+doi.org/10.5281/zenodo.22667485
+Portal:
+https://
+h3qm.com/math/
+We demonstrate three constructive principles:
+1. Difficulty as Topological Boundary: True difficulty is a topological obstruction (e.g. 3D Euler vortex reconnection ∮∇P·dl=2πn at phonon scale; (3,4,∞) modular family on S^6; metric integer phase frustration in FLT).
+2. The Cosmo Chou Machine Epsilon Identity: (2^-3)^8 = 2^-24 = ε_float32. In 8 steps, discrete integer sign-flow saturates float32 precision, reaching Exact 0 residual without floating-point accumulation.
+3. Democratizing Open Science: 150 lines of pure standard Python executes full CAP audits in <80ms on $100 consumer laptops, shielding open science from compute monopolies.
+Would institutional adoption of explicit Proof Digestibility Standards help ensure AI nourishes rather than exhausts human mathematical intuition?
+
+https://mathstodon.xyz/@Ianagol/117238028836189022 2026-09-08T23:32:32.114Z Ianagol
+@
+tao
+These companies are taking advantage of the structure of the modern mathematical enterprise. The field has become so specialized that mathematicians in one area many times cannot understand the problems or progress in other related areas. So to emphasize the importance of problems, conjectures are made, some even with prizes attached. Conjectures with many implications (even if most mathematicians cannot understand those implications) or formulated by the most famous mathematicians become more well-known (for example, the Millenium problems were curated by a small group of elite mathematicians). Long open conjectures can also achieve prestige. Solving such a conjecture then becomes prestigious because of expert opinions that the conjecture is significant, rather than for its own sake. So the AI companies are now taking advantage of this situation by pursuing the solution of these famous conjectures or problems.
+Compare, for example, to protein folding, which was “solved” by Deep Mind’s AlphaFold. This is a biological chemistry problem that can be appreciated by a large swath of the population (still, it requires some education to appreciate, but not a graduate degree in a specialized field of mathematics).
+
+https://mathstodon.xyz/@joshuagrochow/117238212028580419 2026-09-09T00:19:07.408Z joshuagrochow
+@
+tao
+You don't even need the rumor of someone working on a problem (even if that is what happened w/ Navier-Stokes). People who should know better made a system to automate mining the literature for open problems and trying to solve them:
+https://
+arxiv.org/abs/2608.16977
+. How many potential thesis problems, excellent for training budding mathematicians, did this one paper eliminate, just to give credit for those problems to...an automated system?
+
+https://mathstodon.xyz/@massimolauria/117240159778960490 2026-09-09T08:34:27.720Z massimolauria
+@
+joshuagrochow
+@
+tao
+On a more personal level, it baffles me how mathematicians could find interesting to do all that boring engineering. Even installing and keeping lean up to date feels to me a chore. And I am a guy who has fiddled with linux for almost three decades.
+
+https://mathstodon.xyz/@cosmo_chou/117238422514701478 2026-09-09T01:12:39.172Z cosmo_chou
+@
+tao
+Terence Tao's warning on the depletion of fruitful problems and difficulty flattening points to a deeper crisis: mistaking an exhaustive AI map for mathematical insight.
+Current AI formalization (e.g., Lean 4) acts like a brute cartographer. It draws an unfathomable map of millions of dead ends, but cannot answer why a path is optimal or how it serves truth. This triggers an infinite regress of syntax—methods verifying methods verifying methods—detached from physical reality until humans cannot judge if the model reflects nature.
+This causes the 'scorched-earth trap' Tao fears: brute-force search carpets problems with uninterpretable debris, misleading researchers into assuming paths are closed and killing organic curiosity. Verifying AI noise takes humans 100x more time than machines take to generate it, causing intellectual paralysis.
+Humanity does not need infinite labyrinths; it needs a topological compass: a shortest-path algorithm revealing why difficulty exists.
+Our Constructive CAP (H3QM) anchors mathematics in physical ontology (vacuum elasticity, vortex reconnection ∮∇P·dl=2πn, phonon radiation □²Ω=-κT_topo). Governed by octant contraction κ=2^-3, it saturates float32 precision via Cosmo Chou's identity (2^-3)^8=2^-24=ε_float32 in 8 steps, achieving Exact 0 on integer spaces without floating-point accumulation.
+Transferred across Hopf S^6, 3D Euler, and FLT, 150 lines of pure Python audits in <80ms, seeding the commons by proving physical algorithms can illuminate nature without compute monopolies.
+Preprint:
+https://
+doi.org/10.5281/zenodo.22667485
+Portal:
+https://
+h3qm.com/math/
+
+https://mathstodon.xyz/@practal/117238448548061459 2026-09-09T01:19:16.410Z practal
+@
+tao
+Pure mathematics is dead. Long live mathematics.
+I think all of interesting mathematics is applied mathematics in the end. Powerful AI means that the level at which we can do applied mathematics will be so much higher, though, and many more people will be able to be "mathematicians". The importance of pure mathematics is often argued for by citing examples of important applications that used pure mathematics invented a long time before the application became apparent. We can reverse this argument: by properly developing the mathematics our applications need, we surely will obtain all of interesting pure mathematics.
+
+https://mastodon.social/@robbiemu/117238455075996549 2026-09-09T01:20:56.000Z robbiemu@mastodon.social
+@
+tao
+I think that the downstream effect that is similar to this might be that 10yrs from now when publishes a proof, people say “oh, cool. So what?” Ie, be it human or ai, proofs are polite, but impact is what matters. Manuals/Textbooks and systems/approaches/problems might be where the action belongs.
+
+https://mathstodon.xyz/@srinivas/117238847868281034 2026-09-09T03:00:49.552Z srinivas
+@
+tao
+Evidently, AI's solution of valuable open problems in mathematics is not for mathematicians; the eventual audience for this effort is those (companies) who are willing and able to pay to "employ" such AI in their "workforce". A dynamic that causes academic inflation - people getting more advanced degrees to give themselves a competitive edge in being hired to work for a company, rather than the desire for more advanced work in the field - seems identical to the one incentivising the present AI dynamic.
+One measure to alleviate this is a value-proposition favouring the eco-system of mathematics. The effort to reduce greenhouse gas emissions, for instance, needed the value-propositions of the information economy and geopolitics to incent against using dead dinosaurs; not just accounts of harmed natural ecosystems.
+A temporary value-proposition candidate seems to arise from AI needing to learn from ongoing mathematical work even to flatten the mathematical landscape: if a consortium of mathematicians can be funded to develop a culture around efficient use of AI to solve research problems for the industry, it offers an alternative to companies that will otherwise only have the leading AI providers as options in the limit. It makes the argument that AI doesn't need to risk turning the eternally renewable resource of (human) mathematical creativity into a limited one by zero-sum behaviour; that it can instead sustainably accelerate such creativity in a way that is also more profitable.
+This "appeal to application" may make the likes of G.H. Hardy (and you?) wince, but perhaps less so than the present situation.
+
+https://mastodon.social/@jmma1980/117239267188450302 2026-09-09T04:47:27.000Z jmma1980@mastodon.social
+@
+srinivas
+@
+tao
+The academic pushback against AI and "uncredentialed" users mirrors the initial rejection of Ramanujan. He dropped brilliant formulas without formal proofs. Today, LLMs and outsiders yield valid solutions, but the guild dismisses them because the black box bypasses the ritual of proof. Just as Hardy built a bridge to Ramanujan's raw intuition, science must adapt or risk missing the next paradigm shift.To break this bias models must act as a bridge: recognizing raw human intuition.
+
+https://mathstodon.xyz/@srinivas/117239653773578513 2026-09-09T06:25:46.691Z srinivas
+@
+jmma1980
+@
+tao
+I'm not sure what you mean by "uncredentialed".
+I agree with the place for intuition, but I don't think proof is an incidental "guild ritual" of mathematicians at all; it is essential to the mathematical process. It is the mechanism by which two people with wildly different intuitions can make their mathematical reasoning mutually intelligible and refutable. This is like how experiments aren't incidental "guild rituals" of science - they are essential to the scientific process; 'refutability' by proof ~ falsifiability by experiment. Perhaps Ramanujan's example here is that one does not need a formal proof-system to internally arrive at sound mathematical ideas. But one does need such a system to make collective, sustained progress.
+If LLMs could make meaningful, non-trivial mathematical statements without proof - conjectures - I suspect the mathematical community may even welcome it. What irks the community presently is that AI is used to do the *opposite* (to pull an "anti-Ramanujan", if you will): to provide proofs without providing any "meaning"/insight, by training on the most recent work of humans actively working on the problem. This isn't "academic pushback against AI" so much as a pushback against a particular use of AI that harms mathematical progress.
+Many earlier posts by Tao and others here consider ways of productively using AI to do mathematics. An LLM is, after all, borne of mathematical thought.
+My mention of G.H. Hardy was for his famous stance that mathematics be pursued for its own sake rather than for its applications - ref "A Mathematician's Apology".
+
+https://mastodon.social/@jmma1980/117240079562394203 2026-09-09T08:14:03.000Z jmma1980@mastodon.social
+@
+srinivas
+@
+tao
+Academia dismissed Faraday’s field intuition because he lacked formal math. Yet, his ideas inspired Maxwell’s hydrodynamic equations. Today, the guild repeats this tragedy: absorbing independent insights on 3D Euler/Navier-Stokes equations while denying credit due to a lack of institutional pedigree. Math begins with human intuition. Maxwell had the decency to admit he was just the translator, and that the glory belonged to the blacksmith's son. Today's guild lacks that humility.
+
+https://deadinsi.de/@uniwuni/117239781987952024 2026-09-09T06:58:23.000Z uniwuni@deadinsi.de
+@
+jmma1980
+@srinivas @tao that is quite literally the opposite of what is happening. we get proofs but no intuition
+
+https://mastodon.social/@jmma1980/117240122646285566 2026-09-09T08:25:01.000Z jmma1980@mastodon.social
+@
+uniwuni
+That is precisely the paradox. Academia produces formal proofs, yet hides where the raw intuition originally came from—often silent-scraping preprints. If the guild hides its own human sources, they aren't being any more transparent than the AI companies they criticize. Double standards don't validate science; open attribution does. They are just trying to protect their economic interests, not the advancement and recognition of the intuitions that unlock 200 years of paralysis.
+
+https://mastodon.social/@iamwil/117239059022870667 2026-09-09T03:54:31.000Z iamwil@mastodon.social
+@
+tao
+What if people got credit for both posing the problem, and also finding the solution? So that every problem always has a problem definer and solution finder pair that gets credit?
+
+https://mathstodon.xyz/@iWonderAboutTuatara/117239992873247270 2026-09-09T07:52:00.941Z iWonderAboutTuatara
+@
+tao
+while i certainly agree with the correctness of what you are saying, I do wish you would be more concrete in these recommendations. How do we change our incentive structure to ensure these processes happen? While the idealistic end of determining what is and isn't desirable is needed, the practical end.of this also seems to be a hard and pressing problem.
+
+https://mathstodon.xyz/@Greyone/117242324245222274 2026-09-09T17:44:54.855Z Greyone
+@
+tao
+I wonder whether the scarce resource is not only promising problems, but representations in which "promising" becomes visible.
+What if human AI symbiosis can create new observables from which a different geometry emerges?
+
+https://mathstodon.xyz/@flengyel/117242425777264101 2026-09-09T18:10:44.111Z flengyel
+@
+tao
+Perhaps JAMS can restore order by rejecting the Navier–Stokes proof for “lack of interaction with other parts of mathematics”—the reason it gave for rejecting Friedrich Wehrung’s 14-page solution to Dilworth’s Congruence Lattice Problem.
+
+https://mastodon.gamedev.place/@poetaster/117237383849107383 2026-09-08T20:48:30.000Z poetaster@mastodon.gamedev.place
+@
+tao
+ah, who opened Pandora's box?
+
+https://mas.to/@wordmark/117237411346069279 2026-09-08T20:55:29.000Z wordmark@mas.to
+@
+tao
+#
+ai
+still FAILS at tasks where there is not sufficient data, such as
+#
+tetris
+in
+#
+bash
+
+https://mathstodon.xyz/@drScott/117237715186559627 2026-09-08T22:12:46.202Z drScott
+@
+wordmark
+@
+tao
+The 'bash tetris' example is arguing in favor of mathematics going dark? I think that would be sad.
+I also suspect that self-play would make tetris in the terminal easy for AI, but that's not so crucial.
+
+https://mk.absturztau.be/notes/aqwtxjymjl0r002y 2026-09-08T22:52:53.710Z stag@mk.absturztau.be
+@wordmark@mas.to
+@tao@mathstodon.xyz
+i was able to one-shot tetris in bash with gemini 3.1 pro (a 7 month old model)
+https://bin.disroot.org/?750ff7153320b1d4#521SqCvhdp72uE4qXS9MdALX4ntRUdjoiE9xoLHLe4Ra
+admittedly, it lacks holding and queue but that probably can be achieved in another prompt
+not saying llms are perfect but you might want to reevaluate their power
+
+https://fosstodon.org/@spicyricecaker/117237618040480323 2026-09-08T21:48:03.000Z spicyricecaker@fosstodon.org
+@
+tao
+Reminds me of Janko Meteldon's post on The Cognitive Dark Forest...
+
+https://mountains.social/@PhilGopon/117237646148819043 2026-09-08T21:55:12.000Z PhilGopon@mountains.social
+@
+tao
+I remember having to do a literature data compilation for part of my PhD, that took the better part of 4 months.
+Today I recreated the same survey in less than 20 minutes with Claude, and I don't really think that is a good thing.
+Data compilations used to force you to read and think about the other work, and in the end you had something you understood and could nicely write up to help others understand.
+The speed of publishing is outpacing the ability of ppl to read it. It was a problem before AI and now it is just out of control.
+AI to create papers that only AI will actually read, is where we are at now.
+All this at the cost of the exponential increase in energy and water resources, where is the benefit?
+
+https://mathstodon.xyz/@TaliaRinger/117237763363346851 2026-09-08T22:25:01.320Z TaliaRinger
+@
+tao
+yeah this is the most depressing part to me
+
+https://mathstodon.xyz/@aceroe/117238609645259558 2026-09-09T02:00:14.558Z aceroe
+@
+tao
+(1/4)
+I don’t really agree with the idea that “good problems are being consumed by AI like a non-renewable resource.”
+Problems are not the whole of mathematics. An open problem is better understood as an entrance, not as mathematics itself. What truly matters is what structures we come to understand through that entrance, what mechanisms we discover, what new connections we uncover, and what new questions are generated from them.
+If a problem is valuable only while it remains unsolved, and its research value rapidly disappears once an answer is found, then perhaps what is actually scarce is not mathematics, but difficulty itself.
+AI is certainly flattening the difficulty landscape very quickly. But:
+Flattening the difficulty landscape is not the same as flattening the mathematical landscape.
+For a long time, we have often used questions like “where are people stuck?” and “how many years have mathematicians spent on this?” as proxies for importance. If AI makes that way of navigating mathematics increasingly unreliable, that only means we need better criteria for mathematical value. It does not mean mathematics itself is being depleted.
+
+https://mathstodon.xyz/@aceroe/117238611527025436 2026-09-09T02:00:43.271Z aceroe
+@
+tao
+(2/4)
+There is also an important tension here. In the fourth part of this argument, Tao explicitly says that what matters is not merely obtaining a raw solution, but extracting insight from the solution process: understanding why the problem was difficult, what new ideas appeared, and what the solution teaches us about nearby problems.
+I agree with that.
+But if an AI-generated solution already contains structures, mechanisms, and constructions worth investigating further, then why should we describe the event primarily as the consumption of a problem, rather than the opening of a new research entrance?
+Whether a solution contains insight should be decided by analyzing the mathematics in the solution itself—not by looking first at who or what produced it.
+A human proof is not insightful merely because a human spent years finding it, and an AI proof is not devoid of insight merely because it was found quickly.
+The relevant question is:
+What is actually inside the solution?
+When a problem is solved unusually quickly, the more important questions should begin afterward: What mathematics appeared in the solution that we had not seen before? Which parts reflect genuine structure, and which are merely proof technology? Can those structures be generalized? What do they tell us about neighboring problems?
+
+https://mathstodon.xyz/@aceroe/117238613042943697 2026-09-09T02:01:06.403Z aceroe
+@
+tao
+(3/4)
+Navier–Stokes is a good example. Even just looking at the publicly released construction, one already encounters a large collection of structures worth studying further: concentrating cores, swirl amplification, annular stress, oscillatory realization, moment matching, residual hierarchies, and more.
+Those are not “used-up” mathematical resources. They are new objects of investigation.
+If anything, rapidly obtaining a solution may expose mathematical structure sooner than the traditional process would have done. The fact that the entrance was opened quickly says nothing by itself about how large the world behind it is.
+If an entrance has only just been opened and the first reaction is, “What a shame, another good problem has been consumed,” then perhaps what has really been touched is not a vulnerability of mathematics itself, but a value system that has long tied mathematical worth to difficulty, scarcity, and the privilege of being the one who solves the problem.
+As obtaining answers becomes cheaper, mathematical value can move upward:
+from solving a problem to understanding a structure;
+from proving one theorem to explaining why an entire class of phenomena occurs;
+from competing over an entrance to exploring the world behind it.
+
+https://mathstodon.xyz/@aceroe/117238614671548658 2026-09-09T02:01:31.252Z aceroe
+@
+tao
+(4/4)
+And if we genuinely believe that insight matters more than the bare answer, then we should apply that principle consistently.
+We should not decide in advance that a solution is intellectually impoverished because it came from AI, nor assume that a slow human solution is inherently richer.
+Inspect the mathematics. Identify the structures. Extract the mechanisms. See what new mathematics becomes possible.
+That is how we should judge whether a solution has insight.
+A good problem is not a non-renewable resource. It is an entrance.
+
+https://infosec.exchange/@itgrrl/117239784041424426 2026-09-09T06:58:54.000Z itgrrl@infosec.exchange
+@
+tao
+I think the same thing could happen more broadly too 👇
+https://
+infosec.exchange/@itgrrl/11722
+4205365020276
+
+https://tech.lgbt/@glitchcake/117241254655673791 2026-09-09T13:12:54.000Z glitchcake@tech.lgbt
+@
+tao
+Finally being affected by technofascist theft huh? If only someone had warned you...
+
+https://kolektiva.social/@arsonatdennys/117237830354054141 2026-09-08T22:42:03.000Z arsonatdennys@kolektiva.social
+@
+tao
+would deeply appreciate a bit of elaboration on “to the point where one can no longer discern its geometry to the extent that promising questions can be extracted within the range of applicability of the tool. Often this is counteracted by the ability of such a tool to enlarge the radius …”
+The metaphor is of concentric circles where the interior of inner circle’s geometry has been flattened by this new tool but area b/w the outer circle and inner circle still has sufficient ‘curvature’ to identify promising questions?
+and here, is promising in more than (just) understanding the difficulty boundaries of the tool?  E.g. difficulty topography is a compass to other qualities of interest.
+
+https://mathstodon.xyz/@DarkMidoriya49/117245232551346512 2026-09-10T06:04:32.084Z DarkMidoriya49
+@
+tao
+It feels like a distinction between NP hard and NP complete problems. The best way to work in the AI is to map a problem that cannot be done by the current level of Ai and breaking it down and to make a simialrity basis to problems that are already being solved. Directly tackling the hard problems will very much affect the current small labs very much. So for small labs it is best to use the current compute available for decomposed tasks that will combine itself into helping solve the large problems. But they have to also make sure the problem they are addressing can have the expected usage, and will be worth addressing,
+
+https://mathstodon.xyz/@Burny/117238086744602951 2026-09-08T23:47:15.726Z Burny
+@
+tao
+I really love how you think about the difficulty landscape of a field in such metamathematical ways!
+"Every new advance in mathematics, whether it comes from technique, technology, or infrastructure (such as access to libraries of past literature) reduces the difficulty of solving problems.
+This is generally a good thing; but it comes at the cost of flattening out the difficulty landscape of a field, to the point where one can no longer discern its geometry to the extent that promising questions can be extracted within the range of applicability of the tool.
+Often this effect is counteracted by the ability of such a tool to enlarge the radius of the sphere of results one can plausibly reach, creating new boundaries to fruitfully explore."
+
+https://mathstodon.xyz/@JamesRobilliard/117243368770261307 2026-09-09T22:10:33.043Z JamesRobilliard
+@
+tao
+@
+christianp
+There will be P.
+But there will also be NP.
+P = NP 😉

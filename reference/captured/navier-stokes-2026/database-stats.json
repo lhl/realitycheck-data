@@ -1,0 +1,21 @@
+{
+  "stats": {
+    "claims": 1226,
+    "sources": 307,
+    "chains": 4,
+    "predictions": 70
+  },
+  "domains": {
+    "TECH": 241,
+    "RESOURCE": 20,
+    "LABOR": 44,
+    "ECON": 110,
+    "GOV": 292,
+    "SOC": 54,
+    "TRANS": 60,
+    "META": 111,
+    "GEO": 55,
+    "RISK": 76,
+    "INST": 163
+  }
+}

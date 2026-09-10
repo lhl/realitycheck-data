@@ -1,0 +1,3 @@
+https://mastodon.social/@tristanbuckmaster/117236471352470303 2026-09-08T16:56:26.798Z tristanbuckmaster
+"Since August 28 we have been training a new internal model that has exhibited unprecedented performance in our benchmarks, including mathematics. This model’s training is ongoing and its performance continues to improve."
+Note that they are openly admitting they used training data from a period after we found our result. Is it ethical to use customer's data to try to scoop their customer?

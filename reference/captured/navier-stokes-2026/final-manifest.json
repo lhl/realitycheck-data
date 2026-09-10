@@ -1,0 +1,30 @@
+[
+  {
+    "name": "buckmaster-recent",
+    "url": "https://mastodon.social/api/v1/accounts/117226703312193175/statuses?limit=40",
+    "exit": 0,
+    "error": "",
+    "sha256": "72392afe15d59c61edb9833a4b2a4c50f6e2e5f3d7ac0355fdc4c0fc97e8b95a"
+  },
+  {
+    "name": "decoder",
+    "url": "https://the-decoder.com/openais-millennium-proof-dispute-raises-the-question-of-whether-researchers-can-trust-ai-labs/",
+    "exit": 0,
+    "error": "",
+    "sha256": "c899db0b47255d72d36fa288b8cb675b4be3cc8cb0a159026bf40249e99e7150"
+  },
+  {
+    "name": "abc",
+    "url": "https://www.abc.net.au/news/2026-09-10/openai-navier-stokes-millennium-problem-claims/107132242",
+    "exit": 0,
+    "error": "",
+    "sha256": "9951988d766e0982f0b301699b7ddb1cbae319523ef4a419d81fbe4e41e162e3"
+  },
+  {
+    "name": "elpais",
+    "url": "https://elpais.com/ciencia/2026-09-09/el-anuncio-de-openai-de-que-ha-resuelto-uno-de-los-mayores-enigmas-matematicos-de-la-historia-desata-acusaciones-de-plagio.html",
+    "exit": 0,
+    "error": "",
+    "sha256": "ffe4b7faf1931200a99704ca11cabeaee676155ce9ddfb5767161cf6644cda1d"
+  }
+]

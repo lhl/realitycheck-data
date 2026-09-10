@@ -1,0 +1,77 @@
+{
+  "queries": [
+    "\"Navier Stokes\" \"OpenAI\" plagiarism",
+    "\"Buckmaster\" \"academic fraud\"",
+    "\"Navier Stokes\" \"OpenAI\" data training",
+    "\"Bubeck\" \"authorship\" \"September\"",
+    "\"OpenAI\" \"Navier\" \"10000\"",
+    "\"Alp\u00f6ge\" \"September 2\"",
+    "\"Andreas Thom\" \"Sellke\"",
+    "\"Terence Tao\" \"promising problem\""
+  ],
+  "results": [
+    {
+      "name": "search-brave-0",
+      "url": "https://search.brave.com/search?q=%22Navier%20Stokes%22%20%22OpenAI%22%20plagiarism",
+      "exit": 0,
+      "error": "",
+      "sha256": "45cf343548a9afdf303944e1c82a4345ef77278cc57e9d2376c706a0ee90efc9"
+    },
+    {
+      "name": "search-brave-1",
+      "url": "https://search.brave.com/search?q=%22Buckmaster%22%20%22academic%20fraud%22",
+      "exit": 0,
+      "error": "",
+      "sha256": "4b937fca6a35c2a4dd4317e091070ee3d8cd9721d21bf6649666d59402b4bae3"
+    },
+    {
+      "name": "search-brave-2",
+      "url": "https://search.brave.com/search?q=%22Navier%20Stokes%22%20%22OpenAI%22%20data%20training",
+      "exit": 0,
+      "error": "",
+      "sha256": "2e784093da20c2a4daa10b6b0649d3af71ede8b135fe47c6bf7df97bc1c1942b"
+    },
+    {
+      "name": "search-brave-3",
+      "url": "https://search.brave.com/search?q=%22Bubeck%22%20%22authorship%22%20%22September%22",
+      "exit": 0,
+      "error": "",
+      "sha256": "948127dc5730396971cdd59e2c92c99c07ac4fcda2d41c2a83eafd4808e13c2f"
+    },
+    {
+      "name": "search-brave-4",
+      "url": "https://search.brave.com/search?q=%22OpenAI%22%20%22Navier%22%20%2210000%22",
+      "exit": 0,
+      "error": "",
+      "sha256": "7753c38ee76484272173f687eaccfc7170cb2422da991fab2d005a737d9718f2"
+    },
+    {
+      "name": "search-brave-5",
+      "url": "https://search.brave.com/search?q=%22Alp%C3%B6ge%22%20%22September%202%22",
+      "exit": 0,
+      "error": "",
+      "sha256": "e6f1714381fd04634b9935882dde1392aeff6e25495fc2e14dd62cdf77c29722"
+    },
+    {
+      "name": "search-brave-6",
+      "url": "https://search.brave.com/search?q=%22Andreas%20Thom%22%20%22Sellke%22",
+      "exit": 0,
+      "error": "",
+      "sha256": "847f19a12821c08b2ae9cecaca1780567bc3d618b3e4190f39588cd144e6e849"
+    },
+    {
+      "name": "search-brave-7",
+      "url": "https://search.brave.com/search?q=%22Terence%20Tao%22%20%22promising%20problem%22",
+      "exit": 0,
+      "error": "",
+      "sha256": "39f19f6a05713acafa60f96f783f5487e2341e2b1ecf43be02c2462988f77e4e"
+    },
+    {
+      "name": "hn-search",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=navier%20stokes&tags=story&hitsPerPage=25",
+      "exit": 97,
+      "error": "curl: (97) cannot complete SOCKS5 connection to hn.algolia.com. (1)\n",
+      "sha256": null
+    }
+  ]
+}

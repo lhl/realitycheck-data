@@ -1,0 +1,185 @@
+Thread by @SebastienBubeck on Thread Reader App – Thread Reader App
+Share this page!
+×
+Post
+Share
+Email
+Enter URL or ID to Unroll
+×
+Unroll Thread
+You can paste full URL like: https://x.com/threadreaderapp/status/1644127596119195649
+or just the ID like: 1644127596119195649
+How to get URL link on X (Twitter) App
+On the Twitter thread, click on
+or
+icon on the bottom
+Click again on
+or
+Share Via icon
+Click on
+Copy Link to Tweet
+Paste it above and click "Unroll Thread"!
+More info at
+Twitter Help
+Sebastien Bubeck
+Subscribe
+@SebastienBubeck
+Sep  8
+•
+2 tweets
+•
+3 min read
+•
+Read on X
+Bookmark
+Gift Link
+Save as PDF
+I would like to clarify a few things:
+1)
+The screenshot is my reaching out to Levent to coordinate our releases. I hope it’s clear from the message that we came in with the best possible intentions.
+2)
+I never ever asked for Levent to be removed from authorship of his own work (as indicated by my text). I was surprised to learn during the call with Tristan that they had only solved Euler and not Navier-Stokes; after learning this we brainstormed possible paths forward. One option we discussed was that Tristan could be the lead author on a rewrite of OpenAI’s Navier-Stokes proof. It is in that context that I said “it would be simpler if Levent was not an Anthropic employee” because I felt it would be inappropriate for an Anthropic employee to author OpenAI’s work. Importantly it was admitted that internal Anthropic models had been used in their proof of Euler blowup; I therefore felt I could not consider Levent to be an independent academic. Another option I wanted to propose (but got cut short) is to offer access to our internal model so that they could try to finish their proof and bridge the gap between Euler and NS. Again I did not know how to navigate giving access to internal OpenAI IP to an Anthropic employee.
+3)
+To reiterate it plainly: as my text clearly indicates, and as I said during our call, OpenAI's intention was to do everything possible to celebrate their mathematical achievements and the heroic efforts that they made on Euler. In the call I was immediately met with a litany of slander, including direct threats that if we were to announce Navier-Stokes he would immediately go to the press with a barrage of unfounded accusations. I refuted all these accusations but he replied “there is nothing you can do, I simply do not trust you”. I was confused why one would turn an incredible source for celebration (of their achievements!) into such bickering, which is when I said that I did not understand why one would risk their career [over unfounded accusations]. Genuinely, at that moment, I was trying to care for him and do a last ditch attempt to get a chance to give them all the credits that they deserve. I deeply apologize for this extremely poor choice of words, it is the opposite of what I was trying to convey. (I should say that I retracted them on the spot by the way.)
+4)
+Overall, on a personal level, it was incredibly difficult to have these conversations. Levent refused to attend any of the meetings despite my repeated asking. As Sholto Douglas said, there will need to be coordination between Anthropic and OpenAI in the future; I felt I was doing a proxy negotiation with Anthropic while the Anthropic employee refused to directly participate.
+Some more technical points:
+(a) We began working on the Millennium problems due to viral twitter rumors that Anthropic had resolved 2 Millenium problems. Our aim was to see whether our system was also capable of this impressive feat, especially given our excitement regarding the large recent capability increases of our internal model detailed in our blog post.
+(b) We did not see any of their work until they released it publicly last night. One can in hindsight see that our proofs differ significantly and even the precise results proved are different in the Euler case (forced vs unforced). It is also worth noting that our team consisted largely of mathematicians, physicists and computer scientists with the deepest roots in academia and respect for the stature and integrity of the Millennium problems.
+(c) Levent reached out unprompted to an OpenAI employee on Wednesday. Due to his numerous posts on Twitter (S^6, Jacobian, Hadamard…) which appear to represent Anthropic and use Anthropic internal models, we believed that their project was, at least in part, an Anthropic project. Additionally recent further tweets by Levent (“augustus mirabilis”) led us to believe that they had solved at least 1 Millennium problem and would likely release it soon.
+(d) Regarding the level of human involvement on our end: although a group of people was involved in our efforts, we collectively had no research-level expertise in fluid dynamics and the Navier-Stokes problem, and therefore were unable to meaningfully contribute to the mathematical content. We involved several people in order to initially attempt multiple Millenium problems using a variety of multiagent techniques.
+• • •
+Missing some Tweet in this thread? You can try to
+force a refresh
+Post
+Share
+Email
+Keep Current with
+Sebastien Bubeck
+Stay in touch and get notified when new unrolls are available from this author!
+Add to "My Authors"
+Read all threads
+This Thread may be Removed Anytime!
+Twitter may remove this content at anytime! Save it as PDF for later use!
+Save this thread as PDF
+Try unrolling a thread yourself!
+Follow
+@ThreadReaderApp
+to mention us!
+From a Twitter thread mention us with a keyword "unroll"
+@threadreaderapp unroll
+Practice here
+first or read more on our
+help page
+!
+More from @SebastienBubeck
+Sebastien Bubeck
+@SebastienBubeck
+Nov 27, 2025
+It's getting harder and harder to get signal from benchmark numbers. Rather than averages, I except in the (near) future we will also care about "argmax": what's the BEST output a model can deliver? After all, we don't need to solve PvsNP 10 out of 10 times, once is enough 😅. So with that in mind let me tell you a bit more about THE MOST IMPRESSIVE LLM OUTPUT I have ever seen.
+Many of you are probably familiar with the preferential attachment model (also known as Barabasi-Albert), which is a growing random graph process, where each new node attach to an existing ones with probability proportional to their degrees. This is very similar to how a network like X grows (popular accounts attract more and more followers).
+(beautiful gif by Igor Kortchemski)
+In 2012 Ramon and Comendant introduced in their COLT open problem a variant of the preferential attachment process, where each node is born with an "attractiveness" parameter, either 1 or W>1, and now the connection to a previous node is proportional to the total attractiveness of its neighbors! I.e., if you have a lot of attractive friends, you will attract more connections. I guess it simulates how an AI research lab grows or something 🤣. The very simple question they asked is: can one estimate W from observing the graph? [They asked something more quantitative than this actually, but that's the essence of their question.]
+Read 7 tweets
+Sebastien Bubeck
+@SebastienBubeck
+Aug 20, 2025
+Claim: gpt-5-pro can prove new interesting mathematics.
+Proof: I took a convex optimization paper with a clean open problem in it and asked gpt-5-pro to work on it. It proved a better bound than what is in the paper, and I checked the proof it's correct.
+Details below.
+The paper in question is this one  which studies the following very natural question: in smooth convex optimization, under what conditions on the stepsize eta in gradient descent will the curve traced by the function value of the iterates be convex?
+arxiv.org/pdf/2503.10138…
+In the v1 of the paper they prove that if eta is smaller than 1/L (L is the smoothness) then one gets this property, and if eta is larger than 1.75/L then they construct a counterexample. So the open problem was: what happens in the range [1/L, 1.75/L].
+Read 7 tweets
+Sebastien Bubeck
+@SebastienBubeck
+Jan 31, 2025
+o3-mini is a remarkable model. Somehow it has *grokked arxiv* in a way that no other model on the planet has, turning it into a valuable research partner!
+Below is a deceitfully simple question that confuses *all* other models but where o3-mini gives an extremely useful answer!
+Indeed it hits all the right things: the connection with self-contracted curves, the dimension-dependent bound, and even cites a relevant paper!
+This is not cherry picked at all and literally the first query I made. Here is the second query in a completely different topic:
+Interestingly though the reference it gives “Bubeck and Ganguly” is not quite the correct one, but it is very closely related! In general I have found that references are "fuzzily correct", giving some mixed up version of authors/journals/titles, but surprisingly still useful!
+Read 6 tweets
+Sebastien Bubeck
+@SebastienBubeck
+Apr 30, 2023
+The
+@TEDTalks
+by
+@YejinChoinka
+is both insightful & beautifully delivered! Totally agree with her that GPT-4 is simultaneously brilliant and incredibly stupid. Yejin gives 3 examples of common sense failing that are worth examining a bit more closely. 1/5
+First example is shocking, GPT-4 does not seem to understand that one can dry clothes in parallel?!? However, w. a more open-ended formulation ("what would happen if") one gets a great answer! This example shows that GPT-4 remains quite brittle with short questions like this. 2/5
+Second example is particularly interesting to me because it doesn't match at all my experience with GPT-4. What's going on? Turns out there is a simple explanation: this is pure pattern matching in action! GPT-4 memorized from online sources like this one:
+mathsisfun.com/puzzles/measur…
+Read 5 tweets
+Sebastien Bubeck
+@SebastienBubeck
+Apr 20, 2022
+We (
+@gauthier_gidel
+@velythyl
+@busycalibrating
+@vernadec
+& myself) would like to announce the accepted blog posts to
+@iclr_conf
+'s 1st Blogpost Track. Experiment was a great success with 20 accepted posts out of 61 submissions, roughly the size of the 1st
+@iclr_conf
+itself! 1/24
+Posts can be found here
+iclr-blog-track.github.io/blog/
+. They fulfill original promise: they add/replicate experiments, they illuminate prior work w. a different theoretical framework, they add new insights,.. We strongly believe there is room for such a track in all ML conferences. 2/24
+Our first post is an invited post by
+@karpathy
+on
+@ylecun
+'s revolutionary 1989 paper on convolutional neural networks. This post illustrates perfectly what a blogpost track can do for a conference, which includes highlighting influential work! 3/24
+iclr-blog-track.github.io/2022/03/26/lec…
+Read 24 tweets
+Sebastien Bubeck
+@SebastienBubeck
+Jan 20, 2022
+New video! Probably best described as "a motivational speech to study deep learning mathematically" :-).
+The ever so slightly more formal title is "Mathematical theory of deep learning: Can we do it? Should we do it?"
+1/3
+Context for this talk was an NSF Town Hall with goal to discuss successes of deep learning especially, in light of more traditional fields. Other talks by
+@tomgoldsteincs
+@joanbruna
+@ukmlv
+, Yuejie Chi, Guy Bresler, Rina Foygel Barber at this link:
+players.brightcove.net/679256133001/N…
+2/3
+But honestly I think my talk might as well have been just the title slide followed by the wise words in this video:
+"Deep Learning Theory, Just Do It" 🤣
+3/3
+Read 4 tweets
+Did Thread Reader help you today?
+Support us! We are indie developers!
+This site is made by just two indie developers on a laptop doing marketing, support and development!
+Read more about the story
+.
+Become a Premium Member
+($3/month or $30/year) and get exclusive features!
+Become Premium
+Don't want to be a Premium member but still want to support us?
+Make a small donation
+by buying us coffee ($5) or help with server cost ($10)
+Donate via Paypal
+Or Donate anonymously using crypto!
+Ethereum
+0xfe58350B80634f60Fa6Dc149a72b4DFbc17D341E
+copy
+Bitcoin
+3ATGMxNzCUFzxpMCHL5sWSt4DVtS8UqXpi
+copy
+Thank you for your support!
+Follow Us!
+Post
+Share
+Send Email!
+×
+Email the whole thread instead of just a link!
+Separate emails with commas
+Message
+Here's a great thread you should read right now!
+Send Thread As Email!
+Email Successfully Sent!

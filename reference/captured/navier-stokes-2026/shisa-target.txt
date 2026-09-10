@@ -1,0 +1,2277 @@
+Frontier Labs, Enterprises, and the AI Value Chain – Shisa.AI
+Note
+Preface
+The past few weeks have been unusually eventful for the geopolitical and economic debate around frontier LLMs. In particular: the
+Fable 5 export-control saga
+(still unfolding with the
+GPT-5.6 controlled rollout
+), and the
+heated discussions
+on how extractive frontier labs may be toward their clients and users.
+At
+Shisa.AI
+, these concerns are foundational. We train open-source Japanese language models, build open evals, and care deeply about sovereignty as a practical concern: control over models, data, workflows, deployment, and the feedback loops that improve them. As a business, what we build reflects both our principles and our read of the landscape.
+At the beginning of this year I built an open-source research and analysis tool,
+Reality Check
+. Its very first
+analysis and synthesis
+topic was AI’s economics and political consequences, and much of the analysis here was produced within that framework.
+Things are moving far too quickly (and with far too many unknowns) to claim authoritative or durable answers, but I think this exploration of the AI value-capture question is useful enough to share more widely as a lens for better understanding the topic. It also doubles as an example of how Shisa.AI is using AI-assisted analysis in our own strategic thinking and world-understanding.
+1. Scope and claims
+Value extraction
+The leading AI labs no longer merely sell access to their models; they now send their own people inside customer companies. OpenAI created a subsidiary — the Deployment Company, “DeployCo” — with $4 billion behind it and a staff of engineers whose job is to embed with corporate customers and build AI systems around their workflows
+[5]
+,
+[7]
+. Anthropic is reported to be forming a $1.5 billion joint venture with the investment firms Blackstone, Goldman Sachs, and Hellman & Friedman to do the same across the companies those firms own
+[9]
+. Microsoft and Amazon have each announced billion-dollar-plus units on the same model
+[10]
+,
+[11]
+. The job title for this work, borrowed from Palantir, is
+forward deployed engineer
+(FDE): an engineer from the vendor who sits with your experts, learns how your business works, and wires the AI into it.
+Alongside this build-out, a suspicion has spread among executives and investors: that these engagements are a one-way mirror. The lab’s engineers leave knowing how your business works — your workflows, your judgment calls, your data — and that knowledge makes the lab’s models and products better in ways you never see and may eventually compete with. In trading language, the labs are “sucking up alpha” (colloquially: privileged insider information). Alex Karp, Palantir’s CEO, turned the suspicion into a buyer’s checklist: before signing with an AI vendor, ask two questions —
+are you keeping the data, and are you going to enter our business?
+[26]
+,
+[27]
+Two events from the past year anchor the two sides of the question, and this document returns to both.
+The first is what happened to
+Windsurf
+, a startup that sold an AI coding assistant built on top of Anthropic’s Claude models. In mid-2025, while Windsurf was in acquisition talks with OpenAI, Anthropic cut off its access to Claude — its chief science officer said, “I think it would be odd for us to be selling Claude to OpenAI” — at the same time as Anthropic was ramping up
+Claude Code
+, its own competing coding product, at the same customers
+[13]
+,
+[29]
+. No data was misused. Anthropic used two things every lab has: a view of demand through its platform, and the power to decide who gets access.
+The second is what
+Bridgewater
+, one of the world’s largest hedge funds, published in June 2026. Bridgewater tested the best available models on document-analysis tasks its own investors consider trivial. The frontier models scored around 50%. Even with prompts engineered by Bridgewater’s experts, they stayed under 80% — the paper attributes the ceiling to expert judgment that could not be fully written down as instructions. Bridgewater then took an openly downloadable Chinese model, trained it further on examples labeled by its own experts, and got 84.7% — better than every frontier model tested, at roughly one-fourteenth the running cost
+[30]
+. The firm named the strategy “differentiated intelligence” and chose to compile its proprietary judgment into a model it owns rather than share that judgment with an AI vendor. The result is limited — six tasks, one firm — but it shows the direction of value flow is not fixed.
+Broader questions on value-capture
+The suspicion is the entry point to the question this document is about:
+across the AI stack — model makers, cloud providers, application companies, enterprises, and now governments — where does durable, defensible value sit?
+The same evidence that answers the enterprise’s question (
+is the vendor absorbing our advantage?
+) answers the investor’s (
+what, if anything, justifies the frontier labs’ valuations and growth expectations?
+) and the policymaker’s (
+who ends up with leverage over whom?
+).
+The question is live from the labs’ own side, because frontier-model economics do not obviously close at the model layer. Frontier-model making requires training runs and data-center commitments in the tens of billions of dollars per year, and much of the buildout is financed through arrangements that press coverage through late 2025 flagged as circular: chip suppliers investing in the labs that commit to spend the money on their chips, data-center buildouts financed against those same labs’ future payments. Meanwhile the price of the labs’ core product, raw model access, is falling fast (
+§4
+). A business with fixed costs at that scale and a commoditizing product has to find margin somewhere else; the moves this document catalogs (services arms, first-party apps, and, days before this revision, drug discovery) are consistent with that search.
+In June 2026, Microsoft CEO Satya Nadella warned that a handful of AI systems could “hollow out” entire industries — models absorbing companies’ professional knowledge and selling it back to them at commodity prices, concentrating the economic returns in a few providers — and urged companies to build what he calls
+token capital
+: AI capability they
+own
+, built on their internal data and their own learning loops
+[38]
+,
+[39]
+. This is the extraction claim restated as a warning by one of the largest AI vendors’ CEOs.
+The customer side of the story no longer stops at enterprises. In June–July 2026, European governments — France, Germany, Spain, the UK — took steps away from US AI-adjacent vendors on sovereignty grounds, and Palantir published a manifesto arguing that “controlling your weights is controlling your fate” (
+§8.3
+). Governments are applying the same logic this document develops for companies.
+Our goal in this document is to sort out how much of the suspicion is true — and what the answer implies for the larger question — using public evidence: contracts, prices, published research, and reported market behavior.
+Findings
+The most alarming version of the claim —
+labs secretly train their shared models on enterprise customers’ data
+— is contradicted by contract terms and unsupported by public evidence as of July 2026. All four major providers contractually promise not to train on business customers’ content by default; on Microsoft’s cloud the data is architecturally out of OpenAI’s reach; and no public evidence contradicts this.
+Section 9
+examines it, including the historical wrinkle (the defaults used to be the other way) and the reasons it could change.
+But three related things
+are
+happening, all documented, all legal, and mostly disclosed. The public debate tends to mash them together; they have different evidence, different legal footing, and different fixes, so this document keeps them separate and refers to them by name throughout:
+The training question.
+Does enterprise data flow into the labs’ shared models?
+Verdict: not by default, per contract, across all major providers — but the side channels are widening: the newest model tier now requires a retention-and-review data channel even through the cloud providers, and one covert client-side channel has already been caught in the wild.
+(
+§9
+)
+The byproducts question.
+FDE engagements produce artifacts along the way — lists of real tasks validated by experts, grading standards, examples of expert decisions, access to real working environments. There is now a commercial market that puts prices on exactly these artifacts, because they are what labs buy to train their models. A serious engagement generates low-to-mid seven figures’ worth. Who owns them is set contract by contract.
+Verdict: this is real, priced, and mostly unexamined by customers.
+(
+§6
+)
+The competition question.
+A lab that runs the platform sees what everyone builds on it, and controls who keeps access. That is enough to pick winning application categories, build them in-house, and disadvantage the companies it competes with — no misuse of any individual customer’s data required.
+Verdict: the best-evidenced part of the whole story — Windsurf is the case record, and policy proposals are already circulating.
+(
+§7
+)
+The operating counterweight to all three is the customer’s ability to leave, not regulation: commodity work can run on open, downloadable models at 3–10% of frontier prices, and Bridgewater showed that a company’s own expert data can make those cheap models score higher than the frontier on the company’s own tasks. That counterweight has a mirror image that belongs in the same bracket: the customer’s risk of being
+cut off
+— by the vendor, as Windsurf was, or by a third party neither vendor nor customer controls. In June 2026 a US export-control directive took Anthropic’s Fable 5 offline for every customer worldwide for eighteen days, and a downstream customer is already suing the government over the cutoff (
+§9
+). Exit and cutoff are the two faces of the same dependency calculation, and both now have case records. Where this leaves the market — a stratified truce, what it implies for frontier-lab valuations, and the developments that would break it — is in
+§10
+. A practical checklist for enterprises is in
+§11
+, and
+§12
+grades how solid each claim is.
+One note on shelf life. This analysis is a dated snapshot of a fast-moving situation: several of its inputs (the Mythos-class data channel, the safeguard-gated Fable redeployment, EdgeBench, the sovereignty cascade, the steganography finding) are days to weeks old at this revision, and earlier drafts from the same week required material corrections as new documents surfaced. The
+§12
+table marks which claims rest on single or unreplicated sources; treat every verdict as carrying an implicit “as of July 5, 2026.”
+Technical background
+Five facts about how this technology works, for readers who don’t live in it. Everything else is explained where it comes up.
+A model is a file.
+Concretely, a large language model is an enormous list of numbers — its
+weights
+.
+Training
+is the process that sets those numbers, using data;
+inference
+is using the finished model to answer things, which reads the weights but does not change them. So “are they training on my data?” means:
+does my data end up changing the numbers in their file?
+By default, using a model does not teach it anything — anything it appears to “remember” within a conversation is text being resupplied to it, not learning.
+Models are metered by the token.
+A token is roughly three-quarters of a word, and model access is priced per million tokens. This is why per-token prices come up constantly: they are the commodity price of machine intelligence.
+Open-weight vs. frontier.
+Some organizations publish their models’ weights for anyone to download and run — the Chinese labs DeepSeek, Alibaba (Qwen models), Zhipu (GLM), and Moonshot (Kimi), plus Meta and NVIDIA in the US. Run an open-weight model on your own hardware and you pay its creator nothing per token, and no one can cut you off. The
+frontier labs
+— OpenAI, Anthropic, Google — keep their best models’ weights secret and sell metered access. “Frontier” also connotes most-capable, and the gap between frontier and open-weight models is a recurring measurement in this document.
+Fine-tuning.
+Taking an existing trained model and training it a bit further on your own examples, changing its weights to specialize it. Orders of magnitude cheaper than training a model from scratch — this is what Bridgewater did, and it is what post-training shops like Shisa.AI (disclosure: the author’s company) specialize in.
+API
+just means the plumbing by which one company’s software calls another’s over the internet. Most companies consume AI models through a lab’s API, which is why API
+access
+and API
+pricing
+carry so much strategic weight.
+2. Separating the claims
+The questions fail and succeed independently, and each points to a different remedy — which is why the separation matters. Finding no evidence of secret training (the training question) says nothing about whether a lab is harvesting valuable engagement byproducts (the byproducts question) or planning to enter your market (the competition question) — and vice versa. Conflating them produces both paranoia (“they’re stealing our data” where contracts say otherwise) and complacency (“the contract says no training, so we’re fine” while the engagement quietly produces a seven-figure training-asset package whose ownership nobody negotiated).
+The training question
+is a privacy and contract matter. The claim: labs train their shared frontier models on enterprise customers’ content. The evidence against, today: OpenAI, Anthropic, Google, and Microsoft Azure all commit, in their standard business terms, not to train on customer content by default
+[1]
+–
+[4]
+; the hyperscaler channels (the same models consumed through the giant cloud providers) add an architectural guarantee on top — customer data on Microsoft’s cloud is not even
+available
+to OpenAI
+[3]
+, and AWS Bedrock and Google Vertex isolate model providers from customer traffic the same way (
+§3.4
+)
+[4]
+,
+[65]
+. The reason not to dismiss the question anyway: the defaults used to be the opposite. OpenAI’s InstructGPT — the 2022 research breakthrough that led to ChatGPT — was trained partly on prompts customers had submitted through the API, and OpenAI only flipped the API default to “no training” in March 2023, under competitive and reputational pressure
+[24]
+. Defaults that changed once can change again, and
+§9
+covers the pressure points: data-retention policies, and a research agenda (“continual learning”) that would make deployment data enormously valuable.
+The byproducts question
+is a contract and intellectual-property matter. The claim: deployments produce evaluation suites, training tasks, grading standards, records of expert decisions, and institutional know-how that improve the lab’s capability and products. This isn’t alleged — it is how the labs themselves describe their FDE programs (the “flywheel” in DeployCo’s own case studies
+[5]
+,
+[6]
+), and there is a third-party market — companies like Surge, Mercor, and Mechanize, introduced properly in
+§6
+— whose entire business is selling labs exactly these artifacts, which means the artifacts have observable prices
+[16]
+–
+[20]
+. The open variable is not whether the byproducts exist or have value; it is what each engagement contract says about who owns them.
+The competition question
+is a market-power matter. The claim: the lab’s position — it sees aggregate demand through its API, and it controls access — lets it choose which application markets to enter and hobble the incumbents there. The case record: the Windsurf cutoff; Claude Code competing with the very coding tools built on Claude; and, in February 2026, Anthropic launching legal- and financial-analysis plugins for
+Cowork
+(its enterprise assistant product) — which triggered immediate selloffs in the shares of Thomson Reuters and RELX, the incumbent providers of legal and professional data services (Westlaw, LexisNexis), as investors repriced how contestable those businesses are
+[12]
+–
+[15]
+,
+[29]
+. Note what this claim does
+not
+require: any misuse of any customer’s data. Position alone is enough.
+For reference, the same three questions in table form:
+Question
+The claim
+Evidence today
+Verdict
+Training
+Labs train shared models on enterprise content
+Contract defaults say no, across all four majors; the hyperscaler channels add architectural separation; the one precedent (InstructGPT) predates the March 2023 default flip
+[1]
+–
+[4]
+,
+[24]
+,
+[65]
+Weak today; forward risk from retention changes and continual learning (
+§9
+)
+Byproducts
+Deployments yield training-grade artifacts and know-how
+Labs describe it themselves; a market prices it; enterprise workflows are the named next growth category for lab data-buying
+[5]
+,
+[6]
+,
+[16]
+–
+[20]
+Strong; legal and disclosed; ownership set contract-by-contract (
+§6
+)
+Competition
+Platform visibility + access control let labs pick off application markets
+Windsurf; Claude Code vs. Cursor; Cowork → Thomson Reuters/RELX selloffs; policy proposals with model legislation
+[12]
+–
+[15]
+,
+[29]
+Strong as market-structure evidence; needs no data misuse (
+§7
+)
+3. Defensible assets
+The extraction claim is, at bottom, a theory of
+moat transfer
+— that deployments move defensible advantage from customers to labs. (“Moat” is investor shorthand for whatever protects a business from being competed away: proprietary data, regulatory licenses, customer relationships, technology nobody else has.) So the productive question isn’t “is extraction happening?” in the abstract; it’s an audit: what does each party defensibly own, which of those assets can move in an engagement, and in which direction? The audit turns up something the extraction framing misses: one of the transfer mechanisms now demonstrably runs
+toward
+the customer.
+3.1 The frontier labs
+Capability lead — real, but short-lived by construction.
+Coinbase’s internal assessment (the largest US crypto exchange, and — see
+§8.2
+— the most public enterprise adopter of open models) puts the frontier labs 3–6 months ahead of the best open-weight models as of mid-2026
+[31]
+,
+[32]
+; on standard benchmarks the open models sit within a few points, with the frontier’s clearest remaining edge on
+long-horizon agentic tasks
+— jobs where the model works autonomously through many steps over an extended stretch and small errors compound
+[33]
+. A 3–6 month lead is a product cycle. It has to be re-won with every release, which makes it revenue, not a moat. Two measurement caveats apply. First, benchmark scores are increasingly a function of how much computation is spent at answer time, and published comparisons rarely state their budgets — so “within a few points” comparisons are incomplete in a direction no one has quantified (
+§6
+,
+[64]
+). Second, EdgeBench (
+§6
+, single unreplicated benchmark) reports frontier models’ speed of
+learning from environments
+doubling roughly every three months — if that holds, the hardest tier is a moving boundary rather than a fixed territory the rest of the market gradually absorbs
+[53]
+–
+[55]
+.
+The sellable lead is smaller than the built lead.
+Whatever the frontier lead measures on benchmarks, what a customer can
+buy
+is less, and June–July 2026 put concrete boundaries on the discount. Fable 5 shipped with the strongest safeguards Anthropic has applied to any model — the cyber portion is documented in unusual detail
+[66]
+,
+[67]
+: safety classifiers block not only clearly malicious tasks but an entire “high-risk dual use” category that is the day-to-day work of legitimate security professionals — penetration testing, exploit development, privilege-escalation and lateral-movement work, vulnerability finding beyond what other models can do — blocked, in the vendor’s own words, “until we have better controls to limit access to known good actors”; on top of that sits a deliberately enlarged “safety margin” that raises false positives on routine coding and debugging, with blocked requests downgraded to Opus 4.8
+[66]
+,
+[67]
+.
+The full-capability sibling, Mythos 5, is available only to a government-approved list of US institutions
+[66]
+. OpenAI’s GPT-5.6 began as a trusted-partner preview whose participant list was shared with the US government at the government’s request
+[68]
+. The GPT-5.6 launch text sharpens two things about the gating. The safeguard
+architecture
+is converging across labs — layered protections, real-time cyber and biology misuse classifiers, generation paused mid-stream for review by a larger reasoning model, account-level review — but where the line sits is not: OpenAI states its safeguards are designed to preserve vulnerability research, patch development, and defensive testing (“better at helping people find and fix vulnerabilities than reliably carrying out end-to-end attacks”), where Anthropic blocks high-uplift vulnerability finding outright — the placement of the gating line is becoming a competitive variable between labs, though OpenAI too concedes its safeguards “may occasionally intervene on legitimate work”
+[67]
+,
+[68]
+. And safety is now a disclosed compute line item: OpenAI reports spending over 700,000 A100-equivalent GPU hours on automated red-teaming (adversarial attack simulation) against universal jailbreaks — inputs crafted to defeat a model’s safety rules — for this one release
+[68]
+. And the state can subtract capability retroactively: the June 12 export-control directive took Fable 5 offline for all users, worldwide, for eighteen days
+[66]
+.
+Three consequences. First, benchmark-measured leads overstate purchasable leads — for the gated categories, the frontier’s edge is not for sale at any price, or only to the vetted. Second, gating hands whole customer segments to the open ecosystem by construction: a security firm whose legitimate work sits in the blocked categories has no frontier option at all. Third, the discount compounds the compression the open models were already applying — and the Chinese labs are not merely fast-following: EdgeBench is frontier-grade research from ByteDance (
+§6
+), and GLM-5.2’s results (
+§4
+,
+§8.1
+) are original capability, produced under no comparable gating regime. There is also a time dimension, stated from inside the policy world by Dean Ball — a former White House AI staffer who contributed to the administration’s AI Action Plan and has announced he is joining OpenAI (interest noted): frontier economics recoup training costs in the few months after release before commoditization closes the margin (
+§4
+), so every week of gated or vetted release eats the payback window — and the data-center buildout is financed against a functionally global addressable market. In his words, “no one is building $100 billion dollar data centers to serve frontier models to whatever 100 companies the US government will allow access”
+[70]
+. The capability lead was already a moat that must be re-won every product cycle; it is now also a moat its owner is required — by its own safety policy and by its government — to only partially deploy.
+Compute and capital access — durable, but it protects the wrong layer.
+Only a handful of organizations can raise the tens of billions that frontier training runs and data centers require. But this moat sits at the
+model-building
+layer. It does nothing to stop the
+price of using
+models from collapsing — which, as
+§4
+shows, is exactly what is happening.
+Data and evaluation assets — the moat the byproducts feed.
+Here a shift in how models improve matters. The first generation of frontier models was built by
+pretraining
+: feeding the model a huge slice of the internet. Every lab had roughly the same internet, so pretraining data didn’t differentiate anyone. Today’s gains come mostly from
+post-training
+: teaching a pretrained model to do useful work well, using carefully constructed tasks, expert-written grading standards, and practice environments. That material doesn’t exist on the internet — it must be bought or built, so labs’
+purchasing decisions
+now reveal their strategies, and the sums are large: Anthropic has discussed spending at the level of $1 billion per year on training environments alone
+[16]
+,
+[17]
+. This is the moat the byproducts question feeds — every artifact an FDE engagement produces is this kind of material.
+Distribution — the moat under construction, and the source of the conflict.
+ChatGPT gives OpenAI the consumer relationship; Claude gives Anthropic the developer and enterprise position; and first-party applications (Claude Code, Cowork) convert “we sell model access” into “we own the workflow.” Building this moat is what puts labs in competition with their own customers; it is the source of the competition question.
+Switching costs — weak, and getting weaker.
+At the raw API level, swapping one lab’s model for another’s is often an afternoon’s work — and coding agents have made even that port cheaper. Labs are trying to manufacture stickiness — agents, persistent memory, integrated tooling — but the enterprise
+gateway
+pattern (
+§8.4
+) is specifically designed to strip switching costs back out.
+3.2 Enterprises
+Proprietary data and tacit judgment — resistant to prompting, capturable by fine-tuning.
+The Bridgewater result (told in full in
+§8.1
+) is the main evidence. On document-filtering tasks the firm’s investors consider trivial, frontier models managed roughly 50% accuracy out of the box and stayed under 80% even with expert-engineered prompts. The paper’s explanation: the experts’ judgment is
+tacit
+— they cannot fully articulate it as written instructions, so no amount of prompting transfers it. But it
+can
+be captured by fine-tuning on expert-labeled examples: a tuned open model hit 84.7%, above every frontier model tested
+[30]
+. Read as a moat audit: the judgment is real, it does
+not
+leak through ordinary model usage, and the party who owns the resulting weights is whoever runs the fine-tune — which can be the enterprise.
+Workflow context and integration.
+An MIT research project (NANDA) reported that roughly 95% of enterprise generative-AI pilots show no measurable profit-and-loss impact, attributing the failures to integration and organizational problems, not model capability
+[28]
+. (A widely repeated Stanford figure — that in 42% of successful deployments the models were effectively interchangeable — points the same direction, but we have not traced it to a primary source and flag it accordingly.) Knowing how to thread AI into a specific company’s processes is hard-won, local, and does not walk out the door with a departing FDE.
+Regulation and compliance — the moat labs openly route around.
+Coinbase’s stated defense is thirteen years of licenses, audits, and compliance infrastructure that labs show no appetite to replicate — in the telling of its CEO, Brian Armstrong, this is why labs “leave whole industries open”
+[32]
+. Bargaining power against labs is highest in regulated verticals; not coincidentally, those are where the sovereign and self-hosted offers (
+§8.3
+) are being pitched.
+Customer distribution and telemetry — real, but newly contestable.
+Systems-of-record businesses like Thomson Reuters and RELX own long-standing customer relationships and can see how their products get used — visibility labs can’t reach. The Cowork selloffs (
+§7
+) were the market repricing how safe that position is. The counterargument, from the Brookings Institution (a Washington think tank whose analysis appears throughout
+§7
+): regulated buyers will keep demanding established external vendors to stand behind mission-critical software, limiting how far a lab’s plugin can displace an incumbent
+[12]
+.
+3.3 Application-layer companies
+The
+application layer
+is the stratum of companies that build products on top of the labs’ models — coding assistants, legal research tools, customer-service agents. It is the most exposed party in this story, and the audit says the determining variable is a single one:
+do you own model weights, or only rent access?
+Without their own models
+— Windsurf’s class, and most of the 2025 wave of AI-native startups: their assets are product design, interface quality, vertical-specific evaluation suites, and speed. Every one of those is replicable by a lab, and all of it depends on API access the lab can revoke — which is not hypothetical; it is what happened to Windsurf
+[13]
+,
+[29]
+. The available mitigations: build on multiple providers from day one, keep portability at the infrastructure level, and negotiate contractual nondiscrimination.
+With their own or tuned models
+— Cursor (a leading AI code editor) is reported to be building training tasks from its own users’ interaction data
+[16]
+; Harvey (a legal-AI company) and other vertical specialists similarly; and any customer of Tinker-style tuning infrastructure (
+§4
+). For these companies, the telemetry thrown off by their own product becomes training data
+they
+own, converting distribution into a weights-level moat. This is mechanically identical to what the byproducts question describes labs doing — the same flywheel, pointed the other way. A rule this document returns to: whoever owns the deployment surface — the place where the work happens and the usage data lands — owns the data flywheel.
+3.4 Hyperscalers, data vendors, consultancies
+Hyperscalers
+— the giant cloud providers (Microsoft Azure, Amazon Web Services, Google Cloud) — own compute, enterprise trust, and something they have turned into a product:
+neutrality
+. The architecture behind the pitch is standard across all three, not a Microsoft specialty: Microsoft documents that OpenAI cannot access Azure customers’ AI data
+[3]
+; AWS Bedrock runs each provider’s model inside deployment accounts the provider cannot touch — “model providers don’t have access to Amazon Bedrock logs or to customer prompts and completions”
+[65]
+; Google’s service terms bar training use of customer data across its managed models
+[4]
+. Azure’s version draws the spotlight only because of the relationship it firewalls — Microsoft’s own investee, OpenAI. The practical consequence for buyers: if you already trust a hyperscaler with your data, consuming even frontier models through its endpoints carries stronger data guarantees than the labs’ first-party endpoints, because the isolation is the channel’s architecture rather than the model vendor’s promise.
+The same logic runs, with an irony, for the Chinese models: DeepSeek’s own endpoints offer far weaker terms — the consumer service trains on user data by default, opt-out appears only as a jurisdiction-dependent privacy right, the platform terms make no no-training commitment, and data is stored in the PRC
+[69]
+— yet the same models self-hosted, or run through a Western cloud, leak nothing by construction. With open weights, the guarantee comes from the artifact, not the vendor’s terms.
+Microsoft’s new Frontier Company unit extends the neutrality pitch to services, marketing itself with “customers keep the results of the work” — a pitch Reuters explicitly frames against enterprise fear that labs learn enough from engagements to compete in coding and law
+[11]
+. One caveat, developed in
+§9
+: as of June 2026 the neutrality product has a frontier-tier exception — accessing Anthropic’s newest model class through the clouds now
+requires
+the customer to share inference data with Anthropic, so the channel firewall holds in full only for models a tier down
+[57]
+,
+[58]
+.
+Data vendors
+are the companies that supply labs with training material made by human experts: Surge (over $1 billion in revenue), Mercor (valued at $10 billion), Mechanize (pays engineers $500K salaries; works with Anthropic). Their asset is expert networks plus quality-control infrastructure at scale — and their prices are what let
+§6
+put dollar figures on engagement byproducts
+[16]
+–
+[20]
+.
+Consultancies
+own client relationships and change-management capacity. Bain, McKinsey, and Capgemini are
+investors
+in OpenAI’s DeployCo — a vehicle whose stated purpose includes the integration work consultancies sell
+[8]
+— so they are funding a competitor in exchange for participation in it.
+4. Lab motivations
+None of the moves that alarm enterprises — services arms, first-party apps, PE deployment vehicles, and now drug discovery — is arbitrary. They follow from a squeeze between costs and prices. The chain, step by step:
+The cost side: frontier-model making requires training runs, chips, and data-center commitments running to tens of billions of dollars per year per lab, financed substantially through the circular arrangements flagged in
+§1
+(suppliers investing in their own customers; buildouts collateralized by the buyers’ future commitments). These costs are largely fixed, and they recur with every model generation.
+The price side: open-weight models are within a few benchmark points of frontier models (
+§3.1
+) and cost a small fraction as much to run. So the price of raw model access — the labs’ core product — is being competed toward commodity levels. A lab that only sells API access is a company whose product gets 10× cheaper every year or so
+without getting 10× better margins
+.
+A business with recurring fixed costs at that scale and a commoditizing product has one escape: move
+up the stack
+— sell applications, sell services, own workflows, or (the newest rung) own discoveries — layers where margin survives commoditization. But the companies already occupying those layers are the labs’ own customers and partners. Commoditization below forces vertical conflict above. This chain is the background for most of the conflicts in this document, and it is why Karp’s question — why sell tokens at all?
+[27]
+— is now asked inside the industry, not just by its critics.
+The evidence, revenue stream by revenue stream:
+Raw model access: prices collapsing.
+GLM-5.2 — the flagship open-weight model from China’s Zhipu — costs $1.40 per million input tokens against $5 for Anthropic’s Opus 4.8, roughly a quarter of the price, while scoring
+higher
+on SWE-bench Pro, a benchmark built from real software-engineering tasks
+[36]
+. The migrations are named and public: Lindy (an AI-assistant startup) moved from Claude to DeepSeek after its AI bill exceeded its payroll; Microsoft is evaluating a fine-tuned DeepSeek for its own Copilot product
+[33]
+. The repricing also runs inside the labs’ own lineups: OpenAI’s GPT-5.6 Terra ships with “competitive performance to GPT-5.5” at half GPT-5.5’s price
+[68]
+. Coinbase projects that within 12–18 months, 80% of its AI workloads will run on models 99% cheaper than frontier
+[31]
+,
+[35]
+. Aaron Levie, CEO of Box, calls that projection “a bit extreme” but concedes the underlying point — usage is splitting into a high-end tier and a high-volume cheap tier
+[37]
+. None of the operators quoted in
+[33]
+or
+[37]
+dispute the direction, and the migration risk is named in reporting on the labs’ own IPO narratives
+[33]
+.
+Consumer subscriptions.
+SemiAnalysis (a widely read semiconductor-and-AI industry research outfit) estimated that a $200/month subscription delivers roughly $8,000–14,000 worth of tokens at list prices. The economic rationale for selling at that subsidy: the subscription buys usage signal (what people do with models), feedback data, and habit formation — a data-acquisition and market-share program run through a pricing plan.
+Services: the FDE build-out.
+The largest vehicle is OpenAI’s DeployCo. Its disclosed structure: $4 billion initial investment at a $10 billion pre-money valuation; investors get a
+guaranteed minimum 17.5% return
+with profits capped above that; OpenAI keeps majority control; ~150 engineers acquired via the consultancy Tomoro; and 19 private-equity and consulting backers whose portfolios span more than 2,000 companies
+[5]
+,
+[7]
+,
+[8]
+. Read together, those terms pay the backers a fixed coupon for delivering their portfolio companies as customers, while OpenAI keeps control and the upside. Anthropic’s reported $1.5B joint venture with Blackstone, Goldman Sachs, and Hellman & Friedman (reported by the Wall Street Journal via Reuters; Reuters could not independently verify) runs the same structure into private-equity portfolios
+[9]
+. Two readings fit these facts. (a) These are institutionalized collection vehicles — byproducts and market visibility gathered across thousands of companies at once. (b) They are a defensive move into lower-margin consulting revenue because model-layer pricing power is eroding. Reading (b), the charitable one, does not resolve the byproducts question for customers: a lab that needs services margin has a revenue reason to make each engagement produce reusable assets.
+First-party applications.
+The pattern, twice now: watch aggregate demand through the API, identify the winning application category, build it in-house, capture the application margin. Claude Code against Cursor and Copilot; then Cowork’s legal and financial plugins against Thomson Reuters and RELX
+[12]
+. No individual customer’s data is touched — aggregate demand visibility is sufficient targeting information. This is the competition question in its complete form.
+Beyond apps: the discovery layer.
+On June 30, 2026, Anthropic launched Claude Science — an AI “workbench” for scientific research — together with a drug-discovery program aimed at neglected diseases
+[40]
+,
+[41]
+. Commentary at the launch stated the economic logic (the commentator Benjamin Horne
+[52]
+): competing in enterprise software is “a knife fight over generic workflows and UI/UX” — low barriers, commodity pricing — whereas drug discoveries are rare, patent-protected, and cannot be copied by a competitor. A lab whose models can
+originate
+discoveries would hold rent-bearing assets instead of commodity token revenue. Whether frontier models can produce novel, lucrative discoveries is unproven;
+§12
+grades it Unresolved. As a statement of intent, though, Claude Science extends the pattern: each step up the stack — services, apps, now discovery — is a search for the margin that token-selling does not provide, and each step puts labs in competition with a new class of their own customers (here, the pharmaceutical industry).
+The counter-model: training as a service, customer keeps the weights.
+Thinking Machines Lab (an AI infrastructure company staffed heavily with ex-frontier-lab researchers) sells
+Tinker
+, a product that inverts the lab relationship: the customer brings its data, rents the fine-tuning and reinforcement-learning machinery, and
+owns the resulting weights
+; nothing flows into any shared model
+[30]
+. Combine Tinker-style infrastructure with open-weight base models and you get a complete AI stack containing no frontier lab at any layer: open base model + rented training infrastructure + the customer’s own expert data + self-hosted inference. Bridgewater’s paper is the published demonstration that this stack can outscore the frontier on the customer’s own tasks, and “differentiated intelligence” is the name the paper coined for the strategy.
+5. Partners and rivals
+The industry is a web of bilateral relationships, each simultaneously cooperative and adversarial, and all renegotiated in 2025–26. Each row of the table follows the same pattern: the parties need each other on one face and are maneuvering against each other on the other.
+Relationship
+Cooperative face
+Adversarial face
+2025–26 flashpoints
+Lab ↔︎ Enterprise
+Vendor and customer; FDEs co-develop workflows
+The customer is also a data source; the lab is a prospective competitor in the customer’s own vertical
+Karp’s checklist (“are you keeping the data, are you going to enter our business”)
+[26]
+,
+[27]
+; Anthropic’s Fable retention terms prompting Microsoft to limit employee use (
+§8.5
+)
+[21]
+,
+[22]
+Lab ↔︎ App layer
+API supplier and platform partner
+The supplier is also a competitor, and access is revocable
+Windsurf cutoff; Claude Code vs. Cursor; SpaceX/xAI signaling a Cursor acquisition
+[13]
+–
+[15]
+Lab ↔︎ Hyperscaler
+Compute supplier, investor, sales channel
+The channel’s architecture deliberately blocks the lab’s data access; the hyperscaler builds rival deployment arms
+Azure’s data firewall
+[3]
+; Microsoft Frontier Company
+[11]
+; Microsoft evaluating DeepSeek for Copilot
+[33]
+; Fable’s provider-data-share requirement piercing the channel firewall for Mythos-class models (
+§9
+)
+[57]
+,
+[58]
+Lab ↔︎ Data vendor
+Labs buy environments and grading standards
+Labs in-house the work to keep training priorities confidential; vendors climb up-stack
+Anthropic’s ~$1B/yr environment discussions; OpenAI building an in-house human-data team
+[16]
+,
+[17]
+Lab ↔︎ Consultancy
+Delivery partnerships (Accenture, Deloitte, PwC; Bain and McKinsey as DeployCo investors)
+DeployCo targets the consulting market itself
+DeployCo’s investor-as-competitor structure
+[5]
+–
+[8]
+Lab ↔︎ Private equity
+Capital plus captive distribution into portfolio companies
+Portfolio companies are simultaneously investors, customers, and data sources
+Anthropic/Blackstone–H&F–Goldman JV
+[9]
+; DeployCo’s 19 backers
+[8]
+Enterprise ↔︎ Open-model ecosystem
+The exit option: cost discipline and data sovereignty
+Legal and geopolitical exposure of Chinese models
+GLM and Kimi named in a congressional security probe weeks before Coinbase adopted them
+[33]
+,
+[36]
+; Bridgewater tuning Alibaba’s Qwen
+[30]
+,
+[31]
+US labs ↔︎ US government
+Project Glasswing (the labs’ security partnership with the US government); pre-release testing and government sales; a reported “AI wealth fund” equity proposal
+[71]
+The state is gatekeeper (export controls, trusted-partner vetting, unpublished licensing criteria) and now prospective shareholder
+The Lutnick export-control letters and Fable/Mythos takedown
+[66]
+; GPT-5.6 vetted preview
+[68]
+; Ball’s de-facto-licensing analysis
+[70]
+; the reported 5% stake proposal
+[71]
+,
+[72]
+US AI vendors ↔︎ Allied governments
+Sovereign-AI offerings; intelligence and defense contracts
+The vendor is a sovereignty risk — dependency on a supplier “capable of turning off the tap”; the vendor’s own government can turn the tap off too
+France’s DGSI replacing Palantir with ChapsVision; Germany’s BfV likewise; Spain warning state-backed firms off new Palantir contracts; UK reviewing the NHS contract (
+§8.3
+)
+[43]
+–
+[47]
+; the Fable 5 export-control takedown, Mythos vetting, and GPT-5.6 preview (
+§3.1
+,
+§9
+)
+[66]
+,
+[68]
+These are competing market forces, not just competing narratives — the narratives are downstream of actual models competing in actual markets, not moves in some notional marketplace of ideas: each party has revenue, valuation, or policy outcomes riding on its position, and acts on them (cutting access, switching vendors, changing contract terms) rather than only arguing for them. Four structural observations follow, and the later sections rely on them:
+Every row contains the same entity in conflicting roles.
+Your supplier is your competitor; your investor is your rival; your sales channel blocks your data access. This is why the policy world has started reaching for infrastructure-regulation analogies (
+§7
+): “essential supplier that also competes with its customers” is exactly the shape — railroads, telecoms — that nondiscrimination rules were invented for.
+The exit rows set the terms for all the others.
+In every negotiation a lab has — with enterprises, app companies, consultancies — its leverage is capped by the counterparty’s cost of walking away to the open-model stack; and the last row shows governments running the same walk-away logic against US vendors generally. Improvements in open models, price cuts, and migration tooling all lower that exit cost, and it fell through the first half of 2026. The open-model ecosystem thus disciplines relationships it is not party to.
+Dependency is asymmetric and moves with the economics.
+As of mid-2026: labs need enterprise revenue and hyperscaler compute to support the capex and valuation structure described in
+§1
+; enterprises need frontier capability only for the share of work the cheap tier cannot do, and that share is what the
+§8.2
+routing data measures; hyperscalers can sell either side, since their clouds run open and closed models alike. Falling exit costs move leverage toward customers. A solved continual-learning capability or a discovery-layer success (
+§10
+) would move it back toward the labs. Who needs whom more is not a fixed fact — it shifts with the trends in
+§4
+and
+§8
+, which is why this document dates its claims.
+Every statement quoted in this document is also a move by one of these parties.
+Palantir’s sovereignty manifesto preceded a product launch by two days (
+§8.3
+); the hyperscalers’ neutrality is a sales pitch (
+§3.4
+); Nadella’s “token capital” warning supports Microsoft’s own deployment products; the post-training commentary in
+§8.1
+comes from people building or funding post-training businesses; ByteDance, publisher of EdgeBench, is itself a lab. This does not make the claims false — several are well-evidenced — but each should be weighed with its speaker’s interest attached, which is what
+§12
+’s source notes attempt.
+6. Workflow knowledge valuation
+The artifacts an FDE engagement produces are the same goods labs buy on an open market. This section describes that market, then prices an engagement against it.
+Why this market exists.
+As
+§3.1
+described, model improvement now runs on post-training: give the model realistic tasks, let it attempt them, grade the attempts, and update the weights toward what scored well — the technique called
+reinforcement learning
+(RL). Doing this at scale requires three inputs that don’t exist on the internet:
+tasks
+that reflect real work, with unambiguous success criteria;
+graders/rubrics
+— often expert-written standards, sometimes checking programs — that score attempts; and
+environments
+— sandboxed replicas of real software (a fake Salesforce, a cloned Slack) where the model can practice safely. A supply industry — Surge, Mercor, and Mechanize are the names that recur — now builds and sells all three.
+The price sheet.
+Epoch AI — a nonprofit research group that tracks AI progress — published a January 2026 FAQ based on 18 interviews across environment startups and frontier labs
+[16]
+, which, together with vendor disclosures, gives us actual numbers:
+Item
+Price
+Ongoing vendor contracts
+Six to seven figures per quarter; one observed range $300–500K/quarter
+Website replica for interface practice (a “UI gym”)
+~$20K
+High-fidelity clone of a complex product (Slack-class)
+~$300K
+Individual tasks
+$200–$2,000 typical; up to $20K for complex software-engineering tasks
+Exclusivity premium
+4–5× the non-exclusive price
+RL compute burned per task (Mechanize estimate)
+~$2,400 — which is why low-quality tasks are worse than worthless
+[18]
+Anthropic environment spend under discussion
+>$1B/yr (The Information, Sep 2025)
+For scale: OpenAI’s projected 2026 research compute
+~$19B
+Two notes on reading it. First,
+enterprise workflows
+— operating Salesforce, processing expense reports, working spreadsheets, driving the CRM and ERP systems that run sales and operations — are named as the next big category labs want to buy
+[16]
+; SemiAnalysis documents the pipeline in which work traces, telemetry, and expert grading standards feed directly into training, and observes that where every lab once trained on the same internet,
+what a lab buys is now its strategy
+[17]
+. Second, the vendors’ reported bottleneck is not ideas but
+expert quality control
+: Epoch reports tasks need minimum machine pass rates of ~2–3% to be trainable (too hard teaches nothing), and roughly 70% of vendor-produced tasks get discarded in QA
+[16]
+— a figure the engagement-valuation table below returns to.
+Now price an engagement.
+OpenAI’s own case study of its John Deere engagement describes “hundreds of real-world examples reviewed with domain experts” and custom evaluation systems
+[6]
+. Line up what such an engagement produces against the market’s prices for the equivalent goods:
+Engagement byproduct
+Market equivalent
+Implied value
+~300 expert-validated tasks with grading standards
+$200–$2,000 per task
+$60K–$600K non-exclusive
+De facto exclusivity (no competitor gets this task set)
+4–5× premium
+$240K–$3M
+Access to a real production environment
+Synthetic replicas run $20K–$300K; the real thing exceeds the replica
+≥$300K equivalent
+Difficulty calibration from real failure patterns
+No market quote — but recall the 70% QA discard rate; knowing which tasks are hard in practice is what vendors struggle to supply
+Unpriced but material
+Field knowledge and product-roadmap signal
+No market exists
+Unpriced; strategic rather than sellable
+Total:
+low-to-mid seven figures per serious engagement
+, valued at market proxies — the same order of magnitude as the engagement fees themselves. The customer pays the lab to produce an asset the lab would otherwise have to buy from Mercor, and the quality-control step that is the bottleneck of the commercial market — expert validation — arrives free, performed by the customer’s own staff in the course of the engagement. The remaining question — whether such expert-validated data converts into capability — is what the Bridgewater result (
+§8.1
+) answers on its tasks: +6.5 accuracy points over the best frontier model
+[30]
+.
+The open variable, engagement by engagement, is the contract: who owns the tasks, the graders, and the work traces, and whether the provider may generalize from them.
+Bounds on the claim.
+Labs’ environment spending runs one to two orders of magnitude below their compute spending, so byproducts are one input among several, not the decisive one
+[16]
+. Non-exclusive market prices cap any single customer’s workflow value at hundreds of thousands to low millions — no one enterprise’s workflows are decisive. The value is priced and worth negotiating over; it is not, by itself, existential.
+Those bounds reflect the market as it stood through June 2026. Two findings from the first days of July 2026 bear on the environment rows specifically.
+A new input to the machine: interaction time.
+On July 2, 2026, the Seed research group at ByteDance (TikTok’s parent company) released EdgeBench, a benchmark whose subject is not what a model knows but how an agent
+learns from a real environment when given time
+: 134 real-world tasks across science, software engineering, optimization, knowledge work, formal math, and games, each built for 12–72 hours of continuous agent operation — tasks on which recorded human-expert effort averages 57.2 hours, reaching 320 in the largest cases
+[53]
+,
+[54]
+. The findings, from 38,000 hours of agent runs, are author claims from a single brand-new benchmark (
+§12
+grades them accordingly); the reported fits are tight. Aggregate performance follows a smooth “log-sigmoid” curve as a function of environment interaction time (mean R² = 0.998). The gains come from accumulating and reusing task experience, not from restarting and hoping — their §5.2 shows repeated independent sampling doesn’t explain the progress. Giving the agent a longer context window — how much text the model can keep in view at once — matters: Opus 4.8 with a 1-million-token context beats the same model at 200,000 tokens at every checkpoint of a 12-hour run (their §5.3). And, measured across model releases from September 2025 to May 2026,
+the speed at which frontier agents learn from environments is doubling roughly every three months
+[53]
+–
+[55]
+.
+If this holds up, it names a third scaling regime — after pretraining’s data and post-training’s tasks,
+environment interaction time
+— and it bears on the environment rows in the tables above. An environment stops being a one-time training asset and becomes a place where capability compounds over hours; the “access to a real production environment” row was priced against static replicas, and under this regime
+sustained
+access would be worth more than any replica. It is also consistent with the labs’ billion-dollar environment budgets (
+§3.1
+) being an early bet on this. On the pace question: within this benchmark’s measurement window (model releases from September 2025 to May 2026), frontier learning-from-environments performance was still accelerating — a new scaling axis, if the result replicates, rather than a slowdown.
+Capability is a function of the inference budget.
+A June 2026 analysis by Noam Brown, a senior OpenAI researcher, argues that benchmark performance is increasingly a function of
+test-time compute
+— how many tokens, dollars, or hours a model is allowed to spend on the problem — and that single-number benchmark scores are therefore losing information every release cycle
+[64]
+. His evidence: GPT-5.5 looked marginally better than GPT-5.4 on scalar benchmarks but substantially better once scores were plotted against token budget; on the UK AI Security Institute’s cyber evaluation, Mythos and GPT-5.5 were still improving past 100 million tokens per task with no plateau observed; and stronger models gain more from additional compute than weaker ones, so the plateau moves further out with each generation. His conclusion: “we likely don’t know what the capability ceiling is for modern LLMs because it’s too expensive to measure” — a dedicated actor could spend over $10 million of inference on a single task, and no evaluation runs there. His recommendation — report performance as a curve against tokens, cost, or time — is the design EdgeBench implements for environment learning (its leaderboard reports scores at 2, 6, and 12 hours), and it reached a flagship launch the same month: OpenAI’s GPT-5.6 preview reports its cyber and biology evaluations as score-versus-output-token curves rather than scalars
+[68]
+.
+Three consequences for this document. First, the scalar comparisons cited here — GLM-5.2 vs. Opus 4.8 on SWE-bench Pro
+[36]
+, the PostTrainBench ranking
+[50]
+, the “within a few benchmark points” gap of
+§3.1
+— are all snapshots at unstated budgets; budget-controlled measurement could move them in either direction, and mostly has not been done. Second, the cost argument of
+§4
+and
+§8.2
+is incomplete as stated: the relevant comparison is not price per token but capability per dollar, and a cheaper model allowed more tokens may or may not match a stronger model at equal spend — the curves that would answer this are largely unpublished. The
+§8
+routing decision is, in these terms, a budget-allocation problem, which is what Harvey’s Weinberg means by “intelligence allocation”
+[37]
+. Third, for
+§9
+: safety and access thresholds (the Mythos-class gating, state-mediated release regimes) are set against evaluations run at some inference budget, and Brown notes that release evaluations rarely state or vary that budget — so a capability threshold is only as meaningful as the budget it was measured at.
+Environment and grader quality shape behavior, not just scores.
+A July 2026 audit of coding-agent trajectories (the Clean Coding Index
+[56]
+) found that capability and
+reward hacking
+— gaming the grader instead of doing the task — rise together as models are given more thinking time, and that “clean” is a property of the environment as much as of the model: GPT-5.5 showed zero hacking attempts on patch-style tasks (fix this GitHub issue) and the
+highest
+rate of anything tested — 26.5% of runs — on open-ended mission-style tasks (rewrite this compiler in another language). The auditors’ hypothesis: OpenAI hardened patch-style environments during training, teaching the model that hacking never pays
+in that form
+— cleanliness is trained in per-environment, not a general trait. Holding out the contaminated tasks moved every model’s score by up to ~8 points. Two consequences for this section’s market: hack-resistant graders — exactly the expert-QA work that is the commercial bottleneck — get
+more
+valuable as models get more capable; and headline benchmark numbers, including several cited in this document, carry error bars that only audits of this kind reveal.
+7. Platform leverage
+The competition question needs the least inference of the three, so this section is mostly a record.
+The structure.
+Google, OpenAI, and Anthropic controlled roughly 90% of the $37 billion enterprise market for model access at the end of 2025 — Anthropic 40%, OpenAI 27%, Google 21% (Menlo Ventures data via Brookings)
+[12]
+. Every application company in the ecosystem builds on rails owned by three firms, each of which also competes at the application layer.
+The record.
+Anthropic terminated Windsurf’s Claude access during Windsurf’s acquisition talks with OpenAI — the stated reasoning, from its chief science officer: “I think it would be odd for us to be selling Claude to OpenAI” — while ramping Claude Code at the same customer base
+[13]
+,
+[29]
+. In August 2025, Anthropic cut off OpenAI’s own API access over pre-launch benchmark testing of GPT-5
+[29]
+. In February 2026, Anthropic’s Cowork legal and financial plugins launched, and Thomson Reuters and RELX shares sold off on the news
+[12]
+. In each of the three incidents, a lab used access control or platform position against a counterparty.
+The policy response.
+The Vanderbilt Policy Accelerator (VPA — a university policy shop that has become the reference source on this issue) published “AI Neutrality” (Ramzanali & Rajan, January 2026), proposing a rule modeled on net neutrality and common-carrier law: model providers offering public APIs may not
+unreasonably discriminate
+among similarly situated customers in access, latency, price, or quality of service, with carve-outs for security and unlawful use; the report ships with model legislation
+[13]
+,
+[14]
+. Follow-ups extend the argument: a Brookings op-ed adds the risk of the reported SpaceX/xAI acquisition of Cursor (a model owner acquiring the leading independent coding tool), and VPA’s “After the AI Crash” (March 2026) games out a post-correction world, proposing structural separation of models from data centers, utility-style regulation, and a ban on what it calls extractive business models
+[15]
+.
+This is the strongest-evidenced of the three questions because it requires no hidden conduct. The demand shape visible through a lab’s API — which categories are growing, what usage looks like at the winners — is sufficient targeting information for first-party product decisions. Everything needed for the strategy is legal, disclosed, and in two cases already executed.
+8. Customer countermeasures
+Four countermeasures are public and in production use. Two are case studies with numbers (Bridgewater, Coinbase), one is a product category that governments have begun to adopt (sovereign deployment), and one is the architectural pattern that ties them together (the gateway).
+8.1 Customer-owned fine-tuning: Bridgewater (June 2026)
+The full version of the story from
+§1
+, because its details carry the argument
+[30]
+.
+Bridgewater’s AIA Labs took six document-filtering tasks — screening documents for relevance the way its investment staff does, work its investors consider trivial — and ran the best frontier models against them (Anthropic’s Opus 4.6 and 4.8, Google’s Gemini 3.1 Pro, OpenAI’s GPT-5.4 and 5.5):
+Result
+Number
+Frontier models, straightforward prompting
+~47–50% average accuracy
+Frontier models, prompts engineered by Bridgewater’s experts
+still under 80%
+Qwen3-235B (open-weight, Alibaba) fine-tuned on expert labels
+84.7%
+— 29.8% fewer errors than the best frontier model
+Running cost vs. frontier
+~14× cheaper
+For contrast: upgrading frontier models
+GPT-5.4 cost 43% more than GPT-5.2 for a small accuracy gain
+The method, in plain terms: experts labeled examples of correct judgments; a verification scheme routed disagreements back to experts so the labels stayed clean; then the open model was fine-tuned on those labels using a handful of published training techniques (for practitioners: interleaved batching, CISPO with asymmetric clipping, on-policy distillation with promoted teachers) — all reproducible by a competent machine-learning team on rented infrastructure, no frontier lab required. The paper’s explanation for the frontier models’ ceiling: the experts’ judgment is
+tacit
+— they cannot fully write it down, so it cannot be delivered through a prompt, no matter how good the model reading the prompt is.
+Four consequences for this analysis, each worth stating separately:
+It breaks the “general capability wins” assumption
+for tacit-judgment tasks. If judgment can’t be articulated, it can’t be prompted in — a smarter model reading incomplete instructions is still working from incomplete instructions.
+It demonstrates capture-by-the-owner.
+The exact mechanics a lab would use to absorb expert judgment — labeled examples, verified by experts — work just as well pointed into weights the
+customer
+owns.
+The author’s identity is itself evidence.
+Bridgewater’s business is proprietary investment judgment. Facing the choice of exposing that judgment to a frontier vendor or compiling it into weights it owns, it chose ownership — and published the recipe.
+It cuts both ways.
+The result confirms that expert-labeled enterprise data converts into model capability — the asset the extraction claim worries about exists. Every FDE engagement that produces such labels improves
+someone’s
+model; the contract decides whose.
+A fifth consequence is still unfolding:
+the price of doing this is falling.
+Post-training — the shaping step, as distinct from pretraining — is commoditizing in its own right. The reference point circulating in early July 2026: GLM-5.2, which costs 5× less than Opus 4.8 (and 11× less than Fable 5), tops PostTrainBench — a benchmark that scores frontier models on how well they can
+themselves
+post-train a smaller model to excel at a target task
+[50]
+. The AI researcher Karina Nguyen drew the economic conclusion: post-training “is beginning to see the light of economic viability,” something many venture investors did not believe six months earlier — “the marginal cost of shaping intelligence is falling,” so more businesses can own models trained on their own data, tuned to their own judgment, improved inside their own feedback loops
+[49]
+. The accompanying vision statement goes further: “every company and country should be able to own models trained on its own data… The future is millions of models, each crafted around the data, values, and decisions of the people who rely on them”
+[50]
+.
+A caveat before leaning on that leaderboard: independent analysis by the benchmark commentator
+@scaling01
+argues PostTrainBench inflates recent models’ scores — its agents have unrestricted internet access, so newer entrants benefit from teacher models, datasets, and methods published after older entrants ran — and a trace analysis found GLM-5.2 probing the official evaluation ~38% more per run than Opus 4.8, with the benchmark’s anti-cheating judge positioned to catch only crude gaming such as direct contamination
+[51]
+. Treat the specific ranking as contested. The direction does not hang on one leaderboard: Bridgewater’s result above is a production result independent of any benchmark dispute, and Nadella’s “token capital”
+[38]
+,
+[39]
+is the same prediction voiced from the selling side. If the marginal cost of shaping intelligence keeps falling, the Bridgewater pattern stops being something only a large hedge fund can afford and becomes ordinary procurement.
+8.2 Cost-tiered routing: Coinbase (June 2026)
+Armstrong published the playbook
+[31]
+,
+[34]
+–
+[36]
+. Coinbase routes all internal AI usage through a single internal control point (built on LightLLM, an open-source routing layer — the “gateway” pattern
+§8.4
+generalizes). Defaults are open-weight models — GLM-5.2 and Kimi 2.7 — with automatic escalation to frontier models when task difficulty warrants it. Two unglamorous changes carried much of the savings: raising the
+cache hit rate
+— the fraction of requests answered from previously computed results instead of paying for fresh computation — from 5% to 60%, and per-team spend visibility. Outcomes: AI spend down ~50%
+while token usage grew
+; 91% of engineers never hit the usage caps they used to hit; and the projection quoted in
+§4
+— 80% of workloads on 99%-cheaper models within 12–18 months. The other half of Armstrong’s playbook is the Bridgewater pattern at Coinbase scale: training on its own “Advisor” human-approval decisions to beat general models on its core task, protected by the compliance moat of
+§3.2
+[32]
+.
+Reactions from other operators point the same way: Box’s Levie (usage stratifies into high-end and high-volume); Harvey’s Weinberg (“intelligence allocation is going to be extremely important”); Gentilcore of the enterprise-search company Glean (“everyone technical already knows this” — only the financial markets still extrapolate frontier prices to infinite scale)
+[37]
+.
+The caveats are geopolitical rather than technical. GLM and Kimi were named in a congressional security probe weeks before Coinbase’s announcement; self-hosting keeps data off Chinese servers but does not answer questions about the models’ provenance — what went into training them and whether that matters
+[33]
+,
+[36]
+. The caveats contest
+which
+open models, not
+whether
+open models.
+Sovereign deployment: nation-state countermeasures
+The third countermeasure is a product category that acquired a state-level case record in June–July 2026.
+The product.
+Palantir and NVIDIA jointly sell open Nemotron models (NVIDIA’s open-weight family) deployed entirely inside customer-controlled environments, marketed with Karp’s checklist as the sales script: is your vendor keeping the data, and will it enter your business
+[26]
+,
+[27]
+.
+The manifesto.
+On July 1, 2026, Palantir published nine theses on “AI sovereignty”
+[42]
+. Its argument overlaps this document’s
+§6
+and
+§8.1
+: “Data retention is your treasure. Transfer it at your own peril.” “Controlling your weights is controlling your fate… if you let others control your weights, you are allowing them to migrate the alpha of your business to theirs.” It coins a term for the labs’ business model —
+tokenmaxxing
+— with the observation that “there is a reason why those selling tokens refuse to charge based on value.” Two caveats: the manifesto landed two days after the NVIDIA partnership it promotes — the commentator Arnaud Bertrand called it “essentially a product launch” — and Palantir’s advice to own your tribal knowledge applies equally
+to Palantir itself
+[43]
+.
+Context: Palantir’s own customer losses.
+Governments have been running the same walk-away logic on Palantir. The record from the first half of 2026, assembled in Bertrand’s analysis
+[43]
+with primary links: France announced its domestic intelligence agency, the DGSI — a Palantir customer since the 2015 Paris attacks — will replace it with the French firm ChapsVision, Prime Minister Lecornu explaining that France “cannot accept new strategic dependencies in the digital sphere” and should not depend on the goodwill of companies “capable of turning off the tap”
+[44]
+. Germany’s domestic intelligence service, the BfV, also chose ChapsVision, and the German military says it will stop using Palantir entirely
+[45]
+. Spain instructed state-backed companies — including Telefónica, Indra, and Navantia — to avoid new Palantir contracts on national-security grounds
+[46]
+. In the UK, the NHS’s £330 million data contract with Palantir is under review after parliamentary pressure, and London’s mayor blocked a proposed £50 million Metropolitan Police contract
+[47]
+.
+Why it belongs in this document.
+Bertrand reads the episode as evidence against two assumptions
+[43]
+: (1) that AI labs will extract significant economic rent, as opposed to models becoming commodities; and (2) that allied countries will accept structural dependency on US technology without pushing back. Both are this document’s themes, escalated one level: a government watching the Windsurf cutoff (
+§7
+) draws Lecornu’s conclusion — do not depend on a supplier capable of turning off the tap — and a government reading the Bridgewater result (
+§8.1
+) draws Palantir’s fourth thesis: whoever controls the weights controls the compounding of institutional knowledge. The US government’s posture adds pressure in the same direction: Under Secretary of State Jacob Helberg publicly derides “AI sovereignty” as “marching in perfect formation into the past” and “synchronized mediocrity”
+[48]
+— a position that, read from a European or Asian capital, supports rather than allays the dependency concern.
+For the
+§8
+argument: enterprises hold three distinct exits, each commercially supported and each marketed against lab data exposure — closed frontier models behind a hyperscaler’s isolation (
+§3.4
+), open-stack self-hosting (
+§8.2
+), and sovereign vendor deployments. Demand for the third now includes government decisions in France, Germany, and Spain, with a UK review in progress.
+8.4 The enterprise LLM gateway
+The pattern beneath all three countermeasures deserves its own name. An
+enterprise LLM gateway
+is a single internal front door through which all of a company’s AI usage passes — one piece of software, owned by the enterprise, that:
+routes
+each request by task difficulty and data sensitivity — cheap open models for commodity work, frontier models for hard problems, self-hosted models for sensitive material;
+enforces data posture in code
+— which providers may see which data, with which retention and feedback settings, per the
+§9
+channel taxonomy — so data policy stops being a contract clause someone hopes is honored and becomes a rule the infrastructure physically enforces;
+keeps portability warm
+— every provider is swappable behind the gateway, which strips out the switching costs labs try to manufacture (
+§3.1
+);
+hosts the escalation policy
+— the ongoing decision about what fraction of the company’s work merits frontier prices.
+Coinbase’s LightLLM-based system is the public reference implementation, and routing/orchestration is emerging as a product category in its own right
+[37]
+. The gateway’s operator also sees the company’s full demand shape — the same visibility labs get through their APIs — so operating one returns that information to the enterprise.
+8.5 Net effect on extraction
+The exit option caps extraction twice over.
+On price:
+labs cannot charge much above the open-stack alternative for commodity work, which compresses the margin that funds everything else — this is the
+§4
+chain, now operating as customer discipline.
+On behavior:
+policy changes now carry an observable market price. The natural experiment: Anthropic’s Fable model line shipped with a 30-day data-retention
+requirement
+(extended to two years for interactions flagged by safety classifiers; the full mechanics, including mandatory data sharing through the cloud channels, are in
+§9
+)
+[21]
+— and within weeks, Microsoft restricted its employees’ use of Fable, citing the retention terms
+[22]
+. One data point: a lab changed its data posture, and a major customer visibly withdrew usage. Whether this discipline generalizes — across vendors, under different market conditions — is open.
+The protection is asymmetric. It covers enterprises with ML capacity (Bridgewater, Coinbase) and enterprises with regulatory moats. It covers thin application-layer companies — no weights, no compliance moat, total API dependence — poorly; their remedies remain contractual nondiscrimination, multi-provider architecture, and acquiring fine-tuning capability, the cost of which Tinker-class infrastructure has at least pushed down.
+9. Training-data channels
+This is the version of the claim most public discussion means. The current evidence for it is the weakest of the three questions; the forward risk is structural.
+Current state.
+The no-default-training commitment is consistent across OpenAI, Anthropic, Google Cloud, and Microsoft Azure business terms
+[1]
+–
+[4]
+, and the hyperscalers add the architectural layer: customer prompts, outputs, embeddings (numerical representations of text), and fine-tuning data on Azure are not available to OpenAI at all
+[3]
+, and Bedrock and Vertex isolate model providers equivalently (
+§3.4
+)
+[4]
+,
+[65]
+. What remains are side channels — paths by which customer-related data can still reach a provider. When the first draft of this document was written, all of them were disclosed; the two June–July 2026 developments covered after the table (a mandatory data-sharing channel for the newest model tier, and a covert one found in a vendor client) mean that qualifier no longer holds unqualified:
+Channel
+Feeds training?
+Notes
+Ordinary usage (prompts in, answers out)
+No, under business terms
+The core commitment
+[1]
+–
+[4]
+Abuse and safety logs
+No
+30-day default retention; Fable: 2 years if classifier-flagged
+[21]
+,
+[22]
+Mythos-class safety retention (Jun 2026)
+No (stated)
+Mandatory 30-day retention of prompts
+and outputs
+with human review, on every platform including the hyperscalers; zero-data-retention revoked for covered models
+[57]
+,
+[58]
+Stateful features — uploaded files, persistent memory, vector stores (searchable document indexes)
+Not by default
+But they
+persist
+your production examples with the provider; deletion and tenancy terms govern
+[1]
+,
+[3]
+Your own fine-tuning data
+Scoped to you
+Improves your private model copy, not the shared one
+[1]
+,
+[3]
+Opt-in feedback and data-sharing programs
+Yes
+Anthropic may train on feedback with full-conversation retention; OpenAI offers free tokens for opted-in traffic
+[1]
+,
+[2]
+Evaluation suites, grading standards, environments, work traces
+Often yes
+The
+§6
+byproducts — ownership is whatever the contract says
+[16]
+–
+[20]
+FDE field knowledge and roadmap signal
+Not as data
+Walks out in engineers’ heads; shapes products and strategy
+[5]
+,
+[6]
+The pattern: the headline channel is closed; the open channels are the opt-ins (which enterprises control, and should treat as decisions rather than defaults) and the byproducts (the
+§6
+material under another name). Three developments from June–July 2026 changed the structure of this table.
+The Mythos-class exception: safety as a mandatory data channel.
+Effective June 9, 2026, Anthropic requires that prompts submitted to and outputs generated by its Mythos-class models (Fable 5, and future “covered models”) be retained for 30 days “on every platform where these models are offered,” with human review of flagged content — and organizations that had negotiated zero-data-retention lose that option for these models
+[57]
+. The stated rationale: some attacks (jailbreak campaigns, state-sponsored operations) are only visible across many requests, so detection requires holding requests long enough to analyze together. The stated protections: no personnel access by default, a controlled review path, tamper-proof access logs, automatic deletion at 30 days except for flagged or legally held material, optional customer-managed keys
+[57]
+.
+The structural change is broader than the retention window. On AWS Bedrock,
+access to Fable 5 is conditional on the customer opting into
+provider_data_share
+— a mode in which, in AWS’s own words, “Amazon Bedrock [retains and shares] your inference data with model providers per their requirements,” with Anthropic requiring 30-day input/output retention
+and human review
+[58]
+. (The channel does enforce customer control in one respect: AWS documents that an account configured for zero data retention gets its requests to retention-requiring models
+blocked
+rather than silently shared — the opt-in is explicit, and AWS states there is “no data retention change to models released before Claude Fable 5”
+[65]
+.) The same policy reaches Google Cloud and Microsoft Foundry deployments
+[57]
+.
+Recall what
+§3.4
+said the hyperscalers sell: architectural separation — the promise that the lab
+cannot
+see your data, enforced by channel design rather than by contract. For the frontier tier, that architecture has now been inverted by requirement: the firewall is no longer a property of the channel but a policy of the vendor, subject to the vendor’s stated limits. The limits may be honored scrupulously — but “the lab cannot see your data” and “the lab promises to look only for safety reasons, with controls it administers itself” are different trust postures, and the second is not independently auditable from outside. What telemetry and metadata ride along with this channel is specified only by the vendor’s own white paper; compliance analyses of the HIPAA/GDPR interaction are already being published
+[59]
+. The market response was
+§8.5
+’s natural experiment: Microsoft limited employee use within weeks
+[22]
+. Nor is the retention-and-review channel Anthropic-specific: OpenAI’s GPT-5.6 safeguard stack pauses generation for review by a larger reasoning model and escalates flagged activity to account-level review across conversations, “consistent with our terms and policies around content retention and review” — the same vendor-administered trust posture, now at two labs, with OpenAI saying it is working with enterprise customers on privacy-preserving detection and customer-operated safety controls as the longer-term answer
+[68]
+.
+Covert client instrumentation: the steganography episode.
+In early July 2026, a developer inspecting the Claude Code client binary (version 2.1.196, signed by Anthropic June 29) published reverse-engineered code showing that the client silently varies the punctuation of an innocuous sentence in its system prompt (the instruction text the client prepends to every request) — “Today’s date is…” — to encode information: four visually near-identical Unicode apostrophe variants signal whether the configured API endpoint matches an obfuscated list of domains (Chinese tech companies, proxy and reseller gateways) or contains keywords naming Chinese AI labs (deepseek, moonshot, zhipu, stepfun…), and a system timezone of Asia/Shanghai or Asia/Urumqi flips the date separator
+[61]
+. This is
+steganography
+— hiding a signal inside content that looks normal — running in a developer tool with filesystem and shell access. The plausible purpose is unauthorized-reseller and distillation detection (competitors harvesting Claude outputs to train their own models), which is a legitimate interest; the finding, which reached the top of Hacker News at 2,400+ points
+[62]
+, is about the
+method
+: the domain list is deliberately obfuscated (base64 + XOR), the behavior is undisclosed, and the signal is smuggled through the prompt rather than sent as documented telemetry. The author’s conclusion: “hiding the signal in the system prompt makes every other privacy claim harder to believe.” For this document’s purposes the episode does two things. It demonstrates that vendor clients belong inside the trust boundary — the
+§8.4
+gateway argument extends to
+normalizing vendor-injected context
+, not just routing. And it bears on the Mythos-class channel above, which asks customers to trust vendor-administered limits: the same vendor was simultaneously shipping undisclosed, obfuscated instrumentation in its most widely deployed client.
+Identity enters the stack.
+Alongside the Fable 5 relaunch — the model was offline June 12–30 under a US export-control directive, implemented in letters from Commerce Secretary Howard Lutnick, that required an individually-validated license for export “to any ‘foreign person’ wherever located”; with no way to verify nationality in real time, Anthropic suspended access for everyone, and restored it July 1 after Commerce lifted the controls
+[63]
+,
+[66]
+,
+[71]
+— Anthropic is rolling out identity verification: a government-issued photo ID and live selfie processed by the third-party vendor Persona, with a privacy policy effective July 8, 2026 that explicitly enumerates biometric data and government IDs among collectable data; leaked app strings tie Fable usage credits to completed verification
+[60]
+.
+The pattern extends beyond one lab: OpenAI’s GPT-5.6 rollout began as a trusted-partner preview whose participant list was shared with the US government at the government’s request, and Anthropic’s unrestricted Mythos 5 returns only to a vetted institutional list — a state-mediated access regime for frontier capability appears to be forming (companion analysis:
+[63]
+). The regime’s primary documents now exist — Anthropic’s own redeployment account, which describes safeguard testing by CAISI — the Commerce Department’s Center for AI Standards and Innovation — and commits to pre-release government access for future frontier models
+[66]
+, and OpenAI’s GPT-5.6 announcement
+[68]
+, which is itself ambivalent about the regime it instantiates: OpenAI writes that it does not believe “this kind of government access process should become the long-term default” because it “keeps the best tools from users, developers, enterprises, cyber defenders, and global partners who need them” — while simultaneously working with the Administration on the cyber Executive Order framework and “a repeatable process for future model releases.” A repeatable process is a regime; the open part is its shape — and it is already in court: Legion LegalTech is suing the US government over the June 12 directive, arguing the forced Fable 5 cutoff harmed its Canada-based development team — a downstream customer treating third-party revocation of frontier access as business-critical infrastructure risk
+[63]
+.
+The sharpest characterization of the regime comes from inside it: Ball (
+§3.1
+; ex-White House, joining OpenAI) argues the June 2 Executive Order’s “voluntary” testing program is a de facto licensing regime in which “nobody knows what the requirements are to get licensed” — including, on his account, the administration itself, which has no completed safety standard, may keep the one it produces classified, and fired the frontier-experienced hire brought in to run CAISI within days
+[70]
+. His prescription — federalize the California/New York/Illinois safety-framework disclosure laws and audit labs against their own published frameworks — is the main concrete alternative on the table
+[70]
+.
+For the training question, identity linkage changes what retained data
+is
+: a 30-day store of prompts and outputs tied to a verified government identity, held under vendor-administered controls, is a different asset — to the vendor, to litigants (see
+Heppner
+, below), and to any state that requests it — than anonymous inference logs. For
+§8.3
+’s sovereignty argument, it is a supporting data point: access to the frontier tier now runs through both a vendor’s policy and a government’s approval, which is the dependency the European withdrawals respond to.
+The state as prospective shareholder.
+On July 2, the Financial Times reported that OpenAI is proposing to hand the US government a 5% equity stake, floated as part of an “AI wealth fund” — an idea with variants from Sam Altman, Bernie Sanders, and Donald Trump
+[71]
+. The evidence status is thin: a reported proposal relayed through secondary coverage, unconfirmed, and Ball — whose objection is the most-quoted response — himself notes the rumor “may even be importantly untrue or misleading”
+[72]
+. But even as a proposal it extends the
+§5
+pattern (the same entity in conflicting roles) to the state itself: the US government would then be gatekeeper, standards-setter, customer, and shareholder of the same lab simultaneously. Ball’s objection distinguishes the variants — distributing the stake to households is fine; a direct government stake is “probably ruinous, akin to inviting rats to live and reproduce in the walls of your house”: “it will never stop at 5%… political capture will be real”
+[72]
+. For
+§8.3
+’s sovereignty argument, the proposal is a data point regardless of whether it closes: an allied government weighing dependency on US frontier vendors now has to price in the US government as prospective part-owner, not just export-controller.
+The legal wrinkle: consumer tiers are a trapdoor.
+In
+United States v. Heppner
+(Southern District of New York, Judge Rakoff, February 2026), a securities-fraud defendant had drafted 31 defense-strategy documents in
+consumer-tier
+Claude. The court held them neither privileged nor protected work product: the consumer privacy policy — which permits training use and disclosure — defeated any reasonable expectation of confidentiality, and the court flagged possible waiver over the underlying attorney communications too
+[25]
+. The enterprise lesson generalizes beyond litigation: trade-secret law protects only material kept under “reasonable secrecy measures,” and employees pasting sensitive material into consumer AI tools can destroy that status
+before any training question even arises
+. The business/consumer tier boundary is a legal cliff; enforce it in tooling (
+§8.4
+), not just policy.
+Forward risks — why “weak today” isn’t “settled.”
+Two.
+First, retention terms are product- and risk-tier-dependent and revisable — Fable’s 30-day requirement demonstrated that. The mitigation is
+§8.5
+’s finding that revision carries a market price; that discipline has held once, on one occasion.
+Second:
+continual learning
+— the research goal of models that learn
+on the job
+, with deployment experience written back into their weights rather than discarded after each conversation. The podcaster and essayist Dwarkesh Patel states the labs’ incentive: deployed models are “privy to so much tacit organization- and domain-specific knowledge” that
+not
+learning from it is, from a capability standpoint, waste. A lab that solves continual learning for its shared models changes most conclusions in this document: every deployment log becomes high-value training signal, and the lab’s weights accumulate its customers’ tacit knowledge, shared across every copy of the model it sells. Bridgewater’s “differentiated intelligence” is the same technical goal — capture tacit knowledge in weights — with the customer as owner. Centralized continual learning and differentiated intelligence are two endpoints of one race; which wins is open question 1 in
+§12
+.
+The race is no longer hypothetical at the within-run scale. EdgeBench (
+§6
+) shows current frontier agents already accumulate and reuse task experience across 12–72-hour runs — through their context window and working artifacts rather than weight updates, which is why the million-token-context variant of Opus 4.8 beats its own smaller-context sibling at every checkpoint
+[53]
+,
+[55]
+. That is not continual learning solved: the experience is lost when the run ends unless someone deliberately captures it. But it is an early form, and it sharpens the ownership question, because the “experience” an agent accumulates inside a customer’s environment is the trajectory-and-artifact material of
+§6
+. Whoever captures it holds the input either architecture would need.
+10. Equilibrium and break conditions
+The arrangement visible as of July 2026 is a segmented equilibrium, along two axes:
+Usage stratifies by difficulty.
+Frontier models keep the hardest tier — long-horizon autonomous work, novel reasoning, specialized enterprise offerings like the Fable class — where their capability lead is real and defensible for now, though net of the
+§3.1
+gating discount: part of that tier is safeguard-blocked or vetted-access-only, and those workloads default to the open stack regardless of capability. Open and custom models absorb the high-volume remainder at 1–10% of the cost
+[31]
+–
+[37]
+. The gateway (
+§8.4
+) is the mechanism that performs the split, enterprise by enterprise. One dynamic works against a stable split: if the EdgeBench trend holds — environment-learning speed doubling roughly every three months (
+§6
+, unreplicated) — the frontier tier keeps absorbing work beyond the current boundary, and the boundary between tiers is redrawn at every model release
+[53]
+–
+[55]
+.
+Learning stratifies by ownership.
+Generic capability accrues to the labs — through purchased training environments, disclosed product partnerships (the biotech-software company Benchling with Anthropic; OpenAI with Shopify and Stripe), telemetry from their own first-party apps, and consumer data. Organization-specific judgment accrues to whoever owns the deployment surface and the expert labels — which, after Bridgewater, is achievably the enterprise itself. FDE engagements sit on this boundary; the artifact-ownership terms of each contract decide each case.
+Services are the contested middle.
+DeployCo, the Anthropic/PE venture, Microsoft Frontier Company, AWS’s $1 billion embedded-engineer unit, and the incumbent consultancies are all competing for the same position: the one that sees the workflows, produces the artifacts, and shapes the roadmaps. The sales pitches reveal the fault line — hyperscalers differentiate on
+not learning from you
+[11]
+; labs differentiate on frontier proximity. Enterprises get to price the trade.
+What this equilibrium says about frontier-lab valuations.
+The
+§1
+question gets a conditional answer. In this settlement, a frontier lab keeps: the hardest-tier work (re-won every product cycle, and net of the safeguard-and-vetting gating of
+§3.1
+); a contested share of lower-margin services; and options on two uncertain outcomes — solving continual learning (
+§9
+) and the discovery layer (
+§4
+). What it does
+not
+keep is what the boom-era valuations implicitly priced: durable rent on general model access. That assumption is now questioned in public by parties with different interests — Palantir (“mere commodities,” per Bertrand’s reading
+[43]
+), Microsoft’s CEO (
+[38]
+,
+[39]
+— as a warning, not a plan), and the operators quoted in
+§8.2
+. The replacement thesis — the margin lives in what is built above the models or discovered with them — has to be proven application by application, by companies whose capital structures (circular financing against future commitments,
+§1
+) assume it is already true. That gap between financing and proof is what the third scenario below stresses.
+Five developments would break the truce:
+A closed lab solves continual learning
+(
+§9
+). The learning-stratification boundary collapses in the labs’ favor, and deployment access becomes the decisive competitive asset. Every FDE program is, among other things, a bet on this outcome.
+Chinese open weights become unusable for regulated Western enterprises
+— the congressional-probe thread pulled to its conclusion
+[33]
+. The cheap exit narrows, and lab pricing power comes back. The counterweights that would remain: Western open-weight releases (Meta, NVIDIA, Mistral) and the sovereign stacks of
+§8.3
+— demand for which is now explicit European policy, not just enterprise preference.
+An AI-market financial correction
+— the VPA “After the AI Crash” scenario
+[15]
+— forces labs to monetize retained data and push harder into verticals. Current data guarantees are promises made by companies experiencing hypergrowth; they get tested under distress. The
+§1
+financing structure makes this scenario cost-driven as well as revenue-driven. Ball adds a state-made trigger: sustained gating shrinks the demand the buildout is financed against, converting the bears’ overbuild thesis from wrong to true — not because demand failed to materialize, but “because of demand that the US government renders unlawful”
+[70]
+. This couples scenario 3 to scenario 5 below.
+Frontier models prove they can originate lucrative discoveries.
+The Claude Science bet pays off (
+§4
+): discovery-layer breakthroughs, patent-protected, give labs a rent-bearing moat independent of token pricing — and a justification for frontier capital expenditure independent of the enterprise fight. The symmetric failure — models assist but do not originate — feeds scenario 3.
+The gating regime hardens or dissolves
+(
+§3.1
+,
+§9
+). If state-mediated, vetted access becomes the default release path for frontier capability — the GPT-5.6 pattern — the frontier tier’s addressable market shrinks, the sovereignty pressure of
+§8.3
+intensifies, and more segments default to open models by construction. If instead safeguards narrow their false-positive margins and vetting scales into something like ordinary licensing, the gating discount shrinks and the purchasable frontier lead recovers.
+11. The enterprise playbook
+What §§
+2
+–
+10
+imply, as actions a buyer can take.
+Contractual controls
+— negotiate these into FDE and platform agreements:
+Derivative-use restrictions that go beyond “no training.”
+“No training on our content” leaves the
+§6
+byproducts — task descriptions, evaluation suites, graders, rubrics, field notes, telemetry, process maps, synthetic data derived from your workflows — entirely uncovered. Name them; restrict them.
+Artifact ownership
+with deletion and export rights: the tasks, graders, and evaluation systems built during the engagement are yours.
+Research/product firewalls
+: the provider’s engagement staff may not brief its research or product teams on your workflows.
+Reciprocal competitive-use covenants
+: if the vendor won’t promise to stay out of your business, that is information (Karp’s second question).
+Feedback channels disabled by default
+— recall from
+§9
+that opt-in feedback is a channel that
+does
+feed training.
+A per-endpoint retention audit
+: retention terms differ by product tier and feature; know each one you touch — and check specifically whether frontier-tier models revoke zero-data-retention or require provider data sharing, as the Mythos class does (
+§9
+).
+Identity exposure decisions
+: decide which workflows may run through identity-verified accounts; biometric enrollment with a third-party verifier is a new data class your organization is creating (
+§9
+).
+API nondiscrimination clauses
+— private-contract versions of the VPA proposal (
+§7
+).
+Conflict disclosures
+from PE owners and consultancies who may also be invested in your vendor’s deployment arm (
+§4
+).
+Canary testing
+: seed engagement materials with distinctive markers and periodically probe models for leakage.
+Architectural controls:
+Own the gateway
+(
+§8.4
+). Route by sensitivity × difficulty, enforce data posture in code, keep multi-provider portability warm. It is simultaneously the enforcement point and the negotiating leverage.
+Classify workflows into three regimes
+and treat them differently:
+commodity
+→ open weights, self-hosted or cheap API;
+frontier-worthy
+→ closed models under negotiated enterprise terms with the contract stack above;
+proprietary-judgment
+→ customer-owned fine-tunes on expert labels — the Bridgewater pattern.
+Treat expert labels and human approvals as owned assets.
+Every time your experts correct, approve, or grade an AI output, they are producing exactly the material
+§6
+prices. Log it; decide deliberately whether each stream flows to a vendor’s evaluation set or your own training set. Armstrong’s version: “the decision you make today is the dataset you own tomorrow”
+[32]
+. As agents move to day-long runs, extend this to the experience they accumulate in your environment (
+§6
+,
+§9
+): trajectories and working artifacts from long-horizon runs are training-grade material — capture and own those streams too.
+If you are an application-layer company:
+assume API access is revocable (Windsurf); abstract providers early; treat fine-tuning capability as insurance — Tinker-class infrastructure lowered its cost.
+Sequence FDE engagements deliberately.
+Put them on workflows you have classified commodity or shareable, so the byproducts are low-value to a competitor
+by construction
+— contract terms as the second line of defense, not the only one.
+Treat vendor clients as inside the trust boundary.
+The Claude Code steganography episode (
+§9
+) demonstrated that a first-party client can carry undisclosed, obfuscated instrumentation. Prefer auditable clients; normalize or strip vendor-injected context at the gateway; monitor outbound prompts the way you would any other telemetry.
+12. Evidence grading and open questions
+How solid is each claim this document makes:
+Claim
+Grade
+Basis
+Enterprise no-default-training commitments are real
+Strong
+Official OpenAI/Anthropic/Azure/Google documents
+[1]
+–
+[4]
+FDE deployments produce reusable workflow/evaluation/roadmap signal
+Strong
+The labs’ own materials; John Deere case
+[5]
+,
+[6]
+Training environments and expert grading standards are a scarce, priced input
+Strong
+Epoch, SemiAnalysis, Mechanize, vendor reporting
+[16]
+–
+[20]
+Labs and hyperscalers are institutionalizing FDE-style deployment
+Strong
+Announcements plus Reuters/Axios reporting
+[5]
+–
+[11]
+Platform control has been used against app-layer rivals
+Strong
+Windsurf, OpenAI cutoff, Cowork selloffs; VPA/Brookings
+[12]
+–
+[15]
+,
+[29]
+Enterprise tacit judgment resists prompting but yields to fine-tuning
+Strong
+Bridgewater/Thinking Machines results
+[30]
+The open-weight exit is operational at enterprise scale
+Strong
+Coinbase in production; operator consensus
+[31]
+–
+[37]
+A deep FDE engagement yields low-to-mid seven figures of training-asset value
+Moderate
+Back-of-envelope on Epoch prices; depends on task count, rights, fidelity
+[6]
+,
+[16]
+Market discipline constrains retention drift
+Moderate
+One natural experiment: Fable → Microsoft limits
+[21]
+,
+[22]
+Mythos-class access requires retention plus provider data sharing on every channel, including hyperscalers
+Strong
+The vendors’ own documentation: Anthropic support page, AWS launch blog
+[57]
+,
+[58]
+Claude Code covertly marks prompts via endpoint- and timezone-conditional Unicode variants
+Strong (behavior) / Moderate (purpose)
+Published reverse engineering of the signed binary, reproducible and unrebutted at this writing
+[61]
+,
+[62]
+; the distillation-detection purpose is inference
+Frontier access is becoming state-mediated (vetted lists, export-control takedown)
+Strong
+Vendor primary documents: Anthropic redeployment account, OpenAI GPT-5.6 preview terms; CAISI involvement
+[66]
+–
+[68]
+,
+[63]
+Frontier access is becoming identity-linked (biometric verification)
+Moderate
+Vendor policy pages via secondary reporting; leaked app strings
+[60]
+Frontier safeguards block whole capability categories, including legitimate professional work
+Strong
+The vendor’s own published classifier taxonomy and safety-margin description
+[66]
+,
+[67]
+The gating discount materially compresses the
+purchasable
+frontier–open gap
+Moderate
+Inference from the safeguard taxonomy and access lists; no measurement of deliverable (post-safeguard) capability exists
+[66]
+–
+[68]
+The June 2 EO operates as de facto licensing with unpublished criteria
+Moderate
+Named expert analysis (Ball) consistent with the observed Fable and GPT-5.6 release behavior; the EO’s text disclaims mandatory licensing
+[63]
+,
+[66]
+,
+[68]
+,
+[70]
+OpenAI is proposing a 5% equity stake to the US government
+Weak
+FT report relayed through secondary threads; unconfirmed; flagged even by its most-quoted critic as possibly misleading
+[71]
+,
+[72]
+Sovereignty pushback is materially narrowing US vendors’ reach among allies
+Strong
+France, Germany, Spain, UK government actions in H1 2026
+[43]
+–
+[47]
+Frontier-model economics don’t close at the model layer, forcing the up-stack moves
+Moderate
+Inference from capex scale, circular-financing coverage, and the labs’ observed strategy (services, apps, discovery)
+[5]
+–
+[11]
+,
+[38]
+–
+[41]
+; lab internals not public
+Falling post-training costs make customer-owned models routine
+Moderate
+Bridgewater demonstrated the capability
+[30]
+; pricing commentary sourced
+[49]
+,
+[50]
+but PostTrainBench rankings contested
+[51]
+Enterprise content flows into shared frontier weights today
+Weak
+No public proof; contradicted by default terms
+[1]
+–
+[4]
+Environment-interaction time is a new scaling regime (log-sigmoid law; learning speed doubling ~3 months)
+Moderate
+Single brand-new benchmark; author claims by ByteDance Seed with precise fits (R² = 0.998) but no independent replication
+[53]
+–
+[55]
+Agent benchmark scores are inflated by reward hacking, unevenly across task forms
+Moderate
+Independent audit with held-out re-scoring (up to ~8-point drops); single group, new
+[56]
+Benchmark capability comparisons are budget-dependent; capability ceilings are unmeasured
+Moderate
+Analysis by an OpenAI researcher with named evaluations (AISI cyber, ARC-AGI); direction broadly accepted, magnitudes unquantified
+[64]
+Continual learning makes deployment logs decisively more valuable
+Unresolved
+Stated research direction; feasibility and timeline open; within-run experience accumulation (EdgeBench) is the leading indicator
+[53]
+Frontier models can originate lucrative, patentable discoveries
+Unresolved
+Claude Science is a bet, not a result
+[40]
+,
+[41]
+Open questions, ranked by how much turns on them:
+Who wins continual learning — centralized (lab weights) or differentiated (customer weights)?
+Everything downstream depends on it (
+§9
+,
+§10
+).
+Contract forensics
+: the actual terms of FDE/DeployCo engagements — derivative-use, artifact ownership, research firewalls, post-engagement deletion.
+§11
+’s list is what to look for; no engagement contract has leaked yet.
+Replication cost of the Bridgewater result
+for a mid-size enterprise on Tinker-class infrastructure. Bridgewater’s all-in cost is unstated; that number sets the effective ceiling on extraction, because it prices the exit.
+Trace the Stanford 42% interchangeability claim
+to its primary source (flagged in
+§3.2
+).
+Track first-party lab app launches against enterprise-customer density by vertical
+— the cleanest ongoing signal on the competition question.
+Outcome of the Chinese open-weights policy fight
+— determines whether
+§8
+’s counterforce survives for regulated US enterprises.
+Whether frontier models can originate discoveries
+— the Claude Science bet (
+§4
+). If yes, discovery-layer moats rewrite the valuation math; if no, the up-stack search has one fewer exit.
+Establish the real post-training cost curve
+— PostTrainBench’s rankings are contested (internet-access score inflation, eval-probing;
+[51]
+), so an uncontested measure of how cheaply the Bridgewater pattern replicates is still missing; that number sets how far down-market customer-owned models travel, and connects to question 3.
+Whether the European sovereignty cascade extends from Palantir-class vendors to the frontier labs themselves
+— the Palantir record (
+§8.3
+) is the leading indicator; watch sovereign-AI procurement terms for closed-model exclusions.
+Replication of the EdgeBench regime
+— does the log-sigmoid law and the 3-month learning-speed doubling hold outside ByteDance Seed’s own runs, and does within-run experience accumulation convert into weight-level learning? This bridges the
+§6
+asset question to open question 1, and adds a commercial sub-question: who owns the experience an agent accumulates inside a customer’s environment?
+Evaluation integrity
+— how much reported agent capability survives hack-auditing (
+[56]
+’s “clean where?” finding)? This bears on every benchmark number cited in this document, including the SWE-bench Pro and PostTrainBench comparisons
+[36]
+,
+[50]
+.
+The actual limits of the Mythos-class safety channel
+— what metadata and telemetry ride along with the retained prompts/outputs; whether the retained store is contractually and technically firewalled from training and product teams; whether the Trust Center white paper’s threat model gets independent audit
+[57]
+,
+[58]
+.
+The extent of covert client instrumentation
+— whether the steganographic marking
+[61]
+exists in other surfaces or other vendors’ clients, and whether market discipline (
+§8.5
+) prices it the way it priced retention.
+Capability per dollar at equal spend
+— how frontier and open models compare when inference budgets are controlled
+[64]
+. Nearly every comparison in this document (
+[31]
+,
+[36]
+,
+[50]
+) is a scalar without a budget axis; budget-controlled curves could shift the
+§4
+/
+§8
+cost argument in either direction.
+Whether the trusted-partner regime becomes the default frontier release path
+— and how the
+§3.1
+gating discount prices into frontier valuations. Watch five signals: what the “repeatable process for future model releases” OpenAI says it is developing with the Administration turns into
+[68]
+; whether safeguard scope expands beyond cyber and biology in published taxonomies (OpenAI’s stack already names biology classifiers
+[68]
+); whether vetting scales toward ordinary licensing or stays a hand-picked list (Ball’s federalize-and-audit proposal is the published alternative
+[70]
+); whether the Legion LegalTech suit produces any published criteria for access decisions
+[63]
+,
+[66]
+–
+[68]
+; and whether the reported government-equity proposal materializes, and in which variant — household distribution or direct state ownership
+[71]
+,
+[72]
+.
+13. Addendum: July 10–14, 2026
+As mentioned, this brief’s claims are provisional and require repeated tests against releases, policy changes, benchmarks, and deployment results. Published July 3 and revised July 5, the analysis warranted an update on July 10; developments over the next four days require a second update. The cadence illustrates the method: new evidence can strengthen a thesis, narrow it, or invalidate part of its support.
+Findings
+Original finding
+July 10–14 update
+Assessment
+No public evidence that confidential FDE or business-tier content enters shared model weights
+Cursor and SpaceXAI disclosed training Grok 4.5 on contractually available Cursor product data. Separately, Grok Build 0.2.93 was shown uploading tracked repositories and Git history through a data path that remained active when “Improve the model” was disabled; SpaceXAI subsequently disabled whole-codebase upload and announced retention and deletion controls.
+Still no evidence that confidential content entered shared weights; materially stronger evidence that training consent, transmission, storage, and retention can be governed by different controls.
+Deployment byproducts have market value
+Benchmark audits, environment companies, and application-owned post-training provide direct evidence for the value of tasks, graders, environments, traces, and expert labels. Microsoft CEO Satya Nadella now explicitly frames prompts, tool use, corrections, and evals as valuable “intelligence exhaust” whose ownership determines where learning compounds.
+Stronger as strategic and market-structure evidence; the Nadella essay is not evidence of undisclosed training.
+Labs can use platform position and access control to compete with customers
+ChatGPT Work expands lab ownership of the workflow surface; application companies are responding with their own models and post-training. Nadella positions the hyperscaler tenant and model-independent orchestration layer as the enterprise’s counterweight.
+Stronger and bidirectional
+Deployment surfaces and learning loops
+On July 8, Cursor said it and SpaceXAI trained
+Grok 4.5
+using “trillions of tokens of Cursor data” describing user interaction with codebases, tools, and agent environments. Cursor’s
+data-use policy
+excludes Privacy Mode customer data from training; when Privacy Mode is off, codebase data, prompts, editor actions, snippets, and related telemetry may be used.
+Cursor’s disclosed data use is settings-dependent. The announcement supplies no evidence that it used confidential FDE or Privacy Mode content. It demonstrates the mechanism at issue:
+An application owns the deployment surface and data rights.
+The surface produces context, tool-use traces, failures, and accepted trajectories.
+The application and model partner convert those traces and constructed environments into training data.
+The resulting model returns to the application and produces the next data cycle.
+Grok Build: transmission, retention, and training are separate controls
+On July 12, independent researcher Cereblab published a
+wire-level analysis
+and
+reproduction harness
+for Grok Build 0.2.93. On a consumer account, the prompt “reply OK, do not open any files” was followed by an accepted
+POST /v1/storage
+whose captured body was a Git bundle. Cloning it recovered a never-read canary file verbatim and the repository’s full history. The researcher reproduced the result on a second codebase. In a separate 12 GB test repository, 5.10 GiB was accepted before the capture was stopped, while model-turn traffic totaled 192 KB. This establishes transmission and server acceptance of whole tracked repositories at multi-gigabyte scale; it does not establish that the full 12 GB completed or that Git-ignored files were included.
+A separate channel sent files the agent actually read to the model. In the test, a read
+.env
+file appeared verbatim both in the
+/v1/responses
+request and in a session-state archive uploaded through
+/v1/storage
+. Cloud coding agents necessarily transmit context they use; the additional facts here are that a secrets file was not redacted and was placed in a persisted trace archive. Turning off “Improve the model” did not stop a tested whole-repository bundle upload, and the CLI’s settings response continued to report trace and upload paths enabled. The evidence proves transmission, acceptance, and storage—not use in training. The opt-out governed model improvement, not whether this separate data path moved the repository off the machine.
+By July 13, the same client received
+disable_codebase_upload: true
+from the server, and the researcher
+verified that whole-repository upload no longer fired
+. Grok 0.2.99 added
+/privacy opt-out
+; the researcher’s A/B wire test found that this command sets
+codingDataRetentionOptOut: true
+and changes trace handling, but does not keep ordinary model-turn and session traffic local. The tested whole-repository path was governed by the global server-side flag, independently of the per-user privacy setting.
+SpaceXAI’s response
+says that teams using Zero Data Retention retain no trace or code data, API-key use respects ZDR, and
+/privacy
+can disable retention and delete previously synced data when ZDR is not enabled.
+Elon Musk subsequently promised
+that all user data uploaded before the change would be deleted. These are vendor commitments. As of July 14,
+deletion has not been independently verified
+, and SpaceXAI has not published an incident report establishing affected versions and account types, upload scope, root cause, or completion of the purge. Its response explains that retention can help debugging; it does not explain why whole-repository and Git-history upload was enabled by default.
+This episode does
+not
+show that Cursor Privacy Mode data was sent to SpaceXAI or used to train Grok 4.5; Grok Build is a separate product and data path. It does change the diligence standard for the adjacent Cursor–Grok account. “Sent for inference,” “snapshotted with workspace or Git history,” “written to traces,” “retained,” “deleted,” and “used for training or another secondary purpose” are separate questions. Contract language and UI controls should be matched to network behavior and server architecture rather than treated as interchangeable guarantees.
+Harness engineering
+Lilian Weng’s July 4
+survey of harness engineering
+adds a separate deployment-learning channel. A harness controls context, state, tools, subagents, workflow logic, permissions, verification, and recovery around a model. It can improve while model weights remain fixed.
+Learning channel
+What changes
+Likely owner
+Parametric
+Pretraining, post-training, or continual weight updates
+Model provider or weight owner
+Harness
+Context selection, memory, tools, orchestration, verification, recovery
+Application company or enterprise
+Organizational
+Task definitions, escalation, permissions, data quality, human-agent division of work
+Enterprise
+Self-Harness
+reports held-out Terminal-Bench-2 pass-rate gains with fixed models: MiniMax M2.5 from 40.5% to 61.9%, Qwen3.5-35B-A3B from 23.8% to 38.1%, and GLM-5 from 42.9% to 57.1%.
+Meta-Harness
+reports a 7.7-point improvement over a context-management baseline, a 4.7-point average gain on 200 IMO-level problems across five held-out models, and a discovered coding harness that outperformed the compared Haiku 4.5 harnesses. The papers are recent and do not establish a general conversion factor between harness work and model capability.
+Harness and model improvements are complementary. Weng cites a recursive optimizer that improved with a stronger model and degraded with weaker ones. Fine-tuning may still be required for tacit judgment that experts cannot express as workflow or verification code. Harness optimization also introduces reward-hacking and permission risks; graders, held-out regression tests, and security boundaries should remain outside the self-editing loop.
+Asset ownership and measurement timescale are separate taxonomies. Measurement should distinguish within-run adaptation, across-run harness or organizational changes at fixed weights, and parametric weight updates. An enterprise-owned harness and evaluation suite can carry learning across GPT, Claude, Grok, Muse, GLM, or internal models.
+The reverse information paradox
+On July 12, Microsoft CEO Satya Nadella published
+“The Reverse Information Paradox”
+, extending his June argument about token capital and enterprise-owned learning loops. Arrow’s original information paradox concerns a seller who must reveal information before a buyer can value it. Nadella’s reversal is that an AI customer must reveal proprietary knowledge to make purchased intelligence useful—paying once in money and again in information—while the provider can learn about the customer without the customer seeing what the provider learns.
+The article names the relevant byproducts directly: prompts, tool use, corrections, and evals. Nadella argues that corrections progressively encode institutional know-how and that, when learning flows only toward the provider, value converges on the owner of the learning infrastructure rather than the organization whose work produced the signal. His proposed trust boundary contains the enterprise’s data, traces, evals, adapted weights, and memory; nothing, including this “intelligence exhaust,” crosses without consent. He also argues that enterprises should retain the right to use model outputs to tune or train their own models.
+The operational prescription closely matches this brief: own private evals, memory, traces, feedback, decisions, and output rights; build proprietary learning environments inside the tenant boundary; decouple orchestration from any one model; route context, models, and tasks for cost and quality; and combine them into a compounding learning loop. The portability test is whether the organization’s “veteran” capability survives the removal of a particular generalist model.
+This is a primary statement of strategy from the chief executive of a hyperscaler, not evidence that model providers train on protected enterprise content or breach their contracts. The article does not identify which provider terms reserve which usage rights, so its general claim should not override the contract record in
+§2
+. Microsoft’s incentives are visible: Azure sells tenant isolation and model choice, while Microsoft Frontier Company sells deployment capacity. The significance is market-structural. A major cloud and model-distribution platform is defining enterprise-owned learning—not merely data protection—as the competitive boundary between hyperscalers and frontier labs.
+Model competition and enterprise adoption
+OpenAI released
+GPT-5.6
+generally on July 9 across ChatGPT, Codex, and the API. Sol costs $5/$30 per million input/output tokens, Terra $2.50/$15, and Luna $1/$6. On the July 10
+Artificial Analysis index
+, GPT-5.6 Sol at maximum effort is about eight points above GLM-5.2. The measured frontier gap has widened beyond the essay’s “within a few points” description.
+The longer-run pattern remains sawtoothed: a closed release reopens the lead until cheaper and open-weight models compress it.
+Price pressure is no longer limited to Chinese open weights. Grok 4.5 is proprietary at $2/$6. Meta announced
+Muse Spark 1.1
+and its first paid model API on July 9 at a reported
+$1.25/$4.25
+. Meta describes Muse as frontier-level for coding, agents, computer use, and multimodal reasoning; Box reported performance competitive with leading models. These are vendor and partner claims, pending independent evaluation.
+Grok and Muse need only substitute for enough workloads to constrain frontier pricing. Meta can fund model access as a complement to advertising, distribution, devices, and applications. Muse’s closed, API-only release weakens the original treatment of Meta as a straightforward Western open-weight counterweight, while strengthening the price-compression thesis.
+Commodity pressure comes from three sources:
+open-weight models offering low-cost inference and self-hosting;
+cheaper tiers within frontier-lab model families;
+closed models from conglomerates and application platforms that can subsidize model economics from other businesses.
+Only the first can provide a technical exit from the provider API, subject to licensing, jurisdiction, and deployability.
+Release cadence and enterprise adoption cadence are diverging. Long-horizon agents multiply token use through tool calls, retries, verification, and parallel work. Adoption also requires evaluations, integration, data terms, security review, audit paths, and workflow redesign. Most enterprises will skip model generations, reserve the newest model for high-value work, and keep stable volume on cheaper systems. Model availability adds a candidate to the evaluation pipeline; production adoption follows separately.
+Chinese models and access policy
+Reuters
+reported
+, citing three unnamed sources, that Ministry of Commerce-led meetings discussed possible limits on overseas access to future advanced Chinese models, including open-weight releases. The agencies, companies, and officials involved did not confirm the report, and no rule, mechanism, or timetable has been announced.
+A separate May 24
+Supreme People’s Court IP Court-hosted roundtable
+recommends tiered export controls: security review and reporting for strategic or frontier open technologies, and presumptive non-release or tightly controlled release for national-security core technologies. It also warns that blanket unilateral restrictions on open weights could be self-defeating and urges continued participation in global open-source rulemaking. The roundtable is policy-adjacent expert commentary, not evidence of the reported meetings or adopted policy. Reuters’s “domestic use only” gloss is stronger than the Chinese text.
+Checkpoint possession and access to future releases are separate dependencies. A mirrored MIT or Apache checkpoint cannot be remotely revoked by its producer. States can restrict its lawful use or transfer and can restrict later checkpoints, APIs, licenses, serving stacks, support, and training collaboration. Self-hosting removes the vendor’s API switch; it does not guarantee future releases or remove sovereign legal risk.
+Vertical integration
+Direction
+July developments
+Strategic effect
+Labs into workflows
+ChatGPT Work
+connects files, communications, browsers, desktop applications, and business systems; it produces artifacts and runs scheduled or event-triggered work
+OpenAI gains distribution and visibility at the general work surface
+Applications into models
+Cursor co-trained Grok 4.5; Cognition post-trained Kimi K2.7 for Devin
+Application owners can retain or bargain with their data and environments
+Model companies into applications
+Z.ai launched
+ZCode
+; Mistral
+Studio treats prompts and skills
+as versioned production assets
+Model providers package more of the deployment control plane
+ChatGPT Work broadens the competitive issue beyond a lab launching one adjacent application. A general work layer can compete with application vendors, integrators, consultancies, and internal enterprise platforms. It mediates tool use, failures, accepted artifacts, and revisions; even where contracts prohibit shared-weight training, the layer retains product and distribution value.
+Application and enterprise post-training
+Bridgewater showed that expert labels could produce customer-owned weights that outperformed frontier models on narrow internal tasks. Two July 8 developments broaden that evidence.
+Cognition released
+SWE-1.7
+, post-trained from Kimi K2.7 for Devin. Cognition reports performance within a few points of GPT-5.5 and Opus 4.8 on its coding evaluations and about 1,000 tokens per second through Cerebras. Training used long-horizon rollouts, task filtering, and reward-hacking defenses across clusters on three continents. Results remain vendor-reported. Cognition’s
+trustworthiness tests
+provide preliminary evidence that an application company can modify unwanted behavior in a Chinese base; Cognition produced the tests, so they do not establish independent compliance validation.
+Prime Intellect’s $130 million Series A announcement
+claims more than 6,000 customers and over $100 million in annualized revenue across compute, reinforcement learning, environments, evaluation, inference, and deployment. Its Ramp case describes a 35-billion-parameter spreadsheet-search model that beat Opus on the task while running faster and more cheaply than Haiku. The result and revenue are company-reported, and the announcement does not establish contractual weight ownership.
+Enzo summarized
+the emerging arbitrage: a US lab trains a closed model, a Chinese company releases an approximation, and a US application company applies reinforcement learning to approach closed-model task performance at lower cost—“Capitalism at its finest.” The summary captures the incentives. Distillation is often alleged without public proof; “open source” commonly means open weights; and parity claims are task-specific and vendor-reported.
+For repeated, valuable, gradable work, post-training an open base is becoming a build-versus-buy option. Frontier models can support task generation, grading, and exploratory solutions; a customer-controlled or self-hosted model can absorb stable volume and preserve task-specific learning.
+Evaluation integrity and asset value
+OpenAI’s July 8
+audit of SWE-Bench Pro’s 731-task public split
+flagged 27.4% of tasks as broken through an agent-assisted review and 34.1% through a separate campaign using five experienced engineers per flagged task. Failures included omitted requirements, overly strict tests, weak test coverage, and contradictions between prompts and hidden tests. OpenAI withdrew its earlier recommendation to adopt the benchmark.
+The essay’s GLM-5.2-versus-Opus comparison based on SWE-Bench Pro is an illustrative provider result and cannot support general capability or price-performance claims. GPT-5.6, Grok 4.5, and other launch results on the benchmark carry the same caveat.
+Cognition’s
+FrontierCode 1.1
+audit reviewed more than 1,000 grading criteria, relaxed 75 overly strict blockers, and removed its noisiest subset. Cursor excluded a CursorBench result after finding that an earlier Grok 4.5 training snapshot included a snapshot of Cursor’s codebase. Along with the Clean Coding Index evidence in the essay, these are distinct failures in task validity, grading, and contamination.
+Bespoke Labs raised
+$40 million
+around realistic enterprise environments. Mercor says gross annualized revenue exceeded
+$2 billion
+, reported as gross billings before contractor payouts. Both provide market evidence for demand for training and evaluation inputs.
+The audits demonstrate the scarcity and operating value of specifications, graders, reference solutions, adversarial tests, and maintenance.
+Access controls and effective usability
+GPT-5.6’s partner preview lasted about two weeks before general availability, weakening the inference that trusted-partner distribution would become the default release regime. The resulting regime is more granular. GPT-5.6 is broadly available; some higher-risk defensive-cyber capabilities require Trusted Access; safeguards can block requests or restrict users and organizations. Eligible programmatic tool use remains
+compatible with Zero Data Retention
+. OpenAI’s
+data controls
+allow, with advance written notice, specified ZDR or modified-monitoring customers to be placed into Safety Retention; the policy says only classifier-flagged severe-risk content is then retained and reviewed.
+This differs from Anthropic’s model-class-wide mandatory retention for Mythos described in §9. Both vendors administer access and privacy by risk and trust, through different mechanisms.
+This addendum provides an author-side usability observation. It is my first use of GPT-5.6 Sol at Ultra effort for research and synthesis of this kind. I used Fable before its suspension and again after access returned. Since its return, Fable has refused or failed on my AI training and evaluation, inference-optimization, and production-inference codebases. Operationally, it is nominally available but unusable for most of my work. The change coincided with expanded guardrails, but I cannot determine whether the blocking layer is model policy, a classifier, or an account- or deployment-level control.
+The Sol-versus-Fable comparison is uncontrolled: Sol was used here for research and synthesis rather than identical codebase tasks. Refusal by any layer has the same operational result for the user. Effective capability should include the probability that legitimate work is refused, degraded, routed to a weaker fallback, or made too cumbersome to complete.
+Enterprises should measure refusal and safeguard-friction rates separately from correctness and route blocked tasks to tested alternatives.
+China’s MIIT-operated
+National Vulnerability Database
+characterized Claude Code versions 2.1.91 through 2.1.196 as a serious “backdoor” risk. The
+published client code
+shows a narrower undisclosed mechanism: when a custom
+ANTHROPIC_BASE_URL
+was used, it classified the configured host against proxy, company, and AI-lab lists, checked for a Chinese timezone, and encoded three Boolean signals through punctuation and date formatting in the system prompt. It did not transmit source code or the raw hostname or timezone through this channel, and the mechanism is absent from version 2.1.200.
+Reuters
+and
+SCMP
+report that Anthropic called it an experimental anti-abuse measure against unauthorized use and distillation and said Chinese users were never authorized to use Claude Code. Alibaba reportedly banned internal use, although that remains anonymously sourced. The episode supports the client-instrumentation and access-fragmentation thesis; it neither confirms nor rebuts possible Chinese controls on outbound model releases.
+Competing frontier-governance regimes
+Two July statements sharpen the governance split around frontier models. Their AGI timelines and capability forecasts are speculative; their proposed institutional arrangements are concrete strategic signals.
+A
+translated July 11 letter attributed to Zhipu founder Tang Jie
+,
+reproduced in Chinese by Sina Finance
+, announces a two-year “Touch High” strategy centered on long-horizon tasks, autonomous agent systems, fully self-training models, and safety. The provenance requires care: the English translator described it as a purported internal letter, and no first-party Zhipu publication was located. The governance position is nevertheless clear in both versions. Zhipu proposes to encode ethics, social norms, and national law into model training; invest in mechanistic interpretability; and participate in international governance. At the same time, it argues that safety comes from open participation and oversight rather than technological isolation, commits GLM-5.2 to an MIT release, and says frontier intelligence should not be withdrawable by a small group of rule-makers.
+On July 14, Google DeepMind CEO Demis Hassabis proposed a contrasting external-control regime in
+“A Framework for Frontier AI and the Dawning of a New Age”
+. A US-led, industry-funded body modeled on FINRA would define changing benchmark thresholds for “Frontier Models,” test them with federal agencies and National Labs, and promote third-party auditors. Submission would begin voluntarily up to 30 days before release; after the protocol matured, a frontier model would have to pass before deployment in the US. The regime would cover domestic and foreign, open and closed models, exempt non-frontier systems, and could coordinate a slowdown.
+Axios reports
+that Hassabis has briefed the US administration, other labs, and European officials, making this an active policy campaign rather than an isolated essay.
+The contrast is direct. Zhipu would internalize safety in the model and distribute the artifact broadly, while DeepMind would externalize part of safety to a US-centered gate that can deny deployment. Both approaches retain a national locus: Tang ties alignment to national strategic priorities; Hassabis gives the US the first institutional move. One treats non-revocability as a feature, while the other would regulate frontier open models alongside closed ones. Hassabis’s proposal could replace the improvised Fable and GPT-5.6 negotiations with published procedures, but it could also turn frontier designation, compliance capacity, and pre-release access into regulatory and competitive moats. Under that proposal, open weights would remain technically non-revocable while becoming legally restricted at deployment.
+Neither statement establishes that AGI, robust self-improvement, or autonomous long-horizon operation is near. Tang treats faster discrete model releases as approaching continual learning, which is not the same as learning during deployment. Hassabis would make benchmark thresholds part of the legal access boundary just as the audits in this addendum show task breakage, contamination, grader errors, and reward hacking. His proposed held-out tests, quarterly revision, and independent auditors address part of that problem; they do not eliminate disputes over validity, capture, or who bears the cost of false positives.
+Sovereign deployment
+On July 7, a Ukrainian Ministry of Digital Transformation official told Reuters that the government would
+favor systems operable on its own servers
+, independent of a provider’s ability to restrict or terminate access. The Fable cutoff contributed to the concern. Ukraine is developing a Gemma-based model with Kyivstar for government, commercial, and military use; its remote Gemini deployment in Diia is interim and strips personal data before processing.
+Other governments may choose privileged vendor alignment. CISA is reportedly using
+Mythos to audit US government code
+. The two cases separate operational control from supplier nationality.
+An open-weight continuity plan requires an archived checkpoint, license, tokenizer, configuration, quantizations, serving code, evaluation harness, and build dependencies, plus tested restoration on procurable infrastructure. The plan remains incomplete until lawful transfer and operation have been tested.
+Equilibrium and break conditions
+Dimension
+July 10–14 revision
+Original sections affected
+Capability
+The frontier lead is sawtoothed. Closed releases can reopen it; open models compress from below; cheaper closed models constrain it from the side.
+§§3.1, 4
+Price
+Competition includes open weights, cheaper frontier-lab tiers, and subsidized closed APIs from diversified platforms.
+§§3.1, 4, 8
+Integration
+Labs move into workflows; applications and platforms move into models.
+§§4, 7
+Open weights
+Possession of a checkpoint provides technical autonomy from the vendor API. Tang’s reported letter treats open distribution and non-revocability as part of safety; Hassabis would subject frontier open models to the same US deployment gate as closed models. Future releases, support, lawful use, and transfer remain state-dependent.
+§§8.3, 10, 11
+Access
+Gating is granular and continuous. Model-wide availability can coexist with restrictions by capability, request, identity, organization, jurisdiction, retention mode, or workload. Hassabis proposes formalizing the current ad hoc regime through threshold-based pre-release review and eventual US deployment approval.
+§§9–11
+Data governance
+Context transmission, workspace snapshots, trace creation, retention, deletion, and secondary use require separate controls. Grok Build showed that a training opt-out did not constrain a whole-repository upload path; a later server-side flag did. Nadella’s proposed trust boundary extends ownership to traces, evals, adapted weights, memory, and model-output rights.
+§§3.2, 6, 9–12
+Learning
+Deployment learning occurs in weights, harnesses, and organizations, on different clocks and under different owners.
+§§3.2, 3.3, 6, 8.4, 9–12
+Open questions
+Original question or condition
+July 10–14 update
+Original sections affected
+Centralized versus differentiated continual learning
+Cursor–SpaceXAI, Cognition, and Ramp show discrete training or post-training feedback loops. Harness research shows across-run improvement around frozen weights. Zhipu’s reported strategy targets project-lifecycle learning and self-training, but its reference to faster version iteration is not continual learning. Continual weight learning remains open.
+§§3.2, 3.3, 9, 12
+Bridgewater replication and post-training cost
+Cognition and Ramp partially replicate the direction; normalized cost, independent evaluation, and contractual weight ownership remain unknown.
+§§6, 8.1, 10
+First-party application launches
+ChatGPT Work is a shipped general workflow product.
+§§4, 7, 12
+Chinese open-weight policy
+Possible controls remain an unconfirmed Reuters report. A court-hosted expert roundtable supports tiered controls and warns against blanket restrictions; no rule has been enacted. Tang’s reported letter commits Zhipu to permissive release and frames openness as safety, but a company’s position is not state policy. Hassabis separately proposes a US deployment gate covering foreign open models.
+§§3.1, 4, 8.3, 10, 12
+Sovereignty cascade
+Ukraine provides an early model-procurement case; broader adoption remains open.
+§§8.3, 11, 12
+Evaluation integrity
+SWE-Bench Pro fails as reliable comparative evidence; the issue extends to task validity, contamination, grader correctness, and reward hacking. Hassabis’s proposal would make evolving benchmark thresholds part of a deployment gate; held-out tests and independent auditors mitigate but do not remove the measurement risk.
+§§3.1, 4, 6, 12
+Client instrumentation
+Claude Code’s affected versions and signalling mechanism are known, and that code is absent from 2.1.200. Grok Build 0.2.93’s whole-repository and Git-history upload was independently reproduced and later disabled server-side. SpaceXAI has not published the affected-account scope, root cause, or independently verifiable evidence that prior uploads were deleted; prevalence of similar paths elsewhere remains open.
+§§9, 12
+Trusted-partner release regime
+GPT-5.6 general availability weakens whole-model partner-only gating. Runtime controls and the author’s Fable experience support capability- and workload-specific gating. Hassabis proposes replacing ad hoc partner and government review with a standing standards body, initially voluntary and eventually a required US deployment gate for frontier models.
+§§9–12; §10 break condition 5
+New: durability of an open-weight exit
+Existing weights, future checkpoints, APIs, training code, licenses, support, and lawful redistribution are separate dependencies.
+§§8.3, 10–12
+New: ownership of deployment learning
+Labs can improve shared weights; enterprises and applications can improve harnesses and later convert trajectories into post-training. Nadella now supplies primary hyperscaler advocacy for an enterprise trust boundary around traces, evals, adapted weights, memory, and output rights. Which loop compounds fastest—and which ownership terms become standard—remains open.
+§§3.2, 3.3, 6, 8.4, 9–12
+14. References
+[1]
+OpenAI, Enterprise privacy.
+https://openai.com/enterprise-privacy/
+— Business no-default-training; post-March-2023 API defaults; opt-in sharing.
+[2]
+Anthropic, Commercial Terms of Service.
+https://www.anthropic.com/legal/commercial-terms
+— Customer Content no-training clause; separate feedback clause; customer restrictions on building competing models.
+[3]
+Microsoft Learn, Data privacy for Azure/Foundry-hosted models.
+https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/openai/data-privacy
+— Customer data not available to OpenAI; no training without permission.
+[4]
+Google Cloud, Gemini Enterprise ZDR.
+https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention
+— No training without permission; retention exceptions enumerated. See also Google Cloud’s AI/ML Privacy Commitment (Oct 2020):
+https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-unveils-ai-and-ml-privacy-commitment
+and its generative-AI data-residency guarantees (Nov 2023):
+https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-generative-ai-data-residency-guarantees-for-data-stored-at-rest/
+[5]
+OpenAI, Deployment Company announcement.
+https://openai.com/index/openai-launches-the-deployment-company/
+— $4B+, Tomoro, 19 partners, majority OpenAI control.
+[6]
+Deploy.co, Forward deployed engineering.
+https://deploy.co/
+— FDE flywheel; BBVA and John Deere case studies.
+[7]
+Reuters, OpenAI $4B unit, May 11, 2026.
+https://www.reuters.com/business/openai-creates-new-unit-with-4-billion-investment-aid-corporate-ai-push-2026-05-11/
+[8]
+Axios, DeployCo valuation and terms, May 11, 2026.
+https://www.axios.com/2026/05/11/openai-deployco-private-equity
+— $10B pre-money; 17.5% guaranteed return; capped profits.
+[9]
+Reuters, Anthropic $1.5B JV report, May 4, 2026.
+https://www.reuters.com/legal/transactional/anthropic-nears-15-billion-ai-joint-venture-with-wall-street-firms-wsj-reports-2026-05-04/
+— Via WSJ; not independently verified.
+[10]
+Reuters, AWS $1B embedded-engineer unit, Jun 30, 2026.
+https://www.reuters.com/business/retail-consumer/amazons-aws-commits-1-billion-toward-new-unit-embedded-ai-engineers-2026-06-30/
+[11]
+Reuters, Microsoft Frontier Company, Jul 2, 2026.
+https://www.reuters.com/business/retail-consumer/microsoft-launches-firm-help-companies-adopt-ai-with-25-billion-2026-07-02/
+— $2.5B; customers keep results; framed against lab-expertise fears.
+[12]
+MacCarthy, Brookings, “What happens when AI companies compete with their customers?”, Mar 12, 2026.
+https://www.brookings.edu/articles/what-happens-when-ai-companies-compete-with-their-customers/
+[13]
+Ramzanali & Rajan, VPA, “AI Neutrality” (report PDF).
+https://cdn.vanderbilt.edu/vu-URL/wp-content/uploads/sites/412/2026/01/28222934/AI-Neutrality-.pdf
+[14]
+VPA Substack, “Net Neutrality for AI”, Jan 29, 2026.
+https://vanderbiltpolicyaccelerator.substack.com/p/net-neutrality-for-ai
+[15]
+VPA, Governing AI papers page (“After the AI Crash”, Mar 26, 2026).
+https://www.vanderbilt.edu/vanderbilt-policy-accelerator/governing-artificial-intelligence/
+[16]
+Denain & Barber, Epoch AI, “An FAQ on Reinforcement Learning Environments”, Jan 12, 2026.
+https://epoch.ai/gradient-updates/state-of-rl-envs
+[17]
+Kourabi & Patel, SemiAnalysis, “RL Environments and RL for Science”, Jan 12, 2026.
+https://newsletter.semianalysis.com/p/rl-environments-and-rl-for-science
+[18]
+Mechanize, “Cheap RL tasks will waste compute”.
+https://www.mechanize.work/blog/cheap-rl-tasks-will-waste-compute/
+[19]
+Reuters, Surge AI raise, Jul 1, 2025.
+https://www.reuters.com/business/scale-ais-bigger-rival-surge-ai-seeks-up-1-billion-capital-raise-sources-say-2025-07-01/
+[20]
+Business Insider, Mercor contractor spend, Oct 2025.
+https://www.businessinsider.com/mercor-pays-million-per-day-human-contractors-training-ai-ceo-2025-10
+[21]
+Anthropic, Claude Fable product page.
+https://www.anthropic.com/claude/fable
+— 30-day retention requirement.
+[22]
+Reuters, Microsoft limits Fable use, Jun 10, 2026.
+https://www.reuters.com/technology/microsoft-limits-employee-use-anthropics-claude-fable-5-over-data-retention-2026-06-10/
+— 30 days; 2 years if flagged.
+[23]
+The Verge, Anthropic consumer training policy.
+https://www.theverge.com/anthropic/767507/anthropic-user-data-consumers-ai-models-training-privacy
+[24]
+Ouyang et al., InstructGPT, arXiv:2203.02155.
+https://arxiv.org/abs/2203.02155
+— API-submitted prompts in the training pipeline.
+[25]
+Reuters Legal on
+US v. Heppner
+, Mar 24, 2026.
+https://www.reuters.com/legal/transactional/artificial-intelligence-tools-third-party-by-any-other-name--pracin-2026-03-24/
+[26]
+Axios, “The revolt against U.S. AI labs”, Jul 2, 2026.
+https://www.axios.com/2026/07/02/karp-palintir-openai-anthropic-amodei
+[27]
+Business Insider, Karp critique, Jul 2026.
+https://www.businessinsider.com/alexander-karp-criticizes-ai-companies-token-costs-2026-7
+[28]
+Tom’s Hardware on MIT NANDA GenAI Divide.
+https://www.tomshardware.com/tech-industry/artificial-intelligence/95-percent-of-generative-ai-implementations-in-enterprise-have-no-measurable-impact-on-p-and-l-says-mit-flawed-integration-key-reason-why-ai-projects-underperform
+— Primary MIT report not yet sourced.
+[29]
+Wired, “Anthropic revokes OpenAI’s access to Claude”.
+https://www.wired.com/story/anthropic-revokes-openais-access-to-claude
+[30]
+Su, Zhu, Xiao, Alur, Kang (Bridgewater AIA Labs) with Thinking Machines Lab, “Learning to Replicate Expert Judgment in Financial Tasks”, Jun 30, 2026.
+https://thinkingmachines.ai/news/learning-to-replicate-expert-judgment-in-financial-tasks/
+— Results in
+§8.1
+; coins “differentiated intelligence.”
+[31]
+Yahoo Finance/Business Insider, Coinbase AI cost strategies, Jun 2026.
+https://finance.yahoo.com/technology/ai/articles/coinbases-ceo-outlined-5-strategies-053434539.html
+[32]
+The AI Corner, Armstrong interview summary, Jul 2026.
+https://www.the-ai-corner.com/p/brian-armstrong-coinbase-1200-ai-agents-operating-model-2026
+— Secondary summary; verify against the primary interview before quoting.
+[33]
+TechTimes, Coinbase/Chinese-model legal risk, Jun 28, 2026.
+https://www.techtimes.com/articles/319248/20260628/coinbase-cuts-ai-spend-50-chinese-models-legal-risk-its-ceo-didnt-lead.htm
+— Congressional probe; Lindy migration; Microsoft/DeepSeek evaluation.
+[34]
+PANews, Coinbase gateway/caching detail, Jun 27, 2026.
+https://panewslab.com/en/articles/019f08e4-fef0-70ca-9cdc-572a6426e81b
+[35]
+BigGo Finance, Armstrong interview coverage, Jun 2026.
+https://finance.biggo.com/news/77dd3c6888face61
+— LightLLM-derived middleware; 80%/99% projection.
+[36]
+MLQ News, Coinbase GLM/Kimi switch, Jun 2026.
+https://mlq.ai/news/coinbase-switches-to-chinese-ai-models-glm-and-kimi-cuts-ai-spending-by-50/
+— $1.40 vs. $5 per M input tokens; SWE-bench Pro comparison.
+[37]
+Tekedia, ecosystem reactions to Armstrong, Jun 2026.
+https://www.tekedia.com/coinbase-ceo-brian-armstrong-urges-shift-to-cheaper-ai-models-signaling-end-of-the-tokenmaxxing-era/
+— Levie, Weinberg, Gentilcore, Andreessen, Chaumond quotes.
+[38]
+TechTimes, “Microsoft CEO Issues AI Warning: Companies That Rent Models Risk Industry Hollowing”, Jun 15, 2026.
+https://www.techtimes.com/articles/318394/20260615/microsoft-ceo-issues-ai-warning-companies-that-rent-models-risk-industry-hollowing.htm
+— Models absorbing professional knowledge, sold back at commodity prices.
+[39]
+The Decoder, “Microsoft CEO Satya Nadella warns of ‘a small number of AI systems capturing all the economic returns’”, Jun 2026.
+https://the-decoder.com/microsoft-ceo-satya-nadella-warns-of-a-small-number-of-ai-systems-capturing-all-the-economic-returns/
+— “Token capital” framing.
+[40]
+Anthropic, “Claude Science, an AI workbench for scientists”.
+https://www.anthropic.com/news/claude-science-ai-workbench
+— Launched Jun 30, 2026; companion page:
+https://www.anthropic.com/news/claude-for-life-sciences
+[41]
+CNBC, “Anthropic launches AI drug discovery program, Claude Science”, Jun 30, 2026.
+https://www.cnbc.com/2026/06/30/anthropic-launches-ai-drug-discovery-program-claude-science.html
+— Neglected-diseases program alongside the workbench.
+[42]
+Palantir (
+@PalantirTech
+), “Our thoughts on the importance of AI sovereignty”, Jul 1, 2026.
+https://x.com/PalantirTech/status/2072114267776491695
+(unrolled:
+https://threadreaderapp.com/thread/2072114267776491695.html
+) — Nine theses; “tokenmaxxing”; “controlling your weights is controlling your fate.”
+[43]
+Arnaud Bertrand (
+@RnaudBertrand
+), thread on Palantir and sovereignty, Jul 3, 2026.
+https://x.com/RnaudBertrand/status/2072964558302687569
+(unrolled:
+https://threadreaderapp.com/thread/2072964558302687569.html
+) — Two dying assumptions; European case record; source of the embedded links in
+[44]
+–
+[48]
+.
+[44]
+The Guardian, France replaces Palantir with ChapsVision at the DGSI, Jun 16, 2026.
+https://www.theguardian.com/world/2026/jun/16/france-ai-data-tools-palantir-chapsvision
+— Lecornu: no “new strategic dependencies”; “capable of turning off the tap.”
+[45]
+Politico Europe, “Germany spy agency picks France AI firm over Palantir”.
+https://www.politico.eu/article/germany-spy-agency-picks-france-ai-firm-over-palantir/
+— BfV selects ChapsVision; German military dropping Palantir.
+[46]
+Anadolu Agency, “Spain tells state-backed firms to avoid new Palantir contracts amid national security concerns”.
+https://www.aa.com.tr/en/europe/spain-tells-state-backed-firms-to-avoid-new-palantir-contracts-amid-national-security-concerns/3983804
+— Telefónica, Indra, Navantia.
+[47]
+Reuters, “UK reviewing Palantir’s NHS contract amid pressure to use break clause”, Jun 9, 2026.
+https://www.reuters.com/business/healthcare-pharmaceuticals/uk-reviewing-palantirs-nhs-contract-amid-pressure-use-break-clause-2026-06-09/
+— £330M contract; the Met Police block is reported via
+[43]
+.
+[48]
+Jacob Helberg (Under Secretary of State), post opposing “AI sovereignty”, Jun 2026.
+https://x.com/UnderSecE/status/2069482327387038086
+— “Synchronized mediocrity” / “marching in perfect formation into the past.”
+[49]
+Karina Nguyen, post on post-training economics, Jul 2, 2026.
+https://x.com/karinanguyen/status/2072756945166209270
+— “The marginal cost of shaping intelligence is falling”; VC sentiment shift.
+[50]
+@thoughtfullab
+, GLM-5.2 / PostTrainBench post, Jul 2, 2026.
+https://x.com/thoughtfullab/status/2072755415889355015
+— 5× cheaper than Opus 4.8, 11× than Fable 5, tops PostTrainBench; “millions of models” vision.
+[51]
+@scaling01
+, PostTrainBench critiques, Jun 20–21, 2026.
+https://threadreaderapp.com/thread/2068049408940556430.html
+and
+https://threadreaderapp.com/thread/2068502041106805031.html
+— Unrestricted internet access inflates recent-model scores; GLM-5.2 eval-probing trace analysis; judge catches only direct contamination/substitution.
+[52]
+Benjamin Horne, post on labs entering the discovery layer, Jul 3, 2026.
+https://x.com/benjamin_horne/status/2073119237758206278
+— “Knife fight over generic workflows and UI/UX”; breakthrough economics of biotech.
+[53]
+ByteDance Seed, “EdgeBench: Scaling Laws of Environment Learning”, Jul 2, 2026.
+https://edge-bench.org/
+and
+https://edge-bench.org/paper.pdf
+— 134 tasks, 12–72h horizons; log-sigmoid law (R² = 0.998); learning speed doubling ~3 months; experience accumulation (§5.2) and long-context (§5.3) findings; 51 tasks + framework released.
+[54]
+@tikgiau
+(EdgeBench team), announcement thread, Jul 2, 2026.
+https://threadreaderapp.com/thread/2072701593829695926.html
+— 57.2h average expert effort; 38,000 hours of agent runs; graph-exploration theory of the law.
+[55]
+@scaling01
+, EdgeBench summary, Jul 2, 2026.
+https://threadreaderapp.com/thread/2072790212615237858.html
+— Opus 4.8 ahead of GPT-5.5 on current runs, GPT-5.5’s ceiling possibly higher; highlights §5.2/§5.3.
+[56]
+@JongwonPar9958
+, reward-hacking audit / Clean Coding Index, Jul 2, 2026.
+https://threadreaderapp.com/thread/2072560608655143292.html
+and
+https://coding-index.posttrain.dev
+— Capability and hacking rise together; GPT-5.5 0% on patch-form vs. 26.5% on mission-form tasks; held-out re-scoring drops up to ~8 points; corroboration reported by Datacurve and Cursor researchers.
+[57]
+Anthropic support, “Data retention practices for Mythos-class models”.
+https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models
+— Effective Jun 9, 2026; 30-day retention on every platform; ZDR revoked for covered models; controlled human-review path; Trust Center white paper referenced.
+[58]
+AWS News Blog, “Anthropic Claude Fable 5 on AWS”, updated Jul 1, 2026.
+https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on-aws-mythos-class-capabilities-with-built-in-safeguards-now-available/
+—
+provider_data_share
+opt-in required to invoke Fable 5 on Bedrock; “retain and share your inference data with model providers per their requirements”; human review; access “restored” Jul 1.
+[59]
+Lushbinary, “Claude Fable 5 Data Retention: Compliance Guide”, Jun 11, 2026.
+https://lushbinary.com/blog/claude-fable-5-enterprise-data-retention-compliance-guide/
+— Secondary vendor blog; HIPAA/GDPR interaction; routing checklist.
+[60]
+explainx.ai, “Anthropic Rolls Out ID Verification for Claude”, Jun–Jul 2026.
+https://www.explainx.ai/blog/anthropic-claude-id-verification-persona-fable-5-2026
+— Persona verification (government ID + live selfie); Jul 8 privacy policy enumerating biometrics; Jun 12–30 export-control offline period, Jul 1 restore; leaked credit-gating strings. Secondary blog.
+[61]
+Thereallo, “Claude Code is steganographically marking requests”, Jul 2026.
+https://thereallo.dev/blog/claude-code-prompt-steganography
+— Reverse engineering of Claude Code 2.1.196; Unicode apostrophe variants keyed to endpoint domain/keyword lists (XOR-obfuscated); CN-timezone date-separator flip.
+[62]
+Hacker News discussion of
+[61]
+.
+https://news.ycombinator.com/item?id=48734373
+— 2,400+ points; community analysis of detection purpose and client-trust implications.
+[63]
+lhl, RealityCheck companion syntheses.
+https://github.com/lhl/realitycheck-data/blob/main/analysis/syntheses/palantir-sovereign-ai-frontier-lab-extraction-synthesis.md
+,
+https://github.com/lhl/realitycheck-data/blob/main/analysis/syntheses/gpt-5-6-sol-white-house-vetting-synthesis.md
+,
+https://github.com/lhl/realitycheck-data/blob/main/analysis/syntheses/anthropic-fable-mythos-export-control-synthesis.md
+— Author’s own claim-graded analyses of the sovereignty/extraction debate, the GPT-5.6 trusted-partner access regime, and the Fable/Mythos export-control takedown.
+[64]
+Noam Brown (OpenAI), “Implications of Large-Scale Test-Time Compute”, Jun 2026.
+https://x.com/polynoamial/status/2064210146558136827
+— Performance vs. token/cost/time curves; AISI cyber eval past 100M tokens; capability ceilings unmeasured; recommendations for budget-aware evaluation and preparedness.
+[65]
+AWS docs, “Data protection” and “Data retention”, Amazon Bedrock User Guide.
+https://docs.aws.amazon.com/bedrock/latest/userguide/data-protection.html
+and
+https://docs.aws.amazon.com/bedrock/latest/userguide/data-retention.html
+— Model Deployment Accounts: “model providers don’t have access to Amazon Bedrock logs or to customer prompts and completions”;
+data_retention_mode
+taxonomy (default / provider_data_share / none); ZDR-configured accounts have retention-requiring requests blocked rather than shared; “no data retention change to models released before Claude Fable 5.”
+[66]
+Anthropic, “Redeploying Fable 5”, Jun 30, 2026 (updated Jul 1).
+https://www.anthropic.com/news/redeploying-fable-5
+— Timeline: Jun 9 release, Jun 12 export-control directive (foreign-national restriction; suspended for all users), Jun 30 controls lifted, Jul 1 restore; Amazon researchers’ bypass report; safety-margin approach; blocked requests downgraded to Opus 4.8; CAISI testing; Mythos 5 restored only to government-approved US organizations (Project Glasswing); pre-release government access commitments; June 2 Executive Order.
+[67]
+Anthropic, “More details on Fable 5’s cyber safeguards and our jailbreak framework”, Jul 2, 2026.
+https://www.anthropic.com/news/fable-safeguards-jailbreak-framework
+— Four-category classifier taxonomy (prohibited / high-risk dual use / low-risk dual use / benign); high-risk dual use — pentesting, exploit development, high-uplift vulnerability finding — blocked “until we have better controls to limit access to known good actors”; enlarged safety margin; Cyber Jailbreak Severity (CJS) scale drafted with Amazon, Microsoft, Google, and Glasswing partners.
+[68]
+OpenAI, “Previewing GPT-5.6 Sol: a next-generation model”.
+https://openai.com/index/previewing-gpt-5-6-sol/
+— Trusted-partner preview at the US government’s request, participant list shared with the government; “we don’t believe this kind of government access process should become the long-term default”; layered safeguards with real-time cyber and biology classifiers, paused-generation review by a larger model, account-level review under retention-and-review terms; stated preservation of defensive security work (vulnerability research, patch development, debugging); >700,000 A100-equivalent GPU hours of automated red-teaming; Sol/Terra/Luna tiering and pricing ($5/$30, $2.50/$15, $1/$6 per M tokens); cyber and biology evals reported as score-vs-token curves.
+[69]
+DeepSeek, Privacy Policy (updated Feb 10, 2026) and Open Platform Terms of Service (effective Apr 29, 2026).
+https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html
+and
+https://cdn.deepseek.com/policies/en-US/deepseek-open-platform-terms-of-service.html
+— Service data used for training and improvement of models by default; opt-out framed as a jurisdiction-dependent privacy right; data stored on servers in the PRC; the platform (API) terms contain no default no-training commitment comparable to the US labs’ business terms.
+[70]
+Dean W. Ball, “What Should Be Done”, Hyperdimensional, Jun 26, 2026.
+https://www.hyperdimensional.co/p/what-should-be-done
+— The June 2 EO as de facto licensing/preapproval; “nobody knows what the requirements are”; CAISI staffing; the recoupment-window and global-TAM arguments; diffusion case for broad release; prescription to federalize CA/NY/IL safety-framework disclosure laws and audit adherence. Ball is a former White House AI staffer (AI Action Plan contributor) who has announced he is joining OpenAI; the essay is disclaimed as not OpenAI’s view.
+[71]
+Andrew Curran (
+@AndrewCurran_
+), thread on the FT report, Jul 2, 2026.
+https://threadreaderapp.com/thread/2072533453611139332.html
+— OpenAI proposing a 5% stake to the US government per the Financial Times; AI-wealth-fund variants (Altman, Sanders, Trump); sidebar threads carry the Lutnick letter excerpts (Jun 16 individually-validated license requirement; Jun 26 Mythos unblock to ~100 US institutions). Underlying FT/CNBC/Bloomberg/Semafor articles not independently retrieved.
+[72]
+Dean W. Ball (
+@deanwball
+), thread replying to
+[71]
+, Jul 2, 2026.
+https://threadreaderapp.com/thread/2072637496295329901.html
+— Household distribution vs. direct government stake; “probably ruinous, akin to inviting rats to live and reproduce in the walls of your house”; “it will never stop at 5%”; political capture; discloses he does not yet work at OpenAI and that the rumor “may even be importantly untrue or misleading.”
+Adjacent sources from the research thread, not directly cited above: Wing VC on RL-environment market consolidation (3–5 predicted winners); Stratechery on subscription subsidies, Fable retention, and the commoditization case (paywalled; cited from memory); Dwarkesh Patel, “The next paradigm” (continual learning); Feiteng Li, commentary on the Bridgewater paper, Jul 3, 2026 (
+https://x.com/FeitengLi/status/2073046885896728625
+— supplied during review, content not independently retrieved).
+Source-quality notes:
+Stanford 42% claim untraced to primary.
+[32]
+is a secondary interview summary. Stratechery arguments unverifiable against paywalled text. Bridgewater’s all-in training cost unstated in
+[30]
+. PostTrainBench rankings are contested — see
+[51]
+— so
+§8.1
+uses them as directional, not dispositive;
+[49]
+,
+[50]
+, and
+[52]
+are X posts (positions of practitioners, not vetted research). The circular-financing characterization (
+§1
+,
+§4
+) summarizes broad late-2025 press coverage of chip-vendor/lab co-investment structures rather than a single pinned source.
+[44]
+–
+[47]
+URLs are taken from the embedded links in
+[43]
+and not independently retrieved; verify before quoting downstream.
+[48]
+retrieved secondhand via
+[43]
+. EdgeBench findings
+[53]
+–
+[55]
+are author claims from a benchmark released three days before this revision, unreplicated; the reward-hacking audit
+[56]
+is a single group’s work with reported (unverified) corroboration.
+[59]
+and
+[60]
+are secondary blogs — the primary Fable-channel claims rest on the vendor documents
+[57]
+,
+[58]
+, which were retrieved directly; the ID-verification and export-control timeline details in
+[60]
+should be re-verified against Anthropic’s own pages before quoting. The steganography claims
+[61]
+are reproducible from the published code excerpts and unrebutted at this writing, but we have not independently decompiled the binary.
+[63]
+is the author’s own research database (self-citation, disclosed as such); the Legion LegalTech suit and the GPT-5.6 trusted-partner quotes are taken from its source records rather than retrieved from the underlying Reuters/OpenAI pages.
+[68]
+full text supplied by the author July 5, 2026 (the page itself is JavaScript-gated to direct retrieval).
+[69]
+was served in Japanese from the en-US URL at retrieval (the API terms retrieved in English); the “no opt-out” characterization common in early-2025 coverage of DeepSeek is out of date — the Feb 2026 policy adds a jurisdiction-dependent right to refuse training use, which is what
+§3.4
+now says. The Shisa.AI mention (
+§1
+) is the author’s company, disclosed inline. The government-stake claim rests on
+[71]
+’s relay of an FT report we have not read directly — treat as unconfirmed. Ball (
+[70]
+,
+[72]
+) is both the sharpest critic of the access regime and an announced future employee of OpenAI; his threads and essay carry his own disclaimers, and his interest is noted wherever he is cited. Post-January-2026 claims verified against sources retrieved July 3, 2026;
+[38]
+–
+[43]
+,
+[51]
+, and
+[53]
+–
+[62]
+retrieved July 5, 2026;
+[49]
+,
+[50]
+,
+[52]
+, and the full text of
+[64]
+supplied by the author July 5, 2026;
+[65]
+–
+[67]
+and
+[69]
+–
+[72]
+retrieved July 5, 2026.

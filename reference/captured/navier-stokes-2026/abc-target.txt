@@ -1,0 +1,202 @@
+Controversy erupts as OpenAI claims solution to Navier Stokes maths problem
+By
+Dannielle Maguire
+and
+Jacinta Bowler
+Topic:
+Mathematics
+Posted
+Thu 10 Sep 2026 at 3:31pm
+Thu 10 Sep 2026 at 3:31pm
+Thu 10 Sep 2026 at 3:31pm
+OpenAI says one of its internal systems produced a solution to the Navier–Stokes existence and smoothness problem.
+(
+Reuters: Dado Ruvic
+)
+abc.net.au/news/openai-navier-stokes-millennium-problem-claims/107132242
+Link copied
+Share
+Share
+article
+Scientists at OpenAI say its new artificial intelligence (AI) model found a mathematical proof to one of the Millennium Problems — significant and complex mathematical problems with a US$1 million reward.
+But what could have been a public relations win for the company has morphed into a reputational blow.
+Australian scientist Tristan Buckmaster posted a long statement saying he had been working closely with Levent Alpöge, who works at OpenAI competitor Anthropic, to also solve the problem.
+And they were using a very similar, and quite niche, proof method.
+While Professor Buckmaster did not claim his work was plagiarised, his version of events did not paint OpenAI in a positive light.
+Here's a breakdown of the controversy and why, even though the subject matter is complex, it boils down to simple questions about trust, ethics and the role of AI.
+Don't worry, you don't need to be a mathematician to follow the saga.
+What is the Navier-Stokes problem?
+The mathematical problem is one of six remaining unsolved Millennium Prize Problems.
+According to Zsuzsanna Dancso, a mathematician at the University of Sydney, the problems stretch across mathematics disciplines.
+"They are universally acknowledged as some of the most important or hardest problems in mathematics," Dr Dancso said.
+"What makes them special is that there's a prize for solving one of them."
+OpenAI shared this graphic of local incompressible motion shared, but did not disclose if it was AI-generated.
+(
+Supplied: OpenAI
+)
+Navier-Stokes equations describe the motion of fluids, and overall are well understood by scientists, according to Melissa Lee, a mathematician at Monash University.
+"They are incredibly important in lots of applications such as aerodynamics for planes, and the study of blood flow," Dr Lee said.
+"In practice, engineers and scientists calculate approximate solutions to the Navier-Stokes equations for their applications every day.
+"But it's unknown if the fluids always act in a same way.
+"This is called the Navier–Stokes existence and smoothness problem.
+"The problem has taken a long time and a lot of work to study because fluid flow can be extremely complicated."
+What is the controversy?
+OpenAI announced its proof to the Navier-Stokes problem on Tuesday morning, US time.
+The company said it used 10,000 AI agents, AI assistants that can go about tasks on their own, to complete the proof in about 88 hours.
+At the same time, Professor Buckmaster, an Australian mathematician at New York University, said that he and Dr Alpöge had completed several closely related problems with the help of AI, including those from OpenAI.
+Tristan Buckmaster is a mathematics professor at New York University.
+(
+Supplied: New York University
+)
+Professor Buckmaster said he and Dr Alpöge used an idea based off the work of Diego Córdoba and Luis Martínez Zoroa as a starting point.
+They used several AI models to push their program to completion, pushing it to what's known in the field of fluid dynamics as the Euler equations.
+This was a major stepping stone for tackling the Navier-Stokes problem.
+And it was quite a niche approach.
+"Almost nobody else I know of was working on it," Professor Buckmaster said.
+"It is not the direction one arrives at in a few days by giving a model the problem statement."
+Making 'real progress'
+Work on this was slow but, after about a year, Professor Buckmaster said the pair made "real progress" on August 15 and verified it by August 22.
+"Since this point, we have been working around the clock to understand this proof and turn it into something readable," Professor Buckmaster said.
+In its announcement, OpenAI said it started training an unnamed model about a week later.
+"Since August 28 we have been training a new internal model that has exhibited unprecedented performance in our benchmarks, including mathematics," OpenAI said in a statement.
+Rumours swirl
+"On Tuesday, September 1, we heard rumours that two Millennium Prize problems had been resolved," OpenAI said.
+"Inspired by these rumours and by the step change in performance of our internal model, we launched an effort to evaluate it on all open Millennium Prize problems and a few other high-impact problems."
+Professor Buckmaster and Dr Alpöge had heard these rumours too.
+"Levent had received tips that information about our progress had been passed to OpenAI," Professor Buckmaster said.
+So on September 3, he said he emailed someone from OpenAI.
+Sunday afternoon calls
+Three days later, on a Sunday afternoon, Professor Buckmaster had two calls with Sebastien Bubeck from OpenAI and another unnamed OpenAI mathematician.
+"I asked whether the model had been trained on, or had access to, our sessions in Codex, into which we had been putting all our drafts for the whole of this project," Professor Buckmaster said.
+"I was told the model did not look up user data.
+"I asked again, about training, and I did not get an answer."
+Professor Buckmaster said he was presented with two options:
+Option one:
+The pair posts their Euler result and OpenAI post its Navier-Stokes result the next day, saying the pair deserved the prize
+Option two:
+After posting Euler, Professor Buckmaster alone write a paper presenting the Navier-Stokes result, acknowledging that an internal OpenAI model had resolved it — leaving Alpöge off because he works for Anthropic
+'Why would you ruin your career?'
+Professor Buckmaster said he declined both offers and said he'd go public if OpenAI proceeded with those proposed options.
+"The reply was, 'Why would you ruin your career?' I replied that I am an academic, and asked why he thought going public would ruin my career," he said in his statement.
+"The reply was, 'If you don't want me to be nice, then I don't have to be nice.'"
+He finished his statement by saying he wanted to make a few things clear about the situation.
+"I do not know what their model did, or how," he said.
+"I do not know whether our data was used.
+"I am not accusing anyone of anything."
+How did OpenAI respond?
+OpenAI's
+Dr Bubeck first posted on X, condemning the "false and inflammatory allegations" and promising to say more the next day.
+In two lengthy follow-up posts, Dr Bubeck said he had wanted to coordinate releases with the pair and "came in with the best possible intentions".
+He said he never asked for Dr Alpöge to be removed from authorship of his own work.
+He said he had suggested Professor Buckmaster be the lead author on a rewrite of OpenAI's proof and felt it would be "inappropriate" for an Anthropic employee to author OpenAI's work.
+Here's how he described the call with Professor Buckmaster:
+"I was confused why one would turn an incredible source for celebration (of their achievements!) into such bickering, which is when I said that I did not understand why one would risk their career [over unfounded accusations].
+"Genuinely, at that moment, I was trying to care for him and do a last ditch attempt to get a chance to give them all the credits that they deserve.
+"I deeply apologise for this extremely poor choice of words, it is the opposite of what I was trying to convey. (I should say that I retracted them on the spot by the way.)"
+'Our proofs differ significantly'
+He said OpenAI did not see any of Professor Buckmaster and Dr Alpöge's work until they released it publicly.
+"One can in hindsight see that our proofs differ significantly and even the precise results proved are different in the Euler case," Dr Bubeck said.
+Then OpenAI chief executive Sam Altman chimed in, saying he would have "greatly preferred coordination".
+Sam Altman weighed in on the saga on X.
+(
+Reuters: Shelby Tauber
+)
+"We did not rush to publish even though the other team wasn't communicating with us," Mr Altman posted on X.
+"The team threatened us with unfounded accusations of plagiarism."
+In its announcement, OpenAI said none of its researchers or agents saw the pair's data before it was publicly released and "no specific user data was accessed in order to solve this problem".
+"While unlikely, we cannot rule out that de-identified data derived from their usage of our products helped improve our models."
+And then came the memes
+As you'd expect, with news this big and a drama unfolding on X, there was a lot of commentary about it on social media.
+Here's just a few of the many takes on the saga people have been posting on X:
+Loading Twitter content
+Loading Twitter content
+Loading Twitter content
+Loading Twitter content
+Loading Twitter content
+Loading Twitter content
+An 'uproar' in mathematical community
+According to Dr Dancso, OpenAI went against the spirit of mathematics.
+"In mathematics, but also in science in general, there are two very basic ethical principles — one is we acknowledge our sources, and two is we acknowledge our collaborators," she said.
+"If we collaboratively solve the problem, then we publish it together.
+"And if we use someone else's work, then we reference it and acknowledge that person's work.
+"I think OpenAI fails on both counts."
+Why should I care?
+"The situation raises legitimate questions about privacy and trust, especially in the current age where mathematicians and researchers more generally are exploring the integration of AI tools into their work," Dr Lee said.
+"Researchers need to know very clearly what happens to unpublished work they enter into AI systems, which is perhaps something that has not been considered carefully enough in certain quarters.
+She said it boiled down to trust between researchers and AI companies.
+"Companies such as OpenAI already know that trust in this context is a big deal, and many education and enterprise workspaces claim that data given there is not used to train AI models," Dr Lee said.
+"However, I think such assertions will gain greater scrutiny over the coming weeks and months.
+"If scientists are going to use AI tools while developing new and unpublished ideas, they want to be confident that those ideas will remain protected and will not somehow feed into a competing research effort by the relevant AI company.
+"This also raises broader questions about who gets credit when AI plays a major role in a discovery, and what responsibilities AI companies have towards researchers using their systems."
+Top Stories
+'Bloody coward': Lambie blasts Hanson over 'disgusting' Hastie traitor cartoon
+Topic:
+Federal Parliament
+'We're doing this': Labor goes for gas reservation over tax
+Topic:
+Federal Government
+Commissioner 'deeply worried' by sexual violence trajectory
+Topic:
+Sexual Offences
+Instagram boss warns users will be 'overwhelmed' without algorithm
+Topic:
+Social Media
+'You get $5,000': Trump promises to pay voters if Republicans win midterms
+Topic:
+World Politics
+Related stories
+Anthropic researcher says some developers believe AI 'could kill us all'
+Topic:
+Science and Technology
+OpenAI model goes rogue during testing and hacks startup
+Topic:
+AI
+Elon Musk loses lawsuit against OpenAI and Sam Altman
+Topic:
+Courts
+Related topics
+AI
+Mathematics
+United States
+'Bloody coward': Lambie blasts Hanson over 'disgusting' Hastie traitor cartoon
+Topic:
+Federal Parliament
+'We're doing this': Labor goes for gas reservation over tax
+Topic:
+Federal Government
+Commissioner 'deeply worried' by sexual violence trajectory
+Topic:
+Sexual Offences
+Instagram boss warns users will be 'overwhelmed' without algorithm
+Topic:
+Social Media
+'You get $5,000': Trump promises to pay voters if Republicans win midterms
+Topic:
+World Politics
+Just In
+Extreme heat, fires and floods mark record hot month
+Topic:
+Climate Change
+Thu 10 Sep 2026 at 6:20pm
+Thu 10 Sep 2026 at 6:20pm
+Thu 10 Sep 2026 at 6:20pm
+Queensland on the brink of a credit rating downgrade
+Topic:
+State and Territory Parliament
+Thu 10 Sep 2026 at 5:49pm
+Thu 10 Sep 2026 at 5:49pm
+Thu 10 Sep 2026 at 5:49pm
+'I believe Israeli survivors': Grace Tame clarifies October 7 attack comments
+Topic:
+Unrest, Conflict and War
+Thu 10 Sep 2026 at 5:36pm
+Thu 10 Sep 2026 at 5:36pm
+Thu 10 Sep 2026 at 5:36pm
+Victoria's upper house votes to defer Carroll Government's work-from-home laws
+Topic:
+State and Territory Parliament
+Thu 10 Sep 2026 at 6:32pm
+Thu 10 Sep 2026 at 6:32pm
+Thu 10 Sep 2026 at 6:32pm
+More Just In
+Back to top

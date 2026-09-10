@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 1171 |
-| **Sources** | 283 |
+| **Claims** | 1226 |
+| **Sources** | 307 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 69 |
+| **Predictions Tracked** | 70 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-09-10 | [Navier–Stokes: research credit, customer data and the AI value chain](analysis/syntheses/navier-stokes-2026-research-credit-data-value-chain.md) | `[DRAFT]` | 23-source synthesis; recovered primary exchanges, archived citation amendment, unresolved training provenance and provider-competition mechanism |
 | 2026-07-03 | [Palantir, Sovereign AI, and the Frontier-Lab Extraction Question](analysis/syntheses/palantir-sovereign-ai-frontier-lab-extraction-synthesis.md) | `[REVIEWED]` | Cross-source synthesis: Karp CNBC tokenmaxxing interview + Claude 5 Fable Palantir/Claude Tag conversation + Shisa.AI ENTITY sovereign-AI proposal; resolves "extractive" to context ownership, sovereignty to open substrate, and posture to portfolio architecture |
 | 2026-06-28 | [GPT-5.6 Sol White House vetting and frontier AI access regime](analysis/syntheses/gpt-5-6-sol-white-house-vetting-synthesis.md) | `[DRAFT]` | Cross-source synthesis: OpenAI GPT-5.6 trusted-partner preview, WaPo/CNN government-vetting reports, HN reaction, Reuters litigation, and Semafor Mythos carveout |
 | 2026-06-18 | [Anthropic Fable/Mythos export-control takedown](analysis/syntheses/anthropic-fable-mythos-export-control-synthesis.md) | `[DRAFT]` | Cross-source synthesis: Lutnick letter scope, legal/API-access uncertainty, Sacks/DoW mixed-motive dispute, patch-and-unwind vs shadow-regime scenarios, and sovereignty/open-weight/citizenship consequences |
@@ -68,6 +69,29 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-09-10 | [On the Navier–Stokes Millennium Prize Problem](analysis/sources/openai-2026-navier-stokes-solution.md) | `[DRAFT]` | Candidate forced Navier–Stokes result; rumor trigger, private agents, human orchestration and provenance limits |
+| 2026-09-10 | [Statement on fluid blowup results and OpenAI discussions](analysis/sources/buckmaster-2026-navier-stokes-statement.md) | `[DRAFT]` | Initial statement: chronology, personal collaboration, authorship pressure and explicit uncertainty about data use |
+| 2026-09-10 | [Training chronology and academic-malpractice criticism](analysis/sources/buckmaster-2026-training-and-malpractice-posts.md) | `[DRAFT]` | Later malpractice allegation; archived bibliography omission and amendment; training influence unresolved |
+| 2026-09-10 | [September 2 contact and personal-collaboration account](analysis/sources/alpoge-2026-september-two-contact.md) | `[DRAFT]` | September 2 contact; personal collaboration versus OpenAI’s institutional framing |
+| 2026-09-10 | [Response on training caveat, unpublished approaches and authorship](analysis/sources/alpoge-2026-training-authorship-response.md) | `[DRAFT]` | Willingness to collaborate; other unpublished approaches; caveat versus admission |
+| 2026-09-10 | [Official response on direct access and training uncertainty](analysis/sources/openai-2026-navier-stokes-data-response.md) | `[DRAFT]` | Direct-access denial and distinct de-identified-training caveat |
+| 2026-09-10 | [Clarification of release discussions and human involvement](analysis/sources/bubeck-2026-navier-stokes-response.md) | `[DRAFT]` | Career remark and apology; proposed rewrite versus existing authorship; screenshot inspected |
+| 2026-09-10 | [Defense of team conduct and coordination offers](analysis/sources/altman-2026-navier-stokes-defense.md) | `[DRAFT]` | Leadership defense; admitted rumor trigger and affiliation concern |
+| 2026-09-10 | [Unpublished mathematics, non-sofic groups and training transparency](analysis/sources/thom-2026-unpublished-math-transparency.md) | `[DRAFT]` | Complete three-part thread; prior non-sofic-group exchange; opt-out and provenance questions |
+| 2026-09-10 | [Promising problems, solution extraction and open-science incentives](analysis/sources/tao-2026-promising-problems-open-science.md) | `[DRAFT]` | Complete four-part thread on fruitful problems, difficulty landscapes and sharing incentives |
+| 2026-09-10 | [OpenAI Just Claimed a Huge Math Discovery. Some Academics Are Crying Foul](analysis/sources/wired-2026-navier-stokes-discovery-dispute.md) | `[DRAFT]` | Press briefing, reported compute cost, disputed credit and forced/unforced quote discrepancy |
+| 2026-09-10 | [Early timeline of the Navier–Stokes dispute](analysis/sources/wohlwend-2026-navier-stokes-timeline.md) | `[DRAFT]` | Early timeline checked against later replies and precise authorship scope |
+| 2026-09-10 | [Private frontier models and customer competition](analysis/sources/allen-2026-private-model-competition.md) | `[DRAFT]` | Private-model competition scenario; feasibility signals and limits of cross-industry extrapolation |
+| 2026-09-10 | [Research customers and the scooping precedent](analysis/sources/orhan-2026-research-customer-scooping.md) | `[DRAFT]` | Trust and customer-scooping reaction, separated from proof of data misuse |
+| 2026-09-10 | [Scientific communication and marketing pressure](analysis/sources/wolf-2026-mathematics-marketing-pressure.md) | `[DRAFT]` | Scientific communication criticism and explicit call to hear the other side |
+| 2026-09-10 | [Drug-discovery IP and trust in frontier labs](analysis/sources/taylor-king-2026-drug-discovery-trust.md) | `[DRAFT]` | Drug-discovery IP concerns and a testable prediction about pharma controls |
+| 2026-09-10 | [Frontier Labs, Enterprises, and the AI Value Chain](analysis/sources/lhl-2026-ai-value-chain.md) | `[DRAFT]` | July training/byproducts/competition framework updated against the research dispute |
+| 2026-09-10 | [OpenAI’s millennium proof dispute raises the question of whether researchers can trust AI labs](analysis/sources/bastian-2026-navier-stokes-trust.md) | `[DRAFT]` | Later accusations and replies; primary links recovered; training-date and opt-out caveats |
+| 2026-09-10 | [Controversy erupts as OpenAI claims solution to Navier Stokes maths problem](analysis/sources/maguire-bowler-2026-navier-stokes-controversy.md) | `[DRAFT]` | Named mathematicians’ interviews; primary chronology and competing accounts |
+| 2026-09-10 | [El anuncio de OpenAI ... desata acusaciones de plagio](analysis/sources/fernandez-perez-2026-navier-stokes-plagiarism-dispute.md) | `[DRAFT]` | Spanish reporting, candidate-proof status and training-timeline correction |
+| 2026-09-10 | [Defense that the model did not need mathematical hints](analysis/sources/barak-2026-navier-stokes-hints-defense.md) | `[DRAFT]` | Private-capability defense; stronger theorem does not establish independent provenance |
+| 2026-09-10 | [Direct-access denial and private-model capability defense](analysis/sources/brown-2026-navier-stokes-access-denial.md) | `[DRAFT]` | Direct-access denial; capability evidence versus access and training audit |
+| 2026-09-10 | [OpenAI API data controls: training and retention](analysis/sources/openai-2026-api-data-controls.md) | `[DRAFT]` | API no-training default versus operational retention; account-specific limits |
 | 2026-07-11 | [AI 2040: Plan A — The Deal](analysis/sources/aifutures-2026-ai-2040-plan-a.md) | `[REVIEWED]` | Conditional success scenario and policy package: rigorous separation of recommendations, forecasts, model outputs, assumptions, and rhetoric; 25 claims calibrated against capability, labor, macroeconomic, verification, treaty, and alignment evidence |
 | 2026-07-03 | [Alex Karp on CNBC Squawk Box (July 1, 2026) — tokenmaxxing / sovereign-AI interview](analysis/sources/karp-2026-cnbc-squawk-box-tokenmaxxing.md) | `[REVIEWED]` | Karp interview: commoditize-the-model doctrine, Palantir+NVIDIA sovereign AI stack (June 29), "labs extractive" framing; IP-theft allegation uncorroborated; Anthropic-weight framing misframes target |
 | 2026-07-03 | [Palantir / WarClaude / Ontology / Claude Tag kills Palantir / sovereign AI — conversation with Claude 5 Fable](analysis/sources/lhl-2026-palantir-sovereignty-fable-chat.md) | `[REVIEWED]` | Claude 5 Fable analysis: ontology-as-moat, Claude Tag vs Ontology (orders-of-magnitude gap currently), Anthropic-DoW + Claude Code steganography context; generalizes extractive layer to context ownership; portfolio architecture conclusion |
@@ -262,17 +286,17 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 227 |
-| LABOR | Labor & Employment | 42 |
-| ECON | Economics & Markets | 70 |
-| GOV | Governance & Policy | 258 |
-| SOC | Social Dynamics | 41 |
-| TRANS | Transition Dynamics | 56 |
-| RESOURCE | Resource Constraints | 16 |
-| GEO | Geopolitics | 46 |
-| INST | Institutions & Organizations | 86 |
-| RISK | Risk Assessment | 57 |
-| META | Framework & Methodology | 101 |
+| TECH | Technology & AI | 241 |
+| LABOR | Labor & Employment | 44 |
+| ECON | Economics & Markets | 110 |
+| GOV | Governance & Policy | 292 |
+| SOC | Social Dynamics | 54 |
+| TRANS | Transition Dynamics | 60 |
+| RESOURCE | Resource Constraints | 20 |
+| GEO | Geopolitics | 55 |
+| INST | Institutions & Organizations | 163 |
+| RISK | Risk Assessment | 76 |
+| META | Framework & Methodology | 111 |
 
 ---
 
@@ -382,4 +406,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-07-14*
+*Last updated: 2026-09-10*

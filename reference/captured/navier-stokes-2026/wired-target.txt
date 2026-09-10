@@ -1,0 +1,41 @@
+Comment
+Loader
+Save Story
+Save this story
+Comment
+Loader
+Save Story
+Save this story
+OpenAI said today
+that it has found an AI-generated solution to one of the biggest problems in
+mathematics
+—a 200-year-old equation that describes the natural behavior of fluids like water and air.
+The announcement appears to demonstrate the stunning power for AI to advance mathematics. But it has been marred by claims from another mathematician, Tristan Buckmaster, who says that OpenAI rushed ahead to solve the problem after learning of the work of Buckmaster and a colleague—Anthropic researcher Levent Alpöge. Buckmaster claims OpenAI also tried to influence who got credit for the work.
+Got a Tip?
+Are you a current or former OpenAI employee or mathematician who wants to talk about what’s happening? We’d like to hear from you. Using a nonwork phone or computer, contact the reporters securely on Signal at mzeff.88 and wak.01.
+The proof concerns the Navier-Stokes equation, one of the unsolved problems in the
+Clay Millennium prizes
+, which are each worth $1 million.
+Sebastien Bubeck, a mathematician and AI researcher at OpenAI, said in a press briefing that the company began training a new AI model with advanced mathematical capabilities on August 28.
+After reading rumors that Anthropic was making progress toward solving Navier-Stokes, Bubeck said the company decided to dedicate more resources to tackling the problem. The company had more than 1,000 agents tackle the problem over more than 50 hours; eventually, as many as 10,000 agents were hard at work before the company discovered that it had
+come up with a solution
+.
+“I thought there must be a mistake somewhere,” Bubeck said. “And on Sunday morning we had the final solution, Lean-formalized and everything.” (Lean is a programming language that can be used to formalize mathematical proofs.)
+OpenAI noted that solving this problem required using considerably more computing power than it had previously spent on solving mathematical problems. The amount required cost “in the millions of dollars,” said Mark Chen, head of research at OpenAI.
+On Monday, Alpöge and Buckmaster, a mathematician at NYU,
+posted documents
+claiming key advances in an area relevant to the Navier-Stokes problem. The pair says they used several AI models, including Claude and Codex, to complete their work.
+Buckmaster also posted
+a statement claiming that,
+last week, he learned that OpenAI had become aware of his and Alpöge’s work and had started putting significant resources toward the problem. Buckmaster claims that he asked OpenAI leaders about whether the company had accessed the pair’s Codex logs. He says he was told the model “didn’t look up user data” but claims the company didn’t respond to questions about training. He then says that OpenAI offered several “proposals,” including one in which Buckmaster could publish a paper announcing the Navier-Stokes problem had been solved by an internal OpenAI model but without Alpöge’s name included.
+In a post on social media, Bubeck
+pushed back
+on the idea that the company had suggested removing Alpöge’s name. OpenAI CEO Sam Altman also
+stepped into the fight
+, and defended the team's work.
+Buckmaster, Alpöge, and Anthropic did not immediately respond to WIRED’s request for comment.
+In the briefing, Bubeck and other OpenAI executives denied that the company had ever inspected the pair’s Codex prompts in order to inform their work. “We, whether it’s the researchers or the agents, did not see any of their work until it was released publicly last night,” he said.
+In a blog post detailing the work, the company wrote, “while unlikely, we cannot rule out that de-identified data derived from their usage of our products helped improve our models⁠.”
+“I want to be extremely clear that we recognize the priority of Levent Alpöge and Tristan Buckmaster’s work on unforced Euler, and we have nothing but congratulations to them on this monumental achievement that they have made. To be clear, we did not use their prompt or proof to prompt our models or direct our agents,” said Bubeck.
+Ven Chandrasekaran, a mathematician at the company, also emphasized that their solution was significantly different in nature from the one produced by OpenAI’s model.
+The spat over who gets credit for solving one of the biggest problems in math may rumble on for a while. As AI takes on more of the work involved with finding proofs, such fights could perhaps become more common.

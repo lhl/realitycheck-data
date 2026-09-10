@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "findings": [],
+  "full_database_errors": 19,
+  "full_database_warnings": 357,
+  "note": "All 19 full-database errors concern pre-existing IDs or sources outside this package. Full validation remains nonzero; this is scoped validation, not a claim the whole repository passes."
+}

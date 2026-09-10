@@ -1,0 +1,69 @@
+sources:
+- id: alpoge-2026-september-two-contact
+  title: September 2 contact and personal-collaboration account
+  author:
+  - Levent Alpöge
+  year: 2026
+  type: SOCIAL
+  url: https://threadreaderapp.com/thread/2097548261666033993.html
+  analysis_file: analysis/sources/alpoge-2026-september-two-contact.md
+  reliability: 0.8
+  topics:
+  - navier-stokes
+  - research-credit
+  - customer-data
+  - frontier-lab-competition
+  domains:
+  - INST
+  claims_extracted:
+  - INST-2026-308
+  - INST-2026-309
+  - INST-2026-301
+  - INST-2026-311
+  - INST-2026-319
+  - INST-2026-326
+  bias_notes: 'Source reliability is scope-dependent: direct records support attribution; motives, private conduct
+    and technical validity require separate checks.'
+claims:
+- id: INST-2026-308
+  text: Alpöge says he contacted OpenAI on Wednesday September 2 to explain that the collaboration was personal
+    and used both Claude and Codex; Bubeck independently acknowledges Wednesday contact.
+  type: '[F]'
+  domain: INST
+  evidence_level: E5
+  credence: 0.92
+  operationalization: Check the cited primary record, versions and counterevidence. Contact date corroborated; full
+    wording and receipt by all leadership remain participant-reported.
+  assumptions:
+  - Attribution does not independently establish the underlying allegation.
+  falsifiers:
+  - Authenticated source records contradicting the attribution or chronology.
+  source_ids:
+  - alpoge-2026-september-two-contact
+  - bubeck-2026-navier-stokes-response
+  - fernandez-perez-2026-navier-stokes-plagiarism-dispute
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1
+- id: INST-2026-309
+  text: The personal-collaboration account conflicts with Bubeck’s interpretation of the discussions as a proxy
+    negotiation with Anthropic.
+  type: '[T]'
+  domain: INST
+  evidence_level: E5
+  credence: 0.9
+  operationalization: Check the cited primary record, versions and counterevidence. Both positions are explicit;
+    no employment or IP agreement was reviewed.
+  assumptions:
+  - Mechanism or inference is bounded by the stated conditions; no universal effect assumed.
+  falsifiers:
+  - Agreements or contemporaneous instructions establishing an authorized institutional project.
+  source_ids:
+  - alpoge-2026-september-two-contact
+  - bubeck-2026-navier-stokes-response
+  - buckmaster-2026-navier-stokes-statement
+  first_extracted: '2026-09-10'
+  last_updated: '2026-09-10'
+  extracted_by: codex
+  version: 1

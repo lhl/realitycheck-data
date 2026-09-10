@@ -1,0 +1,7 @@
+This is legitimately terrible for OpenAI --- but also Anthropic --- and it relates to their work in drug discovery.
+I read this as: prompts will be monitored and potentially acted on if we think there’s something scientifically and/or commercially valuable being disclosed.
+Now, the big problem for Anthropic is that they are increasingly seen to be competing with their customers. Outside of SF, many people also think of OpenAI/ChatGPT and Anthropic/Claude as somewhat interchangeable companies and products --- aka, if OpenAI do something, surely Anthropic will do it too?
+As so much IP relates to drug targets and people disclose these to Claude, I think we will see a lot of pharma companies stop using these tools or put up a lot of internal guardrails.
+https://x.com/wildtypehuman/status/2097215782484607029
+Side note, if you’re interested in how AI is used in drug discovery, be sure to check out my long form read on the state of the nation; all things automation, genomics, alphafold etc.
+wildtypehuman.substack.com/p/a-roadmap-fo…
