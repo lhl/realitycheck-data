@@ -29,6 +29,8 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-09-13 | [LLMs are real, AI is fake](analysis/sources/doctorow-2026-llms-real-ai-fake.md) | `[DRAFT]` | Doctorow argues capability and governance matter more than anthropomorphic AI framing |
+| 2026-09-13 | [Hacker News commentary](analysis/sources/hn-2026-llms-real-ai-fake-commentary.md) | `[DRAFT]` | Comments contest the framing and cite METR incident evidence |
 | 2026-09-10 | [Navier–Stokes: research credit, customer data and the AI value chain](analysis/syntheses/navier-stokes-2026-research-credit-data-value-chain.md) | `[DRAFT]` | 23-source synthesis; recovered primary exchanges, archived citation amendment, unresolved training provenance and provider-competition mechanism |
 | 2026-07-03 | [Palantir, Sovereign AI, and the Frontier-Lab Extraction Question](analysis/syntheses/palantir-sovereign-ai-frontier-lab-extraction-synthesis.md) | `[REVIEWED]` | Cross-source synthesis: Karp CNBC tokenmaxxing interview + Claude 5 Fable Palantir/Claude Tag conversation + Shisa.AI ENTITY sovereign-AI proposal; resolves "extractive" to context ownership, sovereignty to open substrate, and posture to portfolio architecture |
 | 2026-06-28 | [GPT-5.6 Sol White House vetting and frontier AI access regime](analysis/syntheses/gpt-5-6-sol-white-house-vetting-synthesis.md) | `[DRAFT]` | Cross-source synthesis: OpenAI GPT-5.6 trusted-partner preview, WaPo/CNN government-vetting reports, HN reaction, Reuters litigation, and Semafor Mythos carveout |
