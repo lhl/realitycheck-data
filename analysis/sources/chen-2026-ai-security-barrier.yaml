@@ -1,0 +1,64 @@
+sources:
+- id: chen-2026-ai-security-barrier
+  type: ARTICLE
+  title: Comprehensively Fortify the AI Security Barrier and Promote Healthy and Orderly
+    Development
+  author:
+  - Chen Yixin; bilingual mirror by Sinocism
+  year: 2026
+  url: https://sinocism.notion.site/Chen-Yixin-Comprehensively-Fortify-the-AI-Security-Barrier-and-Promote-the-Healthy-and-Orderly-Deve-3da84ece41d7816c9720eef8aef74cc1
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/chen-2026-ai-security-barrier.md
+  reliability: 0.65
+  bias_notes: Openness and shared governance coexist with autonomous, controllable
+    infrastructure and regime security. These are different objectives whose conflicts
+    require policy detail.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - GEO
+  - GOV
+  claims_extracted:
+  - GEO-2026-505
+  - GOV-2026-504
+claims:
+- domain: GEO
+  type: '[F]'
+  text: The bilingual text attributed to Chen Yixin treats political security, cyber
+    and espionage risks, social stability, and technological containment as parts
+    of AI security.
+  credence: 0.9
+  evidence_level: E4
+  id: GEO-2026-505
+  source_ids:
+  - chen-2026-ai-security-barrier
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - An authenticated original differs materially from the mirrored text.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: GOV
+  type: '[F]'
+  text: The Chen text calls for AI regulation, risk monitoring and international cooperation
+    while opposing technological barriers and closed exclusion.
+  credence: 0.9
+  evidence_level: E4
+  id: GOV-2026-504
+  source_ids:
+  - chen-2026-ai-security-barrier
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - An authenticated original omits or contradicts those passages.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

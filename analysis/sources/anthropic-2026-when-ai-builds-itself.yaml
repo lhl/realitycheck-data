@@ -1,0 +1,61 @@
+sources:
+- id: anthropic-2026-when-ai-builds-itself
+  type: REPORT
+  title: When AI builds itself
+  author:
+  - Marina Favaro; Jack Clark (Anthropic Institute)
+  year: 2026
+  url: https://www.anthropic.com/institute/recursive-self-improvement
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/anthropic-2026-when-ai-builds-itself.md
+  reliability: 0.85
+  bias_notes: An eightfold code-volume increase and selected next-step choices can
+    illustrate assistance without measuring total research acceleration.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - TECH
+  claims_extracted:
+  - TECH-2026-502
+  - TECH-2026-503
+claims:
+- domain: TECH
+  type: '[F]'
+  text: Anthropic reports over 80% of merged code attributed to Claude by May 2026
+    and about eight times as many merged lines per engineer in Q2 2026 as in 2024.
+  credence: 0.95
+  evidence_level: E4
+  id: TECH-2026-502
+  source_ids:
+  - anthropic-2026-when-ai-builds-itself
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The primary report differs from these metric definitions or values.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: TECH
+  type: '[F]'
+  text: Anthropic’s internal-development report explicitly says full recursive self-improvement
+    has not been reached and is not inevitable.
+  credence: 0.98
+  evidence_level: E4
+  id: TECH-2026-503
+  source_ids:
+  - anthropic-2026-when-ai-builds-itself
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The report instead claims full autonomous successor development has already been
+    demonstrated.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

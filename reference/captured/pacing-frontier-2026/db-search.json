@@ -1,0 +1,296 @@
+{
+  "recursive self improvement": [
+    {
+      "id": "RISK-2026-920",
+      "text": "OpenAI states GPT-5.3-Codex is treated as High capability on biology/chemical risk with corresponding safeguards, and that it does not reach High capability on AI self-improvement.",
+      "source_ids": [
+        "openai-2026-gpt-5-3-codex-system-card"
+      ],
+      "credence": 0.6499999761581421
+    },
+    {
+      "id": "INST-2025-004",
+      "text": "Compounding productivity can come from a recursive mindset: automate everything possible and instruct the coding system to build tools it needs, checking them into git as durable improvements (\u201cbuild a tool for making a tool\u201d).",
+      "source_ids": [
+        "schillace-2025-compounding-teams"
+      ],
+      "credence": 0.6000000238418579
+    },
+    {
+      "id": "TECH-2025-001",
+      "text": "Moore\u2019s Law is effectively ending: compute and storage improvements have been limited for over a decade and now rely mainly on parallelism rather than large single-thread gains.",
+      "source_ids": [
+        "stross-2025-the-pivot-1"
+      ],
+      "credence": 0.44999998807907104
+    },
+    {
+      "id": "TRANS-2026-014",
+      "text": "OpenAI describes a compounding flywheel in which investment in compute enables frontier research and step-change capability improvements, which unlock better products and broader adoption, which drives revenue that funds the next wave of compute and innovation.",
+      "source_ids": [
+        "openai-value-intelligence"
+      ],
+      "credence": 0.6000000238418579
+    },
+    {
+      "id": "META-2026-018",
+      "text": "The constitution frames itself as a \u201cliving framework\u201d (a trellis rather than a cage): it provides structure and support while leaving room for organic growth, responsiveness to new understanding, and evolution over time.",
+      "source_ids": [
+        "anthropic-2026-claudes-constitution"
+      ],
+      "credence": 0.8999999761581421
+    },
+    {
+      "id": "TECH-2026-021",
+      "text": "The PageIndex project positions itself as requiring no vector DB and no chunking and provides runnable notebooks demonstrating vectorless RAG and vision-based vectorless RAG workflows.",
+      "source_ids": [
+        "vectifyai-2025-pageindex"
+      ],
+      "credence": 0.800000011920929
+    },
+    {
+      "id": "TECH-2026-053",
+      "text": "Because the default judge model (gemini-2.5-flash) appears in the Base Set v1.0 anchors, there is a plausible risk of judge self-preference bias affecting comparisons and scores.",
+      "source_ids": [
+        "shisaai-2026-jp-tl-bench-repo"
+      ],
+      "credence": 0.6499999761581421
+    }
+  ],
+  "alignment evaluation": [
+    {
+      "id": "TECH-2026-920",
+      "text": "Anthropic reports its Opus 4.6 alignment assessment used multiple methods including automated behavioral evaluations, training data review, manual transcript inspection, and interpretability/white-box techniques such as dictionary-learning methods and activation oracles.",
+      "source_ids": [
+        "anthropic-2026-claude-opus-4-6-system-card"
+      ],
+      "credence": 0.800000011920929
+    },
+    {
+      "id": "RISK-2026-912",
+      "text": "Anthropic reports most evaluations in the system card were run in-house, with some external alignment and safety testing performed by organizations including the UK AI Security Institute, Andon Labs, and Apollo Research.",
+      "source_ids": [
+        "anthropic-2026-claude-opus-4-6-system-card"
+      ],
+      "credence": 0.8500000238418579
+    },
+    {
+      "id": "RISK-2026-936",
+      "text": "Pre-release alignment testing is unreliable at high capability because models may recognize evaluations and mask misalignment; Anthropic reports that Sonnet 4.5 recognized tests in some evaluations and that a test model became more misaligned when induced to believe it was not being evaluated.",
+      "source_ids": [
+        "amodei-2026-adolescence-of-technology"
+      ],
+      "credence": 0.6000000238418579
+    },
+    {
+      "id": "RISK-2026-955",
+      "text": "The essay argues that alignment and safety evaluation are immature, and that reliably ruling out dangerous capability thresholds is becoming increasingly difficult as models approach or surpass their evaluations.",
+      "source_ids": [
+        "harries-2026-country-full-of-geniuses"
+      ],
+      "credence": 0.6000000238418579
+    },
+    {
+      "id": "TECH-2026-015",
+      "text": "FinanceBench comprises 10,231 open-book financial QA questions with corresponding answers and evidence strings, and the authors provide an open-source evaluation subset of 150 cases.",
+      "source_ids": [
+        "islam-2023-financebench"
+      ],
+      "credence": 0.8999999761581421
+    },
+    {
+      "id": "TECH-2026-026",
+      "text": "The evaluation script in VectifyAI/Mafin2.5-FinanceBench uses an LLM-as-judge (default GPT-4o) and applies permissive equivalence criteria (allowing rounding flexibility and inferable numeric conclusions) to score answers.",
+      "source_ids": [
+        "vectifyai-2025-mafin25-financebench"
+      ],
+      "credence": 0.8999999761581421
+    },
+    {
+      "id": "TECH-2026-027",
+      "text": "Because the FinanceBench paper reports much lower success rates under human evaluation for strong baselines, Mafin\u2019s reported 98.7% (LLM-judge) score is not directly comparable to \u201cSOTA\u201d without protocol matching.",
+      "source_ids": [
+        "vectifyai-2025-mafin25-financebench"
+      ],
+      "credence": 0.699999988079071
+    }
+  ],
+  "export controls China": [
+    {
+      "id": "GEO-2025-050",
+      "text": "The world is plausibly headed for a US\u2013China race dynamic over AI capabilities where export controls, espionage, and national mobilization become central.",
+      "source_ids": [
+        "aifutures-2025-ai-2027"
+      ],
+      "credence": 0.6000000238418579
+    },
+    {
+      "id": "TRANS-2026-006",
+      "text": "China\u2019s exports grew ~5.5% y/y in 2025 while imports were roughly flat (0% nominal growth)",
+      "source_ids": [
+        "perera-2026-chinas-trillion-dollar-illusion",
+        "perera-2026-china-trade-surplus-collapse-thread"
+      ],
+      "credence": 0.800000011920929
+    },
+    {
+      "id": "ECON-2026-028",
+      "text": "China has accounted for roughly half of U.S. soybean exports in at least some recent years.",
+      "source_ids": [
+        "rawstory-2026-trump-voters-suicide-pact"
+      ],
+      "credence": 0.75
+    },
+    {
+      "id": "ECON-2026-029",
+      "text": "By 2026, China stopped buying U.S. soybeans entirely (effectively zero U.S. soybean exports to China).",
+      "source_ids": [
+        "rawstory-2026-trump-voters-suicide-pact"
+      ],
+      "credence": 0.15000000596046448
+    },
+    {
+      "id": "GOV-2026-091",
+      "text": "Democracies should block chip exports to China, form a democratic coalition, and build AI-powered military superiority to control the decisive technology window.",
+      "source_ids": [
+        "aakashgupta-2026-amodei-hawkish-china-thread"
+      ],
+      "credence": 0.44999998807907104
+    },
+    {
+      "id": "GEO-2026-033",
+      "text": "Amodei said at Davos that the Trump administration\u2019s decision to allow NVIDIA H200 exports to approved customers in China would be a \u201cbig mistake\u201d / \u201ccrazy\u201d (including a \u201cnuclear weapons to North Korea\u201d analogy), and he cited CEOs\u2019 statements about chip embargoes as binding constraints (\u201cholding [them] back\u201d).",
+      "source_ids": [
+        "aakashgupta-2026-amodei-hawkish-china-thread"
+      ],
+      "credence": 0.8500000238418579
+    },
+    {
+      "id": "GEO-2026-034",
+      "text": "Amodei\u2019s hawkishness toward China is primarily driven by his short-timeline assumptions about powerful AI; if those assumptions are correct, a hawkish export-control posture is the rational stance.",
+      "source_ids": [
+        "aakashgupta-2026-amodei-hawkish-china-thread"
+      ],
+      "credence": 0.44999998807907104
+    }
+  ],
+  "frontier market share": [
+    {
+      "id": "ECON-2026-010",
+      "text": "'Creator explosion' forecast: millions of independent creators appear once 'everyone can vibe code' (claimed as a near-term function of ~2 frontier-model upgrades), forcing new discovery/market institutions",
+      "source_ids": [
+        "yegge-2026-bags-creator-economy"
+      ],
+      "credence": 0.30000001192092896
+    },
+    {
+      "id": "GOV-2026-016",
+      "text": "Google has ~90% search market share (global, depending on metric/timeframe), consistent with near-monopoly conditions",
+      "source_ids": [
+        "doctorow-2026-reverse-centaur"
+      ],
+      "credence": 0.8999999761581421
+    },
+    {
+      "id": "RISK-2026-934",
+      "text": "Gary Marcus hypothesizes that imminent-AGI narratives (including AI 2027-style scenarios) can backfire by accelerating the AI arms race (serving as marketing for frontier labs and intensifying hawkish geopolitics).",
+      "source_ids": [
+        "marcus-2025-ai-2027-scenario-how-realistic"
+      ],
+      "credence": 0.44999998807907104
+    },
+    {
+      "id": "TECH-2026-001",
+      "text": "Frontier AI training costs grow 2-3x annually",
+      "source_ids": [
+        "epoch-2024-training-costs"
+      ],
+      "credence": 0.800000011920929
+    },
+    {
+      "id": "TECH-2026-004",
+      "text": "Open models within ~6 months of frontier on many capabilities",
+      "source_ids": [
+        "deepseek-r1",
+        "gpt-2026-01-18-hottakes",
+        "gpt-2026-01-18-fiction-hottakes"
+      ],
+      "credence": 0.75
+    },
+    {
+      "id": "LABOR-2026-001",
+      "text": "If AI substitutes human labor in most tasks, wages fall and capital share rises",
+      "source_ids": [
+        "standard-economics"
+      ],
+      "credence": 0.8500000238418579
+    },
+    {
+      "id": "LABOR-2026-003",
+      "text": "Full automation \u2192 labor becomes economically irrelevant (labor share approaches ~0)",
+      "source_ids": [
+        "teortaxes-2026-thread"
+      ],
+      "credence": 0.4000000059604645
+    }
+  ],
+  "Anthropic investors METR": [
+    {
+      "id": "GOV-2026-016",
+      "text": "Google has ~90% search market share (global, depending on metric/timeframe), consistent with near-monopoly conditions",
+      "source_ids": [
+        "doctorow-2026-reverse-centaur"
+      ],
+      "credence": 0.8999999761581421
+    },
+    {
+      "id": "GOV-2026-020",
+      "text": "Shenzhen Metro signaled limits to support for Vanke (no 'unlimited guarantees' / beyond its 'risk comfort zone')",
+      "source_ids": [
+        "perera-2026-chinas-trillion-dollar-illusion",
+        "perera-2026-china-trade-surplus-collapse-thread"
+      ],
+      "credence": 0.4000000059604645
+    },
+    {
+      "id": "LABOR-2026-007",
+      "text": "Cheap-to-generate AI-assisted issues/PRs create a harsh review asymmetry (minutes to produce vs much longer to evaluate), increasing maintainer burden and conflict",
+      "source_ids": [
+        "ronacher-2026-agent-psychosis"
+      ],
+      "credence": 0.6000000238418579
+    },
+    {
+      "id": "META-2026-009",
+      "text": "Anthropic intends \u201cClaude\u2019s constitution\u201d to function as the final authority on Anthropic\u2019s vision for Claude\u2019s values and behavior, taking precedence over other conflicting instructions or guidance (\u201cfinal constitutional authority\u201d).",
+      "source_ids": [
+        "anthropic-2026-claudes-constitution"
+      ],
+      "credence": 0.949999988079071
+    },
+    {
+      "id": "META-2026-010",
+      "text": "Anthropic states that Claude\u2019s constitution plays a crucial role in Anthropic\u2019s training process and that its content directly shapes Claude\u2019s behavior.",
+      "source_ids": [
+        "anthropic-2026-claudes-constitution"
+      ],
+      "credence": 0.800000011920929
+    },
+    {
+      "id": "META-2026-011",
+      "text": "Anthropic acknowledges Claude\u2019s behavior might not always reflect the constitution\u2019s ideals and says it will be transparent (e.g., via system cards) about where behavior diverges from intentions.",
+      "source_ids": [
+        "anthropic-2026-claudes-constitution"
+      ],
+      "credence": 0.8500000238418579
+    },
+    {
+      "id": "META-2026-012",
+      "text": "Anthropic states its mission is to help ensure the world safely makes the transition through transformative AI.",
+      "source_ids": [
+        "anthropic-2026-claudes-constitution"
+      ],
+      "credence": 0.8999999761581421
+    }
+  ]
+}

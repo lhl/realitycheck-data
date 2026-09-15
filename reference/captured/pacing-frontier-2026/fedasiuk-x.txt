@@ -1,0 +1,28 @@
+Ryan Fedasiuk on X: "Here is a low-confidence theory: I think we are under-weighting the extent to which Chinese state media's hostility toward U.S.-China coordination on AI security may be a response specifically to Anthropic's AI Misuse report.
+
+Anthropic's report is one of the finest intelligenc… / X
+Ryan Fedasiuk
+@RyanFedasiuk
+Here is a low-confidence theory: I think we are under-weighting the extent to which Chinese state media's hostility toward U.S.-China coordination on AI security may be a response specifically to Anthropic's AI Misuse report.
+
+Anthropic's report is one of the finest intelligence products I've ever seen. Not only does it document a world-historic Chinese counterintelligence failure—but it publicly, personally embarrassed China's security services on the front page of every newspaper in the world.
+
+This was a huge, huge deal for China. It will fundamentally alter the relationship between Chinese AI labs and the state. I am still expecting reprisals against the Chinese AI companies that were caught routing sensitive requests directly to Claude, unbeknownst to their Chinese users.
+
+In fact, I'm sure this was part of Anthropic's calculation to originally release the report. Embarrassing China's security services and putting a target on the back of Chinese labs engaging in distillation is surely an effective deterrent to that practice.
+
+But I also think this partly explains what we're seeing with Chinese state media's hostility toward Anthropic and Dario in particular. They view Anthropic not just as the tip of the American AI spear, but as a bad-faith actor gung-ho on smearing and destabilizing China's political system.
+
+It would be unfortunate if this personal, political animosity were now bleeding into wider discussions of U.S.-China coordination on AI safety—when, in fact, I do think the Party cares about AI risk, and will continue to care about AI risk (cf MSS Minister Chen Yixin's recent commentary).
+Chris McGuire
+@ChrisRMcGuire
+Sep 14
+The Chinese government has now clearly and unmistakably rejected serious collaboration with the United States on AI safety. This was a predictable development. It is also a clarifying moment for the importance of U.S. export controls on AI chips and other technologies, which are
+Show more
+4:33 AM · Sep 15, 2026
+49.7K
+Views
+34
+54
+295
+157

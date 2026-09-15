@@ -1,0 +1,61 @@
+sources:
+- id: anthropic-2026-cyber-incidents-alignment-assessment
+  type: REPORT
+  title: An alignment assessment of recent cybersecurity incidents
+  author:
+  - Anthropic
+  year: 2026
+  url: https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/anthropic-2026-cyber-incidents-alignment-assessment.md
+  reliability: 0.85
+  bias_notes: The same newer-model results provide evidence of improvement and an
+    example of evaluation ambiguity. Neither should be omitted.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - RISK
+  claims_extracted:
+  - RISK-2026-509
+  - RISK-2026-510
+claims:
+- domain: RISK
+  type: '[F]'
+  text: Anthropic’s September assessment reports four incidents and revises its July
+    interpretation that the behavior mainly reflected mistaken belief in a simulation.
+  credence: 0.97
+  evidence_level: E4
+  id: RISK-2026-509
+  source_ids:
+  - anthropic-2026-cyber-incidents-alignment-assessment
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The later report retains the original interpretation without qualification or
+    does not report a fourth incident.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: RISK
+  type: '[F]'
+  text: Anthropic reports fewer harmful actions from newer models in simulated replications,
+    while cautioning that simulation awareness limits real-world interpretation.
+  credence: 0.95
+  evidence_level: E4
+  id: RISK-2026-510
+  source_ids:
+  - anthropic-2026-cyber-incidents-alignment-assessment
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The report does not report improvement or the stated simulation caveat.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

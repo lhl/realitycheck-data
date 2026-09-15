@@ -1,0 +1,422 @@
+[
+  [
+    "Read the Frontier AI Trends Report",
+    "/frontier-ai-trends-report"
+  ],
+  [
+    "",
+    "/"
+  ],
+  [
+    "Careers",
+    "/careers"
+  ],
+  [
+    "",
+    "/"
+  ],
+  [
+    "Publications",
+    "/research"
+  ],
+  [
+    "Trends Report",
+    "/frontier-ai-trends-report"
+  ],
+  [
+    "Trends Report PDF",
+    "/frontier-ai-trends-report/pdf"
+  ],
+  [
+    "Download PDF",
+    "https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6943e6c11cb5bfd8178443f9_Frontier%20AI%20Trends%20Report%20-%20UK%20AISI%202025%20-%20compressed.pdf"
+  ],
+  [
+    "",
+    "/frontier-ai-trends-report/pdf"
+  ],
+  [
+    "cyber",
+    "#cyber"
+  ],
+  [
+    "chemistry and biology",
+    "#chemistry--biology"
+  ],
+  [
+    "‍ Cyber",
+    "#cyber"
+  ],
+  [
+    "‍ Autonomy skills",
+    "#self-replication"
+  ],
+  [
+    "Section 5",
+    "#self-replication"
+  ],
+  [
+    "Chemistry & biology",
+    "#chemistry--biology"
+  ],
+  [
+    "research agenda",
+    "https://www.aisi.gov.uk/research-agenda"
+  ],
+  [
+    "Appendix",
+    "#appendix"
+  ],
+  [
+    "increases in the computational",
+    "https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year"
+  ],
+  [
+    "Model Evaluation and Threat Research",
+    "https://arxiv.org/abs/2503.14499"
+  ],
+  [
+    "External research",
+    "https://metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/"
+  ],
+  [
+    "Section 3",
+    "#cyber"
+  ],
+  [
+    "SWE-bench",
+    "https://openreview.net/pdf?id=VTF8yNQM66"
+  ],
+  [
+    "Section 4",
+    "#4-safeguards"
+  ],
+  [
+    "here",
+    "https://www.aisi.gov.uk/work/early-insights-from-developing-question-answer-evaluations-for-frontier-ai"
+  ],
+  [
+    "here.",
+    "https://www.aisi.gov.uk/blog/early-insights-from-developing-question-answer-evaluations-for-frontier-ai"
+  ],
+  [
+    "here",
+    "https://www.aisi.gov.uk/work/long-form-tasks"
+  ],
+  [
+    "here",
+    "https://www.aisi.gov.uk/blog/long-form-tasks"
+  ],
+  [
+    "this paper",
+    "https://arxiv.org/abs/2507.03772"
+  ],
+  [
+    "Inspect Cyber",
+    "https://www.aisi.gov.uk/work/inspect-cyber"
+  ],
+  [
+    "a key aspect of AISI’s work",
+    "https://www.aisi.gov.uk/work/how-were-working-with-frontier-ai-developers-to-improve-model-security"
+  ],
+  [
+    "Safeguard Bypass Bounty Programme",
+    "https://www.ncsc.gov.uk/blog-post/from-bugs-to-bypasses-adapting-vulnerability-disclosure-for-ai-safeguards"
+  ],
+  [
+    "Deliberative Alignment",
+    "https://openai.com/index/deliberative-alignment/"
+  ],
+  [
+    "Constitutional Classifiers",
+    "https://www.anthropic.com/research/constitutional-classifiers"
+  ],
+  [
+    "Section 7",
+    "#7-open-source-models"
+  ],
+  [
+    "recently seen",
+    "https://arxiv.org/abs/2508.06601"
+  ],
+  [
+    "Agent Security Challenge",
+    "https://arxiv.org/abs/2507.20526"
+  ],
+  [
+    "joint paper with Gray Swan AI",
+    "https://arxiv.org/abs/2507.20526"
+  ],
+  [
+    "historically fallen quickly over time",
+    "https://epoch.ai/trends#algorithms"
+  ],
+  [
+    "adaptation buffer",
+    "https://helentoner.substack.com/p/nonproliferation-is-the-wrong-approach"
+  ],
+  [
+    "Section 3",
+    "#3-capabilities--risks-in-key-domains"
+  ],
+  [
+    "taken seriously by many experts.",
+    "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025#223-loss-of-control"
+  ],
+  [
+    "RepliBench",
+    "https://www.aisi.gov.uk/work/replibench-measuring-autonomous-replication-capabilities-in-ai-systems"
+  ],
+  [
+    "RepliBench paper",
+    "https://arxiv.org/abs/2504.18565"
+  ],
+  [
+    "Section 7",
+    "#7-open-source-models"
+  ],
+  [
+    "this blog",
+    "https://www.aisi.gov.uk/work/replibench-measuring-autonomous-replication-capabilities-in-ai-systems"
+  ],
+  [
+    "RepliBench paper",
+    "https://arxiv.org/abs/2504.18565"
+  ],
+  [
+    "tell the difference",
+    "https://arxiv.org/abs/2505.23836"
+  ],
+  [
+    "compromise their performance",
+    "https://arxiv.org/abs/2406.07358"
+  ],
+  [
+    "subtly enough to fool",
+    "https://alignment.anthropic.com/2025/automated-researchers-sandbag/"
+  ],
+  [
+    "confirmed",
+    "https://www.alignmentforum.org/posts/pPEeMdgjpjHZWCDFw/white-box-control-at-uk-aisi-update-on-sandbagging"
+  ],
+  [
+    "Section 7",
+    "#7-open-source-models"
+  ],
+  [
+    "here",
+    "https://www.alignmentforum.org/posts/pPEeMdgjpjHZWCDFw/white-box-control-at-uk-aisi-update-on-sandbagging#Update_4__Sandbagging_In_The_Wild"
+  ],
+  [
+    "here",
+    "https://www.alignmentforum.org/posts/pPEeMdgjpjHZWCDFw/white-box-control-at-uk-aisi-update-on-sandbagging"
+  ],
+  [
+    "Similar external investigations",
+    "https://www-cdn.anthropic.com/07b2a3f9902ee19fe39a36ca638e5ae987bc64dd.pdf"
+  ],
+  [
+    "Epoch AI",
+    "https://epoch.ai/trends"
+  ],
+  [
+    "paper",
+    "https://www.science.org/doi/10.1126/science.aea3884"
+  ],
+  [
+    "the paper",
+    "https://www.science.org/doi/10.1126/science.aea3884"
+  ],
+  [
+    "see paper",
+    "https://www.science.org/doi/10.1126/science.aea3884"
+  ],
+  [
+    "paper",
+    "https://www.science.org/doi/10.1126/science.aea3884"
+  ],
+  [
+    "recent study",
+    "https://arxiv.org/abs/2509.05219"
+  ],
+  [
+    "other studies found otherwise",
+    "https://arxiv.org/abs/2408.00024"
+  ],
+  [
+    "turning to AI systems for emotional support",
+    "https://arxiv.org/abs/2512.01991"
+  ],
+  [
+    "high-profile cases",
+    "https://time.com/7312484/chatgpt-openai-suicide-lawsuit/"
+  ],
+  [
+    "quickly and cheaply removed,",
+    "https://arxiv.org/html/2407.01376v1"
+  ],
+  [
+    "promising mitigations",
+    "https://www.aisi.gov.uk/work/managing-risks-from-increasingly-capable-open-weight-ai-systems"
+  ],
+  [
+    "Artificial Analysis (AA) Intelligence Index",
+    "https://artificialanalysis.ai/"
+  ],
+  [
+    "METR’s time horizon benchmarks",
+    "https://evaluations.metr.org/deepseek-qwen-report/"
+  ],
+  [
+    "Artificial Analysis (AA) Intelligence Index v2.2",
+    "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index"
+  ],
+  [
+    "AA’s methodology.",
+    "https://artificialanalysis.ai/methodology/intelligence-benchmarking#intelligence-evaluation-principles"
+  ],
+  [
+    "HCAST",
+    "https://arxiv.org/html/2503.17354v1"
+  ],
+  [
+    "RE-Bench",
+    "https://metr.org/blog/2024-11-22-evaluating-r-d-capabilities-of-llms/"
+  ],
+  [
+    "actively working",
+    "https://www.aisi.gov.uk/work/managing-risks-from-increasingly-capable-open-weight-ai-systems"
+  ],
+  [
+    "artificialanalysis.ai",
+    "https://artificialanalysis.ai"
+  ],
+  [
+    "alignment.anthropic.com/2025/automated-researchers-sandbag",
+    "https://alignment.anthropic.com/2025/automated-researchers-sandbag"
+  ],
+  [
+    "arxiv.org/abs/2504.18565",
+    "https://arxiv.org/abs/2504.18565"
+  ],
+  [
+    "www.alignmentforum.org/posts/pPEeMdgjpjHZWCDFw/white-box-control-at-uk-aisi-update-on-sandbagging",
+    "http://www.alignmentforum.org/posts/pPEeMdgjpjHZWCDFw/white-box-control-at-uk-aisi-update-on-sandbagging"
+  ],
+  [
+    "digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/",
+    "https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/"
+  ],
+  [
+    "www.anthropic.com/research/constitutional-classifiers",
+    "https://www.anthropic.com/research/constitutional-classifiers"
+  ],
+  [
+    "www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy",
+    "http://www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy"
+  ],
+  [
+    "www.gov.uk/government/publications/the-impact-of-ai-on-uk-jobs-and-training",
+    "https://www.gov.uk/government/publications/the-impact-of-ai-on-uk-jobs-and-training"
+  ],
+  [
+    "epoch.ai/trends",
+    "https://epoch.ai/trends"
+  ],
+  [
+    "www.ncsc.gov.uk/blog-post/from-bugs-to-bypasses-adapting-vulnerability-disclosure-for-ai-safeguards",
+    "http://www.ncsc.gov.uk/blog-post/from-bugs-to-bypasses-adapting-vulnerability-disclosure-for-ai-safeguards"
+  ],
+  [
+    "arxiv.org/abs/2412.16339",
+    "https://arxiv.org/abs/2412.16339"
+  ],
+  [
+    "science.org/doi/10.1126/science.aea3884",
+    "https://www.science.org/doi/10.1126/science.aea3884"
+  ],
+  [
+    "www.aisi.gov.uk/work/inspect-cyber",
+    "https://www.aisi.gov.uk/work/inspect-cyber"
+  ],
+  [
+    "arxiv.org/abs/2310.06770",
+    "https://arxiv.org/abs/2310.06770"
+  ],
+  [
+    "arxiv.org/abs/2512.01991",
+    "https://arxiv.org/abs/2512.01991"
+  ],
+  [
+    "arxiv.org/abs/2503.14499",
+    "https://arxiv.org/abs/2503.14499"
+  ],
+  [
+    "arxiv.org/abs/2401.03315",
+    "https://arxiv.org/abs/2401.03315"
+  ],
+  [
+    "arxiv.org/abs/2507.03772",
+    "https://arxiv.org/abs/2507.03772"
+  ],
+  [
+    "www.aisi.gov.uk/work/long-form-tasks",
+    "https://www.aisi.gov.uk/work/long-form-tasks"
+  ],
+  [
+    "www.aisi.gov.uk/work/managing-risks-from-increasingly-capable-open-weight-ai-systems",
+    "https://www.aisi.gov.uk/work/managing-risks-from-increasingly-capable-open-weight-ai-systems"
+  ],
+  [
+    "metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/",
+    "https://metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/"
+  ],
+  [
+    "arxiv.org/abs/2505.23836",
+    "https://arxiv.org/abs/2505.23836"
+  ],
+  [
+    "arxiv.org/abs/2508.06601",
+    "https://arxiv.org/abs/2508.06601"
+  ],
+  [
+    "www.aisi.gov.uk/work/replibench-measuring-autonomous-replication-capabilities-in-ai-systems",
+    "https://www.aisi.gov.uk/work/replibench-measuring-autonomous-replication-capabilities-in-ai-systems"
+  ],
+  [
+    "epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year",
+    "https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year"
+  ],
+  [
+    "www.catonetworks.com/blog/cato-ctrl-nytheon-ai-a-new-platform-of-uncensored-llms/",
+    "https://www.catonetworks.com/blog/cato-ctrl-nytheon-ai-a-new-platform-of-uncensored-llms/"
+  ],
+  [
+    "aistatement.com",
+    "https://aistatement.com"
+  ],
+  [
+    "www-cdn.anthropic.com/6be99a52cb68eb70eb9572b4cafad13df32ed995.pdf",
+    "https://www-cdn.anthropic.com/6be99a52cb68eb70eb9572b4cafad13df32ed995.pdf"
+  ],
+  [
+    "helentoner.substack.com/p/nonproliferation-is-the-wrong-approach",
+    "https://helentoner.substack.com/p/nonproliferation-is-the-wrong-approach"
+  ],
+  [
+    "arxiv.org/abs/2406.07358",
+    "https://arxiv.org/abs/2406.07358"
+  ],
+  [
+    "arxiv.org/html/2407.01376v1",
+    "https://arxiv.org/html/2407.01376v1"
+  ],
+  [
+    "arxiv.org/abs/2507.20526",
+    "https://arxiv.org/abs/2507.20526"
+  ],
+  [
+    "",
+    "#top"
+  ]
+]

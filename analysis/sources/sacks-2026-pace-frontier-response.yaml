@@ -1,0 +1,85 @@
+sources:
+- id: sacks-2026-pace-frontier-response
+  type: SOCIAL
+  title: Response to frontier pacing proposals
+  author:
+  - David Sacks
+  year: 2026
+  url: https://x.com/DavidSacks/status/2098973625252708460
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/sacks-2026-pace-frontier-response.md
+  reliability: 0.65
+  bias_notes: The argument invokes labs’ collective ability to stop while dismissing
+    the need for coordination. It assumes liability can internalize harms that may
+    be diffuse, irreversible or larger than company assets.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - GOV
+  - INST
+  claims_extracted:
+  - INST-2026-502
+  - GOV-2026-502
+  - INST-2026-503
+claims:
+- domain: INST
+  type: '[H]'
+  text: OpenAI and Anthropic effectively form a frontier-intelligence duopoly across
+    market share, revenue growth and model capability.
+  credence: 0.4
+  evidence_level: E5
+  id: INST-2026-502
+  source_ids:
+  - sacks-2026-pace-frontier-response
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - Comparable market and capability measures show substantial competitive constraints
+    from other labs.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: GOV
+  type: '[H]'
+  text: Liability and customer demand for reliability can supply adequate incentives
+    for frontier labs to slow dangerous capability development voluntarily.
+  credence: 0.4
+  evidence_level: E5
+  id: GOV-2026-502
+  source_ids:
+  - sacks-2026-pace-frontier-response
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - Contrary evidence from a comparable prospective test or a primary record.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: INST
+  type: '[H]'
+  text: METR’s relationships compromise its independence enough to undermine its proposed
+    role in frontier oversight.
+  credence: 0.35
+  evidence_level: E5
+  id: INST-2026-503
+  source_ids:
+  - sacks-2026-pace-frontier-response
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - Contrary evidence from a comparable prospective test or a primary record.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

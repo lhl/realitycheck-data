@@ -1,0 +1,63 @@
+sources:
+- id: anthropic-2026-september-threat-intelligence
+  type: REPORT
+  title: 'Detecting and countering misuse of AI: September 2026'
+  author:
+  - Anthropic Threat Intelligence
+  year: 2026
+  url: https://www.anthropic.com/threat-intelligence-report-september-2026
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/anthropic-2026-september-threat-intelligence.md
+  reliability: 0.85
+  bias_notes: The company is both observer of platform abuse and interested party
+    in competition over model capabilities. Detailed evidence and commercial incentives
+    can coexist.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - INST
+  - META
+  claims_extracted:
+  - INST-2026-505
+  - META-2026-501
+claims:
+- domain: INST
+  type: '[F]'
+  text: Anthropic’s September report alleges unauthorized distillation by seven China-based
+    labs and describes sensitive user exchanges entering some data pipelines.
+  credence: 0.97
+  evidence_level: E4
+  id: INST-2026-505
+  source_ids:
+  - anthropic-2026-september-threat-intelligence
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The report lacks these allegations or materially changes the count and described
+    data exposure.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: META
+  type: '[F]'
+  text: Anthropic says the report contains notable selected misuse cases, not representative
+    prevalence data, and uses qualified state-attribution language.
+  credence: 0.98
+  evidence_level: E4
+  id: META-2026-501
+  source_ids:
+  - anthropic-2026-september-threat-intelligence
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The source presents a representative sample or unqualified attribution throughout.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

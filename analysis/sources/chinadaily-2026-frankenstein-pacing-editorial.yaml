@@ -1,0 +1,63 @@
+sources:
+- id: chinadaily-2026-frankenstein-pacing-editorial
+  type: ARTICLE
+  title: “Dr Frankenstein” alarm cries of US AI elites a self-serving bid for profit
+  author:
+  - China Daily editorial board
+  year: 2026
+  url: https://www.chinadaily.com.cn/a/202609/14/WS6aa7e616e4b06d4aa055df6e.html
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/chinadaily-2026-frankenstein-pacing-editorial.md
+  reliability: 0.65
+  bias_notes: The editorial says allegations are baseless without independently analyzing
+    them. It criticizes exclusion from a global framework even though Amodei explicitly
+    proposes negotiating with China.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - GEO
+  - INST
+  claims_extracted:
+  - GEO-2026-506
+  - INST-2026-504
+claims:
+- domain: GEO
+  type: '[F]'
+  text: China Daily’s September 14 editorial explicitly links Anthropic’s distillation
+    report to frontier pacing and quotes Sacks’s cartel criticism.
+  credence: 0.98
+  evidence_level: E4
+  id: GEO-2026-506
+  source_ids:
+  - chinadaily-2026-frankenstein-pacing-editorial
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The editorial does not contain those links or attribution.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: INST
+  type: '[H]'
+  text: The US pacing initiative is primarily a coordinated attempt to blunt Chinese
+    competition and sustain investor enthusiasm.
+  credence: 0.35
+  evidence_level: E5
+  id: INST-2026-504
+  source_ids:
+  - chinadaily-2026-frankenstein-pacing-editorial
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - Contrary evidence from a comparable prospective test or a primary record.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

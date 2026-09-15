@@ -1,0 +1,61 @@
+sources:
+- id: hassabis-2026-frontier-standards-framework
+  type: BLOG
+  title: A Framework for Frontier AI and the Dawning of a New Age
+  author:
+  - Demis Hassabis
+  year: 2026
+  url: https://demishassabis.substack.com/p/a-framework-for-frontier-ai-and-the-dawning-of-a-new-age
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/hassabis-2026-frontier-standards-framework.md
+  reliability: 0.65
+  bias_notes: An independent expert board and industry funding can coexist but require
+    safeguards; prestige and threshold-setting may influence entry incentives.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - GOV
+  claims_extracted:
+  - GOV-2026-507
+  - GOV-2026-508
+claims:
+- domain: GOV
+  type: '[F]'
+  text: Hassabis’s proposed standards body includes open-source representatives, capability-based
+    frontier designation and an exemption for non-frontier models.
+  credence: 0.98
+  evidence_level: E4
+  id: GOV-2026-507
+  source_ids:
+  - hassabis-2026-frontier-standards-framework
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The proposal omits those conditions.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: GOV
+  type: '[F]'
+  text: Hassabis proposes reviews up to 30 days before release, initially voluntary
+    and potentially later required for US deployment.
+  credence: 0.98
+  evidence_level: E4
+  id: GOV-2026-508
+  source_ids:
+  - hassabis-2026-frontier-standards-framework
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The proposal states a different review period or never contemplates mandatory
+    assessment.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

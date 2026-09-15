@@ -1,0 +1,47 @@
+"全面筑牢人工智能安全屏障" - 検索
+リンクを新しいタブで開く
+時間指定なし
+github.com
+https://github.com › ChatGPT_DAN
+GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt
+2025年1月1日
+· ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on …
+reddit.com
+https://www.reddit.com › AITAH
+r/AITAH - Reddit
+r/AITAH: this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything …
+reddit.com
+https://www.reddit.com › ChatGPT › top
+ChatGPT - Reddit
+2022年12月1日
+· r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI.
+zhihu.com
+https://www.zhihu.com › question
+ChatGPT Plus 正式恢复五小时使用上限，Codex 长任务体验会受影响 …
+可以看看公众号老冯云数怎么用7-10个20x产生巨大生产力的， 《OPC一个月烧1000刀订阅，能有多少产出？ 》 的时候是7个，  …
+github.com
+https://github.com › miuuyy › codex-chatgpt-web
+GitHub - miuuyy/codex-chatgpt-web: Use ChatGPT Web (including …
+2026年8月31日
+· Use ChatGPT Web (including Pro) as a native model in Codex — with context, tools, streaming and images, …
+zhihu.com
+https://www.zhihu.com › question
+有没有好的离线翻译软件，电脑的？ - 知乎
+先说结论:有 由于传统研发翻译引擎需要巨额投入，一直被大厂技术垄断，所以这么多年来，都没有一款真正离线翻译。2024年之前所 …
+reddit.com
+https://www.reddit.com › SiloSeries
+Silo Series - Reddit
+/r/SiloSeries is the unofficial subreddit for news and discussion of Silo, the post-apocalyptic television show on Apple TV+, as well as …
+github.com
+https://github.com › prompts.chat
+GitHub - f/prompts.chat: f.k.a. Awesome ChatGPT Prompts. Share ...
+f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for …
+github.com
+https://github.com › rasbt › LLMs-from-scratch
+GitHub - rasbt/LLMs-from-scratch: Implement a ChatGPT-like LLM in ...
+2024年3月26日
+· This repository contains the code for developing, pretraining, and finetuning a GPT-like LLM and is the official code …
+zhihu.com
+https://www.zhihu.com › question
+大家用 grill-me (拷问我) 这个 AI Agent Skill 的体验如何？ - 知乎
+我经常用这个工具，也推荐给了很多人。 在有这个 skill 之前，我通常会在一段 instruction 的结尾要求 agent：“ 如果我的需求或设计 …

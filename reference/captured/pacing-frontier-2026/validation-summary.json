@@ -1,0 +1,265 @@
+{
+  "before_errors": 19,
+  "after_errors": 19,
+  "before_warnings": 357,
+  "after_warnings": 408,
+  "new_error_count": 0,
+  "new_findings": [
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-500: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-501: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-502: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "TECH-2026-500: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-500: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-500: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-501: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-501: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-500: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-503: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-502: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-502: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-503: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "LABOR-2026-500: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-503: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "LABOR-2026-501: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-501: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-502: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-503: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-504: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-505: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-504: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-505: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-506: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-506: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-504: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-504: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "LABOR-2026-502: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-505: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-506: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-507: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-500: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-508: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "TECH-2026-501: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "TECH-2026-502: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "TECH-2026-503: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-509: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-510: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-505: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-501: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-507: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-508: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-509: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GEO-2026-507: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-506: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "INST-2026-507: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-511: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-502: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "RISK-2026-512: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "META-2026-503: Missing embedding"
+    },
+    {
+      "level": "WARN",
+      "code": "CLAIM_NO_EMBEDDING",
+      "message": "GOV-2026-510: Missing embedding"
+    }
+  ],
+  "notes": "No new integrity errors. The 19 pre-existing errors remain. 51 new warnings are missing claim embeddings; existing embedding stack failed. Source bibliography entry for the synthesis was added to satisfy completed-log integrity."
+}

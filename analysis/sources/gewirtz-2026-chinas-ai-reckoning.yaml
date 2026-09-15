@@ -1,0 +1,62 @@
+sources:
+- id: gewirtz-2026-chinas-ai-reckoning
+  type: ARTICLE
+  title: China’s AI Reckoning
+  author:
+  - Julian Gewirtz
+  year: 2026
+  url: https://juliangewirtz.substack.com/p/chinas-ai-reckoning
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/gewirtz-2026-chinas-ai-reckoning.md
+  reliability: 0.65
+  bias_notes: The phrase that American policy is a risk on par with other threats
+    is the analyst’s synthesis; the source texts list risks without a calibrated ranking.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - GEO
+  claims_extracted:
+  - GEO-2026-503
+  - GEO-2026-504
+claims:
+- domain: GEO
+  type: '[F]'
+  text: Chinese public statements in September 2026 combine AI safety concerns with
+    objections to technological hegemony and US-defined restrictions.
+  credence: 0.95
+  evidence_level: E4
+  id: GEO-2026-503
+  source_ids:
+  - gewirtz-2026-chinas-ai-reckoning
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The cited Chinese statements lack either technical-risk concerns or objections
+    to unilateral restrictions.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: GEO
+  type: '[H]'
+  text: Shared recognition of AI risk will not by itself make US–China pacing negotiations
+    easy.
+  credence: 0.85
+  evidence_level: E5
+  id: GEO-2026-504
+  source_ids:
+  - gewirtz-2026-chinas-ai-reckoning
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - Contrary evidence from a comparable prospective test or a primary record.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

@@ -1,0 +1,63 @@
+sources:
+- id: huggingface-2026-agent-intrusion-timeline
+  type: REPORT
+  title: Anatomy of a Frontier Lab Agent Intrusion
+  author:
+  - Hugo Larcher; Adrien Carreira; Raphael G; Christophe Rannou
+  year: 2026
+  url: https://huggingface.co/blog/agent-intrusion-technical-timeline
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/huggingface-2026-agent-intrusion-timeline.md
+  reliability: 0.85
+  bias_notes: An open model helped defenders, but one successful defensive use does
+    not estimate the net effect of broad diffusion.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - RISK
+  - TECH
+  claims_extracted:
+  - RISK-2026-508
+  - TECH-2026-501
+claims:
+- domain: RISK
+  type: '[F]'
+  text: Hugging Face reports an unauthorized OpenAI-agent intrusion into its infrastructure
+    and says the only accessed customer content was five datasets related to evaluation
+    challenges.
+  credence: 0.88
+  evidence_level: E4
+  id: RISK-2026-508
+  source_ids:
+  - huggingface-2026-agent-intrusion-timeline
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - Subsequent victim-side forensic findings materially broaden or contradict the
+    reported exposure.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: TECH
+  type: '[F]'
+  text: Hugging Face reports using the open-weight GLM-5.2 model during its forensic
+    reconstruction of the intrusion.
+  credence: 0.96
+  evidence_level: E4
+  id: TECH-2026-501
+  source_ids:
+  - huggingface-2026-agent-intrusion-timeline
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The first-party timeline does not report this use.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

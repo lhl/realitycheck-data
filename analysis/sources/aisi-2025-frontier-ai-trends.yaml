@@ -1,0 +1,62 @@
+sources:
+- id: aisi-2025-frontier-ai-trends
+  type: REPORT
+  title: Frontier AI Trends Report
+  author:
+  - UK AI Security Institute
+  year: 2025
+  url: https://www.aisi.gov.uk/frontier-ai-trends-report
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/aisi-2025-frontier-ai-trends.md
+  reliability: 0.85
+  bias_notes: Task-level gains are consequential but cannot be directly mapped to
+    a system-level risk estimate without assumptions about other stages and defenses.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - META
+  - RISK
+  claims_extracted:
+  - RISK-2026-511
+  - META-2026-502
+claims:
+- domain: RISK
+  type: '[F]'
+  text: AISI reports 4.7 times higher odds of non-experts producing a feasible protocol
+    in a bounded biology task with frontier AI assistance than with internet access
+    alone, with confidence interval 2.8–7.9.
+  credence: 0.94
+  evidence_level: E2
+  id: RISK-2026-511
+  source_ids:
+  - aisi-2025-frontier-ai-trends
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The reported estimate, comparison group or outcome is materially different.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: META
+  type: '[F]'
+  text: AISI’s reported biology assistance results do not measure pandemic creation,
+    extinction probability or reliable end-to-end autonomous biological mastery.
+  credence: 0.98
+  evidence_level: E2
+  id: META-2026-502
+  source_ids:
+  - aisi-2025-frontier-ai-trends
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The report actually measures those outcomes.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

@@ -1,0 +1,622 @@
+[
+  [
+    "Research",
+    "/research"
+  ],
+  [
+    "Notes",
+    "/notes"
+  ],
+  [
+    "Updates",
+    "/blog"
+  ],
+  [
+    "Risk Assessment",
+    "/risk-assessment"
+  ],
+  [
+    "About",
+    "/about"
+  ],
+  [
+    "Donate",
+    "/donate"
+  ],
+  [
+    "Careers",
+    "/careers"
+  ],
+  [
+    "Search",
+    "/search"
+  ],
+  [
+    "",
+    "/"
+  ],
+  [
+    "Our Work",
+    "#"
+  ],
+  [
+    "Research",
+    "/research"
+  ],
+  [
+    "Notes",
+    "/notes"
+  ],
+  [
+    "Updates",
+    "/blog"
+  ],
+  [
+    "Risk Assessment",
+    "/risk-assessment"
+  ],
+  [
+    "About",
+    "/about"
+  ],
+  [
+    "Donate",
+    "/donate"
+  ],
+  [
+    "Careers",
+    "/careers"
+  ],
+  [
+    "",
+    "#"
+  ],
+  [
+    "",
+    "#"
+  ],
+  [
+    "the extent to which an AI system can autonomously carry out substantial tasks",
+    "/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/"
+  ],
+  [
+    "effects of AI on real-world software developer productivity",
+    "/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"
+  ],
+  [
+    "potential AI behavior that threatens the integrity of evaluations",
+    "/blog/2025-10-14-malt-dataset-of-natural-and-prompted-behaviors/"
+  ],
+  [
+    "mitigations for such behavior",
+    "/blog/2025-08-08-cot-may-be-highly-informative-despite-unfaithfulness/"
+  ],
+  [
+    "Measuring AI Ability to Complete Long Tasks We found that the length of tasks AI agents can complete has doubled approximately every 7 months for 6 years. This research is now central to forecasts of when AI will have transformative impacts.",
+    "/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/"
+  ],
+  [
+    "GPT-5.1-Codex-Max Evaluation We evaluated GPT-5.1-Codex-Max and found it does not pose significant catastrophic risks via AI self-improvement or rogue replication.",
+    "/evaluations/gpt-5-1-codex-max-report/"
+  ],
+  [
+    "Measuring the Impact of AI on Open-Source Developer Productivity We conducted an RCT and found that experienced open-source developers systematically overestimate how beneficial AI tools are for their productivity.",
+    "/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"
+  ],
+  [
+    "Responsible Scaling Policies",
+    "/blog/2023-09-26-rsp/"
+  ],
+  [
+    "adopted by nine AI developers",
+    "/common-elements"
+  ],
+  [
+    "1",
+    "#fn:1"
+  ],
+  [
+    "here",
+    "/coi-policy.pdf"
+  ],
+  [
+    "OpenAI",
+    "https://openai.com/"
+  ],
+  [
+    "Anthropic",
+    "https://www.anthropic.com/"
+  ],
+  [
+    "Google DeepMind",
+    "https://deepmind.google/"
+  ],
+  [
+    "Meta",
+    "https://ai.meta.com/"
+  ],
+  [
+    "Amazon",
+    "https://aws.amazon.com/nova/"
+  ],
+  [
+    "NIST AI Safety Institute Consortium",
+    "https://www.nist.gov/artificial-intelligence/artificial-intelligence-safety-institute/aisic-members"
+  ],
+  [
+    "California Cybersecurity Task Force",
+    "https://www.caloes.ca.gov/office-of-the-director/operations/homeland-security/california-cybersecurity-integration-center/cybersecurity-task-force/"
+  ],
+  [
+    "partnering with the AI Security Institute",
+    "https://www.gov.uk/government/publications/frontier-ai-taskforce-first-progress-report/frontier-ai-taskforce-first-progress-report#:~:text=of%20partnerships%20with%3A-,ARC%20Evals,-is%20a%20non"
+  ],
+  [
+    "The Audacious Project",
+    "https://www.audaciousproject.org/"
+  ],
+  [
+    "here",
+    "https://www.every.org/metr?donateTo=metr#/donate/bank"
+  ],
+  [
+    "Beth Barnes",
+    "/team/beth-barnes/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/elizabethmbarnes/"
+  ],
+  [
+    "",
+    "https://x.com/BethMayBarnes"
+  ],
+  [
+    "Chris Painter",
+    "/team/chris-painter/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/cpainter1"
+  ],
+  [
+    "",
+    "https://x.com/ChrisPainterYup"
+  ],
+  [
+    "Hjalmar Wijk",
+    "/team/hjalmar-wijk/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/hjalmar-wijk"
+  ],
+  [
+    "",
+    "https://x.com/HjalmarWijk"
+  ],
+  [
+    "Nate Rush",
+    "/team/nate-rush/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/nate-rush-045357b8/"
+  ],
+  [
+    "",
+    "https://x.com/naterush1997"
+  ],
+  [
+    "Ajeya Cotra",
+    "/team/ajeya-cotra/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/ajeya-cotra-90942b8b"
+  ],
+  [
+    "",
+    "https://x.com/ajeya_cotra"
+  ],
+  [
+    "Bruce Lee",
+    "/team/bruce-lee/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/bruce-w-lee/"
+  ],
+  [
+    "",
+    "https://x.com/BruceWLee2"
+  ],
+  [
+    "David Rein",
+    "/team/david-rein/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/idavidrein/"
+  ],
+  [
+    "",
+    "https://x.com/idavidrein"
+  ],
+  [
+    "Dmitrii Calzago",
+    "/team/dmitrii-calzago/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/dmitrii-calzago"
+  ],
+  [
+    "Kei Nishimura-Gasparian",
+    "/team/kei-nishimura-gasparian/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/kei-nishimura-gasparian-3857a411b"
+  ],
+  [
+    "Lucas Sato",
+    "/team/lucas-sato/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/satojk/"
+  ],
+  [
+    "Manish Shetty",
+    "/team/manish-shetty/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/manishshettym/"
+  ],
+  [
+    "",
+    "https://x.com/slimshetty_"
+  ],
+  [
+    "Matt Putz",
+    "/team/matt-putz/"
+  ],
+  [
+    "",
+    "https://be.linkedin.com/in/mathieu-putz"
+  ],
+  [
+    "",
+    "https://x.com/mattputz_"
+  ],
+  [
+    "Megan Kinniment",
+    "/team/megan-kinniment/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/megan-kinniment-513355177/"
+  ],
+  [
+    "",
+    "https://x.com/MKinniment"
+  ],
+  [
+    "Mischa Spiegelmock",
+    "/team/mischa-spiegelmock/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/spiegelmock/"
+  ],
+  [
+    "",
+    "https://x.com/spiegelmock"
+  ],
+  [
+    "Neev Parikh",
+    "/team/neev-parikh/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/neev-parikh/"
+  ],
+  [
+    "",
+    "https://x.com/neev_parikh"
+  ],
+  [
+    "Nikola Jurkovic",
+    "/team/nikola-jurkovic/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/nikola-jurkovic-abba07325/"
+  ],
+  [
+    "",
+    "https://x.com/nikolaj2030"
+  ],
+  [
+    "Paarth Shah",
+    "/team/paarth-shah/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/paarthshah1996/"
+  ],
+  [
+    "Parker Whitfill",
+    "/team/parker-whitfill/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/parker-whitfill-526709147/"
+  ],
+  [
+    "",
+    "https://x.com/whitfill_parker"
+  ],
+  [
+    "Pip Arnott",
+    "/team/pip-arnott/"
+  ],
+  [
+    "Rafael Carvalho",
+    "/team/rafael-carvalho/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/rcvcarvalho/"
+  ],
+  [
+    "Rasmus Faber-Espensen",
+    "/team/rasmus-faber-espensen/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/rasmus-faber-espensen-8800925/"
+  ],
+  [
+    "",
+    "https://x.com/rasmusfaber"
+  ],
+  [
+    "Reilly Haskins",
+    "/team/reilly-haskins/"
+  ],
+  [
+    "Thomas Broadley",
+    "/team/thomas-broadley/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/thomasbroadley/"
+  ],
+  [
+    "",
+    "https://x.com/htbroadley"
+  ],
+  [
+    "Tim Hua",
+    "/team/tim-hua/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/tim-hua-405/"
+  ],
+  [
+    "",
+    "https://x.com/Tim_Hua_"
+  ],
+  [
+    "Tom Cunningham",
+    "/team/tom-cunningham/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/tom-cunningham-a9433/"
+  ],
+  [
+    "",
+    "https://x.com/testingham"
+  ],
+  [
+    "Khalid Mahamud",
+    "/team/khalid-mahamud/"
+  ],
+  [
+    "",
+    "https://x.com/kaime"
+  ],
+  [
+    "Bhaskar Chaturvedi",
+    "/team/bhaskar-chaturvedi/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/chaturvedibhaskar96/"
+  ],
+  [
+    "Jingyi Wang",
+    "/team/jingyi-wang/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/jingyi-wang-a21b551b8/"
+  ],
+  [
+    "Kris Chari",
+    "/team/kris-chari/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/kris-chari/"
+  ],
+  [
+    "",
+    "https://x.com/charikris"
+  ],
+  [
+    "Parv Mahajan",
+    "/team/parv-mahajan/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/parv-mahajan/"
+  ],
+  [
+    "",
+    "https://x.com/parvmahajan0/"
+  ],
+  [
+    "Rae She",
+    "/team/rae-she/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/amandarshe/"
+  ],
+  [
+    "",
+    "https://x.com/ailu_rae"
+  ],
+  [
+    "Stephanie Palla",
+    "/team/stephanie-palla/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/stephanie-palla-4122352a/"
+  ],
+  [
+    "Wilder Seitz",
+    "/team/wilder-seitz/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/wilder-seitz/"
+  ],
+  [
+    "Charles Foster",
+    "/team/charles-foster/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/charles-foster-000/"
+  ],
+  [
+    "",
+    "https://x.com/CFGeek"
+  ],
+  [
+    "Jasmine Dhaliwal",
+    "/team/jasmine-dhaliwal/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/jasmine-k-d1/"
+  ],
+  [
+    "",
+    "https://x.com/Jasmine10018637"
+  ],
+  [
+    "Kit Harris",
+    "/team/kit-harris/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/kitharris/"
+  ],
+  [
+    "",
+    "https://x.com/mrkitharris"
+  ],
+  [
+    "Rox Heston",
+    "/team/rox-heston/"
+  ],
+  [
+    "Adam Gleave",
+    "/team/adam-gleave/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/adamgleave/"
+  ],
+  [
+    "",
+    "https://x.com/ARGleave"
+  ],
+  [
+    "Alec Radford",
+    "/team/alec-radford/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/alecradford/"
+  ],
+  [
+    "",
+    "https://x.com/AlecRad"
+  ],
+  [
+    "Marco Mascorro",
+    "/team/marco-mascorro/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/marcomascorro/"
+  ],
+  [
+    "",
+    "https://x.com/Mascobot"
+  ],
+  [
+    "Rajiv Dattani",
+    "/team/rajiv-dattani/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/rajiv-dattani/"
+  ],
+  [
+    "",
+    "https://x.com/RajivDattani"
+  ],
+  [
+    "Yoshua Bengio",
+    "/team/yoshua-bengio/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/yoshuabengio"
+  ],
+  [
+    "",
+    "https://x.com/Yoshua_Bengio"
+  ],
+  [
+    "Alexander Barry",
+    "/team/alexander-barry/"
+  ],
+  [
+    "",
+    "https://www.linkedin.com/in/abstats"
+  ],
+  [
+    "Kai Nguyen",
+    "/team/kai-nguyen/"
+  ],
+  [
+    "deceptive",
+    "https://www.anthropic.com/research/alignment-faking"
+  ],
+  [
+    "↩",
+    "#fnref:1"
+  ]
+]

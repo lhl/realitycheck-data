@@ -1,0 +1,60 @@
+sources:
+- id: metr-2026-independence-and-conflicts
+  type: REPORT
+  title: METR funding and conflict-of-interest disclosures
+  author:
+  - METR
+  year: 2026
+  url: https://metr.org/about/
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/metr-2026-independence-and-conflicts.md
+  reliability: 0.85
+  bias_notes: The institution both depends on voluntary access and evaluates the companies
+    providing it. Disclosure reduces opacity but cannot remove the tension.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - INST
+  claims_extracted:
+  - INST-2026-506
+  - INST-2026-507
+claims:
+- domain: INST
+  type: '[F]'
+  text: METR states it has accepted no AI-company funding, while acknowledging significant
+    free tokens and access from frontier labs.
+  credence: 0.98
+  evidence_level: E4
+  id: INST-2026-506
+  source_ids:
+  - metr-2026-independence-and-conflicts
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The captured funding disclosure says otherwise or is corrected by METR.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: INST
+  type: '[F]'
+  text: METR’s August 28 conflict policy requires handling and disclosure of material
+    conflicts in company-identifying risk assessments.
+  credence: 0.98
+  evidence_level: E4
+  id: INST-2026-507
+  source_ids:
+  - metr-2026-independence-and-conflicts
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The policy lacks these requirements.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

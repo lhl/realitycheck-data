@@ -1,0 +1,28 @@
+sources:
+- id: pacing-frontier-2026-synthesis
+  type: REPORT
+  title: 'Pacing the frontier: risk evidence, governance power, China and biological
+    risk'
+  author:
+  - Codex
+  year: 2026
+  url: ''
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/syntheses/pacing-frontier-2026-risk-governance-china-bio.md
+  reliability: 0.8
+  bias_notes: Cross-source analyst synthesis; not independent evidence from its inputs.
+    Company-data capture remains blocked.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - china
+  - biological-risk
+  domains:
+  - GOV
+  - GEO
+  - RISK
+  - INST
+  - TECH
+  - LABOR
+  claims_extracted: []

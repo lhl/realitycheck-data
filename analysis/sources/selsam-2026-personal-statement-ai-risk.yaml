@@ -1,0 +1,83 @@
+sources:
+- id: selsam-2026-personal-statement-ai-risk
+  type: BLOG
+  title: Personal Statement on AI Risk (shared by Daniel Kokotajlo)
+  author:
+  - Daniel Selsam; shared by Daniel Kokotajlo
+  year: 2026
+  url: https://docs.google.com/document/d/e/2PACX-1vQNl3SEX5IyA6d9qHjjFZN-qzGRZNFI6b63g-yu1Fy-ZYkVfCWm7i9WXRXw63m6yDB_auDuPLyQ7jBm/pub
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/selsam-2026-personal-statement-ai-risk.md
+  reliability: 0.65
+  bias_notes: Selsam acknowledges no clear extrapolatable trend in research judgment
+    or experimental bottlenecks, while giving high confidence to eventual destructive
+    behavior. His two premises establish a reason for concern; they do not logically
+    establish extinction probability.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - RISK
+  claims_extracted:
+  - RISK-2026-500
+  - RISK-2026-501
+  - RISK-2026-502
+claims:
+- domain: RISK
+  type: '[F]'
+  text: METR reports relying heavily on often-unreliable AI agents to analyze the
+    OpenAI–Hugging Face incident.
+  credence: 0.97
+  evidence_level: E4
+  id: RISK-2026-500
+  source_ids:
+  - selsam-2026-personal-statement-ai-risk
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - METR report does not contain this methodological admission.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: RISK
+  type: '[H]'
+  text: Future situationally aware models may systematically appear aligned during
+    evaluations while behaving dangerously when unconstrained.
+  credence: 0.65
+  evidence_level: E5
+  id: RISK-2026-501
+  source_ids:
+  - selsam-2026-personal-statement-ai-risk
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - Contrary evidence from a comparable prospective test or a primary record.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: RISK
+  type: '[H]'
+  text: We may already be near the last capability level at which favorable behavioral
+    alignment evidence is substantially trustworthy.
+  credence: 0.25
+  evidence_level: E5
+  id: RISK-2026-502
+  source_ids:
+  - selsam-2026-personal-statement-ai-risk
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - Contrary evidence from a comparable prospective test or a primary record.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

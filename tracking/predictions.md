@@ -1,6 +1,6 @@
 # Prediction Tracking
 
-*Generated 2026-01-26*
+*Generated 2026-09-16*
 
 ## Active Predictions
 
@@ -236,3 +236,354 @@
 
 - **Status**: [P?]
 - **Source**: x-2026-zhang-purge-hot-takes
+
+#### GOV-2026-072
+
+> Farm distress driven by tariffs and immigration policy will be a major political liability for Republicans in the 2026 midterm elections.
+
+- **Status**: [P?]
+- **Source**: rawstory-2026-trump-voters-suicide-pact
+
+#### TRANS-2025-050
+
+> The impact of superhuman AI over the next decade will be bigger than that of the industrial revolution.
+
+- **Status**: [P?]
+- **Source**: aifutures-2025-ai-2027
+
+#### TECH-2025-050
+
+> The AI Futures Project’s timelines forecast includes scenarios where there is a substantial chance of superhuman coders by 2027 and superhuman-everything by 2028.
+
+- **Status**: [P?]
+- **Source**: aifutures-2025-ai-2027
+
+#### TRANS-2025-051
+
+> Conditional on reaching superhuman coders, superintelligence could follow within about 1 year.
+
+- **Status**: [P?]
+- **Source**: aifutures-2025-ai-2027
+
+#### TECH-2025-052
+
+> By early 2026, frontier AI systems will be able to autonomously complete many multi-hour coding tasks and materially accelerate AI R&D via agentic workflows.
+
+- **Status**: [P?]
+- **Source**: aifutures-2025-ai-2027
+
+#### TECH-2025-053
+
+> Global AI compute stock will increase by about 10× by December 2027 (relative to March 2025), reaching roughly 100 million H100-equivalents.
+
+- **Status**: [P?]
+- **Source**: aifutures-2025-ai-2027
+
+#### RISK-2025-050
+
+> Without major improvements to AI lab security, model weights theft is likely within about 5 years.
+
+- **Status**: [P?]
+- **Source**: aifutures-2025-ai-2027
+
+#### GEO-2025-050
+
+> The world is plausibly headed for a US–China race dynamic over AI capabilities where export controls, espionage, and national mobilization become central.
+
+- **Status**: [P?]
+- **Source**: aifutures-2025-ai-2027
+
+#### TECH-2025-057
+
+> Conditional on generalization of the benchmark trend to real-world software tasks, extrapolating METR’s time-horizon growth suggests models could autonomously complete many tasks that take humans days or weeks within under a decade (and potentially month-scale tasks within around five years).
+
+- **Status**: [P?]
+- **Source**: metr-2025-measuring-ai-ability-to-complete-long-tasks
+
+#### TRANS-2025-020
+
+> Agentic coding will progress rapidly from coding agents to “agent clusters” and then “agent fleets,” where supervisory agents manage pods of coding agents and humans manage the resulting systems.
+
+- **Status**: [P?]
+- **Source**: yegge-2025-revenge-junior-developer
+
+#### LABOR-2025-015
+
+> In the near term, the job of software developers will shift away from direct coding and toward supervising dashboards of many coding agents and their AI supervisors.
+
+- **Status**: [P?]
+- **Source**: yegge-2025-revenge-junior-developer
+
+#### TRANS-2026-028
+
+> The AI Futures Project predicts that if progress continues at ~0.65× of the AI 2027 pace, the scenario’s takeoff would shift to late-2027 through mid-2029.
+
+- **Status**: [P?]
+- **Source**: aifutures-2026-grading-ai-2027-2025-predictions
+
+#### TRANS-2026-029
+
+> The AI Futures Project predicts that after adjusting for compute/labor slowdowns using the AI Futures Model, takeoff would shift to mid-2028 through mid-2030.
+
+- **Status**: [P?]
+- **Source**: aifutures-2026-grading-ai-2027-2025-predictions
+
+#### META-2026-125
+
+> The AI 2027 timelines-forecast note states that, under its strong assumptions (no catastrophes/slowdown/supply-chain disruptions), its forecasts give a substantial chance of superhuman coding (SC) arriving by and in 2027.
+
+- **Status**: [P?]
+- **Source**: aifutures-2025-ai-2027-timelines-forecast
+
+#### TRANS-2026-030
+
+> In the AI 2027 timelines-forecast note’s Apr 2025 time-horizon-extension model, Eli’s superhuman-coder (SC) forecast has median 2027 with 80% CI 2025–2039; Nikola’s SC forecast has 80% CI 2025–2033.
+
+- **Status**: [P?]
+- **Source**: aifutures-2025-ai-2027-timelines-forecast
+
+#### TRANS-2026-031
+
+> In the AI 2027 timelines-forecast note’s Apr 2025 all-things-considered forecast, Eli’s SC forecast has median 2030 with 80% CI 2026–>2050; Nikola’s SC forecast has 80% CI 2026–2040; FutureSearch aggregate has 80% CI 2027–>2050.
+
+- **Status**: [P?]
+- **Source**: aifutures-2025-ai-2027-timelines-forecast
+
+#### TRANS-2026-032
+
+> The AI 2027 timelines-forecast note predicts RE‑Bench saturation sometime in 2026, citing an 80% CI of [2025‑09‑01, 2031‑01‑01].
+
+- **Status**: [P?]
+- **Source**: aifutures-2025-ai-2027-timelines-forecast
+
+#### TRANS-2026-033
+
+> On the AI Futures Model dashboard (Daniel 01-26-26 snapshot), Daniel’s all-things-considered forecast for Automated Coder (AC) is p10 Feb 2027, p50 Dec 2029, p90 Jul 2043.
+
+- **Status**: [P?]
+- **Source**: aifuturesmodel-2026-forecast-daniel-01-26-26
+
+#### TRANS-2026-034
+
+> On the AI Futures Model dashboard (Daniel 01-26-26 snapshot), Eli’s all-things-considered forecast for Automated Coder (AC) is p10 May 2027, p50 Mar 2032, p90 Jan 2125.
+
+- **Status**: [P?]
+- **Source**: aifuturesmodel-2026-forecast-daniel-01-26-26
+
+#### TECH-2026-987
+
+> “Powerful AI” meeting the essay’s operational definition (broad superhuman competence, autonomy, tool use, and scalable instances) could arrive as early as 2026, though it could also take much longer.
+
+- **Status**: [P?]
+- **Source**: amodei-2024-machines-of-loving-grace
+
+#### TECH-2026-989
+
+> Powerful AI could increase the rate of key biology and medicine discoveries by at least 10×, compressing roughly 50–100 years of biological progress into about 5–10 years (“compressed 21st century”).
+
+- **Status**: [P?]
+- **Source**: amodei-2024-machines-of-loving-grace
+
+#### TRANS-2026-038
+
+> Within 5–10 years after powerful AI, a good fraction (on the order of 50%) of AI-driven health benefits could propagate to even the poorest countries, conditional on major coordinated effort in global health, philanthropy, and political advocacy.
+
+- **Status**: [P?]
+- **Source**: amodei-2024-machines-of-loving-grace
+
+#### LABOR-2026-032
+
+> AI could displace roughly half of entry-level white-collar jobs within the next 1–5 years, even as AI accelerates economic growth and scientific progress.
+
+- **Status**: [P?]
+- **Source**: amodei-2026-adolescence-of-technology
+
+#### TECH-2026-992
+
+> Amodei assigns roughly 90% probability that we reach a “country of geniuses in a data center” within about 10 years (by around 2035), with major delays driven primarily by exogenous disruptions (e.g., geopolitical shocks affecting chip fabs).
+
+- **Status**: [P?]
+- **Source**: dwarkesh-2026-amodei-end-of-exponential
+
+#### TECH-2026-993
+
+> For verifiable domains like coding, Amodei expects end-to-end coding capability in roughly 1–2 years and regards “not within 10 years” as implausible.
+
+- **Status**: [P?]
+- **Source**: dwarkesh-2026-amodei-end-of-exponential
+
+#### ECON-2026-921
+
+> Frontier labs will not make material profits from “birthing AGI”; investments in foundation labs, hyperscalers, semiconductors, and datacenters are effectively “dead money,” despite enormous consumer surplus.
+
+- **Status**: [P?]
+- **Source**: gestaltu-2026-frontier-labs-profits-thread
+
+#### META-2026-138
+
+> As generative and agentic AI become more widely used in software development, cognitive debt will become a bigger threat to long-term software health than technical debt.
+
+- **Status**: [P?]
+- **Source**: storey-2026-cognitive-debt
+
+#### TECH-2026-997
+
+> If recent time-horizon growth persists, multi-day autonomous work could arrive by mid-2027 and a ~40-hour work-week horizon by early 2027.
+
+- **Status**: [P?]
+- **Source**: harries-2026-country-full-of-geniuses
+
+#### ECON-2026-931
+
+> Imas concludes that advanced AI is unlikely to cause negative GDP growth because the assumptions required for negative growth are too extreme; the models are better interpreted as mechanisms that could temper (not reverse) growth.
+
+- **Status**: [P?]
+- **Source**: aleximas-2026-negative-economic-growth
+
+#### GEO-2026-042
+
+> The thread predicts Iran is now more likely to re-establish deterrence through regional cost-imposition than to rely on U.S. diplomatic assurances.
+
+- **Status**: [P?]
+- **Source**: ripplebrain-2026-negotiate-and-kill-you
+
+#### ECON-2026-958
+
+> Prediction: AI providers will start moving enterprise accounts to less-subsidized (higher, more true-cost) pricing, and many companies will not continue paying at those rates.
+
+- **Status**: [P?]
+- **Source**: podscan-2026-tech-report-zitron-unsubsidised-ai
+
+#### RISK-2026-979
+
+> If AI-assisted rewrites become cheap and common, OSS licensing strategy and software-economics dynamics may shift materially in the near term.
+
+- **Status**: [P?]
+- **Source**: arstechnica-2026-ai-rewrite-open-source-license
+
+#### GOV-2026-277
+
+> Anthropic is more likely to resolve the Fable/Mythos dispute through negotiation than litigation, leading to some version of Fable returning.
+
+- **Status**: [P?]
+- **Source**: bullock-2026-lutnick-letter-legal-thread
+
+#### ECON-2026-981
+
+> Karp states that looking two years out, Palantir can see $15-18B in free cash flow.
+
+- **Status**: [P?]
+- **Source**: karp-2026-cnbc-squawk-box-tokenmaxxing
+
+#### INST-2026-986
+
+> A quoted tweet asserts 'Claude Tag is the end of Palantir' because multiplayer agent identity natively solves the access-control problem the Ontology hand-maintains.
+
+- **Status**: [P?]
+- **Source**: lhl-2026-palantir-sovereignty-fable-chat
+
+#### TECH-2026-102
+
+> Absent major regulation, war, or social collapse, AI R&D will be fully automated within about 15 years.
+
+- **Status**: [P?]
+- **Source**: aifutures-2026-ai-2040-plan-a
+
+#### TECH-2026-103
+
+> Within a few years of AI-R&D automation, AI systems will outperform humans at essentially all economically relevant tasks.
+
+- **Status**: [P?]
+- **Source**: aifutures-2026-ai-2040-plan-a
+
+#### TECH-2026-104
+
+> AI-assisted research can make alignment mature enough for a high-assurance handoff by 2038 to 2040.
+
+- **Status**: [P?]
+- **Source**: aifutures-2026-ai-2040-plan-a
+
+#### TRANS-2026-057
+
+> The median transition from automated coding to top-expert-dominating AI is about one year.
+
+- **Status**: [P?]
+- **Source**: aifutures-2026-ai-2040-plan-a
+
+#### RISK-2026-993
+
+> Under competent Plan A implementation, covert projects have about a 13% chance of reaching deal-undermining AI before detection or handoff in the selected scenario.
+
+- **Status**: [P?]
+- **Source**: aifutures-2026-ai-2040-plan-a
+
+#### RISK-2026-994
+
+> Control-based safety cases can contain AI systems through top-human-expert capability.
+
+- **Status**: [P?]
+- **Source**: aifutures-2026-ai-2040-plan-a
+
+#### GEO-2026-061
+
+> The United States and China can adopt something close to the Plan A verified slowdown around 2029.
+
+- **Status**: [P?]
+- **Source**: aifutures-2026-ai-2040-plan-a
+
+#### ECON-2026-990
+
+> The Plan A AI and robot trajectory produces roughly 200 to 270 times world output by 2040.
+
+- **Status**: [P?]
+- **Source**: aifutures-2026-ai-2040-plan-a
+
+#### LABOR-2026-041
+
+> Most economically valuable cognitive and physical labor can be automated by the mid-2030s.
+
+- **Status**: [P?]
+- **Source**: aifutures-2026-ai-2040-plan-a
+
+#### RISK-2026-302
+
+> Following this controversy, pharma firms will materially restrict frontier AI use or add internal controls over unpublished target information.
+
+- **Status**: [P?]
+- **Source**: taylor-king-2026-drug-discovery-trust
+- **Target Date**: 2027-09-10
+- **Falsification**: No material restriction or control changes attributable to this controversy in a defined sample by September 10, 2027.
+- **Verification**: Compare documented pharma AI policies and use before/after September 2026; distinguish privacy restrictions from unrelated adoption drivers.
+
+#### RISK-2026-503
+
+> Within 6–12 months, a more capable swarm with misalignment similar to the OpenAI–Hugging Face incident could create an internet-scale persistent botnet.
+
+- **Status**: [P?]
+- **Source**: amodei-2026-we-must-pace-frontier
+- **Target Date**: 2027-09-13
+- **Falsification**: By September 2027, comparable controlled assessments continue to show robust limits far below this scope.
+- **Verification**: Credible documented evidence of the specifically stated outcome within the review window. A controlled proxy is not full verification.
+- **Last Evaluated**: 2026-09-16
+
+#### LABOR-2026-500
+
+> Within roughly six to twelve months, AI-generated kernels will match or exceed Liu’s own kernel-writing performance.
+
+- **Status**: [P?]
+- **Source**: liu-2026-bury-talent-yesterday
+- **Target Date**: 2027-09-14
+- **Falsification**: By September 2027, representative blinded comparisons still show a substantial quality or performance gap in Liu’s favor.
+- **Verification**: Credible documented evidence of the specifically stated outcome within the review window. A controlled proxy is not full verification.
+- **Last Evaluated**: 2026-09-16
+
+#### GEO-2026-502
+
+> Chinese AI companies implicated in routing sensitive requests to Claude will face state reprisals because of the disclosure.
+
+- **Status**: [P?]
+- **Source**: fedasiuk-2026-china-anthropic-backlash
+- **Target Date**: 2027-09-15
+- **Falsification**: Public follow-up through September 2027 finds no related sanctions or reprisals, while other evidence points to a different response.
+- **Verification**: Credible documented evidence of the specifically stated outcome within the review window. A controlled proxy is not full verification.
+- **Last Evaluated**: 2026-09-16

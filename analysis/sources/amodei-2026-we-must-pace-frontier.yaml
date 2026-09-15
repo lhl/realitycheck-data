@@ -1,0 +1,85 @@
+sources:
+- id: amodei-2026-we-must-pace-frontier
+  type: BLOG
+  title: We Must Pace the Frontier
+  author:
+  - Dario Amodei
+  year: 2026
+  url: https://darioamodei.com/post/we-must-pace-the-frontier
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/amodei-2026-we-must-pace-frontier.md
+  reliability: 0.65
+  bias_notes: Preserving a strategic lead is presented as enabling cooperation, but
+    can lower the other side’s willingness to accept the rules. Commercial confidentiality
+    exceptions may limit audit transparency.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - GEO
+  - GOV
+  - RISK
+  claims_extracted:
+  - GOV-2026-501
+  - GEO-2026-500
+  - RISK-2026-503
+claims:
+- domain: GOV
+  type: '[F]'
+  text: Amodei commits Anthropic to embedded external evaluators, while industry pacing
+    and global limits require additional coordination.
+  credence: 0.98
+  evidence_level: E4
+  id: GOV-2026-501
+  source_ids:
+  - amodei-2026-we-must-pace-frontier
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The proposal commits Anthropic to an immediate unilateral fixed capability slowdown
+    instead.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: GEO
+  type: '[F]'
+  text: Amodei’s pacing proposal combines cooperation with stronger restrictions on
+    Chinese chip access, unauthorized distillation and model-weight theft.
+  credence: 0.98
+  evidence_level: E4
+  id: GEO-2026-500
+  source_ids:
+  - amodei-2026-we-must-pace-frontier
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - These restrictions are absent from the proposal.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: RISK
+  type: '[P]'
+  text: Within 6–12 months, a more capable swarm with misalignment similar to the
+    OpenAI–Hugging Face incident could create an internet-scale persistent botnet.
+  credence: 0.3
+  evidence_level: E5
+  id: RISK-2026-503
+  source_ids:
+  - amodei-2026-we-must-pace-frontier
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - By September 2027, comparable controlled assessments continue to show robust limits
+    far below this scope.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

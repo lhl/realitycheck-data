@@ -1,0 +1,42 @@
+sources:
+- id: zai-2026-glm53-license
+  type: DATA
+  title: GLM-5.3 License Agreement
+  author:
+  - Z.AI
+  year: 2026
+  url: https://huggingface.co/zai-org/GLM-5.3/raw/main/LICENSE
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/zai-2026-glm53-license.md
+  reliability: 0.85
+  bias_notes: Open weights coexist with selective control of downstream services,
+    making an unrestricted-open versus closed dichotomy inadequate.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - GOV
+  claims_extracted:
+  - GOV-2026-510
+claims:
+- domain: GOV
+  type: '[F]'
+  text: The GLM-5.3 license requires Z.AI security review before any commercial use
+    when the licensee or an affiliate operates a model-as-a-service business and combined
+    revenue exceeds US$10 billion over any consecutive twelve months.
+  credence: 0.98
+  evidence_level: E4
+  id: GOV-2026-510
+  source_ids:
+  - zai-2026-glm53-license
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The license specifies a different threshold, scope or requirement.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

@@ -6,16 +6,19 @@ This directory contains source materials analyzed in this knowledge base.
 
 | Type | Count | Description |
 |------|-------|-------------|
-| ARTICLE | 18 | Published articles |
-| BLOG | 22 | Blog posts |
+| ARTICLE | 88 | Published articles |
+| BLOG | 62 | Blog posts |
 | BOOK | 1 | Books |
-| CONVO | 6 | AI-assisted analysis transcripts |
-| DATA | 2 | Data sources |
-| INTERVIEW | 1 | Interview, talk, or speech transcript |
-| KNOWLEDGE | 17 | Background knowledge |
-| PAPER | 8 | Academic papers |
-| REPORT | 7 | Reports |
-| SOCIAL | 7 | Social media threads |
+| CHAT | 1 | Conversation (legacy type) |
+| CONVO | 15 | Conversation transcripts |
+| DATA | 4 | Data sources and licenses |
+| INTERVIEW | 3 | Interviews |
+| KNOWLEDGE | 41 | Background knowledge |
+| PAPER | 23 | Academic papers |
+| PROPOSAL | 1 | Proposal (legacy type) |
+| REPORT | 48 | Reports and policy documents |
+| SOCIAL | 44 | Social media threads |
+| SYNTHESIS | 1 | Synthesis (legacy type) |
 
 ## Browse
 
@@ -26,6 +29,10 @@ This directory contains source materials analyzed in this knowledge base.
 - [Transcripts](transcripts/)
 - [Articles](articles/)
 - [Data sources](data/)
+
+## Recent research
+
+- [Pacing the frontier: risk, governance, China and biological risk](../analysis/syntheses/pacing-frontier-2026-risk-governance-china-bio.md) — 24 analyzed sources, 51 claims; [captures and provenance](captured/pacing-frontier-2026/README.md).
 
 ## Key Sources
 

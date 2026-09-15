@@ -1,0 +1,61 @@
+sources:
+- id: concordia-2026-china-ai-regulator-brief28
+  type: ARTICLE
+  title: 'Brief #28: China’s AI regulator flags loss-of-control and AIxBio risks'
+  author:
+  - Gabriel Wagner; Erik Lindblad
+  year: 2026
+  url: https://aisafetychina.substack.com/p/brief-28-chinas-ai-regulator-flags
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/concordia-2026-china-ai-regulator-brief28.md
+  reliability: 0.65
+  bias_notes: An open-model defensive philosophy is compatible with staged release
+    but not identical to unrestricted openness. A broad claim of a historical first
+    needs a wider release census.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - GOV
+  claims_extracted:
+  - GOV-2026-505
+  - GOV-2026-506
+claims:
+- domain: GOV
+  type: '[F]'
+  text: Wang Lihong’s September 1 remarks explicitly identify extreme loss-of-control
+    and biology/genetics ethics risks alongside technological hegemony.
+  credence: 0.96
+  evidence_level: E4
+  id: GOV-2026-505
+  source_ids:
+  - concordia-2026-china-ai-regulator-brief28
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The Chinese report of the press conference lacks those concerns.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: GOV
+  type: '[F]'
+  text: Z.AI’s GLM-5.3 license requires a security review for certain model-as-a-service
+    providers above US$10 billion annual revenue.
+  credence: 0.97
+  evidence_level: E4
+  id: GOV-2026-506
+  source_ids:
+  - concordia-2026-china-ai-regulator-brief28
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The captured license does not contain this condition.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

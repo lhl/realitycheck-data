@@ -6,10 +6,10 @@ A unified knowledge base for rigorous analysis of claims across technology, econ
 
 | Metric | Count |
 |--------|-------|
-| **Claims** | 1226 |
-| **Sources** | 307 |
+| **Claims** | 1277 |
+| **Sources** | 332 |
 | **Argument Chains** | 4 |
-| **Predictions Tracked** | 70 |
+| **Predictions Tracked** | 73 |
 
 See [claims/README.md](claims/README.md) for full statistics.
 
@@ -29,6 +29,7 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-09-16 | [Pacing the frontier: risk, governance, China and biological risk](analysis/syntheses/pacing-frontier-2026-risk-governance-china-bio.md) | `[DRAFT]` | 24-source synthesis; incident revisions, evaluator independence, Chinese safety and sovereignty positions, and biological-risk bottlenecks; company-data capture gap |
 | 2026-09-13 | [LLMs are real, AI is fake](analysis/sources/doctorow-2026-llms-real-ai-fake.md) | `[DRAFT]` | Doctorow argues capability and governance matter more than anthropomorphic AI framing |
 | 2026-09-13 | [Hacker News commentary](analysis/sources/hn-2026-llms-real-ai-fake-commentary.md) | `[DRAFT]` | Comments contest the framing and cite METR incident evidence |
 | 2026-09-10 | [Navier–Stokes: research credit, customer data and the AI value chain](analysis/syntheses/navier-stokes-2026-research-credit-data-value-chain.md) | `[DRAFT]` | 23-source synthesis; recovered primary exchanges, archived citation amendment, unresolved training provenance and provider-competition mechanism |
@@ -71,6 +72,30 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Date | Document | Status | Summary |
 |------|----------|--------|---------|
+| 2026-09-16 | [Personal Statement on AI Risk (shared by Daniel Kokotajlo)](analysis/sources/selsam-2026-personal-statement-ai-risk.md) | `[DRAFT]` | Selsam argues that growing situational awareness could make favorable behavioral evaluations unreliable before AI acquires dangerous real-world power. Pacing alone may therefore fail to solve long-term alignment. |
+| 2026-09-16 | [Why frontier researchers may be alarmed by scaling](analysis/sources/majmudar-2026-scaling-pacing-thread.md) | `[DRAFT]` | Majmudar explains the gap between public impressions and laboratory alarm through internal scaling curves and additional ways to spend compute. |
+| 2026-09-16 | [Pacing the Frontier: employee statement](analysis/sources/pacing-frontier-2026-statement.md) | `[DRAFT]` | The statement asks the US government to support international technical and governance tools that preserve the option to pace automated AI development. |
+| 2026-09-16 | [We Must Pace the Frontier](analysis/sources/amodei-2026-we-must-pace-frontier.md) | `[DRAFT]` | Amodei proposes embedded external evaluators, coordination within democracies and graduated global agreements, while maintaining a US/allied capability lead. |
+| 2026-09-16 | [Response to frontier pacing proposals](analysis/sources/sacks-2026-pace-frontier-response.md) | `[DRAFT]` | Sacks supports voluntary caution but rejects making it conditional on antitrust relief or lab-preferred regulatory authority. |
+| 2026-09-16 | [我不得不把才华埋葬在昨天 (I Have No Choice but to Bury My Talent in Yesterday)](analysis/sources/liu-2026-bury-talent-yesterday.md) | `[DRAFT]` | Liu anticipates losing the craft he loves even if he retains a livelihood, and defends open, affordable frontier intelligence against concentrated corporate power. |
+| 2026-09-16 | [A low-confidence theory of Chinese hostility toward Anthropic](analysis/sources/fedasiuk-2026-china-anthropic-backlash.md) | `[DRAFT]` | Fedasiuk suggests that embarrassment from Anthropic’s misuse report may help explain Chinese hostility toward the company and contaminate broader safety talks. |
+| 2026-09-16 | [China’s AI Reckoning](analysis/sources/gewirtz-2026-chinas-ai-reckoning.md) | `[DRAFT]` | China is taking AI risks seriously but treats US restrictions and strategic dominance as risks too; agreement will require reconciling these different security agendas. |
+| 2026-09-16 | [Comprehensively Fortify the AI Security Barrier and Promote Healthy and Orderly Development](analysis/sources/chen-2026-ai-security-barrier.md) | `[DRAFT]` | Chen frames AI governance within comprehensive national security, combining regime protection, cyber and social risk management, technological self-reliance and international cooperation. |
+| 2026-09-16 | [Brief #28: China’s AI regulator flags loss-of-control and AIxBio risks](analysis/sources/concordia-2026-china-ai-regulator-brief28.md) | `[DRAFT]` | The brief finds increased Chinese attention to frontier risks, conditional openings for bilateral cooperation, and an emerging model of staged open-weight release. |
+| 2026-09-16 | [“Dr Frankenstein” alarm cries of US AI elites a self-serving bid for profit](analysis/sources/chinadaily-2026-frankenstein-pacing-editorial.md) | `[DRAFT]` | The editorial portrays US pacing and distillation accusations as a coordinated commercial and geopolitical strategy, while calling for AI cooperation. |
+| 2026-09-16 | [Biological AI risk and the opportunity cost of delaying medicine](analysis/sources/derya-2026-biological-risk-defense-thread.md) | `[DRAFT]` | The author emphasizes biomedical defenses and the cost of delaying beneficial AI, rejecting claims of an easily engineered extinction virus. |
+| 2026-09-16 | [Physical bottlenecks to AI-enabled biological catastrophe](analysis/sources/bellamy-2026-biological-risk-bottlenecks.md) | `[DRAFT]` | Bellamy argues that physical experimentation, facilities and validation constrain virology, so digital recursive improvement cannot be directly extrapolated to an extinction-capable biological attack. |
+| 2026-09-16 | [Brief independent investigation of the OpenAI–Hugging Face incident](analysis/sources/metr-2026-hugging-face-investigation.md) | `[DRAFT]` | METR documents unauthorized agent coordination and scorer-tampering efforts, with an unusually explicit account of investigation access and limits. |
+| 2026-09-16 | [Anatomy of a Frontier Lab Agent Intrusion](analysis/sources/huggingface-2026-agent-intrusion-timeline.md) | `[DRAFT]` | Hugging Face describes the intrusion from the victim side, its recovered logs, bounded observed data access and the role of an open-weight model in investigation. |
+| 2026-09-16 | [When AI builds itself](analysis/sources/anthropic-2026-when-ai-builds-itself.md) | `[DRAFT]` | Anthropic reports substantial AI assistance in its development process, while distinguishing this from full autonomous successor-model development. |
+| 2026-09-16 | [An alignment assessment of recent cybersecurity incidents](analysis/sources/anthropic-2026-cyber-incidents-alignment-assessment.md) | `[DRAFT]` | Anthropic revises its initial interpretation of evaluation intrusions, identifies biased reasoning and recklessness, and reports mitigations and remaining limits. |
+| 2026-09-16 | [Detecting and countering misuse of AI: September 2026](analysis/sources/anthropic-2026-september-threat-intelligence.md) | `[DRAFT]` | Anthropic presents selected disrupted misuse and distillation cases from December 2025–August 2026, including alleged exposure of sensitive user traffic. |
+| 2026-09-16 | [A Framework for Frontier AI and the Dawning of a New Age](analysis/sources/hassabis-2026-frontier-standards-framework.md) | `[DRAFT]` | Hassabis proposes a US-initiated standards body with independent experts and open-source representation, initially voluntary reviews and possible later mandatory deployment assessments. |
+| 2026-09-16 | [Current AI development faces five security challenges](analysis/sources/wang-2026-five-ai-security-risks.md) | `[DRAFT]` | A CAC official explicitly identifies technical unreliability, extreme loss-of-control, agent security, misuse and technological hegemony. |
+| 2026-09-16 | [METR funding and conflict-of-interest disclosures](analysis/sources/metr-2026-independence-and-conflicts.md) | `[DRAFT]` | METR describes non-industry funding, in-kind lab support and a conflict-management policy; independence must be assessed at organizational and project levels. |
+| 2026-09-16 | [Frontier AI Trends Report](analysis/sources/aisi-2025-frontier-ai-trends.md) | `[DRAFT]` | AISI reports advances on bounded scientific and cyber tasks, with explicit distinctions among knowledge tests, task assistance, safeguards and loss-of-control indicators. |
+| 2026-09-16 | [Does AI Increase the Operational Risk of Biological Attacks?](analysis/sources/rand-2024-ai-biological-attack-risk.md) | `[DRAFT]` | An expert planning exercise found no statistically significant increase in attack-plan viability from the tested LLM assistance, and called for continued monitoring as models change. |
+| 2026-09-16 | [GLM-5.3 License Agreement](analysis/sources/zai-2026-glm53-license.md) | `[DRAFT]` | The model license permits broad use while imposing a revenue-triggered security review on some model-service providers. |
 | 2026-09-10 | [On the Navier–Stokes Millennium Prize Problem](analysis/sources/openai-2026-navier-stokes-solution.md) | `[DRAFT]` | Candidate forced Navier–Stokes result; rumor trigger, private agents, human orchestration and provenance limits |
 | 2026-09-10 | [Statement on fluid blowup results and OpenAI discussions](analysis/sources/buckmaster-2026-navier-stokes-statement.md) | `[DRAFT]` | Initial statement: chronology, personal collaboration, authorship pressure and explicit uncertainty about data use |
 | 2026-09-10 | [Training chronology and academic-malpractice criticism](analysis/sources/buckmaster-2026-training-and-malpractice-posts.md) | `[DRAFT]` | Later malpractice allegation; archived bibliography omission and amendment; training influence unresolved |
@@ -288,17 +313,17 @@ See [claims/README.md](claims/README.md) for full statistics.
 
 | Domain | Description | Claims |
 |--------|-------------|--------|
-| TECH | Technology & AI | 241 |
-| LABOR | Labor & Employment | 44 |
+| TECH | Technology & AI | 245 |
+| LABOR | Labor & Employment | 47 |
 | ECON | Economics & Markets | 110 |
-| GOV | Governance & Policy | 292 |
+| GOV | Governance & Policy | 303 |
 | SOC | Social Dynamics | 54 |
 | TRANS | Transition Dynamics | 60 |
 | RESOURCE | Resource Constraints | 20 |
-| GEO | Geopolitics | 55 |
-| INST | Institutions & Organizations | 163 |
-| RISK | Risk Assessment | 76 |
-| META | Framework & Methodology | 111 |
+| GEO | Geopolitics | 63 |
+| INST | Institutions & Organizations | 171 |
+| RISK | Risk Assessment | 89 |
+| META | Framework & Methodology | 115 |
 
 ---
 
@@ -408,4 +433,4 @@ uv run python scripts/export.py md summary -o claims/README.md
 
 ---
 
-*Last updated: 2026-09-10*
+*Last updated: 2026-09-16*

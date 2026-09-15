@@ -1,0 +1,770 @@
+[
+  [
+    "Read the Frontier AI Trends Report",
+    "/frontier-ai-trends-report"
+  ],
+  [
+    "",
+    "/"
+  ],
+  [
+    "Careers",
+    "/careers"
+  ],
+  [
+    "",
+    "/"
+  ],
+  [
+    "Frontier AI Trends Report",
+    "/frontier-ai-trends-report"
+  ],
+  [
+    "Research Agenda",
+    "/research-agenda"
+  ],
+  [
+    "When Do LLM Preferences Predict Downstream Behavior?",
+    "/research/when-do-llm-preferences-predict-downstream-behavior"
+  ],
+  [
+    "Human Influence",
+    "/category/human-influence"
+  ],
+  [
+    "Read research",
+    "/research/when-do-llm-preferences-predict-downstream-behavior"
+  ],
+  [
+    "Knowing When to Stop: Bayesian Optimal Stopping for LLM Evaluations",
+    "/research/knowing-when-to-stop-bayesian-optimal-stopping-for-llm-evaluations"
+  ],
+  [
+    "Science of Evaluations",
+    "/category/science-of-evaluations"
+  ],
+  [
+    "Read research",
+    "/research/knowing-when-to-stop-bayesian-optimal-stopping-for-llm-evaluations"
+  ],
+  [
+    "Item Response Theory for AI Safety",
+    "/research/item-response-theory-for-ai-safety"
+  ],
+  [
+    "Alignment",
+    "/category/alignment"
+  ],
+  [
+    "Read research",
+    "/research/item-response-theory-for-ai-safety"
+  ],
+  [
+    "Multi-Agent AI Control: Distributed Attacks Hamper Per-Instance Monitors",
+    "/research/multi-agent-ai-control-distributed-attacks-hamper-per-instance-monitors"
+  ],
+  [
+    "Control",
+    "/category/control"
+  ],
+  [
+    "Read research",
+    "/research/multi-agent-ai-control-distributed-attacks-hamper-per-instance-monitors"
+  ],
+  [
+    "\"Did you lie?\": Evaluating Lie Detectors across Model Scale and Belief-Verified Model Organisms",
+    "/research/did-you-lie-evaluating-lie-detectors-across-model-scale-and-belief-verified-model-organisms"
+  ],
+  [
+    "Control",
+    "/category/control"
+  ],
+  [
+    "Read research",
+    "/research/did-you-lie-evaluating-lie-detectors-across-model-scale-and-belief-verified-model-organisms"
+  ],
+  [
+    "Prefill Awareness in Large Language Models",
+    "/research/prefill-awareness-in-large-language-models"
+  ],
+  [
+    "Alignment",
+    "/category/alignment"
+  ],
+  [
+    "Read research",
+    "/research/prefill-awareness-in-large-language-models"
+  ],
+  [
+    "RealityTest: How People Probe AI Identity and Whether Models Disclose It",
+    "/research/realitytest-how-people-probe-ai-identity-and-whether-models-disclose-it"
+  ],
+  [
+    "Human Influence",
+    "/category/human-influence"
+  ],
+  [
+    "Read research",
+    "/research/realitytest-how-people-probe-ai-identity-and-whether-models-disclose-it"
+  ],
+  [
+    "Consistency Training Can Entrench Misalignment",
+    "/research/consistency-training-can-entrench-misalignment"
+  ],
+  [
+    "Alignment",
+    "/category/alignment"
+  ],
+  [
+    "Read research",
+    "/research/consistency-training-can-entrench-misalignment"
+  ],
+  [
+    "AI alignment is a human problem",
+    "/research/ai-alignment-is-a-human-problem"
+  ],
+  [
+    "Alignment",
+    "/category/alignment"
+  ],
+  [
+    "Read research",
+    "/research/ai-alignment-is-a-human-problem"
+  ],
+  [
+    "Loss of Oversight: How AI systems may become harder to audit, monitor, and investigate",
+    "/research/loss-of-oversight-how-ai-systems-may-become-harder-to-audit-monitor-and-investigate"
+  ],
+  [
+    "Model Transparency",
+    "/category/model-transparency"
+  ],
+  [
+    "Read research",
+    "/research/loss-of-oversight-how-ai-systems-may-become-harder-to-audit-monitor-and-investigate"
+  ],
+  [
+    "Automated alignment is harder than you think",
+    "/research/automated-alignment-is-harder-than-you-think"
+  ],
+  [
+    "Alignment",
+    "/category/alignment"
+  ],
+  [
+    "Read research",
+    "/research/automated-alignment-is-harder-than-you-think"
+  ],
+  [
+    "A Decision-Theoretic Formalisation of Steganography With Applications to LLM Monitoring",
+    "/research/a-decision-theoretic-formalisation-of-steganography-with-applications-to-llm-monitoring"
+  ],
+  [
+    "Alignment",
+    "/category/alignment"
+  ],
+  [
+    "Read research",
+    "/research/a-decision-theoretic-formalisation-of-steganography-with-applications-to-llm-monitoring"
+  ],
+  [
+    "Ask don't tell: Reducing sycophancy in large language models",
+    "/research/ask-dont-tell-reducing-sycophancy-in-large-language-models"
+  ],
+  [
+    "Human Influence",
+    "/category/human-influence"
+  ],
+  [
+    "Read research",
+    "/research/ask-dont-tell-reducing-sycophancy-in-large-language-models"
+  ],
+  [
+    "Evaluating whether AI models would sabotage AI safety research",
+    "/research/evaluating-whether-ai-models-would-sabotage-ai-safety-research"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/evaluating-whether-ai-models-would-sabotage-ai-safety-research"
+  ],
+  [
+    "Propensity Inference: Environmental Contributors to LLM Behaviour",
+    "/research/propensity-inference-environmental-contributors-to-llm-behaviour"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/propensity-inference-environmental-contributors-to-llm-behaviour"
+  ],
+  [
+    "Infusion: Shaping model behaviour by editing training data via influence functions",
+    "/research/infusion-shaping-model-behaviour-by-editing-training-data-via-influence-functions"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/infusion-shaping-model-behaviour-by-editing-training-data-via-influence-functions"
+  ],
+  [
+    "How are AI agents used? Evidence from 177,000 MCP tools",
+    "/research/how-are-ai-agents-used-evidence-from-177-000-mcp-tools"
+  ],
+  [
+    "Societal Resilience",
+    "/category/societal-resilience"
+  ],
+  [
+    "Read research",
+    "/research/how-are-ai-agents-used-evidence-from-177-000-mcp-tools"
+  ],
+  [
+    "Quantifying Frontier LLM Capabilities for Container Sandbox Escape",
+    "/research/quantifying-frontier-llm-capabilities-for-container-sandbox-escape"
+  ],
+  [
+    "Engineering",
+    "/category/engineering"
+  ],
+  [
+    "Read research",
+    "/research/quantifying-frontier-llm-capabilities-for-container-sandbox-escape"
+  ],
+  [
+    "Measuring AI Agents’ Progress on Multi-Step Cyber Attack Scenarios",
+    "/research/measuring-ai-agents-progress-on-multi-step-cyber-attack-scenarios"
+  ],
+  [
+    "Cyber & Autonomous Systems",
+    "/category/cyber"
+  ],
+  [
+    "Read research",
+    "/research/measuring-ai-agents-progress-on-multi-step-cyber-attack-scenarios"
+  ],
+  [
+    "A multi-turn framework for evaluating AI misuse in fraud and cybercrime scenarios",
+    "/research/a-multi-turn-framework-for-evaluating-ai-misuse-in-fraud-and-cybercrime-scenarios"
+  ],
+  [
+    "Societal Resilience",
+    "/category/societal-resilience"
+  ],
+  [
+    "Read research",
+    "/research/a-multi-turn-framework-for-evaluating-ai-misuse-in-fraud-and-cybercrime-scenarios"
+  ],
+  [
+    "Seven simple steps for log analysis in AI systems",
+    "/research/seven-simple-steps-for-log-analysis-in-ai-systems"
+  ],
+  [
+    "Science of Evaluations",
+    "/category/science-of-evaluations"
+  ],
+  [
+    "Read research",
+    "/research/seven-simple-steps-for-log-analysis-in-ai-systems"
+  ],
+  [
+    "Boundary Point Jailbreaking of Black-Box LLMs",
+    "/research/boundary-point-jailbreaking-of-black-box-llms"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/boundary-point-jailbreaking-of-black-box-llms"
+  ],
+  [
+    "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment",
+    "/research/alignment-pretraining-ai-discourse-causes-self-fulfilling-mis-alignment"
+  ],
+  [
+    "Alignment",
+    "/category/alignment"
+  ],
+  [
+    "Read research",
+    "/research/alignment-pretraining-ai-discourse-causes-self-fulfilling-mis-alignment"
+  ],
+  [
+    "AISI Frontier AI Trends Report (2025)",
+    "/research/aisi-frontier-ai-trends-report-2025"
+  ],
+  [
+    "Organisation",
+    "/category/organisation"
+  ],
+  [
+    "Read research",
+    "/research/aisi-frontier-ai-trends-report-2025"
+  ],
+  [
+    "Practical challenges of control monitoring in frontier AI deployments",
+    "/research/practical-challenges-of-control-monitoring-in-frontier-ai-deployments"
+  ],
+  [
+    "Control",
+    "/category/control"
+  ],
+  [
+    "Read research",
+    "/research/practical-challenges-of-control-monitoring-in-frontier-ai-deployments"
+  ],
+  [
+    "Async control: Stress-testing asynchronous control measures for LLM agents",
+    "/research/async-control-stress-testing-asynchronous-control-measures-for-llm-agents"
+  ],
+  [
+    "Control",
+    "/category/control"
+  ],
+  [
+    "Read research",
+    "/research/async-control-stress-testing-asynchronous-control-measures-for-llm-agents"
+  ],
+  [
+    "Does self-evaluation enable wireheading in language models?",
+    "/research/does-self-evaluation-enable-wireheading-in-language-models"
+  ],
+  [
+    "Alignment",
+    "/category/alignment"
+  ],
+  [
+    "Read research",
+    "/research/does-self-evaluation-enable-wireheading-in-language-models"
+  ],
+  [
+    "UK AISI Alignment Evaluation Case-Study",
+    "/research/uk-aisi-alignment-evaluation-case-study"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/uk-aisi-alignment-evaluation-case-study"
+  ],
+  [
+    "Open technical problems in open-weight AI model risk management",
+    "/research/open-technical-problems-in-open-weight-ai-model-risk-management"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/open-technical-problems-in-open-weight-ai-model-risk-management"
+  ],
+  [
+    "Breaking agent backbones: Evaluating the security of backbone LLMs in AI agents",
+    "/research/breaking-agent-backbones-evaluating-the-security-of-backbone-llms-in-ai-agents"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/breaking-agent-backbones-evaluating-the-security-of-backbone-llms-in-ai-agents"
+  ],
+  [
+    "Understanding AI Trajectories: Mapping the Limitations of Current AI Systems",
+    "/research/understanding-ai-trajectories-mapping-the-limitations-of-current-ai-systems"
+  ],
+  [
+    "Strategic Awareness",
+    "/category/strategic-awareness"
+  ],
+  [
+    "Read research",
+    "/research/understanding-ai-trajectories-mapping-the-limitations-of-current-ai-systems"
+  ],
+  [
+    "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples",
+    "/research/poisoning-attacks-on-llms-require-a-near-constant-number-of-poison-samples"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/poisoning-attacks-on-llms-require-a-near-constant-number-of-poison-samples"
+  ],
+  [
+    "Inoculation Prompting: Eliciting traits from LLMs during training can suppress them at test-time",
+    "/research/inoculation-prompting-eliciting-traits-from-llms-during-training-can-suppress-them-at-test-time"
+  ],
+  [
+    "Alignment",
+    "/category/alignment"
+  ],
+  [
+    "Read research",
+    "/research/inoculation-prompting-eliciting-traits-from-llms-during-training-can-suppress-them-at-test-time"
+  ],
+  [
+    "Conversational AI increases political knowledge as effectively as self-directed internet search",
+    "/research/conversational-ai-increases-political-knowledge-as-effectively-as-self-directed-internet-search"
+  ],
+  [
+    "Human Influence",
+    "/category/human-influence"
+  ],
+  [
+    "Read research",
+    "/research/conversational-ai-increases-political-knowledge-as-effectively-as-self-directed-internet-search"
+  ],
+  [
+    "Lessons from studying two-hop latent reasoning",
+    "/research/lessons-from-studying-two-hop-latent-reasoning"
+  ],
+  [
+    "Control",
+    "/category/control"
+  ],
+  [
+    "Read research",
+    "/research/lessons-from-studying-two-hop-latent-reasoning"
+  ],
+  [
+    "Deep ignorance: Filtering pretraining data builds tamper-resistant safeguards into open-weight LLMs",
+    "/research/deep-ignorance-filtering-pretraining-data-builds-tamper-resistant-safeguards-into-open-weight-llms"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/deep-ignorance-filtering-pretraining-data-builds-tamper-resistant-safeguards-into-open-weight-llms"
+  ],
+  [
+    "Security challenges in AI agent deployment: Insights from a large scale public competition",
+    "/research/security-challenges-in-ai-agent-deployment-insights-from-a-large-scale-public-competition"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/security-challenges-in-ai-agent-deployment-insights-from-a-large-scale-public-competition"
+  ],
+  [
+    "STACK: Adversarial attacks on LLM safeguard pipelines",
+    "/research/stack-adversarial-attacks-on-llm-safeguard-pipelines"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/stack-adversarial-attacks-on-llm-safeguard-pipelines"
+  ],
+  [
+    "The levers of political persuasion with conversational AI",
+    "/research/the-levers-of-political-persuasion-with-conversational-ai"
+  ],
+  [
+    "Human Influence",
+    "/category/human-influence"
+  ],
+  [
+    "Read research",
+    "/research/the-levers-of-political-persuasion-with-conversational-ai"
+  ],
+  [
+    "Chain of thought monitorability: A new and fragile opportunity for AI safety",
+    "/research/chain-of-thought-monitorability-a-new-and-fragile-opportunity-for-ai-safety"
+  ],
+  [
+    "Control",
+    "/category/control"
+  ],
+  [
+    "Read research",
+    "/research/chain-of-thought-monitorability-a-new-and-fragile-opportunity-for-ai-safety"
+  ],
+  [
+    "HiBayES: A hierarchical bayesian modelling framework for AI evaluation statistics",
+    "/research/hibayes-a-hierarchical-bayesian-modeling-framework-for-ai-evaluation-statistics"
+  ],
+  [
+    "Science of Evaluations",
+    "/category/science-of-evaluations"
+  ],
+  [
+    "Read research",
+    "/research/hibayes-a-hierarchical-bayesian-modeling-framework-for-ai-evaluation-statistics"
+  ],
+  [
+    "White Box Control at UK AISI - Update on sandbagging investigations",
+    "/research/white-box-control-at-uk-aisi---update-on-sandbagging-investigations"
+  ],
+  [
+    "Control",
+    "/category/control"
+  ],
+  [
+    "Read research",
+    "/research/white-box-control-at-uk-aisi---update-on-sandbagging-investigations"
+  ],
+  [
+    "Skewed Score: A statistical framework to assess autograders",
+    "/research/skewed-score-a-statistical-framework-to-assess-autograders"
+  ],
+  [
+    "Science of Evaluations",
+    "/category/science-of-evaluations"
+  ],
+  [
+    "Read research",
+    "/research/skewed-score-a-statistical-framework-to-assess-autograders"
+  ],
+  [
+    "Lessons from a chimp: AI \"scheming\" and the quest for ape language",
+    "/research/lessons-from-a-chimp-ai-scheming-and-the-quest-for-ape-language"
+  ],
+  [
+    "Science of Evaluations",
+    "/category/science-of-evaluations"
+  ],
+  [
+    "Read research",
+    "/research/lessons-from-a-chimp-ai-scheming-and-the-quest-for-ape-language"
+  ],
+  [
+    "Avoiding obfuscation with prover-estimator debate",
+    "/research/avoiding-obfuscation-with-prover-estimator-debate"
+  ],
+  [
+    "Alignment",
+    "/category/alignment"
+  ],
+  [
+    "Read research",
+    "/research/avoiding-obfuscation-with-prover-estimator-debate"
+  ],
+  [
+    "An example safety case for safeguards against misuse",
+    "/research/an-example-safety-case-for-safeguards-against-misuse"
+  ],
+  [
+    "Safety Cases",
+    "/category/safety-cases"
+  ],
+  [
+    "Read research",
+    "/research/an-example-safety-case-for-safeguards-against-misuse"
+  ],
+  [
+    "Existing Large Language Model unlearning evaluations are inconclusive",
+    "/research/existing-large-language-model-unlearning-evaluations-are-inconclusive"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/existing-large-language-model-unlearning-evaluations-are-inconclusive"
+  ],
+  [
+    "RepliBench: Evaluating the autonomous replication capabilities of language model agents",
+    "/research/replibench-evaluating-the-autonomous-replication-capabilities-of-language-model-agents"
+  ],
+  [
+    "Cyber & Autonomous Systems",
+    "/category/cyber"
+  ],
+  [
+    "Read research",
+    "/research/replibench-evaluating-the-autonomous-replication-capabilities-of-language-model-agents"
+  ],
+  [
+    "How to evaluate control measures for LLM agents? A trajectory from today to superintelligence",
+    "/research/how-to-evaluate-control-measures-for-llm-agents-a-trajectory-from-today-to-superintelligence"
+  ],
+  [
+    "Control",
+    "/category/control"
+  ],
+  [
+    "Read research",
+    "/research/how-to-evaluate-control-measures-for-llm-agents-a-trajectory-from-today-to-superintelligence"
+  ],
+  [
+    "An alignment safety case sketch based on debate",
+    "/research/an-alignment-safety-case-sketch-based-on-debate"
+  ],
+  [
+    "Safety Cases",
+    "/category/safety-cases"
+  ],
+  [
+    "Read research",
+    "/research/an-alignment-safety-case-sketch-based-on-debate"
+  ],
+  [
+    "Evaluating explanations: An explanatory virtues framework for mechanistic interpretability",
+    "/research/evaluating-explanations-an-explanatory-virtues-framework-for-mechanistic-interpretability"
+  ],
+  [
+    "Control",
+    "/category/control"
+  ],
+  [
+    "Read research",
+    "/research/evaluating-explanations-an-explanatory-virtues-framework-for-mechanistic-interpretability"
+  ],
+  [
+    "A mathematical philosophy of explanations in mechanistic interpretability",
+    "/research/a-mathematical-philosophy-of-explanations-in-mechanistic-interpretability"
+  ],
+  [
+    "Control",
+    "/category/control"
+  ],
+  [
+    "Read research",
+    "/research/a-mathematical-philosophy-of-explanations-in-mechanistic-interpretability"
+  ],
+  [
+    "Adversarial machine learning: A taxonomy and terminology of attacks and mitigations",
+    "/research/adversarial-machine-learning-a-taxonomy-and-terminology-of-attacks-and-mitigations"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/adversarial-machine-learning-a-taxonomy-and-terminology-of-attacks-and-mitigations"
+  ],
+  [
+    "Model tampering attacks enable more rigorous evaluations of LLM capabilities",
+    "/research/model-tampering-attacks-enable-more-rigorous-evaluations-of-llm-capabilities-2"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/model-tampering-attacks-enable-more-rigorous-evaluations-of-llm-capabilities-2"
+  ],
+  [
+    "Fundamental limitations in defending LLM finetuning APIs",
+    "/research/fundamental-limitations-in-defending-llm-finetuning-apis-2"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/fundamental-limitations-in-defending-llm-finetuning-apis-2"
+  ],
+  [
+    "Safety Cases: A scalable approach to Frontier AI safety",
+    "/research/safety-cases-a-scalable-approach-to-frontier-ai-safety"
+  ],
+  [
+    "Safety Cases",
+    "/category/safety-cases"
+  ],
+  [
+    "Read research",
+    "/research/safety-cases-a-scalable-approach-to-frontier-ai-safety"
+  ],
+  [
+    "Emerging practices in frontier AI safety frameworks",
+    "/research/emerging-practices-in-frontier-ai-safety-frameworks"
+  ],
+  [
+    "",
+    "#"
+  ],
+  [
+    "Read research",
+    "/research/emerging-practices-in-frontier-ai-safety-frameworks"
+  ],
+  [
+    "Why human-AI relationships need socioaffective alignment",
+    "/research/why-human-ai-relationships-need-socioaffective-alignment-2"
+  ],
+  [
+    "Societal Resilience",
+    "/category/societal-resilience"
+  ],
+  [
+    "Read research",
+    "/research/why-human-ai-relationships-need-socioaffective-alignment-2"
+  ],
+  [
+    "Principles for evaluating misuse safeguards of frontier AI systems",
+    "/research/principles-for-evaluating-misuse-safeguards-of-frontier-ai-systems"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/principles-for-evaluating-misuse-safeguards-of-frontier-ai-systems"
+  ],
+  [
+    "A sketch of an AI control safety case",
+    "/research/a-sketch-of-an-ai-control-safety-case"
+  ],
+  [
+    "Safety Cases",
+    "/category/safety-cases"
+  ],
+  [
+    "Read research",
+    "/research/a-sketch-of-an-ai-control-safety-case"
+  ],
+  [
+    "Safety case template for frontier AI: A cyber inability argument",
+    "/research/safety-case-template-for-frontier-ai-a-cyber-inability-argument-2"
+  ],
+  [
+    "Safety Cases",
+    "/category/safety-cases"
+  ],
+  [
+    "Read research",
+    "/research/safety-case-template-for-frontier-ai-a-cyber-inability-argument-2"
+  ],
+  [
+    "AgentHarm: A benchmark for measuring harmfulness of LLM agents",
+    "/research/agentharm-a-benchmark-for-measuring-harmfulness-of-llm-agents"
+  ],
+  [
+    "Red Team",
+    "/category/safeguards"
+  ],
+  [
+    "Read research",
+    "/research/agentharm-a-benchmark-for-measuring-harmfulness-of-llm-agents"
+  ]
+]

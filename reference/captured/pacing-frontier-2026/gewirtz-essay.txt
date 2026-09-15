@@ -1,0 +1,86 @@
+China’s AI Reckoning - Paper Tiger by Julian Gewirtz
+China’s AI Reckoning
+Plus: Xi’s India visit and why American businesses are feeling better about China
+Paper Tiger by Julian Gewirtz
+Sep 14, 2026
+12
+3
+Share
+Welcome to Paper Tiger.
+Three consequential stories and a cultural or historical discovery on Mondays, plus occasional essays connecting today’s headlines to the history behind them.
+Know someone who’d enjoy Paper Tiger? Forward them this edition.
+Share
+China’s AI Reckoning—For Real?
+: There’s been an explosion of American concern about AI risk in recent days and remarkable statements from AI leaders about the need to “pace the frontier,” with Dario Amodei’s
+essay
+quickly followed by endorsements from Sam Altman, Elon Musk, and others. Altman also
+said
+Trump and Xi would win the Nobel Peace Prize if they can forge AI cooperation when they meet later this month: “
+I don’t think this is hard,” he said. “This is like a one-page document.
+”
+Altman is wrong. This dialogue
+will
+be “hard.”
+The key reason is that the two sides see serious risks not only from AI but also from each other.
+Beijing is going through its own less-noticed reckoning with AI risks, one with some similarities to America’s—and many differences.
+In a newly-published essay on AI, Minister of State Security
+Chen Yixin
+said his top concern was regime security, because “various hostile forces and people with ulterior motives are abusing generative AI… carrying out public-opinion warfare and cognitive warfare against us.” He also noted severe cyber threats (citing Mythos and GPT-5.5-Cyber by name), espionage risks, challenges to social stability, and the impact on warfare.
+A senior official from the Cyberspace Administration of China, China’s key AI regulator, also recently highlighted the risk of "extreme loss of
+control
+" scenarios.
+This is promising from an AI safety perspective, because it suggests that Beijing is considering, on its own terms, ways to regulate frontier AI.
+Yet Chen also had another risk top of mind in his essay: the United States
+. He criticized the use of “entity lists, technology controls, monopolization of industry standards and closed-source ecosystems to strictly restrict relevant countries...” Beijing appears acutely worried that Washington will decide the most effective way to “pace the frontier” in China is to tighten export controls on chips and equipment and to crack down on unauthorized distillation, as Amodei advocates.
+For China, American policies are an “AI risk” on par with deepfakes or cyberattacks.
+So far,
+Beijing is publicly interpreting new calls for an AI slowdown as largely about slowing China down, as
+discussed
+last week.
+On Monday, a Foreign Ministry spokesperson
+responded
+to Amodei’s essay with strong criticism of “fear-mongering, confrontation, and vicious competition.” The state-run
+Global Times
+noted
+that “Amodei mentioned China 12 times and hyped the so-called ‘security threat’ posed by China’s AI development while calling for restrictions on the country,” calling such claims “driven by commercial interests and competitive concerns.”
+This isn’t just about Anthropic.
+Beijing has repeatedly attacked
+Anthropic
+as emblematic of the broader problems it sees in American AI. Last month, a state media commentary emphasized that the framing of AI safety and security needs to be resolved in a “reasonable way”—meaning on terms acceptable to both sides—or else U.S.-China negotiations will be “meaningless.” AI diplomacy is ramping up at the same time that AI rivalry
+escalates
+—and the two sides are far from common understandings around AI, even as both take the risks more seriously.
+Sam Altman’s interview with
+Fortune
+.
+Xi Jinping Goes to India
+: On September 12-13, Xi made his first visit to India in seven years to attend a BRICS summit. Prime Minister Modi posted an unmistakably warm photo holding hands and beaming with Xi and Putin. BRICS continues to struggle to be more than just a photo op,
+but
+the chummy optics are useful to all three leaders, sending a clear signal of solidarity to Trump as Xi prepares to visit Washington.
+Perhaps the most interesting element of the summit, from a China-watcher perspective, was the lack of any public bilateral meeting between Xi and Iranian president Pezeshkian. At the recent Shanghai Cooperation Organization summit in Bishkek, Xi and Pezeshkian spoke briefly on the margins, standing as they exchanged words for only “several minutes,” as Iranian state media admitted. Now at BRICS there was no reported bilateral between the leaders, even as Xi discussed the war throughout his visit. Ahead of Xi’s meeting with Trump, where China’s relationship with Iran will be an important area of focus, this suggests
+a degree of public political distancing at the very top, though not broader economic or strategic disengagement.
+American Businesses Feeling Better about China?
+: A new survey from the American Chamber of Commerce in Shanghai
+found
+that five-year optimism rose seventeen percentage points to 58%, the highest level in years. AmCham Shanghai chairman Jeffrey Lehman attributed much of the improved sentiment to reassurance from the May Trump–Xi summit, but it was also likely helped by the fact that 78% of respondents reported profitable China operations in 2025. Yet in the same survey there are signs of far less optimistic news for American businesses, as domestic competition overtook bilateral tensions as the leading business concern. It’s a reminder that diplomatic stabilization can improve operating conditions while Chinese firms keep becoming more significant competitors and problematic domestic policies remains largely unchanged. Put another way, the commercial benefits of calmer relations are real, but they do not come close to resolving the underlying competitive challenges.
+One Last Thing
+As the United States commemorated the 25th anniversary of September 11, I thought back to the moment in history when Jiang Zemin reached out to George W. Bush in the heat of the crisis in 2001. The full story, drawn from my book in progress, is here:
+Julian Gewirtz
+@JulianGewirtz
+On the night of September 11, 2001, China’s leaders faced a decision: how to respond to catastrophe in a country they deeply distrusted.
+
+Their response helped change the course of U.S.–China relations.
+
+That night Vice Foreign Minister Li Zhaoxing went to the symphony to hear a …
+2:15 PM · Sep 10, 2026
+·
+169K Views
+26 Replies
+·
+104 Reposts
+·
+599 Likes
+Thanks for reading! Subscribe for free to receive new posts and support my work.
+Subscribe
+12
+3
+Share

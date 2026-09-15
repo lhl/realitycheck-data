@@ -1,0 +1,382 @@
+[
+  {
+    "file": "0.html",
+    "bytes": 50216,
+    "sha256": "312b2214c9ab2327c1815c184cdae00b7b84ddc4280d975fa5a91c8598c1702f"
+  },
+  {
+    "file": "1.html",
+    "bytes": 83559,
+    "sha256": "7ea5d91e4f113c5ad54c306c8addd3121e78ef1741eea8182b3d2c82cd5d5748"
+  },
+  {
+    "file": "2.html",
+    "bytes": 256447,
+    "sha256": "9e2f0ff99ee5d8fa373863d0d33cde581327eb70da2cb26e59bcbc5d926b321e"
+  },
+  {
+    "file": "3.html",
+    "bytes": 59871,
+    "sha256": "62b8af679fe10e5edbfe9c7e9a2e42904a16b164fe2fb27c47fa76d005ba3a65"
+  },
+  {
+    "file": "4.html",
+    "bytes": 51443,
+    "sha256": "19ea5d59edceda805fbbe321227406d6516479e371f3eff36363ffcfe09febcf"
+  },
+  {
+    "file": "5.html",
+    "bytes": 105295,
+    "sha256": "3e489e36e090ec01ecef5d6d92948e6c70e8a513ade5c6ad0ad4e84d9c45472b"
+  },
+  {
+    "file": "6.html",
+    "bytes": 52903,
+    "sha256": "c8fdebdb7f66af280270b2406b8e7af06b443c5262c0d4b294566ed39ebf5b0f"
+  },
+  {
+    "file": "7.html",
+    "bytes": 59051,
+    "sha256": "de454faa8d3f173ab5e2486af98d4416b21d0937645e5631eca5b57063403a3b"
+  },
+  {
+    "file": "aisi-research.html",
+    "bytes": 98680,
+    "sha256": "bc7ee931160a74f4f51dbd44730963f1cfa5f995b833dccec4271245f2a01e9a"
+  },
+  {
+    "file": "aisi.html",
+    "bytes": 119279,
+    "sha256": "ada8492d056245e9f3f25622a60e56a6dc94dcbe7021ee31fdbe5734e64aca44"
+  },
+  {
+    "file": "archive-jina.html",
+    "bytes": 749,
+    "sha256": "c1c9994e8165fe5cf8248e4fa119a8229171b19c7d4da13b7f6c402928e22f03"
+  },
+  {
+    "file": "archive-ph.html",
+    "bytes": 59051,
+    "sha256": "2cd4a311f1a00a925f16059f94bfeab874a7933bc7bc495c5d22d723ff46b2fc"
+  },
+  {
+    "file": "assessment.html",
+    "bytes": 504701,
+    "sha256": "6c8af37c629c6bac12b43f82925ba31df5ef997a54fd0134267ce2e00d5a2419"
+  },
+  {
+    "file": "bellamy-x.html",
+    "bytes": 387158,
+    "sha256": "deece7059158f26c17ed6213a1cea1385d3b71cf7082828236d23f0730a72411"
+  },
+  {
+    "file": "bio-a.html",
+    "bytes": 85839,
+    "sha256": "6423dc4aee3495dc8dc58bc63a5bf1622ce7c6cb8d9ac7045f5e5091c1dc322b"
+  },
+  {
+    "file": "bio-b.html",
+    "bytes": 39881,
+    "sha256": "76114d28a7435a27c4c3aa4b1356bfd9358c3a57ec337d28737a344e1b284e46"
+  },
+  {
+    "file": "bio-search-rand.html",
+    "bytes": 122959,
+    "sha256": "5e325f50583def401c442b14ab1377b74435e58de3991909348f481734e51b4d"
+  },
+  {
+    "file": "bio-search-uplift.html",
+    "bytes": 120701,
+    "sha256": "3293cea369b32f92eda2369e8f7b231b6a69c7a5ce103c14badc9738d6651c2d"
+  },
+  {
+    "file": "chen-cac.html",
+    "bytes": 6956,
+    "sha256": "d9d7b1876b5f5719a9912d5be5e36280bbfa802eadc8bd801080016687d38b95"
+  },
+  {
+    "file": "chen-jina.html",
+    "bytes": 29637,
+    "sha256": "3545965718d5a33d5cac44e7505a0412e253bb5a24552be6ece40397f58c4602"
+  },
+  {
+    "file": "chen-search-exact.html",
+    "bytes": 118030,
+    "sha256": "a27fb75b8609bc4527d81a57cb2298d4c90deb248094e0f8bda89e7e7cc7ebdc"
+  },
+  {
+    "file": "chen-search-jina.html",
+    "bytes": 952,
+    "sha256": "e41a64f5c098fc330fac4e8f1c93005b481058de8fb69ffae349c82bb46599bd"
+  },
+  {
+    "file": "chen-translation.html",
+    "bytes": 20036,
+    "sha256": "fb0752f6c6985769433bbd8fef1b1ce15c406be730d6ec506390b69457ddcb83"
+  },
+  {
+    "file": "china-brief.html",
+    "bytes": 203162,
+    "sha256": "1eab95bae38720de786cc8b6875b114a849db4bef5e4572d3b422933dba30505"
+  },
+  {
+    "file": "chinadaily.html",
+    "bytes": 53668,
+    "sha256": "e22b2a6f8ea30555f99ba5b027ed07dbb222dbe0d9b4558e716c21fc555e5ee9"
+  },
+  {
+    "file": "company-search-share.html",
+    "bytes": 118442,
+    "sha256": "ca7013aca6dcd12d07c5bcb93a73defafb4e52c6ee155bb675b10029d6a0fae4"
+  },
+  {
+    "file": "derya-x.html",
+    "bytes": 263597,
+    "sha256": "028800b3a0b274e22a353f97d20861037fd272770b2ef15df1fd7e579183fce7"
+  },
+  {
+    "file": "fedasiuk-context.html",
+    "bytes": 17488,
+    "sha256": "8487352eeab69149eec080d14b18df4b645500344e3033e141832ecde4be9f0a"
+  },
+  {
+    "file": "fedasiuk-x.html",
+    "bytes": 301140,
+    "sha256": "2ab6ba643836de3915784c043f9bd7953036cb2efbe06a4bb8849f037310b17a"
+  },
+  {
+    "file": "gewirtz-essay.html",
+    "bytes": 162067,
+    "sha256": "fc9403d88d00a6447e9ac33ee752096108456b21c8fb2488606ce91a191b66d5"
+  },
+  {
+    "file": "gewirtz.html",
+    "bytes": 17488,
+    "sha256": "f2b7d84c42811b0123a3af3a5a63ef82692537d13fef351d298d3fc6857e8cb1"
+  },
+  {
+    "file": "hassabis.html",
+    "bytes": 121120,
+    "sha256": "18ad82dd9ef8c0faaa0181d1ff0744acfd081539448d8de69b5138b8aa1e7d33"
+  },
+  {
+    "file": "hf.html",
+    "bytes": 720221,
+    "sha256": "6c1032e9324071941432f6c79400d10555035d0186d97379f2ad346225f4535f"
+  },
+  {
+    "file": "incidents.html",
+    "bytes": 205912,
+    "sha256": "bbd9c83954334ea73af25edd87cafce9c7e67c6362ce51a364fb5fe33fdad2d6"
+  },
+  {
+    "file": "kokotajlo-x.html",
+    "bytes": 312706,
+    "sha256": "de3ec5d485635b2de32f5b87f23bda9bc72904beef668e35f010fa319e88ab3a"
+  },
+  {
+    "file": "liu-original-jina.html",
+    "bytes": 9336,
+    "sha256": "c31d00eac78f3aebbe4d08d6cfd46e0bcb90ac42d01e5dd8f1fd5fe43ce09cd2"
+  },
+  {
+    "file": "liu-original.html",
+    "bytes": 18164,
+    "sha256": "b0ee0b6001bd91b780d76adc007c7af892efa5e5df9a65b0a9183ee9368cfbba"
+  },
+  {
+    "file": "liu-x.html",
+    "bytes": 237016,
+    "sha256": "231440307b73dfe5f1afef66079c7323f33a9b908555aa69310f30222e3cc862"
+  },
+  {
+    "file": "majmudar-x.html",
+    "bytes": 235562,
+    "sha256": "faca9a235b2d243b57a00e5106011f9626fdbd64265b5160cac629edfa949ccf"
+  },
+  {
+    "file": "metr-about.html",
+    "bytes": 92522,
+    "sha256": "a03b6bcdf177fdebccd47cc9595211a2b1e3ff12a7e70e81ced028c9ca18de99"
+  },
+  {
+    "file": "metr-coi.html",
+    "bytes": 172769,
+    "sha256": "cc31342508f82e5388f4733416ecf865eed1172a4e115cd5c7f2e5038cb6e8f9"
+  },
+  {
+    "file": "metr-funders.html",
+    "bytes": 37325,
+    "sha256": "e0e2cc7b0900207a14798dbca1ac1698727d87cb346d7f5253b994168c332739"
+  },
+  {
+    "file": "metr-search-conflicts.html",
+    "bytes": 121204,
+    "sha256": "4c9e284112bb11f31edd879763a7a8fe4870b6489a19cc6eba67607b25a298f0"
+  },
+  {
+    "file": "metr.html",
+    "bytes": 429310,
+    "sha256": "d9d96bc369d5cdee3259950bb53dec3523d34667a6f94340726206b23b8ee378"
+  },
+  {
+    "file": "mfa-xinhua.html",
+    "bytes": 6797,
+    "sha256": "fbe9ed74c129c2aad156556ecf844103635e1d5457296b28db30ac9672460d6d"
+  },
+  {
+    "file": "mfa.html",
+    "bytes": 53931,
+    "sha256": "6a67188b030c3658476edd55135d1ca22b80fd48d92420f5515c9296e786f6fb"
+  },
+  {
+    "file": "oai-incident.html",
+    "bytes": 9821,
+    "sha256": "189ee49f53987ec793a9a3bb14009c6406d4d591e16e9a04834cec7affb638ec"
+  },
+  {
+    "file": "rand-jina.html",
+    "bytes": 4310,
+    "sha256": "8582a5cc61f4fd9f76d02021138c0885e4f451a72801165965208638f67e3c67"
+  },
+  {
+    "file": "rand.html",
+    "bytes": 919,
+    "sha256": "82913c04269182a2504acba4870d0b06060fcb7b25e6eb553a0906a52d7837a2"
+  },
+  {
+    "file": "rsi.html",
+    "bytes": 239911,
+    "sha256": "a3f77cdc1cb29d0931f2396d6781fe4e7635bc149725f1cf584abd73527f4ca7"
+  },
+  {
+    "file": "sacks-x.html",
+    "bytes": 215519,
+    "sha256": "bb859d37452ad4535cc3c48fdd6d75601d06bd6982452866e9f380f5eddaa74a"
+  },
+  {
+    "file": "search-bio2.html",
+    "bytes": 117960,
+    "sha256": "e4630ff9bdafb98cc57bcb12d8dbb3cb9e27798cdb5d040eb43f9d1c9498c85e"
+  },
+  {
+    "file": "search-bio3.html",
+    "bytes": 117794,
+    "sha256": "b24489254ecd75472b0fe5a4240c25ead426264c0a0c81971b202feb9d13bc38"
+  },
+  {
+    "file": "search-chen-bing.html",
+    "bytes": 117893,
+    "sha256": "d76e615ca26e6ae98ac99a69e1b54f2a247e2ac7e8d104c9169005cb0a055bbe"
+  },
+  {
+    "file": "search-chen.html",
+    "bytes": 92312,
+    "sha256": "7373480c0a37100c463e5b5b447019f41428a171eb4bb4dbafa5a102b2ffb712"
+  },
+  {
+    "file": "search-chen2.html",
+    "bytes": 112012,
+    "sha256": "3bb239e371c686ede1bb0ec20772be4e596745659b58b7ceeb63c2b34e0e19e6"
+  },
+  {
+    "file": "search-company-bing.html",
+    "bytes": 103762,
+    "sha256": "ed203056ee3bd95d846480c6e52934b5438f4afb3db35f9f5f8adc4aebbf4821"
+  },
+  {
+    "file": "search-company.html",
+    "bytes": 92473,
+    "sha256": "eebb9da1be7bd883fc3b19bb1fb2e82db48493e0d62d9ec57708402c631ba81b"
+  },
+  {
+    "file": "search-liu-bing.html",
+    "bytes": 121012,
+    "sha256": "34c6f321ad8d7ee51d836b654abb7df6f0942370c8c7dee1d63d9f4d4d8b2b24"
+  },
+  {
+    "file": "search-liu-ddg.html",
+    "bytes": 14276,
+    "sha256": "9795d9cddbe2adca5a85a0dcede6fba01f7a260717d86c4bf202cfe21496b6d7"
+  },
+  {
+    "file": "search-liu.html",
+    "bytes": 92451,
+    "sha256": "2524ca5b76220db06ed05fe748fd0745b280006e583e0ae6befb7c18730480a1"
+  },
+  {
+    "file": "search-metr2.html",
+    "bytes": 119653,
+    "sha256": "5aac27c1233b4cdaacd774e659c547c683c7181ba1a6764f49967fb50aa6b17b"
+  },
+  {
+    "file": "search-rand2.html",
+    "bytes": 118260,
+    "sha256": "4bfe73da8d7a542a3babda7a11e62ab8ef3f1fa6b45c7145dbd0524cddfdb146"
+  },
+  {
+    "file": "search-share2.html",
+    "bytes": 117978,
+    "sha256": "41804bfdfecc9b3ebb2db5e997a7f9bfe26134e241841de956e805c0e05b6f57"
+  },
+  {
+    "file": "selsam.html",
+    "bytes": 171891,
+    "sha256": "4f38a6a2ee63edcff849a2c0478745a1d9fd1644eb14c9f561e03b9dffb5dd4b"
+  },
+  {
+    "file": "threat.html",
+    "bytes": 1222891,
+    "sha256": "86417861547908555c00a0e74de20d89cbc1a420bc8251bdeee609f762ec819a"
+  },
+  {
+    "file": "wang-81.html",
+    "bytes": 17415,
+    "sha256": "4bfab22684f9f2f7e6b74de80ea43d2fdfad55a9513265d4e81397ea8d939823"
+  },
+  {
+    "file": "wang-translation.html",
+    "bytes": 148553,
+    "sha256": "3545195c145c2d6d5437cf795b9bc5ca9c6d69d9009778ccf57063ffb8a81735"
+  },
+  {
+    "file": "wang.html",
+    "bytes": 82004,
+    "sha256": "1a9c3ecd6ff1276b4707f5f6b89222d487b6bd2d7a8a50986d115ce81f151a8f"
+  },
+  {
+    "file": "who-smallpox.html",
+    "bytes": 145770,
+    "sha256": "c8735db6225306535db2385707b1c5c5dfa25ff73f675740af5a2922abb19c22"
+  },
+  {
+    "file": "who.html",
+    "bytes": 117891,
+    "sha256": "eb0dd0cb22583dfd5463fcba62cba2a3a4d85c7b0a8316a5795824f03cdb249b"
+  },
+  {
+    "file": "xhyctf.html",
+    "bytes": 17488,
+    "sha256": "5d692d73f7c8ba7a958381944b5008df596efa549d3369f31f5a010a6ffe0137"
+  },
+  {
+    "file": "yuyuan.html",
+    "bytes": 18173,
+    "sha256": "c5654b240df7352fc364fa35508d5d19ccb8ec87a3bff42e2aa12ec1bbcd3e70"
+  },
+  {
+    "file": "zai-jina.html",
+    "bytes": 364,
+    "sha256": "312e707b38bcf3e5192a619bc8f8c5c47c05cddc4b6a6e049aa00baf5f4c55f2"
+  },
+  {
+    "file": "zai-license.html",
+    "bytes": 4263,
+    "sha256": "96e1622099fc9d6b70c9760f007d99e66d7497eec636b63c60fe208401e9170c"
+  },
+  {
+    "file": "zai.html",
+    "bytes": 18163,
+    "sha256": "70045909e13b88bf5e2c4e74728cebfeb5beb306aa7a67c83c275dbd20aecf08"
+  }
+]

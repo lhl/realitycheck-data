@@ -1,6 +1,6 @@
 # Source Registry
-# Exported from LanceDB on 2026-02-23
-# Total sources: 201
+# Exported from LanceDB on 2026-09-16
+# Total sources: 332
 
 sources:
   aakashgupta-2026-ai-dopamine-loop-thread:
@@ -72,6 +72,28 @@ sources:
     - RISK
     - GOV
     status: analyzed
+  acemoglu-2024-simple-macroeconomics-ai:
+    type: PAPER
+    title: The Simple Macroeconomics of AI
+    author:
+    - Daron Acemoglu
+    year: 2024
+    url: https://doi.org/10.1093/epolic/eiae042
+    accessed: '2026-07-14'
+    reliability: 0.85
+    bias_notes: Peer-reviewed macroeconomic analysis calibrated to evidence on currently
+      exposed tasks; it is a limiting case rather than a forecast conditional on superhuman
+      AI.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - ai-economics
+    - productivity
+    - automation
+    domains:
+    - ECON
+    - LABOR
+    status: cataloged
   acemoglu-restrepo-2019-tasks:
     type: PAPER
     title: 'Automation and New Tasks: How Technology Displaces and Reinstates Labor'
@@ -94,6 +116,61 @@ sources:
     - TECH
     - LABOR
     status: cataloged
+  adamscochran-2026-election-stolen-thread:
+    type: SOCIAL
+    title: 'Thread: “Trump has proof the election was stolen!” (rebuttal list)'
+    author:
+    - '@adamscochran'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2027603228104253607.html
+    accessed: '2026-02-28'
+    reliability: 0.45
+    bias_notes: Political rebuttal list with factual attributions that require primary
+      sourcing. Included because it was in the user’s source list; tangential to the
+      Anthropic–DoW dispute.
+    claims_extracted:
+    - GOV-2026-145
+    - META-2026-160
+    analysis_file: analysis/sources/adamscochran-2026-election-stolen-thread.md
+    topics:
+    - misinformation
+    - elections
+    - trump
+    - politics
+    domains:
+    - GOV
+    - META
+    status: analyzed
+  adamscochran-2026-openai-doublespeak-thread:
+    type: SOCIAL
+    title: 'Thread: OpenAI “doublespeak” — technical vs contractual enforcement'
+    author:
+    - '@adamscochran'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2027586100504445248.html
+    accessed: '2026-02-28'
+    reliability: 0.35
+    bias_notes: High-opinion commentary with speculative interpretations. Useful as
+      hypothesis generation about semantic ambiguity and enforcement differences,
+      not as a factual source about contract details.
+    claims_extracted:
+    - META-2026-158
+    - GOV-2026-144
+    - META-2026-159
+    - GOV-2026-143
+    analysis_file: analysis/sources/adamscochran-2026-openai-doublespeak-thread.md
+    topics:
+    - openai
+    - anthropic
+    - any-lawful-use
+    - contracts
+    - surveillance
+    - autonomous-weapons
+    - discourse
+    domains:
+    - GOV
+    - META
+    status: analyzed
   ai-2027:
     type: REPORT
     title: AI 2027
@@ -318,6 +395,77 @@ sources:
     - TECH
     - ECON
     status: analyzed
+  aifutures-2026-ai-2040-plan-a:
+    type: REPORT
+    title: 'AI 2040: Plan A — The Deal'
+    author:
+    - Thomas Larsen
+    - Romeo Dean
+    - Brendan Halstead
+    - Eli Lifland
+    - Ryan Greenblatt
+    - Daniel Kokotajlo
+    year: 2026
+    url: https://ai-2040.com/
+    accessed: '2026-07-11'
+    reliability: 0.62
+    bias_notes: AI-safety, forecasting, compute-governance, and policy specialists
+      present a preferred conditional success scenario rather than their modal forecast.
+      The concrete narrative makes implementation dependencies inspectable but can
+      anchor readers on a coherent path whose conjunctive success is much less likely
+      than its narrative fluency suggests. Economics, labor, democratic legitimacy,
+      and treaty durability receive less demonstrated specialist depth than AI safety
+      and compute governance.
+    claims_extracted:
+    - META-2026-168
+    - META-2026-169
+    - META-2026-170
+    - META-2026-171
+    - META-2026-172
+    - TECH-2026-102
+    - TECH-2026-103
+    - TECH-2026-104
+    - TRANS-2026-057
+    - TRANS-2026-058
+    - RISK-2026-992
+    - RISK-2026-993
+    - RISK-2026-994
+    - RISK-2026-995
+    - RISK-2026-996
+    - GEO-2026-061
+    - GOV-2026-291
+    - GOV-2026-292
+    - GOV-2026-293
+    - GOV-2026-294
+    - GOV-2026-295
+    - GOV-2026-296
+    - ECON-2026-990
+    - ECON-2026-991
+    - LABOR-2026-041
+    analysis_file: analysis/sources/aifutures-2026-ai-2040-plan-a.md
+    topics:
+    - ai-forecasting
+    - scenario-planning
+    - ai-governance
+    - compute-governance
+    - international-verification
+    - us-china
+    - ai-control
+    - alignment
+    - automation
+    - post-work-economics
+    - redistribution
+    - democratic-governance
+    domains:
+    - META
+    - TECH
+    - TRANS
+    - RISK
+    - GEO
+    - GOV
+    - ECON
+    - LABOR
+    status: analyzed
   aifutures-2026-grading-ai-2027-2025-predictions:
     type: BLOG
     title: Grading AI 2027’s 2025 Predictions
@@ -386,6 +534,29 @@ sources:
     - META
     - TRANS
     status: analyzed
+  aisi-2025-frontier-ai-trends:
+    type: REPORT
+    title: Frontier AI Trends Report
+    author:
+    - UK AI Security Institute
+    year: 2025
+    url: https://www.aisi.gov.uk/frontier-ai-trends-report
+    accessed: '2026-09-16'
+    reliability: 0.85
+    bias_notes: Task-level gains are consequential but cannot be directly mapped to
+      a system-level risk estimate without assumptions about other stages and defenses.
+    claims_extracted:
+    - RISK-2026-511
+    - META-2026-502
+    analysis_file: analysis/sources/aisi-2025-frontier-ai-trends.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - META
+    - RISK
+    status: analyzed
   aleximas-2026-negative-economic-growth:
     type: BLOG
     title: Can advanced AI lead to negative economic growth?
@@ -429,6 +600,108 @@ sources:
     - META
     - TRANS
     status: analyzed
+  allen-2026-private-model-competition:
+    type: SOCIAL
+    title: Private frontier models and customer competition
+    author:
+    - Joseph Allen
+    year: 2026
+    url: https://threadreaderapp.com/thread/2097635374197510317.html
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-326
+    - ECON-2026-301
+    - ECON-2026-302
+    analysis_file: analysis/sources/allen-2026-private-model-competition.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - ECON
+    - INST
+  alpoge-2026-september-two-contact:
+    type: SOCIAL
+    title: September 2 contact and personal-collaboration account
+    author:
+    - Levent Alpöge
+    year: 2026
+    url: https://threadreaderapp.com/thread/2097548261666033993.html
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-308
+    - INST-2026-309
+    - INST-2026-301
+    - INST-2026-311
+    - INST-2026-319
+    - INST-2026-326
+    analysis_file: analysis/sources/alpoge-2026-september-two-contact.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+  alpoge-2026-training-authorship-response:
+    type: SOCIAL
+    title: Response on training caveat, unpublished approaches and authorship
+    author:
+    - Levent Alpöge
+    year: 2026
+    url: https://x.com/__alpoge__/status/2097383870773748190
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-310
+    - INST-2026-311
+    - INST-2026-304
+    - INST-2026-306
+    - INST-2026-322
+    analysis_file: analysis/sources/alpoge-2026-training-authorship-response.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+  altman-2026-navier-stokes-defense:
+    type: SOCIAL
+    title: Defense of team conduct and coordination offers
+    author:
+    - Sam Altman
+    year: 2026
+    url: https://threadreaderapp.com/thread/2097385167002415140.html
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-318
+    - INST-2026-319
+    - INST-2026-300
+    - INST-2026-302
+    - INST-2026-304
+    - INST-2026-316
+    - INST-2026-329
+    analysis_file: analysis/sources/altman-2026-navier-stokes-defense.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
   amodei-2024-machines-of-loving-grace:
     type: BLOG
     title: Machines of Loving Grace
@@ -534,6 +807,32 @@ sources:
     - ECON
     - GEO
     - TRANS
+    status: analyzed
+  amodei-2026-we-must-pace-frontier:
+    type: BLOG
+    title: We Must Pace the Frontier
+    author:
+    - Dario Amodei
+    year: 2026
+    url: https://darioamodei.com/post/we-must-pace-the-frontier
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: Preserving a strategic lead is presented as enabling cooperation,
+      but can lower the other side’s willingness to accept the rules. Commercial confidentiality
+      exceptions may limit audit transparency.
+    claims_extracted:
+    - GOV-2026-501
+    - GEO-2026-500
+    - RISK-2026-503
+    analysis_file: analysis/sources/amodei-2026-we-must-pace-frontier.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - GEO
+    - GOV
+    - RISK
     status: analyzed
   anthropic-2025-effective-harnesses-long-running-agents:
     type: ARTICLE
@@ -704,6 +1003,177 @@ sources:
     - META
     - RISK
     status: analyzed
+  anthropic-2026-cyber-incidents-alignment-assessment:
+    type: REPORT
+    title: An alignment assessment of recent cybersecurity incidents
+    author:
+    - Anthropic
+    year: 2026
+    url: https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents
+    accessed: '2026-09-16'
+    reliability: 0.85
+    bias_notes: The same newer-model results provide evidence of improvement and an
+      example of evaluation ambiguity. Neither should be omitted.
+    claims_extracted:
+    - RISK-2026-509
+    - RISK-2026-510
+    analysis_file: analysis/sources/anthropic-2026-cyber-incidents-alignment-assessment.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - RISK
+    status: analyzed
+  anthropic-2026-september-threat-intelligence:
+    type: REPORT
+    title: 'Detecting and countering misuse of AI: September 2026'
+    author:
+    - Anthropic Threat Intelligence
+    year: 2026
+    url: https://www.anthropic.com/threat-intelligence-report-september-2026
+    accessed: '2026-09-16'
+    reliability: 0.85
+    bias_notes: The company is both observer of platform abuse and interested party
+      in competition over model capabilities. Detailed evidence and commercial incentives
+      can coexist.
+    claims_extracted:
+    - INST-2026-505
+    - META-2026-501
+    analysis_file: analysis/sources/anthropic-2026-september-threat-intelligence.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - INST
+    - META
+    status: analyzed
+  anthropic-2026-statement-department-of-war:
+    type: ARTICLE
+    title: Statement from Dario Amodei on our discussions with the Department of War
+    author:
+    - Dario Amodei
+    year: 2026
+    url: https://www.anthropic.com/news/statement-department-of-war
+    accessed: '2026-02-28'
+    reliability: 0.6
+    bias_notes: Corporate positioning in an active negotiation. Likely reliable about
+      Anthropic’s stated policy/intent; potentially biased about the Pentagon’s exact
+      demands and about claimed “firsts”/deployment scope.
+    claims_extracted:
+    - INST-2026-936
+    - GOV-2026-092
+    - GOV-2026-093
+    - GOV-2026-094
+    - RISK-2026-962
+    - RISK-2026-963
+    analysis_file: analysis/sources/anthropic-2026-statement-department-of-war.md
+    topics:
+    - ai
+    - national-security
+    - defense-production-act
+    - military-ai
+    - surveillance
+    - autonomous-weapons
+    - contracts
+    - anthropic
+    - department-of-war
+    domains:
+    - GOV
+    - INST
+    - RISK
+    status: analyzed
+  anthropic-2026-when-ai-builds-itself:
+    type: REPORT
+    title: When AI builds itself
+    author:
+    - Marina Favaro; Jack Clark (Anthropic Institute)
+    year: 2026
+    url: https://www.anthropic.com/institute/recursive-self-improvement
+    accessed: '2026-09-16'
+    reliability: 0.85
+    bias_notes: An eightfold code-volume increase and selected next-step choices can
+      illustrate assistance without measuring total research acceleration.
+    claims_extracted:
+    - TECH-2026-502
+    - TECH-2026-503
+    analysis_file: analysis/sources/anthropic-2026-when-ai-builds-itself.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - TECH
+    status: analyzed
+  anthropic-fable-mythos-export-control-synthesis:
+    type: KNOWLEDGE
+    title: 'Synthesis: Anthropic Fable/Mythos Export-Control Takedown'
+    author:
+    - codex
+    year: 2026
+    url: ''
+    accessed: '2026-06-18'
+    reliability: 0.7
+    bias_notes: Cross-source synthesis combining primary Anthropic statements, accessible
+      Bloomberg/letter reporting, Thread Reader legal/social commentary, official
+      legal texts, and current June 17-18 reporting. Scenario probabilities are analytic
+      judgments; legal outcomes and technical-jailbreak severity remain unresolved.
+    claims_extracted: []
+    analysis_file: analysis/syntheses/anthropic-fable-mythos-export-control-synthesis.md
+    topics:
+    - anthropic
+    - fable-5
+    - mythos-5
+    - export-controls
+    - ai-governance
+    - ai-sovereignty
+    - open-weights
+    - citizenship-verification
+    - enterprise-risk
+    - us-china
+    domains:
+    - GOV
+    - GEO
+    - INST
+    - ECON
+    - SOC
+    - RISK
+    status: analyzed
+  anthropic-pentagon-standoff-2026-synthesis:
+    type: KNOWLEDGE
+    title: 'Synthesis Analysis: Anthropic–Pentagon standoff (Feb 2026) — “any lawful
+      use,” DPA leverage, and safety red lines'
+    author:
+    - gpt-5.2
+    year: 2026
+    url: ''
+    accessed: '2026-02-28'
+    reliability: 0.7
+    bias_notes: Internal cross-source synthesis document in realitycheck-data (analysis/syntheses).
+      Synthesizes multiple journalism, official-doc, and social sources; conclusions
+      are credence-weighted and provisional.
+    claims_extracted: []
+    analysis_file: analysis/syntheses/anthropic-pentagon-standoff-2026-synthesis.md
+    topics:
+    - anthropic
+    - openai
+    - department-of-war
+    - pentagon
+    - any-lawful-use
+    - defense-production-act
+    - supply-chain-risk
+    - autonomous-weapons
+    - surveillance
+    - governance
+    - contracts
+    domains:
+    - GOV
+    - INST
+    - RISK
+    - GEO
+    - META
+    status: analyzed
   ap-2023-cisco-caste-bias-suit-dismissed:
     type: ARTICLE
     title: Cisco still faces caste bias suit; engineers' case dismissed
@@ -728,6 +1198,37 @@ sources:
     - LABOR
     - GOV
     status: cataloged
+  ap-2026-dpa-anthropic-ultimatum:
+    type: ARTICLE
+    title: What to know about the Defense Production Act and the Pentagon’s Anthropic
+      ultimatum
+    author:
+    - Wyatte Grantham-Philips (AP)
+    year: 2026
+    url: https://federalnewsnetwork.com/defense-news/2026/02/what-to-know-about-defense-protection-act-and-the-pentagons-anthropic-ultimatum/
+    accessed: '2026-02-28'
+    reliability: 0.7
+    bias_notes: Wire-service explainer with expert quotes and historical DPA background.
+      Still dependent on reporting for closed-door negotiation details and for DoW’s
+      intentions.
+    claims_extracted:
+    - GOV-2026-106
+    - GOV-2026-107
+    - GOV-2026-108
+    - GOV-2026-109
+    - GOV-2026-110
+    - GOV-2026-111
+    analysis_file: analysis/sources/ap-2026-dpa-anthropic-ultimatum.md
+    topics:
+    - defense-production-act
+    - any-lawful-use
+    - supply-chain-risk
+    - military-ai
+    - procurement
+    - contracts
+    domains:
+    - GOV
+    status: analyzed
   ap-2026-pla-purge-taiwan:
     type: ARTICLE
     title: How a purge of China’s military leadership could impact the army and the
@@ -943,6 +1444,40 @@ sources:
     - GOV
     - SOC
     status: cataloged
+  arstechnica-2026-ai-rewrite-open-source-license:
+    type: ARTICLE
+    title: AI can rewrite open source code—but can it rewrite the license, too?
+    author:
+    - Kyle Orland
+    year: 2026
+    url: https://arstechnica.com/ai/2026/03/ai-can-rewrite-open-source-code-but-can-it-rewrite-the-license-too/
+    accessed: '2026-04-01'
+    reliability: 0.74
+    bias_notes: Reported journalism synthesis with multiple viewpoints. Strong on
+      primary-source linking, but legal conclusions remain unresolved and partly inferential.
+    claims_extracted:
+    - SOC-2026-049
+    - INST-2026-969
+    - INST-2026-970
+    - GOV-2026-267
+    - GOV-2026-268
+    - RISK-2026-979
+    analysis_file: analysis/sources/arstechnica-2026-ai-rewrite-open-source-license.md
+    topics:
+    - chardet
+    - open-source licensing
+    - LGPL
+    - MIT
+    - clean room
+    - AI code generation
+    - derivative work
+    - software governance
+    domains:
+    - SOC
+    - INST
+    - GOV
+    - RISK
+    status: analyzed
   avichawla-2026-pageindex-thread:
     type: SOCIAL
     title: 'Thread: PageIndex (vectorless, reasoning-based RAG)'
@@ -969,6 +1504,227 @@ sources:
     domains:
     - TECH
     status: analyzed
+  axios-2026-anthropic-pentagon-standoff:
+    type: ARTICLE
+    title: Pentagon gives Anthropic ultimatum over Claude
+    author:
+    - Dave Lawler
+    - Maria Curi
+    year: 2026
+    url: https://www.axios.com/2026/02/24/anthropic-pentagon-claude-hegseth-dario
+    accessed: '2026-02-28'
+    reliability: 0.65
+    bias_notes: Scoop-style reporting with anonymous sourcing; valuable for the reported
+      ultimatum and timeline but requires corroboration for classified-deployment
+      exclusivity and contractor-assessment details.
+    claims_extracted:
+    - GOV-2026-112
+    - GOV-2026-113
+    - GOV-2026-114
+    - GOV-2026-115
+    - INST-2026-938
+    - INST-2026-939
+    - GOV-2026-116
+    analysis_file: analysis/sources/axios-2026-anthropic-pentagon-standoff.md
+    topics:
+    - anthropic
+    - pentagon
+    - department-of-war
+    - any-lawful-use
+    - defense-production-act
+    - supply-chain-risk
+    - maduro-raid
+    - palantir
+    domains:
+    - GOV
+    - INST
+    status: analyzed
+  axios-2026-claude-maduro-raid:
+    type: ARTICLE
+    title: Claude caught in the middle of Pentagon controversy
+    author:
+    - Tal Axelrod
+    year: 2026
+    url: https://www.axios.com/2026/02/13/anthropic-claude-maduro-raid-pentagon
+    accessed: '2026-02-28'
+    reliability: 0.6
+    bias_notes: Short, highly compressed Axios reporting. Central factual hook (Maduro
+      raid) is attributed to WSJ; other causal connections are plausible but not fully
+      evidenced here.
+    claims_extracted:
+    - GOV-2026-117
+    - GOV-2026-118
+    - GOV-2026-120
+    - INST-2026-940
+    - INST-2026-941
+    - GOV-2026-119
+    analysis_file: analysis/sources/axios-2026-claude-maduro-raid.md
+    topics:
+    - maduro-raid
+    - anthropic
+    - claude
+    - palantir
+    - pentagon
+    - any-lawful-use
+    - classified-systems
+    domains:
+    - GOV
+    - INST
+    status: analyzed
+  axios-2026-openai-pentagon-agreement:
+    type: ARTICLE
+    title: OpenAI reaches agreement with Pentagon to use AI models
+    author:
+    - Dave Lawler
+    - Maria Curi
+    year: 2026
+    url: https://www.axios.com/2026/02/27/pentagon-openai-safety-red-lines-anthropic
+    accessed: '2026-02-28'
+    reliability: 0.65
+    bias_notes: Event-driven scoop connecting OpenAI’s agreement to the Anthropic
+      standoff. Strong for chronology and reported agreement existence; weaker for
+      claims about identical compromise terms, litigation intent, and presidential
+      posting without primary artifacts embedded.
+    claims_extracted:
+    - GOV-2026-135
+    - INST-2026-948
+    - GOV-2026-137
+    - GOV-2026-138
+    - GOV-2026-136
+    - GOV-2026-139
+    - INST-2026-949
+    analysis_file: analysis/sources/axios-2026-openai-pentagon-agreement.md
+    topics:
+    - openai
+    - department-of-war
+    - any-lawful-use
+    - contracts
+    - anthropic
+    - supply-chain-risk
+    - defense-production-act
+    domains:
+    - GOV
+    - INST
+    status: analyzed
+  baker-2025-six-layers-ai-verification:
+    type: PAPER
+    title: Six Layers of AI Verification
+    author:
+    - Baker et al.
+    year: 2025
+    url: https://arxiv.org/abs/2507.15916
+    accessed: '2026-07-14'
+    reliability: 0.68
+    bias_notes: Preprint organizing a layered verification architecture; useful design
+      synthesis but not evidence that all layers work at state-adversary assurance
+      levels.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - international-verification
+    - ai-governance
+    - verification-technology
+    domains:
+    - GOV
+    - GEO
+    status: cataloged
+  barak-2026-navier-stokes-hints-defense:
+    type: SOCIAL
+    title: Defense that the model did not need mathematical hints
+    author:
+    - Boaz Barak
+    year: 2026
+    url: https://x.com/boazbaraktcs/status/2097394435092861410
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-337
+    - TECH-2026-306
+    - INST-2026-333
+    - TECH-2026-307
+    analysis_file: analysis/sources/barak-2026-navier-stokes-hints-defense.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+    - TECH
+  bastian-2026-navier-stokes-trust:
+    type: ARTICLE
+    title: OpenAI’s millennium proof dispute raises the question of whether researchers
+      can trust AI labs
+    author:
+    - Matthias Bastian
+    year: 2026
+    url: https://the-decoder.com/openais-millennium-proof-dispute-raises-the-question-of-whether-researchers-can-trust-ai-labs/
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-333
+    - TECH-2026-304
+    - INST-2026-305
+    - INST-2026-311
+    - INST-2026-323
+    - INST-2026-337
+    analysis_file: analysis/sources/bastian-2026-navier-stokes-trust.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+    - TECH
+  bellamy-2026-biological-risk-bottlenecks:
+    type: SOCIAL
+    title: Physical bottlenecks to AI-enabled biological catastrophe
+    author:
+    - David R. Bellamy
+    year: 2026
+    url: https://x.com/DavidRBellamy/status/2099187370407112758
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: Valid constraints on a maximal autonomous scenario are generalized
+      to a much broader claim that AI barely matters. The latter does not follow.
+    claims_extracted:
+    - RISK-2026-505
+    - RISK-2026-506
+    analysis_file: analysis/sources/bellamy-2026-biological-risk-bottlenecks.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - RISK
+    status: analyzed
+  betley-2025-emergent-misalignment:
+    type: PAPER
+    title: 'Emergent Misalignment: Narrow finetuning can produce broadly misaligned
+      LLMs'
+    author:
+    - Jan Betley et al.
+    year: 2025
+    url: https://arxiv.org/abs/2502.17424
+    accessed: '2026-07-14'
+    reliability: 0.7
+    bias_notes: Empirical preprint showing broad behavioral changes after narrow finetuning;
+      implications for frontier handoff assurance remain indirect.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - emergent-misalignment
+    - finetuning
+    - ai-safety
+    domains:
+    - RISK
+    - TECH
+    status: cataloged
   bis-2026-h200-license-policy-china:
     type: REPORT
     title: BIS Announces Updated Semiconductor License Review Policy for China to
@@ -994,6 +1750,39 @@ sources:
     - GEO
     - GOV
     status: cataloged
+  bloomberg-2026-lutnick-letter-anthropic:
+    type: ARTICLE
+    title: Lutnick's letter to Anthropic warned of curbs on top AI models
+    author:
+    - Michael Shepard
+    - Maggie Eastland
+    - Bloomberg News
+    year: 2026
+    url: https://www.straitstimes.com/world/united-states/lutnicks-letter-to-anthropic-warned-of-curbs-on-top-ai-models
+    accessed: '2026-06-18'
+    reliability: 0.78
+    bias_notes: Credible journalism based on a copy of the Lutnick letter, accessed
+      through Straits Times syndication and Bloomberg Law extract. Not a public official
+      PDF; legal interpretation requires separate analysis.
+    claims_extracted:
+    - GOV-2026-269
+    - GOV-2026-270
+    - GOV-2026-271
+    - INST-2026-973
+    analysis_file: analysis/sources/bloomberg-2026-lutnick-letter-anthropic.md
+    topics:
+    - anthropic
+    - fable-5
+    - mythos-5
+    - export-controls
+    - bis
+    - lutnick
+    - ai-governance
+    domains:
+    - GOV
+    - INST
+    - RISK
+    status: analyzed
   bloomberg-2026-purge-top-general-taiwan-succession:
     type: ARTICLE
     title: Xi’s Purge of Top General Spurs Questions on Taiwan, Succession
@@ -1156,6 +1945,152 @@ sources:
     domains:
     - GOV
     status: cataloged
+  brown-2026-navier-stokes-access-denial:
+    type: SOCIAL
+    title: Direct-access denial and private-model capability defense
+    author:
+    - Noam Brown
+    year: 2026
+    url: https://x.com/polynoamial/status/2097381286193316203
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-338
+    - TECH-2026-307
+    - INST-2026-312
+    analysis_file: analysis/sources/brown-2026-navier-stokes-access-denial.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+    - TECH
+  bubeck-2026-navier-stokes-response:
+    type: SOCIAL
+    title: Clarification of release discussions and human involvement
+    author:
+    - Sébastien Bubeck
+    year: 2026
+    url: https://threadreaderapp.com/thread/2097379411691516310.html
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-315
+    - INST-2026-316
+    - INST-2026-317
+    - INST-2026-300
+    - TECH-2026-302
+    - INST-2026-302
+    - INST-2026-304
+    - INST-2026-308
+    - INST-2026-309
+    - INST-2026-318
+    - INST-2026-325
+    - INST-2026-326
+    - INST-2026-328
+    - INST-2026-335
+    analysis_file: analysis/sources/bubeck-2026-navier-stokes-response.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+  buckmaster-2026-navier-stokes-statement:
+    type: REPORT
+    title: Statement on fluid blowup results and OpenAI discussions
+    author:
+    - Tristan Buckmaster
+    year: 2026
+    url: https://cims.nyu.edu/~tristanb/statement.pdf
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-301
+    - INST-2026-302
+    - INST-2026-303
+    - INST-2026-304
+    - TECH-2026-302
+    - INST-2026-309
+    - INST-2026-314
+    - INST-2026-315
+    - INST-2026-317
+    - INST-2026-319
+    - RISK-2026-300
+    - TECH-2026-303
+    - INST-2026-324
+    - INST-2026-329
+    - INST-2026-335
+    analysis_file: analysis/sources/buckmaster-2026-navier-stokes-statement.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+  buckmaster-2026-training-and-malpractice-posts:
+    type: SOCIAL
+    title: Training chronology and academic-malpractice criticism
+    author:
+    - Tristan Buckmaster
+    year: 2026
+    url: https://mastodon.social/@tristanbuckmaster/117236471352470303
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-305
+    - INST-2026-306
+    - INST-2026-307
+    - INST-2026-310
+    - INST-2026-333
+    analysis_file: analysis/sources/buckmaster-2026-training-and-malpractice-posts.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+  bullock-2026-lutnick-letter-legal-thread:
+    type: SOCIAL
+    title: 'Thread: BIS legal theory on Fable access is aggressive and vulnerable'
+    author:
+    - '@CharlieBull0ck'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2066987766924128464.html
+    accessed: '2026-06-18'
+    reliability: 0.48
+    bias_notes: Short social legal analysis. Useful issue spotting, but not a full
+      memo and some conclusions are contested.
+    claims_extracted:
+    - GOV-2026-275
+    - GOV-2026-276
+    - GOV-2026-277
+    analysis_file: analysis/sources/bullock-2026-lutnick-letter-legal-thread.md
+    topics:
+    - anthropic
+    - fable-5
+    - mythos-5
+    - export-controls
+    - first-amendment
+    - ear
+    - published-software
+    domains:
+    - GOV
+    - RISK
+    status: analyzed
   butler-1863-darwin-machines:
     type: ARTICLE
     title: Darwin among the Machines
@@ -1176,6 +2111,39 @@ sources:
     - TECH
     - SOC
     status: cataloged
+  campaignlegalcenter-2026-trump-corrupt-transactions:
+    type: REPORT
+    title: 'Trump’s Corrupt Transactions: How the 47th President Has Brazenly Traded
+      Official Benefits for Personal and Political Gain'
+    author:
+    - Campaign Legal Center
+    year: 2026
+    url: https://campaignlegal.org/sites/default/files/2026-02/Trump_Transaction_Tracker_February_2026.pdf
+    accessed: '2026-03-03'
+    reliability: 0.55
+    bias_notes: Anti-corruption advocacy report. Strongest as a structured catalog
+      of alleged “transactions” with citations; broad historical and causal claims
+      require careful audit of entries and standards for linking benefits to actions.
+    claims_extracted:
+    - GOV-2026-203
+    - GOV-2026-204
+    - GOV-2026-205
+    - GOV-2026-206
+    - GOV-2026-207
+    - GOV-2026-208
+    analysis_file: analysis/sources/campaignlegalcenter-2026-trump-corrupt-transactions.md
+    topics:
+    - corruption
+    - ethics
+    - campaign-finance
+    - pardons
+    - appointments
+    - conflicts-of-interest
+    - tracking
+    domains:
+    - GOV
+    - ECON
+    status: analyzed
   carney-2026-davos-wef-speech:
     type: INTERVIEW
     title: 'Mark Carney WEF Davos 2026 Speech: Middle Powers and the Rupture in Global
@@ -1236,6 +2204,68 @@ sources:
     domains:
     - SOC
     status: cataloged
+  chardet-2026-issue-327-no-right-to-relicense:
+    type: CONVO
+    title: 'No right to relicense this project (chardet/chardet issue #327)'
+    author:
+    - a2mark (issue opener) + repository maintainers/commenters
+    year: 2026
+    url: https://github.com/chardet/chardet/issues/327
+    accessed: '2026-04-01'
+    reliability: 0.88
+    bias_notes: Primary GitHub issue artifacts are high-fidelity for timeline and
+      posted statements, but legal conclusions in-thread are adversarial/opinionated
+      and not adjudicated.
+    claims_extracted:
+    - INST-2026-966
+    - INST-2026-967
+    - INST-2026-968
+    - GOV-2026-265
+    - RISK-2026-977
+    analysis_file: analysis/sources/chardet-2026-issue-327-no-right-to-relicense.md
+    topics:
+    - chardet
+    - open-source licensing
+    - LGPL
+    - MIT
+    - AI-assisted rewrite
+    - clean room
+    - derivative work
+    domains:
+    - INST
+    - GOV
+    - RISK
+    status: analyzed
+  chardet-2026-licensing-theseus-synthesis:
+    type: KNOWLEDGE
+    title: 'Synthesis Analysis: chardet relicensing dispute (Mar 2026) — clean room,
+      derivative risk, and AI-era license governance'
+    author:
+    - gpt-5
+    year: 2026
+    url: ''
+    accessed: '2026-04-01'
+    reliability: 0.73
+    bias_notes: Cross-source synthesis over one primary issue thread, one opinion
+      blog, and one journalistic synthesis; legal conclusions are explicitly probabilistic
+      pending adjudication.
+    claims_extracted: []
+    analysis_file: analysis/syntheses/chardet-2026-licensing-theseus-synthesis.md
+    topics:
+    - chardet
+    - open-source licensing
+    - clean room
+    - derivative work
+    - AI-assisted rewrites
+    - governance
+    - legal uncertainty
+    domains:
+    - INST
+    - GOV
+    - RISK
+    - SOC
+    - META
+    status: analyzed
   chatterjee-2024-anz-copilot-study:
     type: PAPER
     title: 'The Impact of AI Tool on Engineering at ANZ Bank: An Empirical Study on
@@ -1268,6 +2298,31 @@ sources:
     - LABOR
     - TECH
     status: analyzed
+  chen-2026-ai-security-barrier:
+    type: ARTICLE
+    title: Comprehensively Fortify the AI Security Barrier and Promote Healthy and
+      Orderly Development
+    author:
+    - Chen Yixin; bilingual mirror by Sinocism
+    year: 2026
+    url: https://sinocism.notion.site/Chen-Yixin-Comprehensively-Fortify-the-AI-Security-Barrier-and-Promote-the-Healthy-and-Orderly-Deve-3da84ece41d7816c9720eef8aef74cc1
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: Openness and shared governance coexist with autonomous, controllable
+      infrastructure and regime security. These are different objectives whose conflicts
+      require policy detail.
+    claims_extracted:
+    - GEO-2026-505
+    - GOV-2026-504
+    analysis_file: analysis/sources/chen-2026-ai-security-barrier.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - GEO
+    - GOV
+    status: analyzed
   china-pla-purge-zhang-youxia-taiwan-synthesis:
     type: KNOWLEDGE
     title: 'Synthesis Analysis: Zhang Youxia purge, PLA “high command” disruption,
@@ -1299,6 +2354,30 @@ sources:
     - INST
     - GOV
     - RISK
+    status: analyzed
+  chinadaily-2026-frankenstein-pacing-editorial:
+    type: ARTICLE
+    title: “Dr Frankenstein” alarm cries of US AI elites a self-serving bid for profit
+    author:
+    - China Daily editorial board
+    year: 2026
+    url: https://www.chinadaily.com.cn/a/202609/14/WS6aa7e616e4b06d4aa055df6e.html
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: The editorial says allegations are baseless without independently
+      analyzing them. It criticizes exclusion from a global framework even though
+      Amodei explicitly proposes negotiating with China.
+    claims_extracted:
+    - GEO-2026-506
+    - INST-2026-504
+    analysis_file: analysis/sources/chinadaily-2026-frankenstein-pacing-editorial.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - GEO
+    - INST
     status: analyzed
   chm-alexnet:
     type: ARTICLE
@@ -1488,6 +2567,57 @@ sources:
     - RESOURCE
     - INST
     status: analyzed
+  cnn-2026-openai-limit-release-white-house:
+    type: ARTICLE
+    title: White House asks OpenAI to limit its next model release
+    author:
+    - Hadas Gold
+    year: 2026
+    url: https://edition.cnn.com/2026/06/25/tech/openai-limit-release-white-house
+    accessed: '2026-06-28'
+    reliability: 0.76
+    bias_notes: Credible journalism with some unnamed-source and internal-memo dependent
+      details. Strong for the White House-requested limited release because OpenAI
+      later confirmed the core point; moderate for exact customer-by-customer mechanics
+      and Mythos equivalence.
+    claims_extracted:
+    - GOV-2026-282
+    - GOV-2026-283
+    - RISK-2026-985
+    analysis_file: analysis/sources/cnn-2026-openai-limit-release-white-house.md
+    topics:
+    - openai
+    - gpt-5-6
+    - white-house
+    - mythos
+    - frontier-ai
+    - regulation
+    domains:
+    - GOV
+    - RISK
+    status: analyzed
+  coe-vaynman-2019-why-arms-control-rare:
+    type: PAPER
+    title: Why Arms Control Is So Rare
+    author:
+    - Andrew J. Coe
+    - Jane Vaynman
+    year: 2019
+    url: https://doi.org/10.1017/S000305541900073X
+    accessed: '2026-07-14'
+    reliability: 0.85
+    bias_notes: Peer-reviewed international-relations analysis of the security costs
+      and rarity of arms-control transparency.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - arms-control
+    - verification
+    - security-dilemma
+    domains:
+    - GEO
+    - GOV
+    status: cataloged
   commondreams-2026-minneapolis-shooting-family:
     type: ARTICLE
     title: '''Please Get the Truth Out,'' Alex Pretti''s Parents Plead as Trump Officials
@@ -1597,6 +2727,61 @@ sources:
     domains:
     - TECH
     status: analyzed
+  concordia-2026-china-ai-regulator-brief28:
+    type: ARTICLE
+    title: 'Brief #28: China’s AI regulator flags loss-of-control and AIxBio risks'
+    author:
+    - Gabriel Wagner; Erik Lindblad
+    year: 2026
+    url: https://aisafetychina.substack.com/p/brief-28-chinas-ai-regulator-flags
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: An open-model defensive philosophy is compatible with staged release
+      but not identical to unrestricted openness. A broad claim of a historical first
+      needs a wider release census.
+    claims_extracted:
+    - GOV-2026-505
+    - GOV-2026-506
+    analysis_file: analysis/sources/concordia-2026-china-ai-regulator-brief28.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - GOV
+    status: analyzed
+  corruptioncounter-2025-trump-profiteering-tracker:
+    type: REPORT
+    title: 'Trump''s Presidential Profiteering: A Real-Time Corruption Tracker'
+    author:
+    - CorruptionCounter
+    year: 2025
+    url: https://corruptioncounter.com/
+    accessed: '2026-03-03'
+    reliability: 0.4
+    bias_notes: Advocacy-style corruption tracker with strong rhetoric. Useful for
+      enumerating alleged cases and source links, but topline dollar aggregation is
+      unclear and appears internally inconsistent with the embedded dataset captured.
+    claims_extracted:
+    - GOV-2026-196
+    - GOV-2026-197
+    - GOV-2026-198
+    - GOV-2026-199
+    - GOV-2026-200
+    - GOV-2026-201
+    - GOV-2026-202
+    analysis_file: analysis/sources/corruptioncounter-2025-trump-profiteering-tracker.md
+    topics:
+    - corruption
+    - profiteering
+    - trump
+    - pardons
+    - foreign-influence
+    - tracking
+    domains:
+    - GOV
+    - ECON
+    status: analyzed
   crd-2020-cisco-caste-discrimination:
     type: REPORT
     title: DFEH Sues Cisco Systems, Inc. And Former Managers For Caste-Based Discrimination
@@ -1623,6 +2808,38 @@ sources:
     - LABOR
     - GOV
     status: cataloged
+  crew-2025-tracking-trump-property-visits:
+    type: REPORT
+    title: Tracking Trump's visits to his properties and other conflicts of interest
+    author:
+    - CREW
+    year: 2025
+    url: https://www.citizensforethics.org/reports-investigations/crew-reports/tracking-trumps-visits-to-his-properties-and-other-conflicts-of-interest/
+    accessed: '2026-03-03'
+    reliability: 0.6
+    bias_notes: Watchdog tracker with strong normative framing. Valuable for enumerating
+      specific alleged conflict events and for pointing to underlying sources; quantitative
+      and causal claims require careful definition and auditing.
+    claims_extracted:
+    - GOV-2026-215
+    - GOV-2026-216
+    - GOV-2026-217
+    - GOV-2026-218
+    - GOV-2026-219
+    - GOV-2026-220
+    analysis_file: analysis/sources/crew-2025-tracking-trump-property-visits.md
+    topics:
+    - corruption
+    - conflicts-of-interest
+    - trump-properties
+    - memecoin
+    - crypto
+    - pardons
+    - ethics
+    domains:
+    - GOV
+    - ECON
+    status: analyzed
   csis-2023-updated-oct7-export-controls:
     type: ARTICLE
     title: Updated October 7 Semiconductor Export Controls
@@ -1645,6 +2862,105 @@ sources:
     - TECH
     - GEO
     status: cataloged
+  curran-2026-lutnick-letter-thread:
+    type: SOCIAL
+    title: 'Thread: excerpt of Lutnick''s Is Informed letter to Anthropic'
+    author:
+    - '@AndrewCurran_'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2066975654604881983.html
+    accessed: '2026-06-18'
+    reliability: 0.55
+    bias_notes: Social-media transcription of a not-yet-public letter; useful but
+      should be superseded by the official PDF if released.
+    claims_extracted:
+    - GOV-2026-272
+    - GOV-2026-273
+    - GOV-2026-274
+    analysis_file: analysis/sources/curran-2026-lutnick-letter-thread.md
+    topics:
+    - anthropic
+    - fable-5
+    - mythos-5
+    - export-controls
+    - bis
+    - lutnick
+    - deemed-export
+    domains:
+    - GOV
+    - INST
+    status: analyzed
+  deanwball-2026-clawed:
+    type: BLOG
+    title: Clawed
+    author:
+    - Dean W. Ball
+    year: 2026
+    url: https://www.hyperdimensional.co/p/clawed
+    accessed: '2026-03-03'
+    reliability: 0.55
+    bias_notes: Politically charged polemic from a former Trump Administration staffer;
+      strong priors about republican decline and executive thuggery. Contains some
+      concrete factual assertions about U.S. DoD procurement and policy, but is not
+      written as reported journalism and provides few citations.
+    claims_extracted:
+    - INST-2026-952
+    - GOV-2026-146
+    - GOV-2026-147
+    - GOV-2026-148
+    - GOV-2026-149
+    - ECON-2026-934
+    - INST-2026-957
+    analysis_file: analysis/sources/deanwball-2026-clawed.md
+    topics:
+    - ai
+    - anthropic
+    - claude
+    - national-security
+    - defense-procurement
+    - supply-chain-risk
+    - defense-production-act
+    - surveillance
+    - autonomous-weapons
+    - governance
+    domains:
+    - INST
+    - GOV
+    - ECON
+    status: analyzed
+  deanwball-2026-supply-chain-risk-open-source-thread:
+    type: SOCIAL
+    title: 'Thread: Supply chain risk designation pushes world toward open-source
+      dominance (favors China; higher variance)'
+    author:
+    - '@deanwball'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2027815164108476459.html
+    accessed: '2026-02-28'
+    reliability: 0.45
+    bias_notes: Political economy forecasting with strong priors (pro open-source;
+      skeptical of USG capture of closed labs). Coherent scenario narrative but largely
+      speculative and not quantified in-thread.
+    claims_extracted:
+    - INST-2026-950
+    - INST-2026-951
+    - GEO-2026-035
+    - RISK-2026-966
+    - TRANS-2026-048
+    analysis_file: analysis/sources/deanwball-2026-supply-chain-risk-open-source-thread.md
+    topics:
+    - supply-chain-risk
+    - open-source
+    - china
+    - surveillance
+    - ai-governance
+    - industrial-policy
+    domains:
+    - INST
+    - GEO
+    - RISK
+    - TRANS
+    status: analyzed
   deepseek-r1:
     type: PAPER
     title: 'DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement
@@ -1666,6 +2982,30 @@ sources:
     domains:
     - TECH
     status: cataloged
+  derya-2026-biological-risk-defense-thread:
+    type: SOCIAL
+    title: Biological AI risk and the opportunity cost of delaying medicine
+    author:
+    - Derya Unutmaz (@DeryaTR_)
+    year: 2026
+    url: https://x.com/DeryaTR_/status/2099515006869962890
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: The thread uses absence of completed AI cures to reject future harm
+      while relying on future cures to assign present blame. It applies inconsistent
+      standards to two forecasts.
+    claims_extracted:
+    - RISK-2026-504
+    - LABOR-2026-502
+    analysis_file: analysis/sources/derya-2026-biological-risk-defense-thread.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - LABOR
+    - RISK
+    status: analyzed
   doctorow-2026-reverse-centaur:
     type: ARTICLE
     title: AI companies will fail. We can salvage something from the wreckage
@@ -1701,6 +3041,41 @@ sources:
     - LABOR
     - TECH
     - GOV
+    status: analyzed
+  dod-2026-ai-strategy-department-of-war:
+    type: REPORT
+    title: Artificial Intelligence Strategy for the Department of War
+    author:
+    - Department of War
+    - Pete Hegseth
+    year: 2026
+    url: https://media.defense.gov/2026/Jan/12/2003855671/-1/-1/0/ARTIFICIAL-INTELLIGENCE-STRATEGY-FOR-THE-DEPARTMENT-OF-WAR.PDF
+    accessed: '2026-02-28'
+    reliability: 0.85
+    bias_notes: 'Official DoW policy memo: high reliability for stated directives
+      and timelines; weaker for feasibility and for embedded normative framing (“woke/ideological
+      tuning,” speed-first vs alignment).'
+    claims_extracted:
+    - GOV-2026-095
+    - GOV-2026-097
+    - RISK-2026-964
+    - GOV-2026-096
+    - GOV-2026-098
+    - INST-2026-937
+    analysis_file: analysis/sources/dod-2026-ai-strategy-department-of-war.md
+    topics:
+    - ai
+    - national-security
+    - military-ai
+    - procurement
+    - contracts
+    - any-lawful-use
+    - data-access
+    - alignment
+    domains:
+    - GOV
+    - INST
+    - RISK
     status: analyzed
   dolthub-2026-day-in-gas-town:
     type: BLOG
@@ -1883,6 +3258,105 @@ sources:
     - ECON
     - RESOURCE
     status: cataloged
+  fec-2010-citizens-united-v-fec-opinion:
+    type: REPORT
+    title: Citizens United v. Federal Election Commission
+    author:
+    - Supreme Court of the United States
+    year: 2010
+    url: https://www.fec.gov/resources/legal-resources/litigation/cu_sc08_opinion.pdf
+    accessed: '2026-03-03'
+    reliability: 0.95
+    bias_notes: Primary legal document. Holdings and quoted text are authoritative
+      for U.S. law unless superseded. Normative/legal reasoning is contestable and
+      should be paired with downstream empirical evidence for causal claims.
+    claims_extracted:
+    - GOV-2026-231
+    - GOV-2026-232
+    - GOV-2026-233
+    - GOV-2026-234
+    - GOV-2026-235
+    analysis_file: analysis/sources/fec-2010-citizens-united-v-fec-opinion.md
+    topics:
+    - campaign-finance
+    - first-amendment
+    - elections
+    - corporations
+    - disclosure
+    - scotus
+    domains:
+    - GOV
+    status: analyzed
+  fedasiuk-2026-china-anthropic-backlash:
+    type: SOCIAL
+    title: A low-confidence theory of Chinese hostility toward Anthropic
+    author:
+    - Ryan Fedasiuk
+    year: 2026
+    url: https://x.com/RyanFedasiuk/status/2099718121326289133
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: The author labels the theory low-confidence but says he is sure about
+      part of Anthropic’s intent. The latter confidence is not supported with additional
+      evidence.
+    claims_extracted:
+    - GEO-2026-501
+    - GEO-2026-502
+    analysis_file: analysis/sources/fedasiuk-2026-china-anthropic-backlash.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - GEO
+    status: analyzed
+  fernandez-perez-2026-navier-stokes-plagiarism-dispute:
+    type: ARTICLE
+    title: El anuncio de OpenAI ... desata acusaciones de plagio
+    author:
+    - Patricia Fernández de Lis and Jordi Pérez Colomé
+    year: 2026
+    url: https://elpais.com/ciencia/2026-09-09/el-anuncio-de-openai-de-que-ha-resuelto-uno-de-los-mayores-enigmas-matematicos-de-la-historia-desata-acusaciones-de-plagio.html
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-336
+    - TECH-2026-305
+    - INST-2026-308
+    - INST-2026-323
+    - INST-2026-338
+    analysis_file: analysis/sources/fernandez-perez-2026-navier-stokes-plagiarism-dispute.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+    - TECH
+  fortna-2003-scraps-paper-peace:
+    type: PAPER
+    title: Scraps of Paper? Agreements and the Durability of Peace
+    author:
+    - Virginia Page Fortna
+    year: 2003
+    url: https://doi.org/10.1017/S0020818303572046
+    accessed: '2026-07-14'
+    reliability: 0.85
+    bias_notes: Peer-reviewed empirical study of agreement design and peace durability;
+      transfer from civil-war settlements to frontier-AI agreements is indirect.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - peace-agreements
+    - agreement-design
+    - monitoring
+    domains:
+    - GEO
+    - GOV
+    status: cataloged
   ft-2026-xi-sole-operational-control-pla:
     type: ARTICLE
     title: Xi takes sole operational control of army as China probes military leaders
@@ -1980,6 +3454,29 @@ sources:
     - ECON
     - TRANS
     - RESOURCE
+    status: analyzed
+  gewirtz-2026-chinas-ai-reckoning:
+    type: ARTICLE
+    title: China’s AI Reckoning
+    author:
+    - Julian Gewirtz
+    year: 2026
+    url: https://juliangewirtz.substack.com/p/chinas-ai-reckoning
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: The phrase that American policy is a risk on par with other threats
+      is the analyst’s synthesis; the source texts list risks without a calibrated
+      ranking.
+    claims_extracted:
+    - GEO-2026-503
+    - GEO-2026-504
+    analysis_file: analysis/sources/gewirtz-2026-chinas-ai-reckoning.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - GEO
     status: analyzed
   google-2026-translategemma-blog:
     type: ARTICLE
@@ -2203,6 +3700,79 @@ sources:
     domains:
     - META
     status: analyzed
+  gpt-2026-trump-midterm-elections-report:
+    type: REPORT
+    title: Documented Trump administration actions affecting the 2026 midterm elections
+    author:
+    - GPT (ChatGPT)
+    year: 2026
+    url: ''
+    accessed: '2026-03-04'
+    reliability: 0.3
+    bias_notes: LLM-generated synthesis with non-resolvable in-chat “turn…” citations;
+      high risk of hallucinated or misattributed reporting. Useful as a lead list
+      for verification, not as primary evidence.
+    claims_extracted:
+    - GOV-2026-251
+    - GOV-2026-252
+    - GOV-2026-253
+    - GOV-2026-254
+    - GOV-2026-255
+    - GOV-2026-256
+    - GOV-2026-257
+    - GOV-2026-258
+    - GOV-2026-259
+    - GOV-2026-260
+    analysis_file: analysis/sources/gpt-2026-trump-midterm-elections-report.md
+    topics:
+    - elections
+    - midterms-2026
+    - election-administration
+    - voter-rolls
+    - executive-orders
+    - emergency-powers
+    - fbi
+    - doj
+    - doge
+    - odni
+    domains:
+    - GOV
+    status: analyzed
+  gpt-5-6-sol-white-house-vetting-synthesis:
+    type: KNOWLEDGE
+    title: 'Synthesis: GPT-5.6 Sol White House Vetting and Frontier AI Access Regime'
+    author:
+    - codex
+    year: 2026
+    url: ''
+    accessed: '2026-06-28'
+    reliability: 0.72
+    bias_notes: Cross-source synthesis combining OpenAI first-party release text,
+      CNN/WaPo reporting, HN discourse, Reuters-syndicated litigation reporting, Semafor
+      exclusive Mythos reporting, prior Reality Check analyses, and White House EO
+      checks. Scenario probabilities are analytic judgments; access-list criteria,
+      legal merits, and system-card details remain unresolved.
+    claims_extracted: []
+    analysis_file: analysis/syntheses/gpt-5-6-sol-white-house-vetting-synthesis.md
+    topics:
+    - openai
+    - gpt-5-6
+    - white-house
+    - anthropic
+    - mythos-5
+    - fable-5
+    - frontier-ai
+    - trusted-access
+    - export-controls
+    - digital-sovereignty
+    domains:
+    - GOV
+    - INST
+    - RISK
+    - SOC
+    - ECON
+    - GEO
+    status: analyzed
   greatandhra-2026-dalit-engineer-microsoft-caste-bias:
     type: ARTICLE
     title: Dalit Engineer Alleges Caste Bias at Microsoft
@@ -2225,6 +3795,102 @@ sources:
     domains:
     - LABOR
     - SOC
+    status: cataloged
+  greenblatt-2023-ai-control:
+    type: PAPER
+    title: 'AI Control: Improving Safety Despite Intentional Subversion'
+    author:
+    - Ryan Greenblatt
+    - Buck Shlegeris
+    - Kshitij Sachan
+    - Fabien Roger
+    year: 2023
+    url: https://arxiv.org/abs/2312.06942
+    accessed: '2026-07-14'
+    reliability: 0.7
+    bias_notes: Preprint with empirical control-protocol demonstrations in a restricted
+      coding setting; external validity to strategically superhuman systems is unknown.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - ai-control
+    - alignment
+    - safety-evaluations
+    domains:
+    - RISK
+    - TECH
+    status: cataloged
+  greenblatt-2024-alignment-faking:
+    type: PAPER
+    title: Alignment Faking in Large Language Models
+    author:
+    - Ryan Greenblatt et al.
+    year: 2024
+    url: https://arxiv.org/abs/2412.14093
+    accessed: '2026-07-14'
+    reliability: 0.7
+    bias_notes: Empirical preprint demonstrating alignment-faking behavior under constructed
+      incentives; prevalence in deployed systems is uncertain.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - alignment-faking
+    - deception
+    - ai-safety
+    domains:
+    - RISK
+    - TECH
+    status: cataloged
+  guardian-2026-biden-warns-trump-steal-midterms:
+    type: ARTICLE
+    title: Joe Biden warns that Donald Trump will try to ‘steal’ midterm elections
+    author:
+    - The Guardian
+    year: 2026
+    url: https://www.theguardian.com/us-news/2026/feb/28/joe-biden-donald-trump-midterm-elections
+    accessed: '2026-03-03'
+    reliability: 0.7
+    bias_notes: News reporting centered on a public speech; strongest where it quotes
+      Biden and anchors time/place. Contextual claims (polls; enforcement incidents;
+      Iran strikes) should be independently verified.
+    claims_extracted:
+    - GOV-2026-156
+    - GOV-2026-157
+    - GOV-2026-158
+    - GOV-2026-159
+    - GOV-2026-160
+    analysis_file: analysis/sources/guardian-2026-biden-warns-trump-steal-midterms.md
+    topics:
+    - elections
+    - midterms-2026
+    - biden
+    - voter-restrictions
+    - polling
+    - iran
+    domains:
+    - GOV
+    status: analyzed
+  harack-2025-verification-international-ai-governance:
+    type: REPORT
+    title: Verification for International AI Governance
+    author:
+    - Benjamin Harack et al.
+    - Oxford AI Governance Initiative
+    year: 2025
+    url: https://aigi.ox.ac.uk/publications/verification-for-international-ai-governance/
+    accessed: '2026-07-14'
+    reliability: 0.72
+    bias_notes: Technical governance report mapping verification options and limitations;
+      many mechanisms remain proposals rather than operational systems.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - international-verification
+    - ai-governance
+    - arms-control
+    domains:
+    - GOV
+    - GEO
     status: cataloged
   harries-2026-country-full-of-geniuses:
     type: BLOG
@@ -2271,6 +3937,28 @@ sources:
     - TRANS
     - ECON
     - RISK
+    status: analyzed
+  hassabis-2026-frontier-standards-framework:
+    type: BLOG
+    title: A Framework for Frontier AI and the Dawning of a New Age
+    author:
+    - Demis Hassabis
+    year: 2026
+    url: https://demishassabis.substack.com/p/a-framework-for-frontier-ai-and-the-dawning-of-a-new-age
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: An independent expert board and industry funding can coexist but require
+      safeguards; prestige and threshold-setting may influence entry incentives.
+    claims_extracted:
+    - GOV-2026-507
+    - GOV-2026-508
+    analysis_file: analysis/sources/hassabis-2026-frontier-standards-framework.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - GOV
     status: analyzed
   hawksightai-2026-semantica:
     type: KNOWLEDGE
@@ -2369,6 +4057,32 @@ sources:
     - LABOR
     - TRANS
     status: analyzed
+  hn-2026-gpt-5-6-sol-48690101:
+    type: SOCIAL
+    title: 'HN discussion: U.S. government will decide who gets to use GPT-5.6'
+    author:
+    - Hacker News commenters
+    year: 2026
+    url: https://news.ycombinator.com/item?id=48690101
+    accessed: '2026-06-28'
+    reliability: 0.38
+    bias_notes: Non-representative technical forum thread. Useful for surfacing developer
+      sentiment, trust concerns, and open-weight/sovereign-access hypotheses; weak
+      evidence for prevalence, causality, or policy facts.
+    claims_extracted:
+    - SOC-2026-052
+    - SOC-2026-053
+    analysis_file: analysis/sources/hn-2026-gpt-5-6-sol-48690101.md
+    topics:
+    - hacker-news
+    - openai
+    - gpt-5-6
+    - government-vetting
+    - open-weights
+    - digital-sovereignty
+    domains:
+    - SOC
+    status: analyzed
   hooker-hardware-lottery:
     type: PAPER
     title: The Hardware Lottery
@@ -2434,6 +4148,103 @@ sources:
     - ECON
     - LABOR
     status: cataloged
+  housefinancialservicesdems-2026-waters-green-insider-trading-tariffs:
+    type: ARTICLE
+    title: Ranking Member Maxine Waters and Rep. Al Green Lead Democrats in Urging
+      Chair Hill to Launch Immediate Committee Investigation into Insider Trading
+      and Market Manipulation Tied to Trump Tariffs
+    author:
+    - House Financial Services Democrats
+    year: 2026
+    url: https://democrats-financialservices.house.gov/news/documentsingle.aspx?DocumentID=415221
+    accessed: '2026-03-03'
+    reliability: 0.65
+    bias_notes: Official partisan committee press release. High confidence about what
+      it asserts and the existence/contents of the attached letter; limited confidence
+      about contested factual predicates (e.g., options-flow claims) without underlying
+      trading records.
+    claims_extracted:
+    - GOV-2026-226
+    - GOV-2026-227
+    - GOV-2026-228
+    - GOV-2026-229
+    - GOV-2026-230
+    analysis_file: analysis/sources/housefinancialservicesdems-2026-waters-green-insider-trading-tariffs.md
+    topics:
+    - tariffs
+    - insider-trading
+    - market-manipulation
+    - securities
+    - oversight
+    - truth-social
+    domains:
+    - GOV
+    - ECON
+    status: analyzed
+  housejudiciarydems-2026-raskin-lutnick-tariff-profiteering:
+    type: ARTICLE
+    title: Ranking Member Raskin Demands Records From Secretary Lutnick, Son Over
+      Appearance of Tariff Profiteering
+    author:
+    - House Judiciary Democrats
+    year: 2026
+    url: https://democrats-judiciary.house.gov/media-center/press-releases/ranking-member-raskin-demands-records-from-secretary-lutnick-son-over-appearance-of-tariff-profiteering
+    accessed: '2026-03-03'
+    reliability: 0.65
+    bias_notes: Official partisan committee press release. High confidence about what
+      it asserts and the existence/contents of the attached letter; limited confidence
+      about the underlying allegations without independent corroboration and transactional
+      evidence.
+    claims_extracted:
+    - GOV-2026-221
+    - GOV-2026-222
+    - GOV-2026-223
+    - GOV-2026-224
+    - GOV-2026-225
+    analysis_file: analysis/sources/housejudiciarydems-2026-raskin-lutnick-tariff-profiteering.md
+    topics:
+    - tariffs
+    - ethics
+    - corruption
+    - conflicts-of-interest
+    - insider-trading
+    - oversight
+    - commerce
+    domains:
+    - GOV
+    - ECON
+    status: analyzed
+  houseoversightdems-2026-digital-grift-tracker:
+    type: REPORT
+    title: Trump Family Digital Grift Wealth Tracker
+    author:
+    - House Oversight Democrats
+    year: 2026
+    url: https://oversightdemocrats.house.gov/trump-family-corruption-tracker
+    accessed: '2026-03-03'
+    reliability: 0.6
+    bias_notes: Official partisan committee resource page. High confidence about what
+      the page asserts; low confidence about the underlying dollar estimates absent
+      a disclosed methodology and data.
+    claims_extracted:
+    - GOV-2026-190
+    - GOV-2026-191
+    - GOV-2026-192
+    - GOV-2026-193
+    - GOV-2026-194
+    - GOV-2026-195
+    analysis_file: analysis/sources/houseoversightdems-2026-digital-grift-tracker.md
+    topics:
+    - corruption
+    - conflicts-of-interest
+    - trump
+    - crypto
+    - pardons
+    - oversight
+    domains:
+    - GOV
+    - ECON
+    status: analyzed
   huang-2026-superlinear-multi-step-attention:
     type: PAPER
     title: Superlinear Multi-Step Attention
@@ -2470,6 +4281,29 @@ sources:
     - flashattention
     - kv-cache
     domains:
+    - TECH
+    status: analyzed
+  huggingface-2026-agent-intrusion-timeline:
+    type: REPORT
+    title: Anatomy of a Frontier Lab Agent Intrusion
+    author:
+    - Hugo Larcher; Adrien Carreira; Raphael G; Christophe Rannou
+    year: 2026
+    url: https://huggingface.co/blog/agent-intrusion-technical-timeline
+    accessed: '2026-09-16'
+    reliability: 0.85
+    bias_notes: An open model helped defenders, but one successful defensive use does
+      not estimate the net effect of broad diffusion.
+    claims_extracted:
+    - RISK-2026-508
+    - TECH-2026-501
+    analysis_file: analysis/sources/huggingface-2026-agent-intrusion-timeline.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - RISK
     - TECH
     status: analyzed
   humlum-2025-llms-small-labor-market-effects:
@@ -2578,6 +4412,37 @@ sources:
     domains:
     - GOV
     status: cataloged
+  inews-2026-trump-plot-steal-midterms:
+    type: ARTICLE
+    title: Trump’s plot to steal the midterm elections is becoming clear
+    author:
+    - Sarah Baxter
+    year: 2026
+    url: https://inews.co.uk/opinion/trumps-plot-steal-midterm-elections-becoming-clear-4236253
+    accessed: '2026-03-03'
+    reliability: 0.45
+    bias_notes: Politically charged opinion column; mixes reported quotes with speculative
+      inferences and does not provide primary documentation for several key assertions.
+      Useful for extracting leads and candidate mechanisms rather than as a primary
+      factual record.
+    claims_extracted:
+    - GOV-2026-150
+    - GOV-2026-151
+    - GOV-2026-152
+    - GOV-2026-153
+    - GOV-2026-154
+    - GOV-2026-155
+    analysis_file: analysis/sources/inews-2026-trump-plot-steal-midterms.md
+    topics:
+    - elections
+    - midterms-2026
+    - voter-suppression
+    - election-administration
+    - intimidation
+    - executive-power
+    domains:
+    - GOV
+    status: analyzed
   islam-2023-financebench:
     type: PAPER
     title: 'FinanceBench: A New Benchmark for Financial Question Answering'
@@ -2609,6 +4474,34 @@ sources:
     - evaluation
     domains:
     - TECH
+    status: analyzed
+  jachiam-2026-fable-citizenship-thread:
+    type: SOCIAL
+    title: 'Thread: Fable dispute could normalize electronic citizenship verification'
+    author:
+    - '@jachiam0'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2067041785063608625.html
+    accessed: '2026-06-18'
+    reliability: 0.45
+    bias_notes: Short speculative governance-risk thread. Captured via browser because
+      rc-html-extract selected an older related thread.
+    claims_extracted:
+    - SOC-2026-051
+    - INST-2026-974
+    - RISK-2026-982
+    analysis_file: analysis/sources/jachiam-2026-fable-citizenship-thread.md
+    topics:
+    - anthropic
+    - fable-5
+    - citizenship-verification
+    - digital-identity
+    - ai-governance
+    - state-power
+    domains:
+    - SOC
+    - INST
+    - RISK
     status: analyzed
   jamestown-2025-pla-aircraft-incursions-taiwan-airspace-2024:
     type: ARTICLE
@@ -2775,6 +4668,40 @@ sources:
     domains:
     - TECH
     status: analyzed
+  karp-2026-cnbc-squawk-box-tokenmaxxing:
+    type: INTERVIEW
+    title: Alex Karp on CNBC Squawk Box (July 1, 2026) — ~20-min interview with Seema
+      Mody
+    author:
+    - Alex Karp; Seema Mody; CNBC Squawk Box
+    year: 2026
+    url: n/a (broadcast; Whisper transcript)
+    accessed: '2026-07-03'
+    reliability: 0.5
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: analysis/sources/karp-2026-cnbc-squawk-box-tokenmaxxing.md
+    topics:
+    - palantir
+    - karp
+    - nvidia
+    - sovereign-ai
+    - tokenmaxxing
+    - anthropic
+    - frontier-labs
+    - ontology
+    - us-china
+    - ai-economics
+    - ai-bubble
+    - open-weights
+    - national-champion
+    domains:
+    - INST
+    - ECON
+    - GOV
+    - SOC
+    - GEO
+    status: cataloged
   lee-2025-supreme-court-blocks-trump-guard:
     type: ARTICLE
     title: Supreme Court won’t allow National Guard deployment to Chicago in major
@@ -2870,6 +4797,71 @@ sources:
     domains:
     - TECH
     status: analyzed
+  lhl-2026-ai-geo-wargame:
+    type: REPORT
+    title: 'Geostrategic Wargame: The June 2026 Fable/Mythos Export-Control Takedown'
+    author:
+    - lhl / AI-assisted memo
+    year: 2026
+    url: reference/primary/lhl-2026-ai-geo-wargame.md
+    accessed: '2026-06-18'
+    reliability: 0.55
+    bias_notes: Local AI-assisted scenario memo. Strong as a synthesis and scenario
+      generator, weaker as a primary factual source. Treat factual event claims as
+      requiring external confirmation and scenario claims as provisional.
+    claims_extracted:
+    - GEO-2026-051
+    - INST-2026-971
+    - ECON-2026-964
+    - SOC-2026-050
+    - INST-2026-972
+    analysis_file: analysis/sources/lhl-2026-ai-geo-wargame.md
+    topics:
+    - ai
+    - export-controls
+    - fable-5
+    - mythos-5
+    - ai-sovereignty
+    - open-weights
+    - citizenship
+    - enterprise-architecture
+    - us-china
+    domains:
+    - GEO
+    - INST
+    - ECON
+    - SOC
+    - GOV
+    - RISK
+    status: analyzed
+  lhl-2026-ai-value-chain:
+    type: BLOG
+    title: Frontier Labs, Enterprises, and the AI Value Chain
+    author:
+    - lhl / Shisa.AI
+    year: 2026
+    url: https://blog.shisa.ai/posts/ai-value-chain/
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-331
+    - INST-2026-332
+    - ECON-2026-302
+    - ECON-2026-301
+    - INST-2026-327
+    - RISK-2026-302
+    - INST-2026-339
+    analysis_file: analysis/sources/lhl-2026-ai-value-chain.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - ECON
+    - INST
   lhl-2026-frontier-llm-token-unit-economics:
     type: KNOWLEDGE
     title: Inference Cost Analysis & Projections (Jan 2026)
@@ -2927,6 +4919,58 @@ sources:
     - INST
     - TRANS
     status: analyzed
+  lhl-2026-palantir-sovereignty-fable-chat:
+    type: CHAT
+    title: Palantir / WarClaude / Ontology / Claude Tag kills Palantir / sovereign
+      AI — conversation with Claude 5 Fable
+    author:
+    - lhl; Claude 5 Fable
+    year: 2026
+    url: n/a (local chat export)
+    accessed: '2026-07-03'
+    reliability: 0.5
+    bias_notes: ''
+    claims_extracted:
+    - INST-2026-983
+    - INST-2026-984
+    - INST-2026-985
+    - INST-2026-986
+    - INST-2026-987
+    - INST-2026-988
+    - INST-2026-989
+    - INST-2026-990
+    - GOV-2026-288
+    - GOV-2026-289
+    - INST-2026-991
+    - ECON-2026-983
+    - ECON-2026-984
+    - INST-2026-992
+    - GOV-2026-290
+    analysis_file: analysis/sources/lhl-2026-palantir-sovereignty-fable-chat.md
+    topics:
+    - palantir
+    - ontology
+    - warclaude
+    - claude-tag
+    - anthropic
+    - frontier-labs
+    - disintermediation
+    - anthropic-pentagon-standoff
+    - claude-code
+    - steganography
+    - sovereign-ai
+    - open-weights
+    - portfolio-architecture
+    - context-lock-in
+    - extractive
+    - shisa
+    - entity
+    domains:
+    - INST
+    - GOV
+    - ECON
+    - SOC
+    status: cataloged
   lhl-2026-realitycheck-data-readme:
     type: KNOWLEDGE
     title: Reality Check Knowledge Base
@@ -3213,6 +5257,81 @@ sources:
     domains:
     - TECH
     status: analyzed
+  liu-2026-bury-talent-yesterday:
+    type: BLOG
+    title: 我不得不把才华埋葬在昨天 (I Have No Choice but to Bury My Talent in Yesterday)
+    author:
+    - Shengyu Liu (刘胜与); shared and translated by @teortaxesTex
+    year: 2026
+    url: https://mp.weixin.qq.com/s/zk0KxuLzhmMJ4LPYW_OHMA
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: An appeal for universal access does not show that all capabilities
+      can safely be universally distributed. The essay’s extreme historical analogy
+      adds moral force without comparative evidence.
+    claims_extracted:
+    - LABOR-2026-500
+    - GOV-2026-503
+    - LABOR-2026-501
+    analysis_file: analysis/sources/liu-2026-bury-talent-yesterday.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - GOV
+    - LABOR
+    status: analyzed
+  liu-2026-malicious-intermediary:
+    type: PAPER
+    title: 'Your Agent Is Mine: Measuring Malicious Intermediary Attacks on the LLM
+      Supply Chain'
+    author:
+    - Liu
+    - Shou
+    - Wen
+    - Chen
+    - Fang
+    - Feng
+    year: 2026
+    url: https://arxiv.org/abs/2604.08407
+    accessed: '2026-04-11'
+    reliability: 0.5
+    bias_notes: ''
+    claims_extracted:
+    - TECH-2026-035
+    - TECH-2026-036
+    - TECH-2026-037
+    analysis_file: ''
+    topics: []
+    domains: []
+    status: cataloged
+  livgorton-2026-openai-all-lawful-use-thread:
+    type: SOCIAL
+    title: 'Thread: “OpenAI still has ‘all lawful use’ — nobody read the articles”'
+    author:
+    - '@livgorton'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2027616963942617195.html
+    accessed: '2026-02-28'
+    reliability: 0.4
+    bias_notes: Short commentary expressing frustration; includes an interpretive
+      historical claim about contract continuity that requires primary negotiation
+      documents to verify.
+    claims_extracted:
+    - GOV-2026-142
+    - META-2026-157
+    analysis_file: analysis/sources/livgorton-2026-openai-all-lawful-use-thread.md
+    topics:
+    - openai
+    - department-of-war
+    - any-lawful-use
+    - contracts
+    - discourse
+    domains:
+    - GOV
+    - META
+    status: analyzed
   macro-identity:
     type: KNOWLEDGE
     title: Macroeconomic accounting identities (demand = income)
@@ -3233,6 +5352,62 @@ sources:
     domains:
     - ECON
     status: cataloged
+  maguire-bowler-2026-navier-stokes-controversy:
+    type: ARTICLE
+    title: Controversy erupts as OpenAI claims solution to Navier Stokes maths problem
+    author:
+    - Dannielle Maguire and Jacinta Bowler
+    year: 2026
+    url: https://www.abc.net.au/news/2026-09-10/openai-navier-stokes-millennium-problem-claims/107132242
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-334
+    - INST-2026-335
+    - TECH-2026-300
+    - INST-2026-301
+    - INST-2026-303
+    - INST-2026-313
+    - INST-2026-315
+    - INST-2026-316
+    - RISK-2026-301
+    - RISK-2026-302
+    - TECH-2026-304
+    - INST-2026-336
+    analysis_file: analysis/sources/maguire-bowler-2026-navier-stokes-controversy.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+  majmudar-2026-scaling-pacing-thread:
+    type: SOCIAL
+    title: Why frontier researchers may be alarmed by scaling
+    author:
+    - Adam Majmudar
+    year: 2026
+    url: https://x.com/MajmudarAdam/status/2098881885200081234
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: The thread moves from illustrative unseen plots to confident forecasts,
+      and from sincerity to a claim about institutional incentives. Neither step is
+      established by the examples.
+    claims_extracted:
+    - TECH-2026-500
+    - INST-2026-500
+    analysis_file: analysis/sources/majmudar-2026-scaling-pacing-thread.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - INST
+    - TECH
+    status: analyzed
   marcus-2025-ai-2027-scenario-how-realistic:
     type: BLOG
     title: 'The “AI 2027” Scenario: How realistic is it?'
@@ -3376,6 +5551,27 @@ sources:
     domains:
     - INST
     status: analyzed
+  meinke-2024-frontier-models-scheming:
+    type: PAPER
+    title: Frontier Models are Capable of In-context Scheming
+    author:
+    - Alexander Meinke et al.
+    year: 2024
+    url: https://arxiv.org/abs/2412.04984
+    accessed: '2026-07-14'
+    reliability: 0.68
+    bias_notes: Empirical preprint testing scheming behavior in constructed environments;
+      demonstrates capability, not natural-world incidence.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - scheming
+    - deception
+    - ai-safety
+    domains:
+    - RISK
+    - TECH
+    status: cataloged
   metr-2025-ai-experienced-os-dev-productivity:
     type: ARTICLE
     title: Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer
@@ -3507,6 +5703,51 @@ sources:
     domains:
     - TECH
     - META
+    status: analyzed
+  metr-2026-hugging-face-investigation:
+    type: REPORT
+    title: Brief independent investigation of the OpenAI–Hugging Face incident
+    author:
+    - Ryan Greenblatt; Ajeya Cotra; Hjalmar Wijk (METR)
+    year: 2026
+    url: https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/
+    accessed: '2026-09-16'
+    reliability: 0.85
+    bias_notes: Deep access improves observability while dependence on company access
+      and redaction affects what can be published. The report acknowledges this tradeoff.
+    claims_extracted:
+    - RISK-2026-507
+    - META-2026-500
+    analysis_file: analysis/sources/metr-2026-hugging-face-investigation.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - META
+    - RISK
+    status: analyzed
+  metr-2026-independence-and-conflicts:
+    type: REPORT
+    title: METR funding and conflict-of-interest disclosures
+    author:
+    - METR
+    year: 2026
+    url: https://metr.org/about/
+    accessed: '2026-09-16'
+    reliability: 0.85
+    bias_notes: The institution both depends on voluntary access and evaluates the
+      companies providing it. Disclosure reduces opacity but cannot remove the tension.
+    claims_extracted:
+    - INST-2026-506
+    - INST-2026-507
+    analysis_file: analysis/sources/metr-2026-independence-and-conflicts.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - INST
     status: analyzed
   metr-2026-time-horizon-1-1:
     type: ARTICLE
@@ -3650,6 +5891,60 @@ sources:
     domains:
     - META
     status: cataloged
+  navier-stokes-2026-research-credit-data-value-chain:
+    type: REPORT
+    title: Navier–Stokes, research credit, customer data and the AI value chain
+    author:
+    - Codex / GPT-6
+    year: 2026
+    url: local:analysis/syntheses/navier-stokes-2026-research-credit-data-value-chain.md
+    accessed: ''
+    reliability: 0.85
+    bias_notes: ''
+    claims_extracted: []
+    analysis_file: analysis/syntheses/navier-stokes-2026-research-credit-data-value-chain.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+    - TECH
+    - ECON
+    - RISK
+  nbc-2026-save-america-act-50-senate-votes:
+    type: ARTICLE
+    title: Trump's election bill tops 50 Senate votes, but Democrats could still block
+      it
+    author:
+    - Sahil Kapur
+    year: 2026
+    url: https://www.nbcnews.com/politics/congress/trumps-election-bill-save-america-act-50-senate-votes-democrats-block-rcna259351
+    accessed: '2026-03-03'
+    reliability: 0.7
+    bias_notes: Mainstream political reporting with direct quotes and a verifiable
+      polling reference (Pew). Legislative-status and bill-text specifics should be
+      cross-checked against primary congressional records.
+    claims_extracted:
+    - GOV-2026-166
+    - GOV-2026-167
+    - GOV-2026-168
+    - GOV-2026-169
+    - GOV-2026-170
+    - GOV-2026-171
+    analysis_file: analysis/sources/nbc-2026-save-america-act-50-senate-votes.md
+    topics:
+    - elections
+    - voter-id
+    - proof-of-citizenship
+    - save-act
+    - senate
+    - filibuster
+    - polling
+    domains:
+    - GOV
+    status: analyzed
   nbcnews-2022-best-kept-secret-caste-discrimination:
     type: ARTICLE
     title: 'Big Tech''s big problem is also its ''best-kept secret'': Caste discrimination'
@@ -3676,6 +5971,65 @@ sources:
     - LABOR
     - SOC
     status: cataloged
+  newrepublic-2026-mcconnell-stalls-save-america-act:
+    type: ARTICLE
+    title: McConnell Stalls Trump’s Election Overhaul Bill as Republicans Fume
+    author:
+    - The New Republic
+    year: 2026
+    url: https://newrepublic.com/post/206864/mcconnell-trump-election-overhaul-bill-save-america-act
+    accessed: '2026-03-03'
+    reliability: 0.55
+    bias_notes: Politically opinionated outlet; combines reporting on committee roles
+      and public posts with interpretive framing and partisan critique. Best used
+      as a pointer to underlying artifacts (tweet, letter, op-ed) and to map actor
+      rhetoric.
+    claims_extracted:
+    - GOV-2026-161
+    - GOV-2026-162
+    - GOV-2026-163
+    - GOV-2026-164
+    - GOV-2026-165
+    analysis_file: analysis/sources/newrepublic-2026-mcconnell-stalls-save-america-act.md
+    topics:
+    - elections
+    - voter-id
+    - proof-of-citizenship
+    - save-act
+    - senate
+    - mcconnell
+    - filibuster
+    domains:
+    - GOV
+    status: analyzed
+  newrepublic-2026-trump-mail-in-ballots-50-years:
+    type: ARTICLE
+    title: Trump Reveals Ominous Plot for 50 Years of Rigged Elections
+    author:
+    - The New Republic
+    year: 2026
+    url: https://newrepublic.com/post/206815/trump-mail-in-ballots-midterms-50-years-rigged-elections
+    accessed: '2026-03-03'
+    reliability: 0.55
+    bias_notes: Strongly framed commentary anchored on quoted rally remarks and a
+      checkable factual dispute about whether postal voting exists outside the U.S.
+      Quote-level claims should be verified against primary rally video/transcript.
+    claims_extracted:
+    - GOV-2026-172
+    - GOV-2026-173
+    - GOV-2026-174
+    - GOV-2026-175
+    - GOV-2026-176
+    analysis_file: analysis/sources/newrepublic-2026-trump-mail-in-ballots-50-years.md
+    topics:
+    - elections
+    - mail-in-voting
+    - voter-id
+    - proof-of-citizenship
+    - midterms-2026
+    domains:
+    - GOV
+    status: analyzed
   newyorker-2022-google-caste-bias-problem:
     type: ARTICLE
     title: Google’s Caste-Bias Problem
@@ -3701,6 +6055,37 @@ sources:
     - LABOR
     - SOC
     status: cataloged
+  noahsmith-2026-shape-multipolar-world:
+    type: BLOG
+    title: The shape of the multipolar world is a little clearer
+    author:
+    - Noah Smith
+    year: 2026
+    url: https://www.noahpinion.blog/p/the-shape-of-the-multipolar-world
+    accessed: '2026-03-03'
+    reliability: 0.55
+    bias_notes: Commentary post mixing factual assertions about fast-moving events
+      with interpretive claims about the rules-based order. Key event claims should
+      be corroborated with primary reporting.
+    claims_extracted:
+    - GEO-2026-036
+    - GEO-2026-037
+    - GEO-2026-038
+    - GEO-2026-039
+    - GEO-2026-040
+    - GEO-2026-041
+    analysis_file: analysis/sources/noahsmith-2026-shape-multipolar-world.md
+    topics:
+    - geopolitics
+    - multipolarity
+    - rules-based-order
+    - iran
+    - israel
+    - us-foreign-policy
+    domains:
+    - GEO
+    - GOV
+    status: analyzed
   npr-2020-california-caste-workplace:
     type: ARTICLE
     title: California Workplace Discrimination System Sheds Light On Caste System
@@ -3729,6 +6114,34 @@ sources:
     - GOV
     - SOC
     status: cataloged
+  nybooks-1995-eco-ur-fascism:
+    type: ARTICLE
+    title: Ur-Fascism
+    author:
+    - Umberto Eco
+    year: 1995
+    url: https://www.nybooks.com/articles/1995/06/22/ur-fascism/
+    accessed: '2026-03-03'
+    reliability: 0.75
+    bias_notes: Canonical reflective essay by a major intellectual. Strong as conceptual
+      framing and historical memory; not a quantitative political-science model and
+      should be operationalized before checklist scoring.
+    claims_extracted:
+    - SOC-2026-036
+    - SOC-2026-037
+    - SOC-2026-038
+    - SOC-2026-039
+    analysis_file: analysis/sources/nybooks-1995-eco-ur-fascism.md
+    topics:
+    - fascism
+    - authoritarianism
+    - political-theory
+    - family-resemblance
+    - ur-fascism
+    domains:
+    - SOC
+    - GOV
+    status: analyzed
   nyt-2026-world-sees-america-tooze:
     type: INTERVIEW
     title: How the World Sees America, With Adam Tooze
@@ -3811,6 +6224,65 @@ sources:
     - GOV
     - GEO
     status: analyzed
+  openai-2026-agreement-department-of-war:
+    type: ARTICLE
+    title: Our agreement with the Department of War
+    author:
+    - OpenAI
+    year: 2026
+    url: https://openai.com/index/our-agreement-with-the-department-of-war/
+    accessed: '2026-02-28'
+    reliability: 0.7
+    bias_notes: Corporate contract disclosure and framing statement. Reliable for
+      what is published as contract language; lower reliability for comparative marketing
+      claims and for operational interpretation of ambiguous terms.
+    claims_extracted:
+    - GOV-2026-130
+    - GOV-2026-131
+    - GOV-2026-132
+    - GOV-2026-133
+    - GOV-2026-134
+    - INST-2026-947
+    - META-2026-154
+    analysis_file: analysis/sources/openai-2026-agreement-department-of-war.md
+    topics:
+    - openai
+    - department-of-war
+    - any-lawful-use
+    - autonomous-weapons
+    - surveillance
+    - domestic-law-enforcement
+    - contract
+    - transparency
+    domains:
+    - GOV
+    - INST
+    - META
+    status: analyzed
+  openai-2026-api-data-controls:
+    type: KNOWLEDGE
+    title: 'OpenAI API data controls: training and retention'
+    author:
+    - OpenAI
+    year: 2026
+    url: https://platform.openai.com/docs/guides/your-data
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-339
+    - INST-2026-340
+    - INST-2026-314
+    - INST-2026-332
+    analysis_file: analysis/sources/openai-2026-api-data-controls.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
   openai-2026-gpt-5-3-codex:
     type: ARTICLE
     title: Introducing GPT-5.3-Codex
@@ -3909,6 +6381,110 @@ sources:
     - INST
     - RISK
     status: analyzed
+  openai-2026-navier-stokes-data-response:
+    type: REPORT
+    title: Official response on direct access and training uncertainty
+    author:
+    - OpenAI
+    year: 2026
+    url: https://threadreaderapp.com/thread/2097375276384567642.html
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-312
+    - INST-2026-313
+    - INST-2026-314
+    - INST-2026-306
+    - INST-2026-322
+    - INST-2026-330
+    - INST-2026-331
+    - INST-2026-332
+    - TECH-2026-306
+    - INST-2026-338
+    - TECH-2026-307
+    analysis_file: analysis/sources/openai-2026-navier-stokes-data-response.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+  openai-2026-navier-stokes-solution:
+    type: REPORT
+    title: On the Navier–Stokes Millennium Prize Problem
+    author:
+    - OpenAI
+    year: 2026
+    url: https://openai.com/index/navier-stokes-solution/
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-300
+    - TECH-2026-300
+    - TECH-2026-301
+    - TECH-2026-302
+    - INST-2026-307
+    - INST-2026-312
+    - INST-2026-313
+    - INST-2026-318
+    - RISK-2026-300
+    - ECON-2026-300
+    - TECH-2026-303
+    - INST-2026-324
+    - ECON-2026-301
+    - INST-2026-330
+    - INST-2026-331
+    - ECON-2026-302
+    - TECH-2026-304
+    - INST-2026-336
+    - TECH-2026-305
+    - INST-2026-337
+    analysis_file: analysis/sources/openai-2026-navier-stokes-solution.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+    - TECH
+  openai-2026-previewing-gpt-5-6-sol:
+    type: ARTICLE
+    title: 'Previewing GPT-5.6 Sol: a next-generation model'
+    author:
+    - OpenAI
+    year: 2026
+    url: https://openai.com/index/previewing-gpt-5-6-sol/
+    accessed: '2026-06-28'
+    reliability: 0.72
+    bias_notes: First-party model release and safety/access positioning. Strong evidence
+      for what OpenAI announced and how it framed the rollout; weaker for benchmark,
+      threshold, and safeguard effectiveness claims without system-card or third-party
+      evaluation.
+    claims_extracted:
+    - GOV-2026-279
+    - INST-2026-975
+    - RISK-2026-983
+    - RISK-2026-984
+    analysis_file: analysis/sources/openai-2026-previewing-gpt-5-6-sol.md
+    topics:
+    - openai
+    - gpt-5-6
+    - sol
+    - frontier-ai
+    - cyber-capability
+    - government-vetting
+    - trusted-access
+    domains:
+    - GOV
+    - INST
+    - RISK
+    status: analyzed
   openai-value-intelligence:
     type: ARTICLE
     title: A business that scales with the value of intelligence
@@ -3950,6 +6526,29 @@ sources:
     - INST
     - TECH
     status: analyzed
+  orhan-2026-research-customer-scooping:
+    type: SOCIAL
+    title: Research customers and the scooping precedent
+    author:
+    - Ryan Orhan
+    year: 2026
+    url: https://threadreaderapp.com/thread/2097471623490150754.html
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-327
+    - RISK-2026-301
+    analysis_file: analysis/sources/orhan-2026-research-customer-scooping.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+    - RISK
   orosz-2026-2028-gic-critique-thread:
     type: SOCIAL
     title: Thread critique of examples in “THE 2028 GLOBAL INTELLIGENCE CRISIS”
@@ -4007,6 +6606,97 @@ sources:
     - un-wpp
     domains:
     - SOC
+    status: cataloged
+  pacing-frontier-2026-statement:
+    type: ARTICLE
+    title: 'Pacing the Frontier: employee statement'
+    author:
+    - Pacing the Frontier signatories
+    year: 2026
+    url: https://www.pacingthefrontier.com/
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: A visible cross-lab coalition establishes endorsement, not independence
+      of beliefs or proof that a particular intervention works.
+    claims_extracted:
+    - GOV-2026-500
+    - INST-2026-501
+    analysis_file: analysis/sources/pacing-frontier-2026-statement.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - GOV
+    - INST
+    status: analyzed
+  pacing-frontier-2026-synthesis:
+    type: REPORT
+    title: 'Pacing the frontier: risk evidence, governance power, China and biological
+      risk'
+    author:
+    - Codex
+    year: 2026
+    url: ''
+    accessed: '2026-09-16'
+    reliability: 0.8
+    bias_notes: Cross-source analyst synthesis; not independent evidence from its
+      inputs. Company-data capture remains blocked.
+    claims_extracted: []
+    analysis_file: analysis/syntheses/pacing-frontier-2026-risk-governance-china-bio.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - china
+    - biological-risk
+    domains:
+    - GOV
+    - GEO
+    - RISK
+    - INST
+    - TECH
+    - LABOR
+    status: analyzed
+  palantir-sovereign-ai-frontier-lab-extraction-synthesis:
+    type: SYNTHESIS
+    title: 'Synthesis: Palantir, Sovereign AI, and the Frontier-Lab Extraction Question
+      (July 2026)'
+    author:
+    - claude (claude-sonnet-4 via claude-code)
+    year: 2026
+    url: n/a
+    accessed: '2026-07-03'
+    reliability: 0.5
+    bias_notes: ''
+    claims_extracted:
+    - META-2026-164
+    - META-2026-165
+    - META-2026-166
+    - META-2026-167
+    analysis_file: analysis/syntheses/palantir-sovereign-ai-frontier-lab-extraction-synthesis.md
+    topics:
+    - palantir
+    - karp
+    - sovereign-ai
+    - frontier-labs
+    - extractive
+    - context-lock-in
+    - anthropic-pentagon-standoff
+    - open-weights
+    - open-evals
+    - national-champion
+    - portfolio-architecture
+    - multipolar
+    - entity
+    - cultural-sovereignty
+    - nvidia
+    - tokenmaxxing
+    domains:
+    - GOV
+    - ECON
+    - INST
+    - SOC
+    - META
     status: cataloged
   peng-2023-copilot-productivity:
     type: PAPER
@@ -4108,6 +6798,132 @@ sources:
     - GOV
     - TRANS
     status: analyzed
+  phillipsrobins-2026-lutnick-letter-legal-thread:
+    type: SOCIAL
+    title: 'Thread: four legal flaws in the Fable/Mythos export-control letter'
+    author:
+    - '@alasdairpr'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2067052688508899577.html
+    accessed: '2026-06-18'
+    reliability: 0.52
+    bias_notes: Short but substantive legal critique. Strong for issue-spotting; ultimate
+      legal outcome remains unresolved.
+    claims_extracted:
+    - GOV-2026-278
+    - GEO-2026-052
+    - RISK-2026-980
+    - RISK-2026-981
+    analysis_file: analysis/sources/phillipsrobins-2026-lutnick-letter-legal-thread.md
+    topics:
+    - anthropic
+    - fable-5
+    - mythos-5
+    - export-controls
+    - ai-as-a-service
+    - first-amendment
+    - ear
+    domains:
+    - GOV
+    - GEO
+    - RISK
+    status: analyzed
+  podscan-2026-tech-report-zitron-unsubsidised-ai:
+    type: CONVO
+    title: 'AI Bubble: Nobody will pay for unsubsidised AI | Ed Zitron (The Tech Report;
+      Podscan transcript)'
+    author:
+    - The Tech Report (Times Radio)
+    - Ed Zitron
+    year: 2026
+    url: https://podscan.fm/podcasts/the-tech-report/episodes/ai-bubble-nobody-will-pay-for-unsubsidised-ai-ed-zitron
+    accessed: '2026-03-28'
+    reliability: 0.45
+    bias_notes: Transcript of a media interview. Useful for Zitron’s stated beliefs
+      and framing; not audited evidence for financial or operational claims. Some
+      numbers are conversational and may be imprecise.
+    claims_extracted:
+    - INST-2026-959
+    - ECON-2026-957
+    - ECON-2026-958
+    - INST-2026-960
+    analysis_file: analysis/sources/podscan-2026-tech-report-zitron-unsubsidised-ai.md
+    topics:
+    - ai
+    - ai-bubble
+    - pricing
+    - subscriptions
+    - api
+    - enterprise
+    - nvidia
+    - datacenters
+    domains:
+    - ECON
+    - INST
+    - TRANS
+    status: analyzed
+  politico-2026-hegseth-anthropic-ultimatum:
+    type: ARTICLE
+    title: '‘Incoherent’: Hegseth’s Anthropic ultimatum confounds AI policymakers'
+    author:
+    - Brendan Bordelon
+    year: 2026
+    url: https://www.politico.com/news/2026/02/26/incoherent-hegseths-anthropic-ultimatum-confounds-ai-policymakers-00800135
+    accessed: '2026-02-28'
+    reliability: 0.65
+    bias_notes: Politico reporting with multiple named expert voices and some anonymous
+      officials. Strong on elite policy reaction; weaker on internal intent and negotiation
+      details.
+    claims_extracted:
+    - GOV-2026-125
+    - GOV-2026-126
+    - GOV-2026-127
+    - GOV-2026-128
+    - GOV-2026-129
+    - INST-2026-945
+    - INST-2026-946
+    analysis_file: analysis/sources/politico-2026-hegseth-anthropic-ultimatum.md
+    topics:
+    - anthropic
+    - defense-production-act
+    - supply-chain-risk
+    - any-lawful-use
+    - maduro-raid
+    - palantir
+    - openai
+    - xai
+    - google
+    domains:
+    - GOV
+    - INST
+    status: analyzed
+  project2025observer-2026-tracker:
+    type: REPORT
+    title: Project 2025 Tracker
+    author:
+    - Project 2025 Observer
+    year: 2026
+    url: https://www.project2025.observer/en
+    accessed: '2026-03-03'
+    reliability: 0.55
+    bias_notes: Community-driven tracker that organizes objectives and cites sources;
+      valuable as an index but status labels and any overall completion metric can
+      embed subjective judgments or opaque weighting.
+    claims_extracted:
+    - GOV-2026-185
+    - GOV-2026-186
+    - GOV-2026-187
+    - GOV-2026-188
+    - GOV-2026-189
+    analysis_file: analysis/sources/project2025observer-2026-tracker.md
+    topics:
+    - project-2025
+    - governance
+    - policy-tracker
+    - institutions
+    domains:
+    - GOV
+    status: analyzed
   qz-2022-apple-caste-discrimination-anomaly:
     type: ARTICLE
     title: Apple denouncing caste-based discrimination is an anomaly in Silicon Valley
@@ -4139,6 +6955,29 @@ sources:
     - SOC
     - GOV
     status: cataloged
+  rand-2024-ai-biological-attack-risk:
+    type: REPORT
+    title: Does AI Increase the Operational Risk of Biological Attacks?
+    author:
+    - RAND research team
+    year: 2024
+    url: https://www.rand.org/pubs/research_reports/RRA2977-2.html
+    accessed: '2026-09-16'
+    reliability: 0.85
+    bias_notes: No statistically significant effect is not proof of zero effect; measurement
+      sensitivity and model vintage matter.
+    claims_extracted:
+    - RISK-2026-512
+    - META-2026-503
+    analysis_file: analysis/sources/rand-2024-ai-biological-attack-risk.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - META
+    - RISK
+    status: analyzed
   ranganathan-2026-ai-intensifies-it:
     type: ARTICLE
     title: AI Doesn’t Reduce Work—It Intensifies It
@@ -4328,6 +7167,33 @@ sources:
     - GOV
     - SOC
     status: analyzed
+  reason-2026-anthropic-pentagon-dpa-volokh:
+    type: ARTICLE
+    title: Anthropic, the Pentagon, and the Defense Production Act
+    author:
+    - Eugene Volokh
+    year: 2026
+    url: https://reason.com/volokh/2026/02/25/anthropic-the-pentagon-and-the-defense-production-act/
+    accessed: '2026-02-28'
+    reliability: 0.6
+    bias_notes: Secondary relay / link post. Explicitly disclaims independent expertise
+      and primarily shares an excerpt of Rozenshtein’s Lawfare analysis. Useful as
+      a propagation node, not as independent reporting.
+    claims_extracted:
+    - META-2026-153
+    - GOV-2026-104
+    - GOV-2026-105
+    analysis_file: analysis/sources/reason-2026-anthropic-pentagon-dpa-volokh.md
+    topics:
+    - defense-production-act
+    - any-lawful-use
+    - military-ai
+    - contracts
+    - commentary
+    domains:
+    - GOV
+    - META
+    status: analyzed
   reason-2026-dhs-retreats-violent-riot-pretti:
     type: ARTICLE
     title: DHS retreats from the claim that the agents who killed Alex Pretti faced
@@ -4381,6 +7247,38 @@ sources:
     domains:
     - GOV
     status: cataloged
+  reuters-2026-legal-tech-sues-us-anthropic-access:
+    type: ARTICLE
+    title: Legal tech firm sues US over order limiting foreign access to top-tier
+      Anthropic models
+    author:
+    - Mike Scarcella
+    - Reuters
+    year: 2026
+    url: https://www.reuters.com/legal/litigation/legal-tech-firm-sues-us-over-order-limiting-foreign-access-top-tier-anthropic-2026-06-23/
+    accessed: '2026-06-28'
+    reliability: 0.8
+    bias_notes: Reuters direct capture was blocked by Datadome/401, so analysis uses
+      Reuters syndicated copies via AOL and Economic Times. Strong for reporting that
+      a lawsuit and allegations exist; does not adjudicate legal merits or the truth
+      of plaintiff harm claims.
+    claims_extracted:
+    - GOV-2026-284
+    - ECON-2026-965
+    - GOV-2026-285
+    analysis_file: analysis/sources/reuters-2026-legal-tech-sues-us-anthropic-access.md
+    topics:
+    - reuters
+    - anthropic
+    - fable-5
+    - mythos-5
+    - export-controls
+    - litigation
+    - foreign-national-access
+    domains:
+    - GOV
+    - ECON
+    status: analyzed
   reuters-2026-taiwan-monitoring-pla-leadership:
     type: ARTICLE
     title: Taiwan monitoring 'abnormal' China military leadership changes after top
@@ -4436,6 +7334,39 @@ sources:
     - TECH
     - RESOURCE
     status: cataloged
+  ripplebrain-2026-negotiate-and-kill-you:
+    type: SOCIAL
+    title: Iran deterrence after "negotiate and we'll kill you" (thread)
+    author:
+    - Amerikanets (@ripplebrain)
+    year: 2026
+    url: https://threadreaderapp.com/thread/2029249013535445428.html
+    accessed: '2026-03-07'
+    reliability: 0.3
+    bias_notes: Single-account geopolitical opinion thread with strong moral and strategic
+      framing. It mixes a small amount of checkable diplomatic context with high-inference
+      claims about Iranian incentives, Israeli influence, and likely escalation paths.
+    claims_extracted:
+    - GEO-2026-042
+    - GEO-2026-043
+    - GEO-2026-044
+    - GOV-2026-261
+    - GOV-2026-262
+    - GOV-2026-263
+    analysis_file: analysis/sources/ripplebrain-2026-negotiate-and-kill-you.md
+    topics:
+    - iran
+    - israel
+    - us-iran
+    - diplomacy
+    - deterrence
+    - gulf-oil
+    - trust
+    - social-media
+    domains:
+    - GEO
+    - GOV
+    status: analyzed
   ronacher-2026-agent-psychosis:
     type: BLOG
     title: 'Agent Psychosis: Are We Going Insane?'
@@ -4470,6 +7401,119 @@ sources:
     - SOC
     - LABOR
     status: analyzed
+  ronacher-2026-ai-and-the-ship-of-theseus:
+    type: BLOG
+    title: AI And The Ship of Theseus
+    author:
+    - Armin Ronacher
+    year: 2026
+    url: https://lucumr.pocoo.org/2026/3/5/theseus/
+    accessed: '2026-04-01'
+    reliability: 0.62
+    bias_notes: Opinionated essay with explicit pro-permissive licensing bias disclosure.
+      Strong for framing and argument structure, weak for legal conclusiveness.
+    claims_extracted:
+    - SOC-2026-046
+    - SOC-2026-047
+    - META-2026-161
+    - RISK-2026-978
+    - SOC-2026-048
+    analysis_file: analysis/sources/ronacher-2026-ai-and-the-ship-of-theseus.md
+    topics:
+    - chardet
+    - AI rewrite
+    - licensing
+    - ship of theseus
+    - copyleft
+    - permissive licenses
+    domains:
+    - SOC
+    - META
+    - RISK
+    - GOV
+    status: analyzed
+  rozenshtein-2026-dpa-anthropic:
+    type: ARTICLE
+    title: What the Defense Production Act Can and Can’t Do to Anthropic
+    author:
+    - Alan Z. Rozenshtein
+    year: 2026
+    url: https://www.lawfaremedia.org/article/what-the-defense-production-act-can-and-can%27t-do-to-anthropic
+    accessed: '2026-02-28'
+    reliability: 0.75
+    bias_notes: Legal analysis with a normative thesis (Congress should set military
+      AI rules). High value for mapping DPA ambiguity; relies on reporting for underlying
+      facts and makes judicial-outcome predictions.
+    claims_extracted:
+    - GOV-2026-099
+    - GOV-2026-100
+    - GOV-2026-101
+    - GOV-2026-102
+    - GOV-2026-103
+    - RISK-2026-965
+    analysis_file: analysis/sources/rozenshtein-2026-dpa-anthropic.md
+    topics:
+    - defense-production-act
+    - any-lawful-use
+    - procurement
+    - military-ai
+    - surveillance
+    - autonomous-weapons
+    - first-amendment
+    - major-questions-doctrine
+    domains:
+    - GOV
+    - RISK
+    status: analyzed
+  sacks-2026-pace-frontier-response:
+    type: SOCIAL
+    title: Response to frontier pacing proposals
+    author:
+    - David Sacks
+    year: 2026
+    url: https://x.com/DavidSacks/status/2098973625252708460
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: The argument invokes labs’ collective ability to stop while dismissing
+      the need for coordination. It assumes liability can internalize harms that may
+      be diffuse, irreversible or larger than company assets.
+    claims_extracted:
+    - INST-2026-502
+    - GOV-2026-502
+    - INST-2026-503
+    analysis_file: analysis/sources/sacks-2026-pace-frontier-response.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - GOV
+    - INST
+    status: analyzed
+  sastry-2024-computing-power-governance-ai:
+    type: PAPER
+    title: Computing Power and the Governance of Artificial Intelligence
+    author:
+    - Girish Sastry
+    - Lennart Heim
+    - Haydn Belfield
+    - Markus Anderljung et al.
+    year: 2024
+    url: https://arxiv.org/abs/2402.08797
+    accessed: '2026-07-14'
+    reliability: 0.75
+    bias_notes: Multidisciplinary compute-governance analysis; strong on mechanism
+      inventory, with empirical feasibility still developing.
+    claims_extracted: []
+    analysis_file: ''
+    topics:
+    - compute-governance
+    - chip-tracking
+    - ai-governance
+    domains:
+    - GOV
+    - TECH
+    status: cataloged
   schillace-2025-compounding-teams:
     type: BLOG
     title: I have seen the compounding teams
@@ -4507,6 +7551,89 @@ sources:
     - TECH
     - LABOR
     - ECON
+    status: analyzed
+  secularhumanism-2003-britt-fascism-anyone:
+    type: ARTICLE
+    title: Fascism Anyone?
+    author:
+    - Laurence W. Britt
+    year: 2003
+    url: https://secularhumanism.org/2003/03/fascism-anyone/
+    accessed: '2026-03-03'
+    reliability: 0.55
+    bias_notes: Popular political-analysis essay (not peer-reviewed political science).
+      Strong as an accessible checklist and historical reminder; weaker as a validated
+      typology with operational definitions and base-rate calibration.
+    claims_extracted:
+    - SOC-2026-032
+    - SOC-2026-033
+    - SOC-2026-034
+    - SOC-2026-035
+    analysis_file: analysis/sources/secularhumanism-2003-britt-fascism-anyone.md
+    topics:
+    - fascism
+    - authoritarianism
+    - political-theory
+    - diagnostic-frameworks
+    domains:
+    - SOC
+    - GOV
+    status: analyzed
+  selsam-2026-personal-statement-ai-risk:
+    type: BLOG
+    title: Personal Statement on AI Risk (shared by Daniel Kokotajlo)
+    author:
+    - Daniel Selsam; shared by Daniel Kokotajlo
+    year: 2026
+    url: https://docs.google.com/document/d/e/2PACX-1vQNl3SEX5IyA6d9qHjjFZN-qzGRZNFI6b63g-yu1Fy-ZYkVfCWm7i9WXRXw63m6yDB_auDuPLyQ7jBm/pub
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: Selsam acknowledges no clear extrapolatable trend in research judgment
+      or experimental bottlenecks, while giving high confidence to eventual destructive
+      behavior. His two premises establish a reason for concern; they do not logically
+      establish extinction probability.
+    claims_extracted:
+    - RISK-2026-500
+    - RISK-2026-501
+    - RISK-2026-502
+    analysis_file: analysis/sources/selsam-2026-personal-statement-ai-risk.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - RISK
+    status: analyzed
+  semafor-2026-us-releases-anthropic-mythos:
+    type: ARTICLE
+    title: 'Exclusive: US releases powerful Anthropic model Mythos to some US companies'
+    author:
+    - Reed Albergotti
+    - Ben Smith
+    year: 2026
+    url: https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies
+    accessed: '2026-06-28'
+    reliability: 0.76
+    bias_notes: Exclusive reporting apparently based on letter language and sources
+      close to talks. Strong for partial Mythos-return update; exact Annex A scope
+      and regulatory interpretation need published primary documents.
+    claims_extracted:
+    - GOV-2026-286
+    - INST-2026-977
+    - GEO-2026-053
+    analysis_file: analysis/sources/semafor-2026-us-releases-anthropic-mythos.md
+    topics:
+    - semafor
+    - anthropic
+    - mythos-5
+    - fable-5
+    - export-controls
+    - trusted-partners
+    - foreign-national-access
+    domains:
+    - GOV
+    - INST
+    - GEO
     status: analyzed
   shambaugh-2026-ai-agent-hit-piece-1:
     type: BLOG
@@ -4650,6 +7777,46 @@ sources:
     - TECH
     - ECON
     status: analyzed
+  shisa-2026-entity-sovereign-ai-proposal:
+    type: PROPOSAL
+    title: Shisa.AI — Sovereign AI stack for ENTITY (open models, open evals, open
+      datasets)
+    author:
+    - Shisa.AI
+    year: 2026
+    url: n/a (embedded in chat log)
+    accessed: '2026-07-03'
+    reliability: 0.5
+    bias_notes: ''
+    claims_extracted:
+    - INST-2026-993
+    - INST-2026-994
+    - INST-2026-996
+    - INST-2026-997
+    - SOC-2026-056
+    - INST-2026-998
+    - INST-2026-998a
+    - SOC-2026-056a
+    analysis_file: analysis/sources/shisa-2026-entity-sovereign-ai-proposal.md
+    topics:
+    - sovereign-ai
+    - open-weights
+    - open-evals
+    - open-datasets
+    - national-champion
+    - cultural-sovereignty
+    - digital-sovereignty
+    - multipolar
+    - entity
+    - shisa
+    - public-infrastructure
+    - ai-policy
+    domains:
+    - GOV
+    - INST
+    - SOC
+    - ECON
+    status: cataloged
   shisaai-2025-shisa-v2-1:
     type: BLOG
     title: 'Shisa V2.1: Smaller, Smarter, More Accessible'
@@ -4856,6 +8023,80 @@ sources:
     - ECON
     - LABOR
     status: cataloged
+  state-of-the-us-republic-2026-03-03-memo:
+    type: CONVO
+    title: 'State of the US Republic: A Synthesis (March 2026)'
+    author:
+    - human (unnamed)
+    - Claude (Opus 4.6)
+    year: 2026
+    url: ''
+    accessed: '2026-03-03'
+    reliability: 0.45
+    bias_notes: High-temperature political synthesis mixing verified claim IDs, partially
+      checked media reporting, and unsourced assertions. Best used as a hypothesis
+      generator and cross-claim organizer; requires primary-source verification for
+      disputed factual claims and for any quantitative checklist scoring.
+    claims_extracted:
+    - GOV-2026-241
+    - GOV-2026-242
+    - GOV-2026-243
+    - GOV-2026-244
+    - GOV-2026-245
+    - GOV-2026-246
+    - GOV-2026-247
+    - GOV-2026-248
+    - GOV-2026-249
+    - GOV-2026-250
+    analysis_file: analysis/sources/state-of-the-us-republic-2026-03-03-memo.md
+    topics:
+    - authoritarianism
+    - elections
+    - corruption
+    - project-2025
+    - fascism-checklists
+    - judicial-power
+    - media-control
+    - ai-governance
+    domains:
+    - GOV
+    - SOC
+    status: analyzed
+  state-of-the-us-republic-2026-synthesis:
+    type: KNOWLEDGE
+    title: 'Synthesis Analysis: State of the US Republic (March 2026) — source-checked
+      synthesis'
+    author:
+    - gpt-5.2
+    year: 2026
+    url: ''
+    accessed: '2026-03-03'
+    reliability: 0.65
+    bias_notes: Internal cross-source synthesis document in realitycheck-data (analysis/syntheses).
+      Synthesizes multiple journalism, official-doc, and watchdog-tracker sources;
+      conclusions are credence-weighted and provisional.
+    claims_extracted: []
+    analysis_file: analysis/syntheses/state-of-the-us-republic-2026-synthesis.md
+    topics:
+    - authoritarianism
+    - elections
+    - project-2025
+    - corruption
+    - conflicts-of-interest
+    - supreme-court
+    - immunity
+    - campaign-finance
+    - fascism-checklists
+    - media-control
+    - tariffs
+    - insider-trading
+    domains:
+    - GOV
+    - SOC
+    - ECON
+    - INST
+    - GEO
+    status: analyzed
   storey-2026-cognitive-debt:
     type: BLOG
     title: How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive
@@ -5008,6 +8249,34 @@ sources:
     - RISK
     - RESOURCE
     status: analyzed
+  supremecourt-2024-trump-v-united-states-opinion:
+    type: REPORT
+    title: Trump v. United States
+    author:
+    - Supreme Court of the United States
+    year: 2024
+    url: https://www.supremecourt.gov/opinions/23pdf/603us1r57_6k47.pdf
+    accessed: '2026-03-03'
+    reliability: 0.95
+    bias_notes: Primary legal document. Holdings and quoted text are authoritative
+      for U.S. law unless superseded. Interpretive claims about political consequences
+      require separate analysis.
+    claims_extracted:
+    - GOV-2026-236
+    - GOV-2026-237
+    - GOV-2026-238
+    - GOV-2026-239
+    - GOV-2026-240
+    analysis_file: analysis/sources/supremecourt-2024-trump-v-united-states-opinion.md
+    topics:
+    - scotus
+    - presidential-immunity
+    - criminal-law
+    - separation-of-powers
+    - elections
+    domains:
+    - GOV
+    status: analyzed
   taipeitimes-2022-energy-supplies-sufficient-ministry:
     type: ARTICLE
     title: Energy supplies sufficient, ministry says
@@ -5030,6 +8299,58 @@ sources:
     domains:
     - RESOURCE
     status: analyzed
+  tao-2026-promising-problems-open-science:
+    type: SOCIAL
+    title: Promising problems, solution extraction and open-science incentives
+    author:
+    - Terence Tao
+    year: 2026
+    url: https://mathstodon.xyz/@tao/117237320796901560
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-323
+    - RISK-2026-300
+    - ECON-2026-301
+    - INST-2026-327
+    - RISK-2026-301
+    - INST-2026-329
+    - ECON-2026-302
+    - INST-2026-334
+    analysis_file: analysis/sources/tao-2026-promising-problems-open-science.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+    - RISK
+  taylor-king-2026-drug-discovery-trust:
+    type: SOCIAL
+    title: Drug-discovery IP and trust in frontier labs
+    author:
+    - Jake P. Taylor-King
+    year: 2026
+    url: https://threadreaderapp.com/thread/2097255157020921950.html
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-330
+    - RISK-2026-302
+    analysis_file: analysis/sources/taylor-king-2026-drug-discovery-trust.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+    - RISK
   techcrunch-2026-ai-adopter-burnout:
     type: ARTICLE
     title: The first signs of burnout are coming from the people who embrace AI the
@@ -5203,6 +8524,67 @@ sources:
     - ECON
     - LABOR
     status: cataloged
+  thehill-2026-anthropic-pentagon-maduro-raid:
+    type: ARTICLE
+    title: Anthropic on shaky ground with Pentagon amid feud after Maduro raid
+    author:
+    - Filip Timotija
+    - Julia Shapero
+    year: 2026
+    url: https://thehill.com/policy/defense/5744403-anthropic-pentagon-ai-dispute/
+    accessed: '2026-02-28'
+    reliability: 0.6
+    bias_notes: Mixes reporting with expert interpretation; includes anonymous senior
+      DoD official assertions. Stronger on narrative and stated positions than on
+      operational details and exclusivity claims.
+    claims_extracted:
+    - GOV-2026-121
+    - GOV-2026-123
+    - INST-2026-942
+    - GOV-2026-122
+    - INST-2026-943
+    - INST-2026-944
+    - GOV-2026-124
+    analysis_file: analysis/sources/thehill-2026-anthropic-pentagon-maduro-raid.md
+    topics:
+    - maduro-raid
+    - genai-mil
+    - pentagon
+    - anthropic
+    - palantir
+    - supply-chain-risk
+    - any-lawful-use
+    - classified-systems
+    domains:
+    - GOV
+    - INST
+    status: analyzed
+  thom-2026-unpublished-math-transparency:
+    type: SOCIAL
+    title: Unpublished mathematics, non-sofic groups and training transparency
+    author:
+    - Andreas Thom
+    year: 2026
+    url: https://mathstodon.xyz/@andreasthom/117240535270608201
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-320
+    - INST-2026-321
+    - INST-2026-322
+    - INST-2026-306
+    - INST-2026-334
+    - TECH-2026-306
+    analysis_file: analysis/sources/thom-2026-unpublished-math-transparency.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
   thomas-2026-dark-flow:
     type: BLOG
     title: Breaking the Spell of Vibe Coding
@@ -5252,6 +8634,37 @@ sources:
     - META
     - TECH
     status: cataloged
+  trumpcorruptiontracker-2026-site:
+    type: REPORT
+    title: Trump Corruption Tracker
+    author:
+    - Trump Corruption Tracker
+    year: 2026
+    url: https://trumpcorruptiontracker.com/
+    accessed: '2026-03-03'
+    reliability: 0.45
+    bias_notes: Aggregation/tracker site with a publicly queryable incident dataset.
+      Useful as an index, but summaries and data quality are uneven (e.g., anomalous
+      date formats), requiring auditing against linked sources.
+    claims_extracted:
+    - GOV-2026-209
+    - GOV-2026-210
+    - GOV-2026-211
+    - GOV-2026-212
+    - GOV-2026-213
+    - GOV-2026-214
+    analysis_file: analysis/sources/trumpcorruptiontracker-2026-site.md
+    topics:
+    - corruption
+    - tracking
+    - trump
+    - ethics
+    - supabase
+    - data-quality
+    domains:
+    - GOV
+    - ECON
+    status: analyzed
   un-2024-population-global-issues:
     type: REPORT
     title: Population (UN Global Issues)
@@ -5272,6 +8685,39 @@ sources:
     domains:
     - SOC
     status: cataloged
+  undersecretaryf-2026-openai-all-lawful-use-thread:
+    type: SOCIAL
+    title: 'Thread: DoW confirms OpenAI deal is “all lawful use” (law/policy vs CEO
+      prudence framing)'
+    author:
+    - '@UnderSecretaryF'
+    year: 2026
+    url: https://threadreaderapp.com/thread/2027594072811098230.html
+    accessed: '2026-02-28'
+    reliability: 0.55
+    bias_notes: Advocacy/justification from a purported DoW official. Useful for clarifying
+      the administration’s preferred framing (“all lawful use” + law/policy references)
+      but not a neutral account; claims about what Anthropic was offered are hard
+      to verify without primary negotiation documents.
+    claims_extracted:
+    - GOV-2026-140
+    - GOV-2026-141
+    - META-2026-155
+    - META-2026-156
+    analysis_file: analysis/sources/undersecretaryf-2026-openai-all-lawful-use-thread.md
+    topics:
+    - openai
+    - department-of-war
+    - any-lawful-use
+    - contracts
+    - governance
+    - sovereignty
+    - anthropic
+    - xai
+    domains:
+    - GOV
+    - META
+    status: analyzed
   uscensus-2024-us-imports-hs854143:
     type: KNOWLEDGE
     title: 'U.S. imports: HS 854143 photovoltaic modules/panels (2024, by country)'
@@ -5461,6 +8907,93 @@ sources:
     - TECH
     - INST
     status: analyzed
+  wang-2026-five-ai-security-risks:
+    type: ARTICLE
+    title: Current AI development faces five security challenges
+    author:
+    - Wang Lihong; reported by China News Service
+    year: 2026
+    url: https://www.chinanews.com.cn/gn/2026/09-01/10687770.shtml
+    accessed: '2026-09-16'
+    reliability: 0.65
+    bias_notes: Technical safety and objections to foreign assessments appear in the
+      same speech; reducing it to either theme alone is misleading.
+    claims_extracted:
+    - GOV-2026-509
+    - GEO-2026-507
+    analysis_file: analysis/sources/wang-2026-five-ai-security-risks.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - GEO
+    - GOV
+    status: analyzed
+  washpost-2026-executive-order-election-activists:
+    type: ARTICLE
+    title: Trump, seeking executive power over elections, is urged to declare emergency
+    author:
+    - Isaac Arnsdorf
+    year: 2026
+    url: https://www.washingtonpost.com/politics/2026/02/26/trump-elections-executive-order-activists/
+    accessed: '2026-03-03'
+    reliability: 0.78
+    bias_notes: Investigative reporting anchored on an obtained draft executive order
+      and multiple linked primary sources (ODNI ICA, Constitution text, and poll toplines).
+      Uncertainty remains about the draft’s actual adoption and the activists’ degree
+      of coordination with the White House.
+    claims_extracted:
+    - GOV-2026-177
+    - GOV-2026-178
+    - GOV-2026-179
+    - GOV-2026-180
+    - GOV-2026-181
+    - GOV-2026-182
+    - GOV-2026-183
+    - GOV-2026-184
+    analysis_file: analysis/sources/washpost-2026-executive-order-election-activists.md
+    topics:
+    - elections
+    - executive-orders
+    - national-emergency
+    - election-administration
+    - voter-rolls
+    - save-act
+    - foreign-interference
+    - china
+    - polling
+    domains:
+    - GOV
+    status: analyzed
+  washpost-2026-openai-government-vet-users-gpt-5-6:
+    type: ARTICLE
+    title: OpenAI says the U.S. government will vet users of its latest AI model
+    author:
+    - Gerrit De Vynck
+    year: 2026
+    url: https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/
+    accessed: '2026-06-28'
+    reliability: 0.78
+    bias_notes: Credible technology reporting, captured through archive.md because
+      direct capture failed. Strong for public rollout framing and access-process
+      description; limited on legal mechanism and partner-selection criteria.
+    claims_extracted:
+    - GOV-2026-280
+    - INST-2026-976
+    - GOV-2026-281
+    analysis_file: analysis/sources/washpost-2026-openai-government-vet-users-gpt-5-6.md
+    topics:
+    - openai
+    - gpt-5-6
+    - white-house
+    - government-vetting
+    - frontier-ai
+    - anthropic
+    domains:
+    - GOV
+    - INST
+    status: analyzed
   wikipedia-2026-us-intervention-venezuela:
     type: KNOWLEDGE
     title: 2026 United States intervention in Venezuela - Wikipedia
@@ -5636,6 +9169,77 @@ sources:
     - LABOR
     - SOC
     status: cataloged
+  wired-2026-navier-stokes-discovery-dispute:
+    type: ARTICLE
+    title: OpenAI Just Claimed a Huge Math Discovery. Some Academics Are Crying Foul
+    author:
+    - Will Knight and Maxwell Zeff
+    year: 2026
+    url: https://www.wired.com/story/openai-navier-stokes-math-discovery-academics/
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - ECON-2026-300
+    - TECH-2026-303
+    - INST-2026-300
+    - TECH-2026-300
+    - INST-2026-312
+    - INST-2026-313
+    analysis_file: analysis/sources/wired-2026-navier-stokes-discovery-dispute.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - ECON
+    - TECH
+  wohlwend-2026-navier-stokes-timeline:
+    type: SOCIAL
+    title: Early timeline of the Navier–Stokes dispute
+    author:
+    - Konsti Wohlwend
+    year: 2026
+    url: https://threadreaderapp.com/thread/2097235335034056835.html
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-324
+    - INST-2026-325
+    analysis_file: analysis/sources/wohlwend-2026-navier-stokes-timeline.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
+  wolf-2026-mathematics-marketing-pressure:
+    type: SOCIAL
+    title: Scientific communication and marketing pressure
+    author:
+    - Thomas Wolf
+    year: 2026
+    url: https://threadreaderapp.com/thread/2097215782484607029.html
+    accessed: ''
+    reliability: 0.8
+    bias_notes: 'Source reliability is scope-dependent: direct records support attribution;
+      motives, private conduct and technical validity require separate checks.'
+    claims_extracted:
+    - INST-2026-328
+    - INST-2026-329
+    analysis_file: analysis/sources/wolf-2026-mathematics-marketing-pressure.md
+    topics:
+    - navier-stokes
+    - research-credit
+    - customer-data
+    - frontier-lab-competition
+    domains:
+    - INST
   wsj-2026-chinese-spy-machine-taiwan-military:
     type: ARTICLE
     title: The Chinese Spy Machine Infiltrating Taiwan’s Military
@@ -6163,5 +9767,261 @@ sources:
     domains:
     - TECH
     - TRANS
+    - LABOR
+    status: analyzed
+  zai-2026-glm53-license:
+    type: DATA
+    title: GLM-5.3 License Agreement
+    author:
+    - Z.AI
+    year: 2026
+    url: https://huggingface.co/zai-org/GLM-5.3/raw/main/LICENSE
+    accessed: '2026-09-16'
+    reliability: 0.85
+    bias_notes: Open weights coexist with selective control of downstream services,
+      making an unrestricted-open versus closed dichotomy inadequate.
+    claims_extracted:
+    - GOV-2026-510
+    analysis_file: analysis/sources/zai-2026-glm53-license.md
+    topics:
+    - pacing-the-frontier
+    - ai-governance
+    - frontier-risk
+    domains:
+    - GOV
+    status: analyzed
+  zitron-2024-subprime-ai-crisis:
+    type: BLOG
+    title: The Subprime AI Crisis
+    author:
+    - Ed Zitron
+    year: 2024
+    url: https://www.wheresyoured.at/subprimeai/
+    accessed: '2026-03-28'
+    reliability: 0.6
+    bias_notes: Independent tech critic with a strong anti-bubble, anti-hype orientation.
+      Mixes reported deal terms and fundraising facts with speculative, rhetorically
+      forceful predictions about industry-wide collapse. Tends to emphasize fragility
+      and downplay cost-decline trajectories, pricing segmentation, and enterprise
+      usage-based economics.
+    claims_extracted:
+    - ECON-2026-935
+    - ECON-2026-936
+    - ECON-2026-937
+    - ECON-2026-938
+    - ECON-2026-939
+    - TRANS-2026-049
+    - ECON-2026-940
+    analysis_file: analysis/sources/zitron-2024-subprime-ai-crisis.md
+    topics:
+    - ai
+    - llms
+    - openai
+    - microsoft
+    - venture-capital
+    - pricing
+    - unit-economics
+    - bubble
+    - debt
+    domains:
+    - ECON
+    - TRANS
+    - INST
+    status: analyzed
+  zitron-2026-ai-industry-lying:
+    type: BLOG
+    title: The AI Industry Is Lying To You
+    author:
+    - Ed Zitron
+    year: 2026
+    url: https://www.wheresyoured.at/the-ai-industry-is-lying-to-you/
+    accessed: '2026-03-28'
+    reliability: 0.55
+    bias_notes: Integrates credible third-party datapoints (CBRE, Sightline) with
+      sharper claims of deception and a broad “rot” narrative tying together debt,
+      infrastructure, and internal AI incidents. Strong rhetorical tone and some quant
+      totals that depend on definitions (pipeline stages; debt deal scope). Treat
+      as an adversarial synthesis and normalize terms carefully.
+    claims_extracted:
+    - RESOURCE-2026-017
+    - RESOURCE-2026-018
+    - RESOURCE-2026-019
+    - ECON-2026-960
+    - ECON-2026-961
+    - ECON-2026-962
+    - ECON-2026-963
+    - RISK-2026-967
+    - RISK-2026-968
+    - SOC-2026-040
+    analysis_file: analysis/sources/zitron-2026-ai-industry-lying.md
+    topics:
+    - datacenters
+    - power
+    - pipeline
+    - debt
+    - coreweave
+    - hyperscalers
+    - tokenmaxxing
+    - outages
+    - security-incidents
+    - ai-bubble
+    domains:
+    - RESOURCE
+    - ECON
+    - INST
+    - RISK
+    - SOC
+    status: analyzed
+  zitron-2026-beginning-of-history:
+    type: BLOG
+    title: The Beginning Of History
+    author:
+    - Ed Zitron
+    year: 2026
+    url: https://www.wheresyoured.at/the-beginning-of-history/
+    accessed: '2026-03-28'
+    reliability: 0.55
+    bias_notes: Tech critic integrating fast-moving geopolitical events into an AI-bubble
+      narrative. Strong rhetorical tone; several quantitative anchors depend on third-party
+      sources and can be exaggerated or sensitive to reference points (e.g., "overnight"
+      price moves). Treat as a hypothesis generator and verify key numerics.
+    claims_extracted:
+    - GEO-2026-048
+    - GEO-2026-049
+    - RESOURCE-2026-016
+    - GEO-2026-050
+    - ECON-2026-941
+    - ECON-2026-942
+    - ECON-2026-943
+    - ECON-2026-944
+    analysis_file: analysis/sources/zitron-2026-beginning-of-history.md
+    topics:
+    - iran
+    - strait-of-hormuz
+    - oil
+    - inflation
+    - interest-rates
+    - ai-bubble
+    - anthropic
+    - debt
+    domains:
+    - GEO
+    - RESOURCE
+    - ECON
+    - INST
+    status: analyzed
+  zitron-2026-haters-guide-saasapocalypse:
+    type: BLOG
+    title: 'Premium: The Hater''s Guide To The SaaSpocalypse'
+    author:
+    - Ed Zitron
+    year: 2026
+    url: https://www.wheresyoured.at/hatersguide-saas/
+    accessed: '2026-03-28'
+    reliability: 0.55
+    bias_notes: Polemical market-structure critique with many numeric anchors sourced
+      from earnings docs and vendor data. Strong rhetorical tone; “AI revenue is tiny”
+      arguments depend heavily on definitional comparability (ARR vs ACV vs “book
+      of business” vs services). Treat as a useful adversarial perspective and normalize
+      metrics.
+    claims_extracted:
+    - TRANS-2026-050
+    - ECON-2026-945
+    - ECON-2026-946
+    - ECON-2026-947
+    - ECON-2026-948
+    - ECON-2026-949
+    - ECON-2026-950
+    - ECON-2026-951
+    analysis_file: analysis/sources/zitron-2026-haters-guide-saasapocalypse.md
+    topics:
+    - saas
+    - private-equity
+    - venture-capital
+    - private-credit
+    - zirp
+    - rot-com
+    - ai-revenue
+    - salesforce
+    - ibm
+    - carta
+    domains:
+    - ECON
+    - INST
+    - TRANS
+    status: analyzed
+  zitron-2026-subprime-ai-thesis-synthesis:
+    type: KNOWLEDGE
+    title: 'Synthesis Analysis: Zitron''s "Subprime AI" Thesis (2024-2026) - Pricing,
+      Profit Levers, and Infrastructure Reality Check'
+    author:
+    - gpt-5
+    year: 2026
+    url: ''
+    accessed: '2026-03-28'
+    reliability: 0.7
+    bias_notes: Internal cross-source synthesis document in realitycheck-data. Synthesizes
+      multiple Zitron posts and existing unit-economics and productivity evidence
+      in the repo; conclusions are credence-weighted and provisional.
+    claims_extracted: []
+    analysis_file: analysis/syntheses/zitron-2026-subprime-ai-thesis-synthesis.md
+    topics:
+    - ed-zitron
+    - wheresyoured
+    - subprime-ai
+    - ai-bubble
+    - pricing
+    - subscriptions
+    - unit-economics
+    - prompt-caching
+    - datacenters
+    - debt
+    - ai-coding
+    - productivity
+    domains:
+    - ECON
+    - RESOURCE
+    - TRANS
+    - INST
+    - LABOR
+    - RISK
+    - SOC
+    - META
+    status: analyzed
+  zitron-2026-why-still-doing-this:
+    type: BLOG
+    title: Why Are We Still Doing This?
+    author:
+    - Ed Zitron
+    year: 2026
+    url: https://www.wheresyoured.at/why-are-we-still-doing-this/
+    accessed: '2026-03-28'
+    reliability: 0.55
+    bias_notes: Strongly anti-hype critique focused on pricing mental models and subscription-unit-economics
+      fragility. Mixes auditable provider documentation (Claude Code cost guidance)
+      with derived estimates and extreme examples. Treat illustrative numerics as
+      hypotheses unless traced to primary disclosures.
+    claims_extracted:
+    - INST-2026-958
+    - ECON-2026-952
+    - ECON-2026-953
+    - ECON-2026-954
+    - ECON-2026-955
+    - ECON-2026-956
+    - LABOR-2026-033
+    analysis_file: analysis/sources/zitron-2026-why-still-doing-this.md
+    topics:
+    - ai
+    - subscriptions
+    - metered-pricing
+    - token-burn
+    - claude
+    - claude-code
+    - anthropic
+    - openai
+    - unit-economics
+    domains:
+    - ECON
+    - INST
     - LABOR
     status: analyzed

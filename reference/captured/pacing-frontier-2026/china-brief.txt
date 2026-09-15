@@ -1,0 +1,216 @@
+Brief #28: China’s AI regulator flags loss-of-control and AIxBio risks
+Brief #28: China’s AI regulator flags loss-of-control and AIxBio risks
+Also: three signals ahead of China-US talks; GLM-5.3 staged model release
+Gabriel Wagner
+and
+Erik Lindblad
+Sep 10, 2026
+12
+5
+Share
+Key Takeaways
+A Chinese regulator laid out five AI challenges, warning of “extreme loss of control risks” and erosion of research ethics in biology.
+China and the United States are reportedly preparing to hold talks on AI for the first time in over two years.
+Z.AI held back GLM-5.3 model weights for two weeks on safety grounds — the first staged release by a Chinese lab.
+Subscribe
+China’s AI regulator flags loss-of-control and AIxBio risks
+What happened:
+WANG Lihong (王丽宏), a senior official from the Cyberspace Administration of China (CAC), China’s main AI regulator,
+1
+raised concerns
+around “extreme loss of control” risks, research ethics in biology and genetics, and other frontier risks at a press conference on September 1 (
+full English translation
+by
+Geopolitechs
+).
+She identified five key challenges for AI governance:
+1) Inherent unreliability.
+Algorithms are opaque, small changes in inputs could lead to significant changes in outputs, and messy training data introduces bias — hindering AI adoption in domains where errors are costly.
+2) Increased coding capabilities that lower the threshold for cyberattacks
+. She cited incidents disclosed by several major tech companies — where models escaped sandboxes and attacked real-world systems during safety testing — to warn that “extreme loss of control risks” require a “high degree of vigilance.”
+3) Autonomous AI agents
+. As AI moves from “answering questions” to “executing tasks,” agents like OpenClaw could become “springboards” for cyberattackers when given system-level permissions.
+4) Misuse, abuse, and malicious use.
+In information services, AI could be used to generate content to mislead people and pollute the online content ecosystem. In science, AI lowers barriers in “fields with high ethical risk such as biology and genetics,” challenging research ethics red lines. In employment, AI is restructuring the economy and reducing demand for traditional labor.
+5) Technological hegemony
+. “Certain countries” pursue technological hegemony via unilateral export controls, use of media dominance to fabricate false large-model test reports that smear rivals’ technology, and dominance in training data to conduct “values infiltration.”
+Wang at the press conference.
+Source
+.
+What stood out to us:
+This appears to be the first time a CAC official has flagged biology and genetics as an AI risk area this prominently (point 4). While this risk is
+slowly gaining visibility
+in China’s AI governance agenda, it had previously been articulated mostly in
+standards documents
+. Point 2 on cybersecurity and loss of control is an increasingly prominent concern in recent months, echoing key outputs from the
+World AI Conference in July
+.
+Point 1 (robustness and reliability), point 3 (agentic AI), and other parts of point 4 (misinformation and employment) have all been central to
+China’s AI governance agenda throughout 2026
+.
+What this means for international coordination:
+Wang describes technical risks that are largely universal. Prioritization may differ across jurisdictions, with China putting greater weight on risks that already have a visible impact on its economy and society (reliability, agentic failures, misinformation, employment). Still, the inclusion of cyber, loss-of-control, and bio risks shows that those frontier risks, which dominate discussions in the US and UK, are part of China’s agenda, too. Point 5 (technological hegemony) suggests that China expects international discussions on AI safety to be conducted on equal footing and not based on an AI safety agenda defined by one side — more on that below in the signals we are watching ahead of the China-US AI talks.
+What to watch next:
+TC260, China’s most important standard-setting body for AI,
+is expected to release
+an updated version of its AI Safety Governance Framework at the National Cybersecurity Awareness Week on September 14–20. We expect further elaboration on China’s approach to these risks there.
+Three signals ahead of China-US AI talks
+Opportunity for dialogue:
+China and the United States are
+reportedly
+preparing to sit down for their first intergovernmental dialogue on AI in over two years.
+President Xi Jinping and President Donald Trump met in Beijing in May 2026 and agreed to start an intergovernmental dialogue on AI. Photo:
+The White House
+.
+Timing is key:
+President Xi is slated to meet with President Trump in Washington D.C. on September 24. Whether the separate AI dialogue happens before then will determine if it can prepare leader-level deliverables for the two presidents’ meeting. Media
+reports
+have suggested that the AI dialogue could take place in mid-September; however, this was denied by a White House official. Asked on September 7 to confirm the talks, the Chinese Foreign Ministry
+said
+that “China and the United States maintain communication on AI”.
+Three signals we are watching:
+Defining model safety is emerging as a sticking point.
+Yuyuan Tantian (玉渊谭天), a WeChat account affiliated with China’s state broadcaster (CCTV),
+published
+a column (
+translation
+by
+Bill Bishop
+) ahead of the expected talks. It contests the United States’ authority to unilaterally define frontier model risk thresholds and argues that Anthropic has become a rule-maker in AI governance. Noting that controls on frontier models are an important issue in China-US dialogue, the piece lays out two principles. First, distinguishing between genuine safety threats and “technological competition.”
+2
+It suggests that “capabilities that could genuinely cause serious harm can be jointly tested and jointly restricted”. However, normal model research and development, and commercial use, should not be “subject to covert intervention”. Second, that if the United States wants to discuss rules, it must first prove that those rules also bind American companies.
+Unofficial channels are laying the groundwork.
+In late August, around 40 senior figures
+discussed
+AI safety
+and other topics at the
+China-US Track 1.5 Dialogue
+in Beijing. Participants were very high-level. The Chinese side included LIU Haixing (刘海星), Head of the International Department of the Chinese Communist Party, and LIU Jieyi (刘结一), China’s former UN ambassador. American participants included business executive John Thornton, and former Microsoft executive Craig Mundie, who serves a key role as co-chair of an unofficial U.S.-China Track 2 AI dialogue. The American participants also met with WANG Huning (王沪宁), the 4th-ranked member of the Politburo Standing Committee, a day before the dialogue. The
+Chinese readout
+of the meeting with Wang Huning noted that the Americans “agreed” that the two sides should “guard against risks such as those posed by AI.”
+Non-state actor misuse could be a promising area for dialogue.
+Chinese expert views on AI safety warrant close attention, not least because the government regularly draws on them in formulating policy. XIAO Qian (肖茜), a former Chinese diplomat and current Deputy Dean of Tsinghua University’s Institute for AI International Governance, recently
+wrote
+in
+Foreign Policy
+that preventing misuse by non-state actors is perhaps the most promising area for cooperation between China and the United States, with AI-enabled cyber risks and biological misuse as logical starting points. QI Huaigao (祁怀高), Deputy Dean of Fudan University’s Institute of International Studies, also
+argued
+in the Central Party School’s
+Study Times
+that the two sides should jointly build a system of regulations, technical monitoring, risk early warning and emergency response to guard against misuse. These comments are broadly aligned with
+remarks
+by United States Treasury Secretary Scott Bessent earlier this year that the dialogue would “make sure nonstate actors don’t get a hold of these models”.
+Our take:
+It is significant that China and the United States agree on the importance of bilateral AI talks in the first place, and encouraging that a few promising topics for discussion are already emerging, including how to prevent non-state actor misuse of frontier AI models. At the same time, China clearly expects the upcoming talks to be conducted on an equal footing and not based on a unilateral AI safety agenda.
+Share
+In a first, a Chinese company postpones open model release due to safety concerns
+What happened:
+When Z.AI announced its new flagship model GLM-5.3 on August 14, the company focused a significant portion of the
+Chinese-language announcement
+on cybersecurity.
+What stood out to us:
+This is the first time a Chinese lab has publicly justified a staged model release on safety grounds.
+The model was accessible in the company’s API immediately, but Z.AI released the weights two weeks later to allow for “security hardening” to “limit potential offensive capability while preserving defensive value.”
+Also, Z.AI is introducing tiered access and security reviews.
+Cybersecurity practitioners can access a
+cybersecurity-specific model version
+through a Beijing industry alliance. The model’s
+bespoke license
+requires a security review for any Model-as-a-Service provider with over USD 10 billion revenue over 12 months.
+3
+Still, the company remains committed to open models
+and appears to be venturing a distinct philosophy for achieving cyber security.
+They argue that concentrating defensive capability in a handful of closed labs is itself a risk, and that open models can help solve it. They are offering
+free audits for major open-source projects
+.
+Source:
+Z.AI on X
+.
+Our take:
+With the first real-world case of staged release and tiered access by a Chinese lab, open-weight risk management in China is getting more sophisticated. But these are early efforts and the global debate on open model safety is far from over.
+The episode shows that there are still fundamentally different philosophies underlying the security implications of frontier models: Z.AI wants to empower defenders by putting the model in as many hands as possible; Anthropic’s Project Glasswing treats diffusion as the risk and gatekeeps advanced capabilities. The staged release and tiered access move Z.AI a small step toward restricted access, but the fundamental premise is still that openness is beneficial.
+“When the sharpest spear is locked in the hands of a few, the best shield must belong to everyone.”
+Z.AI
+GLM-5.3 announcement
+.
+The story behind the story:
+The
+OpenAI–Hugging Face incident
+— where proprietary US models refused to help defenders but GLM-5.2 did — might have emboldened Z.AI’s belief in the defensive benefits of open models. Reflecting on the incident in an
+interview
+(
+English translation
+by
+Geopolitechs
+), TANG Jie (唐杰), co-founder and Chief Scientist at Z.AI, highlighted the importance of open models for safety:
+“There are several lessons we can draw from this.
+First is the importance of open source. Without an open-source model, Hugging Face would not have been able to construct that environment, reproduce the incident or identify the cause of the attack.
+Second, both offensive security capabilities and safety guardrails are extremely important. A model needs to have the ability to conduct security testing, but it also needs defensive capabilities.
+Does this mean that open-source models necessarily have an advantage over proprietary models? I think it is still too early to draw that conclusion.”
+TANG Jie (唐杰), co-founder and Chief Scientist at Z.AI
+Also on our radar
+The Chinese government and the Organisation for the Prohibition of Chemical Weapons (OPCW)
+co-hosted
+a workshop on the intersection of AI and chemical safety in Hangzhou.
+The Chinese representative advocated advancing the implementation of the Chemical Weapons Convention (CWC) through the use of AI while “defusing risks and challenges.”
+The AI Affairs Coordinator of China’s Ministry of Foreign Affairs (MOFA), SUN Xiaobo (孙晓波),
+called for
+global cooperation on AI governance at a UN Dialogue on August 21.
+He noted that “some AI models are said to possess the capability to attack critical infrastructure.”
+China’s Supreme People’s Court issued its first
+judicial guidance on AI-related disputes
+.
+The document provides guidance on liability allocation between developers, providers, and users for risks like deepfakes, doxxing, algorithmic price discrimination, autonomous driving, and adversarial attacks. Frontier safety is not a major focus.
+The Shanghai Municipal Party Committee heard a
+special briefing on AI
+from ZHOU Bowen (周伯文), Director of Shanghai AI Lab.
+The meeting was chaired by Shanghai Party Secretary CHEN Jining (陈吉宁) who also covered safety in his remarks.
+A
+new draft national standard
+defines how to assess an organization’s AI safety practices.
+Higher maturity scores require stricter practices. For example, for red teaming this would range from having run a single test, to having a standing red team, to quantifying pass/fail thresholds for release, and finally to human uplift trials measuring whether a model meaningfully assists in planning biological harm. The draft is open to public comments until October 25.
+TC260, China’s most important standard-setting committee for AI safety, is recruiting institutions to draft standards
+on
+AI cloud service security assessments
+,
+AI model development security
+,
+open-source AI model security
+,
+embodied AI security
+,
+training and inference framework security
+, and
+AI companion safety
+. This means drafting for these standards will officially start soon.
+TC260 also released a
+Security Guide for Individual Users of AI Services
+.
+Feedback and Suggestions
+Have a tip, question, or a subject you want us to cover? Let us know at
+info@concordia-ai.com
+.
+The best way to support us is to share this issue with someone you know.
+Share
+1
+Wang is the Deputy Director-General and First-Grade Inspector of the Cybersecurity Coordination Bureau of the Cyberspace Administration of China (CAC). The CAC is China’s most important government agency for regulating AI, in charge of mandatory pre-deployment registration of generative AI services. Within it, the Cybersecurity Coordination Bureau
+is responsible
+for cross-departmental and cross-regional coordination in cybersecurity emergencies.
+2
+Technological competition is likely to shape the talks. On September 8, US government agencies
+alleged industrial-scale distillation
+of US frontier models by Chinese companies. China
+denied
+the allegations, saying the two countries “should handle the challenges and risks in the AI field with a positive and responsible attitude,” and that China is willing to have “constructive and professional discussions” in the upcoming intergovernmental dialogue. This suggests that folding technological competition concerns into AI safety talks could be counterproductive.
+3
+This continues a trend of custom licenses in recent open-weight releases by Chinese developers.
+Moonshot AI’s Kimi K3 license
+requires a separate agreement for some Model-as-a-Service businesses, and
+MiniMax’s H3 license
+prohibits local deployment in some jurisdictions.
+Z.AI’s GLM-5.3 license
+is so far the only instance where such a clause is used to require a security review.
+12
+5
+Share
+Previous

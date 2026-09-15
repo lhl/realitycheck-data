@@ -1,0 +1,58 @@
+[
+  {
+    "name": "hf",
+    "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+    "bytes": 720221,
+    "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+    "error": "",
+    "captured": "2026-09-15T18:04:34.262268+00:00"
+  },
+  {
+    "name": "oai-incident",
+    "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+    "bytes": 9821,
+    "title": "",
+    "error": "",
+    "captured": "2026-09-15T18:04:33.786279+00:00"
+  },
+  {
+    "name": "rand-jina",
+    "url": "https://r.jina.ai/https://www.rand.org/pubs/research_reports/RRA2977-2.html",
+    "bytes": 4310,
+    "title": "",
+    "error": "",
+    "captured": "2026-09-15T18:04:36.221829+00:00"
+  },
+  {
+    "name": "chen-cac",
+    "url": "https://www.cac.gov.cn/2026-09/14/c_1759557995687427.htm",
+    "bytes": 6956,
+    "title": "404_\u4e2d\u592e\u7f51\u7edc\u5b89\u5168\u548c\u4fe1\u606f\u5316\u59d4\u5458\u4f1a\u529e\u516c\u5ba4",
+    "error": "",
+    "captured": "2026-09-15T18:04:35.278641+00:00"
+  },
+  {
+    "name": "metr-coi",
+    "url": "https://metr.org/coi-policy.pdf",
+    "bytes": 172769,
+    "title": "",
+    "error": "",
+    "captured": "2026-09-15T18:04:35.056350+00:00"
+  },
+  {
+    "name": "zai-jina",
+    "url": "https://r.jina.ai/https://mp.weixin.qq.com/s/JdBx3B12L7Mhxruf4Nfr4g",
+    "bytes": 364,
+    "title": "",
+    "error": "",
+    "captured": "2026-09-15T18:04:37.063524+00:00"
+  },
+  {
+    "name": "wang-81",
+    "url": "http://www.81.cn/yw_208727/16482785.html",
+    "bytes": 17415,
+    "title": "2026\u5e74\u56fd\u5bb6\u7f51\u7edc\u5b89\u5168\u5ba3\u4f20\u5468\u5c06\u4e8e9\u670814\u65e5\u81f320\u65e5\u5728\u5168\u56fd\u4e3e\u884c - \u4e2d\u56fd\u519b\u7f51",
+    "error": "",
+    "captured": "2026-09-15T18:04:34.491250+00:00"
+  }
+]

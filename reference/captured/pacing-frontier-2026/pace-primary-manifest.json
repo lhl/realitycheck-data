@@ -1,0 +1,90 @@
+[
+  {
+    "name": "selsam",
+    "url": "https://docs.google.com/document/d/e/2PACX-1vQNl3SEX5IyA6d9qHjjFZN-qzGRZNFI6b63g-yu1Fy-ZYkVfCWm7i9WXRXw63m6yDB_auDuPLyQ7jBm/pub",
+    "bytes": 171891,
+    "title": "Personal Statement on AI Risk",
+    "error": "",
+    "captured": "2026-09-15T18:00:50.713836+00:00"
+  },
+  {
+    "name": "metr",
+    "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "bytes": 429310,
+    "title": "Brief independent investigation of agents\u2019 behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident - METR",
+    "error": "",
+    "captured": "2026-09-15T18:00:51.115309+00:00"
+  },
+  {
+    "name": "incidents",
+    "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+    "bytes": 205912,
+    "title": "Investigating three incidents in our cybersecurity evaluations \\ Anthropic",
+    "error": "",
+    "captured": "2026-09-15T18:00:50.554166+00:00"
+  },
+  {
+    "name": "assessment",
+    "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+    "bytes": 504701,
+    "title": "An alignment assessment of recent cybersecurity incidents \\ Anthropic",
+    "error": "",
+    "captured": "2026-09-15T18:00:50.629005+00:00"
+  },
+  {
+    "name": "rsi",
+    "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+    "bytes": 239911,
+    "title": "When AI builds itself \\ Anthropic",
+    "error": "",
+    "captured": "2026-09-15T18:00:50.679302+00:00"
+  },
+  {
+    "name": "threat",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "bytes": 1222891,
+    "title": "Countering misuse of AI: September 2026 / Anthropic \\ Anthropic",
+    "error": "",
+    "captured": "2026-09-15T18:00:51.456889+00:00"
+  },
+  {
+    "name": "hassabis",
+    "url": "https://demishassabis.substack.com/p/a-framework-for-frontier-ai-and-the-dawning-of-a-new-age",
+    "bytes": 121120,
+    "title": "A Framework for Frontier AI and the Dawning of a New Age",
+    "error": "",
+    "captured": "2026-09-15T18:00:50.629180+00:00"
+  },
+  {
+    "name": "xhyctf",
+    "url": "https://threadreaderapp.com/thread/2099570891722293566.html",
+    "bytes": 17488,
+    "title": "Thread Reader App",
+    "error": "",
+    "captured": "2026-09-15T18:00:52.043303+00:00"
+  },
+  {
+    "name": "fedasiuk-context",
+    "url": "https://threadreaderapp.com/thread/2099524949387989271.html",
+    "bytes": 17488,
+    "title": "Thread Reader App",
+    "error": "",
+    "captured": "2026-09-15T18:00:52.217274+00:00"
+  },
+  {
+    "name": "gewirtz",
+    "url": "https://threadreaderapp.com/thread/2099571338058891588.html",
+    "bytes": 17488,
+    "title": "Thread Reader App",
+    "error": "",
+    "captured": "2026-09-15T18:00:53.980868+00:00"
+  },
+  {
+    "name": "archive-ph",
+    "url": "https://archive.ph/xFRoP",
+    "bytes": 59051,
+    "title": "archive.li",
+    "error": "",
+    "captured": "2026-09-15T18:00:51.115218+00:00"
+  }
+]

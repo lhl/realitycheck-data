@@ -1,0 +1,58 @@
+[
+  {
+    "name": "liu-original",
+    "url": "https://mp.weixin.qq.com/s/zk0KxuLzhmMJ4LPYW_OHMA",
+    "bytes": 18164,
+    "title": "",
+    "error": "",
+    "captured": "2026-09-15T18:03:11.840815+00:00"
+  },
+  {
+    "name": "liu-original-jina",
+    "url": "https://r.jina.ai/https://mp.weixin.qq.com/s/zk0KxuLzhmMJ4LPYW_OHMA",
+    "bytes": 9336,
+    "title": "",
+    "error": "",
+    "captured": "2026-09-15T18:03:11.927623+00:00"
+  },
+  {
+    "name": "chen-search-exact",
+    "url": "https://www.bing.com/search?q=%22%E5%85%A8%E9%9D%A2%E7%AD%91%E7%89%A2%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E5%B1%8F%E9%9A%9C%22",
+    "bytes": 118030,
+    "title": "\"\u5168\u9762\u7b51\u7262\u4eba\u5de5\u667a\u80fd\u5b89\u5168\u5c4f\u969c\" - \u691c\u7d22",
+    "error": "",
+    "captured": "2026-09-15T18:03:11.550961+00:00"
+  },
+  {
+    "name": "bio-search-uplift",
+    "url": "https://www.bing.com/search?q=site.aisi.gov.uk%20biology%20uplift%20study%20AI%202025%202026",
+    "bytes": 120701,
+    "title": "site.aisi.gov.uk biology uplift study AI 2025 2026 - \u691c\u7d22",
+    "error": "",
+    "captured": "2026-09-15T18:03:11.472850+00:00"
+  },
+  {
+    "name": "bio-search-rand",
+    "url": "https://www.bing.com/search?q=site.rand.org%202024%20large%20language%20models%20biological%20weapons%20risk%20red%20team",
+    "bytes": 122959,
+    "title": "site.rand.org 2024 large language models biological weapons risk red team - \u691c\u7d22",
+    "error": "",
+    "captured": "2026-09-15T18:03:11.573208+00:00"
+  },
+  {
+    "name": "metr-search-conflicts",
+    "url": "https://www.bing.com/search?q=site.metr.org%20funding%20conflicts%20interest%20Anthropic",
+    "bytes": 121204,
+    "title": "site.metr.org funding conflicts interest Anthropic - \u691c\u7d22",
+    "error": "",
+    "captured": "2026-09-15T18:03:11.474235+00:00"
+  },
+  {
+    "name": "company-search-share",
+    "url": "https://www.bing.com/search?q=Anthropic%20OpenAI%20revenue%20market%20share%20September%202026",
+    "bytes": 118442,
+    "title": "Anthropic OpenAI revenue market share September 2026 - \u691c\u7d22",
+    "error": "",
+    "captured": "2026-09-15T18:03:11.459586+00:00"
+  }
+]

@@ -1,0 +1,385 @@
+AISI Research & Publications | The AI Security Institute
+AISI Research & Publications | The AI Security Institute
+Read the Frontier AI Trends Report
+Please enable javascript for this website.
+A
+A
+Careers
+Research
+Generating evidence at the frontier of AI.
+See our publications and related blogs below.
+Frontier AI Trends Report
+Research Agenda
+Categories
+Publications and blogs:
+When Do LLM Preferences Predict Downstream Behavior?
+Human Influence
+•
+Aug 26, 2026
+Research
+Read research
+Knowing When to Stop: Bayesian Optimal Stopping for LLM Evaluations
+Science of Evaluations
+•
+Aug 14, 2026
+Research
+Read research
+Item Response Theory for AI Safety
+Alignment
+•
+Aug 5, 2026
+Research
+Read research
+Multi-Agent AI Control: Distributed Attacks Hamper Per-Instance Monitors
+Control
+•
+Jul 8, 2026
+Research
+Read research
+"Did you lie?": Evaluating Lie Detectors across Model Scale and Belief-Verified Model Organisms
+Control
+•
+Jun 17, 2026
+Research
+Read research
+Prefill Awareness in Large Language Models
+Alignment
+•
+Jun 10, 2026
+Research
+Read research
+RealityTest: How People Probe AI Identity and Whether Models Disclose It
+Human Influence
+•
+Jun 8, 2026
+Research
+Read research
+Consistency Training Can Entrench Misalignment
+Alignment
+•
+Jun 2, 2026
+Research
+Read research
+AI alignment is a human problem
+Alignment
+•
+May 30, 2026
+Research
+Read research
+Loss of Oversight: How AI systems may become harder to audit, monitor, and investigate
+Model Transparency
+•
+May 21, 2026
+Research
+Read research
+Automated alignment is harder than you think
+Alignment
+•
+May 14, 2026
+Research
+Read research
+A Decision-Theoretic Formalisation of Steganography With Applications to LLM Monitoring
+Alignment
+•
+Apr 29, 2026
+Research
+Read research
+Ask don't tell: Reducing sycophancy in large language models
+Human Influence
+•
+Apr 28, 2026
+Research
+Read research
+Evaluating whether AI models would sabotage AI safety research
+Red Team
+•
+Apr 27, 2026
+Research
+Read research
+Propensity Inference: Environmental Contributors to LLM Behaviour
+Red Team
+•
+Apr 24, 2026
+Research
+Read research
+Infusion: Shaping model behaviour by editing training data via influence functions
+Red Team
+•
+Apr 10, 2026
+Research
+Read research
+How are AI agents used? Evidence from 177,000 MCP tools
+Societal Resilience
+•
+Mar 26, 2026
+Research
+Read research
+Quantifying Frontier LLM Capabilities for Container Sandbox Escape
+Engineering
+•
+Mar 23, 2026
+Research
+Read research
+Measuring AI Agents’ Progress on Multi-Step Cyber Attack Scenarios
+Cyber & Autonomous Systems
+•
+Mar 16, 2026
+Research
+Read research
+A multi-turn framework for evaluating AI misuse in fraud and cybercrime scenarios
+Societal Resilience
+•
+Feb 26, 2026
+Research
+Read research
+Seven simple steps for log analysis in AI systems
+Science of Evaluations
+•
+Feb 25, 2026
+Research
+Read research
+Boundary Point Jailbreaking of Black-Box LLMs
+Red Team
+•
+Feb 17, 2026
+Research
+Read research
+Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment
+Alignment
+•
+Jan 15, 2026
+Research
+Read research
+AISI Frontier AI Trends Report (2025)
+Organisation
+•
+Dec 18, 2025
+Research
+Read research
+Practical challenges of control monitoring in frontier AI deployments
+Control
+•
+Dec 15, 2025
+Research
+Read research
+Async control: Stress-testing asynchronous control measures for LLM agents
+Control
+•
+Dec 15, 2025
+Research
+Read research
+Does self-evaluation enable wireheading in language models?
+Alignment
+•
+Dec 1, 2025
+Research
+Read research
+UK AISI Alignment Evaluation Case-Study
+Red Team
+•
+Nov 26, 2025
+Research
+Read research
+Open technical problems in open-weight AI model risk management
+Red Team
+•
+Oct 26, 2025
+Research
+Read research
+Breaking agent backbones: Evaluating the security of backbone LLMs in AI agents
+Red Team
+•
+Oct 26, 2025
+Research
+Read research
+Understanding AI Trajectories: Mapping the Limitations of Current AI Systems
+Strategic Awareness
+•
+Oct 23, 2025
+Research
+Read research
+Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples
+Red Team
+•
+Oct 8, 2025
+Research
+Read research
+Inoculation Prompting: Eliciting traits from LLMs during training can suppress them at test-time
+Alignment
+•
+Oct 5, 2025
+Research
+Read research
+Conversational AI increases political knowledge as effectively as self-directed internet search
+Human Influence
+•
+Sep 8, 2025
+Research
+Read research
+Lessons from studying two-hop latent reasoning
+Control
+•
+Sep 6, 2025
+Research
+Read research
+Deep ignorance: Filtering pretraining data builds tamper-resistant safeguards into open-weight LLMs
+Red Team
+•
+Aug 8, 2025
+Research
+Read research
+Security challenges in AI agent deployment: Insights from a large scale public competition
+Red Team
+•
+Jul 27, 2025
+Research
+Read research
+STACK: Adversarial attacks on LLM safeguard pipelines
+Red Team
+•
+Jul 18, 2025
+Research
+Read research
+The levers of political persuasion with conversational AI
+Human Influence
+•
+Jul 18, 2025
+Research
+Read research
+Chain of thought monitorability: A new and fragile opportunity for AI safety
+Control
+•
+Jul 15, 2025
+Research
+Read research
+HiBayES: A hierarchical bayesian modelling framework for AI evaluation statistics
+Science of Evaluations
+•
+Jul 13, 2025
+Research
+Read research
+White Box Control at UK AISI - Update on sandbagging investigations
+Control
+•
+Jul 10, 2025
+Research
+Read research
+Skewed Score: A statistical framework to assess autograders
+Science of Evaluations
+•
+Jul 9, 2025
+Research
+Read research
+Lessons from a chimp: AI "scheming" and the quest for ape language
+Science of Evaluations
+•
+Jul 4, 2025
+Research
+Read research
+Avoiding obfuscation with prover-estimator debate
+Alignment
+•
+Jun 15, 2025
+Research
+Read research
+An example safety case for safeguards against misuse
+Safety Cases
+•
+Jun 5, 2025
+Research
+Read research
+Existing Large Language Model unlearning evaluations are inconclusive
+Red Team
+•
+May 31, 2025
+Research
+Read research
+RepliBench: Evaluating the autonomous replication capabilities of language model agents
+Cyber & Autonomous Systems
+•
+May 21, 2025
+Research
+Read research
+How to evaluate control measures for LLM agents? A trajectory from today to superintelligence
+Control
+•
+May 7, 2025
+Research
+Read research
+An alignment safety case sketch based on debate
+Safety Cases
+•
+May 6, 2025
+Research
+Read research
+Evaluating explanations: An explanatory virtues framework for mechanistic interpretability
+Control
+•
+May 2, 2025
+Research
+Read research
+A mathematical philosophy of explanations in mechanistic interpretability
+Control
+•
+May 1, 2025
+Research
+Read research
+Adversarial machine learning: A taxonomy and terminology of attacks and mitigations
+Red Team
+•
+Mar 24, 2025
+Research
+Read research
+Model tampering attacks enable more rigorous evaluations of LLM capabilities
+Red Team
+•
+Mar 2, 2025
+Research
+Read research
+Fundamental limitations in defending LLM finetuning APIs
+Red Team
+•
+Feb 20, 2025
+Research
+Read research
+Safety Cases: A scalable approach to Frontier AI safety
+Safety Cases
+•
+Feb 10, 2025
+Research
+Read research
+Emerging practices in frontier AI safety frameworks
+•
+Feb 5, 2025
+Research
+Read research
+Why human-AI relationships need socioaffective alignment
+Societal Resilience
+•
+Feb 4, 2025
+Research
+Read research
+Principles for evaluating misuse safeguards of frontier AI systems
+Red Team
+•
+Feb 4, 2025
+Research
+Read research
+A sketch of an AI control safety case
+Safety Cases
+•
+Jan 28, 2025
+Research
+Read research
+Safety case template for frontier AI: A cyber inability argument
+Safety Cases
+•
+Dec 12, 2024
+Research
+Read research
+AgentHarm: A benchmark for measuring harmfulness of LLM agents
+Red Team
+•
+Oct 11, 2024
+Research
+Read research

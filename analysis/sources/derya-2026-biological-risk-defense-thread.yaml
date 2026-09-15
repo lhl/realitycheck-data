@@ -1,0 +1,65 @@
+sources:
+- id: derya-2026-biological-risk-defense-thread
+  type: SOCIAL
+  title: Biological AI risk and the opportunity cost of delaying medicine
+  author:
+  - Derya Unutmaz (@DeryaTR_)
+  year: 2026
+  url: https://x.com/DeryaTR_/status/2099515006869962890
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/derya-2026-biological-risk-defense-thread.md
+  reliability: 0.65
+  bias_notes: The thread uses absence of completed AI cures to reject future harm
+    while relying on future cures to assign present blame. It applies inconsistent
+    standards to two forecasts.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - LABOR
+  - RISK
+  claims_extracted:
+  - RISK-2026-504
+  - LABOR-2026-502
+claims:
+- domain: RISK
+  type: '[H]'
+  text: If AI greatly improves biological offense, its defensive benefits will necessarily
+    keep humanity safe from the resulting biological threats.
+  credence: 0.3
+  evidence_level: E5
+  id: RISK-2026-504
+  source_ids:
+  - derya-2026-biological-risk-defense-thread
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - Contrary evidence from a comparable prospective test or a primary record.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: LABOR
+  type: '[H]'
+  text: Each day of delaying frontier AI development makes slowdown advocates responsible
+    for roughly the current daily global death toll.
+  credence: 0.03
+  evidence_level: E6
+  id: LABOR-2026-502
+  source_ids:
+  - derya-2026-biological-risk-defense-thread
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - No causal estimate links the specific delay to that many preventable deaths, or
+    deployment bottlenecks substantially reduce the counterfactual benefit.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

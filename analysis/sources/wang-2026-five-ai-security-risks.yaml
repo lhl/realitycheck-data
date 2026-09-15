@@ -1,0 +1,61 @@
+sources:
+- id: wang-2026-five-ai-security-risks
+  type: ARTICLE
+  title: Current AI development faces five security challenges
+  author:
+  - Wang Lihong; reported by China News Service
+  year: 2026
+  url: https://www.chinanews.com.cn/gn/2026/09-01/10687770.shtml
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/wang-2026-five-ai-security-risks.md
+  reliability: 0.65
+  bias_notes: Technical safety and objections to foreign assessments appear in the
+    same speech; reducing it to either theme alone is misleading.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - GEO
+  - GOV
+  claims_extracted:
+  - GOV-2026-509
+  - GEO-2026-507
+claims:
+- domain: GOV
+  type: '[F]'
+  text: A September 1 Chinese-language report quotes Wang Lihong warning of extreme
+    loss-of-control risk and biology/genetics ethics risks.
+  credence: 0.97
+  evidence_level: E4
+  id: GOV-2026-509
+  source_ids:
+  - wang-2026-five-ai-security-risks
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The reported remarks lack those terms.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: GEO
+  type: '[F]'
+  text: The same reported remarks identify unilateral export controls and allegedly
+    misleading model evaluations as technological-hegemony risks.
+  credence: 0.97
+  evidence_level: E4
+  id: GEO-2026-507
+  source_ids:
+  - wang-2026-five-ai-security-risks
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The reported remarks omit this category.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

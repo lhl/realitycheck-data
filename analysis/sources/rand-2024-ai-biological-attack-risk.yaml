@@ -1,0 +1,63 @@
+sources:
+- id: rand-2024-ai-biological-attack-risk
+  type: REPORT
+  title: Does AI Increase the Operational Risk of Biological Attacks?
+  author:
+  - RAND research team
+  year: 2024
+  url: https://www.rand.org/pubs/research_reports/RRA2977-2.html
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/rand-2024-ai-biological-attack-risk.md
+  reliability: 0.85
+  bias_notes: No statistically significant effect is not proof of zero effect; measurement
+    sensitivity and model vintage matter.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - META
+  - RISK
+  claims_extracted:
+  - RISK-2026-512
+  - META-2026-503
+claims:
+- domain: RISK
+  type: '[F]'
+  text: RAND’s 2024 exercise found no statistically significant difference in the
+    viability of biological attack plans prepared with versus without the tested LLM
+    assistance.
+  credence: 0.95
+  evidence_level: E3
+  id: RISK-2026-512
+  source_ids:
+  - rand-2024-ai-biological-attack-risk
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The report’s key findings show a statistically significant increase on that outcome.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: META
+  type: '[F]'
+  text: RAND cautioned that its study did not measure distance to future dangerous
+    capability thresholds and recommended more sensitive follow-up tests.
+  credence: 0.97
+  evidence_level: E3
+  id: META-2026-503
+  source_ids:
+  - rand-2024-ai-biological-attack-risk
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The report claims to rule out future capability growth or endorses no further
+    testing.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

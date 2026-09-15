@@ -1,0 +1,64 @@
+sources:
+- id: majmudar-2026-scaling-pacing-thread
+  type: SOCIAL
+  title: Why frontier researchers may be alarmed by scaling
+  author:
+  - Adam Majmudar
+  year: 2026
+  url: https://x.com/MajmudarAdam/status/2098881885200081234
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/majmudar-2026-scaling-pacing-thread.md
+  reliability: 0.65
+  bias_notes: The thread moves from illustrative unseen plots to confident forecasts,
+    and from sincerity to a claim about institutional incentives. Neither step is
+    established by the examples.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - INST
+  - TECH
+  claims_extracted:
+  - TECH-2026-500
+  - INST-2026-500
+claims:
+- domain: TECH
+  type: '[H]'
+  text: Unsaturated and potentially compounding scaling axes could produce further
+    large capability gains over the next model generations.
+  credence: 0.65
+  evidence_level: E5
+  id: TECH-2026-500
+  source_ids:
+  - majmudar-2026-scaling-pacing-thread
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - Contrary evidence from a comparable prospective test or a primary record.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: INST
+  type: '[H]'
+  text: Researchers’ alarm about scaling means the pacing initiative is not a regulatory-capture
+    strategy.
+  credence: 0.25
+  evidence_level: E5
+  id: INST-2026-500
+  source_ids:
+  - majmudar-2026-scaling-pacing-thread
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - Contrary evidence from a comparable prospective test or a primary record.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

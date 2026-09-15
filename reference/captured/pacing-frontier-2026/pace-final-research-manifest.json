@@ -1,0 +1,58 @@
+[
+  {
+    "name": "rand",
+    "url": "https://www.rand.org/pubs/research_reports/RRA2977-2.html",
+    "bytes": 919,
+    "title": "ERROR: The request could not be satisfied",
+    "error": "",
+    "captured": "2026-09-15T18:03:59.960371+00:00"
+  },
+  {
+    "name": "aisi",
+    "url": "https://www.aisi.gov.uk/frontier-ai-trends-report",
+    "bytes": 119279,
+    "title": "Frontier AI Trends Report by The AI Security Institute (AISI)",
+    "error": "",
+    "captured": "2026-09-15T18:04:00.631945+00:00"
+  },
+  {
+    "name": "aisi-research",
+    "url": "https://www.aisi.gov.uk/research",
+    "bytes": 98680,
+    "title": "AISI Research & Publications | The AI Security Institute",
+    "error": "",
+    "captured": "2026-09-15T18:04:00.638750+00:00"
+  },
+  {
+    "name": "who",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death",
+    "bytes": 117891,
+    "title": "\r\n\tThe top 10 causes of death\r\n",
+    "error": "",
+    "captured": "2026-09-15T18:04:00.335379+00:00"
+  },
+  {
+    "name": "who-smallpox",
+    "url": "https://www.who.int/health-topics/smallpox",
+    "bytes": 145770,
+    "title": "\r\n\tSmallpox\r\n",
+    "error": "",
+    "captured": "2026-09-15T18:03:59.806460+00:00"
+  },
+  {
+    "name": "chen-search-jina",
+    "url": "https://r.jina.ai/https://www.google.com/search?q=%22%E5%85%A8%E9%9D%A2%E7%AD%91%E7%89%A2%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8%E5%B1%8F%E9%9A%9C%22",
+    "bytes": 952,
+    "title": "",
+    "error": "",
+    "captured": "2026-09-15T18:04:03.535827+00:00"
+  },
+  {
+    "name": "mfa",
+    "url": "https://www.mfa.gov.cn/fyrbt_673021/202609/t20260914_12020388.shtml",
+    "bytes": 53931,
+    "title": "\u7cfb\u7edf\u7ef4\u62a4_\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u5916\u4ea4\u90e8",
+    "error": "",
+    "captured": "2026-09-15T18:04:01.519551+00:00"
+  }
+]

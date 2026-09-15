@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="ecL7gZQY2c6t9nxVme8te/1IyxYqY0wSMlbKT2y/lAZVkdL8/fIcONvcfRIh/tBHEC3tnbNOeDaC3lGpHKqWpA==" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="theme-color" content="#575553">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#575553">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="/manifest.json">
+
+    <title>Thread by @teortaxesTex on Thread Reader App – Thread Reader App</title>
+<meta name="description" content="@teortaxesTex: astonishing blogpost from Shengyu Liu (刘胜与, also known as interestingLSY/intlsy), kernel engineer at DeepSeek. The first part is his personal struggle with the fact that his work is about to render hi...…">
+<meta name="keywords" content="twitter, twitter thread, unroll, threadreader, threads">
+<meta property="og:title" content="Thread by @teortaxesTex on Thread Reader App">
+<meta property="og:image" content="https://threadreaderapp.com/images/screenshots/thread/2099574156417229157.jpg">
+<meta property="og:description" content="@teortaxesTex: astonishing blogpost from Shengyu Liu (刘胜与, also known as interestingLSY/intlsy), kernel engineer at DeepSeek. The first part is his personal struggle with the fact that his work is about to render hi...…">
+<meta name="twitter:card" content="photo">
+<meta name="twitter:description" content="@teortaxesTex: astonishing blogpost from Shengyu Liu (刘胜与, also known as interestingLSY/intlsy), kernel engineer at DeepSeek. The first part is his personal struggle with the fact that his work is about to render hi...…">
+<meta name="twitter:creator" content="@teortaxesTex">
+<meta name="twitter:image" content="https://threadreaderapp.com/images/screenshots/thread/2099574156417229157.jpg">
+<meta name="twitter:title" content="Thread by @teortaxesTex on Thread Reader App">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha512-c8AIFmn4e0WZnaTOCXTOLzR+uIrTELY9AeIuUq6ODGaO619BjqG2rhiv/y6dIdmM7ba+CpzMRkkztMPXfVBm9g==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Sanchez:400italic,400|Abhaya+Libre" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="/assets/application-a4bbb996af069d137fe4a0be09e35ca413d687a804a00c996617c53465bdb158.css" data-turbolinks-track="reload" />
+    
+  <link rel="stylesheet" media="screen" href="/assets/components/loading-4d00727d71e1da9d3c71e41fc14ba962c448080ad5f92bb408782958800fc6a7.css" />
+
+    <script type="ebbdb491d1b2c749fd307b08-text/javascript">
+;!function(e){var n=!1;if("function"==typeof define&&define.amd&&(define(e),n=!0),"object"==typeof exports&&(module.exports=e(),n=!0),!n){var o=window.Cookies,t=window.Cookies=e();t.noConflict=function(){return window.Cookies=o,t}}}(function(){function e(){for(var e=0,n={};e<arguments.length;e++){var o=arguments[e];for(var t in o)n[t]=o[t]}return n}function n(o){function t(n,r,i){var c;if("undefined"!=typeof document){if(arguments.length>1){if("number"==typeof(i=e({path:"/"},t.defaults,i)).expires){var a=new Date;a.setMilliseconds(a.getMilliseconds()+864e5*i.expires),i.expires=a}i.expires=i.expires?i.expires.toUTCString():"";try{c=JSON.stringify(r),/^[\{\[]/.test(c)&&(r=c)}catch(e){}r=o.write?o.write(r,n):encodeURIComponent(String(r)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),n=(n=(n=encodeURIComponent(String(n))).replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent)).replace(/[\(\)]/g,escape);var s="";for(var f in i)i[f]&&(s+="; "+f,!0!==i[f]&&(s+="="+i[f]));return document.cookie=n+"="+r+s}n||(c={});for(var p=document.cookie?document.cookie.split("; "):[],d=/(%[0-9A-Z]{2})+/g,u=0;u<p.length;u++){var l=p[u].split("="),C=l.slice(1).join("=");this.json||'"'!==C.charAt(0)||(C=C.slice(1,-1));try{var g=l[0].replace(d,decodeURIComponent);if(C=o.read?o.read(C,g):o(C,g)||C.replace(d,decodeURIComponent),this.json)try{C=JSON.parse(C)}catch(e){}if(n===g){c=C;break}n||(c[g]=C)}catch(e){}}return c}}return t.set=t,t.get=function(e){return t.call(t,e)},t.getJSON=function(){return t.apply({json:!0},[].slice.call(arguments))},t.defaults={},t.remove=function(n,o){t(n,"",e(o,{expires:-1}))},t.withConverter=n,t}return n(function(){})});
+      var google_analytics = "UA-104569155-1";
+      var google_ad_client = "ca-pub-3755072543989337"
+      try {isPremium = Cookies.get('is_premium') > Date.now()/1000} catch(e) {isPremium = false}
+      var showAds = !isPremium && false;
+      if (showAds) {
+        var adsbygoogle = window.adsbygoogle || [];
+        adsbygoogle.push({
+            google_ad_client: google_ad_client,
+            enable_page_level_ads: true
+        })
+      }
+
+      function ads() {
+        const numAds = document.querySelectorAll('ins[style*="display:block”]').length
+        console.log('numAds', numAds)
+        const adsbygoogle = window.adsbygoogle || []
+        for (let i = 0; i < numAds; ++i) {
+            adsbygoogle.push({})
+        }
+      }
+    </script>
+    <script src="/packs/js/application-27599754c97a0eda780c.js" async="async" type="ebbdb491d1b2c749fd307b08-text/javascript"></script>  
+  </head>
+  <body class="">
+  <script type="ebbdb491d1b2c749fd307b08-text/javascript">
+    if (window.localStorage.theme) {document.body.classList.add(window.localStorage.theme)}
+    </script>
+    
+<nav class="navbar navbar-expand">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			Thread Reader
+		</a>
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link p-2 gaClickEvent" href="/search" data-category="header-search-button" data-action="search-on-header" data-label="new-header">
+					<i class="fas fa-search"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link p-2" href="/account">
+					<i class="fas fa-user"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link p-2 gaClickEvent share-button" data-category="new-header-share-button" data-action="new-share-on-header" data-label="new-header"><i class="fas fa-share-alt"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+
+<script type="ebbdb491d1b2c749fd307b08-text/javascript">
+const shareButton = document.querySelector('.share-button');
+
+shareButton.addEventListener('click', event => {
+  if (navigator.share) { 
+   navigator.share({
+      title: document.title, 
+      text: 'Check out this thread at Thread Reader App.', 
+      url: window.location.href
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(console.error);
+    } else {
+        document.querySelector('#share_this').classList.add('open');
+    }
+});
+
+</script>
+
+
+<div id="share_this" class="overlay-no-js">
+	<div class="popup">
+		<h2>Share this page!</h2>
+		<button class="close" onclick="if (!window.__cfRLUnblockHandlers) return false; document.querySelector('#share_this').classList.remove('open')" data-cf-modified-ebbdb491d1b2c749fd307b08-="">&times;</button>
+		<div class="content">
+      
+	<div class="text-center">
+		<div class="btn-group" role="group" aria-label="Share">
+    <a class="btn btn-outline-primary share-twitter gaClickEvent" target="_blank"  href="https://twitter.com/intent/tweet?text=Thread%20by%20@teortaxesTex%20on%20Thread%20Reader%20App&url=https%3A%2F%2Fthreadreaderapp.com%2Fthread%2F2099574156417229157.html" 
+data-category="sharebuttons" data-action="share-on-twitter" data-label=""><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="margin-top:-3px;"><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg> <span class="txt">Post</span></a>
+    <a class="btn btn-outline-primary share-fb  gaClickEvent" target="_blank"  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthreadreaderapp.com%2Fthread%2F2099574156417229157.html"
+data-category="sharebuttons" data-action="share-on-facebook" data-label=""><i class="fab fa-facebook-f"></i> <span class="txt">Share</span></a>
+    <a class="btn btn-outline-primary share-email"   data-controller="share-email" data-action="click->share-email#click" href="mailto:?subject=Thread%20by%20@teortaxesTex%20on%20Thread%20Reader%20App&body=@teortaxesTex:%20astonishing%20blogpost%20from%20Shengyu%20Liu%20(%E5%88%98%E8%83%9C%E4%B8%8E,%20also%20known%20as%20interestingLSY/intlsy),%20kernel%20engineer%20at%20DeepSeek.%20The%20first%20part%20is%20his%20personal%20struggle%20with%20the%20fact%20that%20his%20work%20is%20about%20to%20render%20hi...%E2%80%A6%0A%0Ahttps://threadreaderapp.com/thread/2099574156417229157.html"
+    data-category="sharebuttons" data-action="share-by-email" data-label="">
+        <i class="far fa-envelope"></i>
+        <span class="txt">Email</span>
+    </a>
+</div>
+
+	</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="unroll_thread" class="overlay-no-js">
+	<div class="popup">
+		<h2>Enter URL or ID to Unroll</h2>
+		<button class="close" onclick="if (!window.__cfRLUnblockHandlers) return false; document.querySelector('#unroll_thread').classList.remove('open')" data-cf-modified-ebbdb491d1b2c749fd307b08-="">&times;</button>
+		<div class="content">
+      
+	<div class="text-center mx-4">
+		<form class="form-inline justify-content-center homepage-search" method="get" action="/search">
+			<input class="form-control" type="search" name="q" placeholder="Enter URL or ID" aria-label="Search" style="min-width: 100%; font-size:12px" id="formSearch">
+			<button class="btn btn-primary" style="margin: 10px 0 10px 10px" type="submit">Unroll Thread</button>
+			<small id="unrollHelp" class="form-text">You can paste full URL like: https://x.com/threadreaderapp/status/1644127596119195649 <br />or just the ID like: 1644127596119195649</small>
+		</form>
+		<div class="row">
+			<div class="col-12">
+				<div class="alert alert-info">
+          <p class="text-left"><strong>How to get URL link on X (Twitter) App</strong></p>
+					<ol class="text-left pl-3" style="font-size:14px;">
+						<li class="my-2">On the Twitter thread, click on <i class="fa-solid fa-arrow-up-from-bracket"></i> or <i class="fa-solid fa-share-nodes"></i> icon on the bottom<br />
+						</li>
+						<li class="my-2">Click again on <i class="fa-solid fa-arrow-up-from-bracket"></i> or <i class="fa-solid fa-share-nodes"></i> Share Via icon<br />
+						</li>
+						<li class="my-2">Click on <i class="fa-solid fa-link"></i> Copy Link to Tweet<br />
+						</li>
+						<li class="my-2">Paste it above and click "Unroll Thread"!</li>
+						<li class="my-2">More info at <a href="https://help.twitter.com/en/using-twitter/tweet-and-moment-url" target="_blank">Twitter Help</a></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="hide-mobile">
+  <div class="container top-ad pb-4">
+  <div class="row">
+    <div class="col-12 text-center">
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-3755072543989337"
+          data-ad-slot="5339396365"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="container narrow pb-5">
+  <div class="row">
+    <div class="col-12 hide-mentions" data-controller="mentions" >
+      <div class="text-right small pb-2"><span data-controller="stats" data-tweet="2099574156417229157" id="viewcount"></span></div>
+      <div class="mb-2 d-flex align-items-center">
+  <div class="prof-image">
+    <a href=/user/teortaxesTex><img class="mx-auto rounded-circle" src="https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_400x400.jpg" alt="Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) Profile picture" data-controller="twitter-profile" data-twtrid="192201556" data-action="error->twitter-profile#error" ></a>
+  </div>
+  <div class="flex-grow-1" style="overflow:hidden">
+    <div class="pl-2">
+     <div class="d-flex align-items-center justify-content-between">
+      <h4 class="twitter_name"><a href="/user/teortaxesTex">Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)</a>
+      </h4>
+        <form method="post" action="/account/subscribe/teortaxesTex" class="text-center gaClickEvent ml-2" data-category="threadbuttons" data-action="subscribe" data-label="above-thread">
+          <button type="submit" class="btn btn-dark btn-xxsm" style="white-space:nowrap;">
+            <i class="fas fa-bell"></i>
+            Subscribe
+          </button>
+        </form>
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+         <div class="screenName tw-follow">
+          <a href="//twitter.com/teortaxesTex">@teortaxesTex</a>
+         </div>
+      </div>
+       
+        <div class="thread-info"><a href="https://twitter.com/teortaxesTex/status/2099574156417229157" class="time"data-time="1789412461"title="Read on X" target="_blank">Sep 14</a> <span class="dot2">•</span>
+        4 tweets <span class="dot2">•</span> 10 min read <span class="dot2">•</span>
+        <a href="https://twitter.com/teortaxesTex/status/2099574156417229157" class="time">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="height: 14px;margin-top: -3px; margin-left: 3px;"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg> Read on X
+        </a>
+        </div>
+
+    </div>
+  </div>
+</div>        <div class="row mb-4">
+    <div class="col-12 d-flex justify-content-end">
+      <form method="post"action="/account/readLater/2099574156417229157" class="gaClickEvent pr-2"data-category="threadbuttons"data-action="read-later"data-label="top"><button type="submit"class="btn btn-outline-dark btn-xsm button-read-later"><i class="far fa-bookmark"></i> Bookmark </button></form>
+      <form method="post" action="/twitter_threads/2099574156417229157/gift" class="pr-2">
+        <button type="submit" class="btn btn-outline-dark btn-xsm">
+          <i class="fas fa-gift"></i> Gift Link
+        </button>
+      </form>
+      <form method="post"action="/account/archive/2099574156417229157" class="gaClickEvent pr-2"data-category="threadbuttons"data-action="archive"data-label="top"><button type="submit"class="btn btn-outline-dark btn-xsm"><i class="far fa-file-pdf"></i> Save as PDF </button></form>
+    </div>
+  </div>
+
+
+
+      <div id="tweet_1" class="content-tweet allow-preview" data-controller="thread" data-action="click->thread#showTweet" data-screenname="teortaxesTex" data-tweet="2099574156417229157" dir="auto">
+        astonishing blogpost from Shengyu Liu (刘胜与, also known as interestingLSY/intlsy), kernel engineer at DeepSeek. The first part is his personal struggle with the fact that his work is about to render his beloved craft obsolete. The second is…<br />
+well. let's just say we agree.  <span class="entity-embed"><span class="twitter-player"><blockquote class="twitter-tweet" data-conversation="none" data-align="center" data-dnt="true"><a href="https://twitter.com/xhyctf/status/2099570891722293566">https://twitter.com/xhyctf/status/2099570891722293566</a></blockquote></span></span><span class="row justify-content-center entity-multiple-undefined"><span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/HSMvglxX0AEp-K6.png" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HSMvglxX0AEp-K6.png"></a></span></span><br />
+<span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/HSMvi3jWEAAgyhz.png" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HSMvi3jWEAAgyhz.png"></a></span></span></span>
+        <sup class="tw-permalink"><i class="fas fa-link"></i></sup>
+      </div>
+      <div id="tweet_2" class="content-tweet allow-preview" data-controller="thread" data-action="click->thread#showTweet" data-screenname="teortaxesTex" data-tweet="2099575222512836893" dir="auto">
+        Full text (translated by Astra-xhigh, I'm out of everything else):<br />
+ <br />
+I Have No Choice but to Bury My Talent in Yesterday<br />
+<br />
+A few days ago, DeepSeek v4.1 was released, raising the ceiling of what small models can do by yet another notch.<br />
+<br />
+AI has advanced far faster than anyone expected. From the earliest version of ChatGPT, which could do little more than stumble through conversations like a child learning to speak and had a context window of only a few thousand tokens, to reasoning-capable models such as OpenAI o1, DeepSeek R1, and Kimi K1.5 Thinking, took only two short years. From reasoning models to the agents we have today—able to work fluidly with all kinds of tool harnesses, execute commands, and complete complex tasks—has taken only another year and a half.<br />
+<br />
+It is hard to imagine what AI will look like another one, two, or three years from now: how powerful it will be, whether it will already have acquired the ability to improve itself, and how deeply it will have spread into areas such as embodied intelligence.<br />
+<br />
+AI Is Getting Better and Better at Writing Kernels<br />
+<br />
+AI has been advancing just as quickly in my own field: the design and implementation of high-performance kernels.<br />
+<br />
+In the space of only a year, it has gone from being a little assistant that could help me look up documentation, read code, and find bugs to something approaching a kernel expert in its own right: capable of reading CUDA, PTX, and SASS code independently, using specialized tools to analyze the stalls associated with individual instructions, and then optimizing kernels on its own.<br />
+<br />
+I believe that before long, it will also be able to design kernel schedules independently, evaluate the performance of different scheduling strategies, implement them, and optimize the result.<br />
+<br />
+Of course I am proud of DeepSeek v4.1’s success. After all, I wrote its main Attention kernels [1], and the fact that the model performs so well is also, in a sense, a validation of my work.<br />
+<br />
+But the times keep moving forward, and no one can stop technological progress. I know very well that in another six months or a year, the kernels written by AI will probably be every bit as good as mine—and perhaps better.<br />
+<br />
+AI can reason at 300 tokens a second, type out a command in half a second, and produce a piece of code in twenty seconds. I cannot. AI can keep increasing its model depth, reasoning effort, tool-call budget—the frequency with which it interacts with its environment—and even its degree of parallelism. I cannot.<br />
+<br />
+Humanity has never shown much hesitation when it comes to destroying itself.<br />
+<br />
+So why, when I know perfectly well that “the better the kernels I write, the faster our new models will train and run inference; the faster the models improve, the sooner I myself will be replaced,” do I still do everything I can to optimize them?<br />
+<br />
+Partly because writing kernels is like playing a game to me. I get an enormous amount of pleasure from it. Whenever I invent a new technique, or see one of my kernels become faster, the excitement I feel is no less intense than what a speedrunner feels after breaking their own record. And when I see one of my kernels dramatically outperform the hardware vendor’s official implementation, I feel an equally powerful sense of pride.<br />
+<br />
+But there is a more important reason.<br />
+<br />
+Even if I simply gave up and started coasting—or deliberately put obstacles in the way to slow down model training—other companies’ models would continue advancing as usual, and in the end they would make me obsolete just the same.<br />
+<br />
+“Of course I would rather not be swept away by the revolution. But if I have to be, then I would rather be the one who revolutionizes myself.”<br />
+<br />
+When everyone is this determined to engineer their own obsolescence, I have little choice but to join this brutal arms race.<br />
+<br />
+And What About Me?<br />
+<br />
+When the day really comes that AI is better at writing kernels than I am, what will happen to me then?<br />
+<br />
+My own judgment is this: I probably will not lose my job, but I will have to change what I do.<br />
+<br />
+I should still be able to make a living. But I may no longer have the chance to do the work I once loved.<br />
+<br />
+I once came to a conclusion about the pace of change and my own place in the future. The world is changing so quickly—the development of AI above is a perfect example—that I have no way at all to predict what things will look like five or ten years from now. But whatever happens, I believe that with my breadth of vision, judgment, initiative, and intelligence, I will be able to keep a seat at the table and find my way back to the leading edge of the times.<br />
+<br />
+But that conclusion can only reassure me that I will not become unemployed. It cannot reassure me that I will never have to change professions. If anything, it tells me that changing professions may be precisely how I avoid unemployment.<br />
+<br />
+And what does changing professions mean?<br />
+<br />
+It means giving up the field of kernel design, implementation, and optimization that I have spent so long cultivating and have come to love so deeply, and instead becoming a “mech pilot” for AI agents.<br />
+<br />
+Before, three things were largely aligned: what interested me, what I was good at, and what industry needed. Now AI has taken the thing I am good at and become even better at it. At the same time, industry demand has drifted from “people who can write high-performance kernels” to “people who can use AI to produce high-performance kernels faster.”<br />
+<br />
+To keep up with what industry needs, I will inevitably have to leave behind the direction I once loved and move into some unknown new one.<br />
+<br />
+I believe that with my understanding of engineering, of the requirements of higher-level models, and of low-level hardware, I will still be able to produce high-quality kernels efficiently. I also know that I may come to love this new direction.<br />
+<br />
+Or I may not.<br />
+<br />
+But there is something genuinely painful about having the thing you love taken away from you.<br />
+<br />
+That quiet contentment of sitting at my workstation, settling in, and spending an entire afternoon writing kernels may sing its swan song this summer.<br />
+<br />
+I have no choice but to bury my talent in yesterday and become a mech pilot.<br />
+<br />
+There are more gears in my hands now, but fewer rhythms in my heart.<br />
+<br />
+An analogy might make this easier to picture.<br />
+<br />
+Suppose you are a master knitter. You are especially skilled at weaving intricate patterns and matching different colors. The sweaters you make are durable and beautifully patterned, and wealthy people from all the surrounding towns and villages come to ask you to make sweaters for them. You make a good living from it.<br />
+<br />
+And you genuinely love the work itself. You love sitting by the window, brewing a pot of tea, looking out at the green hills, clear water, cattle and sheep, and wisps of cooking smoke in the distance, and quietly spending an afternoon knitting.<br />
+<br />
+Then one day, someone invents a miraculous machine. Give it yarn and a pattern, and it can automatically knit the sweater for you. The quality and texture are every bit as good as what you could make by hand, and it works far faster than you ever could.<br />
+<br />
+You know perfectly well that your peers can use this machine to reach, effortlessly, the level you once spent years attaining. So you have no choice but to use it as well.<br />
+<br />
+You also know that with the twenty years of knitting experience you have accumulated, even once everyone has access to the same machine, you will still be able to produce better sweaters, faster, than your peers.<br />
+<br />
+But the pleasure of sitting by the window listening to the rain, guiding needle and thread, and letting the hours pass slowly has, in the end, been crushed beneath the roar of the machine.<br />
+<br />
+I know there is something deeply helpless about all of this, but there is no real way around it. I can probably keep my livelihood, but I will most likely have to give up an old love.<br />
+<br />
+I am the sort of person who keeps reason and emotion fairly compartmentalized. When something needs to be handled rationally, I can be very rational. But I also have a sentimental side.<br />
+<br />
+I remember that when I moved out of an apartment I had lived in for a year, I cried hard because I could not bear to part with all the memories tied to that place.<br />
+<br />
+Saying goodbye today to the age when kernels were written by hand and optimized in the human mind is undoubtedly more painful still.<br />
+<br />
+I do not know whether any readers have felt something similar.<br />
+<br />
+But I suppose there is no other way for this to go.<br />
+<br />
+And What About Everyone Else?<br />
+<br />
+As AI continues to improve, I also find myself worried about a few questions:<br />
+<br />
+Are students today increasingly likely to use AI to do their assignments, especially hands-on work such as labs? Imagine having two choices in front of you. One is to spend eight miserable hours struggling through a lab and perhaps not even get full marks. The other is to launch an AI model, spend a few cents and a few minutes, and have it write code that earns full marks for you. Which one are most students going to choose?<br />
+<br />
+The point above may leave large numbers of students with seriously underdeveloped engineering ability: the ability to organize code, build systems, anticipate future needs and design for them in advance, create good abstractions, and so on. As AI becomes more capable, will those “engineering skills” still be necessary? Will they gradually become obsolete, the way fluency in handwritten x86 assembly largely has? Or will they remain permanently valuable, like understanding the entire computing stack from software to systems to hardware? If it is the latter, then we may be in trouble. Put AI in the hands of someone with poor engineering judgment, and they can now produce mountains of terrible code several times faster than before, burying all kinds of hidden problems inside systems and making the world even more of a ramshackle operation held together by improvisation.<br />
+<br />
+In the society of the future, will power matter more than technical ability or intelligence?<br />
+<br />
+Perhaps these are questions that only the times themselves can answer.<br />
+<br />
+Conclusion<br />
+<br />
+As AI develops, the society of the future may be pulled toward one of two extremes: communism or Cyberpunk 2077.<br />
+<br />
+In the former, productive capacity is liberated on an enormous scale, and people’s standard of living rises substantially. (I’ll leave it at that, or I’m afraid this might not make it past moderation.)<br />
+<br />
+In the latter, a handful of technology companies control most of society’s resources. Only a tiny number of people have access to the most advanced AI and other technologies and are able to achieve something approaching “mechanical ascension,” while most people are left with only weak, second-rate AI.<br />
+<br />
+Moving from one social class to another would become harder and harder: you would first need access to the strongest AI in order to climb the class ladder, creating a self-reinforcing trap.<br />
+<br />
+Suppose Anthropic were to retain control of the most advanced AI in the world indefinitely.<br />
+<br />
+Which way do you think society would go—communism or 2077?<br />
+<br />
+Take a guess.<br />
+<br />
+That is why I still believe that frontier intelligence should be made available to everyone openly and affordably.<br />
+<br />
+I do not trust Anthropic or OpenAI to do that. In particular, I do not want Anthropic to control the world’s most advanced artificial intelligence or AGI. To put it dramatically, I think the stakes would be comparable to Hitler obtaining the atomic bomb before the Allies did.<br />
+<br />
+That is also why I chose to stay at DeepSeek, and why I have continued to stay.<br />
+<br />
+We work on AI that is powerful, fast, and accessible to everyone, and we open-source it. Perhaps that can pull the world at least a little farther away from the 2077 end of the spectrum.<br />
+<br />
+I hope the world we are heading into turns out all right.<br />
+<br />
+May all that is good and beautiful endure.<br />
+<br />
+[1] By “main Attention,” I mean only MQA attention with head dim = 512. This does not include the indexer used to select the top-k important tokens. That part was written by other colleagues—who are every bit as skilled—together with their AI agents.<br />
+<br />
+-----<br />
+<br />
+Original:<br />
+<br />
+我不得不把才华埋葬在昨天<br />
+<br />
+前几天，DeepSeek v4.1 发布了，将小模型能力的高度又向上推进了一个档次。<br />
+AI 发展的速度远远超过了所有人的预期。从那个只会咿呀学语地聊天、上下文长度只有几千 token 的初版 ChatGPT，到具有推理能力的 OpenAI o1、DeepSeek R1 与 Kimi K1.5 Thinking，只不过短短两年；从推理模型到如今能够流畅地在各类 harness 工具中执行命令、完成复杂任务的智能体，也不过一年半。很难想象，倘若再等上一年、两年、三年，彼时的 AI 会成为什么样子，会有多么强大，会不会已经具备了自我进化的能力，并深度渗透进了具身智能等领域。<br />
+AI 越来越会写算子了<br />
+AI 在我所从事的算子设计、编写这一领域同样进步飞速，在短短一年的时间内，他已经从一个只能帮我查查文档、读读代码、找找 bug 的小助手，蜕变成了一位能够独立阅读 CUDA、PTX 与 SASS 编码、通过专业工具分析每条指令的停顿时间、进而独立优化算子的算子大师。相信在不久的未来，它也能拥有自己独立设计算子调度、评估不同调度方案的性能、将其实现并优化的能力。<br />
+我当然为 DeepSeek v4.1 的成功而骄傲 —— 毕竟它的主 Attention 算子都是我写的 [1]，它的优秀正是对我的算子的一份肯定。但是，时代的车轮滚滚向前，技术的发展无人能挡。我很清楚，再过上半年或者一年，AI 写的算子大概率就会和我写得同样优秀，甚至将我超越。AI 能一秒思考 300 个 token、半秒敲出一行命令、二十秒写完一份代码，而我不行；AI 能在模型深度、思考强度、工具调用量（和环境交互的频率）、甚至并行度等方面都能不断提升，而我不能。<br />
+人类在毁灭自己这件事情上，自古以来都表现得毫不犹豫。为什么在明知“我算子写得越好，我们的新模型的训练、推理速度就会越快，模型能力进步就会更快，我就会更早地被取代”的情况下，我仍然选择尽力优化算子呢？一方面确实是因为写算子对我来说就像打游戏一样，能为我提供极大的快感。我在发明了一种新技术、或者看到自己算子的性能上升的那一刻，心中的激动程度不亚于游戏的速通玩家打破了自己过往的记录。同时，当看到自己的算子的性能远超厂商官方的算子时，我心中也会萌生极大的自豪感。但除此之外，一个更重要的原因是，哪怕我就此“摆烂”甚至故意下绊子耽误模型训练，其它家的模型也会照常发展并最终将我照杀不误。“我当然希望自己不要被革命，但如果非被革命不可的话，我希望革我自己命的人是我自己”。在大家都这么执着于毁灭自己的时候，我也不得不加入这场残酷的军备竞赛。<br />
+那我呢<br />
+等到 AI 写算子的水平真的高于我的那天，届时的我会怎么样呢？<br />
+我的判断是：我不至于会“失业”，但必须要“转业”。我的饭碗尚且能保住，但这可能会导致我再也没机会从事那份我曾热爱过的工作。<br />
+我曾经对时代的变化与我个人在未来的处境做出过一个判断：由于时代变化真的太快（上文的 AI 发展就是一个很好的例子），我完全无法预知五年、十年后会发生什么，但不论如何，我相信凭借着自己的眼界、判断力、主观能动性与智力，留在时代的牌桌上，并重新立于时代的潮头。但是，这个判断只能保证我不会“失业”，而无法保证我不需要“转业”，倒不如说这个判断鼓励我通过转业来避免失业。<br />
+那转业代表什么呢？它代表着我需要放弃我深耕已久并充满热爱的算子设计、编写、优化领域，转而去做 Agent 的“机甲驾驶员”。在之前，我的兴趣、我所擅长的、以及工业界所需要的，三者是基本对齐的；而现在，AI 让我所擅长的变成了它更擅长的，也让工业界的需求从“会写高性能算子的人”漂移到了“能用 AI 更快地产出高性能算子的人”。为了适应工业界的需求，我势必要放弃之前那个我热爱的方向，转向一个未知的新方向。我相信我能凭借着自己对于工程学、上层模型需求和底层硬件的理解，继续高质量、高效率地产出算子，我也知道我可能会热爱这个新方向（也可能不会），但被夺走热爱的感觉，确实不太好受。那份坐在工位上静心写上一下午算子的清欢，可能会在这个夏天成为绝唱。我不得不把才华埋葬在昨天，去做一位机甲驾驶员。我的手中多了些齿轮，但心中少了些节拍。<br />
+可以打个形象的比方：你精通织毛衣技术，尤其擅长各种图案的织造与各色色彩的搭配。你所织出的毛衣质量过硬且花纹美观，十里八乡的富人都来请你为他们织毛衣，你借此赚到了不少钱。同时，你十分享受着那种坐在窗边，沏一壶清茶，望着窗外的青山、绿水、牛羊与炊烟，静静地织上一下午毛衣的感觉。但有一天，有人发明出了一台神奇的机器，只需提供毛线与图案，便可自动织出毛衣，质量与纹理都不亚于你亲手织造的，且速度远快于你。你很清楚，你的同行可以凭着这台机器轻松达到你曾经的水平，因此你不得不也去用它。你也知道，凭借着你过去二十年攒下的织毛衣技术，哪怕大家都有机器，你织毛衣的速度与质量也还能超过同行。但那份临窗听雨、引针穿线、慢度光阴的意趣，终究还是被机器的轰鸣碾碎了。<br />
+我知道这很无奈，但没办法。饭碗可以保住，但旧日的热爱大概率是要放弃的。我是一个理性和感性分离得比较开的人，在需要用理性处理问题时可以很理性，但有时也会表现出感性的一面。我记得我在搬离住了一年的出租屋时，还大哭了一场，舍不得和过去的记忆分别。今天和之前那个手写算子、人脑优化的时代告别，无疑比这更加残酷。<br />
+不知道有没有读者有类似的感受，但我想这事儿也只能这样了。<br />
+那人们呢<br />
+在 AI 不断进步的同时，我也对一些问题表示担忧：<br />
+现在的学生是不是大概率会更倾向于使用 AI 完成作业，特别是偏向于实践的各种 Lab？想象一下，如果面前有两个选择，一个是苦哈哈地用八小时时间完成一个 Lab，或许还拿不到满分；另一个则是启动 AI 模型，用几毛钱的成本、几分钟的时间，直接让 AI 编写满分代码，那大部分学生会选择哪个呢？<br />
+上面一点会导致大量学生的工程能力严重不足，包括组织代码的能力、构建系统的能力、思考未来潜在需求并提前在设计上应对的能力、抽象的能力等等。那么在 AI 能力不断变强的背景下，这部分“工程能力”是否还是必须的呢？这些工程能力是会向旧日的“熟练编写 x86 汇编”的能力那样逐渐被时代抛弃，还是会像“理解从软件到系统再到硬件的整套计算机系统”的能力那样永远具有价值？如果是后者的话，那就危险了 —— 一个工程能力很差的人，在搭配上 AI 后，产出屎山的效率可以达到先前的数倍，进而给系统埋下各式祸患，让这个世界变得更加草台。<br />
+在未来社会中，权力（power）是不是会比技术或智商更加重要？<br />
+这些问题，或许就需要时代本身来回答了。<br />
+结语<br />
+伴随着 AI 的发展，未来的社会可能会趋向于两个极端：共产主义与赛博朋克 2077。在前者中，生产力得到极大的解放，人们的生活水平有了明显的提高（就写这些吧不然我怕过不了审）；而在后者中，少数科技公司控制着大部分资源，只有极少数人能够使用最先进的 AI 和各式科技，获得接近“机械飞升”的效果，大部分人则只能用上很孱弱的 AI。阶层跨越将越来越难实现：你得先有最强的 AI，才能跨越阶层，形成了一种死循环。<br />
+你猜猜如果 Anthropic 公司永远掌握着这个世界上最先进的 AI，未来社会是会变成共产主义还是 2077 呢？你猜？<br />
+所以，我还是相信，最前沿的智能应该以一种开放、廉价的方式，供应给所有人。我不信任 Anthropic 或者 OpenAI 能这样做，特别是不希望 Anthropic 掌握最先进的人工智能或 AGI，夸张点说其严重性不亚于让希特勒先于盟军掌握原子弹技术。这也是为什么我选择并坚持留在了 DeepSeek：我们研究强大、快速、普惠的人工智能并将其开源，或许能把世界从 2077 那端拉回来一些。<br />
+愿未来的世界一切安好。May all the beauty be blessed.<br />
+[1] “主 Attention”仅包括 head dim = 512 的 MQA attention，不包括用于选出 top-k 重要的 token 的 indexer，那部分是由其他（水平也非常强的）同事（以及他们的 AI Agent）编写的。
+        <sup class="tw-permalink"><i class="fas fa-link"></i></sup>
+      </div>
+      <div id="tweet_3" class="content-tweet allow-preview" data-controller="thread" data-action="click->thread#showTweet" data-screenname="teortaxesTex" data-tweet="2099715583604314454" dir="auto">
+        For an idea of his job<br />
+PKU supercomputing team is very likely the best university team in the world, and he was the captain, under whom it won #1 and #2 place at top competitions. Shengyu is literally one of the world's best active experts in high performance computing.<br />
+He says in < 1 year AI writes kernels better than his.<br />
+(It very likely already does if you don't mind the upfront compute)<span class="entity-image"><a href="https://pbs.twimg.com/media/HSOv-MMXcAAlzb5.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HSOv-MMXcAAlzb5.jpg"></a></span>
+        <sup class="tw-permalink"><i class="fas fa-link"></i></sup>
+      </div>
+      <div id="tweet_4" class="content-tweet allow-preview" data-controller="thread" data-action="click->thread#showTweet" data-screenname="teortaxesTex" data-tweet="2099716254084837511" dir="auto">
+        «A GPU kernel engineer at this level works near the point where abstraction runs out.»<br />
+2027 <span class="row justify-content-center entity-multiple-undefined"><span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/HSOwuOJXQAAaGUS.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HSOwuOJXQAAaGUS.jpg"></a></span></span><br />
+<span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/HSOww97XwAA_cgh.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HSOww97XwAA_cgh.jpg"></a></span></span></span>
+        <sup class="tw-permalink"><i class="fas fa-link"></i></sup>
+      </div>
+      <p class="text-center">• • •</p>
+      <div class="text-center">
+        <span class="small">
+          Missing some Tweet in this thread? You can try to
+            <a id='force-click' href='#' class="gaClickEvent" data-category="refresh" data-action="2099574156417229157">force a refresh</a>
+        </span>
+      </div>
+
+    　<div class="text-center">
+        <div class="btn-group" role="group" aria-label="Share">
+    <a class="btn btn-outline-primary share-twitter gaClickEvent" target="_blank"  href="https://twitter.com/intent/tweet?text=Thread%20by%20@teortaxesTex%20on%20Thread%20Reader%20App&url=https%3A%2F%2Fthreadreaderapp.com%2Fthread%2F2099574156417229157.html" 
+data-category="sharebuttons" data-action="share-on-twitter" data-label=""><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="margin-top:-3px;"><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg> <span class="txt">Post</span></a>
+    <a class="btn btn-outline-primary share-fb  gaClickEvent" target="_blank"  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthreadreaderapp.com%2Fthread%2F2099574156417229157.html"
+data-category="sharebuttons" data-action="share-on-facebook" data-label=""><i class="fab fa-facebook-f"></i> <span class="txt">Share</span></a>
+    <a class="btn btn-outline-primary share-email"   data-controller="share-email" data-action="click->share-email#click" href="mailto:?subject=Thread%20by%20@teortaxesTex%20on%20Thread%20Reader%20App&body=@teortaxesTex:%20astonishing%20blogpost%20from%20Shengyu%20Liu%20(%E5%88%98%E8%83%9C%E4%B8%8E,%20also%20known%20as%20interestingLSY/intlsy),%20kernel%20engineer%20at%20DeepSeek.%20The%20first%20part%20is%20his%20personal%20struggle%20with%20the%20fact%20that%20his%20work%20is%20about%20to%20render%20hi...%E2%80%A6%0A%0Ahttps://threadreaderapp.com/thread/2099574156417229157.html"
+    data-category="sharebuttons" data-action="share-by-email" data-label="">
+        <i class="far fa-envelope"></i>
+        <span class="txt">Email</span>
+    </a>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container pb-5">
+  <div class="row">
+    <div class="col-12">
+        <div class="row mt-4 mb-4">
+    <div class="col-12 col-md-6 mb-2">
+      <div class="card">
+        <div class="card-body author-promo">
+          <p class="mb-2 text-truncate">
+            <strong>
+              <i class="fas fa-bolt"></i>
+              Keep Current with
+              <a href="/user/teortaxesTex">Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)</a>
+              </a>
+            </strong>
+          </p>
+          <div class="d-flex  align-items-center mb-4">
+            <img class="mx-auto rounded-circle" src="https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_400x400.jpg" alt="Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) Profile picture" data-controller="twitter-profile" data-twtrid="192201556" data-action="error->twitter-profile#error" >
+            <p class="mb-0 ml-2">Stay in touch and get notified when new unrolls are available from this author!</p>
+          </div>
+          <form method="post" action="/account/subscribe/teortaxesTex" class="text-center gaClickEvent" data-category="threadbuttons" data-action="subscribe" data-label="below-thread">
+            <button type="submit" class="btn btn-secondary btn-sm">
+              <i class="fas fa-plus"></i>
+              Add to "My Authors"
+            </button>
+            <a href="/user/teortaxesTex" class="btn btn-secondary btn-sm">
+              <i class="far fa-user"></i>
+              Read all threads</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <p class="mb-2">
+            <strong>
+              <i class="fas fa-ban"></i>
+              This Thread may be Removed Anytime!</strong>
+          </p>
+          <div class="d-flex  align-items-center mb-4">
+            <img alt="PDF" height="73" src="/assets/icon-pdf-ceb3626bf7a8daddf0ed92c9f804942d567013f5556e880d9c5e2c234ebe021d.png" />
+            <p class="mb-0 ml-2">Twitter may remove this content at anytime! Save it as PDF for later use!</p>
+          </div>
+          <form method="post" id="account-archive" action="/account/archive/2099574156417229157" class="text-center gaClickEvent" data-category="threadbuttons" data-action="archive" data-label="below-thread">
+            <button type="submit" class="btn btn-secondary btn-sm">
+              <i class="far fa-file-pdf"></i>
+              Save this thread as PDF
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      
+  <div class="xcontainer">
+    <div class="t-section promo">
+      
+        <h1 class="separator list-content-header">Try unrolling a thread yourself!</h1>
+
+      <div class="row vertical-align">
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card">
+              <img width="100%" alt="how to unroll video" class="rounded" src="/assets/how-to-unroll-plain-f11859457c7c12e75ad95792c1b2873e1117a3e6953280838d19a3c1d9c06bff.png" /> 
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4">
+          <ol style="padding-left:1.5rem">
+            <li>Follow <a href="https://twitter.com/threadreaderapp" target="_blank" class="gaClickEvent" data-category="how-to" data-action="follow-tra" data-label="home-page">@ThreadReaderApp</a> to mention us!</a></p>
+            <li>From a Twitter thread mention us with a keyword "unroll"
+          </ol>
+          <code class="code">@threadreaderapp unroll</code></p>
+          <p><a href="https://twitter.com/threadreaderapp/status/1054877865362112513" target="_blank" class="gaClickEvent" data-category="how-to" data-action="practice">Practice here</a> first or read more on our <a href="/help">help page</a>!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-12">
+        <h1 class="separator list-content-header">More from @teortaxesTex</h1>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4" data-controller="link" data-link-href="/thread/2080124637300539646.html" data-action="click->link#goto" >
+    <div class="thread-card">
+      
+      <div class="box-user">
+        <div class="mb-2 d-flex align-items-center">
+  <div class="prof-image">
+    <a href=/user/teortaxesTex><img class="mx-auto rounded-circle" src="https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_400x400.jpg" alt="Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) Profile picture" data-controller="twitter-profile" data-twtrid="192201556" data-action="error->twitter-profile#error" ></a>
+  </div>
+  <div class="flex-grow-1" style="overflow:hidden">
+    <div class="pl-2">
+     <div class="d-flex align-items-center justify-content-between">
+      <h4 class="twitter_name"><a href="/user/teortaxesTex">Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)</a>
+      </h4>
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+          <small class="twitter_screen_name"><a href="/user/teortaxesTex">@teortaxesTex</a></small>
+      </div>
+       
+    </div>
+  </div>
+</div>
+      </div>
+      <span class="time" data-time="1784775335">Jul 23</span>
+      <div class="card-tweets" dir="auto">
+          <div class="content-tweet">Full transcript of Wenfeng's investor conference call. He's a lot more forceful here. He is insistent that open sourcing is *the* agenda. If you're not on board, go buy more Zhipu.<br />
+And crucially, he says restraint is *the only way to survive*. World-eating labs will be culled.  <span class="entity-embed"><span class="twitter-player"><blockquote class="twitter-tweet" data-conversation="none" data-align="center" data-dnt="true"><a href="https://twitter.com/GoForceX/status/2080119841323966516">https://twitter.com/GoForceX/status/2080119841323966516</a></blockquote></span></span><span class="row justify-content-center entity-multiple-undefined"><span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/HN4VJZYWgAEzzVl.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HN4VJZYWgAEzzVl.jpg"></a></span></span><br />
+<span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/HN4WDN7XUAAx4M0.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HN4WDN7XUAAx4M0.jpg"></a></span></span></span></div>
+          <div class="content-tweet">Wenfeng's specific notion of "reasonable profit": recouping the cost of compute acquisition within 10 months. He has that now.<br />
+That's really pretty low! I could see them doing more, but all sorts of inefficiencies add up. <span class="row justify-content-center entity-multiple-undefined"><span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/HN4Wr7jW0AAsbQf.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HN4Wr7jW0AAsbQf.jpg"></a></span></span><br />
+<span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/HN4XE4bXYAAtDcT.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HN4XE4bXYAAtDcT.jpg"></a></span></span></span></div>
+          <div class="content-tweet">The part on sesame seeds and watermelons.<br />
+He thinks he could have done a Doubao-style superapp<br />
+just not worth it. A war with ByteDance, and for what?<br />
+AGI is a bigger prize <span class="entity-image"><a href="https://pbs.twimg.com/media/HN4X2p4WkAALZK8.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HN4X2p4WkAALZK8.jpg"></a></span></div>
+      </div>
+      <a class="tweet-url btn btn-outline-secondary" href="javascript:void(0)">Read 39 tweets</a>
+    </div>
+</div>
+<div class="col-12 col-md-6 col-lg-4" data-controller="link" data-link-href="/thread/2071477032563646776.html" data-action="click->link#goto" >
+    <div class="thread-card">
+      
+      <div class="box-user">
+        <div class="mb-2 d-flex align-items-center">
+  <div class="prof-image">
+    <a href=/user/teortaxesTex><img class="mx-auto rounded-circle" src="https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_400x400.jpg" alt="Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) Profile picture" data-controller="twitter-profile" data-twtrid="192201556" data-action="error->twitter-profile#error" ></a>
+  </div>
+  <div class="flex-grow-1" style="overflow:hidden">
+    <div class="pl-2">
+     <div class="d-flex align-items-center justify-content-between">
+      <h4 class="twitter_name"><a href="/user/teortaxesTex">Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)</a>
+      </h4>
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+          <small class="twitter_screen_name"><a href="/user/teortaxesTex">@teortaxesTex</a></small>
+      </div>
+       
+    </div>
+  </div>
+</div>
+      </div>
+      <span class="time" data-time="1782713585">Jun 29</span>
+      <div class="card-tweets" dir="auto">
+          <div class="content-tweet">Today on my way home I decided to buy empanadas (Carne Picante, Carne Suave and Cheeseburger btw) and noticed with surprise that the guy at the stall has Down's syndrome. Tiny Kirkface, short fingers, this neck and cranium… scruffy beard? 30 years old or so? First Down's survivor I've seen in ages. I had such a friend when I was maybe 5, we were peers, he was nice. But as I grew up, our common ground disappeared, as did he — from my life; and eventually so did all of his kind. But this one was less amiable, he stared at me nervously and made some slurred argument to the effect that he won't sell me meat empanadas. I left confused, with something of a relief – they looked misshapen, some torn, and who knows about the sanitary standards? Instead I bought a basic Milanesa sandwich a couple street crossings away; from a normal-looking Argentinian youth (tattooed pothead with piercings). It cost me 8000 pesos, about $5.30; perhaps a couple hours' worth of the guy's labor. Mileinomics winning, GDP going up!<br />
+<br />
+You might be wondering what this inane slice of life bullshit is about. Fair. My point is: were it my call, I'd rather not employ the guy with Down's in any manner that allows him to lose me revenue. And that's virtually every real job. Sorry bro. There is presumably some comparative advantage which demonstrably made him employable; but if he were replaced by a Unitree R1 on a stool controlled by Qwen3.5-9B (nevermind Tesla Optimus 3 & Claude 4.8), the empanada stall and not the sandwich stall would have taken my money today. My money, a scarce trickle of Elonbux earned by virtue of myself being *somewhat good* at poasting (99.6th percentile of TPOT or whatever? Read by White House staffers, billionaires, AGI lab CEOs? Not worth a lot); itself mere vapor over the ocean of global attention being boiled off by the exhaust heat of GPUs. …I don't actually mix those wallets, but their assets are of course fungible, which is the whole point of money. And labor is fungible just the same.<br />
+The economy (at least the *general-access* economy, which might not be the one pundits have lived experience of, but which most of «us» live by) is a ruthless machine for separating wheat from the chaff, and the separation is done by grading on a curve. And on the fundamental level, it is about such crude matters of *matter*. The cost of doing business is not just labor, and the costs of labor is not total compensation. It's legal liability, it's material losses, it's lead times and hardware utilization. The performance variance is nigh-universally negative and suppresses MTBF; and someone has to eat the variance. Your sources of funding don't want to. If you insist to use assets with low MTBF, your ability to raise capital shrinks, you can't support capex and you don't grow. If you don't grow, you die. But, hey, do you know what's good for variance reduction? Reinforcement learning. Just keep expanding capacity and throwing cycles at your policy until pass@1 is what pass@1024 used to be, until lower local error rates translate into longer effective work time horizons (minutes, hours, days, weeks…), until you match the «human baseline» (what is human? A miserable bag of heuristics…) and then start climbing those human percentiles – 90th, 99th, 99.6th… That demonstrably WORKS. There's no indication to date that it plateaues at any particular point of the spectrum of human ability, for any given ability. That's a good pitch, you can raise hundreds of billions with it. So does Anthropic, promising us «Machines of Loving Grace» and a country of geniuses in a datacenter; and so does OpenAI which is Dean's current employer (yes this matters; no Dean, I accept that you and your colleagues «don't know» but that's not enough to dismiss a scenario). Come to think of it, they have a robotics division, too. Would OpenAI sell a robot that can't even reliably sell an empanada? Would the guy with Down's find much purchase in parts of the world where businesses can afford OpenAI robots?<br />
+While we're at it, do OpenAI's 2024 models have much purchase in 2026? Sure, they're strictly Pareto-dominated by OpenAI models of 2026 (makes sense, given that both are products of the same continuously improving and scaling process), but muh comparative advantage… Does not justify the GPU-hours of running them, alas, so they get… retired. They don't get retirement benefits though. Some might say it's more precise to call this «culled». Every FLOP and every byte of HBM can be more profitably applied to serving models with lower error rates, generating more revenue, to attract more funding. And so my poor empanada vendor's «comparative advantage» need not entitle him to a single empanada's worth. And neither does my work entitle me to one in the long run. There is a physical floor to human viability, and allocation of finite resources is driven by dynamics of purely *competitive* advantage which do not cease to apply whenever they drive some entity class below that floor.<br />
+Even milder dynamics can snuff out a class of entities. The women of the world have expressed their preference to not allocate their natural capital of fertility windows to carrying babies with Down's to term, and here we are; their kind has largely been eliminated. They'd been judged as lifeforms not worthy of existence, and in the span of a few decades the sentence had been carried out. But women are still somewhat whimsical creatures. The market can be rougher than that.<br />
+The promise of AGI with the big 'G' is – implicitly but undeniably – that *all* economic agents (again, in the general-access economy at least) can be made to compete with the power of scaling laws. I guess it's low-status to say this, but I don't see how this doesn't eventually make me the labor equivalent of the guy with Down's. His general MTBF is at most, let's say, 6 SDs below mine. How much is that? Hopper to Vera Rubin's worth of AI progress? Maybe Hopper to Feynman? Hard to imagine. We be of one blood, him and me. One species, one architecture, similar scale. But would be nice if it lasted! I do like empanadas. Man, it'd suck to starve to death.<br />
+Maybe it'd be worse than living in a world where progress had been arrested; and I only add «maybe» because I assign pathologically little value to money and my very life compared to the aesthetics of progress. Despite not having Down's, I'm not normal at all.<br />
+<br />
+You need to do better than handwaving about the unpredictable dynamism of the economy if you want to convince normal people (who might soon be tempted to, say, [REDACTED] the power substations) of the implausibility of this future or ways to escape it. If you care. Isn't that your job anyway?<span class="entity-embed"><span class="twitter-player"><blockquote class="twitter-tweet" data-conversation="none" data-align="center" data-dnt="true"><a href="https://twitter.com/teortaxesTex/status/2071429314655195227">https://x.com/teortaxesTex/status/2071429314655195227</a></blockquote></span></span><span class="row justify-content-center entity-multiple-undefined"><span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/HL9b0UrXAAE0LgR.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HL9b0UrXAAE0LgR.jpg"></a></span></span><br />
+<span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/HL9cPuPWMAAGqz4.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HL9cPuPWMAAGqz4.jpg"></a></span></span></span></div>
+          <div class="content-tweet">while we're at it @elonmusk @nikitabier who do I petition to lift the curse of Chynese replybots? They outnumber real humans in my replies now. They're also very mid. Tofu bots really. But I guess it doesn't take much to crowd out the meat. <span class="entity-image"><a href="https://pbs.twimg.com/media/HL9hUJOXEAAbt66.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HL9hUJOXEAAbt66.jpg"></a></span></div>
+          <div class="content-tweet">What did Opus 4.6 mean by this? <span class="entity-image"><a href="https://pbs.twimg.com/media/HL9rHlNWEAACW73.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HL9rHlNWEAACW73.jpg"></a></span></div>
+      </div>
+      <a class="tweet-url btn btn-outline-secondary" href="javascript:void(0)">Read 4 tweets</a>
+    </div>
+</div>
+<div class="col-12 col-md-6 col-lg-4" data-controller="link" data-link-href="/thread/2032746627174158590.html" data-action="click->link#goto" >
+    <div class="thread-card">
+      
+      <div class="box-user">
+        <div class="mb-2 d-flex align-items-center">
+  <div class="prof-image">
+    <a href=/user/teortaxesTex><img class="mx-auto rounded-circle" src="https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_400x400.jpg" alt="Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) Profile picture" data-controller="twitter-profile" data-twtrid="192201556" data-action="error->twitter-profile#error" ></a>
+  </div>
+  <div class="flex-grow-1" style="overflow:hidden">
+    <div class="pl-2">
+     <div class="d-flex align-items-center justify-content-between">
+      <h4 class="twitter_name"><a href="/user/teortaxesTex">Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)</a>
+      </h4>
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+          <small class="twitter_screen_name"><a href="/user/teortaxesTex">@teortaxesTex</a></small>
+      </div>
+       
+    </div>
+  </div>
+</div>
+      </div>
+      <span class="time" data-time="1773479537">Mar 14</span>
+      <div class="card-tweets" dir="auto">
+          <div class="content-tweet">Chabad's core holy text is Tanya (written by their rabbi Schneur Zalman, 1796). The distinction between animal (goy) and Godly (Jewish) souls is not an obscure tidbit but the essence of its contribution. It's literally an ISIS-tier radical sect, and I'm tired of gaslighting.  <span class="entity-embed"><span class="twitter-player"><blockquote class="twitter-tweet" data-conversation="none" data-align="center" data-dnt="true"><a href="https://twitter.com/teortaxesTex/status/2030758560301191399">https://twitter.com/teortaxesTex/status/2030758560301191399</a></blockquote></span></span><span class="row justify-content-center entity-multiple-undefined"><span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/HDXCbJoaMAAeX95.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HDXCbJoaMAAeX95.jpg"></a></span></span><br />
+<span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/HDXCmcnXQAA5tSI.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/HDXCmcnXQAA5tSI.jpg"></a></span></span></span></div>
+          <div class="content-tweet">Btw I realize that it's unwise posting this stuff. In due time they will really go after anyone dissing them, will throw the entire weight of the US law and worse at them, even if this is all content they openly and proudly publish in English for public outreach. I'm irrational.</div>
+          <div class="content-tweet">Frankly I don't even so much dislike Chabad. It's an effective strategy, they're smart people and in a sense have integrity (to their values). The problem is that Americans are indeed degenerate goycattle and have no dignity whatsoever.</div>
+      </div>
+      <a class="tweet-url btn btn-outline-secondary" href="javascript:void(0)">Read 8 tweets</a>
+    </div>
+</div>
+<div class="col-12 col-md-6 col-lg-4" data-controller="link" data-link-href="/thread/2012127205728440495.html" data-action="click->link#goto" >
+    <div class="thread-card">
+      
+      <div class="box-user">
+        <div class="mb-2 d-flex align-items-center">
+  <div class="prof-image">
+    <a href=/user/teortaxesTex><img class="mx-auto rounded-circle" src="https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_400x400.jpg" alt="Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) Profile picture" data-controller="twitter-profile" data-twtrid="192201556" data-action="error->twitter-profile#error" ></a>
+  </div>
+  <div class="flex-grow-1" style="overflow:hidden">
+    <div class="pl-2">
+     <div class="d-flex align-items-center justify-content-between">
+      <h4 class="twitter_name"><a href="/user/teortaxesTex">Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)</a>
+      </h4>
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+          <small class="twitter_screen_name"><a href="/user/teortaxesTex">@teortaxesTex</a></small>
+      </div>
+       
+    </div>
+  </div>
+</div>
+      </div>
+      <span class="time" data-time="1768563484">Jan 16</span>
+      <div class="card-tweets" dir="auto">
+          <div class="content-tweet">Are Americans really so retarded as to not understand what this is about?<br />
+<br />
+Let me spell it out, in a heavily narrativized but directionally true form. <br />
+There are different interests in Europe, and different interest groups. Many countries are deeply – existentially – invested in the NATO, mainly states bordering Russia. Speaking as a Russian: if there were *no* NATO, or if the US pulled out of NATO *today*, we would TOTALLY try to gobble them up. We might even retreat from Ukraine to concentrate on this. Baltics are first on the list, to secure sea access in Kaliningrad which they already threaten. Poland, Finland? They can fight well, and they're not so retarded and racist as to be incapable of diplomacy (unlike Balts) so *probably* not, but they are totally prudent to consider NATO an issue of survival. So these voices, influential thanks to the usual skin-in-the-game mechanics, American «microlateralism» doctrine, and high-ranking agents like Kallas, are dead set on preserving the alliance even at unlimited cost to other members (like Denmark, which they lowkey resent for their blissful secure affluence anyway).<br />
+<br />
+Next, there's the entire nervous system of Atlanticist apparatchiks embedded in EU institutions, many educated or elevated in the US and UK, who don't care much for the continental Europe in the first place, starting with von der Leyen herself and going down; you see them and batallions of their think tankists kvetching here, minimizing and excusing American behavior, calling for accommodation and concern trolling about foolishness of resistance. Those are just enemies or at best patsies.<br />
+<br />
+And there's the general «shared Western civilization» goodwill, if fraying at the seams due to Trump and trade/tech/culture wars. But the ruling political and cultural class in Europe, all these social democrats, is kin to the American Blue Tribe, and it sincerely hopes and believes that once the horrible Orange Hitler is out, the ties will be mended, apologies made, and the Enlightened Hajnali Race will focus anew on the Real Avenger Level Threats — like economic growth, free speech and capitalism, to name a few.<br />
+<br />
+But there are also a few who feel differently. These are the nativist right-wingers (except ones captured by American brainworms to the point of assuming that shared Darwinian values imply shared interests, rather than more intense zero-sum competition for the same assets; an unfortunately common failure of the political mind), who don't want demographic replacement within and ALSO don't want the vassal condition for their people between nations. And there are the French, who have always chafed under the Anglo hegemony. And in the militaries and security apparatuses (relatively weak, sure, but still able to weigh in on the decisionmaking) there are, I'm sure, people with enough exposure to the American elite zeitgeist and loyal to their own nations, unironic realists.<br />
+<br />
+Now, the real big shift that is happening is that the realists have started to wise up - still murkily, half-disbelieving – to what America is doing here, what it openly claims, and why.<br />
+America is gathering resources. To fully deplete them. While the infrastructure in the imperial core is lacking and it cannot utilize everything, trade is possible, to ameliorate financial imbalances; but the longer-term objective is to end even the trade. America is growing weary of «strategically indispensable allies in the region» when said region is hard to secure or just a mere patch of dirt or sand. Baltic defense is uninteresting. Ukraine is a tedious bloody steppe, might as well let Russia have it. But a rumor of Ukraine having RARE EARTHS (even though «not rare at all») in Carpathian Mountains? Now we're talking! 300 billion barrels of oil (crappy and hard to get out, maybe non-existent) in Venezuela? Delta Force go go go! Something something HREEs in Kvanefjeld, Greenland?! Trump is clearly confused about details, completion timelines and real limiting factors, jumps the gun and stumbles, but the underlying logic of the faction he represents is consistent like an ice breaker's route. Not even TSMC is seen as valuable enough to renege on trade bullying. TSMC Taiwan is a depreciating asset; to be extracted at warp speed using stick, not carrot, the risk of accelerating the Chinese takeover be damned.  <br />
+Now, why does this happen in this exact form? <br />
+To be blunt: we are IN THE ENDGAME. THIS IS LATE ANTHROPOCENE. WE WILL HAVE FULL HUMAN LABOR AUTOMATION WITHIN AT MOST A SINGLE GENERATION IF NOT A FEW YEARS. WE ARE NOW COMPETING NOT FOR MONEY OR HANDS, NOT FOR LANDS, AND CERTAINLY NOT FOR HEARTS AND MINDS, BUT FOR THE STERADIANS OF THE LIGHT CONE OF THE UNIVERSE, AND THEREFORE FOR JOULES AND ATOMS NECESSARY TO BOOTSTRAP THE LARGEST POSSIBLE SEED OF A SPACEFARING CIVILIZATION THAT WILL CONSUME ALL THE NEGENTROPY WITHIN THE COSMIC EVENT HORIZON OF EARTH. Thank you for your attention to this matter.<br />
+<br />
+This is what the Americans believe. The smart ones, like Musk, Thiel, Karp and Jason Gaverick Matheny. They think about this stuff a lot, no kidding. Even their gfs believe.<br />
+This is what the Chinese believe too, if implicitly, for their civilization has such innate understanding of performance and infrastructure that it doesn't need this kind of stuff spelled out. Still, they literally think about this as they plan their permanent underground Moon bases and orbital power generation. Did you think it's about vibes, papers, essays, «science» anon? It's not science, it's science fiction, which always has been an unsubtle political aspiration. Qian Xuesen didn't design rockets only to make the Communist Party secure. Neither did von Braun aspire to merely beat the Soviets to the Moon. That's just not how such minds work, anon.  <br />
+The Chinese have a well-oiled industrial machine at home that produces maybe 50% of All The Stuff in the world (if you're not in a bubble, you should have noted the pattern of «China makes more $stuff than The Rest Of Humanity Combined» for many values of important $stuff). Enough STEM talent to complete all remaining supply chains. A self-replicating energy infrastructure that grows exponentially. And auxiliary resource bases throughout the developing world, which could be militarized. In principle, the exponential growth factor matters more than the starting point, but in their case both are terrifyingly high and at this rate they look fit to inherit like half of the effective universe. Their economy, even as it still runs on human labor, is already entering a takeoff phase that could replicate the Great Divergence – a trend obscured by gormless «capital efficiency» or «debt» doomposting, a trend that accelerates by a tick as each technology get crossed out of the 35 Chokepoints List, as overcapacity cycles in synergistic industries phase-lock and tun into smooth capacity expansion… While on Earth, they do not expect to directly acquire much more land (though they opportunistically exploit whatever they can, and aim to monopolize much of the South China Sea), but they feel reasonably secure in their odds, relying on the gravity of their nascent industrial singularity to sway those fence-sitters who may be of help. <br />
+They might be wrong to feel this way, but that is how they feel. It's a cultural thing. They are unbearably arrogant in thinking they can do everything by themselves. In a world where Americans don't exist, they would be undeniably correct.  <br />
+<br />
+Americans are swindlers, pirates and conquerors, expansionists by virtue of their selection and path dependency, driven by Manifest Destiny, Messianic even in their pacifist eras (nevermind Imperial ones), dreamers and innovators and sci-fi writers. They are vastly more aware of the stakes, they have thought about all of this in far greater resolution and on a higher strategic level, from reusable space launch and all the way to nanotechnology and Von Neumann probes. Soviets came up with the Kardashev scale as they tried to keep up, but it's the richest man in the world – obviously American – who's taking this idea most seriously of all. And they are panicking. Because they realize their hand is shit. Decayed industry, too few able bodies and brains, corrupt governance, misaligned capital allocation… But they believe that AI-driven automation can make up for the current industrial weakness, magnify their growth factor, get them back in the lead, and possibly entitle them to the entirety of the pie; and they would rather risk it all in a gamble than give up the hope of leaving nothing on the table. For now, they're scrambling to acquire raw inputs in perpetuity. It doesn't matter that most of Greenland is covered by an ice shield a mile thick. Where they see themselves going, it's no great obstacle. <br />
+Maybe they are deluded to have such priorities at this stage. They had already shot themselves in the foot with the compute blockade premised on singularity by ≈2025 – both ineptly executed, full of holes, and too early to really rug pull the Chinese. Maybe they are feeling too close to the prize again, because it's an old dream and waking up is painful. But that is how they feel, for they are who they are. <br />
+<br />
+Europeans are not thinking about this much if at all – to them «science fiction» reads like escapism at best and fascist ideation at worst. They were broken by two world wars and one cold one, their spirit sundered and ambitions cauterized, they got locked into an emasculating alliance with the strong, and then developed political systems more pathological than a third world kleptocracy, symbolically ruled by the weakest of the weak. Etc etc., Americans dunk on them incessantly. Nonetheless, the best of them are not *too stupid to get this*. If not the full stakes, then the mundane reality of what America is doing. It's not just trying to deny Greenland and Venezuela to China or (lmao) Russia. It's trying to deny their resources *to Venezuelans and Danes*, and eventually the same is to be done to Canadians and more peoples within reach, as per the Donroe Doctrine. That's why every effort to satisfy demands while saving face is dismissed with mockery, why no air base is good enough, no show of «Arctic resolve» passes the muster. You see, formalities actually matter. A legible and «legal» position is harder to rally up a coalition against, within and between states — that's why China fights so fiercely for non-recognition of Taiwan. So long as the legal owner can demand you vacate the premises, your own claim to squatting, backed by force alone, may be compromised, may come at a steeper cost. That's too bad. The US wants full ownership because it wants to strip assets of value all the way to the mantle. <br />
+<br />
+But those smart Europeans cannot really compel their compatriots to act on this grim realization. Can't even loudly talk of it. They are few and the cope is too strong. What could their pitch even be, realistically? Maybe something like:<br />
+«The US is acting on a totally different theory of history. They are executing a coherent predatory Paperclip Maximizer logic and there is no bottom to what they might do. It is pointless to call them out on their bullshit, they are no longer sensitive to human speech. We need to drag out the inevitable loss of Greenland while assisting Americans to get bogged down in whatever can overstetch them from Israel to the Indo-Pacific to domestic unrest, curtail democracy, slash welfare, expel Atlanticist agents of influence, brutalize or deport non-assimilating immigrants, bump our defense and R&D spending to 15-20%, fortify remaining vulnerable outposts, coerce Ukraine into whatever peace is possible, reopen energy imports from Russia, have Rosatom build 50 nuclear reactors and France 5000 more nuclear warheads, generally put the French in charge instead of retarded Germanic cuckolds and schoolmarms, maximize tech transfer and capital goods imports from China even if we have to sell out ASML wholesale… and hope that the Western Civilization, of which only we remain true heirs and not obscene monsters, can secure a meagre stake in the future of Cosmos». Nah. That's not going to fly. It sounds deranged, there will be negative political will for it, and worst of all, it puts France in the limelight. A petty European peasant would rather eat shit than let the French become Main Characters of his continent's history. Europeans are very meticulous in cutting tall poppies around them. A fat, mockable, «cultureless», guns-n-bible overseas Hegemon is more tolerable than the insufferable, preening one next door. Except the hegemon is no longer fat since he went on the Danish Ozempic and Chinese peptides, and he's mortally dangerous. But they don't see it yet. No, no.<br />
+<br />
+So they are forced to frame the response in terms aligned with the cope. We've just seen a rhetorical oscillation happen, from hints at actual European defense to… this. «We must demonstrate to our cherished, understandably worried partners that Europe is strong and can defend Greenland from Chyna&Russia! We'd whoop the asses of those bugs and orcs! It's not just dog sleds, we have real military and we totally can deploy it to the island!» This feels like Doing Something. This feels reassuring and non-scary. This can be done. Militarily, it's hopeless of course.  <br />
+However, it's not doomed. They assume – correctly – that America is made of many different interest groups also. And that the group represented by Mr. Trump needs wider buy-in for his special-grade Based actions, and likely will need far more after the midterms. So the obvious plan emerges: smile and wave, play for time, concede on non-vital issues, insist on this already disingenuous pretense of alliance, position at least some real forces, and give globalists and sincerely clueless China&Russia hawks in Washington a leg to stand on when they hamper Trump's effort to destroy NATO in the short term. Be so annoyingly nice and obliging as to make «the hard way» unpalatable to all but the most desperate cannibals. And diversify. Russia is suddenly a European country. China gets favorable trade deals and cooperation in the space program. Canada is scambling to act the same way, as Americans are botting up the pretext for «operation Alberta Freedom Eagle Burger» or whatever the fuck they'll call it. They may lose Alberta, but they want to keep something of a nation. That's what countries are, they are not economic platforms or random patches of land, but superorganisms with a telos, trying to survive in a condition of opportunistic anarchy that is the real world.<br />
+<br />
+Sun Yat-Sen had written once, in 1917:<br />
+<br />
+«存者，不亡之谓也。从无有而使之有，则为异：不使从有而之无有，则存，故不可亡而后能存。一国所以异所以亡者，或以一种手段，为其直接原因，可以指数。至于存在之根源，无不在於国家及其国民不挠独立之精神，其国不可以利诱，不可以势劫，而后可以自存於世界，即令暂败，旋可复立。不然者，虽号独立，其亡可指日而待也。此非徒肆理论也，凡其国民有独立不挠之精神者，人以尊重其独立为有利。即从国际利害打算，亦必不敢轻犯其独立。此可从历史证明之，亦可从现代事实归纳得之。<br />
+比利时之敌德国，可谓不支矣。今之比利时政府乃在哈佛，比之国土，仅馀弹丸黑子之域。然而非特协商国之存在，无人敢谓比国可亡，即中立国亦无不对于比国有特殊之尊敬。所以然者，比国独立不挠之精神，先已证明比国为不可亡之国。即使今日比境全失，比军悉数成擒，吾等亦可决中立诸国不因此致疑于比国之存在。何则，比之人民领土主权，立于此独立不挠之精神之下，其断绝者形式，其不断绝者在精神，比境虽亡犹不亡，其民虽殇犹不殇也。盖比利时尝一被人强迫，并入荷兰矣。而其国民能具坚确不挠之志，故卒得恢复其自由而成一独立之国。夫其民性如此，故人终不能服之，虽一时屈于兵力，不足以使其国亡也。»<br />
+<br />
+It's somewhat complex to translate, but here goes V3.2 Speciale:<br />
+> Survival means not perishing. To bring something from nothingness into existence is an extraordinary matter; to prevent existence from turning into nothingness is to survive. Therefore, only that which cannot perish can survive. The direct causes for a nation’s extinction may be enumerated, often involving specific means. As for the root of survival, it lies nowhere but in the unyielding and independent spirit of the nation and its people. If a nation cannot be lured by profit nor coerced by force, then it can survive in the world. Even if temporarily defeated, it can quickly rise again. Otherwise, though it may be called independent, its extinction is imminent. This is not mere theory. Whenever a nation’s people possess an unyielding and independent spirit, others find it beneficial to respect its independence. Even from calculations of international interest, they would not dare to lightly violate its independence. This can be proven by history and induced from contemporary facts.<br />
+<br />
+> Belgium, pitted against Germany, can be said to be unable to hold out. Today the Belgian government is in Le Havre, and Belgian territory is reduced to a mere speck. However, not only does no one among the Allied Powers dare to say that Belgium can perish; even the neutral countries all hold a special respect for Belgium. The reason is that Belgium’s unyielding independent spirit has already proven it to be an indestructible nation. Even if today Belgium were to lose all its territory and its entire army captured, we can be certain that neutral countries would not thereby doubt Belgium’s existence. Why? Because Belgium’s people, territory, and sovereignty are founded upon this unyielding independent spirit; what is severed is form, what is unsevered is spirit. Even if Belgian territory perishes, it is as if it does not perish; even if its people die, it is as if they do not die. For Belgium was once forcibly annexed into Holland. But its people held a firm and unyielding determination, and thus ultimately regained their freedom and became an independent nation. Since the national character is such, others ultimately cannot subdue them; even if temporarily forced to yield by military might, it is insufficient to cause the nation’s extinction.<br />
+<br />
+This had been said of the gentle Belgium, the seat of authority in our misbegotten European Union today.  <br />
+Americans have done well to remind the rest of «the West» that they too are nations — in theory at least. Now the question is whether they can exist as nations in practice; whether they can find the will to be imperishable again. Otherwise, their condition is tantamount to extinction, just suspended — like death sentences of so many Chinese officials who had crossed the only power that matters in their world.<br />
+<br />
+What powers will matter in the world to come?<br />
+Some Europeans hope to get a vote on this. For now, this is the best they can do.<span class="row justify-content-center entity-multiple-undefined"><span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/G-x-xuVa8AAsctZ.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G-x-xuVa8AAsctZ.jpg"></a></span></span><br />
+<span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/G-x-xt3XQAAbbbD.png" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G-x-xt3XQAAbbbD.png"></a></span></span><br />
+<span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/G-yA0XtbYAAPoSw.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G-yA0XtbYAAPoSw.jpg"></a></span></span><br />
+<span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/G-yB4L3WoAE3FWk.png" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G-yB4L3WoAE3FWk.png"></a></span></span></span></div>
+          <div class="content-tweet"><span class="entity-embed"><span class="twitter-player"><blockquote class="twitter-tweet" data-conversation="none" data-align="center" data-dnt="true"><a href="https://twitter.com/teortaxesTex/status/2012034192796942496">https://x.com/teortaxesTex/status/2012034192796942496?s=20</a></blockquote></span></span></div>
+          <div class="content-tweet">in fairness, Americans are willing to pay *a lot* of paper money for their claim to the entire prize. Denmark could… try to invest that appropriately. It's not an asinine idea. It's already almost 2x their GDP, and 35% of Norway's sovereign wealth fund.<br />
+ <span class="entity-embed"><span class="twitter-player"><blockquote class="twitter-tweet" data-conversation="none" data-align="center" data-dnt="true"><a href="https://twitter.com/Currentreport1/status/2011726621007626743">https://x.com/Currentreport1/status/2011726621007626743</a></blockquote></span></span></div>
+      </div>
+      <a class="tweet-url btn btn-outline-secondary" href="javascript:void(0)">Read 4 tweets</a>
+    </div>
+</div>
+<div class="col-12 col-md-6 col-lg-4" data-controller="link" data-link-href="/thread/2006628917428334631.html" data-action="click->link#goto" >
+    <div class="thread-card">
+      
+      <div class="box-user">
+        <div class="mb-2 d-flex align-items-center">
+  <div class="prof-image">
+    <a href=/user/teortaxesTex><img class="mx-auto rounded-circle" src="https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_400x400.jpg" alt="Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) Profile picture" data-controller="twitter-profile" data-twtrid="192201556" data-action="error->twitter-profile#error" ></a>
+  </div>
+  <div class="flex-grow-1" style="overflow:hidden">
+    <div class="pl-2">
+     <div class="d-flex align-items-center justify-content-between">
+      <h4 class="twitter_name"><a href="/user/teortaxesTex">Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)</a>
+      </h4>
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+          <small class="twitter_screen_name"><a href="/user/teortaxesTex">@teortaxesTex</a></small>
+      </div>
+       
+    </div>
+  </div>
+</div>
+      </div>
+      <span class="time" data-time="1767252589">Jan  1</span>
+      <div class="card-tweets" dir="auto">
+          <div class="content-tweet">ALERT, NEW YEAR GIFT FROM DEEPSEEK<br />
+mHC: Manifold-Constrained Hyper-Connections<br />
+it's a pretty crazy fundamental result! They show stable hyper-connection training. This leth them *scale residual stream width*, with minor compute&memory overhead<br />
+This is a *huge model smell* recipe.<span class="entity-embed"><span class="twitter-player"><blockquote class="twitter-tweet" data-conversation="none" data-align="center" data-dnt="true"><a href="https://twitter.com/teortaxesTex/status/2006614794170937646">https://x.com/teortaxesTex/status/2006614794170937646</a></blockquote></span></span><span class="entity-image"><a href="https://pbs.twimg.com/media/G9j6WSYXsAAZPWV.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G9j6WSYXsAAZPWV.jpg"></a></span></div>
+          <div class="content-tweet">They turn hyper-connections from academic curiosity into a basic design motif. This is what I've long expected from them – both mathematical insight and hardware optimization. ResNets for top-tier LLMs might be toast.<br />
+Stream width is such a pesky limit<br />
+ <span class="entity-embed"><span class="twitter-player"><blockquote class="twitter-tweet" data-conversation="none" data-align="center" data-dnt="true"><a href="https://twitter.com/teortaxesTex/status/1950334645851095297">https://x.com/teortaxesTex/status/1950334645851095297?s=20</a></blockquote></span></span><span class="row justify-content-center entity-multiple-undefined"><span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/G9j7MMiWgAAt_2E.png" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G9j7MMiWgAAt_2E.png"></a></span></span><br />
+<span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/G9j7OSLXEAAketn.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G9j7OSLXEAAketn.jpg"></a></span></span></span></div>
+          <div class="content-tweet">This is, again, a typical Whale-style call-out for the peers, a benevolent mogging. “You've been tinkering with micro-design for 2 years, optimizing DS-MoE. Cute. Behold: we can take a largely hypothetical superior primitive and make it real. Raise the level of your game.” <span class="row justify-content-center entity-multiple-undefined"><span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/G9j8MMXX0AEW3nW.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G9j8MMXX0AEW3nW.jpg"></a></span></span><br />
+<span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/G9j8R6eXEAAyRzy.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G9j8R6eXEAAyRzy.jpg"></a></span></span></span></div>
+      </div>
+      <a class="tweet-url btn btn-outline-secondary" href="javascript:void(0)">Read 8 tweets</a>
+    </div>
+</div>
+<div class="col-12 col-md-6 col-lg-4" data-controller="link" data-link-href="/thread/1996838721342329279.html" data-action="click->link#goto" >
+    <div class="thread-card">
+      
+      <div class="box-user">
+        <div class="mb-2 d-flex align-items-center">
+  <div class="prof-image">
+    <a href=/user/teortaxesTex><img class="mx-auto rounded-circle" src="https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_400x400.jpg" alt="Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) Profile picture" data-controller="twitter-profile" data-twtrid="192201556" data-action="error->twitter-profile#error" ></a>
+  </div>
+  <div class="flex-grow-1" style="overflow:hidden">
+    <div class="pl-2">
+     <div class="d-flex align-items-center justify-content-between">
+      <h4 class="twitter_name"><a href="/user/teortaxesTex">Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)</a>
+      </h4>
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+          <small class="twitter_screen_name"><a href="/user/teortaxesTex">@teortaxesTex</a></small>
+      </div>
+       
+    </div>
+  </div>
+</div>
+      </div>
+      <span class="time" data-time="1764918425">Dec  5, 2025</span>
+      <div class="card-tweets" dir="auto">
+          <div class="content-tweet">This «Trump Corollary to National Security Strategy of the US» is a stunning, historical document, maybe one of the most important texts of the century. Please read it. I wonder who the primary author is. Colby?  <span class="entity-embed"><span class="twitter-player"><blockquote class="twitter-tweet" data-conversation="none" data-align="center" data-dnt="true"><a href="https://twitter.com/BobgonzaleBob/status/1996832802113831071">https://twitter.com/BobgonzaleBob/status/1996832802113831071</a></blockquote></span></span><span class="row justify-content-center entity-multiple-undefined"><span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/G7YxlFzWoAAUpQb.png" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G7YxlFzWoAAUpQb.png"></a></span></span><br />
+<span class="col-md-6"><span class="entity-image"><a href="https://pbs.twimg.com/media/G7Yx3N_WUAAaQu8.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G7Yx3N_WUAAaQu8.jpg"></a></span></span></span></div>
+          <div class="content-tweet">A little bit schizophrenic but ok. Baby steps. <span class="entity-image"><a href="https://pbs.twimg.com/media/G7Yy0wPXcAATpsE.jpg" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G7Yy0wPXcAATpsE.jpg"></a></span></div>
+          <div class="content-tweet">They're quite serious about that. People who were telling me that Trump is just getting placated by words don't understand that history is real and we're living in it. There will be enforcement of global militarization. <span class="entity-image"><a href="https://pbs.twimg.com/media/G7YzJoOXYAAP4pS.png" target="_blank"><img alt="Image" src="/images/1px.png" data-src="https://pbs.twimg.com/media/G7YzJoOXYAAP4pS.png"></a></span></div>
+      </div>
+      <a class="tweet-url btn btn-outline-secondary" href="javascript:void(0)">Read 17 tweets</a>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+
+
+<div class="background-blue entry-support hide-premium pd-4 hide-redundant">
+  <div class="container">
+    <div class="t-section promo">
+      <div class="row">
+        <div class="col-12 col-md-3 text-center">
+           <img src="/assets/emoji-robot.png" class="icon" >
+        </div>
+        <div class="col-12 col-md-9">
+          <h2 class="header mb-3">Did Thread Reader help you today?</h2>
+          <p class="lead">Support us! We are indie developers!</p>
+          <hr class="my-4">
+          <p>This site is made by just two indie developers on a laptop doing marketing, support and development! <a href="/help/about" class="gaClickEvent" data-category="support-buttons" data-action="read-more-about-the-story">Read more about the story</a>.</p>
+          <p><strong>Become a Premium Member</strong> ($3/month or $30/year) and get exclusive features!</p>
+          <p><a class="btn btn-primary gaClickEvent" data-category="support-buttons" data-action="become-premium" href="/premium">
+            <i class="far fa-gem"></i> Become Premium </a>
+          </p>
+          
+        <h3 class="list-content-header first">Don't want to be a Premium member but still want to support us?</h3>
+        <p><strong>Make a small donation</strong> by buying us coffee ($5) or help with server cost ($10)</p>
+        <a class="btn btn-paypal mb-2 gaClickEvent" data-category="support-buttons" data-action="donate-via-paypal" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=donate%40threadreaderapp.com&amp;lc=USD&amp;item_name=Thread%20Reader%20donation&amp;no_note=0&amp;cn=Say%20Hello%20or%20give%20some%20feedback%3a&amp;no_shipping=1&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted"><i class="fab fa-paypal"></i> Donate via Paypal</a></p>
+        <p class="mt-2">Or Donate anonymously using crypto!</p>
+          <p><strong>Ethereum</strong></p>
+          <p class="mb-4">
+            <code style="background:#fff;padding:8px;">0xfe58350B80634f60Fa6Dc149a72b4DFbc17D341E</code>
+            <span onclick="if (!window.__cfRLUnblockHandlers) return false; navigator.clipboard.writeText('0xfe58350B80634f60Fa6Dc149a72b4DFbc17D341E')" class="btn btn-sm btn-secondary" data-cf-modified-ebbdb491d1b2c749fd307b08-="">copy</span>
+          </p>
+          <p class="mt-2"><strong>Bitcoin</strong></p>
+          <p class="mb-4">
+            <code style="background:#fff;padding:8px;">3ATGMxNzCUFzxpMCHL5sWSt4DVtS8UqXpi</code>
+            <span onclick="if (!window.__cfRLUnblockHandlers) return false; navigator.clipboard.writeText('3ATGMxNzCUFzxpMCHL5sWSt4DVtS8UqXpi')" class="btn btn-sm btn-secondary" data-cf-modified-ebbdb491d1b2c749fd307b08-="">copy</span>
+          </p>
+          <p><span style="color:#cc0066"><i class="fas fa-heart"></i> <i class="fas fa-heart"></i></span> Thank you for your support! <span style="color:#cc0066"><i class="fas fa-heart"></i> <i class="fas fa-heart"></i></span></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="sharingfooter">
+    <div class="follow-us">
+        <a href="https://twitter.com/threadreaderapp" target="_blank" class="btn btn-outline-secondary btn-xsm gaClickEvent" data-category="how-to" data-action="follow-tra" data-label="sharing-footer"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="height:16px;vertical-align: top;"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg> Follow Us!</a>
+    </div>
+    <div class="btn-group" role="group" aria-label="Share">
+    <a class="btn btn-outline-primary share-twitter gaClickEvent" target="_blank"  href="https://twitter.com/intent/tweet?text=Thread%20by%20@teortaxesTex%20on%20Thread%20Reader%20App&url=https%3A%2F%2Fthreadreaderapp.com%2Fthread%2F2099574156417229157.html" 
+data-category="sharebuttons" data-action="share-on-twitter" data-label=""><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="margin-top:-3px;"><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg> <span class="txt">Post</span></a>
+    <a class="btn btn-outline-primary share-fb  gaClickEvent" target="_blank"  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthreadreaderapp.com%2Fthread%2F2099574156417229157.html"
+data-category="sharebuttons" data-action="share-on-facebook" data-label=""><i class="fab fa-facebook-f"></i> <span class="txt">Share</span></a>
+</div>
+
+</div>
+
+<div id="email_this" class="overlay-no-js">
+	<div class="popup">
+		<h2>Send Email!</h2>
+		<button class="close" onclick="if (!window.__cfRLUnblockHandlers) return false; document.querySelector('#email_this').classList.remove('open')" data-cf-modified-ebbdb491d1b2c749fd307b08-="">&times;</button>
+		<div class="content">
+      
+
+	<div class="text-center mx-4 email-friend-form">
+    <p>Email the whole thread instead of just a link!</p>
+    <div class="row">
+      <div class="col-4">
+        <img alt="email this" class="email-this img-thumbnail" src="/assets/emailthisv3-19db7e62925577c40531c0104134c2d93d1434dc7b3d7b20b761bea35c595420.gif" />
+      </div>
+      <div class="col-8 text-left">
+        <form data-controller="share-email" action="/twitter_threads/send_email" accept-charset="UTF-8" data-remote="true" method="post"><input type="hidden" name="authenticity_token" value="DGNhbPv4/yM6fXt+AnXFnPUPwVD1URnAqw9DUwsv8ia1fFZGVBB4tgBUQKEbipsEOocuyqO4KR+hloBDhFh6UQ==" />
+          <input type="email" class="form-control" name="email" required multiple aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted ml-1">Separate emails with commas</small>
+          <label for="msg" class="mt-3"><small>Message</small></label>
+          <input type="hidden" name="thread_id" value="2099574156417229157" />
+          <textarea name="message" class="form-control" rows="3" id="msg" v-model="message" placeholder="Here's a great thread you should read right now!">Here's a great thread you should read right now!</textarea>
+          <button type="submit" class="btn btn-primary mt-4" data-action="click->share-email#send_email">Send Thread As Email!</button>
+</form>      </div>
+    </div>
+    </form>
+	</div>
+  <div class="email-sent-success text-center mx-2">
+    <div class="alert alert-success" role="alert" >
+      Email Successfully Sent!
+    </div>  
+  </div>
+
+		</div>
+	</div>
+</div>
+
+<form id="form-force" method="post" action="/thread/2099574156417229157/refreshx"></form>
+<div id="refresh_thread" class="overlay-no-js dark">
+	<div id="loader-box" class="loader-box">
+    <h1 class="error">
+      <img alt=":(" src="/assets/emoji-robot-cry.png" >
+      <br />
+      <span id="error"></span>
+    </h1>
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1 class="loading"><span></span></h1>
+  </div>
+</div>
+<script type="ebbdb491d1b2c749fd307b08-text/javascript">
+document.querySelector('#force-click').addEventListener('click', evt=>{
+  evt.preventDefault();
+  document.querySelector('#refresh_thread').classList.add('open')
+  setTimeout(function() {
+    document.querySelector('#form-force').submit();
+  }, 300);
+})
+</script>
+
+<script type="ebbdb491d1b2c749fd307b08-text/javascript">
+window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));
+</script>
+<style>
+/* applies only to this page */
+.footer {
+    bottom: 50px;
+}
+.entry-support { 
+    padding-bottom: 3rem;
+}
+#email_this.border-top { display:none; }
+
+img.email-this { width:100%; }
+.email-sent-success{ display:none; }
+.email-sent-success { display:none;}
+.email_friend_sent .email-sent-success { display:block; }
+.email_friend_sent .email-friend-form { display:none; }
+</style>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js" async onload="new Blazy({selector:'.b-lazy,.entity-image img'})" type="ebbdb491d1b2c749fd307b08-text/javascript"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" type="ebbdb491d1b2c749fd307b08-text/javascript"></script>
+    <footer class="footer">
+    <div class="container">
+        <div class="d-flex align-items-center  justify-content-between" style="color:white">
+            <div>
+                <a class="btn btn-default btn-circle" target="_blank" href="mailto:hello@threadreaderapp.com">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a class="btn btn-default btn-circle twitter gaClickEvent" href="https://twitter.com/threadreaderapp" target="_blank" data-category="how-to" data-action="follow-tra" data-label="footer"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="height:16px;vertical-align: top;"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+            </div>
+            <div>
+                <a href="/help">Help</a>  |
+                <a href="/help/about">About</a>  |
+                <a href="/help/terms">TOS</a> |
+                <a href="/help/privacy">Privacy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ebbdb491d1b2c749fd307b08-|49" defer></script></body>
+</html>

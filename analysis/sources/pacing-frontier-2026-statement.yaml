@@ -1,0 +1,61 @@
+sources:
+- id: pacing-frontier-2026-statement
+  type: ARTICLE
+  title: 'Pacing the Frontier: employee statement'
+  author:
+  - Pacing the Frontier signatories
+  year: 2026
+  url: https://www.pacingthefrontier.com/
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/pacing-frontier-2026-statement.md
+  reliability: 0.65
+  bias_notes: A visible cross-lab coalition establishes endorsement, not independence
+    of beliefs or proof that a particular intervention works.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - GOV
+  - INST
+  claims_extracted:
+  - GOV-2026-500
+  - INST-2026-501
+claims:
+- domain: GOV
+  type: '[F]'
+  text: The Pacing the Frontier statement requests an international effort to develop
+    pacing tools, rather than specifying an immediate universal halt.
+  credence: 0.98
+  evidence_level: E4
+  id: GOV-2026-500
+  source_ids:
+  - pacing-frontier-2026-statement
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The captured statement instead mandates an immediate universal halt.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: INST
+  type: '[F]'
+  text: The captured Pacing the Frontier page displays 1,386 employees as signatories
+    and lists leaders from multiple frontier laboratories.
+  credence: 0.97
+  evidence_level: E4
+  id: INST-2026-501
+  source_ids:
+  - pacing-frontier-2026-statement
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The captured page lacks this count or named multi-lab signatories.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check

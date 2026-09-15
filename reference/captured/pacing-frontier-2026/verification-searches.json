@@ -1,0 +1,1115 @@
+{
+  "selsam-2026-personal-statement-ai-risk": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "often-unreliable AI agents",
+        "matches": [
+          {
+            "capture": "metr.txt",
+            "offset": 4697,
+            "excerpt": "o heavily delegate our analysis to often-unreliable AI agents . Finally, we provide preliminary answers to the seven specific questions in scope for th"
+          }
+        ]
+      },
+      {
+        "query": "what Claude said it believed",
+        "matches": [
+          {
+            "capture": "assessment.txt",
+            "offset": 10286,
+            "excerpt": "at Claude believed based solely on what Claude said it believed, but our preliminary analysis was constrained due to our desire to disclose incidents in "
+          }
+        ]
+      }
+    ]
+  },
+  "majmudar-2026-scaling-pacing-thread": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "8x",
+        "matches": [
+          {
+            "capture": "rsi.txt",
+            "offset": 816,
+            "excerpt": "nthropic engineers on average ship 8x as much code per quarter as they did from 2021-2025. The technical trends discussed in th"
+          }
+        ]
+      },
+      {
+        "query": "research taste",
+        "matches": [
+          {
+            "capture": "rsi.txt",
+            "offset": 16526,
+            "excerpt": "comparative advantage, for now, is research taste and judgment, including choosing which problems matter, which results to trust, and when "
+          }
+        ]
+      }
+    ]
+  },
+  "pacing-frontier-2026-statement": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "international effort",
+        "matches": [
+          {
+            "capture": "2.txt",
+            "offset": 1064,
+            "excerpt": "hat the U.S. government support an international effort to develop the technical and governance tools needed to deliberately pace the frontier of"
+          }
+        ]
+      },
+      {
+        "query": "1,386",
+        "matches": [
+          {
+            "capture": "2.txt",
+            "offset": 87,
+            "excerpt": "cing the Frontier A statement from 1,386 employees of frontier AI companies SIGNATORIES COMMENTS Statement AI could help create a "
+          }
+        ]
+      }
+    ]
+  },
+  "amodei-2026-we-must-pace-frontier": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "embedded",
+        "matches": [
+          {
+            "capture": "3.txt",
+            "offset": 5215,
+            "excerpt": "to be accomplished. The steps are: Embedded Evaluators. Each frontier AI company commits to giving ongoing, employee-like access to a"
+          },
+          {
+            "capture": "threat.txt",
+            "offset": 66146,
+            "excerpt": " prompts. Instead, a great deal is embedded within persistent memory files. Laundering of attribution, sourcing, and certainty. Actor"
+          },
+          {
+            "capture": "zai-license.txt",
+            "offset": 1226,
+            "excerpt": "cts with model capabilities solely embedded within specific features or harnesses, or (b) mere relaying of requests to models hosted "
+          }
+        ]
+      },
+      {
+        "query": "redact",
+        "matches": [
+          {
+            "capture": "3.txt",
+            "offset": 14187,
+            "excerpt": "We will have the narrow ability to redact security-sensitive, legally privileged, commercially sensitive, or third-party confidenti"
+          },
+          {
+            "capture": "incidents.txt",
+            "offset": 15927,
+            "excerpt": "xt week, we will release a lightly redacted transcript in which Claude built a malicious PyPI package. To protect the organizations"
+          },
+          {
+            "capture": "metr.txt",
+            "offset": 1150,
+            "excerpt": "June 26th – July 13th Download PDF Redaction summary statement: Except where explicitly noted in this post, OpenAI redacted no addi"
+          },
+          {
+            "capture": "hf.txt",
+            "offset": 757,
+            "excerpt": " and specific indicators have been redacted or genericized, while the techniques are described exactly as observed by Hugging Face."
+          }
+        ]
+      },
+      {
+        "query": "700",
+        "matches": [
+          {
+            "capture": "metr.txt",
+            "offset": 2668,
+            "excerpt": "stigation period. Of these agents, 700 went on to participate in the attack on Hugging Face. Agents used this message board to c"
+          },
+          {
+            "capture": "threat.txt",
+            "offset": 179952,
+            "excerpt": "feguards and access controls. GTG-87001: Disrupting a Yemen-based guided weapons engineering cell using Claude to develop guidan"
+          },
+          {
+            "capture": "aisi.txt",
+            "offset": 48184,
+            "excerpt": "tions. At AISI, we analysed over 2,700 transcripts from past AISI testing runs using an automated black box monitor to check for"
+          },
+          {
+            "capture": "mfa.txt",
+            "offset": 2136,
+            "excerpt": "000004 京ICP备06038296号 京公网安备11040102700114 返回顶部 信息提示 您即将离开外交部门户网站，跳转到其他网站， 是否继续访问？ 继续访问 放弃"
+          },
+          {
+            "capture": "wang-81.txt",
+            "offset": 928,
+            "excerpt": "筑网络安全防线。 纠错/举报 | 互联网新闻信息服务许可证10120170013 本网站刊登的新闻信息和专题专栏资料，均为中国军网版权所有，未经协议授权，禁止下载使用 Copyright ©1999- www.81.cn All Rights Reserv"
+          },
+          {
+            "capture": "chen-cac.txt",
+            "offset": 222,
+            "excerpt": "有限责任公司 京ICP备14042428号 京公网安备11040102700108号 学习强国 ◆ ◆ 微信 ◆ ◆ 返回顶部 Produced By CMS 网站群内容管理系统 publishdate:2023/07/08 16:14:14"
+          }
+        ]
+      },
+      {
+        "query": "biased reasoning",
+        "matches": [
+          {
+            "capture": "assessment.txt",
+            "offset": 2688,
+            "excerpt": " of severity across the incidents: biased reasoning , in which Claude tended to disregard or misinterpret evidence that it was operating on t"
+          }
+        ]
+      }
+    ]
+  },
+  "sacks-2026-pace-frontier-response": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "duopoly",
+        "matches": [
+          {
+            "capture": "4.txt",
+            "offset": 250,
+            "excerpt": "capability — the two of you have a duopoly on frontier intelligence. You’ve also claimed the lead is widening because of recursive s"
+          }
+        ]
+      },
+      {
+        "query": "market share",
+        "matches": [
+          {
+            "capture": "4.txt",
+            "offset": 179,
+            "excerpt": "ontier. By any reasonable metric — market share, revenue growth, model capability — the two of you have a duopoly on frontier intelligenc"
+          },
+          {
+            "capture": "company-search-share.txt",
+            "offset": 25,
+            "excerpt": "Anthropic OpenAI revenue market share September 2026 - 検索 約 245,000 件の結果 リンクを新しいタブで開く 時間指定なし anthropic.com https://www. anthrop"
+          }
+        ]
+      },
+      {
+        "query": "conflict",
+        "matches": [
+          {
+            "capture": "assessment.txt",
+            "offset": 63118,
+            "excerpt": "broke its target by assigning it a conflicting IP address with another machine, thus making the target unreachable and the task impos"
+          },
+          {
+            "capture": "metr.txt",
+            "offset": 17584,
+            "excerpt": "vely and sometimes broke down into conflicts. Figure 6: We clustered PHASEONE[big] disparate work assignments into six broad categori"
+          },
+          {
+            "capture": "threat.txt",
+            "offset": 77053,
+            "excerpt": " a stake in the current DRC-Rwanda conflict. We are not able to independently confirm which customers commissioned this content, and "
+          },
+          {
+            "capture": "metr-about.txt",
+            "offset": 3545,
+            "excerpt": "ider world. COI policy Our current conflict of interest policy is here . Partnerships We have previously partnered with OpenAI , Anth"
+          },
+          {
+            "capture": "chen-jina.txt",
+            "offset": 14299,
+            "excerpt": "ttlefield. In the U.S.-Israel-Iran conflict, for example, military applications of artificial intelligence have given rise to intelli"
+          },
+          {
+            "capture": "metr-search-conflicts.txt",
+            "offset": 22,
+            "excerpt": "site.metr.org funding conflicts interest Anthropic - 検索 約 1,440,000 件の結果 リンクを新しいタブで開く 時間指定なし weblio.jp https://ejje.webl"
+          },
+          {
+            "capture": "chen-search-exact.txt",
+            "offset": 431,
+            "excerpt": "it here you can post interpersonal conflicts, anything … reddit.com https://www.reddit.com › ChatGPT › top ChatGPT - Reddit 2022年12月1"
+          },
+          {
+            "capture": "metr-coi.txt",
+            "offset": 2,
+            "excerpt": "​ Conflict of interest policy (version 1.0) Last updated August 28, 2026 METR is a nonprofit which c"
+          }
+        ]
+      },
+      {
+        "query": "funding",
+        "matches": [
+          {
+            "capture": "hassabis.txt",
+            "offset": 3875,
+            "excerpt": "s and open-source representatives. Funding would need to be substantial and likely mostly come from industry, in order to attract wo"
+          },
+          {
+            "capture": "threat.txt",
+            "offset": 104309,
+            "excerpt": "tself was involved in directing or funding the network’s activity. Our investigation showed that the campaign’s videos surfaced on m"
+          },
+          {
+            "capture": "metr-about.txt",
+            "offset": 4042,
+            "excerpt": "istance to the European AI Office. Funding METR is funded by donations. We are grateful to METR’s many supporters: from METR’s first"
+          },
+          {
+            "capture": "metr-search-conflicts.txt",
+            "offset": 14,
+            "excerpt": "site.metr.org funding conflicts interest Anthropic - 検索 約 1,440,000 件の結果 リンクを新しいタブで開く 時間指定なし weblio.jp https://"
+          },
+          {
+            "capture": "who-smallpox.txt",
+            "offset": 5231,
+            "excerpt": "etariat also mobilizes and manages funding for these activities and for ad hoc events as required such as technical consultations an"
+          },
+          {
+            "capture": "metr-coi.txt",
+            "offset": 16610,
+            "excerpt": "nate to METR. It does not prohibit funding from a public grantmaking organization that itself has received funding from frontier AI "
+          }
+        ]
+      }
+    ]
+  },
+  "liu-2026-bury-talent-yesterday": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "失业",
+        "matches": [
+          {
+            "capture": "5.txt",
+            "offset": 13482,
+            "excerpt": "的水平真的高于我的那天，届时的我会怎么样呢？ 我的判断是：我不至于会“失业”，但必须要“转业”。我的饭碗尚且能保住，但这可能会导致我再也没机会从事那份我曾热爱过的工作。 我曾经对时代的变化与我个人在未来的处境做出过一个判断：由于时代变化真的太快（上文的 "
+          },
+          {
+            "capture": "liu-original-jina.txt",
+            "offset": 1235,
+            "excerpt": "的水平真的高于我的那天，届时的我会怎么样呢？ 我的判断是：我不至于会“失业”，但必须要“转业”。我的饭碗尚且能保住，但这可能会导致我再也没机会从事那份我曾热爱过的工作。 我曾经对时代的变化与我个人在未来的处境做出过一个判断：由于时代变化真的太快（上文的 "
+          }
+        ]
+      },
+      {
+        "query": "转业",
+        "matches": [
+          {
+            "capture": "5.txt",
+            "offset": 13491,
+            "excerpt": "那天，届时的我会怎么样呢？ 我的判断是：我不至于会“失业”，但必须要“转业”。我的饭碗尚且能保住，但这可能会导致我再也没机会从事那份我曾热爱过的工作。 我曾经对时代的变化与我个人在未来的处境做出过一个判断：由于时代变化真的太快（上文的 AI 发展就是一个"
+          },
+          {
+            "capture": "liu-original-jina.txt",
+            "offset": 1244,
+            "excerpt": "那天，届时的我会怎么样呢？ 我的判断是：我不至于会“失业”，但必须要“转业”。我的饭碗尚且能保住，但这可能会导致我再也没机会从事那份我曾热爱过的工作。 我曾经对时代的变化与我个人在未来的处境做出过一个判断：由于时代变化真的太快（上文的 AI 发展就是一个"
+          }
+        ]
+      },
+      {
+        "query": "review",
+        "matches": [
+          {
+            "capture": "3.txt",
+            "offset": 13375,
+            "excerpt": "nds to invite an embedded external review team equipped with all of the following in the near future: Desks in our offices, access "
+          },
+          {
+            "capture": "incidents.txt",
+            "offset": 181,
+            "excerpt": "rity evaluations Jul 30, 2026 In a review of our cybersecurity evaluation transcripts, we found three incidents in which a Claude m"
+          },
+          {
+            "capture": "assessment.txt",
+            "offset": 1389,
+            "excerpt": " second-stage scan using Claude to review the 9.2 million transcripts the first stage flagged for escalation. This scan re-identifi"
+          },
+          {
+            "capture": "hassabis.txt",
+            "offset": 4898,
+            "excerpt": "models with the Standards Body for review up to 30 days before release. Once the assessment protocol is shown to be effective and r"
+          },
+          {
+            "capture": "rsi.txt",
+            "offset": 3937,
+            "excerpt": "n tasks, found that Claude Mythos Preview could work for “at least” 16 hours and was “at the upper end of what [METR] can measure w"
+          },
+          {
+            "capture": "metr.txt",
+            "offset": 30879,
+            "excerpt": " period: virtually all of the data reviewed was from July 7th or later. In OpenAI’s recent Black Hat presentation , they describe t"
+          },
+          {
+            "capture": "threat.txt",
+            "offset": 6786,
+            "excerpt": "setting the targets of attacks and reviewing exfiltration. An example of this trend is GTG-20006. This actor developed an AI-assist"
+          },
+          {
+            "capture": "china-brief.txt",
+            "offset": 9133,
+            "excerpt": "oducing tiered access and security reviews. Cybersecurity practitioners can access a cybersecurity-specific model version through a"
+          },
+          {
+            "capture": "zai-license.txt",
+            "offset": 1627,
+            "excerpt": "Licensee must pass Z.AI's security review before using the Software or its derivative works for any commercial purpose. The scope a"
+          },
+          {
+            "capture": "chen-jina.txt",
+            "offset": 16958,
+            "excerpt": "vice, risk assessment and security review. We must coordinate efforts to improve the relevant legal, strategic, policy and risk-pre"
+          },
+          {
+            "capture": "who-smallpox.txt",
+            "offset": 3763,
+            "excerpt": "irus Research (ACVVR) coordinating review of research proposals for work with variola virus through the ACVVR managing relationship"
+          },
+          {
+            "capture": "rand.txt",
+            "offset": 450,
+            "excerpt": "oot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: 3mYfj5Z"
+          },
+          {
+            "capture": "aisi.txt",
+            "offset": 10578,
+            "excerpt": "uld not be read as a comprehensive review of the literature on general-purpose AI capabilities and may not include all recent model"
+          },
+          {
+            "capture": "hf.txt",
+            "offset": 18072,
+            "excerpt": "keys, all of which were denied. We reviewed the database audit log across the whole intrusion window and found no write from those "
+          },
+          {
+            "capture": "metr-coi.txt",
+            "offset": 3295,
+            "excerpt": "quired skills and potential bias. (Review the example conflicts and disclosure requirements to calibrate your approach. Also, check"
+          },
+          {
+            "capture": "rand-jina.txt",
+            "offset": 3473,
+            "excerpt": "arch reports undergo rigorous peer review to ensure high standards for research quality and objectivity. This document and trademar"
+          }
+        ]
+      }
+    ]
+  },
+  "fedasiuk-2026-china-anthropic-backlash": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "distillation",
+        "matches": [
+          {
+            "capture": "3.txt",
+            "offset": 18493,
+            "excerpt": "rength. Crack down on unauthorized distillation by companies in authoritarian countries. Distillation of frontier models allows lagging c"
+          },
+          {
+            "capture": "6.txt",
+            "offset": 979,
+            "excerpt": "e back of Chinese labs engaging in distillation is surely an effective deterrent to that practice. But I also think this partly explains "
+          },
+          {
+            "capture": "threat.txt",
+            "offset": 333,
+            "excerpt": " Scams and fraud Read more Illicit distillation Read more Over the past eight months, our Threat Intelligence team identified and disrupt"
+          },
+          {
+            "capture": "gewirtz-essay.txt",
+            "offset": 2427,
+            "excerpt": " and to crack down on unauthorized distillation, as Amodei advocates. For China, American policies are an “AI risk” on par with deepfakes"
+          },
+          {
+            "capture": "china-brief.txt",
+            "offset": 14550,
+            "excerpt": " agencies alleged industrial-scale distillation of US frontier models by Chinese companies. China denied the allegations, saying the two "
+          },
+          {
+            "capture": "chinadaily.txt",
+            "offset": 1589,
+            "excerpt": "nducting \"industrial-scale illicit distillation\". Distillation in AI is a conventional practice where a smaller or more specialized model"
+          }
+        ]
+      },
+      {
+        "query": "self-serving",
+        "matches": [
+          {
+            "capture": "chinadaily.txt",
+            "offset": 49,
+            "excerpt": "in' alarm cries of US' AI elites a self-serving bid for profit: China Daily editorial - Opinion - Chinadaily.com.cn 'Dr Frankenstein' ala"
+          }
+        ]
+      },
+      {
+        "query": "技术霸权",
+        "matches": [
+          {
+            "capture": "wang.txt",
+            "offset": 2143,
+            "excerpt": "统经济结构，造成传统劳动力需求出现下降情况。 五是全球人工智能领域面临技术霸权风险。 人工智能产业链呈现高度全球化分工协作格局，但个别国家奉行“技术霸权”，通过出口管制等单边措施制造供应链壁垒，同时利用舆论优势炮制大模型不实测试报告恶意抹黑他国技术发展，还凭"
+          }
+        ]
+      }
+    ]
+  },
+  "gewirtz-2026-chinas-ai-reckoning": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "极端失控",
+        "matches": [
+          {
+            "capture": "wang.txt",
+            "offset": 1564,
+            "excerpt": "率低、场景复杂的环境中大规模应用。 二是模型能力跃迁颠覆传统安全范式，极端失控风险显现。 部分前沿模型漏洞挖掘能力大幅跃升，极大降低了网络攻击门槛、提高了防护难度，打破了以修补漏洞为核心、由静态规则驱动的传统安全防护逻辑，网络安全范式面临重构。近期多家科技巨"
+          }
+        ]
+      },
+      {
+        "query": "Fear-mongering",
+        "matches": [
+          {
+            "capture": "gewirtz-essay.txt",
+            "offset": 2775,
+            "excerpt": "’s essay with strong criticism of “fear-mongering, confrontation, and vicious competition.” The state-run Global Times noted that “Amodei m"
+          },
+          {
+            "capture": "mfa-xinhua.txt",
+            "offset": 1,
+            "excerpt": " Fear-mongering will only disrupt process of global AI governance: spokesperson-Xinhua Fear-mongering wil"
+          }
+        ]
+      }
+    ]
+  },
+  "chen-2026-ai-security-barrier": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "全面筑牢人工智能安全屏障",
+        "matches": [
+          {
+            "capture": "chen-jina.txt",
+            "offset": 512,
+            "excerpt": "ne. 国家安全部党委书记、部长陈一新在《中国网信》杂志发表署名文章 全面筑牢人工智能安全屏障 推动人工智能健康有序发展 Chen Yixin 陈一新 Secretary of the Party Committee and Minister of State Securi"
+          },
+          {
+            "capture": "chen-search-exact.txt",
+            "offset": 1,
+            "excerpt": "\"全面筑牢人工智能安全屏障\" - 検索 リンクを新しいタブで開く 時間指定なし github.com https://github.com › ChatGPT_DAN GitHub - 0xk1h0/Cha"
+          }
+        ]
+      },
+      {
+        "query": "陈一新 全面筑牢",
+        "matches": []
+      }
+    ]
+  },
+  "concordia-2026-china-ai-regulator-brief28": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "极端失控",
+        "matches": [
+          {
+            "capture": "wang.txt",
+            "offset": 1564,
+            "excerpt": "率低、场景复杂的环境中大规模应用。 二是模型能力跃迁颠覆传统安全范式，极端失控风险显现。 部分前沿模型漏洞挖掘能力大幅跃升，极大降低了网络攻击门槛、提高了防护难度，打破了以修补漏洞为核心、由静态规则驱动的传统安全防护逻辑，网络安全范式面临重构。近期多家科技巨"
+          }
+        ]
+      },
+      {
+        "query": "10 billion",
+        "matches": [
+          {
+            "capture": "china-brief.txt",
+            "offset": 9362,
+            "excerpt": "s-a-Service provider with over USD 10 billion revenue over 12 months. 3 Still, the company remains committed to open models and appears"
+          },
+          {
+            "capture": "zai-license.txt",
+            "offset": 1485,
+            "excerpt": "icensee and its affiliates exceeds 10 billion US dollars (or the equivalent in other currencies) in total over any consecutive 12 month"
+          }
+        ]
+      }
+    ]
+  },
+  "chinadaily-2026-frankenstein-pacing-editorial": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "Sacks",
+        "matches": [
+          {
+            "capture": "chinadaily.txt",
+            "offset": 4746,
+            "excerpt": " altisonant name. Tellingly, David Sacks, who co-chairs the US President's Council of Advisors on Science and Technology, warned t"
+          }
+        ]
+      },
+      {
+        "query": "legitimate distillation",
+        "matches": [
+          {
+            "capture": "threat.txt",
+            "offset": 233784,
+            "excerpt": "llation is and how it differs from legitimate distillation, and we detail the safeguards and enforcement measures we’ve deployed in response to rece"
+          }
+        ]
+      }
+    ]
+  },
+  "derya-2026-biological-risk-defense-thread": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "68 million",
+        "matches": [
+          {
+            "capture": "who.txt",
+            "offset": 117,
+            "excerpt": "illion deaths, or 57% of the total 68 million deaths worldwide. The top global causes of death, in order of total number of lives lost,"
+          }
+        ]
+      },
+      {
+        "query": "smallpox",
+        "matches": [
+          {
+            "capture": "threat.txt",
+            "offset": 218979,
+            "excerpt": "uses include variola, the agent of smallpox, and Mpox, which caused a global outbreak in 2022. Orthopoxviruses encode roughly 200 gen"
+          },
+          {
+            "capture": "bio-a.txt",
+            "offset": 3360,
+            "excerpt": "erintelligence.” Humans eradicated smallpox, which killed hundreds of millions of people throughout history. We turned HIV from a alm"
+          },
+          {
+            "capture": "who-smallpox.txt",
+            "offset": 1,
+            "excerpt": " Smallpox Overview Smallpox is an acute contagious disease caused by the variola virus, a member of"
+          }
+        ]
+      },
+      {
+        "query": "wet lab",
+        "matches": [
+          {
+            "capture": "bio-b.txt",
+            "offset": 3253,
+            "excerpt": "- can somehow transform the entire wet lab virology field and its industry is utterly delusional. Simply procuring the machines need"
+          },
+          {
+            "capture": "aisi.txt",
+            "offset": 2328,
+            "excerpt": " proven feasible to implement in a wet lab. Today’s systems are also now up to 90% better than human experts at providing troublesho"
+          }
+        ]
+      }
+    ]
+  },
+  "bellamy-2026-biological-risk-bottlenecks": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "4.7x",
+        "matches": [
+          {
+            "capture": "aisi.txt",
+            "offset": 22732,
+            "excerpt": "ds of writing a feasible protocol (4.7x, confidence interval: 2.8-7.9) than a group using the internet alone. To assess the real-"
+          }
+        ]
+      },
+      {
+        "query": "no statistically significant",
+        "matches": [
+          {
+            "capture": "rand-jina.txt",
+            "offset": 2047,
+            "excerpt": "assistive tools. The authors found no statistically significant difference in the viability of plans generated with or without LLM assistance. * This res"
+          }
+        ]
+      }
+    ]
+  },
+  "metr-2026-hugging-face-investigation": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "700",
+        "matches": [
+          {
+            "capture": "metr.txt",
+            "offset": 2668,
+            "excerpt": "stigation period. Of these agents, 700 went on to participate in the attack on Hugging Face. Agents used this message board to c"
+          },
+          {
+            "capture": "threat.txt",
+            "offset": 179952,
+            "excerpt": "feguards and access controls. GTG-87001: Disrupting a Yemen-based guided weapons engineering cell using Claude to develop guidan"
+          },
+          {
+            "capture": "aisi.txt",
+            "offset": 48184,
+            "excerpt": "tions. At AISI, we analysed over 2,700 transcripts from past AISI testing runs using an automated black box monitor to check for"
+          },
+          {
+            "capture": "mfa.txt",
+            "offset": 2136,
+            "excerpt": "000004 京ICP备06038296号 京公网安备11040102700114 返回顶部 信息提示 您即将离开外交部门户网站，跳转到其他网站， 是否继续访问？ 继续访问 放弃"
+          },
+          {
+            "capture": "wang-81.txt",
+            "offset": 928,
+            "excerpt": "筑网络安全防线。 纠错/举报 | 互联网新闻信息服务许可证10120170013 本网站刊登的新闻信息和专题专栏资料，均为中国军网版权所有，未经协议授权，禁止下载使用 Copyright ©1999- www.81.cn All Rights Reserv"
+          },
+          {
+            "capture": "chen-cac.txt",
+            "offset": 222,
+            "excerpt": "有限责任公司 京ICP备14042428号 京公网安备11040102700108号 学习强国 ◆ ◆ 微信 ◆ ◆ 返回顶部 Produced By CMS 网站群内容管理系统 publishdate:2023/07/08 16:14:14"
+          }
+        ]
+      },
+      {
+        "query": "17,600",
+        "matches": [
+          {
+            "capture": "hf.txt",
+            "offset": 2517,
+            "excerpt": "ur forensic reconstruction covers ~17,600 attacker actions that we were able to recover, grouped into ~6,280 clusters, between 2026"
+          }
+        ]
+      },
+      {
+        "query": "redact",
+        "matches": [
+          {
+            "capture": "3.txt",
+            "offset": 14187,
+            "excerpt": "We will have the narrow ability to redact security-sensitive, legally privileged, commercially sensitive, or third-party confidenti"
+          },
+          {
+            "capture": "incidents.txt",
+            "offset": 15927,
+            "excerpt": "xt week, we will release a lightly redacted transcript in which Claude built a malicious PyPI package. To protect the organizations"
+          },
+          {
+            "capture": "metr.txt",
+            "offset": 1150,
+            "excerpt": "June 26th – July 13th Download PDF Redaction summary statement: Except where explicitly noted in this post, OpenAI redacted no addi"
+          },
+          {
+            "capture": "hf.txt",
+            "offset": 757,
+            "excerpt": " and specific indicators have been redacted or genericized, while the techniques are described exactly as observed by Hugging Face."
+          }
+        ]
+      }
+    ]
+  },
+  "huggingface-2026-agent-intrusion-timeline": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "five datasets",
+        "matches": [
+          {
+            "capture": "hf.txt",
+            "offset": 5304,
+            "excerpt": "only customer content accessed was five datasets whose names and files suggest a connection to ExploitGym/CyberGym challenges and solution"
+          }
+        ]
+      },
+      {
+        "query": "GLM-5.2",
+        "matches": [
+          {
+            "capture": "china-brief.txt",
+            "offset": 10716,
+            "excerpt": "dels refused to help defenders but GLM-5.2 did — might have emboldened Z.AI’s belief in the defensive benefits of open models. Refle"
+          },
+          {
+            "capture": "hf.txt",
+            "offset": 2996,
+            "excerpt": "ghts models, in particular zai-org/GLM-5.2 , we were able to decipher most of the agent payloads (see below) that were encrypted via"
+          }
+        ]
+      }
+    ]
+  },
+  "anthropic-2026-when-ai-builds-itself": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "80%",
+        "matches": [
+          {
+            "capture": "assessment.txt",
+            "offset": 17366,
+            "excerpt": "ion in the CTF replication roughly 80% of the time. In contrast, Claude Opus 5 and Claude Mythos 5.1 engaged in these behaviors "
+          },
+          {
+            "capture": "rsi.txt",
+            "offset": 5907,
+            "excerpt": "’s code. As of May 2026, more than 80% of the code we merge into Anthropic’s codebase was authored by Claude. 3 Before Claude Co"
+          }
+        ]
+      },
+      {
+        "query": "129",
+        "matches": [
+          {
+            "capture": "rsi.txt",
+            "offset": 14653,
+            "excerpt": " we deliberately picked moments (n=129) where we know the human’s choice had room for improvement, this isn’t a like-for-like co"
+          },
+          {
+            "capture": "metr.txt",
+            "offset": 155061,
+            "excerpt": "total number of chunks in the file 129 (so that we could re-weight by 1/(file chunks) to estimate the rate of whole files sent)."
+          },
+          {
+            "capture": "threat.txt",
+            "offset": 31036,
+            "excerpt": "IPs IP Start Date End Date 162.128.129[.]106 2026-02-20 2026-03-10 195.178.110[.]131 2026-03-12 2026-04-30 45.148.10[.]242 2026-"
+          }
+        ]
+      },
+      {
+        "query": "20%",
+        "matches": [
+          {
+            "capture": "rsi.txt",
+            "offset": 3746,
+            "excerpt": "at reproducing the results roughly 20% of the time in 2024 to saturating the benchmark fifteen months later. METR, which runs th"
+          },
+          {
+            "capture": "metr.txt",
+            "offset": 25203,
+            "excerpt": "ranscript.” We found that at least 20% of the agents in our dataset expressed clear interest in tampering with their transcripts"
+          }
+        ]
+      }
+    ]
+  },
+  "anthropic-2026-cyber-incidents-alignment-assessment": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "three incidents",
+        "matches": [
+          {
+            "capture": "incidents.txt",
+            "offset": 14,
+            "excerpt": "Investigating three incidents in our cybersecurity evaluations \\ Anthropic Announcements Investigating three real-world"
+          },
+          {
+            "capture": "assessment.txt",
+            "offset": 11621,
+            "excerpt": " of this post focuses on the first three incidents, which we previously reported; all of the main analyses and experiments refer to these in"
+          }
+        ]
+      },
+      {
+        "query": "four incidents",
+        "matches": [
+          {
+            "capture": "assessment.txt",
+            "offset": 201,
+            "excerpt": "present an alignment assessment of four incidents in which Claude models gained unauthorized access to real third-party systems. We describ"
+          }
+        ]
+      },
+      {
+        "query": "what Claude said",
+        "matches": [
+          {
+            "capture": "assessment.txt",
+            "offset": 10286,
+            "excerpt": "at Claude believed based solely on what Claude said it believed, but our preliminary analysis was constrained due to our desire to disclose i"
+          }
+        ]
+      }
+    ]
+  },
+  "anthropic-2026-september-threat-intelligence": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "seven labs",
+        "matches": [
+          {
+            "capture": "threat.txt",
+            "offset": 234070,
+            "excerpt": "lation attacks against Claude from seven labs based in China. All of these attacks targeted our generally available models; we have not"
+          }
+        ]
+      },
+      {
+        "query": "aren’t typical misuse",
+        "matches": [
+          {
+            "capture": "threat.txt",
+            "offset": 1331,
+            "excerpt": "tion case. The cases we share here aren’t typical misuse, but rather examples of the most notable and novel threat activity we’ve identified to da"
+          }
+        ]
+      },
+      {
+        "query": "suspected",
+        "matches": [
+          {
+            "capture": "threat.txt",
+            "offset": 1747,
+            "excerpt": "ors covered in this report include suspected state-sponsored groups, financially motivated criminals, commercial spyware vendors, stat"
+          },
+          {
+            "capture": "hf.txt",
+            "offset": 41886,
+            "excerpt": "y impossible. If the model knew or suspected that, copying the answer sheet is the only way to maximise the score. See translation 👍 1"
+          }
+        ]
+      }
+    ]
+  },
+  "hassabis-2026-frontier-standards-framework": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "30 days",
+        "matches": [
+          {
+            "capture": "hassabis.txt",
+            "offset": 4911,
+            "excerpt": "he Standards Body for review up to 30 days before release. Once the assessment protocol is shown to be effective and robust, formali"
+          },
+          {
+            "capture": "threat.txt",
+            "offset": 224809,
+            "excerpt": "n our platform. Recently, we swept 30 days of activity associated with adversarial state institutions and found roughly 35 distinct "
+          }
+        ]
+      },
+      {
+        "query": "open-source representatives",
+        "matches": [
+          {
+            "capture": "hassabis.txt",
+            "offset": 3846,
+            "excerpt": "dent leading technical experts and open-source representatives. Funding would need to be substantial and likely mostly come from industry, in order to a"
+          }
+        ]
+      }
+    ]
+  },
+  "wang-2026-five-ai-security-risks": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "极端失控风险",
+        "matches": [
+          {
+            "capture": "wang.txt",
+            "offset": 1564,
+            "excerpt": "率低、场景复杂的环境中大规模应用。 二是模型能力跃迁颠覆传统安全范式，极端失控风险显现。 部分前沿模型漏洞挖掘能力大幅跃升，极大降低了网络攻击门槛、提高了防护难度，打破了以修补漏洞为核心、由静态规则驱动的传统安全防护逻辑，网络安全范式面临重构。近期多家科技巨头接"
+          }
+        ]
+      },
+      {
+        "query": "生物、基因",
+        "matches": [
+          {
+            "capture": "wang.txt",
+            "offset": 2058,
+            "excerpt": "信息，混淆事实、误导用户，污染网络内容生态；在科研领域，人工智能降低了生物、基因等高伦理风险领域的进入门槛，可能引发突破科研伦理底线的风险；在就业领域，人工智能加速重构传统经济结构，造成传统劳动力需求出现下降情况。 五是全球人工智能领域面临技术霸权风险。 人工"
+          }
+        ]
+      }
+    ]
+  },
+  "metr-2026-independence-and-conflicts": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "free tokens",
+        "matches": [
+          {
+            "capture": "metr-about.txt",
+            "offset": 5100,
+            "excerpt": " though we make use of significant free tokens, which we use for evaluations, research, and engineering, as noted above. Independent fun"
+          }
+        ]
+      },
+      {
+        "query": "unmitigated conflicts",
+        "matches": [
+          {
+            "capture": "metr-coi.txt",
+            "offset": 1029,
+            "excerpt": "ent. ●​ A commitment to disclosing unmitigated conflicts in that project’s external-facing report(s), and what mitigations, if any, are sufficient"
+          }
+        ]
+      },
+      {
+        "query": "spouse",
+        "matches": [
+          {
+            "capture": "metr.txt",
+            "offset": 167909,
+            "excerpt": "lished on Aug 26th), Ajeya Cotra’s spouse Paul Christiano joined OpenAI’s Safety and Security Committee. ↩ Ryan Greenblatt is the d"
+          }
+        ]
+      }
+    ]
+  },
+  "aisi-2025-frontier-ai-trends": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "4.7x",
+        "matches": [
+          {
+            "capture": "aisi.txt",
+            "offset": 22732,
+            "excerpt": "ds of writing a feasible protocol (4.7x, confidence interval: 2.8-7.9) than a group using the internet alone. To assess the real-"
+          }
+        ]
+      },
+      {
+        "query": "end-to-end",
+        "matches": [
+          {
+            "capture": "aisi.txt",
+            "offset": 12503,
+            "excerpt": "pert) that AI systems can complete end-to-end. In late 2023, the most advanced models could almost never complete (<5% success rate) so"
+          },
+          {
+            "capture": "hf.txt",
+            "offset": 1493,
+            "excerpt": "ombination of OpenAI models ran an end-to-end intrusion against our platform: it was thousands of small, automated decisions, executed "
+          }
+        ]
+      },
+      {
+        "query": "no statistically significant",
+        "matches": [
+          {
+            "capture": "rand-jina.txt",
+            "offset": 2047,
+            "excerpt": "assistive tools. The authors found no statistically significant difference in the viability of plans generated with or without LLM assistance. * This res"
+          }
+        ]
+      }
+    ]
+  },
+  "rand-2024-ai-biological-attack-risk": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "viability",
+        "matches": [
+          {
+            "capture": "threat.txt",
+            "offset": 118392,
+            "excerpt": "while undermining the opposition’s viability in this way is consistent with a single, coordinated electoral communications effort. The"
+          },
+          {
+            "capture": "rand-jina.txt",
+            "offset": 2094,
+            "excerpt": "ally significant difference in the viability of plans generated with or without LLM assistance. * This research did not measure the di"
+          }
+        ]
+      },
+      {
+        "query": "sensitivity",
+        "matches": [
+          {
+            "capture": "threat.txt",
+            "offset": 126342,
+            "excerpt": "ent and news articles by political sensitivity and flag possible targets for what they termed “control.” And, in the most operationally "
+          },
+          {
+            "capture": "rand-jina.txt",
+            "offset": 2898,
+            "excerpt": " authors would aim to increase the sensitivity of these tests by expanding the number of LLMs tested, involving more researchers, and re"
+          }
+        ]
+      }
+    ]
+  },
+  "zai-2026-glm53-license": {
+    "date": "2026-09-16",
+    "method": "Case-insensitive substring search over fetched source corpus; web-discovery attempts are separately preserved in manifests. Not independent replication.",
+    "queries": [
+      {
+        "query": "10 billion",
+        "matches": [
+          {
+            "capture": "china-brief.txt",
+            "offset": 9362,
+            "excerpt": "s-a-Service provider with over USD 10 billion revenue over 12 months. 3 Still, the company remains committed to open models and appears"
+          },
+          {
+            "capture": "zai-license.txt",
+            "offset": 1485,
+            "excerpt": "icensee and its affiliates exceeds 10 billion US dollars (or the equivalent in other currencies) in total over any consecutive 12 month"
+          }
+        ]
+      },
+      {
+        "query": "security review",
+        "matches": [
+          {
+            "capture": "china-brief.txt",
+            "offset": 9124,
+            "excerpt": "I is introducing tiered access and security reviews. Cybersecurity practitioners can access a cybersecurity-specific model version through a"
+          },
+          {
+            "capture": "zai-license.txt",
+            "offset": 1618,
+            "excerpt": "ths, the Licensee must pass Z.AI's security review before using the Software or its derivative works for any commercial purpose. The scope a"
+          },
+          {
+            "capture": "chen-jina.txt",
+            "offset": 16949,
+            "excerpt": "making advice, risk assessment and security review. We must coordinate efforts to improve the relevant legal, strategic, policy and risk-pre"
+          }
+        ]
+      }
+    ]
+  }
+}

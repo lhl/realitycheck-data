@@ -1,0 +1,28 @@
+Thread by @DavidRBellamy on Thread Reader App – Thread Reader App
+I must be among an extremely small group of people (n=1?) that have both 1) trained a frontier LLM and 2) designed and synthesized custom viruses in a lab with my own two hands.
+And I think that the takes on AI killing us all by creating dangerous viruses is total bogus.
+
+Could an LLM propose a viral genome to synthesize? Sure. Could it be synthesize-able? Sure. Could it be infectious? Sure, it could just be a replica or a slight modification of a viral genome we already know.
+This really isn't the bottleneck to creating dangerous viruses. The bottleneck is in the physical process of synthesizing a virus and the equipment/goods needed to do so.
+
+Designing a virus that can evade all forms of pandemic counterdefense is not something that a 'genius in a datacenter' can do. This is something that requires contact with the physical world and iteration.
+
+Let me steelman the fearmongering as much as I can. Imagine a 'fully automated' viral synthesis laboratory. I'm talking automated freezers, automated cell culture room, the whole nine yards. This would be an extremely expensive lab - >>$100M. And there is no such thing as 1 lab that can synthesize all conceivable viruses. But let's put practical constraint aside. Let's suppose this hypothetical lab is built to synthesize the 'most dangerous types' of viruses known.
+
+Now let's imagine that this lab is fully API-driven. That this >>$100M lab built specifically to synthesize a dangerous family of viruses is able to be operated completely autonomously.
+Everyone should be asking themselves at this point: why the hell would this ever exist in the first place?
+
+And yet, *even in this case*, every lab requires physical supplies. Would this lab order pre-assembled DNA sequences (i.e. viral genomes)? Well, DNA synthesis companies have safeguards on the sequences they build. So I guess this superintelligence is able to design a novel enough dangerous viral genome that it can evade these safeguards...
+Or maybe we'll assume that this hypothetical lab can synthesize its own viral genomes in-house, using some DNA synthesis machines.
+
+The thing is, already this lab cannot exist today. This would be the single most advanced lab facility in the world from an automation and API integration standpoint. I know because I literally worked on building a fully automated, API-driven lab previously.
+
+Second of all, the science of creating an infectious virus is not airtight the way this fearmongering assumes. It is largely unsolved and advancing this requires real-world iterations that are bound by the laws of physics. An experiment in this hypothetical lab cannot experiment on human subjects. At best it will use cell cultures and maybe some other model system like mice. AI/AGI/ASI/RSI cannot expedite the time it takes for a cell culture or a mouse to develop. Or the time it takes for a virus to incubate in a cell or mouse. It takes several days on average to do a basic virology lab synthesis + experiment (for some viruses it takes over a week).
+
+So the idea that 'RSI' - ie, the accelerating hillclimbing on fully verifiable, digital-only benchmarks (predominantly programming and math) - can somehow transform the entire wet lab virology field and its industry is utterly delusional.
+Simply procuring the machines needed to build this hypothetical lab would take the better part of a year and $100M USD. Operating this lab autonomously would require a level of API integration that the industry has been working towards for decades. Most of the equipment needed for this lab doesn't even come with an API and the malevolent builders would need to reverse engineer firmware to integrate.
+
+And at the end of the day, even if a fully automated, API-driven lethal viral synthesis lab existed and an AI wields it month over month, year over year, to perform cell/mouse experiments to create a lethal virus, that lethality is being measured in model organisms not in humans. This is the same problem as in drug discovery where most drugs that show promise in mice don't make it through human trials.
+
+In sum, when you actually know something about building a laboratory, lab automation, and what goes into synthesizing a virus and testing its properties, it becomes clear that AI does not impact this very much.
+At best, it provides bad actors with a quicker way than the internet to learn about the stuff I described (which machines, which lab protocols, etc.). But it does nothing to impact procurement timelines, existing industry safeguards and regulations on procurement for lab facilities, the ~$100M cost (plus high operating expenses), the physical limits on experimentation velocity, or the fundamental knowledge gaps in virology that cannot be solved merely by 'smarter' AI without iteration in the physical world.

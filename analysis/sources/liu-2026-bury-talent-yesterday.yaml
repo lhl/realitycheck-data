@@ -1,0 +1,84 @@
+sources:
+- id: liu-2026-bury-talent-yesterday
+  type: BLOG
+  title: 我不得不把才华埋葬在昨天 (I Have No Choice but to Bury My Talent in Yesterday)
+  author:
+  - Shengyu Liu (刘胜与); shared and translated by @teortaxesTex
+  year: 2026
+  url: https://mp.weixin.qq.com/s/zk0KxuLzhmMJ4LPYW_OHMA
+  accessed: '2026-09-16'
+  status: analyzed
+  analysis_file: analysis/sources/liu-2026-bury-talent-yesterday.md
+  reliability: 0.65
+  bias_notes: An appeal for universal access does not show that all capabilities can
+    safely be universally distributed. The essay’s extreme historical analogy adds
+    moral force without comparative evidence.
+  topics:
+  - pacing-the-frontier
+  - ai-governance
+  - frontier-risk
+  domains:
+  - GOV
+  - LABOR
+  claims_extracted:
+  - LABOR-2026-500
+  - GOV-2026-503
+  - LABOR-2026-501
+claims:
+- domain: LABOR
+  type: '[P]'
+  text: Within roughly six to twelve months, AI-generated kernels will match or exceed
+    Liu’s own kernel-writing performance.
+  credence: 0.55
+  evidence_level: E5
+  id: LABOR-2026-500
+  source_ids:
+  - liu-2026-bury-talent-yesterday
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - By September 2027, representative blinded comparisons still show a substantial
+    quality or performance gap in Liu’s favor.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: GOV
+  type: '[H]'
+  text: Broad, affordable access to frontier models can reduce the concentration of
+    economic and social power in a few AI companies.
+  credence: 0.65
+  evidence_level: E5
+  id: GOV-2026-503
+  source_ids:
+  - liu-2026-bury-talent-yesterday
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - Observed mechanisms generalize to the stated future or policy context; remaining
+    bottlenecks and countermeasures are considered.
+  falsifiers:
+  - Contrary evidence from a comparable prospective test or a primary record.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
+- domain: LABOR
+  type: '[F]'
+  text: Liu’s essay distinguishes expected occupational change and loss of preferred
+    work from an expectation of unemployment.
+  credence: 0.98
+  evidence_level: E4
+  id: LABOR-2026-501
+  source_ids:
+  - liu-2026-bury-talent-yesterday
+  operationalization: Check the source text and linked evidence for the precise claim;
+    for causal claims, compare prospective outcomes under the stated conditions.
+  assumptions:
+  - The captured text is authentic and the stated scope is preserved.
+  falsifiers:
+  - The original instead predicts he will necessarily lose his livelihood.
+  first_extracted: '2026-09-16'
+  last_updated: '2026-09-16'
+  extracted_by: codex/check
